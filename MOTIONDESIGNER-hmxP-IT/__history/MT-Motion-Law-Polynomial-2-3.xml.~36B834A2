@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" modified="2022-03-07T22:11:36.528Z" lasteditedby="Adam" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title translate="true">Polynomial 2-3 Motion-Law</title>
+  <keywords>
+    <keyword translate="true">Cam Law: Polynomial 23</keyword>
+    <keyword translate="true">Motion Law:<keyword translate="true">Polynomial 23</keyword></keyword>
+  </keywords>
+  <body>
+    <header>
+      <para styleclass="Heading1"><text styleclass="Heading1" translate="true">Polynomial 2-3 Motion-Law</text></para>
+    </header>
+    <para styleclass="Heading3 Underline_atocs_"><text styleclass="Heading3 Underline_atocs_" translate="true">Polynomial 2-3 Cam-Law, Motion-Law</text></para>
+    <para styleclass="Body Text HowTo"><text styleclass="Body Text HowTo" translate="true">The Polynomial 2-3 Motion-Law is </text><text styleclass="Body Text HowTo" style="text-decoration:underline;" translate="true">not</text><text styleclass="Body Text HowTo" translate="true"> available directly with the </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MT-Segment-Selector" styleclass="Body Text HowTo" translate="true">Motion-Law Selector</link><text styleclass="Body Text HowTo" translate="true">. </text></para>
+    <para styleclass="Body Text HowTo"><text styleclass="Body Text HowTo" translate="true">You can edit the start and end of a </text><link displaytype="text" defaultstyle="true" type="topiclink" href="Motion-Cam-Law-Flexible-Polynomial" styleclass="Body Text HowTo" translate="true">Flexible-Polynomial</link><text styleclass="Body Text HowTo" translate="true"> motion-law be the same as the Polynomial 2-3.</text></para>
+    <para styleclass="Body Text HowTo"><text styleclass="Body Text HowTo" translate="true">You can also use the </text><link displaytype="text" defaultstyle="true" type="topiclink" href="Motion-Cam-Law-Cubic" styleclass="Body Text HowTo" translate="true">Cubic Motion-Law</link><text styleclass="Body Text HowTo" translate="true">, but specify 0 units/s for the Velocity at its start and end.</text></para>
+    <para styleclass="Body Text"><table styleclass="AStandard" rowcount="1" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="vertical-align:top; width:94px; height:43px;">
+          <para styleclass="Normal"><image src="MT-CamLaw-Polynomial-23.bmp" scale="100.00%" styleclass="Normal" figurelistinclude="0"></image></para>
+        </td>
+        <td style="height:21px;">
+          <para styleclass="Body Text"><text styleclass="Body Text" translate="true">This segment is included for reference. </text></para>
+          <para styleclass="Body Text"><text styleclass="Body Text" translate="true">A different name for this motion-law is a </text><text styleclass="Body Text" style="font-style:italic;" translate="true">Parabolic Velocity</text><text styleclass="Body Text" translate="true">. </text></para>
+          <para styleclass="Body Text"><text styleclass="Body Text" translate="true">This motion-law is </text><text styleclass="Body Text" style="text-decoration:underline;" translate="true">not</text><text styleclass="Body Text" translate="true"> usually recommended.</text></para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="Body Text"><text styleclass="Body Text" translate="true">The maximum velocity is the lowest of the </text><text styleclass="Body Text" style="font-style:italic;" translate="true">Traditional Motion-Laws</text><text styleclass="Body Text" translate="true">.</text></para>
+          <para styleclass="VariableName"><text styleclass="VariableName" translate="true">Dynamic Performance</text></para>
+          <para styleclass="VariableName"><text styleclass="VariableName" translate="true">Polynomial 2-3</text><text styleclass="HowTo Bulleted" translate="true">:</text></para>
+          <list id="0" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted"><text styleclass="HowTo Bulleted" translate="true">when a Dwell is the </text><text styleclass="Interface" translate="true">Previous-Segment</text><text styleclass="HowTo Bulleted" translate="true">, there will be a </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MT-Motion-Continuity" styleclass="VariableName" translate="true">Motion Discontinuity</link><text styleclass="HowTo Bulleted" translate="true"> in acceleration at the start and end of the segment.</text></li>
+            <li styleclass="HowTo Bulleted"><text styleclass="Body Text" style="font-style:normal;" translate="true">has</text><text styleclass="Body Text" style="font-style:italic;" translate="true">&#32;</text><text styleclass="VariableName" translate="true">infinite jerk</text><text styleclass="Body Text" translate="true"> at the start and end of the segment. </text></li>
+          </list>
+          <list id="1" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted"><text styleclass="HowTo Bulleted" translate="true">should only be used in applications where the </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MT-Period-Ratio-Cam-Motion" styleclass="HowTo Bulleted" translate="true">period-ratio</link><text styleclass="HowTo Bulleted" translate="true"> is much greater than 10, ideally at least 20.</text></li>
+          </list>
+          <list id="2" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted"><text styleclass="Body Text HowTo" translate="true">uses the minimum energy from a servomotor or stepper motor.</text></li>
+          </list>
+          <para styleclass="VariableName"><text styleclass="VariableName" translate="true">Polynomial 2-3 with Flexible Polynomial Motion-Laws</text></para>
+          <para styleclass="Body Text HowTo"><text styleclass="Body Text HowTo" translate="true">If you can put a Flexible Polynomial motion-law before and after this segment, then it is possible to make sure the motion is continuous in position, velocity and acceleration.</text></para>
+        </td>
+      </tr>
+    </table></para>
+  </body>
+</topic>

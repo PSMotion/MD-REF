@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" status="Under Construction" lasteditedby="Adam" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title translate="true">Tools: Data Transfer: Put List Data</title>
+  <keywords>
+    <keyword translate="true">Motion: Data-Transfer Table<keyword translate="true">Put Data</keyword><keyword translate="true">Put Data to List Segment</keyword></keyword>
+  </keywords>
+  <body>
+    <header>
+      <para styleclass="Heading1"><text styleclass="Heading1" translate="true">Tools: Data-Transfer: Put List Data</text></para>
+    </header>
+    <para styleclass="Heading3_atocs_"><text styleclass="Heading3_atocs_" translate="true">Put Data to List Type Segment</text></para>
+    <para styleclass="Body Text"><table styleclass="AStandard" rowcount="3" colcount="2">
+      <tr style="vertical-align:top">
+        <td colspan="2">
+          <para styleclass="Body Text"><text styleclass="Notes" translate="true">Note</text><text styleclass="Body Text" translate="true">: This icon is in the toolbar </text><text styleclass="VariableName" style="color:#ff0000;" translate="true">only</text><text styleclass="Body Text" translate="true"> when the </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MT-Selected-Segment" styleclass="Body Text" translate="true">Selected-Segment</link><text styleclass="Body Text" translate="true"> is a </text><text styleclass="VariableName" translate="true">List</text><text styleclass="Body Text" translate="true"> segment.</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:12px;">
+          <para styleclass="Body Text"><image src="DTT-PutData.ipp" scale="100.00%" styleclass="Image Caption"></image></para>
+        </td>
+        <td>
+          <para styleclass="Body Text"><text styleclass="T_Menu" translate="true">Put List Data</text><text styleclass="Body Text" translate="true"> : to put the </text><text styleclass="VariableName" translate="true">selected data* </text><text styleclass="Body Text" translate="true">from the </text><text styleclass="VariableName" translate="true">Data-Transfer Table</text><text styleclass="Body Text" translate="true"> to a </text><text styleclass="VariableName" translate="true">List </text><text styleclass="Body Text" translate="true">segment</text></para>
+          <para styleclass="Notes"><text styleclass="Notes" translate="true">Notes</text><text styleclass="Body Text" translate="true">:</text></para>
+          <para styleclass="Body Text HowTo"><text styleclass="Body Text HowTo" translate="true">The minimum number-of-points you </text><text styleclass="Body Text" translate="true">can</text><text styleclass="VariableName" translate="true"> Put is 6.</text><text styleclass="Body Text HowTo" translate="true"> You should usually select many more points.</text></para>
+          <para styleclass="Body Text HowTo"><text styleclass="Body Text HowTo" translate="true">The number of points you </text><text styleclass="VariableName" translate="true">Put</text><text styleclass="Body Text HowTo" translate="true"> does </text><text styleclass="VariableName" style="color:#ff0000;" translate="true">not</text><text styleclass="Body Text HowTo" translate="true"> need to be equal to the number of points that </text><text styleclass="VariableName-IT" translate="true">MotionDesigner</text><text styleclass="Body Text HowTo" translate="true"> allocates to the </text><text styleclass="Parameter" translate="true">Segment-Width.</text></para>
+          <para styleclass="Body Text HowTo"><text styleclass="Body Text HowTo" translate="true">Number-of-data points that </text><text styleclass="VariableName-IT" translate="true">MotionDesigner</text><text styleclass="Body Text HowTo" translate="true"> allocates to a segment =</text><text styleclass="Interface" translate="true">&#32;</text><link displaytype="text" defaultstyle="true" type="topiclink" href="MT-Edit-Active-Motion-Settings" anchor="Motion" styleclass="Interface" translate="true">Number-of-Steps</link><text styleclass="Interface" translate="true"> * </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MT-Segment-Width" styleclass="Parameter" translate="true">Segment-Width</link><text styleclass="Interface" translate="true">(º) / 360.</text></para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="Body Text"><text styleclass="Body Text" translate="true">After you put the data to the </text><text styleclass="VariableName" translate="true">List</text><text styleclass="Body Text" translate="true"> segment, </text><text styleclass="VariableName-IT" translate="true">MotionDesigner </text><text styleclass="Body Text" translate="true">:</text></para>
+          <list id="3" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted"><text styleclass="Body Text" translate="true">fits the same number of points to the segment as </text><text styleclass="VariableName-IT" translate="true">MotionDesigner</text><text styleclass="Body Text" translate="true"> would allocate to the </text><text styleclass="Parameter" translate="true">Segment-Width</text><text styleclass="Body Text" translate="true">&#32;</text></li>
+            <li styleclass="HowTo Bulleted"><text styleclass="Body Text" style="font-weight:normal; font-style:normal;" translate="true">calculates all motion</text><text styleclass="Body Text" translate="true"> derivatives</text></li>
+          </list>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="Body Text"><text styleclass="VariableName" translate="true">List</text><text styleclass="Body Text" translate="true"> segments are</text></para>
+          <list id="4" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted"><link displaytype="text" defaultstyle="true" type="topiclink" href="Motion-PositionList" styleclass="HowTo Bulleted" translate="true">Position-List</link></li>
+            <li styleclass="HowTo Bulleted"><link displaytype="text" defaultstyle="true" type="topiclink" href="MT-SegType-AccelerationList" styleclass="HowTo Bulleted" translate="true">Acceleration-List</link><text styleclass="HowTo Bulleted" translate="true">&#32;</text></li>
+            <li styleclass="HowTo Bulleted"><link displaytype="text" defaultstyle="true" type="topiclink" href="Motion-Cam-Law-Z-Raw-Data" styleclass="HowTo Bulleted" translate="true">Z-Raw-Data</link></li>
+          </list>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="Normal"><text styleclass="VariableName" translate="true">* To selected data: </text></para>
+          <list id="5" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Body Text HowTo" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="Body Text HowTo"><text styleclass="Body Text HowTo" style="font-weight:normal;" translate="true">Click</text><text styleclass="Body Text" translate="true"> a cell in the table</text><text styleclass="VariableName" translate="true"> &#160;</text></li>
+            <li styleclass="Body Text HowTo"><text styleclass="Body Text HowTo" translate="true">SHIFT+Click</text><text styleclass="Body Text" translate="true"> a different cell, </text></li>
+          </list>
+          <para styleclass="Body Text HowTo"><text styleclass="Body Text" translate="true">The highlighted data is now the </text><text styleclass="VariableName" translate="true">Selected Data.</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:12px;">
+          <para styleclass="Body Text"></para>
+        </td>
+        <td>
+          <para styleclass="SeeAlso"><text styleclass="SeeAlso" translate="true">See also:</text></para>
+          <para styleclass="Body Text HowTo"><link displaytype="text" defaultstyle="true" type="topiclink" href="MT-Tools-DataTransfer-GetListData" styleclass="Body Text HowTo" translate="true">Get List Data</link></para>
+          <para styleclass="Body Text HowTo"><link displaytype="text" defaultstyle="true" type="topiclink" href="MT-Tools-DataTransfer-GetMotionData" styleclass="Body Text HowTo" translate="true">Get Motion Data</link></para>
+          <para styleclass="Body Text HowTo"><link displaytype="text" defaultstyle="true" type="topiclink" href="MT-Tools-DataTransfer-GetSegmentData" styleclass="Body Text HowTo" translate="true">Get Selected-Segment Data</link></para>
+          <para styleclass="HowTo Bulleted"><link displaytype="text" defaultstyle="true" type="topiclink" href="MT-Tools-DataTransfer-OverlayTrace" styleclass="HowTo Bulleted" translate="true">Overlay Trace</link></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="SeeAlso"></para>
+  </body>
+</topic>

@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" status="Under Construction" modified="2022-03-22T19:19:34.839Z" lasteditedby="Adam" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title translate="true">Acceleration-List [Import Data]</title>
+  <keywords>
+    <keyword translate="true">Import Acceleration Data</keyword>
+    <keyword translate="true">Motion-Law:<keyword translate="true">Import Acceleration List</keyword></keyword>
+  </keywords>
+  <body>
+    <header>
+      <para styleclass="Heading1"><text styleclass="Heading1" translate="true">Acceleration-List (Import Data)</text></para>
+    </header>
+    <para styleclass="Heading3_atocs_"><text styleclass="Heading3_atocs_" translate="true">Acceleration List</text></para>
+    <para styleclass="Body Text HowTo"><text styleclass="Body Text HowTo" translate="true">See also: </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MT-Motion-PositionList" styleclass="Body Text HowTo" translate="true">Position-List</link><text styleclass="Body Text HowTo" translate="true">, </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MT-Motion-Cam-Law-Z-Raw-Data" styleclass="Body Text HowTo" translate="true">Z-Raw Data</link></para>
+    <para styleclass="Body Text HowTo"><text styleclass="Body Text HowTo" translate="true">The </text><text styleclass="Interface2" translate="true">Acceleration List</text><text styleclass="Body Text HowTo" translate="true"> is a </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MT-Motion-Cam-Laws" anchor="ImportMotionData" styleclass="Body Text HowTo" translate="true">List segment-type</link></para>
+    <para styleclass="Body Text HowTo"><text styleclass="Body Text" translate="true">Use the </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MT-Tools-DataTransferTable" styleclass="HowTo Bulleted" translate="true">Data-Transfer Table</link><text styleclass="Body Text" translate="true"> to import data into a Position-List segment</text></para>
+    <para styleclass="Body Text HowTo"><text styleclass="Body Text HowTo" translate="true">See </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MT-Motion-PositionList" styleclass="Body Text HowTo" translate="true">Position-List</link><text styleclass="Body Text HowTo" translate="true"> to learn how to paste and use the your own data in a List-Type segment.</text></para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="Body Text HowTo"><text styleclass="VariableName-IT" translate="true">MotionDesigner</text><text styleclass="Body Text HowTo" style="font-weight:normal; font-style:normal;" translate="true"> integrates (numerically) your data to give the Velocity and Position graphs.</text></para>
+    <para styleclass="Body Text HowTo"><text styleclass="VariableName-IT" translate="true">MotionDesigner</text><text styleclass="Body Text HowTo" translate="true">&#32;</text><text styleclass="Body Text HowTo" style="font-style:normal;" translate="true">scales</text><text styleclass="Body Text HowTo" translate="true"> the data to give the Position values at the start and end of the </text><text styleclass="VariableName-IT" translate="true">Acceleration List</text><text styleclass="Body Text HowTo" translate="true"> Segment.</text></para>
+    <para styleclass="Body Text HowTo"><text styleclass="VariableName-IT" translate="true">MotionDesigner</text><text styleclass="Body Text HowTo" translate="true">&#32;</text><text styleclass="Body Text HowTo" style="font-style:normal;" translate="true">re-samples</text><text styleclass="Body Text HowTo" translate="true"> the data to give the correct number-of-points in the segment, such that:</text></para>
+    <para styleclass="Body Text HowTo"><text styleclass="Interface" translate="true">Number-of-Points in Segment = Segment-Width × Number-of-Steps in Motion / 360</text></para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="BodyText Bold"><text styleclass="BodyText Bold" translate="true">Sampling Acceleration-Data </text></para>
+    <para styleclass="Body Text HowTo"><text styleclass="Body Text HowTo" translate="true">You can acquire </text><text styleclass="VariableName-IT" style="font-style:normal;" translate="true">acceleration-data</text><text styleclass="Body Text HowTo" translate="true"> of a machine component with an </text><text styleclass="VariableName" translate="true">Accelerometer</text><text styleclass="Body Text HowTo" translate="true">.</text></para>
+    <para styleclass="Body Text HowTo"><text styleclass="Body Text HowTo" translate="true">To acquire the </text><text styleclass="VariableName" translate="true">acceleration-data</text><text styleclass="Body Text HowTo" translate="true">, we recommend a </text><text styleclass="VariableName" translate="true">dc-accelerometer</text><text styleclass="Body Text HowTo" style="font-style:italic;" translate="true">&#32;</text><text styleclass="Body Text HowTo" style="font-style:normal;" translate="true">that</text><text styleclass="Body Text HowTo" translate="true"> gives an output from </text><text styleclass="VariableName" translate="true">0 to 1000Hz</text><text styleclass="Body Text HowTo" translate="true">. </text></para>
+    <para styleclass="Body Text HowTo"><text styleclass="VariableName" translate="true">0Hz</text><text styleclass="Body Text HowTo" translate="true"> is important. At </text><text styleclass="VariableName" translate="true">0Hz</text><text styleclass="Body Text HowTo" translate="true">, you can use </text><text styleclass="VariableName" translate="true">±g</text><text styleclass="Body Text HowTo" translate="true"> to calibrate the accelerometer by turning it over </text><text styleclass="VariableName" translate="true">(g = ~9811mm/s/s).</text></para>
+    <para styleclass="Body Text HowTo"><text styleclass="Body Text HowTo" translate="true">Import an exact number or one machine cycle. </text></para>
+    <para styleclass="Body Text HowTo"><text styleclass="Body Text HowTo" translate="true">Also, you will get better results if you sample the data from a Dwell to a Dwell. Otherwise the integration will be biased. Although there are mathematical techniques to compensate for any bias, we do not use them when we integrate the Acceleration-Data.</text></para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="Normal" style="page-break-before:always;"></para>
+  </body>
+</topic>

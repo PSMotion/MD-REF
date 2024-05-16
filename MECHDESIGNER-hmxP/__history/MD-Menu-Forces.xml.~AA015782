@@ -1,0 +1,208 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" status="Under Construction" modified="2024-04-02T14:07:47.606+01:00" lasteditedby="44785" version="2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title>Forces</title>
+  <keywords>
+    <keyword>Menu<keyword>Add &gt; Force</keyword></keyword>
+    <keyword>Toolbar<keyword>Forces</keyword></keyword>
+  </keywords>
+  <body>
+    <header>
+      <para styleclass="Heading1">Forces</para>
+    </header>
+    <para styleclass="Heading2">Forces</para>
+    <para styleclass="Body Text"><text styleclass="Body Text HowTo">Force analysis is available for each </text><text styleclass="Interface2">Mechanism-Editor</text><text styleclass="Body Text HowTo">.</text></para>
+    <para styleclass="Normal"><line style="height:1px; color:#343400;" /></para>
+    <para styleclass="Body Text HowTo">The commands in the <text styleclass="T_Menu">Forces menu</text> and <text styleclass="T_Menu">Forces toolbar</text> are <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-Forces">kinetostatic forces</link>. </para>
+    <para styleclass="Body Text HowTo">To calculate the forces that act on <text styleclass="Element">Parts</text><text styleclass="Body Text">, there</text> must be a minimum of one kinematic-chain that is <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-Kinematically-Defined-Chain">kinematically-defined</link> and a minimum of one <text styleclass="Element-Header">Part</text> that has <text styleclass="VariableName">Mass</text><text styleclass="BodyText BI">&#32;</text>and/or<text styleclass="VariableName"> Inertia</text><text styleclass="BodyText BI">*, or there is a </text><text styleclass="VariableName">Spring</text> to apply a forces</para>
+    <para styleclass="Body Text HowTo">You must make sure the Power flows correctly through the kinematic-chain - see <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Forces-Configure-Power-Source">Configure Power Source</link>.</para>
+    <para styleclass="Normal"><line style="height:1px; color:#343400;" /></para>
+    <para styleclass="VariableName">Mass Properties</para>
+    <para styleclass="Body Text HowTo"><text styleclass="Element">Parts</text><text styleclass="Body Text"> have three sources of </text><text styleclass="VariableName">Mass Properties</text><text styleclass="BodyText BI">*.</text><text styleclass="Body Text"> They are:</text></para>
+    <list id="0" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+      <li styleclass="HowTo Bulleted">defined by the shape and <text styleclass="Parameter">Extrusion-Depth</text> of a <text styleclass="Element">Profile/ Extrusion</text><text styleclass="Body Text"> - </text><text styleclass="SeeAlso">see </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-ProfileExtrusion" anchor="ExtrusionMassProperties" styleclass="SeeAlso">Extrusion &gt; Mass Properties</link><text styleclass="Body Text">&#32;</text></li>
+      <li styleclass="HowTo Bulleted">defined by you as <text styleclass="Parameter">User Mass-Properties </text><text styleclass="T_Menu">- </text><text styleclass="SeeAlso">see</text><text styleclass="T_Menu">&#32;</text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-CADLine-MassProperties" anchor="CAD-Line-MassProperties-User" styleclass="SeeAlso">CAD-Line &gt; Mass Properties tab &gt; User Mass Properties</link></li>
+      <li styleclass="HowTo Bulleted">you import from a <text styleclass="Interface">SolidWorks</text> document<text styleclass="Body Text"> - </text><text styleclass="SeeAlso">see</text><text styleclass="Body Text">&#32;</text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-CADLine-MassProperties" anchor="CAD-Line-MassProperties-Import" styleclass="SeeAlso">CAD-Line &gt; Mass Properties tab &gt; SOLIDWORKS Mass Properties</link></li>
+    </list>
+    <para styleclass="HowTo Bulleted">We add together the <text styleclass="VariableName">Mass Properties</text> from each source.</para>
+    <para styleclass="Body Text"><text styleclass="VariableName">Mass Properties</text><text styleclass="BodyText BI"> include a </text><text styleclass="Element">Part&apos;s</text><text styleclass="BodyText BI">&#32;</text><text styleclass="VariableName">Mass</text><text styleclass="BodyText BI"> and </text><text styleclass="VariableName">Mass Moment of Inertia</text>.</para>
+    <para styleclass="Body Text HowTo">If a <text styleclass="Element">Part</text> has a <text styleclass="VariableName">Mass</text> only, it is a <text styleclass="VariableName">Point-Mass</text><text styleclass="BodyText BI">,</text> in which all of the mass is concentrated at a single point and position. In reality,<text styleclass="BodyText BI"> this </text>is not possible (we do not model Black-Holes!). However, we allow the concept.</para>
+    <para styleclass="Body Text HowTo"><text styleclass="BodyText BI">* </text><text styleclass="VariableName">Inertia</text><text styleclass="Body Text"> - the correct term is </text><text styleclass="VariableName">Mass Moment of Inertia</text><text styleclass="Body Text">. It has SI units of </text><equation styleclass="Body Text;vertical-align:text-bottom" style="font-family:Arial; font-size:10pt; font-weight:normal; font-style:normal; text-decoration:none; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;" font-size="28"><![CDATA[kg.m^{2}]]></equation><text styleclass="Body Text">.</text></para>
+    <para styleclass="Normal"><line style="height:1px; color:#343400;" /></para>
+    <para styleclass="Normal"><image src="MD-Globe-www.png" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Image Caption">&#32;</text><text styleclass="SeeAlso">On-line Tutorial: </text><link displaytype="text" defaultstyle="true" type="weblink" href="http://mechdesigner.support/index.htm?md-using-forces.htm" target="_blank" params="nofollow" styleclass="SeeAlso">Tutorial 13: Forces Introduction</link><text styleclass="SeeAlso">&#32;</text></para>
+    <para styleclass="Normal"><line style="height:1px; color:#343400;" /></para>
+    <para styleclass="Heading3_atocs_"><conditional-text type="IF" value="PROFESSIONAL"/>Add menu &gt; Force elements</para>
+    <para styleclass="Body Text">The <text styleclass="T_Menu">Forces menu</text> is a sub-menu of the <text styleclass="T_Menu">Add menu</text>.</para>
+    <para styleclass="Body Text"><image src="MD-Menu-Forces.png" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"><title>Add menu &gt; Force elements (MD16)</title><caption><![CDATA[Add menu > Force elements (MD16)]]></caption><imagemap><area shape="rect" coords="346,71,576,93" type="topiclink" href="MD-Command-FB-Force-Data"/><area shape="rect" coords="346,93,576,115" type="topiclink" href="MD-Forces-Configure-Power-Source"/><area shape="rect" coords="346,116,576,138" type="topiclink" href="MD-Visibility-Show-Forces"/><area shape="rect" coords="346,138,576,160" type="topiclink" href="MD-Command-Forces-Calculate"/><area shape="rect" coords="346,160,576,182" type="topiclink" href="MD-Command-Forces-FB-Spring"/><area shape="rect" coords="80,70,343,93" type="topiclink" href=""/></imagemap></image><conditional-text type="ELSE"/></para>
+    <para styleclass="Heading3_atocs_"></para>
+    <para styleclass="Heading2">Force menu</para>
+    <para styleclass="Body Text"><image src="MD-17-Menu-Forces.ipp" imagestyleclass="Default" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"><title> Forces menu (MD17)</title><caption><![CDATA[ Forces menu (MD17)]]></caption></image><conditional-text type="END"/></para>
+    <para styleclass="Normal"><line style="height:1px; color:#343400;" /></para>
+    <para styleclass="Heading3_atocs_">Force toolbar</para>
+    <para styleclass="Body Text">The <text styleclass="T_Menu">Force toolbar</text> is t<text style="color:#000000;">o the </text><text styleclass="VariableName" style="color:#ff0000;">right</text><text style="font-weight:bold; color:#ff0000;">&#32;</text>of the graphics-area<text styleclass="Interface">.</text></para>
+    <para styleclass="Body Text"><image src="MD-TOOLBARS-FORCES.ipp" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"><caption><![CDATA[Forces toolbar]]></caption><imagemap><area shape="rect" coords="5,41,285,81" type="topiclink" href="MD-Command-Forces-Calculate"/><area shape="rect" coords="5,83,285,123" type="topiclink" href="MD-Command-FB-Force-Data"/><area shape="rect" coords="5,124,285,164" type="topiclink" href="MD-Forces-Configure-Power-Source"/><area shape="rect" coords="5,165,285,205" type="topiclink" href="MD-Command-Forces-FB-Spring"/><area shape="rect" coords="5,207,285,248" type="topiclink" href="MD-Command-Forces-Show-Force-Vectors"/></imagemap></image></para>
+    <para styleclass="Normal"><line style="height:1px; color:#343400;" /></para>
+    <para styleclass="Heading4 Toggle_atocs_">Force Vectors (in graphics-area) Scale buttons</para>
+    <para styleclass="Body Text HowTo"><image src="MD-Feedback-Area-VectorButtons.png" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+    <para styleclass="Body Text">If, after you display <text styleclass="VariableName">Force Vectors</text>, the arrowheads of the vector are outside of your display area, you must use the <text styleclass="VariableName">Scale buttons</text> to decrease the length of the Force and/or <text styleclass="VariableName">Torque Vectors</text> - <text styleclass="SeeAlso">see </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-FeedBackArea" anchor="KinematicVectors-FA" styleclass="SeeAlso">Feedback Area &gt; Vector Scaling buttons</link></para>
+    <para styleclass="Normal"><line style="height:3px; color:#343400;" /></para>
+    <para styleclass="Heading3_atocs_" style="text-indent:-36px; margin-left:36px;"><image src="tog_plus.gif" scale="100.00%" figurelistinclude="0"></image><tab /><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" src-collapsed="tog_plus.gif" src-expanded="tog_minus.gif"><caption><![CDATA[Kinetostatic Forces - Definitions:]]></caption></toggle></para>
+    <para styleclass="VariableName-indent"><table styleclass="PopupTable2" rowcount="20" colcount="1" style="head-row-background-color:#c0c0c0; alt-row-background-color:#c0c0c0;">
+      <thead style="vertical-align:top">
+        <td>
+          <para styleclass="Interface2">FORCE</para>
+        </td>
+      </thead>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Text HowTo">Action of its surroundings on a body tending to change its state of rest or motion.</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Interface2">LINE OF ACTION OF A FORCE</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Text HowTo">The line along which the vector that represents a given force lies.</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Interface2">MAGNITUDE OF A FORCE</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Text HowTo">Number of units of force obtained by comparing a given force with a standard, taken as unit force -(SI units : Newtons)</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Interface2">ACTIVE [APPLIED] FORCE</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Text HowTo">Force capable of producing motion.</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Interface2">REACTION</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Text HowTo">Force arising in a constraint and acting upon a constrained body due to the action of an active force upon that body.</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Interface2">CENTRIPETAL FORCE</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Text HowTo">Force causing the centripetal acceleration of a particle.</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Interface2">INERTIA FORCE</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Text HowTo">Product of the mass of a particle and the negative of its acceleration. Following D&apos;Alembert, the inertia force can be regarded as being in equilibrium with the resultant of all the forces acting on the particle.</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Interface2">CENTRIFUGAL FORCE</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Text HowTo">Inertia force of a particle moving uniformly along a circular path.</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Interface2">CORIOLIS FORCE</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Text HowTo">Inertia force equal to the product of the mass of a particle and the negative of its Coriolis component of acceleration.</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Interface2">GRAVITATIONAL FORCE</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Text HowTo">Force equal to the product of the mass of a particle and the Gravitational Acceleration on Earth - taken as 9.806m/s/s.</para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading3_atocs_" style="text-indent:-36px; margin-left:36px;"><image src="tog_plus.gif" scale="100.00%" figurelistinclude="0"></image><tab /><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" src-collapsed="tog_plus.gif" src-expanded="tog_minus.gif"><caption><![CDATA[Acceleration Definitions:]]></caption></toggle></para>
+    <para styleclass="Body Text HowTo">We calculate for you those Forces that result from these Accelerations :</para>
+    <para styleclass="Body Text HowTo"><table styleclass="PopupTable2" rowcount="10" colcount="1" style="head-row-background-color:#c0c0c0; alt-row-background-color:#c0c0c0;">
+      <thead style="vertical-align:top">
+        <td>
+          <para styleclass="Interface2">CORIOLIS ACCELERATION</para>
+        </td>
+      </thead>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Text HowTo">Component of the absolute acceleration of a point due to its velocity relative to a rotating frame of reference. It equals twice the vector product of the angular velocity of the moving frame of reference and the relative velocity of the given moving point.</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Interface2">CENTRIPETAL ACCELERATION</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Text HowTo">Acceleration of a point towards the center of curvature of its path as it moves along a fixed curve.</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Interface2">TANGENTIAL ACCELERATION</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Text HowTo">Component of acceleration of a point collinear with its velocity.</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Interface2">NORMAL ACCELERATION</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Text HowTo">Component of acceleration of a point normal to its velocity.</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Interface2">ANGULAR ACCELERATION</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Text HowTo">Rate of change of angular velocity with respect to time.</para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Normal"><line style="height:1px; color:#343400;" /></para>
+  </body>
+</topic>

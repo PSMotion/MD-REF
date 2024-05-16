@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" modified="2022-03-11T10:06:17.572Z" lasteditedby="Adam" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title translate="true">Motion-Law: Low-Impact Velocity at Crossover</title>
+  <keywords>
+    <keyword translate="true">Cam Law: Polynomial: Low Impact at Cross-over</keyword>
+    <keyword translate="true">Motion-Law:<keyword translate="true">Polynomial: Low Impact at Cross-over</keyword></keyword>
+  </keywords>
+  <body>
+    <header>
+      <para styleclass="Heading1"><text styleclass="Heading1" translate="true">Polynomial: Low Impact Crossover Motion-Law</text></para>
+    </header>
+    <para styleclass="Heading3 Underline_atocs_"><text styleclass="Heading3 Underline_atocs_" translate="true">Polynomial : Low Impact at Crossover.</text></para>
+    <para styleclass="Body Text"><table styleclass="AStandard" rowcount="2" colcount="2">
+      <tr style="vertical-align:top">
+        <td colspan="2">
+          <para styleclass="Body Text"><text styleclass="Body Text" style="font-style:italic;" translate="true">Low Impact at Crossover</text><text styleclass="Body Text" translate="true"> is </text><text styleclass="Body Text" style="font-style:italic; text-decoration:underline;" translate="true">Not</text><text styleclass="Body Text" translate="true"> available in the </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MT-Motion-Law-Selector" styleclass="Body Text" translate="true">Motion-Law Selector</link></para>
+          <para styleclass="Body Text"><text styleclass="Body Text" translate="true">See </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MT-Cross-Over" styleclass="Body Text" translate="true">Crossover</link><text styleclass="Body Text" translate="true">.</text></para>
+          <para styleclass="Body Text"><text styleclass="Body Text" translate="true">The </text><text styleclass="Body Text" style="text-decoration:underline;" translate="true">Default Polynomial Low Impact Crossover Motion-Law</text><text styleclass="Body Text" translate="true"> is made with </text><text styleclass="Body Text" style="text-decoration:underline;" translate="true">two Flexible-Polynomial Segments</text><text styleclass="Body Text" translate="true">.</text></para>
+          <para styleclass="Body Text HowTo"><text styleclass="Body Text HowTo" style="text-decoration:underline;" translate="true">Start</text><text styleclass="Body Text HowTo" translate="true">: Segment 1 @ Start</text></para>
+          <list id="0" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted"><text styleclass="HowTo Bulleted" translate="true">Position 1</text></li>
+            <li styleclass="HowTo Bulleted"><text styleclass="HowTo Bulleted" translate="true">Zero Velocity</text></li>
+            <li styleclass="HowTo Bulleted"><text styleclass="HowTo Bulleted" translate="true">Zero Acceleration</text></li>
+            <li styleclass="HowTo Bulleted"><text styleclass="HowTo Bulleted" translate="true">Jerk = Specified = 80*P.</text></li>
+          </list>
+          <para styleclass="HowTo Bulleted"><text styleclass="HowTo Bulleted" style="text-decoration:underline;" translate="true">Mid-Point</text><text styleclass="HowTo Bulleted" style="font-size:10pt; vertical-align:super;" translate="true">‡</text><text styleclass="HowTo Bulleted" translate="true">: Segment 1 @ End = Segment 2@ Start</text></para>
+          <list id="1" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted"><text styleclass="HowTo Bulleted" translate="true">Position 0.5 = 0.5P</text></li>
+            <li styleclass="HowTo Bulleted"><text styleclass="HowTo Bulleted" translate="true">Maximum unspecified* Velocity (1.666&apos;P) </text></li>
+            <li styleclass="HowTo Bulleted"><text styleclass="HowTo Bulleted" translate="true">Zero Acceleration</text></li>
+            <li styleclass="HowTo Bulleted"><text styleclass="HowTo Bulleted" translate="true">Unspecified Jerk (Becomes Zero)</text></li>
+          </list>
+          <para styleclass="Body Text HowTo"><text styleclass="Body Text HowTo" style="text-decoration:underline;" translate="true">End</text><text styleclass="Body Text HowTo" translate="true">: Segment 2 @ End = Segment 1 @ Start</text></para>
+          <list id="0" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted"><text styleclass="HowTo Bulleted" translate="true">Position 2 = P</text></li>
+            <li styleclass="HowTo Bulleted"><text styleclass="HowTo Bulleted" translate="true">Zero Velocity </text></li>
+            <li styleclass="HowTo Bulleted"><text styleclass="HowTo Bulleted" translate="true">Zero Acceleration</text></li>
+            <li styleclass="HowTo Bulleted"><text styleclass="HowTo Bulleted" translate="true">Jerk = Specified = 80*P</text></li>
+          </list>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="Body Text"><text styleclass="Body Text" style="text-decoration:none;" translate="true">* Unspecified (default)</text><text styleclass="Body Text" translate="true">. You may choose to specify these values.</text></para>
+          <para styleclass="Body Text"><text styleclass="HowTo Bulleted" style="font-size:10pt; text-decoration:none; vertical-align:super;" translate="true">‡ </text><text styleclass="Body Text" style="text-decoration:none;" translate="true">Mid-Point (default). </text><text styleclass="Body Text" translate="true">You can make this law asymmetrical, if you move the X-axis value.</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="vertical-align:top; width:94px; height:43px;">
+          <para styleclass="Normal"><image src="MT-CamLaw- 2Segment-LowImpact at Crossover.bmp" scale="100.00%" styleclass="Normal" figurelistinclude="0"></image></para>
+        </td>
+        <td style="height:21px;">
+          <para styleclass="Heading3_atocs_"><text styleclass="Heading3_atocs_" translate="true">Application Notes</text></para>
+          <para styleclass="Body Text"><text styleclass="Body Text" translate="true">Cross-Over Jerk is Zero. Thus it is good motion-law where there is backlash. It is especially useful for those high-speed mechanisms where a moderate amount of backlash cannot be avoided.</text></para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="Body Text"><link displaytype="text" defaultstyle="true" type="topiclink" href="MT-Motion-Law-Coefficients" styleclass="Body Text" translate="true">Motion Coefficients</link></para>
+          <para styleclass="HowTo Bulleted"><text styleclass="HowTo Bulleted" translate="true">Cv = 1.667</text></para>
+          <para styleclass="HowTo Bulleted"><text styleclass="HowTo Bulleted" translate="true">Ca = 5.926</text></para>
+          <para styleclass="HowTo Bulleted"><text styleclass="HowTo Bulleted" translate="true">Cj = 80, -26.667</text></para>
+          <para styleclass="HowTo Bulleted"><text styleclass="HowTo Bulleted" translate="true">Cj at </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MT-Cross-Over" styleclass="HowTo Bulleted" translate="true">Crossover</link><text styleclass="HowTo Bulleted" translate="true"> = 0.0</text></para>
+        </td>
+      </tr>
+    </table></para>
+  </body>
+</topic>

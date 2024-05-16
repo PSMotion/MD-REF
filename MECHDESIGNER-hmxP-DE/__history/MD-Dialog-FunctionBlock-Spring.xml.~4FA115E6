@@ -1,0 +1,185 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" status="Under Construction" modified="2022-06-22T13:07:03.910+01:00" lasteditedby="Adam" version="2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title>Dialog: Funktions-Block: Feder</title>
+  <meta name="DESCRIPTION" translate="true" value="A versatile Spring - with parameters for Free-Length, Spring-Rate, Constant Force, Constant Coulomb Force, Damping and Damping-Rate." />
+  <keywords>
+    <keyword>Dialog<keyword>Function-Block : Linear Motor</keyword><keyword>Function-Block : Spring Force</keyword></keyword>
+    <keyword>Spring / Linear Motor</keyword>
+    <keyword>Spring dialog<keyword>Constant Force</keyword><keyword>Drag Force</keyword><keyword>Enable Spring</keyword><keyword>Free Length</keyword><keyword>Friction Force</keyword><keyword>Spring Force Parameters</keyword><keyword>Spring Rate</keyword><keyword>Viscous Force</keyword></keyword>
+  </keywords>
+  <body>
+    <header>
+      <para styleclass="Heading1">Dialog: Funktions-Block: Feder</para>
+    </header>
+    <para styleclass="Heading2">Feder FB</para>
+    <para styleclass="SeeAlso">Siehe <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Command-Forces-FB-Spring">Feder hinzufügen FB</link></para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="Body Text HowTo">Verwenden Sie eine <text styleclass="Element">Feder FB</text>, um eine Kraft zwischen zwei <text styleclass="Element">Punkten</text> zu erzeugen <text styleclass="Element">.</text> Der Name, den wir für die beiden <text styleclass="Element">Punkte</text> verwenden, ist <text styleclass="Interface">Ankerpunkte</text><text styleclass="Element">.</text></para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="SeeAlso">Siehe auch: </para>
+    <para styleclass="Body Text HowTo"><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-Machine-Settings" anchor="Dialog_McSettings-SpecifyUnits">Maschineneinstellungen &gt; Technische Einheiten</link></para>
+    <para styleclass="Body Text HowTo"><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-ConfigurePowerSource">Stromquelle konfigurieren</link></para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="Heading3_atocs_" style="text-indent:-18px; margin-left:18px;">Öffnen Sie das Dialogfeld Spring FB</para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="2" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:40px; border-right:none;">
+          <para styleclass="Normal" style="text-align:right;"><image src="MD-GA-Spring-Edit.png" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td style="border-left:none;">
+          <para styleclass="Body Text HowTo"><table styleclass="PopupTable2" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td style="border-top:none; border-right:none; border-bottom:none;">
+                <list id="0" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="B Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="B Bullets"><text styleclass="HowTo Numbered" style="font-style:normal;">Doppelklick auf</text><text styleclass="HowTo Numbered"> die </text><text styleclass="Element">Feder-FB</text><text styleclass="HowTo Numbered"> im </text><text styleclass="Interface">Grafikbereich</text><text styleclass="VariableName">&#32;</text></li>
+                </list>
+                <para styleclass="Body Text"><text style="font-family:Arial; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">- oder -</text></para>
+                <list id="1" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="B Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="B Bullets"><text styleclass="SeeAlso">Siehe </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-How-to-Open-a-Dialog-Box" styleclass="SeeAlso">Wie öffne ich ein Dialogfeld</link>?<text styleclass="VariableName">&#32;</text></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Body Table">The <text styleclass="Element">Spring dialog-box</text> is now open.</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td colspan="2" style="border-right:none;">
+          <para styleclass="Notes">Hinweis: <text styleclass="Body Text">&#32;</text><text styleclass="Body Text HowTo">Es ist </text><text styleclass="VariableName-IT" style="color:#ff0000;">nicht</text><text styleclass="Body Text HowTo"> notwendig, einen Draht an den </text><text styleclass="Body Text">Eingangs- oder Ausgangsanschluss der </text><text styleclass="Element">Feder-FB</text><text styleclass="Body Text HowTo"> anzuschließen . &#160;Die Eingangs- und Ausgangsbuchsen bieten zusätzliche Funktionen - siehe </text><link displaytype="text" defaultstyle="true" type="topiclink" href="" anchor="SpringFBInput-Connector" styleclass="Body Text HowTo">hier</link></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="Heading3_atocs_">Feder-Dialogfeld</para>
+    <para styleclass="Body Text"><image src="MD-Dialog-SpringFB.ipp" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+    <para styleclass="Separator-Header"><anchor id="SpringFB-Parameters"><keywords><keyword>Spring FB<keyword>Spring Parameters</keyword></keyword></keywords></anchor>Frühlings parameter </para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="2" colcount="1">
+      <tr style="vertical-align:top">
+        <td style="border-top:none; border-right:none; border-bottom:none;">
+          <para styleclass="Normal"><image src="MD-Dialog-SpringFB-SpringParameters.ipp" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="border-top:none; border-right:none; border-bottom:none;">
+          <list id="2" type="ul" listtype="bullet" formatstring="&#254;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Body Table" style="font-family:Wingdings; font-size:10pt; color:#800000;">
+            <li styleclass="Body Table"> Aktivieren Sie den <text styleclass="Element">Frühlings-FB</text></li>
+          </list>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="Body Table"><text styleclass="Parameter-Header">feder-rate:</text>&#32;</para>
+          <para styleclass="Body Text HowTo"><table styleclass="PopupTable2" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="VariableName">Kraft:</para>
+                <para styleclass="Body Text HowTo">= <text styleclass="Parameter-Header">federrate</text><text styleclass="VariableName"> × </text><equation styleclass="VariableName" font-family="Cambria Math" font-size="28"><![CDATA[abs]]></equation><text styleclass="VariableName">&#32;</text><text styleclass="VariableName" style="font-size:16pt;">|</text><text styleclass="VariableName">&#32;</text><text styleclass="Parameter">Feder-Länge</text><text styleclass="VariableName"> – </text><text styleclass="Parameter">Freie Länge </text><text styleclass="Parameter" style="font-size:16pt;">|</text></para>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Body Table">Die <text styleclass="Parameter">Federlänge</text> ist der Abstand zwischen den beiden Ankerpunkten. </para>
+          <para styleclass="Body Table">Die Kraft ist <text styleclass="VariableName" style="color:#ff0000;">immer</text> die Richtung, die den Ankerpunkt auf die <text styleclass="Parameter">freie Länge</text> zurückbringen würde (das können sie natürlich nicht).</para>
+          <para styleclass="Body Table"><text styleclass="Parameter-Header">FreieLänge:</text></para>
+          <para styleclass="Body Text HowTo"><table styleclass="PopupTable2" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Body Table">Die natürliche Länge der <text styleclass="VariableName">Feder</text>, wenn sie nicht mit den <text styleclass="Element">Verankerungspunkten</text> verbunden ist. </para>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="Body Table"><text styleclass="Parameter-Header">Konstante Kraft:</text>&#32;</para>
+          <para styleclass="Body Text HowTo"><table styleclass="PopupTable2" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Body Table">Eine positive Kraft <text styleclass="VariableName" style="color:#ff0000;">zieht</text> die <text styleclass="Element">Ankerpunkte</text> zusammen <text style="font-weight:bold;">( o&gt;&gt;&gt; + &lt;&lt;&lt;o )</text></para>
+                <para styleclass="Body Table">Eine negative Kraft <text styleclass="VariableName" style="color:#ff0000;">schiebt</text> die <text styleclass="Element">Ankerpunkte</text> auseinander<text style="font-weight:bold;"> (o&lt;&lt;&lt; - &gt;&gt;&gt;o)</text></para>
+              </td>
+            </tr>
+          </table></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Separator-Header"><anchor id="SpringFB-Velocity"><keywords><keyword>Spring FB<keyword>Velocity Parameters</keyword></keyword></keywords></anchor>Velocity Parameters </para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="2" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Normal"><image src="MD-Dialog-SpringFB-VelocityParameters.ipp" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Table"><text styleclass="Parameter-Header">Coulomb-Reibungskraft: </text><text styleclass="VariableName">(F</text><text styleclass="VariableName" style="font-size:10pt; vertical-align:baseline;">f</text><text styleclass="VariableName"> = μ.F</text><text styleclass="VariableName" style="font-size:10pt; vertical-align:baseline;">n</text><text styleclass="VariableName"> )</text></para>
+          <para styleclass="Body Text HowTo"><table styleclass="PopupTable2" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Body Table"><text styleclass="HowTo Bulleted">Eine </text><text styleclass="Interface">konstante Kraft</text><text styleclass="HowTo Bulleted">, die der Richtung der Bewegung entgegengesetzt ist.</text></para>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Body Table">Dieser Parameter ist <text styleclass="VariableName-IT">ähnlich</text> wie eine <text styleclass="VariableName">Reibungskraft</text> zu verstehen. Es handelt sich jedoch <text styleclass="VariableName" style="color:#ff0000;">nicht</text> um eine &#160;Reibungskraft, da der &#160;Parameter <text styleclass="Parameter-Header">Coulombsche Reibungskraft </text><text styleclass="VariableName" style="color:#ff0000;">keine</text> Funktion der Normalkraft ist .</para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="Body Table"><text styleclass="Parameter-Header">Viscous Coefficient: </text><text styleclass="VariableName">(F</text><text styleclass="VariableName" style="font-size:10pt; vertical-align:baseline;">v</text><text styleclass="VariableName"> α V ( N/(mm/s) )</text></para>
+          <para styleclass="Body Text HowTo"><table styleclass="PopupTable2" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Body Table">Eine <text styleclass="VariableName">Kraft</text>, die proportional zur relativen Geschwindigkeit zwischen den <text styleclass="Element">Punkten</text> ist.</para>
+                <para styleclass="Body Table">Die Kraft ist der Bewegungsrichtung entgegengesetzt.</para>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Body Table">Wenn z<text styleclass="VariableName">.B </text>. der <text styleclass="Parameter">Dämpfungskoeffizient = 4</text> und die <text styleclass="Interface">Geschwindigkeit +100mm/s ist</text>(Ankerpunkte bewegen sich voneinander weg), ist die Kraft, die die Punkte zusammenzieht, eine Kraft von 400N.</para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="Body Table"><text styleclass="Parameter-Header">Widerstandsfaktor: </text><text styleclass="VariableName">(F</text><text styleclass="VariableName" style="font-size:10pt; vertical-align:baseline;">d</text><text styleclass="VariableName"> α V2) ( N/((mm/s)</text><text styleclass="VariableName" style="font-size:7pt; vertical-align:super;">2</text><text styleclass="VariableName"> ) )</text></para>
+          <para styleclass="Body Text HowTo"><table styleclass="PopupTable2" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Body Table">A Force that is proportional to square of the relative velocity between the <text styleclass="Element">Points</text>. For example, air resistance.</para>
+                <para styleclass="Body Table">Die Kraft ist der Bewegungsrichtung entgegengesetzt.</para>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Body Table">Wenn z<text styleclass="VariableName">.</text> B. der <text styleclass="Parameter">Widerstandsfaktor = 4</text> und die <text styleclass="Interface">Geschwindigkeit = +100mm/s</text> (die Ankerpunkte bewegen sich auseinander), dann ist die Kraft, die die Ankerpunkte zusammenzieht, eine Kraft von 40000N.</para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="Heading4 Toggle_atocs_"><anchor id="SpringFBInput-Connector"><keywords><keyword>Spring FB<keyword>Input-Connector Data</keyword><keyword>Output-Connector Data</keyword></keyword></keywords></anchor>Input-Connector and Output-Connectors</para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="Body Text" style="text-indent:-32px; margin-left:33px;"><table styleclass="Default" rowcount="1" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Interface"><text style="font-size:11pt;">Eingangsanschluss</text></para>
+          <para styleclass="Body Text">Schließen Sie einen Draht an den Eingangsanschluss an, um eine Kraftfunktion zwischen den <text styleclass="Interface">Verankerungspunkten</text>&#32;<text styleclass="Element">der Feder</text> hinzuzufügen. </para>
+          <para styleclass="Body Text">Die Einheiten der Daten am Eingangsanschluss <text styleclass="VariableName">müssen</text>&#32;<text styleclass="VariableName">Newton</text> sein. Verwenden Sie einen <text styleclass="Element">Mathematik-FB</text>, um den Datentyp des Datentyps <text styleclass="VariableName">Bewegung</text> in den Datentyp <text styleclass="VariableName">Kraft</text> zu konvertieren.</para>
+          <para styleclass="Body Text">Zum Beispiel könnte die Funktion als eine Bewegung konzipiert sein. In diesem Fall müssten Sie den Ausgang eines <text styleclass="Element">Bewegungs-FBs</text>, der Einheiten von <text styleclass="VariableName">mm</text> oder <text styleclass="VariableName">Grad</text> hat, mit einem <text styleclass="Element">Mathematik-FB</text> verbinden, um die Einheiten in <text styleclass="VariableName">Newton</text> umzuwandeln. Und dann verbinden Sie den Ausgang mit dem <text styleclass="Element">Feder-FB</text></para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="Notes">Anmerkung 1: </para>
+          <para styleclass="Body Text HowTo"><text styleclass="VariableName" style="color:#ff0000;">Einheiten innerhalb des </text><text styleclass="Element">mathematischen FBs</text><text styleclass="VariableName" style="color:#ff0000;"> werden zu SI-Einheiten. </text>Um <text styleclass="VariableName">100mm</text> am Eingang eines <text styleclass="Element">mathematischen FBs</text> in <text styleclass="VariableName">100N</text> umzuwandeln, müssen Sie:</para>
+          <list id="3" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="VariableName-indent" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="VariableName-indent"><text styleclass="VariableName">Change the Output Data Type to Force (N)</text></li>
+          </list>
+          <para styleclass="VariableName-indent">AND</para>
+          <list id="3" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="VariableName-indent" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="VariableName-indent">Multiply the input-value by 1000 to convert 0.1m to 100N</li>
+          </list>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="Interface"><text style="font-size:11pt;">TOP-Ausgangsbuchse</text></para>
+          <para styleclass="Body Text HowTo">Dimension, Geschwindigkeit und Beschleunigung bezogen auf den Abstand zwischen den <text styleclass="Interface">Ankerpunkten</text> der Feder.</para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="Interface"><text style="font-size:11pt;">Unterer Ausgangsanschluss</text></para>
+          <para styleclass="Body Text HowTo"><text styleclass="VariableName">Angewandte Gesamtkraft</text> zwischen den <text styleclass="Interface">Verankerungspunkten</text> der Feder. </para>
+          <list id="4" type="ul" listtype="bullet" formatstring="&#183;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullets" style="font-family:Arial; font-size:11pt; color:#000000;">
+            <list id="4" level="1" type="ul" listtype="bullet" formatstring="&#111;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullets" style="font-family:&apos;Courier New&apos;; font-size:11pt; color:#000000;">
+              <li styleclass="Bullets">Angewandte Gesamtkraft = Kraft am Eingangsanschluss + Kraft, die sich aus den <text styleclass="Parameter-Header">Parametern</text><text styleclass="Interface">&#32;</text>ergibt, wie im <text styleclass="Element">Dialogfeld Feder FB</text>eingestellt </li>
+            </list>
+          </list>
+          <para styleclass="HowTo Bulleted">oder</para>
+          <list id="5" type="ul" listtype="bullet" formatstring="&#183;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullets" style="font-family:Arial; font-size:11pt; color:#003300;">
+            <list id="5" level="1" type="ul" listtype="bullet" formatstring="&#111;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullets" style="font-family:&apos;Courier New&apos;; font-size:11pt; color:#003300;">
+              <li styleclass="Bullets">Antriebskraft = Lineare Antriebskraft<text styleclass="HowTo Bulleted">, wenn Sie die </text><text styleclass="Element">Feder-FB</text><text styleclass="HowTo Bulleted"> als </text><text styleclass="Interface">Linearmotor</text><text styleclass="HowTo Bulleted"> konfigurieren - </text><text styleclass="T_Menu">siehe </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-ConfigurePowerSource" styleclass="T_Menu">Energiequelle konfigurieren</link></li>
+            </list>
+          </list>
+        </td>
+      </tr>
+    </table></para>
+  </body>
+</topic>

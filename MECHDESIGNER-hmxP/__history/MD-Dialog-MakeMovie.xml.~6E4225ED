@@ -1,0 +1,192 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" status="Under Construction" modified="2023-10-16T20:52:47.048+01:00" lasteditedby="44785" version="2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title>Dialog: Movie</title>
+  <keywords>
+    <keyword>Dialog<keyword>Make Movie</keyword></keyword>
+  </keywords>
+  <body>
+    <header>
+      <para styleclass="Heading1">Dialog: Movie</para>
+    </header>
+    <para styleclass="Heading2" style="page-break-before:always;">Movie</para>
+    <para styleclass="Body Text">When you continuously-cycle a model in <text styleclass="VariableName">MechDesigner</text>, commercial video-recording software may not record each step in a machine-cycle. Also, it is difficult to record exactly one machine-cycle. <text styleclass="T_Menu">Make-Movie</text> solves these problems.</para>
+    <para styleclass="VariableName"><anchor id="Dialog-MakeMovieFileTypes"><keywords><keyword>Make Movie dialog<keyword>File-types</keyword></keyword></keywords></anchor>Movie and File-Types</para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="2" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Text"><text styleclass="T_Menu">Use File menu &gt; Movie</text> to: </para>
+          <list id="0" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted">record and save a movie as a <text styleclass="VariableName">GIF</text><text styleclass="Body Text"> file-type</text></li>
+          </list>
+          <para styleclass="Interface2">or</para>
+          <list id="1" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted">record and save a sequence of images as <text styleclass="VariableName">JPEG</text>, <text styleclass="VariableName">JPG</text>, <text styleclass="VariableName">PNG</text>, and <text styleclass="VariableName">BMP</text> file-types</li>
+          </list>
+          <para styleclass="Body Text Howindent4bullets">We append a number to each image. The numbers are 000, 001, 002, ... Number-of-Frames</para>
+          <para styleclass="Interface2">or</para>
+          <list id="2" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted">save one image - a snapshot of the model.</li>
+          </list>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Notes">Note:</para>
+          <para styleclass="Body Text HowTo">The <text styleclass="VariableName">GIF</text> file-type produces a large file when the movie&apos;s frame-size and/or the number-of-frames is large.</para>
+          <para styleclass="VariableName">Top-Tip: </para>
+          <para styleclass="Body Text HowTo">Do not append the file-name with a number.</para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading3_atocs_">Movie dialog</para>
+    <para styleclass="Body Text"><table styleclass="Default" rowcount="1" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:245px;">
+          <para styleclass="Normal"><image src="MD-Dialog-MakeMovie.png" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"><caption><![CDATA[Make-Movie dialog]]></caption></image></para>
+        </td>
+        <td>
+          <para styleclass="Separator-Header"><text styleclass="Body Text">You should see a rectangle in the graphic-area. You will record everything inside the rectangle. </text></para>
+          <para styleclass="Separator-Header"><text styleclass="Body Text">The rectangle is the </text><text styleclass="Parameter-Header" style="font-family:Arial; font-size:10pt; font-weight:normal; font-style:normal; text-decoration:none; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">Frame</text><text styleclass="Body Text">. </text></para>
+          <para styleclass="Separator-Header"><text styleclass="Body Text">Usually, edit the size and position of the </text><text styleclass="Parameter-Header" style="font-family:Arial; font-size:10pt; font-weight:normal; font-style:normal; text-decoration:none; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">Frame</text><text styleclass="Body Text">.</text></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Body Text HowTo"><anchor id="MakeMoviedialogr10-Filenames" styleclass="Separator-Header"><keywords><keyword>Make Movie dialog<keyword>Frame Size</keyword><keyword>Frame Position</keyword></keyword></keywords></anchor><image src="tog_plus.gif" scale="100.00%" styleclass="Separator-Header" figurelistinclude="0"></image><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" src-collapsed="tog_plus.gif" src-expanded="tog_minus.gif" styleclass="Separator-Header"><caption><![CDATA[ Frame Size and Position ]]></caption></toggle></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="1" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:245px;">
+          <para styleclass="Image Caption"><image src="MD-Dialog-MakeMovie-FrameSizePosition.png" scale="-99.90%" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="Body Text"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <list id="3" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="Bullets">Use the <text styleclass="Parameter">Pre-select a Frame Size</text>... drop-down list-box to select a typical frame size.<text styleclass="VariableName">&#32;</text></li>
+                </list>
+                <para styleclass="VariableName">OR </para>
+                <list id="4" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="Bullets">Edit <text styleclass="Parameter">Width</text> and <text styleclass="Parameter">Height</text> to the frame.<text styleclass="VariableName">&#32;</text></li>
+                </list>
+                <list id="5" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="2" styleclass="Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="Bullets">Edit the <text styleclass="Parameter">Left</text> and <text styleclass="Parameter">Top</text><text styleclass="Parameter-Header" style="font-family:Arial; font-size:10pt; font-weight:normal; font-style:normal; text-decoration:none; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">&#32;</text>of the <text style="font-weight:normal;">frame</text><text styleclass="VariableName">. </text></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Body Text"><text styleclass="Normal">The rectangle in the graphic-area should now be where you want to record.</text></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Body Text HowTo"><anchor id="MakeMovie-framesize" styleclass="Heading4 Toggle_atocs_2"><keywords><keyword>Make Movie dialog<keyword>Movie File-name</keyword><keyword>Movie File-type</keyword></keyword></keywords></anchor><image src="tog_plus.gif" scale="100.00%" styleclass="Separator-Header" figurelistinclude="0"></image><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" src-collapsed="tog_plus.gif" src-expanded="tog_minus.gif" styleclass="Separator-Header"><caption><![CDATA[ File-name and File-type ]]></caption></toggle></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="2" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:245px;">
+          <para styleclass="Image Caption"><image src="MD-Dialog-MakeMovie-FilenameFiletype.png" scale="-99.90%" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="Body Text"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <list id="6" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullets" style="font-family:&apos;Segoe UI&apos;; font-size:11pt; color:#000000;">
+                  <li styleclass="Bullets">Click the <text styleclass="Parameter">File-name</text><text styleclass="HowTo Bulleted"> and</text><text styleclass="Parameter"> file-type</text><text styleclass="Parameter-Header" style="font-family:Arial; font-size:10pt; font-weight:normal; font-style:normal; text-decoration:none; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">.</text><text styleclass="HowTo Bulleted">.. button</text><image src="Red-14-3.gif" scale="100.00%" styleclass="HowTo Bulleted" figurelistinclude="0"></image><text styleclass="HowTo Bulleted"> (at the bottom of this separator) </text></li>
+                </list>
+                <para styleclass="Body Text">In the <text styleclass="VariableName-IT" style="font-style:normal;">Windows® Save as</text> dialog:</para>
+                <list id="6" level="1" type="ol" listtype="lower-alpha" formatstring="&#37;&#49;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullets" style="font-family:&apos;Segoe UI&apos;; font-size:11pt; color:#000000;">
+                  <li styleclass="Bullets"><text styleclass="HowTo Bulleted">Browse to a </text><text styleclass="VariableName-IT" style="font-style:normal;">File-path</text><text styleclass="HowTo Bulleted"> and enter a </text><text styleclass="VariableName-IT" style="font-style:normal;">File-name</text></li>
+                  <li styleclass="Bullets"><text styleclass="HowTo Bulleted">Use the </text><text styleclass="VariableName-IT" style="font-style:normal;">Save as type</text><text styleclass="HowTo Bulleted"> list-box to select a file-type.</text></li>
+                  <li styleclass="Bullets"><text styleclass="HowTo Bulleted">Click the </text><text styleclass="VariableName">Save</text><text styleclass="HowTo Bulleted"> button</text></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Body Text">Important: read <link displaytype="text" defaultstyle="true" type="topiclink" href="" anchor="Dialog-MakeMovieFileTypes">Movie and File-type</link></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td colspan="2">
+          <para styleclass="Body Text">The <text styleclass="Parameter-Header" style="font-family:Arial; font-size:10pt; font-weight:normal; font-style:normal; text-decoration:none; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">File-path</text> and <text styleclass="Parameter-Header" style="font-family:Arial; font-size:10pt; font-weight:normal; font-style:normal; text-decoration:none; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">File-name</text> are now in boxes<image src="Red-14-1.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><image src="Red-14-2.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image>.</para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Body Text HowTo"><anchor id="MakeMovie-MakeMovie" styleclass="Heading4 Toggle_atocs_2"><keywords><keyword>Make Movie dialog<keyword>Number of Frames</keyword><keyword>Number of Images</keyword><keyword>Start-Angle</keyword><keyword>End-Angle</keyword><keyword>Include Last Frame?</keyword><keyword>Movie or Single-Shot</keyword></keyword></keywords></anchor><image src="tog_plus.gif" scale="100.00%" styleclass="Separator-Header" figurelistinclude="0"></image><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" src-collapsed="tog_plus.gif" src-expanded="tog_minus.gif" styleclass="Separator-Header"><caption><![CDATA[ Make Movie... ]]></caption></toggle></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="2" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:243px;">
+          <para styleclass="Image Caption"><image src="MD-Dialog-Movie-MakeMove.png" scale="-99.90%" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="Body Text"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <list id="7" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="Bullets"><text style="font-style:normal;">Edit the </text><text styleclass="Parameter">Number-of-Frames</text> box (Default = 30 Frames, Minimum=<text style="font-weight:normal;">5 ; Maximum=10000)</text><text styleclass="VariableName">&#32;</text></li>
+                  <li styleclass="HowTo Numbered"><text style="font-style:normal;">Edit the </text><text styleclass="Parameter">Start-Angle</text> ( Default = 0 ; &#160;Minimum &gt; 0, Maximum ≤ Machine End-Angle )</li>
+                  <li styleclass="HowTo Numbered"><text style="font-style:normal;">Edit the </text><text styleclass="Parameter">End-Angle</text> ( Default = 360 ; 720 ≥ Maximum &gt; Minimum) </li>
+                  <li styleclass="HowTo Numbered">Select </li>
+                </list>
+                <list id="8" type="ul" listtype="bullet" formatstring="&#111;" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:&apos;Courier New&apos;; font-size:11pt; color:#000000;">
+                  <li styleclass="HowTo Bulleted"><text styleclass="Parameter">Include Last Frame</text><text styleclass="Body Text"> , or</text></li>
+                  <li styleclass="HowTo Bulleted"><text styleclass="Parameter">Exclude Last Frame</text></li>
+                </list>
+                <para styleclass="Body Text">Experiment! View the movie in your Video Player to see if there is a stutter at the end of the movie.</para>
+              </td>
+            </tr>
+          </table></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td colspan="2">
+          <para styleclass="Body Text"><text styleclass="ParameterHeader">Make Movie</text><text styleclass="Parameter-Header" style="font-family:Arial; font-size:10pt; font-weight:normal; font-style:normal; text-decoration:none; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">&#32;</text><text styleclass="VariableName">button</text></para>
+          <para styleclass="Body Text"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <list id="9" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="5" styleclass="Bullets" style="font-family:&apos;Segoe UI&apos;; font-size:11pt; color:#000000;">
+                  <li styleclass="Bullets"><text styleclass="Body Text">Click the</text><text styleclass="Body Text" style="font-size:7pt; vertical-align:sub;">&#32;</text><link displaytype="button" type="topiclink" href="" anchor="MakeMovie-MakeMovie">Make Movie</link><text styleclass="VariableName" style="font-size:7pt; vertical-align:sub;">&#32;</text><text styleclass="Body Text">button</text></li>
+                </list>
+                <para styleclass="Body Text">When you click the <link displaytype="button" type="topiclink" href="" anchor="MakeMovie-MakeMovie">Make Movie</link> button: </para>
+                <list id="10" type="ol" listtype="lower-alpha" formatstring="&#37;&#48;&#58;&#115;&#41;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="HowTo Bulleted">We move the model to the <text styleclass="Parameter">Start-Angle</text>.<text styleclass="VariableName">&#32;</text></li>
+                  <li styleclass="HowTo Bulleted">We compile the movie (GIF file-type), or save the images (PNG, JPG, BMP file-types), at equal increments of the machine-angle, from the <text styleclass="Parameter">Start-Angle</text> to the <text styleclass="Parameter">End-Angle</text>.</li>
+                </list>
+                <para styleclass="Body Text HowTo">Please <text styleclass="Interface2">wait</text> while we save for you the file(s) to your PC / Laptop.</para>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Interface2">OR</para>
+          <para styleclass="T_Menu"><text styleclass="ParameterHeader">Single Shot</text>&#32;<text styleclass="VariableName">button</text></para>
+          <para styleclass="Element"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <list id="11" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="5" styleclass="Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="Bullets"><text styleclass="Body Text"> Click the</text><text styleclass="Body Text" style="font-size:7pt; vertical-align:sub;">&#32;</text><link displaytype="button" type="topiclink" href="" anchor="MakeMovie-MakeMovie">Single Shot</link><text styleclass="T_Menu">&#32;</text><text styleclass="Body Text">button</text><text styleclass="VariableName">&#32;</text></li>
+                </list>
+                <para styleclass="Body Text">When you click the <link displaytype="button" type="topiclink" href="" anchor="MakeMovie-MakeMovie">Single Shot</link><text styleclass="Bullets"> button, we save for you a </text><text styleclass="Parameter">Single Snapshot</text><text styleclass="Bullets"> of the model at the active </text><text styleclass="VariableName">Master-Machine Angle</text><text styleclass="Bullets">.</text></para>
+              </td>
+            </tr>
+          </table></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="Heading4 Toggle_atocs_">To compile the images as a movie.</para>
+    <para styleclass="Body Text HowTo">To compile <text styleclass="VariableName">PNG</text> images as a movie, <text styleclass="HowTo Bulleted">I use </text><text styleclass="VariableName">Avidemux 2.6</text><text styleclass="HowTo Bulleted"> - a free tool that you can download from the internet. My lawyer tells me I cannot recommend it.</text></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="1" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Bullets">In <text styleclass="VariableName">Avidemux 2.6</text><text styleclass="Interface">:</text></para>
+          <list id="12" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="Bullets">Open the first image in the sequence of images - for example, <text styleclass="Interface">Hinge-A000.png</text><text styleclass="VariableName">&#32;</text></li>
+          </list>
+          <para styleclass="Body Text">Open the first image only. <text styleclass="Interface">Avidemux2.6</text> automatically imports the other images in the numbered sequence.</para>
+          <list id="13" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="2" styleclass="Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="Bullets">Save the movie with the <text styleclass="VariableName">MP4</text> movie format.<text styleclass="VariableName">&#32;</text></li>
+          </list>
+          <para styleclass="Body Text">Save the Movie file with the same frame-size as the recorded images.</para>
+          <para styleclass="Body Text">MP4<text styleclass="Body Text HowTo">, with the </text>x264 codec<text styleclass="Body Text HowTo">, is the recommended format for </text><text styleclass="VariableName">YouTube®</text><text styleclass="Body Text HowTo">. </text></para>
+        </td>
+      </tr>
+    </table></para>
+  </body>
+</topic>

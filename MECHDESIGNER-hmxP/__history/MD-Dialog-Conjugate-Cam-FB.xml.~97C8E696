@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" modified="2024-01-24T12:00:51.996Z" lasteditedby="44785" version="2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title>Dialog: Conjugate-Cam-FB</title>
+  <meta name="DESCRIPTION" translate="true" value="Select cams that drive the same follower."/>
+  <keywords>
+    <keyword>Conjugate-Cam dialog</keyword>
+    <keyword>Dialog<keyword>Conjugate-Cam FB</keyword></keyword>
+  </keywords>
+  <body>
+    <header>
+      <para styleclass="Heading1">Dialog: Conjugate-Cam-FB</para>
+    </header>
+    <para styleclass="Heading2" style="page-break-before:always;">Conjugate-Cam FB</para>
+    <para styleclass="SeeAlso">See: <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Command-AddConjugateCam-FB">Add Conjugate Cam FB</link>.</para>
+    <para styleclass="Heading4 Toggle_atocs_">What are Conjugate Cams?</para>
+    <para styleclass="Heading4 Toggle_atocs_"><table styleclass="Default" rowcount="1" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:240px;">
+          <para styleclass="Normal"><image src="MD-ConjugateCam.ipp" imagestyleclass="Default" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"><caption>A Conjugate Cam pair</caption></image></para>
+        </td>
+        <td>
+          <para styleclass="Body Text">A typical <text styleclass="VariableName">Conjugate Cam</text> has two Cams that rotate on one axis/shaft. They drive two <text styleclass="VariableName">Follower-Rollers</text> that oscillate or index on a different shaft.</para>
+          <para styleclass="Body Text">In the image to the left, the blue and orange Cams rotate together on one shaft. The blue Cam-Profile is in continuous contact with the blue Follower-Roller, and the Orange Cam-Profile is in continuous contact with the Orange Follower-Roller. </para>
+          <para styleclass="VariableName"></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading4 Toggle_atocs_">Why use a Conjugate Cam FB?</para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="1" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Text">Typically, to do the force and stress analysis of a <text styleclass="Element">2D-Cam</text>, you select one <text styleclass="Element">2D-Cam</text> as the Power Source in the <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Forces-Configure-Power-Source" style="font-weight:normal; font-style:normal;">Configure Power-Source dialog</link><text style="font-weight:normal; font-style:normal;">.</text></para>
+          <para styleclass="Body Text">However, if two <text styleclass="VariableName">Cams</text> (<text styleclass="VariableName">Conjugate Cams</text>) on one kinematic-chain drive two <text styleclass="VariableName">Followers</text>, on a different kinematic-chain, you must add and configure a <text styleclass="Element">Conjugate Cam FB.</text> Then, select the <text styleclass="Element">Conjugate-Cam FB</text> as the <text styleclass="VariableName">Power-Source</text> in the <text styleclass="Element">Configure Power Source dialog</text>  - only then should you do the force and stress analysis.</para>
+          <para styleclass="VariableName"><text styleclass="Interface2">Groove Cams</text> are also conjugate cams. </para>
+          <para styleclass="VariableName">You <text style="color:#ff0000;">cannot</text> use the Inner <text style="color:#ff0000;">and</text> Outer Flanks of <text styleclass="Interface2" style="color:#ff0000;">one</text> <text styleclass="Element-Header">2D-Cam.</text></para>
+          <para styleclass="Body Text">In a machine, a <text styleclass="VariableName">Groove Cam</text> may have one <text styleclass="VariableName">Follower-Roller</text>. However, to do the Force Analysis (Contact-Force, Shear-Stress, Cam Life, and Roller Life), you need to add two coincident <text styleclass="VariableName">Follower-Rollers</text>. and two <text styleclass="Element">2D-Cams</text>. In the <text styleclass="Element">2D-Cam dialogs</text>, select the <text styleclass="VariableName">Inner Cam</text> for one <text styleclass="Element">2D-Cam</text>, and the <text styleclass="VariableName">Outer Cam</text> for the other <text styleclass="Element">2D-Cam</text>. </para>
+          <para styleclass="Body Text">Then add the <text styleclass="Element-Header">Cam-Conjugate FB</text>. </para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading4 Toggle_atocs_"><snippet src="MD-Snippet-2DCamWorkflow" inline="false"/></para>
+    <para styleclass="Heading4 Toggle_atocs_">How to open a Conjugate Cam dialog</para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="1" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:33px;">
+          <para styleclass="Normal" style="text-align:right;"><image src="MD-GA-Double-Click-ConjugateCamFB.png" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="Body Text">To open the <text styleclass="Element">Conjugate-Cam dialog</text><text style="font-weight:normal; font-style:normal;">:</text></para>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <list id="0" type="ol" listtype="decimal" formatstring="%0:s." format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="B Bullets" style="font-family:'Segoe UI Semibold'; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="B Bullets"><text styleclass="HowTo Numbered" style="font-style:normal;">Double-click</text><text styleclass="HowTo Numbered"> the </text><text styleclass="Element">Conjugate-Cam FB</text><text styleclass="VariableName"> </text></li>
+                </list>
+                <para styleclass="VariableName-IT" style="margin-top:0px; margin-bottom:0px;">OR</para>
+                <list id="1" type="ol" listtype="decimal" formatstring="%0:s." format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="B Bullets" style="font-family:'Segoe UI Semibold'; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="B Bullets"><text styleclass="SeeAlso">See </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-How-to-Open-a-Dialog-Box" styleclass="SeeAlso">How to Open a dialog</link><text styleclass="VariableName">  </text></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Body Table">The <text styleclass="Element-Header">Conjugate-Cam dialog</text> is now open.</para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;"/></para>
+    <para styleclass="Heading3_atocs_">Conjugate-Cam dialog</para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="3" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Image Caption"><image src="MD-Dialog-ConjugateCAm-0.png" scale="-99.90%" figurelistinclude="0"><caption>Conjugate-Cam dialog</caption></image></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Text HowTo">In <text styleclass="Body Text">the graphics-area or</text> <text styleclass="Interface">Assembly-Tree:</text></para>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <list id="2" type="ol" listtype="decimal" formatstring="%0:s." format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullets" style="font-family:'Segoe UI Semibold'; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="Bullets">Click a <text styleclass="Element">2D-Cam</text><text styleclass="VariableName"> </text></li>
+                  <li styleclass="Body Table">Click a different <text styleclass="Element">2D-Cam</text><text styleclass="VariableName"> </text></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Image Caption"><image src="MD-Dialog-ConjugateCam-1.png" scale="-99.90%" figurelistinclude="0"></image></para>
+          <para styleclass="Body Text">The two <text styleclass="Element">2D-Cams</text> are in one kinematic-chain and must be capable of being the Power-Source for a one other kinematic-chain<text styleclass="VariableName">.</text></para>
+          <para styleclass="Body Text">Each <text styleclass="Element">2D-Cam</text> drives the <text styleclass="VariableName">Inner-Cam-Flank</text> OR the <text styleclass="VariableName">Outer Cam-Flank</text>.</para>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <list id="3" type="ol" listtype="decimal" formatstring="%0:s." format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="3" styleclass="Bullets" style="font-family:'Segoe UI Semibold'; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="Bullets">Click <image src="OK-tiny-11-15.png" scale="100.00%" figurelistinclude="0"></image> to close the dialog.<text styleclass="VariableName"> </text></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;"/></para>
+          <para styleclass="Body Table"><text styleclass="Notes">Note 1 :</text><text styleclass="HowTo Bulleted"> If the </text><text styleclass="Element">2D-Cams</text><text styleclass="HowTo Bulleted"> you select do </text><text styleclass="VariableName" style="color:#ff0000;">not</text><text styleclass="HowTo Bulleted"> drive the same </text><text styleclass="VariableName">Follower-Part</text><text styleclass="HowTo Bulleted">, you get this message in the </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-FeedBackArea" styleclass="HowTo Bulleted">Feedback Area.</link></para>
+          <para styleclass="Body Table"><text styleclass="Heading4 Toggle_atocs_">Message</text></para>
+          <para styleclass="Image Caption"><image src="MD-Dialog-ConjugateCam-Msg-1.png" scale="-99.90%" figurelistinclude="0"></image></para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;"/></para>
+          <para styleclass="Body Table">To do <text styleclass="VariableName">Force Analysis</text> of the <text styleclass="VariableName">Conjugate Cams</text>, you must select the <text styleclass="Element">Conjugate-Cam FB </text>in the <text styleclass="Element">Configure Power Source dialog</text>.</para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;"/></para>
+          <para styleclass="Heading3_atocs_"><text style="color:#000000;">To remove a 2D-Cam</text></para>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <list id="4" type="ol" listtype="decimal" formatstring="%0:s." format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullets" style="font-family:'Segoe UI Semibold'; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="Bullets">Select the <text styleclass="Element">2D-Cam</text> in the list<text styleclass="VariableName"> </text></li>
+                  <li styleclass="HowTo Bulleted">Click <link displaytype="button" type="topiclink" href="">Remove Selected Cam</link></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading3_atocs_" style="text-indent:-36px; margin-left:36px;"><anchor id="CPS-CONJUGATECAM"><keywords><keyword>Configure Power Source<keyword>Conjugate Cam</keyword></keyword></keywords></anchor><image src="tog_plus.gif" scale="100.00%" styleclass="Heading4 Toggle_atocs_" figurelistinclude="0"></image><tab/><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" src-collapsed="tog_plus.gif" src-expanded="tog_minus.gif" styleclass="Heading4 Toggle_atocs_"><caption>Select Conjugate Cam in the Configure Power Source dialog-box</caption><title>Click to exapand /collapse</title></toggle></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="3" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Normal"><image src="MD-DIALOG-CONFIGUREPOWERSOURCE-CONJUGATECAMFB-0.ipp" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"><caption>DEFAULT: Configure Power Source dialog</caption></image></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="height:115px;">
+          <para styleclass="HowTo STEP"><text styleclass="VariableName">Configure the Power Source</text></para>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <list id="5" type="ol" listtype="decimal" formatstring="%0:s." format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullets" style="font-family:'Segoe UI Semibold'; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="Bullets">Click the <text styleclass="VariableName">Kinematics-Tree</text> tab in the <text styleclass="Interface">Element-Explorer</text><text styleclass="VariableName"> </text></li>
+                  <li styleclass="Body Table"><text styleclass="Body Text">Click the </text><text styleclass="VariableName">Kinematics-Chain</text><text styleclass="Body Text"> that includes the </text><text styleclass="VariableName">Follower Part </text></li>
+                  <li styleclass="Body Table"><text styleclass="Body Text">Right-click the </text><text styleclass="VariableName">Kinematic-Chain</text></li>
+                  <li styleclass="Body Table"><text styleclass="Body Text">Click </text><text styleclass="Interface2">Configure Power-Source</text><text styleclass="Body Text"> to open the </text><text styleclass="Element">Configure Power-Source dialog</text><text styleclass="SeeAlso"> - see image above</text></li>
+                </list>
+                <para styleclass="Body Text">The <text styleclass="Element">Pin-Joint </text><image src="Red-14-1b.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image> is the <text styleclass="Interface2">default</text> <text styleclass="Parameter-Header">Motor Element</text> (<text styleclass="VariableName">Power-Source)</text> <text styleclass="SeeAlso">- see image above</text></para>
+                <para styleclass="Normal"><line style="height:1px; color:#993300;"/></para>
+                <para styleclass="Body Text">Notice also the <text styleclass="VariableName">Motor Symbol</text><image src="Red-14-2.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image> to the left of the <text styleclass="Element">Pin-Joint </text><text styleclass="SeeAlso">- see image above</text></para>
+                <para styleclass="Normal"><line style="height:1px; color:#993300;"/></para>
+                <para styleclass="Body Table"><text styleclass="Body Text">In the </text><text styleclass="Element">Configure Power-Source dialog</text><text styleclass="Body Text"> - </text><text styleclass="SeeAlso">see image below</text></para>
+                <list id="5" type="ol" listtype="decimal" formatstring="%0:s." format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Body Table" style="font-family:'Segoe UI Semibold'; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="Body Table"><text styleclass="Body Text">Click the </text><text styleclass="Element">Conjugate Cam</text><image src="Red-14-3.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Body Text"> in the list of elements - </text><text styleclass="SeeAlso">see image below</text></li>
+                </list>
+                <para styleclass="Body Text">The <text styleclass="Element">Conjugate-Cam</text><image src="Red-14-3.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image> replaces the <text styleclass="Element">Pin-Joint</text> as the <text styleclass="Parameter-Header">Motor Element</text><image src="Red-14-3.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="VariableName"> (Power-Source) - </text><text styleclass="SeeAlso">see image below</text></para>
+                <para styleclass="Normal"><line style="height:1px; color:#993300;"/></para>
+                <para styleclass="Body Text">Notice the <text styleclass="VariableName">Motor Symbol</text><image src="Red-14-4.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image> is now to the left of the <text styleclass="Element">Conjugate-Cam  </text><text styleclass="SeeAlso">- see image below</text></para>
+                <para styleclass="Normal"><line style="height:1px; color:#993300;"/></para>
+                <list id="6" type="ol" listtype="decimal" formatstring="%0:s." format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="6" styleclass="Body Table" style="font-family:'Segoe UI Semibold'; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="Body Table"> <text styleclass="Body Text">Click </text><image src="OK-tiny-11-15.png" scale="100.00%" styleclass="Body Text" figurelistinclude="0"></image><text styleclass="Body Text"> to close the dialog</text><text styleclass="HowTo STEP">.</text><text styleclass="VariableName"> </text></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Body Text">Now you can do <text styleclass="VariableName">Contact-Force Analysis</text> for the <text styleclass="VariableName">Conjugate-Cams</text>.</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="height:115px;">
+          <para styleclass="Normal"><image src="MD-Dialog-ConfigurePowerSource-ConjugateCAmFB.png" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"><title>Conjugate-Cam as the Power-Source</title><caption>Conjugate-Cam as the Power-Source</caption></image></para>
+        </td>
+      </tr>
+    </table></para>
+  </body>
+</topic>

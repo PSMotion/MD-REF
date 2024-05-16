@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" status="Under Construction" modified="2022-03-09T22:18:52.367Z" lasteditedby="Adam" version="2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title>Dialog: Function Block - Graph - Graph Settings</title>
+  <keywords>
+    <keyword>Graph FB<keyword>Graph-Settings</keyword></keyword>
+    <keyword>Graph Settings<keyword>Graph Automatic Axes</keyword><keyword>Graph Axes</keyword><keyword>Graph Line Colour</keyword><keyword>Graph Min - Max</keyword><keyword>Graph Title</keyword></keyword>
+  </keywords>
+  <body>
+    <header>
+      <para styleclass="Heading1">Graph Function-Block: Graph Settings</para>
+    </header>
+    <para styleclass="Heading2">Graph FB &gt; Settings dialog-box</para>
+    <para styleclass="Heading3_atocs_">Open Graph-Settings dialog-box</para>
+    <para styleclass="Body Text"><table styleclass="Standard" rowcount="1" colcount="2" style="width:auto;">
+      <tr style="vertical-align:top">
+        <td style="width:1px;">
+          <para styleclass="Normal"><image src="MD-Icon-ApplicationSettings-Graph.png" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="Body Table"><text styleclass="VariableName">Graph Settings button</text><text styleclass="Body Text"> is in the toolbar at the top of the </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-FunctionBlock-Graph" styleclass="Element">Graph Interface</link><text styleclass="Element">.</text></para>
+          <list id="0" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:&apos;Segoe UI&apos;; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted">Click the <text styleclass="VariableName">Graph Settings icon</text> to open the <text styleclass="Interface">Graph Settings form.</text>.</li>
+          </list>
+          <para styleclass="Body Text">The settings are: </para>
+          <list id="1" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:10pt; color:#000000;">
+            <li styleclass="HowTo Bulleted"><text styleclass="Separator">Graph Title</text></li>
+            <li styleclass="HowTo Bulleted">Color of each Graph Line</li>
+            <li styleclass="HowTo Bulleted">Maximum and Minimum Limits for each Y-axis, or for all Y-axes together</li>
+            <li styleclass="HowTo Bulleted">Maximum and Minimum Limits for the X-axis</li>
+          </list>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading3_atocs_">Graph-Settings dialog-box</para>
+    <para styleclass="Normal"><image src="MD-Dialog-GraphSettings.png" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+    <para styleclass="Body Text HowTo"><anchor id="DialogGraphSettings" styleclass="Separator-Header"><keywords><keyword>Dialog Graph Settigns<keyword>Graph Title</keyword></keyword></keywords></anchor><text styleclass="Separator-Header">Title and Y-axis Input Selection </text></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Standard" rowcount="2" colcount="2" style="width:auto;">
+      <tr style="vertical-align:top">
+        <td style="width:204px;">
+          <para styleclass="Normal"><image src="MD-Dialog-GraphSettings-Title.png" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="Parameter-Header">Graph Title</para>
+          <para styleclass="Body Text HowTo">Enter a <text styleclass="Parameter">Graph Title</text>. <text styleclass="HowTo Bulleted">Here the </text><text styleclass="Parameter">Graph Title</text><text styleclass="HowTo Bulleted"> is </text><text styleclass="VariableName">Graph</text><text styleclass="HowTo Bulleted">. This will show above the plots.</text></para>
+          <para styleclass="Parameter-Header">Y–axis Input</para>
+          <para styleclass="Body Text HowTo">Select which <text styleclass="Parameter">Y-axis Input</text> before you change the <text styleclass="Separator">Y-axis</text> and <text styleclass="Separator">X-axis</text> settings..</para>
+          <para styleclass="Body Text HowTo"><text styleclass="Parameter-Header">Y 1 - Y4 : Data-Type</text></para>
+          <list id="2" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted"><text styleclass="Parameter-Header">Y#</text><text styleclass="Body Text Howindent4bullets"> : the input-connector, from 1 to 4</text></li>
+            <li styleclass="HowTo Bulleted"><text styleclass="Parameter-Header">Data-Type</text><text styleclass="VariableName">&#32;</text><text styleclass="Body Text Howindent4bullets">: one of three Data-Channels as specified by </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-FunctionBlock-Graph" anchor="YAxisDisplay" styleclass="Body Text Howindent4bullets">Y-axis Options</link></li>
+          </list>
+          <para styleclass="Body Text HowTo"><text styleclass="VariableName" style="color:#ff0000;">Set all</text><text styleclass="HowTo Bulleted" style="font-weight:normal;"> :</text><text styleclass="HowTo Bulleted"> to apply the same </text><text styleclass="Separator">Y-axis</text><text styleclass="HowTo Bulleted"> and </text><text styleclass="Separator">X-axis</text><text styleclass="HowTo Bulleted"> settings to </text><text styleclass="VariableName" style="color:#ff0000;">ALL</text><text styleclass="Body Text"> Inputs.</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td colspan="2">
+          <para styleclass="Notes">Top Tip 1<text styleclass="Body Text">: As an example, use</text><text styleclass="VariableName-IT">&#32;</text><text styleclass="Parameter-Header" style="color:#ff0000;">Set all</text><text styleclass="VariableName-IT">&#32;</text><text styleclass="Body Text HowTo">if the wires you connect to the input-connectors are </text><text styleclass="Parameter-Header" style="color:#ff0000;">all</text><text styleclass="Body Text HowTo">&#32;</text><text styleclass="Parameter-Header">Pressure-Angles</text><text styleclass="Body Text"> from</text><text styleclass="Body Text HowTo"> different </text><text styleclass="Element">2D-Cams</text><text styleclass="Body Text HowTo"> and </text><text styleclass="Element">Cam-Data FBs</text><text styleclass="Body Text HowTo">. &#160;Then </text><text styleclass="VariableName" style="color:#ff0000;">ALL</text><text styleclass="Body Text HowTo">&#32;</text><text styleclass="VariableName">Minimum</text><text styleclass="Body Text HowTo"> and </text><text styleclass="VariableName">Maximum</text><text styleclass="Body Text HowTo"> values of the graph-plots are equal for all of the </text><text styleclass="Element">2D-Cams</text><text styleclass="Body Text HowTo">. It is then easier to analyze the </text><text styleclass="Parameter">Pressure Angles</text><text styleclass="Body Text HowTo"> for all of the Cams as you edit the model.</text></para>
+          <para styleclass="Notes"><text styleclass="VariableName">Top-Tip 2: </text><text styleclass="Body Text HowTo">Use the </text><text styleclass="VariableName">Maximum and Minimum Y-axis</text><text styleclass="Body Text HowTo"> settings for </text><text styleclass="Parameter-Header">Radius-of-Curvature</text><text styleclass="Body Text HowTo"> - especially with a </text><text styleclass="VariableName">Slot Cam-type.</text></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Body Text HowTo"><anchor id="Dialog-GraphSet-YAxis" styleclass="Separator-Header"><keywords><keyword>Graph Settings Dialog Box<keyword>Y-Axis and X-Axis Scales</keyword></keyword></keywords></anchor><text styleclass="Separator-Header">Y-Axis &amp; &#160;X-Axis </text></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Standard" rowcount="1" colcount="2" style="width:auto;">
+      <tr style="vertical-align:top">
+        <td style="width:204px;">
+          <para styleclass="Normal"><image src="MD-Dialog-GraphSettings-Y-Xaxis.png" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="Separator-Header">Y-axis: </para>
+          <para styleclass="Body Text HowTo">These settings apply to <text styleclass="Interface2" style="color:#ff0000;">one</text>&#32;<text styleclass="Parameter-Header">Y-axis Input</text> or <text styleclass="Interface2" style="color:#ff0000;">all</text>&#32;<text styleclass="Parameter-Header">Y-Axis Inputs</text> &#160;- <text styleclass="SeeAlso">see &#160;above:</text>&#32;<link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-FunctionBlock-GraphSettings" anchor="DialogGraphSettings" styleclass="Parameter-Header" style="color:#ff0000;">Y-axis input - SET ALL</link></para>
+          <para styleclass="Parameter-Header">Auto-Scale Y-Axis:<text styleclass="VariableName"> check-box</text></para>
+          <list id="3" type="ul" listtype="bullet" formatstring="&#253;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Wingdings; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted"><text styleclass="VariableName">Auto-scale Y-minimum and Y-minimum values</text><text styleclass="Body Text Howindent4bullets"> at the Y-axis input as defined by </text><text styleclass="Separator">Input-Selection</text><text styleclass="Body Text">&#32;</text><text styleclass="Body Text Howindent4bullets">: </text><text styleclass="Parameter-Header">Y-axis Input</text><text styleclass="Body Text Howindent4bullets"> : </text><text styleclass="Parameter-Header">Y1 , Y2, Y3, Y4,</text><text styleclass="Body Text"> or </text><text styleclass="Parameter-Header" style="color:#ff0000;">SET-ALL</text><text styleclass="VariableName">&#32;</text></li>
+          </list>
+          <list id="4" type="ul" listtype="bullet" formatstring="&#113;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Wingdings; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted"><text styleclass="VariableName">Enter the Y-maximum and Y-minimum values </text><text styleclass="Body Text">for the graph as defined by</text><text styleclass="VariableName">:</text><text styleclass="Body Text Howindent4bullets">&#32;</text><text styleclass="Separator">Input-Selection</text><text styleclass="Body Text">&#32;</text><text styleclass="Body Text Howindent4bullets">: </text><text styleclass="Parameter-Header">Y-axis Input</text><text styleclass="Body Text Howindent4bullets"> : </text><text styleclass="Parameter-Header">Y1 , Y2, Y3, Y4,</text><text styleclass="Body Text"> or </text><text styleclass="Parameter-Header" style="color:#ff0000;">SET-ALL</text><text styleclass="VariableName">&#32;</text></li>
+          </list>
+          <para styleclass="Parameter-Header">Y maximum: / Y minimum:</para>
+          <para styleclass="Body Text HowTo">When the <text styleclass="VariableName">Auto-Scale Y-axis</text><text style="font-style:italic;">&#32;</text><text styleclass="Body Text">check box</text><text style="font-style:italic;">&#32;</text><text styleclass="Body Text">is </text><text styleclass="VariableName">Clear</text><text styleclass="Body Text">, you can:</text></para>
+          <list id="5" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted">Enter the <text styleclass="Parameter-Header">Y maximum</text> and <text styleclass="Parameter-Header">Y minimum</text> values for the graph <text styleclass="Body Text">as defined by</text><text styleclass="VariableName">:</text><text styleclass="Body Text Howindent4bullets">&#32;</text><text styleclass="Separator">Input-Selection</text><text styleclass="Body Text Howindent4bullets">: </text><text styleclass="Parameter-Header">Y-axis Input</text><text styleclass="Body Text Howindent4bullets"> : </text><text styleclass="Parameter-Header">Y1 , Y2, Y3, Y4,</text><text styleclass="Body Text"> or </text><text styleclass="Parameter-Header" style="color:#ff0000;">SET-ALL</text><text styleclass="VariableName">&#32;</text></li>
+          </list>
+          <para styleclass="Parameter-Header">Graph Line color</para>
+          <para styleclass="Body Text HowTo">To use a different plot color.</para>
+          <list id="6" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted"><text style="font-style:normal;">Click</text> the <text styleclass="Parameter-Header">Graph Line color</text> button </li>
+            <li styleclass="HowTo Bulleted">Use the Windows® pop-up color picker, to select a different color.</li>
+          </list>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="Separator-Header">X–axis: </para>
+          <para styleclass="Body Text HowTo">The <text styleclass="VariableName">X-axis values</text>&#32;<text styleclass="Interface2" style="color:#ff0000;">always</text> apply to <text styleclass="Interface2" style="color:#ff0000;">all</text> graph plots.</para>
+          <para styleclass="Parameter-Header">Auto-Scale x-Axis:</para>
+          <list id="3" type="ul" listtype="bullet" formatstring="&#253;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Wingdings; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted">Auto-scale the X-maximum and X-minimum values for the wire and data at the <text styleclass="Parameter-Header">X-axis</text> input-connector.</li>
+          </list>
+          <list id="7" type="ul" listtype="bullet" formatstring="&#113;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Wingdings; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted">Enter the X-maximum and X-minimum values</li>
+          </list>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Body Text HowTo"></para>
+  </body>
+</topic>

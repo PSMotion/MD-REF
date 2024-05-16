@@ -1,0 +1,702 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" status="Under Construction" modified="2024-02-09T16:06:14.094Z" lasteditedby="44785" version="2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title>Dialog: Servo-Gearbox Sizing Torque-Speed</title>
+  <keywords>
+    <keyword>4-Quadrant Torque-Speed</keyword>
+    <keyword>Gearbox Database</keyword>
+    <keyword>Gearbox-Sizing</keyword>
+    <keyword>Motor Database</keyword>
+    <keyword>Servo Motor Sizing</keyword>
+    <keyword>Servomotor Sizing</keyword>
+    <keyword>Torque-Speed Curves</keyword>
+  </keywords>
+  <body>
+    <header>
+      <para styleclass="Heading1">Dialog: Servomotor and Gearbox Sizing</para>
+    </header>
+    <para styleclass="Heading2" style="page-break-before:always;">Kinetostatic Torque and Speed</para>
+    <para styleclass="VariableName-IT"><text styleclass="Notes">Note</text><text styleclass="Body Text">: The options for a Linear Motor with a </text><text styleclass="Element">Slide-Joint</text><text styleclass="Body Text"> will be available in a later release.</text></para>
+    <para styleclass="Normal"><line style="height:1px; color:#343400;" /></para>
+    <para styleclass="Body Text HowTo"><text style="font-weight:normal; font-style:normal;">Use the </text><text styleclass="VariableName">Kinetostatic Torque and Speed dialog</text><text style="font-weight:normal; font-style:normal;"> to:</text></para>
+    <list id="0" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+      <li styleclass="HowTo Bulleted">Select a <text styleclass="VariableName">Planetary Gearbox</text> from the major gearbox manufacturers</li>
+      <li styleclass="HowTo Bulleted">Select a <text styleclass="VariableName">Servomotor</text> from the major manufactures</li>
+      <li styleclass="HowTo Bulleted">Plot the <text styleclass="VariableName">Application Load Torque-Speed</text> curve, in four quadrants</li>
+      <li styleclass="HowTo Bulleted">Plot the <text styleclass="VariableName">Gearbox Load Torque-Speed</text> curve, in four quadrants</li>
+      <li styleclass="HowTo Bulleted">Plot the <text styleclass="VariableName">Servomotor Torque and Speed</text> curve; in four quadrants, find the Maximum and RMS Torque values</li>
+      <li styleclass="HowTo Bulleted">Calculate the Duty-Cycle as a percentage of the machine-cycle</li>
+    </list>
+    <para styleclass="Body Text">Note<text styleclass="HowTo Bulleted">: Use this tool with one degree-of-freedom kinematic-chains. Email PSMotion if the kinematic-chain has two or more degrees-of-freedom, each with a servomotor.</text></para>
+    <para styleclass="Normal"><line style="height:1px; color:#343400;" /></para>
+    <para styleclass="Heading3_atocs_" style="text-indent:-32px; margin-left:32px;"><image src="btn_addkeyword.bmp" scale="100.00%" figurelistinclude="0"></image><tab /><text styleclass="Heading4 Toggle_atocs_">How to open the Kinetostatic-Torque and Speed dialog</text></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="3" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="VariableName">STEP 1: <text styleclass="HowTo STEP">Enable:</text></para>
+          <list id="1" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Numbered" style="font-family:Symbol; font-size:11pt; color:#003300;">
+            <li styleclass="HowTo Numbered"><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Command-Forces-Calculate" styleclass="T_Menu">Force toolbar &gt; Force-Vectors: Calculate</link></li>
+            <li styleclass="HowTo Numbered"><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Command-Forces-Show-Force-Vectors" styleclass="T_Menu">Force toolbar &gt; Force-Vectors: Display</link></li>
+          </list>
+          <para styleclass="Body Text HowTo"><text style="font-weight:normal; font-style:normal;">You must be able to see the </text><text styleclass="VariableName">Motor-Symbol</text><text style="font-weight:normal; font-style:normal;"> at a joint</text><image src="Red-14-1b.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text style="font-weight:normal; font-style:normal;"> - see image below. A </text><text styleclass="VariableName">Motor Symbol</text><text style="font-weight:normal; font-style:normal;"> is at the </text><text styleclass="Element">Pin-Joint</text><text style="font-weight:normal; font-style:normal;"> that is a Power Source.</text></para>
+          <para styleclass="Body Text"><text styleclass="Interface2">STEP 2:</text><text styleclass="HowTo STEP"> Move the Power Source to the correct joint </text></para>
+          <list id="1" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Numbered" style="font-family:Symbol; font-size:11pt; color:#003300;">
+            <li styleclass="HowTo Numbered"><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Forces-Configure-Power-Source" styleclass="SeeAlso">Force toolbar &gt; Configure Power Source</link></li>
+          </list>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Normal"><image src="MD-DoubleClick-GA-MotorElement.png" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Text"><text styleclass="Interface2">STEP 3: </text><text styleclass="HowTo STEP">Open the Kinetostatic Torque-Speed dialog:</text></para>
+          <list id="2" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Numbered" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo Numbered"><text styleclass="Body Text" style="font-style:normal;">Click the</text><text styleclass="Body Text" style="font-style:italic;">&#32;</text><text styleclass="VariableName">Motor Symbol</text><image src="Red-14-1b.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Body Text"> in the graphics-area</text><text styleclass="VariableName">&#32;</text></li>
+          </list>
+          <para styleclass="HowTo Numbered"><text styleclass="Body Text">The </text><text styleclass="Element">Pin-Joint</text><text styleclass="Body Text"> shows in the</text><text styleclass="Body Text HowTo" style="font-style:normal;">&#32;</text><text styleclass="Interface">Selection-Window.</text><text styleclass="VariableName">&#32;</text></para>
+          <list id="2" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Numbered" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo Numbered"><text styleclass="Body Text HowTo" style="font-style:normal;">Right-Click</text><text styleclass="Body Text HowTo"> the </text><text styleclass="Element">Pin-Joint</text><text styleclass="Body Text HowTo">&#32;</text></li>
+            <li styleclass="HowTo Numbered"><text styleclass="Body Text HowTo">Click </text><text styleclass="VariableName">Edit element</text><text styleclass="Body Text HowTo"> in the shortcut menu.</text></li>
+          </list>
+          <para styleclass="Interface2">OR<text styleclass="VariableName-IT2">&#32;</text></para>
+          <para styleclass="Body Text HowTo">See <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-How-to-Open-a-Dialog-Box">How to open a dialog</link></para>
+          <para styleclass="Body Text2-Note"><text styleclass="Body Text HowTo">The </text><text styleclass="Element-Header">Kinetostatic Torque-Speed dialog</text><text styleclass="Body Text HowTo"> is now open.</text></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading3_atocs_" style="text-indent:-32px; margin-left:32px;"><image src="btn_addkeyword.bmp" scale="100.00%" figurelistinclude="0"></image><tab /><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" src-collapsed="btn_addkeyword.bmp" src-expanded="btn_delkeyword.bmp" src-print="none"><caption><![CDATA[Application (Load) Torque vs Speed plot]]></caption></toggle></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="2" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Image Caption"><image src="MD-Dialog-TorSpeed-4Quadrant-0.ipp" scale="-99.90%" figurelistinclude="0"><caption><![CDATA[FOUR QUADRANT: TORQUE(LOAD) vs SPEED]]></caption></image></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Text">Before you select a Gearbox or Servomotor, the plot is<text styleclass="VariableName"> Torque vs Speed</text> of the <text styleclass="VariableName">Application Load</text>, in four-quadrants.</para>
+          <para styleclass="Body Text">The is the <text styleclass="VariableName">load</text> that the <text styleclass="VariableName">Servomotor and Gearbox</text> must drive<text styleclass="VariableName">.</text> It does <text styleclass="VariableName" style="color:#ff0000;">NOT</text> include the load to drive the inertia and friction of the Gearbox and Servomotor.</para>
+          <para styleclass="Heading4 Toggle_atocs_">Four-Quadrant - Why 4 Quadrants?</para>
+          <para styleclass="VariableName"><text styleclass="Normal">When inertia is the dominant load,</text><text styleclass="HowTo Bulleted"> we characterize the load for you as:</text></para>
+          <para styleclass="HowTo Bulleted"><image src="Red-14-1b.gif" imagestyleclass="Default" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image> &#160;+ Torque, + Speed - &#160;when accelerating the load in the positive direction </para>
+          <para styleclass="HowTo Bulleted"><image src="Red-14-2.gif" imagestyleclass="Default" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image> &#160;– Torque, + Speed &#160;- when decelerating the load in the positive direction</para>
+          <para styleclass="HowTo Bulleted"><image src="Red-14-3.gif" imagestyleclass="Default" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Image Caption"> &#160;</text>– Torque, – Speed &#160;- when decelerating the load in the negative direction </para>
+          <para styleclass="HowTo Bulleted"><image src="Red-14-4.gif" imagestyleclass="Default" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image> &#160;+ Torque, - Speed &#160;- when decelerating the load in the negative direction </para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading3_atocs_" style="text-indent:-32px; margin-left:32px;"><image src="btn_addkeyword.bmp" scale="100.00%" figurelistinclude="0"></image><tab /><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" src-collapsed="btn_addkeyword.bmp" src-expanded="btn_delkeyword.bmp" src-print="none"><caption><![CDATA[STEP 1: Auto-Filter and Range-Factor]]></caption></toggle></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="3" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Heading4 Toggle_atocs_">Auto-Filter check-box</para>
+          <para styleclass="HowTo Bulleted">The <text styleclass="VariableName">Auto-Filter check-box</text> is at the top and right of the dialog.</para>
+          <list id="3" type="ul" listtype="bullet" formatstring="&#113;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="3" styleclass="HowTo Bulleted" style="font-family:Wingdings; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted">&#32;<text styleclass="VariableName">Auto-Filter OFF</text>&#32;</li>
+          </list>
+          <para styleclass="HowTo Bulleted">When Auto-Filter is off, you can select from 1000s of Gearboxes. </para>
+          <list id="4" type="ul" listtype="bullet" formatstring="&#254;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="3" styleclass="HowTo Bulleted" style="font-family:Wingdings; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted"><text styleclass="VariableName">Auto-Filter ON</text></li>
+          </list>
+          <para styleclass="Body Text HowTo"><text styleclass="HowTo Bulleted">We recommend that you enable the </text>Auto-Filter. When Auto-Filer is enabled, the <text styleclass="HowTo Bulleted">Gearboxes presented are limited to those that have a:</text></para>
+          <list id="5" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted"><text styleclass="VariableName">Lower-Torque Capacity</text> that is greater than the Torque required to move the Application Load.</li>
+            <li styleclass="HowTo Bulleted"><text styleclass="VariableName">Upper-Torque Capacity</text> that is determined by the <text styleclass="VariableName">Range-Factor</text>.</li>
+          </list>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Text">The <text styleclass="VariableName">Range-Factor</text> is at the top of the dialog.</para>
+          <para styleclass="Image Caption"><image src="MD-Dialog-TorqueSpeed-Range_Limit00.png" scale="-99.90%" figurelistinclude="0"></image></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Text">Thus, the capacity of the Gearboxes that are listed for you are summarized by:</para>
+          <para styleclass="VariableName-IT2"><text style="font-style:normal;">Application-Load ≤ Gearbox Capacity ≤ Application-Load × Range-Factor</text></para>
+          <para styleclass="Normal"><line style="height:1px; color:#343400;" /></para>
+          <para styleclass="VariableName">Example: Auto-Filter ON, Range-Factor: 1.3</para>
+          <para styleclass="VariableName-indent">Lower Gearbox Torque Capacity = Equivalent Application (Load) Torque (21.495 N.m.)</para>
+          <para styleclass="VariableName-indent">Upper Gearbox Torque Capacity = <text style="color:#ff0000;">Range Factor ×</text> Equivalent Application (Load) Torque (<text style="color:#ff0000;">1.3 ×</text> 21.495 = 27.944 N.m.)</para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading3_atocs_" style="text-indent:-32px; margin-left:32px;"><image src="btn_addkeyword.bmp" scale="100.00%" figurelistinclude="0"></image><tab /><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" src-collapsed="btn_addkeyword.bmp" src-expanded="btn_delkeyword.bmp" src-print="none"><caption><![CDATA[STEP 2: Select a Gearbox Manufacturer]]></caption></toggle></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="2" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Heading4 Toggle_atocs_">Select a Gearbox Manufacturer <image src="Red-14-1b.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Normal">&#32;</text></para>
+          <para styleclass="Body Text">There are four Gearbox manufacturers from which you can choose: APEX, Neugart, Vogel, and Wittenstein</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Image Caption"><image src="MD-Dialog-KinetoStatic-GearBoxManuONLY.png" scale="-99.90%" figurelistinclude="0"></image></para>
+          <para styleclass="Body Text"><text styleclass="Notes">Note</text>: If you need us to list a different Gearbox Manufacturer, then please email us.</para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading3_atocs_" style="text-indent:-32px; margin-left:32px;"><image src="btn_addkeyword.bmp" scale="100.00%" figurelistinclude="0"></image><tab /><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" src-collapsed="btn_addkeyword.bmp" src-expanded="btn_delkeyword.bmp" src-print="none"><caption><![CDATA[STEP 3: Select a Gearbox Model]]></caption></toggle></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="3" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Heading4 Toggle_atocs_">Select a Gearbox Model <image src="Red-14-2.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+          <para styleclass="Image Caption"><image src="MD-Dialog-KinetoStatic-GearBox-AF1-RF1.3.png" scale="-99.90%" figurelistinclude="0"><caption><![CDATA[Gearbox manufacturer and Gearbox model part numbers]]></caption></image></para>
+          <para styleclass="Body Text HowTo">When you select a <text styleclass="VariableName">Gearbox Manufacturer</text>, and <text styleclass="VariableName">Auto-Filter is ON</text>, and you have entered a <text styleclass="VariableName">Range-Factor</text>, the list of <text styleclass="VariableName">Gearboxes</text> is limited to those whose capacity can satisfy these in-equalities:</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="VariableName"><table styleclass="Block" rowcount="8" colcount="5">
+            <tr style="vertical-align:top">
+              <td style="vertical-align:middle; width:38px;">
+                <para styleclass="VariableName" style="text-align:center;"><image src="Red-14-1b.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+              </td>
+              <td colspan="2" style="vertical-align:middle; width:171px;">
+                <para styleclass="VariableName" style="text-align:center;">Manufacturer </para>
+              </td>
+              <td colspan="2">
+                <para styleclass="Body Text">The Selected Gearbox Manufacturer</para>
+              </td>
+            </tr>
+            <tr style="vertical-align:top">
+              <td style="vertical-align:middle; width:38px;">
+                <para styleclass="VariableName" style="text-align:center;"><image src="Red-14-2.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+              </td>
+              <td colspan="2" style="vertical-align:middle; width:171px;">
+                <para styleclass="VariableName" style="text-align:center;">Model &#160;</para>
+              </td>
+              <td colspan="2">
+                <para styleclass="Body Text">The Selected the Gearbox Model Part Number</para>
+                <para styleclass="Body Text">Each manufacturer has a different Model Part-Number format. </para>
+              </td>
+            </tr>
+            <tr style="vertical-align:top">
+              <td style="vertical-align:middle; width:38px;">
+                <para styleclass="VariableName" style="text-align:center;"><image src="Red-14-3.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+              </td>
+              <td colspan="2" style="vertical-align:middle; width:171px;">
+                <para styleclass="VariableName" style="text-align:center;">Series</para>
+              </td>
+              <td colspan="2">
+                <para styleclass="Body Text">Series - from the selected Model</para>
+              </td>
+            </tr>
+            <tr style="vertical-align:top">
+              <td style="vertical-align:middle; width:38px;">
+                <para styleclass="VariableName" style="text-align:center;"><image src="Red-14-4.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+              </td>
+              <td style="vertical-align:middle; width:75px;">
+                <para styleclass="VariableName" style="text-align:center;"><text styleclass="Equations" style="font-weight:normal; font-style:italic;">i</text></para>
+              </td>
+              <td style="vertical-align:middle; width:86px;">
+                <para styleclass="VariableName" style="text-align:center;"># </para>
+              </td>
+              <td>
+                <para styleclass="Body Text">Gearbox Ratio</para>
+              </td>
+              <td>
+                <para styleclass="Body Text" style="text-align:center;">from the Model</para>
+              </td>
+            </tr>
+            <tr style="vertical-align:top">
+              <td style="vertical-align:middle; width:38px;">
+                <para styleclass="VariableName" style="text-align:center;"><image src="Red-14-5.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+              </td>
+              <td style="vertical-align:middle; width:75px;">
+                <para styleclass="VariableName" style="text-align:center;">T2N </para>
+              </td>
+              <td style="vertical-align:middle; width:86px;">
+                <para styleclass="VariableName" style="text-align:center;">Nm</para>
+              </td>
+              <td>
+                <para styleclass="Body Text">Rated Torque referred to output-shaft</para>
+              </td>
+              <td>
+                <para styleclass="Normal" style="text-align:center;"><text styleclass="Body Text">- data sheet -</text></para>
+              </td>
+            </tr>
+            <tr style="vertical-align:top">
+              <td style="vertical-align:middle; width:38px;">
+                <para styleclass="VariableName" style="text-align:center;"><image src="Red-14-6.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+              </td>
+              <td style="vertical-align:middle; width:75px;">
+                <para styleclass="VariableName" style="text-align:center;">T2MAX</para>
+              </td>
+              <td style="vertical-align:middle; width:86px;">
+                <para styleclass="VariableName" style="text-align:center;">Nm</para>
+              </td>
+              <td>
+                <para styleclass="Body Text">Max. Torque referred to output-shaft </para>
+              </td>
+              <td>
+                <para styleclass="Body Text" style="text-align:center;"> - data sheet -</para>
+              </td>
+            </tr>
+            <tr style="vertical-align:top">
+              <td style="vertical-align:middle; width:38px;">
+                <para styleclass="VariableName" style="text-align:center;"><image src="Red-14-7.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+              </td>
+              <td style="vertical-align:middle; width:75px;">
+                <para styleclass="VariableName" style="text-align:center;">n2N</para>
+              </td>
+              <td style="vertical-align:middle; width:86px;">
+                <para styleclass="VariableName" style="text-align:center;">RPM</para>
+              </td>
+              <td>
+                <para styleclass="Body Text">Rated Speed referred to output-shaft</para>
+              </td>
+              <td>
+                <para styleclass="Body Text" style="text-align:center;"> - data sheet / <text styleclass="Equations" style="font-weight:normal;">i</text> -</para>
+              </td>
+            </tr>
+            <tr style="vertical-align:top">
+              <td style="vertical-align:middle; width:38px;">
+                <para styleclass="VariableName" style="text-align:center;"><image src="Red-14-8.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+              </td>
+              <td style="vertical-align:middle; width:75px;">
+                <para styleclass="VariableName" style="text-align:center;">n2MAX</para>
+              </td>
+              <td style="vertical-align:middle; width:86px;">
+                <para styleclass="VariableName" style="text-align:center;">RPM</para>
+              </td>
+              <td>
+                <para styleclass="Body Text">Max. Speed referred to output-shaft </para>
+              </td>
+              <td>
+                <para styleclass="Body Text" style="text-align:center;"> - data sheet / <text styleclass="Equations" style="font-weight:normal; font-style:italic;">i</text> - </para>
+              </td>
+            </tr>
+          </table></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="VariableName"><text styleclass="HowTo Bulleted" style="font-family:&apos;Segoe UI Semibold&apos;; font-weight:bold;">T2</text><text styleclass="HowTo Bulleted" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:9pt; font-weight:bold; vertical-align:sub;">max</text><text styleclass="HowTo Bulleted" style="font-family:&apos;Segoe UI Semibold&apos;; font-weight:bold;">&#32;</text><text styleclass="VariableName-indent" style="font-size:14pt;">≤</text><text styleclass="HowTo Bulleted" style="font-family:&apos;Segoe UI Semibold&apos;; font-weight:bold;"> T2</text><text styleclass="HowTo Bulleted" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:9pt; font-weight:bold; vertical-align:sub;">MAX</text><text styleclass="HowTo Bulleted" style="font-family:&apos;Segoe UI Semibold&apos;; font-weight:bold;">&#32;</text><text styleclass="VariableName-indent" style="font-size:14pt;">≤</text><text styleclass="HowTo Bulleted" style="font-family:&apos;Segoe UI Semibold&apos;; font-weight:bold;"> RF × T2</text><text styleclass="HowTo Bulleted" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:9pt; font-weight:bold; vertical-align:sub;">max</text>&#32;</para>
+          <para styleclass="VariableName">Maximum Application (Load) Torque <text style="font-size:14pt;">≤</text> Maximum Output Torque of the Gearbox <text style="font-size:14pt;">≤</text> Range-Factor <text style="font-size:14pt;">×</text> Maximum Application (Load) Torque</para>
+          <para styleclass="Normal"><line style="height:1px; color:#343400;" /></para>
+          <para styleclass="VariableName"><text style="font-family:&apos;Segoe UI Semibold&apos;; font-weight:bold;">T2</text><text style="font-family:&apos;Segoe UI Semibold&apos;; font-size:9pt; font-weight:bold; vertical-align:sub;">m</text>&#32;<text style="font-size:14pt;">≤</text>&#32;<text style="font-family:&apos;Segoe UI Semibold&apos;; font-weight:bold;">T2</text><text style="font-family:&apos;Segoe UI Semibold&apos;; font-size:9pt; font-weight:bold; vertical-align:sub;">N</text><text style="font-family:&apos;Segoe UI Semibold&apos;; font-weight:bold;">&#32;</text><text style="font-size:14pt;">≤</text><text style="font-family:&apos;Segoe UI Semibold&apos;; font-weight:bold;"> RF </text><text styleclass="HowTo Bulleted" style="font-family:&apos;Segoe UI Semibold&apos;; font-weight:bold;">×</text><text style="font-family:&apos;Segoe UI Semibold&apos;; font-weight:bold;"> T2</text><text style="font-family:&apos;Segoe UI Semibold&apos;; font-size:9pt; font-weight:bold; vertical-align:sub;">m</text></para>
+          <para styleclass="VariableName">Equivalent Application (Load) Torque <text style="font-size:14pt;">≤</text> Rated Output Torque Capacity of the Gearbox <text style="font-size:14pt;">≤</text> Range-Factor <text style="font-size:14pt;">×</text> Equivalent &#160;Application (Load) Torque </para>
+          <para styleclass="Normal"><line style="height:1px; color:#343400;" /></para>
+          <para styleclass="VariableName"><text style="font-family:&apos;Segoe UI Semibold&apos;; font-weight:bold;">n2</text><text style="font-family:&apos;Segoe UI Semibold&apos;; font-size:9pt; font-weight:bold; vertical-align:sub;">max</text><text styleclass="HowTo Bulleted" style="font-family:&apos;Segoe UI Semibold&apos;; font-weight:bold;">×</text><text style="font-family:&apos;Segoe UI Semibold&apos;; font-weight:bold;"> i </text><text style="font-size:14pt;">≤</text><text style="font-family:&apos;Segoe UI Semibold&apos;; font-weight:bold;"> n1</text><text style="font-family:&apos;Segoe UI Semibold&apos;; font-size:9pt; font-weight:bold; vertical-align:sub;">MAX</text>&#32;</para>
+          <para styleclass="VariableName">Maximum Application (Load) Speed <text styleclass="HowTo Bulleted" style="font-family:&apos;Segoe UI Semibold&apos;; font-weight:bold;">×</text><text style="font-family:&apos;Segoe UI Semibold&apos;; font-weight:bold;">&#32;</text><text styleclass="VariableName-IT2">Gearbox Ratio (i)</text>&#32;<text style="font-size:14pt;">≤</text> Maximum Input Speed of the Gearbox<text styleclass="VariableName-IT2" style="font-size:14pt;">&#32;</text></para>
+          <para styleclass="Normal"><line style="height:1px; color:#343400;" /></para>
+          <para styleclass="VariableName"><text style="font-family:&apos;Segoe UI Semibold&apos;; font-weight:bold;">n2</text><text style="font-family:&apos;Segoe UI Semibold&apos;; font-size:9pt; font-weight:bold; vertical-align:sub;">n </text><text styleclass="HowTo Bulleted" style="font-family:&apos;Segoe UI Semibold&apos;; font-weight:bold;">×</text><text style="font-family:&apos;Segoe UI Semibold&apos;; font-weight:bold;"> i </text><text style="font-size:14pt;">≤</text><text style="font-family:&apos;Segoe UI Semibold&apos;; font-weight:bold;"> n1</text><text style="font-family:&apos;Segoe UI Semibold&apos;; font-size:9pt; font-weight:bold; vertical-align:sub;">N</text> &#160;</para>
+          <para styleclass="VariableName">Average Application (Load) Speed (or Equivalent, Mean) <text styleclass="HowTo Bulleted" style="font-family:&apos;Segoe UI Semibold&apos;; font-weight:bold;">×</text><text style="font-family:&apos;Segoe UI Semibold&apos;; font-weight:bold;">&#32;</text><text styleclass="VariableName-IT2">Gearbox Ratio (i)</text>&#32;<text style="font-size:14pt;">≤</text> Rated Input Speed of the Gearbox</para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading4 Toggle_atocs_2" style="text-indent:-32px; margin-left:56px;"><image src="btn_addkeyword.bmp" scale="100.00%" figurelistinclude="0"></image><tab /><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" src-collapsed="btn_addkeyword.bmp" src-expanded="btn_delkeyword.bmp" src-print="none"><caption><![CDATA[Gearbox Parameters Check List.]]></caption></toggle></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="2" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Image Caption"><image src="MD-Dialog-KinetoStatic-GearBox-C.png" scale="-99.90%" figurelistinclude="0"><caption><![CDATA[Gearbox Parameters Summary Sheet]]></caption></image></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Text">After you select a Gearbox model, its <text styleclass="VariableName-IT" style="font-style:normal;">Gearbox Parameters Summary Sheet</text> show. <text styleclass="Body Text HowTo">This form is read-only. </text></para>
+          <para styleclass="Body Text HowTo">On the left of the sheet, there should be four(4) × <image src="OK-tiny-11-15.png" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image> to indicate that the Gearbox has the capacity to drive the Application Load and satisfies the 4 requirements.</para>
+          <para styleclass="Body Text HowTo"><image src="Red-14-6.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Normal">&#32;</text>Peak Torque ≥ Maximum Application Torque</para>
+          <para styleclass="Body Text HowTo"><image src="Red-14-5.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Normal">&#32;</text>Rated Torque ≥ Equivalent Application Torque</para>
+          <para styleclass="Body Text HowTo"><image src="Red-14-8.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Normal"> (</text>Max Output Speed) ≥ Maximum Application (Load) Speed</para>
+          <para styleclass="Body Text HowTo"><image src="Red-14-7.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Normal"> (</text>Rated Output Speed) ≥ Equivalent Application (Load) Speed</para>
+          <para styleclass="Normal"><line style="height:1px; color:#343400;" /></para>
+          <para styleclass="Body Text"><text styleclass="Notes">Notes: </text>Speed parameters in brackets <text styleclass="VariableName">( )</text> are referred to the output-shaft. They are calculated from the Gear-Ratio of the Gearbox. </para>
+          <para styleclass="Normal"><line style="height:1px; color:#343400;" /></para>
+          <para styleclass="Body Text">Other Parameters include:</para>
+          <list id="6" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted">Backlash</li>
+            <li styleclass="HowTo Bulleted">Stiffness</li>
+            <li styleclass="HowTo Bulleted">Efficiency</li>
+            <li styleclass="HowTo Bulleted">Shaft Diameter - the input-shaft diameter, which is not in the list until you select a Servomotor.</li>
+            <li styleclass="HowTo Bulleted">Inertia - referred to the input, which is not in the list until you select a Servomotor.</li>
+          </list>
+          <para styleclass="Body Text"><text styleclass="Notes">Note</text>: Not all Gearbox manufacturers provide all of these parameters.</para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading4 Toggle_atocs_2" style="text-indent:-32px; margin-left:56px;"><image src="btn_addkeyword.bmp" scale="100.00%" figurelistinclude="0"></image><tab /><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" src-collapsed="btn_addkeyword.bmp" src-expanded="btn_delkeyword.bmp" src-print="none"><caption><![CDATA[Gearbox Output Torque vs Speed plot]]></caption></toggle></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="4" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Image Caption"><image src="MD-Dialog-TorSpeed-4Quadrant-GearBox.png" scale="-99.90%" figurelistinclude="0"><caption><![CDATA[Torque-Speed plot at Output of Gearbox.]]></caption></image></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Text">When you select a Gearbox, the Torque (N.m.) vs Speed (RPM) plot changes to indicate whether the Gearbox has the capacity to drive the Application Load.</para>
+          <para styleclass="Body Text">The color code is :</para>
+          <list id="7" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted"><text styleclass="VariableName" style="color:#004000;">Green</text> : Torque AND Speed of the Load ≤ Rated Gearbox Capacity</li>
+            <li styleclass="HowTo Bulleted"><text styleclass="VariableName" style="color:#f07800;">Amber</text> : Torque OR Speed of the Load ≥ Rated Gearbox Capacity ≤ Maximum Gearbox Capacity</li>
+            <li styleclass="HowTo Bulleted"><text styleclass="VariableName" style="color:#ff0000;">Red</text> : Torque OR Speed of the Load ≥ &#160;Maximum Gearbox Capacity</li>
+          </list>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Image Caption"><image src="MD-Dialog-TorSpeed-4Quadrant-GearBox-Limits.png" scale="-99.90%" figurelistinclude="0"><caption><![CDATA[Torque-Speed at Gearbox at Output with Gearbox Limits]]></caption></image></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="VariableName">Gearbox Torque and Speed Limits.</para>
+          <para styleclass="Body Text">The <text styleclass="VariableName">Show Gearbox Limits</text> check-list box is located above the Gearbox selection box.</para>
+          <list id="8" type="ul" listtype="bullet" formatstring="&#113;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="3" styleclass="HowTo Bulleted" style="font-family:Wingdings; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted">&#32;<text styleclass="VariableName">Show Gearbox Limits </text><text styleclass="Interface2">enabled</text>&#32;</li>
+          </list>
+          <para styleclass="VariableName-indent">The axes are auto-scaled to the Maximum Torque and Speed, at the output of the Gearbox.</para>
+          <list id="9" type="ul" listtype="bullet" formatstring="&#254;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="3" styleclass="HowTo Bulleted" style="font-family:Wingdings; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted"><text styleclass="VariableName">Show Gearbox Limits </text><text styleclass="Interface2">disabled</text></li>
+          </list>
+          <para styleclass="Body Text HowTo"><text styleclass="VariableName">The axes are auto-scaled to the Maximum Torque and Speed Capacity, referred to the output of the Gearbox.</text></para>
+          <para styleclass="Body Text">This helps you compare the Torque and Speed Capacity of the Gearbox with the Application Load.</para>
+          <para styleclass="Body Text">The Limits of Torque and Speed are shown as boxes.</para>
+          <para styleclass="Body Text">Before you select a servomotor, the limit boxes and their color codes indicate the:</para>
+          <list id="10" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted"><text styleclass="VariableName" style="color:#0080c0; background-color:#7f7f7f;">Dark Blue</text> : Maximum Torque and Speed capacity of the Gearbox</li>
+            <li styleclass="HowTo Bulleted"><text styleclass="VariableName" style="color:#9df5fd; background-color:#7f7f7f;">Light-Blue</text><text style="background-color:#7f7f7f;">&#32;</text>: Rated (or Nominal) Torque and Speed capacity of the Gearbox</li>
+            <li styleclass="HowTo Bulleted"><text styleclass="VariableName" style="color:#fbc090; background-color:#7f7f7f;">Light-Brown</text> : Equivalent Torque and Speed of the Application Load</li>
+          </list>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading3_atocs_" style="text-indent:-32px; margin-left:32px;"><image src="btn_addkeyword.bmp" scale="100.00%" figurelistinclude="0"></image><tab /><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" src-collapsed="btn_addkeyword.bmp" src-expanded="btn_delkeyword.bmp" src-print="none"><caption><![CDATA[STEP 4: Select a Servo-motor Manufacturer]]></caption></toggle></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="2" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Heading4 Toggle_atocs_">Select a Servomotor Manufacturer <image src="Red-14-1b.gif" scale="100.00%" figurelistinclude="0"></image>&#32;</para>
+          <para styleclass="Body Text">There are many Servomotor manufacturers from which to select.</para>
+          <para styleclass="Body Text">When you select a Servomotor Manufacturer, we find for you those Servo-motors that have the Torque and Speed Capacity required by the Application Load.</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Image Caption"><image src="MD-Dialog-TorSpeed-ServoMotor-Limits.png" scale="-99.90%" figurelistinclude="0"><caption><![CDATA[Servo-motor manufacturers and Servo-motor part numbers]]></caption></image></para>
+          <para styleclass="Body Text"><text styleclass="Notes">Note</text>: If you need us to list a different Servomotor Manufacturer, then please email us.</para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading3_atocs_" style="text-indent:-32px; margin-left:32px;"><image src="btn_addkeyword.bmp" scale="100.00%" figurelistinclude="0"></image><tab /><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" src-collapsed="btn_addkeyword.bmp" src-expanded="btn_delkeyword.bmp" src-print="none"><caption><![CDATA[STEP 5: Select a Servo-motor Model]]></caption></toggle></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="3" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Heading4 Toggle_atocs_">Select a Servomotor Model</para>
+          <para styleclass="Image Caption"><image src="MD-Dialog-TorSpeed-ServoMotor-Selected-A.png" scale="-99.90%" figurelistinclude="0"></image></para>
+          <para styleclass="Normal"><text styleclass="HowTo Bulleted">When you select a </text><text styleclass="VariableName">Servomotor Manufacturer</text><text styleclass="HowTo Bulleted">, and </text><text styleclass="VariableName">Auto-Filter is ON</text><text styleclass="HowTo Bulleted">, and you have entered a </text><text styleclass="VariableName">Range-Factor</text><text styleclass="HowTo Bulleted">, the list of </text><text styleclass="VariableName">Servomotor</text><text styleclass="HowTo Bulleted"> is limited to those whose capacity can satisfy these in-equalities:</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="VariableName"><table styleclass="Block" rowcount="8" colcount="5">
+            <tr style="vertical-align:top">
+              <td style="vertical-align:middle; width:45px;">
+                <para styleclass="VariableName" style="text-align:center;"><image src="Red-14-1b.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+              </td>
+              <td colspan="2" style="vertical-align:middle; width:180px;">
+                <para styleclass="VariableName" style="text-align:center;">Manufacturer </para>
+              </td>
+              <td colspan="2">
+                <para styleclass="Body Text">The Selected Manufacturer</para>
+              </td>
+            </tr>
+            <tr style="vertical-align:top">
+              <td style="vertical-align:middle; width:45px;">
+                <para styleclass="VariableName" style="text-align:center;"><image src="Red-14-2.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+              </td>
+              <td colspan="2" style="vertical-align:middle; width:180px;">
+                <para styleclass="VariableName" style="text-align:center;">Model &#160;</para>
+              </td>
+              <td colspan="2">
+                <para styleclass="Body Text">The Selected the Model. </para>
+                <para styleclass="Body Text">Each manufacturer has a different model format. </para>
+              </td>
+            </tr>
+            <tr style="vertical-align:top">
+              <td style="vertical-align:middle; width:45px;">
+                <para styleclass="VariableName" style="text-align:center;"><image src="Red-14-3.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+              </td>
+              <td colspan="2" style="vertical-align:middle; width:180px;">
+                <para styleclass="VariableName" style="text-align:center;">Series</para>
+              </td>
+              <td colspan="2">
+                <para styleclass="Body Text">Series - from the Selected Model</para>
+              </td>
+            </tr>
+            <tr style="vertical-align:top">
+              <td style="vertical-align:middle; width:45px;">
+                <para styleclass="VariableName" style="text-align:center;"><image src="Red-14-4.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+              </td>
+              <td style="vertical-align:middle; width:97px;">
+                <para styleclass="VariableName" style="text-align:center;"><text styleclass="Equations" style="font-weight:normal; font-style:italic;">d1</text></para>
+              </td>
+              <td style="vertical-align:middle; width:72px;">
+                <para styleclass="VariableName" style="text-align:center;">mm</para>
+              </td>
+              <td style="width:223px;">
+                <para styleclass="Body Text" style="text-align:center;">Motor Shaft Diameter</para>
+              </td>
+              <td style="width:230px;">
+                <para styleclass="Body Text" style="text-align:center;">- data sheet -</para>
+              </td>
+            </tr>
+            <tr style="vertical-align:top">
+              <td style="vertical-align:middle; width:45px;">
+                <para styleclass="VariableName" style="text-align:center;"><image src="Red-14-5.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+              </td>
+              <td style="vertical-align:middle; width:97px;">
+                <para styleclass="VariableName" style="text-align:center;">Tn </para>
+              </td>
+              <td style="vertical-align:middle; width:72px;">
+                <para styleclass="VariableName" style="text-align:center;">Nm</para>
+              </td>
+              <td style="width:223px;">
+                <para styleclass="Body Text" style="text-align:center;">Rated Torque</para>
+              </td>
+              <td style="width:230px;">
+                <para styleclass="Normal" style="text-align:center;"><text styleclass="Body Text">- data sheet -</text></para>
+              </td>
+            </tr>
+            <tr style="vertical-align:top">
+              <td style="vertical-align:middle; width:45px;">
+                <para styleclass="VariableName" style="text-align:center;"><image src="Red-14-6.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+              </td>
+              <td style="vertical-align:middle; width:97px;">
+                <para styleclass="VariableName" style="text-align:center;">Tmax</para>
+              </td>
+              <td style="vertical-align:middle; width:72px;">
+                <para styleclass="VariableName" style="text-align:center;">Nm</para>
+              </td>
+              <td style="width:223px;">
+                <para styleclass="Body Text" style="text-align:center;">Max. Torque</para>
+              </td>
+              <td style="width:230px;">
+                <para styleclass="Body Text" style="text-align:center;">- data sheet -</para>
+              </td>
+            </tr>
+            <tr style="vertical-align:top">
+              <td style="vertical-align:middle; width:45px;">
+                <para styleclass="VariableName" style="text-align:center;"><image src="Red-14-7.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+              </td>
+              <td style="vertical-align:middle; width:97px;">
+                <para styleclass="VariableName" style="text-align:center;">Nn</para>
+              </td>
+              <td style="vertical-align:middle; width:72px;">
+                <para styleclass="VariableName" style="text-align:center;">RPM</para>
+              </td>
+              <td style="width:223px;">
+                <para styleclass="Body Text" style="text-align:center;">Rated Speed</para>
+              </td>
+              <td style="width:230px;">
+                <para styleclass="Body Text" style="text-align:center;">- data sheet -</para>
+              </td>
+            </tr>
+            <tr style="vertical-align:top">
+              <td style="vertical-align:middle; width:45px;">
+                <para styleclass="VariableName" style="text-align:center;"><image src="Red-14-8.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+              </td>
+              <td style="vertical-align:middle; width:97px;">
+                <para styleclass="VariableName" style="text-align:center;">Nmax</para>
+              </td>
+              <td style="vertical-align:middle; width:72px;">
+                <para styleclass="VariableName" style="text-align:center;">RPM</para>
+              </td>
+              <td style="width:223px;">
+                <para styleclass="Body Text" style="text-align:center;">Max Speed </para>
+              </td>
+              <td style="width:230px;">
+                <para styleclass="Body Text" style="text-align:center;">- data sheet -</para>
+              </td>
+            </tr>
+          </table></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="VariableName"><text styleclass="HowTo Bulleted" style="font-family:&apos;Segoe UI Semibold&apos;; font-weight:bold;">d1</text><text styleclass="HowTo Bulleted" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:9pt; font-weight:bold; vertical-align:sub;">max</text><text styleclass="VariableName-indent" style="font-size:14pt;">≤</text><text styleclass="HowTo Bulleted" style="font-family:&apos;Segoe UI Semibold&apos;; font-weight:bold;"> D </text><text styleclass="VariableName-indent" style="font-size:14pt;">≤</text><text styleclass="HowTo Bulleted" style="font-family:&apos;Segoe UI Semibold&apos;; font-weight:bold;"> &#160; d1</text><text styleclass="HowTo Bulleted" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:9pt; font-weight:bold; vertical-align:sub;">min</text></para>
+          <para styleclass="VariableName">The Servomotor Shaft Diameter, D, <text style="color:#ff0000;">must</text> fit directly into the Gearbox, d1.</para>
+          <para styleclass="Body Text"><text styleclass="Notes">Note: </text>Precision Planetary Gearboxes can accept a range of shaft diameters at their input. The Gearbox inertia, which is referred to its input, is different for each shaft diameter.</para>
+          <para styleclass="Normal"><line style="height:1px; color:#343400;" /></para>
+          <para styleclass="VariableName"><text styleclass="HowTo Bulleted" style="font-family:&apos;Segoe UI Semibold&apos;; font-weight:bold;">T</text><text styleclass="HowTo Bulleted" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:9pt; font-weight:bold; vertical-align:sub;">max</text><text styleclass="HowTo Bulleted" style="font-family:&apos;Segoe UI Semibold&apos;; font-weight:bold;">&#32;</text><text styleclass="VariableName-indent" style="font-size:14pt;">≤</text><text styleclass="HowTo Bulleted" style="font-family:&apos;Segoe UI Semibold&apos;; font-weight:bold;"> T</text><text styleclass="HowTo Bulleted" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:9pt; font-weight:bold; vertical-align:sub;">mot max</text><text styleclass="HowTo Bulleted" style="font-family:&apos;Segoe UI Semibold&apos;; font-weight:bold;">&#32;</text><text styleclass="VariableName-indent" style="font-size:14pt;">≤</text><text styleclass="HowTo Bulleted" style="font-family:&apos;Segoe UI Semibold&apos;; font-weight:bold;"> RF × T</text><text styleclass="HowTo Bulleted" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:9pt; font-weight:bold; vertical-align:sub;">max</text>&#32;</para>
+          <para styleclass="VariableName">Maximum Application Load Torque referred to the Gearbox input-shaft </para>
+          <para styleclass="VariableName-indent"><text style="font-size:14pt;"> ≤ </text>Maximum Servomotor Torque Capacity <text style="font-size:14pt;">≤</text></para>
+          <para styleclass="Body Text Howindent4bullets">&#32;<text styleclass="VariableName">Range-Factor × Maximum Application Load Torque referred to the Gearbox input-shaft</text></para>
+          <para styleclass="Normal"><line style="height:1px; color:#343400;" /></para>
+          <para styleclass="VariableName"><text style="font-family:&apos;Segoe UI Semibold&apos;; font-weight:bold;">T</text><text style="font-family:&apos;Segoe UI Semibold&apos;; font-size:9pt; font-weight:bold; vertical-align:sub;">m</text><text style="font-size:14pt;">≤</text>&#32;<text style="font-family:&apos;Segoe UI Semibold&apos;; font-weight:bold;">T</text><text style="font-family:&apos;Segoe UI Semibold&apos;; font-size:9pt; font-weight:bold; vertical-align:sub;">N</text><text style="font-family:&apos;Segoe UI Semibold&apos;; font-weight:bold;">&#32;</text><text style="font-size:14pt;">≤ </text><text style="font-family:&apos;Segoe UI Semibold&apos;; font-weight:bold;">RF × T</text><text style="font-family:&apos;Segoe UI Semibold&apos;; font-size:9pt; font-weight:bold; vertical-align:sub;">m</text></para>
+          <para styleclass="VariableName">Equivalent Application (Load) Torque referred to the Gearbox input-shaft</para>
+          <para styleclass="VariableName-indent"><text style="font-size:14pt;">≤</text> Rated Servomotor Torque Capacity <text style="font-size:14pt;">≤</text></para>
+          <para styleclass="Body Text Howindent4bullets">&#32;<text styleclass="VariableName">Range-Factor × Equivalent &#160;Application (Load) Torque referred to the Gearbox input-shaft</text>&#32;</para>
+          <para styleclass="Normal"><line style="height:1px; color:#343400;" /></para>
+          <para styleclass="VariableName"><text style="font-family:&apos;Segoe UI Semibold&apos;; font-weight:bold; color:#000000;">n1</text><text style="font-family:&apos;Segoe UI Semibold&apos;; font-size:9pt; font-weight:bold; vertical-align:sub; color:#000000;">max</text><text style="font-family:&apos;Segoe UI Semibold&apos;; font-weight:bold; color:#000000;">&#32;</text><text style="font-size:14pt; color:#000000;">≤</text><text style="font-family:&apos;Segoe UI Semibold&apos;; font-weight:bold; color:#000000;"> N</text><text style="font-family:&apos;Segoe UI Semibold&apos;; font-size:9pt; font-weight:bold; vertical-align:sub; color:#000000;">max</text></para>
+          <para styleclass="VariableName"><text style="color:#000000;">Maximum Application Speed referred to the Gearbox input-shaft </text><text style="font-size:14pt; color:#000000;">≤</text><text style="color:#000000;"> Maximum Servomotor Speed </text></para>
+          <para styleclass="Normal"><line style="height:1px; color:#343400;" /></para>
+          <para styleclass="VariableName"><text style="font-family:&apos;Segoe UI Semibold&apos;; font-weight:bold; color:#000000;">n1</text><text style="font-family:&apos;Segoe UI Semibold&apos;; font-size:9pt; font-weight:bold; vertical-align:sub; color:#000000;">N</text><text style="font-family:&apos;Segoe UI Semibold&apos;; font-weight:bold; color:#000000;">&#32;</text><text style="font-size:14pt; color:#000000;">≤</text><text style="font-family:&apos;Segoe UI Semibold&apos;; font-weight:bold; color:#000000;"> N1</text><text style="font-family:&apos;Segoe UI Semibold&apos;; font-size:9pt; font-weight:bold; vertical-align:sub; color:#000000;">N</text></para>
+          <para styleclass="VariableName"><text style="color:#000000;">Average Application Speed (or Equivalent, Mean) </text><text style="font-size:14pt; color:#000000;">≤</text><text style="color:#000000;"> Rated Servomotor Speed</text></para>
+          <para styleclass="Normal"><line style="height:1px; color:#343400;" /></para>
+          <para styleclass="Normal"><text styleclass="VariableName" style="font-family:&apos;Segoe UI Semibold&apos;; font-weight:bold; color:#000000;">Pn </text><text styleclass="VariableName" style="font-size:14pt; color:#000000;">≤</text><text styleclass="VariableName" style="font-family:&apos;Segoe UI Semibold&apos;; font-weight:bold; color:#000000;"> Pr</text></para>
+          <para styleclass="VariableName"><text style="color:#000000;">Application Power &lt; Servomotor Power Capacity</text></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading4 Toggle_atocs_2" style="text-indent:-32px; margin-left:56px;"><image src="btn_addkeyword.bmp" scale="100.00%" figurelistinclude="0"></image><tab /><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" src-collapsed="btn_addkeyword.bmp" src-expanded="btn_delkeyword.bmp" src-print="none"><caption><![CDATA[Servo-motor Parameters Check List.]]></caption></toggle></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="2" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Image Caption"><image src="MD-Dialog-TorSpeed-ServoMotor-Parameters.png" scale="-99.90%" figurelistinclude="0"><caption><![CDATA[Servo-motor Parameters Summary Sheet]]></caption></image></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Text">When you select a servomotor model, its <text styleclass="VariableName-IT" style="font-style:normal;">Servomotor Parameters Summary Sheet</text> show. <text styleclass="Body Text HowTo">This form is read-only. </text></para>
+          <para styleclass="Body Text">To the left of the sheet, there should be five(5) × <image src="OK-tiny-11-15.png" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image> to indicate that the Servomotor has the capacity to drive the Application Load and also satisfies those 5 × requirements.</para>
+          <para styleclass="Body Text HowTo">Peak Servomotor Torque ≥ Maximum Application (Load) ÷ i</para>
+          <para styleclass="Body Text HowTo">Rated Servomotor Torque ≥ Equivalent Application (Load) Torque ÷ i</para>
+          <para styleclass="Body Text HowTo">Max Servomotor Speed ≥ Maximum Application (Load) Speed × i</para>
+          <para styleclass="Body Text HowTo">Continuous Servomotor Speed ≥ Equivalent Application (Load) Speed × i</para>
+          <para styleclass="Body Text HowTo">Rated Power &gt; Nominal Load Power.</para>
+          <para styleclass="Normal"><line style="height:1px; color:#343400;" /></para>
+          <para styleclass="Normal">Other Parameters include:</para>
+          <list id="11" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted">Vdc - Bus Voltage for Drive</li>
+            <li styleclass="HowTo Bulleted">Jm - Servomotor Inertia</li>
+            <li styleclass="HowTo Bulleted">D - Servomotor shaft diameter.</li>
+          </list>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading4 Toggle_atocs_2" style="text-indent:-32px; margin-left:56px;"><image src="btn_addkeyword.bmp" scale="100.00%" figurelistinclude="0"></image><tab /><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" src-collapsed="btn_addkeyword.bmp" src-expanded="btn_delkeyword.bmp" src-print="none"><caption><![CDATA[Servomotor Torque vs Speed plot]]></caption></toggle></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="4" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Image Caption"><image src="MD-Dialog-TorSpeed-ServoMotor-Graph Plot.png" scale="-99.90%" figurelistinclude="0"><caption><![CDATA[Torque-Speed plot of Servo-motor]]></caption></image></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Text">When you select a Servomotor, colors of the dots for the <text styleclass="VariableName">Torque (N.m.) vs Speed (RPM)</text> plot changes to indicate whether the Servomotor has the Capacity to drive the Application Load or not.</para>
+          <para styleclass="Body Text">The color code is :</para>
+          <list id="12" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted"><text styleclass="VariableName" style="color:#004000;">Green</text> : Torque AND Speed of the Load ≤ Rated Servomotor Capacity</li>
+            <li styleclass="HowTo Bulleted"><text styleclass="VariableName" style="color:#f07800;">Amber</text> : Torque OR Speed of the Load ≥ Rated Servomotor Capacity ≤ Maximum Servomotor Capacity</li>
+            <li styleclass="HowTo Bulleted"><text styleclass="VariableName" style="color:#ff0000;">Red</text> : Torque OR Speed of the Load ≥ &#160;Maximum Servomotor Capacity</li>
+          </list>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Image Caption"><image src="MD-Dialog-TorSpeed-ServoMotor-Graph Plo-Limitst.png" scale="-99.90%" figurelistinclude="0"></image></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="VariableName">Motor Torque and Speed Limits.</para>
+          <para styleclass="HowTo Bulleted">The Show Motor Limits check-list box is located above the Motor selection box.</para>
+          <list id="13" type="ul" listtype="bullet" formatstring="&#113;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="3" styleclass="HowTo Bulleted" style="font-family:Wingdings; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted">&#32;<text styleclass="VariableName">Show Motor Limits </text><text styleclass="Interface2">Enabled</text>&#32;</li>
+          </list>
+          <para styleclass="VariableName-indent">The axes are auto-scaled to the Maximum Torque and Speed, at the Servomotor Drive Shaft.</para>
+          <list id="14" type="ul" listtype="bullet" formatstring="&#254;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="3" styleclass="HowTo Bulleted" style="font-family:Wingdings; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted"><text styleclass="VariableName">Show Motor Limits </text><text styleclass="Interface2">Disabled</text></li>
+          </list>
+          <para styleclass="Body Text HowTo"><text styleclass="VariableName">The axes are auto-scaled to the Maximum Torque and Speed Capacity of the Selected Servomotor</text></para>
+          <para styleclass="Body Text HowTo">This helps you compare the Torque and Speed Capacity of the Servomotor with the Application Load referred to its input-shaft.</para>
+          <para styleclass="Body Text HowTo">The Limits of Torque and Speed are shown as boxes.</para>
+          <list id="15" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted"><text styleclass="VariableName" style="color:#8000ff; background-color:#7f7f7f;"> Purple </text> : Maximum Torque and Speed capacity of the Servomotor</li>
+            <li styleclass="HowTo Bulleted"><text styleclass="VariableName" style="color:#ff80ff; background-color:#7f7f7f;"> Pink</text><text style="background-color:#7f7f7f;">&#32;</text>: Rated (or Nominal) Torque and Speed capacity of the Servomotor</li>
+            <li styleclass="HowTo Bulleted"><text styleclass="VariableName" style="color:#fbc090; background-color:#7f7f7f;">Light-Brown</text> : Equivalent Torque and Speed of the Application Load</li>
+          </list>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Normal"><line style="height:3px; color:#343400;" /></para>
+    <para styleclass="Heading4 Toggle_atocs_" style="text-indent:-36px; margin-left:36px;"><image src="tog_plus.gif" scale="100.00%" figurelistinclude="0"></image><tab /><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" src-collapsed="tog_plus.gif" src-expanded="tog_minus.gif"><caption><![CDATA[Why is the Motor Torque is different to the Mechanism Torque]]></caption></toggle></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="1" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Text"><text styleclass="Body Text HowTo">The Torque we calculate for you when you </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Visibility-Show-Forces">Display Force-Vectors</link><text styleclass="Body Text HowTo"> is the torque to move the mechanism only. This is the Application Torque. The Application Torque does not include the Torque to move the motor and gearbox. It is necessary to add the Torque to accelerate the motor and the gearbox to the Torque in the graphics-area.</text></para>
+          <para styleclass="Body Text"><text styleclass="Body Text HowTo">Clearly, the Torque to move motor depends on the inertia of the motor and gearbox as well as the gearbox ratio.</text></para>
+          <para styleclass="Body Text"><text styleclass="Body Text HowTo">The higher the gear ratio, the less Application Torque the motor &apos;sees&apos;. But the motor must run faster and accelerate more. This influences the overall power, as well as system efficiency.</text></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading4 Toggle_atocs_" style="text-indent:-36px; margin-left:36px;"><image src="tog_plus.gif" scale="100.00%" figurelistinclude="0"></image><tab /><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" src-collapsed="tog_plus.gif" src-expanded="tog_minus.gif"><caption><![CDATA[More on Torque vs Speed Curves ]]></caption></toggle></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="3" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Text"><text styleclass="Body Text HowTo">The performance characteristics of a brushless servo motor (motor/drive combination) are described by a torque/speed operating envelope. </text></para>
+          <para styleclass="Body Text"><text styleclass="Body Text HowTo">As shown below, the colored areas of the curve identify the Exceeded Duty, Continuous Duty, and Intermittent Duty working areas of the system.</text></para>
+          <para styleclass="VariableName">Exceeded Duty</para>
+          <para styleclass="Body Text HowTo">To maximum speed and/or the maximum torque, of the gearbox and/or Servomotor must be exceeded. Usually, to make sure this cannot happen, there is a Current (amps) Limit on the Power Drive.</para>
+          <para styleclass="VariableName">Continuous Duty Zone (S1)</para>
+          <para styleclass="Body Text HowTo">The continuous duty zone is bounded by the maximum continuous stall torque up to the intersection with the intermittent duty line. The continuous torque line is set by either the motor’s maximum rated temperature, or the drive&apos;s rated continuous current output, whichever is less. </para>
+          <para styleclass="Body Text HowTo">The system maximum continuous or &apos;voltage line&apos; is set by the voltage rating of the drives, the line voltage supplied, and the motor winding. </para>
+          <para styleclass="Body Text HowTo">The system can operate on a continuous basis anywhere within this area, assuming the ambient temperature is 40°C or less. </para>
+          <para styleclass="VariableName">Intermittent Duty Zone (S5)</para>
+          <para styleclass="Body Text HowTo">The intermittent duty zone is bordered by the peak-stall torque and the system voltage line. The peak torque line is set by either the drives’ peak current rating, which the drive can give for a limited time, or the maximum rated peak current for the motor, whichever is less. Higher torque levels may be achievable at higher power levels.</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Normal"><image src="MD-TorqueSpeed-small4.png" align="left" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"><caption><![CDATA[Typical Torque / Speed Duty Capability of a Brushless Servomotor.]]></caption></image></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Table"><text styleclass="VariableName">Peak Torque: (Ԏ</text><text styleclass="VariableName" style="font-size:10pt; vertical-align:sub;">PS</text><text styleclass="VariableName"> )</text><text styleclass="Body Text HowTo"> The Peak Torque the Motor and Gearbox at Stall Speed</text></para>
+          <para styleclass="Body Text"><text styleclass="VariableName">Continuous Stall Torque: (Ԏ</text><text styleclass="VariableName" style="font-size:10pt; vertical-align:sub;">CS</text><text styleclass="VariableName"> ). </text><text styleclass="Body Text HowTo">The Continuous Torque the Motor and Gearbox can give Continuously at Stall Speed.</text></para>
+          <para styleclass="Body Text"><text styleclass="VariableName">Maximum Speed: (ω</text><text styleclass="VariableName" style="font-size:10pt; vertical-align:sub;">MAX</text><text styleclass="VariableName"> )</text>&#32;<text styleclass="Body Text HowTo">Maximum possible speed of the Motor and Gearbox. Not attainable when the voltage is limited by the drive.</text></para>
+          <para styleclass="Body Text"><text styleclass="VariableName">Knee Speed: (ω</text><text styleclass="VariableName" style="font-size:10pt; vertical-align:sub;">K</text><text styleclass="VariableName"> ) </text>The<text styleclass="Body Text HowTo"> Speed at &apos;knee&apos; in peak envelope that is the intersection of the Peak Torque with the Voltage Torque/Speed Limit Line.</text></para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="Body Text"><text styleclass="VariableName">Continuous Rated Torque:(Ԏ</text><text styleclass="VariableName" style="font-size:10pt; vertical-align:sub;">CR</text><text styleclass="VariableName"> ). </text><text styleclass="Body Text HowTo">The Continuous Torque at the Speed of the Rated Power.</text></para>
+          <para styleclass="Body Text"><text styleclass="VariableName">Rated Speed: (ω</text><text styleclass="VariableName" style="font-size:10pt; vertical-align:sub;">R</text><text styleclass="VariableName"> )</text>&#32;<text styleclass="Body Text HowTo">The Rated Speed or Speed at Rated Power. The motor can operate at this speed with the supply voltage.</text></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading4 Toggle_atocs_" style="text-indent:-36px; margin-left:36px;"><image src="tog_plus.gif" scale="100.00%" figurelistinclude="0"></image><tab /><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" src-collapsed="tog_plus.gif" src-expanded="tog_minus.gif"><caption><![CDATA[How we calculate the Motor Torque and Motor Speed]]></caption></toggle></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="2" colcount="2">
+      <tr style="vertical-align:top">
+        <td colspan="2">
+          <para styleclass="VariableName">The Reflected Inertia at the Motor shaft usually continuously changes in a machine-cycle.</para>
+          <para styleclass="Body Text HowTo">With <text styleclass="VariableName">Constant Inertia Mechanical Systems</text> it is easy to calculate <text styleclass="VariableName">Inertia Torque</text>.</para>
+          <para styleclass="Body Text HowTo">With mechanisms, the Torque is dependent on reflected inertia that is a function of Acceleration, Velocity, and Position.</para>
+          <para styleclass="Body Text HowTo"><text styleclass="VariableName">PSMotion</text> has developed algorithms to calculate these, which give a true indication of the reflected inertia at a motor shaft for even the most complex mechanisms.</para>
+          <para styleclass="Body Text HowTo">The equations below, are calculated at every instant in a machine-cycle.</para>
+          <para styleclass="Body Text HowTo">Usually, you aim to make the <text styleclass="VariableName">Reflected Load Inertia = (Motor + Gearbox) Inertia.</text></para>
+          <para styleclass="Body Text HowTo">However, when the <text styleclass="VariableName">Load Inertia</text> is not constant, it is more difficult to select the Motor and Gearbox.</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:234px;">
+          <para styleclass="BodyText BI">Speed:</para>
+          <para styleclass="Body Text HowTo"><text style="font-style:italic;">ω</text><text style="font-size:7pt; font-style:italic; vertical-align:sub;">m</text><text style="font-style:italic;"> = N × ω</text><text style="font-size:7pt; font-style:italic; vertical-align:sub;">L</text><text styleclass="Body Text" style="font-style:italic;">&#32;</text></para>
+          <para styleclass="Body Text HowTo"><text style="font-style:italic;">α</text><text style="font-size:7pt; font-style:italic; vertical-align:sub;">m</text><text style="font-size:11pt; font-style:italic; vertical-align:baseline;"> = N . </text><text style="font-style:italic;">α</text><text style="font-size:7pt; font-style:italic; vertical-align:sub;">L </text></para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="BodyText BI">Torque</para>
+          <para styleclass="Body Text HowTo"><text style="font-style:italic;">T</text><text style="font-size:7pt; font-style:italic; vertical-align:sub;">m</text><text style="font-style:italic;"> = - α</text><text style="font-size:7pt; font-style:italic; vertical-align:sub;">m</text><text style="font-size:11pt; font-style:italic; vertical-align:baseline;"> (J</text><text style="font-size:7pt; font-style:italic; vertical-align:sub;">G</text><text style="font-style:italic;"> + J</text><text style="font-size:7pt; font-style:italic; vertical-align:sub;">M</text><text style="font-style:italic;">) + sign(T</text><text style="font-size:7pt; font-style:italic; vertical-align:sub;">VD</text><text styleclass="Body Text" style="font-style:italic;">)</text></para>
+          <para styleclass="Body Text HowTo"><text styleclass="Body Text" style="font-style:italic;">T</text><text styleclass="Body Text" style="font-size:7pt; font-style:italic; vertical-align:sub;">L</text><text styleclass="Body Text" style="font-style:italic;"> = (T</text><text styleclass="Body Text" style="font-size:7pt; font-style:italic; vertical-align:sub;">MD</text><text styleclass="Body Text" style="font-style:italic;"> &#160;∕ &#160;N ) &#160;∕ &#160;η</text></para>
+          <para styleclass="Body Text HowTo"><text styleclass="Body Text" style="font-style:italic;">T</text><text styleclass="Body Text" style="font-size:7pt; font-style:italic; vertical-align:sub;">T</text><text style="font-style:italic;"> = T</text><text style="font-size:7pt; font-style:italic; vertical-align:sub;">m</text><text style="font-style:italic;"> + &#160;T</text><text style="font-size:7pt; font-style:italic; vertical-align:sub;">L</text></para>
+        </td>
+        <td>
+          <para styleclass="Body Text HowTo" style="margin-top:0px; margin-bottom:0px;"><text style="font-style:italic;">N</text> &#160; &#160;= Gear Ratio</para>
+          <para styleclass="Body Text HowTo" style="margin-top:0px; margin-bottom:0px;">ω<text style="font-size:7pt; vertical-align:sub;">m &#160;</text>= Motor Angular Velocity</para>
+          <para styleclass="Body Text HowTo" style="margin-top:0px; margin-bottom:0px;">ω<text style="font-size:7pt; vertical-align:sub;">L</text><text styleclass="Body Text"> &#160;= Load Angular Velocity</text></para>
+          <para styleclass="Body Text HowTo" style="margin-top:0px; margin-bottom:0px;"><text styleclass="Body Text" style="font-style:italic;">T</text><text styleclass="Body Text" style="font-size:7pt; font-style:italic; vertical-align:sub;">T</text><text styleclass="Body Text"> &#160; = Total Torque</text></para>
+          <para styleclass="Body Text HowTo" style="margin-top:0px; margin-bottom:0px;"><text style="font-style:italic;">T</text><text style="font-size:7pt; font-style:italic; vertical-align:sub;">m</text> &#160;= Motor Torque</para>
+          <para styleclass="Body Text HowTo" style="margin-top:0px; margin-bottom:0px;"><text style="font-style:italic;">T</text><text style="font-size:7pt; font-style:italic; vertical-align:sub;">L</text><text style="font-size:7pt; vertical-align:sub;">&#32;</text> &#160;= Load referred to Motor Shaft</para>
+          <para styleclass="Body Text HowTo" style="margin-top:0px; margin-bottom:0px;"><text style="font-style:italic;">T</text><text style="font-size:7pt; font-style:italic; vertical-align:sub;">VD</text> = Viscous &apos;Drag&apos; Torque. It is always opposite to the direction of motion</para>
+          <para styleclass="Body Text HowTo" style="margin-top:0px; margin-bottom:0px;"><text styleclass="Body Text" style="font-style:italic;">T</text><text styleclass="Body Text" style="font-size:7pt; font-style:italic; vertical-align:sub;">MD</text><text styleclass="Body Text"> = Torque derived by your model at the Motor Shaft ( f{P</text><text styleclass="Body Text" style="font-size:7pt; vertical-align:sub;">L</text><text styleclass="Body Text"> , </text>ω<text style="font-size:7pt; vertical-align:sub;">L, &#160;</text><text style="font-style:italic;">α</text><text style="font-size:7pt; font-style:italic; vertical-align:sub;">L </text><text styleclass="Body Text">} )</text></para>
+          <para styleclass="Body Text HowTo" style="margin-top:0px; margin-bottom:0px;"><text style="font-size:11pt; font-style:italic; vertical-align:baseline;">J</text><text style="font-size:7pt; font-style:italic; vertical-align:sub;">G</text> &#160; = Inertia of Gearbox</para>
+          <para styleclass="Body Text HowTo" style="margin-top:0px; margin-bottom:0px;"><text style="font-style:italic;">J</text><text style="font-size:7pt; font-style:italic; vertical-align:sub;">M</text> &#160; = Inertia of Motor</para>
+          <para styleclass="Body Text HowTo" style="margin-top:0px; margin-bottom:0px;"><text style="font-style:italic;">α</text><text style="font-size:7pt; font-style:italic; vertical-align:sub;">m</text><text style="font-size:11pt; vertical-align:baseline;"> &#160;= Motor Acceleration</text></para>
+          <para styleclass="Body Text HowTo" style="margin-top:0px; margin-bottom:0px;">α<text style="font-size:7pt; vertical-align:sub;">L</text><text style="font-size:11pt; vertical-align:baseline;"> = Load Acceleration</text></para>
+          <para styleclass="Body Text HowTo" style="margin-top:0px; margin-bottom:0px;"><text styleclass="Body Text" style="font-style:italic;">η</text><text styleclass="Body Text"> &#160; &#160;= Gearbox Efficiency</text></para>
+        </td>
+      </tr>
+    </table></para>
+  </body>
+</topic>

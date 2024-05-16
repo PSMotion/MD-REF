@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" status="Under Construction" modified="2023-06-01T10:51:14.418+01:00" lasteditedby="Adam" version="2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title>What is the hierarchy of Extrusions?</title>
+  <keywords>
+    <keyword>Solid Modelling<keyword>Extrusion Element</keyword><keyword>Hierarchy</keyword><keyword>Primary Contour</keyword><keyword>Profile Element</keyword><keyword>Secondary Contour</keyword><keyword>Sketch-Loop</keyword></keyword>
+  </keywords>
+  <body>
+    <header>
+      <para styleclass="Heading1">What is the hierarchy of Extrusions?</para>
+    </header>
+    <para styleclass="Heading4 Toggle_atocs_">What is the Hierarchy of Extrusion?</para>
+    <para styleclass="Body Text">The Parent to Child hierarchy is as follows:</para>
+    <para styleclass="Body Text HowTo">MODEL &gt; PLANE &gt; MECHANISM &gt; PARTS &gt; (sketch-loop) &gt; (Auto) PROFILE &gt; EXTRUSION &gt; HOLE</para>
+    <para styleclass="Body Text"><table styleclass="Standard" rowcount="6" colcount="6">
+      <tr style="vertical-align:bottom">
+        <td colspan="6">
+          <para styleclass="Body Text" style="text-align:left;">There are a number of elements that must &apos;co-exist&apos; to create Extrusions for Solid Modeling. It is helpful to understand the:</para>
+          <list id="0" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted">Commands that you need to use</li>
+            <li styleclass="HowTo Bulleted">Actions that <text styleclass="VariableName">MechDesigner</text> adds to the model for you.</li>
+          </list>
+        </td>
+      </tr>
+      <tr style="vertical-align:bottom">
+        <td style="vertical-align:middle; width:150px; background-color:#c0c0c0;">
+          <para styleclass="VariableName" style="text-align:right;">Command 1 : </para>
+        </td>
+        <td colspan="5" style="background-color:#ffff99;">
+          <para styleclass="Body Text"><text styleclass="VariableName">Add sketch-elements</text> to <text styleclass="Element">Lines</text><text style="font-size:11pt; font-style:normal;">, </text><text styleclass="Element">CAD-Lines</text><text style="font-size:11pt; font-style:normal;">, </text><text styleclass="Element">Arcs</text><text style="font-size:11pt; font-style:normal;">, </text><text styleclass="Element">Circles</text><text style="font-size:11pt; font-style:normal;"> to define the shape of a sketch-loop</text></para>
+          <para styleclass="Body Text"><text style="font-style:normal;">OR </text></para>
+          <para styleclass="Body Text"><text styleclass="VariableName">Add Polyline</text><text style="font-style:normal;"> to a </text><text styleclass="Element">2D-Cam</text><text style="font-style:normal;"> or a </text><text styleclass="Element">Gear-Pair</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:bottom">
+        <td style="vertical-align:middle; width:150px; background-color:#c0c0c0;">
+          <para styleclass="VariableName" style="text-align:right;"> MechDesigner : </para>
+        </td>
+        <td style="background-color:#33cccc;">
+          <list id="1" type="ul" listtype="bullet" formatstring="&#232;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Normal" style="text-align:center; font-family:Wingdings; font-size:11pt; color:#000000;">
+            <li styleclass="Normal" style="text-align:center;"></li>
+          </list>
+        </td>
+        <td colspan="4" style="vertical-align:middle; background-color:#99cc00;">
+          <para styleclass="VariableName-IT">Sketch-Loops: </para>
+          <para styleclass="Body Text"><text style="font-style:normal;">...we recognize for you a sketch-loop</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:bottom">
+        <td style="vertical-align:middle; width:150px; background-color:#c0c0c0;">
+          <para styleclass="VariableName" style="text-align:right;">Command 2 : </para>
+        </td>
+        <td style="background-color:#999999;">
+        </td>
+        <td style="vertical-align:middle; background-color:#33cccc;">
+          <list id="2" type="ul" listtype="bullet" formatstring="&#232;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Normal" style="text-align:center; font-family:Wingdings; font-size:11pt; color:#000000;">
+            <li styleclass="Normal" style="text-align:center;"></li>
+          </list>
+        </td>
+        <td colspan="3" style="vertical-align:middle; background-color:#ffff99;">
+          <para styleclass="VariableName">Add Profile: </para>
+          <para styleclass="Body Text"><text style="font-style:normal;">Select a sketch-element that one sketch-element in a sketch-loop</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:bottom">
+        <td style="vertical-align:middle; width:150px; background-color:#c0c0c0;">
+          <para styleclass="VariableName" style="text-align:right;">MechDesigner : </para>
+        </td>
+        <td style="background-color:#999999;">
+        </td>
+        <td style="background-color:#999999;">
+        </td>
+        <td style="vertical-align:middle; background-color:#33cccc;">
+          <list id="3" type="ul" listtype="bullet" formatstring="&#232;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Normal" style="text-align:center; font-family:Wingdings; font-size:11pt; color:#000000;">
+            <li styleclass="Normal" style="text-align:center;"></li>
+          </list>
+        </td>
+        <td colspan="2" style="vertical-align:middle; background-color:#99cc00;">
+          <para styleclass="VariableName-IT">Extrusions: </para>
+          <para styleclass="Body Text"><text style="font-style:normal;">... are added with a Add-Profile</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:bottom">
+        <td style="vertical-align:middle; width:150px; background-color:#c0c0c0;">
+          <para styleclass="VariableName" style="text-align:right;">Command 3 : </para>
+        </td>
+        <td style="background-color:#999999;">
+        </td>
+        <td style="background-color:#999999;">
+        </td>
+        <td style="background-color:#999999;">
+        </td>
+        <td style="background-color:#33cccc;">
+          <list id="4" type="ul" listtype="bullet" formatstring="&#232;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Body Text" style="text-align:center; font-family:Wingdings; font-size:11pt; color:#000000;">
+            <li styleclass="Body Text" style="text-align:center;"></li>
+          </list>
+        </td>
+        <td style="vertical-align:middle; background-color:#ffff99;">
+          <para styleclass="Body Text"><text styleclass="VariableName">Add Holes: </text><text style="font-style:normal;">Through Extrusions</text></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="SeeAlso">See Tutorial 4 <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Why-add-a-sketch-loop">How to add sketch-loops</link></para>
+    <para styleclass="Body Text"><table styleclass="Standard" rowcount="2" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:260px;">
+          <para styleclass="Normal"><image src="MD-GA-ProfileContours-sketch-element-Zaxis.png" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td rowspan="2">
+          <para styleclass="Normal"><text styleclass="Body Text" style="text-decoration:underline;">Information</text><text styleclass="Body Text">:</text></para>
+          <list id="5" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted - compressed" style="font-family:Symbol; font-size:10pt; color:#000000;">
+            <li styleclass="HowTo Bulleted - compressed">A Sketch-Loop is series of sketch-elements<image src="Red-14-3.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image>, joined end-to-end, or a Circle, added to a Part.</li>
+          </list>
+          <list id="6" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted - compressed" style="font-family:Symbol; font-size:10pt; color:#000000;">
+            <li styleclass="HowTo Bulleted - compressed">The Sketch-Loop cannot have branches - &apos;T-bars&apos;</li>
+            <li styleclass="HowTo Bulleted - compressed">The Sketch-Loop cannot cross itself - &apos;Figure-of-Eights&apos;.</li>
+          </list>
+          <list id="5" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted - compressed" style="font-family:Symbol; font-size:10pt; color:#000000;">
+            <li styleclass="HowTo Bulleted - compressed">Sketch-Elements and Sketch-Loops do NOT show in the Assembly-Tree.</li>
+            <li styleclass="HowTo Bulleted - compressed">To add a Profile, select a Sketch-Loop<image src="Red-14-3.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image>, to define the shape - called the contour - of the Profile</li>
+            <li styleclass="HowTo Bulleted - compressed">The Profile is two contours: the Primary Contour<image src="Red-14-1b.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image> and the Secondary Contour<image src="Red-14-2.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image>.</li>
+            <li styleclass="HowTo Bulleted - compressed">The Profile contours are offset from each other, they can <text style="text-decoration:underline;">only</text> be offset along the Z-axis of the Part; the Secondary Contour is <text style="text-decoration:underline;">always</text> at a more positive Z-axis value (it is in-front of the Primary Contour when viewed from the &apos;Front&apos; view).</li>
+            <li styleclass="HowTo Bulleted - compressed">The Extrusion<image src="Red-14-4.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image> simply fills the space between the Primary and Secondary Contours of the Profile. </li>
+            <li styleclass="HowTo Bulleted - compressed">Extrusions have a few more properties: visibility, density, color, opacity, etc.</li>
+            <li styleclass="HowTo Bulleted - compressed">The location of the Profile contours are edited with the Extrusion dialog.</li>
+            <li styleclass="HowTo Bulleted - compressed">You can sketch many Sketch-Loops in each Part - hence Add many Profile and Extrusions</li>
+            <li styleclass="HowTo Bulleted - compressed">You can supply <text style="text-decoration:underline;">many</text> Profiles from <text style="text-decoration:underline;">one</text> Sketch-Loop - each with different offsets</li>
+            <li styleclass="HowTo Bulleted - compressed">You can use a sketch-loop to cut a hole through an Extrusion</li>
+          </list>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:260px;">
+          <para styleclass="Normal"><image src="MD-GA-Extrusion.png" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+      </tr>
+    </table></para>
+  </body>
+</topic>

@@ -1,0 +1,218 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" modified="2024-01-29T19:35:46.964Z" lasteditedby="44785" version="2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title>Dialog: Function-Block: Polynomial-Fit</title>
+  <keywords>
+    <keyword>Dialog<keyword>Polynomial-Fit FB</keyword></keyword>
+  </keywords>
+  <body>
+    <header>
+      <para styleclass="Heading1">Dialog: Function-Block: Polynomial-Fit</para>
+    </header>
+    <para styleclass="Heading2" style="page-break-before:always;">Polynomial-Fit FB</para>
+    <para styleclass="SeeAlso">See also: <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Command-AddFBPolynomialFit">Add Polynomial Fit FB</link></para>
+    <para styleclass="Normal"><line style="height:1px; color:#343400;" /></para>
+    <para styleclass="Normal"><text styleclass="Body Text HowTo">Before you use this tool, I recommend you save your work.</text></para>
+    <para styleclass="Normal"><text styleclass="Body Text HowTo">Then save it again with a new model file-name.</text></para>
+    <para styleclass="Heading4 Toggle_atocs_">About Polynomial FB</para>
+    <para styleclass="Body Text"><table styleclass="Default" rowcount="2" colcount="1">
+      <tr style="vertical-align:top">
+        <td style="background-color:#ffffff;">
+          <para styleclass="Normal" style="text-align:left;"><image src="MD-Toolbar-Modelling-FB-PolyFit.png" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Table"><text style="font-weight:normal;">The </text><text styleclass="Element-Header">Polynomial Fit FB</text><text style="font-weight:normal;"> finds a concatenated series of Polynomials (5th order) that are approximately equal to the data at its input-connector.</text></para>
+          <para styleclass="Body Table"><text style="font-weight:normal;">After you do a Polynomial-Fit, you can:</text></para>
+          <list id="0" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted"><text style="font-weight:normal;">Transfer Polynomials directly to </text><text styleclass="VariableName">MotionDesigner</text><text style="font-weight:normal;"> as a new </text><text styleclass="VariableName">Motion name-tab</text><text style="font-weight:normal;">.</text></li>
+            <li styleclass="HowTo Bulleted"><text style="font-weight:normal;">Connect a wire from the output-connector of the </text><text styleclass="Element-Header">Polynomial-Fit FB</text><text styleclass="Body Text"> to the input-connector of</text><text style="font-weight:normal;"> a different </text><text styleclass="Element-Header">FB</text><text style="font-weight:normal;">.</text></li>
+            <li styleclass="HowTo Bulleted"><text style="font-weight:normal;">Export the motion-values that you calculate as a text-file.</text></li>
+            <li styleclass="Body Text"><text styleclass="HowTo Bulleted" style="font-weight:normal;">Export the values for position, velocity, and acceleration at the beginning and end of each polynomial segment as a </text>CSV<text styleclass="HowTo Bulleted" style="font-weight:normal;"> file.</text></li>
+            <li styleclass="HowTo Bulleted"><text style="font-weight:normal;">Export the polynomials segments in a format suitable for the Schneider-Electric</text><text style="font-size:7pt; font-weight:normal; vertical-align:super;">®</text><text style="font-weight:normal;"> EPAS4 servo-controller.</text></li>
+          </list>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading4 Toggle_atocs_">How to open the Polynomial-Fit dialog</para>
+    <para styleclass="Body Text"><table styleclass="Default" rowcount="1" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:40px;">
+          <para styleclass="Normal"><image src="MD-GA-PolynomialFitFB.png" scale="100.00%" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="Body Table">After you add a <text styleclass="Element">&#32;</text><text styleclass="Element-Header">Polynomial-Fit FB</text><text styleclass="Body Text"> to the graphics-area:</text></para>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <list id="1" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="B Bullets" style="font-family:&apos;Segoe UI&apos;; font-size:11pt; color:#000000;">
+                  <li styleclass="B Bullets"><text styleclass="Body Text">Double-click the </text><text styleclass="Element">Polynomial-Fit FB</text> in <text styleclass="Body Text">the graphics-area </text></li>
+                </list>
+                <para styleclass="Interface2">OR</para>
+                <list id="2" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="B Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="B Bullets"><text styleclass="SeeAlso">See </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-How-to-Open-a-Dialog-Box" styleclass="SeeAlso">How to Open a dialog</link><text styleclass="VariableName">&#32;</text></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Body Text">The <text styleclass="Element-Header">Polynomial-Fit dialog</text> is now open.</para>
+    <para styleclass="Normal"><line style="height:1px; color:#343400;" /></para>
+    <para styleclass="Heading3_atocs_">Polynomial-Fit dialog</para>
+    <para styleclass="Body Text"><table styleclass="Default" rowcount="2" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Normal"><image src="MD-Dialog-FB-PolynomialFit.png" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"><title>Polynomial-Fit FB dialog/interface.</title><caption><![CDATA[Polynomial-Fit FB dialog/interface.]]></caption></image></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="VariableName">The Polynomial-Fit dialog:</para>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Body Text"><image src="Red-14-1.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image> &#160;<text styleclass="VariableName">Acquire and Save Toolbar</text><text styleclass="HowTo Bulleted"> - acquire and save results.</text></para>
+                <para styleclass="Body Text"><image src="Red-14-2.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="HowTo Bulleted"> &#160;</text><text styleclass="VariableName">Analysis of Results</text><text styleclass="HowTo Bulleted" style="background-color:transparent;"> - RMS errors and the number of Polynomials.</text></para>
+                <para styleclass="Body Text"><image src="Red-14-3.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image> &#160;<text styleclass="VariableName">Settings for Polynomial Fitting Algorithms</text> - tolerances, limits, and range for polynomial fitting.</para>
+                <para styleclass="Body Text"><image src="Red-14-4.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Image Caption"> &#160;</text><text styleclass="VariableName">Graph Plots</text>: for the input-data and the calculated data from the Polynomials.</para>
+                <para styleclass="Body Text"><image src="Red-14-5.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image> &#160;<text styleclass="VariableName">Graph</text>&#32;<text styleclass="VariableName">toolbar</text> - view and save the graph-data in different ways.</para>
+                <para styleclass="Body Text"><image src="Red-14-6.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Image Caption"> &#160;</text><text styleclass="VariableName">Graph Legend</text>. - graph plot color scheme for original data and fitted Polynomials, for each motion-derivative</para>
+              </td>
+            </tr>
+          </table></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading4 Toggle_atocs_"><anchor id="PolyFitAcquire"><keywords><keyword>Polynomial Fit dialog<keyword>Acquire and Save toolbar</keyword></keyword></keywords></anchor><image src="1r.gif" scale="100.00%" styleclass="Image Caption" style="font-size:7pt; vertical-align:sub;" figurelistinclude="0"></image>Acquire and Save toolbar</para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="2" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Normal"><image src="MD-Dialog-FB-PolyFit-ToolbarAcquire.ipp" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"><title>Acquire and Save Results toolbar</title><caption><![CDATA[Acquire and Save Results toolbar]]></caption></image></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Text">The toolbar buttons are:</para>
+          <para styleclass="Body Text"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Body Text"><image src="Red-14-1.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Image Caption">&#32;</text><text styleclass="VariableName">Acquire</text><text styleclass="HowTo Bulleted"> (Capture, </text>Get One Cycle)<text styleclass="VariableName"> : </text></para>
+                <para styleclass="Body Text HowTo"><text styleclass="HowTo Bulleted">Click this button to acquire data at the input-connector for one machine-cycle - this is the </text><text styleclass="VariableName">Raw-Data</text><text styleclass="HowTo Bulleted">.</text></para>
+                <para styleclass="Body Text"><image src="Red-14-2.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Image Caption">&#32;</text><text styleclass="HowTo Bulleted">&#32;</text><text styleclass="VariableName">Fit Polynomials to Data </text><text styleclass="HowTo Bulleted">: </text></para>
+                <para styleclass="Body Text HowTo">Click to <text styleclass="VariableName">Fit Polynomials</text> to the <text styleclass="VariableName">Raw-Data</text>. - see <link displaytype="text" defaultstyle="true" type="topiclink" href="" anchor="PolyFit-Settings">Settings for Polynomial Fitting Algorithms</link>.</para>
+                <para styleclass="Body Text"><image src="Red-14-3.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Body Text HowTo"> &#160;</text><text styleclass="VariableName">Stop Algorithms : (</text><text styleclass="SeeAlso">see also Auto-Run</text><text styleclass="VariableName">)</text></para>
+                <para styleclass="Body Text HowTo">The algorithms usually fit polynomials within a few seconds. If you do not see the results after a few seconds, then click this button to stop the algorithms.</para>
+                <para styleclass="Body Text"><image src="Red-14-4.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Image Caption">&#32;</text><text styleclass="Body Text HowTo">&#32;</text><text styleclass="VariableName">Save Coefficients</text><text styleclass="Body Text HowTo"> :</text></para>
+                <para styleclass="Body Text HowTo">Click to save the results to a CSV file, or a <text styleclass="Body Text">EPAS4</text> file that is suitable for a Schneider Electric servo-controller.</para>
+                <para styleclass="Body Text"><image src="Red-14-5.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Normal"> &#160;</text><text styleclass="VariableName">Auto-Run </text><text styleclass="Normal">:</text></para>
+                <para styleclass="Body Text HowTo">Immediately allow the algorithms to find polynomials <text styleclass="HowTo Bulleted">fit the data to the accuracy as specified, and with less or equal to the maximum number of polynomials.</text></para>
+                <para styleclass="Body Text"><image src="Red-14-6.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Image Caption"> &#160;</text><text styleclass="VariableName">Send Polynomials to MotionDesigner </text><text styleclass="Normal">: </text></para>
+                <para styleclass="Body Text HowTo">Send the Polynomials to <text styleclass="VariableName">MotionDesigner</text> as a new motion. Add a new Motion name-tab.</para>
+                <para styleclass="Body Text HowTo"><text styleclass="Notes">Note</text> on <text styleclass="VariableName">Blend-Point Control-Buttons</text>: After you send the Polynomials to <text styleclass="VariableName">MotionDesigner</text>, none of the <text styleclass="VariableName">Match Control Buttons</text> are active. Instead, the Start motion-value of a segment, is equal to the End motion-value of the previous-segment. Obviously, you can choose to Match the motion-values as part of your motion-design process.</para>
+              </td>
+            </tr>
+          </table></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading4 Toggle_atocs_"><anchor id="PolyFit-Results"><keywords><keyword>Polynomial Fit dialog<keyword>RMS Erorr P.V.A. results</keyword></keyword></keywords></anchor><image src="2r.gif" scale="100.00%" styleclass="Image Caption" style="font-size:7pt; vertical-align:sub;" figurelistinclude="0"></image><image src="2r.gif" scale="100.00%" styleclass="Image Caption" style="font-size:7pt; vertical-align:sub;" figurelistinclude="0"></image>Analysis of Results</para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="2" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Normal"><image src="MD-Dialog-FB-PolynomialFit-RMSErrors.png" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="VariableName">Number of Fitted Polynomials in Fit (read-only)</para>
+          <para styleclass="Body Text HowTo">The number of Polynomials in the numerical solution.</para>
+          <para styleclass="Body Text HowTo">See also: <text styleclass="VariableName">Maximum Polynomial Count</text>. in the <link displaytype="text" defaultstyle="true" type="topiclink" href="" anchor="PolyFit-Settings" styleclass="VariableName">Settings for Polynomial Fitting Algorithms.</link></para>
+          <para styleclass="VariableName">RMS Position Error, RMS Velocity Error, RMS Acceleration Error (read-only). </para>
+          <para styleclass="Body Text HowTo">They give the RMS (Root, Mean, Square) error for each <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-Motion-Derivative">motion-derivative</link> between the Polynomial-Fit and the data at the input-connector as a percentage.</para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading4 Toggle_atocs_"><anchor id="PolyFit-Settings"><keywords><keyword>Polynomial Fit dialog<keyword>Settings</keyword><keyword>Algorithm Settings</keyword></keyword></keywords></anchor><image src="3r.gif" scale="100.00%" styleclass="Image Caption" style="font-size:7pt; vertical-align:sub;" figurelistinclude="0"></image>Settings for Polynomial Fitting Algorithms<text styleclass="Body Text">&#32;</text></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="2" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Normal"><image src="MD-Dialog-FB-PolynomialFit-PreFitSetting.ipp" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Text">Parameters to enter <text styleclass="VariableName" style="color:#ff0000;">before</text> you click <text styleclass="VariableName">Fit Polynomials to Data</text> (button <image src="Red-14-2.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image> in the <link displaytype="text" defaultstyle="true" type="topiclink" href="" anchor="PolyFitAcquire" styleclass="VariableName">Acquire and Save toolbar</link>, above)</para>
+          <para styleclass="Body Table"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Body Text"><image src="Red-14-1.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image> &#160;<text styleclass="VariableName">Position, Velocity, Acceleration buttons. </text></para>
+                <para styleclass="Body Text HowTo">Click each button to identify the motion-derivatives to which you want to <text styleclass="VariableName">Fit Polynomials</text>. </para>
+                <para styleclass="Body Text"><image src="Red-14-2.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image> &#160;<text styleclass="VariableName">Position, Velocity, Acceleration Tolerance %</text></para>
+                <para styleclass="Body Text HowTo">Enter the tolerance, as a %, for each motion-derivative, within which the <text styleclass="VariableName">Fitted Polynomials</text> should represent the data at the input-connector. </para>
+                <para styleclass="Body Text"><image src="Red-14-3.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Image Caption"> &#160;</text><text styleclass="VariableName">Machine Angle Range</text></para>
+                <para styleclass="Body Text HowTo">Optionally, reduce the range for which you want to calculate Polynomials</para>
+                <para styleclass="Body Text"><image src="Red-14-4.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Image Caption"> &#160;</text><text styleclass="VariableName">Number of Points </text></para>
+                <para styleclass="Body Text HowTo">The number of data points that are calculated from the Polynomials, to plot the graphs.</para>
+                <para styleclass="Body Text"><image src="Red-14-5.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Image Caption"> &#160;</text><text styleclass="VariableName">Point in Tolerance Sample of Points </text></para>
+                <para styleclass="Body Text HowTo">The number of points that the algorithm uses to fit each polynomial to the data at the input-connector.</para>
+                <para styleclass="Body Text"><image src="Red-14-6.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Image Caption"> &#160;</text><text styleclass="VariableName">Maximum number of Polynomials. </text></para>
+                <para styleclass="Body Text HowTo">Upper limit of the number of <text styleclass="VariableName">Fitted-Polynomials</text> in the &#160;data.</para>
+                <para styleclass="Body Text"><image src="Red-14-7.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Image Caption"> &#160;</text><text styleclass="VariableName">Minimum Segment Width. </text></para>
+                <para styleclass="Body Text HowTo">Lower Limit for the width of a Segment</para>
+                <para styleclass="Body Text"><image src="Red-14-8.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Image Caption"> &#160;</text><text styleclass="VariableName">Split Segment at Zero Acceleration / Velocity check-boxes</text></para>
+                <para styleclass="Body Text HowTo">Force the solutions to split the motion (add a new Segment) at which the Acceleration / Velocity crosses zero - positive to negative and vice versa.</para>
+              </td>
+            </tr>
+          </table></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading4 Toggle_atocs_"><anchor id="PolyFit-Graphtoolbar"><keywords><keyword>Polynomial Fit dialog<keyword>Graph toolbar</keyword></keyword></keywords></anchor><image src="5r.gif" scale="100.00%" styleclass="Image Caption" style="font-size:7pt; vertical-align:sub;" figurelistinclude="0"></image>Graph toolbar</para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="2" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Normal"><image src="MD-Dialog-FB-PolynomialFit-Toolbar2-ViewandSaveResults.png" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Text">The toolbar buttons are:</para>
+          <para styleclass="Body Text"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Body Text"><image src="Red-14-1.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Image Caption"> &#160;</text><text styleclass="VariableName">Print Graphs</text><text styleclass="HowTo Bulleted"> : &#160;Print the graphs immediately to the default printer</text></para>
+                <para styleclass="Body Text"><image src="Red-14-2.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Image Caption">&#32;</text><text styleclass="HowTo Bulleted">&#32;</text><text styleclass="VariableName">Save Graph Data:</text> Save the Data to a text file.</para>
+                <para styleclass="Body Text"><image src="Red-14-3.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Body Text HowTo"> &#160;</text><text styleclass="VariableName">Zoom Out</text> and <text styleclass="VariableName">Zoom In</text> to the Graph Details</para>
+                <para styleclass="Body Text"><image src="Red-14-4.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Image Caption">&#32;</text><text styleclass="Body Text HowTo">&#32;</text><text styleclass="VariableName">Pan Left and Pan Right</text><text styleclass="Body Text HowTo"> : Click to save the results to a CSV file, or a </text>EPAS4<text styleclass="Body Text HowTo"> file that is suitable for a Schneider-Electric servo-controller.</text></para>
+                <para styleclass="Body Text"><image src="Red-14-5.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Normal"> &#160;</text><text styleclass="VariableName">Zoom Extents </text></para>
+                <para styleclass="Body Text"><image src="Red-14-6.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Image Caption"> &#160;</text><text styleclass="VariableName">Toggle display: </text>&#32;<text styleclass="VariableName-IT" style="font-weight:normal; font-style:normal;">Plot three separate graphs</text> OR <text styleclass="VariableName-IT" style="font-weight:normal; font-style:normal;">Plot three stacked on-top of each other</text></para>
+                <para styleclass="Body Text"><image src="Red-14-7.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Normal"> &#160;</text><text styleclass="VariableName">Toggle display: &#160;Do show Graph Legend</text> OR <text styleclass="VariableName">Do NOT show Graph Legend</text></para>
+              </td>
+            </tr>
+          </table></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading4 Toggle_atocs_"><image src="6r.gif" scale="100.00%" styleclass="Image Caption" style="font-size:7pt; vertical-align:sub;" figurelistinclude="0"></image>Graph Legend</para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="1" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:203px;">
+          <para styleclass="Normal"><image src="MD-Dialog-PolynomialFit-GraphLegend.png" align="left" scale="-99.90%" styleclass="Note" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="Body Table">Graph plot color scheme for </para>
+          <list id="3" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Body Table" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="Body Table">original, or input, data </li>
+            <li styleclass="HowTo Bulleted">fitted data calculated from the fitted polynomials</li>
+            <li styleclass="HowTo Bulleted">each motion-derivative</li>
+            <li styleclass="HowTo Bulleted">Cursor - you can click ON a graph of each motion-derivative to show a cursor. </li>
+          </list>
+          <para styleclass="Body Text HowTo">The X-Y data-values of the active cursor is above the graphs.</para>
+        </td>
+      </tr>
+    </table></para>
+  </body>
+</topic>

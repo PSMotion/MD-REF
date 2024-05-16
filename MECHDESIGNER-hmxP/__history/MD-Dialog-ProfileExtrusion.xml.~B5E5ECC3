@@ -1,0 +1,233 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" status="Under Construction" modified="2024-03-14T16:09:37.817Z" lasteditedby="44785" version="2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title>Dialog: Profile/Extrusion</title>
+  <keywords>
+    <keyword>Dialog<keyword>Extrusion</keyword><keyword>Profile</keyword></keyword>
+    <keyword>Extrusion<keyword>Depth</keyword><keyword>Mass</keyword><keyword>Offset</keyword><keyword>Save as STEP file</keyword></keyword>
+    <keyword>Extrusion Mass</keyword>
+    <keyword>Extrusion Mass Moment of Inertia</keyword>
+    <keyword>MD-Solid (Extrusion)</keyword>
+    <keyword>Save Extrusion as STEP file</keyword>
+  </keywords>
+  <body>
+    <header>
+      <para styleclass="Heading1">Dialog: Profile/Extrusion</para>
+    </header>
+    <para styleclass="Heading2" style="page-break-before:always;">Profile / Extrusion</para>
+    <para styleclass="SeeAlso">See <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Command-Solids-Add-Profile">Add Profile/Extrusion</link></para>
+    <para styleclass="Normal"><line style="height:1px; color:#343400;" /></para>
+    <para styleclass="Body Text HowTo">You add a <text styleclass="Element">Profile / Extrusion</text> to a <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-Sketch-Loop" styleclass="VariableName">sketch-loop</link>.</para>
+    <para styleclass="Body Text HowTo">Use the <text styleclass="Element">Extrusion dialog </text>to edit the properties of an <text styleclass="Element">Extrusion. </text></para>
+    <para styleclass="Heading4 Toggle_atocs_" style="text-indent:-36px; margin-left:36px;">Edit an Extrusion to open the Extrusion dialog</para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="1" colcount="1" style="cell-padding:0px; border-width:0px; border-spacing:0px; cell-border-width:0px; border-style:none; background-color:#ffffff;">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="VariableName" style="text-indent:-36px; margin-left:39px;"><image src="TAG-Left.gif" scale="100.00%" styleclass="Interface" figurelistinclude="0"></image><tab /><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" src-collapsed="TAG-Left.gif" src-expanded="TAG-Down.gif"><caption><![CDATA[If you CAN see the Extrusion in the graphics-area]]></caption><title>Click to exapand /collapse</title></toggle></para>
+          <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="1" colcount="2">
+            <tr style="vertical-align:top">
+              <td style="width:218px;">
+                <para styleclass="Image Caption"><image src="MD-DoubleClick-Extrusion.ipp" scale="-99.99%" figurelistinclude="0"><caption><![CDATA[Double-click Extrusion]]></caption></image></para>
+              </td>
+              <td>
+                <para styleclass="Body Text">To open the <text styleclass="Element">Extrusion dialog</text></para>
+                <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1" style="width:100%;">
+                  <tr style="vertical-align:top">
+                    <td>
+                      <list id="0" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                        <li styleclass="Bullets"><text styleclass="Body Text">Double-click the </text><text styleclass="Element">Extrusion</text><text styleclass="Body Text"> in the </text><text styleclass="Interface">graphics-area</text><text styleclass="VariableName">&#32;</text></li>
+                      </list>
+                      <para styleclass="Bullets"><text styleclass="VariableName">or </text></para>
+                      <list id="1" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Body Table" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; color:#000000;">
+                        <li styleclass="Body Table">See <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-How-to-Open-a-Dialog-Box">How to open a dialog</link><text styleclass="Interface2">&#32;</text></li>
+                      </list>
+                    </td>
+                  </tr>
+                </table></para>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="VariableName" style="text-indent:-36px; margin-left:39px;"><image src="TAG-Left.gif" scale="100.00%" styleclass="Interface" figurelistinclude="0"></image><tab /><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" src-collapsed="TAG-Left.gif" src-expanded="TAG-Down.gif"><caption><![CDATA[If you CANNOT see the Extrusion in the graphics-area]]></caption><title>Click to exapand /collapse</title></toggle></para>
+          <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="1" colcount="2">
+            <tr style="vertical-align:top">
+              <td style="width:240px;">
+                <para styleclass="Image Caption"><image src="MD-GA-SHIFT+CLICK PROFILE.png" scale="-99.90%" style="color:#ff0000;" figurelistinclude="0"><caption><![CDATA[SHIFT-CLICK Profile]]></caption></image><image src="MD-SW-EditExtrusion-Hidden.png" scale="-99.90%" figurelistinclude="0"><title>Profile / Extrusion in the Selection-Window</title><caption><![CDATA[Profile/Extrusion in Selection-Window]]></caption></image></para>
+              </td>
+              <td>
+                <list id="2" type="ol" listtype="decimal" formatstring="&#83;&#84;&#69;&#80;&#32;&#37;&#48;&#58;&#115;&#58;&#32;" format-charset="DEFAULT_CHARSET" levelreset="false" legalstyle="false" startfrom="1" styleclass="HowTo STEP" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="HowTo STEP"><text styleclass="VariableName">In the graphics-area </text></li>
+                </list>
+                <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1" style="width:100%;">
+                  <tr style="vertical-align:top">
+                    <td>
+                      <para styleclass="Body Table"><image src="Red-14-1.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text style="font-size:12pt; font-weight:bold; color:#ff0000;">&#32;</text><text styleclass="VariableName" style="color:#ff0000;">SHIFT+CLICK</text><text styleclass="HowTo Numbered"> the (</text><text styleclass="VariableName" style="color:#ff00ff;">Pink</text><text styleclass="HowTo Numbered">)</text><text styleclass="HowTo Numbered" style="font-style:normal;">&#32;</text><text styleclass="Element-Header">Profile</text><text styleclass="VariableName">&#32;</text></para>
+                    </td>
+                  </tr>
+                </table></para>
+                <list id="3" type="ol" listtype="decimal" formatstring="&#83;&#84;&#69;&#80;&#32;&#37;&#48;&#58;&#115;&#58;&#32;" format-charset="DEFAULT_CHARSET" levelreset="false" legalstyle="false" startfrom="2" styleclass="HowTo STEP" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="HowTo STEP"><text styleclass="VariableName">In the Selection-Window </text></li>
+                </list>
+                <para styleclass="Body Text HowTo"><text style="font-style:normal;">The </text><text styleclass="Element">Profile</text><text style="font-style:normal;"> and </text><text styleclass="Element">Extrusion</text><text style="font-style:normal;"> show in the </text><text styleclass="Interface">Selection-Window</text></para>
+                <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1" style="width:100%;">
+                  <tr style="vertical-align:top">
+                    <td>
+                      <para styleclass="Body Table"><image src="Red-14-2.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image>&#32;<text styleclass="Interface">Selection-Window</text>: <text styleclass="Bullets" style="font-weight:normal; font-style:normal; color:#000000;">Right-click</text><text styleclass="Bullets"> the </text><text styleclass="VariableName" style="color:#ff0000;">EXTRUSION</text><text styleclass="Bullets"> element</text><text styleclass="VariableName">&#32;</text></para>
+                      <para styleclass="Bullets"><text style="font-style:normal;">In the shortcut menu:</text></para>
+                      <para styleclass="Body Table"><image src="Red-14-3.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text style="font-weight:normal; font-style:normal;"> Click</text><text style="font-weight:normal;">&#32;</text><text styleclass="VariableName">Edit Element. </text></para>
+                    </td>
+                  </tr>
+                </table></para>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="VariableName" style="text-indent:-36px; margin-left:39px;"><image src="TAG-Left.gif" scale="100.00%" styleclass="Interface" figurelistinclude="0"></image><tab /><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" src-collapsed="TAG-Left.gif" src-expanded="TAG-Down.gif"><caption><![CDATA[Alternatively, if you CANNOT see the Extrusion in the graphics-area]]></caption><title>Click to exapand /collapse</title></toggle></para>
+          <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="2" colcount="2">
+            <tr style="vertical-align:top">
+              <td style="width:240px;">
+                <para styleclass="Image Caption"><image src="MD-GA-CLICK PROFILE.png" scale="-99.90%" figurelistinclude="0"><caption><![CDATA[CLICK Profile]]></caption></image></para>
+              </td>
+              <td>
+                <list id="4" type="ol" listtype="decimal" formatstring="&#83;&#84;&#69;&#80;&#32;&#37;&#48;&#58;&#115;&#58;&#32;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo STEP" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="HowTo STEP"><text styleclass="VariableName">In the graphics-area </text></li>
+                </list>
+                <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1" style="width:100%;">
+                  <tr style="vertical-align:top">
+                    <td>
+                      <para styleclass="Body Table"><image src="Red-14-1.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text style="font-size:12pt; font-weight:bold; color:#ff0000;">&#32;</text><text styleclass="VariableName" style="color:#ff0000;">CLICK</text><text styleclass="HowTo Numbered"> a (</text><text styleclass="VariableName" style="color:#ff00ff;">Pink</text><text styleclass="HowTo Numbered">)</text><text styleclass="HowTo Numbered" style="font-style:normal;">&#32;</text><text styleclass="Element-Header">Profile</text><text styleclass="VariableName">&#32;</text></para>
+                    </td>
+                  </tr>
+                </table></para>
+                <para styleclass="Body Text HowTo"><text style="font-style:normal;">The </text><text styleclass="Interface2">Assembly-Tree</text><text style="font-style:normal;"> expands to identify the </text><text styleclass="Element">Profile</text><image src="Red-14-2.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Body Text"> and </text><text styleclass="Element">Extrusion</text><image src="Red-14-3.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+              </td>
+            </tr>
+            <tr style="vertical-align:top">
+              <td style="width:240px;">
+                <para styleclass="Image Caption"><image src="MD-AT-EditExtrusion.png" scale="-99.90%" style="font-family:&apos;Segoe UI Semibold&apos;; font-weight:bold;" figurelistinclude="0"><title>Edit Extrusion from the Assembly-Tree</title><caption><![CDATA[Profile/Extrusion in Assembly-Tree]]></caption></image></para>
+              </td>
+              <td>
+                <list id="5" type="ol" listtype="decimal" formatstring="&#83;&#84;&#69;&#80;&#32;&#37;&#48;&#58;&#115;&#58;&#32;" format-charset="DEFAULT_CHARSET" levelreset="false" legalstyle="false" startfrom="2" styleclass="HowTo STEP" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="HowTo STEP"><text styleclass="VariableName">In the Assembly-Tree </text></li>
+                </list>
+                <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1" style="width:100%;">
+                  <tr style="vertical-align:top">
+                    <td>
+                      <list id="6" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                        <li styleclass="Bullets"><text styleclass="Interface">Assembly-Tree: </text><text styleclass="VariableName" style="color:#ff0000;">Click</text><text styleclass="Body Table"> the </text><text styleclass="Element">EXTRUSION</text><image src="Red-14-3.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="VariableName">&#32;</text></li>
+                      </list>
+                      <para styleclass="Body Text">The <text style="color:#ffffff; background-color:#0080ff;"> Element name </text> is now <text styleclass="VariableName" style="color:#0000ff;">blue, </text>the ICON has an <text styleclass="VariableName" style="color:#b97034;">orange</text> box<image src="Red-14-3.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+                      <list id="6" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                        <li styleclass="Bullets"><text styleclass="Interface">Assembly-Tree: </text><text styleclass="VariableName" style="color:#ff0000;">Right-Click</text><text styleclass="Body Table"> the </text><text styleclass="Element">EXTRUSION</text><image src="Red-14-3.gif" scale="100.00%" styleclass="HowTo Bulleted" figurelistinclude="0"></image><text styleclass="VariableName">&#32;</text></li>
+                      </list>
+                      <para styleclass="Body Table"><text style="font-style:normal;">A shortcut menu shows next to your pointer:</text></para>
+                      <list id="6" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                        <li styleclass="Bullets"><text styleclass="Interface">shortcut menu</text><text styleclass="HowTo Bulleted" style="font-weight:normal; font-style:normal;">: </text><text styleclass="HowTo Bulleted" style="font-weight:normal; font-style:normal; color:#ff0000;">Click</text><text styleclass="HowTo Bulleted" style="font-weight:normal;">&#32;</text><text styleclass="VariableName">Edit Element</text><image src="Red-14-4.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="VariableName">&#32;</text></li>
+                      </list>
+                    </td>
+                  </tr>
+                </table></para>
+              </td>
+            </tr>
+          </table></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Body Text">The <text styleclass="Element-Header">Extrusion dialog</text> is now open.</para>
+    <para styleclass="Normal"><line style="height:1px; color:#343400;" /></para>
+    <para styleclass="Heading3_atocs_"><anchor id="EXTRUSION-DIALOG"><keywords><keyword>Extrusion dialog</keyword></keywords></anchor> The Extrusion dialog</para>
+    <para styleclass="Body Text"><table styleclass="Default" rowcount="1" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:302px;">
+          <para styleclass="Normal" style="text-align:center;"><image src="MD-Dialog-Extrusion.png" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"><caption><![CDATA[Extrusion dialog]]></caption></image></para>
+        </td>
+        <td>
+          <para styleclass="Body Text">There are three separators in the <text styleclass="Element-Header">Extrusion dialog</text>. </para>
+          <para styleclass="HowTo Bulleted"><text styleclass="Separator-Header">Depth and Offset </text></para>
+          <para styleclass="HowTo Bulleted"><text styleclass="Separator-Header">Color, Opacity and Quality </text></para>
+          <para styleclass="HowTo Bulleted"><text styleclass="Separator-Header">Mass Properties </text>&#32;</para>
+          <para styleclass="Body Text HowTo"><link displaytype="button" type="topiclink" href="">Create STEP File</link><text styleclass="Body Text">&#32;</text></para>
+          <para styleclass="Body Text HowTo"><text styleclass="Body Text">Click this button to save the </text><text styleclass="Element-Header">Extrusion</text><text styleclass="Body Text"> as a STEP file-type.</text></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Body Text HowTo" style="text-indent:-36px; margin-left:60px;"><anchor id="EXTRUSION-DIALOG-DEPTHOFFSET" styleclass="Heading4 Toggle_atocs_2" style="font-weight:normal; color:#6f6f00; background-color:#f79646;"><keywords><keyword>Extrusion dialog<keyword>Extrusion-Depth</keyword><keyword>Extrusion-Offset</keyword><keyword>Part-Offset</keyword></keyword></keywords></anchor><image src="tog_plus.gif" scale="100.00%" styleclass="Separator-Header" figurelistinclude="0"></image><tab /><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" src-collapsed="tog_plus.gif" src-expanded="tog_minus.gif" styleclass="Separator-Header"><caption><![CDATA[ Depth and Offset ]]></caption><title>Click to exapand /collapse</title></toggle></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="2" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:252px;">
+          <para styleclass="Normal"><image src="MD-Dialog-Extrusion-DepthOffset.png" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"><caption><![CDATA[Extrusion dialog | Depth and Offset]]></caption></image></para>
+          <para styleclass="Image Caption"><image src="MD-GA-ProfileELements-Zaxis.png" scale="-99.90%" figurelistinclude="0"><caption><![CDATA[Sketch-Loop and Profile contours]]></caption></image></para>
+        </td>
+        <td>
+          <para styleclass="Body Text"><text styleclass="ParameterHeader">Extrusion-Depth</text><text styleclass="Parameter-Header" style="font-family:Arial; font-size:10pt; font-weight:normal; font-style:normal; text-decoration:none; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">&#32;</text> (default = see <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-Application-Settings" anchor="App-Auto">Application-Settings&gt; Auto-Profile tab</link>)</para>
+          <para styleclass="Body Text HowTo">The distance to the <text styleclass="VariableName">Secondary</text><text styleclass="Body Text"> contour</text><image src="Red-14-3.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image> from the <text styleclass="VariableName">Primary </text><text styleclass="Body Text">contour</text><image src="Red-14-2.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text style="font-style:italic;">, </text>along the +Z-axis<image src="Red-14-4.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image> of the <text styleclass="Element">Part</text><text styleclass="VariableName">. </text></para>
+          <para styleclass="Body Text HowTo"><text styleclass="Parameter">Extrusion-Depth</text><text styleclass="Body Text Howindent4bullets"> must be positive. </text><text styleclass="VariableName">Minimum value = 0.001mm</text></para>
+          <para styleclass="Body Text"><text styleclass="ParameterHeader">Extrusion-Offset</text> (default = 0)</para>
+          <para styleclass="Body Text HowTo">The distance to the <text styleclass="Popup Box2">Primary Contour</text><text styleclass="Body Text"> from the dimension that is specified by </text><text styleclass="Parameter">Part-Offset.</text></para>
+          <para styleclass="Body Text HowTo"><text styleclass="Parameter">Extrusion-Offset</text><text styleclass="Body Text Howindent4bullets"> can be negative or positive.</text></para>
+          <para styleclass="Body Text"><text styleclass="ParameterHeader">Part-Offset</text><text styleclass="Parameter-Header" style="font-family:Arial; font-size:10pt; font-weight:normal; font-style:normal; text-decoration:none; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">&#32;</text> (default = 0)</para>
+          <para styleclass="Body Text HowTo"><text styleclass="Body Text">Applies</text><text styleclass="Body Text Howindent4bullets"> to </text><text styleclass="VariableName">ALL</text><text styleclass="Body Text Howindent4bullets">&#32;</text><text styleclass="Element">Extrusions</text><text styleclass="Body Text Howindent4bullets"> in a </text><text styleclass="Element">Part</text><text styleclass="Body Text Howindent4bullets">.</text></para>
+          <para styleclass="Body Text HowTo">The distance to the <text styleclass="Interface">Primary Contour</text>&#32;<text styleclass="Body Text">from the </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-Plane-Mechanism" styleclass="VariableName-indent">Mechanism-Plane</link><text styleclass="Body Text"> to which we add the distance specified by the </text><text styleclass="Parameter">Extrusion-Offset</text><text styleclass="Body Text"> parameter.</text></para>
+          <para styleclass="Body Text HowTo"><text styleclass="Parameter">Part-Offset</text><text styleclass="Body Text Howindent4bullets"> can be negative or positive. </text></para>
+          <para styleclass="Normal"><line style="height:1px; color:#343400;" /></para>
+          <para styleclass="Body Text"><text styleclass="VariableName">Note: </text><text style="font-style:normal;">Distance to </text><text styleclass="VariableName">Primary </text>contour<image src="Red-14-2.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Body Text HowTo" style="font-style:normal;"> from</text><text styleclass="Image Caption" style="font-style:normal;">&#32;</text><text styleclass="Interface">Mechanism-Plane</text><text styleclass="Body Text HowTo" style="font-style:normal;"> = </text><text styleclass="Parameter">Part Offset</text><text styleclass="Body Text HowTo" style="font-style:normal;"> + </text><text styleclass="Parameter">Extrusion Offset</text></para>
+          <para styleclass="Normal"><line style="height:1px; color:#343400;" /></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td colspan="2">
+          <para styleclass="VariableName">The Primary and Secondary Contours of the <text styleclass="Element">Profile</text>:</para>
+          <para styleclass="Body Text HowTo"><image src="Red-14-1.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Image Caption">&#32;</text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-Profile-Element" styleclass="VariableName">Sketch-Loop</link><text styleclass="VariableName">&#32;</text></para>
+          <para styleclass="Body Text HowTo"><image src="Red-14-2.gif" scale="100.00%" styleclass="VariableName" figurelistinclude="0"></image><text styleclass="VariableName">&#32;</text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-Profile-Element" styleclass="VariableName">Primary-Contour</link></para>
+          <para styleclass="Body Text HowTo"><image src="Red-14-3.gif" scale="100.00%" styleclass="VariableName" figurelistinclude="0"></image><text styleclass="VariableName">&#32;</text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-Profile-Element" styleclass="VariableName">Secondary-Contour</link></para>
+          <para styleclass="VariableName-indent"><image src="Red-14-4.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image> Z-axis is perpendicular(<text style="font-family:Verdana;">⊥</text>) to the Mechanism-Plane</para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Body Text HowTo" style="text-indent:-36px; margin-left:60px;"><anchor id="EXTRUSION-DIALOG-COLOROPQUAL"><keywords><keyword>Extrusion dialog<keyword>Color</keyword><keyword>Show/Hide</keyword><keyword>Opacity</keyword><keyword>Graphics Quality</keyword></keyword></keywords></anchor><image src="tog_plus.gif" scale="100.00%" styleclass="Separator-Header" figurelistinclude="0"></image><tab /><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" src-collapsed="tog_plus.gif" src-expanded="tog_minus.gif" styleclass="Separator-Header"><caption><![CDATA[ Color, Opacity, Quality ]]></caption><title>Click to exapand /collapse</title></toggle></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="2" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:50px;">
+          <para styleclass="Image Caption"><image src="MD-DIALOG-EXTRUSION-COLORQUALITY-2.ipp" scale="-99.90%" figurelistinclude="0"></image></para>
+        </td>
+        <td rowspan="2">
+          <para styleclass="ParameterHeader">Show Extrusion</para>
+          <para styleclass="Body Text HowTo">To show or hide the <text styleclass="Element">Extrusion</text></para>
+          <para styleclass="Body Text HowTo"><text styleclass="Notes">Note</text>: To hide <text styleclass="Element">Profile</text> contours, see <text styleclass="T_Menu">Display toolbars &gt; Show/Hide Profiles</text>&#32;</para>
+          <para styleclass="ParameterHeader">Color </para>
+          <para styleclass="Body Text HowTo">Button<text styleclass="HowTo Bulleted"> to select the color of the </text><text styleclass="Element">Extrusion</text><text styleclass="HowTo Bulleted"> with the Windows® Color-Picker</text><text styleclass="VariableName">&#32;</text></para>
+          <para styleclass="ParameterHeader">Transparency <text styleclass="VariableName">(slider)</text></para>
+          <para styleclass="Body Text HowTo">Slider to change the <text styleclass="Parameter">Transparency</text> (1/Opacity) of the <text styleclass="Element">Extrusion</text> in the <text styleclass="Body Text">graphics-area</text><text styleclass="VariableName">&#32;</text></para>
+          <para styleclass="ParameterHeader">Graphics Quality<text styleclass="VariableName"> (slider)</text></para>
+          <para styleclass="Body Text HowTo">Slider to change the <text styleclass="Parameter">Graphics Quality</text> of the <text styleclass="Element">Extrusion</text><text styleclass="VariableName">&#32;</text></para>
+          <para styleclass="Normal"><line style="height:1px; color:#343400;" /></para>
+          <para styleclass="SeeAlso"><text styleclass="Notes">Note</text>: <text styleclass="Body Text">To update to a different </text><text styleclass="Parameter">Graphics Quality</text><text styleclass="Body Text">, you may need to edit the </text><text styleclass="Element">Part</text><text styleclass="Body Text"> in the </text><text styleclass="Interface">Part-Editor</text><text styleclass="Body Text"> and then close the </text><text styleclass="Interface">Part-Editor</text><text styleclass="Body Text"> immediately.</text></para>
+          <para styleclass="Normal"><line style="height:1px; color:#343400;" /></para>
+          <para styleclass="SeeAlso">See also: <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-Application-Settings" anchor="App-Graphics">Application Settings | Graphics</link></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:250px;">
+          <para styleclass="Image Caption"><image src="MD-GA-Extrusion-Facets.png" scale="-99.90%" figurelistinclude="0"><caption><![CDATA[Low Quality     High Quality]]></caption></image></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Body Text HowTo" style="text-indent:-36px; margin-left:60px;"><anchor id="ExtrusionMassProperties" styleclass="Heading4 Toggle_atocs_2" style="font-weight:normal; color:#000000; background-color:#f79646;"><keywords><keyword>Extrusion dialog<keyword>Mass Properties</keyword><keyword>Material Density</keyword><keyword>Mass</keyword><keyword>Moment of Inertia</keyword></keyword></keywords></anchor><image src="tog_plus.gif" scale="100.00%" styleclass="Separator-Header" figurelistinclude="0"></image><tab /><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" src-collapsed="tog_plus.gif" src-expanded="tog_minus.gif" styleclass="Separator-Header"><caption><![CDATA[ Mass Properties ]]></caption><title>Click to exapand /collapse</title></toggle></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="1" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:252px;">
+          <para styleclass="Image Caption"><image src="MD-Dialog-Extrusion-MassProps.png" scale="-99.90%" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="Body Text"><text styleclass="ParameterHeader">Density</text>&#32;<equation style="vertical-align:baseline;vertical-align:text-bottom" font-size="24" color="#000080"><![CDATA[[kg/m^{3}]]]></equation></para>
+          <para styleclass="Body Text HowTo"><text style="font-style:normal;">The </text><text styleclass="Parameter">Mass</text><text style="font-style:normal;"> and </text><text styleclass="Parameter">Inertia</text><text style="font-style:normal;"> properties (below) change as you edit the </text><text styleclass="Parameter">Density</text><text style="font-style:normal;">.</text></para>
+          <para styleclass="Body Text"><text styleclass="ParameterHeader">Mass</text><text styleclass="Parameter-Header" style="font-family:Arial; font-size:10pt; font-weight:normal; font-style:normal; text-decoration:none; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">&#32;</text><text styleclass="VariableName">(read-only)</text>&#32;<equation style="vertical-align:baseline;vertical-align:text-bottom" font-size="24" color="#000080"><![CDATA[[kg]]]></equation></para>
+          <para styleclass="Body Text HowTo"><text styleclass="Parameter">Mass</text> = <text styleclass="Parameter">Density</text> × area of <text styleclass="VariableName">sketch-loop</text> × <text styleclass="Parameter">Extrusion Depth</text></para>
+          <para styleclass="Body Text"><text styleclass="ParameterHeader">Inertia</text><text styleclass="Parameter-Header" style="font-family:Arial; font-size:10pt; font-weight:normal; font-style:normal; text-decoration:none; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">&#32;</text><text styleclass="VariableName">(read-only)</text>&#32;<equation style="font-size:7pt; vertical-align:sub;" font-size="24" color="#000080"><![CDATA[[kg.m^{2}]]]></equation></para>
+          <para styleclass="Body Text HowTo"><text styleclass="Parameter">Inertia</text> (<text styleclass="VariableName">Mass Moment of Inertia</text>) is calculated with respect to the center-of-mass. </para>
+          <para styleclass="Body Text HowTo"><text styleclass="Body Text">The position of the center-of-mass is a function of the shape of the </text><text styleclass="VariableName">sketch-loop</text><text styleclass="Body Text"> you select to add the </text><text styleclass="Element">Profile</text><text styleclass="Body Text">. The center-of-mass is on the </text><text styleclass="Interface">Mechanism-Plane</text><text styleclass="Body Text">. The mass is uniformly distributed.</text></para>
+          <para styleclass="Normal"><line style="height:1px; color:#343400;" /></para>
+          <para styleclass="Body Text"><text styleclass="SeeAlso">See also </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-CADLine-MassProperties" styleclass="T_Menu">CAD-Line dialog &gt; Mass Properties tab</link></para>
+        </td>
+      </tr>
+    </table></para>
+  </body>
+</topic>

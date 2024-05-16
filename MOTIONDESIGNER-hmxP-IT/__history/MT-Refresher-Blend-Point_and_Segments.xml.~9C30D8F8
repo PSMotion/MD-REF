@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" lasteditedby="Adam" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title translate="true">Refresher: Blend-Point and Segments</title>
+  <body>
+    <header>
+      <para styleclass="Heading1"><text styleclass="Heading1" translate="true">Refresher: Blend-Point and Segments</text></para>
+    </header>
+    <para styleclass="Heading HowTo Toggle_atoc_" style="text-indent:-32px; margin-left:32px;"><image src="tog_plus.gif" scale="100.00%" styleclass="Heading HowTo Toggle_atoc_"></image><tab /><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" translate="true" src-collapsed="tog_plus.gif" src-expanded="tog_minus.gif" src-print="none" styleclass="Heading HowTo Toggle_atoc_"><caption translate="true"><![CDATA[A Refresher on Segments and Blend-Points in MotionDesigner]]></caption></toggle></para>
+    <para styleclass="Body Text"><table styleclass="AStandard" rowcount="1" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <list id="1" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Numbered" style="font-family:Arial; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Numbered"><text styleclass="HowTo Numbered" translate="true">A motion describes the position that you would like a machine element to follow for a complete machine cycle.</text></li>
+          </list>
+          <para styleclass="Body Text HowTo"><text styleclass="Body Text HowTo" translate="true">The velocity, acceleration and jerk values are motion derivatives of the position. There are many equations that describe the acceleration of the motion-law and the other derivatives are integrated to obtain velocity then velocity, or differentiated to obtain jerk.</text></para>
+          <list id="1" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Numbered" style="font-family:Arial; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Numbered"><text styleclass="HowTo Numbered" translate="true">When the motion requirements becomes complex, it is difficult to find a single </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MT-Mathematical-Function" styleclass="HowTo Numbered" translate="true">mathematical function</link><text styleclass="HowTo Numbered" translate="true"> that satisfies all of the motion requirements.</text></li>
+            <li styleclass="HowTo Numbered"><text styleclass="HowTo Numbered" translate="true">Therefore, you will usually split, or divide, a motion into two or more segments. Each segment is defined by a mathematical function, called a Motion-Law.</text></li>
+            <li styleclass="HowTo Numbered"><text styleclass="Body Text HowTo" translate="true">The </text><text styleclass="Body Text HowTo" style="font-style:italic;" translate="true">splitting [dividing]</text><text styleclass="Body Text HowTo" translate="true"> process is called </text><text styleclass="Body Text HowTo" style="text-decoration:underline;" translate="true">segmentation</text><text styleclass="Body Text HowTo" translate="true">.</text></li>
+            <li styleclass="HowTo Numbered"><text styleclass="HowTo Numbered" translate="true">You must choose how many segments and select the Motion-Law. </text></li>
+            <li styleclass="HowTo Numbered"><text styleclass="HowTo Numbered" translate="true">You must make sure the total duration of the segments is equal to one machine cycle.</text></li>
+            <li styleclass="HowTo Numbered"><text styleclass="HowTo Numbered" style="font-weight:bold; font-style:italic;" translate="true">MotionDesigner</text><text styleclass="HowTo Numbered" translate="true"> joins the Segments end-to-end.</text></li>
+            <li styleclass="HowTo Numbered"><text styleclass="HowTo Numbered" translate="true">We use the term &apos;Blend-Point&apos; to describe an instance where one segment ends and another starts.</text></li>
+          </list>
+          <para styleclass="Normal"><line style="height:2px; color:#ff6600;" /></para>
+          <para styleclass="HowTo Numbered"><text styleclass="HowTo Numbered" translate="true">The </text><text styleclass="HowTo Numbered" style="font-weight:bold;" translate="true">Motion-Law</text><text styleclass="HowTo Numbered" translate="true"> governs the &apos;shape&apos; and the motion-values between the Blend-Points.</text></para>
+          <para styleclass="HowTo Numbered"><text styleclass="HowTo Numbered" translate="true">The </text><text styleclass="HowTo Numbered" style="font-weight:bold;" translate="true">Blend-Points</text><text styleclass="HowTo Numbered" translate="true"> govern the motion-values at the start and end of the Segment.</text></para>
+          <para styleclass="Normal"><line style="height:2px; color:#ff6600;" /></para>
+        </td>
+      </tr>
+    </table></para>
+  </body>
+</topic>

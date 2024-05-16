@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" status="Under Construction" modified="2022-04-13T11:09:56.411+01:00" lasteditedby="Adam" version="2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title>Project Explorer | Selection-Window</title>
+  <keywords>
+    <keyword>Selection-Window</keyword>
+    <keyword>Selection-Window Contextual menu<keyword>Delete Element...</keyword><keyword>Edit Element...</keyword><keyword>Rename Element</keyword><keyword>Show or Hide Element</keyword><keyword>View References</keyword></keyword>
+  </keywords>
+  <body>
+    <header>
+      <para styleclass="Heading1">Project-Explorer | Selection-Window</para>
+    </header>
+    <para styleclass="Heading3_atocs_">Selection-Window</para>
+    <para styleclass="Body Text HowTo">The <text styleclass="Interface2">Selection-Window</text> is at the top of the <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-Project-Explorer" styleclass="Interface">Project Explorer</link><text styleclass="Interface">.</text></para>
+    <para styleclass="Body Text HowTo">It shows the elements you click in the <text styleclass="Interface">Graphic-Area</text> or the <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-ProjectExplorer-ElementExplorer" styleclass="Interface">Element-Explorer</link>.</para>
+    <para styleclass="Heading4 Toggle_atocs_2">Selection-Window example:</para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="1" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:270px;">
+          <para styleclass="Normal"><image src="MD-PE-SelectionWindow.ipp" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"><caption><![CDATA[Elements in the Selection-Window]]></caption></image></para>
+        </td>
+        <td>
+          <para styleclass="Body Table"><text styleclass="VariableName">Selection list </text><image src="Red-14-1.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+          <para styleclass="Body Text HowTo">The <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-Elements">elements</link> when you c<text styleclass="Body Text">lick (or</text> shift<text styleclass="Body Text">+click</text>) one or more elements in the <text styleclass="Interface">graphic-area</text> or <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-ProjectExplorer-ElementExplorer" styleclass="Interface">Element-Explorer</link><text styleclass="Interface">.</text></para>
+          <para styleclass="Body Table"><text styleclass="VariableName">Owner list </text><image src="Red-14-2.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+          <para styleclass="VariableName-indent"><text styleclass="VariableName">Mechanism:</text>&#32;<text styleclass="Body Text">when the element is a child to a</text>&#32;<text styleclass="Interface">Mechanism-Editor</text>.</para>
+          <para styleclass="VariableName-indent">Part: <text styleclass="Body Text">when the element is a child to a </text><text styleclass="Element">Part</text>.</para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading4 Toggle_atocs_2">Contextual-menu in Selection-Window</para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="1" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:270px;">
+          <para styleclass="Normal"><image src="MD-PE-SelectionWindow-Contextualmenu.png" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"><title>Contextual menu in Selection-Window</title><caption><![CDATA[Contextual menu in Selection-Window]]></caption></image></para>
+        </td>
+        <td>
+          <para styleclass="Body Table">To show the <text styleclass="VariableName">Contextual-Menu</text></para>
+          <list id="0" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo Bulleted"><text style="font-style:normal;">Right-click</text>&#32;<image src="MD-Right-Click-Pointer.gif" scale="100.00%" styleclass="Image Caption" style="font-size:7pt; vertical-align:sub;" figurelistinclude="0"></image><text styleclass="Image Caption" style="font-size:7pt; vertical-align:sub;">&#32;</text>an element<text styleclass="VariableName">&#32;</text></li>
+          </list>
+          <para styleclass="Body Table">Use the contextual-menu to:</para>
+          <list id="1" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000080;">
+            <li styleclass="HowTo Bulleted"><text styleclass="VariableName">Show Element References</text><text styleclass="BodyText Bold"> -</text><text styleclass="SeeAlso">&#32;</text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-ProjectExplorer-SelectionWindow" anchor="ViewReference" styleclass="SeeAlso">see below</link></li>
+            <li styleclass="HowTo Bulleted"><text styleclass="VariableName-indent">Edit element</text></li>
+            <li styleclass="HowTo Bulleted"><text styleclass="VariableName-indent">Delete element</text></li>
+            <li styleclass="HowTo Bulleted"><text styleclass="VariableName-indent">Rename element</text></li>
+          </list>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading3_atocs_"><anchor id="ViewReference"><keywords><keyword>View References</keyword><keyword>Elements<keyword>View References</keyword></keyword></keywords></anchor>Show Element References</para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="4" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Table">Many elements need <text styleclass="VariableName-IT">other elements</text> to exist in the model. The <text styleclass="VariableName-IT">other elements</text> are <text styleclass="VariableName">Reference Elements</text>.</para>
+          <para styleclass="Body Table"><text style="font-style:normal;">For example: </text><text styleclass="VariableName">Reference Elements</text><text style="font-style:normal;"> of a:</text></para>
+          <list id="2" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Body Text HowTo" style="font-family:Symbol; font-size:10pt; color:#000000;">
+            <li styleclass="Body Text HowTo"><text styleclass="Element">Line</text> : are its <text styleclass="Interface">start-Point</text> and <text styleclass="Interface">end-Point</text></li>
+            <li styleclass="Body Text HowTo"><text styleclass="Element">Pin-Joint</text> : are two <text styleclass="Element">Points</text><text styleclass="Body Text">, which </text>may be the <text styleclass="Interface">start-Point</text><text styleclass="Body Text"> or </text><text styleclass="Interface">end-Point</text> of a <text styleclass="Element">Line</text> or the <text styleclass="Interface">center-Point</text> of a <text styleclass="Element">Circle</text></li>
+          </list>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Normal"><image src="MD-LIST-ELEMENT-REFERENCES.ipp" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"><caption><![CDATA[Element References for a Pulley]]></caption></image></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Text">To see the <text styleclass="VariableName">Reference Elements</text> of an element:</para>
+          <list id="3" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Numbered" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo Numbered"><text style="font-style:normal;">Click (or </text><text styleclass="VariableName" style="color:#ff0000;">SHIFT+Click*</text><text style="font-style:normal;">) an element in the </text><text styleclass="Interface">graphic-area</text><text style="font-style:normal;"> or </text><text styleclass="Interface">Assembly-Tree</text><text style="font-style:normal;">.</text><text styleclass="VariableName">&#32;</text></li>
+          </list>
+          <para styleclass="HowTo Numbered">In the <text styleclass="Interface">Selection-Window</text><text styleclass="VariableName">&#32;</text></para>
+          <list id="3" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Numbered" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo Numbered"><text style="font-style:normal;">Right-click</text> the element for which you want to see its <text styleclass="VariableName">Reference-Elements</text>.</li>
+            <li styleclass="HowTo Numbered"><text style="font-style:normal;">Click</text>&#32;<text styleclass="VariableName">View References</text><text styleclass="Body Text"> in the contextual menu</text></li>
+          </list>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="Body Text">* SHIFT-Click </para>
+          <list id="4" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted"><text styleclass="Element">Profile</text> contours to see <text styleclass="Element">Extrusions</text>&#32;</li>
+            <li styleclass="HowTo Bulleted">Sketch-elements to see Constraints</li>
+          </list>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="Body Text">The columns in the dialog-box identify the element&apos;s:</para>
+          <list id="5" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted"><text styleclass="VariableName">References</text><text styleclass="Interface"> -</text><text styleclass="Body Text">&#32;</text><text style="font-style:normal;">the name of the </text><text styleclass="VariableName">Reference Elements, e.g. </text><text styleclass="Element">Profile</text><text styleclass="Body Text">&#32;</text></li>
+            <li styleclass="HowTo Bulleted"><text styleclass="VariableName">Element Type</text><text style="font-style:italic;"> -</text><text style="font-style:normal;"> the type of element, e.g. </text><text styleclass="Element">Point</text></li>
+            <li styleclass="HowTo Bulleted"><text styleclass="VariableName">Element Owner</text><text styleclass="Body Text"> -</text> to which the <text styleclass="VariableName">Reference Elements</text> is a child, e.g. <text styleclass="Element">Part</text></li>
+          </list>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="VariableName">Application:</para>
+          <para styleclass="Body Text HowTo">When two or more Points are coincident, I may need to know the <text styleclass="Element">Line</text> to which each Point is a child. </para>
+          <para styleclass="Body Text HowTo">I click a <text styleclass="Element">Line</text>, then click <text styleclass="VariableName">Show Reference Elements</text> in the <text styleclass="Interface">Selection-Window</text> and make a note of each Point that is a child to the <text styleclass="Element">Line.</text></para>
+        </td>
+      </tr>
+    </table></para>
+  </body>
+</topic>

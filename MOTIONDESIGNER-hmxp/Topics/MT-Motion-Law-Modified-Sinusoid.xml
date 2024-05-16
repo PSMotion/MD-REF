@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" status="Under Construction" modified="2024-05-12T12:02:04.225Z" lasteditedby="44785" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title translate="true">Modified Sinusoid Motion-Law</title>
+  <keywords>
+    <keyword translate="true">Cam Law: Modified Sinusoid / Mod Sine</keyword>
+    <keyword translate="true">Motion-Law:<keyword translate="true">Mod Sine</keyword><keyword translate="true">Modified Sinusoid</keyword></keyword>
+  </keywords>
+  <body>
+    <header>
+      <para styleclass="Heading1"><text styleclass="Heading1" translate="true">Modified-Sinusoid Motion-Law</text></para>
+    </header>
+    <para styleclass="Heading3_atocs_" style="page-break-before:always;"><text styleclass="Heading3_atocs_" translate="true">Modified-Sinusoid Cam-Law, Motion-Law</text></para>
+    <para styleclass="Body Text"><table styleclass="Default" rowcount="3" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Heading4 Toggle_atocs_"><text styleclass="Interface2" translate="true">Motion Description</text></para>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Body Text"><text styleclass="Body Text" translate="true">A </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MT-Motion-Cam-Laws" anchor="Standard" styleclass="Body Text" translate="true">Traditional Motion-Law</link><text styleclass="Body Text" translate="true">. Its name is often reduced to </text><text styleclass="VariableName" translate="true">Mod-Sine.</text></para>
+                <para styleclass="Body Text"><text styleclass="Body Text" translate="true">A motion with continuous </text><text styleclass="VariableName" translate="true">Velocity</text><text styleclass="Body Text" translate="true"> and </text><text styleclass="VariableName" translate="true">Acceleration</text><text styleclass="Body Text" translate="true">, from start to end. The Jerk is finite at its start and end.</text></para>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Heading4 Toggle_atocs_"><text styleclass="Interface2" translate="true">Motion-Values</text></para>
+          <para styleclass="Body Text HowTo"><text styleclass="Body Text HowTo" translate="true">You </text><text styleclass="Body Text HowTo" style="color:#ff0000;" translate="true">CAN</text><text styleclass="Body Text HowTo" translate="true"> control the:</text></para>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Body Text"><text styleclass="Parameter" translate="true">Start Position -</text></para>
+                <para styleclass="Body Text HowTo"><text styleclass="Body Text HowTo" translate="true"> The </text><text styleclass="Parameter" translate="true">Start Position</text><text styleclass="Body Text HowTo" translate="true"> </text><text styleclass="Body Text" translate="true">usually </text><text styleclass="VariableName" translate="true">flows</text><text styleclass="Body Text" translate="true"> from the </text><text styleclass="Parameter" translate="true">End-Position</text><text styleclass="Body Text" translate="true"> of the </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MT-POP-Previous-Segment" styleclass="Element" translate="true">Previous-Segment</link><text styleclass="VariableName" translate="true"> </text></para>
+                <para styleclass="Bullets"><text styleclass="Parameter" translate="true">End Position</text><text styleclass="Body Text" translate="true"> </text></para>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Body Text HowTo"><text styleclass="Body Text HowTo" translate="true">You </text><text styleclass="Body Text HowTo" style="color:#ff0000;" translate="true">CANNOT</text><text styleclass="Body Text HowTo" translate="true"> control the:</text></para>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Bullets"><text styleclass="Parameter" translate="true">Start Velocity</text><text styleclass="Body Text" translate="true"> and </text><text styleclass="Parameter" translate="true">End Velocity</text><text styleclass="Body Text" translate="true"> </text></para>
+                <para styleclass="Bullets"><text styleclass="Parameter" translate="true">Start Acceleration</text><text styleclass="Body Text" translate="true"> and </text><text styleclass="Parameter" translate="true">End Acceleration</text><text styleclass="Body Text" translate="true"> </text></para>
+                <para styleclass="Bullets"><text styleclass="Parameter" translate="true">Start Jerk</text><text styleclass="Body Text" translate="true"> and </text><text styleclass="Parameter" translate="true">End Jerk</text><text styleclass="Body Text" translate="true"> </text></para>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Interface2"><text styleclass="Interface2" translate="true">Segment Parameters</text></para>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Body Text"><text styleclass="Body Text" translate="true">None</text></para>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Interface2"><text styleclass="Interface2" translate="true">Segment-Range</text></para>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Parameter"><text styleclass="Parameter" translate="true">Start-Range </text></para>
+                <para styleclass="Parameter"><text styleclass="Parameter" translate="true">End- Range</text></para>
+                <para styleclass="Parameter"><text styleclass="Parameter" translate="true">0 ≤ Start-Range &lt; End-Range ≤ 1</text></para>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Normal"><line style="height:1px; color:#343400;"/></para>
+          <para styleclass="SeeAlso"><text styleclass="SeeAlso" translate="true">See also : </text><image src="MD-Globe-www-24.png" scale="100.00%" styleclass="Image Caption" style="font-size:7pt; vertical-align:sub;" figurelistinclude="0"></image><text styleclass="SeeAlso" translate="true"> </text><link displaytype="text" defaultstyle="true" type="weblink" href="http://mechdesigner.support/index.htm?mt-tutorial-5-edit-start-standard-segment.htm" target="_blank" styleclass="Body Text" translate="true">Tutorial 5: Edit the Start of a Traditional Motion-Law</link><text styleclass="Body Text" translate="true">.</text></para>
+          <para styleclass="SeeAlso"><text styleclass="SeeAlso" translate="true">See also : </text><image src="MD-Globe-www-24.png" scale="100.00%" styleclass="Image Caption" style="font-size:7pt; vertical-align:sub;" figurelistinclude="0"></image><text styleclass="SeeAlso" translate="true"> </text><link displaytype="text" defaultstyle="true" type="weblink" href="http://mechdesigner.support/index.htm?tutorial-9-asymmetrical-motions.htm" target="_blank" styleclass="Body Text" translate="true">Tutorial 9: Asymmetrical Motions.</link></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="vertical-align:top; height:43px;">
+          <para styleclass="" style="text-align:left; text-indent:0px; margin-top:0px; margin-right:0px; margin-bottom:0px; margin-left:0px; line-height:1.00; background-color:transparent; white-space:normal; page-break-inside:auto; page-break-after:auto; border:none; tabstops:none;"><image src="MT-CamLaw-ModifiedSinusoid.ipp" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"><caption translate="true"><![CDATA[Modified-Sinusoid Cam-Law / Motion-Law]]></caption></image></para>
+          <para styleclass="Interface2"><text styleclass="Interface2" translate="true">Motion-Law Coefficients</text></para>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="4" colcount="2" style="width:500px;">
+            <tr style="vertical-align:middle">
+              <td>
+                <para styleclass="VariableName"><text styleclass="VariableName" translate="true">Velocity Coefficient : </text></para>
+              </td>
+              <td>
+                <para styleclass="Popup Box"><equation styleclass="Popup Box" font-size="28" translate="true"><![CDATA[C_{v} = 1.760]]></equation></para>
+              </td>
+            </tr>
+            <tr style="vertical-align:middle">
+              <td>
+                <para styleclass="VariableName"><text styleclass="VariableName" translate="true">Acceleration Coefficient : </text></para>
+              </td>
+              <td>
+                <para styleclass="Popup Box"><equation styleclass="Popup Box" font-size="28" translate="true"><![CDATA[C_{a}=5.530]]></equation></para>
+              </td>
+            </tr>
+            <tr style="vertical-align:middle">
+              <td>
+                <para styleclass="VariableName"><text styleclass="VariableName" translate="true">Jerk Coefficient : </text></para>
+              </td>
+              <td>
+                <para styleclass="Popup Box"><equation styleclass="Popup Box" font-size="28" translate="true"><![CDATA[C_{j} =69.47]]></equation></para>
+              </td>
+            </tr>
+            <tr style="vertical-align:middle">
+              <td>
+                <para styleclass="VariableName"><text styleclass="VariableName" translate="true">Jerk at Crossover : </text></para>
+              </td>
+              <td>
+                <para styleclass="Popup Box"><equation styleclass="Popup Box" font-size="28" translate="true"><![CDATA[C_{J(co)} = -25.13]]></equation></para>
+              </td>
+            </tr>
+          </table></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="vertical-align:top; height:43px;">
+          <para styleclass="Interface2"><text styleclass="Interface2" translate="true">Application Notes</text></para>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Body Text"><text styleclass="Body Text" translate="true">The </text><text styleclass="VariableName" translate="true">Modified Sinusoid</text><text styleclass="Body Text" translate="true"> motion-law has finite jerk throughout the segment. </text></para>
+                <para styleclass="Body Text"><text styleclass="Body Text" translate="true">It has an relatively low peak velocity, but a relatively high value of the nominal acceleration.</text></para>
+                <para styleclass="VariableName"><text styleclass="VariableName" translate="true">Dynamic Performance</text></para>
+                <para styleclass="Body Text HowTo"><text styleclass="Body Text HowTo" style="font-family:'Segoe UI'; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;" translate="true">This Motion-Law is a good general purpose type particularly in applications where the period ratio is between 5 and 10, particularly if the input drive is flexible or it has backlash. It performs well with respect to residual vibration after the segment is complete.</text></para>
+                <para styleclass="VariableName"><text styleclass="VariableName" translate="true">Pressure Angle Considerations</text></para>
+                <para styleclass="Body Text HowTo"><text styleclass="Body Text HowTo" translate="true">This one of the </text><text styleclass="VariableName" translate="true">Traditional Motion-Laws</text><text styleclass="Body Text HowTo" translate="true"> that produce a relatively small pressure angle, and so a small cam for a given lift and pre-prescribed maximum pressure angle. </text></para>
+                <para styleclass="VariableName"><text styleclass="VariableName" translate="true">Drive Torques</text></para>
+                <para styleclass="Body Text HowTo"><text styleclass="Body Text HowTo" translate="true">The nominal drive torque characteristics and the actual torque values are low even for low values of Period Ratio are good for this motion-law. The low peak values and the smooth variation of drive torque during the motion-law further emphasize the suitability of this motion-law where the input drive is flexible or has backlash.</text></para>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="VariableName"><text styleclass="VariableName" translate="true">More information:</text></para>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Body Table"><text styleclass="Body Table" translate="true">The Acceleration function is a series of Sinusoid functions.</text></para>
+                <list id="0" type="ul" listtype="bullet" formatstring="·" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullets" style="font-family:Symbol; font-size:11pt; color:#000000;">
+                  <li styleclass="Bullets"><text styleclass="Bullets" translate="true">a ¼ Sine wave function, starting from zero acceleration, for 12.5% of the </text><text styleclass="Parameter" translate="true">Segment-Width</text><text styleclass="Body Text" translate="true">. </text></li>
+                  <li styleclass="HowTo Bulleted"><text styleclass="HowTo Bulleted" translate="true">a ½ Cosine function, for 75% the </text><text styleclass="Parameter" translate="true">Segment-Width</text></li>
+                  <li styleclass="HowTo Bulleted"><text styleclass="HowTo Bulleted" translate="true">a ¼ Sine wave function, returning to zero acceleration, for 12.5% of the </text><text styleclass="Parameter" translate="true">Segment-Width.</text></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+        </td>
+      </tr>
+    </table></para>
+  </body>
+</topic>

@@ -1,0 +1,673 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" status="Under Construction" modified="2022-03-25T09:46:46.896Z" lasteditedby="Adam" version="2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title>Dialog: 3D-Cam</title>
+  <keywords>
+    <keyword>3D-Cam<keyword>Save as STEP</keyword></keyword>
+    <keyword>3D-Cam dialog</keyword>
+    <keyword>Barrel Cam</keyword>
+    <keyword>Dialog<keyword>3D-Cam</keyword></keyword>
+    <keyword>Edit 3D-Cam</keyword>
+    <keyword>Export 3D-Cam to SOLIDWORKS</keyword>
+    <keyword>Globoidal Cam</keyword>
+    <keyword>SOLIDWORKS<keyword>3D-Cam export to...</keyword><keyword>Type Library</keyword></keyword>
+  </keywords>
+  <body>
+    <header>
+      <para styleclass="Heading1">Dialog: 3D-Cam</para>
+    </header>
+    <para styleclass="Heading2">3D-Cam dialog-box</para>
+    <para styleclass="SeeAlso">See <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Command-Add3DCam">Add 3D Cam</link></para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="Heading3_atocs_" style="text-indent:-18px; margin-left:18px;">Open 3D-Cam dialog-box</para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="1" colcount="1">
+      <tr style="vertical-align:top">
+        <td style="border-right:none;">
+          <para styleclass="Body Text">Edit the<text styleclass="Element"> 3D-Cam</text><text style="font-weight:normal; font-style:normal;">:</text></para>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td style="border-top:none; border-right:none; border-bottom:none;">
+                <list id="0" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="B Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="B Bullets"><text styleclass="Body Text">Double-click a </text><text styleclass="Element">3D-Cam</text><text styleclass="Body Text"> in the </text><text styleclass="Interface">graphic-area</text><text styleclass="Body Text"> or </text><text styleclass="Interface">Assembly-Tree</text><text styleclass="Body Text">.</text><text styleclass="VariableName">&#32;</text></li>
+                </list>
+                <para styleclass="VariableName-IT">- or -</para>
+                <list id="1" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="B Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="B Bullets"><text styleclass="SeeAlso">See </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-How-to-Open-a-Dialog-Box" styleclass="SeeAlso">How to Open a Dialog-Box</link><text styleclass="VariableName">. &#160;</text></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Body Text">The <text styleclass="Element">3D-Cam dialog-box</text> is now open.</para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="Heading3_atocs_"><anchor id="Dialog3DCam"><keywords><keyword>3D-Cam dialog-box</keyword></keywords></anchor>3D-Cam dialog-box</para>
+    <para styleclass="Body Text"><table styleclass="Default" rowcount="1" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:250px;">
+          <para styleclass="Image Caption"><image src="MD-DIALOG-3DCAM.ipp" scale="-99.90%" figurelistinclude="0"><caption><![CDATA[3D-Cam dialog-box]]></caption></image></para>
+        </td>
+        <td>
+          <para styleclass="Body Text">There are three tabs in the <text styleclass="Element">3D-Cam dialog-box</text>:</para>
+          <para styleclass="Heading4 HowTo Toggle_atoc_">Cam </para>
+          <para styleclass="Heading4 HowTo Toggle_atoc_">Display</para>
+          <para styleclass="Heading4 HowTo Toggle_atoc_">Export</para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="Body Table">Buttons at top of the <text styleclass="Element">3D-Cam dialog-box</text>:</para>
+          <para styleclass="Body Text HowTo"><link displaytype="button" type="topiclink" href="">Rebuild</link><text styleclass="BodyText Bold">&#32;</text>button</para>
+          <para styleclass="Body Text HowTo"><link displaytype="button" type="topiclink" href="">Save Cam</link> button</para>
+          <para styleclass="Body Text HowTo">See <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-3DCam" anchor="3Dcam-RebuildSave">below</link> for more details.</para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading4 HowTo_atoc_">CAM tab</para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="1" colcount="1" style="cell-padding:0px; border-width:0px; border-spacing:0px; cell-border-width:0px; border-style:none; background-color:#ffffff;">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Separator-Header" style="text-indent:-36px; margin-left:36px;"><anchor id="3DCam-CamMeshDensity" styleclass="Body Text HowTo"><keywords><keyword>3D-Cam dialog-box<keyword>Cam Mesh Density Parameters</keyword></keyword></keywords></anchor><image src="btn_addkeyword.bmp" scale="100.00%" figurelistinclude="0"></image><tab /><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" src-collapsed="btn_addkeyword.bmp" src-expanded="btn_delkeyword.bmp" src-print="none"><caption><![CDATA[ Cam Surface Mesh Density ]]></caption></toggle></para>
+          <para styleclass="Normal"><table styleclass="Default" rowcount="2" colcount="2">
+            <tr style="vertical-align:top">
+              <td style="width:240px;">
+                <para styleclass="Image Caption"><image src="MD-Rims-0-19--240.png" scale="-99.90%" figurelistinclude="0"><title>Rims in 3D Cams</title><caption><![CDATA[Rims along the Cam-Flanks (Purple), the Top and Bottom (Orange), and Points along each Rim.]]></caption></image></para>
+              </td>
+              <td>
+                <para styleclass="VariableName">Preamble:</para>
+                <para styleclass="Body Table">We specify <text styleclass="Element">3D-Cams</text> with four(4) cam faces. See image to the left. <text styleclass="Body Text HowTo">The four (4) cam faces are the:</text></para>
+                <para styleclass="Body Table"><text styleclass="VariableName">Two working faces</text>. </para>
+                <para styleclass="Body Table">Also called, <text styleclass="VariableName-IT">Cam-Flanks,</text><text styleclass="Body Text HowTo2"> they are the faces along which the </text><text styleclass="VariableName">Cam-Roller</text><text styleclass="Body Text HowTo2"> will roll or slide.</text></para>
+                <para styleclass="Body Table"><text styleclass="VariableName">Two non-working faces</text>.<text styleclass="HowTo Bulleted">&#32;</text></para>
+                <para styleclass="Body Table">Also called the <text styleclass="VariableName-IT">Root-Face</text> and the <text styleclass="VariableName-IT">Top-Face</text>.</para>
+                <para styleclass="Body Table"><text styleclass="VariableName">Root-Face</text>: <text styleclass="Body Text">the floor of the cam. It should be deeper into the cam than </text><text styleclass="VariableName">Cam-Roller</text><text styleclass="Body Text"> at all times.</text></para>
+                <para styleclass="Body Table"><text styleclass="VariableName">Top Face</text><text styleclass="Body Text">: does not have a function in the actual cam. We use the </text>Top-Face<text styleclass="Body Text"> to close the </text><text styleclass="Element">3D-Cam</text><text styleclass="Body Text">, when we export the data to </text><text styleclass="SOLIDWORKS">SolidWorks</text><text styleclass="Body Text">, or save it as a STEP file.</text></para>
+                <para styleclass="Body Table"><text styleclass="VariableName">Rims and Points</text></para>
+                <para styleclass="Body Table"><text style="font-style:normal;">We can specify each cam face by a number of lines,</text> that we call <text styleclass="VariableName">Rims</text><text style="font-style:normal;">. We can specify any number </text><text styleclass="VariableName">Rims</text><text style="font-style:normal;"> - see below.</text></para>
+                <para styleclass="Body Table"><text style="font-style:normal;">There are a </text><text styleclass="VariableName">Points</text><text style="font-style:normal;"> along each </text><text styleclass="VariableName">Rim</text><text style="font-style:normal;">. We can also specify how many Points - see below.</text></para>
+              </td>
+            </tr>
+            <tr style="vertical-align:top">
+              <td style="width:135px;">
+                <para styleclass="Normal" style="text-align:right;"><image src="MD-DIALOG-3DCAM-CAM-MESHDESNISTY.ipp" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+              </td>
+              <td>
+                <para styleclass="Body Table"><text styleclass="VariableName">Parameters</text>:</para>
+                <para styleclass="Body Text HowTo"><text styleclass="Parameter-Header"># Points along Rims: </text><br/>Number-of-Points along each <text styleclass="VariableName">Rim</text></para>
+                <para styleclass="Body Text HowTo"><text styleclass="Parameter-Header"># Rims along Flanks: &#160;</text><br/>Number-of-rims across each flank (working faces) of the Cam</para>
+                <para styleclass="Body Text HowTo"><text styleclass="Parameter-Header"># Rims along Top &amp; Bottom: </text><br/>Number-of-Rims across the Root and Top (non-working faces) of the Cam:</para>
+                <para styleclass="Body Text HowTo"><text styleclass="Parameter-Header"># Hoops (data for CAD only)</text><br/>Number-of-hoops that wrap around the 3D-Cam and connect the same Point along each Rim:</para>
+                <para styleclass="Body Text HowTo">The hoops help <text styleclass="SOLIDWORKS">SolidWorks</text> to keep the shape of the surfaces.</para>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Separator-Header" style="text-indent:-36px; margin-left:36px;"><anchor id="3DCam-RollerParameters" styleclass="Body Text HowTo"><keywords><keyword>3D-Cam dialog-box<keyword>Taper Roller</keyword></keyword></keywords></anchor><image src="btn_addkeyword.bmp" scale="100.00%" figurelistinclude="0"></image><tab /><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" src-collapsed="btn_addkeyword.bmp" src-expanded="btn_delkeyword.bmp" src-print="none"><caption><![CDATA[ Roller Parameters ]]></caption></toggle></para>
+          <para styleclass="Normal"><table styleclass="Default" rowcount="8" colcount="2">
+            <tr style="vertical-align:top">
+              <td style="width:360px;">
+                <para styleclass="Normal"><image src="MD-Taper-Roller VelocityDiagram-464.png" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+              </td>
+              <td>
+                <para styleclass="Body Text"><text styleclass="VariableName">Preamble: </text></para>
+                <para styleclass="Body Text"><equation styleclass="Body Text HowTo" style="font-family:&apos;Segoe UI Semibold&apos;; font-weight:bold;" font-size="28"><![CDATA[V=r.\omega]]></equation><text styleclass="Body Text HowTo">&#32;</text></para>
+                <para styleclass="Body Text"><text styleclass="Body Text HowTo">Linear Velocity (</text><equation styleclass="Body Text HowTo" font-size="28"><![CDATA[V]]></equation><text styleclass="Body Text HowTo">) = Radius( </text><equation styleclass="Body Text HowTo" font-size="28"><![CDATA[r]]></equation><text styleclass="Body Text HowTo">) &#160;× Angular Velocity (</text><equation styleclass="Body Text HowTo" font-size="28"><![CDATA[\omega]]></equation><text styleclass="Body Text HowTo">) </text></para>
+                <para styleclass="Body Table">Different points on the cam-flank surface are at different radii from the cam&apos;s rotational axis.</para>
+                <para styleclass="Body Table"></para>
+              </td>
+            </tr>
+            <tr style="vertical-align:top">
+              <td colspan="2">
+                <para styleclass="Body Table">Therefore, a point that is at a large radius from the Cam&apos;s rotational-axis has a greater tangential velocity than a point that is at a small radius. </para>
+                <para styleclass="Body Table">However, the contact surface of the Follower Roller are at equal radii from its own rotational-axis. Therefore, the tangential velocities of all points on the surface of a cylindrical roller are identical. </para>
+                <para styleclass="Body Table">The surface speed of the cam and the surface speed of the follower can only be the same at one contact point. The follower must be skidding at all other points!</para>
+                <para styleclass="Body Table">If you use a tapered-roller, with an apex that is coincident with the rotational-axis of the cam, then pure rolling can occur during the dwell periods, and nearly pure rolling during the motion periods.</para>
+                <para styleclass="Body Table">Nevertheless, cylindrical, or barrel rollers <text styleclass="Body Text">are usually used as</text> they are readily available, cheap, and can take high loads. </para>
+              </td>
+            </tr>
+            <tr style="vertical-align:top">
+              <td style="width:360px;">
+                <para styleclass="Normal"><image src="MD-Secondary-Contour-360-2.png" scale="-99.99%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+              </td>
+              <td>
+                <para styleclass="VariableName">What is the Roller Diameter of a Taper-Roller?</para>
+                <para styleclass="Body Text HowTo">We must review the <text styleclass="Parameter">Extrusion-Offset</text> and <text styleclass="Parameter">Extrusion-Depth</text> parameters that define the <text styleclass="Element">Profile Extrusion</text> of the Cam-Follower Roller.</para>
+                <para styleclass="Body Text HowTo">In <text styleclass="VariableName-IT">MechDesigner</text>, to model a <text styleclass="Element">3D-Cam</text>, we sketch a circle to represent the diameter of the Cam-Roller. We add a Profile to the circle to represent the cylindrical sides of the Cam-Roller. </para>
+                <para styleclass="Body Text HowTo">We use the <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-ProfileExtrusion" styleclass="Element">Extrusion dialog-box</link> to make the <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-Extrusion-Depth" styleclass="Parameter">Extrusion-Depth</link> parameter equal to the Width of the Cam-Roller bearing (Typically, &apos;B&apos; parameter in bearing catalogs).</para>
+              </td>
+            </tr>
+            <tr style="vertical-align:top">
+              <td colspan="2">
+                <para styleclass="VariableName">Extrusion dialog-box: </para>
+                <para styleclass="Body Text HowTo"><text styleclass="Parameter">Extrusion-Offset</text> (<text style="font-size:10pt; vertical-align:baseline;">mm):</text> Positive <text styleclass="VariableName">or</text> Negative value</para>
+                <list id="2" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+                  <li styleclass="HowTo Bulleted"><text styleclass="Body Text HowTo">A dimension, that may be positive or negative. </text></li>
+                </list>
+                <list id="3" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+                  <li styleclass="HowTo Bulleted"><text styleclass="Body Text HowTo">Equals the position of the </text><text styleclass="VariableName" style="color:#ff00ff;">Primary-Contour</text><text styleclass="Body Text HowTo"> (when the </text><text styleclass="Parameter">Part-Offset</text><text styleclass="Body Text HowTo"> parameter = 0</text><text styleclass="Body Text HowTo" style="font-size:10pt; vertical-align:baseline;">mm</text><text styleclass="Body Text HowTo">).</text></li>
+                </list>
+                <para styleclass="Body Text HowTo"><text styleclass="Parameter">Extrusion-Depth</text> (<text style="font-size:10pt; vertical-align:baseline;">mm</text>): &#160;ONLY a positive value. </para>
+                <para styleclass="Body Text HowTo"><text styleclass="Parameter">Extrusion-Offset</text> (<text style="font-size:10pt; vertical-align:baseline;">mm</text>) <text style="font-weight:bold;">+</text>&#32;<text styleclass="Parameter">Extrusion-Depth </text>(<text style="font-size:10pt; vertical-align:baseline;">mm</text>)= the position of the <text styleclass="VariableName" style="color:#ff00ff;">Secondary-Contour</text>.</para>
+              </td>
+            </tr>
+            <tr style="vertical-align:top">
+              <td style="width:360px;">
+                <para styleclass="Normal"><image src="MD-Taper-Angle-360.png" scale="-99.99%" styleclass="Image Caption" figurelistinclude="0"></image><image src="MD-DIALOG-3DCAM-CAM-ROLLER-PARAM.ipp" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+              </td>
+              <td>
+                <para styleclass="Body Text"><text styleclass="Notes">Note:</text> In image to the left, +Z-axis direction is down</para>
+                <para styleclass="Parameter">Parameters</para>
+                <para styleclass="Body Text"></para>
+                <para styleclass="Body Text"><text styleclass="Parameter-Header">Taper-Angle</text><text styleclass="Body Text HowTo"> of the Cam-Follower Roller.</text></para>
+                <para styleclass="VariableName-indent">Taper-Angle<text styleclass="Body Text"> (degrees) inclines</text><text styleclass="Body Text HowTo"> the Flanks of the </text><text styleclass="Element">3D-Cam</text><text styleclass="Body Text HowTo">. The taper angle pivots about the </text><text styleclass="VariableName" style="color:#ff00ff;">Secondary-Contour</text><text styleclass="Body Text HowTo" style="font-weight:bold; font-style:italic;">. </text><text styleclass="VariableName-IT">This is not as convenient as the Primary Contour, for which we apologize.</text></para>
+                <para styleclass="Body Text HowTo"> With reference to the image to the left, we can see that a:</para>
+                <list id="4" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+                  <li styleclass="HowTo Bulleted"><text style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">Positive Taper Angle increases the diameter in the +Z-axis direction.</text></li>
+                  <li styleclass="HowTo Bulleted"><text style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">Negative Taper Angle (shown in image) decreases the diameter in the +Z-axis direction.</text></li>
+                </list>
+              </td>
+            </tr>
+            <tr style="vertical-align:top">
+              <td colspan="2">
+                <para styleclass="VariableName">Recommendation , if you are going to use the Taper-Roller parameter.</para>
+                <para styleclass="Body Text HowTo"><text style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">Below, we assume you have made sure the </text><text styleclass="Interface">Mechanism-Plane</text><text style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;"> of the Cam-Follower is half (mid-)way through the width of the Cam-Follower. It if is not, then change the dimension below to suit your model.</text></para>
+              </td>
+            </tr>
+            <tr style="vertical-align:top">
+              <td style="width:360px;">
+                <para styleclass="Normal" style="text-align:right;"><image src="MD-Taper-Angle-360-2.png" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image><image src="MD-Cam-Follower-Width Dimension.ipp" align="right" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"><caption><![CDATA[C = Actual Roller Width]]></caption></image></para>
+              </td>
+              <td>
+                <para styleclass="VariableName">STEP 1</para>
+                <para styleclass="Body Text HowTo"><text style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">Edit the Cam-Follower </text><text styleclass="Element">Extrusion</text><text style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;"> with the </text><text styleclass="Element">Extrusion dialog-box</text><text styleclass="VariableName">&#32;</text></para>
+                <para styleclass="Body Text HowTo">Enter these parameters:</para>
+                <list id="5" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+                  <li styleclass="HowTo Bulleted"><text styleclass="Parameter">Extrusion-Depth</text>(<text style="font-size:10pt; vertical-align:baseline;">mm</text>) = 0.5 × <text styleclass="Interface">Actual Roller Width</text>(<text style="font-size:10pt; vertical-align:baseline;">mm</text>) (Dimension &apos;<text styleclass="VariableName" style="color:#ff0000;">C</text>&apos; in SKF image to the left</li>
+                  <li styleclass="HowTo Bulleted"><text styleclass="Parameter">Extrusion-Offset</text> (<text style="font-size:10pt; vertical-align:baseline;">mm</text>) = <text style="font-weight:bold;">—</text>&#32;<text styleclass="Parameter">Extrusion-Depth</text>(<text style="font-size:10pt; vertical-align:baseline;">mm</text>) (Equal to <text styleclass="VariableName" style="color:#ff0000;">–C</text><text styleclass="Body Text">)</text></li>
+                </list>
+                <para styleclass="Body Table"><text styleclass="Body Text HowTo">The </text><text styleclass="Parameter">Extrusion-Offset</text><text styleclass="Body Text HowTo"> is the </text><text styleclass="VariableName">negative of the</text><text styleclass="Body Text HowTo">&#32;</text><text styleclass="Parameter">Extrusion-Depth</text><text styleclass="Body Text HowTo">. </text></para>
+                <para styleclass="Body Text HowTo">The <text styleclass="VariableName" style="color:#ff00ff;">Secondary Profile</text> is now <text styleclass="VariableName" style="color:#ff0000;">on</text> the <text styleclass="Interface">Mechanism-Plane</text>. </para>
+                <para styleclass="Body Text HowTo">Now, the <text styleclass="Parameter">Taper-Angle</text> parameter will rotate and pivot on the <text styleclass="Interface">Mechanism-Plane.</text></para>
+              </td>
+            </tr>
+            <tr style="vertical-align:top">
+              <td style="width:360px;">
+                <para styleclass="Normal"><image src="MD-Taper-Roller Parameters-Settings-General-3.png" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+              </td>
+              <td>
+                <para styleclass="VariableName">STEP 2:</para>
+                <para styleclass="HowTo Numbered"><text style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">In the Clearances separator (see </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-3DCam" anchor="3DCam-Clearances" style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">below</link><text style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;"> ):</text></para>
+                <para styleclass="HowTo Numbered"><image src="Red-14-1.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Normal">&#32;</text><text styleclass="Parameter">Root-Clearance</text><text style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;"> = a minimum of 0.5 × </text><text styleclass="Interface">Actual Roller Width</text><text style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">(</text><text styleclass="Body Text" style="font-size:10pt; vertical-align:baseline;">mm</text><text styleclass="Body Text">) </text></para>
+                <para styleclass="HowTo Numbered"><image src="Red-14-2.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;"> You need to add more </text><text styleclass="Parameter">Root-Clearance</text><text style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;"> and </text><text styleclass="Parameter">Top-Clearance</text><text style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;"> to extend the flanks as need for the actual roller and </text><text styleclass="Element">3D-Cam</text></para>
+                <para styleclass="Body Text HowTo">Typical <text styleclass="Parameter">Root-Clearance</text> = 0.6 x <text styleclass="Interface">Actual Roller Width/Depth</text></para>
+                <para styleclass="HowTo Numbered"></para>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Separator-Header" style="text-indent:-36px; margin-left:36px;"><anchor id="3DCam-Clearances" styleclass="Body Text HowTo"><keywords><keyword>3D-Cam dialog-box<keyword>Clearances - Radial, Top, Bottom</keyword></keyword></keywords></anchor><image src="btn_addkeyword.bmp" scale="100.00%" figurelistinclude="0"></image><tab /><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" src-collapsed="btn_addkeyword.bmp" src-expanded="btn_delkeyword.bmp"><caption><![CDATA[ Roller Clearances ]]></caption></toggle></para>
+          <para styleclass="Normal"><table styleclass="Default" rowcount="2" colcount="3">
+            <tr style="vertical-align:top">
+              <td style="width:235px;">
+                <para styleclass="Normal"><image src="MD-DIALOG-3DCAM-CAM-ROLLERCLEARANCES.ipp" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+              </td>
+              <td colspan="2">
+                <para styleclass="VariableName">Preamble:</para>
+                <para styleclass="Body Table">We assume that the </para>
+                <list id="6" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullets" style="font-family:Symbol; font-size:11pt; color:#000000;">
+                  <li styleclass="Bullets">Extrusion-Depth<text styleclass="Body Table"> of the </text><text styleclass="VariableName">Follower-Roller</text><text styleclass="Body Table"> (in the model) is equal to its actual Width.</text></li>
+                  <li styleclass="HowTo Bulleted"><text styleclass="Body Table">Circle diameter of the </text><text styleclass="VariableName">Follower-Roller</text><text styleclass="Body Table"> in the model is equal to its actual Diameter.</text></li>
+                </list>
+                <para styleclass="Body Text HowTo"><text styleclass="VariableName">Clearances</text> are practical considerations.</para>
+                <para styleclass="Body Text HowTo"><text styleclass="VariableName">Clearance</text> assumes the Cam is a Groove/Track Cam. </para>
+                <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+                <para styleclass="VariableName">Parameters:</para>
+                <para styleclass="Body Table"><text styleclass="Parameter-Header">Radial-Clearance</text> (<text style="font-size:10pt; vertical-align:baseline;">mm</text>)</para>
+                <para styleclass="Body Text HowTo">A positive value <text styleclass="Body Text">moves</text> the cam-flanks outwards</para>
+                <para styleclass="Body Text HowTo">A negative value <text styleclass="Body Text">moves</text> the cam-flanks inwards.</para>
+                <para styleclass="Body Text HowTo"><text styleclass="VariableName">Note: Total Clearance = 2 × Radial Clearance.</text>&#32;</para>
+              </td>
+            </tr>
+            <tr style="vertical-align:top">
+              <td colspan="2" style="vertical-align:top; width:360px;">
+                <para styleclass="Normal"><image src="MD-3DCAM-Clearance-TopRoot-360.png" align="left" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+              </td>
+              <td>
+                <para styleclass="Parameter-Header">Root-Clearance<text styleclass="Body Text">: </text></para>
+                <para styleclass="Body Text HowTo">A positive value moves the Root-Face towards the center of the Cam -see <text styleclass="Notes">Note</text>. </para>
+                <para styleclass="Body Text HowTo">Add <text styleclass="Parameter">Root-Clearance</text> to make sure the actual <text styleclass="VariableName">Follower-Roller</text> does not touch the actual <text styleclass="VariableName">Root</text> (the <text styleclass="VariableName-IT">floor</text>) of the actual cam-groove/track.</para>
+                <para styleclass="Parameter-Header">Top-Clearance: <text styleclass="Body Text">You make sure the Top-Face is outside the Cam-Blank. </text></para>
+                <para styleclass="Body Text HowTo">A positive value moves the Top-Face away from the center of the Cam.</para>
+                <para styleclass="Body Text HowTo">Usually - but see <text styleclass="Notes">Note</text>.</para>
+                <para styleclass="Body Text HowTo"><text styleclass="Body Table">Add </text><text styleclass="Parameter">Top-Clearance</text><text styleclass="Body Table"> to make sure the top-face of the model is outside the Cam-Blank</text></para>
+                <para styleclass="VariableName">Note: The Top-Face may be the Root-Face of the Cam - vice-versa!</para>
+                <para styleclass="Body Text HowTo">To find which is which, enter a value for say the <text styleclass="Parameter">Root-Clearance</text> and <text styleclass="Parameter">Rebuild</text>. Observer in the model which face updates.</para>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Separator-Header" style="text-indent:-36px; margin-left:36px;"><anchor id="3DCam-FlankLength" styleclass="Body Text HowTo"><keywords><keyword>3D-Cam dialog-box<keyword>Flank Length</keyword></keyword></keywords></anchor><image src="btn_addkeyword.bmp" scale="100.00%" figurelistinclude="0"></image><tab /><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" src-collapsed="btn_addkeyword.bmp" src-expanded="btn_delkeyword.bmp" src-print="none"><caption><![CDATA[ Flank Length ]]></caption></toggle></para>
+          <para styleclass="Normal"><table styleclass="Default" rowcount="2" colcount="2">
+            <tr style="vertical-align:top">
+              <td style="width:235px;">
+                <para styleclass="Normal"><image src="MD-DIALOG-3DCAM-CAM-FLANKLENGTH.ipp" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+              </td>
+              <td>
+                <para styleclass="VariableName">Preamble:</para>
+                <para styleclass="Body Text HowTo"><text style="font-weight:normal; font-style:normal;">Flank Length parameters apply to Indexing Cams. </text></para>
+                <para styleclass="Body Text HowTo"><text style="font-weight:normal; font-style:normal;">When you add a 3D-Cam, we </text>calculate the cam over a complete machine-cycle, 0 – 360. However, cam-follower rollers of indexing cams do not stay in contact with the cam for a complete machine-cycle 0 – 360. The cam-follower rollers progressively engage, then disengage with the cam, in a similar way to gear teeth.</para>
+                <para styleclass="Body Text HowTo">We use the <text styleclass="Separator">Flank-Length</text> separator to calculate the cam coordinates for the period when the cam-follower is engaged with the cam.</para>
+              </td>
+            </tr>
+            <tr style="vertical-align:top">
+              <td colspan="2">
+                <para styleclass="VariableName">Parameters: </para>
+                <para styleclass="Body Text HowTo">You may need to edit the Flank Length to calculate the cam for angles that are not from 0 and 360. &#160;</para>
+                <para styleclass="Separator-Header">Flank-Length:</para>
+                <para styleclass="Parameter-Header">Start-Angle:</para>
+                <list id="7" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+                  <li styleclass="HowTo Bulleted">Edit the <text styleclass="Parameter">Start-Angle</text>&#32;</li>
+                </list>
+                <para styleclass="Parameter-Header">End-Angle:</para>
+                <list id="8" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+                  <li styleclass="HowTo Bulleted">Edit the <text styleclass="Parameter">End-Angle</text>&#32;</li>
+                </list>
+                <para styleclass="Body Table">As you edit the <text styleclass="Parameter">Start-Angle</text> and <text styleclass="Parameter">End Angle</text>, you will notice the Cam becomes shorter in length.</para>
+                <para styleclass="Body Table">The <text styleclass="Parameter-Header">Number-of-Points</text> that we calculate along each <text styleclass="VariableName-IT">rim</text> in the cam <text style="text-decoration:underline;">does not change</text>. <text styleclass="Body Text HowTo">Thus, the points along each </text><text styleclass="VariableName-IT">rim</text><text styleclass="Body Text HowTo"> become nearer to each other.</text></para>
+              </td>
+            </tr>
+          </table></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading4 HowTo_atoc_">DISPLAY tab</para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="1" colcount="1" style="cell-padding:0px; border-width:0px; border-spacing:0px; cell-border-width:0px; border-style:none;">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Separator-Header" style="text-indent:-36px; margin-left:36px;"><anchor id="3DCam-Display"><keywords><keyword>3D-Cam dialog-box<keyword>Display in graphic-area</keyword></keyword></keywords></anchor><image src="btn_addkeyword.bmp" scale="100.00%" figurelistinclude="0"></image><tab /><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" src-collapsed="btn_addkeyword.bmp" src-expanded="btn_delkeyword.bmp" src-print="none"><caption><![CDATA[ Display in Graphic-Area ]]></caption></toggle></para>
+          <para styleclass="Normal"><table styleclass="Default" rowcount="1" colcount="2">
+            <tr style="vertical-align:top">
+              <td style="width:235px;">
+                <para styleclass="Normal"><image src="MD-DIALOG-3DCAM-DISPLAY-DISPLAY.ipp" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+              </td>
+              <td>
+                <para styleclass="VariableName">Preamble: </para>
+                <para styleclass="Body Table">The &apos;Display&apos; edits how the <text styleclass="Element">3D-Cam</text> shows in the <text styleclass="Interface">graphic-area</text>. </para>
+                <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+                <para styleclass="VariableName">Cam Display Options:</para>
+                <para styleclass="BodyText Bold"><text styleclass="Parameter-Header">Solids* | Hoops | Rims</text><text styleclass="Body Text Howindent4bullets">&#32;</text><text styleclass="Body Text Howindent4bullets" style="font-style:italic;">check-boxes</text><text styleclass="Body Text Howindent4bullets">.</text></para>
+                <list id="9" type="ul" listtype="bullet" formatstring="&#254;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Body Text  10pt indent" style="font-family:Wingdings; font-size:10pt; color:#000000;">
+                  <li styleclass="Body Text  10pt indent"><text style="font-weight:bold;">&#32;</text><text styleclass="Parameter">Solids*</text>: show or hide, 3D-Cam as a Solid</li>
+                  <li styleclass="Body Text  10pt indent"><text style="font-weight:bold;">&#32;</text><text styleclass="Parameter">Hoops:</text> show or hide a hoop at each Point along each of the Rims - see <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-3DCam" anchor="3DCam-CamMeshDensity">Point</link>&#32;</li>
+                  <li styleclass="Body Text  10pt indent"><text style="font-weight:bold;">&#32;</text><text styleclass="Parameter">Rims: </text>show or hide the <text styleclass="Parameter">Rims</text> along the <text styleclass="Element">3D-Cam</text></li>
+                </list>
+                <para styleclass="Body Text">* You MUST select the <text style="font-style:italic;">Solids</text> check-box to see the <text styleclass="Element">3D-Cam</text> in the other <text styleclass="Interface">Mechanism-Editors</text> and the <text styleclass="Interface">Model-Editor</text></para>
+                <para styleclass="Parameter-Header">Color</para>
+                <list id="10" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+                  <li styleclass="HowTo Bulleted"><text style="font-family:Arial; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">Use the Windows® color-picker to select a </text><text style="font-family:Arial; font-size:11pt; font-weight:normal; font-style:italic; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">color</text><text style="font-family:Arial; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;"> of the </text><text styleclass="Element">3D-Cam</text><text style="font-family:Arial; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">&#32;</text></li>
+                </list>
+                <para styleclass="Parameter-Header">Transparency</para>
+                <list id="11" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+                  <li styleclass="HowTo Bulleted"><text style="font-family:Arial; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">Use the slider to change the </text><text styleclass="Parameter">Transparency</text><text style="font-family:Arial; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;"> of the </text><text styleclass="Element">3D-Cam</text><text style="font-family:Arial; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">.</text></li>
+                </list>
+                <para styleclass="Parameter-Header">Display Cam-Contour as...</para>
+                <list id="12" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:10pt; color:#333399;">
+                  <li styleclass="HowTo Bulleted"><text styleclass="Parameter">Pressure-Angle</text></li>
+                  <li styleclass="HowTo Bulleted"><text styleclass="Parameter">Cam-Profile</text></li>
+                </list>
+                <para styleclass="Body Text HowTo">When you show the <text styleclass="Element">3D-Cam</text> as <text styleclass="Parameter">Pressure Angle</text>, the faces have a color-code.</para>
+                <list id="13" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:10pt; color:#333399;">
+                  <li styleclass="HowTo Bulleted"><text style="font-weight:bold; color:#ff0000;">Red</text> identifies a high <text styleclass="Parameter">Pressure-Angle</text></li>
+                  <li styleclass="HowTo Bulleted"><text style="font-weight:bold; color:#0000ff;">Blue</text> identifies a low <text styleclass="Parameter">Pressure-Angle</text></li>
+                </list>
+                <para styleclass="Parameter-Header">Minimum / Maximum</para>
+                <para styleclass="Body Text HowTo">By default, the color-code scales to the maximum and minimum values of the <text styleclass="Parameter">Pressure-Angle</text></para>
+                <para styleclass="Body Text HowTo">If you want to change the scale, use the Maximum Value and Minimum Value boxes.</para>
+                <para styleclass="Parameter-Header">Auto-scale button</para>
+                <para styleclass="Body Text HowTo">Click the auto-scale button to reset to the maximum and minimum values again.</para>
+              </td>
+            </tr>
+          </table></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading4 HowTo_atoc_">EXPORT tab</para>
+    <para styleclass="Body Text HowTo"><text styleclass="Notes">NOTE</text><text styleclass="Body Text">: From </text><text styleclass="VariableName">MD13.2</text><text styleclass="Body Text">, it is easier to save the </text><text styleclass="Element">3D-Cam</text><text styleclass="Body Text"> AS a </text><text styleclass="VariableName">STEP</text><text styleclass="Body Text"> file with the </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-3DCam" anchor="3Dcam-RebuildSave" styleclass="Body Text">Save button</link><text styleclass="Body Text">.</text></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="1" colcount="1" style="cell-padding:0px; border-width:0px; border-spacing:0px; cell-border-width:0px; border-style:none; background-color:#ffffff;">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Separator-Header" style="text-indent:-36px; margin-left:36px;"><anchor id="3DCam-dialog-SolidWorksPAths" styleclass="Body Text HowTo"><keywords><keyword>3D-Cam dialog-box<keyword>SOLIDWORKS Paths</keyword></keyword></keywords></anchor><image src="btn_addkeyword.bmp" scale="100.00%" figurelistinclude="0"></image><tab /><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" src-collapsed="btn_addkeyword.bmp" src-expanded="btn_delkeyword.bmp" src-print="none"><caption><![CDATA[ SOLIDWORKS Paths ]]></caption></toggle></para>
+          <para styleclass="Normal"><table styleclass="Default" rowcount="1" colcount="2">
+            <tr style="vertical-align:top">
+              <td style="width:235px;">
+                <para styleclass="Normal"><image src="MD-DIALOG-3DCAM-EXPORT-SWPATHS.ipp" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+              </td>
+              <td>
+                <para styleclass="VariableName">Preamble: </para>
+                <para styleclass="Body Text HowTo">It is often useful to link a <text styleclass="SOLIDWORKS">SolidWorks</text> document file-name with the <text styleclass="Element">3D-Cam</text> in <text styleclass="VariableName-IT">MechDesigner</text><text style="font-weight:bold; font-style:italic;">.</text></para>
+                <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+                <para styleclass="VariableName">Control buttons:</para>
+                <para styleclass="Parameter-Header">Get Cad Part Path</para>
+                <para styleclass="Body Text HowTo">Link the active <text styleclass="SOLIDWORKS">SolidWorks</text> document file-name with the 3D-Cam dialog.</para>
+                <para styleclass="Body Text HowTo">The file-name is put into the <text style="font-style:italic;">Cam Part Path </text><text style="font-style:normal;">box</text></para>
+                <para styleclass="Parameter-Header">Open Cam Part</para>
+                <para styleclass="Body Text HowTo"><text style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">Open, in </text><text style="font-family:&apos;Segoe UI&apos;; font-size:10pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">SOLIDWORKS</text><text style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">, the file-name of the </text><text style="font-family:&apos;Segoe UI&apos;; font-size:10pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">SOLIDWORKS</text><text style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;"> document that is in the </text><text style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:italic; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">Cam Part Path</text><text style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;"> box</text></para>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Separator-Header" style="text-indent:-36px; margin-left:36px;"><anchor id="3DCam-DataTransfer" styleclass="Body Text HowTo"><keywords><keyword>3D-Cam dialog-box<keyword>SOLIDWORKS Data Transfer.</keyword></keyword></keywords></anchor><image src="btn_addkeyword.bmp" scale="100.00%" figurelistinclude="0"></image><tab /><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" src-collapsed="btn_addkeyword.bmp" src-expanded="btn_delkeyword.bmp" src-print="none"><caption><![CDATA[ SOLIDWORKS Data Transfer ]]></caption></toggle></para>
+          <para styleclass="Body Text"><table styleclass="Default" rowcount="3" colcount="2">
+            <tr style="vertical-align:top">
+              <td colspan="2" style="border-top:none; border-right:none; border-left:none;">
+                <para styleclass="Body Text"><text styleclass="Notes">Note: </text>From <text styleclass="VariableName">MD13.2+</text>, it is <text styleclass="VariableName">much</text> easier to save the <text styleclass="Element">3D-Cam</text> to a <text styleclass="VariableName">STEP</text> file with the <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-3DCam" anchor="3Dcam-RebuildSave">Save button</link>.</para>
+              </td>
+            </tr>
+            <tr style="vertical-align:top">
+              <td style="width:235px;">
+                <para styleclass="Normal" style="text-align:right;"><image src="MD-DIALOG-3DCAM-EXPORT-SWTRANSFER.ipp" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+              </td>
+              <td style="vertical-align:top;">
+                <para styleclass="VariableName">Preamble:</para>
+                <para styleclass="BodyText BI"><text styleclass="Body Text HowTo">We recommend you use save as a STEP file - See </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-3DCam" anchor="3Dcam-RebuildSave" styleclass="Body Text HowTo">Rebuild and Save buttons</link></para>
+                <para styleclass="BodyText BI"><text styleclass="Body Text HowTo">Alternatively, you can use these buttons to transfer the 3D-Cam data to </text><text styleclass="Body Text HowTo" style="font-size:10pt; vertical-align:baseline;">SOLIDWORKS</text><text styleclass="Body Text HowTo">.</text></para>
+                <list id="14" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Numbered" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="HowTo Numbered">Open <text styleclass="SOLIDWORKS">SolidWorks</text><text styleclass="VariableName">&#32;</text></li>
+                  <li styleclass="HowTo Numbered">Add a new SolidWorks Part and make it the active document.</li>
+                  <li styleclass="HowTo Numbered">Press the three buttons in the <text styleclass="Separator">SolidWorks Data Transfer</text> separator</li>
+                </list>
+              </td>
+            </tr>
+            <tr style="vertical-align:top">
+              <td colspan="2">
+                <para styleclass="Parameter-Header">Send Cam Blank</para>
+                <list id="15" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+                  <li styleclass="HowTo Bulleted"><text styleclass="VariableName-IT">MechDesigner</text> exports the sketch of the <text styleclass="VariableName-IT">Cam-Blank</text> and its <text styleclass="VariableName-IT">Axis-of-Rotation</text>.</li>
+                  <li styleclass="HowTo Bulleted"><text styleclass="VariableName-IT">MechDesigner</text> instructs<text styleclass="SOLIDWORKS"> SolidWorks </text><text styleclass="Body Text">to a</text><text styleclass="Body Text HowTo2">dd a revolved feature with the Cam-Blank and &apos;Axis-of-Rotation&apos;.</text></li>
+                </list>
+                <para styleclass="Body Text HowTo"><text styleclass="Notes">Note: </text><text style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">Typically, the sketch of the Cam-Blank is symmetrical about the middle of the sketch. If the sketch is not symmetrical (top to bottom), then it is possible that </text><text style="font-family:&apos;Segoe UI&apos;; font-size:10pt; font-weight:normal; font-style:normal; text-transform:uppercase; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">SolidWorks</text><text style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;"> will put the sketch &apos;up-side-down&apos; with respect to the </text><text styleclass="Element">3D-Cam</text><text style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">. To flip the Cam-Blank, mirror ( in </text><text style="font-family:&apos;Segoe UI&apos;; font-size:10pt; font-weight:normal; font-style:normal; text-transform:uppercase; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">SolidWorks</text><text style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">) the sketch about the Y–axis and then the X–axis.</text></para>
+                <para styleclass="Body Text"><text styleclass="Parameter-Header">Send Cam Surfaces</text> (Note you can also save the Cam as a STEP file, to import directly into your CAD.</para>
+                <list id="16" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+                  <li styleclass="HowTo Bulleted"><text styleclass="VariableName-IT">MechDesigner</text><text style="font-weight:bold; font-style:italic;">&#32;</text>exports each Rim and Hoop</li>
+                  <li styleclass="Body Text"><text styleclass="VariableName-IT">MechDesigner</text><text styleclass="HowTo Bulleted"> instructs </text><text styleclass="SOLIDWORKS">SolidWorks</text> to:</li>
+                  <list id="16" level="1" type="ul" listtype="bullet" formatstring="&#111;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:&apos;Courier New&apos;; font-size:11pt; color:#000000;">
+                    <li styleclass="HowTo Bulleted">Create a surface from the Rims for each face and flank of the Cam</li>
+                    <li styleclass="HowTo Bulleted"><text styleclass="Body Text HowTo2">Add end-caps to the surfaces, if it is an </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-3DCam" anchor="3DCam-FlankLength" styleclass="Body Text HowTo2">Indexing-Cam</link></li>
+                    <li styleclass="HowTo Bulleted">Knit the surfaces together</li>
+                  </list>
+                </list>
+                <para styleclass="Parameter-Header">Remove Surfaces from Blank</para>
+                <list id="17" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+                  <li styleclass="HowTo Bulleted"><text styleclass="VariableName-IT">MechDesigner</text> instructs<text styleclass="SOLIDWORKS"> SolidWorks</text><text style="font-family:Arial; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;"> to:</text></li>
+                  <list id="17" level="1" type="ul" listtype="bullet" formatstring="&#111;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:&apos;Courier New&apos;; font-size:11pt; color:#000000;">
+                    <li styleclass="HowTo Bulleted">Cut the knitted surfaces into the Cam Blank</li>
+                    <li styleclass="HowTo Bulleted">Hide the knitted surfaces</li>
+                  </list>
+                </list>
+                <para styleclass="Body Text"><text styleclass="Notes">Note:</text> You may need to edit the Surface Cut feature to reverse the direction of the cut to leave the cam is a cam-track.</para>
+              </td>
+            </tr>
+          </table></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading4 Toggle_atocs_">REBUILD and SAVE buttons</para>
+    <para styleclass="Heading4 Toggle_atocs_2" style="text-indent:-36px; margin-left:60px;"><anchor id="3Dcam-RebuildSave" styleclass="Body Text HowTo"><keywords><keyword>3D-Cam dialog-box<keyword>Rebuild 3D Cam</keyword><keyword>Save XYZ Data to Files</keyword><keyword>Save as STEP file</keyword></keyword></keywords></anchor><image src="btn_addkeyword.bmp" scale="100.00%" figurelistinclude="0"></image><tab /><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" src-collapsed="btn_addkeyword.bmp" src-expanded="btn_delkeyword.bmp" src-print="none"><caption><![CDATA[Rebuild and Save Cam buttons]]></caption></toggle></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="2" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:235px;">
+          <para styleclass="Normal"><image src="MD-DIALOG-3DCAM-REBUILD-SAVE.ipp" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td rowspan="2">
+          <para styleclass="Body Table"><link displaytype="button" type="topiclink" href="" anchor="3Dcam-RebuildSave">Rebuild</link><text styleclass="Body Text HowTo"> &#160;button:</text></para>
+          <list id="18" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted">to recalculate the <text styleclass="Element">3D-Cam</text> with updated parameters</li>
+            <li styleclass="HowTo Bulleted">before you transfer the <text styleclass="Element">3D-Cam</text> to <text styleclass="SOLIDWORKS">SolidWorks</text></li>
+            <li styleclass="HowTo Bulleted">before you save the <text styleclass="Element">3D-Cam</text></li>
+          </list>
+          <para styleclass="Body Table"><link displaytype="button" type="topiclink" href="" anchor="3Dcam-RebuildSave">Save Cam</link><text styleclass="Body Text HowTo"> button: </text></para>
+          <list id="19" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted">to Save as STEP, TXT or SLDCRV<text styleclass="Body Text HowTo"> file-types</text></li>
+          </list>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="Body Text">STEP (recommended). </para>
+          <para styleclass="Body Text HowTo">You can open the STEP file in most <text styleclass="Element">3D CAD</text> programs.</para>
+          <para styleclass="Body Text HowTo">See <text styleclass="VariableName">EXAMPLE 1 : Export the 3D-Cam as a STEP file</text>, below.</para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="Body Text">TXT, SLDCRV, DAT</para>
+          <para styleclass="Body Text HowTo">Each Rim is saved as a separate file.</para>
+          <para styleclass="Body Text HowTo">The XYZ coordinates of each Rim are saved to a different file. </para>
+          <para styleclass="Body Text"><text style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">For example:</text></para>
+          <para styleclass="Body Text HowTo"><text style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">In the image to the left, there will be 20 separate files - one file for each Rim.</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:235px;">
+          <para styleclass="Normal"><image src="MD-Rims-0-19--240.png" scale="-99.90%" figurelistinclude="0"><title>Rims in 3D Cams</title><caption><![CDATA[Rims along the Cam-Flanks (Purple), the Top and Bottom (Orange), and Points along each Rim.]]></caption></image></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading4 Toggle_atocs_">EXAMPLES - Export 3D-CAM</para>
+    <para styleclass="Heading4 Toggle_atocs_2" style="text-indent:-36px; margin-left:60px;"><image src="btn_addkeyword.bmp" scale="100.00%" figurelistinclude="0"></image><tab /><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" src-collapsed="btn_addkeyword.bmp" src-expanded="btn_delkeyword.bmp" src-print="none"><caption><![CDATA[Example 1: Export the 3D-Cam as a STEP file]]></caption></toggle> (<text style="color:#ff0000;">RECOMMENDED</text>)</para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="8" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:240px;">
+          <para styleclass="Normal"><image src="MD-DIALOG-3DCAM-REBUILD-SAVE-2.ipp" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td rowspan="4">
+          <para styleclass="Normal"><text styleclass="Interface2">In MechDesigner</text><text styleclass="VariableName">:</text></para>
+          <para styleclass="Body Text">In <text styleclass="VariableName-IT">MechDesigner</text>&#32;<text styleclass="Element">3D-Cam dialog-box:</text></para>
+          <list id="20" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo Bulleted">Click <text styleclass="VariableName">Rebuild button</text>&#32;<text styleclass="VariableName">&#32;</text></li>
+            <li styleclass="HowTo Bulleted">Click <text styleclass="VariableName">Save button</text>&#32;</li>
+            <li styleclass="HowTo Bulleted"><text styleclass="Body Text HowTo">Save the file-type as </text><text styleclass="VariableName">*.STP</text><text styleclass="Body Text">, and save the cam. E.g. </text><text styleclass="VariableName">CAM.STP</text></li>
+          </list>
+          <para styleclass="HowTo Bulleted"><text styleclass="Notes">(Note</text><text styleclass="VariableName-IT">: </text><text styleclass="VariableName">STP = STEP)</text></para>
+          <para styleclass="Body Text"><text styleclass="VariableName">SOLIDWORKS</text></para>
+          <list id="21" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo Bulleted"><text styleclass="Body Text">Open </text><text styleclass="VariableName">Cam.STP</text><text styleclass="Body Text"> file in </text><text styleclass="SOLIDWORKS">SolidWorks®</text><text styleclass="VariableName">&#32;</text></li>
+            <li styleclass="HowTo Bulleted">If asked, do: <text styleclass="VariableName-IT" style="font-style:normal;">Import Diagnostics</text>.</li>
+            <li styleclass="HowTo Bulleted">Close <text styleclass="VariableName-IT" style="font-style:normal;">Import Diagnostics</text><text styleclass="Interface">&#32;</text><text styleclass="Body Text">command</text></li>
+          </list>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="Body Table">Depending on your <text styleclass="SOLIDWORKS" style="font-size:11pt;">SolidWorks®</text> settings, you may need to:</para>
+          <list id="22" type="ol" listtype="bullet" formatstring="&#183;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Arial; font-size:11pt; color:#000000;">
+            <list id="22" level="1" type="ol" listtype="lower-alpha" formatstring="&#37;&#49;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+              <li styleclass="HowTo Bulleted"><text style="font-style:normal;">Right-Click</text>&#32;<text styleclass="VariableName">Cam.STP</text> in the <text styleclass="VariableName">Feature Manager</text></li>
+              <li styleclass="HowTo Bulleted"><text style="font-style:normal;">In the contextual menu: Click</text>&#32;<text styleclass="VariableName">Dissolve Feature</text> and <text styleclass="VariableName">Yes, break the link</text></li>
+              <li styleclass="HowTo Bulleted"><text style="font-style:normal;">Right-Click</text> - again - the <text styleclass="VariableName">CAM.STP</text> in the <text styleclass="VariableName">Feature-Manager</text></li>
+              <li styleclass="HowTo Bulleted">In the contextual menu: &#160;Click <text styleclass="VariableName">Import Diagnostics</text></li>
+            </list>
+          </list>
+          <para styleclass="Body Text Howindent4bullets"><text styleclass="Body Text HowTo">In the </text><text styleclass="VariableName">Import Diagnostics dialog</text></para>
+          <list id="22" level="1" type="ol" listtype="lower-alpha" formatstring="&#37;&#49;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo Bulleted"><text style="font-style:normal;">Click the</text>&#32;<text styleclass="VariableName">Attempt to Heal All</text> button, and then close the <text styleclass="VariableName">Import Diagnostics</text> command.</li>
+          </list>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="HowTo Bulleted">When the Cam is <text styleclass="VariableName-IT">healed:</text></para>
+          <list id="23" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="4" styleclass="HowTo Bulleted" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted">Save <text styleclass="VariableName">Cam.STP</text> as a <text styleclass="SOLIDWORKS" style="font-size:11pt;">SolidWorks®</text> file-type. E.g. <text styleclass="VariableName">Cam.SLDPRT</text><text styleclass="Interface2">. </text></li>
+          </list>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:240px;">
+          <para styleclass="Normal"><image src="MD-Dialog-3DCam-SW-DissolveFeature.png" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:240px;">
+          <para styleclass="Normal"><image src="MD-Dialog-3DCam-SW-ImportDiagnostics.png" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:240px;">
+          <para styleclass="Normal"><image src="MD-Dialog-3DCam-SW-SaveAsSLDPRT.png" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:240px;">
+          <para styleclass="Normal"><image src="MD-Dialog-3DCam-SW-CamBlank.png" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="Interface2">In SOLIDWORKS</para>
+          <para styleclass="VariableName">Open the Cam-Blank:</para>
+          <list id="24" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo Bulleted"><text styleclass="Body Text">Open the prepared </text><text styleclass="SOLIDWORKS">SolidWorks®</text><text styleclass="Body Text"> part </text><text styleclass="VariableName">Cam-Blank.SLDPRT</text><text styleclass="Body Text">.</text><text styleclass="VariableName">&#32;</text></li>
+          </list>
+          <para styleclass="HowTo Bulleted"></para>
+          <para styleclass="HowTo Bulleted"></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:240px;">
+          <para styleclass="Normal"><image src="MD-Dialog-3DCam-SW-Insert Part.png" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="VariableName">Insert the Cam.SLDPRT file (see <text styleclass="Interface2">Part</text> 1)</para>
+          <list id="25" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted"><text styleclass="VariableName">Insert menu &gt; Part...</text><text styleclass="Body Text"> ; select the </text><text styleclass="SOLIDWORKS">SolidWorks® </text><text styleclass="VariableName-IT">CAM.SLDPRT</text><text styleclass="SOLIDWORKS">&#32;</text><text styleclass="Body Text">file.</text><text styleclass="Interface2">&#32;</text></li>
+            <li styleclass="HowTo Bulleted"><text styleclass="Body Text">Click the </text><text styleclass="Interface2">Tick</text><text styleclass="Body Text"> at the top of the </text><text styleclass="SOLIDWORKS">SolidWorks</text><text styleclass="Body Text"> feature manager.</text></li>
+          </list>
+          <para styleclass="HowTo Bulleted"><text styleclass="VariableName">Cam.SLDPRT</text><text styleclass="Body Text"> becomes a feature and a </text><text styleclass="VariableName">Solid Body</text><text styleclass="VariableName-IT"> [Cam&lt;imported&gt;]</text></para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="Body Table">Ideally the orientation of the <text styleclass="VariableName-IT">CAM.SLDPRT</text> is correct relative to the <text styleclass="VariableName-IT">Cam-Blank.SLDPRT</text></para>
+          <para styleclass="Body Table">If not, I find it easier to move the sketch of the <text styleclass="VariableName">Cam-Blank</text> to the correct Plane - experiment!</para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:240px;">
+          <para styleclass="Normal"><image src="MD-Dialog-3DCam-SW-Insert FeatureCombineA.png" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="Body Table">Finally, </para>
+          <list id="26" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo Bulleted"><text styleclass="VariableName">Insert menu &gt; Feature &gt; Combine:</text></li>
+            <list id="26" level="1" type="ol" listtype="lower-alpha" formatstring="&#37;&#49;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+              <li styleclass="HowTo Bulleted"><text styleclass="Body Text">Select </text><text styleclass="VariableName">Subtract</text><text styleclass="Body Text"> as the </text><text styleclass="VariableName">Operation Type</text><text styleclass="Body Text"> and, </text></li>
+              <li styleclass="HowTo Bulleted"><text styleclass="Body Text">In the </text><text styleclass="VariableName">Bodies to Combine</text><text styleclass="Body Text"> box, select </text></li>
+              <list id="26" level="2" type="ol" listtype="lower-roman" formatstring="&#37;&#50;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                <li styleclass="HowTo Bulleted"><text styleclass="VariableName-IT" style="font-style:normal;">Cam-Blank</text><text styleclass="Body Text"> as the </text><text styleclass="VariableName-IT">Main-Body</text><text styleclass="Body Text"> and </text></li>
+                <li styleclass="HowTo Bulleted"><text styleclass="VariableName-IT" style="font-style:normal;">Cam&lt;imported&gt;</text><text styleclass="VariableName-IT">&#32;</text><text styleclass="Body Text">as the </text><text styleclass="VariableName-IT">Body to Subtract</text><text styleclass="Body Text">.</text></li>
+              </list>
+            </list>
+          </list>
+          <para styleclass="Body Text"></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:240px;">
+          <para styleclass="Normal"><image src="MD-Dialog-3DCam-SW-Insert final.png" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="Body Table">You should now see the <text styleclass="VariableName">Cam-Track</text> in the <text styleclass="VariableName">Cam-Blank</text>. </para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="Body Table"><text styleclass="Notes">Note</text>:<text styleclass="Body Text"> It is possible that the Solid Body </text><text styleclass="VariableName-IT">Cam&lt;imported&gt;</text><text styleclass="Body Text"> is not in the correct place relative to </text><text styleclass="VariableName-IT">Cam-Blank</text><text styleclass="Body Text">. Most usually, </text><text styleclass="VariableName-IT">Cam&lt;imported&gt;</text><text styleclass="Body Text"> and </text><text styleclass="VariableName-IT">Cam-Blank.SLDPRT</text><text styleclass="Body Text"> are defined on different Planes.</text></para>
+          <para styleclass="Body Table">In this case, you can redefine the sketch-planes of <text styleclass="VariableName-IT">Cam.Blank</text> (easiest method). or move <text styleclass="VariableName-IT">Cam&lt;imported&gt;</text>.</para>
+          <para styleclass="Body Table">To move <text styleclass="VariableName-IT">Cam&lt;imported&gt;</text>, do:</para>
+          <list id="27" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:&apos;Noto Sans&apos;; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted"><text styleclass="VariableName-IT">Insert menu &gt; Feature &gt; Move/Copy</text><text styleclass="Body Text">... and select </text><text styleclass="VariableName-IT">Cam.SLDPRT</text><text styleclass="Body Text"> as the body to move.</text></li>
+          </list>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading4 Toggle_atocs_2" style="text-indent:-36px; margin-left:60px;"><image src="btn_addkeyword.bmp" scale="100.00%" figurelistinclude="0"></image><tab /><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" src-collapsed="btn_addkeyword.bmp" src-expanded="btn_delkeyword.bmp" src-print="none"><caption><![CDATA[Example 2: Transfer the data directly to SOLIDWORKS]]></caption></toggle></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="6" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:240px;">
+          <para styleclass="Normal"><image src="MD-SolidWorks-NewPart.png" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td style="vertical-align:top;">
+          <para styleclass="Body Table">Not usually recommended - we recommend that you save the Cam as a STEP file - see EXAMPLE 1 - above.</para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="Body Table">In <text styleclass="SOLIDWORKS">SolidWorks®</text>, make sure the active document is a Part document.</para>
+          <list id="28" type="ol" listtype="decimal" formatstring="&#83;&#84;&#69;&#80;&#32;&#37;&#48;&#58;&#115;&#58;&#32;" format-charset="DEFAULT_CHARSET" levelreset="false" legalstyle="false" startfrom="1" styleclass="HowTo STEP" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo STEP">Open <text styleclass="SOLIDWORKS">SolidWorks®</text><text styleclass="VariableName">&#32;</text></li>
+            <li styleclass="HowTo STEP">Add a new Part</li>
+            <li styleclass="HowTo STEP">Save the new Part</li>
+          </list>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:240px;">
+          <para styleclass="Normal" style="text-align:right;"><image src="MD-DIALOG-3DCAM-EXPORT-SWTRANSFER.ipp" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td rowspan="2" style="vertical-align:top;">
+          <list id="29" type="ol" listtype="decimal" formatstring="&#83;&#84;&#69;&#80;&#32;&#37;&#48;&#58;&#115;&#58;&#32;" format-charset="DEFAULT_CHARSET" levelreset="false" legalstyle="false" startfrom="4" styleclass="HowTo STEP" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo STEP"><text styleclass="Body Text">Click the </text><text styleclass="Parameter-Header">Send Cam Blank</text><text styleclass="Body Text"> button</text><text styleclass="VariableName">&#32;</text></li>
+          </list>
+          <para styleclass="Body Table">Before we can add the 3D-Cam in <text styleclass="VariableName-IT">MechDesigner</text>, we must add a sketch-loop (to represent the Rotational-section of the Cam-Blank) and a <text styleclass="Element">Line</text> (to represent the rotation-axis of the Cam-Blank).</para>
+          <para styleclass="Body Table">We send these sketch-elements to <text style="font-size:10pt; vertical-align:baseline;">SOLIDWORKS</text> to create the <text styleclass="HowTo Numbered">Cam-Blank feature </text></para>
+          <para styleclass="SeeAlso">See Getting Started Tutorials 6C<text styleclass="Body Text"> for more information.</text></para>
+          <para styleclass="Body Table">In the image to the left, you can see in <text style="font-size:10pt; vertical-align:baseline;">SOLIDWORKS</text>: </para>
+          <list id="30" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted"><text styleclass="VariableName">3DSketch1 </text><text styleclass="Body Text HowTo">which is the rotational-axis </text></li>
+            <li styleclass="HowTo Bulleted"><text styleclass="VariableName">Revolve1</text><text styleclass="Body Text HowTo"> which is the feature that revolves the sketch-loop into the Solid.</text></li>
+          </list>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:240px;">
+          <para styleclass="Normal"><image src="MD-Dialog-3DCam-Exporttab-CamBlank-inSW.png" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:240px;">
+          <para styleclass="Normal"><image src="MD-Dialog-3DCam-SW-KnittedFeature.png" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+          <para styleclass="Normal"><image src="MD-Dialog-3DCam-SW-KnittedFeatureA.png" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td style="vertical-align:top;">
+          <list id="31" type="ol" listtype="decimal" formatstring="&#83;&#84;&#69;&#80;&#32;&#37;&#48;&#58;&#115;&#58;&#32;" format-charset="DEFAULT_CHARSET" levelreset="false" legalstyle="false" startfrom="5" styleclass="HowTo STEP" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo STEP"><text styleclass="Body Text">Click the </text><text styleclass="Parameter-Header">Send Cam Surfaces</text><text styleclass="Body Text"> button</text><text styleclass="VariableName">&#32;</text></li>
+          </list>
+          <para styleclass="Body Table"><text style="font-weight:normal; color:#ff0000;">To make the transfer quicker: Show a drop-down menu in </text><text styleclass="SOLIDWORKS" style="font-weight:normal; color:#ff0000;">SolidWorks</text><text style="font-size:7pt; font-weight:normal; vertical-align:super; color:#ff0000;">®</text><text style="color:#ff0000;">.</text> &#160;For example, show the help menu drop-down. We do not know why this makes the transfer faster, but it works.</para>
+          <para styleclass="Body Table"><text styleclass="VariableName-IT">MechDesigner</text><text styleclass="Body Text" style="font-weight:bold; font-style:italic;">&#32;</text><text styleclass="Body Text">controls</text><text styleclass="Body Text" style="font-weight:normal; font-style:italic;">&#32;</text><text styleclass="SOLIDWORKS" style="font-weight:normal;">SolidWorks</text><text styleclass="Body Text"> to:</text></para>
+          <list id="32" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Numbered" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo Numbered">Add the Rims as <text styleclass="VariableName">Curve</text> entities<text styleclass="VariableName">&#32;</text></li>
+            <li styleclass="HowTo Numbered"><text styleclass="HowTo Bulleted">Add four Surfaces features (or six if the Flank-Lengths are not from 0 – 360)</text></li>
+            <list id="32" level="1" type="ol" listtype="lower-alpha" formatstring="&#37;&#49;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Numbered" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+              <li styleclass="HowTo Numbered"><text styleclass="HowTo Bulleted3">two Cam Flanks; &#160;a Floor, and a Top</text><text styleclass="VariableName">&#32;</text></li>
+              <li styleclass="HowTo Numbered"><text styleclass="HowTo Bulleted3">plus two &apos;End-Caps&apos; </text><text styleclass="VariableName">if</text><text styleclass="HowTo Bulleted3"> the Flank-Lengths are not from 0 – 360.</text></li>
+            </list>
+          </list>
+          <list id="32" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Numbered" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo Numbered"><text styleclass="HowTo Bulleted">Add the Knit-feature to knit the Surfaces</text></li>
+          </list>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:240px;">
+          <para styleclass="Normal"><image src="MD-Dialog-3DCam-SW-Insert final.png" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td rowspan="2" style="vertical-align:top;">
+          <list id="33" type="ol" listtype="decimal" formatstring="&#83;&#84;&#69;&#80;&#32;&#37;&#48;&#58;&#115;&#58;&#32;" format-charset="DEFAULT_CHARSET" levelreset="false" legalstyle="false" startfrom="6" styleclass="HowTo STEP" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo STEP"><text styleclass="Body Text">Click </text><text styleclass="Parameter-Header">Remove Surfaces from Cam</text><text style="font-family:Arial; font-size:11pt; color:#000000;"> button</text><text styleclass="VariableName">&#32;</text></li>
+          </list>
+          <para styleclass="Body Table">The <text styleclass="VariableName">3D-Cam Surfaces</text> Cut into the Cam Blank.</para>
+          <para styleclass="Body Text HowTo"><text styleclass="Interface2">Wait</text>! - you should now see the image to the left</para>
+          <para styleclass="Body Text HowTo">If you see ONLY the CAM TRACK and not the Finished Cam<text styleclass="VariableName"> (see image below)</text></para>
+          <list id="34" type="ol" listtype="decimal" formatstring="&#83;&#84;&#69;&#80;&#32;&#37;&#48;&#58;&#115;&#58;&#32;" format-charset="DEFAULT_CHARSET" levelreset="false" legalstyle="false" startfrom="7" styleclass="HowTo STEP" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo STEP">Save the Part In <text styleclass="SOLIDWORKS">SolidWorks</text><text style="font-size:7pt; vertical-align:super;">®</text>&#32;<text styleclass="VariableName">&#32;</text></li>
+          </list>
+          <para styleclass="Body Text">In <text styleclass="SOLIDWORKS">SolidWorks</text><text style="font-size:7pt; vertical-align:super;">® </text>: </para>
+          <list id="35" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Numbered" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo Numbered"><text styleclass="VariableName">Insert &gt; Cut &gt; With Surface </text></li>
+            <li styleclass="HowTo Numbered">Select the <text styleclass="VariableName">Knitted 3D-Cam Surface</text> - the last feature in the <text styleclass="VariableName">Feature Manager</text>.<text style="font-weight:bold;">&#32;</text></li>
+          </list>
+          <list id="36" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="3" styleclass="HowTo Numbered" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo Numbered">Edit the <text styleclass="VariableName">Surface Cut</text> feature in <text styleclass="SOLIDWORKS">SolidWorks®</text> and click the Change Direction button.<text styleclass="VariableName">&#32;</text></li>
+            <li styleclass="HowTo Numbered">Hide the <text styleclass="VariableName">Knitted Surface</text> feature of the <text styleclass="VariableName">3D-Cam</text></li>
+          </list>
+          <para styleclass="Body Text"><table styleclass="Top Tip" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Body Text"></para>
+              </td>
+            </tr>
+          </table></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:240px;">
+          <para styleclass="Normal" style="text-align:right;"><image src="MD-Dialog-3DCam-SW-Negative.png" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+      </tr>
+    </table></para>
+  </body>
+</topic>

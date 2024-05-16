@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" status="Under Construction" modified="2022-03-22T20:10:31.544Z" lasteditedby="Adam" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title translate="true">What is &apos;Motion Design&apos;?</title>
+  <keywords>
+    <keyword translate="true">What is a Motion?</keyword>
+  </keywords>
+  <body>
+    <header>
+      <para styleclass="Heading1"><text styleclass="Heading1" translate="true">What is &apos;Motion Design&apos;?</text></para>
+    </header>
+    <para styleclass="Heading4 Toggle_atocs_"><text styleclass="Heading4 Toggle_atocs_" translate="true">Motion Design</text></para>
+    <para styleclass="Body Text"><text styleclass="Body Text" translate="true">There are many disciplines that use the term </text><text styleclass="VariableName" translate="true">Motion Design</text><text styleclass="Body Text" translate="true">: E.g.: Graphic Design, Dance Choreography.</text></para>
+    <para styleclass="Body Text"><text styleclass="Body Text" translate="true">However, in </text><text styleclass="VariableName-IT" translate="true">MotionDesigner</text><text styleclass="Body Text" style="font-weight:normal; font-style:normal;" translate="true">,</text><text styleclass="Body Text" translate="true"> we usually design motions for machine elements for a machine cycle. In machinery, all the machine parts have mass and inertia. As such, forces between machine elements are also important. Parts with inertia must be moved carefully, especially as speeds are increased. If motions aren&apos;t designed carefully, machine elements will vibrate needlessly.</text></para>
+    <para styleclass="Body Text"><text styleclass="Body Text" style="font-weight:bold; font-style:normal;" translate="true">MotionDesigner</text><text styleclass="Body Text" translate="true">&#32;</text></para>
+    <para styleclass="Body Text"><text styleclass="VariableName-IT" translate="true">MotionDesigner</text><text styleclass="Body Text" translate="true">, provides all the tools for you to design motions for high-speed packaging machinery. </text></para>
+    <para styleclass="Normal"><table styleclass="Standard" rowcount="2" colcount="1" style="border-width:0px; border-spacing:0px; cell-border-width:0px; border-style:none;">
+      <tr style="vertical-align:top">
+        <td style="height:353px;">
+          <para styleclass="Normal"><image src="MT-MotionDesigner-Motion-OnlyExample.png" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="height:353px;">
+          <para styleclass="VariableName"><text styleclass="VariableName" translate="true">Understanding Motion Design:</text></para>
+          <list id="0" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Numbered" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo Numbered"><text styleclass="HowTo Numbered" translate="true">A motion is a sequence of positions for a machine element - or a Rocker or Slider in </text><text styleclass="VariableName-IT" translate="true">MechDesigner</text><text styleclass="VariableName" translate="true">. </text></li>
+            <li styleclass="HowTo Numbered"><text styleclass="HowTo Numbered" translate="true">A motion-design satisfies a number of positional, velocity, acceleration and/or jerk specifications for the angle or distance between two parts throughout a machine cycle.</text></li>
+            <li styleclass="HowTo Numbered"><text styleclass="HowTo Numbered" translate="true">When the number of motion requirements become extensive or complex, it is difficult to find one </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MT-Mathematical-Function" styleclass="HowTo Numbered" translate="true">mathematical function</link><text styleclass="HowTo Numbered" translate="true"> that can satisfy the motion specification throughout a machine cycle.</text></li>
+            <li styleclass="HowTo Numbered"><text styleclass="HowTo Numbered" translate="true">Therefore, it is convenient to split a motion into </text><text styleclass="HowTo Numbered" style="font-style:italic;" translate="true">segments</text><text styleclass="HowTo Numbered" translate="true">. The segments are joined end-to-end (concatenated, to be technical).</text></li>
+            <li styleclass="HowTo Numbered"><text styleclass="HowTo Numbered" translate="true">The process of splitting into segments is called </text><text styleclass="HowTo Numbered" style="font-style:italic;" translate="true">segmentation</text><text styleclass="HowTo Numbered" translate="true"> (The image shows a motion split into 4 segments).</text></li>
+            <li styleclass="HowTo Numbered"><text styleclass="HowTo Numbered" translate="true">Each segment is given a different mathematical function, which we call a </text><text styleclass="HowTo Numbered" style="font-style:italic;" translate="true">motion-law</text><text styleclass="HowTo Numbered" translate="true">. Each </text><text styleclass="HowTo Numbered" style="font-style:italic;" translate="true">motion-law</text><text styleclass="HowTo Numbered" translate="true"> is best suited to satisfy the motion specification during its segment period, without regard to the motion requirements of the other segments.</text></li>
+            <li styleclass="HowTo Numbered"><text styleclass="HowTo Numbered" translate="true">The number of segments is a decision you must make yourself. Very complex motion requirements may need the segment to be split many times.</text></li>
+            <li styleclass="HowTo Numbered"><text styleclass="HowTo Numbered" translate="true">The motion-law you choose for each segment is a decision you make yourself. &#160;Each motion-law should have the capacity to deliver the motion specification during the segment period.</text></li>
+            <li styleclass="HowTo Numbered"><text styleclass="HowTo Numbered" translate="true">A &apos;Blend-Point&apos; is an instance where one segment ends and another starts.</text></li>
+            <li styleclass="HowTo Numbered"><text styleclass="HowTo Numbered" translate="true">We have two editors in </text><text styleclass="VariableName-IT" translate="true">MotionDesigner</text><text styleclass="HowTo Numbered" translate="true"> to edit the motion:</text></li>
+          </list>
+          <list id="1" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted"><link displaytype="text" defaultstyle="true" type="topiclink" href="MT-Segment-Editor" styleclass="HowTo Bulleted" translate="true">Segment Editor</link></li>
+            <li styleclass="HowTo Bulleted"><link displaytype="text" defaultstyle="true" type="topiclink" href="MT-Blend-Point-Editor" styleclass="HowTo Bulleted" translate="true">Blend-Point-Editor</link></li>
+          </list>
+        </td>
+      </tr>
+    </table></para>
+  </body>
+</topic>

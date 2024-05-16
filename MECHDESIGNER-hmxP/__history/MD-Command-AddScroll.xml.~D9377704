@@ -1,0 +1,435 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" status="Under Construction" modified="2023-03-22T12:13:21.232Z" lasteditedby="Adam" version="2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title>Add Scroll</title>
+  <keywords>
+    <keyword>Add<keyword>Feedscrew</keyword><keyword>Scroll</keyword></keyword>
+    <keyword>How to ...<keyword>Add a Scroll</keyword></keyword>
+    <keyword>Machine elements toolbar<keyword>Add Feedscrew / Scroll</keyword></keyword>
+    <keyword>Menu &gt; Add &gt; Mechanism Menu<keyword>Add Scroll</keyword></keyword>
+  </keywords>
+  <body>
+    <header>
+      <para styleclass="Heading1">Add Scroll</para>
+    </header>
+    <para styleclass="Heading3_atocs_" style="page-break-before:always;">What is a scroll?</para>
+    <para styleclass="Body Text HowTo">A <text styleclass="Element">Scroll</text> feeds products into a Rotating Machine. The products are in a buffer as they move into the start of the Scroll. &#160;At the end of the scroll, the products move into a star-wheel. The star-wheel feeds the products into the rotating machine. </para>
+    <para styleclass="Body Text HowTo">The pitch of the products in the buffer, at the start of the scroll, is the same as the length of the product. The products are moved apart by the scroll until their pitch becomes the same as the pockets in the star-wheel, that is at the end of the scroll. The pitch of the products on the star-wheel is the same as the pitch of the products on the Rotary Machine. </para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="Body Text">Other names for a <text styleclass="Element">Scroll</text> are: <text styleclass="Interface">Feedscrew, Worm</text>.</para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="Heading3_atocs_">Add Scroll</para>
+    <para styleclass="Normal"><table styleclass="Standard" rowcount="5" colcount="2">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="VariableName-IT" style="text-align:right;"><image src="MD-Icon-AddSpline.png" scale="100.00%" figurelistinclude="0"></image></para>
+        </td>
+        <td style="vertical-align:middle;">
+          <para styleclass="T_Menu">Machine Elements toolbar &gt; Add Scroll</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="vertical-align:middle; width:97px;">
+          <para styleclass="VariableName-IT" style="text-align:right;">Menu : </para>
+        </td>
+        <td style="vertical-align:middle;">
+          <para styleclass="T_Menu">Add menu &gt; Mechanism sub-menu &gt; Add Scroll</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:97px;">
+          <para styleclass="VariableName-IT" style="text-align:right;">What to do : </para>
+        </td>
+        <td>
+          <para styleclass="Body Text"><text style="font-weight:normal; font-style:italic;">You must do the </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Command-AddScroll" anchor="PrepAddScroll" style="font-weight:normal; font-style:italic;">Preparation</link><text style="font-weight:normal; font-style:italic;"> before you can use &apos;Add Scroll&apos;.</text></para>
+          <para styleclass="Body Text"><text style="font-weight:normal; font-style:normal;">You need five elements:</text></para>
+          <list id="0" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Numbered" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo Numbered">A <text styleclass="Element">Part</text> for the moving &apos;Pack&apos;<text style="font-weight:normal;">.</text><text styleclass="VariableName">&#32;</text></li>
+          </list>
+          <para styleclass="Body Text HowTo">A sketch-loop is the cross-section of the &apos;Pack&apos;. You must also add a <text styleclass="Element">Motion-Path FB</text> (see 5) and generate a number of <text styleclass="Element">Motion-Points</text> to the sketch-loop.</para>
+          <list id="0" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Numbered" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo Numbered">A <text styleclass="Element">Part</text> that is the rotating <text styleclass="Element">Scroll</text>.</li>
+            <li styleclass="HowTo Numbered">A sketch-loop and <text styleclass="Element">Profile</text> that is the cross-section of the <text styleclass="Element">Scroll</text>.</li>
+            <li styleclass="HowTo Numbered">A <text styleclass="Element">Line</text> to be the <text styleclass="Element">Scroll&apos;s</text> axis-of-rotation.</li>
+            <li styleclass="HowTo Numbered">A <text styleclass="Element">Motion-Path FB</text>.</li>
+          </list>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:97px;">
+          <para styleclass="VariableName-IT" style="text-align:right;"> Result : </para>
+        </td>
+        <td>
+          <para styleclass="Body Text"><text styleclass="VariableName-IT">MechDesigner</text> draws a <text styleclass="Element">Scroll</text> in the <text styleclass="Interface">graphic-area</text>.</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:97px;">
+          <para styleclass="VariableName-IT" style="text-align:right;"> Preparation : </para>
+        </td>
+        <td>
+          <para styleclass="Body Text">There is a significant amount of preparation.</para>
+          <para styleclass="Body Text"><text style="font-weight:normal; font-style:normal;">You must prepare five elements in 2 </text><text styleclass="Interface">Mechanism-Editors</text><text style="font-weight:normal; font-style:normal;">. </text><text styleclass="SeeAlso">See </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Command-Add3DCam" anchor="3DCAMPreparation" styleclass="SeeAlso">Preparation</link><text style="font-weight:normal; font-style:normal;">&#32;</text></para>
+          <para styleclass="Body Text"><text style="font-weight:normal; font-style:normal;">When you click </text><text styleclass="T_Menu">Add Scroll</text><text style="font-weight:normal; font-style:normal;">, you see five selection-boxes in the </text><text styleclass="Interface">Command-Manager</text><text style="font-weight:normal; font-style:normal;">. </text></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading3_atocs_"><anchor id="PrepAddScroll"><keywords><keyword>Add<keyword>Scroll - Preparation</keyword></keyword></keywords></anchor>Preparation for &apos;Add Scroll&apos;</para>
+    <para styleclass="Heading4 Toggle_atocs_">STEP 1: Pack: Shape; Motion, and Motion-Points </para>
+    <para styleclass="Body Text HowTo"><table styleclass="Standard" rowcount="10" colcount="2">
+      <tr style="vertical-align:top">
+        <td colspan="2">
+          <para styleclass="Body Text">The Pack moves along a line that is parallel to the scroll&apos;s rotation-axis. It is also possible to rotate the Pack on its own axis as it moves from the entry to the exit of the scroll.</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:215px;">
+          <para styleclass="Normal"><image src="Scroll1.bmp" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <list id="1" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Numbered" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo Numbered">Add a Mechanism to a &apos;Plane&apos; - the &apos;Front&apos; Plane - in the Model-Editor<text styleclass="VariableName">. </text></li>
+            <li styleclass="HowTo Numbered"><text styleclass="Body Text">Rename the Mechanism-Editor to &apos;Pack&apos;.</text></li>
+          </list>
+          <para styleclass="HowTo Bulleted"><text styleclass="Body Text" style="font-style:italic;">In the new Mechanism-Editor:</text></para>
+          <list id="2" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="3" styleclass="HowTo Bulleted" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo Bulleted">Add a Slider with a motion to define the axial motion of the Pack<text styleclass="VariableName">&#32;</text></li>
+          </list>
+          <para styleclass="Body Text HowTo">If the Pack rotates as it moves along the scroll:</para>
+          <list id="3" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="4" styleclass="HowTo Numbered" style="font-family:&apos;Segoe UI&apos;; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Numbered">Add a Rocker to the Slider Part, and a motion to define the rotation of the Rocker / Pack</li>
+            <li styleclass="HowTo Numbered">Then add the shape of the Pack to the Slider or Rocker.</li>
+          </list>
+          <para styleclass="Body Text HowTo">The shape of the Pack must be a <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-Sketch-Loop">sketch-loop</link>. If the Pack is not prismatic, then the shape should represent the its cross-section at the height of the scroll&apos;s rotational-axis.</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td colspan="2">
+          <para styleclass="BodyText BI">The Motion for the Axial and Rotation of the Pack</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:215px;">
+          <para styleclass="Normal"><toggle type="picture" print-expanded="true" help-expanded="false" src-collapsed="Scroll2-AxialMotionPack.bmp" src-expanded="Scroll2-AxialMotionPack.bmp" scale="76.00%" width="240" height="319" styleclass="Image Caption" figurelistinclude="0"><caption><![CDATA[Click to Expand and Collapse]]></caption></toggle></para>
+        </td>
+        <td>
+          <para styleclass="Body Text2-Note"><text styleclass="Body Text" style="text-decoration:underline;">Pack Axial Motion</text></para>
+          <para styleclass="Body Text HowTo">The motion usually has a &apos;<text style="font-style:italic;">Constant Velocity Segment&apos;</text> as its first and last segment.</para>
+          <para styleclass="Body Text HowTo">Thus, there are two(2) Velocities you must consider.</para>
+          <para styleclass="Body Text HowTo"><text style="text-decoration:underline;">Start Velocity</text>, (SV)</para>
+          <para styleclass="Body Text HowTo">Packs are usually adjacent &apos;(bunched up&apos;, &apos;back-to-back&apos;)</para>
+          <para styleclass="Body Text HowTo">SV = Product-Length ÷ Time for scroll to rotate one time</para>
+          <para styleclass="Body Text HowTo"><text style="text-decoration:underline;">Final Velocity</text>, (FV)</para>
+          <para styleclass="Body Text HowTo">Packs should be at the same pitch as the star-wheel or circular pitch of the Rotary Machine</para>
+          <para styleclass="Body Text HowTo">FV = Rotary Pitch &#160;÷ Time for scroll to rotate one time</para>
+          <para styleclass="Body Text HowTo"><text style="text-decoration:underline;">&apos;Time&apos;, or &apos;Number of Machine Degree&apos;, for Scroll to rotate one time</text>.</para>
+          <para styleclass="Body Text HowTo">This is a function of the number-of-times the scroll rotates. Thus, of the length of the Scroll</para>
+          <para styleclass="Body Text HowTo"><text styleclass="Body Text">The first constant velocity is the speed of the bottle at its entry.</text></para>
+          <para styleclass="Body Text HowTo"><text styleclass="Body Text">The last constant velocity is the speed of the bottle at its exit.</text></para>
+          <para styleclass="Body Text HowTo"><text styleclass="Body Text">You need to edit the motion later.</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:215px;">
+          <para styleclass="Normal"><toggle type="picture" print-expanded="true" help-expanded="false" src-collapsed="Scroll-RotationMotionPack.bmp" src-expanded="Scroll-RotationMotionPack.bmp" scale="76.00%" width="238" height="319" styleclass="Image Caption" figurelistinclude="0"></toggle></para>
+        </td>
+        <td>
+          <para styleclass="Body Text2-Note"><text styleclass="Body Text" style="text-decoration:underline;">Pack Rotation</text></para>
+          <para styleclass="Body Text HowTo"><text styleclass="Body Text">The Pack rotates by 90º as it moves from the entry to the exit.</text></para>
+          <para styleclass="Body Text HowTo"><text styleclass="Body Text">The duration of the segment that rotates the pack is the same duration as the segment that accelerates the pack.</text></para>
+          <para styleclass="Body Text HowTo"></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td colspan="2">
+          <para styleclass="BodyText BI">Motion-Path, Motion-Points. </para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:215px;">
+          <para styleclass="Normal"><image src="Scroll3.bmp" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="Body Text"><text styleclass="HowTo Numbered">In order to calculate the shape of the scroll, you must define the contact between the Pack and the Scroll.</text></para>
+          <para styleclass="Body Text"><text styleclass="HowTo Numbered">Rather than a Profile, you add Motion-Points to the shape of the Pack. Each Motion-Point define a &apos;Rim&apos; along the scroll - as you see.</text></para>
+          <list id="4" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Numbered" style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo Numbered"><text style="font-style:italic;">Click</text> Add Motion-Path<text style="font-weight:bold;">&#32;</text></li>
+            <li styleclass="HowTo Numbered"><text style="font-style:italic;">Click</text> one of the sketch-elements that give the shape to the Pack </li>
+          </list>
+          <para styleclass="Body Text HowTo">One Motion-Point<image src="Red-14-1.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image> shows at the start-Point of the sketch-element that you click.</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:215px; height:158px;">
+          <para styleclass="Normal"><image src="Scroll4.bmp" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td style="height:158px;">
+          <list id="5" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Numbered" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo Numbered"><text style="font-style:italic;">Double-click</text> the Motion-Path FB to open the Motion-Path dialog-box<text styleclass="VariableName">&#32;</text></li>
+            <li styleclass="HowTo Numbered">Edit the &apos;# Motion-Points&apos; to 10 - we can edit this number later, if necessary.</li>
+            <li styleclass="HowTo Numbered"><text style="font-style:italic;">Click</text> the <text styleclass="Parameter-Header">&apos;Re-generate Motion-Points&apos;</text>.</li>
+            <li styleclass="HowTo Numbered">Edit the &apos;Range&apos; of the Motion-Points to 160º (use the Range option in degrees).</li>
+            <li styleclass="HowTo Numbered">Edit the <text styleclass="Parameter">&apos;Base-Value&apos;</text> of the <text styleclass="Interface">Motion-Points</text> until they are <text style="text-decoration:underline;">only</text> in the half of the sketch-loop for the Pack that &apos;faces&apos; the rotation-axis.</li>
+          </list>
+          <para styleclass="Body Text HowTo">The Motion-Points must be in the <text style="font-weight:bold; color:#008000;">&apos;Green Area&apos;</text> &#160;The <text styleclass="Element">Motion-Points</text> cannot be in the <text style="font-weight:bold; color:#ff0000;">&apos;Red Area&apos;</text><text style="font-weight:normal; color:#000000;">.</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td colspan="2">
+          <para styleclass="BodyText BI">A Motion for the Motion-Points</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:215px;">
+          <para styleclass="Normal"><image src="Scroll5.bmp" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="Body Text">As the Pack rotates, we must also rotate the Motion-Points in the opposite direction so that they remain in the half of the Pack that faces the rotation-axis.</para>
+          <list id="6" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Numbered" style="font-family:&apos;Segoe UI&apos;; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Numbered">Connect a wire from the output-connector of the <text styleclass="Element">Motion-Dimension</text> that rotates the Pack to the input-connector of the Motion-Path.</li>
+          </list>
+          <para styleclass="Body Text">You may need to add a <text styleclass="Element">Gearing FB</text>, with a ratio of -1, to move the Points in the opposite direction.</para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading4 Toggle_atocs_">STEP 2: Add the Scroll rotation-section and its rotation-axis.</para>
+    <para styleclass="Body Text HowTo"><table styleclass="Standard" rowcount="2" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:30px;">
+          <para styleclass="Normal"><image src="Scroll7.bmp" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="Body Text">(Note: I have rotated the Pack by 180º on the rotating Part. This helps later)</para>
+          <para styleclass="Body Text">We must add a <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-Sketch-Loop">sketch-loop</link> that represents the rotation-section of the scroll.</para>
+          <list id="7" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Numbered" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo Numbered">Edit the <text styleclass="Element">Base-Part</text><text styleclass="VariableName">&#32;</text></li>
+            <li styleclass="HowTo Numbered">Click <text styleclass="T_Menu">Visibility toolbar &gt; Show/Hide other Kinematic and Sketch elements</text><text style="font-style:italic;"> - </text>this shows the shape of the Pack <image src="Red-14-2.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Image Caption">.</text></li>
+            <li styleclass="HowTo Numbered">Add a rectangle<image src="Red-14-1b.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image>, that represents the section-of-rotation of the Scroll-Blank.<text style="font-weight:bold;">&#32;</text></li>
+          </list>
+          <para styleclass="Body Text">The rotation-section needs a rotation-axis.</para>
+          <list id="7" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Numbered" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo Numbered"><text style="font-family:Arial; font-size:11pt; color:#000000;">Add a </text><text styleclass="Element">Line</text><image src="Red-14-3.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text style="font-family:Arial; font-size:11pt; color:#000000;"> that represents the rotation-axis of the scroll.</text><text styleclass="VariableName">&#32;</text></li>
+          </list>
+          <para styleclass="Body Text"><text style="font-family:Arial; font-size:11pt; color:#000000;">This should be along the X-axis of the </text><text styleclass="Element">Base-Part</text><text style="font-family:Arial; font-size:11pt; color:#000000;">.</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:30px;">
+          <para styleclass="Normal"><image src="Scroll6.bmp" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="Body Text">We must also add a <text styleclass="Element">Profile</text> to the rotation-section<image src="Red-14-1b.gif" scale="100.00%" figurelistinclude="0"></image>.</para>
+          <list id="8" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Numbered" style="font-family:&apos;Segoe UI&apos;; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Numbered">Close the <text styleclass="Interface">Part-Editor</text>&#32;</li>
+            <li styleclass="HowTo Numbered">Add a <text styleclass="Element">Profile</text><image src="Red-14-1b.gif" scale="100.00%" figurelistinclude="0"></image> to the rectangle</li>
+          </list>
+          <para styleclass="Body Text">When we send the rotation-section and rotation-axis to SolidWorks, SolidWorks makes a &apos;revolved-section&apos;.</para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading4 Toggle_atocs_">STEP 3: Add a Plane, Mechanism, add the Scroll Part</para>
+    <para styleclass="Body Text HowTo"><table styleclass="Standard" rowcount="9" colcount="2">
+      <tr style="vertical-align:top">
+        <td colspan="2">
+          <para styleclass="Body Text">We add the scroll in a different Mechanism-Editor. We must add a new Plane for the new Mechanism-Editor. </para>
+          <para styleclass="Body Text">The Plane to which we add the new Mechanism-Editor must be orientated in a particular direction. If the Plane is not in the correct orientation, we cannot add the scroll.</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td colspan="2">
+          <para styleclass="VariableName">Add the new Plane</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:30px;">
+          <para styleclass="Normal"><image src="Scroll8.bmp" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <list id="9" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Numbered" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo Numbered">Spin the model with your keyboard arrow keys<text styleclass="VariableName">&#32;</text></li>
+            <li styleclass="HowTo Numbered">Click Add Plane</li>
+            <li styleclass="HowTo Numbered">Click the arrowhead of the X-axis at the Origin of the Base-Part<image src="Red-14-1b.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></li>
+          </list>
+          <para styleclass="HowTo Numbered">(you can also click the Y-axis)</para>
+          <para styleclass="Body Text">The image shows the <text styleclass="VariableName">default position</text> of the new Plane.</para>
+          <para styleclass="Body Text HowTo">We must use the Add Plane dialog-box to re-orientate the Plane.</para>
+          <para styleclass="Body Text HowTo">It is possible to use the Add Plane dialog-box to edit the orientation of the new Plane now. </para>
+          <para styleclass="Body Text HowTo">However, <text styleclass="Body Text">I find it easier to &apos;Add a new Mechanism&apos; to the Plane now, and then edit the Plane for the new Mechanism later.</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:30px;">
+          <para styleclass="Normal"><image src="Scroll9.bmp" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <list id="10" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="4" styleclass="HowTo Numbered" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo Numbered">Close the Add Plane <text styleclass="VariableName">dialog-box </text></li>
+            <li styleclass="HowTo Numbered">Click Add Mechanism</li>
+            <li styleclass="HowTo Numbered">Click the new Plane</li>
+            <li styleclass="HowTo Numbered">Click OK in the <text styleclass="Interface">Command-Manager</text></li>
+          </list>
+          <para styleclass="Body Text HowTo">You &apos;jump&apos; to the new Mechanism-Editor. Rename the new Mechanism-Editor to &apos;Scroll&apos;</para>
+          <list id="11" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="8" styleclass="HowTo Numbered" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo Numbered">Click the &apos;Pack&apos; Mechanism name-tab to return to the Pack Mechanism-Editor<text styleclass="VariableName">. </text></li>
+            <li styleclass="HowTo Numbered">Click <text styleclass="T_Menu">Tools menu (or toolbar) &gt; &apos;Show Sketches in Mechanism&apos;</text></li>
+          </list>
+          <para styleclass="Body Text">You can now see the new Plane and the Base-Part<image src="Red-14-1b.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image> (in <text style="font-weight:bold; color:#787771;">Grey</text>) to give the orientation of the new Mechanism-Plane. The XY-axes of the Base-Part are coplanar with Mechanism-Plane.</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:30px;">
+          <para styleclass="Normal"><image src="Scroll10.bmp" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <list id="12" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="10" styleclass="HowTo Numbered" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo Numbered"> &#160;Edit the new Plane - double-click it to open the <text style="font-weight:normal;">Plane dialog-box</text><text styleclass="VariableName">&#32;</text></li>
+          </list>
+          <para styleclass="VariableName"><text styleclass="VariableName-IT">MechDesigner Rules - relative orientation of the new Plane with respect to the orientation of the Pack&apos;s Mechanism Plane</text><text styleclass="Body Text" style="font-weight:bold; font-style:italic;">.</text></para>
+          <list id="13" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted">The Z-axis of the Scroll Mechanism&apos;s Base-Part must be co-axial with the X-axis of the Pack Mechanism&apos;s Base-Part</li>
+            <li styleclass="HowTo Bulleted">The Y-axis of the Scroll Mechanism&apos;s Base-Part must be co-axial with the Y-axis of the Pack Mechanism&apos;s Base-Part</li>
+          </list>
+          <para styleclass="Body Text HowTo">If you clicked the X-axis to add the new Plane, then the X, Y and Z-axis rotations are 90,90,90 respectively.</para>
+          <para styleclass="Body Text HowTo">If you clicked the Y-axis to add the new Plane, then the X, Y and Z-axis rotations are 0,90,90 respectively.</para>
+          <para styleclass="Body Text HowTo">The image shows the new orientation of the Base-Part and Mechanism-Plane of the &apos;Scroll&apos; Mechanism.</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:30px;">
+          <para styleclass="Normal"><image src="Scroll11.bmp" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <list id="14" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="11" styleclass="HowTo Numbered" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo Numbered">Click the Scroll Mechanism name-tab<text styleclass="VariableName">&#32;</text></li>
+          </list>
+          <para styleclass="HowTo Numbered"><text style="font-weight:normal;">We now add the Part that represents the &apos;scroll&apos;.</text></para>
+          <list id="15" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="12" styleclass="HowTo Numbered" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo Numbered"><text style="font-weight:normal;">Add a rotating Part</text><image src="Red-14-1b.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text style="font-weight:bold;">.</text><text styleclass="VariableName">&#32;</text></li>
+          </list>
+          <para styleclass="Body Text HowTo"><text style="font-weight:normal;">Make sure the Origin of the Part is at the Origin of the Base-Part.</text></para>
+          <para styleclass="Body Text HowTo"><text style="font-weight:normal;">Add a Gearing FB, and edit its Gearing Ratio parameter so that the Scroll Part rotates many times in a machine-cycle.</text></para>
+          <para styleclass="Body Text HowTo"><text style="font-weight:normal;">I suggest a Gearing Ratio of &apos;x8&apos; as the first estimate.</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:30px;">
+          <para styleclass="Normal"><image src="Scroll12.bmp" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <list id="16" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="13" styleclass="HowTo Numbered" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo Numbered"><text style="font-weight:normal;">Click </text><text styleclass="VariableName">ALT+H</text><text style="font-weight:normal;"> keyboard shortcut to Home the model, in which the MMA is at 0</text><text styleclass="VariableName">&#32;</text></li>
+            <li styleclass="HowTo Numbered"><text style="font-weight:normal;">Rotate the view so you can see the elements in the two(2) Mechanism-Editors.</text></li>
+            <li styleclass="HowTo Numbered"><text style="font-weight:normal;">Click Add Scroll.</text><text style="font-weight:bold;">&#32;</text></li>
+          </list>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:30px;">
+          <para styleclass="Normal"><image src="Scroll13.bmp" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="VariableName">Select the five elements in order.</para>
+          <para styleclass="Body Text"><image src="Red-14-1b.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Image Caption">&#32;</text>The Follower Part is the &apos;Pack&apos; Part - in grey</para>
+          <para styleclass="Body Text"><image src="Red-14-2.gif" scale="100.00%" figurelistinclude="0"></image> The Part to carry the Feed-Screw is the &apos;Scroll&apos;, in the active Mechanism-Editor</para>
+          <para styleclass="Body Text"><image src="Red-14-3.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Image Caption">&#32;</text>The Profile is the &apos;rotation-section&apos; in grey - the Profile element </para>
+          <para styleclass="Body Text"><image src="Red-14-4.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image> The Line for the &apos;revolve axis&apos; is the &apos;rotation-axis&apos; in grey</para>
+          <para styleclass="Body Text"><image src="Red-14-5.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image> The Motion-Path FB in the graphic-area</para>
+          <para styleclass="Body Text">Click OK</para>
+          <para styleclass="HowTo Bulleted"></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:30px;">
+          <para styleclass="Normal"><image src="Scroll14.bmp" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="Body Text HowTo"><text style="font-weight:normal; color:#000000;">You may need to click the Model-Editor to force a full model rebuild.</text></para>
+          <para styleclass="Body Text HowTo"><text styleclass="VariableName-IT">MechDesigner</text><text style="font-weight:normal; color:#000000;"> creates a surface for the part of the scroll that becomes in contact with the Pack, as the Pack advances.</text></para>
+          <para styleclass="HowTo Bulleted"></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading4 Toggle_atocs_">STEP 4: Transfer the Scroll to SOLIDWORKS</para>
+    <para styleclass="Body Text HowTo"><table styleclass="Standard" rowcount="5" colcount="2" style="width:auto;">
+      <tr style="vertical-align:top">
+        <td style="width:85px;">
+          <para styleclass="Normal"><image src="Scroll15.bmp" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="Body Text">To transfer the Scroll to SOLIDWORKS, we need to edit the Scroll element.</para>
+          <list id="17" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Numbered" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo Numbered"><text styleclass="Body Text" style="font-style:italic;">Double-click</text><text styleclass="Body Text"> the Scroll in the graphic-area</text><text styleclass="VariableName">&#32;</text></li>
+          </list>
+          <para styleclass="HowTo Numbered"><text styleclass="Body Text">or</text></para>
+          <list id="18" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo Bulleted"><text style="font-style:italic;">Double-click</text> the Scroll element in the Assembly-Tree<text styleclass="VariableName">&#32;</text></li>
+          </list>
+          <para styleclass="HowTo Bulleted"></para>
+          <para styleclass="Body Text"></para>
+          <para styleclass="Body Text"></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Normal" style="text-align:right;"><image src="Scroll16.bmp" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="Body Text"><text styleclass="HowTo STEP">The Scroll </text>Element dialog-box (Also called the Feed Screw - dialog-box).</para>
+          <para styleclass="Body Text">The important separators are:</para>
+          <para styleclass="Body Text"><text styleclass="VariableName">Cam</text> (that is: Scroll) <text style="text-decoration:underline;">Surface Mesh Density</text></para>
+          <list id="19" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted">Edit the number of Points along each Rim.</li>
+            <li styleclass="HowTo Bulleted">Typically 500 to 1500.</li>
+          </list>
+          <para styleclass="VariableName">Flank-Length</para>
+          <para styleclass="Body Text HowTo">The Flank Length is with respect to the MMA.</para>
+          <list id="20" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted">Typically, set to 0 to 360 </li>
+          </list>
+          <para styleclass="VariableName">Display</para>
+          <list id="21" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted">color</li>
+            <li styleclass="HowTo Bulleted">Transparency - applies to view in the Model only</li>
+            <li styleclass="HowTo Bulleted">Show as Solid (Surface) and Rims check-boxes.</li>
+          </list>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:85px;">
+          <para styleclass="Normal" style="text-align:right;"><image src="Scroll17.bmp" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="VariableName">SOLIDWORKS Data Transfer</para>
+          <list id="22" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Numbered" style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo Numbered">Start SOLIDWORKS, add a new Part, and Save it.<text style="font-weight:bold;">&#32;</text></li>
+            <li styleclass="HowTo Numbered">You can click each button in turn</li>
+          </list>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:85px;">
+          <para styleclass="Normal"><image src="Scroll18.bmp" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="Body Text">If the Scroll Surface is not cut from the Scroll Blank, there may be a couple of things you should look at.</para>
+          <list id="23" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Numbered" style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo Numbered">The end of the Scroll Surface is outside the ends of the Scroll Blank.<image src="Red-14-1b.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text style="font-weight:bold;">&#32;</text></li>
+          </list>
+          <para styleclass="Body Text HowTo">In the image, you can see that the Scroll-Blank extends past the start of the Scroll Surface.</para>
+          <para styleclass="Body Text HowTo">Edit the Scroll-Blank in <text styleclass="Body Text">SOLIDWORKS or </text><text styleclass="VariableName-IT">MechDesigner</text><text styleclass="Body Text">.</text></para>
+          <list id="24" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Numbered" style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo Numbered">Move the left end of the sketch to the right by a small amount.<image src="Red-14-2.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Body Text" style="font-weight:bold;">&#32;</text></li>
+          </list>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:85px;">
+          <para styleclass="Normal"><image src="Scroll19.bmp" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="Body Text">When the Scroll Surface is cut from the Blank, then hide the Scroll Surface.</para>
+        </td>
+      </tr>
+    </table></para>
+  </body>
+</topic>

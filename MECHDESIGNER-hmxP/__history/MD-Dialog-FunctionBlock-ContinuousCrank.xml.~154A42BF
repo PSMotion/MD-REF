@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" modified="2023-10-05T15:49:18.069+01:00" lasteditedby="44785" version="2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title>Dialog: Function-Block: Continuous-Crank</title>
+  <keywords>
+    <keyword>Continuous-Crank dialog<keyword>Rotate Crank - inverse-kinematics</keyword></keyword>
+    <keyword>Dialog<keyword>Continuous-Crank FB</keyword></keyword>
+    <keyword>Inverse-Kinematics<keyword>Continuous-Crank</keyword></keyword>
+  </keywords>
+  <body>
+    <header>
+      <para styleclass="Heading1">Dialog: Function-Block: Continuous-Crank</para>
+    </header>
+    <para styleclass="Heading2" style="page-break-before:always;">Continuous-Crank</para>
+    <para styleclass="SeeAlso">See also <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Command-AddFBContinuousCrank">Add Continuous-Crank</link></para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="1" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Table">It is often the case, in a multi-part mechanism, that the motion is designed for the Tool-Part (the Part with the tooling). </para>
+          <para styleclass="Body Table">The Tool-Part is often driven by a different Part in the mechanism, which is the Driving-Part. We derive for you the motion of the Driving-Part from the Tool-Part by inverse-kinematics.</para>
+          <para styleclass="Body Table">Usually, with a Cam mechanism, the Driving-Part is an oscillating Cam-Follower that is moved by a Cam.</para>
+          <para styleclass="Body Table">However, there is also the case in which the Driving-Part rotates fully, but with a non-uniform speed. This is a special-case. To make sure this can happen, the Driving-Part must be exactly the correct length, and its motion, also derived by inverse-kinematics from the motion of the Tooling, is more complex.</para>
+          <para styleclass="Body Table">This is one application of the <text styleclass="Element">Continuous-Crank FB</text>.</para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="Heading4 Toggle_atocs_">How to open the Continuous-Crank FB dialog </para>
+    <para styleclass="Body Text"><table styleclass="Default" rowcount="1" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:40px;">
+          <para styleclass="Normal"><image src="MD-GA-FB-ContinuousCrank.png" scale="99.99%" width="146" height="144" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="Body Text">Edit<text styleclass="VariableName">&#32;</text><text style="font-weight:normal; font-style:normal;">the </text><text styleclass="Element">Continuous-Crank FB</text><text style="font-weight:normal; font-style:normal;">:</text></para>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <list id="0" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="B Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="B Bullets"><text styleclass="Body Text">Double-click the </text><text styleclass="Element">Continuous-Crank FB</text> in <text styleclass="Body Text">the graphic-area</text><text styleclass="VariableName">&#32;</text></li>
+                </list>
+                <para styleclass="VariableName-IT">OR</para>
+                <list id="1" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="B Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="B Bullets"><text styleclass="SeeAlso">See </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-How-to-Open-a-Dialog-Box" styleclass="SeeAlso">How to Open a dialog</link><text styleclass="VariableName"> &#160;</text></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Body Text">The <text styleclass="Element-Header">Continuous-Crank dialog</text> is now open.</para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="Heading3_atocs_" style="text-indent:-18px; margin-left:18px;"><anchor id="DIALOG-CONTINUOUSCRANK"><keywords><keyword>Continuous-Crank dialog</keyword></keywords></anchor>Continuous-Crank dialog</para>
+    <para styleclass="Body Text"><table styleclass="Default" rowcount="3" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:287px;">
+          <para styleclass="Normal"><image src="MD-DIALOG-FB-CONTINUOUS-CRANK-not enabled.ipp" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"><caption><![CDATA[Continuous-Crank dialog - not enabled]]></caption></image></para>
+        </td>
+        <td>
+          <list id="2" type="ol" listtype="decimal" formatstring="&#83;&#84;&#69;&#80;&#32;&#37;&#48;&#58;&#115;&#58;&#32;" format-charset="DEFAULT_CHARSET" levelreset="false" legalstyle="false" startfrom="1" styleclass="HowTo STEP" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo STEP"><text styleclass="VariableName">Select Crank Behavior and Direction </text></li>
+          </list>
+          <para styleclass="Parameter-Header">Crank Behavior</para>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Body Table"><text styleclass="Parameter">CONTINUOUS</text><text styleclass="Bullets"> - the </text><text styleclass="Element">Part</text><text styleclass="Bullets"> rotates continuously.</text></para>
+                <para styleclass="Body Table"><text styleclass="Parameter">reversing</text><text styleclass="HowTo Bulleted"> - the </text><text styleclass="Element">Part</text><text styleclass="HowTo Bulleted"> rotates to ~180º, and then return back to ~0º.</text></para>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Parameter-Header">Crank Direction<text styleclass="Body Text">&#32;</text></para>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Body Table">If <text styleclass="Parameter">Crank Behaviour</text> is <text styleclass="Parameter">Continuous,</text><text styleclass="Body Text"> then:</text></para>
+                <para styleclass="Body Text HowTo"><text styleclass="Parameter">Counter-Clockwise - </text>the <text styleclass="Element">Part</text> rotates in the Counter-Clockwise direction</para>
+                <para styleclass="Body Text HowTo"><text styleclass="Parameter">Clockwise</text><text styleclass="HowTo Bulleted"> - the </text><text styleclass="Element">Part</text><text styleclass="HowTo Bulleted"> rotates in a Clockwise direction</text></para>
+                <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+                <para styleclass="Body Table">If <text styleclass="Parameter">Crank Behaviour</text> is <text styleclass="Parameter">Reversing</text>, to change Crank closure, see <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Command-ChangeDyadClosure">Change-Dyad Closure</link>.</para>
+              </td>
+            </tr>
+          </table></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:287px;">
+          <para styleclass="Normal"><image src="MD-FB-CONTINUOUSE-CRANK-0.ipp" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"><caption><![CDATA[Continuous-Crank dialog- enabled]]></caption></image></para>
+        </td>
+        <td rowspan="2">
+          <list id="3" type="ol" listtype="decimal" formatstring="&#83;&#84;&#69;&#80;&#32;&#37;&#48;&#58;&#115;&#58;&#32;" format-charset="DEFAULT_CHARSET" levelreset="false" legalstyle="false" startfrom="2" styleclass="HowTo STEP" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo STEP"><text styleclass="VariableName">Activate the Not Selected box </text></li>
+          </list>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <list id="4" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="B Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="B Bullets"><text style="font-style:normal;">Click</text> in the box labeled <text styleclass="VariableName">Not Selected</text></li>
+                </list>
+                <para styleclass="Separator">The Box is now Orange</para>
+                <para styleclass="Bullets">You can now select a <text styleclass="Element">Part</text>.</para>
+              </td>
+            </tr>
+          </table></para>
+          <list id="5" type="ol" listtype="decimal" formatstring="&#83;&#84;&#69;&#80;&#32;&#37;&#48;&#58;&#115;&#58;&#32;" format-charset="DEFAULT_CHARSET" levelreset="false" legalstyle="false" startfrom="3" styleclass="HowTo STEP" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo STEP"><text styleclass="VariableName">Click a Part that you want to be the Continuous-Crank</text></li>
+          </list>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <list id="6" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="B Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="B Bullets"><text style="font-style:normal;">Click</text> a <text styleclass="Element">Part</text> in the <text styleclass="Body Text">graphic-area or </text><text styleclass="Interface">Assembly-Tree</text><text styleclass="VariableName">. </text></li>
+                </list>
+                <para styleclass="Body Table">The Continuous-Crank <text styleclass="Element">Part</text> must have a <text styleclass="Element">Pin-Joint</text> that joins it to the <text styleclass="Element">Base-Part</text>.</para>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Body Text HowTo">The <text styleclass="Element">Part</text> imm<text styleclass="Body Text">ed</text>iately changes its length so that it can rotate continuously or oscillate by ~180<text styleclass="HowTo Bulleted">º. If there is a problem, see </text><text styleclass="VariableName">Messages at the bottom of the dialog</text><text styleclass="HowTo Bulleted">.</text></para>
+          <list id="7" type="ol" listtype="decimal" formatstring="&#83;&#84;&#69;&#80;&#32;&#37;&#48;&#58;&#115;&#58;&#32;" format-charset="DEFAULT_CHARSET" levelreset="false" legalstyle="false" startfrom="4" styleclass="HowTo STEP" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo STEP">Confirm the behavior is as expected<text styleclass="VariableName"> &#160;</text></li>
+          </list>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <list id="8" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="B Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; color:#000080;">
+                  <li styleclass="B Bullets"><text style="font-style:normal;">Do </text><text styleclass="T_Menu">Run toolbar &gt; Cycle Continuously</text><text style="font-style:normal;"> (</text><text styleclass="VariableName">ALT+C</text><text styleclass="Parameter-Header">)</text></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+          <list id="9" type="ol" listtype="decimal" formatstring="&#83;&#84;&#69;&#80;&#32;&#37;&#48;&#58;&#115;&#58;&#32;" format-charset="DEFAULT_CHARSET" levelreset="false" legalstyle="false" startfrom="5" styleclass="HowTo STEP" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo STEP">Click <image src="OK-tiny-11-15.png" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Image Caption">&#32;</text>to close the dialog.</li>
+          </list>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="Body Table"><text styleclass="Heading4 Toggle_atocs_">Messages at the bottom of the dialog: </text></para>
+          <para styleclass="Body Table">When you select a <text styleclass="Element">Part</text> as the Continuous Crank, there is be a message at the bottom of the dialog.</para>
+          <para styleclass="Body Table"><table styleclass="Block" rowcount="4" colcount="2">
+            <tr style="vertical-align:top">
+              <td style="width:180px;">
+                <para styleclass="VariableName-small">Message</para>
+              </td>
+              <td>
+                <para styleclass="VariableName-small">Meaning</para>
+              </td>
+            </tr>
+            <tr style="vertical-align:top">
+              <td style="width:180px;">
+                <para styleclass="Popup Box">Valid</para>
+              </td>
+              <td>
+                <para styleclass="Popup Box">The <text styleclass="Popup Box-Elements">Part</text> can be a continuous Crank</para>
+              </td>
+            </tr>
+            <tr style="vertical-align:top">
+              <td style="width:180px;">
+                <para styleclass="Popup Box">Failed assign pivot-Point</para>
+              </td>
+              <td>
+                <para styleclass="Popup Box">We could not find for you the rotating-axis.</para>
+              </td>
+            </tr>
+            <tr style="vertical-align:top">
+              <td style="width:180px;">
+                <para styleclass="Popup Box">Impossible crank length:</para>
+                <para styleclass="Popup Box">Geometry is inconsistent</para>
+              </td>
+              <td>
+                <para styleclass="Popup Box">For example, the <text styleclass="Popup Box2">Motion-Part</text> does not move, and thus the length of the Crank must zero(0).</para>
+              </td>
+            </tr>
+          </table></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:287px;">
+          <para styleclass="Normal"><image src="MD-FB-CONTINUOUSE-CRANK-1.ipp" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"><caption><![CDATA[Continous-Crank dialog]]></caption></image></para>
+        </td>
+      </tr>
+    </table></para>
+  </body>
+</topic>

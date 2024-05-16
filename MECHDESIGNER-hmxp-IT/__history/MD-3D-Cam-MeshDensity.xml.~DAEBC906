@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../helpproject.xsl" ?>
+<topic class="Popup" template="Default" status="Under Construction" lasteditedby="Adam" version="2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../helpproject.xsd">
+  <title>3D-Cam-MeshDensity</title>
+  <keywords>
+    <keyword>3D Cam<keyword>Mesh Density</keyword><keyword>Number of Rims along Flanks</keyword><keyword>Number-of-Points</keyword></keyword>
+  </keywords>
+  <body>
+    <para styleclass="Normal"><table styleclass="Standard" rowcount="2" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:30px;">
+          <para styleclass="Normal"><image src="3D-CamMesh-2.png" align="left" scale="100.00%"><title>Rims in 3D Cams</title></image></para>
+        </td>
+        <td rowspan="2">
+          <para styleclass="VariableName">3D-Cam: Mesh Density</para>
+          <para styleclass="Body Text"><text styleclass="Body Text HowTo">We specify 3D-Cams with lines called </text><text styleclass="VariableName-IT">Rims</text><text styleclass="Body Text HowTo">. There a number-of-points along each </text><text styleclass="VariableName-IT">Rim</text><text styleclass="Body Text HowTo">.</text></para>
+          <para styleclass="Body Text HowTo">There are <text styleclass="VariableName-IT">Rims</text> on each face of the Cam The faces are the:</para>
+          <list id="1" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted">two working faces, or the <text style="font-style:italic;">Cam-Flanks</text><image src="Red-14-1b.gif" scale="100.00%"></image>, defined by the two sides of the Cam-Follower Roller.</li>
+            <li styleclass="HowTo Bulleted">two non-working faces: defined by the top and bottom faces of the Cam-Follower-Roller. These are Root-Face<image src="Red-14-2.gif" scale="100.00%"></image> and Top-Face<image src="Red-14-3.gif" scale="100.00%"></image>. </li>
+          </list>
+          <para styleclass="Body Text"><text style="font-style:italic;">See image to the left</text>.</para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="Body Text"><text styleclass="Body Text HowTo">In the </text><text styleclass="Element">3D-Cam dialog-box</text><text styleclass="Body Text HowTo">, you can specify these parameters:</text></para>
+          <para styleclass="Body Text HowTo"><text styleclass="VariableName-indent">Number-of-Points: </text><br/>The number-of-points along each Rim. </para>
+          <para styleclass="Body Text HowTo"><text styleclass="VariableName-indent">Flank Rim Count: &#160;</text><br/>The number of Rims across each flank (working faces) of the Cam </para>
+          <para styleclass="Body Text HowTo"><text styleclass="VariableName-indent">Root / Top Rim Count: </text><br/>The number of Rims across the Root and Top (non working faces) of the Cam.</para>
+          <para styleclass="VariableName-indent">Hoops Count for CAD:</para>
+          <para styleclass="Body Text HowTo">&apos;Hoops&apos; wrap around the 3D-Cam and connect the same Point along each Rim. </para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="Body Text">The Hoops help SolidWorks to keep the shape of the surfaces.</para>
+          <para styleclass="Body Text HowTo">There is a minimum of 4 hoops if the Cam-Follower oscillates or reciprocates. That is, it is continuous.</para>
+          <para styleclass="Body Text HowTo">If the Cam-Follower indexes, then Hoops are generated for you at the end-caps. There are 2.</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:30px;">
+          <para styleclass="Normal" style="text-align:right;"><image src="Dialog-3DCam-Cam-CamMeshDensity2.png" scale="100.00%" styleclass="Image Caption"></image></para>
+        </td>
+      </tr>
+    </table></para>
+  </body>
+</topic>

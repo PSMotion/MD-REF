@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" lasteditedby="Adam" version="2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title>Modeling FB | Add Continuous Crank FB</title>
+  <keywords>
+    <keyword>Add<keyword>Function-Block: Continuous Crank</keyword></keyword>
+    <keyword>Continuous Crank FB</keyword>
+    <keyword>Modeling FB menu<keyword>Continuous Crank FB</keyword></keyword>
+  </keywords>
+  <body>
+    <header>
+      <para styleclass="Heading1">Modeling FB | Add Continuous Crank FB</para>
+    </header>
+    <para styleclass="Heading3_atocs_">Why add a Continuous Crank FB</para>
+    <para styleclass="Body Text HowTo"><table styleclass="PopupTable2" rowcount="1" colcount="1" style="cell-padding:0px; cell-spacing:2px;">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Text">It is often the case, with inverse-kinematics, that the desired motion is applied to a Tool. When the Tool is not driven directly, the driving Part is the input to a mechanism. The motion and forces are transmitted through the mechanism, from the driving Part to the Tool Part.</para>
+          <para styleclass="Body Text">Most usually, especially with Cam mechanisms, the driving Part is a Cam-Follower, which is moved by a cam.</para>
+          <para styleclass="Body Text">As a special-case, the driving Part may rotate in one direction only, but with a non-uniform rotating speed.</para>
+          <para styleclass="Body Text">To make sure this can happen, the driving Part must be the correct length, and it must be instructed to rotate in one direction. This is one application of the <text styleclass="VariableName">Continuous-Crank FB</text>.</para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading3_atocs_">Add CAD Control FB</para>
+    <para styleclass="Body Text"><table styleclass="Standard" rowcount="4" colcount="2" style="head-row-background-color:#ffffff; alt-row-background-color:none;">
+      <thead style="vertical-align:top">
+        <td style="width:77px;">
+          <para styleclass="VariableName-IT" style="text-align:right;">Toolbar : </para>
+        </td>
+        <td style="vertical-align:middle; width:639px;">
+          <para styleclass="T_Menu"><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Menu-FB-Modelling">Modeling FB toolbar</link> &gt; Add Continuous-Crank FB</para>
+        </td>
+      </thead>
+      <tr style="vertical-align:top">
+        <td style="width:77px;">
+          <para styleclass="VariableName-IT" style="text-align:right;"><image src="Icon-FB-CADControl.png" scale="100.00%"></image></para>
+        </td>
+        <td style="vertical-align:middle; width:639px;">
+          <para styleclass="T_Menu">Continuous-Crank FB</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:77px;">
+          <para styleclass="VariableName-IT" style="text-align:right;">Menu : </para>
+        </td>
+        <td style="width:639px;">
+          <para styleclass="T_Menu">Add menu &gt; Add Continuous-Crank FB</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td colspan="2">
+          <list id="4" type="ol" listtype="decimal" formatstring="&#83;&#84;&#69;&#80;&#32;&#37;&#48;&#58;&#115;&#58;&#32;" format-charset="DEFAULT_CHARSET" levelreset="false" legalstyle="false" startfrom="1" styleclass="HowTo STEP" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo STEP">Add a <text styleclass="Element">Continuous-Crank FB</text> to the <text styleclass="Interface">graphic-area</text><text styleclass="VariableName">&#32;</text></li>
+          </list>
+          <para styleclass="Body Text HowTo"><table styleclass="PopupTable2" rowcount="1" colcount="1" style="border-width:0px; border-spacing:0px; border-collapse:collapse; cell-border-width:1px; border-color:#993300; border-style:solid;">
+            <tr style="vertical-align:top">
+              <td style="border-top:none; border-right:none; border-bottom:none;">
+                <list id="5" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Numbered" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="HowTo Numbered">Click <text styleclass="T_Menu">Modeling FB toolbar &gt; Continuous-Crank FB</text><text styleclass="VariableName">&#32;</text></li>
+                </list>
+                <para styleclass="VariableName-IT2">- or -</para>
+                <list id="6" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Numbered" style="font-family:&apos;Segoe UI&apos;; font-size:11pt; color:#000000;">
+                  <li styleclass="HowTo Numbered"> Click <text styleclass="T_Menu">Add menu &gt; Add Continuous-Crank FB</text><text styleclass="VariableName">&#32;</text>&#32;</li>
+                </list>
+                <list id="5" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Numbered" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="HowTo Numbered">Click again in the <text styleclass="Element">graphic-area</text><text styleclass="VariableName">&#32;</text></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Body Text"><text style="font-family:Arial; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">The </text><text styleclass="Element">Continuous-Crank FB</text> is now in the <text styleclass="Interface">graphic-area</text> and <text styleclass="Interface">Assembly-Tree.</text></para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <list id="4" type="ol" listtype="decimal" formatstring="&#83;&#84;&#69;&#80;&#32;&#37;&#48;&#58;&#115;&#58;&#32;" format-charset="DEFAULT_CHARSET" levelreset="false" legalstyle="false" startfrom="1" styleclass="HowTo STEP" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo STEP">Open the <text styleclass="Element">Continuous-Crank dialog-box</text>:</li>
+          </list>
+          <para styleclass="Body Text HowTo"><table styleclass="PopupTable2" rowcount="1" colcount="1" style="border-width:0px; border-spacing:0px; border-collapse:collapse; cell-border-width:1px; border-color:#993300; border-style:solid;">
+            <tr style="vertical-align:top">
+              <td style="border-top:none; border-right:none; border-bottom:none;">
+                <list id="7" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="B Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="B Bullets"><text styleclass="Body Text">Double-click a </text><text styleclass="Element">Continuous-Crank FB</text><text style="font-family:Arial; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">&#32;</text><text styleclass="Body Text">in the </text><text styleclass="Interface">graphic-area</text><text styleclass="VariableName">&#32;</text></li>
+                </list>
+                <para styleclass="VariableName-IT">- or -</para>
+                <para styleclass="Body Text"><text styleclass="SeeAlso">See </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-How-to-Open-a-Dialog-Box" styleclass="SeeAlso">How to Open a Dialog-Box</link><text styleclass="SeeAlso">.</text><text styleclass="VariableName">&#32;</text></para>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Body Text"><text style="font-family:Arial; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">The </text><text styleclass="Element">Continuous-Crank dialog-box</text> is now open<text style="font-family:Arial; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">.</text></para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <list id="4" type="ol" listtype="decimal" formatstring="&#83;&#84;&#69;&#80;&#32;&#37;&#48;&#58;&#115;&#58;&#32;" format-charset="DEFAULT_CHARSET" levelreset="false" legalstyle="false" startfrom="1" styleclass="HowTo STEP" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo STEP"><text styleclass="SeeAlso">See </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-Tool-Continuous-Crank" styleclass="SeeAlso">Continuous-Crank FB dialog-box</link></li>
+          </list>
+        </td>
+      </tr>
+    </table></para>
+  </body>
+</topic>

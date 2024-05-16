@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../helpproject.xsl" ?>
+<topic template="Default" status="Under Construction" modified="2022-03-24T15:07:44.341Z" lasteditedby="Adam" version="2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../helpproject.xsd">
+  <title>Maximum Shear Stress</title>
+  <keywords>
+    <keyword>Cam Maximum Contact Shear Stress<keyword>Equations</keyword></keyword>
+  </keywords>
+  <body>
+    <para styleclass="Normal"><table styleclass="Default" rowcount="9" colcount="3" style="width:400px;">
+      <tr style="vertical-align:top">
+        <td colspan="3">
+          <para styleclass="Popup Box">Maximum Constant Pressure and Shear Stress Calculations.</para>
+          <para styleclass="Popup Box">Line Contact</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td colspan="3">
+          <para styleclass="Popup Box"><table styleclass="Default" rowcount="9" colcount="2">
+            <tr style="vertical-align:top">
+              <td style="width:65px;">
+                <para styleclass="Popup Box">Symbol</para>
+              </td>
+              <td>
+                <para styleclass="Popup Box">Parameter</para>
+              </td>
+            </tr>
+            <tr style="vertical-align:top">
+              <td style="width:65px;">
+                <para styleclass="Popup Box">F</para>
+              </td>
+              <td>
+                <para styleclass="Popup Box">Applied force</para>
+              </td>
+            </tr>
+            <tr style="vertical-align:top">
+              <td style="width:65px;">
+                <para styleclass="Popup Box">ν1</para>
+              </td>
+              <td>
+                <para styleclass="Popup Box">Cam Poisson’s ratio</para>
+              </td>
+            </tr>
+            <tr style="vertical-align:top">
+              <td style="width:65px;">
+                <para styleclass="Popup Box">E1</para>
+              </td>
+              <td>
+                <para styleclass="Popup Box">Cam Elastic modulus</para>
+              </td>
+            </tr>
+            <tr style="vertical-align:top">
+              <td style="width:65px;">
+                <para styleclass="Popup Box">v2</para>
+              </td>
+              <td>
+                <para styleclass="Popup Box">Cam-Follower Poisson’s ratio</para>
+              </td>
+            </tr>
+            <tr style="vertical-align:top">
+              <td style="width:65px;">
+                <para styleclass="Popup Box">E2</para>
+              </td>
+              <td>
+                <para styleclass="Popup Box">Cam-Follower Elastic modulus</para>
+              </td>
+            </tr>
+            <tr style="vertical-align:top">
+              <td style="width:65px;">
+                <para styleclass="Popup Box">d1</para>
+              </td>
+              <td>
+                <para styleclass="Popup Box">Cam Diameter-of-Curvature - Note Diameter.</para>
+              </td>
+            </tr>
+            <tr style="vertical-align:top">
+              <td style="width:65px;">
+                <para styleclass="Popup Box">d2</para>
+              </td>
+              <td>
+                <para styleclass="Popup Box">Cam-Follower Diameter</para>
+              </td>
+            </tr>
+            <tr style="vertical-align:top">
+              <td style="width:65px;">
+                <para styleclass="Popup Box">l</para>
+              </td>
+              <td>
+                <para styleclass="Popup Box">Width of Cam and Cam Follower - </para>
+                <para styleclass="Popup Box">Extrusion Depth of Cam Profile.</para>
+              </td>
+            </tr>
+          </table></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Popup Box">Parameter</para>
+        </td>
+        <td>
+          <para styleclass="Popup Box">Symbol</para>
+        </td>
+        <td>
+          <para styleclass="Popup Box">Equation</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Popup Box">Contact half-width</para>
+        </td>
+        <td>
+          <para styleclass="Popup Box">b</para>
+        </td>
+        <td>
+          <para styleclass="Popup Box"><image src="MD-Pop-ContactHalfWidth-Hertz.png" scale="100.00%" figurelistinclude="0"></image></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Popup Box">Maximum Hertzian Contact Pressure</para>
+        </td>
+        <td>
+          <para styleclass="Popup Box">Pmax</para>
+        </td>
+        <td>
+          <para styleclass="Popup Box">Pmax = 2 * F &#160;∕ &#160;π.l.b</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Popup Box">Maximum Contact Shear Stress</para>
+        </td>
+        <td>
+          <para styleclass="Popup Box">Ʈmax</para>
+        </td>
+        <td>
+          <para styleclass="Popup Box">Ʈmax = 0.3 * Pmax</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td colspan="3">
+          <para styleclass="Popup Box">The Maximum Contact Shear Stress,Ʈmax, is at a depth below the Cam and Roller Surfaces at about Z = 0.786×b. </para>
+          <para styleclass="Popup Box">You should make sure that the of case hardness depth is a minimum of 1.41×b, even better to make sure it is 2×b</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td colspan="3">
+          <para styleclass="Popup Box"><image src="MD-Pop-Contact Stress-Hertz.png" align="left" scale="70.00%" width="126" height="117" padding="0 5 0 0" figurelistinclude="0"></image>Typical Stress against Depth from Contact Surface.</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td colspan="3">
+          <para styleclass="Popup Box">Notes</para>
+          <para styleclass="Popup Box">Modulus of elasticity (Young’s modulus): The rate-of-change of unit tensile or compressive stress with respect to unit tensile or compressive strain for the condition of uni-axial stress within the proportional limit. Typical values: Aluminum: 69 GPa ; Steel: 200GPa.</para>
+          <para styleclass="Popup Box">Poisson’s ratio: The ratio of lateral unit strain to longitudinal unit strain under the condition of uniform and uni-axial longitudinal stress within the proportional limit. Typical values: 0.3.</para>
+          <para styleclass="Popup Box">Proportional Limit: The largest value of stress up to which a linear relation still exist between stress and strain (Hooke’s Law).</para>
+          <para styleclass="Popup Box">Cylindrical contact: The contact of two Cylinders parts where contact point turns to a rectangular area equal to a width 2b.</para>
+          <para styleclass="Popup Box">Shear stress: A form of a stress acts parallel to the surface (cross section) which has a cutting nature.</para>
+          <para styleclass="Popup Box">Stress: Average force per unit area which results strain of material.</para>
+        </td>
+      </tr>
+    </table></para>
+  </body>
+</topic>

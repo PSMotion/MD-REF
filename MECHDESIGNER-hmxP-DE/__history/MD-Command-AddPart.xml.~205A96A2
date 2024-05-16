@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" status="Under Construction" modified="2022-06-14T10:51:26.832+01:00" lasteditedby="Adam" version="2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title>Mechanism | Add Part</title>
+  <keywords>
+    <keyword>Add Part</keyword>
+    <keyword>Keyboard Short Cut<keyword>INS : Add Part</keyword></keyword>
+    <keyword>Kinematic elements toolbar<keyword>Add Part</keyword></keyword>
+    <keyword>Menu &gt; Add &gt; Mechanism Menu<keyword>Add Part</keyword></keyword>
+  </keywords>
+  <body>
+    <header>
+      <para styleclass="Heading1">Mechanism | Add Part</para>
+    </header>
+    <para styleclass="Heading2">Teil hinzufügen</para>
+    <para styleclass="SeeAlso">Siehe auch: <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-How-to-start-the-Part-Editor">Edit-Part</link></para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="Heading4 Toggle_atocs_">Terminologie</para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="5" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:205px;">
+          <para styleclass="Popup Box2" style="text-align:right;"><text styleclass="Popup Box-Elements">Teil </text>: </para>
+        </td>
+        <td>
+          <para styleclass="Popup Box">Das Element, das wir Teil nennen, ist ein starrer Körper. Seine Länge wird durch den Abstand zwischen zwei Punkten definiert - seinen <text styleclass="Interface">Startpunkt</text> und seinen <text styleclass="Interface">Endpunkt</text>. Zwischen den beiden <text styleclass="Element">Punkten</text> befindet sich eine <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-CAD-Line" styleclass="Element">CAD-Linie</link>.</para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="Popup Box">Die <text styleclass="Popup Box-Elements">Teile</text> befinden sich auf der <text styleclass="Popup Box2">Mechanismus-Ebene</text>. Ein gelenkfreies <text styleclass="Popup Box-Elements">Teil</text> hat drei Freiheitsgrade - zwei sind translatorisch und einer ist ein rotatorischer Freiheitsgrad.</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:205px;">
+          <para styleclass="Popup Box2" style="text-align:right;"><text styleclass="Popup Box-Elements">BasisTeil </text>: </para>
+        </td>
+        <td>
+          <para styleclass="Popup Box">Das <text styleclass="Popup Box-Elements">Teil</text>, das als fester Bezugsrahmen für die <text styleclass="Popup Box2">Mechanismus-Ebene </text>dient<text styleclass="Popup Box2">.</text></para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="Popup Box">Das <text styleclass="Popup Box-Elements">Basisteil</text> hat null Freiheitsgrade.</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td colspan="2">
+          <para styleclass="VariableName-small">Kinematische Zustände von <text styleclass="Element">Teilen</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:205px;">
+          <para styleclass="Popup Box2" style="text-align:right;"><text style="font-weight:bold; color:#ff0000;">Nicht</text> kinematisch definiert : </para>
+        </td>
+        <td>
+          <para styleclass="Popup Box">Der Zustand eines <text styleclass="Element">Teils</text>, wenn es nicht gelöst ist. &#160;Sie hat einen oder mehrere Freiheitsgrade.</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:205px;">
+          <para styleclass="Popup Box2" style="text-align:right;">kinematisch definiert : </para>
+        </td>
+        <td>
+          <para styleclass="Popup Box">Der Zustand eines <text styleclass="Popup Box-Elements">Teils</text>, wenn es gelöst ist. Es hat null Freiheitsgrade. Seine Bewegung ist vollständig spezifiziert.</para>
+          <para styleclass="VariableName-small"><text style="color:#ff0000;">Dies muss der Zustand des Modells sein, bevor Sie irgendwelche kinematischen und kinetostatischen (Kraftdaten) berechnen.</text></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="Heading3_atocs_"><anchor id="HowtoAddPart"><keywords><keyword>How to add a:<keyword>Part</keyword></keyword></keywords></anchor>Teil hinzufügen</para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="2" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:240px; height:13px;">
+          <para styleclass="Normal"><image src="MD-GA-AddingPart.png" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <list id="0" type="ol" listtype="decimal" formatstring="&#83;&#84;&#69;&#80;&#32;&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo STEP" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo STEP"><text styleclass="VariableName">Ein Teil hinzufügen</text></li>
+          </list>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="2" colcount="2">
+            <tr style="vertical-align:top">
+              <td style="width:42px;">
+                <para styleclass="VariableName-IT" style="text-align:right;"></para>
+              </td>
+              <td>
+                <para styleclass="Body Text"><text styleclass="Interface">Mechanismus-Editor : </text><text styleclass="T_Menu">Menü Hinzufügen &gt; Untermenü Mechanismus &gt; Teil hinzufügen</text></para>
+                <para styleclass="Body Text">oder</para>
+              </td>
+            </tr>
+            <tr style="vertical-align:top">
+              <td style="width:42px;">
+                <para styleclass="VariableName-IT" style="text-align:center;"><image src="MD-Icon-AddPart.png" scale="100.00%" figurelistinclude="0"><title>Add Part icon</title></image></para>
+              </td>
+              <td>
+                <para styleclass="Body Text"><text styleclass="Interface">Mechanismus-Editor : </text><text styleclass="T_Menu">Symbolleiste Kinematische Elemente &gt; Teil hinzufügen</text></para>
+                <para styleclass="Body Text"><text styleclass="T_Menu">oder </text></para>
+                <para styleclass="Normal" style="line-height:1.00; tabstops:none;"><text styleclass="Interface2">Einfg </text><text styleclass="T_Menu">Taste</text><text styleclass="Body Table"> auf Ihrer Tastatur</text></para>
+              </td>
+            </tr>
+          </table></para>
+          <list id="0" type="ol" listtype="decimal" formatstring="&#83;&#84;&#69;&#80;&#32;&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo STEP" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo STEP"><text styleclass="VariableName">Ziehen Sie den Grafikbereich ein</text></li>
+          </list>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="VariableName-IT"><anchor id="Dragis" styleclass="Body Text" style="font-weight:bold; font-style:italic;"><keywords><keyword>Drag<keyword>Add Part</keyword></keyword></keywords></anchor>DRAG: im Grafikbereich:</para>
+                <para styleclass="Body Table">Maustaste runter, ... Maus bewegen, ... Maustaste hoch.</para>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Body Text">Ein <text styleclass="Element">Teil</text> befindet sich nun im <text styleclass="Interface">Grafikbereich</text>.</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td colspan="2" style="height:13px;">
+          <para styleclass="Body Table"><text styleclass="T_Menu">Teil hinzufügen</text><text styleclass="Body Text"> &#160;ist </text><text styleclass="VariableName" style="color:#ff0000;">kein </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-Commands" styleclass="Body Text" style="font-style:normal;">dauerhafter</link><text styleclass="Body Text" style="font-style:normal;"> Befehl. </text><text styleclass="Body Text HowTo" style="font-style:normal;">Führen Sie Schritt </text><text styleclass="Body Text HowTo">1 und 2 </text><text styleclass="Body Text HowTo" style="font-style:normal;">erneut aus, um ein neues </text><text styleclass="Element">Teil</text><text styleclass="Body Text HowTo" style="font-style:normal;">hinzuzufügen . </text></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading3_atocs_">Ein Teil im Grafikbereich.</para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="2" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:240px; height:13px;">
+          <para styleclass="Interface" style="text-align:right;"><image src="MD-Free-Part.ipp" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="Body Text"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Body Table"><image src="Red-14-1b.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Image Caption">&#32;</text><text styleclass="Interface">Teil-Symbol</text><text styleclass="Body Text">: Das Symbol für den </text><text styleclass="Element">Teil</text><text styleclass="Body Text">.</text></para>
+                <para styleclass="Body Table"><text styleclass="Body Text">Sie</text><text styleclass="HowTo Bulleted" style="font-style:italic;">&#32;</text><text styleclass="VariableName-IT" style="color:#ff0000;">können</text><text styleclass="Body Text"> die Form der </text><text styleclass="Interface">Teil-kontur </text><text styleclass="VariableName-IT" style="color:#ff0000;">nicht</text><text styleclass="Body Text"> bearbeiten </text><text styleclass="Interface">.</text><text styleclass="Body Text">&#32;</text></para>
+                <para styleclass="Body Table"><image src="Red-14-2.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Image Caption">&#32;</text><text styleclass="Element">CAD-Linie:</text><text styleclass="Body Text"> vom </text><text styleclass="Interface">Startpunkt</text><text styleclass="Body Text"> zum </text><text styleclass="Interface">Endpunkt </text><text styleclass="Body Text">des </text><text styleclass="Element">Teils</text><text styleclass="Body Text">. </text></para>
+                <para styleclass="Body Table"><image src="Red-14-3.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Image Caption">&#32;</text><text styleclass="Interface">XY-Achsen</text><text styleclass="Body Text">: am Ursprung und </text><text styleclass="Interface">Startpunkt</text><text styleclass="Body Text"> der </text><text styleclass="Element">CAD-Linie.</text></para>
+              </td>
+            </tr>
+          </table></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td colspan="2" style="height:26px;">
+          <para styleclass="Body Table"><text styleclass="Body Text">Sie können </text><text styleclass="Interface">Teilübersichten </text><text styleclass="Body Text">ausblenden &#160;(</text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Display-Filters" styleclass="Body Text">Anzeigefilter - Part-Outlines</link><text styleclass="Body Text">) </text></para>
+          <para styleclass="Body Table"><text styleclass="Body Text">Sie werden nur die </text><text styleclass="Element">CAD-Linie</text><text styleclass="Body Text"> und die &#160;Achsen </text><text styleclass="Element">des Teils</text><text styleclass="Body Text">sehen . </text></para>
+          <para styleclass="Body Table"><text styleclass="Body Text">Sie können das </text><text styleclass="Element">Teil </text><text styleclass="Body Text">bearbeiten, wenn Sie auf die </text><text styleclass="Interface">Y-Achse</text><text styleclass="Body Text"> doppelklicken .</text></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading3_atocs_">Video:<conditional-text type="IF" value="PDF"/><link displaytype="text" defaultstyle="true" type="filelink" href="KE-AddPart-1280x720.gif" styleclass="Body Text">Double-click to watch Video Clip</link><conditional-text type="END"/><conditional-text type="IF" value="CHM"/></para>
+    <para styleclass="Normal"><toggle type="picture" print-expanded="true" help-expanded="false" src-collapsed="KE-AddPart-1280x720.gif" src-expanded="KE-AddPart-1280x720.gif" scale="20.00%" width="256" height="144" styleclass="Image Caption" figurelistinclude="0"><caption><![CDATA[Add a Part]]></caption><title>Add a Part</title></toggle><conditional-text type="END"/><conditional-text type="IF" value="HTML,EBOOK"/></para>
+    <para styleclass="Normal"><video src="KE-AddPart1280x720.mp4" width="1280px" height="720px" autostart="false" loop="false" showcontrols="false" playbutton="true" previewimage="KE-AddPart1280x720_preview.jpg" scale="20.00%" styleclass="Image Caption"><title>Add Part</title><caption><![CDATA[Add Part]]></caption></video><conditional-text type="END"/></para>
+    <para styleclass="Normal" style="page-break-before:always;"></para>
+  </body>
+</topic>

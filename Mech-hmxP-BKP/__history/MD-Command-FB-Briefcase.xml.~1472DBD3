@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" status="Under Construction" modified="2022-03-15T16:04:11.719Z" lasteditedby="Adam" version="2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title>Modeling FB | Add Birefcase FB</title>
+  <keywords>
+    <keyword>Add<keyword>Function-Block: Briefcase</keyword></keyword>
+    <keyword>Modeling FB menu:<keyword>Briefcase FB</keyword></keyword>
+  </keywords>
+  <body>
+    <header>
+      <para styleclass="Heading1">Modeling FB | Add Briefcase FB</para>
+    </header>
+    <para styleclass="Heading3_atocs_">Why use a Briefcase Function-Block?</para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="SeeAlso">See also : <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-FunctionBlock-Briefcase">Briefcase FB dialog-box</link></para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="Body Text HowTo"><table styleclass="PopupTable2" rowcount="1" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Text">When a model becomes complex, and with many kinematic-chains in each <text styleclass="Interface">Mechanism-Editor</text>, it becomes more difficult to identify to which kinematic-chain each <text styleclass="Element">FB</text> applies.</para>
+          <list id="0" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:10pt; color:#000000;">
+            <li styleclass="HowTo Bulleted"><text style="font-style:normal;">You can use</text>&#32;<text styleclass="Interface">Briefcase FB</text><text styleclass="Interface" style="font-size:8pt;">s</text> to hide <text styleclass="Element">Function-Blocks</text> from the <text styleclass="Interface">graphic-area</text></li>
+            <li styleclass="HowTo Bulleted">You can use different <text styleclass="Interface">Briefcase FBs</text> to group sets of <text styleclass="Element">Function-Blocks</text>.</li>
+            <li styleclass="HowTo Bulleted">You can name the <text styleclass="Interface">Briefcase FB</text> to help you predict which FBs are &apos;inside&apos; the Briefcase.</li>
+            <li styleclass="HowTo Bulleted"><text styleclass="HowTo Numbered" style="font-style:normal;">You can select and edit each </text><text styleclass="Element">Function-Block</text><text styleclass="HowTo Numbered" style="font-style:normal;"> directly, from inside the </text><text styleclass="Interface">Briefcase FB</text></li>
+            <li styleclass="HowTo Bulleted"><text styleclass="HowTo Numbered" style="font-style:normal;">You can rename each </text><text styleclass="Element">FBs</text><text styleclass="HowTo Numbered" style="font-style:normal;"> directly, from inside the </text><text styleclass="Interface">Briefcase FB</text></li>
+            <li styleclass="HowTo Bulleted"><text styleclass="Body Text">You can put a </text><text styleclass="Interface">Briefcase FB</text><text styleclass="Body Text"> &apos;inside&apos; another </text><text styleclass="Interface">Briefcase FB</text><text styleclass="Body Text">, also.</text></li>
+            <li styleclass="HowTo Bulleted"><text styleclass="Body Text">If you have good naming convention for your </text><text styleclass="Element">FBs</text><text styleclass="Body Text">, then a </text><text styleclass="Interface">Briefcase FB</text><text styleclass="Body Text"> is a good way to help you maintain your model.</text></li>
+          </list>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading3_atocs_">Add Briefcase FB</para>
+    <para styleclass="Normal"><table styleclass="Standard" rowcount="3" colcount="2" style="width:auto; head-row-background-color:#ffffff; alt-row-background-color:none;">
+      <thead style="vertical-align:top">
+        <td style="vertical-align:middle; width:100px;">
+          <para styleclass="VariableName" style="text-align:right;"><image src="MD-Icon-FB-Briefcase.png" scale="100.00%" figurelistinclude="0"><title>Add Briefcase FB</title></image></para>
+        </td>
+        <td style="vertical-align:middle; height:26px;">
+          <para styleclass="Bullets"><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Menu-FB-Modelling" styleclass="T_Menu">Modeling FB toolbar</link><text styleclass="T_Menu"> &gt; Briefcase FB</text></para>
+        </td>
+      </thead>
+      <tr style="vertical-align:top">
+        <td style="vertical-align:middle; width:100px;">
+          <para styleclass="VariableName" style="text-align:right;">Menu : </para>
+        </td>
+        <td>
+          <para styleclass="Body Table"><text styleclass="T_Menu">Add menu &gt; Add Briefcase FB</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:100px;">
+          <para styleclass="VariableName" style="text-align:right;">What to do :</para>
+        </td>
+        <td>
+          <list id="1" type="ol" listtype="decimal" formatstring="&#83;&#84;&#69;&#80;&#32;&#37;&#48;&#58;&#115;&#58;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo STEP" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo STEP">Add a <text styleclass="Element">Briefcase FB</text> to the <text styleclass="Interface">graphic-area</text>:<text styleclass="VariableName">&#32;</text></li>
+          </list>
+          <para styleclass="Body Text HowTo"><table styleclass="PopupTable2" rowcount="1" colcount="1" style="width:100%;">
+            <tr style="vertical-align:top">
+              <td style="border-top:none; border-right:none; border-bottom:none;">
+                <list id="2" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="B Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="B Bullets"><text styleclass="Body Text">Click </text><text styleclass="T_Menu">Modeling FB toolbar &gt; Add Briefcase FB</text><text styleclass="VariableName">&#32;</text></li>
+                  <li styleclass="HowTo Numbered"><text styleclass="Body Text">Click the </text><text styleclass="Interface">graphic-area</text><text styleclass="Body Text">.</text></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Body Text">The <text styleclass="Element">Briefcase FB</text> is now in the <text styleclass="Interface">graphic-area.</text></para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <list id="3" type="ol" listtype="decimal" formatstring="&#83;&#84;&#69;&#80;&#32;&#37;&#48;&#58;&#115;&#58;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="2" styleclass="HowTo STEP" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo STEP"><text styleclass="Body Text">Open the </text><text styleclass="Element">Briefcase FB dialog-box</text><text styleclass="VariableName">&#32;</text></li>
+          </list>
+          <para styleclass="Body Text HowTo"><table styleclass="PopupTable2" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td style="border-top:none; border-right:none; border-bottom:none;">
+                <list id="4" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="B Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="B Bullets"><text style="font-style:normal;">Double-click the</text><text style="font-style:italic;">&#32;</text><text styleclass="Element">Briefcase FB</text> in the <text styleclass="Interface">graphic-area</text> or <text styleclass="Interface">Assembly-Tree</text><text styleclass="VariableName">&#32;</text></li>
+                </list>
+                <para styleclass="VariableName-IT">- or - </para>
+                <para styleclass="SeeAlso">See <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-How-to-Open-a-Dialog-Box">How to Open a Dialog-box</link></para>
+              </td>
+            </tr>
+          </table></para>
+          <list id="5" type="ol" listtype="decimal" formatstring="&#83;&#84;&#69;&#80;&#32;&#37;&#48;&#58;&#115;&#58;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="3" styleclass="HowTo STEP" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo STEP">See <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-FunctionBlock-Briefcase">Briefcase FB dialog-box</link></li>
+          </list>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Normal" style="page-break-before:always;"></para>
+  </body>
+</topic>

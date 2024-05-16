@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" status="Under Construction" modified="2024-01-24T12:00:52.303Z" lasteditedby="44785" version="2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title>Dialog: Pulley</title>
+  <keywords>
+    <keyword>Dialog<keyword>Pulley</keyword></keyword>
+    <keyword>Pulley dialog<keyword>Number-of-Teeth</keyword></keyword>
+  </keywords>
+  <body>
+    <header>
+      <para styleclass="Heading1">Dialog: Pulley</para>
+    </header>
+    <para styleclass="Heading2" style="page-break-before:always;">Pulley</para>
+    <para styleclass="SeeAlso" style="margin-left:0px;">See <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Command-AddPulley">Add Pulley</link></para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;"/></para>
+    <para styleclass="Body Text HowTo">A <text styleclass="Element">Pulley</text> is a wheel with teeth that engage with a toothed-belt. The belt wraps around the <text styleclass="Element">pulley</text>.</para>
+    <para styleclass="Body Text HowTo">The path of the belt is controlled with a <text styleclass="VariableName">sketch-loop</text> </para>
+    <para styleclass="Body Text HowTo">The motion of the belt is controlled with motion-values at the input-connector to a <text styleclass="Element">Motion-Path FB</text>.</para>
+    <para styleclass="Body Text HowTo">Use the <text styleclass="Element">Pulley dialog</text> to edit the <text styleclass="Parameter-Header" style="font-family:Arial; font-size:10pt; font-weight:normal; font-style:normal; text-decoration:none; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">number-of-teeth</text><text styleclass="Body Text"> on a </text><text styleclass="Element">Pulley</text><text styleclass="Body Text">.</text></para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;"/></para>
+    <para styleclass="Heading4 Toggle_atocs_">How to open the Pulley dialog</para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="1" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:240px;">
+          <para styleclass="Image Caption"><image src="MD-GA-DoubleClick-Pulley.png" scale="-99.90%" figurelistinclude="0"><caption>Double-Click a Pulley</caption></image></para>
+        </td>
+        <td>
+          <para styleclass="Body Text">To edit the<text styleclass="Element"> Pulley</text><text style="font-weight:normal; font-style:normal;">:</text></para>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <list id="0" type="ol" listtype="decimal" formatstring="%0:s." format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="B Bullets" style="font-family:'Segoe UI Semibold'; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="B Bullets"><text styleclass="Body Text">Double-click a </text><text styleclass="Element">Pulley </text><text styleclass="Body Text">in the graphics-area or </text><text styleclass="Interface">Assembly-Tree</text><text styleclass="Body Text">.</text><text styleclass="VariableName"> </text></li>
+                </list>
+                <para styleclass="VariableName-IT">OR</para>
+                <list id="1" type="ol" listtype="decimal" formatstring="%0:s." format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="B Bullets" style="font-family:'Segoe UI Semibold'; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="B Bullets"><text styleclass="SeeAlso">See </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-How-to-Open-a-Dialog-Box" styleclass="SeeAlso">How to Open a dialog</link><text styleclass="VariableName">  </text></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Body Text HowTo"></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Body Text">The <text styleclass="Element-Header">Pulley dialog</text> is now open.</para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;"/></para>
+    <para styleclass="Heading2"><anchor id="Pulleydialogbox"><keywords><keyword>Pulley dialog<keyword>Release 10</keyword><keyword>Number of Teeth on Pulley</keyword><keyword>Read Only: Drive or Driven Pulley?</keyword><keyword>Read Only: Tooth Pitch</keyword><keyword>Read Only: Belt Length</keyword></keyword></keywords></anchor><text styleclass="Heading3_atocs_">Pulley dialog</text></para>
+    <para styleclass="Heading3_atocs_"><table styleclass="Default" rowcount="1" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:245px;">
+          <para styleclass="Normal"><image src="MD-DIALOG-PULLEY.ipp" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"><caption>Pulley dialog</caption></image></para>
+        </td>
+        <td>
+          <para styleclass="Separator-Header">Pulley Parameters </para>
+          <para styleclass="ParameterHeader">Number-of-Teeth</para>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Body Text">The <text styleclass="Parameter">number-of-teeth</text> around the circumference of the <text styleclass="Element">Pulley.</text><text styleclass="VariableName"> </text></para>
+                <para styleclass="Body Text">The <text styleclass="Parameter">Number-of-Teeth</text> and <text styleclass="Parameter">Tooth-Pitch</text> (see <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-FunctionBlock-MotionPath" styleclass="Element">Motion-Path FB</link>) control the <text styleclass="Parameter-Header" style="font-family:Arial; font-size:10pt; font-weight:normal; font-style:normal; text-decoration:none; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">P.C.D</text> of the <text styleclass="Element">Pulley </text>and the radius of the <text styleclass="Element">Arc</text> in the sketch-path.</para>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Parameter-Header" style="text-align:left; text-indent:0px; margin-top:0px; margin-right:0px; margin-bottom:0px; margin-left:0px; line-height:1.00; background-color:transparent; white-space:normal; page-break-inside:auto; page-break-after:auto; border:none; tabstops:none;"><text styleclass="ParameterHeader">Pitch-Circle-Diameter (PCD)</text><text style="font-family:Arial; font-size:10pt; font-weight:normal; font-style:normal; text-decoration:none; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;"> -</text><text styleclass="SeeAlso"> read-only</text></para>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Body Text">The diameter of the Pitch-Circle, which is co-radial with the neutral line of the Belt.</para>
+                <para styleclass="Body Text HowTo"><equation styleclass="SeeAlso" font-family="Cambria Math" font-size="22">PCD=\lfrac{\left(#\ Teeth\ on\ Pulley\times Tooth\ Pitch \right)}{\pi}</equation></para>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;"/></para>
+          <para styleclass="Separator-Header">Belt Parameters <text styleclass="Body Text"> </text></para>
+          <para styleclass="Parameter-Header" style="text-align:left; text-indent:0px; margin-top:0px; margin-right:0px; margin-bottom:0px; margin-left:0px; line-height:1.00; background-color:transparent; white-space:normal; page-break-inside:auto; page-break-after:auto; border:none; tabstops:none;"><text styleclass="ParameterHeader">Tooth Pitch</text><text style="font-family:Arial; font-size:10pt; font-weight:normal; font-style:normal; text-decoration:none; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;"> </text><text styleclass="SeeAlso">- read-only </text><text styleclass="Body Text">( Edit with the </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-FunctionBlock-MotionPath" anchor="BeltToothPitch" styleclass="Body Text">Motion-Path dialog</link><text styleclass="Body Text"> )</text></para>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Body Text">The linear distance between two adjacent teeth on the belt.</para>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Parameter-Header" style="text-align:left; text-indent:0px; margin-top:0px; margin-right:0px; margin-bottom:0px; margin-left:0px; line-height:1.00; background-color:transparent; white-space:normal; page-break-inside:auto; page-break-after:auto; border:none; tabstops:none;"><text styleclass="ParameterHeader">Belt Length</text><text styleclass="Body Text"> </text><text styleclass="SeeAlso">- read-only</text></para>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Body Text">The total length of the belt. It is equal to the length of the <text styleclass="VariableName">sketch-loop</text> that wraps around the <text styleclass="Element">Pulleys</text>.  </para>
+                <para styleclass="Body Text">The length of the Belt will change as you edit the <text styleclass="Parameter">Number-of-Teeth</text> on a <text styleclass="Element">Pulley</text>,</para>
+                <para styleclass="Body Text">You can select a dimension that will control the <text styleclass="Parameter-Header" style="font-family:Arial; font-size:10pt; font-weight:normal; font-style:normal; text-decoration:none; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">Belt-Length</text> with the <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-FunctionBlock-MotionPath" anchor="BeltToothPitch" styleclass="Element">Motion-Path dialog</link><text styleclass="Element">.</text></para>
+              </td>
+            </tr>
+          </table></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading3_atocs_">Sprocket Parameters (Apply with Transition-Curve)</para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="1" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Normal">Details coming soon...</para>
+        </td>
+      </tr>
+    </table></para>
+  </body>
+</topic>

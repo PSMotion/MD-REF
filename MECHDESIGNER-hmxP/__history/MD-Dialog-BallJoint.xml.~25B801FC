@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" status="Under Construction" modified="2024-03-23T11:23:26.811Z" lasteditedby="44785" version="2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title>Dialog: Ball-Joint</title>
+  <keywords>
+    <keyword>Ball-Joint dialog<keyword>Ball-Diameter</keyword><keyword>Ball-Mass</keyword><keyword>Ball-Offset</keyword></keyword>
+    <keyword>Dialog<keyword>Ball-Joint</keyword></keyword>
+  </keywords>
+  <body>
+    <header>
+      <para styleclass="Heading1">Dialog: Ball-Joint</para>
+    </header>
+    <para styleclass="Heading2" style="page-break-before:always;">Ball-Joint</para>
+    <para styleclass="SeeAlso">See: <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Command-AddBallJoint">Add Ball-Joint</link>. Tutorial 12: Design a Spatial Mechanism</para>
+    <para styleclass="Normal"><line style="height:1px; color:#343400;" /></para>
+    <para styleclass="Body Text HowTo">Use the <text styleclass="Element">Ball-Joint</text> for spatial mechanisms. </para>
+    <para styleclass="Body Text HowTo"><text styleclass="Body Text">You must add a </text><text styleclass="Element">Ball-Joint</text><text styleclass="Body Text"> to each end of one </text><text styleclass="Element">Part</text><text styleclass="Body Text">. </text></para>
+    <para styleclass="Body Text HowTo"><text styleclass="VariableName">Connecting-Part</text><text styleclass="Body Text"> : the derived name of a </text><text styleclass="Element">Part</text><text styleclass="Body Text"> that has a </text><text styleclass="Element">Ball-Joint</text><text styleclass="Body Text"> at each end.</text></para>
+    <para styleclass="Body Text HowTo">One of the two <text styleclass="Element">Ball-Joint</text> joins the <text styleclass="VariableName">Connecting-Part</text> to a <text styleclass="Element">Part</text> (frequently, a <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-Motion-Driven-Part" styleclass="VariableName">Motion-Part</link>) in a different <text styleclass="Interface">Mechanism-Editor.</text></para>
+    <para styleclass="Body Text HowTo"><text styleclass="Body Text">The other </text><text styleclass="Element">Ball-Joint</text><text styleclass="Body Text">, at the other end of the </text><text styleclass="VariableName">Connecting-Part</text><text styleclass="Body Text">, joins it to a </text><text styleclass="Element">Part</text><text styleclass="Body Text"> in the active </text><text styleclass="Interface">Mechanism-Editor</text><text styleclass="Body Text">.</text></para>
+    <para styleclass="Normal"><line style="height:1px; color:#343400;" /></para>
+    <para styleclass="Heading4 Toggle_atocs_">How to open the Ball-Joint dialog</para>
+    <para styleclass="Body Text"><table styleclass="Default" rowcount="2" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:240px;">
+          <para styleclass="Normal" style="text-align:right;"><image src="MD-GA-Click-BallJoint.png" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td rowspan="2">
+          <para styleclass="Body Text">There are two <text styleclass="Element">Ball-Joints</text>, with one at each end of a <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-Connecting-Part" styleclass="VariableName">Connecting-Part</link>.</para>
+          <para styleclass="Body Text">The <text styleclass="Element">Ball-Joint </text>element symbol may be <text styleclass="VariableName" style="color:#ff0000;">inside</text> the symbol of the <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-Connecting-Part" styleclass="VariableName">Connecting-Part</link>.</para>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <list id="0" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="Bullets">Move your mouse-pointer above the end of the <text styleclass="VariableName">Connecting-Part</text> until the symbol for the <text styleclass="Element">Ball-Joint</text> is <text styleclass="VariableName" style="color:#ff0000;">red</text> - see image<text styleclass="VariableName">. </text></li>
+                  <li styleclass="HowTo Numbered"><text style="font-style:normal;">Click</text> the symbol for the <text styleclass="Element">Ball-Joint</text><image src="Red-14-1.gif" scale="100.00%" figurelistinclude="0"></image>. </li>
+                </list>
+                <para styleclass="HowTo Numbered">The <text styleclass="Element">Ball-Joint</text> element should be in the <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-Selection-Window" styleclass="Interface">Selection-Window</link><text style="font-weight:bold;">&#32;</text></para>
+                <list id="1" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="3" styleclass="Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="Bullets"><text style="font-style:normal;">Right-click</text> the <text styleclass="Element">Ball-Joint</text> in the <text styleclass="Interface">Selection-Window</text><text styleclass="VariableName">&#32;</text></li>
+                  <li styleclass="HowTo Numbered"><text style="font-style:normal;">Click</text>&#32;<text styleclass="VariableName">Edit Element </text>in the shortcut menu.</li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:240px;">
+          <para styleclass="Normal"><image src="MD-SW-BallJoint-Edit.png" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"><title>Ball-Joint in the Selection-Window</title><caption><![CDATA[Ball-Joint in the Selection-Window]]></caption></image></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Body Text">The <text styleclass="Element-Header">Ball-Joint dialog</text> is now open.</para>
+    <para styleclass="Heading3_atocs_"><anchor id="BallJointDialog"></anchor>Ball-Joint dialog</para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="3" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:231px;">
+          <para styleclass="Normal" style="text-align:right;"><image src="MD-Dialog-BallJoint.ipp" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"><caption><![CDATA[Ball-Joint dialog]]></caption></image></para>
+        </td>
+        <td>
+          <para styleclass="ParameterHeader">Ball Diameter</para>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Body Table">Diameter of the Ball symbol <text styleclass="Body Text">in graphics-area</text><text styleclass="Interface">.</text></para>
+                <para styleclass="Body Table"><text styleclass="Parameter">Ball-Diameter</text><text styleclass="Body Text HowTo"> does NOT change the Kinematic-Analysis.</text></para>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="ParameterHeader">Ball Offset (±)</para>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Body Table">Perpendicular distance <text styleclass="BodyText BI">(±)</text> from the <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-Plane-Mechanism" styleclass="Element">Mechanism Plane</link> to the center of the <text styleclass="Element">Ball-Joint.</text></para>
+                <para styleclass="Body Table"><text styleclass="Parameter">Ball-Offset</text><text styleclass="Body Text HowTo"> does change the Kinematic-Analysis.</text></para>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="ParameterHeader">Ball Mass</para>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Body Table">Mass of the <text styleclass="Element">Ball-Joint</text>.</para>
+                <para styleclass="Body Table">Its center-of-mass is coplanar with the <text styleclass="Interface">Mechanism-Plane</text>. even if the <text styleclass="Parameter">Ball-Offset ≠ 0</text>.</para>
+              </td>
+            </tr>
+          </table></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:231px;">
+          <para styleclass="Normal" style="text-align:right;"><image src="MD-GA-BallJoint-Offset.png" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="VariableName">Example of Ball-Offset : Z = 10<text style="font-size:10pt; vertical-align:baseline;">mm</text></para>
+          <para styleclass="Body Text">&lt;&lt;&lt; the image shows the model from the left view - <text styleclass="T_Menu">View toolbar &gt; View Left</text>&#32;<text styleclass="VariableName">(Shortcut : F7).</text></para>
+          <para styleclass="HowTo Bulleted"><image src="Red-14-1b.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image>&#32;<text styleclass="Element">Ball-Joint</text><text styleclass="Body Text HowTo"> : on the </text><text styleclass="Interface">Mechanism-Plane</text><text styleclass="Body Text HowTo"> when </text><text styleclass="Parameter">Ball-Offset</text><text styleclass="Body Text HowTo"> = 0</text><text styleclass="Body Text HowTo" style="font-size:10pt; vertical-align:baseline;">mm</text><text styleclass="Body Text HowTo">.</text></para>
+          <para styleclass="HowTo Bulleted"><image src="Red-14-2.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image> In the image the<text styleclass="Body Text HowTo">&#32;</text><text styleclass="Parameter">Ball-Offset</text><text styleclass="Body Text HowTo"> = +</text><text styleclass="VariableName">10</text><text styleclass="VariableName" style="font-size:10pt; vertical-align:baseline;">mm</text><text styleclass="Body Text"> in the +Z-axis direction</text><text styleclass="Body Text HowTo">.</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td colspan="2">
+          <para styleclass="VariableName">When to use the <text styleclass="Parameter-Header" style="font-family:Arial; font-size:10pt; font-weight:normal; font-style:normal; text-decoration:none; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">Ball-Offset</text> parameter?</para>
+          <para styleclass="Body Text - bit bit bigger2"><text styleclass="Body Text">The symbols of all other Kinematic elements are on the </text><text styleclass="Interface">Mechanism-Plane</text><text styleclass="Body Text">. However, the center of a </text><text styleclass="Element">Ball-Joint</text><text styleclass="Body Text"> is frequently </text><text styleclass="VariableName-IT" style="color:#ff0000;">not</text><text styleclass="Body Text"> on the </text><text styleclass="Interface">Mechanism-Plane. </text><text styleclass="Body Text HowTo">The kinematic-analysis is correct only when the distance to the center of the </text><text styleclass="Element">Ball-Joint</text><text styleclass="Body Text HowTo"> from the </text><text styleclass="Interface">Mechanism-Plane </text><text styleclass="Body Text HowTo">is also correct.</text></para>
+          <para styleclass="SeeAlso">See also: <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-Ball-Joint-Configurations">Ball-Joint Configurations</link></para>
+        </td>
+      </tr>
+    </table></para>
+  </body>
+</topic>

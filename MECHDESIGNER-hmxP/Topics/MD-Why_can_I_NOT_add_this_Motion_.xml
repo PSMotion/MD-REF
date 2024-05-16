@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" status="Under Construction" modified="2023-06-01T10:55:38.900+01:00" lasteditedby="Adam" version="2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title>I cannot add an Angle (or Linear) Motion Dimension FB. Why?</title>
+  <keywords>
+    <keyword>Motion Dimension FB<keyword>Cannot Add!</keyword><keyword>Problems</keyword></keyword>
+  </keywords>
+  <body>
+    <header>
+      <para styleclass="Heading1">I cannot add an Angle (or Linear) Motion-Dimension FB. Why?</para>
+    </header>
+    <para styleclass="Heading4 Toggle_atocs_">Motion-Dimension: Commands and Elements.</para>
+    <para styleclass="Body Text HowTo">You must select three elements when you add a <text styleclass="Element">Motion-Dimension FB</text> as a <text styleclass="VariableName">Rocker</text>. They are:</para>
+    <list id="0" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+      <li styleclass="HowTo Bulleted">A <text styleclass="Element">Pin-Joint</text>...</li>
+      <li styleclass="HowTo Bulleted">...followed by two <text styleclass="Element">Line</text> sketch-elements.</li>
+    </list>
+    <para styleclass="Body Text">However, you may find you cannot select one of the <text styleclass="Element">Lines</text> to complete the command. </para>
+    <para styleclass="Body Text">This can happen when:</para>
+    <list id="1" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+      <li styleclass="HowTo Bulleted">there is already a <text styleclass="Element">Motion-Dimension FB</text> at the <text styleclass="Element">Pin-Joint</text><text styleclass="Body Text">&#32;</text></li>
+      <li styleclass="HowTo Bulleted">the <text styleclass="Element">Point</text> at the <text styleclass="Element">Pin-Joint</text> is not a child to the <text styleclass="Element">Line</text> that radiates from the <text styleclass="Element">Pin-Joint</text>.</li>
+      <li styleclass="HowTo Bulleted">the <text styleclass="Element">Pin-Joint</text> that you select is not a <text styleclass="Element">Pin-Joint</text> between the two <text styleclass="Element">Lines</text> you want to select.</li>
+    </list>
+    <para styleclass="Body Text">Read this topic: <text styleclass="SeeAlso">&#32;</text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Command-AddFBMotionDimension" anchor="AddMotDimeSpecial" styleclass="SeeAlso">Add Motion-Dimension</link><text styleclass="SeeAlso">.</text></para>
+  </body>
+</topic>

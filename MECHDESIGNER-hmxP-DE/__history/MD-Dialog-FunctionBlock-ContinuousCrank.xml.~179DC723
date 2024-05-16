@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" modified="2022-05-10T12:57:04.236+01:00" lasteditedby="Adam" version="2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title>Dialog: Funktions-Block: Kontinuierliche Kurbel</title>
+  <keywords>
+    <keyword>Continuous-Crank dialog<keyword>Rotate Crank - inverse-kinematics</keyword></keyword>
+    <keyword>Dialog<keyword>Function-Block : Continuous-Crank</keyword></keyword>
+    <keyword>Inverse-Kinematics<keyword>Continuous-Crank</keyword></keyword>
+  </keywords>
+  <body>
+    <header>
+      <para styleclass="Heading1">Dialog: Funktions-Block: Kontinuierliche Kurbel</para>
+    </header>
+    <para styleclass="Heading2">Kontinuierliche Kurbel</para>
+    <para styleclass="SeeAlso">Siehe auch <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Command-FB-Continuous-Crank">Kontinuierliche Kurbel hinzufügen</link></para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="1" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Table">Es kommt häufig vor, dass eine Bewegung für ein Werkzeug entworfen wird, aber das Werkzeug nicht direkt angetrieben wird. Das Werkzeug wird von einem anderen Teil eines Mechanismus angetrieben. Die Bewegung und die Kräfte werden durch den Mechanismus von einem Antriebsteil auf das Werkzeugteil übertragen.</para>
+          <para styleclass="Body Table">Bei einem Kurvengetriebe ist der Antriebsteil eine oszillierende Kurvenrolle, die durch eine Kurvenscheibe bewegt wird.</para>
+          <para styleclass="Body Table">Es gibt auch den Fall, dass das Werkzeug von einem Antriebsteil angetrieben wird, das sich vollständig dreht. Dies ist ein Sonderfall. </para>
+          <para styleclass="Body Table">Damit dies möglich ist, muss der Antriebsteil genau die richtige Länge haben und eine ungleichmäßige Drehzahl aufweisen.</para>
+          <para styleclass="Body Table">Das Antriebsteil wird zu einer Kurbel, die sich kontinuierlich in eine Richtung dreht, während sich das Werkzeugteil mit Ihrem Bewegungsentwurf bewegt.</para>
+          <para styleclass="Body Table">Dies ist eine Anwendung des <text styleclass="Element">FB &quot;Kontinuierliche Kurbel&quot;</text>.</para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="Body Text CAP-ITALICS" style="text-align:left; text-indent:0px; margin-top:0px; margin-right:0px; margin-bottom:0px; margin-left:0px; line-height:1.00; background-color:transparent; white-space:normal; page-break-inside:auto; page-break-after:auto; border:none; tabstops:none;"><text styleclass="Heading3_atocs_">Dialogfeld &quot;Kontinuierliche Kurbel FB&quot; öffnen </text></para>
+    <para styleclass="Body Text"><table styleclass="Standard" rowcount="1" colcount="2" style="width:auto; head-row-background-color:#ffffff; alt-row-background-color:none;">
+      <thead style="vertical-align:top">
+        <td style="width:40px; border-right:none;">
+          <para styleclass="Body Text"><image src="MD-GA-FB-ContinuousCrank.png" scale="99.99%" width="146" height="144" style="font-size:8pt;" figurelistinclude="0"></image></para>
+        </td>
+        <td style="border-left:none;">
+          <para styleclass="Body Text">Bearbeiten<text styleclass="VariableName">&#32;</text><text style="font-weight:normal; font-style:normal;">die </text><text styleclass="Element">Continuous-Crank FB</text><text style="font-weight:normal; font-style:normal;">:</text></para>
+          <para styleclass="Body Text HowTo"><table styleclass="PopupTable2" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td style="border-top:none; border-right:none; border-bottom:none;">
+                <list id="0" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="B Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="B Bullets"><text styleclass="Body Text">Doppelklick auf den </text><text styleclass="Element">Continuous-Crank FB</text> im <text styleclass="Interface">Grafikbereich</text><text styleclass="VariableName">&#32;</text></li>
+                </list>
+                <para styleclass="VariableName-IT">- oder -</para>
+                <list id="1" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="B Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="B Bullets"><text styleclass="SeeAlso">Siehe </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-How-to-Open-a-Dialog-Box" styleclass="SeeAlso">Wie öffne ich ein Dialogfeld</link>?<text styleclass="VariableName">&#32;</text></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Body Text">Das <text styleclass="Element">Dialogfeld &quot;Kontinuierliche Kurbel&quot;</text> ist nun geöffnet.</para>
+        </td>
+      </thead>
+    </table></para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="Heading3_atocs_" style="text-indent:-18px; margin-left:18px;"><anchor id="DIALOG-CONTINUOUSCRANK"><keywords><keyword>Continuous-Crank dialog-box</keyword></keywords></anchor>Continuous-Crank dialog-box</para>
+    <para styleclass="Body Text"><table styleclass="Default" rowcount="3" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:287px;">
+          <para styleclass="Normal"><image src="MD-DIALOG-FB-CONTINUOUS-CRANK.ipp" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <list id="2" type="ol" listtype="decimal" formatstring="&#83;&#84;&#69;&#80;&#32;&#37;&#48;&#58;&#115;&#58;&#32;" format-charset="DEFAULT_CHARSET" levelreset="false" legalstyle="false" startfrom="1" styleclass="HowTo STEP" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo STEP"><text styleclass="VariableName">Kurbelverhalten und Richtung auswählen </text></li>
+          </list>
+          <para styleclass="Parameter-Header">Verhalten bei Kurbelwellen</para>
+          <para styleclass="Body Text HowTo"><table styleclass="PopupTable2" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Body Table"><text styleclass="Parameter">KONTINUIERLICH</text><text styleclass="Bullets">: Das </text><text styleclass="Element">Teil</text><text styleclass="Bullets"> dreht sich kontinuierlich.</text></para>
+                <para styleclass="Body Table"><text styleclass="Parameter">Umkehrung</text><text styleclass="HowTo Bulleted">: Das </text><text styleclass="Element">Teil</text><text styleclass="HowTo Bulleted"> dreht sich um ~180º und kehrt dann zu ~0º zurück.</text></para>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Parameter-Header">Richtung der Kurbel<text styleclass="Body Text">&#32;</text></para>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Body Table">Wenn <text styleclass="Parameter">Crank Behaviour</text>&#32;<text styleclass="Parameter">kontinuierlich</text>ist <text styleclass="Parameter">,</text><text styleclass="Body Text"> dann:</text></para>
+                <para styleclass="Body Text HowTo"><text styleclass="Parameter">Gegen den Uhrzeigersinn - </text>das <text styleclass="Element">Teil</text> dreht sich im Gegenuhrzeigersinn.</para>
+                <para styleclass="Body Text HowTo"><text styleclass="Parameter">Im Uhrzeigersinn</text><text styleclass="HowTo Bulleted"> - das </text><text styleclass="Element">Teil</text><text styleclass="HowTo Bulleted"> wird im Uhrzeigersinn gedreht</text></para>
+                <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+                <para styleclass="Body Table">Wenn das <text styleclass="Parameter">Verhalten der Kurbel</text>&#32;<text styleclass="Parameter">rückwärts gerichtet</text> ist, können Sie den Verschluss der Kurbel ändern, siehe <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Command-Change-Dyad-Closure">Verschluss der Kurbel ändern</link>.</para>
+              </td>
+            </tr>
+          </table></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:287px;">
+          <para styleclass="Normal"><image src="MD-FB-CONTINUOUSE-CRANK-0.ipp" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td rowspan="2">
+          <list id="3" type="ol" listtype="decimal" formatstring="&#83;&#84;&#69;&#80;&#32;&#37;&#48;&#58;&#115;&#58;&#32;" format-charset="DEFAULT_CHARSET" levelreset="false" legalstyle="false" startfrom="2" styleclass="HowTo STEP" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo STEP"><text styleclass="VariableName">Aktivieren Sie das Feld Nicht ausgewählt </text></li>
+          </list>
+          <para styleclass="Body Text HowTo"><table styleclass="PopupTable2" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td style="border-top:none; border-right:none; border-bottom:none;">
+                <list id="4" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="B Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="B Bullets"><text style="font-style:normal;">Klicken Sie auf</text> das Kästchen mit der Aufschrift <text styleclass="VariableName">Nicht ausgewählt.</text></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Separator">Die Box ist nun orange<text styleclass="Bullets"> und Sie können ein </text><text styleclass="Element">Teil</text><text styleclass="Bullets"> auswählen .</text></para>
+          <list id="5" type="ol" listtype="decimal" formatstring="&#83;&#84;&#69;&#80;&#32;&#37;&#48;&#58;&#115;&#58;&#32;" format-charset="DEFAULT_CHARSET" levelreset="false" legalstyle="false" startfrom="3" styleclass="HowTo STEP" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo STEP"><text styleclass="VariableName">Klicken Sie auf ein Teil, das die Dauerkurbel sein soll</text></li>
+          </list>
+          <para styleclass="Body Text HowTo"><table styleclass="PopupTable2" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td style="border-top:none; border-right:none; border-bottom:none;">
+                <list id="6" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="B Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="B Bullets"><text style="font-style:normal;">Klicken Sie auf</text> ein <text styleclass="Element">Teil</text> im <text styleclass="Interface">Grafikbereich</text><text styleclass="Body Text"> oder im </text><text styleclass="Interface">Assembly-Tree</text><text styleclass="VariableName">. </text></li>
+                </list>
+                <para styleclass="Body Table">Das <text styleclass="Element">Teil mit</text> der kontinuierlichen Kurbel muss mit einem <text styleclass="Element">Zapfen verbunden</text> sein, der es mit dem <text styleclass="Element">Basisteil</text> verbindet.</para>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Body Text">Das <text styleclass="Element">Teil</text> ändert sofort seine Länge, so dass es sich kontinuierlich drehen oder um ~180º oszillieren kann<text styleclass="HowTo Bulleted">. Wenn es ein Problem gibt - siehe </text><text styleclass="VariableName">Meldung unten im Dialog</text><text styleclass="HowTo Bulleted">.</text></para>
+          <list id="7" type="ol" listtype="decimal" formatstring="&#83;&#84;&#69;&#80;&#32;&#37;&#48;&#58;&#115;&#58;&#32;" format-charset="DEFAULT_CHARSET" levelreset="false" legalstyle="false" startfrom="4" styleclass="HowTo STEP" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo STEP">Bestätigen Sie, dass das Verhalten Ihren Erwartungen entspricht.</li>
+          </list>
+          <para styleclass="Body Text HowTo"><table styleclass="PopupTable2" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td style="border-top:none; border-right:none; border-bottom:none;">
+                <list id="8" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="B Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; color:#333399;">
+                  <li styleclass="B Bullets"><text styleclass="T_Menu">Symbolleiste &quot;Ausführen&quot; &gt; Fortlaufend zyklieren</text><text style="font-style:normal;"> (</text><text styleclass="VariableName">ALT+C</text><text styleclass="Parameter-Header">)</text></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+          <list id="9" type="ol" listtype="decimal" formatstring="&#83;&#84;&#69;&#80;&#32;&#37;&#48;&#58;&#115;&#58;&#32;" format-charset="DEFAULT_CHARSET" levelreset="false" legalstyle="false" startfrom="5" styleclass="HowTo STEP" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo STEP">Klicken Sie auf <image src="OK-tiny-11-15.png" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Image Caption">&#32;</text> , um das Dialogfeld zu schließen.</li>
+          </list>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="Body Table"><text styleclass="Heading4 Toggle_atocs_">Meldungen am unteren Rand des Dialogs: </text></para>
+          <para styleclass="Body Table">Wenn Sie ein <text styleclass="Element">Teil</text> als kontinuierliche Kurbel auswählen, wird eine Meldung angezeigt.</para>
+          <para styleclass="Body Table"><table styleclass="PopupTable2" rowcount="4" colcount="2" style="border-width:0px; border-spacing:0px; border-collapse:collapse; cell-border-width:1px; border-color:#993300; border-style:solid;">
+            <tr style="vertical-align:top">
+              <td style="width:180px;">
+                <para styleclass="VariableName-small">Nachricht</para>
+              </td>
+              <td>
+                <para styleclass="VariableName-small">Bedeutung</para>
+              </td>
+            </tr>
+            <tr style="vertical-align:top">
+              <td style="width:180px;">
+                <para styleclass="Popup Box">Gültig</para>
+              </td>
+              <td>
+                <para styleclass="Popup Box">Das Teil kann eine kontinuierliche Kurbel sein</para>
+              </td>
+            </tr>
+            <tr style="vertical-align:top">
+              <td style="width:180px;">
+                <para styleclass="Popup Box">Zuweisung des Pivot-Punktes fehlgeschlagen</para>
+              </td>
+              <td>
+                <para styleclass="Popup Box">Wir konnten die Drehachse nicht finden.</para>
+              </td>
+            </tr>
+            <tr style="vertical-align:top">
+              <td style="width:180px;">
+                <para styleclass="Popup Box">Unmögliche Kurbellänge:</para>
+                <para styleclass="Popup Box">Die Geometrie ist inkonsistent.</para>
+              </td>
+              <td>
+                <para styleclass="Popup Box">Dies ist oft der Fall, wenn sich der Motion-Part nicht bewegt, und daher muss die Länge der Kurbel null (0) sein.</para>
+              </td>
+            </tr>
+          </table></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:287px;">
+          <para styleclass="Normal"><image src="MD-FB-CONTINUOUSE-CRANK-1.ipp" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+      </tr>
+    </table></para>
+  </body>
+</topic>

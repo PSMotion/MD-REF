@@ -1,0 +1,402 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" status="Under Construction" modified="2023-02-02T19:11:42.610Z" lasteditedby="Adam" version="2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title>Add Gear-Pair</title>
+  <keywords>
+    <keyword>Add<keyword>Gear-Pair</keyword></keyword>
+    <keyword>Line-of-Centres</keyword>
+    <keyword>Machine elements toolbar<keyword>Add Gear-Pair</keyword></keyword>
+    <keyword>Menu &gt; Add &gt; Mechanism Menu<keyword>Add Gear-Pair</keyword></keyword>
+  </keywords>
+  <body>
+    <header>
+      <para styleclass="Heading1">Add Gear-Pair</para>
+    </header>
+    <para styleclass="Heading2" style="page-break-before:always;">Add Gear-Pair</para>
+    <para styleclass="SeeAlso">See also: <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-GearPair">Gear-Pair dialog-box</link></para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="Heading4 Toggle_atocs_">Terminology and definitions:</para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="7" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:137px;">
+          <para styleclass="Popup Box-Elements" style="text-align:right;">Gear-Pair : </para>
+        </td>
+        <td style="width:476px;">
+          <para styleclass="Popup Box">Two gear wheels with gear-teeth that are in mesh. When one gear rotates the other gear must also rotate. The angular velocity of each gear is related to the number-of-teeth on each gear-wheel.</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:137px;">
+          <para styleclass="VariableName-small" style="text-align:right;">Driving Part : </para>
+        </td>
+        <td style="width:476px;">
+          <para styleclass="Popup Box">The rotating-<text styleclass="Popup Box-Elements">Part</text> that is <text styleclass="VariableName-small">kinematically-defined</text>, and whose motion is defined (even if it is stationary) before you do <text styleclass="T_Menusmall">Add Gear-Pair</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:137px;">
+          <para styleclass="VariableName-small" style="text-align:right;">Driven Part : </para>
+        </td>
+        <td style="width:476px;">
+          <para styleclass="Popup Box">The rotating-<text styleclass="Popup Box-Elements">Part</text> whose motion is defined after you do <text styleclass="T_Menusmall">Add Gear-Pair</text> by the <text styleclass="VariableName-small">Driven-Part</text>, the <text styleclass="Parameter-Popup">Number-of-Teeth</text> on each Gear in the Gear-Pair, and the <text styleclass="Parameter-Popup">Mesh</text>.</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:137px;">
+          <para styleclass="Popup Box2" style="text-align:right;">External Mesh : </para>
+        </td>
+        <td style="width:476px;">
+          <para styleclass="Popup Box">The gears have teeth that diverge out from their centers-of-rotation.</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:137px;">
+          <para styleclass="Popup Box2" style="text-align:right;">Internal Mesh : </para>
+        </td>
+        <td style="width:476px;">
+          <para styleclass="Popup Box">One of the gears has teeth that converge to its center-of-rotation.</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:137px;">
+          <para styleclass="Popup Box2" style="text-align:right;">Simple Gear-Pair : </para>
+        </td>
+        <td style="width:476px;">
+          <para styleclass="Popup Box">Two gears that rotate about fixed centers.</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:137px;">
+          <para styleclass="Popup Box2" style="text-align:right;">Epicyclic Gear-Pair : </para>
+        </td>
+        <td style="width:476px;">
+          <para styleclass="Popup Box">One gear orbits around the center of the other gear.</para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading4 Toggle_atocs_">Kinematic state <text style="color:#ff0000;">before</text> you do Add Gear-Pair</para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="1" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Popup Box">There are three <text styleclass="Popup Box-Elements">Parts. </text></para>
+          <para styleclass="Popup Box">There is a <text styleclass="Popup Box-Elements">Line</text> in a <text styleclass="Popup Box-Elements">Part</text> that is <text styleclass="VariableName-small">kinematically-defined</text>. The <text styleclass="Popup Box-Elements">Line</text> must have a dimension to define its length.</para>
+          <para styleclass="Popup Box">A <text styleclass="Popup Box-Elements">Part</text> is joined<text styleclass="Popup Box-Elements">&#32;</text>with a <text styleclass="Popup Box-Elements">Pin-Joint</text> to each end of the <text styleclass="Popup Box-Elements">Line</text> - two <text styleclass="VariableName-small">rotating-Parts</text>.</para>
+          <para styleclass="Popup Box">One <text styleclass="VariableName-small">rotating-Part</text> is <text styleclass="VariableName-small">kinematically-defined.</text>&#32;</para>
+          <para styleclass="Popup Box">The other <text styleclass="VariableName-small">rotating-Part</text> is <text styleclass="VariableName-small" style="color:#ff0000;">not</text>&#32;<text styleclass="VariableName-small">kinematically-defined</text>&#32;<text styleclass="VariableName-small" style="color:#ff0000;">before</text> you do <text styleclass="T_Menusmall">Add Gear-Pair</text>. The three <text styleclass="Popup Box-Elements">Parts</text> have one <text styleclass="VariableName-small">degree-of-freedom</text>.</para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading4 Toggle_atocs_">Kinematic state <text style="color:#ff0000;">after</text> you do Add Gear-Pair</para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="1" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Popup Box"><text styleclass="T_Menusmall">Add Gear-Pair</text> removes the one degree-of-freedom from the three <text styleclass="Popup Box-Elements">Parts</text>.</para>
+          <para styleclass="Popup Box">The motion of <text styleclass="VariableName-small">Driven Part</text> is found from the <text styleclass="Parameter-Popup">number-of-teeth</text> , and mesh on each gear-wheel in the <text styleclass="Popup Box-Elements">Gear-Pair</text>. </para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading3_atocs_">Kinematics-Tree of Gear-Pair</para>
+    <para styleclass="Body Text HowTo"><text styleclass="T_Menu">Add Gear-Pair</text><text styleclass="Body Text"> removes </text><text styleclass="VariableName" style="color:#ff0000;">one</text><text styleclass="Body Text"> degrees-of-freedom.</text></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="1" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:236px;">
+          <para styleclass="Image Caption"><image src="MD-ADD-GEARPAIR-KINEMATICS-TREE.ipp" scale="100.00%" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="T_Menu">Gear-Pair</para>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Body Table"><text styleclass="VariableName" style="color:#ff0000;">Before</text> you do <text styleclass="T_Menu">Add Gear-Pair</text>, there is <text styleclass="VariableName">rotating-Part</text> that is <text styleclass="Body Text">kinematically-defined, and a </text><text styleclass="VariableName">rotating-Part</text><text styleclass="Body Text"> that has</text>&#32;<text styleclass="VariableName" style="color:#ff0000;">one</text> degree-of-freedom.</para>
+                <para styleclass="Body Text"><text styleclass="VariableName" style="color:#ff0000;">After</text> you do <text styleclass="T_Menu">Add Gear-Pair,</text> the rotating-Part that had <text styleclass="VariableName" style="color:#ff0000;">one</text> degree-of-freedom becomes a <text styleclass="VariableName">Geared Rocker </text>and it is also <text styleclass="VariableName">kinematically-defined</text>.</para>
+              </td>
+            </tr>
+          </table></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading3_atocs_">Preparation</para>
+    <para styleclass="Heading4 Toggle_atocs_2">Simple Gear-Pair</para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="1" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:236px;">
+          <para styleclass="Normal"><image src="MD-ADD-GEARPAIR-0.ipp" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="Body Text">Three(3) <text styleclass="Element-Header">Parts</text>, three(3) <text styleclass="Element-Header">Lines</text>, two(2) <text styleclass="Element-Header">Pin-Joints</text> ...</para>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Body Table"><text styleclass="Element">Line</text><image src="Red-14-1.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Body Text"> &amp; </text><text styleclass="Element">Line</text><image src="Red-14-3.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Image Caption">&#32;</text><text styleclass="Body Text">are in </text><text styleclass="VariableName" style="color:#003700;">Green</text><text styleclass="Body Text">&#32;</text><text styleclass="Element">Parts</text><text styleclass="Body Text"> that are </text><text styleclass="Interface">kinematically-defined </text></para>
+                <para styleclass="Body Table"><text styleclass="Element">Line</text><image src="Red-14-2.gif" scale="100.00%" styleclass="Element" figurelistinclude="0"></image><text styleclass="Body Text"> is in a </text><text styleclass="Element">Part</text><text styleclass="Body Text"> that is </text><text styleclass="VariableName" style="color:#ff0000;">not</text><text styleclass="Body Text">&#32;</text><text styleclass="Interface">kinematically-defined</text></para>
+                <para styleclass="Body Table"><text styleclass="Element">Lines</text><image src="Red-14-1.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><image src="Red-14-2.gif" scale="100.00%" styleclass="Element" figurelistinclude="0"></image><text styleclass="Image Caption">&#32;</text><text styleclass="Body Text">are joined with </text><text styleclass="Element">Pin-Joints</text><text styleclass="Body Text"> to each end of </text><text styleclass="Element">Line</text><image src="Red-14-3.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+                <para styleclass="Body Table"><text styleclass="Element">Line</text><image src="Red-14-3.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Element">&#32;</text><text styleclass="Body Text">has a </text><text styleclass="Element">dimension</text><image src="Red-14-4.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Element">&#32;</text><text styleclass="Body Text">(in the </text><text styleclass="Interface">Part-Editor</text><text styleclass="Body Text">)</text></para>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Body Table"><text styleclass="Element">Line</text><image src="Red-14-2.gif" scale="100.00%" styleclass="Element" figurelistinclude="0"></image><text styleclass="Body Text"> is </text><text styleclass="Interface">kinematically-defined</text><text styleclass="Body Text HowTo">&#32;</text><text styleclass="VariableName" style="color:#ff0000;">after</text><text styleclass="Body Text HowTo"> you do</text><text styleclass="T_Menu"> Add Gear-Pair.</text></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading4 Toggle_atocs_2">Epicyclic Gear-Pairs</para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="1" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:236px;">
+          <para styleclass="Normal"><image src="MD-ADD-GEARPAIR--EPI-0.ipp" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="Body Text">Three(3) <text styleclass="Element-Header">Parts</text>, three(3) <text styleclass="Element-Header">Lines</text>, two(2) <text styleclass="Element-Header">Pin-Joints</text> ...</para>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Body Table"><text styleclass="Element">Line</text><image src="Red-14-1.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Body Text"> &amp; </text><text styleclass="Element">Line</text><image src="Red-14-3.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Image Caption">&#32;</text><text styleclass="Body Text">are in </text><text styleclass="Element">Parts</text>&#32;<text styleclass="Body Text">that are </text><text styleclass="Interface">kinematically-defined</text></para>
+                <para styleclass="Body Table"><text styleclass="Element">Line</text><image src="Red-14-2.gif" scale="100.00%" styleclass="Element" figurelistinclude="0"></image><text styleclass="Body Text"> is in a </text><text styleclass="Element">Part</text><text styleclass="Body Text"> that is </text><text styleclass="VariableName" style="color:#ff0000;">not</text><text styleclass="Body Text">&#32;</text><text styleclass="Interface">kinematically-defined</text><text styleclass="Body Text">. </text></para>
+                <para styleclass="Body Table"><text styleclass="Element">Lines</text><image src="Red-14-1.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><image src="Red-14-2.gif" scale="100.00%" styleclass="Element" figurelistinclude="0"></image><text styleclass="Image Caption">&#32;</text><text styleclass="Body Text">are joined with </text><text styleclass="Element">Pin-Joints</text><text styleclass="Body Text"> to each end of </text><text styleclass="Element">Line</text><image src="Red-14-3.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+                <para styleclass="Body Table"><text styleclass="Element">Line</text><image src="Red-14-3.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Element">&#32;</text><text styleclass="Body Text">has a </text><text styleclass="Element">dimension</text><image src="Red-14-4.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Body Text"> (in the </text><text styleclass="Interface">Part-Editor</text><text styleclass="Body Text">)</text></para>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Body Table"><text styleclass="Element">Line</text><image src="Red-14-2.gif" scale="100.00%" styleclass="Element" figurelistinclude="0"></image><text styleclass="Body Text"> (and the </text><text styleclass="Element">Part</text><text styleclass="Body Text">) is </text><text styleclass="Interface">kinematically-defined</text><text styleclass="Body Text HowTo">&#32;</text><text styleclass="VariableName" style="color:#ff0000;">after</text><text styleclass="Body Text HowTo"> you do</text><text styleclass="T_Menu"> Add Gear-Pair.</text></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading3_atocs_">Add Simple Gear-Pair</para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="5" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:30px;">
+          <para styleclass="Normal"><image src="MD-CM-AddGearPair-0.png" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <list id="0" type="ol" listtype="decimal" formatstring="&#83;&#84;&#69;&#80;&#32;&#37;&#48;&#58;&#115;&#58;&#32;" format-charset="DEFAULT_CHARSET" levelreset="false" legalstyle="false" startfrom="1" styleclass="HowTo STEP" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo STEP">Click Add Gear-Pair <text styleclass="VariableName"> (Simple)</text></li>
+          </list>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="2">
+            <tr style="vertical-align:top">
+              <td style="vertical-align:bottom; width:39px;">
+                <para styleclass="Image Caption"><image src="MD-Icon-AddGearPair.png" scale="-99.90%" styleclass="VariableName-IT" figurelistinclude="0"><title>Add Rack-Pinion Ball-Screw icon</title></image></para>
+              </td>
+              <td>
+                <list id="1" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Body Table" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="Body Table"><text styleclass="Interface">Mechanism-Editor:</text><text styleclass="Body Text">&#32;</text><text styleclass="T_Menu">Add menu &gt; Mechanism menu &#160;&gt; Add Gear-Pair</text><text styleclass="VariableName">&#32;</text></li>
+                </list>
+                <para styleclass="Body Text"><text style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">OR</text></para>
+                <list id="2" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="B Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="B Bullets"><text styleclass="Interface">Mechanism-Editor: </text><text styleclass="T_Menu">Machine-elements toolbar &gt; Add Gear-Pair</text><text styleclass="VariableName">&#32;</text></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Body Text">There are four elements to select in the <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-Command-Manager" styleclass="Interface">Command-Manager</link></para>
+          <para styleclass="Body Text"></para>
+          <para styleclass="Body Text"></para>
+          <para styleclass="Body Text"></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:30px;">
+          <para styleclass="Normal"><image src="MD-ADD-GEARPAIR-1.ipp" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <list id="3" type="ol" listtype="decimal" formatstring="&#83;&#84;&#69;&#80;&#32;&#37;&#48;&#58;&#115;&#58;&#32;" format-charset="DEFAULT_CHARSET" levelreset="false" legalstyle="false" startfrom="2" styleclass="HowTo STEP" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo STEP"><text styleclass="VariableName">Select the four elements </text></li>
+          </list>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <list id="4" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Body Table" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="Body Table"><text styleclass="Interface">Mechanism-Editor</text>&#32;<text styleclass="Body Text">&gt; Click </text><text styleclass="Element">Line</text><image src="Red-14-1.gif" scale="100.00%" styleclass="Body Text Howindent4bullets" figurelistinclude="0"></image><text styleclass="VariableName">&#32;</text></li>
+                  <li styleclass="Body Table"><text styleclass="Interface">Mechanism-Editor</text>&#32;<text styleclass="Body Text">&gt; Click </text><text styleclass="Element">Line</text><image src="Red-14-2.gif" scale="100.00%" styleclass="Body Text Howindent4bullets" figurelistinclude="0"></image></li>
+                  <li styleclass="Body Table"><text styleclass="Interface">Mechanism-Editors </text><text styleclass="Body Text Howindent4bullets">: Click </text><text styleclass="Element">Line</text><image src="Red-14-3.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="HowTo STEP"><text styleclass="VariableName">&#32;</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:30px;">
+          <para styleclass="Normal"><image src="MD-ADD-GEARPAIR-2.ipp" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <list id="5" type="ol" listtype="decimal" formatstring="&#83;&#84;&#69;&#80;&#32;&#37;&#48;&#58;&#115;&#58;&#32;" format-charset="DEFAULT_CHARSET" levelreset="false" legalstyle="false" startfrom="2" styleclass="HowTo STEP" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo STEP"><text styleclass="VariableName">continued... </text></li>
+          </list>
+          <para styleclass="Body Text HowTo">The <text styleclass="Interface">Part-Editor</text> opens automatically.</para>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <list id="6" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="4" styleclass="Body Table" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="Body Table"><text styleclass="Interface">Part-Editor:</text> &#160;Click the <text styleclass="Element">Dimension</text><image src="Red-14-4.gif" scale="100.00%" figurelistinclude="0"></image><text styleclass="VariableName"> &#160;</text></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Body Text HowTo">The <text styleclass="Interface">Part-Editor</text> closes automatically.</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:30px;">
+          <para styleclass="Normal"><image src="MD-CM-AddGearPair-full.png" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td rowspan="2">
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <list id="7" type="ol" listtype="decimal" formatstring="&#83;&#84;&#69;&#80;&#32;&#37;&#48;&#58;&#115;&#58;&#32;" format-charset="DEFAULT_CHARSET" levelreset="false" legalstyle="false" startfrom="3" styleclass="HowTo STEP" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo STEP"><text styleclass="VariableName">Complete the Command </text></li>
+          </list>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <list id="8" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="5" styleclass="Body Table" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="Body Table"><text styleclass="Interface">Command-Manager:</text> &#160;<text styleclass="HowTo STEP">Click </text><image src="OK-tiny-11-15.png" scale="100.00%" styleclass="HowTo STEP" figurelistinclude="0"></image><text styleclass="HowTo STEP"> in the </text><text styleclass="Interface">Command-Manager</text><text styleclass="HowTo STEP">.</text><text styleclass="VariableName">&#32;</text></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="HowTo STEP"></para>
+          <para styleclass="VariableName"><text styleclass="Interface2">Result</text>: </para>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Body Table">The <text styleclass="Element">Gear-Pair</text> is in the <text styleclass="Interface">graphic-area</text>.</para>
+                <para styleclass="Body Text">The default <text styleclass="Element">Gear-Pair</text> has an <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-Gear-Pair">External Mesh</link> and they have same number-of-teeth.</para>
+                <para styleclass="Body Text">The length of the <text styleclass="Element">Line</text> between the Gear centers - called the <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-Gear-Line-of-Centres" styleclass="VariableName-IT2" style="font-style:normal;">Line-of-centers</link> - becomes a <text styleclass="VariableName">Driven-Dimension.</text> (The Length Dimension = <text styleclass="VariableName">(# Gear-Teeth 1 + # Gear-Teeth 2) * Module)</text></para>
+                <para styleclass="Body Text">The output <text styleclass="Element">Part</text> is a <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-Rocker-Geared">Geared-Rocker</link> in the <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-ElementExplorer-KinematicsTree" styleclass="Interface">Kinematics-Tree</link><text styleclass="Interface">.</text></para>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Body Text">To edit the <text styleclass="Element">Gear-Pair</text> parameters: <text styleclass="SeeAlso"> see </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-GearPair" styleclass="SeeAlso">Gear-Pair dialog-box</link></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:30px;">
+          <para styleclass="Normal"><image src="MD-ADD-GEARPAIR-3.ipp" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading3_atocs_">Add Epicyclic Gear-Pair</para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="5" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:30px;">
+          <para styleclass="Normal"><image src="MD-CM-AddGearPair-0.png" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <list id="9" type="ol" listtype="decimal" formatstring="&#83;&#84;&#69;&#80;&#32;&#37;&#48;&#58;&#115;&#58;&#32;" format-charset="DEFAULT_CHARSET" levelreset="false" legalstyle="false" startfrom="1" styleclass="HowTo STEP" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo STEP">Click Add Gear-Pair <text styleclass="VariableName"> (Epicyclic)</text></li>
+          </list>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="2">
+            <tr style="vertical-align:top">
+              <td style="vertical-align:bottom; width:39px;">
+                <para styleclass="Image Caption"><image src="MD-Icon-AddGearPair.png" scale="-99.90%" styleclass="VariableName-IT" figurelistinclude="0"><title>Add Rack-Pinion Ball-Screw icon</title></image></para>
+              </td>
+              <td>
+                <list id="10" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Body Table" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="Body Table"><text styleclass="Interface">Mechanism-Editor:</text><text styleclass="Body Text">&#32;</text><text styleclass="T_Menu">Add menu &gt; Mechanism menu &#160;&gt; Add Gear-Pair</text><text styleclass="VariableName">&#32;</text></li>
+                </list>
+                <para styleclass="Body Text"><text style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">OR</text></para>
+                <list id="11" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="B Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="B Bullets"><text styleclass="Interface">Mechanism-Editor: </text><text styleclass="T_Menu">Machine-elements toolbar &gt; Add Gear-Pair</text><text styleclass="VariableName">&#32;</text></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Body Text">There are four elements to select in the <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-Command-Manager" styleclass="Interface">Command-Manager</link></para>
+          <para styleclass="Body Text"></para>
+          <para styleclass="Body Text"></para>
+          <para styleclass="Body Text"></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:30px;">
+          <para styleclass="Normal"><image src="MD-ADD-GEARPAIR--EPI-1.ipp" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <list id="12" type="ol" listtype="decimal" formatstring="&#83;&#84;&#69;&#80;&#32;&#37;&#48;&#58;&#115;&#58;&#32;" format-charset="DEFAULT_CHARSET" levelreset="false" legalstyle="false" startfrom="2" styleclass="HowTo STEP" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo STEP"><text styleclass="VariableName">Select the four elements </text></li>
+          </list>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <list id="13" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="2" styleclass="Body Table" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="Body Table"><text styleclass="Interface">Mechanism-Editor</text>&#32;<text styleclass="Body Text">&gt; Click </text><text styleclass="Element">Line</text><image src="Red-14-1.gif" scale="100.00%" styleclass="Body Text Howindent4bullets" figurelistinclude="0"></image><text styleclass="VariableName">&#32;</text></li>
+                  <li styleclass="Body Table"><text styleclass="Interface">Mechanism-Editor</text>&#32;<text styleclass="Body Text">&gt; Click </text><text styleclass="Element">Line</text><image src="Red-14-2.gif" scale="100.00%" styleclass="Body Text Howindent4bullets" figurelistinclude="0"></image></li>
+                  <li styleclass="Body Table"><text styleclass="Interface">Mechanism-Editor</text><text styleclass="Body Text"> &gt; </text><text styleclass="Body Text Howindent4bullets">Click </text><text styleclass="Element">Line</text><image src="Red-14-3.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="HowTo STEP"><text styleclass="VariableName">&#32;</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:30px;">
+          <para styleclass="Normal"><image src="MD-ADD-GEARPAIR--EPI-2.ipp" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <list id="14" type="ol" listtype="decimal" formatstring="&#83;&#84;&#69;&#80;&#32;&#37;&#48;&#58;&#115;&#58;&#32;" format-charset="DEFAULT_CHARSET" levelreset="false" legalstyle="false" startfrom="2" styleclass="HowTo STEP" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo STEP"><text styleclass="VariableName">continued... </text></li>
+          </list>
+          <para styleclass="Body Text HowTo">The <text styleclass="Interface">Part-Editor</text> opens automatically.</para>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <list id="15" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="4" styleclass="Body Table" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="Body Table"><text styleclass="Interface">Part-Editor:</text> &#160;Click the <text styleclass="Element">Dimension</text><image src="Red-14-4.gif" scale="100.00%" figurelistinclude="0"></image><text styleclass="VariableName"> &#160;</text></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Body Text HowTo">The <text styleclass="Interface">Part-Editor</text> closes automatically.</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:30px;">
+          <para styleclass="Normal"><image src="MD-CM-AddGearPair-full.png" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <list id="16" type="ol" listtype="decimal" formatstring="&#83;&#84;&#69;&#80;&#32;&#37;&#48;&#58;&#115;&#58;&#32;" format-charset="DEFAULT_CHARSET" levelreset="false" legalstyle="false" startfrom="3" styleclass="HowTo STEP" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo STEP"><text styleclass="VariableName">Complete the Command </text></li>
+          </list>
+          <para styleclass="Body Text HowTo"><table styleclass="PopupTable2" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <list id="17" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="5" styleclass="Body Table" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="Body Table"><text styleclass="Interface">Command-Manager:</text> &#160;<text styleclass="HowTo STEP">Click </text><image src="OK-tiny-11-15.png" scale="100.00%" styleclass="HowTo STEP" figurelistinclude="0"></image><text styleclass="HowTo STEP"> in the </text><text styleclass="Interface">Command-Manager</text><text styleclass="HowTo STEP">.</text><text styleclass="VariableName">&#32;</text></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="HowTo STEP"></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:30px;">
+          <para styleclass="Normal"><image src="MD-ADD-GEARPAIR--EPI-3.ipp" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="VariableName"><text styleclass="Interface2">Result</text>: </para>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Body Table">The <text styleclass="Element">Gear-Pair</text> is in the <text styleclass="Interface">graphic-area</text>.</para>
+                <para styleclass="Body Text">The default <text styleclass="Element">Gear-Pair</text> has an <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-Gear-Pair">External Mesh</link> and the gears have same number-of-teeth.</para>
+                <para styleclass="Body Text">The length of the <text styleclass="Element">Line</text> between the Gear centers - called the <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-Gear-Line-of-Centres" styleclass="VariableName-IT2" style="font-style:normal;">Line-of-centers</link> - becomes a <text styleclass="VariableName">Driven-Dimension.</text> (Length = <text styleclass="VariableName">(# Gear-Teeth 1 + # Gear-Teeth 2) * Module)</text></para>
+                <para styleclass="Body Text">The output <text styleclass="Element">Part</text> is a <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-Rocker-Geared">Geared-Rocker</link> in the <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-ElementExplorer-KinematicsTree" styleclass="Interface">Kinematics-Tree</link><text styleclass="Interface">.</text></para>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Body Text">To edit the <text styleclass="Element">Gear-Pair</text> parameters,<text styleclass="SeeAlso"> see </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-GearPair" styleclass="SeeAlso">Gear-Pair dialog-box</link></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading3_atocs_">Videos of Add Gear-Pair</para>
+    <para styleclass="Body Text"><text styleclass="VariableName">Simple Gear-Pairs: </text><conditional-text type="IF" value="PDF"/><link displaytype="text" defaultstyle="true" type="filelink" href="ME-AddGearPair-Simple.gif">Double-click to watch &apos;Add Gear-Pair - Simple&apos;</link><conditional-text type="END"/><conditional-text type="IF" value="CHM"/></para>
+    <para styleclass="Normal"><toggle type="picture" print-expanded="true" help-expanded="false" src-collapsed="ME-AddGearPair-Simple.gif" src-expanded="ME-AddGearPair-Simple.gif" scale="20.00%" width="256" height="144" styleclass="Image Caption" figurelistinclude="0"><caption><![CDATA[Video: Add a Gear-Pair (Simple)]]></caption><title>Video: Add a Gear-Pair (Simple)</title></toggle><conditional-text type="END"/><conditional-text type="IF" value="HTML,EBOOK"/></para>
+    <para styleclass="Normal"><video src="ME-AddGearPair-Simple.mp4" width="1280px" height="720px" autostart="false" loop="false" showcontrols="false" playbutton="true" previewimage="ME-AddGearPair-Simple_preview.jpg" scale="20.00%" styleclass="Image Caption"><title>Video: Add a Gear-Pair (Simple)</title><caption><![CDATA[Video: Add a Gear-Pair (Simple)]]></caption></video><conditional-text type="END"/></para>
+    <para styleclass="Body Text"><text styleclass="VariableName">Epicyclic Gear-Pairs:</text><conditional-text type="IF" value="PDF"/><link displaytype="text" defaultstyle="true" type="filelink" href="ME-AddGearPair-Epicyclic.gif">Double-click to watch &apos; Add-Gear-Pair - Epicyclic&apos;</link><conditional-text type="END"/><conditional-text type="IF" value="CHM"/></para>
+    <para styleclass="Normal"><toggle type="picture" print-expanded="true" help-expanded="false" src-collapsed="ME-AddGearPair-Epicyclic.gif" src-expanded="ME-AddGearPair-Epicyclic.gif" scale="20.00%" width="256" height="144" styleclass="Image Caption" figurelistinclude="0"><caption><![CDATA[Video: Add a Gear-Pair (Epicyclic)]]></caption><title>Video: Add a Gear-Pair (Epicyclic)</title></toggle><conditional-text type="END"/><conditional-text type="IF" value="HTML,EBOOK"/></para>
+    <para styleclass="Normal"><video src="ME-AddGearPair-Epicyclic.mp4" width="1280px" height="720px" autostart="false" loop="false" showcontrols="false" playbutton="true" previewimage="ME-AddGearPair-Epicyclic_preview.jpg" scale="20.00%" styleclass="Image Caption"><title>Video: Add a Gear-Pair (Epicyclic)</title><caption><![CDATA[Video: Add a Gear-Pair (Epicyclic)]]></caption></video><conditional-text type="END"/></para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+  </body>
+</topic>

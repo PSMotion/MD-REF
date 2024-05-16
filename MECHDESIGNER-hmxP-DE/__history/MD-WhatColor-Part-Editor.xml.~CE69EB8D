@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" status="Under Construction" lasteditedby="Adam" version="2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title>What are the color codes of the Part Editor?</title>
+  <keywords>
+    <keyword>FAQ<keyword>Colors used in the Part Editor?</keyword></keyword>
+  </keywords>
+  <body>
+    <header>
+      <para styleclass="Heading1">What are the color codes of the Part-Editor?</para>
+    </header>
+    <para styleclass="Heading3_atocs_">Color-codes of Elements in the Part-Editor</para>
+    <para styleclass="Heading4 Toggle_atocs_2" style="text-indent:-36px; margin-left:60px;"><image src="tog_plus.gif" scale="100.00%"></image><tab /><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" src-collapsed="tog_plus.gif" src-expanded="tog_minus.gif"><caption><![CDATA[Sketch-Elements: Not Fully-Defined and Fully-Defined: Blue and Black]]></caption></toggle></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Standard" rowcount="2" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:216px;">
+          <para styleclass="Body Text"><image src="PG-ColourCode1.bmp" align="left" scale="100.00%" styleclass="Image Caption"><title>Not fully defined sketch in Part Editor</title></image></para>
+        </td>
+        <td style="width:1138px;">
+          <para styleclass="Body Text">There are two colors that we use to identify sketch-elements that are <text styleclass="VariableName">not-fully-defined</text> and <text styleclass="VariableName">fully-defined.</text></para>
+          <para styleclass="Body Text">The colors depend on the theme you are using.</para>
+          <para styleclass="VariableName">Not-Fully-Defined</para>
+          <para styleclass="Body Text"><text styleclass="VariableName" style="color:#0000ff;">Typically Blue</text> - sketch-elements that are not yet fully constrained.</para>
+          <para styleclass="Body Text">You will notice that as you add sketch-elements to a Part they are <text styleclass="VariableName" style="color:#0000ff;">Blue</text><text style="font-weight:bold; color:#0000ff;">&#32;</text></para>
+          <para styleclass="Body Text">This is the color of &apos;under-defined geometry&apos;. You will find that you can still drag <text styleclass="VariableName">Blue</text> sketch-elements.</para>
+          <para styleclass="Body Text">CAD-Lines are a <text style="font-weight:bold; color:#008000;">deep green.</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:216px;">
+          <para styleclass="Normal"><image src="PG-ColourCode2.bmp" scale="100.00%" styleclass="Image Caption"><title>Fully Defined Sketch in Part Editor</title></image></para>
+        </td>
+        <td style="width:1138px;">
+          <para styleclass="VariableName">Fully-Defined</para>
+          <para styleclass="Body Text"><text styleclass="VariableName">Typically Black</text><text style="font-weight:bold; color:#000000;"> - </text><text style="font-weight:normal; color:#000000;">fully defined or constrained sketch-elements.</text></para>
+          <para styleclass="Body Text">Ideally, you should add dimension and constraints to your sketch so that all the sketch-elements are <text styleclass="VariableName">Black</text>. This means the sketch is fully-defined. </para>
+          <para styleclass="Body Text">There is no correct or incorrect way to define the sketch-elements. </para>
+          <para styleclass="Body Text">Dimensions and Constraints should agree with the design intent.</para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading4 Toggle_atocs_2" style="text-indent:-36px; margin-left:60px;"><image src="tog_plus.gif" scale="100.00%"></image><tab /><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" src-collapsed="tog_plus.gif" src-expanded="tog_minus.gif" src-print="none"><caption><![CDATA[Reference Geometry, Sketch-Elements from Other Mechanisms, Dimensions in a Design-Set]]></caption></toggle></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Standard" rowcount="2" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:235px;">
+          <para styleclass="Normal"><image src="RefGeometry-PartEditor.bmp" align="left" scale="100.00%" styleclass="Image Caption"><title>Reference Geometry</title></image></para>
+        </td>
+        <td>
+          <para styleclass="Body Text"><text styleclass="VariableName">Reference Geometry</text> is <text style="font-weight:bold; color:#ff8000;">Orange</text><image src="Red-14-2.gif" scale="100.00%" styleclass="Image Caption"></image>.</para>
+          <para styleclass="Normal"><line style="height:1px; color:#ff6600;" /></para>
+          <para styleclass="Body Text"><text style="font-weight:bold; color:#595959;">Grey</text> when <text styleclass="VariableName">Show / Hide </text><text styleclass="T_Menu">other Kinematic and Sketch-Elements</text> tool is active, Part-Outlines, Axes, sketch-elements and Joints in the other Mechanisms are colored <text style="font-weight:bold; color:#787771;">Grey</text><image src="Red-14-1b.gif" scale="100.00%" styleclass="Image Caption"></image><text styleclass="Image Caption">.</text></para>
+          <para styleclass="Body Text"></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:235px;">
+          <para styleclass="Normal"><image src="Dimensions-Design-Set.png" scale="100.00%" styleclass="Image Caption"></image></para>
+        </td>
+        <td>
+          <para styleclass="Body Text">When dimensions are used to control an element, they are <text style="font-weight:bold; color:#787771;">Grey</text>&#32;</para>
+          <para styleclass="Body Text">For example:</para>
+          <list id="1" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted"><text style="font-weight:normal; color:#000000;">Dimension of a Line that is the </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Gears-Line-of-Centres" style="font-weight:normal; color:#000000;">Line-between-centers</link></li>
+            <li styleclass="HowTo Bulleted"><text styleclass="Body Text" style="font-weight:normal; color:#000000;">Dimension of an Arc for a </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Mechanism-Pulley" styleclass="Body Text" style="font-weight:normal; color:#000000;">Pulley</link></li>
+            <li styleclass="HowTo Bulleted">Dimensions added to <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-FB-DesignSet">Design-Sets</link></li>
+          </list>
+        </td>
+      </tr>
+    </table></para>
+  </body>
+</topic>

@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" modified="2022-04-20T07:51:13.668+01:00" lasteditedby="Adam" version="2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title>- &gt; STL Import tab</title>
+  <keywords>
+    <keyword>CAD-Line dialog box<keyword>Import STL file</keyword></keyword>
+    <keyword>Dialog<keyword>CAD-Line - SOLIDWORKS tab</keyword></keyword>
+  </keywords>
+  <body>
+    <header>
+      <para styleclass="Heading1">- &gt; STL Import tab</para>
+    </header>
+    <para styleclass="Heading2">CAD-Line &gt; STL Import tab</para>
+    <para styleclass="SeeAlso">See also : <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-CADLine">CAD-Line dialog-box</link></para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="Body Text">Use this tab if you do not have <text styleclass="SOLIDWORKS">SolidWorks</text>.</para>
+    <para styleclass="Body Text HowTo">Use <text styleclass="VariableName">STL Import</text> to:</para>
+    <list id="0" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+      <li styleclass="HowTo Bulleted"><text styleclass="Body Text HowTo">Import one </text><text styleclass="VariableName">STL </text><text styleclass="Body Text">file - it becomes a </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-Solids" styleclass="Interface">CAD-Solid</link><text styleclass="Body Text"> in </text><text styleclass="VariableName-IT">MechDesigner</text><text styleclass="Body Text">&#32;</text></li>
+      <li styleclass="HowTo Bulleted">Edit the Linear Units to equal those Linear-Units of the original STL file</li>
+      <li styleclass="HowTo Bulleted">Edit the <text styleclass="Parameter-Header">Edge Angle Limit</text> to remove facet lines.</li>
+    </list>
+    <para styleclass="VariableName">Before you save an STL file in your CAD:</para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="1" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Table"><text styleclass="HowTo Bulleted">Rotate the model in your CAD to the correct orientation relative to the </text><text styleclass="VariableName">Mechanism-Plane</text><text styleclass="Body Text"> before you import it.</text></para>
+          <para styleclass="Body Table">Save the model (in your CAD software) as a <text styleclass="VariableName">Binary STL file-type.</text></para>
+          <para styleclass="Body Table">Remember its <text styleclass="VariableName">Linear units</text>.</para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="VariableName">After you import an STL file:</para>
+    <para styleclass="Bullets"><table styleclass="Default" rowcount="1" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Bullets"><text styleclass="SeeAlso">See </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-CADLine-Display" anchor="CADSolidMove" styleclass="SeeAlso">Display Options tab</link><text styleclass="Body Table"> to move the STL file in the X, Y, Z- axis directions.</text></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="Heading3_atocs_">CAD-Line dialog-box</para>
+    <para styleclass="Heading4 HowTo_atoc_">STL Import tab</para>
+    <para styleclass="Body Table"><image src="MD-Dialog-CADLine-STL Import-tab.png" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+    <para styleclass="Separator" style="text-indent:-36px; margin-left:61px;"><anchor id="CAD-Line-ImportSTLFile"><keywords><keyword>CAD-Line -Import STL File</keyword><keyword>Edge Angle Limit</keyword></keywords></anchor><image src="btn_addkeyword.bmp" scale="100.00%" styleclass="Separator-Header" figurelistinclude="0"></image><tab /><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" src-collapsed="btn_addkeyword.bmp" src-expanded="btn_delkeyword.bmp" src-print="none" styleclass="Separator-Header"><caption><![CDATA[  STL File Import ]]></caption></toggle></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="3" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:240px;">
+          <para styleclass="Normal" style="text-align:left;"><image src="MD-DIALOG-CADLINE-STILIMPORT.ipp" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="Body Table"><text styleclass="Parameter-Header">STL file Import</text><text styleclass="Body Text HowTo">- to import an STL file</text></para>
+          <list id="1" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Numbered" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo Numbered">Click the <text styleclass="Parameter">Browse</text> button<text styleclass="VariableName">&#32;</text></li>
+            <li styleclass="HowTo Numbered"><text styleclass="Body Text HowTo">Explore and select an STL file</text></li>
+            <li styleclass="HowTo Numbered"><text styleclass="HowTo Bulleted">Click the </text><text styleclass="Parameter">Import</text><text styleclass="HowTo Bulleted"> button: </text></li>
+          </list>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="Body Table"><text styleclass="Notes">Note</text>: <text styleclass="Body Text HowTo">To see the model, do </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Visibility-SolidsInMechanisms" styleclass="T_Menu">Visibility toolbar &gt; Show Solids in Mechanisms</link></para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="VariableName"><text styleclass="Parameter-Header">Edge Angle Limit </text><text styleclass="Body Text">- see images below.</text></para>
+          <para styleclass="Body Text HowTo">To change the <text styleclass="VariableName-IT">apparent</text> quality of the STL file in the <text styleclass="Interface">graphic-area</text>.</para>
+          <para styleclass="Body Text HowTo"><text styleclass="Parameter">Edge Angle Limit</text><text style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;"> analyzes the acute angle between two adjacent facets.</text></para>
+          <list id="2" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted"><text style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">If the angle is </text><text styleclass="VariableName">less than</text><text style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;"> the </text><text styleclass="Parameter">Edge Angle Limit</text><text style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">, we </text><text styleclass="VariableName">do not</text><text style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;"> show a line between the two facets.</text></li>
+            <li styleclass="HowTo Bulleted"><text styleclass="Body Text HowTo" style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">If the angle is </text><text styleclass="VariableName">more than</text><text styleclass="Body Text HowTo" style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;"> the </text><text styleclass="Parameter">Edge Angle limit</text><text styleclass="Body Text HowTo" style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">, we </text><text styleclass="VariableName">do</text><text styleclass="Body Text HowTo" style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;"> show a line made by the two facets.</text></li>
+          </list>
+          <para styleclass="Parameter-Header">Solid Color <text styleclass="Body Text">button</text><text styleclass="Body Text HowTo">- to edit the color of the STL file:</text></para>
+          <list id="3" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo Bulleted">Click the<text styleclass="Body Text">&#32;</text><text styleclass="Parameter">Solid Color</text> button<text styleclass="VariableName">&#32;</text></li>
+            <li styleclass="HowTo Numbered"><text styleclass="Body Text HowTo">Select a color in the Windows Color Picker® </text></li>
+            <li styleclass="HowTo Numbered"><text styleclass="Body Text HowTo">Click OK in the Windows Color Picker®</text></li>
+          </list>
+          <para styleclass="Parameter-Header">STL File Units</para>
+          <para styleclass="Body Text HowTo">Select the units that are equal to the units of the <text styleclass="VariableName">Original STL</text> file. </para>
+          <para styleclass="Body Text HowTo">Try meters, [m], if you are not sure.</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:240px;">
+          <para styleclass="Normal"><image src="MD-CADLINE-EDGELIMIT-0.png" scale="-99.90%" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="VariableName"><text styleclass="Body Text HowTo" style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">Image with too many Facet Edges</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:240px;">
+          <para styleclass="Normal"><image src="MD-CADLINE-EDGELIMIT-1.png" scale="-99.90%" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="Body Text">Images with not so many facet-edges.</para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading4 Toggle_atocs_" style="text-indent:-32px; margin-left:32px;">STL FILE-SIZE</para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="1" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Text">The <text styleclass="Interface2">STL</text> file <text styleclass="VariableName-IT">tessellates</text> the surfaces of the CAD model as a mesh of triangles. Each triangle can appear as a small face - a facet. The number of facets is a function of: </para>
+          <list id="4" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted">the complexity of the original model, and </li>
+            <li styleclass="HowTo Bulleted">how accurately you want the STL file to tessellate the original CAD model.</li>
+          </list>
+          <para styleclass="Body Text">To build complex models, and to import many STL files, you want:</para>
+          <list id="5" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted"><text styleclass="Interface2" style="color:#ff0000;">Small</text> file-size for each model</li>
+            <li styleclass="HowTo Bulleted"><text styleclass="Interface2" style="color:#ff0000;">AND</text> each STL file to appear as the original CAD models.</li>
+            <li styleclass="HowTo Bulleted"><text styleclass="Interface2" style="color:#ff0000;">AND</text> not to see the facets on each STL file, or to see only those facets that define real edges in the model.</li>
+          </list>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading4 Toggle_atocs_" style="text-indent:-32px; margin-left:32px;"><anchor id="EdgeAngleLimit"><keywords><keyword>Edge Angle Limit<keyword>How to reduce CAD file-size and Imporve Appearance.</keyword></keyword></keywords></anchor><text styleclass="Interface2">Strategies to reduce the STL file-size.</text></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="3" colcount="2">
+      <tr style="vertical-align:top">
+        <td colspan="2">
+          <para styleclass="Interface2">Strategy 1:</para>
+          <para styleclass="Interface2"><text styleclass="VariableName-indent">Reduce the complexity of the original CAD Model = SMALL file-size</text></para>
+          <para styleclass="Body Text HowTo">Add a new configuration for the CAD model. In the new configuration:</para>
+          <list id="6" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted">Do a geometry check of the CAD model file to find if it has any small gaps or whiskers.</li>
+          </list>
+          <list id="7" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted">Suspend small fillets, especially if they do not have a function. </li>
+            <li styleclass="HowTo Bulleted">Replace fillets with chamfers, especially along straight edges.</li>
+            <li styleclass="HowTo Bulleted">Suspend all fasteners</li>
+            <li styleclass="HowTo Bulleted">Suspend fastener holes and hole features.</li>
+            <li styleclass="HowTo Bulleted">Suspend all cosmetic details.</li>
+            <li styleclass="HowTo Bulleted">Simplify bearing models, and other complex models you may have downloaded from the internet.</li>
+          </list>
+          <para styleclass="Interface2">Strategy 2: </para>
+          <para styleclass="Body Text"><text styleclass="VariableName-indent">Reduce the accuracy of the STL file</text></para>
+          <para styleclass="Body Table">There are two parameters to control the accuracy of the STL file. These are in the <text styleclass="SOLIDWORKS">SOLIDWORKS</text> tab.</para>
+          <para styleclass="Parameter-Header">Linear Deviation <text styleclass="VariableName">: </text></para>
+          <para styleclass="Body Text"><text style="font-weight:normal;">The maximum </text><text styleclass="Parameter">Linear deviation</text><text style="font-weight:normal;"> (distance) between the surface of the original CAD model and the tessellated surface of the STL file. </text></para>
+          <para styleclass="Parameter-Header">Angular Deviation <text styleclass="VariableName">: </text></para>
+          <para styleclass="Body Table">The maximum <text styleclass="Parameter">angular deviation</text> between adjacent facets of the tessellated surface of the STL file.</para>
+          <para styleclass="Body Table">If you do not have <text styleclass="SOLIDWORKS">SolidWorks</text>, you must find these parameters in your 3D-CAD before you save to the STL file. It is possible they are options in the <text styleclass="T_Menu">Save as &gt; STL file-type</text> dialog.</para>
+          <para styleclass="Interface2">Strategy 3: </para>
+          <para styleclass="Interface2"><text styleclass="VariableName">Use the </text>Edge Angle Limit<text styleclass="VariableName"> parameter - see </text><text styleclass="Separator-Header">STL File Import</text><text styleclass="VariableName"> above</text></para>
+          <para styleclass="Body Text HowTo">STL files may show their facets. You can improve how the facets display with my <text styleclass="VariableName">Magic Number</text>!</para>
+          <para styleclass="Body Text HowTo"><text styleclass="Parameter-Header">Edge Angle Limit</text> = <text styleclass="Parameter-Header">Angular Deviation </text><text styleclass="VariableName">× 3.14159÷2 </text></para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="Interface2">Examples</para>
+          <para styleclass="Body Table">Below, the two images are of the same SOLIDWORKS part. </para>
+          <para styleclass="Body Table">They appear to be identical. However, there is a large difference in the number of facets and vertices.</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="vertical-align:top; width:240px;">
+          <para styleclass="Image Caption"><image src="MD-STL-File-many-vertices.png" scale="-99.90%" figurelistinclude="0"><caption><![CDATA[STL tessellation: Large number of Vertices]]></caption></image></para>
+        </td>
+        <td style="vertical-align:top; width:568px;">
+          <para styleclass="VariableName">BAD - many facets</para>
+          <list id="8" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted">Linear Deviation = 0.014<text style="font-size:10pt; vertical-align:baseline;">mm</text> and</li>
+            <li styleclass="HowTo Bulleted">Angular Deviation = 0.4º</li>
+          </list>
+          <para styleclass="Normal">There are </para>
+          <list id="9" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted">119132 vertices </li>
+            <li styleclass="HowTo Bulleted">~40000 triangles</li>
+            <li styleclass="HowTo Bulleted">The STL file size is <text styleclass="VariableName">3.5 Mega Bytes</text></li>
+          </list>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="vertical-align:top; width:240px;">
+          <para styleclass="Image Caption"><image src="MD-STL-File-few-vertices.png" scale="-99.90%" figurelistinclude="0"><caption><![CDATA[STL tessellation: Few number of Vertices]]></caption></image></para>
+        </td>
+        <td style="vertical-align:top; width:568px;">
+          <para styleclass="VariableName">GOOD - few facets</para>
+          <list id="10" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted">Linear Deviation = 0.5<text style="font-size:10pt; vertical-align:baseline;">mm</text> and </li>
+            <li styleclass="HowTo Bulleted">Angular Deviation = 5º</li>
+          </list>
+          <para styleclass="Normal">There are:</para>
+          <list id="11" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted">7533 vertices </li>
+            <li styleclass="HowTo Bulleted">2500 triangles</li>
+            <li styleclass="HowTo Bulleted">The STL file size is <text styleclass="VariableName">0.365 Mega Bytes</text></li>
+          </list>
+        </td>
+      </tr>
+    </table></para>
+  </body>
+</topic>

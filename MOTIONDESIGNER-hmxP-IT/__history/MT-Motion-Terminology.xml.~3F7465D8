@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" modified="2022-07-10T10:29:40.549+01:00" lasteditedby="Adam" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title translate="true">Terminology and Symbols</title>
+  <body>
+    <header>
+      <para styleclass="Heading1"><text styleclass="Heading1" translate="true">Terminology and Symbols</text></para>
+    </header>
+    <para styleclass="Heading3_atocs_"><anchor id="MotionTerminology" styleclass="Heading3_atocs_"><keywords><keyword translate="true">Motion<keyword translate="true">Terminology</keyword><keyword translate="true">Definitions</keyword></keyword></keywords></anchor><text styleclass="Heading3_atocs_" translate="true"> MotionDesigner Terminology:</text></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="11" colcount="2" style="border-width:0px; border-spacing:0px; border-collapse:collapse; cell-border-width:1px; border-color:#993300; border-style:solid; background-color:#e9e9e9;">
+      <tr style="vertical-align:top">
+        <td rowspan="2" style="width:160px;">
+          <para styleclass="Normal"><image src="MT-SEGMENT-3.ipp" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"><caption translate="true"><![CDATA[A Segment
+ (one motion-derivative)]]></caption></image></para>
+        </td>
+        <td>
+          <para styleclass="Element-Header"><text styleclass="Element-Header" translate="true">Segments :</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Popup Box2"><text styleclass="Popup Box" translate="true">A motion is split into </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MT-Segment" styleclass="Popup Box2" translate="true">segments</link><text styleclass="Popup Box2" translate="true">.</text><text styleclass="Popup Box" translate="true"> See left.</text></para>
+          <para styleclass="Popup Box2"><text styleclass="Popup Box" translate="true">Each </text><text styleclass="Popup Box-Elements" translate="true">Segments</text><text styleclass="Popup Box" translate="true"> has a duration - called its </text><text styleclass="Parameter-Popup" translate="true">Segment-Width</text><text styleclass="Popup Box" translate="true"> - measured on the X-axis. In the image, </text><text styleclass="VariableName-small" translate="true">X2-X1</text></para>
+          <para styleclass="Popup Box2"><text styleclass="Popup Box" translate="true">Each </text><text styleclass="Popup Box-Elements" translate="true">Segment</text><text styleclass="Popup Box" translate="true"> has a </text><text styleclass="Popup Box2" translate="true">Motion-Law. </text></para>
+          <para styleclass="Popup Box2"><text styleclass="Popup Box" translate="true">The </text><text styleclass="Popup Box2" translate="true">Motion-Law</text><text styleclass="Popup Box" translate="true"> specifies the motion-values </text><text styleclass="VariableName-small" translate="true">between</text><text styleclass="Popup Box" translate="true">&#32;</text><text styleclass="VariableName-small" translate="true">X1,Y1</text><text styleclass="Popup Box" translate="true"> and </text><text styleclass="VariableName-small" translate="true">X2,Y2</text><text styleclass="Popup Box" translate="true">. The user specifies the motion-values </text><text styleclass="VariableName-small" translate="true">at</text><text styleclass="Popup Box" translate="true">&#32;</text><text styleclass="VariableName-small" translate="true">X1,Y1</text><text styleclass="Popup Box" translate="true"> (</text><text styleclass="VariableName-small" translate="true">Start Blend-Point</text><text styleclass="Popup Box" translate="true">) and </text><text styleclass="VariableName-small" translate="true">X2,Y2</text><text styleclass="Popup Box" translate="true"> (</text><text styleclass="VariableName-small" translate="true">End Blend-Point</text><text styleclass="Popup Box" translate="true">).</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td rowspan="2" style="width:160px;">
+          <para styleclass="Normal"><image src="MT-BLEND-POINT-2.ipp" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"><caption translate="true"><![CDATA[A Blend-Point
+(one motion-derivative)]]></caption></image></para>
+        </td>
+        <td>
+          <para styleclass="Element-Header"><text styleclass="Element-Header" translate="true">Blend-Points :</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Popup Box"><text styleclass="VariableName-small" translate="true">X-Axis:</text><text styleclass="Popup Box" translate="true">&#32;</text><text styleclass="Popup Box-Elements" translate="true">Blend-Points </text><text styleclass="Popup Box" translate="true">do not have a duration. They are at one X-axis value.</text></para>
+          <para styleclass="Popup Box"><text styleclass="VariableName-small" translate="true">Y-axis:</text><text styleclass="Popup Box" translate="true"> each </text><text styleclass="Popup Box-Elements" translate="true">Blend-Point</text><text styleclass="Popup Box" translate="true"> specifies TWO Y-axis values motion-values for each </text><text styleclass="VariableName-small" translate="true">motion-derivative.</text></para>
+          <para styleclass="Popup Box"><text styleclass="Popup Box" translate="true">For each motion-derivative, each </text><text styleclass="Popup Box-Elements" translate="true">Blend-Point</text><text styleclass="Popup Box" translate="true"> has a motion-value at the </text><text styleclass="VariableName-small" translate="true">End</text><text styleclass="Popup Box" translate="true"> of the </text><text styleclass="Popup Box-Elements" translate="true">Previous-Segment </text><text styleclass="Interface" translate="true">(x1,y2)</text><text styleclass="Popup Box" translate="true">&#32;</text><text styleclass="VariableName-small" translate="true">AND</text><text styleclass="Popup Box" translate="true"> at the </text><text styleclass="VariableName-small" translate="true">Start</text><text styleclass="Popup Box" translate="true"> of the </text><text styleclass="Popup Box-Elements" translate="true">Segment</text><text styleclass="Interface" translate="true"> (x1,y1),</text></para>
+          <para styleclass="Popup Box"><text styleclass="Popup Box" translate="true">For each motion-derivative, the two motion-values can be different or they can be forced to be the same. </text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:160px;">
+          <para styleclass="Popup Box2" style="text-align:right;"><text styleclass="Popup Box2" translate="true">Motion-Law : </text></para>
+        </td>
+        <td>
+          <para styleclass="Popup Box"><text styleclass="Popup Box" translate="true">You must select a </text><text styleclass="Popup Box2" translate="true">motion-law</text><text styleclass="Popup Box" translate="true"> for each </text><text styleclass="Popup Box-Elements" translate="true">Segment</text><text styleclass="Popup Box" translate="true">. The </text><text styleclass="Popup Box2" translate="true">Motion-Law</text><text styleclass="Popup Box" translate="true"> should be able to satisfy the motion requirements for your design. Each </text><text styleclass="Popup Box2" translate="true">Motion-Law</text><text styleclass="Popup Box" translate="true"> is a mathematical function. The </text><text styleclass="Popup Box2" translate="true">Motion-Law</text><text styleclass="Popup Box" translate="true">, together with the motion-values at its </text><text styleclass="Popup Box-Elements" translate="true">Blend-Points</text><text styleclass="Popup Box" translate="true">, specify the motion-values between each </text><text styleclass="Popup Box-Elements" translate="true">Blend-Point</text><text styleclass="Popup Box" translate="true">. </text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:160px;">
+          <para styleclass="Popup Box2" style="text-align:right;"><text styleclass="Popup Box2" translate="true">Motion-Derivative : </text></para>
+        </td>
+        <td>
+          <para styleclass="Popup Box"><text styleclass="VariableName-small" translate="true">Velocity, Acceleration</text><text styleclass="Popup Box" translate="true">, and </text><text styleclass="VariableName-small" translate="true">Jerk</text><text styleclass="Popup Box" translate="true"> are the first, second, and third </text><text styleclass="VariableName-small" translate="true">motion-derivatives</text><text styleclass="Popup Box" translate="true"> of </text><text styleclass="VariableName-small" translate="true">Position</text><text styleclass="Popup Box" translate="true">.</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:160px;">
+          <para styleclass="Element" style="text-align:right;"><text styleclass="Element" translate="true">Segment Editor : </text></para>
+        </td>
+        <td>
+          <para styleclass="Popup Box"><text styleclass="Popup Box" translate="true">Use the </text><text styleclass="Popup Box-Elements" translate="true">Segment-Editor</text><text styleclass="Popup Box" translate="true"> to edit the </text><text styleclass="Parameter-Popup" translate="true">Segment-Width</text><text styleclass="Popup Box" translate="true">, to select the </text><text styleclass="Popup Box2" translate="true">Motion-Law</text><text styleclass="Popup Box" translate="true">, to edit the </text><text styleclass="Parameter-Popup" translate="true">Segment-Parameters</text><text styleclass="Popup Box" translate="true">, and to edit the motion-values at the </text><text styleclass="VariableName-small" translate="true">Start of the </text><text styleclass="Popup Box-Elements" translate="true">Selected-Segment</text><text styleclass="Interface" translate="true">(y1)</text><text styleclass="Popup Box" translate="true"> and at the </text><text styleclass="VariableName-small" translate="true">End of the </text><text styleclass="Popup Box-Elements" translate="true">Selected-Segment</text><text styleclass="Interface" translate="true">(y2).</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:160px;">
+          <para styleclass="Element" style="text-align:right;"><text styleclass="Element" translate="true">Blend-Point Editor : </text></para>
+        </td>
+        <td>
+          <para styleclass="Popup Box"><text styleclass="Popup Box" translate="true">Use the </text><text styleclass="Popup Box-Elements" translate="true">Blend-Point Editor</text><text styleclass="Popup Box" translate="true"> to edit the </text><text styleclass="VariableName-small" translate="true">X-axis</text><text styleclass="Popup Box" translate="true"> of the </text><text styleclass="Popup Box-Elements" translate="true">Blend-Point </text><text styleclass="Interface" translate="true">(X1)</text><text styleclass="Popup Box" translate="true"> edit the motion-values at the </text><text styleclass="VariableName-small" translate="true">End of the </text><text styleclass="Popup Box2" translate="true">Previous-Segment</text><text styleclass="Interface" translate="true">(y2)</text><text styleclass="Popup Box" translate="true"> and at the </text><text styleclass="VariableName-small" translate="true">Start of the </text><text styleclass="Popup Box-Elements" translate="true">Selected-Segment</text><text styleclass="Interface" translate="true">(Y1)</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:160px;">
+          <para styleclass="Popup Box2" style="text-align:right;"><text styleclass="Popup Box-Elements" translate="true">Selected-Segment</text><text styleclass="Popup Box2" translate="true"> : </text></para>
+        </td>
+        <td>
+          <para styleclass="Popup Box"><text styleclass="Popup Box" translate="true">The active </text><text styleclass="Popup Box-Elements" translate="true">segment</text><text styleclass="Popup Box" translate="true">. It is a different color to the other </text><text styleclass="Popup Box-Elements" translate="true">segments</text><text styleclass="Popup Box" translate="true">.</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:160px;">
+          <para styleclass="Popup Box2" style="text-align:right;"><text styleclass="Popup Box2" translate="true">Previous-Segment : </text></para>
+        </td>
+        <td>
+          <para styleclass="Popup Box"><text styleclass="Popup Box" translate="true">The </text><text styleclass="Popup Box-Elements" translate="true">segment</text><text styleclass="Popup Box" translate="true"> that precedes (is to the left of / is earlier than / is before) the </text><text styleclass="Popup Box-Elements" translate="true">Selected-Segment</text><text styleclass="Popup Box" translate="true">. If the </text><text styleclass="Popup Box-Elements" translate="true">Selected-Segment</text><text styleclass="Popup Box" translate="true"> is the </text><text styleclass="VariableName-small" style="color:#ff0000;" translate="true">first</text><text styleclass="Popup Box" translate="true">&#32;</text><text styleclass="Popup Box-Elements" translate="true">segment</text><text styleclass="Popup Box" translate="true">, then the </text><text styleclass="Popup Box2" translate="true">Previous-Segment</text><text styleclass="Popup Box" translate="true"> is the </text><text styleclass="VariableName-small" style="color:#ff0000;" translate="true">last</text><text styleclass="Popup Box" translate="true">&#32;</text><text styleclass="Popup Box2" translate="true">segment</text><text styleclass="Popup Box" translate="true">.</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:160px;">
+          <para styleclass="Popup Box2" style="text-align:right;"><text styleclass="Popup Box2" translate="true">Next-Segment : </text></para>
+        </td>
+        <td>
+          <para styleclass="Popup Box"><text styleclass="Popup Box" translate="true">The </text><text styleclass="Popup Box-Elements" translate="true">segment</text><text styleclass="Popup Box" translate="true"> that follows (is to the right of / is later than / is after) the </text><text styleclass="Popup Box-Elements" translate="true">Selected-Segment</text><text styleclass="Popup Box" translate="true">. If the </text><text styleclass="Popup Box-Elements" translate="true">Selected-Segment</text><text styleclass="Popup Box" translate="true"> is the </text><text styleclass="VariableName-small" style="color:#ff0000;" translate="true">last</text><text styleclass="Popup Box" translate="true">&#32;</text><text styleclass="Popup Box-Elements" translate="true">segment</text><text styleclass="Popup Box" translate="true">, then the </text><text styleclass="Popup Box2" translate="true">Next-Segment</text><text styleclass="Popup Box" translate="true"> is the </text><text styleclass="VariableName-small" style="color:#ff0000;" translate="true">first</text><text styleclass="Popup Box" translate="true">&#32;</text><text styleclass="Popup Box-Elements" translate="true">segment</text><text styleclass="Popup Box" translate="true">.</text></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading3_atocs_"><anchor id="Blend-PointSymbols" styleclass="Heading3_atocs_"><keywords><keyword translate="true">Symbols:<keyword translate="true">Blend-Point</keyword></keyword></keywords></anchor><text styleclass="Heading3_atocs_" translate="true">Blend-Point Symbols </text></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="6" colcount="2">
+      <tr style="vertical-align:middle">
+        <td colspan="2">
+          <para styleclass="Popup Box"><text styleclass="Popup Box" translate="true">Each </text><text styleclass="Popup Box-Elements" translate="true">Blend-Point</text><text styleclass="Popup Box" translate="true"> has a one(1) </text><text styleclass="VariableName-small" translate="true">X-axis</text><text styleclass="Popup Box" translate="true"> value. It is the instant on the </text><text styleclass="VariableName-small" translate="true">X-axis</text><text styleclass="Popup Box" translate="true"> when a segment ends and the next segment starts. </text></para>
+          <para styleclass="Popup Box"><text styleclass="Popup Box" translate="true">The symbol for a </text><text styleclass="Popup Box-Elements" translate="true">Blend-Point</text><text styleclass="Popup Box" translate="true"> is the shape of a diamond. The diamond shape is actually two(2) triangles.</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:middle">
+        <td style="width:44px;">
+          <para styleclass="Popup Box" style="text-align:center;"><image src="mt-bp-match-a.png" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="Popup Box"><text styleclass="Popup Box-Elements" translate="true">Blend-Point</text><text styleclass="Popup Box" translate="true"> - the symbol is two triangles. Each triangle is a symbol for the end of a segment and the start of a segment.</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:middle">
+        <td style="width:44px;">
+          <para styleclass="Popup Box" style="text-align:center;"><image src="MT-BP-Selected-A.png" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="Popup Box"><text styleclass="Popup Box-Elements" style="color:#ff0000;" translate="true">Active</text><text styleclass="Popup Box-Elements" translate="true"> Blend-Point</text><text styleclass="Popup Box" translate="true"> - has an, outline. It is the </text><text styleclass="Popup Box-Elements" translate="true">Blend-Point</text><text styleclass="Popup Box" translate="true"> at the start of the </text><text styleclass="Popup Box-Elements" translate="true">Selected Segment</text><text styleclass="Popup Box" translate="true">.</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:middle">
+        <td style="width:44px;">
+          <para styleclass="Popup Box" style="text-align:right;"><image src="MT-BP-Start-A.png" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="Popup Box"><text styleclass="Popup Box" translate="true">The </text><text styleclass="Popup Box2" translate="true">Start of a Segment</text><text styleclass="Popup Box" translate="true">. The symbol may be </text><text styleclass="VariableName-small" style="color:#008000;" translate="true">Green</text><text styleclass="VariableName-small" translate="true">, Black, Clear,</text><text styleclass="Popup Box" translate="true"> or</text><text styleclass="VariableName-small" translate="true"> Grey</text><text styleclass="Popup Box" translate="true">.</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:middle">
+        <td style="width:44px;">
+          <para styleclass="Popup Box"><image src="mt-bp-end-a.png" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="Popup Box"><text styleclass="Popup Box" translate="true">The </text><text styleclass="Popup Box2" translate="true">End of a Segment</text><text styleclass="Popup Box" translate="true">. The symbol may be </text><text styleclass="VariableName-small" translate="true">Black, Clear or Grey</text><text styleclass="Popup Box" translate="true">.</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:middle">
+        <td colspan="2">
+          <para styleclass="Body Text"><text styleclass="VariableName-small" translate="true">Note</text><text styleclass="Notes" translate="true">:</text><text styleclass="Body Text" translate="true">&#32;</text><text styleclass="Popup Box" translate="true">To increase the size of the symbols, see: </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MT-Edit-Active-Motion-Settings" anchor="MotionAccessibility" styleclass="T_Menusmall" translate="true">Active-Motion-Settings &gt; Accessibility &gt; Line and Symbol Sizes &gt; Symbol Size.</link></para>
+        </td>
+      </tr>
+    </table></para>
+  </body>
+</topic>

@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" status="Under Construction" modified="2024-02-13T16:03:25.004Z" lasteditedby="44785" version="2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title>Menu | Function-Block | Linear Motion</title>
+  <keywords>
+    <keyword>Add<keyword>Function-Block: Linear-Motion</keyword></keyword>
+    <keyword>Function-Block<keyword>Linear-Motion FB</keyword></keyword>
+    <keyword>Linear-Motion Function-Block</keyword>
+    <keyword>Motion Advance</keyword>
+    <keyword>Motion Delay</keyword>
+    <keyword>Motion Retard</keyword>
+  </keywords>
+  <body>
+    <header>
+      <para styleclass="Heading1">Add Linear-Motion FB</para>
+    </header>
+    <para styleclass="Heading2" style="page-break-before:always;">Linear-Motion FB</para>
+    <para styleclass="SeeAlso">See also: </para>
+    <para styleclass="Body Text HowTo"><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-FunctionBlock-LinearMotion">Linear Motion dialog</link></para>
+    <para styleclass="Body Text HowTo"><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Function-Blocks-Schematic-DataValuesChannels" anchor="HowtoConnectFBs">How to Connect FBs</link></para>
+    <para styleclass="Normal"><line style="height:1px; color:#343400;" /></para>
+    <para styleclass="Heading4 Toggle_atocs_">Terminology and Definitions</para>
+    <para styleclass="Body Text"><table styleclass="Default" rowcount="2" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:205px;">
+          <para styleclass="Interface" style="text-align:right;">Master Machine Angle :<text styleclass="Popup Box2">&#32;</text></para>
+        </td>
+        <td>
+          <para styleclass="Interface">MMA -<text styleclass="Popup Box"> when you cycle your model, the </text><text styleclass="Popup Box2">MMA</text><text styleclass="Popup Box"> increases at a constant rate from 0 to 360, again and again. You can see and edit the </text><text styleclass="VariableName-small">MMA</text><text styleclass="Popup Box"> at the bottom and left of the application-window.</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:205px;">
+          <para styleclass="Popup Box2" style="text-align:right;"><text styleclass="Popup Box-Elements">Linear Motion FB</text> : </para>
+        </td>
+        <td>
+          <para styleclass="Popup Box">The default output from a <text styleclass="Popup Box-Elements">Linear-Motion FB</text> is equal to the <text styleclass="Popup Box2">MMA</text>. </para>
+          <para styleclass="Popup Box">You can edit the <text styleclass="Popup Box-Elements">Linear-Motion FB</text> to add or subtract a value from the default-output.</para>
+          <para styleclass="Popup Box">The <text styleclass="Popup Box-Elements">Linear-Motion FB</text> is usually the first in a series of <text styleclass="Popup Box-Elements">FBs</text> that you connect together with wires.</para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading4 Toggle_atocs_">Linear-Motion FB function</para>
+    <para styleclass="Body Text"><table styleclass="Default" rowcount="1" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Text">The function of the <text styleclass="Element">Linear-Motion FB</text> is:</para>
+          <para styleclass="VariableName-indent">Output &#160;= MMA <text style="font-size:14pt;">±</text>&#32;<image src="1r.gif" scale="100.00%" styleclass="Image Caption" style="font-size:8pt; font-weight:normal; vertical-align:sub;" figurelistinclude="0"></image></para>
+          <para styleclass="Normal"><line style="height:1px; color:#343400;" /></para>
+          <para styleclass="VariableName">MMA = Master-Machine-Angle</para>
+          <para styleclass="Body Text" style="text-align:left;">Use the <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-FunctionBlock-LinearMotion" styleclass="Element">Linear-Motion dialog</link> to edit <image src="1r.gif" scale="100.00%" style="font-size:7pt; vertical-align:sub;" figurelistinclude="0"></image></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading3_atocs_">Add Linear-Motion FB</para>
+    <para styleclass="Normal"><table styleclass="Default" rowcount="3" colcount="2">
+      <tr style="vertical-align:top">
+        <td rowspan="2" style="width:100px;">
+          <para styleclass="VariableName">What to do: </para>
+        </td>
+        <td style="border-bottom:none;">
+          <list id="0" type="ol" listtype="decimal" formatstring="&#83;&#84;&#69;&#80;&#32;&#37;&#48;&#58;&#115;&#58;&#32;" format-charset="DEFAULT_CHARSET" levelreset="false" legalstyle="false" startfrom="1" styleclass="HowTo STEP" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo STEP">Add a Linear-Motion FB to the graphics-area </li>
+          </list>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="2" colcount="2">
+            <tr style="vertical-align:top">
+              <td style="width:40px; border-top:none; border-right:none; border-bottom:none;">
+                <para styleclass="VariableName" style="text-align:right;"><image src="MD-Icon-FB-LinearMotion.png" scale="100.00%" figurelistinclude="0"><title>Add Linear-Motion FB</title></image></para>
+              </td>
+              <td style="border:none;">
+                <list id="1" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="Bullets"><text style="font-style:normal;">Click</text><text style="font-family:Arial; font-size:11pt; color:#000000;">&#32;</text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Command-FB-Kinematics" styleclass="T_Menu">Kinematics FB toolbar</link><text styleclass="VariableName"> &gt; </text><text styleclass="T_Menu">Linear-Motion FB</text><text styleclass="VariableName">&#32;</text></li>
+                </list>
+                <para styleclass="Interface2">or<text styleclass="T_Menu">&#32;</text></para>
+                <list id="2" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="Bullets"><text styleclass="Body Text">Click</text><text styleclass="T_Menu"> Add menu &gt; Add Linear-Motion FB</text><text styleclass="VariableName">&#32;</text></li>
+                </list>
+              </td>
+            </tr>
+            <tr style="vertical-align:top">
+              <td colspan="2" style="border-top:none; border-right:none; border-bottom:none;">
+                <list id="3" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="2" styleclass="Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="Bullets"><text styleclass="Body Text">Click the graphics-area</text><text styleclass="VariableName">&#32;</text></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Body Text">The <text styleclass="Element">Linear-Motion FB</text> is now in the graphics-area<text styleclass="Interface">&#32;</text>(and <text styleclass="Interface">Assembly-Tree</text>).</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="border-top:none;">
+          <list id="4" type="ol" listtype="decimal" formatstring="&#83;&#84;&#69;&#80;&#32;&#37;&#48;&#58;&#115;&#58;&#32;" format-charset="DEFAULT_CHARSET" levelreset="false" legalstyle="false" startfrom="2" styleclass="HowTo STEP" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo STEP">Open the Linear-Motion dialog: </li>
+          </list>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td style="border-top:none; border-right:none; border-bottom:none;">
+                <list id="5" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="B Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="B Bullets"><text styleclass="HowTo Numbered">Double-click the </text><text styleclass="Element">Linear-Motion FB</text><text styleclass="HowTo Numbered"> in </text><text styleclass="Body Text">the graphics-area</text><text styleclass="VariableName">. </text></li>
+                </list>
+                <para styleclass="Interface2">OR</para>
+                <list id="6" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="B Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="B Bullets"><text styleclass="SeeAlso">See </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-How-to-Open-a-Dialog-Box" styleclass="SeeAlso">How to Open a dialog</link><text styleclass="VariableName">&#32;</text></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Body Text">The <text styleclass="Element">Linear-Motion dialog</text> is now open.</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:73px;">
+          <para styleclass="VariableName">Dialog : </para>
+        </td>
+        <td>
+          <list id="7" type="ol" listtype="decimal" formatstring="&#83;&#84;&#69;&#80;&#32;&#37;&#48;&#58;&#115;&#58;&#32;" format-charset="DEFAULT_CHARSET" levelreset="false" legalstyle="false" startfrom="3" styleclass="HowTo STEP" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo STEP"><text styleclass="SeeAlso">See </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-FunctionBlock-LinearMotion" styleclass="SeeAlso">Linear-Motion dialog</link><text styleclass="VariableName">&#32;</text></li>
+          </list>
+        </td>
+      </tr>
+    </table></para>
+  </body>
+</topic>

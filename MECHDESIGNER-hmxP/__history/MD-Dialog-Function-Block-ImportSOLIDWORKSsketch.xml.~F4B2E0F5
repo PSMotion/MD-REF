@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" modified="2024-02-01T18:54:47.826Z" lasteditedby="44785" version="2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title>Dialog: Import SOLIDWORKS Sketch FB</title>
+  <keywords>
+    <keyword>Dialog<keyword>Import SOLIDWORKS sketch FB</keyword></keyword>
+  </keywords>
+  <body>
+    <header>
+      <para styleclass="Heading1">Dialog: Import SOLIDWORKS Sketch FB</para>
+    </header>
+    <para styleclass="Heading2" style="page-break-before:always;">Import SOLIDWORKS Sketch FB</para>
+    <para styleclass="SeeAlso">See also : <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Geometry-Import-SOLIDWORKS-Sketch">Add Import SOLIDWORKS Sketch FB</link></para>
+    <para styleclass="SeeAlso">See also: <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-CADLine-DXF">CAD-Line &gt; DXF tab</link></para>
+    <para styleclass="Normal"><line style="height:1px; color:#343400;" /></para>
+    <para styleclass="Body Text HowTo">Use the <text styleclass="Element">Import SW sketch FB</text> to import sketches from a SOLIDWORKS document.</para>
+    <para styleclass="Normal"><line style="height:1px; color:#343400;" /></para>
+    <para styleclass="Notes">Limits: </para>
+    <list id="0" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+      <li styleclass="HowTo Bulleted">Cannot import Blocks, Parabolas, Ellipses, ... . safe to say, you can import Lines and Arcs!</li>
+      <li styleclass="HowTo Bulleted">Limit to perhaps 20 sketch-elements.</li>
+      <li styleclass="HowTo Bulleted">Construction and center-lines import as <text styleclass="Body Text">Lines</text>.</li>
+      <li styleclass="HowTo Bulleted">Does not import Constraints </li>
+      <li styleclass="HowTo Bulleted">By default, <text styleclass="Interface">end-Points</text> and <text styleclass="Interface">center-Points</text> of Lines and Arcs are Locked. To unlock, see <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-FunctionBlock-PointProperties" anchor="PointPosition">Point Properties dialog</link>.</li>
+    </list>
+    <para styleclass="Normal"><line style="height:1px; color:#343400;" /></para>
+    <para styleclass="Heading4 Toggle_atocs_">How to open the Import SOLIDWORKS Sketch dialog </para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="1" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:240px;">
+          <para styleclass="Image Caption"><image src="MD-GA-ImportSWSketch.png" scale="-99.90%" figurelistinclude="0"><caption><![CDATA[Import SOLIDWORKS Sketch FB in PART-EDITOR]]></caption></image></para>
+        </td>
+        <td>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <list id="1" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Body Table" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; color:#000000;">
+                  <li styleclass="Body Table"><text styleclass="Interface">Mechanism-Editor</text>:<text styleclass="HowTo Numbered" style="font-style:normal;"> Edit the </text><text styleclass="Element">Part</text><text styleclass="HowTo Numbered" style="font-style:normal;"> to which you have added the </text><text styleclass="Element">Import SW sketch FB</text><text styleclass="Interface2">&#32;</text></li>
+                  <li styleclass="HowTo Numbered"><text styleclass="Interface">Part-Editor:</text><text style="font-style:normal;"> Double-click</text><text style="font-style:italic;">&#32;</text><text style="font-style:normal;">the </text><text styleclass="Element">Import SW sketch FB</text></li>
+                </list>
+                <para styleclass="VariableName-IT">OR</para>
+                <list id="2" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="2" styleclass="HowTo Numbered" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="HowTo Numbered"><text styleclass="SeeAlso">See </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-How-to-Open-a-Dialog-Box" styleclass="SeeAlso">How to Open a dialog</link><text styleclass="VariableName">&#32;</text></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Body Text">The <text styleclass="Element-Header">Import SolidWorks Sketch dialog</text> is now open.</para>
+    <para styleclass="Normal"><line style="height:1px; color:#343400;" /></para>
+    <para styleclass="Heading3_atocs_">Import SolidWorks Sketch dialog</para>
+    <para styleclass="Normal"><table styleclass="Default" rowcount="3" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:240px;">
+          <para styleclass="VariableName-IT" style="text-align:right;"><image src="MD-SolidWorks-Sketch.png" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <list id="3" type="ol" listtype="decimal" formatstring="&#83;&#84;&#69;&#80;&#32;&#37;&#48;&#58;&#115;&#58;&#32;" format-charset="DEFAULT_CHARSET" levelreset="false" legalstyle="false" startfrom="1" styleclass="HowTo STEP" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo STEP"><text styleclass="VariableName">In SOLIDWORKS. </text></li>
+          </list>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <list id="4" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="B Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="B Bullets"><text styleclass="HowTo Bulleted">Edit a </text><text styleclass="Body Text" style="font-style:normal;">SOLIDWORKS</text><text styleclass="HowTo Bulleted"> sketch to make it </text><text styleclass="VariableName" style="color:#ff0000;">active</text><text styleclass="VariableName">&#32;</text></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Body Table"><text style="font-style:normal;">This image shows the active sketch in SOLIDWORKS</text><text style="font-style:italic;">.</text></para>
+          <para styleclass="Body Table"><text styleclass="VariableName">IMPORTANT</text>: </para>
+          <para styleclass="Body Text HowTo">To import the sketch, it must<text style="font-weight:normal; font-style:normal;"> be </text><text styleclass="VariableName" style="color:#ff0000;">active</text><text style="font-weight:normal; font-style:normal;"> in </text><text styleclass="Body Table" style="font-style:normal;">SOLIDWORKS</text><text style="font-weight:normal; font-style:normal;">.</text></para>
+          <para styleclass="Body Text"></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td rowspan="2" style="width:240px;">
+          <para styleclass="Normal" style="text-align:right;"><image src="MD-Dialog-ImportSWsketch.ipp" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"><caption><![CDATA[Import SolidWorks sketch dialog]]></caption></image></para>
+          <para styleclass="Normal" style="text-align:right;"><image src="MD-SolidWorks-SketchinMD.png" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <list id="5" type="ol" listtype="decimal" formatstring="&#83;&#84;&#69;&#80;&#32;&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="2" styleclass="HowTo STEP" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo STEP">Import the <text styleclass="VariableName" style="color:#ff0000;">active</text><text styleclass="Body Text HowTo" style="font-weight:normal; font-style:normal;"> in </text><text styleclass="Interface2">SOLIDWORKS </text></li>
+          </list>
+          <para styleclass="Body Text HowTo">In the <text styleclass="Element">Import SolidWorks sketch dialog</text>:</para>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <list id="6" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="B Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="B Bullets"><text styleclass="HowTo Numbered" style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">Click button </text><image src="Red-14-2.gif" scale="100.00%" styleclass="HowTo Numbered" style="font-family:&apos;Segoe UI&apos;; font-size:10pt; font-weight:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;" figurelistinclude="0"></image><text styleclass="VariableName">&#32;</text></li>
+                </list>
+                <para styleclass="Body Text HowTo"><text styleclass="VariableName">Document name</text>&#32;<image src="Red-14-5.gif" scale="100.00%" styleclass="HowTo Bulleted" style="font-family:&apos;Segoe UI&apos;; font-size:10pt; font-weight:normal; font-style:italic; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;" figurelistinclude="0"></image><text styleclass="HowTo Bulleted" style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;"> shows the active </text><text styleclass="HowTo Bulleted" style="font-family:&apos;Segoe UI&apos;; font-size:10pt; font-weight:normal; font-style:normal; text-transform:uppercase; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">SolidWorks </text><text styleclass="HowTo Bulleted" style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">document (SLDPRT) file-name </text></para>
+                <para styleclass="Body Text HowTo"><text styleclass="VariableName">Sketch name</text>&#32;<image src="Red-14-6.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="HowTo Bulleted"> shows the </text><text styleclass="HowTo Bulleted" style="font-style:normal;">active sketch name, as in the </text><text styleclass="SOLIDWORKS">SolidWorks</text><text styleclass="HowTo Bulleted" style="font-style:normal;"> feature-tree</text></para>
+                <para styleclass="Body Text HowTo">Button <image src="Red-14-3.gif" scale="100.00%" figurelistinclude="0"></image> is colorized.</para>
+                <list id="7" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="2" styleclass="B Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="B Bullets"><text style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">Click button </text><image src="Red-14-3.gif" scale="100.00%" style="font-family:&apos;Segoe UI&apos;; font-size:10pt; font-weight:normal; font-style:italic; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;" figurelistinclude="0"></image><text style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;"> &#160;</text></li>
+                </list>
+                <para styleclass="Body Text HowTo"><text styleclass="VariableName">WAIT</text><text styleclass="HowTo Bulleted"> until the SOLIDWORKS sketch shows in your </text><text styleclass="Interface">Part-Editor</text><text styleclass="HowTo Bulleted">. </text></para>
+                <para styleclass="Body Text HowTo"><text styleclass="Body Table" style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">Button </text><image src="Red-14-4.gif" scale="100.00%" styleclass="Body Table" style="font-family:&apos;Segoe UI&apos;; font-size:10pt; font-weight:normal; font-style:italic; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;" figurelistinclude="0"></image><text styleclass="Body Table" style="font-family:&apos;Segoe UI&apos;; font-size:10pt; font-weight:normal; font-style:italic; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">&#32;</text><text styleclass="Body Table" style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">is now colorized.</text></para>
+                <para styleclass="Body Table"><text style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">If you edit the sketch in </text><text styleclass="Interface2" style="font-size:10pt; vertical-align:baseline;">SolidWorks</text><text styleclass="Body Text"> :</text></para>
+                <list id="8" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="3" styleclass="B Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; color:#000000;">
+                  <li styleclass="B Bullets"><text styleclass="HowTo Bulleted" style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">Click button </text><image src="Red-14-4.gif" scale="100.00%" styleclass="HowTo Bulleted" style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;" figurelistinclude="0"></image><text styleclass="HowTo Bulleted" style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;"> to </text><text styleclass="HowTo Bulleted" style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">Refresh, or Update the sketch</text><text styleclass="Interface2">&#32;</text></li>
+                </list>
+                <para styleclass="Normal"><line style="height:1px; color:#343400;" /></para>
+                <para styleclass="Body Text"><text styleclass="Notes">Note</text><text style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">: To use the same </text><text styleclass="Element">Import SW sketch FB</text><text style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;"> to import a different </text><text styleclass="Interface2">SolidWorks</text><text style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;"> sketch:</text></para>
+                <list id="9" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="4" styleclass="Body Table" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="Body Table"><text style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">Click button </text><image src="Red-14-1b.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;"> to clear the Document name and the sketch-name from </text><image src="Red-14-5.gif" scale="100.00%" style="font-family:&apos;Segoe UI&apos;; font-size:10pt; font-weight:normal; font-style:italic; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;" figurelistinclude="0"></image><text style="font-family:&apos;Segoe UI&apos;; font-size:10pt; font-weight:normal; font-style:italic; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;"> &amp; </text><image src="Red-14-6.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="VariableName">&#32;</text></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Table">This image shows the active sketch in the <text styleclass="VariableName">MechDesigner</text> graphics-area.</para>
+        </td>
+      </tr>
+    </table></para>
+  </body>
+</topic>

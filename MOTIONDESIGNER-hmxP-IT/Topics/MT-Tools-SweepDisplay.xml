@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" status="Under Construction" modified="2022-07-10T21:37:50.145+01:00" lasteditedby="Adam" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title translate="true">Edit: Sweep-Display</title>
+  <keywords>
+    <keyword translate="true">Evaluate EXACT Motion-Values</keyword>
+    <keyword translate="true">Motion: Edit toolbar<keyword translate="true">Sweep Display</keyword></keyword>
+  </keywords>
+  <body>
+    <header>
+      <para styleclass="Heading1"><text styleclass="Heading1" translate="true">Edit: Sweep-Display</text></para>
+    </header>
+    <para styleclass="Heading3_atocs_"><text styleclass="Heading3_atocs_" translate="true">Sweep-Display</text></para>
+    <para styleclass="Body Text HowTo"><text styleclass="Body Text HowTo" style="font-weight:normal;" translate="true">A </text><text styleclass="VariableName" translate="true">Cursor</text><text styleclass="Body Text HowTo" style="font-weight:normal;" translate="true"> shows in the graphs of the active Motion at the </text><text styleclass="VariableName" translate="true">X-axis</text><text styleclass="Body Text HowTo" style="font-weight:normal;" translate="true"> as defined by the </text><text styleclass="Parameter-Header" translate="true">Cursor-Position</text><text styleclass="Body Text HowTo" style="font-weight:normal;" translate="true"> parameter.</text></para>
+    <para styleclass="Body Text HowTo"><text styleclass="Body Text HowTo" style="font-weight:normal;" translate="true">Use the </text><text styleclass="VariableName" translate="true">Sweep-Display</text><text styleclass="Body Text HowTo" style="font-weight:normal;" translate="true"> dialog to read the exact motion-values of all motion-derivatives (P V A J) at the position of the Cursor on the X-axis, as defined by the </text><text styleclass="Parameter-Header" translate="true">Cursor-Position</text><text styleclass="Body Text HowTo" style="font-weight:normal;" translate="true"> parameter.</text></para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="Body Text"><text styleclass="VariableName" translate="true">Sweep-Display:</text><text styleclass="Body Text HowTo" style="font-weight:normal;" translate="true"> is almost the same as the </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MT-Motion-Value-Evaluator" styleclass="Body Text HowTo" style="font-weight:normal;" translate="true">Motion-Value Evaluator</link></para>
+    <para styleclass="Body Text"><text styleclass="Body Text HowTo" style="font-weight:normal;" translate="true">The Advantage of the Sweep Display is that you can see a Cursor.</text></para>
+    <para styleclass="Body Text"><text styleclass="Body Text HowTo" style="font-weight:normal;" translate="true">The Advantage of the Motion-Value Evaluator is that you can enter an X-axis value greater than the last X-axis point - see </text><text styleclass="VariableName" translate="true">Notes</text><text styleclass="Body Text HowTo" style="font-weight:normal;" translate="true"> below.</text></para>
+    <para styleclass="Body Text"><table styleclass="Default" rowcount="2" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="vertical-align:middle;">
+          <para styleclass="Normal" style="text-align:right;"><image src="MT-Toolbar-Edit-MotionSweep.png" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td style="vertical-align:middle;">
+          <para styleclass="Body Text"><text styleclass="Body Text" style="font-weight:normal; font-style:normal;" translate="true">To open the </text><text styleclass="VariableName" translate="true">Sweep-Display dialog</text><text styleclass="Body Text" style="font-weight:normal; font-style:normal;" translate="true">:</text></para>
+          <list id="0" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo Bulleted"><text styleclass="HowTo Bulleted" translate="true">Click </text><text styleclass="T_Menu" translate="true">Edit toolbar &gt; Sweep-Display icon</text><text styleclass="VariableName" translate="true">&#32;</text></li>
+          </list>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:216px;">
+          <para styleclass="Normal"><image src="MT-Dialog-SweepDisplay.png" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="Separator-Header"><text styleclass="Separator-Header" translate="true">Sweep-Display </text></para>
+          <para styleclass="Parameter"><text styleclass="Parameter-Header" translate="true">Cursor Position: </text><text styleclass="VariableName-IT" style="font-style:normal;" translate="true">(Read-</text><text styleclass="VariableName" translate="true">Write)</text></para>
+          <para styleclass="Body Text HowTo"><text styleclass="Body Text HowTo" translate="true">The X-axis value at which we want to read the </text><text styleclass="Parameter" translate="true">Position</text><text styleclass="Body Text HowTo" translate="true">, </text><text styleclass="Parameter" translate="true">Velocity</text><text styleclass="Body Text HowTo" translate="true">, </text><text styleclass="Parameter" translate="true">Acceleration</text><text styleclass="Body Text HowTo" translate="true">, and </text><text styleclass="Parameter" translate="true">Jerk</text><text styleclass="Body Text HowTo" translate="true"> motion-values.</text></para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="VariableName"><text styleclass="VariableName" translate="true">Notes:</text></para>
+          <para styleclass="VariableName"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Body Text"><text styleclass="Body Text" translate="true">Edit </text><text styleclass="Parameter" translate="true">Digits</text><text styleclass="Body Text" translate="true"> and </text><text styleclass="Parameter" translate="true">Precision</text><text styleclass="Body Text" translate="true"> of the motion-values with:</text></para>
+                <para styleclass="Body Text HowTo"><link displaytype="text" defaultstyle="true" type="topiclink" href="MT-Edit-Active-Motion-Settings" anchor="DataFormat" styleclass="Body Text HowTo" translate="true">Edit toolbar &gt; Active Motion Settings &gt; Number Format tab | Number-Format separator</link><text styleclass="Body Text HowTo" translate="true">.</text></para>
+                <para styleclass="Body Text"><text styleclass="VariableName" translate="true">Maximum</text><text styleclass="Body Text" translate="true">&#32;</text><text styleclass="Interface2" translate="true">Cursor Position</text><text styleclass="Body Text" translate="true">&#32;</text><text styleclass="Parameter-Header" translate="true">= &#160;Motion-Width – (Number of Steps / </text><text styleclass="Interface" translate="true">Motion-Width</text><text styleclass="Parameter-Header" translate="true">).</text></para>
+                <para styleclass="Body Text"><text styleclass="Body Text" translate="true">For example: If:</text></para>
+                <para styleclass="Parameter"><text styleclass="Parameter" translate="true">Number-of-Steps</text><text styleclass="HowTo Bulleted" translate="true"> = </text><text styleclass="VariableName" translate="true">360</text><text styleclass="HowTo Bulleted" translate="true">; </text><text styleclass="Body Text" translate="true">Maximum</text><text styleclass="HowTo Bulleted" translate="true">&#32;</text><text styleclass="Parameter" translate="true">Cursor Position</text><text styleclass="HowTo Bulleted" translate="true"> ≤ </text><text styleclass="VariableName" translate="true">359</text></para>
+                <para styleclass="Parameter"><text styleclass="Parameter" translate="true">Number-of-Steps</text><text styleclass="HowTo Bulleted" translate="true"> = </text><text styleclass="VariableName" translate="true">3600</text><text styleclass="HowTo Bulleted" translate="true">; Maximum </text><text styleclass="Parameter" translate="true">Cursor Position ≤ </text><text styleclass="VariableName" translate="true">359.9</text></para>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="SeeAlso"><text styleclass="SeeAlso" translate="true"> See also: </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MT-Motion-Width2" styleclass="SeeAlso" translate="true">Motion-Width</link><text styleclass="SeeAlso" translate="true">, </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MT-Edit-Active-Motion-Settings" anchor="Motion" styleclass="SeeAlso" translate="true">Number of Steps</link><text styleclass="SeeAlso" translate="true">, </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MT-MotionDesigner-Help" anchor="MT-MOTIONEVALUATOR" styleclass="SeeAlso" translate="true">Motion-Value Evaluator</link></para>
+        </td>
+      </tr>
+    </table></para>
+  </body>
+</topic>

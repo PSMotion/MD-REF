@@ -1,0 +1,504 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" status="Under Construction" modified="2022-09-05T12:20:57.658+01:00" lasteditedby="Adam" version="2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title>Dialog: 2D-Nocken</title>
+  <keywords>
+    <keyword>2D-Cam dialog<keyword>Display Options</keyword><keyword>Material Parameters</keyword><keyword>Radius Alert Parameters</keyword><keyword>Show Hide Cams</keyword></keyword>
+    <keyword>Dialog<keyword>2D-Cam</keyword></keyword>
+  </keywords>
+  <body>
+    <header>
+      <para styleclass="Heading1">Dialog: 2D-Nocken</para>
+    </header>
+    <para styleclass="Heading2">2D-Nocken</para>
+    <para styleclass="Heading4 Toggle_atocs_">2D-Nocken: Elemente, Parameter, Analyse, Koordinaten</para>
+    <para styleclass="Body Text"><table styleclass="Default" rowcount="1" colcount="1" style="border-width:0px; border-spacing:0px; border-collapse:collapse; cell-border-width:1px; border-color:#993300; border-style:solid; background-color:#ebebeb;">
+      <tr style="vertical-align:top">
+        <td>
+          <list id="0" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullets" style="font-family:&apos;Noto Sans&apos;; font-size:11pt; color:#000000;">
+            <li styleclass="Bullets">Hinzufügen einer <text styleclass="Element">2D-Nocken</text><text styleclass="VariableName"> - siehe: </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Command-Add2DCam" styleclass="VariableName">2D-Nocken hinzufügen</link><text styleclass="Body Text">&#32;</text></li>
+            <li styleclass="HowTo Bulleted"><text styleclass="Body Text">Überprüfen Sie </text>die<text styleclass="Body Text"> Anzeige, Eigenschaften und Lebensdauer </text><text styleclass="Element">der 2D-Nocken</text><text styleclass="SeeAlso">- siehe unten</text></li>
+          </list>
+          <para styleclass="Body Text">Dann:</para>
+          <list id="0" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:&apos;Noto Sans&apos;; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted"><text styleclass="Body Text HowTo">Hinzufügen eines </text><text styleclass="Element">Nocken-Daten FB</text><text styleclass="Body Text HowTo"> - </text><text styleclass="SeeAlso">siehe </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Command-FB-Cam-Data" styleclass="SeeAlso">Hinzufügen eines Nocken-Daten FB</link><text styleclass="VariableName">&#32;</text></li>
+            <li styleclass="HowTo Bulleted"><text styleclass="Body Text HowTo">Verknüpfen Sie die </text><text styleclass="Element">2D-Nocke </text><text styleclass="Body Text HowTo">mit </text>dem <text styleclass="Element">Nocken-Daten FB</text><text styleclass="VariableName"> - </text><text styleclass="SeeAlso">siehe </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Command-FB-Cam-Data" anchor="CAMDATAFB-LINKTO2DCAM" styleclass="SeeAlso">Öffnen und Verknüpfen des FB mit einer 2D-Nocke</link></li>
+          </list>
+          <para styleclass="Body Text">Dann:</para>
+          <list id="1" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="5" styleclass="Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="Bullets">Analysieren Sie fünf verschiedene Parameter für die <text styleclass="Element">2D-Nocke</text><text styleclass="VariableName"> - siehe</text><text styleclass="SeeAlso">&#32;</text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-FunctionBlock-CamData" anchor="2DCAMDATAFB-CAMANALYSIS" styleclass="SeeAlso">Nocken-Analyse Parameter</link><text styleclass="VariableName">&#32;</text></li>
+            <li styleclass="HowTo Bulleted"><text styleclass="Body Text">Berechnen Sie die Nockenkoordinaten</text> - <text styleclass="SeeAlso">siehe </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-FunctionBlock-CamCoordinates" styleclass="SeeAlso">Cam-Data Dialogfenster - Koordinaten</link><text styleclass="Body Text">&#32;</text></li>
+          </list>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading2">2D-Nocken dialog-box</para>
+    <para styleclass="Heading4 Toggle_atocs_" style="text-indent:-36px; margin-left:36px;"><text styleclass="Heading3_atocs_">So öffnen Sie das Dialogfeld 2D-Cam:</text></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="1" colcount="1">
+      <tr style="vertical-align:top">
+        <td style="border-right:none;">
+          <para styleclass="Body Text">Um die<text styleclass="Element"> 2D-Nocken </text>zu bearbeiten<text style="font-weight:normal; font-style:normal;">:</text></para>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td style="border-top:none; border-right:none; border-bottom:none;">
+                <list id="2" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="B Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="B Bullets"><text styleclass="Body Text">Doppelklicken Sie auf eine </text><text styleclass="Element">2D-Nocken</text><text styleclass="Body Text"> im </text><text styleclass="Interface">Grafikbereich</text><text styleclass="Body Text"> oder </text><text styleclass="Interface">Assembly-Tree</text><text styleclass="Body Text">.</text><text styleclass="VariableName">&#32;</text></li>
+                </list>
+                <para styleclass="VariableName">ODER</para>
+                <list id="3" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="B Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="B Bullets"><text styleclass="SeeAlso">Siehe </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-How-to-Open-a-Dialog-Box" styleclass="SeeAlso">Öffnen eines Dialogfeldes</link><text styleclass="VariableName">. </text></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Body Text">Das <text styleclass="Element">Dialogfeld 2D-Nocken</text> ist nun geöffnet.</para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading2"><anchor id="2DCAM-DIALOG-EXTENDED"><keywords><keyword>2D-Cam dialog-box - SHORT<keyword>Roller-Life</keyword><keyword>Cam-Life</keyword></keyword></keywords></anchor>EXTENDED-Format</para>
+    <para styleclass="Body Text"><table styleclass="Default" rowcount="2" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Text"></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Table">Um das <text styleclass="Interface2">erweiterte</text><text styleclass="VariableName"> Format</text> zu sehen, müssen Sie klicken:</para>
+          <list id="4" type="ul" listtype="bullet" formatstring="&#113;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="3" styleclass="HowTo Bulleted" style="font-family:Wingdings; font-size:11pt; color:#003300;">
+            <li styleclass="HowTo Bulleted">&#32;<link displaytype="text" defaultstyle="true" type="topiclink" href="" anchor="2DCAM-DIALOG-DISPLAY-OPTIONS" styleclass="T_Menu">Rollen- und Nockenlebensdauer anzeigen</link><text styleclass="T_Menu"> - auf der &#160;Registerkarte</text><text styleclass="Interface2">Anzeige</text><text styleclass="T_Menu">&#32;</text></li>
+          </list>
+          <para styleclass="Body Table">Um die Lebensdauer von Rollen und Nocken zu berechnen, müssen Sie in diesem Dialogfeld für jedes Element</para>
+          <list id="5" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted"><text styleclass="VariableName">Rollenhersteller</text> - <text styleclass="SeeAlso">siehe </text><link displaytype="text" defaultstyle="true" type="topiclink" href="" anchor="2DCAM-DIALOG-ROLLER-SIZE" styleclass="SeeAlso">Registerkarte Rollenlebensdauer</link><text styleclass="Body Text">&#32;</text></li>
+            <li styleclass="HowTo Bulleted"><text styleclass="VariableName">Rollenmodell</text> und <text styleclass="VariableName">Teilenummer</text> - <text styleclass="SeeAlso">siehe </text>Registerkarte<link displaytype="text" defaultstyle="true" type="topiclink" href="" anchor="2DCAM-DIALOG-ROLLER-SIZE" styleclass="SeeAlso">Rollenlebensdauer</link></li>
+            <li styleclass="HowTo Bulleted"><text styleclass="VariableName">Nockenmaterial</text> - <text styleclass="SeeAlso">siehe </text>Registerkarte<link displaytype="text" defaultstyle="true" type="topiclink" href="" anchor="2DCAM-DIALOG-CAMLIFE-MATERIAL" styleclass="SeeAlso">Nockenlebensdauer</link></li>
+          </list>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading4 HowTo_atoc_"><anchor id="2DCAM-DIALOG-ROLLER"></anchor>Roller-Life</para>
+    <para styleclass="Body Text HowTo"><anchor id="2DCAM-DIALOG-ROLLER-SIZE"><keywords><keyword>2D-Cam dialog-box<keyword>Roller Manufacturer</keyword><keyword>Roller Part-Number, Diameter, ...</keyword><keyword>Roller Lifetime</keyword></keyword><keyword>Cam-Follower Manufacturers<keyword>THK</keyword><keyword>SKF</keyword><keyword>INA</keyword><keyword>FAG</keyword><keyword>KOYO</keyword><keyword>NSK</keyword></keyword></keywords></anchor>&#32;<image src="tog_plus.gif" scale="100.00%" figurelistinclude="0"></image><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" src-collapsed="tog_plus.gif" src-expanded="tog_minus.gif" styleclass="Separator-Header"><caption><![CDATA[ Cam Roller                                                         ]]></caption></toggle><text styleclass="Heading4 Toggle_atocs_2">&#32;</text></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="2" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Normal"><image src="MD-Dialog-2DCam-RollerLife-CamRoller.ipp" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <list id="6" type="ol" listtype="decimal" formatstring="&#83;&#84;&#69;&#80;&#32;&#37;&#48;&#58;&#115;&#58;&#32;" format-charset="DEFAULT_CHARSET" levelreset="false" legalstyle="false" startfrom="1" styleclass="HowTo STEP" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo STEP"><text styleclass="VariableName">Klicken Sie auf die Dropdown-Liste, um einen Kurvenrollenhersteller auszuwählen. </text><image src="Red-14-1.gif" scale="100.00%" styleclass="VariableName" figurelistinclude="0"></image><text styleclass="VariableName">&#32;</text></li>
+          </list>
+          <para styleclass="Body Table"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Body Table"><text styleclass="Body Text">Verfügbare Hersteller</text><text styleclass="VariableName-indent"> : SKF, INA/FAG, KOYO, NSK, THK</text></para>
+                <para styleclass="Body Table">Wenn Sie einen Nockenhersteller auswählen, werden die Teilenummern unter der Modellüberschrift angezeigt.</para>
+              </td>
+            </tr>
+          </table></para>
+          <list id="6" type="ol" listtype="decimal" formatstring="&#83;&#84;&#69;&#80;&#32;&#37;&#48;&#58;&#115;&#58;&#32;" format-charset="DEFAULT_CHARSET" levelreset="false" legalstyle="false" startfrom="1" styleclass="Body Text" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="Body Text"></li>
+          </list>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Body Text HowTo"><anchor id="2DCAM-DIALOG-ROLLER-L10"><keywords><keyword>2D-Cam dialog<keyword>Roller L10 Lifetime</keyword></keyword></keywords></anchor>&#32;<image src="tog_plus.gif" scale="100.00%" figurelistinclude="0"></image><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" src-collapsed="tog_plus.gif" src-expanded="tog_minus.gif" styleclass="Separator-Header"><caption><![CDATA[ Roller L10 Lifetime]]></caption></toggle><text styleclass="Separator-Header"> &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160;</text></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="1" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Text"><image src="MD-Dialog-2DCam-RollerLife-CamRoller-L10.ipp" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="Body Text"><text styleclass="VariableName">Ergebnisse der Berechnungen zur Lebensdauer der Kurvenrollen</text>:</para>
+          <para styleclass="Body Table"><table styleclass="Block" rowcount="1" colcount="1" style="width:100%;">
+            <tr style="vertical-align:top">
+              <td style="width:963px;">
+                <para styleclass="Body Table"><equation styleclass="VariableName" font-size="28"><![CDATA[L_{10}]]></equation><text styleclass="VariableName"> (</text><equation styleclass="VariableName"><![CDATA[10^{6}]]></equation><text styleclass="VariableName">)</text><text styleclass="Body Text HowTo">&#32;</text></para>
+                <para styleclass="Body Text HowTo">Nominelle Lebensdauer in Millionen Umdrehungen, die von 90% einer genügend großen Menge gleicher Lager erreicht oder überschritten wird, bevor erste Anzeichen einer Werkstoffermüdung auftreten</para>
+                <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+                <para styleclass="Body Text"><equation styleclass="VariableName" font-size="28"><![CDATA[L_{10h}]]></equation><text styleclass="VariableName">&#32;</text>(hours)</para>
+                <para styleclass="Body Text HowTo">Nominelle Lebensdauer in Betriebsstunden.</para>
+                <para styleclass="Body Text HowTo"><equation font-size="28"><![CDATA[L_{10h} = \frac{16666}{n}. \left( \frac{C}{P_{eq}} \right)^{p}]]></equation></para>
+                <para styleclass="Body Text HowTo"><text style="font-style:italic;">C</text> = <text styleclass="Body Text">Dynamische Tragzahl</text></para>
+                <para styleclass="Body Text HowTo"><text style="font-style:italic;">n</text> = <text styleclass="Body Text">Betriebsdrehzahl (Nenndrehzahl)</text></para>
+                <para styleclass="Body Text HowTo"><text style="font-style:italic;">p</text> = <text styleclass="Body Text">Lebensdauerexponent =</text></para>
+                <para styleclass="Body Text HowTo">10/3 <text styleclass="Body Text">für Rollenlager</text>, or 3<text styleclass="Body Text"> für Kugellager</text></para>
+                <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+                <para styleclass="Body Table"><equation styleclass="VariableName" font-size="28"><![CDATA[L_{10(Y)}]]></equation></para>
+                <para styleclass="Body Text HowTo">Number of Years, based on 8760 hours per year.</para>
+                <para styleclass="Body Text HowTo"><equation font-size="28"><![CDATA[L_{10(Years)} = \frac{L_{10h}}{8760}]]></equation></para>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="VariableName">Wir berechnen und liefern auch ...</para>
+          <para styleclass="Body Table"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Body Text"><text styleclass="VariableName">Dynamische äquivalente Lagerbelastung </text><equation styleclass="VariableName" style="font-size:10pt; vertical-align:baseline;" font-size="28"><![CDATA[P_{eq}]]></equation></para>
+                <para styleclass="Body Text HowTo">Dynamische äquivalente Lagerbelastung.</para>
+                <para styleclass="Body Text HowTo">Wir berechnen eine äquivalente Last für die Kurvenrolle aus der Last und der Geschwindigkeit, die sich kontinuierlich ändern, wenn sich die Kurvenscheibe dreht.</para>
+                <para styleclass="Body Table"><text styleclass="VariableName">Rollenumdrehungen pro Nockenumdrehung (#)</text></para>
+                <para styleclass="Body Text HowTo">Die Anzahl der Umdrehungen der Tastrollen für jede Nockenumdrehung.</para>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="VariableName">Hinweis: Verlässlichkeit, <equation styleclass="HowTo Bulleted" style="font-size:7pt; vertical-align:sub;" font-size="28"><![CDATA[a_{1}]]></equation> und Life-Faktoren, <equation styleclass="HowTo Bulleted" style="font-size:7pt; vertical-align:sub;" font-size="28"><![CDATA[a_{iso}]]></equation></para>
+          <para styleclass="Body Table"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Body Table">Wir wenden <text styleclass="Interface2" style="color:#ff0000;">KEINE</text> anderen Faktoren an - i.e. </para>
+                <list id="7" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+                  <li styleclass="HowTo Bulleted">Verlässlichkeitsfaktor, <equation style="font-size:7pt; vertical-align:sub;" font-size="28"><![CDATA[a_{1}]]></equation>&#32;</li>
+                  <li styleclass="HowTo Bulleted">Veränderungsfaktor, <equation style="font-size:7pt; vertical-align:sub;" font-size="28"><![CDATA[a_{iso}]]></equation></li>
+                </list>
+                <para styleclass="Body Table">Wir beabsichtigen, diese Faktoren in der nächsten Version - MD16.2 - anzuwenden.</para>
+              </td>
+            </tr>
+          </table></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading4 HowTo_atoc_"><anchor id="2DCAM-DIALOG-CAMLIFE"><keywords><keyword>2D-Cam dialog-box<keyword>Cam-Life tab</keyword></keyword></keywords></anchor>CAM-LIFE</para>
+    <para styleclass="Body Text HowTo" style="text-indent:-36px; margin-left:60px;"><anchor id="2DCAM-DIALOG-CAMLIFEFACTORS"><keywords><keyword>2D-Cam dialog-box<keyword>Cam Lifetime</keyword><keyword>Dynamic Loading Factor</keyword><keyword>Allow Pitting</keyword></keyword></keywords></anchor><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" src-collapsed="tog_plus.gif" src-expanded="tog_minus.gif"><caption><![CDATA[ ]]></caption></toggle><image src="tog_plus.gif" scale="100.00%" figurelistinclude="0"></image><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" src-collapsed="tog_plus.gif" src-expanded="tog_minus.gif" styleclass="Separator-Header"><caption><![CDATA[ Nockenlebensdauer-Faktoren                                              ]]></caption></toggle></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="2" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Normal"><image src="MD-Dialog-2dCam-CamLifetab-CamLifeFactors.png" align="left" scale="-99.90%" padding="0 3 0 0" styleclass="Image Caption" figurelistinclude="0"></image></para>
+          <para styleclass="Body Table">Bevor Sie die <text styleclass="VariableName">Nocken-Lebensdauer berechnen</text>, sollten Sie auch eingeben: </para>
+          <list id="8" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted"><text styleclass="Parameter-Header">Sicherheitsfaktor für dynamische Belastung</text><text styleclass="Body Table">&#32;</text></li>
+          </list>
+          <list id="9" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#333399;">
+            <li styleclass="HowTo Bulleted"><text styleclass="Parameter-Header">Pitting zulassen</text><text styleclass="Body Text"> oder </text><text styleclass="Parameter-Header">kein Pitting</text></li>
+          </list>
+          <para styleclass="HowTo Bulleted"></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Parameter-Header">Dynamische Belastung / Sicherheitsfaktor</para>
+          <para styleclass="Body Table"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Body Table"><text styleclass="VariableName">Maximale dynamische Kontaktspannung</text><text styleclass="Body Text"> = </text><text styleclass="VariableName">Berechnete maximale Kontaktspannung </text><text styleclass="VariableName" style="font-size:16pt;">× </text><text styleclass="VariableName">Sicherheitsfaktor für dynamische Belastung </text></para>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Body Table">Der Wert für den Faktor sollte berücksichtigt werden:</para>
+          <list id="10" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted">Wie die Nockenwelle angetrieben wird - von einem sanften Servomotor mit konstanter Geschwindigkeit bis hin zu einem Einzylinder-Dieselmotor.</li>
+            <li styleclass="HowTo Bulleted"><text styleclass="Body Text">Was fährt der Cam-Follower?</text>&#32;<text styleclass="Body Text">Von einem reibungslos funktionierenden Papiertacker bis hin zu einer Schmiedepresse.</text></li>
+          </list>
+          <list id="11" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted">Steifigkeit, Starrheit, Trägheit, Eigenfrequenz der Nutzlast im Verhältnis zur Geschwindigkeit der Nocke.</li>
+          </list>
+          <list id="12" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted">Die Schwere der Bewegung.</li>
+          </list>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="Parameter-Header">Pitting auf 15% der Cam-Oberfläche zulassen</para>
+          <para styleclass="Body Table">Bei Stählen und Gusseisen der Kategorien 1, 2, 3, 4, 6, 8, 9, 10 und 11 (siehe <text styleclass="Separator"> Nockenmaterial </text> unten) ist es möglich, dass eine geringe Menge an Lochfraß auftritt und sich der Lochfraß dann stabilisiert. Dies wird als nicht fortschreitende Lochfraßbildung bezeichnet.</para>
+          <para styleclass="Body Table">Wenn Sie ~15% Pitting zulassen, wird die Lebensdauer der Nocken verlängert. </para>
+          <para styleclass="Body Table">Bei <text styleclass="VariableName-IT">einsatzkritischen</text> Anwendungen, z. B. bei der bemannten Luftfahrt, ist Lochfraß natürlich nicht zulässig.</para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Body Text HowTo" style="text-indent:-36px; margin-left:60px;"><anchor id="2DCAM-DIALOG-CAMLIFE-MATERIAL"><keywords><keyword>2D-Cam dialog-box<keyword>Cam Life - Cam Material and Hardness</keyword></keyword></keywords></anchor>&#32;<image src="tog_plus.gif" scale="100.00%" figurelistinclude="0"></image><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" src-collapsed="tog_plus.gif" src-expanded="tog_minus.gif" styleclass="Separator-Header"><caption><![CDATA[ Nockenmaterial                                                    ]]></caption></toggle></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="1" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Normal"><image src="MD-Dialog-2DCam-CamLife-Material.png" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"><caption><![CDATA[Enter the Hardness as HB, HV, or HRC]]></caption></image></para>
+          <list id="13" type="ol" listtype="decimal" formatstring="&#83;&#84;&#69;&#80;&#32;&#37;&#48;&#58;&#115;&#58;&#32;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Body Table" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="Body Table"><text styleclass="VariableName">Wählen Sie eine Stahl-Kategorie, Wärmebehandlung und Qualität. </text></li>
+          </list>
+          <para styleclass="VariableName">Stähle Kategorien</para>
+          <para styleclass="Body Table">Es gibt 14 Kategorien - identisch mit der Norm ISO 6336-5 für Zahnräder.</para>
+          <para styleclass="Normal"><table styleclass="Default" rowcount="14" colcount="1" style="background-color:none;">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Body Text"> &#160;1. Normalized niedriggekohlter Stahl / Stahlguss (Normalized niedriggekohlter Stahl (geformte))<text style="font-size:10pt; vertical-align:super;"> a</text> [St]</para>
+              </td>
+            </tr>
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Body Text"> &#160;2. Normalized niedriggekohlter Stahl / Stahlguss (Stahlguss)<text style="font-size:10pt; vertical-align:super;">a</text> &#160;[St(cast)]</para>
+              </td>
+            </tr>
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Body Text"> &#160;3. Gusseisenwerkstoffe (Verformbarem Gusseisen mit schwarzen Herzen) [GTS(perl.)]</para>
+              </td>
+            </tr>
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Body Text"> &#160;4. Gusseisenwerkstoffe (Gusseisen mit Kugelgraphit) [GGG]</para>
+              </td>
+            </tr>
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Body Text"> &#160;5. Gusseisenwerkstoffe (Graues Gußeisen) [GG]</para>
+              </td>
+            </tr>
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Body Text"> &#160;6. Vergütungsstahl &#160;(geformte) (Hartstahl) <text style="font-size:10pt; vertical-align:super;">b</text> &#160;[V]</para>
+              </td>
+            </tr>
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Body Text"> &#160;7. Vergütungsstahl &#160;(geformte) (Legierter Stahl)<text style="font-size:10pt; vertical-align:super;">b</text> [V]</para>
+              </td>
+            </tr>
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Body Text"> &#160;8. Vergütungsstahlguss (Hartstahl) [V(cast)]</para>
+              </td>
+            </tr>
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Body Text"> &#160;9. Vergütungsstahlguss (Legierter Stahl) [V(cast)]</para>
+              </td>
+            </tr>
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Body Text">10. Einsatzstahl, einsatzgehärtet<text style="font-size:10pt; vertical-align:super;">c</text> [Eh]</para>
+              </td>
+            </tr>
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Body Text">11. Stahl und GGG, induktif oder flammgehärtet [IF]</para>
+              </td>
+            </tr>
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Body Text">12. Nitriert kaltgeformten Stahl / Nitrierstahl / Vergütungsstahl (Nitrierstahl)<text style="font-size:10pt; vertical-align:super;">d</text> [NT(nitr.)]</para>
+              </td>
+            </tr>
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Body Text">13. Nitriert kaltgeformten Stahl / Nitrierstahl / Vergütungsstahl (Vergütungsstahl)<text style="font-size:10pt; vertical-align:super;">b</text> [NV(nitr.)]</para>
+              </td>
+            </tr>
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Body Text">14. Karbonitrieren Vergütungsstahl (Vergütungsstahl)e [NV(nitro-car.)]</para>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Body Table">a - ISO 4948-2<text styleclass="Body Text"> (ISO10020)- Teil 2: Einteilung der unlegierten und legierten Stähle nach Hauptgüteklassen und Haupteigenschaft oder Anwendung</text></para>
+          <para styleclass="Body Table">b - ISO 683-1 - Vergütungsstähle, legierte Stähle und Automatenstähle - Teil 1 - Unlegierte Vergütungsstähle</para>
+          <para styleclass="Body Table">c - ISO 683-11 - Vergütungsstähle, legierte Stähle und Automatenstähle - Teil 11 - Knet-Einsatzstähle </para>
+          <para styleclass="Body Table">d - ISO 683-10 - Vergütungsstähle, legierte Stähle und Automatenstähle - Teil 1 - Unlegierte Vergütungsstähle</para>
+          <para styleclass="Body Table">e - ISO 683-1, ISO683-10, or ISO 683-11</para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="VariableName">Stahlqualität</para>
+          <para styleclass="Body Table">Die Qualitätsstandards für Stahl sind:</para>
+          <para styleclass="Body Text HowTo">ML - Geringe Anforderungen an die Materialqualität und den Wärmebehandlungsprozess</para>
+          <para styleclass="Body Text HowTo">MQ - <text styleclass="Body Text">Materialqualität und Wärmebehandlungsstandards durch erfahrenen Hersteller erfüllt</text></para>
+          <para styleclass="Body Text HowTo">ME - <text styleclass="Body Text">Hohe Zuverlässigkeit der Materialqualität und des Wärmebehandlungsprozesses.</text></para>
+          <para styleclass="Body Table">Für die verschiedenen Stahlqualitäten müssen unter anderem folgende Anforderungen erfüllt werden: Chemische Analyse, Schmelzverfahren, Erkennung von Oberflächenrissen nach der Bearbeitung, Messung der Härte. Manchmal mit einem Prüfstück aus Stahl, das zusammen mit Nocken hergestellt und wärmebehandelt wird.</para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <list id="13" type="ol" listtype="decimal" formatstring="&#83;&#84;&#69;&#80;&#32;&#37;&#48;&#58;&#115;&#58;&#32;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Body Table" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="Body Table"><text styleclass="VariableName">Geben Sie die Oberflächenhärte der Nocken mit der HB-, HV- oder HRC-Härteskala ein.</text></li>
+          </list>
+          <para styleclass="Body Text HowTo">Die von Ihnen eingegebene Härte muss innerhalb der oberen und unteren Härtegrenzen liegen - wie in ISO 6336-5 festgelegt.</para>
+          <para styleclass="Body Text HowTo"><text styleclass="VariableName-indent">Untere H-Grenzwerte ≤ HB,HV,HRC ≤ Oberer H-Grenzwert</text></para>
+          <para styleclass="Body Text HowTo">Wenn Sie einen Wert mit einer der Härteskalen<text styleclass="Body Table">(HB, HV oder HRC)</text> eingeben, werden die beiden anderen Härteskalen automatisch aktualisiert.</para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Body Text HowTo" style="text-indent:-36px; margin-left:60px;"><anchor id="2DCAM-DIALOG-CAMLIFE-FLANK"><keywords><keyword>2D-Cam dialog<keyword>Cam Life - Cam Life + Flank</keyword></keyword></keywords></anchor>&#32;<image src="tog_plus.gif" scale="100.00%" figurelistinclude="0"></image><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" src-collapsed="tog_plus.gif" src-expanded="tog_minus.gif" styleclass="Separator-Header"><caption><![CDATA[                    ]]></caption></toggle></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="1" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Text"><image src="MD-DIALOG-2DCAM-CAMLIFE-RESULTS.ipp" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+          <para styleclass="Body Table"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Body Table"><text styleclass="VariableName">The Orange Separator indicates the Flank, Steel Category, Steel Quality, Heat-Treatment Type and/or Steel-Type with Steel Acronym are indicated in the separator.</text></para>
+                <para styleclass="Body Table"><text styleclass="VariableName">E.G: </text><text styleclass="Separator" style="font-weight:bold;"> Inner Flank: 004 ML Nodular / Ductile / Spherical Cast Iron (GGG) </text></para>
+                <para styleclass="Body Text HowTo"><text styleclass="VariableName">Flank : Inner</text></para>
+                <para styleclass="Body Text HowTo"><text styleclass="VariableName">Steel Category : 004</text></para>
+                <para styleclass="Body Text HowTo"><text styleclass="VariableName">Steel Quality : ML</text></para>
+                <para styleclass="Body Text HowTo"><text styleclass="VariableName">Steel Name : Nodular / Ductile / Spherical Cast Iron</text></para>
+                <para styleclass="Body Text HowTo"><text styleclass="VariableName">Steel Acronym : GGG</text></para>
+                <para styleclass="Interface2">The Results are<text styleclass="VariableName">:</text></para>
+                <para styleclass="VariableName">Maximum Contact Stress (MPa - Mega-Pascals)<text styleclass="Body Table">&#32;</text></para>
+                <para styleclass="Body Text HowTo">The maximum contact-stress that we calculate from the Geometry, Materials, and Contact-Force, for both cylindrical and barrel shaped Cam-Followers. </para>
+                <para styleclass="VariableName">Maximum Dynamic Contact-Stress &#160;- (MPa - Mega-Pascals)<text styleclass="Body Table">&#32;</text></para>
+                <para styleclass="Body Text HowTo">Maximum Contact-Stress × Safety Factor - see <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-2DCam-ParametersTab">Parameters tab &gt; Enable Lifetime, Edit Safety-Factor</link></para>
+                <para styleclass="VariableName">Maximum Allowable Contact Stress </para>
+                <para styleclass="Body Text HowTo">Function of selected<text styleclass="VariableName"> Steel-Category,</text><text styleclass="Body Text">&#32;</text><text styleclass="VariableName">Heat-Treatment, Steel Quality, </text>and its <text styleclass="VariableName">Surface</text>&#32;<text styleclass="VariableName">Hardness</text></para>
+                <para styleclass="Body Text"><text styleclass="VariableName">Dynamic /Allowable</text></para>
+                <para styleclass="Body Text HowTo">Ratio of Maximum Dynamic Contact-Stress to the Maximum Allowable Contact Stress</para>
+                <para styleclass="Body Text HowTo">This ratio gives the value on the Y-axis of Life vs Y (Dynamic/Allowable) plot - see image below.</para>
+                <para styleclass="Body Text HowTo">From that, we derive the life of the Cam.</para>
+                <para styleclass="VariableName">Depth of Max Shear Stress</para>
+                <para styleclass="Body Text HowTo">The maximum shear-stress is below the surface. Its depth is a function of the size and shape of the contact zone.</para>
+                <para styleclass="Body Text HowTo">The minimum depth-of-hardness for any surface hardening should be approximately 2 x this value.</para>
+                <para styleclass="VariableName">Maximum Shear Stress</para>
+                <para styleclass="Body Text HowTo">Approximately 0.78 x Maximum Contact-Stress (depending on the contact geometry.</para>
+                <para styleclass="VariableName">Dynamic Shear-Stress</para>
+                <para styleclass="Body Text HowTo">Maximum Shear-Stress x Safety-Factor - see <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-2DCam-ParametersTab">Parameters tab &gt; Enable Lifetime, Edit Safety-Factor</link></para>
+                <para styleclass="Body Text HowTo"><image src="MD-CamLifeSN-B.png" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"><caption><![CDATA[S-N Curves for different Steel Categories (based on ISO 6336)]]></caption></image></para>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Body Text"><text styleclass="VariableName">Cam Lebenszeit</text>:</para>
+          <para styleclass="Body Table"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="VariableName">Nockenlebensdauer N (Millionen von Nockenumdrehungen) </para>
+                <para styleclass="Body Text HowTo">Anzahl der (Millionen) Zyklen, 99%. Zuverlässigkeit</para>
+                <para styleclass="Body Text HowTo">Maximum - 10,000,000,000 (10<text style="font-size:9pt; vertical-align:super;">10</text> rotations)</para>
+                <para styleclass="Body Text HowTo">Minimum - Funktion des Stahls oder des Gusseisens</para>
+                <para styleclass="Body Table"><text styleclass="VariableName">Nockenleben Stunden</text></para>
+                <para styleclass="Body Text HowTo">Nockenlebensdauer in Stunden, basierend auf Maschinengeschwindigkeit und Nockendrehungen pro Stunde</para>
+                <para styleclass="Body Table"><text styleclass="VariableName">Nockenleben Jahre</text></para>
+                <para styleclass="Body Text HowTo">Anzahl der Jahre, basierend auf 8760 Stunden pro Jahr.</para>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="VariableName">Wir präsentieren auch:</para>
+          <para styleclass="Body Table"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Body Table"><text styleclass="VariableName">Maximale Kontaktspannung (MPa - mega-Pascals)</text>&#32;</para>
+                <para styleclass="Body Text HowTo">Wir berechnen die maximale Kontaktspannung für zylindrische und tonnenförmige Kurvenrollen </para>
+                <para styleclass="Body Table"><text styleclass="VariableName">Maximale dynamische Kontaktspannung</text><text styleclass="Body Text">&#32;</text></para>
+                <para styleclass="Body Text HowTo">= <text styleclass="VariableName">Berechnete maximale Kontaktspannung </text><text styleclass="VariableName" style="font-size:16pt;">× </text><text styleclass="VariableName">Sicherheitsfaktor für dynamische Belastung </text></para>
+                <para styleclass="Body Table"><text styleclass="VariableName">Zulässige Kontaktspannung </text></para>
+                <para styleclass="Body Text HowTo">Dies basiert auf dem <text styleclass="VariableName">ausgewählten Material</text> und seiner <text styleclass="VariableName">Härte</text></para>
+                <para styleclass="Body Table"><text styleclass="VariableName">Faktor Y (n-Diagramm unten) = Maximale dynamische Kontaktspannung </text><equation styleclass="VariableName" style="font-size:7pt; vertical-align:sub;" font-size="36"><![CDATA[\slash ]]></equation><text styleclass="VariableName"> Zulässige Kontaktspannung</text></para>
+                <para styleclass="Body Text HowTo"><text styleclass="VariableName">Jede Stahlkategorie hat ihre eigene Spannungs-Lebensdauer-Beziehung. </text></para>
+                <para styleclass="Body Text HowTo"><text styleclass="VariableName">Alle ausgewählten Materialien:</text>&#32;<text styleclass="VariableName">Y &lt; 0,85</text>, Nocken-Lebensdauer &gt;1010<text styleclass="Body Text"> Nockenumdrehungen.</text></para>
+                <para styleclass="Body Text HowTo">Wir wenden diese S-N-Kurven auf jede Stahlkategorie an.</para>
+                <para styleclass="Body Text HowTo"><image src="MD-CamLifeSN-B.png" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"><caption><![CDATA[S-N Curves for different Steel Categories (based on ISO 6336)]]></caption></image></para>
+              </td>
+            </tr>
+          </table></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading4 HowTo_atoc_"><anchor id="2DCAM-DIALOG-SAVEDATABUTTON"><keywords><keyword>2D-Cam dialog-box<keyword>Save Cam Data button</keyword></keyword></keywords></anchor><image src="tog_plus.gif" scale="100.00%" figurelistinclude="0"></image><tab /><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" src-collapsed="tog_plus.gif" src-expanded="tog_minus.gif"><caption><![CDATA[Nockendaten speichern ]]></caption></toggle></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="2" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Normal"><text styleclass="VariableName" style="color:#ff0000;">WICHTIG</text><text styleclass="Body Table">: Diese Daten sind für die </text><text styleclass="VariableName">Nockenanalyse</text><text styleclass="Body Text"> und </text><text styleclass="VariableName" style="color:#ff0000;">NICHT</text><text styleclass="Body Table"> für die </text><text styleclass="VariableName">Nockenherstellung</text><text styleclass="Body Table">.</text></para>
+          <para styleclass="Body Table">Für die <text styleclass="VariableName">Nockenherstellung</text> siehe <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-FunctionBlock-CamCoordinates" styleclass="T_Menu">Nockendaten FB - Dialogfenster Koordinaten</link></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Table"><link displaytype="button" type="topiclink" href="" anchor="2DCAM-DIALOG-SAVEDATABUTTON">Nockendaten speichern</link> button .</para>
+          <para styleclass="Body Table">Klicken Sie auf , um eine <text styleclass="VariableName">CSV-Datei</text> mit den Nockendaten für weitere Nockenanalysen zu speichern.</para>
+          <para styleclass="Body Table">Die Cam-Data CSV-Datei enthält:</para>
+          <para styleclass="Body Table"><table styleclass="Block" rowcount="2" colcount="10">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Popup Box" style="text-align:center;">Time</para>
+              </td>
+              <td>
+                <para styleclass="Popup Box" style="text-align:center;">X-</para>
+                <para styleclass="Popup Box" style="text-align:center;">Coordinates</para>
+              </td>
+              <td>
+                <para styleclass="Popup Box" style="text-align:center;"> Y-</para>
+                <para styleclass="Popup Box" style="text-align:center;">Coordinates</para>
+              </td>
+              <td>
+                <para styleclass="Popup Box" style="text-align:center;">Contact</para>
+                <para styleclass="Popup Box" style="text-align:center;">Force</para>
+              </td>
+              <td>
+                <para styleclass="Popup Box" style="text-align:center;">Contact Shear Stress</para>
+              </td>
+              <td>
+                <para styleclass="Popup Box" style="text-align:center;">Radius</para>
+                <para styleclass="Popup Box" style="text-align:center;">of</para>
+                <para styleclass="Popup Box" style="text-align:center;">Curvature</para>
+              </td>
+              <td>
+                <para styleclass="Popup Box" style="text-align:center;">Pressure</para>
+                <para styleclass="Popup Box" style="text-align:center;">Angle</para>
+              </td>
+              <td>
+                <para styleclass="Popup Box" style="text-align:center;">Sliding Velocity</para>
+              </td>
+              <td>
+                <para styleclass="Popup Box" style="text-align:center;">Cam Angular Velocity</para>
+              </td>
+              <td>
+                <para styleclass="Popup Box" style="text-align:center;">Interferes?</para>
+              </td>
+            </tr>
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Popup Box" style="text-align:center;">s</para>
+              </td>
+              <td>
+                <para styleclass="Popup Box" style="text-align:center;">mm</para>
+              </td>
+              <td>
+                <para styleclass="Popup Box" style="text-align:center;">mm</para>
+              </td>
+              <td>
+                <para styleclass="Popup Box" style="text-align:center;">N</para>
+              </td>
+              <td>
+                <para styleclass="Popup Box" style="text-align:center;">MPa</para>
+              </td>
+              <td>
+                <para styleclass="Popup Box" style="text-align:center;">mm</para>
+              </td>
+              <td>
+                <para styleclass="Popup Box" style="text-align:center;">degree</para>
+              </td>
+              <td>
+                <para styleclass="Popup Box" style="text-align:center;">mm/s</para>
+              </td>
+              <td>
+                <para styleclass="Popup Box" style="text-align:center;">rad/s</para>
+              </td>
+              <td>
+                <para styleclass="Popup Box" style="text-align:center;">Y/N</para>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Body Table">Die Anzahl der Datenpunkte (Zeilen) ist gleich der <text styleclass="T_Menu">Anzahl der Schritte</text> im <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-Machine-Settings" anchor="Dialog_McSettings-CyclingParameters" styleclass="T_Menu">Dialogfeld Maschineneinstellungen &gt; Anzahl der Schritte</link></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading4 Toggle_atocs_"><conditional-text type="IF" value="HXS,USER3"/></para>
+    <para styleclass="Heading4 Toggle_atocs_">Useful Information</para>
+    <list id="14" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+      <li styleclass="HowTo Bulleted">Common materials for cam discs, cylindrical cams (drum cams) are, for example: </li>
+      <li styleclass="HowTo Bulleted">Structural steels: S235, S355, etc. </li>
+      <li styleclass="HowTo Bulleted">Case-hardening steels: 16MnCr5, 20MnCr5, 18CrNiMo7-6 etc. </li>
+      <li styleclass="HowTo Bulleted">Tempered steels: C45, C60, 42CrMo4, 36CrNiMo4, etc. </li>
+      <li styleclass="HowTo Bulleted">Tool steels: X100CrMov5, X155CrMoV12, etc. </li>
+      <li styleclass="HowTo Bulleted">Corrosion Resistance Steels: 1.4112, 1.4301, 1.4404, 1.4462 etc. </li>
+      <li styleclass="HowTo Bulleted">Casting materials: GJS 500, GJS 600, etc. </li>
+      <li styleclass="HowTo Bulleted">Special steels: Inconel, Böhler K340, etc. </li>
+      <li styleclass="HowTo Bulleted">Plastics: PA 6, POM, Lauramid, etc.</li>
+    </list>
+    <para styleclass="Body Text HowTo"></para>
+    <para styleclass="Heading4 Toggle_atocs_" style="margin-bottom:0px;"><text styleclass="Heading3_atocs_">WICHTIG</text></para>
+    <para styleclass="Heading4 Toggle_atocs_2"><table styleclass="Default" rowcount="1" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Heading4 Toggle_atocs_" style="margin-top:0px;"><text style="color:#000000;">Erhöhen Sie </text><text style="color:#ff0000;">NICHT</text><text style="color:#000000;"> die </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-Machine-Settings" style="color:#000000;">Maschineneinstellungen &gt;Anzahl der Schritte</link><text style="color:#000000;">. Sie werden &#160;die Genauigkeit einer 2D-Nocke </text><text style="color:#ff0000;">NICHT</text><text style="color:#000000;"> erhöhen. </text></para>
+          <para styleclass="Heading4 Toggle_atocs_"><text style="color:#000000;">Aber Sie werden MechDesigner verlangsamen </text>. <text style="color:#000000;">120 Schritte ist gut. 360 Schritte ist maximal.</text></para>
+          <para styleclass="Heading4 Toggle_atocs_"><text style="color:#000000;">Die Anzahl der XY-Punkte für eine 2D-Nocke wird im </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-FunctionBlock-CamCoordinates" style="color:#000000;">Dialogfeld Nockenkoordinaten</link><text style="color:#000000;"> eingestellt. Im Dialogfeld Nockenkoordinaten können Sie 10000 XY-Punkte eingeben, wenn Sie möchten.</text></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Body Text HowTo"></para>
+    <para styleclass="Interface2"></para>
+    <para styleclass="Heading4 Toggle_atocs_"></para>
+  </body>
+</topic>

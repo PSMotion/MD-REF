@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" status="Under Construction" modified="2023-03-16T18:59:57.389Z" lasteditedby="Adam" version="2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title>Open MEC file-type</title>
+  <keywords>
+    <keyword>File menu<keyword>Open MEC file-types</keyword></keyword>
+    <keyword>Import<keyword>MEC</keyword><keyword>SHP</keyword></keyword>
+    <keyword>MEC</keyword>
+    <keyword>Open Camlinks MEC File-type</keyword>
+    <keyword>SHP</keyword>
+  </keywords>
+  <body>
+    <header>
+      <para styleclass="Heading1">Open MEC file-type</para>
+    </header>
+    <para styleclass="BodyText BI" style="page-break-before:always;"><anchor id="DailogCamlinks"><keywords><keyword>Dialog<keyword>CamLinks</keyword></keyword></keywords></anchor><text style="font-weight:normal; font-style:normal;">Why we recommend that you re-build Camlinks models in </text><text styleclass="VariableName-IT">MechDesigner</text><text style="font-weight:normal; font-style:normal;">. </text></para>
+    <list id="0" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+      <li styleclass="HowTo Bulleted"><text style="font-weight:normal; font-style:normal;">You will remember your design decisions.</text></li>
+      <li styleclass="HowTo Bulleted"><text style="font-weight:normal; font-style:normal;">When you open a Camlinks file, </text><text styleclass="VariableName-IT">MechDesigner</text><text style="font-weight:normal; font-style:normal;"> must add many elements you do not need actually need.</text></li>
+      <li styleclass="HowTo Bulleted"><text style="font-weight:normal; font-style:normal;">We will be able to support you. </text></li>
+      <li styleclass="HowTo Bulleted"><text style="font-weight:normal; font-style:normal;">We want to help you use </text><text styleclass="VariableName-IT">MechDesigner</text><text style="font-weight:normal; font-style:normal;">, not how to use Camlinks.</text></li>
+      <li styleclass="HowTo Bulleted"><text style="font-weight:normal; font-style:normal;">We can guarantee </text><text styleclass="VariableName-IT">MechDesigner</text><text style="font-weight:normal; font-style:normal;"> will run with </text><text style="font-weight:normal; font-style:italic;">Windows® 10, 11</text><text style="font-weight:normal; font-style:normal;">, ... .</text></li>
+      <li styleclass="HowTo Bulleted"><text style="font-weight:normal; font-style:normal;">Open Camlinks files option </text><text styleclass="VariableName" style="color:#ff0000;">cannot</text><text style="font-weight:normal; font-style:normal;"> be guaranteed to be perfect in every respect.</text></li>
+      <li styleclass="HowTo Bulleted"><text style="font-weight:normal; font-style:normal;">We continue to improve </text><text styleclass="VariableName-IT">MechDesigner</text><text style="font-weight:normal; font-style:normal;"> in many new ways.</text></li>
+    </list>
+    <para styleclass="Body Text2-Note"><table styleclass="PopupTable2" rowcount="1" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="VariableName">IMPORTANT: <text styleclass="Interface2">Locked-Points</text><text styleclass="Popup Box2">:</text><text styleclass="Body Text - bit bit bigger2">&#32;</text><text styleclass="Body Text">After you open a </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-Definition-Mec-Files" styleclass="Body Text">.MEC</link><text styleclass="Body Text"> file, Points in the model you import are </text><text styleclass="Interface2">locked</text><text styleclass="Popup Box">.</text></para>
+          <para styleclass="VariableName">To edit the Position of a Locked-Point:</para>
+          <list id="1" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo Bulleted">Double-click the Locked-Point to open the <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-FunctionBlock-PointProperties" styleclass="Popup Box2">Point Properties dialog-box</link><text styleclass="VariableName">&#32;</text></li>
+            <li styleclass="Popup Box"><text styleclass="Body Text">Click </text><text styleclass="Separator">Part Coordinates (Read-Write)</text> and </li>
+            <li styleclass="Popup Box"><text styleclass="Body Text">Edit the x and y values</text></li>
+          </list>
+          <para styleclass="VariableName">To add and edit dimensions to edit the Position of the a Point:</para>
+          <list id="2" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo Bulleted">Double-click the <text styleclass="Popup Box2">Locked-Point</text> to open the <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-FunctionBlock-PointProperties" styleclass="Popup Box2">Point Properties dialog-box</link><text styleclass="VariableName">&#32;</text></li>
+            <li styleclass="Popup Box"><text styleclass="Body Text">Click </text><text styleclass="Separator">Part Coordinates (Read-Write)</text></li>
+            <li styleclass="Popup Box"><text styleclass="Body Text">Click</text>&#32;<text styleclass="Popup Box2">Edit in Part-Editor</text><text styleclass="Body Text"> radio-button </text></li>
+          </list>
+          <list id="1" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Popup Box" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="Popup Box"><text styleclass="Body Text">Click </text><image src="OK-tiny-13-17.png" scale="100.00%" styleclass="Body Text" figurelistinclude="0"></image><text styleclass="Body Text"> to close the dialog-box.</text></li>
+            <li styleclass="Popup Box"><text styleclass="Body Text">Edit the </text><text styleclass="Element">Part</text><text styleclass="Body Text"> in the </text><text styleclass="Interface">Part-Editor</text><text styleclass="Body Text"> in the normal way.</text></li>
+          </list>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Body Text"><table styleclass="PopupTable2" rowcount="1" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Heading4 Toggle_atocs_">History Note for Camlinks, and Camlinks Import Limitations.</para>
+          <para styleclass="VariableName">MOTION: Camlinks4 vs Camlinks3</para>
+          <list id="3" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:&apos;Segoe UI&apos;; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted">&apos;Camlinks4&apos;: Mechanisms and motions are a MEC file-type. The motions were defined with segment and motion parameters. Open a &apos;MEC&apos; file in MechDesigner to recreate the motions with motion segments in MotionDesigner.</li>
+            <li styleclass="HowTo Bulleted">&apos;Camlinks3&apos;: Mechanisms and motions use also a MEC file-type. However, motions were defined with a list of numbers. Open a &apos;MEC&apos; file in MechDesigner to recreate the motion, but with a Z Raw Data segment in MotionDesigner.</li>
+            <li styleclass="HowTo Bulleted">To help you recreate the motion design (with segments), save the Z Raw Data Segment, and use the Overlay Motion tool to design a new motion MotionDesigner: <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-Overlay-Trace">Overlay Trace</link>.</li>
+          </list>
+          <para styleclass="VariableName">Throw Motion-Law</para>
+          <para styleclass="Body Text HowTo">These are available in Camlinks but not imported into <text styleclass="VariableName-IT">MotionDesigner</text>. However, it is possible to design the <text styleclass="VariableName">Throw Motion-Law</text> with two(2) segments and the correct Blend-point Control Button conditions. We can give a Video on request.</para>
+          <para styleclass="VariableName">Auto-Adjust</para>
+          <para styleclass="Body Text HowTo"><text style="font-weight:normal;">Auto-Adjust is not recreated. However, we have a better tool, which we call </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Command-AddMagneticJoint" style="font-weight:normal;">Magnetic-Joint</link><text style="font-weight:normal;">.</text></para>
+          <para styleclass="VariableName">View Outline On/Off as a Function of the Master Machine Angle</para>
+          <para styleclass="VariableName">MechDesigner uses the Pattern Element - Release 7+</para>
+          <para styleclass="VariableName">Camlinks Outlines</para>
+          <para styleclass="Body Text HowTo"><text style="font-weight:normal;">Camlinks Outlines are DXF-Drawings that you have imported onto Parts in Camlinks. The lines and arcs in the DXF-Drawing were converted to &apos;Camlinks Outlines&apos;. They were &apos;dumb&apos;. You could not edit them in Camlinks. </text></para>
+          <para styleclass="Body Text HowTo"><text style="font-weight:normal;">When you open a Camlinks file with &apos;Outlines&apos; in MechDesigner, you have three options available. </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-File-Open-MEC" anchor="DailogCamlinks" style="font-weight:normal;">See below</link><text style="font-weight:normal;">.</text></para>
+          <para styleclass="VariableName">SSR</para>
+          <para styleclass="Body Text HowTo"><text style="font-weight:normal;">We do not import these dyads. You can design the SSR Dyad in </text><text styleclass="VariableName-IT">MechDesigner. MechDesigner</text><text style="font-weight:normal;"> can also make an SSP Dyad.</text></para>
+          <para styleclass="VariableName">RamR and RamP Dyads</para>
+          <para styleclass="Body Text HowTo"><text style="font-weight:normal;">We do not import these dyads. </text><text style="font-weight:bold;">If you use these Dyads, </text><text styleclass="VariableName-IT">MechDesigner</text><text style="font-weight:bold;"> will crash (23-03-2013).</text></para>
+          <para styleclass="VariableName">Forces, Forcebars, Torquebars</para>
+          <para styleclass="Body Text HowTo"><text style="font-weight:normal;">Use </text><text styleclass="VariableName-IT">MechDesigner</text><text style="font-weight:normal;"> to add and show forces and torques in your kinematic-chains.</text></para>
+          <para styleclass="VariableName">Cams</para>
+          <para styleclass="Body Text HowTo"><text style="font-weight:normal;">When a Cam-Follower Roller has 0mm diameter in Camlinks – to define the Pitch-Center of the Cam – </text><text styleclass="VariableName-IT">MechDesigner</text><text style="font-weight:normal;"> will re-define it as 0.1mm, </text><text style="font-weight:normal; text-decoration:underline;">not</text><text style="font-weight:normal;"> as 0.0mm.</text></para>
+          <para styleclass="Body Text HowTo"><text style="font-weight:normal;">You must edit the 0.1mm dimension to make it equal to the real Cam-Follower Radius. Then, to show the Pitch-Curve, use the Pitch-Circle-Path check-box in the </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-2DCam" style="font-weight:normal;">2D-Cam dialog-box</link><text style="font-weight:normal;">.</text></para>
+        </td>
+      </tr>
+    </table></para>
+  </body>
+</topic>

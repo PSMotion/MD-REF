@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../helpproject.xsl" ?>
+<topic class="Popup" template="Default" status="Under Construction" modified="2023-03-29T20:01:54.949+01:00" lasteditedby="Adam" version="2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../helpproject.xsd">
+  <title>Maximum Shear Stress</title>
+  <keywords>
+    <keyword>Maximum Contact Shear Stress</keyword>
+    <keyword>Metal Fatigue</keyword>
+  </keywords>
+  <body>
+    <para styleclass="Popup Box"><table styleclass="PopupTable" rowcount="1" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Text - bit bit bigger2" style="margin-left:0px;">The <text styleclass="Popup Box2">Maximum Contact Shear Stress</text> is important for calculating the Fatigue Life of 2D Cams and Cam-Followers. </para>
+          <para styleclass="Body Text - bit bit bigger2" style="margin-left:0px;">See Cam Mechanisms &gt; Cam Analysis and Checklist.</para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="Body Text2-Note">The <text styleclass="VariableName-small">Maximum Shear Stress</text> is below the Cam surface. Its maximum value is a function of a number of parameters: Radius-of-Curvature of the Cam-Follower and the Cam, Material properties of the Cam and Cam-Follower (Young&apos;s Modulus and Poison&apos;s Ratio - see <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-2DCam">2D-Cam dialog-box</link>) the Contact Force between the Cam and Cam-Follower, and the Width(depth) of the Cam and Cam-Follower, and whether the Cam-Follower is Cylindrical or Crown shaped.</para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="Body Text - bit bit bigger2" style="margin-left:0px;">Also, the calculations make these assumptions:</para>
+          <list id="0" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Body Text - bit bit bigger2" style="font-family:&apos;Segoe UI&apos;; font-size:10pt; color:#000000;">
+            <li styleclass="Body Text - bit bit bigger2">The width of the 2D-Cam is the same as the Extrusion Depth of the Cam-Follower Profile. </li>
+            <li styleclass="Body Text - bit bit bigger2">The 2D-Cam and Cam-Follower are &apos;Isotropic&apos;. </li>
+            <li styleclass="Body Text - bit bit bigger2">The 2D-Cam and Cam-Follower are &apos;Linearly Elastic&apos;.</li>
+            <li styleclass="Body Text - bit bit bigger2">The dimensions of the contact area are small in comparison with the radii of the un-deformed bodies in the vicinity of the contact.</li>
+            <li styleclass="Body Text - bit bit bigger2">The shape of the deformed surfaces adjacent to the contact area is a rectangle. </li>
+            <li styleclass="Body Text - bit bit bigger2">At the contact interface, the bodies are approximately flat.</li>
+            <li styleclass="Body Text - bit bit bigger2">The bodies are <text styleclass="Popup Box">frictionless</text>; only normal stresses arising during contact are considered. Relative displacements in the X and Y directions are neglected. Add about 30% if Cam Rollers are not used without an oil bath.</li>
+            <li styleclass="Body Text - bit bit bigger2">The surfaces are free from surface debris and not lubricated.</li>
+          </list>
+          <para styleclass="Body Text - bit bit bigger2" style="margin-left:0px;">See also: <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-Cam-MaxShearStress-equations">Equations to calculate Maximum Contact Shear Stress</link>.</para>
+        </td>
+      </tr>
+    </table></para>
+  </body>
+</topic>

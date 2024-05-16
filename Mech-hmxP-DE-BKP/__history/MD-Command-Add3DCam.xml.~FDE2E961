@@ -1,0 +1,234 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" status="Under Construction" modified="2022-03-26T19:25:12.983Z" lasteditedby="Adam" version="2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title>Mechanism | Add 3D Cam</title>
+  <keywords>
+    <keyword>Add<keyword>3D-Cam</keyword></keyword>
+    <keyword>Furgusen</keyword>
+    <keyword>Globoidal Cam</keyword>
+    <keyword>Machine elements toolbar<keyword>Add 3D-Cam</keyword></keyword>
+    <keyword>Menu &gt; Add &gt; Mechanism menu<keyword>Add 3D-Cam</keyword></keyword>
+    <keyword>Roller Gear Drive</keyword>
+  </keywords>
+  <body>
+    <header>
+      <para styleclass="Heading1">Menu | Mechanism | Add 3D-Cam</para>
+    </header>
+    <para styleclass="Heading2">Add 3D-Cam</para>
+    <para styleclass="SeeAlso">See also <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-3DCam">3D-Cam dialog-box</link></para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="Heading3_atocs_">What is a 3D-Cam?</para>
+    <para styleclass="Body Text HowTo">A <text styleclass="Element">3D-Cam</text> has complex surfaces with <text styleclass="VariableName">Cam-Flanks</text> that interact with Cam-Followers Rollers.</para>
+    <para styleclass="Body Text HowTo"><text styleclass="VariableName">Barrel, Cylindrical and Globoidal Cams</text> are <text styleclass="Element">3D-Cams</text>. <text styleclass="VariableName">Globoidal Cams</text> are also known as <text styleclass="VariableName-IT">Roller-Gear-Drives</text> and <text styleclass="VariableName-IT">Ferguson Cams</text>.</para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="VariableName">Terminology:</para>
+    <para styleclass="Body Text HowTo"><table styleclass="PopupTable2" rowcount="5" colcount="2" style="border-width:0px; border-spacing:0px; border-collapse:collapse; cell-border-width:1px; border-color:#993300; border-style:solid;">
+      <tr style="vertical-align:top">
+        <td style="width:176px;">
+          <para styleclass="Popup Box2" style="text-align:right;"> Cam-Part : </para>
+        </td>
+        <td>
+          <para styleclass="Popup Box"> The <text styleclass="Popup Box-Elements">Part</text> to which we add the <text styleclass="Popup Box-Elements">2D-Cam</text>&#32;</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:176px;">
+          <para styleclass="Popup Box2" style="text-align:right;">Cam-Follower : </para>
+        </td>
+        <td>
+          <para styleclass="Popup Box"> The shape of the <text styleclass="Popup Box-Elements">Profile</text> that is in continuous-contact with the <text styleclass="Popup Box-Elements">2D-Cam.</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:176px;">
+          <para styleclass="Popup Box2" style="text-align:right;">Follower-Part : </para>
+        </td>
+        <td>
+          <para styleclass="Popup Box"> The <text styleclass="Popup Box-Elements">Part</text> to which we add the <text styleclass="Popup Box2">sketch-loop</text> and <text styleclass="Popup Box-Elements">Profile</text> as the <text styleclass="Popup Box2">Cam-Follower</text>.</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:176px;">
+          <para styleclass="Popup Box2" style="text-align:right;">Cam-Follower Roller: </para>
+        </td>
+        <td>
+          <para styleclass="Popup Box"> A <text styleclass="Popup Box2">Cam-Follower</text> that is Circular. It represents a roller-bearing, or Pin.</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:176px;">
+          <para styleclass="Popup Box2" style="text-align:right;">Flat-Faced Cam Follower : </para>
+        </td>
+        <td>
+          <para styleclass="Popup Box"> A <text styleclass="Popup Box2">Cam-Follower</text> that is the longer <text styleclass="Popup Box-Elements">Line </text>of a long Rectangle. It represent a <text styleclass="Popup Box2">Flat Plate</text>.</para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading4 Toggle_atocs_"><anchor id="3DCAMPreparation"><keywords><keyword>3D-Cam<keyword>Preparation</keyword></keyword></keywords></anchor><text styleclass="Heading3_atocs_">Prepare 3D-Cam</text></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="2" colcount="2">
+      <tr style="vertical-align:top">
+        <td colspan="2">
+          <para styleclass="Body Text" style="text-align:left;"><text style="font-weight:normal; font-style:normal;">You must prepare the model with five(5) elements.</text></para>
+          <para styleclass="Body Text" style="text-align:left;"><text style="font-weight:normal; font-style:normal;">Also:</text></para>
+          <list id="0" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted"><text styleclass="VariableName">3 Mechanism-Editors</text><text style="font-weight:normal; font-style:normal;"> for a </text><text styleclass="VariableName-IT">Barrel Cam</text></li>
+          </list>
+          <list id="1" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted"><text styleclass="VariableName">4 Mechanism-Editors</text><text style="font-weight:normal; font-style:normal;"> for a </text><text styleclass="VariableName-IT">Globoidal Cam</text><text style="font-weight:normal; font-style:normal;">.</text></li>
+          </list>
+          <para styleclass="Body Text"><text styleclass="Interface2" style="color:#ff0000;">All</text>&#32;<text styleclass="Element">Parts</text> are kinematically-defined <text styleclass="VariableName-IT" style="color:#ff0000;">before</text> you do <text styleclass="T_Menu">Add 3D-Cam.</text></para>
+          <para styleclass="Body Text">We recommend you do these tutorials if you have not used this command before : <image src="MD-Globe-www.png" scale="100.00%" styleclass="Image Caption" style="font-size:7pt; vertical-align:sub;" figurelistinclude="0"></image><text styleclass="Image Caption" style="font-size:7pt; vertical-align:sub;">&#32;</text><link displaytype="text" defaultstyle="true" type="weblink" href="http://mechdesigner.support/index.htm?md-barrel-globoidal-cams.htm" target="_blank" styleclass="VariableName-IT">Tutorial 6C: Barrel and Globoidal Cams</link></para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="Body Text"><text styleclass="VariableName">Top-Tip: Rename</text><text styleclass="Body Text HowTo"> the </text><text styleclass="VariableName">Mechanism-Editors</text> to the names of the elements you need to <text styleclass="T_Menu">Add 3D-Cam</text>. <text styleclass="SeeAlso">See </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-Rename-Element" styleclass="SeeAlso">Rename dialog-box</link></para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:240px;">
+          <para styleclass="Image Caption"><image src="MD-GA-3DCam-Mechanism-Nametabs.png" scale="-99.90%" figurelistinclude="0"></image></para>
+          <para styleclass="Image Caption"><image src="MD-GA-Add3DCam-Prep-0.png" scale="-99.90%" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="VariableName">Prepare the view:</para>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <list id="2" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Body Table" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="Body Table"><text styleclass="Bullets">Click</text><text styleclass="T_Menu"> Visibility toolbar &gt; </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Visibility-ShowOtherMechanisms" styleclass="T_Menu">Show other Kinematic and Sketch elements</link><text styleclass="VariableName">&#32;</text></li>
+                </list>
+                <para styleclass="Body Table"><text styleclass="Body Text">To show the </text><text styleclass="VariableName">Other Kinematic and Sketch elements</text><text styleclass="Body Text"> in each </text><text styleclass="Interface">Mechanism-Editor</text><text styleclass="Body Text">:</text></para>
+                <list id="3" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Body Table" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; color:#003300;">
+                  <li styleclass="Body Table"><text styleclass="Body Text">Right-click each </text><text styleclass="Interface">Mechanism name tab </text><text styleclass="Body Text">that has an element you need to do </text><text styleclass="T_Menu">Add 3D-Cad</text></li>
+                  <li styleclass="Body Table"><text styleclass="Bullets">Click </text><text styleclass="VariableName">Show with other Kinematic and Sketch elements</text></li>
+                </list>
+                <para styleclass="Body Text">Do not show <text styleclass="Interface">Solids</text> to <text styleclass="T_Menu">Add 3D-Cam</text></para>
+                <list id="4" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="Bullets"><text styleclass="VariableName" style="color:#ff0000;">De-select</text>&#32;<link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Visibility-SolidsInMechanisms" styleclass="T_Menu">Visibility toolbar &gt; Show Solids in Mechanism-Editor</link><text styleclass="VariableName">&#32;</text></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="VariableName">Prepare the five elements:</para>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Bullets"><image src="Red-14-1.gif" scale="100.00%" styleclass="HowTo Bulleted" figurelistinclude="0"></image><text styleclass="HowTo Bulleted">&#32;</text><text styleclass="Element">Part </text><text styleclass="HowTo Numbered">: </text><text styleclass="VariableName">Follower-Part in Mechanism-B</text></para>
+                <para styleclass="Bullets"><image src="Red-14-2.gif" scale="100.00%" styleclass="HowTo Bulleted" figurelistinclude="0"></image><text styleclass="HowTo Bulleted">&#32;</text><text styleclass="Element">Profile </text><text styleclass="HowTo Numbered">: </text><text styleclass="VariableName">Follower-Roller in Mechanism-B</text><text styleclass="VariableName-IT"> | </text><text styleclass="Body Text">the </text><text styleclass="Element">Profile</text><text styleclass="Body Text"> must be circular.</text></para>
+                <para styleclass="Bullets"><image src="Red-14-3.gif" scale="100.00%" styleclass="HowTo Bulleted" figurelistinclude="0"></image><text styleclass="HowTo Bulleted">&#32;</text><text styleclass="Element">Part </text><text styleclass="HowTo Numbered">: </text><text styleclass="VariableName">Cam-Part in Mechanism-A</text><text styleclass="HowTo Numbered"> - this must be the </text><text styleclass="VariableName-IT" style="color:#ff0000;">active</text><text styleclass="HowTo Numbered">&#32;</text><text styleclass="Interface">Mechanism-Editor</text></para>
+                <para styleclass="Bullets"><image src="Red-14-4.gif" scale="100.00%" styleclass="HowTo Bulleted" figurelistinclude="0"></image><text styleclass="HowTo Bulleted">&#32;</text><text styleclass="Element">Profile </text><text styleclass="HowTo Numbered">: </text><text styleclass="VariableName">Cam-Blank in Mechanism-C</text></para>
+                <para styleclass="Bullets"><image src="Red-14-5.gif" scale="100.00%" styleclass="HowTo Bulleted" figurelistinclude="0"></image><text styleclass="HowTo Bulleted">&#32;</text><text styleclass="Element">Line</text><text styleclass="HowTo Numbered"> : </text><text styleclass="VariableName-IT">&#32;</text><text styleclass="VariableName">Line in Mechanism-C</text></para>
+              </td>
+            </tr>
+          </table></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading3_atocs_">Add 3D Cam</para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="3" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:240px;">
+          <para styleclass="Image Caption"><image src="MD-CM-Add3DCam-2.png" scale="-99.90%" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <list id="5" type="ol" listtype="decimal" formatstring="&#83;&#84;&#69;&#80;&#32;&#37;&#48;&#58;&#115;&#58;&#32;" format-charset="DEFAULT_CHARSET" levelreset="false" legalstyle="false" startfrom="1" styleclass="HowTo STEP" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo STEP">Click Add 3D-Cam <text styleclass="VariableName">&#32;</text></li>
+          </list>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="2">
+            <tr style="vertical-align:top">
+              <td style="vertical-align:bottom; width:41px;">
+                <para styleclass="Image Caption" style="text-align:right;"><image src="MD-Icon-Add3DCam.png" scale="-99.90%" figurelistinclude="0"></image></para>
+              </td>
+              <td>
+                <list id="6" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Body Table" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="Body Table"><text styleclass="Interface">Mechanism-Editor:</text><text styleclass="Body Text">&#32;</text><text styleclass="T_Menu">Add menu &gt; Mechanism menu &#160;&gt; Add 3D-Cam</text><text styleclass="VariableName">&#32;</text></li>
+                </list>
+                <para styleclass="Body Text"><text style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">- or</text><text style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;"> -</text></para>
+                <list id="7" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="B Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="B Bullets"><text styleclass="Interface">Mechanism-Editor: </text><text styleclass="T_Menu">Machine-elements toolbar &gt; Add 3D-Cam</text><text styleclass="VariableName">&#32;</text></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Bullets"><text style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">The </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-Command-Manager" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:10pt; font-weight:bold; font-style:normal; text-transform:uppercase; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">Command-Manager</link><text style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;"> indicates you must select five(2) elements:</text></para>
+          <para styleclass="HowTo STEP"></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:240px;">
+          <para styleclass="Image Caption"><image src="MD-GA-Add3DCam-Prep-0.png" scale="-99.90%" figurelistinclude="0"><caption><![CDATA[Elements to add a 3D-Cam:]]></caption></image></para>
+        </td>
+        <td>
+          <list id="8" type="ol" listtype="decimal" formatstring="&#83;&#84;&#69;&#80;&#32;&#37;&#48;&#58;&#115;&#58;&#32;" format-charset="DEFAULT_CHARSET" levelreset="false" legalstyle="false" startfrom="2" styleclass="HowTo STEP" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo STEP">Click the five elements, from top-to-bottom, in the <text styleclass="Interface">graphic-area</text><text styleclass="Body Text"> or the </text><text styleclass="Interface">Assembly-Tree</text><text styleclass="VariableName">.</text></li>
+          </list>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Bullets"><image src="Red-14-1b.gif" scale="100.00%" styleclass="Image Caption" style="font-size:6pt; vertical-align:sub;" figurelistinclude="0"></image><text styleclass="Image Caption" style="font-size:6pt; vertical-align:sub;"> &#160;</text><text styleclass="Element">Part</text><text styleclass="HowTo Numbered">: </text><text styleclass="VariableName">Cam-Follower Part</text><text styleclass="Body Text">: Click the </text><text styleclass="HowTo Numbered" style="font-family:Arial; font-size:11pt; font-weight:bold; font-style:italic; color:#808080;">Grey</text><text styleclass="HowTo Numbered" style="font-family:Arial; font-size:11pt; color:#000000;">&#32;</text><text styleclass="Interface">Part-Outline</text></para>
+                <para styleclass="Bullets"><image src="Red-14-2.gif" scale="100.00%" styleclass="Image Caption" style="font-size:6pt; vertical-align:sub;" figurelistinclude="0"></image><text styleclass="Image Caption" style="font-size:6pt; vertical-align:sub;"> &#160;</text><text styleclass="Element">Profile</text><text styleclass="HowTo Numbered">: Cam-</text><text styleclass="VariableName">Follower Roller</text><text styleclass="Body Text">: Click the </text><text styleclass="HowTo Numbered" style="font-family:Arial; font-size:11pt; font-weight:bold; font-style:italic; color:#808080;">Grey</text><text styleclass="HowTo Numbered" style="font-family:Arial; font-size:11pt; color:#000000;">&#32;</text><text styleclass="VariableName">Profile (contour)</text></para>
+                <para styleclass="Bullets"><image src="Red-14-3.gif" scale="100.00%" styleclass="Image Caption" style="font-size:6pt; vertical-align:sub;" figurelistinclude="0"></image><text styleclass="Image Caption" style="font-size:6pt; vertical-align:sub;">&#32;</text>&#32;<text styleclass="Element">Part</text>: <text styleclass="VariableName">Cam-Part</text><text styleclass="Body Text">: Click the </text><text styleclass="VariableName" style="color:#005000;">Green</text><text styleclass="HowTo Numbered" style="font-family:Arial; font-size:11pt; color:#000000;">&#32;</text><text styleclass="Interface">Part-Outline</text><text styleclass="Body Text"> in the active </text><text styleclass="VariableName">Mechanism-Editor</text></para>
+                <para styleclass="Bullets"><image src="Red-14-4.gif" scale="100.00%" styleclass="Image Caption" style="font-size:6pt; vertical-align:sub;" figurelistinclude="0"></image><text styleclass="Image Caption" style="font-size:6pt; vertical-align:sub;"> &#160;</text><text styleclass="Element">Profile</text>: <text styleclass="VariableName">Cam-Blank Profile</text><text styleclass="Body Text">: Click the </text><text styleclass="HowTo Numbered" style="font-family:Arial; font-size:11pt; font-weight:bold; color:#787771;">Grey</text><text styleclass="VariableName"> Profile (contour)</text></para>
+                <para styleclass="Bullets"><image src="Red-14-5.gif" scale="100.00%" styleclass="Image Caption" style="font-size:6pt; vertical-align:sub;" figurelistinclude="0"></image><text styleclass="Image Caption" style="font-size:6pt; vertical-align:sub;"> &#160;</text><text styleclass="Element">Lines</text><text styleclass="HowTo Numbered">&#32;</text><text styleclass="VariableName">Line</text><text styleclass="HowTo Numbered"> that is the </text><text styleclass="VariableName">axis-of-rotation</text><text styleclass="HowTo Numbered"> of the </text><text styleclass="VariableName">Cam-Blank</text><text styleclass="Body Text">: Click the </text><text styleclass="HowTo Numbered" style="font-family:Arial; font-size:11pt; font-weight:bold; color:#787771;">Grey</text><text styleclass="HowTo Numbered" style="font-family:Arial; font-size:11pt; color:#000000;">&#32;</text><text styleclass="VariableName">sketch-line</text></para>
+              </td>
+            </tr>
+          </table></para>
+          <list id="9" type="ol" listtype="decimal" formatstring="&#83;&#84;&#69;&#80;&#32;&#37;&#48;&#58;&#115;&#58;&#32;" format-charset="DEFAULT_CHARSET" levelreset="false" legalstyle="false" startfrom="3" styleclass="HowTo STEP" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo STEP">Complete the command</li>
+          </list>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <list id="10" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="3" styleclass="Body Table" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="Body Table"><text styleclass="Interface">Command-Manager:</text> &#160;<text styleclass="HowTo STEP">Click </text><image src="OK-tiny-11-15.png" scale="100.00%" styleclass="HowTo STEP" figurelistinclude="0"></image><text styleclass="HowTo STEP"> in the </text><text styleclass="Interface">Command-Manager</text><text styleclass="HowTo STEP">.</text><text styleclass="VariableName">&#32;</text></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:240px;">
+          <para styleclass="Image Caption"><image src="MD-GA-3DCam-Example.png" scale="-99.90%" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="VariableName">Result : Graphic-Area</para>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Body Table"><text translate="false">MechDesigner</text><text styleclass="Body Text"> adds the </text><text styleclass="VariableName">3D-Cam</text></para>
+                <para styleclass="Body Table">The <text styleclass="VariableName">3D-Cam</text> has <text styleclass="VariableName-IT">four surfaces</text>, which enclose the <text styleclass="VariableName-IT">volume</text> you will cut from a <text styleclass="VariableName">Cam-Blank</text></para>
+                <para styleclass="VariableName">Four Surfaces</para>
+                <list id="11" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullets" style="font-family:Symbol; font-size:11pt; color:#000000;">
+                  <li styleclass="Bullets"><text styleclass="VariableName">Cam Flank Surface x 2</text><text styleclass="HowTo Bulleted"> - one flank to </text><text styleclass="Body Text">each side of the </text><text styleclass="Body Table">Follower-Roller</text></li>
+                  <li styleclass="HowTo Bulleted"><text styleclass="VariableName">Floor Surface - </text>a surface between the <text styleclass="VariableName-IT">bottom</text> edges of the <text styleclass="VariableName">Cam-Flank Surfaces</text></li>
+                  <li styleclass="HowTo Bulleted"><text styleclass="VariableName">Top Surface</text> - a surface between the <text styleclass="VariableName-IT">top</text> edges of the <text styleclass="VariableName">Cam-Flank Surfaces</text>. This surface should be outside of the <text styleclass="VariableName">Cam-Blank</text>. </li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Body Table"><text styleclass="SeeAlso">See </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-3DCam" styleclass="SeeAlso">3D-Cam dialog-box</link>&#32;</para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading3_atocs_">Video:</para>
+    <para styleclass="Body Text HowTo"><conditional-text type="IF" value="PDF"/><link displaytype="text" defaultstyle="true" type="filelink" href="ME-Add3DCam.gif" styleclass="T_Menu">Double-click to watch Add a 3D-Cam</link><conditional-text type="END"/><conditional-text type="IF" value="CHM"/></para>
+    <para styleclass="Body Text HowTo"><table styleclass="PopupTable2" rowcount="1" colcount="1" style="width:240px;">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Normal"><toggle type="picture" print-expanded="true" help-expanded="false" src-collapsed="ME-Add3DCam.gif" src-expanded="ME-Add3DCam.gif" scale="25.00%" width="320" height="180" styleclass="Image Caption" figurelistinclude="0"></toggle></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Body Text HowTo"><conditional-text type="END"/><conditional-text type="IF" value="HTML,EBOOK"/></para>
+    <para styleclass="Body Text HowTo"><table styleclass="PopupTable" rowcount="1" colcount="1" style="width:240px; cell-padding:0px; border-width:0px; border-spacing:0px; border-collapse:collapse; cell-border-width:1px; border-color:#000000; border-style:solid;">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Normal"><video src="ME-Add3DCam.mp4" width="1280px" height="720px" autostart="false" loop="false" showcontrols="false" playbutton="true" previewimage="ME-Add3DCam_preview.jpg" scale="25.00%" styleclass="Image Caption"><title>Add 3D-Cam</title><caption><![CDATA[Add 3D-Cam]]></caption></video></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Body Text HowTo"><conditional-text type="END"/></para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="Normal" style="page-break-before:always;"></para>
+  </body>
+</topic>

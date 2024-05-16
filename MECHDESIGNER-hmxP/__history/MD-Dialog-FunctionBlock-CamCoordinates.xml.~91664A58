@@ -1,0 +1,716 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" status="Under Construction" modified="2024-03-30T11:29:43.375Z" lasteditedby="44785" version="2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title>Dialog: Cam Coordinates Data</title>
+  <keywords>
+    <keyword>2D-Cam Coordinates<keyword>Cam: Arcs</keyword><keyword>Cam: Chord Error</keyword><keyword>Cam: Export as Points</keyword><keyword>Cam: Export as Points &amp; Lines</keyword><keyword>Cam: Export to SolidWorks</keyword><keyword>Cam: Open / Closed Cam</keyword><keyword>Cam: Save as DXF</keyword><keyword>Cam: Save as STEP</keyword><keyword>Cam: Save as TXT, ASC</keyword><keyword>Closed Cam</keyword><keyword>Open Cam</keyword><keyword>Slot-Cam</keyword></keyword>
+    <keyword>Dialog<keyword>Cam-Coordinates</keyword></keyword>
+  </keywords>
+  <body>
+    <header>
+      <para styleclass="Heading1">Dialog: Cam Coordinates</para>
+    </header>
+    <para styleclass="Heading2" style="page-break-before:always;">Cam-Data FB &gt; Cam-Coordinates </para>
+    <para styleclass="SeeAlso">See <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Command-Add2DCam">Add Cam-Data FB</link>&#32;</para>
+    <para styleclass="Normal"><line style="height:1px; color:#343400;" /></para>
+    <para styleclass="Body Text HowTo"><text styleclass="Body Text">Use a </text><text styleclass="Element-Header">Cam-Data FB</text><text styleclass="Body Text"> to:</text></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="1" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Text">Calculate the Cam Coordinates of the <text styleclass="ParameterHeader">Inner</text>, <text styleclass="ParameterHeader">Outer</text>, and <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-Pitch-Centre-Path" styleclass="Parameter">Pitch-Center</link> of a <text styleclass="VariableName">Cam-Profile as:</text></para>
+          <list id="0" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted"><text styleclass="VariableName">XY-Points</text></li>
+            <li styleclass="Bullets"><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-BiArc" styleclass="VariableName">BiArcs</link></li>
+          </list>
+          <para styleclass="Body Text"><text styleclass="HowTo Bulleted">Export a Cam-Profile </text>directly to <text styleclass="SOLIDWORKS">SolidWorks</text> as <text styleclass="VariableName">XY-Points</text> or <text styleclass="VariableName">BiArcs</text></para>
+          <para styleclass="Body Text"><text styleclass="HowTo Bulleted">Save the Cam-Coordinates to your hard-drive as:</text></para>
+          <list id="1" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted"><text styleclass="VariableName">XY-Points</text></li>
+            <li styleclass="HowTo Bulleted"><text styleclass="VariableName">BiArcs</text></li>
+            <li styleclass="HowTo Bulleted"><text styleclass="VariableName">DXF</text></li>
+          </list>
+          <list id="0" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullets" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="Bullets"><text styleclass="VariableName">SLDCRV (XY(+Z) Points)</text></li>
+            <li styleclass="Bullets"><text styleclass="VariableName">STEP file</text></li>
+          </list>
+          <para styleclass="Body Text">Before you save the <link displaytype="text" defaultstyle="true" type="topiclink" href="" anchor="CAMCOORDINATES-STEPFILEOPTIONS">Cam as a STP file</link>, you can edit the:</para>
+          <list id="0" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted"><text styleclass="ParameterHeader">Plate Diameter</text><text styleclass="Body Text">, </text><text styleclass="ParameterHeader">Plate Thickness</text><text styleclass="Body Text">, </text><text styleclass="ParameterHeader">Bore Hole Diameter</text><text styleclass="Body Text">, and if the Cam is a Groove-Cam, the </text><text styleclass="ParameterHeader">Depth of the Cam-Profile.</text></li>
+          </list>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Normal"><line style="height:1px; color:#343400;" /></para>
+    <para styleclass="Heading4 Toggle_atocs_"><snippet src="MD-Snippet-2DCamWorkflow" inline="false"/></para>
+    <para styleclass="Heading3_atocs_"><anchor id="CAMCOORDSDIALOGMD16" style="color:#000000;"><keywords><keyword>Cam-Coordiantes dialog-box</keyword></keywords></anchor>Cam-Data dialog: Cam-Coordinates </para>
+    <para styleclass="Body Text"><table styleclass="Default" rowcount="3" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Text">If necessary, link the <text styleclass="Element">Cam-Data FB</text> with a <text styleclass="Element">2D-Cam - </text><text styleclass="SeeAlso">see </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-FunctionBlock-CamData" anchor="CAMDATAFB-LINKTO2DCAM" styleclass="SeeAlso">Cam-Analysis</link></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Normal"><image src="MD-DIALOG-2DCAM-SELECT-2DCAM-1.ipp" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Table"><image src="1s.png" scale="100.00%" style="font-size:7pt; vertical-align:sub;" figurelistinclude="0"></image> - <text styleclass="VariableName">Cam-Coordinates toolbar</text></para>
+          <para styleclass="Body Table"><image src="2s.png" scale="100.00%" style="font-size:7pt; vertical-align:sub;" figurelistinclude="0"></image> - <text styleclass="VariableName">End-Caps</text> - this box shows <text styleclass="VariableName">ONLY</text> when the first coordinate of the Cam does not equal the last coordinate. For example, a linear Slot-Cam.</para>
+          <para styleclass="Body Table"><image src="3s.png" scale="100.00%" style="font-size:7pt; vertical-align:sub;" figurelistinclude="0"></image> - <text styleclass="VariableName">Inner / Outer</text> - to indicate the status of the Cam-Coordinate calculations and Cams.</para>
+          <para styleclass="Body Text"><image src="4s.png" scale="100.00%" styleclass="Body Table" style="font-size:7pt; vertical-align:sub;" figurelistinclude="0"></image> - <text styleclass="VariableName">Cam Options</text> - to calculate, display, and/or save the cam-profile coordinates for the <text styleclass="Parameter">Inner</text>, <text styleclass="Parameter">Outer</text>, <text styleclass="Parameter">Groove</text>, or <text styleclass="Parameter">Negative Groove</text> cam-type. The <text styleclass="Parameter">Negative Groove</text> cam-type applies to the STEP file-type only.</para>
+          <para styleclass="Body Table"><image src="5s.png" scale="100.00%" styleclass="Image Caption" style="font-size:7pt; vertical-align:sub;" figurelistinclude="0"></image><text styleclass="Body Text"> - </text><text styleclass="VariableName">Radial Clearance</text><text styleclass="Body Text"> - to offset the Cam-Profile from the true Cam-Profile</text></para>
+          <para styleclass="Body Table"><image src="6s.png" scale="100.00%" style="font-size:7pt; vertical-align:sub;" figurelistinclude="0"></image><text style="font-size:7pt; vertical-align:sub;"> &#160;</text>-<text styleclass="VariableName"> # Points </text><text styleclass="Body Text">to calculate the </text><text styleclass="VariableName">XY-Points ( </text><link displaytype="text" defaultstyle="true" type="topiclink" href="" anchor="CAM-COORDIANTES-TOOLBAR" styleclass="VariableName">see toolbar</link><text styleclass="VariableName">&#32;</text><image src="1s.png" scale="70.00%" width="17" height="17" styleclass="SeeAlso" figurelistinclude="0"></image><text styleclass="VariableName"> below </text>)</para>
+          <para styleclass="Interface2">or </para>
+          <para styleclass="Body Table"><image src="6s.png" scale="100.00%" style="font-size:7pt; vertical-align:sub;" figurelistinclude="0"></image><text styleclass="VariableName"> - BiArc Error</text> to calculate the <text styleclass="VariableName">BiArcs ( </text><link displaytype="text" defaultstyle="true" type="topiclink" href="" anchor="CAM-COORDIANTES-TOOLBAR" styleclass="VariableName">see toolbar</link><text styleclass="VariableName">&#32;</text><image src="1s.png" scale="70.00%" width="17" height="17" styleclass="SeeAlso" figurelistinclude="0"></image><text styleclass="VariableName"> below </text>)</para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Body Text"><anchor id="CAM-COORDIANTES-TOOLBAR" styleclass="Heading3_atocs_"><keywords><keyword>2D-Cam Coordinates<keyword>Toolbar</keyword></keyword></keywords></anchor><text styleclass="Heading3_atocs_">&#32;</text><image src="1s.png" scale="100.00%" styleclass="Image Caption" style="font-size:7pt; vertical-align:sub;" figurelistinclude="0"></image><text styleclass="Body Text HowTo">&#32;</text><image src="tog_plus.gif" scale="100.00%" styleclass="Heading3_atocs_" figurelistinclude="0"></image><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" src-collapsed="tog_plus.gif" src-expanded="tog_minus.gif" styleclass="Heading3_atocs_"><caption><![CDATA[ Cam-Coordinates toolbar:]]></caption></toggle></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="13" colcount="3">
+      <tr style="vertical-align:top">
+        <td colspan="3">
+          <para styleclass="Image Caption"><image src="MD-Dialog-2DCam-CamCoordinates-toolbar-only-B.ipp" scale="-99.90%" figurelistinclude="0"></image></para>
+          <para styleclass="Heading4 Toggle_atocs_"><text styleclass="Image Caption">Click icon </text><image src="Red-14-5.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Image Caption"> to switch between XY-Points and BiArcs.</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="vertical-align:middle; width:8px; background-color:#ffffff;">
+          <para styleclass="Normal"><image src="1r.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td style="vertical-align:middle; width:47px;">
+          <para styleclass="Normal" style="text-align:center;"><image src="MD-Icon-DialogCamCoords-Clear.png" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td style="vertical-align:middle;">
+          <para styleclass="Body Table"><text styleclass="VariableName">Clear ALL Data from the Table</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="vertical-align:middle; width:8px; background-color:#ffffff;">
+          <para styleclass="Normal"><image src="2r.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td style="vertical-align:middle; width:47px;">
+          <para styleclass="Normal" style="text-align:center;"><image src="MD-Icon-DialogCamCoords-Save.png" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="Body Table"><text styleclass="VariableName">Save Cam-Coordinate data as:</text></para>
+          <list id="2" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:10pt; color:#000000;">
+            <li styleclass="HowTo Bulleted">STP(STEP)- <text styleclass="VariableName">XY Points</text><image src="Red-14-5.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Image Caption"> only</text></li>
+            <li styleclass="HowTo Bulleted">DXF </li>
+            <li styleclass="HowTo Bulleted">CSV (Comma Separated Values) - Header, then # Data-Point, X-data, Y-data, Z-data as 0.0</li>
+            <li styleclass="HowTo Bulleted">TXT - Header, then # Data-Point, X-data, Y-data, Z-data as 0.0</li>
+            <li styleclass="HowTo Bulleted">SLDCRV (SOLIDWORKS Curve file, tab delimited ) - XY Points only , X-data, Y-data, Z-data as 0.0</li>
+          </list>
+          <para styleclass="Body Text"><text styleclass="Notes">Note: </text>If this icon is not enabled, then make sure the <text styleclass="Parameter">Plate-Radius</text> parameter is larger than the <text styleclass="VariableName">Maximum Radius</text> of the <text styleclass="VariableName">Outer Cam</text>.</para>
+          <para styleclass="Body Text">See <link displaytype="text" defaultstyle="true" type="topiclink" href="" anchor="CAMCOORDINATES-STEPFILEOPTIONS">STEP File Options</link>.</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="vertical-align:middle; width:8px; background-color:#ffffff;">
+          <para styleclass="Normal"><image src="3r.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td style="vertical-align:middle; width:47px;">
+          <para styleclass="Normal" style="text-align:center;"><image src="MD-Icon-DialogCamCoords-Clip.png" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td style="vertical-align:middle;">
+          <para styleclass="Body Text">Copy Coordinates to your Clipboard</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:bottom">
+        <td colspan="3" style="width:47px; background-color:#ffffff;">
+          <para styleclass="Body Text">If <text styleclass="ParameterHeader">Cam Option</text>&#32;<image src="4s.png" scale="70.00%" width="17" height="17" styleclass="Image Caption" figurelistinclude="0"></image> is <text styleclass="ParameterHeader">Groove</text> or <text styleclass="ParameterHeader">Negative Groove</text>, click<image src="Red-14-4.gif" imagestyleclass="Default" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image> to toggle between:</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="vertical-align:middle; width:8px; background-color:#ffffff;">
+          <para styleclass="Normal"><image src="4r.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td style="vertical-align:middle; width:47px;">
+          <para styleclass="Body Text" style="text-align:center; margin-top:0px; margin-bottom:0px;"><image src="MD-Icon-DialogCamCoords-Cam1.png" scale="100.00%" figurelistinclude="0"></image></para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="Body Text" style="text-align:center; margin-top:0px; margin-bottom:0px;"><image src="MD-Icon-DialogCamCoords-Cam2.png" scale="100.00%" figurelistinclude="0"></image></para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="Body Text" style="text-align:center; margin-top:0px; margin-bottom:0px;"><image src="MD-Icon-DialogCamCoords-Pitch.png" scale="100.00%" figurelistinclude="0"></image></para>
+        </td>
+        <td style="vertical-align:middle;">
+          <para styleclass="Body Table" style="margin-top:1px; line-height:1.50;">- <text styleclass="Parameter">Inner</text><text styleclass="Body Text">&#32;</text><text styleclass="VariableName">Cam-Profile</text></para>
+          <para styleclass="Normal"><line style="height:1px; color:#343400;" /></para>
+          <para styleclass="Body Table" style="margin-top:1px; margin-bottom:0px; line-height:1.50;"><text styleclass="VariableName">- </text><text styleclass="Parameter">Outer</text><text styleclass="Body Text">&#32;</text><text styleclass="VariableName">Cam-Profile</text></para>
+          <para styleclass="Normal"><line style="height:1px; color:#343400;" /></para>
+          <para styleclass="Body Table" style="margin-top:1px; line-height:1.50;"><text styleclass="VariableName">- </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-Pitch-Centre-Path" styleclass="Parameter">Pitch-Curve</link>&#32;<text styleclass="VariableName">( XY-Points only )</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td colspan="3" style="vertical-align:middle; background-color:#e9d2ff;">
+          <para styleclass="VariableName">Toggle how to calculate the Cam:</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td rowspan="2" style="vertical-align:middle; background-color:#efdeff;">
+          <para styleclass="Normal"><image src="5r.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td style="vertical-align:middle; width:47px; background-color:#efdeff;">
+          <para styleclass="Normal" style="text-align:center;"><image src="MD-Icon-DialogCamCoords-Lines.png" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td style="vertical-align:middle; background-color:#efdeff;">
+          <para styleclass="Body Table"><text styleclass="ParameterHeader">XY-Points</text><text styleclass="HowTo Bulleted"> - </text><text styleclass="VariableName">Calculate Cam with X-Y Coordinates</text><text styleclass="Body Text HowTo"> at equal increments of the </text><text styleclass="Interface">Master Machine Angle</text><text styleclass="Body Text HowTo">.</text></para>
+          <para styleclass="Body Text HowTo">Enter the <text styleclass="Parameter">Number-of-Points</text><text styleclass="VariableName"> (</text>&#32;<text styleclass="Parameter"># Points</text><text styleclass="Parameter-Header" style="font-family:Arial; font-size:10pt; font-weight:normal; font-style:normal; text-decoration:none; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;"> ) </text><image src="6s.png" scale="70.00%" width="17" height="17" styleclass="Body Table" style="font-size:10pt; vertical-align:baseline;" figurelistinclude="0"></image></para>
+          <para styleclass="Body Text HowTo">Use <image src="Red-14-4.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Normal"> to toggle between the </text><text styleclass="Parameter">Inner</text>, <text styleclass="Parameter">Outer</text>, and <text styleclass="Parameter">Pitch-Circle</text> of the <text styleclass="VariableName">Cam-Profile</text>.</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="vertical-align:middle; width:47px; background-color:#efdeff;">
+          <para styleclass="Normal" style="text-align:center;"><image src="MD-Icon-DialogCamCoords-BiArcs.png" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td style="vertical-align:middle; background-color:#efdeff;">
+          <para styleclass="Body Table"><text styleclass="ParameterHeader">BiArcs</text><text styleclass="Parameter"> - </text><text styleclass="VariableName">Calculate Cam with BiArcs</text><text styleclass="Body Text HowTo"> with a maximum Chordal Error (</text><text styleclass="SeeAlso">see </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-BiArc" styleclass="SeeAlso">BiArcs</link><text styleclass="Body Text HowTo">)</text></para>
+          <para styleclass="Body Text HowTo">Enter the <text styleclass="Body Text">maximum Chordal-Error</text> as <text styleclass="Parameter">BiArc Error </text><image src="6s.png" scale="70.00%" width="17" height="17" styleclass="Body Table" style="font-size:10pt; vertical-align:baseline;" figurelistinclude="0"></image></para>
+          <para styleclass="Body Text HowTo">The number of <text styleclass="VariableName">BiArcs</text> we calculate is a function of the <text styleclass="Parameter">Bi-Arc Error</text> you enter as and the shape of the <text styleclass="VariableName">Cam-Profile</text>.</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td rowspan="2" style="vertical-align:middle; background-color:#dcdcb8;">
+          <para styleclass="Normal"><image src="6r.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td style="vertical-align:middle; width:47px; background-color:#dcdcb8;">
+          <para styleclass="Normal" style="text-align:center;"><image src="MD-Icon-DialogCamCoords-SolidWorks.png" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td style="background-color:#dcdcb8;">
+          <para styleclass="Body Table">Before you click this button, make sure that <text styleclass="Interface2">SOLIDWORKS</text><text styleclass="Body Text"> is open and the</text> active document<text styleclass="Body Text"> is a</text> pa<text styleclass="Body Text">rt document</text> (SLDPRT).</para>
+          <para styleclass="Normal"><line style="height:1px; color:#343400;" /></para>
+          <para styleclass="Body Text HowTo"><text styleclass="VariableName">BiArcs</text> are sent to <text style="font-size:10pt; vertical-align:baseline;">SOLIDWORKS</text> as <text styleclass="VariableName">Arc</text> sketch entities.</para>
+          <para styleclass="Body Text HowTo"><text styleclass="VariableName">XY-Points</text> are sent to <text style="font-size:10pt; vertical-align:baseline;">SOLIDWORKS</text> as a list for the <text style="font-size:10pt; vertical-align:baseline;">SOLIDWORKS </text><text styleclass="VariableName">Curve</text> feature. Use <text styleclass="VariableName">Convert-Entities</text> in <text style="font-size:10pt; vertical-align:baseline;">SOLIDWORKS</text> to convert the <text styleclass="VariableName">Curve</text> to a <text styleclass="VariableName">Spline</text> sketch entity. <text styleclass="SeeAlso">See also </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-FunctionBlock-CamCoordinates" anchor="Curve" styleclass="SeeAlso">Note 4</link></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="vertical-align:middle; width:47px; background-color:#dcdcb8;">
+          <para styleclass="Normal" style="text-align:center;"><image src="MD-Icon-DialogCamCoords-RebuildRed.png" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td style="background-color:#dcdcb8;">
+          <para styleclass="Body Text">We calculate for you the <text styleclass="VariableName">XY Points</text> automatically </para>
+          <para styleclass="Body Table"><text styleclass="Body Text">We calculate for you the </text><text styleclass="VariableName">Bi-Arcs</text><text styleclass="Body Text"> automatically, but it takes more time to complete.</text></para>
+          <para styleclass="Body Table"><text styleclass="Body Text">If the </text><text styleclass="Parameter">Traffic-Light</text><text styleclass="Body Text"> remains</text><text styleclass="VariableName">&#32;</text><text styleclass="VariableName" style="color:#ff0000;">RED</text><text styleclass="Body Text">, c</text><text styleclass="Body Text HowTo">lick the </text><text styleclass="Parameter">Traffic-Light</text><text styleclass="Body Text HowTo"> icon again.</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="vertical-align:middle; height:30px; background-color:#ffffff;">
+          <para styleclass="Normal"><image src="7r.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td style="vertical-align:middle; width:47px; height:30px;">
+          <para styleclass="Normal" style="text-align:center;"><image src="MD-Icon-DialogCamCoords-Measurment.ipp" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td style="vertical-align:middle;">
+          <para styleclass="Body Table">Display a preview of the <text styleclass="VariableName">Cam-Profile</text>.</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="vertical-align:middle; height:30px; background-color:#ffffff;">
+          <para styleclass="Normal"></para>
+          <para styleclass="Normal"><image src="8r.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td style="vertical-align:middle; width:47px; height:30px;">
+          <para styleclass="BodyText BI" style="text-align:center;"><image src="MD-Icon-DialogCamCoords-Open.png" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td style="vertical-align:middle;">
+          <para styleclass="Body Table">Read-only - the Cam is Open or it is Closed</para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Body Text"><image src="2s.png" scale="100.00%" figurelistinclude="0"></image>&#32;<text styleclass="Heading3_atocs_">- End Caps</text></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="5" colcount="2">
+      <tr style="vertical-align:middle">
+        <td colspan="2">
+          <para styleclass="Body Text"><text styleclass="VariableName">End Caps</text> relate only to <text styleclass="VariableName">Slot-Cams</text>, also known as <text styleclass="VariableName">Linear-Cams</text>, or <text styleclass="VariableName">Ramp-Cams</text>.</para>
+          <para styleclass="Body Text"><text styleclass="VariableName">Top-Tip</text> - Save a Slot-Cam as a STEP file if it will not transfer to <text styleclass="SOLIDWORKS">SolidWorks</text>.</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td rowspan="2" style="vertical-align:middle;">
+          <para styleclass="Normal"><image src="MD-Dialog-2DCam-CamCoordinates-toolbar-SLOT-CAM-Show.ipp" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"><caption><![CDATA[End-Caps - Show]]></caption></image></para>
+        </td>
+        <td>
+          <para styleclass="ParameterHeader">Show<text styleclass="Body Text"> or </text>Hide End-Caps</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td rowspan="3" style="vertical-align:top;">
+          <para styleclass="Body Table"><text styleclass="VariableName">End-Caps</text> work well when the independent axis to the Follower moves in one direction only - <text styleclass="SeeAlso">see image “End-Caps - Show”</text></para>
+          <para styleclass="Body Table">If the independent axis changes its direction in the middle of its travel, you see <text styleclass="VariableName">False End-Caps</text> in the middle of the <text styleclass="VariableName">Slot-Cam</text>. - <text styleclass="SeeAlso">see image: “Slot-Cam with &apos;False&apos; End-Caps”</text>.</para>
+          <para styleclass="Normal"><line style="height:1px; color:#343400;" /></para>
+          <para styleclass="Body Table">Before you export Cam-Coordinates we recommend you add a <text styleclass="VariableName">dummy</text> slot-cam -<text styleclass="VariableName"> and move the main axis of the Slot-Cam in one direction at Constant-Velocity, over one machine-cycle.</text></para>
+          <para styleclass="VariableName">To make sure the Constant-Velocity is correct: </para>
+          <list id="3" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Body Table" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="Body Table">Connect a wire from a <text styleclass="Element">Linear-Motion-FB</text> to a <text styleclass="Element">Gearing FB</text><text styleclass="VariableName">&#32;</text></li>
+            <li styleclass="Body Table">In the <text styleclass="Element">Gearing FB</text>, enter a <text styleclass="Parameter">Gearing Ratio = Linear Travel distance of -Slot-Cam </text><text styleclass="Parameter-Header" style="font-family:Arial; font-size:10pt; font-weight:normal; font-style:normal; text-decoration:none; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">/ </text><text styleclass="ParameterHeader">360</text><text styleclass="Parameter-Header" style="font-family:Arial; font-size:10pt; font-weight:normal; font-style:normal; text-decoration:none; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">).</text><text styleclass="VariableName">&#32;</text></li>
+            <li styleclass="Body Table"><text styleclass="Body Text">Connect a wire from the </text><text styleclass="Element">Gearing FB</text><text styleclass="Body Text"> to the </text><text styleclass="Element">Motion-Dimension FB</text><text styleclass="Body Text"> as the motion of the Slot-Cam.</text></li>
+          </list>
+          <para styleclass="Body Text HowTo">As the <text styleclass="VariableName">MMA</text> increases from 0 to 360, the Cam travels from <text styleclass="Parameter-Header" style="font-family:Arial; font-size:10pt; font-weight:normal; font-style:normal; text-decoration:none; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">0</text> to <text styleclass="ParameterHeader">Maximum Travel distance of Cam</text><text styleclass="Parameter-Header" style="font-family:Arial; font-size:10pt; font-weight:normal; font-style:normal; text-decoration:none; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">&#32;</text><text styleclass="VariableName">(</text><text styleclass="Popup Box">mm</text><text styleclass="VariableName">).</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="vertical-align:middle; width:240px;">
+          <para styleclass="Normal"><image src="MD-Slot-Cam-Reverse.ipp" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"><caption><![CDATA[Slot-Cam with 'False' End-Cams]]></caption></image></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="vertical-align:middle; width:240px;">
+          <para styleclass="Normal"><image src="MD-Dialog-2DCam-CamCoordinates-toolbar-SLOT-CAM-Hide.ipp" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"><caption><![CDATA[End-Caps - Hide]]></caption></image></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Body Table"><image src="3s.png" scale="100.00%" style="font-size:7pt; vertical-align:sub;" figurelistinclude="0"></image><text styleclass="Body Text">&#32;</text><text styleclass="Heading3_atocs_">- Cam Status</text></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="4" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="vertical-align:middle; width:42px;">
+          <para styleclass="Normal" style="text-align:right;"><image src="MD-Dialog-2DCamCoordiantes-Schematic-B.ipp" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td style="vertical-align:middle;">
+          <para styleclass="Body Table"><text styleclass="Normal">The cam-coordinates have been calculated. </text></para>
+          <para styleclass="Body Table"><text styleclass="Normal">The </text><text styleclass="VariableName">Radius-of-Curvature</text><text styleclass="Normal"> is greater than the </text><text styleclass="ParameterHeader">Cam ROC Soft-Limit</text><text styleclass="Parameter-Header" style="font-family:Arial; font-size:10pt; font-weight:normal; font-style:normal; text-decoration:none; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">&#32;</text><text styleclass="Normal">parameter - see </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-2DCam-ParametersTab" anchor="2DCAM-DIALOG-RANGE-RADIUS" styleclass="SeeAlso">2D-Cam dialog</link></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="vertical-align:middle; width:42px;">
+          <para styleclass="Normal" style="text-align:right;"><image src="MD-Dialog-2DCamCoordiantes-Schematic-Outer-Inner-NOT.ipp" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td style="vertical-align:middle;">
+          <para styleclass="Body Table"><text styleclass="Normal">The cam-coordinates have not been calculated - usually after you edit the </text><text styleclass="Parameter"># Points</text><text styleclass="Normal"> or the </text><text styleclass="Parameter">BiArc Error</text><text styleclass="Parameter-Header" style="font-family:Arial; font-size:10pt; font-weight:normal; font-style:normal; text-decoration:none; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">.</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="vertical-align:middle; width:42px;">
+          <para styleclass="Normal" style="text-align:right;"><image src="MD-DIALOG-CAMCOORDIANTES-CAM-STATUS.ipp" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td style="vertical-align:middle;">
+          <para styleclass="Body Table"><text styleclass="Normal">It is not possible to calculate the cam-coordinates correctly, possibly because of under-cutting.</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="vertical-align:middle; width:42px;">
+          <para styleclass="Normal" style="text-align:right;"><image src="MD-DIALOG-CAMCOORDIANTES-CAM-STATUS-ROC.ipp" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td style="vertical-align:middle;">
+          <para styleclass="Body Table"><text styleclass="Normal">The cam-coordinates have been calculated.</text></para>
+          <para styleclass="Body Table"><text styleclass="Normal">The Cam&apos;s </text><text styleclass="VariableName">Radius-of-Curvature</text><text styleclass="Normal"> is </text><text styleclass="VariableName">less</text><text styleclass="Normal"> than </text><text styleclass="ParameterHeader">Cam ROC Soft-Limit</text><text styleclass="Normal"> parameter - see </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-2DCam-ParametersTab" anchor="2DCAM-DIALOG-RANGE-RADIUS" styleclass="SeeAlso">2D-Cam dialog</link><text styleclass="SeeAlso"> - </text><text styleclass="SeeAlso" style="color:#ff0000;">Undercutting is possible</text><text styleclass="Body Text">.</text></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Body Text"><image src="4s.png" scale="100.00%" styleclass="Body Table" style="font-size:7pt; vertical-align:sub;" figurelistinclude="0"></image>&#32;<text styleclass="Heading3_atocs_">- Cam Options </text></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="5" colcount="2">
+      <tr style="vertical-align:top">
+        <td colspan="2" style="vertical-align:middle;">
+          <para styleclass="Body Text">Calculate, Display, and/or Save the Cam-Coordinates:</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="vertical-align:middle; width:133px;">
+          <para styleclass="Image Caption"><image src="MD-STEP-INNER.ipp" scale="100.00%" figurelistinclude="0"></image></para>
+        </td>
+        <td style="vertical-align:top; width:1791px;">
+          <list id="4" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted"><text styleclass="ParameterHeader">Inner</text><text styleclass="VariableName"> Cam-Profile ONLY</text>&#32;</li>
+          </list>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="vertical-align:middle; width:133px;">
+          <para styleclass="Image Caption"><image src="MD-STEP-OUTER.ipp" scale="100.00%" figurelistinclude="0"></image></para>
+        </td>
+        <td style="vertical-align:top; width:1791px;">
+          <list id="5" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted"><text styleclass="ParameterHeader">Outer</text><text styleclass="VariableName"> Cam-Profile ONLY</text></li>
+          </list>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="vertical-align:middle; width:133px;">
+          <para styleclass="Image Caption"><image src="MD-STEP-GROOVE.ipp" scale="100.00%" figurelistinclude="0"></image></para>
+        </td>
+        <td style="vertical-align:top; width:1791px;">
+          <list id="6" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000080;">
+            <li styleclass="HowTo Bulleted"><text styleclass="ParameterHeader">Groove-Cam</text></li>
+          </list>
+          <para styleclass="Body Text">If you select <text styleclass="Parameter">Groove-Cam</text> option, AND if you toggle <image src="1s.png" scale="70.00%" width="17" height="17" figurelistinclude="0"></image>&#32;<image src="Red-14-5.gif" scale="100.00%" figurelistinclude="0"></image> to <text styleclass="Parameter">XY-Points</text>, then you can also toggle <image src="1s.png" scale="70.00%" width="17" height="17" figurelistinclude="0"></image>&#32;<image src="Red-14-4.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image> to calculate the <text styleclass="Parameter">Pitch-Circle</text> coordinates.</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="vertical-align:middle; width:133px;">
+          <para styleclass="Image Caption"><image src="MD-STEP-NEGATIVEGROOVE.ipp" scale="-99.90%" figurelistinclude="0"></image></para>
+        </td>
+        <td style="vertical-align:top; width:1791px;">
+          <list id="7" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000080;">
+            <li styleclass="HowTo Bulleted"><text styleclass="ParameterHeader">Negative-Groove</text></li>
+          </list>
+          <para styleclass="Body Text">The <text styleclass="VariableName">Negative-Groove</text> option applies only when you save the Cam as a STEP file-type - <text styleclass="SeeAlso">see </text><image src="1s.png" scale="70.00%" width="17" height="17" styleclass="SeeAlso" figurelistinclude="0"></image><text styleclass="SeeAlso">&#32;</text><image src="Red-14-2.gif" scale="100.00%" styleclass="SeeAlso" figurelistinclude="0"></image><text styleclass="SeeAlso">. </text></para>
+          <para styleclass="Body Text">The STEP file is the space filled by the path of the <text styleclass="VariableName">Follower-Roller</text> along the <text styleclass="VariableName">Cam-Profile</text> (plus Radial Clearance).</para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Body Table"><image src="5s.png" scale="100.00%" styleclass="Image Caption" style="font-size:7pt; vertical-align:sub;" figurelistinclude="0"></image><text styleclass="Body Text">&#32;</text><text styleclass="Heading3_atocs_">- Radial-Clearance</text></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="2" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="vertical-align:top; width:85px;">
+          <para styleclass="Normal" style="text-align:right;"><image src="MD-DIALOG-2DCAM-COORDINATES-RADIAL-CLEARANCE.ipp" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"><caption><![CDATA[Example Radial-Clearance]]></caption></image></para>
+          <para styleclass="Normal"><image src="MD-DIALOG-2DCAM-COORDINATES-RADIAL-CLEARANCE-1.ipp" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"><caption><![CDATA[Cam with 0.2mm Radial Clearance]]></caption></image></para>
+        </td>
+        <td>
+          <para styleclass="Body Table">See also : <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-2DCam-ParametersTab" anchor="2DCAM-DIALOG-RANGE-RADIUS" styleclass="SeeAlso">2D-Cam dialog &gt; Parameters tab &gt; Cam Range and Radius</link></para>
+          <para styleclass="Normal"><line style="height:1px; color:#343400;" /></para>
+          <para styleclass="Body Table"><text styleclass="ParameterHeader">Radial Clearance</text><text styleclass="Parameter-Header" style="font-family:Arial; font-size:10pt; font-weight:normal; font-style:normal; text-decoration:none; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;"> (</text><text styleclass="Parameter">mm</text><text styleclass="Parameter-Header" style="font-family:Arial; font-size:10pt; font-weight:normal; font-style:normal; text-decoration:none; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">) </text><text styleclass="Body Text"> Default = 0 , Negative or Positive</text></para>
+          <para styleclass="Body Text HowTo"><text styleclass="VariableName">Positive Value</text> - we re-calculate the cam for you to give a <text styleclass="VariableName">clearance</text> between the Follower-Profile and the Cam-Profile.</para>
+          <para styleclass="Body Text HowTo">AND<text styleclass="Body Text">:</text></para>
+          <para styleclass="Body Text HowTo"><text styleclass="VariableName">Negative Value</text> - we re-calculate the cam for you to give an <text styleclass="VariableName">interference</text> between the Follower-Profile and the Cam-Profile.</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td colspan="2" style="vertical-align:top;">
+          <para styleclass="Interface2">Applications<text styleclass="VariableName">:</text></para>
+          <para styleclass="Body Table"><text styleclass="VariableName">Groove-Cam</text> -<text styleclass="Body Text HowTo"> add clearance (</text><text styleclass="VariableName">Positive Value</text><text styleclass="Body Text HowTo">) for a Follower-Roller in a Groove cam-type (See </text><text styleclass="Notes">Note</text><text styleclass="Body Text HowTo"> )</text></para>
+          <para styleclass="Body Table"><text styleclass="VariableName">Conjugate-Cam</text><text styleclass="Body Text HowTo"> - to add a small clearance (</text><text styleclass="VariableName">Positive Value</text><text styleclass="Body Text HowTo">) to compensate for tolerances in the cam assembly. </text></para>
+          <para styleclass="Body Table"><text styleclass="VariableName">Rough-Cut</text><text styleclass="Body Text HowTo"> - to oversize an Inner-Cam or undersize an Outer-Cam for a Rough-cut. </text><text styleclass="Parameter">Radial-Clearance</text><text styleclass="Body Text HowTo"> should be a </text><text styleclass="VariableName">Negative-Value</text></para>
+          <para styleclass="Body Table"><text styleclass="Notes">Note</text><text styleclass="Body Text HowTo">: Frequently, Stud-type </text><text styleclass="VariableName">Follower-Rollers</text><text styleclass="Body Text HowTo"> have a dimensional tolerance negative &#160;bias - for example, </text><equation styleclass="Body Text HowTo" style="font-size:7pt; vertical-align:baseline;vertical-align:text-bottom" font-size="24"><![CDATA[0-50\mu m]]></equation><text styleclass="Body Text">. You may consider that to be enough clearance.</text></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Body Table"><image src="6s.png" scale="100.00%" style="font-size:7pt; vertical-align:sub;" figurelistinclude="0"></image><text styleclass="Body Text">&#32;</text><text styleclass="Heading3_atocs_">- Cam-Coordinates</text></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="2" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="vertical-align:top; width:85px;">
+          <para styleclass="Normal" style="text-align:right;"><image src="MD-DIALOG-CAMCOORDINATES-BIARC.ipp" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"><caption><![CDATA[Max Chord-Error with BiArcs]]></caption></image></para>
+        </td>
+        <td>
+          <para styleclass="VariableName"><image src="1s.png" scale="70.00%" width="17" height="17" figurelistinclude="0"></image>&#32;<image src="Red-14-5.gif" scale="100.00%" figurelistinclude="0"></image> set to BiArcs</para>
+          <para styleclass="Body Table"><text styleclass="Body Text HowTo">Apply this maximum Chord-Error between the Cam-Profile and the </text><text styleclass="VariableName">BiArcs</text><text styleclass="Body Text HowTo">.</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="vertical-align:top; width:85px;">
+          <para styleclass="Normal"><image src="MD-DIALOG-CAMCOORDINATES-PTS.ipp" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"><caption><![CDATA[Number of XY Points]]></caption></image></para>
+        </td>
+        <td>
+          <para styleclass="VariableName"><image src="1s.png" scale="70.00%" width="17" height="17" figurelistinclude="0"></image>&#32;<image src="Red-14-5.gif" scale="100.00%" figurelistinclude="0"></image> set to XY-Points</para>
+          <para styleclass="Body Table"><text styleclass="Body Text HowTo">Calculate these number of Points for the Cam-Profile at equal increments of the </text><text styleclass="VariableName">Master-Machine Angle</text><text styleclass="Body Text HowTo">.</text></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Normal"><line style="height:1px; color:#343400;" /></para>
+    <para styleclass="Body Table"><anchor id="CAMCOORDINATES-STEPFILEOPTIONS" styleclass="Body Text"><keywords><keyword>Cam-Coordinates<keyword>STEP file Options.</keyword></keyword></keywords></anchor><text styleclass="Body Text"> &#160;</text><text styleclass="Separator-Header"> Options for: Save as .STEP file-type</text></para>
+    <para styleclass="Body Text"><table styleclass="Default" rowcount="2" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Text">When you save the Cam as a STP (STEP) file, you can use these parameters.</para>
+          <para styleclass="Image Caption"><image src="MD-DIALOG-CAMCOORDINATES-STEPFILEOPTIONS.ipp" scale="-99.90%" figurelistinclude="0"></image></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Table"><image src="8s.png" scale="100.00%" style="font-size:7pt; vertical-align:sub;" figurelistinclude="0"></image> - <text styleclass="Interface2">STEP-Only</text>&#32;<text styleclass="Body Text">- To indicate the </text><text styleclass="VariableName">Front Face </text><text styleclass="Body Text">or the </text><text styleclass="VariableName">Back Face </text>from which to extrude the <text styleclass="VariableName">Groove-Cam</text> by <text styleclass="Parameter">Cam-Depth</text><text styleclass="Parameter-Header" style="font-family:Arial; font-size:10pt; font-weight:normal; font-style:normal; text-decoration:none; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">&#32;</text><text styleclass="SeeAlso">(see also </text><image src="9s.png" scale="70.00%" width="17" height="17" style="font-size:7pt; vertical-align:sub;" figurelistinclude="0"></image><text styleclass="SeeAlso"> )</text></para>
+          <para styleclass="Body Table"><image src="9s.png" scale="100.00%" style="font-size:7pt; vertical-align:sub;" figurelistinclude="0"></image> - <text styleclass="VariableName">STEP-ONLY</text> - Dimensions for the Cam-Plate (<text styleclass="SeeAlso">see </text><image src="1s.png" scale="70.00%" width="17" height="17" styleclass="SeeAlso" figurelistinclude="0"></image><text styleclass="SeeAlso">&#32;</text><image src="Red-14-2.gif" scale="100.00%" styleclass="SeeAlso" figurelistinclude="0"></image><text styleclass="SeeAlso"> )</text></para>
+          <para styleclass="Body Table"><image src="10s.png" scale="100.00%" style="font-size:7pt; vertical-align:sub;" figurelistinclude="0"></image> - <text styleclass="VariableName">STEP-ONLY</text> - <text styleclass="Body Text">Schematics</text> to indicate the Cam type, and if the <text styleclass="Parameter">Plate-Radius</text> and <text styleclass="Parameter">Bore-Radius</text><text styleclass="Parameter-Header" style="font-family:Arial; font-size:10pt; font-weight:normal; font-style:normal; text-decoration:none; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">&#32;</text>are suitable<text styleclass="SeeAlso"> (see also </text><image src="7s.png" scale="70.00%" width="17" height="17" styleclass="SeeAlso" figurelistinclude="0"></image><text styleclass="SeeAlso"> )</text></para>
+          <para styleclass="Body Table"><image src="11s.png" scale="100.00%" styleclass="Image Caption" style="font-size:7pt; vertical-align:sub;" figurelistinclude="0"></image><text styleclass="Image Caption">&#32;</text>- <text styleclass="VariableName">STEP-ONLY - </text><text styleclass="Body Text HowTo">(Stationary Cam only) - enter an </text><text styleclass="Parameter-Header" style="font-family:Arial; font-size:10pt; font-weight:normal; font-style:normal; text-decoration:none; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">X-Offset</text><text styleclass="Body Text HowTo"> and </text><text styleclass="Parameter-Header" style="font-family:Arial; font-size:10pt; font-weight:normal; font-style:normal; text-decoration:none; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">Y-Offset</text><text styleclass="Body Text HowTo"> to move the center of the Cam-Plate, as required.</text></para>
+          <para styleclass="Body Table"><image src="11s.png" scale="100.00%" styleclass="Image Caption" style="font-size:7pt; vertical-align:sub;" figurelistinclude="0"></image><text styleclass="Body Text HowTo"> - </text><text styleclass="Parameter">Min. Inner-Cam</text> and <text styleclass="Parameter">Max. Outer-Cam</text>. Read-only radius of the <text styleclass="VariableName">Cam-Profiles</text> to help you specify the <text styleclass="Parameter">Plate-Radius</text> and <text styleclass="Parameter">Bore-Radius</text><text styleclass="SeeAlso"> (see also </text><image src="9s.png" scale="70.00%" width="17" height="17" style="font-size:7pt; vertical-align:sub;" figurelistinclude="0"></image><text styleclass="SeeAlso"> )</text></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Body Table"><image src="9s.png" scale="100.00%" style="font-size:7pt; vertical-align:sub;" figurelistinclude="0"></image><text style="font-size:7pt; vertical-align:sub;">&#32;</text><text styleclass="Heading3_atocs_">Dimensions for STEP file ONLY</text></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="5" colcount="2">
+      <tr style="vertical-align:middle">
+        <td colspan="2">
+          <para styleclass="Body Text">These images are of a Groove cam-type that are saved as the STEP file-type, and then opened in <text styleclass="Interface2">SolidWorks</text> to show the features.</para>
+          <para styleclass="Image Caption"><image src="MD-DIALOG-CAMCOORDINATES-STEPFILEOPTIONS-StepDims.ipp" scale="100.00%" figurelistinclude="0"></image></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="vertical-align:middle; width:240px; background-color:#ffffff;">
+          <para styleclass="Normal" style="text-align:center;"><image src="MD-Dialog-2DCam-CamCoordinates-CamDepth.ipp" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="Body Table"><image src="Red-14-2.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="VariableName">&#32;</text><text styleclass="ParameterHeader">Plate-Depth</text></para>
+          <para styleclass="Body Table"><text styleclass="Body Text">The total depth of the Cam-Plate.</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="vertical-align:middle; width:240px; background-color:#ffffff;">
+          <para styleclass="Normal" style="text-align:center;"><image src="MD-Dialog-2DCam-CamCoordinates-GrooveDepth.ipp" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="Body Table"><image src="Red-14-1b.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="VariableName">&#32;</text><text styleclass="ParameterHeader">Cam-Depth</text></para>
+          <para styleclass="Body Table"><text styleclass="Body Text">The depth of the Cam cut into the Cam-Plate. The width of the Cam-Flanks.</text></para>
+          <para styleclass="Body Table"><text styleclass="Body Text">Minimum</text><text styleclass="ParameterHeader"> Plate-Depth</text><text styleclass="Body Text">&#32;</text><text styleclass="Body Text" style="font-size:14pt;">–</text><text styleclass="Body Text">&#32;</text><text styleclass="ParameterHeader">Cam-Depth</text><text styleclass="Body Text">&#32;</text><text styleclass="Body Text" style="font-size:14pt;">≥</text><text styleclass="Body Text"> 2 </text><text styleclass="Body Text" style="font-size:10pt; vertical-align:baseline;">mm</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="vertical-align:middle; width:240px; background-color:#ffffff;">
+          <para styleclass="Normal" style="text-align:center;"><image src="MD-Dialog-2DCamCoordiantes-STEP-Cam-Radius.ipp" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="Body Table"><image src="Red-14-3.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="VariableName">&#32;</text><text styleclass="ParameterHeader">Plate-Radius</text></para>
+          <para styleclass="Body Table">The radius of the <text styleclass="VariableName">Cam-Plate</text>, when you select an <text styleclass="Parameter">Outer</text> or a <text styleclass="Parameter">Groove-Cam</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="vertical-align:middle; width:240px; background-color:#ffffff;">
+          <para styleclass="Normal" style="text-align:center;"><image src="MD-Dialog-2DCamCoordiantes-STEP-Bore-Radius.ipp" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="Body Table"><image src="Red-14-4.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="VariableName">&#32;</text><text styleclass="ParameterHeader">Bore-Radius</text></para>
+          <para styleclass="Body Table">The radius of the hole through the center of the<text styleclass="Body Text"> Cam-Plate</text><text style="font-size:7pt; vertical-align:sub;">&#32;</text></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Normal"><line style="height:1px; color:#343400;" /></para>
+    <para styleclass="Body Text HowTo"><image src="10s.png" scale="100.00%" styleclass="Heading3_atocs_" style="font-size:9pt; vertical-align:sub;" figurelistinclude="0"></image><text styleclass="Heading3_atocs_"> Schematics of Cam type and are the Dimensions OK or Not-OK?</text></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="13" colcount="2">
+      <tr style="vertical-align:top">
+        <td colspan="2" style="vertical-align:middle;">
+          <para styleclass="Image Caption"><image src="MD-DIALOG-CAMCOORDINATES-STEPFILEOPTIONS-StepDims.ipp" scale="100.00%" figurelistinclude="0"></image></para>
+          <para styleclass="Heading4 Toggle_atocs_">Status of Cam Type, Blank-Radius and Bore-Radius relative to Cam-Size</para>
+          <para styleclass="Body Table">The <text styleclass="Parameter">Plate-Radius</text><text styleclass="Parameter-Header" style="font-family:Arial; font-size:10pt; font-weight:normal; font-style:normal; text-decoration:none; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">&#32;</text><image src="Red-14-3.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image> parameter applies to <text styleclass="VariableName">Outer</text> and <text styleclass="VariableName">Groove Cams</text> only <image src="4s.png" scale="100.00%" style="font-size:7pt; vertical-align:sub;" figurelistinclude="0"></image></para>
+          <para styleclass="Body Table">The <text styleclass="Parameter">Bore-Radius</text><text styleclass="Parameter-Header" style="font-family:Arial; font-size:10pt; font-weight:normal; font-style:normal; text-decoration:none; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">&#32;</text><image src="Red-14-4.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image> parameter applies to all Cam types <image src="4s.png" scale="100.00%" style="font-size:7pt; vertical-align:sub;" figurelistinclude="0"></image></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="vertical-align:middle; width:42px;">
+          <para styleclass="Normal" style="text-align:center;"><image src="MD-Dialog-2DCamCoordiantes-Groove-BlankOK-BoreOK-.ipp" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td style="vertical-align:middle;">
+          <para styleclass="Body Table"><image src="4s.png" scale="100.00%" style="font-size:7pt; vertical-align:sub;" figurelistinclude="0"></image>&#32;<text styleclass="Interface2">Groove-Cam</text></para>
+          <para styleclass="Body Table"><image src="Red-14-3.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Body Text">&#32;</text><text styleclass="ParameterHeader">Plate-Radius</text><text styleclass="Body Text"> is </text><text styleclass="VariableName">OK</text><text styleclass="Body Text"> - it is greater than the </text><text styleclass="VariableName">Maximum Radius of the Outer Cam</text><text styleclass="Body Text">&#32;</text><image src="11s.png" scale="100.00%" styleclass="Body Text" style="font-size:7pt; vertical-align:sub;" figurelistinclude="0"></image></para>
+          <para styleclass="Body Table"><image src="Red-14-4.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image>&#32;<text styleclass="ParameterHeader">Bore-Radius</text> is <text styleclass="VariableName">OK</text> - it is less than the <text styleclass="VariableName">Minimum Radius of the Inner Cam </text><image src="11s.png" scale="100.00%" styleclass="Body Text" style="font-size:7pt; vertical-align:sub;" figurelistinclude="0"></image></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="vertical-align:middle; width:42px;">
+          <para styleclass="Normal" style="text-align:center;"><image src="MD-Dialog-2DCamCoordiantes-Groove-Blank2Sm-BoreOK-.ipp" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td style="vertical-align:middle;">
+          <para styleclass="Body Table"><image src="4s.png" scale="100.00%" style="font-size:7pt; vertical-align:sub;" figurelistinclude="0"></image>&#32;<text styleclass="Interface2">Groove-Cam</text></para>
+          <para styleclass="Body Table"><image src="Red-14-3.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Body Text">&#32;</text><text styleclass="ParameterHeader">Plate-Radius</text><text styleclass="Body Text"> is </text><text styleclass="VariableName">NOT OK</text><text styleclass="Body Text"> - it is less than the </text><text styleclass="VariableName">Maximum Radius of the Outer Cam</text><text styleclass="Body Text">&#32;</text><image src="11s.png" scale="100.00%" styleclass="Body Text" style="font-size:7pt; vertical-align:sub;" figurelistinclude="0"></image></para>
+          <para styleclass="Body Table"><image src="Red-14-4.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image>&#32;<text styleclass="ParameterHeader">Bore-Radius</text> is <text styleclass="VariableName">OK</text> - it is less than the <text styleclass="VariableName">Minimum Radius of the Inner Cam </text><image src="11s.png" scale="100.00%" styleclass="Body Text" style="font-size:7pt; vertical-align:sub;" figurelistinclude="0"></image></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="vertical-align:middle; width:42px;">
+          <para styleclass="Normal" style="text-align:center;"><image src="MD-Dialog-2DCamCoordiantes-Groove-BlankOK-Bore2Bg.ipp" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td style="vertical-align:middle;">
+          <para styleclass="Body Table"><image src="4s.png" scale="100.00%" style="font-size:7pt; vertical-align:sub;" figurelistinclude="0"></image>&#32;<text styleclass="Interface2">Groove-Cam</text></para>
+          <para styleclass="Body Table"><image src="Red-14-3.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Body Text">&#32;</text><text styleclass="ParameterHeader">Plate-Radius</text><text styleclass="Body Text"> is </text><text styleclass="VariableName">OK</text><text styleclass="Body Text"> - it is greater than the </text><text styleclass="VariableName">Maximum Radius of the Outer Cam</text><text styleclass="Body Text">&#32;</text><image src="11s.png" scale="100.00%" styleclass="Body Text" style="font-size:7pt; vertical-align:sub;" figurelistinclude="0"></image></para>
+          <para styleclass="Body Table"><image src="Red-14-4.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image>&#32;<text styleclass="ParameterHeader">Bore-Radius</text> is <text styleclass="VariableName">NOT OK</text> - it is greater than the <text styleclass="VariableName">Minimum Radius of the Inner Cam </text><image src="11s.png" scale="100.00%" styleclass="Body Text" style="font-size:7pt; vertical-align:sub;" figurelistinclude="0"></image></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="vertical-align:middle; width:42px;">
+          <para styleclass="Normal" style="text-align:center;"><image src="MD-Dialog-2DCamCoordiantes-Groove-Blan2Sm-Bore2Bg.ipp" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td style="vertical-align:middle;">
+          <para styleclass="Body Table"><image src="4s.png" scale="100.00%" style="font-size:7pt; vertical-align:sub;" figurelistinclude="0"></image>&#32;<text styleclass="Interface2">Groove-Cam</text></para>
+          <para styleclass="Body Table"><image src="Red-14-3.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Body Text">&#32;</text><text styleclass="ParameterHeader">Plate-Radius</text><text styleclass="Body Text">&#32;</text>is <text styleclass="VariableName">NOT OK</text><text styleclass="Body Text"> - it is less than the </text><text styleclass="VariableName">Maximum Radius of the Outer Cam</text><text styleclass="Body Text">&#32;</text><image src="11s.png" scale="100.00%" styleclass="Body Text" style="font-size:7pt; vertical-align:sub;" figurelistinclude="0"></image></para>
+          <para styleclass="Body Table"><image src="Red-14-4.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image>&#32;<text styleclass="ParameterHeader">Bore-Radius</text> is <text styleclass="VariableName">NOT OK</text> - it is greater than the <text styleclass="VariableName">Minimum Radius of the Inner Cam </text><image src="11s.png" scale="100.00%" styleclass="Body Text" style="font-size:7pt; vertical-align:sub;" figurelistinclude="0"></image></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="vertical-align:middle; width:42px;">
+          <para styleclass="Normal" style="text-align:center;"><image src="MD-Dialog-2DCamCoordiantes-Inner-Blank0-Bore0.ipp" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td style="vertical-align:middle;">
+          <para styleclass="Body Table"><image src="4s.png" scale="100.00%" style="font-size:7pt; vertical-align:sub;" figurelistinclude="0"></image>&#32;<text styleclass="Interface2">Inner-Cam</text><text styleclass="VariableName"> ONLY</text></para>
+          <para styleclass="Body Table"><image src="Red-14-3.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Body Text">&#32;</text><text styleclass="ParameterHeader">Plate-Radius</text><text styleclass="Body Text">&#32;</text>is <text styleclass="VariableName">0mm</text></para>
+          <para styleclass="Body Table"><image src="Red-14-4.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image>&#32;<text styleclass="ParameterHeader">Bore-Radius</text> is <text styleclass="VariableName">0mm </text><text styleclass="Body Text">- the Cam does not </text>include a Hole through its center</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="vertical-align:middle; width:42px;">
+          <para styleclass="Normal" style="text-align:center;"><image src="MD-Dialog-2DCamCoordiantes-Inner-BlankOK-BoreOK.ipp" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td style="vertical-align:middle;">
+          <para styleclass="Body Table"><image src="4s.png" scale="100.00%" style="font-size:7pt; vertical-align:sub;" figurelistinclude="0"></image>&#32;<text styleclass="Interface2">Inner Cam</text><text styleclass="VariableName"> ONLY</text></para>
+          <para styleclass="Body Table"><image src="Red-14-3.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Body Text">&#32;</text><text styleclass="ParameterHeader">Plate-Radius</text><text styleclass="Body Text">&#32;</text>is <text styleclass="VariableName">OK</text><text styleclass="Body Text"> - it is greater than the </text><text styleclass="VariableName">Maximum Radius of the Outer Cam</text><text styleclass="Body Text">&#32;</text><image src="11s.png" scale="100.00%" styleclass="Body Text" style="font-size:7pt; vertical-align:sub;" figurelistinclude="0"></image></para>
+          <para styleclass="Body Table"><image src="Red-14-4.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image>&#32;<text styleclass="ParameterHeader">Bore-Radius</text> is <text styleclass="VariableName">OK</text> - it is less than the <text styleclass="VariableName">Minimum Radius of the Inner Cam </text><image src="11s.png" scale="100.00%" styleclass="Body Text" style="font-size:7pt; vertical-align:sub;" figurelistinclude="0"></image></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="vertical-align:middle; width:42px;">
+          <para styleclass="Normal" style="text-align:center;"><image src="MD-Dialog-2DCamCoordiantes-Groove-Blank2Sm-BoreOK-.ipp" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td style="vertical-align:middle;">
+          <para styleclass="Body Table"><image src="4s.png" scale="100.00%" style="font-size:7pt; vertical-align:sub;" figurelistinclude="0"></image>&#32;<text styleclass="Interface2">Inner-Cam</text><text styleclass="VariableName"> ONLY</text></para>
+          <para styleclass="Body Table"><image src="Red-14-3.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Body Text">&#32;</text><text styleclass="ParameterHeader">Plate-Radius</text><text styleclass="Body Text"> is </text><text styleclass="VariableName">NOT OK</text><text styleclass="Body Text"> - this dimension is ignored with </text><text styleclass="VariableName">Inner Cams</text><text styleclass="Body Text">&#32;</text><image src="4s.png" scale="100.00%" style="font-size:7pt; vertical-align:sub;" figurelistinclude="0"></image></para>
+          <para styleclass="Body Table"><image src="Red-14-4.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image>&#32;<text styleclass="ParameterHeader">Bore-Radius</text> is <text styleclass="VariableName">OK</text> - it is less than the <text styleclass="VariableName">Minimum Radius of the Inner Cam </text><image src="11s.png" scale="100.00%" styleclass="Body Text" style="font-size:7pt; vertical-align:sub;" figurelistinclude="0"></image></para>
+          <para styleclass="Body Table">You <text styleclass="VariableName" style="color:#ff0000;">can</text> save the STEP file.</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="vertical-align:middle; width:42px;">
+          <para styleclass="Normal" style="text-align:center;"><image src="MD-Dialog-2DCamCoordiantes-Groove-BlankOK-Bore2Bg.ipp" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td style="vertical-align:middle;">
+          <para styleclass="Body Table"><image src="4s.png" scale="100.00%" style="font-size:7pt; vertical-align:sub;" figurelistinclude="0"></image>&#32;<text styleclass="Interface2">Inner-Cam</text><text styleclass="VariableName"> ONLY</text></para>
+          <para styleclass="Body Table"><image src="Red-14-3.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Body Text">&#32;</text><text styleclass="ParameterHeader">Plate-Radius</text><text styleclass="Body Text"> is </text><text styleclass="VariableName">OK</text><text styleclass="Body Text"> - it is greater than the </text><text styleclass="VariableName">Maximum Radius of the Outer Cam</text><text styleclass="Body Text">&#32;</text><image src="11s.png" scale="100.00%" styleclass="Body Text" style="font-size:7pt; vertical-align:sub;" figurelistinclude="0"></image></para>
+          <para styleclass="Body Table"><image src="Red-14-4.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image>&#32;<text styleclass="ParameterHeader">Bore-Radius</text> is <text styleclass="VariableName">NOT OK</text> - it is greater than the <text styleclass="VariableName">Minimum Radius of the Inner Cam </text><image src="11s.png" scale="100.00%" styleclass="Body Text" style="font-size:7pt; vertical-align:sub;" figurelistinclude="0"></image></para>
+          <para styleclass="Body Table"> You <text styleclass="VariableName" style="color:#ff0000;">can NOT</text> save the STEP file.</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="vertical-align:middle; width:42px;">
+          <para styleclass="Normal" style="text-align:center;"><image src="MD-Dialog-2DCamCoordiantes-Outer-BlankOK-BoreOK.ipp" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td style="vertical-align:middle;">
+          <para styleclass="Body Table"><image src="4s.png" scale="100.00%" style="font-size:7pt; vertical-align:sub;" figurelistinclude="0"></image>&#32;<text styleclass="Interface2">Outer-Cam</text><text styleclass="VariableName"> ONLY</text></para>
+          <para styleclass="Body Table"><image src="Red-14-3.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Body Text">&#32;</text><text styleclass="ParameterHeader">Plate-Radius</text><text styleclass="Body Text">&#32;</text>is <text styleclass="VariableName">OK</text><text styleclass="Body Text"> - it is greater than the </text><text styleclass="VariableName">Maximum Radius of the Outer Cam</text><text styleclass="Body Text">&#32;</text><image src="11s.png" scale="100.00%" styleclass="Body Text" style="font-size:7pt; vertical-align:sub;" figurelistinclude="0"></image></para>
+          <para styleclass="Body Table"><image src="Red-14-4.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image>&#32;<text styleclass="ParameterHeader">Bore-Radius</text> is <text styleclass="VariableName">OK</text> - it is less than the <text styleclass="VariableName">Minimum Radius of the Inner Cam </text><image src="11s.png" scale="100.00%" styleclass="Body Text" style="font-size:7pt; vertical-align:sub;" figurelistinclude="0"></image></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="vertical-align:middle; width:42px;">
+          <para styleclass="Normal" style="text-align:center;"><image src="MD-Dialog-2DCamCoordiantes-Groove-Blank2Sm-BoreOK-.ipp" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td style="vertical-align:middle;">
+          <para styleclass="Body Table"><image src="4s.png" scale="100.00%" style="font-size:7pt; vertical-align:sub;" figurelistinclude="0"></image>&#32;<text styleclass="Interface2">Outer Cam</text><text styleclass="VariableName"> ONLY</text></para>
+          <para styleclass="Body Table"><image src="Red-14-3.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Body Text">&#32;</text><text styleclass="ParameterHeader">Plate-Radius</text><text styleclass="Body Text"> is </text><text styleclass="VariableName">NOT OK</text><text styleclass="Body Text"> - it is less than the </text><text styleclass="VariableName">Maximum Radius of the Outer Cam</text><text styleclass="Body Text">&#32;</text><image src="11s.png" scale="100.00%" styleclass="Body Text" style="font-size:7pt; vertical-align:sub;" figurelistinclude="0"></image></para>
+          <para styleclass="Body Table"><image src="Red-14-4.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image>&#32;<text styleclass="ParameterHeader">Bore-Radius</text> is <text styleclass="VariableName">OK</text> - it is less than the <text styleclass="VariableName">Minimum Radius of the Inner Cam </text><image src="11s.png" scale="100.00%" styleclass="Body Text" style="font-size:7pt; vertical-align:sub;" figurelistinclude="0"></image></para>
+          <para styleclass="Body Table">You <text styleclass="VariableName" style="color:#ff0000;">can NOT</text> save the STEP file.</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="vertical-align:middle; width:42px;">
+          <para styleclass="Normal" style="text-align:center;"><image src="MD-Dialog-2DCamCoordiantes-Groove-BlankOK-Bore2Bg.ipp" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td style="vertical-align:middle;">
+          <para styleclass="Body Table"><image src="4s.png" scale="100.00%" style="font-size:7pt; vertical-align:sub;" figurelistinclude="0"></image>&#32;<text styleclass="Interface2">Outer-Cam</text><text styleclass="VariableName"> ONLY</text></para>
+          <para styleclass="Body Table"><image src="Red-14-3.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Body Text">&#32;</text><text styleclass="ParameterHeader">Plate-Radius</text><text styleclass="Body Text"> is </text><text styleclass="VariableName">OK</text><text styleclass="Body Text"> - it is greater than the </text><text styleclass="VariableName">Maximum Radius of the Outer Cam</text><text styleclass="Body Text">&#32;</text><image src="11s.png" scale="100.00%" styleclass="Body Text" style="font-size:7pt; vertical-align:sub;" figurelistinclude="0"></image></para>
+          <para styleclass="Body Table"><image src="Red-14-4.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image>&#32;<text styleclass="ParameterHeader">Bore-Radius</text> is <text styleclass="VariableName">NOT OK</text> - it is greater than the <text styleclass="VariableName">Minimum Radius of the Inner Cam </text><image src="11s.png" scale="100.00%" styleclass="Body Text" style="font-size:7pt; vertical-align:sub;" figurelistinclude="0"></image></para>
+          <para styleclass="Body Table"> You <text styleclass="VariableName" style="color:#ff0000;">can</text> save the STEP file.</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="vertical-align:middle; width:42px;">
+          <para styleclass="Normal" style="text-align:center;"><image src="MD-Dialog-2DCamCoordiantes-Ng-Groove-OKOK.ipp" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td style="vertical-align:middle;">
+          <para styleclass="Body Table"><image src="4s.png" scale="100.00%" style="font-size:7pt; vertical-align:sub;" figurelistinclude="0"></image>&#32;<text styleclass="Interface2">Negative Groove-Cam</text></para>
+          <para styleclass="Body Table"><image src="Red-14-3.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Body Text">&#32;</text><text styleclass="ParameterHeader">Plate-Radius</text><text styleclass="Body Text">&#32;</text>is <text styleclass="VariableName">OK</text><text styleclass="Body Text"> - it is greater than the </text><text styleclass="VariableName">Maximum Radius of the Outer Cam</text><text styleclass="Body Text">&#32;</text><image src="11s.png" scale="100.00%" styleclass="Body Text" style="font-size:7pt; vertical-align:sub;" figurelistinclude="0"></image></para>
+          <para styleclass="Body Table"><image src="Red-14-4.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image>&#32;<text styleclass="ParameterHeader">Bore-Radius</text> is <text styleclass="VariableName">OK</text> - it is less than the <text styleclass="VariableName">Minimum Radius of the Inner Cam </text><image src="11s.png" scale="100.00%" styleclass="Body Text" style="font-size:7pt; vertical-align:sub;" figurelistinclude="0"></image></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Normal"><line style="height:1px; color:#343400;" /></para>
+    <para styleclass="Body Text"><image src="11s.png" scale="100.00%" style="font-size:7pt; vertical-align:sub;" figurelistinclude="0"></image><text style="font-size:7pt; vertical-align:sub;">&#32;</text><text styleclass="Heading3_atocs_">Minimum/Maximum Radius of Cams, Offset X and Offset Y.</text></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="1" colcount="1">
+      <tr style="vertical-align:middle">
+        <td>
+          <para styleclass="Parameter-Header" style="text-align:left; text-indent:0px; margin-top:0px; margin-right:0px; margin-bottom:0px; margin-left:0px; line-height:1.00; background-color:transparent; white-space:normal; page-break-inside:auto; page-break-after:auto; border:none; tabstops:none;"><text styleclass="ParameterHeader">Minimum of Inner-Cam</text><text styleclass="Body Text"> and </text><text styleclass="ParameterHeader">Maximum of Outer-Cam</text><text style="font-family:Arial; font-size:10pt; font-weight:normal; font-style:normal; text-decoration:none; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">&#32;</text><text styleclass="SeeAlso">(see also </text><image src="9s.png" scale="70.00%" width="17" height="17" styleclass="Body Table" style="font-size:7pt; vertical-align:sub;" figurelistinclude="0"></image><text styleclass="SeeAlso"> )</text></para>
+          <para styleclass="Normal"><image src="MD-CAMCOORDIANTES-MININNER-MAXOUTER.ipp" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+          <para styleclass="Body Table">These values are useful to know when you want to make sure there is a minimum difference between the:</para>
+          <list id="8" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted"><text styleclass="ParameterHeader">Bore-Radius</text> and the minimum radius of the <text styleclass="ParameterHeader">Inner</text> Cam. </li>
+            <li styleclass="HowTo Bulleted"><text styleclass="ParameterHeader">Plate-Radius</text><text styleclass="Parameter-Header" style="font-family:Arial; font-size:10pt; font-weight:normal; font-style:normal; text-decoration:none; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">&#32;</text><text styleclass="Body Table">and the maximum radius of the </text><text styleclass="ParameterHeader">Outer</text><text styleclass="Body Table"> Cam.</text></li>
+          </list>
+          <para styleclass="Normal"><line style="height:1px; color:#343400;" /></para>
+          <para styleclass="Parameter-Header" style="text-align:left; text-indent:0px; margin-top:0px; margin-right:0px; margin-bottom:0px; margin-left:0px; line-height:1.00; background-color:transparent; white-space:normal; page-break-inside:auto; page-break-after:auto; border:none; tabstops:none;"><text styleclass="ParameterHeader">X-Offset</text><text style="font-family:Arial; font-size:10pt; font-weight:normal; font-style:normal; text-decoration:none; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">&#32;</text><text styleclass="Body Text">and </text><text styleclass="ParameterHeader">Y Offset</text></para>
+          <para styleclass="Parameter-Header" style="text-align:left; text-indent:0px; margin-top:0px; margin-right:0px; margin-bottom:0px; margin-left:0px; line-height:1.00; background-color:transparent; white-space:normal; page-break-inside:auto; page-break-after:auto; border:none; tabstops:none;"><text styleclass="Body Text HowTo">When the Cam is stationary, enter an </text><text styleclass="Parameter">X-Offset</text><text styleclass="Body Text HowTo"> and </text><text styleclass="Parameter">Y-Offset</text><text styleclass="Body Text HowTo"> to move the center of the Cam-Plate </text><text styleclass="Body Table">relative the 0,0 of the </text><text styleclass="Interface">Mechanism-Plane</text><text styleclass="Body Table"> / </text><text styleclass="Element">Base-Part</text><text styleclass="Body Table">.</text></para>
+          <para styleclass="Parameter-Header" style="text-align:left; text-indent:0px; margin-top:0px; margin-right:0px; margin-bottom:0px; margin-left:0px; line-height:1.00; background-color:transparent; white-space:normal; page-break-inside:auto; page-break-after:auto; border:none; tabstops:none;"><image src="MD-CAMCOORDIANTES-XYOFFSET.ipp" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+          <para styleclass="Body Text"><table styleclass="Block" rowcount="2" colcount="2">
+            <tr style="vertical-align:top">
+              <td style="width:240px;">
+                <para styleclass="Normal" style="text-align:center;"><image src="MD-Dialog-2DCamCoordiantes-STEP-No-Offset.ipp" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+              </td>
+              <td>
+                <para styleclass="Body Table"><text styleclass="ParameterHeader">X Offset</text><text styleclass="VariableName"> = 0, </text><text styleclass="ParameterHeader">Y Offset</text><text styleclass="VariableName"> = 0</text></para>
+                <para styleclass="Body Table">Read-only if the Cam is a not stationary. </para>
+                <para styleclass="Body Table"></para>
+                <para styleclass="Normal"><line style="height:1px; color:#343400;" /></para>
+                <para styleclass="Body Table"><text styleclass="Body Text">Image left: the </text><text styleclass="VariableName">Blank-Radius</text><text styleclass="Body Text"> and </text><text styleclass="VariableName">Blank-Bore</text><text styleclass="Body Text"> with </text><text styleclass="VariableName">Offset-X=0,-Y=0.</text></para>
+              </td>
+            </tr>
+            <tr style="vertical-align:top">
+              <td style="width:240px;">
+                <para styleclass="Normal" style="text-align:center;"><image src="MD-Dialog-2DCamCoordiantes-STEP-Offset.ipp" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+              </td>
+              <td>
+                <para styleclass="Body Table"><text styleclass="VariableName">Center-X = 20, Center-Y = 30</text></para>
+                <para styleclass="Body Table"><text styleclass="Body Text">Image left: the </text><text styleclass="VariableName">Blank-Radius</text><text styleclass="Body Text"> and </text><text styleclass="VariableName">Blank-Bore</text><text styleclass="Body Text"> with Offset-X=20,Y=30.</text></para>
+                <para styleclass="Normal"><line style="height:1px; color:#343400;" /></para>
+                <para styleclass="Body Table"><text styleclass="Body Text">The maximum radius of the </text><text styleclass="VariableName">Blank-Bore</text><text styleclass="Body Text"> can be increased, and the minimum radius of the </text><text styleclass="VariableName">Blank-Radius</text><text styleclass="Body Text"> can be decreased.</text></para>
+              </td>
+            </tr>
+          </table></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Normal"><line style="height:1px; color:#343400;" /></para>
+    <para styleclass="VariableName">Notes:</para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="1" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Text"><anchor id="CamCoordinates"><keywords><keyword>2D-Cam Coordinates Notes<keyword>Note 1: 0,0 of Cam-Coordinates</keyword></keyword></keywords></anchor><text styleclass="VariableName">Note 1: </text>When a <text styleclass="VariableName">2D-Cam</text> is a child to a rotating-Part, make sure that the <text styleclass="Interface">start-Point</text> (origin) of the rotating-Part is at the rotating center.</para>
+          <para styleclass="Body Text"><anchor id="Curve"><keywords><keyword>2D-Cam Coordinates Notes<keyword>Note 4: Export to SOLIDWORKS data</keyword></keyword></keywords></anchor><text styleclass="VariableName">Note 4: Cam-Data and SOLIDWORKS.</text></para>
+          <para styleclass="Body Text">Default Plane in SOLIDWORKS<text styleclass="Body Text HowTo">: When you export the Cam-Profile as a SLDCRV file and import that file into </text><text styleclass="Body Text HowTo" style="font-size:10pt; vertical-align:baseline;">SOLIDWORKS,</text><text styleclass="Body Text HowTo"> with </text><text styleclass="T_Menu">Insert &gt; Curve &gt; Curve Through XYZ Points...</text><text styleclass="Body Text HowTo"> the Cam will be coplanar with the Front-Plane of the </text><text styleclass="Body Text HowTo" style="font-size:10pt; vertical-align:baseline;">SOLIDWORKS</text><text styleclass="Body Text HowTo"> part document.</text></para>
+          <para styleclass="VariableName">To move the Cam-Profile to a different Plane: </para>
+          <list id="9" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo Bulleted">Calculate<text styleclass="Body Text"> the Cam-Profile as XY-Points</text><text styleclass="VariableName">&#32;</text></li>
+            <li styleclass="HowTo Bulleted"><text styleclass="Body Text">Save it as a SLDCRV file-type.</text></li>
+            <li styleclass="HowTo Bulleted"><text styleclass="Body Text">Open the SLDCRV file in EXCEL - the cam-coordinates use the A, B, and C columns, which are the X, Y, and Z cam-coordinates, respectively</text></li>
+            <li styleclass="HowTo Bulleted"><text styleclass="Body Text">To move the Cam to the</text></li>
+            <list id="9" level="1" type="ol" listtype="lower-alpha" formatstring="&#37;&#49;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+              <li styleclass="HowTo Bulleted"><text styleclass="Body Text">TOP Plane: Move the C column to the D column, the B column to the C column, and the D column to the B-column (that is, swap the B and C columns)</text></li>
+              <li styleclass="HowTo Bulleted"><text styleclass="Body Text">RIGHT Plane: Move the C column to the D column, the B column to the C column, move the A column to the B column, and the D column to the A column (that is, swap the A and C columns)</text></li>
+            </list>
+          </list>
+          <list id="9" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo Bulleted"><text styleclass="Body Text">Save the Data as a CSV (MS-Dos) file</text></li>
+            <li styleclass="HowTo Bulleted"><text styleclass="Body Text"> Close the file in EXCEL</text></li>
+            <li styleclass="HowTo Bulleted"><text styleclass="Body Text">Use Windows File Explorer to rename the file to </text><text styleclass="VariableName">file-name.SLDCRV</text></li>
+            <li styleclass="HowTo Bulleted"><text styleclass="Body Text HowTo" style="font-size:10pt; vertical-align:baseline;">In SOLIDWORKS,</text><text styleclass="Body Text HowTo"> do </text><text styleclass="T_Menu">Insert &gt; Curve &gt; Curve Through XYZ Points... </text><text styleclass="Body Text">and browse to </text><text styleclass="VariableName">file-name.SLDCRV</text></li>
+          </list>
+          <para styleclass="Body Text">To mirror the cam: Multiply the X-column data by –1, to mirror the data about the Y-axis. </para>
+          <para styleclass="Normal"><line style="height:1px; color:#343400;" /></para>
+          <para styleclass="Body Text"><anchor id="CamasArcs-CamData" styleclass="Body Text - bit bigger"><keywords><keyword>2D-Cam Coordinates Notes<keyword>Note 5: Cam as Arcs - Cam-Data</keyword></keyword></keywords></anchor><text styleclass="VariableName">Note5: </text>The Cam as <text styleclass="VariableName">BiArc Data</text> has six columns:</para>
+          <para styleclass="Body Text"><table styleclass="Default" rowcount="2" colcount="6" style="width:93%; cell-padding:2px; background-color:#ffffff; head-row-background-color:#999999; alt-row-background-color:none;">
+            <thead style="vertical-align:top">
+              <td>
+                <para styleclass="Normal"><text styleclass="Body Text">1</text></para>
+              </td>
+              <td>
+                <para styleclass="Normal"><text styleclass="Body Text">2</text></para>
+              </td>
+              <td>
+                <para styleclass="Normal"><text styleclass="Body Text">3</text></para>
+              </td>
+              <td>
+                <para styleclass="Normal"><text styleclass="Body Text">4</text></para>
+              </td>
+              <td>
+                <para styleclass="Normal"><text styleclass="Body Text">5</text></para>
+              </td>
+              <td>
+                <para styleclass="Normal"><text styleclass="Body Text">6</text></para>
+              </td>
+            </thead>
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="VariableName-IT"><text styleclass="Body Text">Arc Radius</text></para>
+              </td>
+              <td>
+                <para styleclass="VariableName-IT"><text styleclass="Body Text">Arc Start Point X Coordinate</text></para>
+              </td>
+              <td>
+                <para styleclass="VariableName-IT"><text styleclass="Body Text"> Arc End Point X Coordinate</text></para>
+              </td>
+              <td>
+                <para styleclass="VariableName-IT"><text styleclass="Body Text">Arc Start Point Y Coordinate</text></para>
+              </td>
+              <td>
+                <para styleclass="VariableName-IT"><text styleclass="Body Text">Arc End Point Y Coordinate</text></para>
+              </td>
+              <td>
+                <para styleclass="VariableName-IT"><text styleclass="Body Text">Arc Angle Range (degs)</text></para>
+              </td>
+            </tr>
+          </table></para>
+        </td>
+      </tr>
+    </table></para>
+  </body>
+</topic>

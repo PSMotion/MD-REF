@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" modified="2022-04-11T10:12:10.368+01:00" lasteditedby="Adam" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title translate="true">Cycloidal-CV50 Motion-Law</title>
+  <keywords>
+    <keyword translate="true">Cam Law: Cycloidal CV50</keyword>
+    <keyword translate="true">Motion-Law:<keyword translate="true">Cycloidal CV50</keyword></keyword>
+  </keywords>
+  <body>
+    <header>
+      <para styleclass="Heading1"><text styleclass="Heading1" translate="true">Cycloidal-CV50 Motion-Law</text></para>
+    </header>
+    <para styleclass="Heading3_atocs_"><text styleclass="Heading3_atocs_" translate="true">Cycloidal-CV50 Cam-Law, Motion-Law</text></para>
+    <para styleclass="Body Text"><table styleclass="Standard" rowcount="3" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Text"><text styleclass="Body Text" translate="true">It is a Traditional Motion-Law.</text></para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="VariableName"><text styleclass="VariableName" translate="true">The Cycloidal-CV50 has three phases:</text></para>
+          <para styleclass="Body Text HowTo"><text styleclass="VariableName" translate="true">Phase 1</text><text styleclass="Body Text HowTo" translate="true">: </text><text styleclass="HowTo Bulleted" translate="true">Acceleration : first ½ wave of a Sine function : 25% of the </text><text styleclass="Parameter-Header" translate="true">Segment-Width</text><text styleclass="HowTo Bulleted" translate="true">.</text></para>
+          <para styleclass="Body Text HowTo"><text styleclass="VariableName" translate="true">Phase 2</text><text styleclass="Body Text HowTo" translate="true">: Zero Acceleration : </text><text styleclass="HowTo Bulleted" translate="true">Constant Velocity : 50% of the </text><text styleclass="Parameter-Header" translate="true">Segment-Width</text><text styleclass="HowTo Bulleted" translate="true">.</text></para>
+          <para styleclass="Body Text HowTo"><text styleclass="VariableName" translate="true">Phase 3</text><text styleclass="Body Text HowTo" translate="true">: </text><text styleclass="HowTo Bulleted" translate="true">Deceleration : last ½ wave of a Sine function : 25% of the </text><text styleclass="Parameter-Header" translate="true">Segment Width</text></para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="Body Text"><text styleclass="Body Text" translate="true">To add a </text><text styleclass="Interface2" translate="true">Cycloidal-CV50</text><text styleclass="Body Text" translate="true"> motion:</text></para>
+          <list id="0" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Numbered" style="font-family:&apos;Noto Sans&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo Numbered"><text styleclass="HowTo Numbered" translate="true">Select a </text><text styleclass="Interface2" translate="true">Ramp</text><text styleclass="VariableName" translate="true">&#32;</text><text styleclass="Parameter" translate="true">Motion-Law</text><text styleclass="HowTo Numbered" style="font-weight:bold;" translate="true">&#32;</text></li>
+            <li styleclass="HowTo Numbered"><text styleclass="HowTo Numbered" translate="true">Open the </text><text styleclass="Interface2" translate="true">Segment Editor</text></li>
+            <li styleclass="HowTo Numbered"><text styleclass="HowTo Numbered" translate="true">Edit the </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MT-SegmentEditor-Segment-Parameters" styleclass="Parameter" translate="true">Segment Parameters</link><text styleclass="Parameter" translate="true"> Start-Fraction </text><text styleclass="HowTo Numbered" translate="true"> = 0.25, </text><text styleclass="Parameter" translate="true">End-Fraction</text><text styleclass="HowTo Numbered" translate="true"> = 0.25</text></li>
+          </list>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="Parameter-Header"><text styleclass="Parameter-Header" translate="true">Segment Parameters</text><text styleclass="Body Text" translate="true"> - use the </text><text styleclass="Interface2" translate="true">RAMP</text><text styleclass="Body Text" translate="true"> motion-law</text></para>
+          <para styleclass="Heading4 Toggle_atocs_"><image src="MT-SE-Ramp-SegPar25-25.png" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+          <para styleclass="HowTo Bulleted"><text styleclass="Parameter-Header" translate="true">Start-Fraction</text><text styleclass="HowTo Bulleted" translate="true"> × 100 = 25% of Segment-Width for Acceleration</text></para>
+          <para styleclass="HowTo Bulleted"><text styleclass="Parameter-Header" translate="true">End-Fraction</text><text styleclass="HowTo Bulleted" translate="true"> × 100 = 25% of Segment-Width for Deceleration</text></para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="Heading4 Toggle_atocs_"><text styleclass="Interface2" translate="true">Segment Editor</text><text styleclass="Heading4 Toggle_atocs_" style="color:#ff0000;" translate="true">&#32;</text><text styleclass="Body Text" translate="true">and</text><text styleclass="Heading4 Toggle_atocs_" style="color:#ff0000;" translate="true">&#32;</text><text styleclass="Interface2" translate="true">Blend-Point Editor</text><text styleclass="Heading4 Toggle_atocs_" translate="true">&#32;</text></para>
+          <para styleclass="VariableName"><text styleclass="VariableName" translate="true">CAN specify the:</text></para>
+          <list id="1" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted"><text styleclass="Parameter" translate="true">Start-Position</text><text styleclass="Parameter-Header" translate="true">&#32;</text><text styleclass="HowTo Bulleted" translate="true">- </text><text styleclass="Body Text" translate="true">usually</text><text styleclass="HowTo Bulleted" translate="true">&#32;</text><text styleclass="VariableName-IT" translate="true">flows</text><text styleclass="HowTo Bulleted" translate="true"> from the </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MT-Previous-Segment" styleclass="Parameter" translate="true">Previous-Segment</link><text styleclass="HowTo Bulleted" translate="true">.</text></li>
+            <li styleclass="HowTo Bulleted"><text styleclass="Parameter" translate="true">End-Position</text></li>
+          </list>
+          <para styleclass="VariableName"><text styleclass="VariableName" translate="true">You </text><text styleclass="VariableName" style="color:#ff0000;" translate="true">CANNOT</text><text styleclass="VariableName" translate="true"> specify the:</text></para>
+          <list id="2" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted"><text styleclass="Parameter" translate="true">Start-Velocity, End-Velocity</text><text styleclass="VariableName" translate="true"> - Zero</text></li>
+            <li styleclass="HowTo Bulleted"><text styleclass="Parameter" translate="true">Start-Acceleration, End-Acceleration</text><text styleclass="VariableName" translate="true"> - Zero</text></li>
+            <li styleclass="HowTo Bulleted"><text styleclass="Parameter" translate="true">Start-Jerk, End-Jerk</text><text styleclass="VariableName" translate="true"> - Finite</text></li>
+          </list>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="vertical-align:top; height:86px;">
+          <para styleclass="" style="text-align:left; text-indent:0px; margin-top:0px; margin-right:0px; margin-bottom:0px; margin-left:0px; line-height:1.00; background-color:transparent; white-space:normal; page-break-inside:auto; page-break-after:auto; border:none; tabstops:none;"><image src="MT-CamLaw-Cycloidal-CV50.ipp" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"><caption translate="true"><![CDATA[Cycloidal-CV50 (50% is Constant-Velocity (with Ramp Motion-Law / Cam-Law]]></caption></image></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="vertical-align:top; height:86px;">
+          <para styleclass="VariableName"><text styleclass="VariableName" translate="true">Cycloidal-CV50</text></para>
+          <list id="3" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted"><text styleclass="HowTo Bulleted" translate="true">Symmetrical</text></li>
+            <li styleclass="HowTo Bulleted"><text styleclass="HowTo Bulleted" translate="true">Position, Velocity and Acceleration Continuity</text></li>
+            <li styleclass="HowTo Bulleted"><text styleclass="HowTo Bulleted" style="font-weight:normal;" translate="true">Finite, but four Jerk discontinuities.</text></li>
+          </list>
+          <para styleclass="VariableName"><text styleclass="VariableName" translate="true">Motion-Law Coefficients</text></para>
+          <list id="3" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted"><text styleclass="HowTo Bulleted" translate="true">Velocity Coefficient: </text><text styleclass="HowTo Bulleted" style="font-weight:bold;" translate="true">C</text><text styleclass="HowTo Bulleted" style="font-size:9pt; font-weight:bold; vertical-align:sub;" translate="true">v</text><text styleclass="HowTo Bulleted" style="font-weight:bold;" translate="true"> = 1.33</text></li>
+            <li styleclass="HowTo Bulleted"><text styleclass="HowTo Bulleted" translate="true">Acceleration Coefficient: </text><text styleclass="HowTo Bulleted" style="font-weight:bold;" translate="true">C</text><text styleclass="HowTo Bulleted" style="font-size:9pt; font-weight:bold; vertical-align:sub;" translate="true">a</text><text styleclass="HowTo Bulleted" style="font-weight:bold;" translate="true">= 8.378</text></li>
+            <li styleclass="HowTo Bulleted"><text styleclass="HowTo Bulleted" style="font-weight:normal;" translate="true">Jerk Coefficient: </text><text styleclass="HowTo Bulleted" style="font-weight:bold;" translate="true">C</text><text styleclass="HowTo Bulleted" style="font-size:9pt; font-weight:bold; vertical-align:sub;" translate="true">j</text><text styleclass="HowTo Bulleted" style="font-weight:bold;" translate="true">= ±105.276</text></li>
+            <li styleclass="HowTo Bulleted"><text styleclass="HowTo Bulleted" style="font-weight:normal;" translate="true">Jerk at Cross-Over 0.25 </text><link displaytype="text" defaultstyle="true" type="weblink" href="mailto:&lt;%LINK_CAPTION%&gt;" styleclass="HowTo Bulleted" style="font-weight:normal;" translate="true">Cross-over@0.25</link><text styleclass="HowTo Bulleted" style="font-weight:normal;" translate="true"> q: </text><text styleclass="HowTo Bulleted" style="font-weight:bold;" translate="true">C</text><text styleclass="HowTo Bulleted" style="font-size:9pt; font-weight:bold; vertical-align:sub;" translate="true">j(co)</text><text styleclass="HowTo Bulleted" style="font-weight:bold;" translate="true">=</text><text styleclass="VariableName" translate="true"> ±105.276 (Effectively)</text></li>
+          </list>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="Heading4 Toggle_atocs_"><text styleclass="Heading4 Toggle_atocs_" translate="true">Application Notes:</text></para>
+          <para styleclass="VariableName"><text styleclass="VariableName" translate="true">Dynamic Performance</text></para>
+          <para styleclass="Body Text HowTo"><text styleclass="Body Text HowTo" translate="true">This Motion-Law is recommended in applications where you need the peak velocity to be low when compared to others. </text></para>
+          <para styleclass="Body Text HowTo"><text styleclass="Body Text HowTo" translate="true">It has a large Peak Acceleration, with a short duration, thus more likely to induce vibrations.</text></para>
+          <para styleclass="VariableName"><text styleclass="VariableName" translate="true">Pressure Angle Considerations</text></para>
+          <para styleclass="Body Text HowTo"><text styleclass="Body Text HowTo" translate="true">It gives a relatively low pressure angle - because of its low peak velocity.</text></para>
+          <para styleclass="VariableName"><text styleclass="VariableName" translate="true">Drive Torques</text></para>
+          <para styleclass="Body Text HowTo"><text styleclass="Body Text HowTo" translate="true">This Motion-Law is not recommended in many applications as it will give a sudden change in torque. The input transmission rigidity would need to be high.</text></para>
+        </td>
+      </tr>
+    </table></para>
+  </body>
+</topic>

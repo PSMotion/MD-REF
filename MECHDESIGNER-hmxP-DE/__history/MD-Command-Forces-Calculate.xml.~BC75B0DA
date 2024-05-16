@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" status="Under Construction" lasteditedby="Adam" version="2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title>Forces | Calculate Forces</title>
+  <keywords>
+    <keyword>Force Menu<keyword>Calculate Force ON / OFF</keyword></keyword>
+  </keywords>
+  <body>
+    <header>
+      <para styleclass="Heading1">Forces | Calculate Forces</para>
+    </header>
+    <para styleclass="Heading3_atocs_">Calculate Kinetostatic Forces Vectors</para>
+    <para styleclass="Body Text HowTo">Use <text styleclass="VariableName">Calculate Forces</text> to <text styleclass="Body Text">silently</text> calculate <text styleclass="VariableName">Kinetostatic Forces Vectors</text> at each joint in each <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Kinematically-Defined-Chain" styleclass="Interface">kinematically-defined chain</link>.</para>
+    <para styleclass="Body Text HowTo"><text styleclass="VariableName">Calculate Forces</text> also calculates the <text styleclass="VariableName">Application Load</text><text styleclass="Body Text"> or </text><text styleclass="VariableName">Application Load Torque</text><text styleclass="Body Text">. required from a drive system. </text></para>
+    <para styleclass="Body Text HowTo">The correct element must be configured as the Power-Source <text styleclass="HowTo Bulleted">- see </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-ConfigurePowerSource" styleclass="T_Menu">Configure Power Source</link><text styleclass="T_Menu">.</text></para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="SeeAlso">See <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Forces-Show-Force-Vectors">Show Force Vectors</link><text styleclass="Body Text">. </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-Servo-Gearbox-Torque-Speed">Kinetostatic Servomotor and Gearbox selection</link></para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="Normal"><table styleclass="Standard" rowcount="5" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="vertical-align:middle; width:54px; height:38px;">
+          <para styleclass="VariableName-IT" style="text-align:right;"><image src="Icon-CalculateForcesFB.png" scale="100.00%"></image></para>
+        </td>
+        <td style="vertical-align:middle;">
+          <para styleclass="T_Menu">Force toolbar &gt; Calculate Forces<text styleclass="Body Text"> - is active</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:54px;">
+          <para styleclass="VariableName-IT" style="text-align:right;"><image src="Icon-CalculateForcesNOT-FB.png" scale="100.00%"></image></para>
+        </td>
+        <td style="vertical-align:middle;">
+          <para styleclass="T_Menu">Forces toolbar &gt; Do Not Calculate Forces<text styleclass="Body Text"> - is not active</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="vertical-align:middle; width:54px;">
+          <para styleclass="VariableName-IT" style="text-align:right;">Menu : </para>
+        </td>
+        <td style="vertical-align:middle;">
+          <para styleclass="T_Menu">Add menu &gt; Forces sub-menu &gt; Calculate-Forces FB</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td colspan="2">
+          <para styleclass="Notes">Notes:</para>
+          <para styleclass="Body Text HowTo">To <text styleclass="VariableName">Calculate Kinetostatic Forces Vectors</text>:</para>
+          <list id="3" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:10pt; color:#800000;">
+            <li styleclass="HowTo Bulleted">A minimum of one <text styleclass="Element">Part</text> has mass, and/or an external load is applied to the kinematic-chain with a <text styleclass="Element">Spring FB.</text></li>
+          </list>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td colspan="2">
+          <para styleclass="SeeAlso">See also: <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Forces-Show-Force-Vectors">Show Force Vector</link><text styleclass="Body Text">, </text>Tutorial 13</para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Normal" style="page-break-before:always;"></para>
+  </body>
+</topic>

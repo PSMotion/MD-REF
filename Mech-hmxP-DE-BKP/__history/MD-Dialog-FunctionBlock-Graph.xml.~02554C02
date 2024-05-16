@@ -1,0 +1,204 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" status="Under Construction" modified="2022-04-22T13:43:55.829+01:00" lasteditedby="Adam" version="2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title>Dialog: Function-Block: Graph</title>
+  <keywords>
+    <keyword>Dialog<keyword>Funtion-Block : Graph Function-Block</keyword></keyword>
+    <keyword>Graph of Force Data</keyword>
+    <keyword>Graph of Motion data</keyword>
+    <keyword>Plot Graphs</keyword>
+  </keywords>
+  <body>
+    <header>
+      <para styleclass="Heading1">Dialog: Function-Block: Graph</para>
+    </header>
+    <para styleclass="Heading2">Grafik FB</para>
+    <para styleclass="SeeAlso">siehe <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Command-FB-Graph">Grafik hinzufügen FB</link></para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="Body Text HowTo"><text style="font-weight:normal; font-style:normal;">Verwenden Sie einen </text><text styleclass="Element">Graph FB</text><text style="font-weight:normal; font-style:normal;">, um kinematische Bewegungsdaten, kinetostatische Kraftdaten und Nockendaten darzustellen.</text></para>
+    <para styleclass="VariableName">Steckverbinder</para>
+    <para styleclass="Body Text HowTo"><text styleclass="VariableName-indent">4 × Y-Achsen-Eingang:</text><text style="font-weight:normal; font-style:normal;"> Die oberen vier (4) Eingangsanschlüsse sind für vier verschiedene Graphen.</text></para>
+    <para styleclass="Body Text HowTo"><text styleclass="VariableName-indent">1 × X-Achsen-Eingang: </text><text style="font-weight:normal; font-style:normal;">Der untere Eingangsanschluss ist </text>die<text styleclass="VariableName">X-Achse</text><text styleclass="Body Text"> für alle Diagramme. </text></para>
+    <para styleclass="Body Text HowTo"><text style="font-weight:normal; font-style:normal;">Wenn Sie kein Kabel an den Eingangsanschluss anschließen, &#160;istdie </text><text styleclass="VariableName">X-Achse</text><text style="font-weight:normal; font-style:normal;"> ein Maschinenzyklus, 0 - 360.</text></para>
+    <para styleclass="Heading3_atocs_" style="text-indent:-18px; margin-left:18px;">Öffnen Sie die Graph-Schnittstelle</para>
+    <para styleclass="Body Text"><table styleclass="Default" rowcount="1" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:86px;">
+          <para styleclass="Image Caption"><image src="MD-Icon-GraphFB-GA.png" scale="100.00%" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="Body Text">Bearbeiten Sie den<text styleclass="Element"> Graph FB</text><text style="font-weight:normal; font-style:normal;">:</text></para>
+          <para styleclass="Body Table"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td style="border-top:none; border-right:none; border-bottom:none;">
+                <list id="0" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="B Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="B Bullets"><text styleclass="Body Text">Doppelklicken Sie auf den </text><text styleclass="Element">Graph FB</text><text styleclass="Body Text"> im </text><text styleclass="Interface">Grafikbereich</text><text style="font-family:Arial; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">.</text><text styleclass="VariableName">&#32;</text></li>
+                </list>
+                <para styleclass="VariableName-IT">- oder -</para>
+                <list id="1" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="B Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; color:#000080;">
+                  <li styleclass="B Bullets"><text styleclass="SeeAlso">Siehe </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-How-to-Open-a-Dialog-Box" styleclass="SeeAlso">Öffnen eines Dialogfensters</link><text styleclass="SeeAlso">. </text></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Body Text">Die <text styleclass="Element">Graph-Schnittstelle </text>ist nun geöffnet.</para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="Heading3_atocs_">Graphische Schnittstelle</para>
+    <para styleclass="Body Text HowTo"><image src="MD-Dialog-Graph.png" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+    <para styleclass="Body Text"><image src="1r.gif" scale="100.00%" padding="0 4 0 0" styleclass="Image Caption" style="font-size:6pt; font-style:normal; vertical-align:sub;" figurelistinclude="0"></image><text styleclass="Image Caption" style="font-size:6pt; font-style:normal; vertical-align:sub;">&#32;</text><text styleclass="VariableName">Y-Achse Skalen</text></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="1" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <list id="2" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullets" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="Bullets">Eine Y-Skala für jeden Eingang - von links nach rechts, Y1 bis Y4 (Y1 ist der oberste Eingangsanschluss des Graph FB).</li>
+          </list>
+          <list id="3" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted">Die Farbe der Y-Achsenskala ist die gleiche wie die der Diagrammlinie. Sie können die Farben mit dem <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-FunctionBlock-GraphSettings">Dialogfeld Diagrammeinstellungen</link> bearbeiten.</li>
+          </list>
+          <list id="4" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted">Die Standardeinstellung ist die automatische Skalierung der Y-Achse. Sie können ein Minimum und ein Maximum im <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-FunctionBlock-GraphSettings">Dialogfeld Diagrammeinstellungen</link> festlegen.</li>
+          </list>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Body Text"><image src="2r.gif" scale="100.00%" padding="0 4 0 0" figurelistinclude="0"></image>&#32;<text styleclass="VariableName">Y-Achse Datenkanal (Drop-Down-Liste): </text>Siehe auch <link displaytype="text" defaultstyle="true" type="topiclink" href="" anchor="YAxisDisplay">Y-Achse Daten-Kanal Anzeigeoptionen</link></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="1" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <list id="5" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullets" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="Bullets">Jede Leitung, die Sie an einen Eingangsanschluss anschließen, hat 3 Datenkanäle.</li>
+            <li styleclass="HowTo Bulleted">Sie können den Datenkanal über das Dropdown-Menü auswählen.</li>
+          </list>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Body Text"><image src="3r.gif" scale="100.00%" padding="0 4 0 0" figurelistinclude="0"></image>&#32;<text styleclass="VariableName">Digitale Anzeige (D.R.A.):</text></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="1" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <list id="6" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullets" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="Bullets">Die Werte der X-Achse und der Y1-Y4-Achse an der Position des vertikalen Cursors<image src="Red-14-6.gif" scale="100.00%" figurelistinclude="0"></image>. </li>
+            <li styleclass="Bullets">Das Zahlenformat für die X-Achse und die Y-Achse wird auf der <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-Application-Settings" anchor="App-NumberFormat">Registerkarte Anwendungseinstellungen | Zahlenformat</link>konfiguriert <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-Application-Settings" anchor="App-NumberFormat">.</link></li>
+          </list>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Body Text"><image src="4r.gif" scale="100.00%" figurelistinclude="0"></image>&#32;<text styleclass="VariableName">Grafikbereich:</text></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="1" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <list id="7" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullets" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="Bullets">The graphs for each wire you connect to a Y-axis input-connector</li>
+          </list>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Body Text"><image src="5r.gif" scale="100.00%" figurelistinclude="0"></image>&#32;<text styleclass="VariableName">Toolbar:</text></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="2" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Bullets"><image src="MD-Dialog-GraphFB-GraphSettings-toolbar.ipp" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Table"><image src="Red-14-1.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Bullets"> Daten speichern als</text></para>
+          <para styleclass="Body Table"><image src="Red-14-2.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image>Diagramme drucken</para>
+          <para styleclass="Bullets"><image src="Red-14-3.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image>&#32;<link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-FunctionBlock-GraphSettings">Diagramm-Einstellungen</link>&#32;</para>
+          <para styleclass="Bullets"><image src="Red-14-4.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image> Verkleinern </para>
+          <para styleclass="Body Table"><image src="Red-14-5.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image> Einzoomen</para>
+          <para styleclass="Body Table"><image src="Red-14-6.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Normal">&#32;</text>Ausmaße zoomen</para>
+          <para styleclass="Bullets"><image src="Red-14-7.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Normal">&#32;</text>Links schwenken</para>
+          <para styleclass="Bullets"><image src="Red-14-8.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Normal">&#32;</text>Nach rechts schwenken</para>
+          <para styleclass="Bullets"><image src="Red-14-9.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Normal">&#32;</text>Grafikdaten in die Zwischenablage kopieren - siehe unten</para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Body Text"><image src="6r.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Normal">&#32;</text><text styleclass="VariableName">Vertikal-Cursor</text></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="1" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Table">Wenn Sie mit dem Zeiger in den Grafikbereich<image src="Red-14-4.gif" scale="100.00%" figurelistinclude="0"></image> klicken oder ziehen, bewegt sich der Vertikal-Cursor mit:</para>
+          <list id="8" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullets" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="Bullets">bewegt sich der Vertikal-Cursor mit Ihrem Mauszeiger</li>
+            <li styleclass="HowTo Bulleted">werden die Digitalanzeigen<image src="Red-14-3.gif" scale="100.00%" figurelistinclude="0"></image> kontinuierlich mit den Werten der Y-Achse an der Position des vertikalen Cursors auf der X-Achse abgeglichen</li>
+            <li styleclass="HowTo Bulleted">der <text styleclass="Interface">Master-Maschinenwinkel</text> wird laufend aktualisiert und entspricht dem X-Achsenwert des Vertikal-Cursors</li>
+            <li styleclass="HowTo Bulleted">die kinematisch definierten Ketten bewegen sich in Übereinstimmung mit dem <text styleclass="Interface">Master-Maschinenwinkel.</text></li>
+          </list>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Body Text"><image src="7r.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Normal">&#32;</text><text styleclass="VariableName">Daten in der Zwischenablage grafisch darstellen</text></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="1" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Bullets">Um die Datenwerte des Diagramms <image src="Red-14-7.gif" scale="100.00%" figurelistinclude="0"></image> aufzulisten, klicken Sie auf das rechte Werkzeug/Symbol in der Symbolleiste<image src="Red-14-9.gif" scale="100.00%" figurelistinclude="0"></image>.</para>
+          <list id="9" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullets" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="Bullets">Es gibt einen Datenpunkt für jeden Maschinenschritt - siehe <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-Machine-Settings">Dialog Maschineneinstellungen &gt; Anzahl der Schritte</link>.</li>
+            <li styleclass="HowTo Bulleted - compressed"><text styleclass="Body Text HowTo">Fügen Sie diese Daten in Excel ein, oder in eine </text><text styleclass="VariableName-IT">MotionDesigner</text><text styleclass="Body Text HowTo"> Datentransfer-Tabelle, wo Sie sie als Bewegungs-Overlay oder als Listensegment darstellen können.</text></li>
+          </list>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="Heading4 Toggle_atocs_">Warum sind die Y-Achsenwerte in der DRO<image src="Red-14-3.gif" scale="100.00%" figurelistinclude="0"></image> anders als die Vektorwerte im Grafikbereich?</para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="1" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Table">Die Werte können geringfügig abweichen, da in der Grafik die Werte der X-Achse und der Y-Achse am D.R.A. von &apos;Maschinenschritt&apos; zu &apos;Maschinenschritt&apos; springen müssen, wobei jede Erhöhung des Maschinenschritts eine Funktion des <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-Machine-Settings">Dialogfelds Maschineneinstellungen &gt; Anzahl der Schritte</link> ist.</para>
+          <para styleclass="Body Table">Im <text styleclass="Interface">Grafikbereich</text> werden die Vektorwerte für den Wert des <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-Master-Machine-Angle">Master-Maschinenwinkels</link> berechnet, der möglicherweise nicht mit einem Maschinenschritt übereinstimmt.</para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading4 Toggle_atocs_"><anchor id="YAxisDisplay" styleclass="Heading4 HowTo_atoc_"><keywords><keyword>Graph FB dialog-box<keyword>Y-axis display options</keyword></keyword></keywords></anchor>Y-Achse Datenkanäle Anzeigeoptionen:</para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="1" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Table">Die <text styleclass="VariableName">Datenkanäle der Y-Achse</text><image src="Red-14-2.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image> für jeden <text styleclass="VariableName">Y-Achsen-Eingang</text> befinden sich in den Dropdown-Feldern rechts neben den Diagrammen.</para>
+          <para styleclass="Body Table">Sie können bis zu <text styleclass="VariableName">drei Datenkanäle</text><text styleclass="HowTo Bulleted"> an jedem Ausgangsanschluss eines </text><text styleclass="Element">Function-Blocks </text>darstellen</para>
+          <para styleclass="Body Table">Um bis zu <text styleclass="VariableName">drei Datenkanäle</text> von einem Ausgangsanschluss eines <text styleclass="Element">Funktionsblocks</text> anzuzeigen, ziehen Sie drei Drähte vom gleichen Ausgangsanschluss zu drei verschiedenen Eingangsanschlüssen des <text styleclass="Element">Graph FB</text>.</para>
+          <para styleclass="Body Table"><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Command-FB-Kinematics" styleclass="VariableName">Kinematische Funktionsblöcke</link> (Linear-Bewegung, Getriebe, Bewegung, Bewegungs-Dimension) können Sie plotten:</para>
+          <list id="10" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullets" style="font-family:Symbol; font-size:10pt; color:#000000;">
+            <li styleclass="Bullets"><text styleclass="Interface">Lineare oder winklige Position </text></li>
+            <li styleclass="Interface">Lineare oder winklige Geschwindigkeit</li>
+            <li styleclass="Interface">Lineare oder winklige Beschleunigung</li>
+          </list>
+          <para styleclass="Body Table"><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Command-FB-Measurement" styleclass="VariableName">Messwert-FB</link> oder <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Command-FB-Point-Data">Punktdaten-FB</link> können Sie Folgendes aufzeichnen</para>
+          <list id="11" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted - compressed" style="font-family:Symbol; font-size:10pt; color:#000000;">
+            <li styleclass="HowTo Bulleted - compressed"><text styleclass="Interface">Lineare oder winklige Position</text></li>
+            <li styleclass="HowTo Bulleted - compressed"><text styleclass="Interface">Lineare oder winklige Geschwindigkeit</text></li>
+            <li styleclass="HowTo Bulleted - compressed"><text styleclass="Interface">Lineare oder winklige Beschleunigung</text></li>
+          </list>
+          <para styleclass="Body Table"><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Command-FB-Cam-Data" styleclass="VariableName">Nocken-Daten FB</link></para>
+          <list id="12" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted - compressed" style="font-family:Symbol; font-size:10pt; color:#000000;">
+            <li styleclass="HowTo Bulleted - compressed"><text styleclass="Interface">Druckwinkel</text>. <br/><text styleclass="Body Text Howindent4bullets">Sie können drei Eingriffswinkel aufzeichnen - siehe </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-Cam-Pressure-Angle" styleclass="Body Text Howindent4bullets">Eingriffswinkel</link></li>
+            <li styleclass="HowTo Bulleted - compressed"><text styleclass="Interface">Nocken-Krümmungsradius</text>. <br/><text styleclass="Body Text Howindent4bullets">Sie können zwei Krümmungsradien aufzeichnen: Nocken 1 und Nocken 2.</text></li>
+            <li styleclass="HowTo Bulleted - compressed"><text styleclass="Interface">Kontakt-Nockenkraft</text></li>
+            <li styleclass="HowTo Bulleted - compressed"><text styleclass="Interface">Maximale Kontakt-Scherspannung</text>. <br/><text styleclass="Body Text Howindent4bullets">Sie müssen die Materialeigenschaften eingeben, um korrekte Daten zu erhalten. Siehe </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-2DCam" anchor="2DCAM-DIALOG-FOLL-PROPS" styleclass="Body Text Howindent4bullets">Dialogfeld 2D-Nocken</link><text styleclass="Body Text Howindent4bullets">.</text></li>
+            <li styleclass="HowTo Bulleted - compressed"><text styleclass="Interface">Gleitgeschwindigkeit</text>. <br/><text styleclass="Body Text Howindent4bullets">Zeichnen Sie die Gleitgeschwindigkeit zwischen dem Nockenprofil und der Kurvenrolle für </text>die<text styleclass="Interface">innere Nocke</text><text styleclass="Body Text Howindent4bullets"> und die </text><text styleclass="Interface">äußere Nocke</text><text styleclass="Body Text Howindent4bullets">.</text></li>
+          </list>
+          <para styleclass="Body Table"><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Command-FB-Force-Data" styleclass="VariableName">Kraft-Daten FB</link></para>
+          <para styleclass="Body Table">Die Ausgabe eines <text styleclass="Element">Force-Data-FBs</text> ist abhängig von dem Element, mit dem er verknüpft ist. <text styleclass="SeeAlso">Siehe </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-FunctionBlock-ForceData" styleclass="SeeAlso">Force-Data-FB-Dialogfenster</link></para>
+          <para styleclass="Body Table">Wenn Sie einen <text styleclass="Element">Force-Data FB</text> mit einem: </para>
+          <list id="13" type="ul" listtype="bullet" formatstring="&#376;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullets" style="font-family:Wingdings; font-size:10pt; color:#000000;">
+            <li styleclass="Bullets">A <text styleclass="Element">Pin Joint</text><text styleclass="Body Text"> mit einem Motor, können Sie die </text><text styleclass="Interface2">Motorlast</text><text styleclass="Body Text"> aufzeichnen </text><text styleclass="HowTo Bulleted - compressed">.</text></li>
+            <li styleclass="HowTo Bulleted - compressed"><text styleclass="Element">Schiebegelenk</text><text styleclass="Body Text"> mit Motor, können </text>Sie die<text styleclass="Interface2">Motorlast</text>aufzeichnen</li>
+            <li styleclass="HowTo Bulleted - compressed"><text styleclass="Body Text">Gelenk, das keinen Motor hat, können Sie plotten: </text></li>
+          </list>
+          <list id="14" type="ul" listtype="bullet" formatstring="&#254;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted - compressed" style="font-family:Wingdings; font-size:10pt; color:#000000;">
+            <li styleclass="HowTo Bulleted - compressed"><text styleclass="VariableName">Gesamtkraft</text><text styleclass="Body Text">&#32;</text>(<text style="font-size:7pt; vertical-align:sub;">FT</text> = √(<text style="font-size:7pt; vertical-align:sub;">FX2</text>+ FY2)</li>
+            <li styleclass="HowTo Bulleted - compressed"><text styleclass="VariableName">Kraft entlang der X-Koordinate eines Punktes:</text><text style="font-size:7pt; font-weight:bold; vertical-align:sub;">FX</text></li>
+            <li styleclass="HowTo Bulleted - compressed"><text styleclass="VariableName">Kraft entlang der Y-Koordinate eines Punktes: FY</text></li>
+          </list>
+          <list id="15" type="ul" listtype="bullet" formatstring="&#376;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullets" style="font-family:Wingdings; font-size:11pt; color:#000000;">
+            <li styleclass="Bullets">2D-Nocken:<text styleclass="Body Text"> Sie können die </text><text styleclass="Interface">Nockenkontaktkraft</text><text styleclass="Body Text"> aufzeichnen </text></li>
+            <li styleclass="HowTo Bulleted - compressed"><text styleclass="Element">Feder FB</text>:<text styleclass="Body Text"> Sie können die Gesamtkraft, die X-Kraft und die Y-Kraft, die auf den Punkt wirken, aufzeichnen.</text></li>
+          </list>
+        </td>
+      </tr>
+    </table></para>
+  </body>
+</topic>

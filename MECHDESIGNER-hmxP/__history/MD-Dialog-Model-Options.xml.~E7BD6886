@@ -1,0 +1,210 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" status="Under Construction" modified="2024-01-29T19:13:04.729Z" lasteditedby="44785" version="2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title>Dialog: Edit Model Lighting &amp; Synchronize Solids</title>
+  <keywords>
+    <keyword>CAD File Synchronization</keyword>
+    <keyword>Dialog<keyword>Mechanism</keyword><keyword>Model</keyword></keyword>
+    <keyword>Lighting<keyword>Ambient</keyword><keyword>Diffuse</keyword><keyword>Edit</keyword><keyword>Model</keyword><keyword>SolidWorks Lighting</keyword><keyword>Specular</keyword><keyword>W</keyword><keyword>XYZW</keyword></keyword>
+    <keyword>SOLIDWORKS<keyword>CAD File Synchronization</keyword><keyword>Import SolidWorks File</keyword><keyword>Synchronize All Files</keyword></keyword>
+  </keywords>
+  <body>
+    <header>
+      <para styleclass="Heading1">Dialog: Model / Mechanism Options</para>
+    </header>
+    <para styleclass="Heading2" style="page-break-before:always;">Model / Mechanism Options</para>
+    <para styleclass="SeeAlso">See <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Known-Bugs">known bugs - 16.1.268</link></para>
+    <para styleclass="Heading4 Toggle_atocs_">Terminology:</para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="1" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:171px;">
+          <para styleclass="Normal" style="text-align:right;"><text styleclass="Interface2">CAD</text><text styleclass="Interface">-Solid : </text></para>
+        </td>
+        <td>
+          <para styleclass="Popup Box">A CAD model that you import onto a <text styleclass="Popup Box-Elements">CAD-Line</text> - <text styleclass="SeeAlso-small">see </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-CADLine" styleclass="SeeAlso-small">CAD-Line dialog</link><text styleclass="SeeAlso-small">.</text></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="Heading4 Toggle_atocs_">How to open the Model Options dialog</para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="1" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <list id="0" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="B Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="B Bullets"><text styleclass="Body Text HowTo" style="font-style:normal;">Double-click the</text><text styleclass="Body Text HowTo">&#32;</text><text styleclass="VariableName">Model</text><text styleclass="Body Text HowTo"> or </text><text styleclass="VariableName">Mechanism</text><text styleclass="Body Text HowTo" style="font-style:italic;">&#32;</text><text styleclass="Body Text HowTo">element </text><text styleclass="HowTo Numbered">in the </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-Assembly-Tree" styleclass="Interface">Assembly-Tree</link><text styleclass="VariableName">&#32;</text></li>
+          </list>
+          <para styleclass="VariableName">OR</para>
+          <list id="1" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="B Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="B Bullets"><text styleclass="HowTo Numbered" style="font-style:normal;">Right-click the</text><text styleclass="HowTo Numbered">&#32;</text><text styleclass="VariableName">Model</text><text styleclass="Body Text HowTo"> or </text><text styleclass="VariableName">Mechanism</text><text styleclass="Body Text HowTo" style="font-style:italic;">&#32;</text><text styleclass="Body Text HowTo" style="font-style:normal;">element</text><text styleclass="Body Text HowTo">&#32;</text><text styleclass="HowTo Numbered">at the top of the </text><text styleclass="Interface">Assembly-Tree</text><text styleclass="VariableName">&#32;</text></li>
+            <li styleclass="HowTo Numbered"><text style="font-weight:normal; font-style:normal;">Click</text>&#32;<text styleclass="VariableName">Edit element</text> in the shortcut menu</li>
+          </list>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Body Text HowTo"><text styleclass="HowTo Bulleted">The </text><text styleclass="Interface2">Model Options dialog</text><text styleclass="HowTo Bulleted"> is now open.</text></para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="Heading3_atocs_">Model Options dialog.</para>
+    <para styleclass="Body Text HowTo"><image src="MD-DIALOG-MODELOPTIONS.ipp" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"><caption><![CDATA[Model Options dialog]]></caption></image></para>
+    <para styleclass="Normal"><line style="height:1px; color:#343400;" /></para>
+    <para styleclass="Body Table">There are two tabs<text styleclass="Interface">. </text></para>
+    <para styleclass="Body Text" style="text-indent:-36px; margin-left:39px;"><anchor id="CAD-Synchronize"><keywords><keyword>CAD<keyword>Solids</keyword><keyword>Synchronize all Solids from CAD</keyword></keyword></keywords></anchor><image src="tog_plus.gif" scale="100.00%" styleclass="Heading4 Toggle_atocs_" figurelistinclude="0"></image><tab /><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" src-collapsed="tog_plus.gif" src-expanded="tog_minus.gif" styleclass="Heading4 Toggle_atocs_"><caption><![CDATA[Synchronize CAD Files]]></caption></toggle></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="3" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Text"><text styleclass="Body Text HowTo">The list of </text><text styleclass="VariableName">CAD files</text><text styleclass="Body Text HowTo"> that you have imported onto a </text><text styleclass="Element">CAD-Line</text><text styleclass="Body Text HowTo"> are in the </text><text styleclass="Body Text HowTo" style="font-style:normal;">box.</text></para>
+          <para styleclass="Body Text"><text styleclass="Body Text HowTo">There are three buttons you can use to import the </text><text styleclass="VariableName">CAD files</text><text styleclass="Body Text HowTo" style="font-style:normal;"> again, to update your </text><text styleclass="VariableName">MechDesigner</text><text styleclass="Body Text HowTo" style="font-style:normal;"> model with latest </text><text styleclass="VariableName">SOLIDWORKS</text><text styleclass="Body Text HowTo" style="font-style:normal;"> models.</text></para>
+          <para styleclass="VariableName" style="text-indent:-24px; margin-left:24px;">Background</para>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td style="border-top:none; border-right:none; border-bottom:none;">
+                <para styleclass="Body Text"><text style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-decoration:none; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">You use the </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-CADLine-SOLIDWORKS" styleclass="SeeAlso">CAD-Line dialog | SolidWorks tab</link><text style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-decoration:none; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;"> to import a </text><text style="font-family:&apos;Segoe UI&apos;; font-size:10pt; font-weight:normal; font-style:normal; text-decoration:none; text-transform:uppercase; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">SolidWorks </text><text style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-decoration:none; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">document or CAD-Line dialog &gt; STL Import tab to import an STL file from other CAD.. We use the term CAD-</text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-Solids" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:10pt; font-weight:bold; font-style:normal; text-decoration:none; text-transform:uppercase; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">Solid</link><text style="font-family:&apos;Segoe UI Semibold&apos;; font-size:10pt; font-weight:bold; font-style:normal; text-decoration:none; text-transform:uppercase; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">&#32;</text>for the a 3D model that you import.</para>
+                <para styleclass="Body Table"><text styleclass="Body Text">CAD files you save to disc have a </text><text styleclass="VariableName">time-stamp</text><text styleclass="Body Text">.</text></para>
+                <para styleclass="Body Text">When you open the <text styleclass="VariableName">Model Option dialog</text>, we compare for you the: </para>
+                <list id="2" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+                  <li styleclass="HowTo Bulleted"><text styleclass="VariableName">Active Time-stamp</text> of the <text styleclass="Body Text">CAD file the last time you linked it to the </text><text styleclass="Element">CAD-Line</text><text styleclass="Body Text">&#32;</text></li>
+                </list>
+                <list id="3" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+                  <li styleclass="HowTo Bulleted"><text styleclass="VariableName">Current Time-stamp</text> of the <text styleclass="Body Text">CAD file with the time-stamp of the CAD file-name that is on disc.</text></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Heading4 Toggle_atocs_">CAD-File box:</para>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="VariableName">Element-Name</para>
+                <para styleclass="Body Text"><text styleclass="Element">CAD-Lines</text><text styleclass="Body Text HowTo"> that have a link to a CAD file. Each </text><text styleclass="Element">CAD-Line</text><text styleclass="Body Text HowTo"> has a status </text>icon:</para>
+                <para styleclass="Body Text"><image src="MD-Dialog-ModelOptions- CADx.png" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Image Caption">&#32;</text>- the CAD file on disc is <text styleclass="Body Text HowTo2">newer than </text><text styleclass="SOLIDWORKS">SolidWorks </text>document on the<text styleclass="Body Text HowTo2">&#32;</text><text styleclass="Element">CAD-Line</text><text styleclass="Body Text HowTo2">.</text></para>
+                <para styleclass="Body Text"><image src="MD-Dialog-ModelOptions-SynchCAD2.png" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image> - the CAD file is not on disc in the place expected</para>
+                <para styleclass="Body Text"><image src="MD-Dialog-ModelOptions-SynchCAD-OK.png" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Body Text HowTo2"> &#160;- the time-stamp is the same as that of the CAD file on your hard-disk.</text></para>
+                <para styleclass="Normal"><line style="height:1px; color:#343400;" /></para>
+                <para styleclass="Interface2">Top-Tip</para>
+                <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="1" colcount="1">
+                  <tr style="vertical-align:top">
+                    <td>
+                      <para styleclass="Body Text">Click an CAD-Line to select it also in the <text styleclass="Interface">Assembly-Tree</text>.</para>
+                    </td>
+                  </tr>
+                </table></para>
+                <para styleclass="Normal"><line style="height:1px; color:#343400;" /></para>
+                <para styleclass="VariableName">SOLIDWORKS CAD File name</para>
+                <para styleclass="Body Text"><text style="font-weight:normal; font-style:normal;">The CAD file is either:</text></para>
+                <para styleclass="Body Text"><image src="MD-Dialog-ModelOptions-SynchCAD-NotFond.png" scale="100.00%" styleclass="Body Text HowTo2" style="font-size:7pt; vertical-align:sub;" figurelistinclude="0"></image><text styleclass="Body Text HowTo2"> &#160;</text><text styleclass="Body Text HowTo">Not found on your hard-disk</text><text styleclass="Body Text HowTo2">&#32;</text></para>
+                <para styleclass="Body Text"><image src="MD-Dialog-ModelOptions-SynchCAD-Fond.png" scale="100.00%" styleclass="Body Text HowTo2" style="font-size:7pt; vertical-align:sub;" figurelistinclude="0"></image><text styleclass="Body Text HowTo2"> &#160;</text><text styleclass="Body Text HowTo">Found on your hard-disk</text></para>
+                <para styleclass="VariableName">STL File name</para>
+                <para styleclass="Body Text HowTo"><text style="font-weight:normal; font-style:normal;">The source file is the STL file that has a link to the </text><text styleclass="Element">CAD-Line</text><text style="font-weight:normal; font-style:normal;">.</text></para>
+                <para styleclass="Body Text HowTo"><text style="font-weight:normal; font-style:normal;">We check for you that the STL file is in the path, as expected.</text></para>
+              </td>
+            </tr>
+          </table></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="" style="text-align:left; text-indent:0px; margin-top:0px; margin-right:0px; margin-bottom:0px; margin-left:0px; line-height:1.00; background-color:transparent; white-space:normal; page-break-inside:auto; page-break-after:auto; border:none; tabstops:none;"><image src="MD-Dialog-ModelOptions-SynchCAD.ipp" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"><caption><![CDATA[Model Option dialog]]></caption></image></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Heading4 Toggle_atocs_">Control Buttons:</para>
+          <para styleclass="Body Text">Use the control buttons to re-import or find <text styleclass="SOLIDWORKS">SolidWorks</text> files if they are not up-to-date.</para>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Body Text"><text styleclass="VariableName">Synch. all files</text><text styleclass="Body Text HowTo2">&#32;</text></para>
+                <list id="4" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="HowTo Bulleted">Click <text styleclass="VariableName">Synch. all files </text>button to check you have the most up-to-date <text styleclass="SOLIDWORKS">SolidWorks</text> files.<text styleclass="VariableName">&#32;</text></li>
+                </list>
+                <para styleclass="HowTo Bulleted">The files import again, if needed.</para>
+                <para styleclass="VariableName">Synchronize Selected Files </para>
+                <para styleclass="Body Text HowTo">In the Element Name list:</para>
+                <list id="5" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="HowTo Bulleted"><text style="font-style:normal;">CTRL+Click</text> each of the <text styleclass="Element">CAD-Line</text> that you want to make sure has the latest <text styleclass="Interface2">CAD</text><text styleclass="Interface">-Solid</text><text styleclass="VariableName">&#32;</text></li>
+                  <li styleclass="HowTo Bulleted">Click <text styleclass="VariableName-indent">Synch. Selected Files</text>&#32;</li>
+                </list>
+                <para styleclass="HowTo Bulleted">We re-import the files for you.</para>
+                <para styleclass="VariableName">Find Selected File </para>
+                <list id="6" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="HowTo Bulleted"><text style="font-style:normal;">Click a </text><text styleclass="Element">CAD-Line</text> in the list<text styleclass="VariableName">&#32;</text></li>
+                  <li styleclass="HowTo Bulleted">Click <text styleclass="VariableName-indent">Find Selected File...</text> button</li>
+                  <li styleclass="HowTo Bulleted"><text styleclass="HowTo Numbered" style="font-style:normal;">Browse to find a file</text><text styleclass="HowTo Numbered"> that </text><text styleclass="VariableName">MechDesigner</text><text styleclass="HowTo Numbered"> cannot find.</text></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Interface2">Top-Tip</para>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Body Text">Click a <text styleclass="Element">CAD-Line</text> to select it also in the <text styleclass="Interface">Assembly-Tree</text>.</para>
+              </td>
+            </tr>
+          </table></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading4 Toggle_atocs_" style="text-indent:-36px; margin-left:39px;"><anchor id="Dialog-Model-Lighting" styleclass="Heading4 HowTo_atoc_"><keywords><keyword>Model<keyword>Lighting</keyword></keyword></keywords></anchor><image src="tog_plus.gif" scale="100.00%" figurelistinclude="0"></image><tab /><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" src-collapsed="tog_plus.gif" src-expanded="tog_minus.gif"><caption><![CDATA[Lighting]]></caption></toggle></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="4" colcount="1">
+      <tr style="vertical-align:top">
+        <td style="border-bottom:none;">
+          <para styleclass="Separator22">Group Lights Editor </para>
+          <para styleclass="Body Text"><image src="MD-Dialog-EditModel-Lighting-Group.ipp" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"><caption><![CDATA[Model Options > Lighting tab]]></caption></image></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="border-top:none;">
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Body Text">The slider controls those <text styleclass="Parameter-Header" style="font-family:Arial; font-size:10pt; font-weight:normal; font-style:normal; text-decoration:none; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">Affected Lights</text> that have a check in the check-box</para>
+                <list id="7" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="Bullets">Click each <text styleclass="Parameter">Affected Light</text> check-box to make lights active.<text styleclass="VariableName">&#32;</text></li>
+                  <li styleclass="Bullets"><text styleclass="HowTo Numbered">Use the </text><text styleclass="HowTo Numbered" style="font-style:normal;">sliders</text><text styleclass="HowTo Numbered"> to change their</text><text styleclass="VariableName">: </text></li>
+                </list>
+                <list id="8" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Numbered" style="font-family:Symbol; font-size:11pt; color:#000000;">
+                  <li styleclass="HowTo Numbered">Ambient, Diffuse, and Specular Light Levels</li>
+                </list>
+                <list id="9" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="2" styleclass="Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="Bullets">Move your mouse-pointer over the graphics-area to update the lighting<text styleclass="VariableName">&#32;</text></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Notes">Note: <text styleclass="Body Text HowTo">It is often better to decrease </text><text styleclass="VariableName">Ambient Light Levels</text><text styleclass="Body Text">,</text><text styleclass="Body Text HowTo"> and increase </text><text styleclass="VariableName">Diffuse</text><text styleclass="Body Text HowTo"> and </text><text styleclass="VariableName">Specular Light Levels</text><text styleclass="Body Text HowTo"> to view </text><text styleclass="VariableName">Solids</text><text styleclass="Body Text HowTo"> and </text><text styleclass="Body Text HowTo" style="font-size:10pt; vertical-align:baseline;">SOLIDWORKS</text><text styleclass="Body Text HowTo"> Parts. I often set one light at 1-1-1 - &#160;over my right-hand shoulder!</text></para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="border-bottom:none;">
+          <para styleclass="Separator22"> Individual Light Editor </para>
+          <para styleclass="Body Text"><image src="MD-Dialog-EditModel-Lighting-Individual.ipp" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="border-top:none;">
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Body Text">To turn on or off each light and to control its source point:</para>
+                <list id="10" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="Bullets">Use the drop-down box to select a light (Light 1 to 6)<text styleclass="VariableName">&#32;</text></li>
+                  <li styleclass="HowTo Numbered">Click the check-box to turn the light that is in the drop-down list on or off.</li>
+                  <li styleclass="HowTo Numbered">Enter numbers into the X, Y, Z and W Position boxes to change the direction of the light in the drop-down box.</li>
+                </list>
+                <list id="11" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Numbered" style="font-family:Symbol; font-size:11pt; color:#000000;">
+                  <li styleclass="HowTo Numbered">±X, ±Y ±Z directions for each light</li>
+                  <li styleclass="HowTo Numbered">W - not sure how this works!</li>
+                </list>
+                <list id="12" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="4" styleclass="HowTo Numbered" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="HowTo Numbered">Move your mouse-pointer over the graphics-area to update the lighting<text styleclass="VariableName">&#32;</text></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Body Text"><link displaytype="text" defaultstyle="true" type="weblink" href="http://www.glprogramming.com/red/chapter05.html#name2" target="_blank">An External link to Light</link> : Good Luck!</para>
+        </td>
+      </tr>
+    </table></para>
+  </body>
+</topic>

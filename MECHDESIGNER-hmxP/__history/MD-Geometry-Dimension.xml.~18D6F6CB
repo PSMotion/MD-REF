@@ -1,0 +1,513 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" status="Under Construction" modified="2024-02-15T13:44:25.571Z" lasteditedby="44785" version="2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title>Add Dimension</title>
+  <keywords>
+    <keyword>Add<keyword>Dimension</keyword></keyword>
+    <keyword>Dimension<keyword>Angle - 2 Lines</keyword><keyword>Angle - 3 Points</keyword><keyword>Arc radius</keyword><keyword>Circle radius</keyword><keyword>Horizontal</keyword><keyword>Line length</keyword><keyword>Parallel</keyword><keyword>Perpendicular [Point to Line]</keyword><keyword>Two Points</keyword><keyword>Vertical</keyword></keyword>
+    <keyword>Geometry toolbar<keyword>Add Dimension</keyword></keyword>
+  </keywords>
+  <body>
+    <header>
+      <para styleclass="Heading1">Add Dimension</para>
+    </header>
+    <para styleclass="Heading3_atocs_" style="page-break-before:always;">Add Dimension </para>
+    <para styleclass="Body Text HowTo">Use <text styleclass="T_Menu">Add Dimension</text><text style="font-style:italic;">&#32;</text>to add &#160;a Linear or Angular Dimension to or between sketch-elements. </para>
+    <para styleclass="Body Text HowTo">Dimensions include the:</para>
+    <list id="0" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+      <li styleclass="HowTo Bulleted"><text styleclass="VariableName">Distance </text><text styleclass="Body Text">between </text><text styleclass="Element">Points</text><text styleclass="BodyText BI">*</text><text styleclass="Body Text">&#32;</text></li>
+      <li styleclass="HowTo Bulleted"><text styleclass="VariableName">Length</text> of a <text styleclass="Element">Line</text><text styleclass="BodyText BI">**</text><text styleclass="Element"> ; </text><text styleclass="VariableName">Radius</text> of a <text styleclass="Element">Circle</text> or <text styleclass="Element">Arc</text><text styleclass="VariableName">. </text></li>
+      <li styleclass="HowTo Bulleted"><text styleclass="VariableName">Perpendicular (shortest) Distance</text> from a <text styleclass="Element">Point</text><text styleclass="BodyText BI">*</text> to a <text styleclass="Element">Line</text><text styleclass="BodyText BI">**</text>, <text styleclass="Interface">X-axis, </text>or <text styleclass="Interface">Y-axis.</text></li>
+      <li styleclass="HowTo Bulleted"><text styleclass="VariableName">Angle</text> between two <text styleclass="Element">Lines</text>, or the <text styleclass="VariableName">Angle</text> from the <text styleclass="Interface">X-axis</text> or <text styleclass="Interface">Y-axis</text> to a <text styleclass="Element">Line</text><text styleclass="BodyText BI">**</text></li>
+      <li styleclass="HowTo Bulleted"><text styleclass="VariableName">Angle</text> between three <text styleclass="Element">Points</text><text styleclass="BodyText BI">*</text></li>
+    </list>
+    <para styleclass="Normal"><line style="height:1px; color:#343400;" /></para>
+    <para styleclass="Body Text"><text styleclass="BodyText BI">* </text><text styleclass="Element">Point</text>, <text styleclass="Interface">start-Point</text>, <text styleclass="Interface">end-Point</text><text styleclass="BodyText BI">, </text>and<text styleclass="BodyText BI">&#32;</text><text styleclass="Interface">center-Point</text><text styleclass="BodyText BI">.</text></para>
+    <para styleclass="Body Text"><text styleclass="BodyText BI">** </text><text styleclass="Element">Line</text><text styleclass="BodyText BI"> or </text><text styleclass="Element">CAD-Line</text></para>
+    <para styleclass="Normal"><line style="height:1px; color:#343400;" /></para>
+    <para styleclass="Notes">Notes:</para>
+    <para styleclass="Body Text HowTo">Usually, do not make a dimension zero. <text styleclass="Body Text HowTo2">It is better to add a constraint. </text><text styleclass="SeeAlso">See </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Menu-Constraints" styleclass="SeeAlso">Sketch-Constraints</link><text styleclass="Body Text HowTo2">&#32;</text></para>
+    <para styleclass="Normal"><line style="height:1px; color:#343400;" /></para>
+    <para styleclass="SeeAlso">See <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Geometry-Dimension" anchor="DimensionPoint">How to add dimensions</link>, <link displaytype="text" defaultstyle="true" type="topiclink" href="" anchor="EditDimension">How to edit a dimension</link>.</para>
+    <para styleclass="SeeAlso">See also: <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-Application-Settings" anchor="App-NumberFormat">Number-Format: Precision and Digits</link>, <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-Application-Settings" anchor="App-NumberFormat">Dimension Font Size</link></para>
+    <para styleclass="Normal"><line style="height:1px; color:#343400;" /></para>
+    <para styleclass="Heading3_atocs_">Add Dimension</para>
+    <para styleclass="Normal"><table styleclass="Default" rowcount="1" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:36px; border-right:none;">
+          <para styleclass="Normal" style="text-align:center;"><image src="MD-Toolbar-SE-AddDimension.ipp" align="right" scale="100.00%" styleclass="Image Caption" style="color:#000000;" figurelistinclude="0"></image></para>
+        </td>
+        <td style="vertical-align:middle;">
+          <para styleclass="VariableName">To Add a Dimension:</para>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="3" colcount="3">
+            <tr style="vertical-align:top">
+              <td style="width:40px;">
+                <para styleclass="B Bullets"><image src="MD-Icon-AddDimension.ipp" imagestyleclass="Default" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+              </td>
+              <td colspan="2">
+                <list id="1" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="Bullets"><text style="font-style:normal;">Click</text><text style="font-family:Arial; font-size:11pt; color:#000000;">&#32;</text><text styleclass="T_Menu">Geometry toolbar</text><text styleclass="VariableName"> &gt; </text><text styleclass="T_Menu">Add Dimension</text><text styleclass="VariableName">&#32;</text></li>
+                </list>
+                <para styleclass="Interface2">OR</para>
+                <list id="2" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="Bullets"><text styleclass="Body Text">Click</text><text styleclass="T_Menu"> Add menu &gt; Geometry sub-menu&gt; &gt; Add Dimension</text><text styleclass="VariableName">&#32;</text></li>
+                </list>
+              </td>
+            </tr>
+            <tr style="vertical-align:top">
+              <td colspan="3">
+                <list id="3" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="2" styleclass="Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="Bullets"><text styleclass="HowTo Numbered" style="font-style:normal;">Click the sketch-element, </text><text styleclass="Body Text">or sketch-elements, to add</text><text styleclass="HowTo Numbered" style="font-style:normal;"> a linear or angular dimension - </text><text styleclass="SeeAlso">see below </text><link displaytype="text" defaultstyle="true" type="topiclink" href="" anchor="DimensionPoint" styleclass="SeeAlso">How to Add a Dimension</link><text styleclass="VariableName">&#32;</text></li>
+                </list>
+                <para styleclass="Body Text HowTo"><text style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">The </text><text styleclass="Element">dimension</text><text style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;"> shows near to your mouse-pointer.</text></para>
+                <list id="4" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="3" styleclass="Body Text" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="Body Text"><text styleclass="B Bullets" style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">Click in the</text> graphics-area to <text styleclass="B Bullets" style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">place the </text>dimension<text styleclass="B Bullets" style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">-line and extension-lines next to your mouse-pointer</text><text styleclass="VariableName">.</text></li>
+                </list>
+              </td>
+            </tr>
+            <tr style="vertical-align:top">
+              <td colspan="2" style="width:240px;">
+                <para styleclass="Normal"><image src="MD-Dialog-Dimension.ipp" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+              </td>
+              <td>
+                <para styleclass="Body Text">The <text styleclass="Element">Dimension dialog</text> opens.</para>
+                <list id="5" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="4" styleclass="B Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="B Bullets"><text style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">Edit the </text><text styleclass="Element">dimension</text><text style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;"> in the </text><text styleclass="Interface">dialog</text><text styleclass="VariableName"> &#160;</text></li>
+                </list>
+                <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="1" colcount="1">
+                  <tr style="vertical-align:top">
+                    <td>
+                      <para styleclass="VariableName">Negative Dimensions? </para>
+                      <para styleclass="VariableName">Do <text style="color:#ff0000;">not</text> delete the negative sign from a negative dimension.</para>
+                      <para styleclass="VariableName"><text styleclass="SeeAlso">See: </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Why-is-the-dimension-negative" styleclass="SeeAlso">Why a dimension is negative</link><text styleclass="SeeAlso">.</text></para>
+                    </td>
+                  </tr>
+                </table></para>
+                <list id="6" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="5" styleclass="B Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="B Bullets"><text styleclass="HowTo Bulleted">Click </text><image src="OK-tiny-13-17.png" scale="100.00%" styleclass="HowTo Bulleted" figurelistinclude="0"></image><text styleclass="HowTo Bulleted"> to close </text><text style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">the </text><text styleclass="Element">Dimension dialog</text><text styleclass="VariableName">&#32;</text></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Body Text">The <text styleclass="Element-Header">Dimension</text> is now in the graphics-area.</para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading4 Toggle_atocs_"><anchor id="EditDimension"><keywords><keyword>How to ...<keyword>Edit a dimension.</keyword></keyword></keywords></anchor>How to EDIT a dimension:</para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="1" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <list id="7" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="B Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="B Bullets"><text styleclass="VariableName" style="color:#ff0000;">Disable</text><text style="font-style:normal;"> all other commands</text><text styleclass="VariableName">&#32;</text></li>
+            <li styleclass="B Bullets"><text style="font-style:normal;">Double-click the</text>&#32;<text styleclass="VariableName" style="color:#ff0000;">arrowhead</text> of a <text styleclass="VariableName">dimension-line </text></li>
+          </list>
+          <para styleclass="Normal"><line style="height:1px; color:#343400;" /></para>
+          <para styleclass="Normal"><text styleclass="Notes">Why the arrowhead?</text></para>
+          <list id="8" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted">It is easier to click the <text styleclass="VariableName">arrowhead</text> than the <text styleclass="VariableName">dimension-line</text> or <text styleclass="VariableName">extension-line</text>. </li>
+          </list>
+          <para styleclass="Bullets"><text styleclass="VariableName-IT" style="font-style:normal;">AND</text></para>
+          <list id="9" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted">nothing happens if you click the <text styleclass="VariableName">dimension-number</text></li>
+          </list>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading3_atocs_"><anchor id="DimensionPoint"><keywords><keyword>How to ...<keyword>Add dimensions to sketch-elements</keyword><keyword>Dimension a Point</keyword></keyword></keywords></anchor>More details: How to ADD a dimension</para>
+    <para styleclass="Body Text"><text styleclass="BodyText BI">* </text><text styleclass="Element">Point</text><text styleclass="BodyText BI">, </text><text styleclass="Interface">start-Point</text><text styleclass="BodyText BI">, </text><text styleclass="Interface">end-Point</text><text styleclass="BodyText BI">, and </text><text styleclass="Interface">center-Point</text><text styleclass="BodyText BI">.</text></para>
+    <para styleclass="Body Text"><text styleclass="BodyText BI">** </text><text styleclass="Element">Line</text><text styleclass="BodyText BI"> or </text><text styleclass="Element">CAD-Line</text></para>
+    <para styleclass="Normal"><line style="height:1px; color:#343400;" /></para>
+    <para styleclass="Heading3_atocs_"><image src="btn_addkeyword.bmp" scale="100.00%" styleclass="Heading4 Toggle_atocs_2" figurelistinclude="0"></image><tab /><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" src-collapsed="btn_addkeyword.bmp" src-expanded="btn_delkeyword.bmp" styleclass="Heading4 Toggle_atocs_2"><caption><![CDATA[Dimensions to locate a Point]]></caption></toggle></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="1" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Text">There are two methods to locate a <text styleclass="Element-Header">Point</text><text styleclass="Element">.</text></para>
+          <para styleclass="Body Text"><text styleclass="Interface2">Method 1</text>: <text styleclass="VariableName">Add Dimensions </text></para>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="3" colcount="4" style="border-width:0px; border-spacing:0px; border-collapse:collapse; cell-border-width:1px; border-color:#333300; border-style:solid; head-row-background-color:#c0c0c0; alt-row-background-color:none;">
+            <thead style="vertical-align:top">
+              <td style="width:21px;">
+                <para styleclass="VariableName" style="text-align:center;">Examples</para>
+              </td>
+              <td style="width:199px;">
+                <para styleclass="VariableName" style="text-align:center;">Dimension</para>
+              </td>
+              <td style="width:302px;">
+                <para styleclass="VariableName" style="text-align:center;">How?</para>
+              </td>
+              <td style="width:314px;">
+                <para styleclass="VariableName">Selection-Window / Geometry-Tree</para>
+              </td>
+            </thead>
+            <tr style="vertical-align:top">
+              <td style="width:21px;">
+                <para styleclass="Normal" style="text-align:center;"><image src="MD-Dimension-P2P.png" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"><caption><![CDATA[Between 2 Points]]></caption></image></para>
+              </td>
+              <td>
+                <list id="10" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Body Text" style="font-family:Symbol; font-size:11pt; color:#000000;">
+                  <li styleclass="Body Text">Minimum distance between two <text styleclass="Element">Points</text><text styleclass="BodyText BI">*</text>&#32;</li>
+                </list>
+              </td>
+              <td>
+                <list id="11" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Body Text" style="font-family:Symbol; font-size:11pt; color:#000000;">
+                  <li styleclass="Body Text">Click each <text styleclass="Element">Point</text><text styleclass="BodyText BI">*</text>&#32;</li>
+                </list>
+              </td>
+              <td style="width:314px;">
+                <para styleclass="Body Text HowTo">DimPtoP<text style="font-style:italic;">n</text></para>
+              </td>
+            </tr>
+            <tr style="vertical-align:top">
+              <td style="width:21px;">
+                <para styleclass="Normal" style="text-align:center;"><image src="MD-Dimension-P2L.png" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"><caption><![CDATA[Perpendicular Distance]]></caption></image></para>
+              </td>
+              <td>
+                <list id="12" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Body Text" style="font-family:Symbol; font-size:10pt; color:#000000;">
+                  <li styleclass="Body Text">Perpendicular distance between a <text styleclass="Element">Point</text><text styleclass="BodyText BI">*</text> and a <text styleclass="Element">Line</text><text styleclass="BodyText BI">**</text>, <text styleclass="Interface">X–axis</text>, or <text styleclass="Interface">Y–axis</text></li>
+                </list>
+              </td>
+              <td>
+                <list id="13" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Body Text" style="font-family:Symbol; font-size:11pt; color:#000000;">
+                  <li styleclass="Body Text">Click the <text styleclass="Element">Point</text><text styleclass="BodyText BI">*</text> then the <text styleclass="Element">Line</text><text styleclass="BodyText BI">**</text>&#32;</li>
+                </list>
+                <para styleclass="Body Text"></para>
+              </td>
+              <td style="width:314px;">
+                <para styleclass="Body Text HowTo">DimPtoL<text style="font-style:italic;">n</text></para>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Body Text"><text styleclass="Interface2">Method 2:</text><text styleclass="VariableName"> Use the Point Properties dialog</text></para>
+          <para styleclass="Body Text HowTo">This method is possible:</para>
+          <list id="14" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted"><text styleclass="Interface2" style="color:#ff0000;">only </text>with a <text styleclass="Element-Header">Point</text> sketch-element</li>
+          </list>
+          <para styleclass="Body Text Howindent4bullets">It is <text styleclass="VariableName" style="color:#ff0000;">not</text> possible with a <text styleclass="Interface">start-Point</text>, <text styleclass="Interface">center-Point</text>, <text styleclass="Interface">center-Point</text></para>
+          <para styleclass="Body Text HowTo"><text style="color:#ff0000;">&#32;</text><text styleclass="Interface2" style="color:#ff0000;">AND</text>&#32;</para>
+          <list id="15" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted"><text styleclass="Interface2" style="color:#ff0000;">not</text><text styleclass="Body Text HowTo"> possible if the </text><text styleclass="Element-Header">Point</text><text styleclass="Body Text HowTo"> has a dimension or constraint</text></li>
+          </list>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="4" colcount="3" style="border-width:0px; border-spacing:0px; border-collapse:collapse; cell-border-width:1px; border-color:#343400; border-style:solid; head-row-background-color:#c0c0c0; alt-row-background-color:none;">
+            <thead style="vertical-align:top">
+              <td style="width:150px;">
+                <para styleclass="VariableName" style="text-align:center;">Example</para>
+              </td>
+              <td>
+                <para styleclass="VariableName" style="text-align:center;">Dimension</para>
+              </td>
+              <td>
+                <para styleclass="VariableName" style="text-align:center;">Selection-Window / Geometry-Tree</para>
+              </td>
+            </thead>
+            <tr style="vertical-align:top">
+              <td rowspan="3" style="width:240px;">
+                <para styleclass="Normal"><image src="MD-Dialog-PointVectors-PartCoords-1.png" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"><caption><![CDATA[Point Properties dialog]]></caption></image></para>
+              </td>
+              <td style="height:39px;">
+                <list id="16" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Body Text" style="font-family:Symbol; font-size:11pt; color:#000000;">
+                  <li styleclass="Body Text"><text styleclass="Parameter">Lock and Specify</text> the exact location of a <text styleclass="Element">Point</text><text styleclass="BodyText BI">*</text> in a <text styleclass="Element">Part</text>.</li>
+                </list>
+              </td>
+              <td rowspan="3">
+                <para styleclass="Body Text HowTo">Pointn</para>
+                <para styleclass="Normal"></para>
+              </td>
+            </tr>
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Body Text">How?</para>
+              </td>
+            </tr>
+            <tr style="vertical-align:top">
+              <td>
+                <list id="17" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Body Text" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="Body Text"><text style="font-style:normal;">Double-Click</text> a <text styleclass="Element">Point</text><text styleclass="BodyText BI">*</text> in the <text styleclass="Interface">Part-Editor</text><text styleclass="VariableName">&#32;</text></li>
+                </list>
+                <para styleclass="Body Text">OR</para>
+                <list id="18" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Body Text" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="Body Text"><text style="font-style:normal;">Double-Click</text> a <text styleclass="Element">Point</text><text styleclass="BodyText BI">*</text> in the <text styleclass="Interface">Mechanism-Editor</text><text styleclass="VariableName">&#32;</text></li>
+                </list>
+                <para styleclass="Body Text">The <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-FunctionBlock-PointProperties" styleclass="SeeAlso">Point Properties dialog</link> opens - see left</para>
+                <para styleclass="Body Text">Expand <text styleclass="Separator">Point Coordinates</text>&#32;</para>
+                <list id="19" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="2" styleclass="Body Text" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="Body Text">Select the <text styleclass="Parameter">Lock and Specify</text> check-box<text styleclass="VariableName">.</text></li>
+                  <li styleclass="Body Text">Enter &apos;x&apos; and &apos;y&apos; values for the <text styleclass="Element">Point</text><text styleclass="BodyText BI">*</text>, with <text styleclass="VariableName">Part Coordinates</text></li>
+                </list>
+                <para styleclass="Normal"><line style="height:1px; color:#343400;" /></para>
+                <para styleclass="Body Text"><text styleclass="BodyText BI">* in this case, </text><text styleclass="VariableName" style="color:#ff0000;">ONLY</text> a <text styleclass="Element">Point</text> sketch-element.</para>
+              </td>
+            </tr>
+          </table></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading4 Toggle_atocs_"><anchor id="DimensionHorVer" styleclass="Heading4 Toggle_atocs_2"><keywords><keyword>Dimension<keyword>Horizontal Distance</keyword><keyword>Vertical Distance</keyword><keyword>Perpendicular Distance</keyword><keyword>Parallel Distance</keyword><keyword>Point to Point</keyword></keyword></keywords></anchor><image src="tog_plus.gif" scale="100.00%" figurelistinclude="0"></image><tab /><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" src-collapsed="tog_plus.gif" src-expanded="tog_minus.gif"><caption><![CDATA[Distance dimensions]]></caption></toggle></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="7" colcount="4" style="head-row-background-color:#c0c0c0; alt-row-background-color:none;">
+      <thead style="vertical-align:top">
+        <td style="width:21px; height:7px;">
+          <para styleclass="VariableName" style="text-align:center;">Example</para>
+        </td>
+        <td style="height:7px;">
+          <para styleclass="VariableName" style="text-align:center;">Dimension:</para>
+        </td>
+        <td style="height:7px;">
+          <para styleclass="VariableName" style="text-align:center;">How?</para>
+        </td>
+        <td style="height:7px;">
+          <para styleclass="VariableName" style="text-align:left;">Selection-Window / Geometry-Tree</para>
+        </td>
+      </thead>
+      <tr style="vertical-align:top">
+        <td style="width:21px;">
+          <para styleclass="Image Caption"><image src="MD-Dimension-L.png" scale="100.00%" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <list id="20" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Body Text" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="Body Text">Length of a <text styleclass="Element">Line</text><text styleclass="BodyText BI">**</text>&#32;</li>
+          </list>
+          <para styleclass="Body Text"></para>
+        </td>
+        <td>
+          <list id="21" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Body Text" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="Body Text">Click the <text styleclass="Element">Line</text><text styleclass="BodyText BI">**</text><text styleclass="VariableName">&#32;</text></li>
+          </list>
+        </td>
+        <td>
+          <para styleclass="Body Text">Dimn</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:21px;">
+          <para styleclass="Image Caption"><image src="MD-Dimension-LL.png" scale="100.00%" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <list id="22" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Body Text" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="Body Text">Distance between two parallel <text styleclass="Element">Lines</text><text styleclass="BodyText BI">**</text>&#32;</li>
+            <li styleclass="Body Text">Distance from Y-axis (or X-axis) to a Vertical (or Horizontal) <text styleclass="Element">Line</text><text styleclass="BodyText BI">**</text></li>
+          </list>
+          <para styleclass="Body Text"></para>
+        </td>
+        <td>
+          <list id="23" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Body Text" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="Body Text">Click a <text styleclass="Element">Point</text><text styleclass="BodyText BI">*</text> at one end of the <text styleclass="Element">Line</text><text styleclass="BodyText BI">**</text><text styleclass="VariableName">&#32;</text></li>
+            <li styleclass="Body Text">Click the other <text styleclass="Element">Line</text><text styleclass="BodyText BI">**</text> (or axis).</li>
+          </list>
+        </td>
+        <td>
+          <para styleclass="Body Text">DimLtoLn</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:21px;">
+          <para styleclass="Image Caption"><image src="MD-Dimension-P2P.png" scale="100.00%" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <list id="24" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Body Text" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="Body Text">Shortest distance between two <text styleclass="Element">Points</text><text styleclass="BodyText BI">*</text></li>
+          </list>
+          <para styleclass="Body Text"></para>
+        </td>
+        <td>
+          <list id="25" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Body Text" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="Body Text">Click each <text styleclass="Element">Point</text><text styleclass="BodyText BI">*</text><text styleclass="VariableName">&#32;</text></li>
+          </list>
+        </td>
+        <td>
+          <para styleclass="Body Text">DimPtoPn</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:21px;">
+          <para styleclass="Image Caption"><image src="MD-Dimension-HorizontalLP.png" scale="100.00%" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <list id="26" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Body Text" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="Body Text">Horizontal Distance between two <text styleclass="Element">Points</text><text styleclass="BodyText BI">*</text>&#32;</li>
+          </list>
+        </td>
+        <td>
+          <list id="27" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Body Text" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="Body Text">Add a Vertical <text styleclass="Element">Line</text><text styleclass="BodyText BI">**</text> from one of the <text styleclass="Element">Points</text><text styleclass="BodyText BI">*</text><text styleclass="VariableName">&#32;</text></li>
+            <li styleclass="Body Text">Click the <text styleclass="Element">Point</text><text styleclass="BodyText BI">**</text> and then the Vertical <text styleclass="Element">Line</text><text styleclass="BodyText BI">**</text></li>
+          </list>
+        </td>
+        <td>
+          <para styleclass="Body Text"></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:21px;">
+          <para styleclass="Image Caption"><image src="MD-Dimension-VerticalLP.png" scale="100.00%" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <list id="28" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Body Text" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="Body Text">Vertical Distance between <text styleclass="Element">Points</text><text styleclass="BodyText BI">*</text><text styleclass="VariableName">&#32;</text></li>
+          </list>
+        </td>
+        <td>
+          <list id="29" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Body Text" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="Body Text">Add a Horizontal <text styleclass="Element">Line</text><text styleclass="BodyText BI">**</text> from one of the <text styleclass="Element">Points</text><text styleclass="BodyText BI">*</text><text styleclass="VariableName">&#32;</text></li>
+            <li styleclass="Body Text">Click the <text styleclass="Element">Point</text><text styleclass="BodyText BI">*</text> then the Horizontal <text styleclass="Element">Line</text><text styleclass="BodyText BI">**</text></li>
+          </list>
+        </td>
+        <td>
+          <para styleclass="Body Text"></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:21px;">
+          <para styleclass="Image Caption"><image src="MD-Dimension-P2L.png" scale="100.00%" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <list id="30" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Body Text" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="Body Text">Shortest distance between a <text styleclass="Element">Point</text><text styleclass="BodyText BI">*</text><text styleclass="Body Table">&#32;</text>and a <text styleclass="Element">Line</text><text styleclass="BodyText BI">**</text> (or axis)</li>
+          </list>
+          <para styleclass="Body Text"></para>
+        </td>
+        <td>
+          <list id="31" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Body Text" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="Body Text">Click the <text styleclass="Element">Point</text><text styleclass="BodyText BI">*</text> then the <text styleclass="Element">Line</text><text styleclass="BodyText BI">**</text> (or axis)<text styleclass="VariableName">.</text></li>
+          </list>
+          <para styleclass="Body Text"></para>
+        </td>
+        <td>
+          <para styleclass="Body Text">DimPtoLn</para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading4 Toggle_atocs_"><image src="btn_addkeyword.bmp" scale="100.00%" styleclass="Heading4 Toggle_atocs_2" figurelistinclude="0"></image><tab /><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" src-collapsed="btn_addkeyword.bmp" src-expanded="btn_delkeyword.bmp" src-print="none" styleclass="Heading4 Toggle_atocs_2"><caption><![CDATA[Radius]]></caption></toggle></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="3" colcount="4" style="head-row-background-color:#c0c0c0; alt-row-background-color:none;">
+      <thead style="vertical-align:top">
+        <td style="width:21px; height:7px;">
+          <para styleclass="VariableName" style="text-align:center;">Example</para>
+        </td>
+        <td style="height:7px;">
+          <para styleclass="VariableName" style="text-align:center;">Dimension:</para>
+        </td>
+        <td style="height:7px;">
+          <para styleclass="VariableName" style="text-align:center;">How?</para>
+        </td>
+        <td style="height:7px;">
+          <para styleclass="VariableName">In Selection-Window as:</para>
+        </td>
+      </thead>
+      <tr style="vertical-align:top">
+        <td style="width:21px;">
+          <para styleclass="Normal"><image src="MD-Dimension-Radius.png" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <list id="32" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Body Text" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="Body Text">Radius of a <text styleclass="Element">Circle</text>&#32;</li>
+          </list>
+          <para styleclass="Body Text"></para>
+        </td>
+        <td>
+          <list id="33" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Body Text" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="Body Text">Click the Circumference of a <text styleclass="Element">Circle</text>&#32;</li>
+          </list>
+        </td>
+        <td>
+          <para styleclass="Body Text">DimRadiusn</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:21px;">
+          <para styleclass="Normal"><image src="MD-Dimension-Radius-Arc.png" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <list id="34" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Body Text" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="Body Text">Radius of an <text styleclass="Element">Arc</text>&#32;</li>
+          </list>
+        </td>
+        <td>
+          <list id="35" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Body Text" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="Body Text">Click the Radius of an <text styleclass="Element">Arc</text>&#32;</li>
+          </list>
+        </td>
+        <td>
+          <para styleclass="Body Text">DimRadiusn</para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading4 Toggle_atocs_"><image src="btn_addkeyword.bmp" scale="100.00%" styleclass="Heading4 Toggle_atocs_2" figurelistinclude="0"></image><tab /><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" src-collapsed="btn_addkeyword.bmp" src-expanded="btn_delkeyword.bmp" src-print="none" styleclass="Heading4 Toggle_atocs_2"><caption><![CDATA[Angle]]></caption></toggle></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="5" colcount="4" style="head-row-background-color:#c0c0c0; alt-row-background-color:none;">
+      <thead style="vertical-align:top">
+        <td style="width:21px; height:7px;">
+          <para styleclass="VariableName" style="text-align:center;">Example</para>
+        </td>
+        <td style="height:7px;">
+          <para styleclass="VariableName" style="text-align:center;">Dimension:</para>
+        </td>
+        <td style="height:7px;">
+          <para styleclass="VariableName" style="text-align:center;">How?</para>
+        </td>
+        <td style="height:7px;">
+          <para styleclass="VariableName">In Selection-Window as:</para>
+        </td>
+      </thead>
+      <tr style="vertical-align:top">
+        <td style="width:21px;">
+          <para styleclass="Normal"><image src="MD-Dimension-Angle-3Points.png" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <list id="36" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Body Text" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="Body Text">Angle between three <text styleclass="Element">Points</text><text styleclass="BodyText BI">*</text></li>
+          </list>
+          <para styleclass="Body Text"></para>
+        </td>
+        <td>
+          <list id="37" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Body Text" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="Body Text">Click the <text styleclass="Element">Point</text><text styleclass="BodyText BI">*</text> that is the apex of the angle, followed by the other two <text styleclass="Element">Points</text><text styleclass="BodyText BI">*</text>.</li>
+          </list>
+          <para styleclass="Body Text">The angle is the clockwise angle from the second <text styleclass="Element">Point</text><text styleclass="BodyText BI">*</text> to the third <text styleclass="Element">Point</text><text styleclass="BodyText BI">*</text> you click.</para>
+        </td>
+        <td>
+          <para styleclass="Body Text">DimAngPPPn</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:21px;">
+          <para styleclass="Normal"><image src="MD-Dimension-Angle-Line.png" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <list id="38" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Body Text" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="Body Text">Angle between two <text styleclass="Element">Lines</text><text styleclass="BodyText BI">**</text>&#32;</li>
+            <li styleclass="Body Text">Angle between an axis and a <text styleclass="Element">Line</text><text styleclass="BodyText BI">**</text></li>
+          </list>
+          <para styleclass="Body Text">The <text styleclass="Element">Lines</text><text styleclass="BodyText BI">**</text> do not need to cross.</para>
+        </td>
+        <td>
+          <list id="39" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Body Text" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="Body Text">Click each <text styleclass="Element">Line</text><text styleclass="BodyText BI">**</text>&#32;</li>
+          </list>
+          <para styleclass="Body Text">The angle that we display for you has rules. </para>
+          <para styleclass="Body Text">See RULES, below</para>
+          <para styleclass="HowTo Bulleted - compressed2"></para>
+        </td>
+        <td>
+          <para styleclass="Body Text">DimAngLtoLn</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td colspan="4">
+          <para styleclass="VariableName">RULES: There are <text style="color:#ff0000;">eight</text> possible angle dimensions:</para>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Body Text"><text styleclass="VariableName">Before</text><text styleclass="Body Text HowTo"> you click your mouse again to fix the angle dimension between the </text><text styleclass="Element">Lines</text><text styleclass="BodyText BI">**</text><text styleclass="Body Text HowTo">, you can select which angle to display.</text></para>
+                <list id="40" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+                  <li styleclass="HowTo Bulleted">Move your mouse <text styleclass="VariableName-IT" style="font-style:normal;">counter-clockwise</text> around the apex of the two <text styleclass="Element">Lines</text><text styleclass="BodyText BI">**</text>, to show the <text styleclass="VariableName-IT" style="font-style:normal;">acute</text>, <text styleclass="VariableName-IT" style="font-style:normal;">obtuse</text>, <text styleclass="VariableName-IT" style="font-style:normal;">supplementary</text>, or the <text styleclass="VariableName-IT" style="font-style:normal;">vertical </text>angle &lt;180°.</li>
+                  <li styleclass="Body Text HowTo">Move your mouse <text styleclass="VariableName-IT" style="font-style:normal;">clockwise</text> around the apex of the two <text styleclass="Element">Lines</text><text styleclass="BodyText BI">**</text>, to show the <text styleclass="VariableName">reflex</text> angles to the other angles.</li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td colspan="4">
+          <para styleclass="Heading3 VIDEO"><text styleclass="Heading4 Toggle_atocs_">Video: </text><conditional-text type="IF" value="PDF"/><link displaytype="text" defaultstyle="true" type="filelink" href="DimensionAngles-8-1280-720.gif" styleclass="T_Menu">Double-click to watch Add an Angle</link><conditional-text type="END"/><conditional-text type="IF" value="CHM"/><toggle type="picture" print-expanded="true" help-expanded="false" src-collapsed="DimensionAngles-8-1280-720.gif" src-expanded="DimensionAngles-8-1280-720.gif" scale="20.00%" width="256" height="144" styleclass="Image Caption" figurelistinclude="0"><caption><![CDATA[8 possible angles between two Lines]]></caption><title>Add 8 possible angles between two Lines</title></toggle><conditional-text type="END"/><conditional-text type="IF" value="HTML,EBOOK"/><video src="DimensionAngles-8-1280-720.mp4" width="1280px" height="720px" autostart="false" loop="false" showcontrols="false" playbutton="true" previewimage="DimensionAngles-8-1280-720_preview.jpg" scale="20.00%" styleclass="Image Caption"><title>8 possible angles between two Lines</title><caption><![CDATA[8 possible angles between two Lines]]></caption></video><conditional-text type="END"/></para>
+        </td>
+      </tr>
+    </table></para>
+  </body>
+</topic>

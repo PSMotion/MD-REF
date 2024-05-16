@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" status="Under Construction" modified="2022-09-09T17:39:33.237+01:00" lasteditedby="Adam" version="2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title>Dialog: Funktions-Block: Linear-Bewegung</title>
+  <keywords>
+    <keyword>Clock</keyword>
+    <keyword>Dialog<keyword>Funtion-Block : Linear Motion</keyword></keyword>
+    <keyword>Linear Motion dialog</keyword>
+    <keyword>Machine-Clock</keyword>
+  </keywords>
+  <body>
+    <header>
+      <para styleclass="Heading1">Dialog: Funktions-Block: Linear-Bewegung</para>
+    </header>
+    <para styleclass="Heading2">Linear-Bewegung FB </para>
+    <para styleclass="SeeAlso">Siehe <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Command-Add-FBLinearMotion">Hinzufügen von Linear-Bewegung FB</link></para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="Body Text HowTo">Die <text styleclass="VariableName">Default-Bewegungswerte</text> am Ausgang des <text styleclass="Element">Linear-Motion-FBs</text> sind gleich dem <text styleclass="Interface">Master-Machine-Angle</text><text styleclass="VariableName"> (MMA). </text></para>
+    <para styleclass="Body Text HowTo">Verwenden Sie den Ausgang des <text styleclass="Element">Linear-Motion-FBs</text> als Maschinenwinkel am Eingang zu anderen <text styleclass="VariableName">Kinematik-FBs</text><text styleclass="Body Text">.</text>&#32;</para>
+    <para styleclass="Body Text HowTo">Verwenden Sie das <text styleclass="Element">Dialogfeld &quot;Lineare Bewegung&quot;</text>, um die Ausgabe relativ zum <text styleclass="Interface">Master-Maschinen-winkel</text> zu bearbeiten.</para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="Heading4 Toggle_atocs_">Dialogfeld &quot;Lineare Bewegung&quot; öffnen</para>
+    <para styleclass="Body Text"><table styleclass="Default" rowcount="1" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:40px; border-right:none;">
+          <para styleclass="Interface" style="text-align:right;"><image src="MD-Icon-FB-LinearMotion.png" scale="100.00%" padding="0 2 0 0" figurelistinclude="0"></image></para>
+        </td>
+        <td style="border-left:none;">
+          <para styleclass="Body Text">Bearbeiten Sie den<text styleclass="Element"> Linear-Bewegung FB</text><text style="font-weight:normal; font-style:normal;">:</text></para>
+          <para styleclass="Body Table"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td style="border-top:none; border-right:none; border-bottom:none;">
+                <list id="0" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="B Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:8pt; color:#000000;">
+                  <li styleclass="B Bullets"><text styleclass="Body Text Howindent4bullets">Doppelklicken Sie auf den </text><text styleclass="Element">Linear-Bewegung FB</text><text styleclass="Body Text Howindent4bullets"> im </text><text styleclass="Interface">Grafikbereich</text><text styleclass="VariableName">. </text></li>
+                </list>
+                <para styleclass="VariableName-IT">- oder -</para>
+                <list id="1" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="B Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:8pt; color:#000000;">
+                  <li styleclass="B Bullets"><text styleclass="SeeAlso">Siehe </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-How-to-Open-a-Dialog-Box" styleclass="SeeAlso">Wie öffne ich ein Dialogfeld</link>?<text styleclass="VariableName">&#32;</text></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Body Text">Das <text styleclass="Element">Dialogfeld Linear-Motion FB</text> ist nun geöffnet.</para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="Heading3_atocs_">Linear-Bewegung-Dialogfeld</para>
+    <para styleclass="Body Text"><table styleclass="Default" rowcount="1" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Text">Die Funktion des <text styleclass="Element">Linear-Bewegung FB</text> ist:</para>
+          <para styleclass="Body Text HowTo"><text styleclass="VariableName">Wenn </text><text styleclass="Parameter-Header">Reset</text><image src="Red-14-2.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="VariableName">: Ausgang = MMA</text><text styleclass="Interface2"> + </text><text styleclass="Parameter-Header">Start-Winkel</text><text styleclass="Interface2">&#32;</text><image src="Red-14-1.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+          <para styleclass="Interface2">oder</para>
+          <para styleclass="Body Text HowTo"><text styleclass="VariableName">Wenn </text><text styleclass="Parameter-Header">Akkumulieren</text><image src="Red-14-2.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="VariableName">: Leistung = (Umdrehungen × 360) + Master-Maschinenwinkel +</text><text styleclass="Parameter-Header"> Start-Winkel</text><text styleclass="VariableName">&#32;</text><image src="Red-14-1.gif" scale="100.00%" styleclass="VariableName" figurelistinclude="0"></image></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Standard" rowcount="1" colcount="2" style="width:auto;">
+      <tr style="vertical-align:top">
+        <td style="width:240px;">
+          <para styleclass="Normal" style="text-align:right;"><image src="MD-Dialog-LinearMotionFB.ipp" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"><caption><![CDATA[Dialogfeld "Lineare Bewegung FB]]></caption></image></para>
+        </td>
+        <td>
+          <para styleclass="Body Table"><text styleclass="Parameter-Header">Start-Winkel: </text><image src="Red-14-1.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+          <para styleclass="Body Text HowTo"><table styleclass="PopupTable2" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Body Table">Geben Sie eine reelle Zahl in das Datenfeld ein<image src="Red-14-1.gif" scale="100.00%" figurelistinclude="0"></image></para>
+                <para styleclass="Body Table">Bei einem positiven Wert wird die Zeit relativ zum <text styleclass="Interface2">MMA</text> vorverlegt.</para>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Body Table"><text styleclass="Parameter-Header">Ausgabe-Optionen: </text><image src="Red-14-2.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+          <para styleclass="Body Text HowTo"><table styleclass="PopupTable2" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <list id="2" type="ul" listtype="bullet" formatstring="&#164;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Body Table" style="font-family:Wingdings; font-size:8pt; color:#000000;">
+                  <li styleclass="Body Table">&#32;<text styleclass="Parameter">Rückstellung bei jedem Zyklus (Standard)</text><text styleclass="VariableName">&#32;</text><br/><text styleclass="VariableName">Ausgang = Master Maschinenwinkel + </text><image src="Red-14-1.gif" scale="100.00%" styleclass="VariableName" figurelistinclude="0"></image><text styleclass="VariableName">&#32;</text></li>
+                </list>
+                <list id="3" type="ul" listtype="bullet" formatstring="&#164;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Body Table" style="font-family:Wingdings; font-size:8pt; color:#000000;">
+                  <li styleclass="Body Table">&#32;<text styleclass="Parameter">Akkumulieren</text><text styleclass="VariableName">&#32;</text><br/><text styleclass="VariableName">Ausgabe = (Umdrehungen × 360) + Master-Maschinenwinkel + </text><image src="Red-14-1.gif" scale="100.00%" styleclass="VariableName" figurelistinclude="0"></image></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Body Text" style="page-break-before:always;"></para>
+  </body>
+</topic>

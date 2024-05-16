@@ -1,0 +1,887 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<helpproject xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="helpproject.xsd" version="2.0" isskin="false" isrepository="false">
+  <config>
+    <repository name="StyleRep-8A" href="..\SKINS-8\Repository\StyleRep-8A.hmxr"/>
+    <namespaces/>
+    <export-task-groups>
+      <export-task-group name="Recent Publishes">
+        <export-tasks>
+          <export-task name="Publish as CHM" format="CHM">
+            <task-config-group name="settings">
+              <task-config-value name="outputfile">MotionDesigner-Reference-Help.chm</task-config-value>
+              <task-config-value name="skin">..\SKINS-8\CHM-SKINS\HM8-Help-CHM-MD16-A.hmskin</task-config-value>
+              <task-config-value name="deletetemp">1</task-config-value>
+              <task-config-value name="make0include">CHM</task-config-value>
+              <task-config-value name="make0status">*</task-config-value>
+            </task-config-group>
+          </export-task>
+          <export-task name="Publish as HTM" format="HTM">
+            <task-config-group name="settings">
+              <task-config-value name="outputfile">..\MT-PUBLISH\index.htm</task-config-value>
+              <task-config-value name="skin">..\HELP-MASTER-MERGE\WEBHELP\WebHelp_FreshLimeSoda-1-wideTOC-translate-3-Maths.hmskin</task-config-value>
+              <task-config-value name="make3include">HTML</task-config-value>
+              <task-config-value name="make3includeskin">OPT_3FRAME,OPT_3FRAMEMENU,OPT_BREADTRAIL,OPT_CONTEXT,OPT_FAVICON,OPT_FB,OPT_FOOTER,OPT_HOME,OPT_POPUPS,OPT_PRINT,OPT_SOCIALSHARE,OPT_SUBTITLE</task-config-value>
+              <task-config-value name="make3status">*</task-config-value>
+            </task-config-group>
+          </export-task>
+          <export-task name="Publish as PDF" format="PDF">
+            <task-config-group name="settings">
+              <task-config-value name="outputfile">MotionDesigner-Reference-Help.pdf</task-config-value>
+              <task-config-value name="template">..\SKINS-8\Standard_manualHM8_A4-B.mnl</task-config-value>
+              <task-config-value name="highlighthotspots">0</task-config-value>
+              <task-config-value name="exportcomments">0</task-config-value>
+              <task-config-value name="exportcommentsdate">36526</task-config-value>
+              <task-config-value name="make4include">PDF</task-config-value>
+              <task-config-value name="make4status">*</task-config-value>
+            </task-config-group>
+          </export-task>
+          <export-task name="Publish as RTF" format="RTF">
+            <task-config-group name="settings">
+              <task-config-value name="outputfile">MotionDesigner-Help_manual.docx</task-config-value>
+              <task-config-value name="make5include">PRINT</task-config-value>
+              <task-config-value name="make5status">*</task-config-value>
+            </task-config-group>
+          </export-task>
+        </export-tasks>
+      </export-task-group>
+    </export-task-groups>
+    <helpwindows>
+      <helpwindow name="Main" left="100" top="100" width="800" height="600">
+        <caption translate="true">&lt;%TITLE%&gt;</caption>
+        <window-options-chm navigation="true" navigationwidth="200" search="true" favorite="true" saveregistry="true" buttons="12366">
+          <user-button name="jump1">
+            <caption translate="true">jump1</caption>
+          </user-button>
+          <user-button name="jump2">
+            <caption translate="true">jump2</caption>
+          </user-button>
+          <user-button name="Home">
+            <caption translate="true">Home</caption>
+          </user-button>
+        </window-options-chm>
+      </helpwindow>
+    </helpwindows>
+    <styleclasses>
+      <styleclass name="Equations" shortcut="0" mode="1">
+        <style-set media="screen" type="para">text-indent:0px; margin-top:3px; margin-bottom:4px; margin-left:22px; background-color:#e8e8d0; white-space:normal; border-color:#ff9900; border-style:single; border-width:1px; padding:4px;</style-set>
+        <style-set media="screen" type="text">font-family:Georgia; font-size:12pt; font-weight:bold; font-style:italic; letter-spacing:normal; letter-scaling:130%;</style-set>
+      </styleclass>
+      <styleclass name="InThisTopic Heading" shortcut="0" mode="1">
+        <style-set media="screen" type="para">text-align:center; margin-bottom:0px; white-space:nowrap; page-break-after:avoid; border:none;</style-set>
+        <style-set media="screen" type="text">font-family:Verdana; font-size:10pt; font-weight:bold; text-transform:uppercase; color:#ffffff; letter-spacing:-1px;</style-set>
+      </styleclass>
+      <styleclass name="InThisTopic LinkList" shortcut="0" mode="1">
+        <style-set media="screen" type="para">margin-bottom:1px; white-space:nowrap;</style-set>
+        <style-set media="screen" type="text">font-family:Verdana; font-size:11pt; letter-spacing:-1px;</style-set>
+      </styleclass>
+      <styleclass name="Normal" shortcut="0" mode="1">
+        <style-set media="screen" type="text">font-family:'Segoe UI'; font-size:11pt;</style-set>
+      </styleclass>
+      <styleclass name="Body Text" parentclass="Normal" shortcut="114" mode="1">
+        <style-set media="screen" type="para">margin-top:2px; margin-bottom:3px; margin-left:3px;</style-set>
+        <style-set media="screen" type="text">font-family:'Noto Sans';</style-set>
+      </styleclass>
+      <styleclass name="Body Table" parentclass="Body Text" shortcut="49238" mode="1">
+        <style-set media="screen" type="text">font-family:'Noto Sans';</style-set>
+      </styleclass>
+      <styleclass name="Body Text  8pt" parentclass="Body Text" shortcut="0" mode="1">
+        <style-set media="screen" type="para">margin-bottom:0px;</style-set>
+        <style-set media="screen" type="text">font-size:8pt;</style-set>
+      </styleclass>
+      <styleclass name="Body Text  9pt" parentclass="Body Text  8pt" shortcut="0" mode="1">
+        <style-set media="screen" type="text">font-size:9pt;</style-set>
+      </styleclass>
+      <styleclass name="Body Text  10pt indent" parentclass="Body Text  9pt" shortcut="0" mode="1">
+        <style-set media="screen" type="para">margin-left:23px;</style-set>
+        <style-set media="screen" type="text">font-size:10pt;</style-set>
+      </styleclass>
+      <styleclass name="Body Text 10pt  space banda" parentclass="Body Text" nextclass="Body Text HowTo" shortcut="0" mode="1">
+        <style-set media="screen" type="para">margin-bottom:2px;</style-set>
+        <style-set media="screen" type="text">font-size:10pt;</style-set>
+      </styleclass>
+      <styleclass name="Body Text CAPITALICS" parentclass="Body Text" shortcut="0">
+        <style-set media="screen" type="para">margin-top:2px; margin-bottom:2px;</style-set>
+        <style-set media="screen" type="text">font-style:italic; text-transform:uppercase;</style-set>
+      </styleclass>
+      <styleclass name="Body Text HowTo" parentclass="Body Text" shortcut="16498" mode="1">
+        <style-set media="screen" type="para">margin-left:24px;</style-set>
+      </styleclass>
+      <styleclass name="Body Text Howindent4bullets" parentclass="Body Text HowTo" shortcut="24651" mode="1">
+        <style-set media="screen" type="para">margin-left:45px;</style-set>
+      </styleclass>
+      <styleclass name="Body Text HowTo2" parentclass="Body Text HowTo" shortcut="49240" mode="1">
+        <style-set media="screen" type="para">margin-left:28px;</style-set>
+      </styleclass>
+      <styleclass name="Body Text Italic" parentclass="Body Text" shortcut="0">
+        <style-set media="screen" type="para">margin-top:2px; margin-bottom:2px;</style-set>
+        <style-set media="screen" type="text">font-style:italic;</style-set>
+      </styleclass>
+      <styleclass name="Body Text Table" parentclass="Body Text" shortcut="0">
+        <style-set media="screen" type="para">margin-bottom:0px;</style-set>
+      </styleclass>
+      <styleclass name="BodyText Bold" parentclass="Body Text" shortcut="122" mode="1">
+        <style-set media="screen" type="text">font-weight:bold;</style-set>
+      </styleclass>
+      <styleclass name="BodyText Bold2" parentclass="BodyText Bold" shortcut="0">
+        <style-set media="screen" type="text">text-decoration:underline;</style-set>
+      </styleclass>
+      <styleclass name="BodyText Bold-UL" parentclass="BodyText Bold" shortcut="24655" mode="1">
+        <style-set media="screen" type="para">margin-bottom:2px;</style-set>
+        <style-set media="screen" type="text">font-family:'Segoe UI Semibold'; text-transform:uppercase; color:#000080;</style-set>
+      </styleclass>
+      <styleclass name="HowTo Bulleted" parentclass="Body Text" shortcut="24642" mode="1">
+        <style-set media="screen" type="para">text-indent:-23px; margin-bottom:2px; margin-left:46px;</style-set>
+      </styleclass>
+      <styleclass name="Bullets" parentclass="HowTo Bulleted" shortcut="49218" mode="1">
+        <style-set media="screen" type="para">margin-left:27px;</style-set>
+      </styleclass>
+      <styleclass name="HowTo Bulleted - compressed" parentclass="HowTo Bulleted" shortcut="0" mode="1">
+        <style-set media="screen" type="para">margin-top:2px; margin-bottom:3px;</style-set>
+        <style-set media="screen" type="text">font-size:10pt;</style-set>
+      </styleclass>
+      <styleclass name="BaseText10pt" parentclass="HowTo Bulleted - compressed" shortcut="0">
+        <style-set media="screen" type="para">text-indent:0px; margin-bottom:0px; margin-left:0px;</style-set>
+      </styleclass>
+      <styleclass name="HowTo Bulleted2" parentclass="HowTo Bulleted" shortcut="0" mode="1">
+        <style-set media="screen" type="para">margin-left:57px;</style-set>
+      </styleclass>
+      <styleclass name="HowTo Bulleted3" parentclass="HowTo Bulleted2" shortcut="0" mode="1">
+        <style-set media="screen" type="para">text-indent:-22px; margin-bottom:6px; margin-left:68px;</style-set>
+      </styleclass>
+      <styleclass name="HowTo Bulleted4" parentclass="HowTo Bulleted3" shortcut="0" mode="1">
+        <style-set media="screen" type="para">margin-left:91px;</style-set>
+      </styleclass>
+      <styleclass name="Table Bullets [short]" parentclass="HowTo Bulleted" shortcut="0" mode="1">
+        <style-set media="screen" type="para">text-indent:-68px; margin-left:69px;</style-set>
+      </styleclass>
+      <styleclass name="HowTo Numbered" parentclass="Body Text" shortcut="24654" mode="1">
+        <style-set media="screen" type="para">text-indent:-23px; margin-bottom:2px; margin-left:46px;</style-set>
+      </styleclass>
+      <styleclass name="HowTo STEP" parentclass="HowTo Numbered" shortcut="24641" mode="1">
+        <style-set media="screen" type="para">text-indent:-63px; margin-bottom:1px; margin-left:66px; border:none;</style-set>
+        <style-set media="screen" type="text">font-family:'Segoe UI Semibold';</style-set>
+      </styleclass>
+      <styleclass name="HowTo NO STEP" parentclass="HowTo STEP" shortcut="0" mode="1">
+        <style-set media="screen" type="para">text-indent:0px; margin-bottom:2px; margin-left:0px;</style-set>
+      </styleclass>
+      <styleclass name="Note" parentclass="Body Text" shortcut="0" mode="1">
+        <style-set media="screen" type="para">text-indent:-59px; margin-bottom:3px; margin-left:83px;</style-set>
+        <style-set media="screen" type="text">font-size:10pt;</style-set>
+      </styleclass>
+      <styleclass name="Parameter" parentclass="Body Text" shortcut="24646" mode="1">
+        <style-set media="screen" type="text">font-family:'Segoe UI Semibold'; font-size:10pt; font-weight:bold; text-transform:uppercase; color:#333399;</style-set>
+      </styleclass>
+      <styleclass name="Parameter-Popup" parentclass="Parameter" shortcut="49222" mode="1">
+        <style-set media="screen" type="text">font-size:9pt;</style-set>
+      </styleclass>
+      <styleclass name="Parameter-Header" parentclass="Body Text" shortcut="121" mode="1">
+        <style-set media="screen" type="text">font-family:'Segoe UI Semibold'; text-transform:uppercase; color:#333399;</style-set>
+      </styleclass>
+      <styleclass name="Separator" parentclass="Body Text" shortcut="24647" mode="1">
+        <style-set media="screen" type="text">font-size:10pt; text-transform:uppercase; background-color:#ff8000;</style-set>
+      </styleclass>
+      <styleclass name="Separator-Header" parentclass="Body Text" shortcut="49223" mode="1">
+        <style-set media="screen" type="text">font-family:'Segoe UI Semibold'; text-transform:uppercase; background-color:#ff8000;</style-set>
+      </styleclass>
+      <styleclass name="Translate" parentclass="Body Text" shortcut="49227">
+        <style-set media="screen" type="para">background-color:#ebebeb; border-color:#993300; border-style:single; border-width:1px; border-right:none; border-left:none;</style-set>
+        <style-set media="screen" type="text">font-style:italic;</style-set>
+      </styleclass>
+      <styleclass name="Callouts" parentclass="Normal" shortcut="0" mode="1">
+        <style-set media="screen" type="para">margin-bottom:5px;</style-set>
+        <style-set media="screen" type="text">font-family:Verdana; font-size:10pt; letter-spacing:-1px;</style-set>
+      </styleclass>
+      <styleclass name="Callouts Bulleted" parentclass="Callouts" shortcut="0" mode="1">
+        <style-set media="screen" type="para">text-indent:-27px; margin-right:24px; margin-bottom:10px; margin-left:51px;</style-set>
+      </styleclass>
+      <styleclass name="Callouts Header" parentclass="Callouts" shortcut="0" mode="1">
+        <style-set media="screen" type="para">margin-bottom:3px;</style-set>
+        <style-set media="screen" type="text">font-family:'Segoe UI Semibold'; font-size:11pt; font-weight:bold; letter-spacing:normal;</style-set>
+      </styleclass>
+      <styleclass name="Code Example" parentclass="Normal" shortcut="0" mode="1">
+        <style-set media="screen" type="para">white-space:nowrap;</style-set>
+        <style-set media="screen" type="text">font-family:'Courier New'; font-size:10pt;</style-set>
+      </styleclass>
+      <styleclass name="Comment" parentclass="Normal" shortcut="0" mode="1">
+        <style-set media="screen" type="para">text-align:center;</style-set>
+      </styleclass>
+      <styleclass name="Element" parentclass="Normal" shortcut="123" mode="1">
+        <style-set media="screen" type="para">margin-top:2px; margin-bottom:3px; margin-left:3px;</style-set>
+        <style-set media="screen" type="text">font-family:'Segoe UI Semibold'; font-size:10pt; font-weight:bold; text-transform:uppercase; color:#800000;</style-set>
+      </styleclass>
+      <styleclass name="Element-Header" parentclass="Element" nextclass="Body Text" shortcut="8315" mode="1">
+        <style-set media="screen" type="text">font-size:11pt;</style-set>
+      </styleclass>
+      <styleclass name="Interface" parentclass="Element" shortcut="120" mode="1">
+        <style-set media="screen" type="para">margin-left:3px;</style-set>
+        <style-set media="screen" type="text">color:#000000;</style-set>
+      </styleclass>
+      <styleclass name="Interface2" parentclass="Interface" shortcut="8313" mode="1">
+        <style-set media="screen" type="para">margin-right:3px;</style-set>
+        <style-set media="screen" type="text">font-size:11pt; font-weight:normal;</style-set>
+      </styleclass>
+      <styleclass name="InterfaceLargeRO" parentclass="Interface" shortcut="49220" mode="1">
+        <style-set media="screen" type="para">background-color:#c8dcff; border:none;</style-set>
+        <style-set media="screen" type="text">font-size:11pt; font-weight:normal;</style-set>
+      </styleclass>
+      <styleclass name="InterfaceReadOnly" parentclass="Interface" shortcut="24644" mode="1">
+        <style-set media="screen" type="para">background-color:#c8dcff; border-color:#c6dbff; border-style:single; border-width:1px;</style-set>
+      </styleclass>
+      <styleclass name="VariableName" parentclass="Element" shortcut="8312" mode="1">
+        <style-set media="screen" type="para">margin-top:0px; margin-bottom:2px;</style-set>
+        <style-set media="screen" type="text">font-size:11pt; text-transform:none; color:#000000;</style-set>
+      </styleclass>
+      <styleclass name="VariableName-indent" parentclass="VariableName" shortcut="24696" mode="1">
+        <style-set media="screen" type="para">margin-left:24px;</style-set>
+      </styleclass>
+      <styleclass name="VariableName-IT" parentclass="VariableName" shortcut="41080" mode="1">
+        <style-set media="screen" type="para">border:none;</style-set>
+        <style-set media="screen" type="text">font-style:italic;</style-set>
+      </styleclass>
+      <styleclass name="VariableName-IT2" parentclass="VariableName-IT" shortcut="49272" mode="1">
+        <style-set media="screen" type="para">margin-left:24px;</style-set>
+      </styleclass>
+      <styleclass name="VariableName-small" parentclass="VariableName" shortcut="49271" mode="1">
+        <style-set media="screen" type="para">margin-top:0px; margin-right:2px; margin-left:2px;</style-set>
+        <style-set media="screen" type="text">font-size:10pt;</style-set>
+      </styleclass>
+      <styleclass name="Heading1" parentclass="Normal" shortcut="119" mode="1">
+        <style-set media="screen" type="para">page-break-after:avoid;</style-set>
+        <style-set media="screen" type="text">font-size:14pt; font-weight:bold; color:#ffffff;</style-set>
+      </styleclass>
+      <styleclass name="Heading2" parentclass="Normal" nextclass="Body Text HowTo" shortcut="116" mode="1">
+        <style-set media="screen" type="para">margin-top:8px; margin-bottom:4px; page-break-after:avoid; border-color:#993300; border-style:single; border-width:1px; border-top:none; border-right:none; border-left:none; padding:1px;</style-set>
+        <style-set media="screen" type="text">font-size:14pt; font-weight:bold; color:#333300;</style-set>
+      </styleclass>
+      <styleclass name="Heading2 Toggle_atoc_" parentclass="Heading2" nextclass="Body Text HowTo" shortcut="0" mode="1">
+        <style-set media="screen" type="para">text-indent:-20px; margin-top:8px; margin-bottom:4px; margin-left:20px; border:none;</style-set>
+        <style-set media="screen" type="text">color:#333300;</style-set>
+      </styleclass>
+      <styleclass name="Heading3_atocs_" parentclass="Heading2" nextclass="Body Text HowTo" shortcut="117" mode="1">
+        <style-set media="screen" type="para">margin-top:5px; margin-bottom:2px; border:none;</style-set>
+        <style-set media="screen" type="text">font-size:13pt; color:#752600;</style-set>
+        <style-set media="print" type="para">margin-top:5px; margin-bottom:5px; border:none;</style-set>
+        <style-set media="print" type="text">font-weight:bold;</style-set>
+      </styleclass>
+      <styleclass name="Heading3 Underline_atocs_" parentclass="Heading3_atocs_" nextclass="Body Text HowTo" shortcut="0">
+        <style-set media="screen" type="para">margin-bottom:3px; border-color:#333333; border-style:single; border-top:none; border-right:none; border-left:none;</style-set>
+      </styleclass>
+      <styleclass name="Heading3 VIDEO" parentclass="Heading3_atocs_" nextclass="Body Text HowTo" shortcut="8309" mode="1">
+        <style-set media="screen" type="para">margin-top:2px; margin-bottom:0px;</style-set>
+      </styleclass>
+      <styleclass name="Heading4 HowTo_atoc_" parentclass="Normal" shortcut="115" mode="1">
+        <style-set media="screen" type="para">margin-top:5px; margin-right:3px; margin-bottom:3px; margin-left:3px; background-color:#ececda; page-break-after:avoid; border-color:#333300; border-style:single; border-width:1px; padding:1px;</style-set>
+        <style-set media="screen" type="text">font-family:'Segoe UI Semibold'; font-size:12pt; color:#262600;</style-set>
+      </styleclass>
+      <styleclass name="alert" parentclass="Heading4 HowTo_atoc_" shortcut="0" mode="1">
+        <style-set media="screen" type="para">background-color:#ffb9b9;</style-set>
+      </styleclass>
+      <styleclass name="alert2" parentclass="alert" shortcut="0" mode="1">
+        <style-set media="screen" type="para">background-color:#ff9900; border-color:#ff6600;</style-set>
+      </styleclass>
+      <styleclass name="Heading4 HowTo Toggle_atoc_" parentclass="Heading4 HowTo_atoc_" shortcut="8307" mode="1">
+        <style-set media="screen" type="para">margin-right:4px; margin-left:25px;</style-set>
+        <style-set media="screen" type="text">color:#262600;</style-set>
+      </styleclass>
+      <styleclass name="Heading4 Toggle_atocs_" parentclass="Normal" shortcut="24648" mode="1">
+        <style-set media="screen" type="para">margin-top:8px; margin-bottom:3px; border-color:#000080; border-style:single; border-width:1px; border-top:none; border-right:none; border-bottom:none; border-left:none;</style-set>
+        <style-set media="screen" type="text">font-weight:bold; color:#030303;</style-set>
+      </styleclass>
+      <styleclass name="Heading4 Toggle_atocs_2" parentclass="Heading4 Toggle_atocs_" shortcut="24650" mode="1">
+        <style-set media="screen" type="para">margin-left:24px;</style-set>
+      </styleclass>
+      <styleclass name="Image Caption" parentclass="Normal" shortcut="0" mode="1">
+        <style-set media="screen" type="text">font-family:'Segoe UI Semibold'; font-size:10pt;</style-set>
+      </styleclass>
+      <styleclass name="Notes" parentclass="Normal" shortcut="49230" mode="1">
+        <style-set media="screen" type="para">margin-top:2px; margin-bottom:3px;</style-set>
+        <style-set media="screen" type="text">font-family:'Segoe UI Semibold'; color:#040404;</style-set>
+      </styleclass>
+      <styleclass name="Popup Box" parentclass="Normal" shortcut="49270" mode="1">
+        <style-set media="screen" type="para">margin-right:2px; margin-left:2px;</style-set>
+        <style-set media="screen" type="text">font-size:10pt;</style-set>
+      </styleclass>
+      <styleclass name="Popup Box2" parentclass="Popup Box" shortcut="41078" mode="1">
+        <style-set media="screen" type="para">margin-top:2px;</style-set>
+        <style-set media="screen" type="text">font-family:'Segoe UI Semibold'; font-size:9pt; text-transform:uppercase;</style-set>
+      </styleclass>
+      <styleclass name="Popup Box-Elements" parentclass="Popup Box" shortcut="41083" mode="1">
+        <style-set media="screen" type="para">margin-top:2px;</style-set>
+        <style-set media="screen" type="text">font-family:'Segoe UI Semibold'; font-size:9pt; text-transform:uppercase; color:#800000;</style-set>
+      </styleclass>
+      <styleclass name="SeeAlso" parentclass="Normal" shortcut="24652" mode="1">
+        <style-set media="screen" type="para">margin-top:2px; margin-bottom:3px; margin-left:3px; page-break-after:avoid;</style-set>
+        <style-set media="screen" type="text">font-family:'Segoe UI Semibold'; color:#000080;</style-set>
+        <style-set media="print" type="para">margin-top:1px; margin-bottom:1px; page-break-after:avoid;</style-set>
+        <style-set media="print" type="text">font-size:10pt; font-weight:bold;</style-set>
+      </styleclass>
+      <styleclass name="SeeAlso-small" parentclass="SeeAlso" shortcut="49228" mode="1">
+        <style-set media="screen" type="para">margin-top:1px; margin-bottom:2px;</style-set>
+        <style-set media="screen" type="text">font-size:10pt;</style-set>
+      </styleclass>
+      <styleclass name="SOLIDWORKS" parentclass="Normal" shortcut="0" mode="1">
+        <style-set media="screen" type="para">margin-top:2px; margin-bottom:3px;</style-set>
+        <style-set media="screen" type="text">font-size:10pt; text-transform:uppercase;</style-set>
+      </styleclass>
+      <styleclass name="TableIndent" parentclass="Normal" shortcut="0" mode="1">
+        <style-set media="screen" type="para">margin-left:22px;</style-set>
+      </styleclass>
+      <styleclass name="Tip Body" parentclass="Normal" shortcut="0" mode="1">
+        <style-set media="screen" type="text">font-size:10pt;</style-set>
+        <style-set media="print" type="text">font-size:9pt;</style-set>
+      </styleclass>
+      <styleclass name="Tip Heading" parentclass="Normal" shortcut="0" mode="1"/>
+      <styleclass name="T_Code" shortcut="24643" mode="1">
+        <style-set media="screen" type="text">font-family:'Courier New'; font-size:11pt; font-weight:bold; letter-spacing:-1px;</style-set>
+      </styleclass>
+      <styleclass name="T_Emphasis" shortcut="0" mode="1">
+        <style-set media="screen" type="para">background-color:#ffffff; border:none;</style-set>
+        <style-set media="screen" type="text">font-family:'Segoe UI'; font-size:10pt; font-weight:bold; font-style:normal; text-transform:uppercase; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;</style-set>
+      </styleclass>
+      <styleclass name="T_Menu" shortcut="24653" mode="1">
+        <style-set media="screen" type="para">margin-top:2px; margin-bottom:3px; margin-left:3px;</style-set>
+        <style-set media="screen" type="text">font-family:'Segoe UI Semibold'; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; color:#003300; letter-spacing:normal; letter-scaling:100%;</style-set>
+      </styleclass>
+      <styleclass name="T_Menusmall" parentclass="T_Menu" shortcut="49229" mode="1">
+        <style-set media="screen" type="para">margin-top:0px; margin-bottom:0px; margin-left:0px;</style-set>
+        <style-set media="screen" type="text">font-family:'Segoe UI Semibold'; font-size:10pt; text-transform:none;</style-set>
+      </styleclass>
+      <styleclass name="T_ToggleLink" shortcut="0" mode="1">
+        <style-set media="screen" type="text">font-family:Tahoma; font-size:10pt; font-weight:bold; letter-spacing:normal;</style-set>
+      </styleclass>
+      <styleclass name="T_ToggleLinkLarge" parentclass="T_ToggleLink" shortcut="0" mode="1">
+        <style-set media="screen" type="text">font-size:11pt;</style-set>
+      </styleclass>
+      <styleclass name="T_Toggletext" shortcut="0" mode="1">
+        <style-set media="screen" type="para">margin-left:3px; background-color:#ccffcc; border-color:#000000; border-style:single; border-width:1px; padding:1px;</style-set>
+        <style-set media="screen" type="text">font-family:'Noto Sans'; font-size:10pt; font-weight:normal; font-style:normal; text-transform:none; color:#008000; background-color:#ccffcc; letter-spacing:normal;</style-set>
+      </styleclass>
+      <styleclass name="T_Camlinks User" parentclass="T_Toggletext" shortcut="0" mode="1">
+        <style-set media="screen" type="para">margin-bottom:6px; background-color:#ff99cc; border-color:#000000; border-style:single; border-width:1px;</style-set>
+        <style-set media="screen" type="text">color:#000000; background-color:#ff99cc;</style-set>
+      </styleclass>
+      <styleclass name="Transation" shortcut="49227" mode="1">
+        <style-set media="screen" type="text">font-family:'Segoe UI Semibold'; font-style:italic; background-color:#ebebeb;</style-set>
+      </styleclass>
+      <tablestyleclass name="Default" mode="1">
+        <style-set media="screen">width:100%; cell-padding:1px; cell-spacing:0px; page-break-inside:auto; border-width:0px; border-spacing:0px; border-collapse:collapse; cell-border-width:1px; border-color:#993300; border-style:solid; background-color:#f3f3f3; head-row-background-color:none; alt-row-background-color:none;</style-set>
+      </tablestyleclass>
+      <tablestyleclass name="Orange1" parentclass="Default" mode="1">
+        <style-set media="screen">width:auto; cell-padding:2px; cell-spacing:0px; page-break-inside:auto; border-width:0px; border-spacing:0px; border-collapse:collapse; cell-border-width:1px; border-color:#993300; border-style:solid; background-color:#f2f2f2; head-row-background-color:none; alt-row-background-color:none;</style-set>
+      </tablestyleclass>
+      <tablestyleclass name="OrangeBar" parentclass="Default" mode="1">
+        <style-set media="screen">width:100%; cell-padding:1px; cell-spacing:0px; page-break-inside:auto; border-width:0px; border-spacing:0px; border-collapse:collapse; cell-border-width:1px; border-color:#993300; border-style:solid; background-color:#f3f3f3; head-row-background-color:none; alt-row-background-color:none;</style-set>
+      </tablestyleclass>
+      <tablestyleclass name="PopupTable" parentclass="Default" mode="1">
+        <style-set media="screen">width:450px; cell-padding:1px; cell-spacing:0px; page-break-inside:auto; border-width:1px; border-spacing:0px; cell-border-width:0px; border-color:#993300; border-style:solid; background-color:#ececec; head-row-background-color:none; alt-row-background-color:none;</style-set>
+      </tablestyleclass>
+      <tablestyleclass name="Block" parentclass="PopupTable" mode="1">
+        <style-set media="screen">width:auto; cell-padding:1px; cell-spacing:0px; page-break-inside:auto; border-width:1px; border-spacing:0px; cell-border-width:0px; border-color:#993300; border-style:solid; background-color:#ffffff; head-row-background-color:none; alt-row-background-color:none;</style-set>
+      </tablestyleclass>
+      <tablestyleclass name="Hint" parentclass="Block" mode="1">
+        <style-set media="screen">width:60%; cell-padding:2px; cell-spacing:0px; page-break-inside:auto; border-width:1px; border-spacing:0px; cell-border-width:0px; border-color:#000000; border-style:solid; background-color:#f2f2f2; head-row-background-color:none; alt-row-background-color:none;</style-set>
+      </tablestyleclass>
+      <tablestyleclass name="MotionPupup" parentclass="PopupTable">
+        <style-set media="screen">width:500px; cell-padding:1px; cell-spacing:0px; page-break-inside:auto; border-width:1px; border-spacing:0px; cell-border-width:0px; border-color:#993300; border-style:solid; background-color:#f2f2f2; head-row-background-color:none; alt-row-background-color:none;</style-set>
+      </tablestyleclass>
+      <tablestyleclass name="PopupTable2" parentclass="PopupTable" mode="1">
+        <style-set media="screen">width:100%; cell-padding:1px; cell-spacing:0px; page-break-inside:auto; border-width:1px; border-spacing:0px; cell-border-width:0px; border-color:#993300; border-style:solid; background-color:#ffffff; head-row-background-color:none; alt-row-background-color:none;</style-set>
+      </tablestyleclass>
+      <tablestyleclass name="TopTip" parentclass="PopupTable">
+        <style-set media="screen">width:auto; cell-padding:4px; cell-spacing:0px; page-break-inside:auto; border-width:1px; border-spacing:0px; cell-border-width:0px; border-color:#ff9900; border-style:solid; background-color:#f0f0f0; head-row-background-color:none; alt-row-background-color:none;</style-set>
+      </tablestyleclass>
+      <tablestyleclass name="Rules" parentclass="Default" mode="1">
+        <style-set media="screen">width:auto; cell-padding:2px; cell-spacing:0px; page-break-inside:auto; border-width:1px; border-spacing:0px; cell-border-width:0px; border-color:#ff6600; border-style:solid; background-color:#dadada; head-row-background-color:none; alt-row-background-color:none;</style-set>
+      </tablestyleclass>
+      <tablestyleclass name="Standard" parentclass="Default" mode="1">
+        <style-set media="screen">width:100%; cell-padding:1px; cell-spacing:0px; page-break-inside:auto; border-width:0px; border-spacing:0px; border-collapse:collapse; cell-border-width:1px; border-color:#993300; border-style:solid; background-color:#f1f1f1; head-row-background-color:none; alt-row-background-color:none;</style-set>
+      </tablestyleclass>
+    </styleclasses>
+    <config-group name="project">
+      <config-value name="title" translate="true">MotionDesigner Help</config-value>
+      <config-value name="author" translate="true">PSMotion Ltd</config-value>
+      <config-value name="copyright" translate="true">PSMotion Ltd 2005-2019</config-value>
+      <config-value name="versionmajor">16</config-value>
+      <config-value name="versionminor">1</config-value>
+      <config-value name="versionbuild">146</config-value>
+      <config-value name="lcid" translate="true">en-uk</config-value>
+      <config-value name="charset" translate="true">ANSI_CHARSET</config-value>
+      <config-value name="deffont">font-family:'Segoe UI'; font-size:11pt; color:#000000; </config-value>
+      <config-value name="autohelpstart">12</config-value>
+      <config-value name="autohelpincrement">1</config-value>
+      <config-value name="autohelpanchor">0</config-value>
+      <config-value name="searchpath">..\MD-REF\MT-IMAGES\;..\MD-REF\MT-VIDEOS\;..\MD-REF\MD-BUTTONS\</config-value>
+      <config-group name="custombuilds">
+        <config-value name="demo">Demo Build</config-value>
+        <config-value name="user1">User defined 1</config-value>
+        <config-value name="user2">User defined 2</config-value>
+        <config-value name="user3">User defined 3</config-value>
+        <config-value name="PROFESSIONAL">PROFESSIONAL</config-value>
+      </config-group>
+      <config-value name="imageshortcuts_includebaggage">1</config-value>
+      <config-value name="make0include">CHM</config-value>
+      <config-value name="make0status">*</config-value>
+      <config-value name="openchildreadonly">0</config-value>
+      <config-value name="topicprefix">MT-</config-value>
+      <config-value name="vcsmanuallycheckout">0</config-value>
+      <config-value name="make3include">HTML</config-value>
+      <config-value name="make3status">*</config-value>
+      <config-value name="make4include">PDF</config-value>
+      <config-value name="make4status">*</config-value>
+      <config-value name="summary" translate="true">Reference Help: MotionDesigner 16.1</config-value>
+      <config-value name="comment">The is the Help for MotionDesigner - the companion application that helps you design motions for parts in MechDesigner.</config-value>
+      <config-value name="repositorystyleusage">0</config-value>
+      <config-value name="contents">MT-MotionDesigner-Help</config-value>
+      <config-value name="bidimode">0</config-value>
+      <config-value name="make3includeskin">OPT_3FRAME,OPT_3FRAMEMENU,OPT_BREADTRAIL,OPT_CONTEXT,OPT_FAVICON,OPT_FB,OPT_FOOTER,OPT_HOME,OPT_POPUPS,OPT_PRINT,OPT_SOCIALSHARE,OPT_SUBTITLE</config-value>
+      <config-group name="spellcheck">
+        <config-value name="project">0</config-value>
+      </config-group>
+      <config-value name="make5include">PRINT</config-value>
+      <config-value name="make5status">*</config-value>
+      <config-value name="tidyxml">0</config-value>
+      <config-value name="historyfiles">1</config-value>
+      <config-value name="historyfilecount">10</config-value>
+      <config-value name="historykeepdeletedfiles">0</config-value>
+      <config-value name="synchronizedwithfile">MotionDesigner-Help_IT.hmxz</config-value>
+      <config-value name="synchronizeoption">keep</config-value>
+      <config-value name="synchronizehighlight">1</config-value>
+    </config-group>
+    <config-group name="user">
+      <config-group name="adam">
+        <config-group name="project">
+          <config-value name="lastexport">4</config-value>
+          <config-value name="mapfile">C:\Users\Adam\Documents\My HelpAndManual Projects\CONTEXT#MAPS\MotionREF.txt</config-value>
+          <config-value name="mapfileformat">1</config-value>
+        </config-group>
+        <config-group name="report">
+          <config-value name="type">3</config-value>
+          <config-value name="sort">0</config-value>
+          <config-value name="include">ALL</config-value>
+          <config-value name="topicclasses">Default,Popup,</config-value>
+        </config-group>
+      </config-group>
+      <config-group name="kevin">
+        <config-group name="project">
+          <config-value name="lastexport">3</config-value>
+        </config-group>
+      </config-group>
+    </config-group>
+    <config-group name="chm">
+      <config-value name="outputfile">MotionDesigner-Reference-Help.chm</config-value>
+      <config-value name="skin">..\SKINS-8\CHM-SKINS\HM8-Help-CHM-MD16-A.hmskin</config-value>
+      <config-value name="deletetemp">1</config-value>
+      <config-value name="usesecondarywindows">0</config-value>
+      <config-value name="defaultext">.htm</config-value>
+      <config-value name="cssfile">default.css</config-value>
+      <config-value name="fontsizeencoding">0</config-value>
+      <config-value name="fontsizebase">100</config-value>
+      <config-value name="exportmarkersastext">1</config-value>
+      <config-value name="exportstylenames">1</config-value>
+      <config-value name="pixelasem">1</config-value>
+      <config-value name="underscoreexcludesearch">0</config-value>
+      <config-value name="replacecharhyphen">1</config-value>
+      <config-value name="animations">1</config-value>
+      <config-value name="imagelightbox">1</config-value>
+      <config-value name="imagehint">1</config-value>
+      <config-value name="highlighthotspots">1</config-value>
+      <config-value name="svgtopng">1</config-value>
+      <config-value name="embedfilesext">*.pdf, *.txt, *.gif, *.mp4</config-value>
+      <config-value name="imageconversion">1</config-value>
+      <config-value name="jpgquality">90</config-value>
+      <config-value name="htmlpopup">3</config-value>
+      <config-group name="htmlpopupjavaoptions">
+        <config-value name="borderwidth">2</config-value>
+        <config-value name="padding">2</config-value>
+        <config-value name="bordercolor">#000000</config-value>
+        <config-value name="bgcolor">#008000</config-value>
+        <config-value name="shadow">1</config-value>
+        <config-value name="roundedborders">1</config-value>
+      </config-group>
+    </config-group>
+    <config-group name="html">
+      <config-value name="outputfile">..\MT-PUBLISH\index.htm</config-value>
+      <config-value name="skin">..\HELP-MASTER-MERGE\WEBHELP\WebHelp_FreshLimeSoda-1-wideTOC-translate-3-Maths.hmskin</config-value>
+      <config-value name="hasindex">1</config-value>
+      <config-value name="hassearch">1</config-value>
+      <config-value name="contentnumbers">0</config-value>
+      <config-value name="contentnumberstyle">1.1.1.1.1.1</config-value>
+      <config-value name="contentlazysync">0</config-value>
+      <config-value name="contentsingleclick">1</config-value>
+      <config-value name="contentautocollapse">1</config-value>
+      <config-value name="contentexpand">0</config-value>
+      <config-value name="forcetocsync">1</config-value>
+      <config-value name="contentindent">26</config-value>
+      <config-value name="defaulticons">1</config-value>
+      <config-value name="googleanalytics">UA-54060772-1</config-value>
+      <config-value name="defaultext">.htm</config-value>
+      <config-value name="cssfile">default.css</config-value>
+      <config-value name="fontsizeencoding">1</config-value>
+      <config-value name="fontsizebase">100</config-value>
+      <config-value name="exportmarkersastext">1</config-value>
+      <config-value name="exportstylenames">1</config-value>
+      <config-value name="exportutf8bom">1</config-value>
+      <config-value name="animations">1</config-value>
+      <config-value name="imagelightbox">1</config-value>
+      <config-value name="synctimestamp">1</config-value>
+      <config-value name="syncarchivebit">0</config-value>
+      <config-value name="imagehint">1</config-value>
+      <config-value name="imageconversion">1</config-value>
+      <config-value name="jpgquality">90</config-value>
+      <config-value name="htmlpopup">3</config-value>
+      <config-group name="htmlpopupjavaoptions">
+        <config-value name="borderwidth">0</config-value>
+        <config-value name="padding">0</config-value>
+        <config-value name="bordercolor">#000000</config-value>
+        <config-value name="bgcolor">#008000</config-value>
+        <config-value name="shadow">1</config-value>
+        <config-value name="roundedborders">1</config-value>
+      </config-group>
+      <config-value name="underscoreexcludesearch">0</config-value>
+      <config-value name="navigationstyle">4</config-value>
+      <config-value name="frameeditor">1</config-value>
+      <config-value name="layoutthreeframe">0</config-value>
+      <config-value name="contentwidth">30</config-value>
+      <config-value name="headframeheight">100</config-value>
+      <config-value name="contentborder">1</config-value>
+      <config-value name="headframescroll">0</config-value>
+      <config-value name="iframebackcolor">#FFFFFF</config-value>
+      <config-value name="iframenavwidth">250</config-value>
+      <config-value name="iframemargins">5</config-value>
+      <config-value name="iframeborderwidth">1</config-value>
+      <config-value name="iframebordercolor">#FFFFFF</config-value>
+      <config-value name="iframeheaderheight">60</config-value>
+      <config-value name="iframeheaderhtml" translate="true"><![CDATA[<p><%TITLE%></p>]]></config-value>
+      <config-value name="frametemplate" translate="true"><![CDATA[<!DOCTYPE html>
+<html>
+<head>
+  <title><%TITLE%></title>
+  <meta http-equiv="Content-Type" content="text/html; charset=<%DOCCHARSET%>">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <script type="text/javascript" src="jquery.js"></script>
+  <script type="text/javascript" src="helpman_settings.js"></script>
+  <script type="text/javascript" src="helpman_navigation.js"></script>
+  <script type="text/javascript" src="<%CONTEXTID_JS_FILE%>"></script>
+
+  <link type="text/css" href="<%STYLESHEET%>" rel="stylesheet" />
+
+  <style type="text/css">
+    html,body { margin:0;padding:0;height:100%;overflow:hidden;
+    			       background:#FFFFFF;
+    }
+
+    #hmheadbox {
+      position: absolute;
+      left: 5px;
+      right: 5px;
+      top: 5px;
+      height: 60px;
+      background: #FFFFFF;
+      border: 1px solid #FFFFFF;
+      }
+
+    #hmheadbox p {
+      font-size: 160%;
+      font-weight: bold;
+      margin-top: 16px;
+      margin-left: 8px;
+     }
+
+    #hmnavbox {
+      position: absolute;
+      left: 5px;
+      width: 250px;
+      min-width: 50px;
+      top: 70px;
+      bottom: 5px;
+      border: 1px solid #FFFFFF;
+      }
+
+    #hmcontentbox {
+      position: absolute;
+      top: 70px;
+      right: 5px;
+      bottom: 5px;
+      left: 260px;
+      border: 1px solid #FFFFFF;
+      }
+
+    iframe {
+      position: absolute;left:0;top:0;width:100%;height:100%;border:none;
+      }
+  </style>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if (!hmSupportsAbspos()) {
+      	$(window).bind("resize", function() {
+      	  hmNoAbsposResize($("#hmheadbox"), true, false);
+      	  hmNoAbsposResize($("#hmnavbox"), false, true);
+      	  hmNoAbsposResize($("#hmcontentbox"), true, true);
+	    });
+	    $(window).trigger("resize");
+	  }
+      hmCreateVSplitter($("#hmnavbox"),$("#hmcontentbox"));
+    });
+  </script>
+
+</head>
+<body>
+<div id="hmheadbox">
+<p><%TITLE%></p></div>
+<div id="hmnavbox">
+  <iframe name="hmnavigation" id="hmnavigation" src="<%HREF_CONTENT_PAGE%>" seamless="seamless" title="Navigation Pane" frameborder="0"></iframe>
+</div>
+
+<div id="hmcontentbox" >
+  <script type="text/javascript">
+    var defaulttopic="<%HREF_DEFAULT_PAGE%>";
+    var query = window.location.search.substring(1), hash = window.location.hash, xssTest = /javascript|:|&#58;|&#x3a;|%3a|3a;|58;|\//i;
+    if (query !== "") query = (xssTest.test(query)) ? "" : query;
+    if (hash !== "") hash = (xssTest.test(hash)) ? "" : hash;
+    if (query != "") {
+      if (typeof(hmGetContextId) != "undefined") {
+        var tmpCntx = hmGetContextId(query);
+        if (tmpCntx != "") {
+          defaulttopic = tmpCntx;
+        } else {
+          defaulttopic = query + hash;
+        }
+       }
+    }
+    document.write('<iframe name="hmcontent" id="hmcontent" src="'+defaulttopic+'" seamless="seamless" title="Content Page" frameborder="0"></iframe>');
+  </script>
+  <noscript>
+    <iframe name="hmcontent" id="hmcontent" src="<%HREF_DEFAULT_PAGE%>" seamless="seamless" title="Content Page" frameborder="0"></iframe>
+  </noscript>
+</div>
+</body>
+</html>]]></config-value>
+      <config-value name="topiceditor">1</config-value>
+      <config-value name="topicsimpleheadercolor">#E7CEFF</config-value>
+      <config-value name="topicsimpletextcolor">#FFFFFF</config-value>
+      <config-value name="topicsimplebuttons">1</config-value>
+      <config-group name="TOPICSIMPLEBUTTON1">
+        <config-value name="CAPTION" translate="true">Top</config-value>
+      </config-group>
+      <config-group name="TOPICSIMPLEBUTTON2">
+        <config-value name="CAPTION" translate="true">Previous</config-value>
+      </config-group>
+      <config-group name="TOPICSIMPLEBUTTON3">
+        <config-value name="CAPTION" translate="true">Next</config-value>
+      </config-group>
+      <config-group name="TOPICTEMPLATES">
+        <config-value name="Default" translate="true"><![CDATA[<%DOCTYPE%>
+<html>
+<head>
+   <title><%TOPIC_TITLE%></title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="<%TOPIC_KEYWORDS%>" />
+   <meta http-equiv="Content-Type" content="text/html; charset=<%DOCCHARSET%>" />
+   <IF_CHM><meta http-equiv="X-UA-Compatible" content="IE=8" /></IF_CHM>
+   <IF_HTML><meta http-equiv="X-UA-Compatible" content="IE=edge" /></IF_HTML>
+   <link type="text/css" href="<%STYLESHEET%>" rel="stylesheet" />
+   <style type="text/css">
+     body { margin: 0px; background: #FFFFFF; }
+   </style>
+</head>
+<body>
+
+<IF_TOPIC_HEADER>
+<table style="width:100%; border:none; border-spacing:0px; padding:5px; background:#E7CEFF">
+  <tr style="vertical-align:middle">
+    <td style="text-align:left">
+      <%TOPIC_HEADER%>
+    </td>
+    <td style="text-align:right">
+     <a href="<%HREF_DEFAULT_PAGE%>">Top</a>&nbsp;
+     <IF_PREVIOUS_PAGE><a href="<%HREF_PREVIOUS_PAGE%>">Previous</a>&nbsp;</IF_PREVIOUS_PAGE>
+     <IF_NEXT_PAGE><a href="<%HREF_NEXT_PAGE%>">Next</a></IF_NEXT_PAGE>
+    </td>
+  </tr>
+</table>
+</IF_TOPIC_HEADER>
+
+<!-- Placeholder for topic body. -->
+<table style="width:100%;border:none;border-spacing:0px"><tr style="vertical-align:top"><td style="text-align:left;padding:5px">
+<%TOPIC_TEXT%>
+</td></tr></table>
+
+</body>
+</html>]]></config-value>
+      </config-group>
+      <config-value name="sitemap">http://mechdesigner.support</config-value>
+    </config-group>
+    <config-group name="liststyles">
+      <config-value name="number6">LEVELS=1;L0.ListType=3;L0.FormatString=STEP   %0:s.;L0.MarkerAlignment=0;L0.StartFrom=1;</config-value>
+      <config-value name="outline6">LEVELS=2;L0.ListType=5;L0.FormatString=%0:s.;L0.MarkerAlignment=0;L0.StartFrom=1;L1.ListType=0;L1.Font.Name=Courier New;L1.Font.Charset=0;L1.FormatString=o;L1.MarkerAlignment=0;L1.StartFrom=1;</config-value>
+      <config-value name="bullet0">LEVELS=1;L0.ListType=0;L0.Font.Name=Wingdings;L0.Font.Charset=2;L0.FormatString=ý;L0.MarkerAlignment=0;L0.StartFrom=1;</config-value>
+      <config-value name="outline2">LEVELS=9;L0.ListType=0;L0.Font.Name=Wingdings;L0.Font.Charset=2;L0.FormatString=þ;L0.MarkerAlignment=0;L0.StartFrom=1;L1.ListType=0;L1.Font.Name=Courier New;L1.Font.Charset=0;L1.FormatString=o;L1.MarkerAlignment=0;L1.StartFrom=1;L2.ListType=0;L2.Font.Name=Wingdings;L2.Font.Charset=2;L2.FormatString=§;L2.MarkerAlignment=0;L2.StartFrom=1;L3.ListType=0;L3.Font.Name=Wingdings;L3.Font.Charset=2;L3.FormatString=v;L3.MarkerAlignment=0;L3.StartFrom=1;L4.ListType=0;L4.Font.Name=Wingdings;L4.Font.Charset=2;L4.FormatString=Ø;L4.MarkerAlignment=0;L4.StartFrom=1;L5.ListType=0;L5.Font.Name=Symbol;L5.Font.Charset=2;L5.FormatString=·;L5.MarkerAlignment=0;L5.StartFrom=1;L6.ListType=0;L6.Font.Name=Courier New;L6.Font.Charset=0;L6.FormatString=o;L6.MarkerAlignment=0;L6.StartFrom=1;L7.ListType=0;L7.Font.Name=Wingdings;L7.Font.Charset=2;L7.FormatString=§;L7.MarkerAlignment=0;L7.StartFrom=1;L8.ListType=0;L8.Font.Name=Wingdings;L8.Font.Charset=2;L8.FormatString=v;L8.MarkerAlignment=0;L8.StartFrom=1;</config-value>
+    </config-group>
+    <config-group name="pdf">
+      <config-value name="outputfile">MotionDesigner-Reference-Help.pdf</config-value>
+      <config-value name="template">..\SKINS-8\Standard_manualHM8_A4-B.mnl</config-value>
+      <config-value name="style">0</config-value>
+      <config-value name="createoutline">1</config-value>
+      <config-value name="outlinesnumbered">1</config-value>
+      <config-value name="createhotspots">1</config-value>
+      <config-value name="insertseealso">1</config-value>
+      <config-value name="linkcolor">13056</config-value>
+      <config-value name="ignoreblank">0</config-value>
+      <config-value name="compression">1</config-value>
+      <config-value name="jpegquality">0</config-value>
+      <config-value name="openmode">1</config-value>
+      <config-value name="zoommode">0</config-value>
+      <config-value name="userprint">1</config-value>
+      <config-value name="usercopy">0</config-value>
+      <config-value name="userchange">0</config-value>
+      <config-value name="encrypt128bit">0</config-value>
+      <config-value name="title" translate="true">&lt;%TITLE%&gt;</config-value>
+      <config-value name="keywords" translate="true">Motion Design Software</config-value>
+      <config-value name="author" translate="true">Dr Kevn J Stamp</config-value>
+      <config-value name="subject" translate="true">MechDesigner Reference Help</config-value>
+      <config-value name="highlighthotspots">0</config-value>
+      <config-value name="exportcomments">0</config-value>
+      <config-value name="exportcommentsdate">36526</config-value>
+      <config-value name="embedfilesext">*.pdf, *.doc, *.xls, *.gif, *.mp4</config-value>
+      <config-value name="insertseealsostyle">2</config-value>
+    </config-group>
+    <config-group name="rtf">
+      <config-value name="outputfile">MotionDesigner-Help_manual.docx</config-value>
+    </config-group>
+    <config-group name="plugins">
+      <config-value name="deepl">{&quot;sourcelang&quot;:&quot;EN&quot;,&quot;destlang&quot;:&quot;IT&quot;,&quot;glossarycount&quot;:&quot;0&quot;}</config-value>
+    </config-group>
+    <variables>
+      <variable id="LANGUAGE" type="text" translate="true">USA English: For Example: Color, Dialog, Optimization.</variable>
+      <variable id="TOPIC-ID" type="html" translate="true">Enter value</variable>
+    </variables>
+    <helpcontext-numbers>
+      <helpcontext-number href="MT-Blend-Point-Editor" value="3600"/>
+      <helpcontext-number href="MT-BlendPointEditor-Yaxis-Value" value="2390"/>
+      <helpcontext-number href="MT-BlendPoint-X-axis-Value" value="1920"/>
+      <helpcontext-number href="MT-DynamicConsidertions" value="2990"/>
+      <helpcontext-number href="MT-Edit-Active-Motion-Settings" value="3700"/>
+      <helpcontext-number href="MT-Edit-Active-Motion-Settings#Advanced" value="3824"/>
+      <helpcontext-number href="MT-Edit-Active-Motion-Settings#DataFormat" value="3825"/>
+      <helpcontext-number href="MT-Edit-Active-Motion-Settings#Motion" value="3823"/>
+      <helpcontext-number href="MT-Edit-Active-Motion-Settings#MotionAccessibility" value="3826"/>
+      <helpcontext-number href="MT-Edit-Auto-Update" value="3840"/>
+      <helpcontext-number href="MT-Edit-Redo" value="3180"/>
+      <helpcontext-number href="MT-Edit-Undo" value="3170"/>
+      <helpcontext-number href="MT-File-AddMotion" value="1050"/>
+      <helpcontext-number href="MT-File-DeleteActiveMotion" value="3880"/>
+      <helpcontext-number href="MT-File-OpenAppend" value="1080"/>
+      <helpcontext-number href="MT-File-Print" value="3360"/>
+      <helpcontext-number href="MT-File-PrintAll" value="3380"/>
+      <helpcontext-number href="MT-File-SaveActiveMotion" value="3860"/>
+      <helpcontext-number href="MT-File-SaveActiveMotion#FileMotionSaveJetta" value="3861"/>
+      <helpcontext-number href="MT-File-SaveAll" value="3410"/>
+      <helpcontext-number href="MT-File-SaveAllAs" value="1200"/>
+      <helpcontext-number href="MT-HowtoDesignaMotion" value="1010"/>
+      <helpcontext-number href="MT-ImproveMotionDesign" value="2680"/>
+      <helpcontext-number href="MT-List-Segment-Type" value="11"/>
+      <helpcontext-number href="MT-Motion-Cam-Law-Constant-Acceleration" value="2070"/>
+      <helpcontext-number href="MT-Motion-Cam-Law-Constant-Crank-Velocity" value="2010"/>
+      <helpcontext-number href="MT-Motion-Cam-Law-ConstantVelocity" value="1630"/>
+      <helpcontext-number href="MT-Motion-Cam-Law-Cubic" value="2150"/>
+      <helpcontext-number href="MT-Motion-Cam-Law-Cycloidal" value="2080"/>
+      <helpcontext-number href="MT-Motion-Cam-Law-Dwell" value="1700"/>
+      <helpcontext-number href="MT-Motion-Cam-Lawe-Sine-Squared" value="2170"/>
+      <helpcontext-number href="MT-Motion-Cam-Law-Flexible-Polynomial" value="2130"/>
+      <helpcontext-number href="MT-Motion-Cam-Law-Modified-Sinusoid" value="2100"/>
+      <helpcontext-number href="MT-Motion-Cam-Law-Modified-Trapezoid" value="2090"/>
+      <helpcontext-number href="MT-Motion-Cam-Law-Polynomial345" value="2690"/>
+      <helpcontext-number href="MT-Motion-Cam-Law-Polynomial4567" value="2730"/>
+      <helpcontext-number href="MT-Motion-Cam-Law-Quadratic" value="2280"/>
+      <helpcontext-number href="MT-Motion-Cam-Law-Ramp" value="2140"/>
+      <helpcontext-number href="MT-Motion-Cam-Laws" value="2000"/>
+      <helpcontext-number href="MT-Motion-Cam-Laws#Standard" value="2121"/>
+      <helpcontext-number href="MT-Motion-Cam-Law-Simple-Harmonic-Motion" value="2200"/>
+      <helpcontext-number href="MT-Motion-Cam-Law-Sine-Constant-Cosine-CV" value="2190"/>
+      <helpcontext-number href="MT-Motion-Cam-Law-Sinusoidal" value="2120"/>
+      <helpcontext-number href="MT-Motion-Cam-Law-Throw" value="2160"/>
+      <helpcontext-number href="MT-Motion-Cam-Law-Triple-Harmonic" value="2110"/>
+      <helpcontext-number href="MT-Motion-Cam-Law-Y-Inverse-Sinusoid" value="2030"/>
+      <helpcontext-number href="MT-Motion-Cam-Law-Z-Raw-Data" value="2020"/>
+      <helpcontext-number href="MT-MotionDesigner-Help" value="1009"/>
+      <helpcontext-number href="MT-MotionDesigner-Help#MT-MOTIONEVALUATOR" value="123456"/>
+      <helpcontext-number href="MT-Motion-Law-Selector" value="2580"/>
+      <helpcontext-number href="MT-Motion-PositionList" value="2180"/>
+      <helpcontext-number href="MT-Motion-Terminology" value="10"/>
+      <helpcontext-number href="MT-Motion-Width" value="3800"/>
+      <helpcontext-number href="MT-Open-DataTransferTable" value="1560"/>
+      <helpcontext-number href="MT-SegmentBlending" value="1180"/>
+      <helpcontext-number href="MT-Segment-Editor" value="3820"/>
+      <helpcontext-number href="MT-SegmentEditor-Motion-Law" value="1555"/>
+      <helpcontext-number href="MT-SegmentEditor-Segment-Parameters" value="1840"/>
+      <helpcontext-number href="MT-SegmentEditor-Segment-Range" value="2350"/>
+      <helpcontext-number href="MT-SegmentEditor-Segment-Width" value="2124"/>
+      <helpcontext-number href="MT-SegmentEditor-Yaxis-Control-Buttons" value="2122"/>
+      <helpcontext-number href="MT-SegmentEditor-Yaxis-Control-Buttons#SEControlButtons" value="2123"/>
+      <helpcontext-number href="MT-SegType-AccelerationList" value="2250"/>
+      <helpcontext-number href="MT-Tools-AppendSegment" value="1960"/>
+      <helpcontext-number href="MT-Tools-DataTransfer-ClearTable" value="1350"/>
+      <helpcontext-number href="MT-Tools-DataTransfer-CopyAllDatatoClipboards" value="1550"/>
+      <helpcontext-number href="MT-Tools-DataTransfer-CopySelectedData" value="1280"/>
+      <helpcontext-number href="MT-Tools-DataTransfer-CutData" value="1340"/>
+      <helpcontext-number href="MT-Tools-DataTransfer-DeleteDAta" value="2240"/>
+      <helpcontext-number href="MT-Tools-DataTransfer-GetListData" value="2450"/>
+      <helpcontext-number href="MT-Tools-DataTransfer-GetMotionData" value="1520"/>
+      <helpcontext-number href="MT-Tools-DataTransfer-GetSegmentData" value="2470"/>
+      <helpcontext-number href="MT-Tools-DataTransfer-LoadTable" value="2220"/>
+      <helpcontext-number href="MT-Tools-DataTransfer-OverlayTrace" value="2870"/>
+      <helpcontext-number href="MT-Tools-DataTransfer-PasteTable" value="1330"/>
+      <helpcontext-number href="MT-Tools-DataTransfer-PutListData" value="2400"/>
+      <helpcontext-number href="MT-Tools-DataTransfer-SaveTable" value="2850"/>
+      <helpcontext-number href="MT-Tools-DataTransferTable" value="3420"/>
+      <helpcontext-number href="MT-Tools-DataTransfer-Table-FirstLast" value="2225"/>
+      <helpcontext-number href="MT-Tools-DataTransferTable-Toolbar" value="2620"/>
+      <helpcontext-number href="MT-Tools-DeleteSegment" value="2060"/>
+      <helpcontext-number href="MT-Tools-InsertBP-At" value="1760"/>
+      <helpcontext-number href="MT-Tools-InsertBP-Mouse" value="1660"/>
+      <helpcontext-number href="MT-Tools-InsertSegment" value="1860"/>
+      <helpcontext-number href="MT-Tools-SweepDisplay" value="3400"/>
+      <helpcontext-number href="MT-Understanding-Graphs" value="1030"/>
+      <helpcontext-number href="MT-View-PanLeft" value="3940"/>
+      <helpcontext-number href="MT-View-PanRight" value="3920"/>
+      <helpcontext-number href="MT-View-ShowAcceleration" value="2960"/>
+      <helpcontext-number href="MT-View-ShowJerk" value="3060"/>
+      <helpcontext-number href="MT-View-ShowPosition" value="2760"/>
+      <helpcontext-number href="MT-View-ShowVelocity" value="2860"/>
+      <helpcontext-number href="MT-View-ZoomExtents" value="2660"/>
+      <helpcontext-number href="MT-View-ZoomIn" value="3900"/>
+      <helpcontext-number href="MT-View-ZoomOut" value="2460"/>
+    </helpcontext-numbers>
+  </config>
+  <xi:include parse="xml" href="Maps/table_of_contents.xml"/>
+  <project-files>
+    <file href="Topics/*.xml" build="ALL" filetype="topic">
+      <file-mod href="MT-Understanding-Graphs.xml"/>
+      <file-mod href="MT-How_to_Import_your_Own_Data.xml"/>
+      <file-mod href="MT-Motion-Law-Equations.xml"/>
+    </file>
+    <file href="Topics/MotionPopups/*.xml" build="ALL" filetype="topic">
+      <file-mod href="MT-Blend-Point-Can_Specify-Start.xml"/>
+      <file-mod href="MT-XAxisCountsAtStart.xml"/>
+      <file-mod href="MT-XAxisCountsPerCycle.xml"/>
+      <file-mod href="MT-XAxiscountsperunit.xml"/>
+      <file-mod href="MT-XAxisUnitsatstart.xml"/>
+      <file-mod href="MT-YAxisUnitsAtStart.xml"/>
+      <file-mod href="MT-YAxisCountsPerUnit.xml"/>
+      <file-mod href="MT-YAxisCountsAtStart.xml"/>
+      <file-mod href="MT-Y-Values.xml"/>
+      <file-mod href="MT-Y-Units-Counts.xml"/>
+      <file-mod href="MT-Segment-Editor-Definition.xml"/>
+      <file-mod href="MT-SecondsPerCycle.xml"/>
+      <file-mod href="MT-Motion-Velocity-Acceleration-Coefficients.xml"/>
+      <file-mod href="MT-Motion-Name-tab.xml"/>
+      <file-mod href="MT-Motion-FB.xml"/>
+      <file-mod href="MT-MechDesigner-ini-file.xml"/>
+      <file-mod href="MT-List-separator.xml"/>
+      <file-mod href="MT-Device-Oscillator.xml"/>
+      <file-mod href="MT-Active-Motion.xml"/>
+    </file>
+    <file href="Baggage/*.*" build="ALL" filetype="baggage"/>
+  </project-files>
+</helpproject>

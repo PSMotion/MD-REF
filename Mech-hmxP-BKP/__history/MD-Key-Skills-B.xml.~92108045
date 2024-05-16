@@ -1,0 +1,288 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" status="Under Construction" modified="2022-03-21T14:28:08.917Z" lasteditedby="Adam" version="2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title>Key Skills: </title>
+  <body>
+    <header>
+      <para styleclass="Heading1">Summary of &apos;How to Build kinematic-chains&apos;.</para>
+    </header>
+    <para styleclass="Heading3" style="text-align:left; text-indent:0px; margin-top:0px; margin-right:0px; margin-bottom:0px; margin-left:0px; line-height:1.00; background-color:transparent; white-space:normal; page-break-inside:auto; page-break-after:auto; border:none; tabstops:none;"><text style="font-family:Arial; font-size:10pt; font-weight:normal; font-style:normal; text-decoration:none; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">THE BASIC SKILLS YOU WILL NEED TO USE MECHDESIGNER</text></para>
+    <para styleclass="Body Text"><table styleclass="Default" rowcount="29" colcount="3">
+      <tr style="vertical-align:top">
+        <td colspan="3">
+          <para styleclass="Heading HowTo_atoc_" style="text-align:left; text-indent:0px; margin-top:0px; margin-right:0px; margin-bottom:0px; margin-left:0px; line-height:1.00; background-color:transparent; white-space:normal; page-break-inside:auto; page-break-after:auto; border:none; tabstops:none;"><text styleclass="Heading4 HowTo_atoc_">Build a Four-bar Mechanism</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td colspan="3">
+          <para styleclass="Body Text2-Note">When you start <text style="font-weight:bold; font-style:italic;">MechDesigner</text>, you are in the <text style="font-style:italic;">Model-Editor (Machine Frame)</text></para>
+          <para styleclass="Body Text2-Note"><toggle type="inline" print-expanded="true" help-expanded="false" defaultstyle="true" style="text-decoration:underline;"><caption><![CDATA[Kinematic-chains]]></caption><hidden-text styleclass="T_Toggletext"><![CDATA[Kinematic-chains are made from Parts and Joints. At least one Part is joined to the Machine Frame (BasePart).]]></hidden-text></toggle> are built in <text style="font-style:italic;">Mechanism-Editors </text><text style="font-style:normal;">NOT the</text><text style="font-style:italic;"> Model-Editor. </text><text style="font-style:normal;">Therefore, you </text><text style="font-style:normal; text-decoration:underline;">must</text><text style="font-style:normal;"> add a minimum of one </text><text style="font-style:italic;">Mechanism-Editor.</text></para>
+          <para styleclass="Body Text2-Note"><text style="font-style:normal;">You</text><text style="font-style:italic;"> Add Mechanisms Editors</text> to <text style="font-style:italic;">Planes</text></para>
+          <para styleclass="Body Text2-Note">(Mechanisms = kinematic-chains)</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td colspan="3">
+          <para styleclass="Heading HowTo_atoc_" style="text-align:left; text-indent:0px; margin-top:0px; margin-right:0px; margin-bottom:0px; margin-left:0px; line-height:1.00; background-color:transparent; white-space:normal; page-break-inside:auto; page-break-after:auto; border:none; tabstops:none;"><text style="font-family:Arial; font-size:10pt; font-weight:bold; font-style:normal; text-decoration:none; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">KEY-SKILL 1 : Add a Mechanism to a Plane</text></para>
+          <para styleclass="Body Text2-Note"><text style="font-weight:bold; text-decoration:underline;">In the </text><text style="font-weight:bold; font-style:italic; text-decoration:underline;">Model-Editor</text></para>
+          <list id="0" type="ol" listtype="decimal" formatstring="%0:s." format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted - compressed" style="font-family:'Segoe UI'; font-size:10pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo Bulleted - compressed"><text style="font-weight:bold;">Select the </text><toggle type="inline" print-expanded="true" help-expanded="false" defaultstyle="true" style="font-weight:bold;"><caption><![CDATA[Model menu]]></caption><hidden-text styleclass="T_Toggletext"><![CDATA[Model Menu: in the menu bar; or see the 'Local Toolbar'. The Local Toolbar is to the left of the Graphic Area]]></hidden-text></toggle></li>
+            <li styleclass="HowTo Bulleted - compressed"><text style="font-weight:bold;">Click </text><toggle type="inline" print-expanded="true" help-expanded="false" defaultstyle="true" style="font-weight:bold;"><caption><![CDATA[Add Mechanism]]></caption><hidden-text styleclass="T_Toggletext"><![CDATA[Add Mechanism: ['Add' is a command]. Select a Plane to add a Mechansim as a new tab and graphic area. You use the Mechanism Editor to build kinematic-chains.]]></hidden-text></toggle></li>
+          </list>
+          <para styleclass="Body Text2-Note"><text style="font-weight:bold;">The selection in the </text><toggle type="inline" print-expanded="true" help-expanded="false" defaultstyle="true" style="font-weight:bold;"><caption><![CDATA[Command Manager]]></caption><hidden-text styleclass="T_Toggletext"><![CDATA[Command Manager: In the Project Explorer displays hints and a short dialog where you must select elements to complete a command.]]></hidden-text></toggle><text style="font-weight:bold;"> must select a Plane</text></para>
+          <list id="0" type="ol" listtype="decimal" formatstring="%0:s." format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted - compressed" style="font-family:'Segoe UI'; font-size:10pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo Bulleted - compressed"><text style="font-weight:bold;">Click a </text><toggle type="inline" print-expanded="true" help-expanded="false" defaultstyle="true" style="font-weight:bold;"><caption><![CDATA[Plane]]></caption><hidden-text styleclass="T_Toggletext"><![CDATA[Planes: Mechanism Editors are linked to a Plane, called the Mechanism Plane.]]></hidden-text></toggle><text style="font-weight:bold;"> in the </text><toggle type="inline" print-expanded="true" help-expanded="false" defaultstyle="true" style="font-weight:bold;"><caption><![CDATA[graphic area]]></caption><hidden-text styleclass="T_Toggletext"><![CDATA[Graphic Area: the area you add and build your mechanisms.]]></hidden-text></toggle><text style="font-weight:bold;"> or the </text><toggle type="inline" print-expanded="true" help-expanded="false" defaultstyle="true" style="font-weight:bold;"><caption><![CDATA[Assembly Tree]]></caption><hidden-text styleclass="T_Toggletext"><![CDATA[Assembly Tree: In the Project Explorer (left of graphic area), shows elements in the model and mechansims.]]></hidden-text></toggle></li>
+            <li styleclass="HowTo Bulleted - compressed"><text style="font-weight:bold;">Click OK in the Command-Manager</text></li>
+          </list>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td colspan="3">
+          <para styleclass="Body Text2-Note">You jump to the <text style="text-decoration:underline;">Mechanism-Editor</text>. </para>
+          <para styleclass="Body Text2-Note">You can see the <toggle type="inline" print-expanded="true" help-expanded="false" defaultstyle="true"><caption><![CDATA[BasePart]]></caption><hidden-text styleclass="T_Toggletext"><![CDATA[BasePart: the fixed 'frame' in every Mechanism Editor.]]></hidden-text></toggle>. It has a <text style="font-weight:bold; color:#008000;">Green</text> rectangular <toggle type="inline" print-expanded="true" help-expanded="false" defaultstyle="true"><caption><![CDATA['Part-Outline']]></caption><hidden-text styleclass="T_Toggletext"><![CDATA[Part Outline: a Symbol - rectangular around the BasePart, Oval around an Added-Part. Double-click it to edit the Part.]]></hidden-text></toggle>. </para>
+          <para styleclass="Body Text2-Note">The Base-Part = The Mechanism/Machine Frame</para>
+          <para styleclass="Body Text2-Note">You can now build kinematic-chains. That is, you can build mechanisms. Kinematic-chains and Mechanism are a different word for the same thing. Also, called Linkages.</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td colspan="3">
+          <para styleclass="Body Text"><text style="text-decoration:underline;">About Mechanism-Editors</text></para>
+          <para styleclass="Body Text2-Note"><text style="font-style:normal;">Add </text><toggle type="inline" print-expanded="true" help-expanded="false" defaultstyle="true" style="font-style:italic;"><caption><![CDATA[Parts]]></caption><hidden-text styleclass="T_Toggletext"><![CDATA[Parts: Moving elements in a every mechanism. The fundamental elements in every mechanism.]]></hidden-text></toggle><text style="font-style:normal;"> and </text><toggle type="inline" print-expanded="true" help-expanded="false" defaultstyle="true" style="font-style:italic;"><caption><![CDATA[Joints]]></caption><hidden-text styleclass="T_Toggletext"><![CDATA[Joints: they constraint Parts to move relative to each other in a particular way.]]></hidden-text></toggle><text style="font-style:normal;"> to </text><text style="font-style:normal; text-decoration:underline;">build</text><text style="font-style:normal;"> kinematic-chains.</text></para>
+          <para styleclass="Body Text2-Note"><text style="font-style:normal;">Add and connect </text><toggle type="inline" print-expanded="true" help-expanded="false" defaultstyle="true" style="font-style:italic;"><caption><![CDATA[Function-Blocks]]></caption><hidden-text styleclass="T_Toggletext"><![CDATA[Function-Blocks: The are used to add and process motion values that you use to move Parts in a mechanism.]]></hidden-text></toggle><text style="font-style:normal;"> to </text><text style="font-style:normal; text-decoration:underline;">move</text><text style="font-style:normal;"> the kinematic-chains (more on </text><text style="font-style:italic;">Function-Blocks</text><text style="font-style:normal;"> later).</text></para>
+          <para styleclass="Body Text2-Note">At least one Part <text style="font-weight:bold; text-decoration:underline;">must</text> be joined to the Base-Part (mechanism frame).</para>
+          <para styleclass="Body Text2-Note">You <text style="font-weight:bold; text-decoration:underline;">must</text> add <toggle type="inline" print-expanded="true" help-expanded="false" defaultstyle="true"><caption><![CDATA[geometry]]></caption><hidden-text styleclass="T_Toggletext"><![CDATA[Geometry: general term for sketch-elements, constraints and dimensions.]]></hidden-text></toggle> to the Base-Part to define where you want to put every joint that is joined to the Mechanism Frame.</para>
+          <para styleclass="Body Text2-Note">To add geometry to any Part, you <text style="font-weight:normal;">must</text> <text style="font-weight:bold;">edit</text> it in the <toggle type="inline" print-expanded="true" help-expanded="false" defaultstyle="true"><caption><![CDATA[Part Editor]]></caption><hidden-text styleclass="T_Toggletext"><![CDATA[Part Editor: one of three Part Editors. Use the Part Editor to add geometry to a Part.]]></hidden-text></toggle></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td colspan="3">
+          <para styleclass="Heading HowTo_atoc_" style="text-align:left; text-indent:0px; margin-top:0px; margin-right:0px; margin-bottom:0px; margin-left:0px; line-height:1.00; background-color:transparent; white-space:normal; page-break-inside:auto; page-break-after:auto; border:none; tabstops:none;"><text style="font-family:Arial; font-size:10pt; font-weight:bold; font-style:normal; text-decoration:none; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">KEY-SKILL 2 : </text><text style="font-family:Arial; font-size:10pt; font-weight:bold; font-style:normal; text-decoration:underline; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">Edit the Base-Part</text><text style="font-family:Arial; font-size:10pt; font-weight:bold; font-style:normal; text-decoration:none; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">: Double-click the rectangular Base-Part rectangular &apos;Part-Outline&apos;</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td colspan="3">
+          <para styleclass="Body Text2-Note">You are now in the <text style="font-style:italic;">Part-Editor. </text><text style="font-style:normal;">You can only edit one Part at one time</text><text style="font-style:italic;">. You can edit any Part. You edit Parts for a number of reasons.</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td colspan="3">
+          <para styleclass="Heading HowTo_atoc_" style="text-align:left; text-indent:0px; margin-top:0px; margin-right:0px; margin-bottom:0px; margin-left:0px; line-height:1.00; background-color:transparent; white-space:normal; page-break-inside:auto; page-break-after:auto; border:none; tabstops:none;"><text style="font-family:Arial; font-size:10pt; font-weight:bold; font-style:normal; text-decoration:none; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">KEY-SKILL 3 : </text><text style="font-family:Arial; font-size:10pt; font-weight:bold; font-style:normal; text-decoration:underline; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">Add a Line</text><text style="font-family:Arial; font-size:10pt; font-weight:bold; font-style:normal; text-decoration:none; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;"> to the Base-Part in the Part-Editor: Select Add Line</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td colspan="3">
+          <para styleclass="Body Text2-Note"><text style="font-style:italic;">Add a Line</text>, using the <toggle type="inline" print-expanded="true" help-expanded="false" defaultstyle="true"><caption><![CDATA[Add Line]]></caption><hidden-text styleclass="T_Toggletext"><![CDATA[Line: one of six sketch-elements. You use your mouse to DRAG sketch-elements. Mouse-down, drag, muse-up.]]></hidden-text></toggle> command - in the <text style="font-style:italic;">Geometry menu</text> or the <text style="font-style:italic;">Geometry Toolbar</text></para>
+          <para styleclass="Body Text2-Note">You can close the Part-Editor immediately, or</para>
+          <para styleclass="Body Text2-Note">Experiment with the Part-Editor. If you want, make the Line <toggle type="inline" print-expanded="true" help-expanded="false" defaultstyle="true"><caption><![CDATA[Horizontal]]></caption><hidden-text styleclass="T_Toggletext"><![CDATA[Horizontal: one of many constraints.]]></hidden-text></toggle>. <toggle type="inline" print-expanded="true" help-expanded="false" defaultstyle="true"><caption><![CDATA[Dimension]]></caption><hidden-text styleclass="T_Toggletext"><![CDATA[Dimension: Use the Add dimension tool for all dimensions.]]></hidden-text></toggle> it using the Part X and Y–axes..</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td colspan="3">
+          <para styleclass="Heading HowTo_atoc_" style="text-align:left; text-indent:0px; margin-top:0px; margin-right:0px; margin-bottom:0px; margin-left:0px; line-height:1.00; background-color:transparent; white-space:normal; page-break-inside:auto; page-break-after:auto; border:none; tabstops:none;"><text style="font-family:Arial; font-size:10pt; font-weight:bold; font-style:normal; text-decoration:none; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">KEY-SKILL 4 : </text><text style="font-family:Arial; font-size:10pt; font-weight:bold; font-style:normal; text-decoration:underline; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">Close the Part-Editor</text><text style="font-family:Arial; font-size:10pt; font-weight:bold; font-style:normal; text-decoration:none; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">: Double-click the X or Y–axis or the Line to </text><text style="font-family:Arial; font-size:10pt; font-weight:bold; font-style:normal; text-decoration:underline; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">Close</text><text style="font-family:Arial; font-size:10pt; font-weight:bold; font-style:normal; text-decoration:none; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;"> the Part-Editor</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td colspan="3">
+          <para styleclass="Body Text2-Note">You are now back in the <text style="font-style:italic;">Mechanism-Editor.</text></para>
+          <para styleclass="Body Text2-Note">You can see the <text style="font-style:italic;">Line</text>. It has a Point at each end of it. It is <text style="font-weight:bold; color:#008000;">Green, </text><text style="font-weight:normal; color:#000000;">like the Rectangular Base-Part-Outline</text><text style="font-weight:bold; color:#008000;">.</text></para>
+          <para styleclass="Body Text2-Note">In the Mechanism-Editor, Geometry colors match the Part-Outline of the Part it is drawn in. The Line is a child to the <text style="font-style:italic;">Base-Part</text> geometry</para>
+          <para styleclass="Body Text2-Note">Part-Outlines are Green or Blue. <text style="font-weight:bold; color:#008000;">Green</text> = fully defined. <text style="font-weight:bold; color:#0000ff;">Blue</text> = not fully defined.</para>
+          <para styleclass="Body Text2-Note"><text style="font-style:italic;">Part Geometry</text> <text style="font-weight:bold; font-style:normal; text-decoration:underline;">cannot</text> be edited in the <text style="font-style:italic;">Mechanism-Editor</text>.</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td colspan="3">
+          <para styleclass="Heading HowTo_atoc_" style="text-align:left; text-indent:0px; margin-top:0px; margin-right:0px; margin-bottom:0px; margin-left:0px; line-height:1.00; background-color:transparent; white-space:normal; page-break-inside:auto; page-break-after:auto; border:none; tabstops:none;"><text style="font-family:Arial; font-size:10pt; font-weight:bold; font-style:normal; text-decoration:none; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">KEY-SKILL 5 : </text><text style="font-family:Arial; font-size:10pt; font-weight:bold; font-style:normal; text-decoration:underline; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">Add Parts</text><text style="font-family:Arial; font-size:10pt; font-weight:bold; font-style:normal; text-decoration:none; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">: Select the Add Part command, drag out three Parts in the graphic-area</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td colspan="3">
+          <para styleclass="Body Text2-Note"><text style="font-weight:bold;">keyboard shortcut to select the Add Part command is the &apos;insert&apos; key </text></para>
+          <para styleclass="Body Text2-Note"><text style="font-weight:bold;">Drag out </text><text style="font-weight:bold; text-decoration:underline;">three</text><text style="font-weight:bold;"> Parts. One Part is 0.5 the length of the Line in the Base-Part, one the same, and one 1.5 times</text></para>
+          <para styleclass="Body Text2-Note"><text style="font-weight:normal;">The </text><text style="font-weight:normal; font-style:italic;">&apos;Add Part&apos;</text><text style="font-weight:normal;"> command is in the </text><text style="font-weight:normal; font-style:italic;">Mechanism Contextual-Toolbar</text><text style="font-weight:normal;"> and the Mechanism menu</text></para>
+          <para styleclass="Body Text2-Note"><text style="font-weight:normal; font-style:italic;">Add Parts</text><text style="font-weight:normal;"> by &apos;dragging&apos; a Line in the </text><text style="font-weight:normal; font-style:italic;">Mechanism-Editor</text><text style="font-weight:normal;">.</text></para>
+          <list id="1" type="ul" listtype="bullet" formatstring="·" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Body Text2-Note" style="font-family:Symbol; font-size:10pt; color:#000000;">
+            <li styleclass="Body Text2-Note"><text style="font-weight:bold;">DO NOT</text><text style="font-weight:normal;"> be concerned with the length of the </text><text style="font-weight:normal; font-style:italic;">Parts.</text></li>
+            <li styleclass="Body Text2-Note"><text style="font-weight:bold;">DO NOT </text><text style="font-weight:normal;">be concerned where you add the </text><text style="font-weight:normal; font-style:italic;">Parts</text><text style="font-weight:normal;">.</text></li>
+            <li styleclass="Body Text2-Note"><text style="font-weight:bold;">DO NOT</text><text style="font-weight:normal;"> start or end your mouse drag with your mouse pointer over a Point or a Line.</text></li>
+          </list>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td colspan="3">
+          <para styleclass="Heading HowTo_atoc_" style="text-align:left; text-indent:0px; margin-top:0px; margin-right:0px; margin-bottom:0px; margin-left:0px; line-height:1.00; background-color:transparent; white-space:normal; page-break-inside:auto; page-break-after:auto; border:none; tabstops:none;"><text style="font-family:Arial; font-size:10pt; font-weight:bold; font-style:normal; text-decoration:none; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">KEY-SKILL 6: </text><text style="font-family:Arial; font-size:10pt; font-weight:bold; font-style:normal; text-decoration:underline; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">Add Pin-Joints</text><text style="font-family:Arial; font-size:10pt; font-weight:bold; font-style:normal; text-decoration:none; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">: Select the Add Pin-Joint command.</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td colspan="3">
+          <para styleclass="Body Text2-Note">The &apos;Add Pin-Joint&apos; command is in the Mechanism Contextual-Toolbar and the Mechanism menu</para>
+          <para styleclass="Body Text2-Note">Add Pin-Joints by selecting a Point in a two different Parts.</para>
+          <para styleclass="Body Text2-Note">Add four Pin-Joints:</para>
+          <list id="2" type="ol" listtype="decimal" formatstring="%0:s." format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Body Text2-Note" style="font-family:'Segoe UI'; font-size:10pt; color:#000000;">
+            <li styleclass="Body Text2-Note">Use a Point at one of the Line in the Base-Part and the end of the short Part</li>
+            <li styleclass="Body Text2-Note">Use the Points at the end of the Parts, twice</li>
+            <li styleclass="Body Text2-Note">Use the Point at the other end of the Line in the Base-Part and the long Part.</li>
+          </list>
+          <para styleclass="Body Text2-Note">The four-bar mechanism is complete but it must be told how and when to move.</para>
+          <para styleclass="Body Text2-Note">The Parts are <text style="font-weight:normal; color:#0000ff;">blue</text>. The four-bar can be dragged if you hover over a Part-Outline and drag.</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td colspan="3">
+          <para styleclass="Heading HowTo_atoc_" style="text-align:left; text-indent:0px; margin-top:0px; margin-right:0px; margin-bottom:0px; margin-left:0px; line-height:1.00; background-color:transparent; white-space:normal; page-break-inside:auto; page-break-after:auto; border:none; tabstops:none;"><text style="font-family:Arial; font-size:10pt; font-weight:bold; font-style:normal; text-decoration:none; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">Key-Skill 7: </text><text style="font-family:Arial; font-size:10pt; font-weight:bold; font-style:normal; text-decoration:underline; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">Add a Motion-Dimension FB</text><text style="font-family:Arial; font-size:10pt; font-weight:bold; font-style:normal; text-decoration:none; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">: select it in the Function-Block Toolbar or menu</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td colspan="3">
+          <para styleclass="Body Text2-Note">When you select this command, the Command-Manager shows it needs three selection.</para>
+          <list id="3" type="ol" listtype="decimal" formatstring="%0:s." format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Body Text2-Note" style="font-family:'Segoe UI'; font-size:10pt; color:#000000;">
+            <li styleclass="Body Text2-Note">Select a Pin-Joint between a Part and the Base-Part</li>
+            <li styleclass="Body Text2-Note">Select the Line in the Base-Part - see key-skill 3</li>
+            <li styleclass="Body Text2-Note">Select the Line along the center of the Part that is also at the Joint</li>
+          </list>
+          <para styleclass="Body Text2-Note">The Parts now are fully defined. Note: they are <text style="font-weight:normal; color:#008000;">green</text>. </para>
+          <para styleclass="Body Text2-Note">They still needs to be told how to move.</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td colspan="3">
+          <para styleclass="Heading HowTo_atoc_" style="text-align:left; text-indent:0px; margin-top:0px; margin-right:0px; margin-bottom:0px; margin-left:0px; line-height:1.00; background-color:transparent; white-space:normal; page-break-inside:auto; page-break-after:auto; border:none; tabstops:none;"><text style="font-family:Arial; font-size:10pt; font-weight:bold; font-style:normal; text-decoration:none; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">Key-Skill 8: </text><text style="font-family:Arial; font-size:10pt; font-weight:bold; font-style:normal; text-decoration:underline; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">Add Function-Blocks to the graphic-area</text><text style="font-family:Arial; font-size:10pt; font-weight:bold; font-style:normal; text-decoration:none; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">: a Linear-Motion Function-Block and the Motion Function-Block</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td colspan="3">
+          <para styleclass="Body Text2-Note"><text style="font-weight:normal; font-style:normal;">These are simple &apos;pick and place&apos; commands.</text></para>
+          <list id="4" type="ol" listtype="decimal" formatstring="%0:s." format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Body Text2-Note" style="font-family:'Segoe UI'; font-size:10pt; color:#000000;">
+            <li styleclass="Body Text2-Note">Select the <text style="font-style:italic;">Linear-Motion Function-Block</text> in the <text style="font-style:italic;">Function-Block Toolbar</text>, then click in the graphic-area.</li>
+            <li styleclass="Body Text2-Note">Select the <text style="font-style:italic;">Motion Function-Block</text> in the <text style="font-style:italic;">Function-Block Toolbar</text>, then click in the graphic-area.</li>
+          </list>
+          <para styleclass="Body Text2-Note">There are now three <text style="font-style:italic;">Function-Blocks</text> in the graphic-area.</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td colspan="3">
+          <para styleclass="Heading HowTo_atoc_" style="text-align:left; text-indent:0px; margin-top:0px; margin-right:0px; margin-bottom:0px; margin-left:0px; line-height:1.00; background-color:transparent; white-space:normal; page-break-inside:auto; page-break-after:auto; border:none; tabstops:none;"><text style="font-family:Arial; font-size:10pt; font-weight:bold; font-style:normal; text-decoration:none; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">Key-Skill 9: </text><text style="font-family:Arial; font-size:10pt; font-weight:bold; font-style:normal; text-decoration:underline; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">Wire Function-Blocks together</text><text style="font-family:Arial; font-size:10pt; font-weight:bold; font-style:normal; text-decoration:none; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">; from output-connector to the input-connector.</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td colspan="3">
+          <list id="5" type="ol" listtype="decimal" formatstring="%0:s." format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Body Text2-Note" style="font-family:'Segoe UI'; font-size:10pt; color:#000000;">
+            <li styleclass="Body Text2-Note">Drag a wire from the <text style="font-style:italic;">output-connector</text> of the <text style="font-style:italic;">Linear-Motion FB </text>to the <text style="font-style:italic;">input-connector</text> of the <text style="font-style:italic;">Motion FB</text>.</li>
+            <li styleclass="Body Text2-Note">Drag a wire from the <text style="font-style:italic;">output-connector </text>of the <text style="font-style:italic;">Motion FB </text>to the <text style="font-style:italic;">input-connector</text> of the <text style="font-style:italic;">Motion-Dimension FB</text>.</li>
+          </list>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td colspan="3">
+          <para styleclass="Heading HowTo_atoc_" style="text-align:left; text-indent:0px; margin-top:0px; margin-right:0px; margin-bottom:0px; margin-left:0px; line-height:1.00; background-color:transparent; white-space:normal; page-break-inside:auto; page-break-after:auto; border:none; tabstops:none;"><text style="font-family:Arial; font-size:10pt; font-weight:bold; font-style:normal; text-decoration:none; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">Key-Skill 10: </text><text style="font-family:Arial; font-size:10pt; font-weight:bold; font-style:normal; text-decoration:underline; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">Use the Cycle command</text><text style="font-family:Arial; font-size:10pt; font-weight:bold; font-style:normal; text-decoration:none; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">.</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td colspan="3">
+          <para styleclass="Body Text2-Note">Use the <text style="font-style:italic;">Run menu</text> or the <text style="font-style:italic;">Run Toolbar</text>. Select the &apos;<text style="font-style:italic;">Cycle</text>&apos; tool.</para>
+          <para styleclass="Body Text2-Note">The kinematic-chain (four-bar) moves with the motion in <text style="font-style:italic;">MotionDesigner</text><text styleclass="Body Text HowTo" style="font-style:italic;">.</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td colspan="3">
+          <para styleclass="Heading HowTo_atoc_" style="text-align:left; text-indent:0px; margin-top:0px; margin-right:0px; margin-bottom:0px; margin-left:0px; line-height:1.00; background-color:transparent; white-space:normal; page-break-inside:auto; page-break-after:auto; border:none; tabstops:none;"><text style="font-family:Arial; font-size:10pt; font-weight:bold; font-style:normal; text-decoration:none; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">Key-Skill 11: </text><text style="font-family:Arial; font-size:10pt; font-weight:bold; font-style:normal; text-decoration:underline; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">Edit the Motion in MotionDesigner</text><text style="font-family:Arial; font-size:10pt; font-weight:bold; font-style:normal; text-decoration:none; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">.</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td colspan="3">
+          <para styleclass="Body Text2-Note">Show MotionDesigner if necessary. - use the &apos;Show-hide MotionDesigner Tool&apos; in the Tools menu</para>
+          <para styleclass="Body Text2-Note">Drag the second Blend-Point in MotionDesigner using your mouse, or edit the Position precisely in the Blend-Point Editor.</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td colspan="3">
+          <para styleclass="Heading HowTo_atoc_" style="text-align:left; text-indent:0px; margin-top:0px; margin-right:0px; margin-bottom:0px; margin-left:0px; line-height:1.00; background-color:transparent; white-space:normal; page-break-inside:auto; page-break-after:auto; border:none; tabstops:none;"><text style="font-family:Arial; font-size:10pt; font-weight:bold; font-style:normal; text-decoration:none; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">Key-Skill 12: </text><text style="font-family:Arial; font-size:10pt; font-weight:bold; font-style:normal; text-decoration:underline; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">Edit the Length of Parts</text><text style="font-family:Arial; font-size:10pt; font-weight:bold; font-style:normal; text-decoration:none; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">: </text><text style="font-family:Arial; font-size:10pt; font-weight:bold; font-style:normal; text-decoration:underline; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">Double-click</text><text style="font-family:Arial; font-size:10pt; font-weight:bold; font-style:normal; text-decoration:none; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;"> the Oval Part-Outline of a Part</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td colspan="3">
+          <para styleclass="Body Text2-Note"><text style="font-style:normal;">You are now in the </text><text style="font-style:italic;">Part-Editor</text><text style="font-style:normal;">, again. </text></para>
+          <para styleclass="Body Text2-Note"><text style="font-style:normal;">Double-click the Arrowhead of the </text><text style="font-style:italic; text-decoration:underline;">Dimension</text><text style="font-style:normal;"> that defines the length of the </text><text style="font-style:italic;">Part</text><text style="font-style:normal;">. </text></para>
+          <para styleclass="Body Text2-Note"><text style="font-weight:bold;">Do Not</text> double-click the line - this will close the <text style="font-weight:bold;">Part-Editor</text>. You will simply need to open it again.</para>
+          <para styleclass="Body Text2-Note"><text style="font-style:normal;">Edit the Length in the pop-up dialog-box by typing in a new number of using the spin-box tool. Experiment.</text></para>
+          <para styleclass="Body Text2-Note">Note: see what happens if your right-click the dimension in the dialog-box.</para>
+          <para styleclass="Body Text2-Note"><text style="font-weight:normal; text-decoration:underline;">Close the Part-Editor</text><text style="font-weight:normal;">: see Key-Skill 4. </text><text style="font-weight:normal; text-decoration:underline;">Double-click</text><text style="font-weight:normal;"> the X or Y–axis.</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td colspan="3">
+          <para styleclass="Body Text2-Note"><text style="font-weight:bold;">Key-Skill 13: </text><text style="font-weight:bold; text-decoration:underline;">Review the Kinematics-Tree</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Text2-Note">Click the Kinematics tab in the <text style="font-style:italic;">Element Editor</text>.</para>
+          <para styleclass="Body Text2-Note">There is one <text style="font-style:italic;">kinematic-chain</text>.</para>
+          <para styleclass="Body Text2-Note">There are two components to it.</para>
+          <list id="6" type="ul" listtype="bullet" formatstring="·" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Body Text2-Note" style="font-family:Symbol; font-size:10pt; color:#000000;">
+            <li styleclass="Body Text2-Note">A <text style="font-style:italic;">Rocker</text> - Expand it to show that it is made up of the <text style="font-style:italic;">Part</text>, the <text style="font-style:italic;">Pin-Joint</text> and the <text style="font-style:italic;">Motion-Dimension FB</text></li>
+            <li styleclass="Body Text2-Note">An <text style="font-style:italic;">RRR Dyad</text>. Expand it to the show that it is made up from the two <text style="font-style:italic;">Parts</text> and the three <text style="font-style:italic;">Pin-Joints</text>. R = PIN-JOINT</li>
+          </list>
+          <para styleclass="Body Text2-Note"><text style="font-style:italic;">DYADS</text> are always are made from TWO PARTS and THREE JOINTS.</para>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading4 Toggle_atocs_2"></para>
+    <para styleclass="Heading4 Toggle_atocs_2"><anchor id="AutoProfilesWhat"></anchor><image src="tog_plus.gif" scale="100.00%" figurelistinclude="0"></image><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" src-collapsed="tog_plus.gif" src-expanded="tog_minus.gif" src-print="none"><caption><![CDATA[What does Auto-Profiles do?]]></caption></toggle></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Standard" rowcount="4" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:4px;">
+        </td>
+        <td>
+          <para styleclass="Body Text">It is best to experiment. </para>
+          <para styleclass="Body Text"><text styleclass="T_Menu">Add Auto-Profiles</text> adds: </para>
+          <list id="7" type="ol" listtype="decimal" formatstring="%0:s." format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Numbered" style="font-family:'Segoe UI Semibold'; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo Numbered"><text styleclass="Element">Sketch-loops</text> around<text styleclass="VariableName">: </text></li>
+            <list id="7" level="1" type="ol" listtype="lower-alpha" formatstring="%1:s." format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Numbered" style="font-family:'Segoe UI Semibold'; font-size:11pt; font-weight:bold; color:#000000;">
+              <li styleclass="HowTo Numbered">Each <text styleclass="Element">Part</text></li>
+            </list>
+          </list>
+          <list id="7" type="ol" listtype="decimal" formatstring="%0:s." format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Numbered" style="font-family:'Segoe UI Semibold'; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo Numbered"> An <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-Profile-Element" styleclass="Element">Auto-Profile</link> to each <text styleclass="Element">sketch-loop</text></li>
+          </list>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:4px;">
+        </td>
+        <td>
+          <para styleclass="Body Text">Spin the view with your arrow keys tool to see the <text styleclass="Element">Auto-Profile contours</text>. The <text styleclass="Interface">sketch-elements</text> may hide the Primary contour. </para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:4px;">
+        </td>
+        <td>
+          <para styleclass="Body Text">In this image, you can now see all <text style="text-decoration:underline;">four</text> <text styleclass="Element">extrusions</text>. I have edited the offsets of each <text styleclass="Element">Auto-Profile</text> in the <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-ProfileExtrusion" styleclass="Element">Extrusion dialog-box</link>.</para>
+          <para styleclass="Body Text">You can:</para>
+          <list id="8" type="ul" listtype="bullet" formatstring="·" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="margin-top:0px; font-family:Symbol; font-size:10pt; color:#000000;">
+            <li styleclass="HowTo Bulleted" style="margin-top:0px;">Set the default diameter of the <text styleclass="Interface">sketch-loops</text> around the <text styleclass="Interface">Joints</text>, and the <text styleclass="Parameter">Extrusion Depth</text>, in the <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-Application-Settings" anchor="App-Auto" styleclass="Interface">Application Settings</link><text styleclass="Interface"> dialog-box</text></li>
+            <li styleclass="HowTo Bulleted" style="margin-top:0px;">Edit the dimensions of the sketch-loops in the <text styleclass="Interface">Part-Editor</text> </li>
+            <li styleclass="HowTo Bulleted" style="margin-top:0px;">Edit the <text styleclass="Interface">Extrusion</text> in the <text styleclass="Interface">Extrusion dialog-box</text><text styleclass="Body Text"> </text></li>
+          </list>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:4px;">
+        </td>
+        <td>
+          <para styleclass="Body Text">The <text styleclass="Element">sketch-elements</text> that give the shape to the <text styleclass="Element">Auto-Profile</text> are gray when you open the <text styleclass="Interface">Part-Editor</text>.</para>
+          <para styleclass="Body Text">You can only edit the dimensions. </para>
+          <para styleclass="Body Text">That is, you can edit the length of a <text styleclass="Element">Part</text>, the radius of each <text styleclass="Element">Arc</text> and the diameter of a <text styleclass="Element">circle</text>.</para>
+          <para styleclass="Notes">Note:</para>
+          <para styleclass="Body Text HowTo">If the default size of the <text styleclass="Element">circle</text> sketch-loop around a <text styleclass="Element">Pin-Joint</text> is large compared with the length of the <text styleclass="Element">Part</text>, there may be inconsistent results.</para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Body Text"></para>
+  </body>
+</topic>

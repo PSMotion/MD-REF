@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" status="Under Construction" lasteditedby="Adam" version="2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title>Why is the dimension &apos;negative&apos; in the Dimension dialog&apos;?</title>
+  <keywords>
+    <keyword>Dimension dialog<keyword>Negative dimension</keyword></keyword>
+    <keyword>Negative Dimensions - why?</keyword>
+    <keyword>Why is the dimension &apos;negative&apos;.</keyword>
+  </keywords>
+  <body>
+    <header>
+      <para styleclass="Heading1">Why is the dimension &apos;negative&apos; in the Dimension dialog&apos;?</para>
+    </header>
+    <para styleclass="Heading3_atocs_">Why is my dimension negative?</para>
+    <para styleclass="VariableName">Negative Dimensions.</para>
+    <para styleclass="Body Text HowTo"><text styleclass="Body Text">The </text><text style="font-weight:bold; font-style:italic; color:#ff0000;">–</text><text styleclass="Body Text"> sign appears if the coordinate of the dimension is </text><text styleclass="VariableName">negative</text><text styleclass="Body Text">. </text></para>
+    <para styleclass="Body Text HowTo"><text styleclass="Body Text">However, the </text><text style="font-weight:bold; font-style:italic; color:#ff0000;">–</text><text styleclass="Body Text">&#32;</text><text styleclass="VariableName">sign</text><text styleclass="Body Text"> shows even when you do not expect to see it!</text></para>
+    <para styleclass="Body Text HowTo"><text styleclass="VariableName" style="color:#ff0000;">Do not delete</text><text styleclass="Body Text"> the </text><text style="font-weight:bold; font-style:italic; color:#ff0000;">–</text><text styleclass="Body Text">&#32;</text><text styleclass="VariableName">sign</text><text styleclass="Body Text"> if you </text><text styleclass="VariableName">do not want to change the sign of the dimension</text><text styleclass="Body Text">.</text></para>
+    <para styleclass="Body Text HowTo"><text styleclass="Body Text">Generally, ignore the </text><text style="font-weight:bold; font-style:italic; color:#ff0000;">–</text><text styleclass="Body Text">&#32;</text><text styleclass="VariableName">sign</text><text styleclass="Body Text">, and edit the dimension in the normal way.</text></para>
+    <para styleclass="Heading4 Toggle_atocs_">More Details</para>
+    <para styleclass="Body Text HowTo"><table styleclass="Standard" rowcount="2" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:159px;">
+          <para styleclass="Normal" style="text-align:right;"><image src="Dimensions-Axes.bmp" scale="100.00%" styleclass="Image Caption"></image></para>
+        </td>
+        <td rowspan="2">
+          <para styleclass="VariableName">Why is the Dimension negative?</para>
+          <para styleclass="Body Text"><text style="font-weight:normal;">Note: </text></para>
+          <para styleclass="Body Text HowTo"><text style="font-weight:normal;">X-axis, Y-axis : coordinate-system of Part, </text></para>
+          <para styleclass="Body Text HowTo"><text style="font-weight:normal;">x-axis, y-axis : coordinate-system of element, and a Line.</text></para>
+          <para styleclass="VariableName">Dimension convention in MechDesigner:</para>
+          <para styleclass="Body Text HowTo"><text style="font-weight:normal;">Lines and Axes have a Coordinate System (Origin and +x,+y) . This includes the Part-axes : X–axis and the Y–axis. Each axis has an origin and an +x–axis direction and a +y–axis direction. &#160; </text></para>
+          <para styleclass="Body Text HowTo"><text style="font-weight:normal;">When we dimension using the Y–axis, or a Line in the Y-axis direction, then its +x–axis direction is </text><text styleclass="HowTo Bulleted" style="font-weight:normal;">along the +Y–axis of the Part.</text></para>
+          <para styleclass="Body Text HowTo"><text style="font-weight:normal;">In the image, the area with the &apos;</text><text style="font-weight:normal; color:#000000; background-color:#ffa8a8;">patch</text><text style="font-weight:normal; color:#000000; background-color:transparent;">&apos; is all –ve in the Coordinate System of the Y–axis, or a Line in the Y-axis</text></para>
+          <para styleclass="Body Text HowTo"><text style="font-weight:normal; color:#000000; background-color:transparent;">Therefore, is this case, when we dimension the Point</text><image src="Red-14-1b.gif" scale="100.00%" styleclass="Image Caption"></image><text styleclass="Image Caption">&#32;</text><text style="font-weight:normal; color:#000000; background-color:transparent;">along the X–axis from the Y-axis of the Part, it is along the negative direction of the y-axis of the Line.</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:159px;">
+          <para styleclass="Normal" style="text-align:right;"><image src="Dimensions-axes2.bmp" scale="100.00%" styleclass="Image Caption"></image></para>
+        </td>
+      </tr>
+    </table></para>
+  </body>
+</topic>

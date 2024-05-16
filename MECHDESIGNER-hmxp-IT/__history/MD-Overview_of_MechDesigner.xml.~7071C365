@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" status="Under Construction" modified="2022-03-21T15:57:14.000+01:00" lasteditedby="Adam" version="2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title>Overview of MechDesigner</title>
+  <body>
+    <header>
+      <para styleclass="Heading1">Overview of MechDesigner</para>
+    </header>
+    <para styleclass="Heading2">What does <text style="font-weight:bold; font-style:italic;">MechDesigner</text> do?</para>
+    <para styleclass="Body Text"><table styleclass="Standard" rowcount="7" colcount="2">
+      <tr style="vertical-align:top">
+        <td colspan="2">
+          <para styleclass="Body Text"><text style="font-weight:bold; font-style:italic;">MechDesigner</text> is principally a tool to <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-Model">model</link>, or represent, machines. Particularly machines with many <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-Mechanism-General">mechanisms</link> and complex tool motions. </para>
+          <para styleclass="Body Text">We technically know &apos;Mechanisms&apos; as kinematic-chains.</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td colspan="2">
+          <para styleclass="Body Text"><text style="font-weight:bold; text-decoration:underline;">kinematic-chains</text><text style="font-weight:normal;">&#32;</text>represent connected parts in machines. <text styleclass="Body Text HowTo">In general, there can be a number of Parts and Joints in a kinematic-chain.</text></para>
+          <para styleclass="Body Text HowTo">You will know that a car engine is made up of the Piston, Connecting, Rod, Crank, and Cylinder Liner. This is a kinematic-chain. It is a series of connected Parts that has 4 parts and 4 Joints. </para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:197px; background-color:#ccffcc;">
+          <para styleclass="Normal"><image src="MD-INTRO-KC2.bmp" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="Heading HowTo_atoc_" style="text-align:left; text-indent:0px; margin-top:0px; margin-right:0px; margin-bottom:0px; margin-left:0px; line-height:1.00; background-color:transparent; white-space:normal; page-break-inside:auto; page-break-after:auto; border:none; tabstops:none;"><text styleclass="Heading4 HowTo_atoc_">kinematic-chains are constructed with &apos;Parts&apos; and &apos;Joints&apos;</text></para>
+          <list id="0" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:8pt; color:#000000;">
+            <li styleclass="HowTo Bulleted"><text style="font-weight:bold; text-decoration:underline;">Parts</text> are the physical elements in machines. </li>
+          </list>
+          <para styleclass="Body Text HowTo"><text style="font-weight:normal;">Parts</text>: levers, beams, rams, pistons, Cam-Follower arms, shafts...</para>
+          <list id="0" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:8pt; color:#000000;">
+            <li styleclass="HowTo Bulleted"><text style="font-weight:bold; text-decoration:underline;">Joints</text> are the connections between the physical elements. &#160;</li>
+          </list>
+          <para styleclass="Body Text HowTo"><text style="font-weight:normal;">Joints</text>: rotary bearings, slide-rails and blocks, rod-end bearings. </para>
+          <para styleclass="Body Text">Parts and Joints are easy to identify, but sometimes less so.</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td colspan="2">
+          <para styleclass="Body Text">In the image above, the kinematic-chain has:</para>
+          <list id="1" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:8pt; color:#000000;">
+            <li styleclass="HowTo Bulleted">Six <text style="text-decoration:underline;">Parts</text> (the frame is counted as a Part - we call it the Base-Part) and </li>
+            <li styleclass="HowTo Bulleted">Seven <text style="text-decoration:underline;">Joints</text> (six Pin-Joints and one Slide-Joint)</li>
+          </list>
+          <para styleclass="Body Text">As of yet, we don&apos;t actually know the position of the Parts. You can still move, or drag, the kinematic-chain.</para>
+          <para styleclass="Body Text">Analysis of the kinematic-chain reveals it has one degree-of-freedom.</para>
+          <para styleclass="Body Text">However, if you add a dimension to define the position of one Part relative to , then you know the position of all the other Parts. </para>
+          <para styleclass="Body Text"><text style="font-weight:normal; text-decoration:underline;">One</text> dimension will exactly position <text style="font-weight:normal; text-decoration:underline;">all of the Parts</text> in the kinematic-chain!</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:197px;">
+          <para styleclass="Normal"><text styleclass="Image Caption">u</text><image src="MD-INTRO-KC6.bmp" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="Body Text"></para>
+          <para styleclass="Body Text"><text style="font-weight:normal; text-decoration:underline;">Add a &apos;Motion-Dimension&apos; to define the position of one Part relative to </text>.</para>
+          <list id="2" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:8pt; color:#000000;">
+            <li styleclass="HowTo Bulleted">Use a &apos;Motion-Dimension&apos;. </li>
+          </list>
+          <para styleclass="Body Text HowTo">It is exactly like a normal dimension. &#160;However, the &apos;Motion-Dimension&apos; can be continually updated to continually move the kinematic-chain.</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td colspan="2">
+          <para styleclass="Body Text">In the image above, we have added:</para>
+          <list id="3" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:8pt; color:#000000;">
+            <li styleclass="HowTo Bulleted">One <text style="text-decoration:underline;">Motion-Dimension</text> (identified by the icon). </li>
+            <li styleclass="HowTo Bulleted">The Motion-Dimension defines the angle of the Part relative to the Line drawn in the Base-Part. &#160;</li>
+          </list>
+          <para styleclass="Body Text">We call the Part with a Motion-Dimension a <text style="font-weight:normal; text-decoration:underline;">&apos;Motion-Part&apos;</text><text style="font-weight:normal;"> - it is a Part that is driven by a Motion!</text></para>
+          <para styleclass="Body Text">The other Parts &#160;<text style="font-weight:normal; text-decoration:underline;">Dyads</text><text style="font-weight:normal;"> - more on Dyads later.</text></para>
+          <para styleclass="Body Text">If you change the angle of the &apos;Motion-Part&apos;, all the other Parts that &#160;Dyads move to a new position.</para>
+          <para styleclass="Body Text">The kinematic-chain is a <text style="font-weight:normal; text-decoration:underline;">&apos;kinematically-defined Chain&apos;</text>. &#160;An <text style="font-weight:normal;">very</text> important concept in <text style="font-weight:bold; font-style:italic;">MechDesigner</text>.</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td colspan="2">
+          <para styleclass="Heading HowTo_atoc_" style="text-align:left; text-indent:0px; margin-top:0px; margin-right:0px; margin-bottom:0px; margin-left:0px; line-height:1.00; background-color:transparent; white-space:normal; page-break-inside:auto; page-break-after:auto; border:none; tabstops:none;"><text styleclass="Heading4 HowTo_atoc_">kinematically-defined Chains.</text></para>
+          <para styleclass="Body Text">The &apos;kinematically-defined chain&apos; is a kinematic-chain where all the parts are <text style="font-weight:normal; text-decoration:underline;">explicitly</text> and exactly positioned by virtue of adding the correct number of Parts, Joints and Motion-Dimensions. &#160;</para>
+        </td>
+      </tr>
+    </table></para>
+  </body>
+</topic>

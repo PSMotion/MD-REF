@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" status="Under Construction" modified="2022-03-22T22:36:16.285Z" lasteditedby="Adam" version="2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title>Element Explorer | Geometry-Tree</title>
+  <keywords>
+    <keyword>Geometry Tree<keyword>Constraints</keyword><keyword>Dimensions</keyword><keyword>Sketch-Elements</keyword></keyword>
+  </keywords>
+  <body>
+    <header>
+      <para styleclass="Heading1">Element Explorer | Geometry-Tree</para>
+    </header>
+    <para styleclass="Heading3_atocs_">Element-Explorer - Geometry-Tree</para>
+    <para styleclass="Body Text HowTo">The <text styleclass="Interface2">Geometry-Tree</text> shows when you start the <text styleclass="Interface">Part-Editor</text>.</para>
+    <para styleclass="Body Text HowTo">It replaces the <text styleclass="Interface">Kinematics-Tree</text>.</para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="Normal"><text styleclass="Notes">Note</text><text styleclass="Body Text">: If you do not see a small  at the head of the Geometry-Tree, click </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Edit-AutoUpdate" styleclass="T_Menu">Rebuild now</link><text styleclass="Body Text">.</text></para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="Heading4 Toggle_atocs_2">Example Geometry-Tree</para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="1" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:240px;">
+          <para styleclass="Normal"><image src="MD-PE-GeometryTree.png" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"><title>Example: Geometry in Element-Explorer</title><caption><![CDATA[Example: Geometry in Element-Explorer]]></caption></image></para>
+        </td>
+        <td>
+          <para styleclass="VariableName">What is a Constraint-Loop?</para>
+          <para styleclass="Body Text HowTo">A <text styleclass="VariableName">Constraint-Loop</text> (labeled Constraints) is a list of the constraints that are between a set of sketch-elements. </para>
+          <para styleclass="Body Text HowTo">If you add a Constraint between two sketch-elements in different Constraint-Loops, they combine to give one Constraint-Loop.</para>
+          <para styleclass="Body Table">For example:</para>
+          <list id="0" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted">A Horizontal Constraint is added to Line1 is Constraint Loop #1</li>
+            <li styleclass="HowTo Bulleted">A Horizontal Constraint is added to Line2 is Constraint Loop #2</li>
+            <li styleclass="HowTo Bulleted">Add a Horizontal Constraint between a Point in Line 1 and a Point in Line 2, is now Constraint Loop #1</li>
+          </list>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="VariableName">Constraints and the Selection-Window</para>
+          <para styleclass="Body Table">If you:</para>
+          <para styleclass="Body Text HowTo"><text styleclass="VariableName">Click </text>a <text styleclass="Element">Line </text>: the <text styleclass="Element">Line</text> shows in the <text styleclass="Interface">Selection-Window</text></para>
+          <para styleclass="Body Text HowTo"><text styleclass="VariableName" style="color:#ff0000;">SHIFT+Click</text> a <text styleclass="Element">Line</text> : the <text styleclass="Element">Line </text><text styleclass="Interface2">AND</text> the <text styleclass="Interface">Constraints</text> that have been added to the <text styleclass="Element">Line</text> show in the <text styleclass="Interface">Selection-Window.</text></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Body Text" style="page-break-before:always;"></para>
+  </body>
+</topic>

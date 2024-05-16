@@ -1,0 +1,175 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" status="Under Construction" modified="2022-09-09T17:33:05.800+01:00" lasteditedby="Adam" version="2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title>- &gt; DXF tab</title>
+  <keywords>
+    <keyword>Dialog<keyword>CAD-Line - DXF tab</keyword></keyword>
+    <keyword>Import DXF File</keyword>
+  </keywords>
+  <body>
+    <header>
+      <para styleclass="Heading1">- &gt; DXF tab</para>
+    </header>
+    <para styleclass="Heading2">CAD-Linie &gt; DXF-Registerkarte</para>
+    <para styleclass="SeeAlso"><text styleclass="Body Text HowTo">Siehe auch: </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-DXF-Element" styleclass="Body Text HowTo">DXF-Element</link></para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="Body Text HowTo">Verwenden Sie das <text styleclass="VariableName">Dialogfeld CAD-Leitung | Registerkarte DXF </text>, um:</para>
+    <list id="0" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Numbered" style="font-family:Symbol; font-size:11pt; color:#000000;">
+      <li styleclass="HowTo Numbered"><text styleclass="Body Table">Verknüpfen* einer </text><text styleclass="Interface">DXF-Zeichnung</text><text styleclass="Body Table"> mit der </text><text styleclass="Element">CAD-Linie</text><text styleclass="Body Table">&#32;</text></li>
+      <li styleclass="HowTo Numbered">Ausrichten der <text styleclass="Interface">DXF-Zeichnung</text> an der <text styleclass="Element">CAD-Linie</text><text style="font-weight:bold;">&#32;</text></li>
+      <li styleclass="HowTo Numbered">&#32;<text styleclass="Body Text">Verschiedene</text>&#32;<text styleclass="Interface">DXF-Ebenen</text> ein- oder ausblenden und/oder deren Farben ändern<text style="font-weight:bold;">&#32;</text></li>
+      <li styleclass="HowTo Numbered">&#32;<text styleclass="Interface">DXF-Elemente</text> in MD-Skizzen-Elemente umwandeln</li>
+      <li styleclass="HowTo Numbered">Entfernen der <text styleclass="Interface">DXF-Zeichnung</text> aus der <text styleclass="Element">CAD-Linie</text></li>
+    </list>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="Body Table"><text styleclass="Notes">Hinweis</text>:<text styleclass="Body Text"> Bevor Sie eine </text><text styleclass="VariableName">DXF-Zeichnung </text><text styleclass="Body Text">mit der </text><text styleclass="Element">CAD-Linie</text><text styleclass="Body Text"> verknüpfen können , müssen Sie </text><text styleclass="HowTo Numbered">mindestens ein </text><text styleclass="Element">DXF-Element</text><text styleclass="HowTo Numbered"> zum </text><text styleclass="Interface">Assembly-Tree</text><text styleclass="HowTo Numbered">hinzufügen </text><text styleclass="Body Text">. </text></para>
+    <para styleclass="Body Text HowTo"><text styleclass="SeeAlso">Siehe </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-File-Open" styleclass="SeeAlso">Menü Datei &gt; DXF-Dateityp öffnen</link><text styleclass="Interface">&#32;</text></para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="Heading3_atocs_">CAD-Linien-Dialogfeld</para>
+    <para styleclass="Heading4 HowTo_atoc_"><anchor id="Dialog-CAD-Line-DXF-tab"><keywords><keyword>Registerkarte</keyword></keywords></anchor>DXF-Registerkarte</para>
+    <para styleclass="Body Table"><image src="MD-Dialog-CADLine-DXF-tab.png" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+    <para styleclass="Separator" style="margin-left:25px;"><anchor id="Dialog-CADLine-DXFtab-ElementSelection"><keywords><keyword>CAD-Line - DXF tab<keyword>Element Selection</keyword></keyword></keywords></anchor><image src="tog_plus.gif" scale="100.00%" figurelistinclude="0"></image><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" src-collapsed="tog_plus.gif" src-expanded="tog_minus.gif" src-print="none" styleclass="Separator-Header"><caption><![CDATA[ DXF-Element auswählen ]]></caption></toggle></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Standard" rowcount="2" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:250px;">
+          <para styleclass="Normal" style="text-align:left;"><image src="MD-DIALOG-CADLINE-DXF-SELECT.ipp" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="Body Table">Nachdem Sie das <text styleclass="T_Menu">Menü Datei &gt; DXF-Datei öffnen</text> aufgerufen haben, wählen Sie das DXF-Element in diesem Dialog aus, um es im Grafikbereich anzuzeigen.</para>
+          <para styleclass="Body Table"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Body Text"><text styleclass="Parameter-Header">DXF-Element auswählen</text>: <text styleclass="Body Text HowTo">Dropdown-Listenfeld</text></para>
+                <list id="1" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullets" style="font-family:&apos;Noto Sans&apos;; font-size:11pt; color:#000000;">
+                  <li styleclass="Bullets">Klicken Sie auf<text styleclass="HowTo Numbered"> den Dropdown-Pfeil, um ein</text>&#32;<text styleclass="Element">DXF-Element</text><text styleclass="HowTo Numbered"> auszuwählen</text><text styleclass="Body Text">&#32;</text></li>
+                </list>
+                <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+                <para styleclass="Body Text">Jedes <text styleclass="Element">DXF-Element</text> besteht aus zwei Teilen - siehe <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-CADLine-DXF" anchor="DxfElementName">Beispiel</link> unten</para>
+                <para styleclass="Body Text">Die <text styleclass="Interface">DXF-Zeichnung</text> wird sofort im <text styleclass="Interface">Grafikbereich</text> angezeigt.</para>
+                <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+                <para styleclass="VariableName">Optionale Tasten<text styleclass="Body Text">:</text></para>
+                <para styleclass="Body Table"><text styleclass="Parameter-Header">DXF-Ebenen bearbeiten</text><text styleclass="HowTo Bulleted"> : </text></para>
+                <para styleclass="Body Text HowTo">So öffnen Sie das <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-CADLine-DXFLayers" styleclass="Element">Dialogfeld DXF-Ebenen</link><text styleclass="Body Text">, zeigen oder verbergen verschiedene </text><text styleclass="Parameter">Ebenen</text><text styleclass="Body Text"> in der </text><text styleclass="Interface">DXF-Zeichnung</text></para>
+                <para styleclass="Body Table"><text styleclass="Parameter-Header">DXF entfernen</text><text styleclass="Body Text HowTo"> : </text></para>
+                <para styleclass="Body Text HowTo">Um die <text styleclass="Interface">DXFDXF-Zeichnung</text> zu entfernen.</para>
+              </td>
+            </tr>
+          </table></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td colspan="2">
+          <para styleclass="Body Text"><anchor id="DxfElementName"><keywords><keyword>Example DXF Element Name</keyword></keywords></anchor>Das DXF-Element besteht aus zwei Teilen, die Sie in der Dropdown-Box sehen:</para>
+          <para styleclass="Body Table"><text styleclass="VariableName">z.B. DXF2 : PCD-3.DXF</text><text styleclass="Body Text HowTo" style="color:#000000;">&#32;</text></para>
+          <para styleclass="Body Text HowTo"><text styleclass="VariableName-IT" style="font-style:normal;">DXF2</text><text styleclass="VariableName-IT">&#32;</text><text styleclass="Body Text">ist der Name des </text><text styleclass="Element">DXF-Elements </text>im <text styleclass="Interface">Assembly-Tree</text></para>
+          <para styleclass="Body Text HowTo"><text styleclass="VariableName-IT" style="font-style:normal;">PCD-3.DXF</text> ist die <text styleclass="Interface">DXF-Zeichnung</text><text styleclass="Body Text">, die Sie mit </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-File-Open" anchor="OpenDXFFile" styleclass="Body Text">File Open &gt; DXF file-type</link><text styleclass="Body Text"> geöffnet haben </text></para>
+          <para styleclass="Body Text">Wenn Sie die <text styleclass="Interface">DXF-Zeichnung</text> nicht sehen können, dann...:</para>
+          <para styleclass="Body Text HowTo"><table styleclass="PopupTable2" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td style="border-top:none; border-right:none; border-bottom:none;">
+                <para styleclass="Body Text">Ändern Sie die Hintergrundfarbe des <text styleclass="Interface">Grafikbereichs von</text></para>
+                <para styleclass="SeeAlso-small">Siehe <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-Application-Settings" anchor="App-Graphics">Anwendungseinstellungen | Registerkarte Farbe</link>&#32;<text styleclass="HowTo Bulleted" style="font-weight:bold; color:#404040;">Mittelgrau</text><text styleclass="HowTo Bulleted"> ist oft eine gute Farbe.</text></para>
+                <para styleclass="Body Text">Die<text styleclass="B Bullets" style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">&#32;</text><text styleclass="Element">DXF-Zeichnung</text> kann außerhalb der aktuellen<text styleclass="B Bullets" style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">&#32;</text><text styleclass="Interface">Grafikansicht </text>liegen. </para>
+                <para styleclass="SeeAlso" style="margin-left:24px;"><text styleclass="SeeAlso-small">Siehe </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Menu-View" styleclass="SeeAlso-small">Menü Ansicht &gt; Verkleinern</link>.<text styleclass="Body Text HowTo"> (oder benutzen Sie das Scrollrad der Maus)</text></para>
+                <para styleclass="Body Text">Die <text styleclass="Parameter">Lineareinheiten</text> der <text styleclass="Element">DXF-Zeichnung</text> können falsch sein, wodurch die Zeichnung sehr klein oder sehr groß werden kann. <text styleclass="Body Text HowTo2">Es ist normal, die gleichen </text><text styleclass="Parameter">Lineareinheiten</text><text styleclass="Body Text HowTo2"> wie in der ursprünglichen </text><text styleclass="Element">DXF-Zeichnung </text>zu <text styleclass="Body Text HowTo2">verwenden.</text></para>
+                <para styleclass="SeeAlso" style="margin-left:24px;"><text styleclass="SeeAlso-small">Siehe </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-DXF-Element" styleclass="SeeAlso-small">Dialogfeld DXF-Element bearbeiten</link>. </para>
+              </td>
+            </tr>
+          </table></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Separator" style="margin-left:25px;"><anchor id="Dialog-CAD-Line-Alignment"><keywords><keyword>CAD-Line - DXF tab<keyword>Align DXF with CAD-Line</keyword></keyword></keywords></anchor><image src="tog_plus.gif" scale="100.00%" figurelistinclude="0"></image><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" src-collapsed="tog_plus.gif" src-expanded="tog_minus.gif" src-print="none" styleclass="Separator-Header"><caption><![CDATA[ DXF an CAD-Linie ausrichten]]></caption></toggle><text styleclass="Separator-Header">&#32;</text></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Standard" rowcount="2" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:245px;">
+          <para styleclass="Normal" style="text-align:left;"><image src="MD-Dialog-CADLine-DXF-AlignDXF2.png" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="VariableName">Richten Sie die DXF-Zeichnung an der CAD-Linie aus, wählen Sie zwei(2) DXF-Punkte.</para>
+          <para styleclass="VariableName"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Parameter-Header">DXF-Punkt zum Ursprung der CAD-Linie</para>
+                <list id="2" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="Bullets">Klicken Sie in das Feld, um das Feld <text styleclass="Separator">orange</text> zu färben - siehe <text styleclass="Notes">Hinweis</text><text styleclass="VariableName">&#32;</text></li>
+                  <li styleclass="HowTo Numbered">Klicken Sie auf den <text styleclass="Interface">DXF-Punkt</text> in der <text styleclass="Interface">DXF-Zeichnung</text>, den Sie zum <text styleclass="Interface">Startpunkt </text>der <text styleclass="Element">CAD-Linie</text>verschieben wollen</li>
+                </list>
+                <para styleclass="Body Text HowTo">Der <text styleclass="Interface">DXF-Punkt</text> erscheint in der Box und die Box wird <text style="font-family:Arial; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:#00ff00; letter-spacing:normal; letter-scaling:100%;">grün</text></para>
+                <para styleclass="Parameter-Header">DXF Punkt zu CAD-Linie</para>
+                <list id="3" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="3" styleclass="Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="Bullets">Klicken Sie in den Kasten<text styleclass="HowTo Numbered">, um den Kasten </text><text styleclass="Separator">orange</text>&#32;<text styleclass="HowTo Numbered">zu machen </text><text styleclass="VariableName">&#32;</text></li>
+                  <li styleclass="HowTo Numbered"><text styleclass="HowTo Bulleted">Klicken Sie auf einen </text><text styleclass="Interface">DXF-Punkt</text><text styleclass="HowTo Bulleted"> in der </text><text styleclass="Interface">DXF-Zeichnung</text><text styleclass="HowTo Bulleted" style="font-weight:normal;">, um ihn auf die X-Achse der </text><text styleclass="Element">CAD-Linie</text>zu<text styleclass="HowTo Bulleted" style="font-weight:normal;"> verschieben.</text><text styleclass="VariableName">&#32;</text></li>
+                </list>
+                <para styleclass="Body Text HowTo">Die <text styleclass="Interface">DXF-Zeichnung</text> verschiebt die zwei (2) <text styleclass="Interface">DXF-Punkte</text> auf die <text styleclass="Element">CAD-Linie</text></para>
+              </td>
+            </tr>
+          </table></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td colspan="2">
+          <para styleclass="Notes">Note: </para>
+          <para styleclass="Body Text HowTo"><table styleclass="PopupTable2" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td style="border-top:none; border-right:none; border-bottom:none;">
+                <para styleclass="Body Text">Wenn Sie die <text styleclass="Interface">DXF-Zeichnung</text> sehen können, aber die DXF-Punkte nicht, dann:</para>
+                <list id="4" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Numbered" style="font-family:&apos;Noto Sans&apos;; font-size:11pt; color:#000000;">
+                  <li styleclass="HowTo Numbered">Klicken Sie auf die <text styleclass="T_Menu">Symbolleiste Filter anzeigen &gt; DXF-Punkte</text> (die Symbolleiste befindet sich unterhalb des <text styleclass="Interface">Grafikbereichs</text>)</li>
+                </list>
+                <para styleclass="HowTo Numbered"><image src="MD-Toolbar-DisplayFilterA-DXF-Point.ipp" scale="-99.90%" styleclass="Image Caption" style="font-weight:normal; font-style:italic;" figurelistinclude="0"></image></para>
+              </td>
+            </tr>
+          </table></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Body Text HowTo"><anchor id="Dialog-CAD-Line-DXFtab-ConvertElements" styleclass="Separator"><keywords><keyword>Dialog CAD-Line<keyword>Convert DXF Elments to MD Lines and Arcs</keyword></keyword></keywords></anchor><image src="tog_plus.gif" scale="100.00%" styleclass="Separator" figurelistinclude="0"></image><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" src-collapsed="tog_plus.gif" src-expanded="tog_minus.gif" src-print="none" styleclass="Separator-Header"><caption><![CDATA[ Konvertieren von DXF-Elementen in MD-Linien und -Bögen]]></caption></toggle><text styleclass="Separator-Header">&#32;</text></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Standard" rowcount="2" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:245px;">
+          <para styleclass="Normal" style="text-align:left;"><image src="MD-Dialog-CADLine-DXF-ConverDXFtoMD.png" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="Body Text">DXF-Linien-, DXF-Bogen- und DXF-Punkt-Elemente sind <text styleclass="VariableName-IT">stumm</text> in <text styleclass="VariableName-IT">MechDesigner</text>.</para>
+          <para styleclass="VariableName">Konvertieren der DXF-Elemente in Skizzier-Elemente:</para>
+          <para styleclass="Normal"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Parameter-Header">Eigentümer Teil</para>
+                <para styleclass="Body Text HowTo">Dieses Feld gibt das <text styleclass="Element">Teil</text> an, in das Sie das DXF-Objekt konvertieren wollen.</para>
+                <para styleclass="Body Text HowTo">Normalerweise werden Sie die Skizzenelemente demselben <text styleclass="Element">Teil</text> wie die <text styleclass="Element">CAD-Linie</text> hinzufügen.</para>
+                <list id="5" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="Bullets">Klicken Sie auf das Feld <text styleclass="Parameter">Owner Part</text>, um es <text styleclass="Separator">orange</text> zu machen.<text styleclass="VariableName">&#32;</text></li>
+                  <li styleclass="HowTo Numbered">Klicken Sie auf ein <text styleclass="Element">Teil</text> im <text styleclass="Interface">Grafikbereich</text> oder im <text styleclass="Interface">Assembly-Tree</text>.</li>
+                </list>
+                <para styleclass="Body Text HowTo">Das <text styleclass="Element">Teil</text> sollte nun in der <text styleclass="Parameter">Owner Part</text> Box sein</para>
+                <para styleclass="Parameter-Header">DXF-Entität</para>
+                <para styleclass="Body Text HowTo">Dieses Feld ist das <text styleclass="Interface">DXF-Element</text>, das Sie in ein <text styleclass="VariableName-IT">MechDesigner</text> Skizzenelement umwandeln.</para>
+                <list id="6" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="3" styleclass="Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="Bullets">Klicken Sie auf das Feld <text styleclass="Parameter">DXF-Entity</text>, um es <text styleclass="Separator">orange </text><text styleclass="Body Text">&#32;</text>zu machen<text styleclass="VariableName">&#32;</text></li>
+                </list>
+                <para styleclass="Body Text">Bevor Sie eine DXF-Entität anklicken, können Sie:</para>
+                <list id="7" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullets" style="font-family:Symbol; font-size:11pt; color:#000000;">
+                  <li styleclass="Bullets">Klicken Sie auf die Optionsschaltfläche <text styleclass="Parameter">Schleife auswählen</text>, um die DXF-Elemente in eine <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-Sketch-Loop">Skizzenschleife</link>zu konvertieren.</li>
+                  <li styleclass="HowTo Bulleted">Klicken Sie auf das Optionsfeld <text styleclass="Parameter">Lock Points</text><text style="font-style:italic;">&#32;</text>, um die <text styleclass="Element">Punkte</text> in den Skizzenelementen zu fixieren.</li>
+                </list>
+                <list id="8" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="4" styleclass="Bullets" style="font-family:&apos;Noto Sans&apos;; font-size:11pt; color:#000000;">
+                  <li styleclass="Bullets">Klicken Sie auf ein <text styleclass="Interface">DXF-Element</text> (eine <text styleclass="Interface">DXF-Linie</text> oder einen <text styleclass="Interface">DXF-Bogen</text>) im <text styleclass="Interface">Grafikbereich</text>&#32;</li>
+                  <li styleclass="HowTo Numbered"><text styleclass="HowTo Bulleted">Klicken Sie auf die &#160;Schaltfläche</text><text styleclass="Parameter-Header">In MD-Elemente konvertieren</text><text styleclass="VariableName">&#32;</text></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Body Text"><text style="font-weight:normal;">Wiederholen Sie die </text>Schritte <text styleclass="VariableName">1</text><text style="font-weight:normal;"> bis 5, um weitere DXF-Elemente in MD-Skizzenelemente zu konvertieren.</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td colspan="2">
+          <para styleclass="Body Text"><text styleclass="Notes">Hinweis: </text></para>
+          <para styleclass="Body Text">Nachdem Sie <text styleclass="Parameter">DXF in MD-Linien und -Bögen konvertiert</text> haben, können Sie unter <text styleclass="Parameter">DXF-Elemente auswählen</text> auf die Schaltfläche <text styleclass="Parameter">DXF entfernen</text> klicken. </para>
+        </td>
+      </tr>
+    </table></para>
+  </body>
+</topic>

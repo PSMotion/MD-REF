@@ -1,0 +1,198 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" status="Under Construction" modified="2022-02-17T18:26:39.966Z" lasteditedby="Adam" version="2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title>Modeling FB | Add Statistics FB</title>
+  <keywords>
+    <keyword>Add<keyword>Function-Block: Statistics</keyword></keyword>
+    <keyword>Modeling FB menu<keyword>Statistics FB</keyword><keyword>Stats FB</keyword></keyword>
+  </keywords>
+  <body>
+    <header>
+      <para styleclass="Heading1">Modeling FB | Add Statistics FB</para>
+    </header>
+    <para styleclass="Heading3_atocs_">Add Statistics FB</para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="SeeAlso">See also : <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-FunctionBlock-Statistics">Statistics dialog-box</link></para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="HowTo Bulleted">Statistical Data may include RMS, Maximum, Minimum, ... values of a variable (wire, and data-channel). </para>
+    <para styleclass="Body Text HowTo">Use a <text styleclass="Element">Statistics FB</text> to read the <text styleclass="VariableName">Statistics</text> for a <text styleclass="VariableName">Data-Channel</text> of a wire that is connected to its input-connector.</para>
+    <para styleclass="Normal"><table styleclass="Standard" rowcount="9" colcount="3" style="head-row-background-color:#ffffff; alt-row-background-color:none;">
+      <thead style="vertical-align:top">
+        <td style="width:100px;">
+          <para styleclass="VariableName"><image src="Icon-FB-Stats.png" scale="100.00%" padding="0 2 0 0" figurelistinclude="0"><title>Add Statistics FB</title></image></para>
+        </td>
+        <td colspan="2" style="vertical-align:middle;">
+          <para styleclass="Body Table"><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Menu-FB-Modelling" styleclass="T_Menu">Modeling FB toolbar</link><text styleclass="T_Menu"> &gt; Statistics FB</text></para>
+        </td>
+      </thead>
+      <tr style="vertical-align:top">
+        <td style="width:100px;">
+          <para styleclass="VariableName">Menu : </para>
+        </td>
+        <td colspan="2" style="vertical-align:middle;">
+          <para styleclass="Body Table"><text styleclass="T_Menu">Add menu &gt; Add Statistics FB</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:100px;">
+          <para styleclass="VariableName">Dialog-Box : </para>
+        </td>
+        <td colspan="2" style="vertical-align:middle;">
+          <para styleclass="T_Menu"><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-FunctionBlock-Statistics">Statistics dialog-box</link></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:100px;">
+          <para styleclass="VariableName">What for : </para>
+        </td>
+        <td colspan="2">
+          <para styleclass="Bullets">Compare a <text styleclass="Element">Graph FB</text> with a <text styleclass="Element">Stats FB</text>:</para>
+          <list id="0" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted"><text styleclass="Element">Graph FB</text> : plot data over one Machine-Cycle.</li>
+            <li styleclass="HowTo Bulleted"><text styleclass="Element">Stats FB</text> : summarize data for one machine-cycle as simple statistical data.</li>
+          </list>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:100px;">
+          <para styleclass="VariableName">How to Add :</para>
+          <para styleclass="VariableName"></para>
+        </td>
+        <td colspan="2">
+          <list id="1" type="ol" listtype="decimal" formatstring="&#32;&#83;&#84;&#69;&#80;&#32;&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo STEP" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo STEP">Add the <text styleclass="Element">Statistics FB</text> to the <text styleclass="Interface">graphic-area</text><text styleclass="VariableName">&#32;</text><text styleclass="VariableName" style="color:#ff0000;">AND</text><text styleclass="VariableName">&#32;</text><text styleclass="Body Text">connect a wire to its input-connector</text><text styleclass="VariableName">.</text></li>
+          </list>
+          <para styleclass="Body Text HowTo"><table styleclass="PopupTable2" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <list id="2" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="B Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="B Bullets"><text style="font-style:normal;">Click</text><text style="font-style:italic;">&#32;</text><text styleclass="T_Menu">Modeling FB toolbar &gt; Statistics FB</text><text styleclass="VariableName">&#32;</text></li>
+                  <li styleclass="HowTo Numbered"><text style="font-style:normal;">Click</text><text style="font-family:Arial; font-size:11pt; color:#000000;"> the </text><text styleclass="Interface">graphic-area</text></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Body Table">The <text styleclass="Element">Statistic FB</text> is now in the<text style="font-family:Arial; font-size:11pt; color:#000000;">&#32;</text><text styleclass="Interface">graphic-area</text></para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td colspan="2" style="width:120px;">
+          <para styleclass="VariableName-IT" style="text-align:right;"><image src="GA-StatsFB.ipp" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <list id="3" type="ol" listtype="decimal" formatstring="&#32;&#83;&#84;&#69;&#80;&#32;&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="2" styleclass="HowTo STEP" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo STEP"><text styleclass="Body Text">Connect a wire to its input-connector</text><text styleclass="VariableName">.</text></li>
+          </list>
+          <para styleclass="Body Text HowTo"><table styleclass="PopupTable2" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <list id="4" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="B Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="B Bullets"><text style="font-style:normal;">In the </text><text styleclass="Interface">graphic-area</text><text style="font-style:normal;">, drag a wire from a different </text><text styleclass="Element">FB</text><text style="font-style:normal;"> to the input-connector of the </text><text styleclass="Element">Statistics FB</text><text styleclass="VariableName">&#32;</text></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Body Text">A wire is now connected to its input-connector.</para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td colspan="2" rowspan="2">
+          <para styleclass="Interface" style="text-align:right;"><image src="Dialog-FB-Stats.ipp" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+          <para styleclass="Interface" style="text-align:right;"><image src="Dialog-StatsFB2.ipp" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <list id="5" type="ol" listtype="decimal" formatstring="&#32;&#83;&#84;&#69;&#80;&#32;&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="3" styleclass="HowTo STEP" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo STEP">Open the <text styleclass="Element">Statistics dialog-box</text><text styleclass="Interface2">&#32;</text></li>
+          </list>
+          <para styleclass="Body Text HowTo"><table styleclass="PopupTable2" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <list id="6" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="B Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="B Bullets"><text styleclass="Body Text">Double-click the </text><text styleclass="Element">Math FB</text><text style="font-family:Arial; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">&#32;</text><text styleclass="Body Text">in the </text><text styleclass="Interface">graphic-area</text><text styleclass="VariableName">&#32;</text></li>
+                </list>
+                <para styleclass="VariableName-IT">- or -</para>
+                <para styleclass="Body Table"><text styleclass="SeeAlso">See </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-How-to-Open-a-Dialog-Box" styleclass="SeeAlso">How to Open a Dialog-Box</link>.<text styleclass="VariableName">&#32;</text></para>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Body Text">The <text styleclass="Element">Statistics dialog-box</text> is now open<text style="font-family:Arial; font-size:11pt; color:#000000;">.</text></para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <list id="7" type="ol" listtype="decimal" formatstring="&#32;&#83;&#84;&#69;&#80;&#32;&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="4" styleclass="HowTo STEP" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo STEP">Select the <text styleclass="VariableName">Data-Channel/Derivative</text> for which you want <text styleclass="VariableName">Statistics</text></li>
+          </list>
+          <para styleclass="Separator-Header">Select Derivative </para>
+          <para styleclass="HowTo Bulleted"><text styleclass="VariableName">Derivative ≡ Data-Channel</text><text styleclass="HowTo Numbered" style="font-weight:normal;">: </text></para>
+          <para styleclass="Body Text HowTo"><table styleclass="PopupTable2" rowcount="3" colcount="2" style="border-width:0px; border-spacing:0px; border-collapse:collapse; cell-border-width:1px; border-color:#993300; border-style:solid;">
+            <tr style="vertical-align:top">
+              <td style="width:128px;">
+                <para styleclass="VariableName">Data-Channel 1</para>
+              </td>
+              <td>
+                <para styleclass="VariableName">Pos &#160;or Ang (default data-channel) or Torque</para>
+              </td>
+            </tr>
+            <tr style="vertical-align:top">
+              <td style="width:128px;">
+                <para styleclass="VariableName">Data-Channel 2</para>
+              </td>
+              <td>
+                <para styleclass="VariableName">Vel or Ang Vel or Force X</para>
+              </td>
+            </tr>
+            <tr style="vertical-align:top">
+              <td style="width:128px;">
+                <para styleclass="VariableName">Data-Channel 3</para>
+              </td>
+              <td>
+                <para styleclass="VariableName">Acc or Ang Acc or Force Y</para>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Body Text">Ignore the other <text styleclass="Separator">separators</text> in the dialog.</para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <list id="8" type="ol" listtype="decimal" formatstring="&#32;&#83;&#84;&#69;&#80;&#32;&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="5" styleclass="HowTo STEP" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo STEP">Click <image src="OK-tiny-13-17.png" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image> to close the <text styleclass="Element">Statistics dialog-box</text><text styleclass="VariableName">&#32;</text></li>
+          </list>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <list id="9" type="ol" listtype="decimal" formatstring="&#32;&#83;&#84;&#69;&#80;&#32;&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="6" styleclass="HowTo STEP" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo STEP">Open the <text styleclass="Element">Statistical </text><text styleclass="VariableName">Properties box </text></li>
+          </list>
+          <para styleclass="Body Text HowTo"><table styleclass="PopupTable2" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <list id="10" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="B Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="B Bullets"><text styleclass="VariableName" style="color:#ff0000;">CTRL + Click</text><text styleclass="Body Text"> the </text><text styleclass="Element">Statistics FB</text><text style="font-family:Arial; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">&#32;</text><text styleclass="Body Text">in the </text><text styleclass="Interface">graphic-area</text><text styleclass="VariableName">&#32;</text></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="HowTo STEP">The <text styleclass="Element">Statistical Properties</text><text styleclass="VariableName"> box is now open.</text></para>
+          <para styleclass="Body Text HowTo">Read the <text styleclass="VariableName">Statistics</text> for the <text styleclass="VariableName">Data-Channel</text> of the wire connected to its input-connector.</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td colspan="3">
+          <para styleclass="Body Text"><text styleclass="Notes">Note</text>: to edit the <text styleclass="Parameter">Number-Format</text> for the <text styleclass="VariableName">Statistics Properties,</text><text styleclass="Body Text HowTo" style="font-weight:normal;"> use:</text></para>
+          <para styleclass="Body Text HowTo"><text styleclass="Interface">Application-Settings &gt; Number-Format &gt;</text><text style="font-weight:normal;">&#32;</text><text styleclass="Separator">Data-Output Format</text><text style="font-weight:normal;"> &gt; </text><text styleclass="Parameter">Digits</text><text style="font-weight:normal;"> and </text><text styleclass="Parameter">Precision</text></para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="Body Text"><text styleclass="Notes">Note: </text></para>
+          <para styleclass="Body Text HowTo"><text styleclass="Interface">Wires</text><text styleclass="Body Text"> that connect </text><text styleclass="Interface">Function-Blocks</text><text styleclass="Body Text"> have up to 3 </text><text styleclass="Interface">data-channels</text><text styleclass="Body Text">. </text></para>
+          <para styleclass="Body Text HowTo">The 3 <text styleclass="VariableName">Data-Channels</text> on a wire are typically:</para>
+          <list id="11" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted">Position, Velocity, and Acceleration. </li>
+            <li styleclass="HowTo Bulleted">Total Force, Force X, and Force Y.</li>
+          </list>
+          <para styleclass="Body Text"><text styleclass="SeeAlso">See</text><text style="font-weight:normal;">&#32;</text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Function-Blocks-Schematic-DataValuesChannels" anchor="DataTypes" styleclass="VariableName">Data-Channels</link><text style="font-weight:normal;"> for more information.</text></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading4 Toggle_atocs_"></para>
+    <para styleclass="Normal" style="page-break-before:always;"></para>
+  </body>
+</topic>

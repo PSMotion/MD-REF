@@ -1,0 +1,218 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" status="Under Construction" modified="2023-10-16T20:42:46.888+01:00" lasteditedby="44785" version="2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title>Dialog: Magnetic-Joint</title>
+  <keywords>
+    <keyword>Dialog<keyword>Magnetic-Joint</keyword></keyword>
+    <keyword>Edit<keyword>Magnetic-Joint</keyword></keyword>
+    <keyword>Magnetic-Joint dialog<keyword>Curve Follow Inside</keyword><keyword>Curve Follow Outside</keyword><keyword>Curve Following</keyword><keyword>Probe Compensation</keyword><keyword>Radius Control</keyword></keyword>
+    <keyword>Point-Cloud and Curve Following</keyword>
+  </keywords>
+  <body>
+    <header>
+      <para styleclass="Heading1">Dialog: Magnetic-Joint</para>
+    </header>
+    <para styleclass="Heading2">Magnetic-Joint</para>
+    <para styleclass="Body Text HowTo"><text styleclass="Body Text">A </text><text styleclass="VariableName">Magnetic-Joint</text><text style="font-style:normal;">&#32;</text>pulls a <text styleclass="VariableName-IT" style="font-style:normal;">Circular</text>&#32;<text styleclass="Element">Profile </text>to be in continuous contact with an <text styleclass="VariableName-IT" style="font-style:normal;">Irregular</text>&#32;<text styleclass="Element">Profile / Curve</text><text styleclass="BodyText BI">*</text><text styleclass="Element">.</text><text styleclass="HowTo Bulleted"> &#160;</text>The <text styleclass="VariableName">Circular</text>&#32;<text styleclass="Element">Profile</text> and the <text styleclass="VariableName">Irregular</text>&#32;<text styleclass="Element">Profile / Curve</text> are in different <text styleclass="Element">Parts</text> and <text styleclass="Interface">kinematic-chains</text>. </para>
+    <para styleclass="Body Text HowTo">After you add the <text styleclass="Element">Magnetic-Joint</text>, the motions of the two <text styleclass="Interface">kinematic-chains</text> are related by the contact between the <text styleclass="VariableName">Circular </text><text styleclass="Element">Profile</text><text styleclass="VariableName">&#32;</text>and <text styleclass="VariableName">Irregular</text>&#32;<text styleclass="Element">Profile / Curve</text>.</para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="Body Text"><text styleclass="BodyText BI">*</text><text style="font-size:12pt; font-weight:bold;">&#32;</text>The shape of the <text styleclass="VariableName-IT" style="font-style:normal;">irregular</text>&#32;<text styleclass="Element">Profile</text> can be:</para>
+    <list id="0" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:10pt; color:#000000;">
+      <li styleclass="HowTo Bulleted">a <text styleclass="Element">Profile</text> that you add to a <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-Sketch-Loop" styleclass="Interface">sketch-loop</link><text styleclass="Interface">&#32;</text></li>
+    </list>
+    <para styleclass="Body Text HowTo" style="margin-top:0px; margin-bottom:0px;">or</para>
+    <list id="0" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:10pt; color:#000000;">
+      <li styleclass="HowTo Bulleted">a <text styleclass="Element">Curve</text> that we calculate for you from a <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Command-AddFBPointCloud" styleclass="Element">Point-Cloud</link></li>
+    </list>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="Heading4 Toggle_atocs_"><anchor id="DIALOG-MAGJOINT-OPEN" styleclass="Heading3_atocs_"><keywords><keyword>How to ...<keyword>Open the Magnetic-Joint FB.</keyword></keyword></keywords></anchor>How to open the Magnetic-Joint dialog</para>
+    <para styleclass="Body Text HowTo"><text styleclass="SeeAlso">See also: </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Command-AddMagneticJoint" styleclass="SeeAlso">Add Magnetic-Joint</link>.</para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="5" colcount="3">
+      <tr style="vertical-align:top">
+        <td colspan="2" style="width:260px;">
+          <para styleclass="Normal"><image src="MD-MAGNETIC-JOINT-EDIT.ipp" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="B Bullets"><text styleclass="HowTo Bulleted" style="font-style:normal;">Before you edit a </text><text styleclass="Element-Header">Magnetic-Joint:</text><text styleclass="HowTo Bulleted" style="font-style:normal;">&#32;</text></para>
+          <list id="1" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="B Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="B Bullets"><text styleclass="HowTo Bulleted" style="font-style:normal;">Click the </text><text styleclass="Interface2">Home</text><text styleclass="HowTo Bulleted" style="font-style:normal;"> key on your keyboard to move the </text><text styleclass="Interface2">MMA</text><text styleclass="HowTo Bulleted" style="font-style:normal;"> to zero.</text><text styleclass="VariableName">&#32;</text></li>
+            <li styleclass="B Bullets"><text styleclass="HowTo Bulleted" style="font-style:normal;">Click</text><text styleclass="HowTo Bulleted"> a </text><text styleclass="Element-Header">Magnetic-Joint FB </text><text styleclass="HowTo Bulleted">in </text><text styleclass="Body Text">the graphic-area</text><text styleclass="Interface">&#32;</text><text styleclass="Body Text">(see image to the left)</text></li>
+          </list>
+          <para styleclass="B Bullets"><text styleclass="Body Text">The </text><text styleclass="Element-Header">Magnetic-Joint</text><text styleclass="Body Text"> element is in the </text><text styleclass="Interface">Selection-Window</text></para>
+          <list id="1" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="B Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="B Bullets"><text styleclass="Body Text">Right-click the </text><text styleclass="Element-Header">Magnetic-Joint</text><text styleclass="Body Text"> element in the </text><text styleclass="Interface">Selection-Window</text></li>
+            <li styleclass="B Bullets"><text styleclass="Body Text">Click </text><text styleclass="VariableName">Edit element</text><text styleclass="Body Text"> in the shortcut menu.</text></li>
+          </list>
+          <para styleclass="VariableName-IT"><text style="font-style:normal;">OR</text></para>
+          <list id="2" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="B Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="B Bullets"><text styleclass="SeeAlso">See </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-How-to-Open-a-Dialog-Box" styleclass="SeeAlso">How to Open a dialog</link><text styleclass="VariableName">&#32;</text></li>
+          </list>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="Body Text"></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td colspan="3">
+          <para styleclass="Body Text"><text styleclass="Notes">Note</text>: The icon of the <text styleclass="Element">Magnetic-Joint</text> has three states in the graphic-area.</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:10px;">
+          <para styleclass="Body Text"><image src="MD-Icon-FB-Magnet-En-GA.png" scale="100.00%" figurelistinclude="0"></image></para>
+        </td>
+        <td colspan="2" style="vertical-align:middle;">
+          <para styleclass="Body Text"><text styleclass="VariableName">Enabled Magnetic-Joint</text> - <text styleclass="Interface2">Found a solution</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:10px;">
+          <para styleclass="Body Text"><image src="MD-Icon-FB-MagnetDis.png" scale="100.00%" figurelistinclude="0"></image></para>
+        </td>
+        <td colspan="2" style="vertical-align:middle;">
+          <para styleclass="Body Text"><text styleclass="VariableName">Disabled Magnetic-Joint - not active</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:10px;">
+          <para styleclass="Body Text"><image src="MD-MAGNETIC-JOINT-ICON-FAILED.ipp" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td colspan="2" style="vertical-align:middle;">
+          <para styleclass="Interface2"><text styleclass="VariableName">Enabled Magnetic-Joint</text> - Failed to find a solution</para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="Heading3_atocs_">Magnetic-Joint dialog</para>
+    <para styleclass="Body Text"><table styleclass="Default" rowcount="1" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:305px;">
+          <para styleclass="Normal" style="text-align:left;"><image src="MD-DIALOG-MAGNETICJOINT.ipp" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"><caption><![CDATA[Magnetic-Joint dialog]]></caption></image></para>
+        </td>
+        <td>
+          <para styleclass="Body Table">The <text styleclass="VariableName">Magnetic-Joint dialog</text> has three separators:</para>
+          <para styleclass="HowTo Numbered"><text styleclass="Separator-Header"> Following Options </text></para>
+          <para styleclass="HowTo Numbered"><text styleclass="Separator-Header"> Radius Control </text></para>
+          <para styleclass="HowTo Numbered"><text styleclass="Separator-Header"> Advanced </text></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Body Text HowTo" style="text-indent:-36px; margin-left:60px;"><anchor id="MagneticJoint-Enable" styleclass="Heading4 Toggle_atocs_2"><keywords><keyword>Magnetic-Joint dialog<keyword>Path Following Options</keyword></keyword></keywords></anchor><image src="btn_addkeyword.bmp" scale="100.00%" styleclass="Separator-Header" figurelistinclude="0"></image><tab /><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" src-collapsed="btn_addkeyword.bmp" src-expanded="btn_delkeyword.bmp" src-print="none" styleclass="Separator-Header"><caption><![CDATA[ Following Options ]]></caption></toggle></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="3" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:240px;">
+          <para styleclass="Normal" style="text-align:right;"><image src="MD-DIALOG-MAGNETICJOINT-FOLLOWING.ipp" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <list id="3" type="ul" listtype="bullet" formatstring="&#254;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Wingdings; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted"><text styleclass="ParameterHeader">Enable Magnetic-Joint </text>check-box</li>
+          </list>
+          <para styleclass="Body Text HowTo">The circular <text styleclass="Element">Profile</text> is in continuous contact with the irregular <text styleclass="Element">Profile</text> or <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Command-AddFBPointCloud" styleclass="Element">Point-Cloud</link>.</para>
+          <list id="4" type="ul" listtype="bullet" formatstring="&#113;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Wingdings; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted"><text styleclass="ParameterHeader">Disable Magnetic-Joint</text> check-box.</li>
+          </list>
+          <para styleclass="Body Text HowTo">The circular <text styleclass="Element">Profile</text> moves to the <text styleclass="Parameter">Base-Value</text> (Linear or Angular position) as specified by the <text styleclass="Element">Motion-Dimension FB</text> that was in continuous contact with the irregular <text styleclass="Element">Profile.</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:240px;">
+          <para styleclass="Normal"><image src="MD-GA-Dialog-MagJoint-01.png" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="ParameterHeader">Outside</para>
+          <para styleclass="Body Text HowTo">The image shows the circular <text styleclass="Element">Profile</text><image src="Red-14-1.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image> in contact with the <text styleclass="VariableName-IT">out-side</text> of the irregular <text styleclass="Element">Profile</text><image src="Red-14-2.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Image Caption">.</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:240px;">
+          <para styleclass="Normal"><image src="MD-GA-MagJoint-Internal.png" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="ParameterHeader">Inside</para>
+          <para styleclass="Body Text HowTo">The image shows the circular <text styleclass="Element">Profile </text><image src="Red-14-1.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image> in contact with the <text styleclass="VariableName-IT">in-side</text> of the irregular <text styleclass="Element">Profile</text><image src="Red-14-2.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Image Caption">.</text></para>
+          <para styleclass="Body Text"></para>
+          <para styleclass="Body Text"><text styleclass="Notes">Note</text>: </para>
+          <para styleclass="Body Text HowTo">The <text styleclass="Element">Magnetic-Joint</text>&#32;<text styleclass="Parameter">INSIDE</text> option does not operate as successfully as the <text styleclass="Parameter">Outside</text></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Body Text HowTo" style="text-indent:-36px; margin-left:60px;"><anchor id="MagneticJoint-RadiusControl" styleclass="Separator-Header"><keywords><keyword>Magnetic-Joint dialog<keyword>Radius Control</keyword></keyword></keywords></anchor><image src="btn_addkeyword.bmp" scale="100.00%" styleclass="Separator-Header" figurelistinclude="0"></image><tab /><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" src-collapsed="btn_addkeyword.bmp" src-expanded="btn_delkeyword.bmp" src-print="none" styleclass="Separator-Header"><caption><![CDATA[ Radius Control ]]></caption></toggle></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="2" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:236px;">
+          <para styleclass="Normal" style="text-align:right;"><image src="MD-DIALOG-MAGNETICJOINT-RADIUS-0.ipp" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+          <para styleclass="Normal"><line style="height:1px; color:#ff6600;" /></para>
+          <para styleclass="Normal"><image src="MD-DIALOG-MAGNETICJOINT-RADIUS-1.ipp" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td rowspan="2">
+          <para styleclass="Body Table">Optionally, edit the effective radius of the <text styleclass="VariableName">Circular</text><text styleclass="Body Text">&#32;</text><text styleclass="Element">Profile.</text></para>
+          <list id="5" type="ul" listtype="bullet" formatstring="&#113;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Wingdings; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted"><text styleclass="Parameter">Not Overriding Circle Radius</text> (default)</li>
+          </list>
+          <list id="6" type="ul" listtype="bullet" formatstring="&#254;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Wingdings; font-size:10pt; color:#000080;">
+            <li styleclass="HowTo Bulleted"><text styleclass="Parameter">Modify Circle Radius</text></li>
+          </list>
+          <para styleclass="Body Text HowTo">Enable the check-box <text styleclass="Body Text">if you want the </text><text styleclass="VariableName">Circular</text><text styleclass="Body Text">&#32;</text><text styleclass="Element">Profile</text><text styleclass="Body Text"> to overlap the </text><text styleclass="VariableName">Irregular</text><text styleclass="Body Text">&#32;</text><text styleclass="Element">Profile</text><text style="font-style:italic;">.</text></para>
+          <para styleclass="Body Text">For example:</para>
+          <para styleclass="Parameter">Radius = 0mm</para>
+          <para styleclass="Body Text HowTo">When the <text styleclass="Parameter">Radius</text> is 0<text style="font-size:10pt; vertical-align:baseline;">mm</text>, the center of the <text styleclass="VariableName">Circular </text><text styleclass="Element">Profile</text> moves along the <text styleclass="VariableName">Irregular Profile</text> as normal.</para>
+          <para styleclass="Parameter">Radius = 3mm</para>
+          <para styleclass="Body Text HowTo">When the <text styleclass="Parameter">Radius</text> is 3<text style="font-size:10pt; vertical-align:baseline;">mm</text> (for example), the center of the <text styleclass="VariableName">Circular Profile</text> is 3<text style="font-size:10pt; vertical-align:baseline;">mm</text> inside the <text styleclass="VariableName">Irregular Profile</text>.</para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="Body Table">This is useful if you use a CMM machine with a probe diameter that is different to the Follower-Roller, and the CMM software does not have Probe Compensation.</para>
+          <para styleclass="Body Text HowTo">When the CMM data does not compensate for the Probe Diameter, you would enable <text styleclass="Parameter-Header" style="font-family:Arial; font-size:10pt; font-weight:normal; font-style:normal; text-decoration:none; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">Modify Cycle Radius</text><text styleclass="Image Caption">&#32;</text>to recreate the contact between the <text styleclass="VariableName">irregular-Profile</text> and the <text styleclass="VariableName-IT" style="font-style:normal;">Follower-Roller</text>.</para>
+          <para styleclass="VariableName-IT2"><text style="font-style:normal;">Offset Profile Radius = Radius of Actual Follower-Roller – Radius of CMM Probe</text></para>
+          <para styleclass="VariableName-indent">R = R<text style="font-size:9pt; vertical-align:sub;">cf</text> – R<text style="font-size:9pt; vertical-align:sub;">p</text></para>
+          <para styleclass="Body Text HowTo"><text styleclass="VariableName">R</text><text styleclass="VariableName" style="font-size:9pt; vertical-align:sub;">cf</text><text styleclass="VariableName">&#32;</text><text style="font-weight:bold;">= </text><text styleclass="VariableName">Follower-Roller Radius; </text></para>
+          <para styleclass="Body Text HowTo"><text styleclass="VariableName">R</text><text styleclass="VariableName" style="font-size:9pt; vertical-align:sub;">p</text><text styleclass="VariableName">&#32;</text><text style="font-weight:bold;">= </text><text styleclass="VariableName">CMM Probe Radius.</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:236px;">
+          <para styleclass="Normal"><image src="MD-GA-Magnetic-Joint-Radius.png" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Body Text HowTo" style="text-indent:-36px; margin-left:60px;"><anchor id="MAGNETICJOINT-ADVANCED" styleclass="Separator-Header"><keywords><keyword>Magnetic-Joint dialog<keyword>Advanced</keyword></keyword></keywords></anchor><image src="btn_addkeyword.bmp" scale="100.00%" styleclass="Separator-Header" figurelistinclude="0"></image><tab /><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" src-collapsed="btn_addkeyword.bmp" src-expanded="btn_delkeyword.bmp" src-print="none" styleclass="Separator-Header"><caption><![CDATA[Advanced ]]></caption></toggle></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="2" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:240px;">
+          <para styleclass="Normal" style="text-align:right;"><image src="MD-MAGNETIC-JOINT-4-SOLUTIONS.ipp" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"><caption><![CDATA[4 Possible Contact Solutions between Circular-Profile and a simple Irregular-Profile]]></caption></image></para>
+        </td>
+        <td rowspan="2">
+          <para styleclass="Body Table"><text styleclass="Body Text HowTo">When you add a </text><text styleclass="Element">Magnetic-Joint</text><text styleclass="Body Text HowTo">, the </text><text styleclass="VariableName">Circular Profile</text><text styleclass="Body Text HowTo"> uses numerical techniques to find a contact with the </text><text styleclass="VariableName">Irregular Profile</text><text styleclass="Body Text HowTo">.</text></para>
+          <para styleclass="Body Table"><text styleclass="Body Text HowTo">To humans, it is easy to see the contact that you want. But mathematically, even when the</text><text styleclass="VariableName"> Irregular-Profile</text><text styleclass="Body Text HowTo"> is a simple shape, there are usually a minimum of 4 solutions - see image to the left. </text><text styleclass="VariableName">MechDesigner</text><text styleclass="Body Text HowTo">&#32;</text><text styleclass="Body Text">may</text><text styleclass="Body Text HowTo"> find the solution you want, or a solution you do not want, or even fail to find a solution at all.</text></para>
+          <para styleclass="Body Text HowTo"><text styleclass="Interface2" style="color:#ff0000;">BEFORE</text><text styleclass="Interface2"> YOU ADD THE</text>&#32;<text styleclass="Element-Header">MAGNETIC-JOINT</text> - it is best to edit the <text styleclass="Parameter-Header" style="font-family:Arial; font-size:10pt; font-weight:normal; font-style:normal; text-decoration:none; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">Base-Value</text> parameter in the <text styleclass="Element-Header">Motion-Dimension FB</text>, to put the <text styleclass="VariableName">Circular Profile</text> within <text styleclass="VariableName">0.5 x Radius of Circular-Profile. </text></para>
+          <para styleclass="HowTo STEP">To Edit the starting position of the Circular-Profile</para>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <list id="7" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="Bullets"><text styleclass="T_Menu">Run menu &gt; Home</text>&#32;<text styleclass="VariableName">(or use the Alt+H keyboard shortcut)</text><text styleclass="Body Text"> to put the </text><text styleclass="VariableName">MMA at 0.</text></li>
+                  <li styleclass="HowTo Bulleted"><text styleclass="Body Text HowTo">Open the </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-FunctionBlock-MotionDimension" styleclass="Element">Motion-Dimension dialog</link><text styleclass="Element">&#32;</text><text styleclass="Body Text">to be controlled by the </text><text styleclass="Element">Magnetic-Joint.</text></li>
+                  <li styleclass="HowTo Bulleted"><text styleclass="Body Text HowTo">Edit the </text><text styleclass="Parameter-Header" style="font-family:Arial; font-size:10pt; font-weight:normal; font-style:normal; text-decoration:none; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">Base-Value</text><text styleclass="Body Text HowTo"> to position the </text><text styleclass="VariableName">Circular-Profile</text><text styleclass="Body Text"> to be ≤ </text><text styleclass="VariableName">0.5 × Radius of the Circular-Profile</text><text styleclass="Body Text"> from the </text><text styleclass="VariableName">Irregular-Profile.</text></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Body Table"><text styleclass="Body Text HowTo">The factors in </text><text styleclass="Separator">Advanced</text><text styleclass="Body Text HowTo"> help us to find for you the solution you want.</text></para>
+          <para styleclass="ParameterHeader">Reset Range Factor (default = 2) </para>
+          <para styleclass="Body Text HowTo">This factor limits the range of values within which to search for a solution for the <text styleclass="Element">Motion-Dimension</text>, when the model is at the <text styleclass="Interface2">Home</text> position (<text styleclass="VariableName">MMA = 0</text>). </para>
+          <para styleclass="Body Text HowTo">A <text styleclass="Parameter">Reset Range Factor &#160;= 1</text> is equal to the <text styleclass="VariableName">1 × Radius of the Circular Profile</text>. </para>
+          <para styleclass="Body Text HowTo">The smaller <text styleclass="Parameter">Reset Range Factor</text>, the nearer you should edit the <text styleclass="Parameter">Base-Value</text> to put the <text styleclass="VariableName">Circular Profile</text> to the <text styleclass="VariableName">Irregular-Profile</text> before you add the <text styleclass="Element">Magnetic-Joint</text>.</para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="ParameterHeader">Running Range Factor (Default = 1)</para>
+          <para styleclass="Body Text HowTo"><text styleclass="VariableName">MechDesigner</text> must find a solution for contact between the Circular and Irregular-Profiles of the <text styleclass="Element">Magnetic-Joint</text> contact at all steps in the machine-cycle. There are frequently at least 4 solutions - see image, left and top.</para>
+          <para styleclass="Body Text HowTo">However, the solution at any step in the machine-cycle should not be hugely different from the previous solution.</para>
+          <para styleclass="Body Text HowTo">Use the <text styleclass="Parameter">Running Range Factor</text> to limit the range of <text styleclass="Element">Motion-Dimension</text> values within which to search for a solution from the previous solution, at each step of the solution cycle.</para>
+          <para styleclass="Body Table"><text styleclass="ParameterHeader">Running Range Factor = 1</text><text styleclass="Parameter">&#32;</text><text styleclass="Body Text">is equivalent to</text><text styleclass="Parameter">&#32;</text><text styleclass="VariableName">1 × Radius</text><text styleclass="Body Text"> of </text><text styleclass="VariableName">Circular-Profile</text><text styleclass="Body Text"> that is contact with the </text><text styleclass="VariableName">Irregular-Profile</text><text styleclass="Interface">.</text></para>
+          <para styleclass="Body Text HowTo">Reduce the <text styleclass="Parameter">Running Range Factor</text><text styleclass="Body Text"> if </text>the <text styleclass="VariableName">Circular-Profile</text> does not remain in contact with the <text styleclass="VariableName">Irregular-Profile</text>, as you cycle the model.</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:236px;">
+          <para styleclass="Normal"><image src="MD-DIALOG-MAGNETICJOINT-ADVANCED.ipp" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+      </tr>
+    </table></para>
+  </body>
+</topic>

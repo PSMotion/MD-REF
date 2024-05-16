@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" status="Under Construction" modified="2022-09-09T23:28:14.225+01:00" lasteditedby="Adam" version="2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title>Dialog: Zahnstange-Ritzel / Kugelumlauf</title>
+  <keywords>
+    <keyword>Add<keyword>Ball-Screw</keyword></keyword>
+    <keyword>Dialog<keyword>Ball-Screw</keyword><keyword>Rack-Pinion</keyword></keyword>
+    <keyword>Number of Teeth: Rack-Pinion</keyword>
+    <keyword>Rack Pinion Design Parameters</keyword>
+    <keyword>Rack-Pinion<keyword>Addendum</keyword><keyword>Dedendum</keyword><keyword>Gear Mesh</keyword><keyword>Mesh</keyword><keyword>Module</keyword><keyword>Number-of-Teeth</keyword><keyword>Pressure Angle</keyword></keyword>
+  </keywords>
+  <body>
+    <header>
+      <para styleclass="Heading1">Dialog: Zahnstange-Ritzel / Kugelumlauf</para>
+    </header>
+    <para styleclass="Heading2">Zahnstange-Ritzel / Kugelumlaufspindel</para>
+    <para styleclass="SeeAlso">See: <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Command-AddRackPinion-BallScerw">Add Rack-Pinion</link></para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="Body Text HowTo">Verwenden Sie das <text styleclass="Element">Dialogfeld &quot;</text>&#32;<text styleclass="Element">Rack-Pinion&quot;</text>, um die Parameter eines <text styleclass="Element">Rack-Pinions </text>zu bearbeiten<text styleclass="VariableName-indent">.</text></para>
+    <para styleclass="Body Text HowTo">Sie können das <text styleclass="Element">Dialogfeld Zahnstangenritzel</text> verwenden, um das <text styleclass="Element">Zahnstangenritzel</text> in einen <text styleclass="Element">Kugelumlaufspindel</text> umzuwandeln.</para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="Heading3_atocs_">Open Rack-Pinion dialog-box</para>
+    <para styleclass="Body Text"><table styleclass="Standard" rowcount="1" colcount="2" style="width:auto; head-row-background-color:#ffffff; alt-row-background-color:none;">
+      <thead style="vertical-align:top">
+        <td style="width:240px; border-right:none;">
+          <para styleclass="Normal"><image src="MD-GA-EditRackPinion.png" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td style="border-left:none;">
+          <para styleclass="Body Text">Bearbeiten Sie das<text styleclass="Element"> Zahnstangen-Ritzel</text><text style="font-weight:normal; font-style:normal;">:</text></para>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td style="border-top:none; border-right:none; border-bottom:none;">
+                <list id="0" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="B Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="B Bullets"><text styleclass="Body Text">Doppelklicken Sie auf ein </text><text styleclass="Element">Rack-Pinion </text><text styleclass="Body Text">im </text><text styleclass="Interface">Grafikbereich</text><text styleclass="Body Text"> oder </text><text styleclass="Interface">Assembly-Tree</text><text styleclass="Body Text">.</text><text styleclass="VariableName">&#32;</text></li>
+                </list>
+                <para styleclass="VariableName-IT">- oder -</para>
+                <list id="1" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="B Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="B Bullets"><text styleclass="SeeAlso">Siehe </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-How-to-Open-a-Dialog-Box" styleclass="SeeAlso">Öffnen eines Dialogfelds</link><text styleclass="VariableName">&#32;</text></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Body Text">Das <text styleclass="Element">Dialogfeld Zahnstange-Ritzel</text> ist nun geöffnet.</para>
+        </td>
+      </thead>
+    </table></para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="Heading3_atocs_">Zahnstangen-Ritzel / Kugelumlaufspindel Dialogfeld</para>
+    <para styleclass="Body Text"><table styleclass="Default" rowcount="1" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:235px;">
+          <para styleclass="Normal" style="text-align:left;"><image src="MD-DIALOG-RACKPINION.ipp" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="Body Text">Im <text styleclass="Element">Dialogfeld Rack-Pinion</text> gibt es drei Registerkarten. Jede Registerkarte hat ein Trennzeichen.</para>
+          <para styleclass="Heading4 Toggle_atocs_2">Allgemein</para>
+          <para styleclass="Body Text Howindent4bullets"><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" src-collapsed="btn_addkeyword.bmp" src-expanded="btn_delkeyword.bmp" src-print="none" styleclass="Separator-Header"><caption><![CDATA[Zahnstange und Ritzel Parameter]]></caption></toggle></para>
+          <para styleclass="Heading4 Toggle_atocs_2">Verzahnung</para>
+          <para styleclass="Body Text Howindent4bullets"><text styleclass="Separator-Header">Zahn-Parameter</text></para>
+          <para styleclass="Heading4 Toggle_atocs_2">Kugelumlaufspindel</para>
+          <para styleclass="Body Text Howindent4bullets"><text styleclass="Separator-Header">Ball-Screw Parameters</text></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading4 Toggle_atocs_">Allgemein<anchor id="RackPinionParameters" styleclass="Body Text"><keywords><keyword>Rack and Pinion Gear Parameters</keyword></keywords></anchor></para>
+    <para styleclass="Body Text"> Zahnstange und Ritzel Parameter </para>
+    <para styleclass="Body Text HowTo"><table styleclass="Standard" rowcount="1" colcount="2" style="width:auto;">
+      <tr style="vertical-align:top">
+        <td style="width:246px;">
+          <para styleclass="Normal"><image src="MD-Dialog-RackPinion-General.png" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="Parameter-Header">Verschieben Sie das Rack um:</para>
+          <para styleclass="Body Text HowTo"><text style="font-style:normal;">Bewegen</text> Sie die <text styleclass="Element">Zahnstange</text> entlang ihrer Teilungslinie um # Anzahl der Zähne.</para>
+          <para styleclass="Parameter-Header">Anzahl der Zähne, Zahnstange:</para>
+          <para styleclass="Body Text HowTo">Bearbeiten Sie den Vorgang so lange, bis die <text styleclass="Element">Zahnstange</text> mit dem <text styleclass="Element">Ritzel</text> für einen Maschinenzyklus im Eingriff bleibt.</para>
+          <para styleclass="Parameter-Header">Anzahl der Zähne, Ritzel:</para>
+          <para styleclass="Body Text HowTo">Die Anzahl der Zähne auf dem <text styleclass="Element">Ritzel.</text>&#32;</para>
+          <para styleclass="Parameter-Header">Align Mesh:</para>
+          <para styleclass="Body Text HowTo">Wenn <text styleclass="HowTo Bulleted">Sie zwei (2) </text><text styleclass="Element">Zahnstangen</text><text styleclass="HowTo Bulleted"> zu einem (1) </text><text styleclass="Element">Ritzel</text>&#32;<text styleclass="HowTo Bulleted">hinzufügen , sehen Sie normalerweise zwei (2) </text><text styleclass="Element">Ritzel</text><text styleclass="Body Text"> auf derselben Achse. Wenn</text>Sie<text styleclass="HowTo Bulleted"> nur ein(1) </text><text styleclass="Element">Ritzel</text><text styleclass="HowTo Bulleted"> sehen </text><text styleclass="Body Text">möchten</text><text styleclass="HowTo Bulleted">, klicken Sie auf eine dieser Optionen:</text></para>
+          <list id="2" type="ul" listtype="bullet" formatstring="&#164;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Wingdings; font-size:10pt; color:#333399;">
+            <li styleclass="HowTo Bulleted"><text styleclass="Parameter">Shift Rack</text></li>
+            <li styleclass="HowTo Bulleted"><text styleclass="Parameter">Shift Pinion</text></li>
+            <li styleclass="HowTo Bulleted"><text styleclass="Parameter">Do not Shift</text></li>
+          </list>
+          <para styleclass="Parameter-Header">Wählen Sie die Rackseite:</para>
+          <list id="3" type="ul" listtype="bullet" formatstring="&#164;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="margin-top:0px; margin-bottom:0px; font-family:Wingdings; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted" style="margin-top:0px; margin-bottom:0px;"><text styleclass="Parameter">Rechts </text><text styleclass="Body Text">(Standard) </text></li>
+          </list>
+          <para styleclass="Body Text HowTo">Wenn sich das <text styleclass="Element">Ritzel</text> (Kugelumlaufspindel) <text styleclass="VariableName">gegen den Uhrzeigersinn</text> dreht, bewegt sich die <text styleclass="Element">Zahnstange</text> (Mutter) in die <text styleclass="VariableName">positive Richtung</text> des <text styleclass="Element">Gleitgelenks</text>. </para>
+          <list id="4" type="ul" listtype="bullet" formatstring="&#164;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="margin-top:0px; margin-bottom:0px; font-family:Wingdings; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted" style="margin-top:0px; margin-bottom:0px;"><text styleclass="Parameter">Links </text>&#32;</li>
+          </list>
+          <para styleclass="Body Text HowTo">Wenn sich das <text styleclass="Element">Ritzel</text> (Kugelumlaufspindel) <text styleclass="VariableName">im Uhrzeigersinn</text> dreht, bewegt sich die <text styleclass="Element">Zahnstange </text>(Mutter) in die <text styleclass="VariableName">negative Richtung</text> des <text styleclass="Element">Gleitgelenks</text>.</para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading4 Toggle_atocs_">Gear Tooth tab<anchor id="RackPinion-Gear-Tooth-tab" styleclass="Body Text"><keywords><keyword>Rack-Pinion dialog<keyword>Gear Tooth tab</keyword></keyword></keywords></anchor><text styleclass="Body Text"> :</text></para>
+    <para styleclass="Body Text">Zahn-Parameter </para>
+    <para styleclass="Body Text HowTo"><table styleclass="Standard" rowcount="8" colcount="2">
+      <tr style="vertical-align:top">
+        <td rowspan="8" style="width:245px;">
+          <para styleclass="Normal" style="text-align:right;"><image src="MD-Dialog-RackPinion-GearTeeth.png" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td style="border-bottom:none;">
+          <para styleclass="Body Text"><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-Gear-Module" styleclass="Parameter-Header">Modul</link><text styleclass="Parameter">&#32;</text><text style="font-weight:bold;">=</text> P.C.D. ÷ <text styleclass="Parameter">Anzahl der Zähne</text> am <text styleclass="Element">Ritzel</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="background-color:#f0f0f0; border-top:none; border-bottom:none;">
+          <para styleclass="Body Text HowTo2"><text styleclass="Parameter-Header">Zahnstangen/Ritzel-Verhältnis</text><text styleclass="Body Text HowTo"> (</text><text styleclass="Body Text HowTo" style="font-size:10pt; vertical-align:baseline;">Grad</text><text styleclass="Body Text">),</text><text styleclass="Body Text HowTo"> je Zahnstangenverschiebung</text><text styleclass="Body Text"> (</text><text styleclass="Body Text" style="font-size:10pt; vertical-align:baseline;">mm</text><text styleclass="Body Text">)</text><text styleclass="Body Text HowTo">.</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="background-color:#f0f0f0; border-top:none; border-bottom:none;">
+          <para styleclass="Body Text"><text styleclass="Parameter-Header">Teilkreisdurchmesser </text><text styleclass="Body Text HowTo">(P.C.D.) (</text><text styleclass="Body Text HowTo" style="font-size:10pt; vertical-align:baseline;">mm</text><text styleclass="Body Text HowTo">) (Read-Only)</text></para>
+          <para styleclass="Body Text HowTo">Der Durchmesser des Teilkreises des Ritzels</para>
+          <para styleclass="Body Text HowTo">Teilkreisdurchmesser<text styleclass="Body Text">. (</text><text styleclass="Body Text" style="font-size:10pt; vertical-align:baseline;">mm</text><text styleclass="Body Text">) = &#160;Anzahl der Zähne × Modul</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="border-top:none; border-bottom:none;">
+          <para styleclass="Body Text"><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-Gear-Pressure-Angle" styleclass="Parameter-Header">Eingriffswinkel</link><text styleclass="Parameter-Header">:</text> (Default <text style="font-weight:bold;">=</text> 20º). </para>
+          <para styleclass="Body Text HowTo">Typischer Eingriffswinkel = 20º. </para>
+          <para styleclass="Body Text">Andere Druck-Winkel sind: </para>
+          <para styleclass="Body Text HowTo"><text style="font-weight:normal;">14º</text>, 17,5º (schwächer, leiser), </para>
+          <para styleclass="Body Text HowTo"><text style="font-weight:normal;">22,5º und 25º</text> (stärker, lauter).</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="border-top:none; border-bottom:none;">
+          <para styleclass="Body Text"><text styleclass="Parameter-Header">Zahnkopfhöhe:</text> (Usually <text style="font-weight:bold;">=</text> Module). </para>
+          <para styleclass="Body Text HowTo">Die radiale Höhe des Zahns vom Teilkreis bis zum Zahnkopf.</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="border-top:none; border-bottom:none;">
+          <para styleclass="Body Text"><text styleclass="Parameter-Header">Zahngrundradius:</text> (Usually = Module * 1.25)</para>
+          <para styleclass="Body Text HowTo">Er ist größer als das Addendum, um Platz für die Zahnspitze zu schaffen.</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="border-top:none; border-bottom:none;">
+          <para styleclass="Body Text"><text styleclass="Parameter-Header">Wurzelradius:</text> (Usually = &#160;0.3 * Module)</para>
+          <para styleclass="Body Text HowTo">Die kleine Hohlkehle zwischen der Flanke und der Wurzel des Zahns.</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="border-top:none;">
+          <para styleclass="Parameter-Header">Punkte pro Zahn Flanke:</para>
+          <para styleclass="Body Text HowTo">Die Anzahl der &quot;Facetten&quot; entlang der Zahnflanke. &apos;: 6 ist OK, 8 ist gut. </para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading4 Toggle_atocs_">Ball-Screw tab<text styleclass="Body Text">&#32;</text><anchor id="Rack-Pinion-BallScrew-tab" styleclass="Body Text"><keywords><keyword>Rack-Pinion dialog<keyword>Ball-Screw parameters</keyword></keyword></keywords></anchor><text styleclass="Body Text">:</text></para>
+    <para styleclass="Body Text"> Ball Screws Parameters </para>
+    <para styleclass="Body Text HowTo"><table styleclass="Standard" rowcount="1" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:242px;">
+          <para styleclass="Normal" style="text-align:right;"><image src="MD-Dialog-RackPinion-BallScrewParams.png" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="Parameter-Header">Typ auswählen:</para>
+          <list id="5" type="ul" listtype="bullet" formatstring="&#162;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="2" styleclass="HowTo Bulleted" style="font-family:Wingdings; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted"><text styleclass="Parameter">Zahnstange und Ritzel</text><text styleclass="Body Text"> (default) </text></li>
+          </list>
+          <para styleclass="HowTo Bulleted"><text styleclass="Body Text">oder</text></para>
+          <list id="6" type="ul" listtype="bullet" formatstring="&#164;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Wingdings; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted"><text styleclass="Parameter">Kugelumlaufspindel</text><text styleclass="VariableName">&#32;</text></li>
+          </list>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="Body Text">Das Symbol im <text styleclass="Interface">Grafikbereich</text> einer <text styleclass="Parameter-Header">Kugelumlaufspindel</text> ist eine <text styleclass="VariableName">Helix/Schraube.</text></para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <list id="7" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullets" style="font-family:Symbol; font-size:10pt; color:#000000;">
+            <li styleclass="Bullets"><text styleclass="Parameter-Header">Kugelumlaufspindel Blei</text><text styleclass="HowTo Bulleted"> (</text><text styleclass="HowTo Bulleted" style="font-size:10pt; vertical-align:baseline;">mm</text><text styleclass="HowTo Bulleted">) - die Entfernung, die das </text><text styleclass="Interface">gleitende Teil</text><text styleclass="HowTo Bulleted"> nach einer (1) Drehung des </text><text styleclass="Interface">drehenden Teils</text><text styleclass="HowTo Bulleted"> zurücklegt </text><text styleclass="Interface">.</text></li>
+            <li styleclass="HowTo Bulleted"><text styleclass="Parameter-Header">Kugelumlaufspindel-Durchmesser</text> (<text style="font-size:10pt; vertical-align:baseline;">mm</text>) - der Durchmesser des <text styleclass="Interface">Kugelgewindesymbols</text> im <text styleclass="Interface">Grafikbereich</text>.</li>
+          </list>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="Notes">Notes:</para>
+          <para styleclass="Body Text">Die Länge der <text styleclass="Element">Kugelumlaufspindel</text> entspricht der Länge der Linie im <text styleclass="Interface">Gleitteil</text> - siehe <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Command-AddRackPinion-BallScerw">Zahnstangen-Ritzel hinzufügen</link>.</para>
+          <para styleclass="Body Text">Die <text styleclass="VariableName">Mutter</text><text styleclass="Interface">(Gleitteil</text>) der <text styleclass="Element">Kugelumlaufspindel</text> bewegt sich in <text styleclass="VariableName">positiver Richtung</text> des <text styleclass="Element">Gleitgelenks</text>, wenn die <link displaytype="text" defaultstyle="true" type="topiclink" href="" anchor="RackPinionParameters" styleclass="Parameter">Rack-Seite auf rechts</link><text styleclass="Parameter">&#32;</text> eingestellt ist <text styleclass="Parameter">- </text>&#32;<text styleclass="SeeAlso">siehe </text><link displaytype="text" defaultstyle="true" type="topiclink" href="" anchor="RackPinionParameters" styleclass="SeeAlso">Registerkarte Allgemein</link></para>
+        </td>
+      </tr>
+    </table></para>
+  </body>
+</topic>

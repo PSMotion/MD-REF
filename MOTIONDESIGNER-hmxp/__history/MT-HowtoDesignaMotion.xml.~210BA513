@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" status="Under Construction" modified="2023-04-13T20:17:32.322+01:00" lasteditedby="Adam" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title translate="true">How to Design a Motion - First Steps.</title>
+  <keywords>
+    <keyword translate="true">How to ...<keyword translate="true">Design a Motion.</keyword></keyword>
+  </keywords>
+  <body>
+    <header>
+      <para styleclass="Heading1"><text styleclass="Heading1" translate="true">How to Design a Motion - First Steps.</text></para>
+    </header>
+    <para styleclass="Heading4 Toggle_atocs_"><text styleclass="Heading4 Toggle_atocs_" translate="true">Motion Design</text></para>
+    <para styleclass="Body Text"><text styleclass="Body Text" style="font-style:normal;" translate="true">It is always important to try to improve the design of your motion when you need to improve the performance of a machine. </text></para>
+    <para styleclass="Heading4 Toggle_atocs_"><text styleclass="Heading4 Toggle_atocs_" translate="true">First Steps</text></para>
+    <para styleclass="Body Text"><text styleclass="Body Text" translate="true">There are a number of steps to design a motion. You must:</text></para>
+    <list id="0" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Numbered" style="font-family:&apos;Segoe UI&apos;; font-size:11pt; color:#000000;">
+      <li styleclass="HowTo Numbered"><text styleclass="HowTo Numbered" translate="true">Write a Motion-Specification. </text></li>
+    </list>
+    <para styleclass="Body Text HowTo"><text styleclass="Body Text HowTo" translate="true">Note the key positions of the tooling. </text></para>
+    <para styleclass="Body Text HowTo"><text styleclass="Body Text HowTo" translate="true">Are there are any velocity requirements? - e.g. to track a pack during heat-sealing.</text></para>
+    <para styleclass="Body Text HowTo"><text styleclass="Body Text HowTo" translate="true">Are there any minimum time-periods - e.g. for heat-sealing jaws</text></para>
+    <list id="0" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Numbered" style="font-family:&apos;Segoe UI&apos;; font-size:11pt; color:#000000;">
+      <li styleclass="HowTo Numbered"><text styleclass="HowTo Numbered" translate="true">As necessary, split the motion into a number of segments - this is called Segmentation.</text></li>
+    </list>
+    <para styleclass="Body Text HowTo"><text styleclass="Body Text HowTo" translate="true">Each segment can define a particular action - such as &apos;Push&apos;, &apos;Lift&apos;, &apos;Close Jaws&apos;, Open-Jaws&apos;, etc.</text></para>
+    <para styleclass="Body Text HowTo"><text styleclass="Body Text HowTo" translate="true">The segments are joined together, end-to-end, so that they describe the motion of a tool over one complete machine cycle.</text></para>
+    <list id="0" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Numbered" style="font-family:&apos;Segoe UI&apos;; font-size:11pt; color:#000000;">
+      <li styleclass="HowTo Numbered"><text styleclass="HowTo Numbered" translate="true">Begin to define the duration of each segment making some shorter and others longer. The total duration remains as 360</text><text styleclass="HowTo Numbered" style="font-family:Tahoma;" translate="true">°</text><text styleclass="HowTo Numbered" translate="true">.</text></li>
+      <li styleclass="HowTo Numbered"><text styleclass="HowTo Numbered" translate="true">Select a </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MT-Motion-Laws" styleclass="HowTo Numbered" translate="true">Motion-Law</link><text styleclass="HowTo Numbered" translate="true"> for each segment. The </text><text styleclass="VariableName" translate="true">Motion-Law</text><text styleclass="HowTo Numbered" translate="true"> must be able to meet the motion-values as defined in the motion-specification at the start and end of the segment.</text></li>
+      <li styleclass="HowTo Numbered"><text styleclass="HowTo Numbered" translate="true">Edit the motion-values at the start and or end of each segment - using the </text><text styleclass="Element-Header" translate="true">Blend-Point Editor</text><text styleclass="HowTo Numbered" translate="true"> and </text><text styleclass="Element-Header" translate="true">Segment Editor</text><text styleclass="HowTo Numbered" translate="true"> - to fully satisfy the motion requirements.</text></li>
+    </list>
+    <para styleclass="Body Text HowTo"><text styleclass="Body Text HowTo" translate="true">Usually, acceleration values come out in the wash. However, there should not be any acceleration discontinuities. </text></para>
+    <para styleclass="Body Text HowTo"><text styleclass="Body Text HowTo" translate="true">If possible, avoid Jerk-discontinuities. </text></para>
+    <para styleclass="Body Text HowTo"><text styleclass="Body Text HowTo" translate="true">If possible, remove short Dwell segments. Try to replace with Zero Velocity, Acceleration, and Jerk at the Blend-Point.</text></para>
+    <list id="0" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Numbered" style="font-family:&apos;Segoe UI&apos;; font-size:11pt; color:#000000;">
+      <li styleclass="HowTo Numbered"><text styleclass="HowTo Numbered" translate="true">Complete the motion design for all of the axes on a machine.</text></li>
+    </list>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="SeeAlso"><text styleclass="SeeAlso" translate="true">See also: </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MT-What-is-a-motion" styleclass="SeeAlso" translate="true">What is a motion?</link></para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="" style="text-align:left; text-indent:0px; margin-top:0px; margin-right:0px; margin-bottom:0px; margin-left:0px; line-height:1.00; background-color:transparent; white-space:normal; page-break-inside:auto; page-break-after:auto; border:none; tabstops:none;"><text style="font-family:Arial; font-size:10pt; color:#000000;" translate="true">&#32;</text></para>
+    <para styleclass="" style="text-align:left; text-indent:0px; margin-top:0px; margin-right:0px; margin-bottom:0px; margin-left:0px; line-height:1.00; background-color:transparent; white-space:normal; page-break-inside:auto; page-break-after:auto; border:none; tabstops:none;"></para>
+    <para styleclass="" style="text-align:left; text-indent:0px; margin-top:0px; margin-right:0px; margin-bottom:0px; margin-left:0px; line-height:1.00; background-color:transparent; white-space:normal; page-break-inside:auto; page-break-after:auto; border:none; tabstops:none;"></para>
+    <para styleclass="" style="text-align:left; text-indent:0px; margin-top:0px; margin-right:0px; margin-bottom:0px; margin-left:0px; line-height:1.00; background-color:transparent; white-space:normal; page-break-inside:auto; page-break-after:auto; border:none; tabstops:none;"></para>
+    <para styleclass="" style="text-align:left; text-indent:0px; margin-top:0px; margin-right:0px; margin-bottom:0px; margin-left:0px; line-height:1.00; background-color:transparent; white-space:normal; page-break-inside:auto; page-break-after:auto; border:none; tabstops:none;"></para>
+    <para styleclass="" style="text-align:left; text-indent:0px; margin-top:0px; margin-right:0px; margin-bottom:0px; margin-left:0px; line-height:1.00; background-color:transparent; white-space:normal; page-break-inside:auto; page-break-after:auto; border:none; tabstops:none;"></para>
+  </body>
+</topic>

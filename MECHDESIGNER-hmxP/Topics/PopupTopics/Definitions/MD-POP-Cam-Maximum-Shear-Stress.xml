@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../helpproject.xsl" ?>
+<topic class="Popup" template="Default" status="Under Construction" modified="2024-02-05T19:09:47.143Z" lasteditedby="44785" version="2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../helpproject.xsd">
+  <title>Maximum Shear Stress</title>
+  <keywords>
+    <keyword>Maximum Contact Shear Stress</keyword>
+    <keyword>Metal Fatigue</keyword>
+  </keywords>
+  <body>
+    <para styleclass="Popup Box"><table styleclass="PopupTable" rowcount="1" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Text - bit bit bigger2" style="margin-left:0px;">The <text styleclass="Popup Box2">Maximum Contact Shear Stress</text> is important to calculate the Fatigue Life of 2D-Cams and Follower-Profiles.</para>
+          <para styleclass="Normal"><line style="height:1px; color:#343400;" /></para>
+          <para styleclass="Body Text2-Note">The <text styleclass="VariableName-small">Maximum Shear Stress</text> is below the surface of the Cam-Profile. Its maximum value is a function of a number of parameters: Radius-of-Curvature of the Follower-Profile and the Cam, Material properties of the Cam and Follower-Profile (Young&apos;s Modulus and Poison&apos;s Ratio - see <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-2DCam">2D-Cam dialog</link>) the Contact Force between the Cam and Follower-Profile, and the Width(depth) of the Cam and Follower-Profile, and whether the Follower-Profile Roller is Cylindrical or Crown shaped.</para>
+          <para styleclass="Normal"><line style="height:1px; color:#343400;" /></para>
+          <para styleclass="Body Text - bit bit bigger2" style="margin-left:0px;">Also, the calculations make these assumptions:</para>
+          <list id="0" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Body Text - bit bit bigger2" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:10pt; font-weight:bold; color:#000000;">
+            <li styleclass="Body Text - bit bit bigger2">The width of the 2D-Cam is the same as the Extrusion Depth of the Follower-Profile.<text styleclass="VariableName-small">&#32;</text></li>
+            <li styleclass="Body Text - bit bit bigger2">The 2D-Cam and Follower-Profile are &apos;Isotropic&apos;. </li>
+            <li styleclass="Body Text - bit bit bigger2">The 2D-Cam and Follower-Profile are &apos;Linearly Elastic&apos;.</li>
+            <li styleclass="Body Text - bit bit bigger2">The dimensions of the contact area are small in comparison with the radii of the un-deformed bodies in the vicinity of the contact.</li>
+            <li styleclass="Body Text - bit bit bigger2">The shape of the deformed surfaces adjacent to the contact area is a rectangle or elliptical. </li>
+            <li styleclass="Body Text - bit bit bigger2">The bodies are <text styleclass="Popup Box">frictionless</text>; only normal stresses arising during contact are considered. Relative displacements in the X and Y directions are neglected.</li>
+            <li styleclass="Body Text - bit bit bigger2">The surfaces are free from surface debris and not lubricated.</li>
+          </list>
+          <para styleclass="Body Text - bit bit bigger2" style="margin-left:0px;">See also: <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-Cam-MaxShearStress-equations">Equations to calculate Maximum Contact Shear Stress</link>.</para>
+        </td>
+      </tr>
+    </table></para>
+  </body>
+</topic>

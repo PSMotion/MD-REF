@@ -1,0 +1,1081 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" status="Under Construction" modified="2022-07-20T19:31:22.326+01:00" lasteditedby="Adam" version="2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title>Kinematic FB | Add Motion-Dimension FB</title>
+  <keywords>
+    <keyword>Add<keyword>Function-Block: Motion-Dimension</keyword></keyword>
+    <keyword>Function-Block<keyword>Motion Dimension FB</keyword><keyword>Motion Dimension-Rocker</keyword><keyword>Motion Dimension-Slider</keyword><keyword>Motion Dimension-Special Case</keyword></keyword>
+  </keywords>
+  <body>
+    <header>
+      <para styleclass="Heading1">Kinematic FB | Add Motion-Dimension FB</para>
+    </header>
+    <para styleclass="Heading3_atocs_">Motion-Dimension Function-Block</para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="SeeAlso">See also <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-FunctionBlock-MotionDimension">Motion-Dimension dialog-box</link></para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="Heading4 Toggle_atocs_">Terminologie</para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="4" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:177px;">
+          <para styleclass="Popup Box2" style="text-align:right;"><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-Motion-Driven-Part" styleclass="Element">Ein Bewegungsteil</link> : </para>
+        </td>
+        <td style="width:380px;">
+          <para styleclass="Popup Box">Ein <text styleclass="Element">Teil</text>, dessen <text styleclass="VariableName-small">Position</text> relativ zu einem anderen <text styleclass="Element">Teil</text> durch die <text styleclass="Element">Motion-Dimension FB</text>festgelegt ist <text styleclass="Element">.</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:177px;">
+          <para styleclass="Popup Box2" style="text-align:right;">Ein Rocker : </para>
+        </td>
+        <td style="width:380px;">
+          <para styleclass="Popup Box">Ein <text styleclass="Popup Box-Elements">Teil</text>, dessen <text styleclass="VariableName-small">Winkel</text> relativ zu einem anderen <text styleclass="Element">Teil</text> durch die <text styleclass="Element">Motion-Dimension FB </text>festgelegt ist<text styleclass="Element">.</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:177px;">
+          <para styleclass="Popup Box2" style="text-align:right;"> Ein Schieberegler (Slider) : </para>
+        </td>
+        <td style="width:380px;">
+          <para styleclass="Popup Box">Ein <text styleclass="Popup Box-Elements">Teil</text>, dessen <text styleclass="VariableName-small">Abstand</text> relativ zu einem anderen <text styleclass="Element">Teil</text> durch das <text styleclass="Element">Motion-Dimension FB </text>festgelegt ist<text styleclass="Element">.</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:177px;">
+          <para styleclass="Popup Box-Elements" style="text-align:right;">Motion-Dimension FB :<text styleclass="Element">&#32;</text></para>
+        </td>
+        <td style="width:380px;">
+          <para styleclass="Popup Box">Ein <text styleclass="Popup Box-Elements">FB</text>, der die <text styleclass="VariableName-small">Position</text> und die Bewegung eines <text styleclass="Popup Box-Elements">Teils</text> relativ zu einem anderen <text styleclass="Popup Box-Elements">Teil</text> angibt.</para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading4 Toggle_atocs_">Kinematic-States of <text styleclass="Element-Header">Parts</text></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="3" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:205px;">
+          <para styleclass="Popup Box2" style="text-align:right;"><text style="font-weight:bold; color:#ff0000;">Nicht</text> kinematisch definiert : </para>
+        </td>
+        <td>
+          <para styleclass="Popup Box">Der Zustand eines <text styleclass="Element">Teils</text>, wenn es nicht gelöst ist. &#160;Sie hat einen oder mehrere Freiheitsgrade.</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:205px;">
+          <para styleclass="Popup Box2" style="text-align:right;">kinematisch definiert : </para>
+        </td>
+        <td>
+          <para styleclass="Popup Box">Der Zustand eines <text styleclass="Popup Box-Elements">Teils</text>, wenn es gelöst ist. Es hat null Freiheitsgrade. Seine Bewegung ist vollständig spezifiziert.</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td colspan="2">
+          <para styleclass="Popup Box"><text styleclass="VariableName-small" style="color:#ff0000;">Alle</text>&#32;<text styleclass="Popup Box-Elements">Teile</text> im Modell <text styleclass="VariableName-small" style="color:#ff0000;">müssen</text>&#32;<text styleclass="Popup Box2">KINEMATISCH DEFINIERT</text> sein,<text styleclass="VariableName-small" style="color:#ff0000;"> bevor</text> Sie kinematische und kinetostatische (Kraftdaten) berechnen.</para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="Popup Box">Hinweis: Die <text styleclass="Popup Box2">Part-Outlines</text> haben in den beiden <text styleclass="VariableName-small">kinematischen Zuständen</text> zwei unterschiedliche Farben. Dies soll Ihnen helfen, die beiden kinematischen Zustände zu erkennen. </para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading4 Toggle_atocs_">Kinematic Zustand <text style="color:#ff0000;">bevor</text> Hinzufügen von Motion-Dimension FB.</para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="1" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Popup Box">Ein <text styleclass="Popup Box-Elements">Teil</text>, das nicht kinematisch definiert ist, muss einen <text styleclass="Popup Box-Elements">Pin-Joint</text> oder einen <text styleclass="Popup Box-Elements">Slide-Joint</text> mit einem <text styleclass="Popup Box-Elements">Teil</text> haben, das <text styleclass="VariableName-small">kinematisch definiert</text> ist.</para>
+          <para styleclass="Popup Box">Der <text styleclass="Popup Box-Elements">Teil</text>, der nicht <text styleclass="VariableName-small">kinematisch definiert</text> ist, hat einen <text styleclass="VariableName-small">Freiheitsgrad</text>.</para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading4 Toggle_atocs_">Kinematischer Zustand <text style="color:#ff0000;">nach dem</text> Hinzufügen von Motion-Dimension FB.</para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="1" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Popup Box">Das <text styleclass="Popup Box-Elements">Teil</text> ist nun <text styleclass="VariableName-small">kinematisch definiert</text>.</para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="Heading3_atocs_">Motion-Dimension FB - die Funktion</para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="1" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Text">Eine <text styleclass="Element">Motion-Dimension FB</text> identifiziert einen <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-Motion-Driven-Part" styleclass="Element">Motion-Part</link><text styleclass="Element">.</text></para>
+          <para styleclass="Body Text">Ein <text styleclass="Element">Motion-Dimension FB</text> kann, bezogen auf ein anderes <text styleclass="Element">Part</text>, die:</para>
+          <list id="0" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted"><text styleclass="VariableName">Winkel</text> eines <text styleclass="Element">Teils</text> - den wir dann <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-Rocker" styleclass="VariableName-IT" style="font-style:normal;">Rocker</link><text styleclass="VariableName-IT" style="font-style:normal;">&#32;</text>nennen</li>
+          </list>
+          <para styleclass="HowTo Bulleted"> - oder -</para>
+          <list id="1" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted"><text styleclass="VariableName">Abstand</text><text styleclass="Body Text"> zu einem </text><text styleclass="Element">Teil</text><text styleclass="Body Text"> - den wir dann </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-Slider" styleclass="VariableName-IT" style="font-style:normal;">Schieberegler</link><text styleclass="VariableName-IT" style="font-style:normal;"> (Slider)</text><text styleclass="Body Text"> nennen </text><text styleclass="VariableName-IT" style="font-style:normal;">&#32;</text></li>
+          </list>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading3_atocs_"><anchor id="MotDimPinGen"><keywords><keyword>Add<keyword>Motion-Dimension to Pin-Joint: General Pocedure</keyword></keyword></keywords></anchor><image src="tog_plus.gif" scale="100.00%" figurelistinclude="0"></image><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" src-collapsed="tog_plus.gif" src-expanded="tog_minus.gif" src-print="none"><caption><![CDATA[Motion-Dimension FB und der Rocker]]></caption></toggle></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="1" colcount="1" style="border-width:1px; border-spacing:0px; cell-border-width:0px; border-color:#993300; border-style:solid;">
+      <tr style="vertical-align:top">
+        <td style="height:157px; border-bottom:none;">
+          <para styleclass="Body Table">Bereiten Sie das Modell mit diesen Elementen vor. </para>
+          <para styleclass="Body Table">Der kinematische Zustand der Elemente ist der Zustand <text styleclass="VariableName" style="color:#ff0000;">vor dem</text> Hinzufügen der <text styleclass="Element">Motion-Dimension FB</text>.</para>
+          <para styleclass="Body Table">Dies sind die Regeln.</para>
+          <para styleclass="Body Text"><table styleclass="Block" rowcount="4" colcount="3">
+            <tr style="vertical-align:top">
+              <td style="width:83px; border-right:none;">
+                <para styleclass="VariableName" style="text-align:center;">Element #</para>
+              </td>
+              <td style="width:113px; border-right:none; border-left:none;">
+                <para styleclass="VariableName" style="text-align:center;">Element Typ</para>
+              </td>
+              <td style="width:683px; border-left:none;">
+                <para styleclass="VariableName">Regeln</para>
+              </td>
+            </tr>
+            <tr style="vertical-align:top">
+              <td style="width:83px; border-right:none;">
+                <para styleclass="Interface2" style="text-align:center;">#1</para>
+              </td>
+              <td style="width:113px; border-right:none; border-left:none;">
+                <para styleclass="Element-Header" style="text-align:center;">Stiftgelenk</para>
+              </td>
+              <td style="width:683px; border-left:none;">
+                <para styleclass="Body Table">Liegt zwischen zwei (2) <text styleclass="Element">Punkten</text>: </para>
+                <list id="2" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullets" style="font-family:Symbol; font-size:11pt; color:#000000;">
+                  <li styleclass="Bullets">Jeder <text styleclass="Element">Punkt</text> ist der <text styleclass="Interface">Startpunkt</text> (oder <text styleclass="Interface">Endpunkt)</text> einer <text styleclass="Element">Linie</text> (oder <text styleclass="Element">CAD-Linien</text>), die sich in einem anderen Teil befindet</li>
+                </list>
+              </td>
+            </tr>
+            <tr style="vertical-align:top">
+              <td style="width:83px; border-right:none;">
+                <para styleclass="Interface2" style="text-align:center;">#2</para>
+              </td>
+              <td style="width:113px; border-right:none; border-left:none;">
+                <para styleclass="Element-Header" style="text-align:center;">Linie</para>
+              </td>
+              <td style="width:683px; border-left:none;">
+                <list id="3" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullets" style="font-family:Symbol; font-size:10pt; color:#000000;">
+                  <li styleclass="Bullets">Diese <text styleclass="Element">Linie</text> strahlt vom <text styleclass="Element">Stiftgelenk </text>aus<text styleclass="Interface">(</text><text styleclass="Body Text">siehe</text><text styleclass="Interface"> Element #1)</text></li>
+                </list>
+                <list id="4" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullets" style="font-family:Symbol; font-size:11pt; color:#000000;">
+                  <li styleclass="Bullets"><text styleclass="HowTo Bulleted">UND diese </text><text styleclass="Element">Linie</text><text styleclass="HowTo Bulleted"> befindet sich in einem </text><text styleclass="Element">Teil</text><text styleclass="HowTo Bulleted">, der </text><text styleclass="Interface">kinematisch definiert</text><text styleclass="HowTo Bulleted"> ist </text></li>
+                </list>
+              </td>
+            </tr>
+            <tr style="vertical-align:top">
+              <td style="width:83px; border-right:none;">
+                <para styleclass="Interface2" style="text-align:center;">#3</para>
+              </td>
+              <td style="width:113px; border-right:none; border-left:none;">
+                <para styleclass="Element-Header" style="text-align:center;">Linie</para>
+              </td>
+              <td style="width:683px; border-left:none;">
+                <list id="5" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullets" style="font-family:Symbol; font-size:10pt; color:#000000;">
+                  <li styleclass="Bullets">Diese <text styleclass="Element">Linie</text> strahlt auch vom <text styleclass="Element">Stiftgelenk </text>aus<text styleclass="Interface">(</text><text styleclass="Body Text">siehe</text><text styleclass="Interface"> Element #1)</text></li>
+                  <li styleclass="Bullets"><text styleclass="HowTo Bulleted">UND, diese </text><text styleclass="Element">Linie</text><text styleclass="HowTo Bulleted"> befindet sich in einem </text><text styleclass="Element">Teil</text><text styleclass="HowTo Bulleted">, der </text><text styleclass="VariableName" style="color:#ff0000;">nicht</text><text styleclass="HowTo Bulleted">&#32;</text><text styleclass="Interface">kinematisch definiert </text><text styleclass="HowTo Bulleted">ist</text></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading4 Toggle_atocs_">Preparation: Motion-Dimension - Rocker (typical)</para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="1" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:240px;">
+          <para styleclass="Normal"><image src="MD-ADDMOTIONDIM-ROCKER-01.ipp" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="VariableName">Beispiel für die Vorbereitung:<text styleclass="Element">&#32;</text></para>
+          <list id="6" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Numbered" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Numbered">Zwei(2) <text styleclass="Element">Teile.</text><text styleclass="Body Text"> In diesem Fall ist der </text><text styleclass="Element">Basisteil</text><image src="Red-14-1b.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Image Caption">&#32;</text><text styleclass="Body Text">und ein </text><text styleclass="Interface">rotierender Teil</text><image src="Red-14-2.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Image Caption">.</text>&#32;</li>
+          </list>
+          <list id="7" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Numbered" style="font-family:Symbol; font-size:10pt; color:#800000;">
+            <li styleclass="HowTo Numbered"><text styleclass="Body Text">Eine </text><text styleclass="Element">Linie</text><image src="Red-14-3.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><image src="Red-14-4.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Body Text"> in jedem </text><text styleclass="Element">Teil</text><image src="Red-14-2.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><image src="Red-14-1b.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></li>
+          </list>
+          <list id="6" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted"><text styleclass="Body Text">Ein </text><text styleclass="Element">Pin-Joint</text><image src="Red-14-5.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Body Text">, der die </text><text styleclass="Interface">Startpunkte</text><text styleclass="Body Text"> (oder </text><text styleclass="Interface">Endpunkte</text><text styleclass="Body Text">) der </text><text styleclass="Element">Linien</text><image src="Red-14-3.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><image src="Red-14-4.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Body Text"> verbindet</text></li>
+          </list>
+          <list id="8" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted"><text styleclass="Body Text">Das </text><text styleclass="Element">Teil</text><image src="Red-14-1b.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Body Text"> ist </text><text styleclass="VariableName">kinematisch definiert</text><text styleclass="VariableName-IT">.</text></li>
+            <li styleclass="HowTo Bulleted"><text styleclass="Body Text">Das </text><text styleclass="Element">Teil</text><image src="Red-14-2.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Body Text"> ist nicht </text><text styleclass="VariableName">kinematisch definiert.</text></li>
+          </list>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="SeeAlso-small">See <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Geometry-Line">Add Line</link>, <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Command-AddPart">Add Part</link>, <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Command-AddPin-Joint">Add Pin-Joint</link></para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading4 Toggle_atocs_">Add Motion-Dimension FB (Rocker)</para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="5" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:240px;">
+          <para styleclass="Normal"><image src="MD-ADDMOTIONDIM-ROCKER-01A.ipp" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td style="vertical-align:middle;">
+          <list id="9" type="ol" listtype="decimal" formatstring="&#83;&#84;&#69;&#80;&#32;&#37;&#48;&#58;&#115;&#58;&#32;" format-charset="DEFAULT_CHARSET" levelreset="false" legalstyle="false" startfrom="1" styleclass="HowTo STEP" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; color:#003300;">
+            <li styleclass="HowTo STEP"><text styleclass="VariableName">Wählen Sie den Befehl Add </text><text styleclass="T_Menu">Motion-Dimension FB</text></li>
+          </list>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="2">
+            <tr style="vertical-align:top">
+              <td style="width:47px; border-top:none; border-right:none; border-bottom:none;">
+                <para styleclass="BodyText Bold" style="text-align:right;"><image src="MD-Icon-FB-MotionDimension.png" scale="100.00%" figurelistinclude="0"><title>Add Motion-Dimension FB</title></image></para>
+              </td>
+              <td style="border:none;">
+                <list id="10" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="Bullets"><text style="font-style:normal;">Klicken Sie auf</text><text style="font-family:Arial; font-size:11pt; color:#000000;">&#32;</text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Command-FB-Kinematics" styleclass="T_Menu">Kinematik FB Werkzeugleiste</link><text styleclass="VariableName"> &gt; </text><text styleclass="T_Menu">Motion-Dimension FB</text><text styleclass="VariableName">&#32;</text></li>
+                </list>
+                <para styleclass="T_Menu">oder </para>
+                <list id="11" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="Bullets"><text styleclass="Body Text">Klicken Sie auf das</text><text styleclass="T_Menu"> Menü Hinzufügen &gt; Motion-Dimension FB hinzufügen</text><text styleclass="VariableName">&#32;</text></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Body Text"></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:240px;">
+          <para styleclass="Normal"><image src="MD-ADDMOTIONDIM-ROCKER-01.ipp" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td rowspan="2">
+          <list id="12" type="ol" listtype="decimal" formatstring="&#83;&#84;&#69;&#80;&#32;&#37;&#48;&#58;&#115;&#58;&#32;" format-charset="DEFAULT_CHARSET" levelreset="false" legalstyle="false" startfrom="2" styleclass="HowTo STEP" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo STEP"><text styleclass="VariableName">Markieren Sie die drei Elemente im Grafikbereich (oder Assembly-Tree)</text></li>
+          </list>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="VariableName"><text styleclass="Interface2">Element</text> #1: <text style="color:#ff0000;">PIN-JOINT</text></para>
+                <list id="13" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="Bullets">Klicken Sie auf einen <text styleclass="Element">Pin-Joint</text><image src="Red-14-5.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="VariableName">&#32;</text></li>
+                </list>
+                <para styleclass="Body Text">The <text styleclass="Element">Pin-Joint</text> must be a joint between Point in two(2) <text styleclass="Element">Parts,</text> and:</para>
+                <list id="14" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+                  <li styleclass="HowTo Bulleted">One <text styleclass="Element">Part</text> is <text styleclass="VariableName">kinematically-defined</text><text styleclass="Body Text">&#32;</text></li>
+                  <li styleclass="HowTo Bulleted">The other <text styleclass="Element">Part</text> is not <text styleclass="VariableName">kinematically-defined</text></li>
+                </list>
+                <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+                <para styleclass="VariableName"><text styleclass="Interface2">Elements #2 </text>and<text styleclass="Interface2"> Element</text> #3: <text styleclass="Interface2" style="color:#ff0000;">Lines</text><text styleclass="Interface2">&#32;</text><image src="Red-14-3.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><image src="Red-14-4.gif" scale="100.00%" figurelistinclude="0"></image></para>
+                <para styleclass="Body Text">Each <text styleclass="Element">Line</text> must be a child to a <text styleclass="Element">Point</text> that is also a child to the <text styleclass="Element">Pin-Joint</text>. (<text styleclass="Interface">Element #1</text>)</para>
+                <list id="13" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="Bullets">Click the <text styleclass="Element">Line</text><image src="Red-14-4.gif" scale="100.00%" styleclass="VariableName" figurelistinclude="0"></image><text styleclass="Body Text"> in the </text><text styleclass="VariableName-IT">kinematically-defined</text><text styleclass="HowTo Bulleted">&#32;</text><text styleclass="Element">Part</text><image src="Red-14-5.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="VariableName">&#32;</text></li>
+                  <li styleclass="Bullets">Click the <text styleclass="Element">Line</text><image src="Red-14-3.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Body Text"> in the </text><text styleclass="VariableName-IT">free</text><text styleclass="HowTo Bulleted">&#32;</text><text styleclass="Element">Part</text><image src="Red-14-2.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+          <list id="15" type="ol" listtype="decimal" formatstring="&#83;&#84;&#69;&#80;&#32;&#37;&#48;&#58;&#115;&#58;&#32;" format-charset="DEFAULT_CHARSET" levelreset="false" legalstyle="false" startfrom="3" styleclass="HowTo STEP" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo STEP"><text styleclass="VariableName">Um den Befehl abzuschließen </text></li>
+          </list>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <list id="16" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Body Table" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="Body Table"><text styleclass="HowTo STEP">Klicken Sie &#160;im </text><text styleclass="Interface">Befehls-Manager </text><text styleclass="HowTo STEP">auf </text><image src="OK-tiny-11-15.png" scale="100.00%" styleclass="HowTo STEP" figurelistinclude="0"></image><text styleclass="Body Text">, um das </text><text styleclass="T_Menu">Hinzufügen der Motion-Dimension FB (Rocker) </text><text styleclass="Body Text">abzuschließen </text><text styleclass="VariableName">.</text></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="VariableName"></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Normal"><image src="MD-ADDMOTIONDIM-ROCKER-01B.ipp" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:240px;">
+          <para styleclass="Normal"><image src="MD-ADDMOTIONDIM-ROCKER-01C.ipp" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="VariableName"><text styleclass="Interface2">Ergebnis</text> (see image):</para>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Body Text">Das <text styleclass="Element">Teil</text><image src="Red-14-3.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text style="font-weight:normal;"> ist jetzt ein </text><text styleclass="Element">Teil</text><text style="font-weight:normal;">, das </text><text styleclass="VariableName">kinematisch definiert</text><text style="font-weight:normal;"> ist.</text></para>
+                <para styleclass="Body Text">Eine <text styleclass="Element">Motion-Dimension</text><image src="Red-14-1b.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image> und <text styleclass="Element">Motion-Dimension FB</text><image src="Red-14-2.gif" scale="100.00%" styleclass="Body Text Howindent4bullets" figurelistinclude="0"></image><text styleclass="Body Text Howindent4bullets">&#32;</text> gibt den Winkel zwischen den <text styleclass="Element">Linien </text>an<text styleclass="Element">.</text></para>
+                <para styleclass="Body Text"><table styleclass="Block" rowcount="1" colcount="2" style="cell-padding:0px; border-width:0px; border-spacing:0px; cell-border-width:0px; border-style:none;">
+                  <tr style="vertical-align:top">
+                    <td style="width:9px; height:20px; border-bottom:none;">
+                      <para styleclass="BodyText Bold" style="text-align:right;"><image src="MD-Icon-FB-MotionDimension-Rocker--inGA.png" scale="100.00%" figurelistinclude="0"></image></para>
+                    </td>
+                    <td style="vertical-align:middle; height:20px; border-right:none; border-left:none;">
+                      <para styleclass="Body Text">Dies ist das <text styleclass="Element">Motion-Dimension FB-Symbol</text><image src="Red-14-2.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image> im <text styleclass="Interface">Grafikbereich</text> für eine <text styleclass="Interface2">ROCKER</text><text styleclass="VariableName-IT">.</text></para>
+                    </td>
+                  </tr>
+                </table></para>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Notes">Hinweis: <text styleclass="VariableName">Im Grafikbereich:</text></para>
+          <list id="17" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullets" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="Bullets"><text styleclass="Body Text">Um die </text><text styleclass="VariableName">Motion-</text><text styleclass="VariableName" style="color:#ff0000;">Dimension</text><image src="Red-14-1b.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="VariableName">&#32;</text><text styleclass="Body Text">zu verschieben </text><text styleclass="HowTo Bulleted">: </text><text styleclass="Interface2" style="color:#ff0000;">STRG+ Ziehen</text><text styleclass="VariableName-IT">&#32;</text><text styleclass="VariableName-IT" style="font-style:normal;">das FB-Symbol</text><image src="Red-14-2.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></li>
+            <li styleclass="Bullets"><text styleclass="Body Text">So verschieben Sie die </text><text styleclass="VariableName">Motion-Dimension</text><text styleclass="Element">&#32;</text><text styleclass="Element" style="font-size:12pt; color:#ff0000;">FB</text><image src="Red-14-2.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="HowTo Bulleted">: </text><text styleclass="Interface2">Ziehen Sie</text><text styleclass="VariableName-IT">&#32;</text><text styleclass="VariableName-IT" style="font-style:normal;">das </text><text styleclass="VariableName-IT" style="font-style:normal; color:#ff0000;">FB</text><text styleclass="VariableName-IT" style="font-style:normal;">-Symbol</text><image src="Red-14-2.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></li>
+          </list>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:240px;">
+          <para styleclass="VariableName" style="text-align:right;">To edit :</para>
+        </td>
+        <td>
+          <list id="18" type="ol" listtype="decimal" formatstring="&#83;&#84;&#69;&#80;&#32;&#37;&#48;&#58;&#115;&#58;&#32;" format-charset="DEFAULT_CHARSET" levelreset="false" legalstyle="false" startfrom="3" styleclass="HowTo STEP" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo STEP"><text styleclass="VariableName">Öffnen Sie das Dialogfeld - </text><text styleclass="SeeAlso">Siehe </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-FunctionBlock-MotionDimension" styleclass="SeeAlso">Dialogfeld &quot;Bewegungsdimension&quot;</link>.<text styleclass="VariableName">&#32;</text></li>
+          </list>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading4 Toggle_atocs_">Kinematics Tree - Motion-Dimension (Rocker)</para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="1" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:240px;">
+          <para styleclass="Normal"><image src="MD-ADDMOTIONDIM-ROCKER-01D.ipp" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td style="border-top:none; border-bottom:none;">
+          <para styleclass="Body Text"><text style="font-size:11pt; vertical-align:baseline;">When we add a </text><text styleclass="Element">Motion-Dimension FB</text><text style="font-size:11pt; vertical-align:baseline;"> to a </text><text styleclass="Element">Pin-Joint</text><text style="font-size:11pt; vertical-align:baseline;">, we identify it as a </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-Rocker" styleclass="VariableName-IT">Rocker</link><text style="font-size:11pt; vertical-align:baseline;"> in the </text><text styleclass="Interface">Kinematics-Tree</text><text style="font-size:11pt; vertical-align:baseline;">.</text></para>
+          <para styleclass="Body Text HowTo"><text style="font-size:11pt; vertical-align:baseline;">The kinematic elements are:</text></para>
+          <list id="19" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Body Text HowTo" style="font-family:Symbol; font-size:16pt; color:#000000;">
+            <li styleclass="Body Text HowTo"><text style="font-size:16pt;">Part + </text></li>
+            <li styleclass="Body Text HowTo"><text style="font-size:16pt;">Pin-Joint + </text></li>
+            <li styleclass="Body Text HowTo"><text style="font-size:16pt;">Motion-Dimension = ROCKER</text></li>
+          </list>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading3_atocs_"><anchor id="MotDimSlideJointGen"><keywords><keyword>Add<keyword>Motion-Dimension to Slide-Joint - General Procedure</keyword></keyword></keywords></anchor><image src="tog_plus.gif" scale="100.00%" figurelistinclude="0"></image><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" src-collapsed="tog_plus.gif" src-expanded="tog_minus.gif" src-print="none"><caption><![CDATA[Motion-Dimension FB and Slider]]></caption></toggle></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Standard" rowcount="1" colcount="1">
+      <tr style="vertical-align:top">
+        <td style="height:157px;">
+          <para styleclass="Body Text">Prepare the model so that these elements have these properties.</para>
+          <para styleclass="Body Table">The kinematic state of the elements are the states <text styleclass="VariableName" style="color:#ff0000;">before</text> you add the <text styleclass="Element">Motion-Dimension FB</text>.</para>
+          <para styleclass="Body Text"><table styleclass="Block" rowcount="4" colcount="3">
+            <tr style="vertical-align:top">
+              <td style="width:83px;">
+                <para styleclass="VariableName-IT" style="text-align:center;">Element #</para>
+              </td>
+              <td style="width:99px;">
+                <para styleclass="VariableName-IT" style="text-align:center;">Element type</para>
+              </td>
+              <td>
+                <para styleclass="Body Text HowTo">&#32;<text styleclass="VariableName-IT">Rules</text></para>
+              </td>
+            </tr>
+            <tr style="vertical-align:top">
+              <td style="width:83px;">
+                <para styleclass="VariableName" style="text-align:center;">#1</para>
+              </td>
+              <td style="width:99px;">
+                <para styleclass="Element" style="text-align:center;">Slide-Joint</para>
+              </td>
+              <td>
+                <para styleclass="Body Table">Is between two(2) <text styleclass="Element">Lines</text>&#32;</para>
+                <list id="20" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullets" style="font-family:Symbol; font-size:11pt; color:#000000;">
+                  <li styleclass="Bullets">each <text styleclass="Element">Line</text> is a different <text styleclass="Element">Part</text><text styleclass="VariableName">&#32;</text></li>
+                  <list id="20" level="1" type="ul" listtype="bullet" formatstring="&#111;" levelreset="true" legalstyle="false" startfrom="1" styleclass="Body Table" style="font-family:&apos;Courier New&apos;; font-size:11pt; color:#000000;">
+                    <li styleclass="Body Table">one <text styleclass="Element">Part</text> must be a <text styleclass="VariableName-IT">kinematically-defined</text>&#32;<text styleclass="Element">Part</text></li>
+                    <li styleclass="Body Table"><text styleclass="Normal">the other </text><text styleclass="Element">Part</text><text styleclass="Normal"> must be a </text><text styleclass="VariableName-IT">free</text><text styleclass="Normal">&#32;</text><text styleclass="Element">Part</text></li>
+                  </list>
+                </list>
+              </td>
+            </tr>
+            <tr style="vertical-align:top">
+              <td style="width:83px;">
+                <para styleclass="VariableName" style="text-align:center;">#2</para>
+              </td>
+              <td style="width:99px;">
+                <para styleclass="Element" style="text-align:center;">Point</para>
+              </td>
+              <td>
+                <list id="21" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullets" style="font-family:Symbol; font-size:10pt; color:#000000;">
+                  <li styleclass="Bullets">the<text styleclass="Body Text HowTo" style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">&#32;</text><text styleclass="Interface">start-Point</text><text styleclass="Body Text HowTo" style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;"> or the </text><text styleclass="Interface">end-Point</text><text styleclass="Body Text HowTo" style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;"> of one of the </text><text styleclass="Element">Lines</text><text styleclass="Body Text HowTo" style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">&#32;</text>in the <text styleclass="Element">Slide-Joint </text><text styleclass="Interface">(Element #1),</text></li>
+                  <li styleclass="HowTo Bulleted"><text styleclass="Interface2" style="color:#ff0000;">AND</text> the <text styleclass="Element">Point</text> (and <text styleclass="Element">Line</text>) is in the <text styleclass="VariableName-IT">kinematically-defined</text>&#32;<text styleclass="Element">Part</text></li>
+                </list>
+              </td>
+            </tr>
+            <tr style="vertical-align:top">
+              <td style="width:83px;">
+                <para styleclass="VariableName" style="text-align:center;">#3</para>
+              </td>
+              <td style="width:99px;">
+                <para styleclass="Element" style="text-align:center;">Point</para>
+              </td>
+              <td>
+                <list id="22" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullets" style="font-family:Symbol; font-size:10pt; color:#000000;">
+                  <li styleclass="Bullets">the <text styleclass="Interface">start-Point</text> or the <text styleclass="Interface">end-Point</text> of one of the <text styleclass="Element">Lines</text> in the <text styleclass="Element">Slide-Joint </text><text styleclass="Interface">(Element #1)</text></li>
+                  <li styleclass="HowTo Bulleted"><text styleclass="Interface2" style="color:#ff0000;">AND</text> the <text styleclass="Element">Point</text> (and <text styleclass="Element">Line</text>) is in the <text styleclass="VariableName-IT">free</text>&#32;<text styleclass="Element">Part</text></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading4 Toggle_atocs_">Preparation: Add Motion-Dimension - Slider (typical)</para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="1" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:240px;">
+          <para styleclass="Normal"><image src="MD-ADDMOTIONDIM-SLIDER-01.ipp" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="VariableName">Preparation example:</para>
+          <list id="23" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Numbered" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo Numbered">Two(2) <text styleclass="Element">Parts</text><image src="Red-14-1b.gif" scale="100.00%" figurelistinclude="0"></image><image src="Red-14-2.gif" scale="100.00%" figurelistinclude="0"></image><text styleclass="VariableName"> &#160;</text></li>
+          </list>
+          <para styleclass="HowTo Numbered">One is a <text styleclass="VariableName-IT">kinematically-defined </text><text styleclass="Element">Part</text> ...the <text styleclass="Element">Base-Part</text><image src="Red-14-1b.gif" scale="100.00%" figurelistinclude="0"></image></para>
+          <para styleclass="HowTo Numbered">The other is a <text styleclass="VariableName-IT">free </text><text styleclass="Element">Part </text><image src="Red-14-2.gif" scale="100.00%" figurelistinclude="0"></image></para>
+          <list id="23" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Numbered" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo Numbered">The <text styleclass="Element">Parts</text> are Joined... with a <text styleclass="Element">Slide-Joint</text><image src="Red-14-3.gif" scale="100.00%" figurelistinclude="0"></image></li>
+            <li styleclass="HowTo Numbered"><text styleclass="Interface">Start Point</text><image src="Red-14-4.gif" scale="100.00%" styleclass="Notes" figurelistinclude="0"></image><text styleclass="Body Text"> (or </text><text styleclass="Interface">end-Point</text><text styleclass="Body Text">) of a </text><text styleclass="Element">Line</text><text styleclass="Body Text"> in the </text><text styleclass="VariableName-IT">kinematically-defined</text><text styleclass="Body Text">&#32;</text><text styleclass="Element">Part</text><text styleclass="Body Text">&#32;</text></li>
+            <li styleclass="HowTo Numbered"><text styleclass="Interface">start-Point</text><image src="Red-14-5.gif" scale="100.00%" styleclass="Notes" figurelistinclude="0"></image><text styleclass="Notes">&#32;</text><text styleclass="Body Text">(or </text><text styleclass="Interface">end-Point</text><text styleclass="Body Text">) of a </text><text styleclass="Element">Line</text><text styleclass="Body Text"> in the </text><text styleclass="VariableName-IT">free</text><text styleclass="Body Text">&#32;</text><text styleclass="Element">Part</text></li>
+          </list>
+          <para styleclass="Body Table">The <text styleclass="Element">Lines</text> are those that you select for the <text styleclass="Element">Slide-Joint</text><image src="Red-14-3.gif" scale="100.00%" figurelistinclude="0"></image>.</para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="SeeAlso-small">See <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Geometry-Line">Add Line</link>, <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Command-AddPart">Add Part</link>, <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Command-AddPin-Joint">Add Pin-Joint</link></para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading4 Toggle_atocs_">Add Motion-Dimension FB (Slider)</para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="4" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:240px;">
+          <para styleclass="Normal"><image src="MD-ADDMOTIONDIM-SLIDER-01A.ipp" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td style="vertical-align:middle; width:670px;">
+          <list id="24" type="ol" listtype="decimal" formatstring="&#83;&#84;&#69;&#80;&#32;&#37;&#48;&#58;&#115;&#58;&#32;" format-charset="DEFAULT_CHARSET" levelreset="false" legalstyle="false" startfrom="1" styleclass="HowTo STEP" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo STEP"><text styleclass="Body Text" style="font-style:normal;">Add the </text><text styleclass="Element">Motion-Dimension FB</text><text styleclass="VariableName">&#32;</text></li>
+          </list>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="2">
+            <tr style="vertical-align:top">
+              <td style="width:47px; border-top:none; border-right:none; border-bottom:none;">
+                <para styleclass="BodyText Bold" style="text-align:right;"><image src="MD-Icon-FB-MotionDimension.png" scale="100.00%" figurelistinclude="0"><title>Add Motion-Dimension FB</title></image></para>
+              </td>
+              <td style="border:none;">
+                <list id="25" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="Bullets"><text style="font-style:normal;">Click</text><text style="font-family:Arial; font-size:11pt; color:#000000;">&#32;</text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Command-FB-Kinematics" styleclass="T_Menu">Kinematics FB toolbar</link><text styleclass="VariableName"> &gt; </text><text styleclass="T_Menu">Motion-Dimension FB</text><text styleclass="VariableName">&#32;</text></li>
+                </list>
+                <para styleclass="T_Menu">or </para>
+                <list id="26" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="Bullets"><text styleclass="Body Text">Click</text><text styleclass="T_Menu"> Add menu &gt; Add Motion-Dimension FB</text><text styleclass="VariableName">&#32;</text></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Body Text"></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:240px;">
+          <para styleclass="Normal"><image src="MD-ADDMOTIONDIM-SLIDER-01.ipp" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td rowspan="3" style="border-right:none;">
+          <list id="27" type="ol" listtype="decimal" formatstring="&#83;&#84;&#69;&#80;&#32;&#37;&#48;&#58;&#115;&#58;&#32;" format-charset="DEFAULT_CHARSET" levelreset="false" legalstyle="false" startfrom="2" styleclass="HowTo STEP" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo STEP"><text styleclass="VariableName">Select the three elements in the graphic-area (or Assembly-Tree)</text></li>
+          </list>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="VariableName"><text styleclass="Interface2">Element</text> #1: PIN-JOINT</para>
+                <list id="28" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="Bullets">Click a <text styleclass="Element">Slide-Joint</text><image src="Red-14-3.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="VariableName">&#32;</text></li>
+                </list>
+                <para styleclass="Body Text">The <text styleclass="Element">Slide-Joint</text> must be a joint between two(2) <text styleclass="Element">Parts,</text> and:</para>
+                <list id="29" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+                  <li styleclass="HowTo Bulleted">One <text styleclass="Element">Part</text> must be a <text styleclass="VariableName-IT">kinematically-defined</text>&#32;<text styleclass="Element">Part</text><text styleclass="Body Text">&#32;</text><image src="Red-14-1b.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></li>
+                  <li styleclass="HowTo Bulleted">The other <text styleclass="Element">Part</text> must be a <text styleclass="VariableName-IT">free</text>&#32;<text styleclass="Element">Part </text><image src="Red-14-2.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></li>
+                </list>
+                <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+                <para styleclass="VariableName"><text styleclass="Interface2">Elements #2 </text>and<text styleclass="Interface2"> Element</text> #3: <text styleclass="Interface2">POINTS </text><image src="Red-14-4.gif" scale="100.00%" figurelistinclude="0"></image><image src="Red-14-5.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+                <para styleclass="Body Text">Each <text styleclass="Element">Point</text> must be a child to a <text styleclass="Element">Line</text> that is also a child to the <text styleclass="Element">Slide-Joint</text>. (<text styleclass="Interface">Element #1</text>)</para>
+                <list id="28" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="Bullets">Click the <text styleclass="Element">Point</text><image src="Red-14-4.gif" scale="100.00%" styleclass="VariableName" figurelistinclude="0"></image><text styleclass="Body Text"> in the </text><text styleclass="VariableName-IT">kinematically-defined</text><text styleclass="HowTo Bulleted">&#32;</text><text styleclass="Element">Part</text><image src="Red-14-1b.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="VariableName">&#32;</text></li>
+                  <li styleclass="Bullets">Click the <text styleclass="Element">Point</text><image src="Red-14-5.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Body Text"> in the </text><text styleclass="VariableName-IT">free</text><text styleclass="HowTo Bulleted">&#32;</text><text styleclass="Element">Part</text><image src="Red-14-2.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+          <list id="30" type="ol" listtype="decimal" formatstring="&#83;&#84;&#69;&#80;&#32;&#37;&#48;&#58;&#115;&#58;&#32;" format-charset="DEFAULT_CHARSET" levelreset="false" legalstyle="false" startfrom="3" styleclass="HowTo STEP" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo STEP"><text styleclass="VariableName">Complete the Command </text></li>
+          </list>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <list id="31" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Body Table" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="Body Table"><text styleclass="HowTo STEP">Click </text><image src="OK-tiny-11-15.png" scale="100.00%" styleclass="HowTo STEP" figurelistinclude="0"></image><text styleclass="HowTo STEP"> in the </text><text styleclass="Interface">Command-Manager </text><text styleclass="Body Text">to complete </text><text styleclass="T_Menu">Add Motion-Dimension FB (Slider)</text><text styleclass="VariableName">.</text></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="VariableName"><text styleclass="Interface2">Result</text> : </para>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Body Text"><text style="font-weight:normal;">The free </text><text styleclass="Element">Part</text><text style="font-weight:normal;"> is now </text><text styleclass="VariableName">kinematically-defined</text><text style="font-weight:normal;">.</text></para>
+                <para styleclass="Body Text">A <text styleclass="Element">Motion-Dimension</text><image src="Red-14-1b.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image> and <text styleclass="Element">Motion-Dimension FB</text><image src="Red-14-2.gif" scale="100.00%" styleclass="Body Text Howindent4bullets" figurelistinclude="0"></image><text styleclass="Body Text Howindent4bullets">&#32;</text>specifies the angle between the <text styleclass="Element">Lines</text></para>
+                <para styleclass="Body Text"><table styleclass="Block" rowcount="1" colcount="2" style="cell-padding:0px; border-width:0px; border-spacing:0px; cell-border-width:0px; border-style:none;">
+                  <tr style="vertical-align:top">
+                    <td style="width:9px; height:20px; border-bottom:none;">
+                      <para styleclass="BodyText Bold" style="text-align:right;"><image src="MD-Icon-FB-MotionDimension-Rocker--inGA.png" scale="100.00%" figurelistinclude="0"></image></para>
+                    </td>
+                    <td style="vertical-align:middle; height:20px; border-right:none; border-left:none;">
+                      <para styleclass="Bullets">The <text styleclass="Element">Motion-Dimension FB</text> icon<image src="Red-14-2.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image> in the <text styleclass="Interface">graphic-area</text> for a <text styleclass="Interface2">SLIDER</text><text styleclass="VariableName-IT">.</text></para>
+                    </td>
+                  </tr>
+                </table></para>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Notes">Note: <text styleclass="VariableName">To drag in the graphic-area the:</text></para>
+          <list id="32" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullets" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="Bullets"><text styleclass="VariableName">Motion-</text><text styleclass="VariableName" style="color:#ff0000;">Dimension</text><text styleclass="HowTo Bulleted"> : </text><text styleclass="Interface2" style="color:#ff0000;">CTRL+ Drag</text><text styleclass="VariableName-IT">&#32;</text><text styleclass="VariableName-IT" style="font-style:normal;">the FB icon</text></li>
+            <li styleclass="HowTo Bulleted"><text styleclass="Element" style="color:#000000;">Motion-Dimension</text><text styleclass="Element">&#32;</text><text styleclass="Element" style="font-size:12pt; color:#ff0000;">FB</text> : <text styleclass="Interface2">Drag</text><text styleclass="VariableName-IT">&#32;</text><text styleclass="VariableName-IT" style="font-style:normal;">the FB icon</text></li>
+          </list>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <list id="33" type="ol" listtype="decimal" formatstring="&#83;&#84;&#69;&#80;&#32;&#37;&#48;&#58;&#115;&#58;&#32;" format-charset="DEFAULT_CHARSET" levelreset="false" legalstyle="false" startfrom="4" styleclass="HowTo STEP" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo STEP"><text styleclass="VariableName">Open the dialog-box - </text><text styleclass="SeeAlso">See </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-FunctionBlock-MotionDimension" styleclass="SeeAlso">Motion-Dimension dialog-box</link><text styleclass="VariableName">&#32;</text></li>
+          </list>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:240px;">
+          <para styleclass="Normal"><image src="MD-ADDMOTIONDIM-SLIDER-01B.ipp" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:240px;">
+          <para styleclass="Normal"><image src="MD-ADDMOTIONDIM-SLIDER-01C.ipp" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading4 Toggle_atocs_">Kinematics Tree - Motion-Dimension (Slider)</para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="1" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:240px;">
+          <para styleclass="Normal"><image src="MD-ADDMOTIONDIM-SLIDER-01D.ipp" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="Body Text"><text style="font-size:11pt; vertical-align:baseline;">When we add a </text><text styleclass="Element">Motion-Dimension FB</text><text style="font-size:11pt; vertical-align:baseline;"> to a </text><text styleclass="Element">Slide-Joint</text><text style="font-size:11pt; vertical-align:baseline;">, we identify it as a </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-Slider" styleclass="VariableName-IT">Slider</link><text style="font-size:11pt; vertical-align:baseline;"> in the </text><text styleclass="Interface">Kinematics-Tree</text><text style="font-size:11pt; vertical-align:baseline;">.</text></para>
+          <para styleclass="Body Text HowTo"><text style="font-size:11pt; vertical-align:baseline;">The kinematic elements are:</text></para>
+          <list id="34" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Body Text HowTo" style="font-family:Symbol; font-size:16pt; color:#000000;">
+            <li styleclass="Body Text HowTo"><text style="font-size:16pt;">Part + </text></li>
+            <li styleclass="Body Text HowTo"><text style="font-size:16pt;">Slide-Joint + </text></li>
+            <li styleclass="Body Text HowTo"><text style="font-size:16pt;">Motion-Dimension = SLIDER</text></li>
+          </list>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="Heading3_atocs_"><anchor id="VideoMotionDimensionFB"><keywords><keyword>Video...<keyword>How to Add a Motion Dimension Function-Block</keyword></keyword></keywords></anchor>Videos: Add Part, Add Joint, Add Motion-Dimension FB:</para>
+    <para styleclass="Heading4 Toggle_atocs_2">Add Motion-Dimension FB to a Pin-Joint <conditional-text type="IF" value="PDF"/><link displaytype="text" defaultstyle="true" type="filelink" href="Add Motion-Dimension FB-Rocker.gif" styleclass="Body Text">Double-click to watch &apos;Add and Edit Rocker Motion-Dimension FB<title>Add Motion Dimension FB to a Rocker</title></link><conditional-text type="END"/><conditional-text type="IF" value="CHM"/></para>
+    <para styleclass="Body Text HowTo"><table styleclass="PopupTable" rowcount="1" colcount="1" style="width:120px;">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Text"><toggle type="picture" print-expanded="true" help-expanded="false" src-collapsed="Add Motion-Dimension FB-Rocker.gif" src-expanded="Add Motion-Dimension FB-Rocker.gif" scale="20.00%" width="256" height="144" styleclass="Image Caption" figurelistinclude="0"><caption><![CDATA[Add Motion-Dimension - Rocker]]></caption></toggle></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Body Text HowTo"><conditional-text type="END"/><conditional-text type="IF" value="HTML,EBOOK"/></para>
+    <para styleclass="Body Text HowTo"><table styleclass="PopupTable" rowcount="1" colcount="1" style="width:120px;">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Image Caption"><video src="Add Motion-Dimension FB-Rocker.mp4" width="1280px" height="720px" autostart="false" loop="false" showcontrols="false" playbutton="true" previewimage="Add-FB-MotionDimensionRocker_preview.jpg" scale="20.00%"><title>Add Motion-Dimension FB - Rocker</title><caption><![CDATA[Add Motion-Dimension FB - Rocker]]></caption></video></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Body Text HowTo"><conditional-text type="END"/></para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="Heading4 Toggle_atocs_2">Add Motion-Dimension FB to a Slide-Joint <conditional-text type="IF" value="PDF"/><link displaytype="text" defaultstyle="true" type="filelink" href="Add Motion-Dimension FB-Slider.gif" styleclass="Body Text">Double-click to watch &apos;Add and Edit Slider Motion-Dimension&apos;<title>Add Motion Dimension FB to a Slider</title></link><conditional-text type="END"/><conditional-text type="IF" value="CHM,HTML"/></para>
+    <para styleclass="Body Text HowTo"><table styleclass="PopupTable" rowcount="1" colcount="1" style="width:120px;">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Text"><toggle type="picture" print-expanded="true" help-expanded="false" src-collapsed="Add Motion-Dimension FB-Slider.gif" src-expanded="Add Motion-Dimension FB-Slider.gif" scale="20.00%" width="256" height="144" styleclass="Image Caption" figurelistinclude="0"><caption><![CDATA[Add Motion-Dimension FB - Slider]]></caption></toggle></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Body Text HowTo"><conditional-text type="END"/><conditional-text type="IF" value="HTML,EBOOK"/></para>
+    <para styleclass="Body Text HowTo"><table styleclass="PopupTable" rowcount="1" colcount="1" style="width:120px;">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Text"><video src="Add Motion-Dimension FB-Rocker.mp4" width="1280px" height="720px" autostart="false" loop="false" showcontrols="true" playbutton="true" previewimage="Add Motion-Dimension FB-Rocker_preview.jpg" scale="20.00%" styleclass="Image Caption"><title>Add Motion-Dimension FB - Slider</title><caption><![CDATA[Add Motion-Dimension FB - Slider]]></caption></video></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Body Text HowTo"><conditional-text type="END"/></para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="Heading3_atocs_"><anchor id="AddMotDimeSpecial"><keywords><keyword>Add<keyword>Motion-Dimension FB - Special Procedures</keyword></keyword></keywords></anchor><text styleclass="Heading2">Special Methods </text></para>
+    <para styleclass="Body Text HowTo">Frequently, in a machine, joints are coincident. </para>
+    <para styleclass="Body Text HowTo">For example, there are two or more <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-Rotating-Part" styleclass="VariableName-IT">rotating Parts</link> that rotate about one center, or two or more <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-Sliding-Part" styleclass="VariableName-IT">sliding-Parts</link> that slide along one axis.</para>
+    <para styleclass="Heading4 Toggle_atocs_2"> Special Method: Coincident Pin-Joints</para>
+    <para styleclass="Body Text HowTo">If you want to specify the motion of each rotating part with a different <text styleclass="Element">Motion-Dimension FB</text>, you must carefully plan as to which <text styleclass="Element">Points</text> you select <text styleclass="VariableName-IT">when you add the </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Command-AddPin-Joint" styleclass="Element">Pin-Joints</link>, </para>
+    <para styleclass="Body Text HowTo">Then, when you add the <text styleclass="Element">Motion-Dimension FBs</text>, the <text styleclass="Element">Motion-Dimensions</text> can reference the correct <text styleclass="Element">Parts</text>. </para>
+    <para styleclass="Heading4 Toggle_atocs_2">Special Method: Coincident Slide-Joints</para>
+    <para styleclass="Body Text HowTo">If you want to specify the motion of each sliding part with a different <text styleclass="Element">Motion-Dimension FB</text>, you must carefully plan as to which <text styleclass="Element">Lines</text> you select <text styleclass="VariableName-IT">when you add the </text><text styleclass="Element">Slide-Joints</text>, </para>
+    <para styleclass="Body Text HowTo">Then, when you add the <text styleclass="Element">Motion-Dimension FBs</text>, the <text styleclass="Element">Motion-Dimensions</text> can reference the correct <text styleclass="Element">Parts</text>. </para>
+    <para styleclass="Body Text HowTo">The <text styleclass="Element">Lines</text> you select when you add the <text styleclass="Element">Slide-Joint</text> determine between which two <text styleclass="Element">Parts</text> you can specify the <text styleclass="Element">Motion-Dimension FB.</text></para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="Heading3_atocs_">Special Method 1:</para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="1" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:145px;">
+          <para styleclass="Body Text"><image src="MD-ADDMOTIONDIM-ROCKER-02M.ipp" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="VariableName">Result of Special Method 1:</para>
+          <para styleclass="Body Text HowTo">The model shows</para>
+          <list id="35" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted"><text styleclass="VariableName">Two</text>&#32;<text styleclass="Element">Motion-Dimension FBs</text>&#32;</li>
+            <li styleclass="HowTo Bulleted">They reference the same <text styleclass="Element">Line</text> in the <text styleclass="Element">Base-Part</text>.</li>
+          </list>
+          <para styleclass="Body Text HowTo"><text styleclass="HowTo Bulleted">You can see the dimension of the two </text><text styleclass="Element">Motion-Dimensions FBs</text><text styleclass="HowTo Bulleted"> start at the green horizontal </text><text styleclass="Element">Line.</text></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading4 Toggle_atocs_2" style="text-indent:-36px; margin-left:60px;"><image src="btn_addkeyword.bmp" scale="100.00%" figurelistinclude="0"></image><tab /><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" src-collapsed="btn_addkeyword.bmp" src-expanded="btn_delkeyword.bmp"><caption><![CDATA[STEP 1: Add Pin-Joints two times]]></caption></toggle></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="5" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:145px;">
+          <para styleclass="Normal"><image src="MD-ADDMOTIONDIM-ROCKER-02A.ipp" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="Body Table">There are two added <text styleclass="Element">Parts</text>&#32;</para>
+          <para styleclass="Body Table">Each added <text styleclass="Element">Part</text>, as always, has a <text styleclass="Element">CAD-Line</text>, with a <text styleclass="Interface">start-Point</text> and an <text styleclass="Interface">end-Point</text>.</para>
+          <para styleclass="Body Table">There is a <text styleclass="Element">Line</text>. This <text styleclass="Element">Line</text> is in the <text styleclass="Element">Base-Part, </text><text styleclass="Body Text">which you cannot see.</text></para>
+          <para styleclass="Body Table">There are three(3) &#160;Lines in three(3) <text styleclass="Element">Parts</text> in total.</para>
+          <para styleclass="Body Table">The <text styleclass="Interface">start-Points</text> in each <text styleclass="Element">line</text> are <text styleclass="VariableName">5, 7 </text>and<text styleclass="VariableName"> 11.</text></para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="Body Table"><text styleclass="Notes">Note</text><text styleclass="Bullets">: We can use the </text><text styleclass="Interface">start-Points</text><text styleclass="Bullets"> and/or the </text><text styleclass="Interface">end-Points</text>.</para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:145px;">
+          <para styleclass="Normal"><image src="MD-ADDMOTIONDIM-ROCKER-02B.ipp" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="Interface2">Add Pin-Joint #1 </para>
+          <para styleclass="Body Table">In the image to the left, <text styleclass="Element">Pin-Joint</text><text styleclass="VariableName"> #1</text> is between <text styleclass="Interface">point</text><text styleclass="Element">&#32;</text><text styleclass="VariableName">7 and 5</text></para>
+          <para styleclass="Body Table">Now we will add a <text styleclass="Element">Pin-Joint</text><text styleclass="VariableName">. #2</text></para>
+          <para styleclass="Body Table"><text styleclass="VariableName">ADD </text><text styleclass="Interface2">Pin-Joint #2</text></para>
+          <para styleclass="Body Table">We will add the <text styleclass="Element">Pin-Joint </text><text styleclass="VariableName">#2</text> between <text styleclass="VariableName">Points 11 </text><text styleclass="Body Text">and</text><text styleclass="VariableName"> 5.</text></para>
+          <para styleclass="Body Table">Q: <text styleclass="HowTo Bulleted" style="font-family:Arial; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">Why</text>&#32;<text styleclass="VariableName">11 and 5</text>&#32;<text styleclass="Body Text">and</text>&#32;<text styleclass="VariableName" style="color:#ff0000;">not</text>&#32;<text styleclass="VariableName">11 and 7 ? </text></para>
+          <para styleclass="Body Table">A: <text styleclass="HowTo Bulleted"> The </text><text styleclass="Element">Motion-Dimensions</text><text styleclass="HowTo Bulleted"> will reference the horizontal </text><text styleclass="Element">Line</text><text styleclass="Body Text"> in the </text><text styleclass="Element">Base-Part.</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:145px;">
+          <para styleclass="Normal"><image src="MD-ADDMOTIONDIM-ROCKER-02C.ipp" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="Body Table"><text styleclass="VariableName">Add Pin-Joint</text> : Click <text styleclass="VariableName">Point 11</text> and then <text styleclass="VariableName-IT">try</text> to click <text styleclass="VariableName">Point 5.</text></para>
+          <para styleclass="Body Table">Because<text styleclass="Body Text HowTo">&#32;</text><text styleclass="VariableName">Point 5</text><text styleclass="Body Text HowTo"> and </text><text styleclass="VariableName">Point 7</text><text styleclass="Body Text HowTo"> are at the same position, </text><text styleclass="VariableName-IT">MechDesigner</text><text styleclass="Body Text HowTo"> does not know which </text><text styleclass="Element">Point</text><text styleclass="Body Text HowTo"> to select.</text></para>
+          <para styleclass="Body Table">There is <text styleclass="VariableName">ambiguity</text> between <text styleclass="VariableName">Point 5</text> and <text styleclass="VariableName">Point 5</text>. Hence, the <text styleclass="Element">Select Elements dialog-box</text> opens.</para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="Body Text"><text styleclass="HowTo Bulleted">The </text><text styleclass="Element">Select Elements dialog-box</text><text styleclass="HowTo Bulleted">:</text></para>
+          <list id="36" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted"><text style="font-weight:normal; font-style:normal;">Gives</text><text style="font-weight:bold;">&#32;</text><text styleclass="VariableName-IT">ALL</text> of the elements to complete the command are available</li>
+            <li styleclass="HowTo Bulleted">The element you had selected first is at the top of the list.</li>
+            <li styleclass="HowTo Bulleted">None of the elements are selected.</li>
+          </list>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:145px;">
+          <para styleclass="Normal"><image src="MD-ADDMOTIONDIM-ROCKER-02D.ipp" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="Body Table"><text styleclass="Interface2">CTRL + Click </text><text styleclass="Interface2" style="color:#ff0000;">ALL</text> of the elements you need to complete the command.</para>
+          <para styleclass="Body Text"><text styleclass="Body Text HowTo">In this image, we select </text><text styleclass="Element">Point 11</text><text styleclass="Body Text HowTo"> and </text><text styleclass="Element">Point5</text></para>
+          <list id="37" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Numbered" style="font-family:&apos;Noto Sans&apos;; font-size:16pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo Numbered"><text style="font-size:16pt; font-weight:bold; font-style:italic; color:#000000; background-color:transparent;">CTRL</text><text style="font-size:16pt; font-weight:bold; color:#000000; background-color:transparent;"> + CLICK Point11 </text><text style="font-size:16pt; font-weight:bold; color:#ff0000; background-color:transparent;">AND</text><text style="font-size:16pt; font-weight:bold; color:#000000; background-color:transparent;"> Point5</text></li>
+          </list>
+          <list id="38" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="2" styleclass="Body Text HowTo" style="font-family:&apos;Segoe UI&apos;; font-size:16pt; font-weight:bold; color:#000000;">
+            <li styleclass="Body Text HowTo"><text styleclass="HowTo Numbered" style="font-size:16pt; font-weight:bold; color:#000000; background-color:transparent;">Click </text><image src="MD-OK.png" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Normal" style="font-size:16pt; font-weight:bold;">&#32;</text></li>
+          </list>
+          <para styleclass="Body Text HowTo"></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:145px;">
+          <para styleclass="Normal"><image src="MD-ADDMOTIONDIM-ROCKER-02E.ipp" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="Body Text HowTo"></para>
+          <para styleclass="Body Text HowTo"><text styleclass="Normal">Now, the each </text><text styleclass="Element">Part</text><text styleclass="Normal"> is joined with a </text><text styleclass="Element">Pin-Joint</text><text styleclass="Normal"> to the </text><text styleclass="Element">Point</text><text styleclass="Normal"> at the left end of the </text><text styleclass="Element">Line</text><text styleclass="Normal"> in the </text><text styleclass="Element">Base-Part</text><text styleclass="Normal">.</text></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading4 Toggle_atocs_2" style="text-indent:-36px; margin-left:60px;"><image src="btn_addkeyword.bmp" scale="100.00%" figurelistinclude="0"></image><tab /><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" src-collapsed="btn_addkeyword.bmp" src-expanded="btn_delkeyword.bmp" src-print="none"><caption><![CDATA[STEP 2: Add Motion-Dimension FB two times]]></caption></toggle></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="9" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:145px;">
+          <para styleclass="Normal"><image src="MD-ADDMOTIONDIM-ROCKER-02E.ipp" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="Body Table">The two <text styleclass="Element">Parts</text> are now joined to the <text styleclass="Element">Base-Part</text> with two <text styleclass="Element">Pin-Joints</text></para>
+          <para styleclass="Body Table">Now, use the <text styleclass="Element">Motion-Dimension FB</text> two times</para>
+          <para styleclass="Interface2">Add Motion-Dimension 1</para>
+          <list id="39" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="Bullets">Click <text styleclass="T_Menu">Function-Block toolbar &gt; Add Motion-Dimension FB</text>.<text styleclass="VariableName">&#32;</text></li>
+          </list>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:145px;">
+          <para styleclass="Normal"><image src="MD-ADDMOTIONDIM-ROCKER-02F.ipp" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="Body Table">The <text styleclass="Interface">Command-Manager</text> show that we must select three elements <image src="Red-14-1b.gif" scale="100.00%" figurelistinclude="0"></image>, &#160;<image src="Red-14-2.gif" scale="100.00%" figurelistinclude="0"></image> and <image src="Red-14-3.gif" scale="100.00%" figurelistinclude="0"></image>. </para>
+          <para styleclass="Body Text"></para>
+          <para styleclass="Body Table"><text styleclass="Body Text">T</text>h<text styleclass="Body Text">e first-element must be a </text><text styleclass="Element">Pin-Joint</text><text styleclass="Body Text"> or </text><text styleclass="Element">Slide-Joint</text><text styleclass="Body Text">.</text></para>
+          <para styleclass="Body Table">We have two <text styleclass="Element">Pin-Joints</text>!</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:145px;">
+          <para styleclass="Normal" style="text-align:right;"><image src="MD-ADDMOTIONDIM-ROCKER-02G.ipp" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="Body Text">When we click the <text styleclass="Element">Pin-Joints</text> in the <text styleclass="Interface">graphic-area</text> the <text styleclass="Element">Select-Elements dialog-box</text> opens as there are two <text styleclass="Interface">Pin-Joints</text>.</para>
+          <para styleclass="Body Text">In the <text styleclass="Element">Select-Elements dialog box</text>:</para>
+          <para styleclass="Body Text HowTo">Click the <text styleclass="Element">Pin-Joint5</text> - the one with the lower Element-Number if the names are different to those in the image.</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:145px;">
+          <para styleclass="Image Caption"><image src="MD-ADDMOTIONDIM-ROCKER-02H.ipp" scale="100.00%" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="Body Text"></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:145px;">
+          <para styleclass="Normal"><image src="MD-ADDMOTIONDIM-ROCKER-02I.ipp" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="Body Text">Now we must select two Lines.</para>
+          <para styleclass="Body Text"></para>
+          <para styleclass="Body Text">Click the horizontal <text styleclass="Element">Line</text>&#32;<image src="Red-14-2.gif" scale="100.00%" figurelistinclude="0"></image> as the second element</para>
+          <para styleclass="Body Text">Click the <text styleclass="Element">CAD-Line</text>&#32;<image src="Red-14-3.gif" scale="100.00%" figurelistinclude="0"></image> along one the <text styleclass="Element">Parts </text>with which the <text styleclass="Element">Pin-Joint</text> is made.</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:145px;">
+          <para styleclass="Normal"><image src="MD-ADDMOTIONDIM-ROCKER-02J.ipp" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="Body Text">This image shows the three elements in the Command-Manager boxes.</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:145px;">
+          <para styleclass="Image Caption"><image src="MD-ADDMOTIONDIM-ROCKER-02K.ipp" scale="100.00%" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="Body Table">The first Rocker <text styleclass="Element">Motion-Dimension FB</text>.</para>
+          <para styleclass="Body Table"></para>
+          <para styleclass="Interface2">Add Motion-Dimension #2</para>
+          <para styleclass="Body Table"></para>
+          <para styleclass="Body Table">We must now select another three elements,<image src="Red-14-4.gif" scale="100.00%" figurelistinclude="0"></image><image src="Red-14-5.gif" scale="100.00%" figurelistinclude="0"></image><image src="Red-14-6.gif" scale="100.00%" figurelistinclude="0"></image></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:145px;">
+          <para styleclass="Image Caption"><image src="MD-ADDMOTIONDIM-ROCKER-02L.ipp" scale="100.00%" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="Body Text">&#32;<text styleclass="T_Menu">Function-Block Toolbar &gt; Motion-Dimension FB</text> again.</para>
+          <para styleclass="Body Text">These are the elements.</para>
+          <para styleclass="Body Text HowTo"><image src="Red-14-4.gif" scale="100.00%" styleclass="Body Text" figurelistinclude="0"></image><text styleclass="Body Text">&#32;</text><text styleclass="Element">Joint:</text><text styleclass="Body Text">&#32;</text><text styleclass="Element">Pin-Joint2</text><text styleclass="Body Text">. </text></para>
+          <para styleclass="Body Text">Now, there is no ambiguity. There is only one <text styleclass="Element">Pin-Joint</text> available.</para>
+          <para styleclass="Body Text HowTo"><image src="Red-14-5.gif" scale="100.00%" styleclass="Body Text" figurelistinclude="0"></image><text styleclass="Body Text">&#32;</text><text styleclass="Element">Line</text><text styleclass="Body Text"> – Solved: select the horizontal </text><text styleclass="Element">Line</text><text styleclass="Body Text">. </text></para>
+          <para styleclass="Body Text HowTo"><image src="Red-14-6.gif" scale="100.00%" styleclass="Body Text" figurelistinclude="0"></image><text styleclass="Body Text">&#32;</text><text styleclass="Element">Line</text><text styleclass="Body Text"> – Free: select the </text><text styleclass="Element">CAD-Line</text><text styleclass="Body Text"> along the center of the Blue </text><text styleclass="Element">Part</text><text styleclass="Body Text">.</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:145px;">
+          <para styleclass="Image Caption"><image src="MD-ADDMOTIONDIM-ROCKER-02M.ipp" scale="100.00%" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="Body Text">Here, you can see the result.</para>
+          <para styleclass="Body Text">Both <text styleclass="Element">Motion-Dimensions FBs</text> use the Horizontal <text styleclass="Element">Line</text> in the <text styleclass="Element">Base-Part</text> as a reference for the motion-dimension.</para>
+          <para styleclass="Body Text">Note: When you add two <text styleclass="Element">Motion-Dimensions</text>, the <text styleclass="Element">FBs</text> may be on top of each other.</para>
+          <para styleclass="Body Text">Drag each <text styleclass="Element">FB</text> so you can see them.</para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="Heading3_atocs_">Special Method 2: </para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="1" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:145px;">
+          <para styleclass="Normal"><image src="MD-ADDMOTIONDIM-ROCKER-03A.ipp" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="VariableName">Result of Special Method 2</para>
+          <para styleclass="Body Text HowTo">We want the two <text styleclass="Element">Motion-Dimensions FB</text><text styleclass="Element" style="font-size:8pt;">s</text>:</para>
+          <list id="40" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted"><text styleclass="Element">Motion-Dimension 1</text>: </li>
+          </list>
+          <para styleclass="Body Text Howindent4bullets">From the <text styleclass="Element">Line</text> in the <text styleclass="Element">Base-Part</text>&#32;</para>
+          <para styleclass="Body Text Howindent4bullets"><text styleclass="HowTo Bulleted">To a </text><text styleclass="Element">Line</text><text styleclass="HowTo Bulleted"> in </text><text styleclass="Element">&apos;Part 1&apos;</text></para>
+          <list id="40" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted"><text styleclass="Element">Motion-Dimension 2</text>: </li>
+          </list>
+          <para styleclass="Body Text Howindent4bullets"><text styleclass="HowTo Bulleted">From the </text><text styleclass="Element">Line</text><text styleclass="HowTo Bulleted"> in </text><text styleclass="Element">&apos;Part 1&apos;</text></para>
+          <para styleclass="Body Text Howindent4bullets"><text styleclass="HowTo Bulleted">To the </text><text styleclass="Element">Line</text><text styleclass="HowTo Bulleted"> in </text><text styleclass="Element">&apos;Part 2&apos;</text></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading4 Toggle_atocs_2" style="text-indent:-36px; margin-left:60px;"><image src="btn_addkeyword.bmp" scale="100.00%" figurelistinclude="0"></image><tab /><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" src-collapsed="btn_addkeyword.bmp" src-expanded="btn_delkeyword.bmp" src-print="none"><caption><![CDATA[STEP 1: Add Pin-Joint two times]]></caption></toggle></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Standard" rowcount="4" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:246px;">
+          <para styleclass="Normal"><image src="MD-ADDMOTIONDIM-ROCKER-02A.ipp" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="Body Text">Again, there are two <text styleclass="Element">Parts</text> and a Line in the <text styleclass="Element">Base-Part</text>.</para>
+          <para styleclass="Body Text">The <text styleclass="Element">Points</text> at the ends of the <text styleclass="Element">lines</text> are 5, 7 and 11.</para>
+          <para styleclass="Body Text HowTo">We want to:</para>
+          <list id="41" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted">Add a <text styleclass="Element">Pin-Joint</text> between &apos;<text styleclass="Element">Point7</text>&apos; and &apos;<text styleclass="Element">Point5</text>&apos;, and </li>
+            <li styleclass="HowTo Bulleted">Add a <text styleclass="Element">Pin-Joint</text> between &apos;<text styleclass="Element">Point11</text>&apos; and &apos;<text styleclass="Element">Point7</text>&apos;.</li>
+          </list>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:246px;">
+          <para styleclass="Normal"><image src="MD-ADDMOTIONDIM-ROCKER-02B.ipp" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="Body Text">In the image to the left, <text styleclass="Element">Point7</text> is joined to <text styleclass="Element">Point5</text></para>
+          <para styleclass="VariableName">CONDITION 2</para>
+          <para styleclass="Body Text HowTo" style="margin-top:0px;">Add the second <text styleclass="Element">Pin-Joint</text> between <text styleclass="Element">Point11</text> to <text styleclass="Element">Point7</text>.</para>
+          <list id="42" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="margin-top:0px; font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted" style="margin-top:0px;"><text styleclass="VariableName">Q: </text><text style="font-family:Arial; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">Why </text><text styleclass="Element">Point7</text><text style="font-family:Arial; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;"> and </text><text styleclass="VariableName">not</text><text style="font-family:Arial; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">&#32;</text><text styleclass="Element">Point5</text><text styleclass="VariableName"> ?</text></li>
+          </list>
+          <list id="43" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="margin-top:0px; font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted" style="margin-top:0px;"><text styleclass="VariableName">A: &#160;</text>Because <text styleclass="Element">Point7</text> is a child to <text styleclass="Element">CAD-Line</text><image src="Red-14-1b.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image> and we want this <text styleclass="Element">Motion-Dimension</text> to reference <text styleclass="Element">CAD-Line</text><image src="Red-14-1b.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image>. </li>
+            <li styleclass="HowTo Bulleted" style="margin-top:0px;">We do <text style="text-decoration:underline;">not</text> want the <text styleclass="Element">Motion-Dimension</text> to reference the <text styleclass="Element">Line</text> in the <text styleclass="Element">Base-Part</text>. That was <text styleclass="VariableName">Method 1,</text> above.</li>
+          </list>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="vertical-align:top; width:246px;">
+          <para styleclass="Normal"><image src="MD-ADDMOTIONDIM-ROCKER-02C.ipp" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td style="vertical-align:top;">
+          <para styleclass="Normal"></para>
+          <para styleclass="Body Table">Select <text styleclass="Element">Point11</text>.</para>
+          <para styleclass="Body Table">Then try to select <text styleclass="Element">Point7</text></para>
+          <para styleclass="Body Table">There is ambiguity between <text styleclass="Element">Point5</text> and <text styleclass="Element">Point7</text>. Hence, the <text styleclass="Element">Select Elements dialog-box</text> opens.</para>
+          <list id="44" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted">ALL the elements you need for the command are made available to you</li>
+            <li styleclass="HowTo Bulleted">The first element you select is at the top of the list.</li>
+          </list>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="vertical-align:top; width:129px;">
+          <para styleclass="Normal"><image src="MD-DIALOG-SELECT-ELEMENTS-PT117.png" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td style="vertical-align:top;">
+          <para styleclass="Normal"></para>
+          <para styleclass="Body Table">In the image to the left, we have selected <text styleclass="Element">Point11</text> and <text styleclass="Element">Point7</text>.</para>
+          <list id="45" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="VariableName" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="VariableName">CTRL + CLICK Point11 AND Point7</li>
+          </list>
+          <list id="46" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="2" styleclass="VariableName" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="VariableName">Click <image src="MD-OK-smallest.png" scale="100.00%" figurelistinclude="0"></image></li>
+          </list>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading4 Toggle_atocs_2" style="text-indent:-36px; margin-left:60px;"><image src="btn_addkeyword.bmp" scale="100.00%" figurelistinclude="0"></image><tab /><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" src-collapsed="btn_addkeyword.bmp" src-expanded="btn_delkeyword.bmp" src-print="none"><caption><![CDATA[STEP 2: Add Motion-Dimension FB two times]]></caption></toggle></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Standard" rowcount="8" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:145px;">
+          <para styleclass="Normal"><image src="MD-ADDMOTIONDIM-ROCKER-02E.ipp" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="Body Table">The two <text styleclass="Element">Parts</text> become joined with a <text styleclass="Element">Pin-Joint</text>.</para>
+          <para styleclass="Body Text"></para>
+          <para styleclass="Body Table">Do Add <text styleclass="Element">Motion-Dimension FBs</text><text styleclass="VariableName"> two times.</text></para>
+          <para styleclass="Body Text"></para>
+          <para styleclass="Body Table"></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:145px;">
+          <para styleclass="Normal"><image src="MD-ADDMOTIONDIM-ROCKER-02F.ipp" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="Body Table">You must select three elements to do each <text styleclass="Element">Add Motion-Dimension FB</text>&#32;</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:173px;">
+          <para styleclass="Normal" style="text-align:left;"><image src="MD-ADDMOTIONDIM-ROCKER-03D.ipp" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="Body Text"><text styleclass="Interface2">Element 1: </text><text styleclass="Body Text HowTo">A Joint.</text></para>
+          <para styleclass="Body Text HowTo">There is NO ambiguity when we select the <text styleclass="Element">Pin-Joint</text>, </para>
+          <para styleclass="Body Text HowTo">There is only ONE <text styleclass="Element">Pin-Joint</text> that is a joint between two <text styleclass="Element">Points</text> with one Point in a kinematically<text styleclass="VariableName">-defined</text>&#32;<text styleclass="Element">Part</text> and the other <text styleclass="Element">Point</text> in a <text styleclass="VariableName">free</text>&#32;<text styleclass="Element">Part</text>.</para>
+          <para styleclass="Body Text HowTo">The <text styleclass="Interface">Select Elements dialog-box</text> does NOT open.</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:145px;">
+          <para styleclass="Body Text"><image src="MD-ADDMOTIONDIM-ROCKER-02I.ipp" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="Body Text"><text styleclass="Interface2">Elements 2 &amp; 3: </text>Two <text styleclass="Element">Lines</text> – a <text styleclass="VariableName-IT">Solved</text>&#32;<text styleclass="Element">Line</text><image src="Red-14-2.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image> then a <text styleclass="VariableName-IT">Free</text>&#32;<text styleclass="Element">Line</text><image src="Red-14-3.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+          <para styleclass="Body Text HowTo">Select the Horizontal <text styleclass="Element">Line</text><image src="Red-14-2.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Image Caption">&#32;</text>and the <text styleclass="Element">CAD-Line</text><image src="Red-14-3.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:145px;">
+          <para styleclass="Normal"><image src="MD-ADDMOTIONDIM-ROCKER-02J.ipp" scale="100.00%" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="Body Text"><text styleclass="Body Text HowTo">The three elements in the </text><text styleclass="Interface">Command-Manager</text></para>
+          <para styleclass="Body Text HowTo">Click <image src="OK-tiny-13-17.png" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image> in the <text styleclass="Interface">Command-Manager</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:145px;">
+          <para styleclass="Normal"><image src="MD-ADDMOTIONDIM-ROCKER-03F.ipp" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="Body Text">You can see the First <text styleclass="Element">Motion-Dimension FB</text>.</para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="VariableName">Add the second Motion-Dimension.</para>
+          <para styleclass="Body Text"><text style="font-family:Arial; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">We must select three elements,</text><image src="Red-14-4.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><image src="Red-14-5.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><image src="Red-14-6.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:145px;">
+          <para styleclass="Normal"><image src="MD-ADDMOTIONDIM-ROCKER-03G.ipp" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="Body Text"><text styleclass="Body Text HowTo">These are the elements:</text></para>
+          <list id="47" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Numbered" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo Numbered">Joint: when we select the <text styleclass="Element">Pin-Joint5</text>, there is <text styleclass="VariableName">no ambiguity</text> because the existing <text styleclass="Element">Motion-Dimension FB</text> uses <text styleclass="Element">Pin-Joint2</text>.<text styleclass="VariableName">&#32;</text></li>
+            <li styleclass="HowTo Numbered"><text styleclass="Element">CAD-Line10</text><text styleclass="Body Text HowTo">: you must select this </text><text styleclass="Element">CAD-Line</text><text styleclass="Body Text HowTo"> because it is a child to a </text><text styleclass="VariableName" style="color:#003700;">Green</text><text styleclass="Body Text HowTo"> Part and its </text><text styleclass="Interface">start-Point</text><text styleclass="Body Text HowTo"> is referenced by </text><text styleclass="Element">Pin-Joint6</text></li>
+            <li styleclass="HowTo Numbered"><text styleclass="Element">CAD-Line11:</text><text styleclass="Body Text HowTo"> you must select this </text><text styleclass="Element">CAD-Line</text><text styleclass="Body Text HowTo"> because it is a child to a </text><text styleclass="VariableName" style="color:#0000ff;">Blue</text><text styleclass="Body Text HowTo"> Part and its </text><text styleclass="Interface">start-Point</text><text styleclass="Body Text HowTo"> is referenced by </text><text styleclass="Element">Pin-Joint6</text></li>
+          </list>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:145px;">
+          <para styleclass="Normal"><image src="MD-ADDMOTIONDIM-ROCKER-03A.ipp" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="Body Text">This image shows the end result.</para>
+          <para styleclass="Body Text HowTo"><text styleclass="Element">Motion-Dimension FB</text><text styleclass="VariableName"> #1:</text> uses the Horizontal <text styleclass="Element">Line</text> that is a child to the <text styleclass="Element">Base-Part</text> as a <text styleclass="VariableName">reference Line</text>.</para>
+          <para styleclass="Body Text HowTo"><text styleclass="Element">Motion-Dimension FB</text><text styleclass="VariableName"> #2:</text> uses the <text styleclass="Element">CAD-Line</text> along the center of the <text styleclass="VariableName-IT">added </text><text styleclass="Element">Part</text> as the <text styleclass="VariableName">reference Line</text>. &#160;The CAD-Line is kinematically-defined after we add <text styleclass="Element">Motion-Dimension FB</text> #1 - see Method 1</para>
+          <para styleclass="Body Text"><text style="font-weight:normal; color:#000000;">Note: When you add two </text><text styleclass="Element">Motion-Dimensions</text><text style="font-weight:normal; color:#000000;">, the FBs may be on top of each other.</text></para>
+          <para styleclass="Body Text"><text style="font-weight:bold; color:#ff0000;">DRAG</text><text style="font-weight:normal; color:#000000;"> each FB so you can see them.</text></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="Heading3_atocs_" style="text-indent:-36px; margin-left:36px;"><anchor id="SliderMotionDirection"><keywords><keyword>Motion Dimension<keyword>Slider Positive Direction</keyword></keyword></keywords></anchor><image src="btn_addkeyword.bmp" scale="100.00%" figurelistinclude="0"></image><tab /><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" src-collapsed="btn_addkeyword.bmp" src-expanded="btn_delkeyword.bmp" src-print="none"><caption><![CDATA[Positive' Direction of Slide-Joints and Slider]]></caption></toggle></para>
+    <para styleclass="Body Text HowTo">The nursery rhyme : <text style="font-style:italic;">She swallowed a cat, that swallowed a mouse, that swallowed a spider, that swallowed a fly</text>... will come to mind.</para>
+    <para styleclass="Body Text HowTo"><table styleclass="Standard" rowcount="5" colcount="2" style="cell-padding:0px; border-width:0px; border-spacing:0px; border-collapse:collapse; cell-border-width:1px; border-color:#000000; border-style:solid;">
+      <tr style="vertical-align:top">
+        <td colspan="2">
+          <para styleclass="VariableName-IT">A Slider</para>
+          <para styleclass="Body Text HowTo">To add a <text styleclass="Element">Motion-Dimension FB</text><text styleclass="Body Text"> (for a Slider) you must</text> select a <text styleclass="Element">Slide-Joint</text>, and then one <text styleclass="Element">Point</text> from each of the two <text styleclass="Element">Lines</text> that define the <text styleclass="Element">Slide-Joint</text>.</para>
+          <list id="48" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted">The properties <text styleclass="Body Text">of the</text>&#32;<text styleclass="Element">Motion-Dimension FB</text> are determined by the properties of the <text styleclass="Element">Slide-Joint</text><text styleclass="Body Text">. </text></li>
+            <li styleclass="HowTo Bulleted"><text styleclass="Body Text HowTo">The properties of the </text><text styleclass="Element">Slide-Joint</text><text styleclass="Body Text HowTo"> are determined by the properties of the </text><text styleclass="Element">Lines</text><text styleclass="Body Text HowTo"> you select to add the </text><text styleclass="Element">Slide-Joint</text><text styleclass="Body Text HowTo">. </text></li>
+            <li styleclass="HowTo Bulleted"><text styleclass="Body Text HowTo">The properties of the </text><text styleclass="Element">Lines</text><text styleclass="Body Text HowTo"> are determined by the properties their </text><text styleclass="Interface">start-Points</text><text styleclass="Body Text HowTo"> and </text><text styleclass="Interface">end-Points.</text></li>
+          </list>
+          <para styleclass="Body Text HowTo">Therefore, the <text styleclass="VariableName">positive-direction</text> of the <text styleclass="Element">Motion-Dimension</text> is defined by the <text styleclass="Interface">start-Point</text> and <text styleclass="Interface">end-Point</text> of the two <text styleclass="Element">Lines</text><text styleclass="Body Text"> in the </text><text styleclass="Element">Slide-Joint</text><text styleclass="Body Text">.</text></para>
+          <para styleclass="Body Text HowTo">If the positive-direction of the <text styleclass="Element">Motion-Dimension</text> is not as you want, you will need to add the <text styleclass="Element">Slide-Joint</text>, and the <text styleclass="Element">Lines</text> again.</para>
+          <para styleclass="Body Text"><table styleclass="Top Tip" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Body Text2-Note"><text styleclass="VariableName">Top-Tip - plan</text><text styleclass="VariableName-IT">.</text><text styleclass="Body Text"> Drag </text><text styleclass="Element">Lines </text><text styleclass="Body Text">and </text><text styleclass="Element">Parts</text><text styleclass="Body Text"> from the </text><text styleclass="Interface">Start-Point</text><text styleclass="Body Text"> to the </text><text styleclass="Interface">end-Point</text><text styleclass="Body Text"> in the </text><text styleclass="VariableName">same positive direction</text><text styleclass="Body Text"> of the </text><text styleclass="Element">Motion-Dimension</text><text styleclass="Body Text">.</text></para>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Body Table">Always, the positive-direction of a <text styleclass="Element">Motion-Dimension</text> for a <text styleclass="Interface">Slider</text> : </para>
+          <para styleclass="Body Text HowTo">&apos;...the positive direction of the <text styleclass="Element">Line</text>, or <text styleclass="Element">CAD-Line</text>, that is kinematically-defined <text styleclass="VariableName">before</text> you add the <text styleclass="Element">Motion-Dimension FB</text> to the <text styleclass="Element">Slide-Joint</text>.</para>
+          <para styleclass="VariableName">What is the Positive-Direction of a Line, CAD-Line, or Part?</para>
+          <para styleclass="Body Text HowTo">The direction in which you drag - from its <text styleclass="Interface">start-Point</text> to its <text styleclass="Interface">end-Point</text> - when you add the <text styleclass="Element">Line, CAD-Line</text>, or <text styleclass="Element">Part</text>.</para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="VariableName">Example Sliders</para>
+          <list id="49" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted"><text styleclass="Element">Line 1</text> is <text styleclass="VariableName" style="color:#005000;">Green</text>&#32;<text styleclass="Element">Part</text> – it belongs to a kinematically-defined <text styleclass="Element">part</text>.</li>
+          </list>
+          <list id="50" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted"><text styleclass="Element">Line 2</text> the Free <text styleclass="VariableName" style="color:#0000ff;">Blue</text>&#32;<text styleclass="Element">Part</text> – it becomes a <text styleclass="Interface">Slider</text> after you add the <text styleclass="Element">Motion-Dimension FB</text><text styleclass="Body Text">&#32;</text></li>
+          </list>
+          <para styleclass="HowTo Bulleted">I have used the <text styleclass="VariableName-IT" style="color:#ff0000;">red arrow-heads</text> to show the direction in which I &apos;dragged&apos; to add the <text styleclass="Element">Lines</text> and <text styleclass="Element">Parts</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="height:17px;">
+          <para styleclass="Normal"><image src="MD-ADDMOTIONDIM-SLIDER-DIRECTION-11.ipp" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td style="height:17px;">
+          <list id="51" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted"><text styleclass="Element">Line 1</text> – <text styleclass="Interface2">L1</text>- &#160;Drag to the right</li>
+            <li styleclass="HowTo Bulleted"><text styleclass="Element">CAD-Line/Part 2</text> – <text styleclass="Interface2">L2</text> - Drag to the right</li>
+          </list>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="Body Text HowTo">The <text styleclass="Element">Motion-Dimension</text> is 11.9. </para>
+          <para styleclass="Body Text HowTo">Increasing the value, will move the <text styleclass="Element">Slider</text> to the up-right.</para>
+          <para styleclass="Body Text2-Note" style="margin-left:24px;"><text styleclass="Body Text HowTo">The small </text><text styleclass="VariableName-indent" style="color:#005000;">Green</text><text styleclass="Body Text HowTo"> arrowhead at the </text><text styleclass="Element">start-Point</text><text styleclass="Body Text HowTo"> of </text><text styleclass="Element">Line 1</text><text styleclass="Body Text HowTo"> shows the positive direction of the </text><text styleclass="Element">Line</text><text styleclass="Body Text HowTo"> and the </text><text styleclass="Element">Slider</text><text styleclass="Body Text HowTo">.</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Normal"><image src="MD-ADDMOTIONDIM-SLIDER-DIRECTION-10.ipp" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <list id="52" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted"><text styleclass="Element">Line 1</text> – L1 - Drag from Left to the Right</li>
+            <li styleclass="HowTo Bulleted"><text styleclass="Element">CAD-Line/Part 2</text> – L2 - Drag from Right to the Left</li>
+          </list>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="Body Text HowTo">The <text styleclass="Element">Motion-Dimension</text> is &apos;20&apos;. </para>
+          <para styleclass="Body Text HowTo">Increasing the value will move the <text styleclass="Element">Slider</text> to the right.</para>
+          <para styleclass="Body Text HowTo">The small arrowhead shows the positive direction</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Normal"><image src="MD-ADDMOTIONDIM-SLIDER-DIRECTION-01.ipp" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <list id="53" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted"><text styleclass="Element">Line 1</text> – L1 - Drag from Right &lt; Left</li>
+            <li styleclass="HowTo Bulleted"><text styleclass="Element">CAD-Line/Part 2</text> – L2 - Drag from Left &gt; Right</li>
+          </list>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="Body Text HowTo">The Motion-Dimension is 23&apos;. </para>
+          <para styleclass="Body Text HowTo">Increasing the value will move the Motion-Part(Slider) to the left.</para>
+          <para styleclass="Body Text HowTo">The small arrowhead shows the positive direction</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:13px;">
+          <para styleclass="Normal"><image src="MD-ADDMOTIONDIM-SLIDER-DIRECTION-00.ipp" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <list id="54" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted"><text styleclass="Element">Line 1</text> – L1 - Drag from Right to Left</li>
+            <li styleclass="HowTo Bulleted"><text styleclass="Element">CAD-Line/Part 2</text> – L2 - Drag from Right to Left</li>
+          </list>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="Body Text HowTo">The Motion-Dimension is -20&apos;. </para>
+          <para styleclass="Body Text HowTo">Increasing the value will move the Motion-Part(Slider) to the left.</para>
+          <para styleclass="Body Text HowTo">The small arrowhead shows the positive direction.</para>
+        </td>
+      </tr>
+    </table></para>
+  </body>
+</topic>

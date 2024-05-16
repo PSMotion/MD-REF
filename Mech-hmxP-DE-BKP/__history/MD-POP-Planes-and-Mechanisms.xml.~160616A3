@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../helpproject.xsl" ?>
+<topic template="Default" status="Under Construction" modified="2022-03-21T14:28:49.662Z" lasteditedby="Adam" version="2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../helpproject.xsd">
+  <title>Planes and Mechanisms</title>
+  <keywords>
+    <keyword>Planes and Mechanisms</keyword>
+  </keywords>
+  <body>
+    <para styleclass="Normal"><table styleclass="PopupTable" rowcount="1" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Interface">General Notes for Planes and Mechanisms</para>
+          <para styleclass="Popup Box">Each Mechanism tab/editor is &apos;locked&apos; to the Plane. that you select to add the Mechanism.</para>
+          <para styleclass="Popup Box">It is, therefore, very important to select the correct Plane for each Mechanism-Editor.</para>
+          <para styleclass="Popup Box">You will notice that the Add Plane is available in the Model-Editor and each Mechanism-Editor. </para>
+          <para styleclass="Popup Box" style="line-height:1.15;"><text style="text-decoration:underline;">New Planes are Added by selecting these </text><text styleclass="VariableName-small">source</text><text style="font-weight:bold; text-decoration:underline;">&#32;</text><text style="font-weight:normal; text-decoration:underline;">elements</text><text style="font-weight:bold; text-decoration:underline;">:</text></para>
+          <list id="0" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Popup Box" style="line-height:1.15; font-family:Symbol; font-size:10pt; color:#000000;">
+            <li styleclass="Popup Box" style="line-height:1.15;"><text style="text-decoration:underline;">Plane elements</text> - in which case the &apos;New Plane&apos; can only be <text style="text-decoration:underline;">offset</text> from the &apos;Source Plane&apos; along the +Z-axis of the &apos;Source Plane&apos;.</li>
+            <li styleclass="Popup Box" style="line-height:1.15;"><text style="text-decoration:underline;">Line elements</text> - in which case the Origin and +X–axis of the &apos;New Plane&apos; coincides with Origin and +X–axis of the Line. The &apos;New Plane&apos; is at an angle relative to the Mechanism Plane that the Line lies on. Also, the &apos;New Plane&apos; may move with the Line, if the Line is a child to a moving Part.</li>
+            <li styleclass="Popup Box" style="line-height:1.15;"><text style="text-decoration:underline;">X–axis or Y–axis</text> of a Base-Part or an Added-Part in a Mechanism-Editor. The Origin and +X–axis of the New Plane will align with the Origin and positive direction of the selected X or Y–axis. The &apos;New Plane&apos; can be at an angle relative to the Mechanism Plane that the Part lies on. </li>
+          </list>
+        </td>
+      </tr>
+    </table></para>
+  </body>
+</topic>

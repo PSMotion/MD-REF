@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" status="Under Construction" modified="2022-08-23T22:18:13.469+01:00" lasteditedby="Adam" version="2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title>Dialog: Function-Block: Force-Data</title>
+  <keywords>
+    <keyword>Dialog<keyword>Function-Block : Force Data</keyword></keyword>
+    <keyword>Force at a Point</keyword>
+    <keyword>Measure<keyword>Force</keyword></keyword>
+    <keyword>Point Force</keyword>
+  </keywords>
+  <body>
+    <header>
+      <para styleclass="Heading1">Dialog: Function-Block: Force-Data</para>
+    </header>
+    <para styleclass="Heading2" style="page-break-before:always;">Force-Data FB</para>
+    <para styleclass="SeeAlso">See: <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Command-FB-Force-Data">Add Force-Data FB</link> , <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Forces-Configure-Power-Source">Configure Power Source</link></para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="Body Text HowTo">Use the <text styleclass="Element">Force-Data FB</text> to measure the Force that <text styleclass="VariableName" style="color:#ff0000;">acts on</text> a <text styleclass="Element">Point</text> at a <text styleclass="Body Text">Joint</text>, Spring, or the Contact-Point of a <text styleclass="Element">2D-Cam</text>.</para>
+    <para styleclass="Body Text HowTo"><text styleclass="Body Text">To use the </text><text styleclass="Element">Force-Data FB</text><text styleclass="Body Text"> correctly, you must also do</text><text styleclass="HowTo Bulleted">&#32;</text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-ConfigurePowerSource" styleclass="Element">Configure Power Source</link><text styleclass="HowTo Bulleted">.</text><text styleclass="VariableName">&#32;</text></para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="Heading4 Toggle_atocs_">Open Force-Data dialog-box</para>
+    <para styleclass="Body Text HowTo"><table styleclass="Standard" rowcount="1" colcount="2" style="width:auto; head-row-background-color:#ffffff; alt-row-background-color:none;">
+      <thead style="vertical-align:top">
+        <td style="width:40px; border-right:none;">
+          <para styleclass="VariableName-IT" style="text-align:right;"><image src="MD-Icon-Force-FB-ForcesData.png" scale="100.00%" padding="0 2 0 0" figurelistinclude="0"></image></para>
+        </td>
+        <td style="border-left:none;">
+          <para styleclass="Body Text">Open the<text styleclass="Element"> Force-Data dialog-box</text><text style="font-weight:normal; font-style:normal;">:</text></para>
+          <para styleclass="Body Text"><table styleclass="Block" rowcount="1" colcount="2">
+            <tr style="vertical-align:top">
+              <td style="width:163px; border-top:none; border-right:none; border-bottom:none;">
+                <para styleclass="Body Text"><image src="MD-GA-Double-Click-ForceDataFB.png" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+              </td>
+              <td style="border-top:none; border-right:none; border-bottom:none;">
+                <list id="0" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Body Table" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="Body Table">Double-click the <text styleclass="Element">Force-Data FB</text> in the <text styleclass="Interface">graphic-area</text><text styleclass="B Bullets">.</text><text styleclass="VariableName">&#32;</text></li>
+                </list>
+                <para styleclass="VariableName-IT">- or -</para>
+                <list id="0" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Numbered" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="HowTo Numbered"><text styleclass="SeeAlso">See </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-How-to-Open-a-Dialog-Box" styleclass="SeeAlso">How to Open a Dialog-Box</link></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Body Text">The <text styleclass="Element">Force-Data dialog-box</text> is now open.</para>
+        </td>
+      </thead>
+    </table></para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="Heading3_atocs_" style="text-indent:-18px; margin-left:18px;">Force-Data dialog-box</para>
+    <para styleclass="Body Text HowTo"><table styleclass="Standard" rowcount="2" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:237px;">
+          <para styleclass="Normal"><image src="MD-Dialog-ForceDataFB.ipp" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="Separator-Header"> Selection </para>
+          <list id="1" type="ol" listtype="decimal" formatstring="&#83;&#84;&#69;&#80;&#32;&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo STEP" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo STEP"><text styleclass="VariableName">Select a Force Element: </text></li>
+          </list>
+          <para styleclass="Body Text HowTo"><text styleclass="HowTo STEP">A </text><text styleclass="VariableName">Force-element</text><text styleclass="HowTo STEP"> is a: </text><text styleclass="Element">Joint</text><text styleclass="HowTo STEP">, </text><text styleclass="Element">Cam</text><text styleclass="HowTo STEP">, </text><text styleclass="Element">Gear</text><text styleclass="HowTo STEP">, </text><text styleclass="Element">Rack</text><text styleclass="HowTo STEP">, </text><text styleclass="Element">Ball-screw</text><text styleclass="HowTo STEP"> or a </text><text styleclass="Element">Spring</text></para>
+          <para styleclass="Body Text HowTo"><table styleclass="PopupTable2" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <list id="2" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Body Table" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="Body Table">Click a <text styleclass="VariableName">Force element</text> in the <text styleclass="Interface">graphic-area</text> or the <text styleclass="Interface">Assembly-Tree</text>.<text styleclass="VariableName">&#32;</text></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Body Table">The <text styleclass="VariableName">Force element</text> should now be in the <text styleclass="Parameter-Header">Select Force Element</text> box</para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="Body Table">&lt;&lt;&lt; in the image: <text styleclass="VariableName">Pin-Joint</text> is the <text styleclass="VariableName">Force element</text></para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="Body Table"><text styleclass="VariableName">In the box below:</text></para>
+          <para styleclass="Body Table">A list of <text styleclass="Parameter-Header">Available Points</text>, <text styleclass="Body Text">each with a </text><text styleclass="VariableName">Point Owner</text></para>
+          <para styleclass="Body Table">Each <text styleclass="Parameter-Header">Available Point</text> is a child to the <text styleclass="VariableName">Force element</text></para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <list id="1" type="ol" listtype="decimal" formatstring="&#83;&#84;&#69;&#80;&#32;&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo STEP" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo STEP"><text styleclass="VariableName">Select a Point: </text></li>
+          </list>
+          <para styleclass="Body Text HowTo"><table styleclass="PopupTable2" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <list id="3" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Body Table" style="font-family:&apos;Noto Sans&apos;; font-size:11pt; color:#000000;">
+                  <li styleclass="Body Table"><text styleclass="Body Text">Click a </text><text styleclass="Element">Point</text><text styleclass="Body Text"> in the </text><text styleclass="Parameter-Header">Available-Points</text><text styleclass="Body Text"> box, above</text></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Body Table">A <text styleclass="Element">Point</text> should now be in the <text styleclass="Parameter-Header">Selected Force Output Elements</text><text styleclass="Body Text"> box</text></para>
+          <para styleclass="Body Table">The output from the <text styleclass="Element">Force Data FB</text> is the Force <text styleclass="VariableName" style="color:#ff0000;">ACTING ON</text> the s<text styleclass="Body Text">elected</text><text styleclass="Element"> Point</text>.</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td colspan="2">
+          <para styleclass="Body Text">List of <text styleclass="Parameter-Header">AVAILABLE-POINTS</text> for each type of <text styleclass="VariableName">Force element</text></para>
+          <para styleclass="Body Text HowTo"><table styleclass="PopupTable2" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <list id="4" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="B Bullets" style="font-family:Symbol; font-size:10pt; color:#333399;">
+                  <li styleclass="B Bullets"><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-Pin-Joint" styleclass="Element">Pin-Joint</link> - there are 2 <text styleclass="Parameter">Available Points</text><br/>Each <text styleclass="Element">Point</text> that makes the <text styleclass="Element">Pin-Joint</text>.</li>
+                  <li styleclass="HowTo Bulleted"><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-Slide-Joint" styleclass="Element">Slide-Joint</link><text styleclass="Body Text"> - there are 4 </text><text styleclass="Parameter">Available Points</text><br/><text styleclass="Body Text">Two </text><text styleclass="Element">Points</text><text styleclass="Body Text"> on each </text><text styleclass="Element">Line</text><text styleclass="Body Text"> that make the </text><text styleclass="Element">Slide-Joint</text><text styleclass="Body Text">.</text></li>
+                  <li styleclass="HowTo Bulleted"><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Command-Add2DCam" styleclass="Element">2D-Cam</link><text styleclass="Body Text"> - there are 0 </text><text styleclass="Parameter">Available Points</text><br/><text styleclass="Body Text">The </text><text styleclass="Element">contact point</text><text styleclass="Body Text"> is assumed.</text></li>
+                  <li styleclass="HowTo Bulleted"><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Command-Forces-FB-Spring" styleclass="Element">Spring FB</link><text styleclass="Body Text"> - there are 2 </text><text styleclass="Parameter">Available Points</text><text styleclass="Body Text">&#32;</text><br/><text styleclass="Body Text">The </text><text styleclass="Element">Point</text><text styleclass="Body Text"> that anchors each end of the </text><text styleclass="Element">Spring FB</text><text styleclass="Body Text">.</text></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+        </td>
+      </tr>
+    </table></para>
+  </body>
+</topic>

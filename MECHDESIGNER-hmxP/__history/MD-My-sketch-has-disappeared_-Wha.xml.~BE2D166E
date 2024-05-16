@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" modified="2023-05-25T13:49:43.801+01:00" lasteditedby="Adam" version="2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title>My sketch has disappeared. What do I do?</title>
+  <keywords>
+    <keyword>Part-Editor<keyword>Trouble-shooting</keyword></keyword>
+    <keyword>Trouble-shooting sketch</keyword>
+  </keywords>
+  <body>
+    <header>
+      <para styleclass="Heading1">My sketch has disappeared. What do I do?</para>
+    </header>
+    <para styleclass="Heading3_atocs_">Trouble-shooting the sketch-editor.</para>
+    <para styleclass="Heading4 Toggle_atocs_">Where is my Sketch?</para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="2" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:180px;">
+          <para styleclass="Normal"><image src="MD-EG-Sketch-Loopy.png" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"><caption><![CDATA[Incorrect Arc]]></caption></image></para>
+        </td>
+        <td rowspan="2">
+          <para styleclass="Body Text">To recover a sketch that changes in an unexpected way:</para>
+          <para styleclass="Body Text HowTo">Use <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Edit-Undo" styleclass="T_Menu">Edit menu &gt; Undo</link><text styleclass="T_Menu">, or CTRL + Z</text></para>
+          <para styleclass="Body Text"></para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="Body Text">Sometimes the Sketch &apos;Collapses&apos; to a small dot. </para>
+          <para styleclass="Body Text HowTo">Use <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Edit-Undo" styleclass="T_Menu">Edit menu &gt; Undo</link><text styleclass="T_Menu"> or CTRL + Z</text></para>
+          <para styleclass="Body Text">Sometimes the Sketch explodes to the size of a planet. </para>
+          <para styleclass="Body Text HowTo">Use <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Edit-Undo" styleclass="T_Menu">Edit menu &gt; Undo</link><text styleclass="T_Menu"> or CTRL + Z</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:180px;">
+          <para styleclass="Normal"><image src="MD-EG-Sketch-Loopy-Undo.png" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"><caption><![CDATA[Correct Arc - After Undo]]></caption></image></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading4 Toggle_atocs_">Why is my sketch BLACK when it should be <text style="color:#0000ff;">BLUE</text>?</para>
+    <para styleclass="Body Text">Note: </para>
+    <para styleclass="Body Text HowTo"><text styleclass="Interface2" style="color:#0000ff;">Blue</text> means the geometry is <text styleclass="VariableName">Not Solved</text>. </para>
+    <para styleclass="Body Text HowTo"><text styleclass="Interface2">Black</text> means the geometry is <text styleclass="VariableName">Fully Solved</text>.</para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="1" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Text">Sometimes, a sketch-element is <text styleclass="VariableName">BLACK</text> but you know it should be <text styleclass="VariableName" style="color:#0000ff;">BLUE</text>. You should be able to add a dimension or constraint to it, but you cannot.</para>
+          <para styleclass="Body Text">Or, a sketch-element is <text styleclass="VariableName" style="color:#0000ff;">BLUE</text> when it should be <text styleclass="VariableName">BLACK</text>. </para>
+          <para styleclass="Body Text HowTo">The best solution is to do one of these actions:</para>
+          <list id="0" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted">Delete the sketch-element, and add it again.</li>
+            <li styleclass="HowTo Bulleted">Shift-Click the sketch-element so it and the constraints that you have added to it show in the <text styleclass="Interface">Selection-Window</text></li>
+            <li styleclass="HowTo Bulleted">Right-click a constraint, or the sketch-element, and select <text styleclass="VariableName">Delete Element</text> in the shortcut menu.</li>
+          </list>
+          <para styleclass="HowTo Bulleted">OR</para>
+          <list id="1" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#003300;">
+            <li styleclass="HowTo Bulleted"><text styleclass="Body Text HowTo">Use </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Edit-Undo" styleclass="T_Menu">Edit menu &gt; Undo</link>&#32;<text styleclass="T_Menu">or CTRL + Z</text></li>
+          </list>
+          <para styleclass="Body Text HowTo">Then add a different constraint. </para>
+          <para styleclass="Body Text HowTo">You can add the same constraint again, or use a different constraint, to see if the sketch-element turns <text styleclass="VariableName">BLACK</text>.</para>
+          <para styleclass="Body Text">In our defense, the <text styleclass="Interface">Part-Editor</text> is continuously improved.</para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading4 Toggle_atocs_">Why is my sketch Blue, and I cannot add any more constraints?&apos;</para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="1" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Text">Sometimes, a sketch-element is <text styleclass="VariableName" style="color:#0000ff;">BLUE</text><text styleclass="Body Text HowTo" style="font-weight:normal; color:#000000;"> but you cannot add more constraints.</text></para>
+          <para styleclass="Body Text">You might be able to drag a sketch-element that is blue, but when you come to add a new constraint, <text styleclass="VariableName">MechDesigner</text> does not accept it.</para>
+          <para styleclass="Body Text">In this case, a new constraint may remove two degrees-of-freedom, but the sketch has only one remaining degree-of-freedom.</para>
+          <para styleclass="VariableName">Example:</para>
+          <para styleclass="VariableName-indent">Add Coincident Constraint between the center-Point of a Circle and a Point at the end of a Line.</para>
+          <para styleclass="Body Text HowTo2"><text styleclass="VariableName">If</text>: the <text styleclass="Interface">center-Point</text> of the <text styleclass="Element">Circle</text> has a <text styleclass="Interface">Coincident Constraint</text> with the <text styleclass="Element">Line</text></para>
+          <para styleclass="Body Text HowTo2"><text styleclass="VariableName">Then</text>: it is not possible to also add a <text styleclass="Interface">Coincident-Constraint</text> with the <text styleclass="Interface">start-Point</text> or <text styleclass="Interface">end-Point</text> of the <text styleclass="Element">Line</text></para>
+          <list id="2" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Numbered" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo Numbered"><text styleclass="VariableName" style="color:#ff0000;">SHIFT+CLICK</text> the <text styleclass="Element">Line</text> or the <text styleclass="Interface">center-Point</text> of the <text styleclass="Element">Circle</text> so the <text styleclass="Interface">Coincident-Constraint</text> shows in the <text styleclass="Interface">Selection-Window</text><text styleclass="VariableName">&#32;</text></li>
+            <li styleclass="HowTo Numbered">Delete the <text styleclass="Interface">Coincident Constraint</text> using the <text styleclass="Interface">Selection-Window</text></li>
+          </list>
+        </td>
+      </tr>
+    </table></para>
+  </body>
+</topic>

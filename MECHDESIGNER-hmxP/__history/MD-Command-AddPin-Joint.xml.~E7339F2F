@@ -1,0 +1,349 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" status="Under Construction" modified="2023-02-03T11:11:36.766Z" lasteditedby="Adam" version="2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title>Add Pin-Joint</title>
+  <keywords>
+    <keyword>Add<keyword>Pin-Joint - General case</keyword><keyword>Pin-Joint - Special Case</keyword></keyword>
+    <keyword>Add Joint type:<keyword>Pin</keyword><keyword>Revolute</keyword><keyword>Rotary</keyword></keyword>
+    <keyword>Kinematic elements toolbar<keyword>Add Pin-Joint</keyword></keyword>
+    <keyword>Menu &gt; Add &gt; Mechanism Menu<keyword>Add Pin-Joint</keyword></keyword>
+  </keywords>
+  <body>
+    <header>
+      <para styleclass="Heading1">Add Pin-Joint</para>
+    </header>
+    <para styleclass="Heading2">Add Pin-Joint</para>
+    <para styleclass="SeeAlso">See also: <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-ServoGearboxTorqueSpeed">Edit-Pin-Joint</link> ( Servo-motor and Gearbox Sizing )</para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="Heading4 Toggle_atocs_"><table styleclass="Default" rowcount="1" colcount="2" style="width:480px;">
+      <tr style="vertical-align:top">
+        <td style="width:240px;">
+          <para styleclass="Normal"><image src="MD-GA-AddPinJoint-3.png" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"><title>Pin-Joints in MechDesigner</title><caption><![CDATA[Pin-Joints in MechDesigner]]></caption></image></para>
+        </td>
+        <td style="vertical-align:bottom;">
+          <para styleclass="Image Caption"><image src="MD-SW-Pin-Joint.PNG" scale="-99.90%" figurelistinclude="0"><title>Pin-Joint in SOLIDWORKS</title><caption><![CDATA[Pin-Joint in SOLIDWORKS]]></caption></image></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading4 Toggle_atocs_">Terminology</para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="4" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:120px;">
+          <para styleclass="Element" style="text-align:right;"><text styleclass="Popup Box-Elements">Pin-Joint : </text></para>
+        </td>
+        <td>
+          <para styleclass="Popup Box">A <text styleclass="Popup Box-Elements">Pin-Joint</text> forces a <text styleclass="Popup Box-Elements">Point</text> in a <text styleclass="Popup Box-Elements">Part</text> to be coincident with a <text styleclass="Popup Box-Elements">Point</text> in a different <text styleclass="Popup Box-Elements">Part</text>.</para>
+          <para styleclass="Popup Box">A <text styleclass="Popup Box-Elements">Pin-Joint</text> removes a total of two <text styleclass="VariableName-small">degrees-of-freedom</text> from the model.</para>
+          <para styleclass="Popup Box">A <text styleclass="Element">Pin-Joint</text> allows only rotary motion between two <text styleclass="Popup Box-Elements">Parts.</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:120px;">
+          <para styleclass="VariableName-small" style="text-align:right;">Revolute-Joint : </para>
+        </td>
+        <td>
+          <para styleclass="Popup Box">The kinematic and equivalent term for a <text styleclass="Popup Box-Elements">Pin-Joint</text> is a <text styleclass="VariableName-small">Revolute-Joint</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:120px;">
+          <para styleclass="Popup Box2" style="text-align:right;">Kinematics-Tree : </para>
+        </td>
+        <td>
+          <para styleclass="Popup Box">Joints in a <text styleclass="VariableName-small">Dyad</text> use the letter <text styleclass="VariableName-small">R</text> for a <text styleclass="Popup Box-Elements">Pin-Joint</text>., which is the label for a <text styleclass="VariableName-small">Revolute-Joint</text>.</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td colspan="2" style="height:2px;">
+          <para styleclass="Body Text"><text styleclass="Popup Box-Elements">* Point</text>, <text styleclass="Popup Box2">start-Point</text>, <text styleclass="Popup Box2">end-Point</text>, or <text styleclass="Popup Box2">center-Point</text>.</para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="Heading4 Toggle_atocs_">Pin-Joints in the Graphic-Area</para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="1" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:240px;">
+          <para styleclass="Normal"><image src="MD-GA-AddPinJoint-0.png" scale="-99.90%" figurelistinclude="0"></image><text styleclass="Body Text">&lt;&lt;&lt; </text><text styleclass="Element">Pin-Joint</text><image src="Red-14-1b.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Body Text"> between a </text><text styleclass="Element">Part</text><text styleclass="Body Text"> and the </text><text styleclass="Element">Base-Part.</text></para>
+          <para styleclass="Body Text">&lt;&lt;&lt; <text styleclass="Element">Pin-Joint</text><image src="Red-14-2.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image> &#160;between two(2) added <text styleclass="Element">Parts.</text></para>
+        </td>
+        <td>
+          <para styleclass="Body Table"><text styleclass="HowTo Bulleted">There are two symbols for a </text><text styleclass="Element-Header">Pin-Joint</text><text styleclass="HowTo Bulleted">:</text></para>
+          <para styleclass="Body Text"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Body Table"><image src="Red-14-1b.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Body Text HowTo"> &#160;</text><image src="MD-Dowel-Symbol.png" scale="100.00%" styleclass="Image Caption" style="font-size:7pt; vertical-align:sub; color:#0000ff;" figurelistinclude="0"></image><text styleclass="Body Text" style="font-style:italic;"> &#160;- </text><text styleclass="Body Text">the symbol for a </text><text styleclass="Element">Pin-Joint</text><text styleclass="Body Text HowTo"> that is fixed &#160;the </text><text styleclass="Element">Base-Part</text><text styleclass="Body Text HowTo">.</text></para>
+                <para styleclass="Body Table"><image src="Red-14-2.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Image Caption"> &#160;</text><image src="MD-PointandPinJoint-Symbol.png" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Body Text HowTo"> &#160;- the two circle symbols.</text></para>
+                <para styleclass="Body Text">The outer circle is the symbol for a <text styleclass="Element">Pin-Joint</text> if it not fixed to the <text styleclass="Element">Base-Part.</text></para>
+                <para styleclass="Body Table">The <text styleclass="Body Text">inner circle</text> is the <text styleclass="Body Text">symbol</text> for the two coincident <text styleclass="Element">Points</text> after you do <text styleclass="T_Menu">Add Pin-Joint</text>.</para>
+              </td>
+            </tr>
+          </table></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading3_atocs_">Simple Case - Add Pin-Joint</para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="3" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:240px;">
+          <para styleclass="Normal"><image src="MD-GA-AddPinJoint-1a.png" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td rowspan="2">
+          <para styleclass="Body Text"><text styleclass="VariableName">STEP 1: Start the Add Pin-Joint command</text></para>
+          <para styleclass="Body Text"><table styleclass="Block" rowcount="1" colcount="2">
+            <tr style="vertical-align:top">
+              <td style="vertical-align:bottom; width:41px;">
+                <para styleclass="Normal" style="text-align:left;"><image src="MD-Icon-AddPinJoint.png" align="left" scale="100.00%" styleclass="Image Caption" style="font-weight:bold;" figurelistinclude="0"></image></para>
+              </td>
+              <td>
+                <para styleclass="Body Text"><text styleclass="T_Menu">Add menu &gt; Mechanism sub-menu &#160;&gt; Add Pin-Joint</text><text styleclass="VariableName">&#32;</text></para>
+                <para styleclass="Body Text"><text style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">OR</text></para>
+                <para styleclass="Body Text"><text styleclass="T_Menu">Kinematic-elements toolbar &gt; Add Pin-Joint</text><text styleclass="VariableName">&#32;</text></para>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Body Text"><text styleclass="VariableName">STEP 2: Select two(2) Points:</text></para>
+          <para styleclass="Body Text"><text style="font-weight:normal;">At least one of the </text><text styleclass="Element">Points</text><text style="font-weight:normal;"> must be in a </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-Part-Free" styleclass="Element">free Part</link><text style="font-weight:normal;">.</text></para>
+          <para styleclass="Body Text"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <list id="0" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="B Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="B Bullets"><text style="font-style:normal;">Click a </text><text styleclass="Element" style="font-style:normal;">Point</text><image src="Red-14-1.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text style="font-style:normal;"> in a </text><text styleclass="VariableName">free</text><text style="font-style:normal;">&#32;</text><text styleclass="Element">Part</text><text styleclass="VariableName" style="font-style:normal;">&#32;</text></li>
+                  <li styleclass="HowTo Numbered"><text style="font-style:normal;">Click a different </text><text styleclass="Element" style="font-style:normal;">Point</text><image src="Red-14-2.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text style="font-style:normal;"> in a</text><text styleclass="VariableName-IT" style="font-style:normal;">&#32;</text><text styleclass="Element" style="font-style:normal;">Part</text><text style="font-style:normal;">&#32;</text></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Body Text"><text style="font-weight:normal;">The two(2) </text><text styleclass="Element">Points</text><text style="font-weight:normal;"> become coincident at the </text><text styleclass="Element">Pin-Joint</text><text style="font-weight:normal;">.</text></para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="Body Text"><text style="font-weight:normal;">If the </text><text styleclass="Interface">Select-Elements dialog</text> opens,<text style="font-weight:normal;"> see </text><link displaytype="text" defaultstyle="true" type="topiclink" href="" anchor="AddPinJointSpecialCase" style="font-weight:normal;">Special-Case</link><text style="font-weight:normal;">.</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:240px;">
+          <para styleclass="Normal"><image src="MD-GA-AddPinJoint-3.png" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td colspan="2">
+          <para styleclass="VariableName">See also:</para>
+          <para styleclass="Body Text HowTo"><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Command-AddSlideJoint">Add Slide-Joint</link></para>
+          <para styleclass="Body Text HowTo"><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Command-AddBall-Joint">Add Ball-Joint</link></para>
+          <para styleclass="Body Text HowTo"><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Command-FB-Motion-Dimension">Add Motion-Dimension FB</link>&#32;</para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading3_atocs_"><anchor id="Video-PinJoint"><keywords><keyword>Video...<keyword>How to Add Pin-Joint</keyword></keyword></keywords></anchor><text styleclass="Heading4 Toggle_atocs_">VIDEO : Add Pin-Joint - Simple-Case</text></para>
+    <para styleclass="Heading4 Toggle_atocs_2"><conditional-text type="IF" value="PDF"/><link displaytype="text" defaultstyle="true" type="filelink" href="KE-AddPin-Joint-A-1280x720.gif" styleclass="Interface">Double-click for Video</link><conditional-text type="END"/><conditional-text type="IF" value="CHM"/></para>
+    <para styleclass="Body Text HowTo"><toggle type="picture" print-expanded="true" help-expanded="false" src-collapsed="KE-AddPin-Joint-A-1280x720.gif" src-expanded="KE-AddPin-Joint-A-1280x720.gif" scale="20.00%" width="256" height="144" styleclass="Image Caption" figurelistinclude="0"><caption><![CDATA[Video: Add Pin-Joint (Simple Case)]]></caption><title>Add Pin-Joint (Simple Case)</title></toggle></para>
+    <para styleclass="Body Text HowTo"><conditional-text type="END"/><conditional-text type="IF" value="HTML,EBOOK"/></para>
+    <para styleclass="Body Text HowTo"><video src="KE-AddPin-A-Joint-1280-720.mp4" width="1280px" height="720px" autostart="false" loop="false" showcontrols="false" playbutton="true" previewimage="KE-AddPin-A-Joint-1280-720_preview.jpg" scale="20.00%" styleclass="Image Caption"><title>Video: Add Pin-Joint (Simple Case)</title><caption><![CDATA[Video: Add Pin-Joint (Simple Case)]]></caption></video></para>
+    <para styleclass="Body Text HowTo"><conditional-text type="END"/></para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="Body Text" style="text-indent:-36px; margin-left:39px;"><anchor id="AddPinJointSpecialCase" styleclass="Heading3_atocs_"><keywords><keyword>Pin-Joint<keyword>Pin-Joint - Special Case</keyword><keyword>Compound Pin-Joint</keyword><keyword>Two or more Coincident Pin-Joints</keyword></keyword></keywords></anchor><text styleclass="Heading3_atocs_">Special-Case - Add two or more coincident Pin-Joints</text></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="10" colcount="2">
+      <tr style="vertical-align:top">
+        <td colspan="2">
+          <para styleclass="Body Table">Frequently, a <text styleclass="Body Text">design has </text><text styleclass="Element">Pin-Joints </text><text styleclass="Body Text">that are coincident, to join more</text> than two <text styleclass="Element">Parts</text>.</para>
+          <para styleclass="Body Table"><text styleclass="VariableName">Example:</text></para>
+          <para styleclass="Body Text"><text style="font-style:normal;">We want to join </text><text styleclass="Element">Points</text><text styleclass="VariableName">(#1,#2,#3), </text><text style="font-style:normal;">in </text><text styleclass="Element">Parts</text><text styleclass="VariableName">(#1,#2,#3).</text><text style="font-style:normal;"> with </text><text styleclass="Element">Pin-Joints</text><text styleclass="VariableName">(#1,#2).</text></para>
+          <para styleclass="Body Text HowTo">Say,<text styleclass="Element"> Pin-Joint</text><text styleclass="VariableName">#1</text><text style="font-style:normal;"> is between </text><text styleclass="Element">Points</text><text styleclass="VariableName"> #1 &amp; #2</text><text styleclass="Element">&#32;</text>(in <text styleclass="Element">Parts</text><text styleclass="VariableName"> #1 &amp; #2</text>)</para>
+          <para styleclass="Body Text HowTo">When we add <text styleclass="Element">Pin-Joint</text><text styleclass="VariableName">#2</text><text styleclass="Body Text">, we have </text><text style="font-style:normal;">two(2) options:</text></para>
+          <list id="1" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted"><text styleclass="VariableName">Option A</text><text styleclass="Body Text">: </text><text styleclass="Element">Pin-Joint</text>#2 is between<text styleclass="Body Text HowTo">&#32;</text><text styleclass="Element">Points</text> #3 &amp; #1<text styleclass="Body Text"> (in </text><text styleclass="Element">Parts</text> #3 &amp; #1<text styleclass="Body Text">)</text></li>
+          </list>
+          <para styleclass="Body Text HowTo"><text styleclass="Body Text">OR</text></para>
+          <list id="2" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted"><text styleclass="VariableName">Option B</text><text styleclass="Body Text">: </text><text styleclass="Element">Pin-Joint</text>#2 is between <text styleclass="Element">Points</text> #3 &amp; #2<text styleclass="Body Text"> (in </text><text styleclass="Element">Parts</text> #3 &amp; #2<text styleclass="Body Text">)</text></li>
+          </list>
+          <para styleclass="Body Table"><text styleclass="Body Text">To select </text><text styleclass="VariableName">Option A</text><text styleclass="Body Text"> or </text><text styleclass="VariableName">Option B</text><text styleclass="Body Text"> is</text> important<text style="font-weight:bold; font-style:italic;">&#32;</text>if you also select the <text styleclass="Element">Pin-Joints</text> to add <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Command-FB-Motion-Dimension" styleclass="Element">Motion-Dimension FBs</link><text styleclass="Body Text">. </text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:260px;">
+          <para styleclass="Normal"><image src="MD-ADDPINJOINT-S-A.ipp" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="VariableName">Preparation example:</para>
+          <para styleclass="Body Table"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Bullets"><image src="Red-14-1b.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Image Caption">&#32;</text><text styleclass="Element">Line</text><text styleclass="Body Table"> in the </text><text styleclass="Element">Base-Part</text><text styleclass="VariableName">&#32;</text><text styleclass="Body Text">(any </text><text styleclass="Element">Part</text><text styleclass="Body Text"> that is </text><text styleclass="VariableName">kinematically-defined</text><text styleclass="Body Text"> )</text></para>
+                <para styleclass="Bullets"><image src="Red-14-2.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Image Caption"> &#160;</text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-Part-Free" styleclass="Body Text">Part that is completely-free</link></para>
+                <para styleclass="Bullets"><image src="Red-14-3.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Image Caption"> &#160;</text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-Part-Free" styleclass="Body Text">Part that is free</link></para>
+                <para styleclass="Bullets"><text styleclass="Element">Pin-Joint</text><image src="Red-14-4.gif" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Image Caption">&#32;</text><text styleclass="Body Text">joins the </text><text styleclass="Interface">start-Point</text><text styleclass="HowTo Bulleted"> of </text><text styleclass="Element">Line</text><image src="Red-14-1b.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Image Caption">&#32;</text><text styleclass="Body Text">to the </text><text styleclass="Interface">start-Point</text><text styleclass="Body Text"> of </text><text styleclass="Element">Part</text><image src="Red-14-3.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+                <para styleclass="Body Table">We want to join <text styleclass="Element">Part</text><image src="Red-14-2.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image> that is completely-free with a <text styleclass="Element">Pin-Joint</text> that is coincident with <text styleclass="Element">Pin-Joint</text><image src="Red-14-4.gif" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image>.</para>
+              </td>
+            </tr>
+          </table></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:260px;">
+          <para styleclass="Normal" style="text-align:right;"><image src="MD-ADDPINJOINT-S-B.ipp" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td rowspan="2">
+          <list id="3" type="ol" listtype="decimal" formatstring="&#83;&#84;&#69;&#80;&#32;&#37;&#48;&#58;&#115;&#58;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo STEP" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo STEP">Add Pin-Joint #2 </li>
+          </list>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="2" colcount="2">
+            <tr style="vertical-align:top">
+              <td style="width:40px;">
+                <para styleclass="Normal" style="text-align:right;"><image src="MD-Icon-AddPinJoint.png" scale="100.00%" styleclass="Image Caption" style="font-weight:bold;" figurelistinclude="0"></image></para>
+              </td>
+              <td style="vertical-align:middle;">
+                <list id="4" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; color:#003300;">
+                  <li styleclass="Bullets"><text style="font-style:normal;">Click </text><text styleclass="T_Menu">Kinematic-elements toolbar &gt; Add Pin-Joint</text></li>
+                </list>
+              </td>
+            </tr>
+            <tr style="vertical-align:top">
+              <td colspan="2">
+                <list id="5" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="Bullets"><text style="font-style:normal;">Click </text><text styleclass="Element">Point</text><image src="Red-14-5.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text style="font-weight:normal; font-style:normal;"> at the end of the </text><text styleclass="VariableName">Completely-Free</text><text styleclass="Element" style="font-weight:normal; font-style:normal;">&#32;</text><text styleclass="Element" style="font-style:normal;">Part</text><image src="Red-14-2.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="VariableName" style="font-style:normal;">&#32;</text><text styleclass="Body Text">- see left</text><text styleclass="VariableName">&#32;</text></li>
+                  <li styleclass="Bullets"><text styleclass="Body Text">Click the</text><text styleclass="VariableName">&#32;</text><text styleclass="Element">Pin-Joint</text><image src="Red-14-6.gif" scale="100.00%" styleclass="Body Text" figurelistinclude="0"></image><text styleclass="Body Text"> to select a </text><text styleclass="Element">Point</text><text styleclass="Body Text"> - see below</text></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="VariableName"><text styleclass="Body Table">We have clicked a total of </text>three(3)<text styleclass="Body Table">&#32;</text><text styleclass="Element">Points</text><text styleclass="Body Table">.</text></para>
+          <list id="6" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted">One <text styleclass="Element">Point</text> at <image src="Red-14-5.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></li>
+            <li styleclass="HowTo Bulleted"><text styleclass="Body Text">Two </text><text styleclass="Element">Points</text><text styleclass="Body Text"> at </text><image src="Red-14-6.gif" scale="100.00%" styleclass="Body Text" figurelistinclude="0"></image></li>
+          </list>
+          <para styleclass="Body Table">However, the <text styleclass="Element">Pin-Joint</text> must be between two(2) <text styleclass="Element">Points</text>. </para>
+          <para styleclass="Body Table">Therefore, there is <text styleclass="VariableName">ambiguity</text> - between which two(2) <text styleclass="Element">Points,</text> of the three(3) <text styleclass="Element">Points, </text>you want the <text styleclass="Element">Pin-Joint</text>.</para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="VariableName">Definition<text styleclass="Interface2">:</text></para>
+          <para styleclass="Body Text HowTo"><text styleclass="VariableName">Ambiguity</text><text styleclass="Body Text">: when </text><text styleclass="VariableName-IT">MechDesigner</text><text styleclass="Body Text"> is not sure which element to select.</text></para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:260px;">
+          <para styleclass="Normal"><image src="MD-ADDPINJOINT-S-C.ipp" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:260px;">
+          <para styleclass="Normal"><image src="MD-DIALOG-SELECT-ELEMENTS-PT11-5-7.png" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="VariableName">Select-Elements dialog-box</para>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Body Table"><text styleclass="Body Text">When there is </text><text styleclass="VariableName">ambiguity</text> as to which <text styleclass="Body Text">elements</text><text styleclass="Element">&#32;</text>you want to select to add a new element, the <text styleclass="VariableName">Select Elements dialog-box</text> opens.</para>
+                <para styleclass="Body Table">In this model, there are three(3) possible <text styleclass="Element">Points </text><text styleclass="Body Text">from which you want to select two(2) </text><text styleclass="Element">Points.</text></para>
+                <list id="7" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullets" style="font-family:Symbol; font-size:11pt; color:#000000;">
+                  <li styleclass="Bullets"><text styleclass="Element">Point11</text><text styleclass="Body Text"> (the </text><text styleclass="Interface">start-Point</text><text styleclass="Body Text"> of the </text><text styleclass="Element">Part</text><text styleclass="Body Text"> that is completely-free)</text></li>
+                  <li styleclass="HowTo Bulleted"><text styleclass="Element">Point5</text><text styleclass="Body Text"> (the </text><text styleclass="Element">Point</text><text styleclass="Body Text"> at the left of the </text><text styleclass="Element">Line</text><text styleclass="Body Text"> in the </text><text styleclass="Element">Base-Part</text><text styleclass="Body Text">)</text></li>
+                  <li styleclass="HowTo Bulleted"><text styleclass="Element">Point7 </text><text styleclass="Body Text">(the </text><text styleclass="Interface">start-Point</text><text styleclass="Body Text"> of the </text><text styleclass="Element">Part</text><text styleclass="Body Text"> that is free)</text></li>
+                </list>
+                <para styleclass="HowTo Bulleted" style="margin-left:24px;"><text styleclass="Notes">Note: &#160;</text><text styleclass="Body Text HowTo">The Owner Part header indicates the </text><text styleclass="Element">Point</text><text styleclass="Body Text HowTo"> and its </text><text styleclass="VariableName">Parent</text><text styleclass="Body Text HowTo">.</text></para>
+              </td>
+            </tr>
+          </table></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:260px;">
+          <para styleclass="Normal"><image src="MD-DIALOG-SELECT-ELEMENTS-PT11-5.png" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td style="border-bottom:none;">
+          <list id="8" type="ol" listtype="decimal" formatstring="&#83;&#84;&#69;&#80;&#32;&#37;&#48;&#58;&#115;&#58;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="2" styleclass="HowTo STEP" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo STEP">Select the Points in the Select-Elements dialog-box:</li>
+          </list>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <list id="9" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="Bullets"><image src="MD-Ctrlb.png" scale="100.00%" styleclass="Image Caption" style="font-size:6pt; vertical-align:sub;" figurelistinclude="0"></image><text styleclass="Image Caption" style="font-size:6pt; vertical-align:sub;">&#32;</text><text styleclass="Body Text">key down</text><text styleclass="Body Text" style="font-weight:bold;">&#32;</text><text styleclass="Body Text" style="font-weight:normal;">- do this before you click the </text><text styleclass="Element">Points</text><text styleclass="Body Text" style="font-weight:normal;"> in the box.</text><text styleclass="VariableName">&#32;</text></li>
+                  <li styleclass="HowTo Numbered"><text styleclass="Body Text">Click the </text><text styleclass="VariableName" style="color:#ff0000;">two</text><text styleclass="Body Text">&#32;</text><text styleclass="Element">Points</text><text styleclass="Body Text"> you want to use for the </text><text styleclass="Element">Pin-Joint</text></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Body Text"></para>
+          <para styleclass="Body Text">Which <text styleclass="VariableName" style="color:#ff0000;">two</text>&#32;<text styleclass="Element">Points</text> do we select from the three <text styleclass="Element">Points</text>?</para>
+          <para styleclass="Body Text"><text styleclass="Body Text HowTo">There are three options to select two(2) </text><text styleclass="Element">elements</text><text styleclass="Body Text HowTo"> from three(3) elements.</text></para>
+          <para styleclass="Body Text"><text styleclass="Body Text HowTo">There is a message that indicates whether the elements are compatible.</text></para>
+          <list id="10" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted"><text styleclass="VariableName">Option A</text>: You can select <text styleclass="Element">Point11</text> and <text styleclass="Element">Point5</text><text style="font-weight:bold;">&#32;</text></li>
+          </list>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:260px;">
+          <para styleclass="Normal"><image src="MD-DIALOG-SELECT-ELEMENTS-PT117.png" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td style="vertical-align:middle; border-top:none; border-bottom:none;">
+          <para styleclass="HowTo Numbered"><text style="font-weight:normal;">OR</text></para>
+          <list id="11" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted"><text styleclass="VariableName">Option B</text><text styleclass="Body Text">: You can select </text><text styleclass="Element">Point11 </text>and <text styleclass="Element">Point7</text><text style="font-weight:bold;">.</text></li>
+          </list>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:260px;">
+          <para styleclass="Normal"><image src="MD-DIALOG-SELECT-ELEMENTS-P-57-NOT.png" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td style="border-top:none;">
+          <para styleclass="Body Text HowTo"><text styleclass="VariableName">Option C</text>: yo<text styleclass="Body Text">u </text><text styleclass="VariableName" style="color:#ff0000;">cannot</text><text styleclass="Body Text"> select </text><text styleclass="Element">Point5</text> and <text styleclass="Element">Point7</text>.</para>
+          <para styleclass="Body Text HowTo"><text styleclass="VariableName">Why? </text>Because <text styleclass="Element">Point5</text> and <text styleclass="Element">Point7</text> are joined with a <text styleclass="Element">Pin-Joint</text>, already.</para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="Body Text"><text styleclass="Notes">Note:</text> see the word <text styleclass="VariableName" style="color:#ff0000;">&apos;not&apos;</text> the message at the bottom of the image to the left</para>
+          <para styleclass="Body Text HowTo">&#32;<text styleclass="VariableName">&apos;Two selected items are </text><text styleclass="VariableName" style="color:#ff0000;">not</text><text styleclass="VariableName"> compatible&apos;</text></para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:260px;">
+          <para styleclass="Normal"><image src="MD-DIALOG-SELECT-ELEMENTS-PT11--SC.png" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td style="border-top:none;">
+          <list id="12" type="ol" listtype="decimal" formatstring="&#83;&#84;&#69;&#80;&#32;&#37;&#48;&#58;&#115;&#58;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="2" styleclass="HowTo STEP" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo STEP">To confirm again, select the Points:</li>
+          </list>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <list id="13" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="Bullets"><image src="MD-Ctrlb.png" scale="100.00%" styleclass="Image Caption" style="font-size:6pt; vertical-align:sub;" figurelistinclude="0"></image><text styleclass="Image Caption" style="font-size:6pt; vertical-align:sub;">&#32;</text><text styleclass="Body Text">key down</text><text styleclass="Body Text" style="font-weight:bold;">&#32;</text><text styleclass="Body Text" style="font-weight:normal;">- do this before you click the </text><text styleclass="Element">Points</text><text styleclass="Body Text" style="font-weight:normal;"> in the box.</text><text styleclass="VariableName">&#32;</text></li>
+                  <li styleclass="Bullets"><text styleclass="Body Text">Click the two </text><text styleclass="Element">Points</text><text styleclass="Body Text"> you want to use for the </text><text styleclass="Element">Pin-Joint</text></li>
+                </list>
+                <para styleclass="Body Table">The <image src="MD-OK-tiny-11-15.png" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image> colorizes <text styleclass="VariableName">only</text> when you select the elements that can do the command.</para>
+                <list id="13" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="Bullets"><text styleclass="VariableName">Click </text><image src="MD-OK-tiny-11-15.png" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="VariableName">&#32;</text></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Body Text HowTo">The <text styleclass="Interface">Select-Elements dialog-box</text> closes. </para>
+          <para styleclass="Body Text HowTo">The <text styleclass="Element">Points</text> move together to add the <text styleclass="Element">Pin-Joint</text>.</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td colspan="2">
+          <para styleclass="VariableName-IT"><text styleclass="Interface2">Top-Tip</text><text styleclass="VariableName">:</text>&#32;</para>
+          <para styleclass="Body Text"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="VariableName-IT"><text styleclass="Body Text HowTo">When you know there is ambiguity - and the </text><text styleclass="Interface">Select-Elements dialog</text><text styleclass="Body Text HowTo"> will open - then click (in the </text><text styleclass="Interface">Select-Elements dialog-box</text><text styleclass="Body Text HowTo">) click an </text><text styleclass="Element">element</text><text styleclass="Body Text HowTo"> that does not have ambiguity before you click elements where there is ambiguity. </text></para>
+                <para styleclass="Body Text HowTo"><text styleclass="Body Text">If the </text><text styleclass="Interface">Select-Elements dialog</text><text styleclass="Body Text"> opens, the </text><text styleclass="Element">element</text><text styleclass="Body Text"> you click first is at the </text><text styleclass="VariableName-IT">top</text><text styleclass="Body Text"> of the list. </text></para>
+                <para styleclass="Body Text HowTo"><text styleclass="Body Text">It is useful to know you must select the </text><text styleclass="Element">element</text><text styleclass="Body Text"> at the top of the list, plus one more </text><text styleclass="Element">element.</text></para>
+              </td>
+            </tr>
+          </table></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading3_atocs_"><anchor id="Video-PinJointSpecial"><keywords><keyword>How to...<keyword>Add Pin-Joint - Special-Case</keyword></keyword></keywords></anchor><text styleclass="Heading4 Toggle_atocs_">VIDEO - Add Pin-Joint - Special-Case:</text></para>
+    <para styleclass="Heading3_atocs_"><conditional-text type="IF" value="PDF"/><link displaytype="text" defaultstyle="true" type="filelink" href="AddPinJoint-Special.gif" styleclass="Body Text">Double-click to watch Add Pin-Joints - Special-Case</link><conditional-text type="END"/><conditional-text type="IF" value="CHM"/></para>
+    <para styleclass="Body Text HowTo"><toggle type="picture" print-expanded="true" help-expanded="false" src-collapsed="AddPinJoint-Special.gif" src-expanded="AddPinJoint-Special.gif" scale="20.00%" width="256" height="144" styleclass="Image Caption" figurelistinclude="0"><caption><![CDATA[Add Pin-Joint - Special Case]]></caption><title>Add Pin-Joint - Special Case</title></toggle></para>
+    <para styleclass="Body Text HowTo"><conditional-text type="END"/><conditional-text type="IF" value="HTML,EBOOK"/></para>
+    <para styleclass="Body Text HowTo"><video src="AddPinJoint-Special.mp4" width="1280px" height="720px" autostart="false" loop="false" showcontrols="false" playbutton="true" previewimage="AddPinJoint-Special_preview.jpg" scale="20.00%" styleclass="Image Caption"><title>Add Pin-Joint - Special Case</title><caption><![CDATA[Add Pin-Joint - Special Case]]></caption></video></para>
+    <para styleclass="Body Text HowTo"><conditional-text type="END"/></para>
+    <para styleclass="Body Text HowTo" style="page-break-before:always;"></para>
+  </body>
+</topic>

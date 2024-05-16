@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" status="Under Construction" modified="2022-03-22T20:08:31.330Z" lasteditedby="Adam" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title translate="true">Segment Blending and Motion-Continuity</title>
+  <keywords>
+    <keyword translate="true">Motion Blending</keyword>
+    <keyword translate="true">Motion Continuity</keyword>
+    <keyword translate="true">Motion Smoothing</keyword>
+    <keyword translate="true">Segment Blending</keyword>
+  </keywords>
+  <body>
+    <header>
+      <para styleclass="Heading1"><text styleclass="Heading1" translate="true">Segment Continuity</text></para>
+    </header>
+    <para styleclass="SeeAlso"><text styleclass="SeeAlso" translate="true">see also: </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MT-Impact" styleclass="SeeAlso" translate="true">Impact</link><text styleclass="SeeAlso" translate="true">, </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MT-Acceleration-Shock" styleclass="SeeAlso" translate="true">Acceleration Shock</link><text styleclass="SeeAlso" translate="true">, </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MT-SegmentBlending" styleclass="SeeAlso" translate="true">How to Blend Two Segments</link></para>
+    <para styleclass="Heading3_atocs_"><text styleclass="Heading3_atocs_" translate="true">Motion Discontinuity</text></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="2" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:240px;">
+          <para styleclass="Normal"><image src="MT-Motion-Discontinuity1.bmp" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"><caption translate="true"><![CDATA[Motion-Discontinuity of CA-CD Motion Law at Cross-Over.]]></caption></image></para>
+        </td>
+        <td rowspan="2">
+          <para styleclass="Body Text HowTo"><text styleclass="Body Text HowTo" translate="true">A </text><text styleclass="VariableName" translate="true">motion discontinuity</text><text styleclass="Body Text HowTo" translate="true"> happens when there are two Y–axis values for a particular motion-derivative, at one instant on its X–axis. </text></para>
+          <para styleclass="Body Text HowTo"><text styleclass="Body Text HowTo" translate="true">When we identify a motion that has a motion-discontinuity, we name the motion-derivative at which you can see the discontinuity. For example, </text><text styleclass="VariableName" translate="true">acceleration-discontinuity</text><text styleclass="Body Text HowTo" style="font-style:italic;" translate="true">. </text></para>
+          <para styleclass="Body Text HowTo"><text styleclass="Body Text HowTo" translate="true">A </text><text styleclass="VariableName" translate="true">motion-discontinuity</text><text styleclass="Body Text HowTo" translate="true"> is sometimes termed </text><text styleclass="VariableName" translate="true">shock.</text><text styleclass="Body Text HowTo" style="font-style:italic;" translate="true">&#32;</text><text styleclass="Body Text" translate="true">In this case </text><text styleclass="Body Text HowTo" translate="true">the term would be, for example, </text><text styleclass="VariableName" translate="true">Acceleration Shock</text><text styleclass="Body Text HowTo" translate="true">.</text></para>
+          <para styleclass="Body Text HowTo"><text styleclass="Body Text HowTo" translate="true">Every motion and motion-law has a motion-discontinuity at some motion-derivative. </text></para>
+          <para styleclass="Body Text HowTo"><text styleclass="Body Text HowTo" translate="true">However,</text><text styleclass="Body Text" translate="true"> a </text><text styleclass="Body Text HowTo" translate="true">motion-discontinuity at a motion-derivative above Jerk is usually ignored. </text></para>
+          <para styleclass="Body Text HowTo"><text styleclass="Body Text HowTo" translate="true">There are Standard Motion-Laws that have an </text><text styleclass="VariableName" translate="true">acceleration discontinuity</text><text styleclass="Body Text HowTo" translate="true">. These motion-laws are usually </text><text styleclass="VariableName" translate="true">not recommended</text><text styleclass="Body Text HowTo" translate="true"> for machines design.. However, you can use a Flexible-Polynomial as the Previous-Segment and Next-Segment to blend the motion. </text></para>
+          <para styleclass="Body Text"><text styleclass="Body Text" translate="true">There are two example motions to the left.</text></para>
+          <para styleclass="Body Text"><text styleclass="Body Text" translate="true">In the top image, the motion-law is called the </text><text styleclass="VariableName" translate="true">Constant Acceleration &amp; Deceleration Motion-Law.</text><text styleclass="Body Text" translate="true"> It has </text><text styleclass="VariableName" translate="true">three(3)</text><text styleclass="Body Text" translate="true">&#32;</text><text styleclass="VariableName" translate="true">motion-discontinuities</text><text styleclass="Body Text" translate="true">. The motion-discontinuity that is in the middle of segment</text><image src="Red-14-1.gif" scale="100.00%" styleclass="Body Text" figurelistinclude="0"></image><text styleclass="Body Text" translate="true"> is the most important, as it changes from a maximum acceleration to the maximum deceleration.</text></para>
+          <para styleclass="Body Text"><text styleclass="Body Text" translate="true">The motion in the bottom image, is not a standard Dwell-Rise-Dwell type motion. However, it also has an </text><text styleclass="VariableName" translate="true">Acceleration-Discontinuity</text><image src="Red-14-2.gif" scale="100.00%" styleclass="Body Text" figurelistinclude="0"></image><text styleclass="Body Text" translate="true">. </text></para>
+          <para styleclass="Body Text"><text styleclass="Body Text" translate="true">This discontinuity can easily be eliminated if the motion-laws are </text><text styleclass="VariableName" translate="true">Flexible-Polynomial</text><text styleclass="Body Text" translate="true"> motion-laws.</text></para>
+        </td>
+      </tr>
+      <tr>
+        <td style="width:240px;">
+          <para styleclass="Normal"><image src="MT-Motion-Discontinuity2.bmp" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"><caption translate="true"><![CDATA[Motion-Discontinuity at Segment Blend-Point.]]></caption></image></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading3_atocs_"><text styleclass="Heading3_atocs_" translate="true">Segment Blending</text></para>
+    <para styleclass="Body Text HowTo"><text styleclass="VariableName" translate="true">Segment Blending</text><text styleclass="Body Text HowTo" translate="true"> considers the motion-values at the </text><text styleclass="VariableName" translate="true">Blend-Points</text><text styleclass="Body Text HowTo" translate="true">. </text></para>
+    <para styleclass="Body Text HowTo"><text styleclass="Body Text HowTo" translate="true">It is recommended that you design your motions that have </text><text styleclass="VariableName" translate="true">Position</text><text styleclass="Body Text HowTo" translate="true">, </text><text styleclass="VariableName" translate="true">Velocity</text><text styleclass="Body Text HowTo" translate="true">, and </text><text styleclass="VariableName" translate="true">Acceleration</text><text styleclass="Body Text HowTo" translate="true"> motion continuity throughout the motion design. </text></para>
+    <para styleclass="Body Text HowTo"><text styleclass="Body Text HowTo" translate="true">Jerk motion continuity may also be appropriate, but not in all circumstances.</text></para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="Body Text"><image src="MT-Warning.png" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Body Text" translate="true">&#32;</text><text styleclass="Body Text" style="font-weight:normal; font-style:normal;" translate="true">In</text><text styleclass="Body Text" style="font-weight:bold; font-style:italic;" translate="true">&#32;</text><text styleclass="VariableName-IT" translate="true">MotionDesigner</text><text styleclass="Body Text" translate="true"> it is possible to </text><text styleclass="Body Text" style="font-weight:normal; font-style:normal;" translate="true">design motions </text><text styleclass="Body Text" translate="true">with motion-discontinuities at any motion-derivative, even Position. A Position motion-discontinuity is only needed with progressive, indexing motion, in which the position at the end of the index motion is different to the position at the start of the index motion. &#160;Clearly, the mechanical system does not move from one position to the next in zero time. It does not have a positional motion-discontinuity.</text></para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="BodyText Bold"><text styleclass="BodyText Bold" translate="true">Position Blending and Continuity</text></para>
+    <para styleclass="Body Text HowTo"><table styleclass="PopupTable2" rowcount="1" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="VariableName"><text styleclass="VariableName" translate="true"> A Step-change in Position?</text></para>
+          <para styleclass="Body Text HowTo"><text styleclass="Body Text HowTo" translate="true">Mechanical systems cannot move from one position to a different position in zero time!. It would be a magic trick! Cartoon characters can complete this motion, but not mechanical systems. A Cam would need a step in it! </text></para>
+          <para styleclass="Body Text HowTo"><text styleclass="Body Text HowTo" translate="true">You must use at least the </text><text styleclass="VariableName" translate="true">Match Control</text><text styleclass="Body Text HowTo" translate="true"> button in the </text><text styleclass="VariableName" translate="true">Segment and Blend-Point Editors</text><text styleclass="Body Text HowTo" translate="true"> to give </text><text styleclass="VariableName" translate="true">Position Continuity</text><text styleclass="Body Text HowTo" style="font-style:italic;" translate="true">.</text></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="BodyText Bold"><text styleclass="BodyText Bold" translate="true">Velocity Blending and Continuity</text></para>
+    <para styleclass="Body Text HowTo"><table styleclass="PopupTable2" rowcount="1" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="VariableName"><text styleclass="VariableName" translate="true"> A Step-change in Velocity?</text></para>
+          <para styleclass="Body Text HowTo"><text styleclass="Body Text HowTo" translate="true">In all cases, a mechanical system cannot respond to a </text><text styleclass="VariableName" translate="true">Velocity Discontinuity</text><text styleclass="Body Text HowTo" translate="true">. You are trying to make the system respond as if it has been hit. </text></para>
+          <para styleclass="Body Text HowTo"><text styleclass="Body Text HowTo" translate="true">A Servo motor would need to change its speed instantly, with infinite acceleration. This is unattainable.</text></para>
+          <para styleclass="Body Text HowTo"><text styleclass="Body Text HowTo" translate="true">A Cam would have a corner, or kink.</text></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="BodyText Bold"><text styleclass="BodyText Bold" translate="true">Acceleration Blending and Continuity</text></para>
+    <para styleclass="Body Text HowTo"><table styleclass="PopupTable2" rowcount="1" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="VariableName"><text styleclass="VariableName" translate="true"> A Step-change in Acceleration?</text></para>
+          <para styleclass="Body Text HowTo"><text styleclass="Body Text HowTo" translate="true">Mechanical systems do not like </text><text styleclass="VariableName" translate="true">Acceleration Discontinuities</text><text styleclass="Body Text HowTo" translate="true">. The mechanical system will tend to vibrate.</text></para>
+          <para styleclass="Body Text HowTo"><text styleclass="Body Text HowTo" translate="true">We can show an </text><text styleclass="VariableName" translate="true">Acceleration Discontinuity</text><text styleclass="Body Text HowTo" style="font-style:italic;" translate="true">&#32;</text><text styleclass="Body Text HowTo" style="font-style:normal;" translate="true">with this experiment</text><text styleclass="Body Text HowTo" style="font-weight:normal; font-style:normal;" translate="true">:</text></para>
+          <list id="0" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:&apos;Noto Sans&apos;; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted"><text styleclass="HowTo Bulleted" translate="true">Clamp (or hold down) a 300mm ruler at one end, so it hangs over the edge of a table, and </text></li>
+            <li styleclass="HowTo Bulleted"><text styleclass="HowTo Bulleted" translate="true">Release a coin from </text><text styleclass="VariableName" translate="true">zero height</text><text styleclass="HowTo Bulleted" translate="true"> onto the ruler, near to its end.</text></li>
+          </list>
+          <para styleclass="Body Text Howindent4bullets"><text styleclass="Body Text Howindent4bullets" translate="true">The velocity impact is zero.</text></para>
+          <para styleclass="Body Text Howindent4bullets"><text styleclass="Body Text Howindent4bullets" translate="true">There is, however, a step change in force (gravitational force) as you release the coin</text></para>
+          <para styleclass="Body Text Howindent4bullets"><text styleclass="Body Text Howindent4bullets" translate="true">The ruler vibrates with a peak displacement amplitude of about two times the final resting position of the ruler with the coin on it</text></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="BodyText Bold"><text styleclass="BodyText Bold" translate="true">Acceleration Blending and Continuity</text></para>
+    <para styleclass="Body Text HowTo"><table styleclass="PopupTable2" rowcount="1" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="VariableName"><text styleclass="VariableName" translate="true"> A Step-change in Jerk?</text></para>
+          <para styleclass="Body Text HowTo"><text styleclass="Body Text HowTo" translate="true">Finally, it is sometimes required that adjacent segments have </text><text styleclass="VariableName" translate="true">Jerk Continuity</text><text styleclass="Body Text HowTo" translate="true">.</text></para>
+          <para styleclass="Body Text HowTo"><text styleclass="Body Text HowTo" translate="true">Jerk-Continuity gives the least mechanical vibration in the mechanical system, at the expense of higher peak nominal accelerations. </text></para>
+          <para styleclass="Body Text HowTo"><text styleclass="Body Text HowTo" translate="true">When Jerk is Zero at the start of a segment, there is only a tiny change to it position for the first 10º of input. It is almost a dwell for the first 10º.</text></para>
+          <para styleclass="Body Text HowTo"><text styleclass="Body Text HowTo" translate="true">If it frequently possible to increase the duration of a segment, and thereby reduce the accelerations.</text></para>
+        </td>
+      </tr>
+    </table></para>
+  </body>
+</topic>

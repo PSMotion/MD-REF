@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../helpproject.xsl" ?>
+<topic class="Popup" template="Default" status="Under Construction" lasteditedby="Adam" version="2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../helpproject.xsd">
+  <title>Cam-Follower</title>
+  <keywords>
+    <keyword>Cam-Follower Shapes<keyword>Flat-faced Cam Follower</keyword><keyword>Knife-Edged Cam Follower</keyword><keyword>Round Cam Follower</keyword><keyword>Straight Cam Follower</keyword></keyword>
+  </keywords>
+  <body>
+    <para styleclass="Normal"><table styleclass="PopupTable" rowcount="6" colcount="2" style="cell-padding:3px;">
+      <tr style="vertical-align:top">
+        <td colspan="2">
+          <para styleclass="Popup Box"><text styleclass="VariableName-small">Cam-Follower Shapes</text><text style="font-weight:normal;"> (See</text> also <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Cam-Follower-Motion" styleclass="Popup Box2">Cam-Follower Motions</link>)</para>
+          <para styleclass="Popup Box">A <text styleclass="VariableName-small">Cam-Follower</text> is the surface that is in continuous contact with the <text styleclass="VariableName-small">Cam</text>. </para>
+          <para styleclass="Popup Box">In <text styleclass="VariableName-IT" style="font-size:10pt;">MechDesigner</text>, a <text styleclass="VariableName-small">Cam-Follower</text> is a <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Sketch-Loop" styleclass="Popup Box2">sketch-loop</link> with a <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Profile-Element" styleclass="Popup Box-Elements">Profile</link> and <text styleclass="Popup Box-Elements">Extrusion</text>.</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td colspan="2">
+          <para styleclass="VariableName-IT"><text style="font-size:10pt;">Typical Cam-Follower Shapes in MechDesigner</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:89px;">
+          <para styleclass="Popup Box"><image src="MD-CircularCamFollower-Ex.png" scale="100.00%" styleclass="Image Caption"></image></para>
+        </td>
+        <td>
+          <para styleclass="Popup Box2">1: Circular Cam-Followers</para>
+          <para styleclass="Popup Box">A <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Sketch-Element-Circle" styleclass="Popup Box-Elements">Circle</link> is the basic <text styleclass="Popup Box2">sketch-loop</text> used for a <text styleclass="VariableName-small">Cam-Follower. </text>We use the term <text styleclass="VariableName-small">Cam-Roller</text><text styleclass="Popup Box2">&#32;</text>for the shape, and <text styleclass="VariableName-small">Cam-Follower</text> for the Part that holds the <text styleclass="VariableName-small">Cam-Roller</text>.</para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:89px;">
+          <para styleclass="Popup Box"><image src="MD-FlatFacedFollower-Ex.png" scale="100.00%" styleclass="Image Caption"></image></para>
+        </td>
+        <td>
+          <para styleclass="Popup Box2">2: Flat-faced Follower </para>
+          <para styleclass="Popup Box">Draw the <text styleclass="VariableName-small">Flat-Faced Cam-Follower</text> as a <text styleclass="VariableName-small">Long Rectangle </text>and <text styleclass="Popup Box2">sketch-loop</text>. <text styleclass="VariableName-IT" style="font-size:10pt;">MechDesigner</text> does not calculate any part of the cam that is outside the range of the <text styleclass="VariableName-small">Flat-Face. </text>The cam must be convex.</para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:89px;">
+          <para styleclass="Popup Box"><image src="MD-ContourCamFollower-Ex.png" scale="100.00%" styleclass="Image Caption"></image></para>
+        </td>
+        <td>
+          <para styleclass="Popup Box">3<text styleclass="Popup Box2">: Multi-Contour Cam-Follower</text><text styleclass="VariableName-small">&#32;</text></para>
+          <para styleclass="Popup Box">This Cam-Follower is elliptical. The two opposite Arcs have an &apos;equal&apos; constraint added between them.</para>
+          <para styleclass="Popup Box">Each sketch-element is tangent with its adjacent sketch-elements.</para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:89px;">
+          <para styleclass="Popup Box"><image src="MD-KnifeEdged-CamFollower-Ex.png" scale="100.00%" styleclass="Image Caption"></image></para>
+        </td>
+        <td>
+          <para styleclass="Popup Box2">4: Knife-Edged Cam-Follower</para>
+          <para styleclass="Popup Box">This Cam-Follower is a &apos;Knife-Edge Cam-Follower&apos;. In reality, the <text style="font-style:italic;">knife-edge</text> would wear and become a <text style="font-style:italic;">blunt</text> very quickly, because of the extremely high contact-stress. Here, I have drawn the &apos;knife-edge as a small radius.</para>
+        </td>
+      </tr>
+    </table></para>
+  </body>
+</topic>

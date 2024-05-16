@@ -1,0 +1,286 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" status="Under Construction" modified="2023-10-16T12:54:46.092+01:00" lasteditedby="44785" version="2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title>Add Profile / Extrusion</title>
+  <keywords>
+    <keyword>Add<keyword>Profile</keyword></keyword>
+    <keyword>Solids menu<keyword>Add Profile</keyword></keyword>
+  </keywords>
+  <body>
+    <header>
+      <para styleclass="Heading1">Add Profile / Extrusion</para>
+    </header>
+    <para styleclass="Heading3_atocs_" style="page-break-before:always;">What is a Profile / Extrusion?</para>
+    <para styleclass="Body Text HowTo">A <text styleclass="Element">Profile/Extrusion </text>is a <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-Solids" styleclass="Interface">Solid</link><text styleclass="Body Text">.</text></para>
+    <para styleclass="Body Text HowTo">Use <text styleclass="T_Menu">Add Profile/Extrusion</text> to add a <text styleclass="Element">Profile</text> to a <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-Sketch-Loop" styleclass="VariableName">sketch-loop</link>. We also add for you an<text styleclass="Body Text">&#32;</text><text styleclass="Element">Extrusion</text><text styleclass="Body Text"> element as a child to the </text><text styleclass="Element">Profile</text><text styleclass="Body Text">.</text></para>
+    <para styleclass="HowTo Bulleted">You can add many <text styleclass="Element">Profile/Extrusions</text> to the same <text styleclass="VariableName">sketch-loop</text>.</para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="Notes">Note: </para>
+    <para styleclass="HowTo Bulleted">The <text styleclass="VariableName">Follower-Profile</text><text styleclass="Body Text"> you select when you </text><text styleclass="T_Menu">Add 2D-Cam / 3D-Cam</text> is a <text styleclass="Element">Profile</text> element.</para>
+    <para styleclass="HowTo Bulleted"><text styleclass="SeeAlso">See also </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-Follower-Profile-Shape" styleclass="SeeAlso">Shape of the Follower-Profile</link><text styleclass="SeeAlso">.</text></para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="VariableName">Terminology:</para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="3" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:176px;">
+          <para styleclass="VariableName-small" style="text-align:right;">Sketch-Loop : </para>
+        </td>
+        <td style="vertical-align:middle;">
+          <para styleclass="Popup Box">A series of sketch-elements, that you join end to end to form a closed loop. The <text styleclass="Popup Box2">start-Points</text> and <text styleclass="Popup Box2">end-Points</text> where the sketch-elements join together must be merged to one <text styleclass="Interface">Point</text>. <text styleclass="VariableName-small">Sketch-loops</text> cannot cross over each other. They cannot branch.</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:176px;">
+          <para styleclass="Popup Box2" style="text-align:right;"><text styleclass="Popup Box-Elements">Profile</text> : </para>
+        </td>
+        <td style="vertical-align:middle;">
+          <para styleclass="Popup Box">Two offset contours that are a copy of the <text styleclass="VariableName-small">sketch-loop</text> you select when you do <text styleclass="T_Menusmall">Add Profile.</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:176px;">
+          <para styleclass="Popup Box-Elements" style="text-align:right;">extrusion : </para>
+        </td>
+        <td style="vertical-align:middle;">
+          <para styleclass="Popup Box">The <text styleclass="Popup Box2">Solid</text> between the two offset Profile contours.</para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="Heading3_atocs_">Preparation for Add Profile / Extrusion</para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="1" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:208px;">
+          <para styleclass="Image Caption"><image src="MD-SKETCH-LOOP EXAMPLES.ipp" scale="-99.90%" figurelistinclude="0"><caption><![CDATA[3x Sketch-Loops in a Part]]></caption></image></para>
+          <para styleclass="Image Caption"></para>
+        </td>
+        <td>
+          <para styleclass="Body Text">Three example sketch-loops in the model before you do <text styleclass="T_Menu">Add Profile:</text></para>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Body Text">A <text styleclass="Interface">Sketch-loop</text> is in a <text styleclass="Element">Part</text></para>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Body Text">There are three different <text styleclass="VariableName">sketch-loops</text> in the image to the left.</para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading3_atocs_">Add Profile / Extrusion</para>
+    <para styleclass="Normal"><table styleclass="Default" rowcount="6" colcount="2" style="head-row-background-color:none; alt-row-background-color:none;">
+      <tr style="vertical-align:top">
+        <td style="width:240px;">
+          <para styleclass="Image Caption"><image src="MD-ADD-PROFILE-COMMANDMANGER.ipp" scale="-99.90%" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <list id="0" type="ol" listtype="decimal" formatstring="&#83;&#84;&#69;&#80;&#32;&#37;&#48;&#58;&#115;&#58;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo STEP" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo STEP">Start the Add Profile command</li>
+          </list>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="2">
+            <tr style="vertical-align:top">
+              <td style="vertical-align:bottom; width:41px;">
+                <para styleclass="Image Caption" style="text-align:right;"><image src="MD-Icon-AddProfile.png" scale="100.00%" figurelistinclude="0"></image></para>
+              </td>
+              <td>
+                <list id="1" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Body Table" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; color:#003300;">
+                  <li styleclass="Body Table"><text styleclass="Body Text">Click </text><text styleclass="T_Menu">Add menu &gt; Mechanism menu &#160;&gt; Solids sub-menu &gt; Add Profile</text></li>
+                </list>
+                <para styleclass="VariableName">OR</para>
+                <list id="2" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="B Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; color:#003300;">
+                  <li styleclass="B Bullets"><text styleclass="Body Text">Click</text><text styleclass="Interface">&#32;</text><text styleclass="T_Menu">Solids toolbar &gt; Add Profile</text></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Body Text HowTo"><text styleclass="Normal">The </text><text styleclass="Interface">Command-Manager</text><text styleclass="Normal"> starts.</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:240px;">
+          <para styleclass="Image Caption"><image src="MD-SKETCH-LOOP EXAMPLES-1.ipp" scale="-99.90%" figurelistinclude="0"><caption><![CDATA[3x Sketch-Loops in a Part]]></caption></image></para>
+        </td>
+        <td>
+          <list id="3" type="ol" listtype="decimal" formatstring="&#83;&#84;&#69;&#80;&#32;&#37;&#48;&#58;&#115;&#58;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="2" styleclass="HowTo STEP" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo STEP">Select a sketch-element that belongs to a sketch-loop</li>
+          </list>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <list id="4" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="B Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="B Bullets"><text styleclass="HowTo Numbered" style="font-style:normal;">Click</text><text styleclass="HowTo Numbered"> a </text><text styleclass="Interface">sketch-element</text><image src="Red-14-1.gif" imagestyleclass="Default" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="HowTo Numbered"> that is in a </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-Sketch-Loop" styleclass="VariableName">sketch-loop</link><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-Sketch-Loop" styleclass="HowTo Numbered">,</link><text styleclass="HowTo Numbered"> or a </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-Polyline" styleclass="Element">Polyline</link><text styleclass="VariableName">&#32;</text></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Body Text HowTo"><text styleclass="Normal">The name of the s</text><text styleclass="Body Text">ketch-element</text><text styleclass="Normal"> is in the </text><text styleclass="Interface">Command-Manager</text><text styleclass="Normal">.</text></para>
+          <para styleclass="HowTo STEP"></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="vertical-align:top; width:240px;">
+          <para styleclass="Image Caption"><image src="MD-PROFILE-CONTOURS.ipp" scale="-99.90%" figurelistinclude="0"><caption><![CDATA[3 x Profile Contours in graphic-area]]></caption></image></para>
+        </td>
+        <td rowspan="2">
+          <list id="5" type="ol" listtype="decimal" formatstring="&#83;&#84;&#69;&#80;&#32;&#37;&#48;&#58;&#115;&#58;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="3" styleclass="HowTo STEP" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo STEP">Complete the command:</li>
+          </list>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <list id="6" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="B Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="B Bullets">Click <image src="OK-tiny-11-15.png" scale="100.00%" figurelistinclude="0"></image> in the <text styleclass="Interface">Command-Manager</text><text styleclass="VariableName">. </text></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Body Text HowTo"><text styleclass="Normal">The </text><text styleclass="Element">Profile</text><text styleclass="Normal"> and the </text><text styleclass="Element">Extrusion</text><text styleclass="Normal"> are now in the model.</text></para>
+          <para styleclass="Body Text">Do 1 - 3 again to add a <text styleclass="Element">Profile</text> to a the same sketch-loop or a different sketch-loop.</para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="Interface2">RESULT: <text styleclass="VariableName">Graphic-Area</text>:</para>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Body Text">We add for you the two contours of the <text styleclass="Element">Profile</text>, which are copies of the <text styleclass="VariableName">sketch-loop</text>, and the <text styleclass="Element">Extrusion</text> between the <text styleclass="Element">Profile.</text></para>
+                <para styleclass="Body Text">One of the contours is coplanar with the sketch-loop that you select. Use the <text styleclass="Element">Extrusion dialog</text> to move the <text styleclass="Element">Extrusion</text> relative relative to the sketch-loop, as required</para>
+                <para styleclass="Body Text">To see the <text styleclass="Element">Extrusion</text>, enable <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Menu-Visibility" styleclass="T_Menu">Visibility toolbar</link><text styleclass="T_Menu"> &gt; </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Visibility-SolidsInMechanisms" styleclass="T_Menu">Show Solids in Mechanisms</link><text styleclass="Body Text HowTo">&#32;</text></para>
+                <para styleclass="Body Text">See also <link displaytype="text" defaultstyle="true" type="topiclink" href="" anchor="EditExtrionDeletePRofile">How to open the Extrusion dialog</link></para>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Body Text HowTo"></para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="Body Text">The images shows 3 × <text styleclass="Element">Profile / Extrusion</text>.</para>
+          <para styleclass="HowTo Bulleted"><text styleclass="Body Text HowTo">The default color of the </text><text styleclass="Element">Extrusion </text><text styleclass="Body Text HowTo">is </text><text styleclass="VariableName" style="color:#0000ff;">Blue</text><text styleclass="Body Text HowTo" style="font-weight:bold;">.</text></para>
+          <para styleclass="Body Text HowTo"></para>
+          <para styleclass="HowTo Bulleted"></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:240px;">
+          <para styleclass="Image Caption"><image src="MD-PROFILES-EXTRUSIONS.ipp" scale="-99.90%" figurelistinclude="0"><caption><![CDATA[3 x Extrusions in graphic-area]]></caption></image></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="vertical-align:top; width:240px;">
+          <para styleclass="Image Caption"><image src="MD-AT-ExtrusionElement.png" scale="-99.90%" figurelistinclude="0"><caption><![CDATA[Profile and Extrion elements in the Assembly-Tree]]></caption></image></para>
+        </td>
+        <td>
+          <para styleclass="Body Text HowTo"><text styleclass="VariableName">Assembly-Tree</text>: </para>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Body Text">T<text styleclass="Body Text HowTo">he </text><text styleclass="Element">Profile</text> is<text styleclass="Body Text HowTo"> a </text><text styleclass="Body Text HowTo" style="font-style:normal;">child</text><text styleclass="Body Text HowTo"> to the </text><text styleclass="Element">Part</text> in which there is the <text styleclass="VariableName">sketch-loop</text>. </para>
+                <para styleclass="Body Text">The <text styleclass="Element">Extrusion</text> is a child to the <text styleclass="Element">Profile</text>. </para>
+              </td>
+            </tr>
+          </table></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td colspan="2" style="width:240px;">
+          <para styleclass="SeeAlso">See also : </para>
+          <para styleclass="SeeAlso"><link displaytype="text" defaultstyle="true" type="weblink" href="http://mechdesigner.support/index.htm?md-qst4-create-solids.htm" target="_blank">Tutorial 4: Add Profile</link> (external link)</para>
+          <para styleclass="SeeAlso" style="text-align:left;"><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Command-Solids-AutoProfile">Add Auto-Profile</link>, <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Command-Solids-AutoProfiles">Add Auto-Profiles</link>, <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-Polyline">Polyline</link>&#32;<link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-Sketch-Loop">Sketch-Loop</link></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="T_Menu" style="text-align:left;"><text styleclass="Heading3 VIDEO">Video Add Profile</text><text styleclass="VariableName-IT">:</text><conditional-text type="IF" value="PDF"/><link displaytype="text" defaultstyle="true" type="filelink" href="AddProfile.gif" styleclass="Body Text">Double-click to watch the Video</link><conditional-text type="END"/><conditional-text type="IF" value="CHM"/><toggle type="picture" print-expanded="true" help-expanded="false" src-collapsed="AddProfile.gif" src-expanded="AddProfile.gif" scale="20.00%" width="256" height="144" styleclass="Image Caption" figurelistinclude="0"><caption><![CDATA[Add a Profile to a Sketch-Loop]]></caption><title>Add a Profile to a Sketch-Loop</title></toggle><conditional-text type="END"/><conditional-text type="IF" value="HTML,EBOOK"/><video src="AddProfile.mp4" width="1280px" height="720px" autostart="false" loop="false" showcontrols="false" playbutton="true" previewimage="AddProfile_preview.jpg" scale="20.00%" styleclass="Image Caption"><title>Add a Profile to a Sketch-Loop</title><caption><![CDATA[Add a Profile to a Sketch-Loop]]></caption></video><conditional-text type="END"/></para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="Heading3 VIDEO"><anchor id="EditExtrionDeletePRofile"><keywords><keyword>How to ...<keyword>Edit an Extrusion</keyword><keyword>Delete an Extrusion</keyword></keyword></keywords></anchor>How to edit an Extrusion</para>
+    <para styleclass="Normal"><table styleclass="Default" rowcount="3" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:240px;">
+          <para styleclass="Image Caption"><image src="MD-GA-SHIFT+CLICK PROFILE.png" scale="-99.90%" figurelistinclude="0"></image></para>
+        </td>
+        <td rowspan="2" style="border-left:none;">
+          <para styleclass="Body Table">To <text styleclass="VariableName" style="color:#ff0000;">EDIT</text><text styleclass="B Bullets" style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;"> an </text><text styleclass="Element">Extrusion Element</text> - with the <text styleclass="Interface">Selection-Window</text>.</para>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="B Bullets"><text style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">In </text><text styleclass="Body Text">the graphic-area</text></para>
+                <list id="7" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="B Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="B Bullets"><text styleclass="VariableName" style="color:#ff0000;">SHIFT-CLICK</text><text style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;"> the </text><text styleclass="Element">Profile</text><text styleclass="VariableName">&#32;</text></li>
+                </list>
+                <para styleclass="Body Text"><text style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">The </text><text styleclass="Element">Profile</text><text style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;"> and </text><text styleclass="Element">Extrusion</text><text style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;"> show in the </text><text styleclass="Interface">Selection-Window</text><text style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">.</text></para>
+                <para styleclass="Body Text"><text style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">In the </text><text styleclass="Interface">Selection-Window</text><text style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">:</text></para>
+                <list id="7" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Numbered" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="HowTo Numbered"><text styleclass="Body Text" style="font-style:normal;">Right-click</text><text styleclass="Body Text"> the </text><text styleclass="Element">Extrusion</text></li>
+                </list>
+                <para styleclass="Body Text">In the shortcut menu</para>
+                <list id="7" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Numbered" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="HowTo Numbered"><text styleclass="Body Text" style="font-style:normal;">Click</text><text styleclass="Body Text">&#32;</text><text styleclass="VariableName">Edit element</text></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Body Table">The <text styleclass="Element">Extrusion dialog</text> opens.</para>
+          <para styleclass="Body Text HowTo"><text styleclass="SeeAlso">See</text><text styleclass="Normal">&#32;</text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-ProfileExtrusion" styleclass="SeeAlso">Extrusion dialog</link></para>
+          <para styleclass="Body Text HowTo"></para>
+          <para styleclass="Interface2">OR</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:240px;">
+          <para styleclass="Image Caption"><image src="MD-SW-EditElement-Extrusion.png" scale="-99.90%" figurelistinclude="0"><caption><![CDATA[SELECTION-WINDOW: Right-Click]]></caption></image></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:240px;">
+          <para styleclass="Image Caption"><image src="MD-AT-EditExtrusion-2.png" scale="-99.90%" figurelistinclude="0"><caption><![CDATA[ASSEMBLY-TREE - 
+Right-click Extrusion]]></caption></image></para>
+        </td>
+        <td style="border-left:none;">
+          <para styleclass="Body Table"><text styleclass="VariableName" style="color:#ff0000;">EDIT</text><text styleclass="B Bullets" style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">&#32;</text><text styleclass="Element">Extrusion Element</text><text styleclass="Body Text"> - in the </text><text styleclass="Interface">Assembly-Tree</text></para>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="B Bullets"><text styleclass="Body Text">In t</text><text style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">he </text><text styleclass="Interface">Assembly-Tree</text><text styleclass="VariableName">&#32;</text></para>
+                <list id="8" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="B Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="B Bullets"><text styleclass="Body Text">Click</text><text style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;"> the </text><text styleclass="Element">Profile</text><text styleclass="VariableName">&#32;</text><text styleclass="Body Text">to expand and see the </text><text styleclass="Element">Extrusion</text><text styleclass="Body Text"> element - a child to the </text><text styleclass="Element">Profile</text><text styleclass="Body Text"> element</text><text styleclass="VariableName">&#32;</text></li>
+                  <li styleclass="B Bullets"><text styleclass="Body Text" style="font-style:normal;">Click the </text><text styleclass="Element">Extrusion</text><text styleclass="Body Text" style="font-style:normal;"> to make sure it has a square </text><text styleclass="Separator">orange</text><text styleclass="Body Text" style="font-style:normal;"> box around the </text><text styleclass="Element">Extrusion</text><text styleclass="Body Text" style="font-style:normal;"> icon</text></li>
+                  <li styleclass="B Bullets"><text styleclass="Body Text" style="font-style:normal;">Right-click</text><text styleclass="Body Text"> the </text><text styleclass="Element">Extrusion</text></li>
+                </list>
+                <para styleclass="B Bullets"><text styleclass="Body Text">In the shortcut menu</text></para>
+                <list id="8" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="B Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="B Bullets"><text styleclass="Body Text" style="font-style:normal;">Click</text><text styleclass="Body Text">&#32;</text><text styleclass="VariableName">Edit element</text><text styleclass="Body Text">.</text></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading3 VIDEO">How to delete a Profile</para>
+    <para styleclass="Normal"><table styleclass="Default" rowcount="1" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:240px;">
+          <para styleclass="Image Caption"><image src="MD-SW-DeleteProfile.png" scale="-99.90%" figurelistinclude="0"><title>ASSEMBLY-TREE - Delete Profile</title><caption><![CDATA[ASSEMBLY-TREE -  Delete Profile]]></caption></image></para>
+        </td>
+        <td style="border-left:none;">
+          <para styleclass="Body Table">To <text styleclass="VariableName" style="color:#ff0000;">DELETE</text><text styleclass="B Bullets" style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;"> a </text><text styleclass="Element">Profile Element</text></para>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="B Bullets"><text style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">In </text><text styleclass="Body Text">the graphic-area</text></para>
+                <list id="9" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="B Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="B Bullets"><text styleclass="VariableName" style="color:#ff0000;">CLICK</text><text style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;"> the </text><text styleclass="Element">Profile</text><text styleclass="VariableName">&#32;</text></li>
+                </list>
+                <para styleclass="B Bullets"><text styleclass="Body Text" style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">The </text><text styleclass="Element">Profile</text><text styleclass="Body Text" style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;"> shows in the </text><text styleclass="Interface">Selection-Window</text><text styleclass="Body Text" style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">.</text></para>
+                <para styleclass="B Bullets"><text styleclass="Body Text" style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">In the </text><text styleclass="Interface">Selection-Window</text><text styleclass="Body Text" style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">:</text></para>
+                <list id="9" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="B Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="B Bullets"><text styleclass="Body Text" style="font-style:normal;">Right-click</text><text styleclass="Body Text"> the </text><text styleclass="Element">Profile</text></li>
+                </list>
+                <para styleclass="B Bullets"><text styleclass="Body Text">In the shortcut menu</text></para>
+                <list id="9" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="B Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="B Bullets"><text styleclass="Body Text" style="font-style:normal;">Click</text><text styleclass="Body Text">&#32;</text><text styleclass="VariableName">Delete</text></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Body Table">We delete the <text styleclass="Element">Profile</text>&#32;<text styleclass="VariableName" style="color:#ff0000;">and</text> the <text styleclass="Element">Extrusion</text> elements from the model.</para>
+        </td>
+      </tr>
+    </table></para>
+  </body>
+</topic>

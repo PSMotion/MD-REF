@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" status="Under Construction" modified="2024-04-02T19:08:24.079+01:00" lasteditedby="44785" version="2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title>Edit | Auto Rebuild</title>
+  <keywords>
+    <keyword>Auto Update</keyword>
+    <keyword>Edit menu<keyword>Auto Update</keyword></keyword>
+  </keywords>
+  <body>
+    <header>
+      <para styleclass="Heading1">Edit | Auto Rebuild</para>
+    </header>
+    <para styleclass="Heading3_atocs_">Auto Rebuild</para>
+    <para styleclass="Normal"><line style="height:1px; color:#343400;" /></para>
+    <para styleclass="SeeAlso">See also <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Edit-Rebuild-Now">Rebuild Now</link></para>
+    <para styleclass="Normal"><line style="height:1px; color:#343400;" /></para>
+    <para styleclass="Body Text">Click <text styleclass="T_Menu">Auto Rebuild</text> to switch between “always rebuild with each new command” and “do not rebuild with each new command”.</para>
+    <para styleclass="Heading4 Toggle_atocs_">Auto-Rebuild - enabled<text styleclass="T_Menu">&#32;</text></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="1" colcount="2">
+      <tr style="vertical-align:middle">
+        <td style="vertical-align:top; width:1px;">
+          <para styleclass="Normal"><image src="MD-Icon-AutoRebuild.png" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="Body Text">The model <text styleclass="VariableName" style="color:#ff0000;">should</text> be up-to date.</para>
+          <para styleclass="Body Text">The model rebuilds each time you do a new command - see also <text styleclass="VariableName">Top-Tip </text>below.</para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading4 Toggle_atocs_">Auto-Rebuild - disabled</para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="1" colcount="2">
+      <tr style="vertical-align:middle">
+        <td style="vertical-align:top; width:1px;">
+          <para styleclass="Normal"><image src="MD-Icon-Rebuild-inactive.png" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="Body Text">The model <text styleclass="VariableName" style="color:#ff0000;">may not</text> rebuild each time you do a new command.</para>
+          <para styleclass="Body Text">When the model is large, or complex, it is faster to do commands when <text styleclass="T_Menu">Auto Rebuild</text> is disabled.</para>
+          <para styleclass="Body Text">However, you must enable <text styleclass="T_Menu">Auto-Rebuild</text> when you want to make sure the model is up-to-date.</para>
+          <list id="0" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:&apos;Segoe UI&apos;; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted">Click<text styleclass="Body Text"> to enable </text><text styleclass="T_Menu">Auto-Rebuild</text><text styleclass="Body Text"> and rebuild the model.</text></li>
+          </list>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Normal"><line style="height:1px; color:#343400;" /></para>
+    <para styleclass="VariableName">Top-Tip</para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="1" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Text">To make sure a complex model is up-to-date:</para>
+          <list id="1" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="Bullets">Click <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Edit-Rebuild-Now" styleclass="T_Menu">Rebuild Now</link><text styleclass="VariableName">&#32;</text></li>
+            <li styleclass="Bullets">Click to disable <text styleclass="VariableName">Auto Rebuild</text>, and then click again to enable <text styleclass="VariableName">Auto-Rebuild</text><text styleclass="Body Text">.</text></li>
+            <li styleclass="Bullets">Move the <text styleclass="VariableName">Master-Machine-Angle</text> to 0 . Do <text styleclass="T_Menu">ALT+H </text><text styleclass="Body Text">or </text><text styleclass="T_Menu">Run menu &gt; Home</text><text styleclass="Body Text">.</text></li>
+            <li styleclass="Bullets">Edit a <text styleclass="Element">Part</text>, then exit the <text styleclass="Interface">Part-Editor</text>. This also rebuilds the model.</li>
+            <li styleclass="Bullets">If there is a <text styleclass="Element">2D-Cam</text> in the model, open then close the <text styleclass="Element">2D-Cam dialog</text></li>
+            <li styleclass="Bullets">Click <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Edit-Rebuild-Now" styleclass="T_Menu">Rebuild now</link><text styleclass="Body Text"> again.</text></li>
+          </list>
+        </td>
+      </tr>
+    </table></para>
+  </body>
+</topic>

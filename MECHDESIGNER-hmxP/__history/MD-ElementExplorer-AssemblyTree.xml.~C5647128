@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" status="Under Construction" modified="2023-05-01T11:52:59.486+01:00" lasteditedby="Adam" version="2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title>Assembly-Tree</title>
+  <keywords>
+    <keyword>Assembly Tree<keyword>Element icon</keyword><keyword>Element name</keyword><keyword>Elements added to the model</keyword><keyword>Select Elements</keyword></keyword>
+  </keywords>
+  <body>
+    <header>
+      <para styleclass="Heading1">Assembly-Tree</para>
+    </header>
+    <para styleclass="Heading3_atocs_">Element-Explorer - Assembly-Tree</para>
+    <para styleclass="Body Text">The elements you add to the model are in the <text styleclass="Interface2">Assembly-Tree.</text>&#32;</para>
+    <para styleclass="Body Text">Each element has an<text styleclass="VariableName"> Element Icon</text> and an <text styleclass="VariableName">Element Name.</text></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="1" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:260px;">
+          <para styleclass="Normal"><image src="MD-PE-AssemblyTree.png" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"><title>Example: Assembly-Tree in Explorer-Explorer</title><caption><![CDATA[Assembly-Tree in Explorer-Explorer]]></caption></image></para>
+        </td>
+        <td>
+          <para styleclass="Body Text">The<text styleclass="Interface2"> Assembly-Tree</text> has a hierarchy. For example:</para>
+          <para styleclass="Body Text HowTo"><text styleclass="Body Text">The</text><text styleclass="T_Menu"> Add Mechanism-Editor</text> command adds a <text styleclass="Element">Mechanism</text><text styleclass="Interface">&#32;</text>element as a child to a <text styleclass="Element">Plane </text>element.</para>
+          <para styleclass="Body Text HowTo"><text styleclass="Body Text">Similarly,</text><text styleclass="Element"> Parts, Function-Blocks</text>, <text styleclass="Element">Joint</text>, <text styleclass="Element">Gears</text>, <text styleclass="Element">Belts</text>, ... are children to the <text styleclass="Element">Mechanism</text><text styleclass="Body Text"> element.</text></para>
+          <para styleclass="Body Text HowTo"><text styleclass="Body Text">Finally, </text><text styleclass="Element">CAD-Lines, Profiles, 3D-Cams,</text><text styleclass="Body Text"> and </text><text styleclass="Element">2D-Cams</text> are children to <text styleclass="Element">Parts</text><text styleclass="Interface">.</text></para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="Body Text"><text styleclass="Element-Header">Parts</text><text styleclass="VariableName">&#32;</text></para>
+          <para styleclass="Body Text HowTo">To the left of each <text styleclass="Element">Part</text>, an icon identifies if the kinematic-chain to which it is associated, is solved, broken, or unsolved</para>
+          <para styleclass="Body Table"><image src="Red-14-1b.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Image Caption">&#32;</text><image src="MD-KinChain-Solved.png" scale="100.00%" styleclass="Image Caption" style="font-size:7pt; vertical-align:sub;" figurelistinclude="0"></image><text styleclass="Body Text">&#32;</text><text styleclass="VariableName">Solved Part and solved kinematic-chain:</text><text styleclass="Body Text HowTo"> &#160;</text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-Mobility" styleclass="Body Text">Mobility</link><text styleclass="Body Text"> is zero</text><text styleclass="Body Text HowTo"> AND all </text><text styleclass="Element">Parts</text><text styleclass="Body Text HowTo"> remain joined for all positions of the machine-cycle.</text></para>
+          <para styleclass="Body Table"><image src="Red-14-2.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Image Caption">&#32;</text><image src="MD-KinChain-NotSolved.png" scale="100.00%" styleclass="Image Caption" style="font-size:7pt; vertical-align:sub;" figurelistinclude="0"></image><text styleclass="Body Text">&#32;</text><text styleclass="VariableName">Solved but broken kinematic-chain</text><text styleclass="Body Text HowTo">. </text><text styleclass="Body Text">Mobility is zero</text><text styleclass="Body Text HowTo"> BUT </text><text styleclass="Element">Parts</text><text styleclass="Body Text HowTo"> cannot remain joined at all positions of the machine-cycle.</text></para>
+          <para styleclass="Body Table"><image src="MD-Blank-14x14-white.ipp" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Image Caption">&#32;</text><image src="MD-Kinematic-Chain-Unsolved.png" scale="100.00%" styleclass="Image Caption" style="font-size:7pt; vertical-align:sub;" figurelistinclude="0"></image><text styleclass="Body Text">&#32;</text><text styleclass="VariableName">Unsolved kinematic-chain</text><text styleclass="Body Text">. Mobility is greater than zero(0).</text></para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="Body Text"><text styleclass="VariableName">Selected Elements</text></para>
+          <para styleclass="Body Text HowTo"><text style="font-weight:normal; font-style:normal;">When you click an </text>element:</para>
+          <list id="0" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted">a <text style="font-weight:bold; color:#f79646;">square</text><image src="Red-14-3.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Normal"> shows </text>around the icon </li>
+            <li styleclass="Body Text HowTo">the element shows in the <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-ProjectExplorer-SelectionWindow" styleclass="Interface">Selection-Window</link></li>
+          </list>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="VariableName">shortcut menu:</para>
+          <para styleclass="Body Text">Right<text style="font-style:normal;">-click</text> an element in the <text styleclass="Interface">Assembly-Tree</text>, to show a shortcut menu. </para>
+          <para styleclass="Body Text HowTo">You can use the shortcut menu to:</para>
+          <list id="1" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted"><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-ProjectExplorer-SelectionWindow" anchor="ViewReference">Show Element References</link></li>
+            <li styleclass="HowTo Bulleted"><text styleclass="Body Text">Edit Element</text></li>
+            <li styleclass="HowTo Bulleted">Delete (element)</li>
+            <li styleclass="HowTo Bulleted">Rename ... (element)</li>
+          </list>
+        </td>
+      </tr>
+    </table></para>
+  </body>
+</topic>

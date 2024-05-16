@@ -1,0 +1,345 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" status="Under Construction" modified="2024-03-07T13:05:50.716Z" lasteditedby="44785" version="2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title>Add Ball-Joint</title>
+  <keywords>
+    <keyword>Add Joint type:<keyword>Ball</keyword><keyword>Spherical</keyword></keyword>
+    <keyword>How to ...<keyword>Edit a Ball-Joint</keyword></keyword>
+    <keyword>Joint<keyword>Ball-Joint</keyword><keyword>Spherical-Joint</keyword></keyword>
+    <keyword>Kinematic elements toolbar<keyword>Add Ball-Joint</keyword></keyword>
+    <keyword>Menu &gt; Add &gt; Mechanism Menu<keyword>Add Ball-Joint</keyword></keyword>
+    <keyword>SSP Assur Group</keyword>
+    <keyword>SSP Dyad</keyword>
+    <keyword>SSR Assur Goup</keyword>
+    <keyword>SSR Dyad</keyword>
+  </keywords>
+  <body>
+    <header>
+      <para styleclass="Heading1">Add Ball-Joint</para>
+    </header>
+    <para styleclass="Heading2" style="page-break-before:always;">Ball-Joint</para>
+    <para styleclass="Heading4 Toggle_atocs_"><table styleclass="Default" rowcount="1" colcount="3" style="width:auto;">
+      <tr style="vertical-align:top">
+        <td style="width:120px;">
+          <para styleclass="Normal"><image src="MD-BallJoints-ConnectingPart.ipp" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"><title>Pin-Joints in MechDesigner</title><caption><![CDATA[2x Ball-Joints in MechDesigner]]></caption></image></para>
+        </td>
+        <td style="width:180px;">
+          <para styleclass="Image Caption"><image src="MD-BallJoints-Real.ipp" imagestyleclass="Default" scale="-99.90%" figurelistinclude="0"><caption><![CDATA[Rod-End Bearing]]></caption></image></para>
+        </td>
+        <td style="width:141px;">
+          <para styleclass="Image Caption"><image src="MD-BsllJointSW.png" imagestyleclass="Default" scale="-99.90%" figurelistinclude="0"><caption><![CDATA[2 x Ball-Joint in
+SOLIDWORKS]]></caption></image></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading4 Toggle_atocs_">Terminology: </para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="7" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:189px;">
+          <para styleclass="Popup Box-Elements" style="text-align:right;">Ball-Joint : </para>
+        </td>
+        <td>
+          <para styleclass="Popup Box">A <text styleclass="Popup Box-Elements">Ball-Joint</text> makes a <text styleclass="Popup Box-Elements">Point</text> in a <text styleclass="VariableName-small">Connecting-Part</text> coincident with a <text styleclass="Popup Box-Elements">Point</text> in a different <text styleclass="Popup Box-Elements">Part</text>.</para>
+          <para styleclass="Popup Box">You must add <text styleclass="VariableName-small">2 x </text><text styleclass="Popup Box-Elements">Ball-Joints</text> to add a <text styleclass="Popup Box-Elements">Ball-Joint</text> to each end of a <text styleclass="VariableName-small">Connecting-Part </text><text styleclass="Popup Box2">:</text></para>
+          <list id="0" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Popup Box" style="margin-left:15px; font-family:Symbol; font-size:9pt; color:#000000;">
+            <li styleclass="Popup Box" style="margin-left:15px;"><text styleclass="VariableName-small">1 x </text><text styleclass="Popup Box-Elements">Ball-Joint </text>between <text styleclass="Popup Box-Elements">Points</text> in different <text styleclass="Popup Box-Elements">Parts</text> that are in the active <text styleclass="Popup Box2">Mechanism-Editor</text></li>
+          </list>
+          <list id="1" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Popup Box" style="margin-left:15px; font-family:Symbol; font-size:9pt; color:#000000;">
+            <li styleclass="Popup Box" style="margin-left:15px;"><text styleclass="VariableName-small">1 x </text><text styleclass="Popup Box-Elements">Ball-Joint </text>between <text styleclass="Popup Box-Elements">Points</text> in different <text styleclass="Popup Box-Elements">Parts</text> that are in different <text styleclass="Popup Box2">Mechanism-Editors</text></li>
+          </list>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:189px;">
+          <para styleclass="VariableName-small" style="text-align:right;">Spherical-Joint : </para>
+        </td>
+        <td>
+          <para styleclass="Popup Box">The kinematic and equivalent term for a <text styleclass="Element">Ball-Joint</text>. </para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:189px;">
+          <para styleclass="Popup Box2" style="text-align:right;">Kinematics-Tree : </para>
+        </td>
+        <td>
+          <para styleclass="Popup Box"><text styleclass="VariableName-small">Dyads R-S-S, P-S-S</text> - the joints in a <text styleclass="VariableName-small">dyad</text> use the letter <text styleclass="VariableName-small">S</text> for a <text styleclass="Popup Box-Elements">Ball-Joint</text>. </para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td colspan="2">
+          <para styleclass="VariableName-small">Derived Names: </para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:189px;">
+          <para styleclass="VariableName-small" style="text-align:right;">Connecting-Part : </para>
+        </td>
+        <td>
+          <para styleclass="Popup Box">A <text styleclass="Popup Box-Elements">Part</text> with a <text styleclass="Popup Box-Elements">Ball-Joint</text> at its <text styleclass="Popup Box2">start-Point</text> and at its <text styleclass="Popup Box2">end-Point</text>.</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:189px;">
+          <para styleclass="VariableName-small" style="text-align:right;">Part that is Completely-Free :</para>
+        </td>
+        <td>
+          <para styleclass="Popup Box">A <text styleclass="Popup Box-Elements">Part</text> with 3 degrees-of-freedom (no joints).</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:189px;">
+          <para styleclass="VariableName-small" style="text-align:right;">Part that is Free : </para>
+        </td>
+        <td>
+          <para styleclass="Popup Box">A <text styleclass="Popup Box-Elements">Part</text> with 1 or 2 degrees-of-freedom. </para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="SeeAlso">See also:<text styleclass="Body Text">&#32;</text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-BallJoint">Ball-Joint dialog</link>, <link displaytype="text" defaultstyle="true" type="topiclink" href="" anchor="EditConnecting-Part">Connecting Part Length and Diameter</link>.</para>
+    <para styleclass="SeeAlso">See also <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-Ball-Joint-Configurations">Ball-Joint configurations</link></para>
+    <para styleclass="Normal"><line style="height:1px; color:#343400;" /></para>
+    <para styleclass="Heading4 Toggle_atocs_">Preparation</para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="3" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="VariableName">A typical preparation:</para>
+          <para styleclass="Image Caption"><image src="MD-BALL-JOINT-PREP-A.ipp" imagestyleclass="Default" scale="-99.90%" figurelistinclude="0"><caption><![CDATA[A typical prerpation for Add Ball-Joint]]></caption></image></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="VariableName">Mechanism A</para>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Body Text"><text style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">Usually, </text><text styleclass="VariableName">Mechanism A</text><text style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;"> is perpendicular</text><text styleclass="Body Text HowTo">(</text><text styleclass="Body Text HowTo" style="font-weight:bold;">⊥</text><text styleclass="Body Text HowTo">)</text><text style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;"> to </text><text styleclass="VariableName">Mechanism B</text></para>
+                <list id="2" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullets" style="font-family:Symbol; font-size:11pt; color:#000000;">
+                  <li styleclass="Bullets"><text style="font-family:&apos;Segoe UI Semibold&apos;; font-size:10pt; font-weight:bold; font-style:normal; text-transform:uppercase; vertical-align:baseline; color:#800000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">Part </text><image src="Red-14-3.gif" scale="100.00%" style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:italic; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;" figurelistinclude="0"></image><text style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;"> is </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-Kinematically-Defined-Chain" styleclass="VariableName">kinematically-defined</link><text style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;"> &#160;- in the image, </text><text styleclass="Element">Part</text><text style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">&#32;</text><image src="Red-14-3.gif" scale="100.00%" style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:italic; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;" figurelistinclude="0"></image><text style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;"> is </text><text style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:bold; font-style:normal; text-transform:none; vertical-align:baseline; color:#ff00ff; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">Pink</text><text styleclass="VariableName">&#32;</text></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Body Text"><text styleclass="VariableName">Mechanism B - </text>the active <text styleclass="Interface">Mechanism-Editor</text></para>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Bullets"><text style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">Three </text><text styleclass="Element">Parts</text><text style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">: </text></para>
+                <para styleclass="Bullets"><text styleclass="Body Text">1 x </text><text styleclass="Element">Part</text><text style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;"> is usually the </text><text styleclass="Element">Base-Part</text><text styleclass="Body Text"> &#160;- it is </text><text styleclass="VariableName">kinematically-defined</text><text style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">.</text></para>
+                <para styleclass="Bullets"><text styleclass="Body Text">2 × </text><text style="font-family:&apos;Segoe UI Semibold&apos;; font-size:10pt; font-weight:bold; font-style:normal; text-transform:uppercase; vertical-align:baseline; color:#800000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">Parts</text><image src="Red-14-4.gif" scale="100.00%" style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;" figurelistinclude="0"></image><image src="Red-14-5.gif" scale="100.00%" style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:italic; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;" figurelistinclude="0"></image><text style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;"> are </text><text style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; text-transform:none; vertical-align:baseline; color:#ff0000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">not</text><text style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">&#32;</text><text styleclass="VariableName">kinematically-defined</text><text style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">. </text></para>
+                <list id="3" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullets" style="font-family:Symbol; font-size:11pt; color:#000000;">
+                  <li styleclass="Bullets"><text styleclass="Element">Part</text><text styleclass="HowTo Bulleted">&#32;</text><image src="Red-14-4.gif" scale="100.00%" styleclass="Body Text" figurelistinclude="0"></image><text styleclass="Body Text"> &#160;is a </text><text styleclass="Element">Part</text><text styleclass="Body Text"> that is </text><text styleclass="VariableName">free</text><text styleclass="HowTo Bulleted">. It has a </text><text styleclass="Element">Pin-Joint</text><text styleclass="HowTo Bulleted"> to join it to the </text><text styleclass="Element">Base-Part</text><text styleclass="Body Text">.</text></li>
+                  <li styleclass="HowTo Bulleted"><text styleclass="Element">Part</text>&#32;<image src="Red-14-5.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Image Caption">&#32;</text><text styleclass="Body Text"> is a </text><text styleclass="Element">Part</text><text styleclass="Body Text"> that is </text><text styleclass="VariableName">Completely Free</text><text styleclass="Body Text">. It does not have any joints </text><text styleclass="VariableName" style="color:#ff0000;">before</text><text styleclass="Body Text"> you do </text><text styleclass="T_Menu">Add Ball-Joint</text><text styleclass="Body Text">.</text></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Notes">Notes:</para>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Body Text">The <text styleclass="Interface">Mechanism-Editors</text>&#32;<text styleclass="VariableName" style="color:#ff0000;">cannot</text> be parallel to each other. They are<text style="font-weight:normal; color:#000000;"> most often</text> perpendicular(<text style="font-weight:bold;">⊥</text>) to each other.</para>
+                <para styleclass="Body Text">As you add the <text styleclass="Element">Part</text> that is <text styleclass="VariableName">Completely-Free</text>, try to estimate its length. <text styleclass="Body Text HowTo">If it is too short or too long, the </text><text styleclass="Element">Ball-Joints</text><text styleclass="Body Text HowTo"> cannot join the </text><text styleclass="VariableName">Completely Free</text><text styleclass="Body Text HowTo">&#32;</text><text styleclass="Element">Part</text><text styleclass="Body Text HowTo"> to </text><text styleclass="Element">Part</text><image src="Red-14-4.gif" scale="100.00%" figurelistinclude="0"></image><text styleclass="Body Text HowTo"> and </text><text styleclass="Element">Part</text><image src="Red-14-3.gif" scale="100.00%" styleclass="Bullets" style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:italic; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;" figurelistinclude="0"></image><text styleclass="Body Text HowTo"> - you do not get the expected result. </text></para>
+              </td>
+            </tr>
+          </table></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Normal"><line style="height:3px; color:#343400;" /></para>
+    <para styleclass="Heading3_atocs_">Add Ball-Joint × two(2)</para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="6" colcount="2">
+      <tr style="vertical-align:top">
+        <td colspan="2">
+          <para styleclass="Body Text">Do <text styleclass="T_Menu">Add Ball-Joint</text> two(2) times. One time to each end of the <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-Part-Free" styleclass="Element">Completely Free Part</link>. </para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:240px;">
+          <para styleclass="Normal"><image src="MD-BALL-JOINT-PREP-B.ipp" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td rowspan="2">
+          <list id="4" type="ol" listtype="decimal" formatstring="&#83;&#84;&#69;&#80;&#32;&#37;&#48;&#58;&#115;&#58;&#32;" format-charset="DEFAULT_CHARSET" levelreset="false" legalstyle="false" startfrom="1" styleclass="HowTo STEP" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo STEP">Start the Add Ball-Joint command</li>
+          </list>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="2" colcount="2">
+            <tr style="vertical-align:top">
+              <td rowspan="2" style="vertical-align:bottom; width:42px;">
+                <para styleclass="VariableName" style="text-align:right;"><image src="MD-Icon-AddBallJoint.png" scale="100.00%" figurelistinclude="0"><title>Add Ball-Joint icon</title></image></para>
+              </td>
+              <td>
+                <para styleclass="Body Text"><text styleclass="T_Menu">Mechanism menu &gt; Add Ball-Joint</text></para>
+                <para styleclass="Interface2">OR</para>
+              </td>
+            </tr>
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Body Text"><text styleclass="T_Menu">Kinematic elements toolbar &gt; Add Ball-Joint</text></para>
+              </td>
+            </tr>
+          </table></para>
+          <list id="5" type="ol" listtype="decimal" formatstring="&#83;&#84;&#69;&#80;&#32;&#37;&#48;&#58;&#115;&#58;&#32;" format-charset="DEFAULT_CHARSET" levelreset="false" legalstyle="false" startfrom="2" styleclass="HowTo STEP" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo STEP">Add Ball-Joint #1 </li>
+          </list>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Bullets"><text styleclass="Interface">Mechanism-Editor</text>&#32;<text styleclass="VariableName">B</text> is active.<text styleclass="VariableName">&#32;</text></para>
+                <list id="6" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Numbered" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="HowTo Numbered"><text style="font-style:normal;">Click </text><text styleclass="Element" style="font-style:normal;">Point</text><image src="Red-14-1b.gif" scale="100.00%" styleclass="Image Caption" style="font-style:normal;" figurelistinclude="0"></image><text style="font-style:normal;"> at the end of the </text><text styleclass="Element">Part</text><text style="font-style:normal;"> that is </text><text styleclass="VariableName">Completely-Free </text></li>
+                  <li styleclass="HowTo Numbered"><text styleclass="HowTo Bulleted" style="font-style:normal;">Click </text><text styleclass="Element" style="font-style:normal;">Point</text><image src="Red-14-2.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Body Text"> at the end of the </text><text styleclass="Element">Part</text><text styleclass="Body Text"> that is </text><text styleclass="VariableName">Free</text><text styleclass="Interface">.</text></li>
+                </list>
+                <para styleclass="Body Text"><text style="font-weight:normal;">If you cannot select the </text><text styleclass="Element">Points</text><text style="font-weight:normal;"> to add a </text><text styleclass="Element">Ball-Joint</text>, disable<text styleclass="Bullets"> the </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Edit-AutoUpdate" styleclass="Bullets">Auto-Update tool</link><text styleclass="VariableName">, </text>and try again.</para>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Body Text HowTo">After you do <text styleclass="T_Menu">Add Ball-Joint #1</text> you can see the <text styleclass="VariableName">Ball-Joint symbol</text><text styleclass="Body Text">.</text></para>
+          <para styleclass="Body Text HowTo">However, <text styleclass="Element">Points</text><image src="Red-14-1b.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><image src="Red-14-2.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image>&#32;<text styleclass="VariableName" style="color:#ff0000;">do not</text> snap together. You must do <text styleclass="T_Menu">Add Ball-Joint #2</text><text styleclass="Body Text">.</text></para>
+          <para styleclass="Body Text"></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:240px;">
+          <para styleclass="Normal"><image src="MD-BALL-JOINT-PREP-C.ipp" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:240px;">
+          <para styleclass="Normal"><image src="MD-BALL-JOINT-PREP-D.ipp" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <list id="7" type="ol" listtype="decimal" formatstring="&#83;&#84;&#69;&#80;&#32;&#37;&#48;&#58;&#115;&#58;&#32;" format-charset="DEFAULT_CHARSET" levelreset="false" legalstyle="false" startfrom="3" styleclass="HowTo STEP" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo STEP">Add Ball-Joint #2 </li>
+          </list>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <list id="8" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="Bullets"><text style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">Click </text><text style="font-family:&apos;Segoe UI Semibold&apos;; font-size:10pt; font-weight:bold; font-style:normal; text-transform:uppercase; vertical-align:baseline; color:#800000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">Point</text><image src="Red-14-3.gif" scale="100.00%" style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;" figurelistinclude="0"></image><text style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;"> at the other end of the </text><text styleclass="Element">Part</text><text style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;"> that is </text><text styleclass="VariableName">Completely-Free</text><text style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">&#32;</text></li>
+                  <li styleclass="HowTo Numbered"><text style="font-style:normal;">Click </text><text styleclass="Element" style="font-style:normal;">Point</text><image src="Red-14-4.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image> - the <text styleclass="VariableName" style="color:#ff00ff;">Pink Point</text><text style="font-weight:bold; color:#808080;">&#32;</text><text style="font-weight:normal; color:#000000;">-</text><text style="font-weight:bold; color:#000000;">&#32;</text>at the end of the <text styleclass="Element">Part</text> that is <text styleclass="VariableName">kinematically-defined</text><text styleclass="Interface">&#32;</text>in <text styleclass="Interface">Mechanism-Editor</text>(<text style="font-weight:bold; color:#3c3c39;">A</text>)</li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:240px;">
+          <para styleclass="Normal"><image src="MD-BALL-JOINT-PREP-E.ipp" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="VariableName"><text styleclass="Interface2">Result</text> - Graphics-Area</para>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Body Table">The <text styleclass="Element">Ball-Joints</text><image src="Red-14-6.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><image src="Red-14-7.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image> snap to the <text styleclass="Element">Points</text> in <text styleclass="Interface">Mechanisms </text><text styleclass="VariableName">A</text> and <text styleclass="VariableName">B</text>.</para>
+                <para styleclass="Body Table">The <text styleclass="Element">Parts</text> that were <text styleclass="VariableName">Completely-Free</text> and <text styleclass="VariableName">Free</text> are<text styleclass="HowTo Bulleted"> now </text><text styleclass="VariableName">kinematically-defined</text><image src="Red-14-5.gif" imagestyleclass="Default" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image><image src="Red-14-8.gif" scale="100.00%" figurelistinclude="0"></image></para>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Normal"><line style="height:1px; color:#343400;" /></para>
+          <para styleclass="Body Text"><text styleclass="Body Text HowTo">If the arrangement of the </text><text styleclass="Element">Parts</text><text styleclass="Body Table"> that were </text><text styleclass="VariableName">Completely-Free</text><text styleclass="Body Table"> and </text><text styleclass="VariableName">Free</text><text styleclass="Body Table"> is </text><text styleclass="Body Text HowTo">not correct, then see </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Command-ChangeDyadClosure" styleclass="Body Text HowTo">Change-Dyad Closure</link></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:240px; height:40px;">
+          <para styleclass="Image Caption"><image src="MD-KT-AddBallJoint.ipp" scale="-99.90%" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="Interface2">RESULT - <text styleclass="VariableName">Kinematics-Tree</text></para>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Body Text">In the <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-ElementExplorer-KinematicsTree" styleclass="Interface">Kinematics-Tree</link>, </para>
+                <para styleclass="Body Text">There is a new <text styleclass="VariableName">Dyad</text> - the <text styleclass="VariableName">R-S-S</text> dyad. </para>
+                <para styleclass="Body Text">The three Joints in the <text styleclass="VariableName">Dyad</text> are:</para>
+                <list id="9" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+                  <li styleclass="HowTo Bulleted"><text styleclass="Element">Pin-Joint</text><image src="Red-14-9.gif" imagestyleclass="Default" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Normal"> is the </text><text styleclass="VariableName">R</text><text styleclass="Normal"> joint - </text><text styleclass="VariableName">R</text><text styleclass="Normal"> is for </text><text styleclass="VariableName">Revolute-Joint</text></li>
+                  <li styleclass="Body Text HowTo"><text styleclass="Element">Ball-Joints</text><image src="Red-14-6.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><image src="Red-14-7.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image> are the <text styleclass="VariableName">S</text> Joints -<text styleclass="HowTo Bulleted">&#32;</text><text styleclass="VariableName">S</text><text styleclass="Body Text"> is for</text><text styleclass="HowTo Bulleted">&#32;</text><text styleclass="VariableName-IT" style="font-style:normal;">Spherical-Joint</text></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Body Text HowTo"></para>
+          <para styleclass="Body Text HowTo"></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading3_atocs_"><anchor id="EditConnecting-Part"><keywords><keyword>How to ...<keyword>Edit the Length of a Connecting-Part</keyword><keyword>Edit the Radius of a Connecting-Part</keyword></keyword><keyword>Connecting-Part - Length</keyword><keyword>Connecting-Part - Radius</keyword><keyword>Part<keyword>Connecting-Part</keyword></keyword></keywords></anchor><text styleclass="Heading4 Toggle_atocs_">Connecting-Part: Edit Length, Rod Diameter, Ball-Diameter</text></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="4" colcount="2">
+      <tr style="vertical-align:top">
+        <td colspan="2">
+          <para styleclass="Notes">Notes: </para>
+          <list id="10" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted">You cannot add <text styleclass="Interface">Solids</text> to <text styleclass="VariableName">Connecting-Parts</text>. </li>
+          </list>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:240px;">
+          <para styleclass="Normal"><image src="MD-GA-BallJoint-EditConnectingPart.png" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td rowspan="3">
+          <para styleclass="VariableName">To edit the <text styleclass="Interface2">Length</text> of the <text styleclass="Interface2">Connecting-Part</text></para>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <list id="11" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="Bullets"><text styleclass="Interface">Mechanism-Editor:</text><text styleclass="HowTo Numbered" style="font-style:normal;"> Double-click</text><text styleclass="HowTo Numbered"> the symbol for the </text><text styleclass="VariableName">Connecting-Part </text></li>
+                </list>
+                <para styleclass="Body Text">It is now open in the <text styleclass="Interface">Part-Editor</text>.</para>
+                <list id="11" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Numbered" style="margin-top:0px; font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="HowTo Numbered" style="margin-top:0px;"><text styleclass="Interface">Part-Editor</text><text styleclass="VariableName">:</text><text styleclass="Body Text"> Edit</text><text styleclass="Body Text HowTo"> the Length dimension of the </text><text styleclass="VariableName">Connecting-Part</text></li>
+                  <li styleclass="HowTo Numbered" style="margin-top:0px;"><text styleclass="Body Text">Exit the </text><text styleclass="Interface">Part-Editor</text></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Normal"></para>
+          <para styleclass="VariableName">To edit the <text styleclass="Interface2">Symbolic Radius</text> of the <text styleclass="Interface2">Connecting-Part</text></para>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <list id="12" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="Bullets"><text styleclass="Interface">Mechanism-Editor</text><text styleclass="HowTo Numbered" style="font-style:normal;">: Double-click</text><text styleclass="HowTo Numbered"> the symbol for the </text><text styleclass="VariableName">Connecting-Part </text></li>
+                </list>
+                <para styleclass="Body Text">It is now open in the <text styleclass="Interface">Part-Editor</text>.</para>
+                <list id="12" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Numbered" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="HowTo Numbered"><text styleclass="Interface">Part-Editor: </text>Add a <text styleclass="Element">Line</text> or <text styleclass="Element">Circle</text><text styleclass="VariableName">&#32;</text></li>
+                  <li styleclass="HowTo Numbered"><text styleclass="Interface">Part-Editor: &#160;</text>Add a dimension to the <text styleclass="Element">Line</text> or <text styleclass="Element">Circle</text></li>
+                  <li styleclass="HowTo Numbered"><text styleclass="Body Text">Exit the </text><text styleclass="Interface">Part-Editor</text></li>
+                </list>
+                <para styleclass="Body Text">The dimension of the <text styleclass="Element">Line</text> or <text styleclass="Element">Circle</text> is the Radius of the <text styleclass="VariableName">Connecting-Part</text>.</para>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Normal"></para>
+          <para styleclass="VariableName">To edit the symbolic diameter of the <text styleclass="Element-Header">Ball-Joint</text><text styleclass="HowTo Bulleted"> - </text><text styleclass="SeeAlso">see </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-BallJoint" styleclass="SeeAlso">Ball-Joint dialog</link></para>
+          <para styleclass="Normal"></para>
+          <para styleclass="Notes">Notes: </para>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Body Text">In the <text styleclass="Interface">Part-Editor</text>, when the view is not the <text styleclass="VariableName">Front View</text>, the <text styleclass="Element">CAD-Line</text>, <text styleclass="VariableName">Axes</text>, sketch-elements and dimensions may show in unusual places! If you cannot add or edit a dimension: do <text styleclass="T_Menu">View toolbar &gt; Front Plane (F3)</text></para>
+                <para styleclass="Body Text"><text style="font-style:normal;">To see the symbol of the </text><text styleclass="Element">Ball-Joint</text><text style="font-style:normal;">: enable </text><text styleclass="T_Menu">Visibility toolbar &gt; </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Visibility-SolidsInMechanisms" styleclass="T_Menu">Show Solids in Mechanisms</link></para>
+              </td>
+            </tr>
+          </table></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:240px; height:15px;">
+          <para styleclass="Normal"><image src="MD-GA-BallJoint-EditConnectingPart-Dim.png" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:240px;">
+          <para styleclass="Normal"><image src="MD-GA-BallJoint-EditConnectingPart-Show.png" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+      </tr>
+    </table></para>
+  </body>
+</topic>

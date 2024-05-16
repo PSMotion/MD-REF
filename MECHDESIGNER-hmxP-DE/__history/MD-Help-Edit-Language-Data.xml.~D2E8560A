@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" status="Under Construction" modified="2022-03-21T11:24:45.152+01:00" lasteditedby="Adam" version="2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title>Help | Language Database</title>
+  <body>
+    <header>
+      <para styleclass="Heading1">Help | Language Database</para>
+    </header>
+    <para styleclass="VariableName"></para>
+    <para styleclass="VariableName">It is <text style="color:#ff0000;">not</text> recommended that you make changes to the Language Database.</para>
+    <para styleclass="VariableName">Please email us if you would like us to change anything.</para>
+    <para styleclass="Body Text HowTo">It is possible to edit the names of parameters, the hints in each dialog-box, and tool-tips.</para>
+    <para styleclass="Body Text HowTo"><text style="color:#ff0000;">This tool is NOT available in MD14.2</text></para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="VariableName">STEP 1: Make a backup of the database directory and change its default path.</para>
+    <para styleclass="Body Text HowTo"><table styleclass="Standard" rowcount="1" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Text"><text styleclass="VariableName-IT">MechDesigner</text> uses a database for command-names, hints and dialogs. We/You can edit these to your preferred wording or language.</para>
+          <para styleclass="Body Text">Before you can edit the &apos;language database&apos;, you should move the database files to a new path, which also has Read&amp;Write privileges.</para>
+          <para styleclass="Body Text">You can do this from within <text styleclass="VariableName-IT">MechDesigner</text></para>
+          <list id="0" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:8pt; color:#000000;">
+            <li styleclass="HowTo Bulleted">Start <text styleclass="VariableName-IT">MechDesigner</text><text styleclass="VariableName">&#32;</text></li>
+            <li styleclass="HowTo Bulleted">Click <text styleclass="T_Menu">Edit menu &gt; Application-Settings</text></li>
+            <li styleclass="HowTo Bulleted">Find: <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Edit-ApplicationSettings">Edit menu &gt; Application Settings &gt; General tab &gt; File Options | Database Directory</link></li>
+          </list>
+          <para styleclass="Body Text">It&apos;s default path is: &#160;C:\ProgramData\PSMotion\DBase</para>
+          <list id="0" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Body Text" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:8pt; color:#000000;">
+            <li styleclass="Body Text">Click the Database Directory box , to open the &apos;Select Folder&apos; interface.</li>
+            <li styleclass="Body Text">Browse, to find or add a new path that has Read-Write privileges: For example: C: \Users\&lt;user-name&gt;\Documents\PSMotion\dbase-14\</li>
+            <li styleclass="Body Text">Click Open button in the Select Folder interface</li>
+          </list>
+          <para styleclass="Body Text">The new path should show in the Database Directory box.</para>
+          <list id="0" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Body Text" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:8pt; color:#000000;">
+            <li styleclass="Body Text">Close the <text styleclass="Interface">Application-Settings dialog</text>.</li>
+            <li styleclass="Body Text">Exit <text styleclass="VariableName-IT">MechDesigner</text></li>
+          </list>
+          <para styleclass="Body Text">When you restart MechDesigner, the &apos;Save database&apos; button in the Language Database dialog-box, the database files will save to the new path (see 5, above)</para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="Body Text">The database path you enter is stored in the MechDesigner.ini file. We do not overwrite the MechDesigner.ini even when you re-install <text styleclass="VariableName-IT">MechDesigner</text>. </para>
+          <para styleclass="Body Text">However, if you delete the MechDesigner.ini file, you must change the database path again with the Application-Settings dialog-box.</para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="VariableName">STEP 2: Edit the database.</para>
+    <para styleclass=" " style="text-align:left; text-indent:0px; margin-top:4px; margin-right:0px; margin-bottom:6px; margin-left:0px; line-height:1.00; background-color:transparent; white-space:normal; page-break-inside:auto; page-break-after:auto; border:none; tabstops:none;"><table styleclass="Standard" rowcount="2" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Normal"><image src="Dialog-Database.png" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <list id="1" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Numbered" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:8pt; color:#000000;">
+            <li styleclass="HowTo Numbered"><text style="font-weight:normal; font-style:normal;">Start </text><text styleclass="VariableName-IT">MechDesigner</text><text styleclass="VariableName">&#32;</text></li>
+            <li styleclass="HowTo Numbered"><text style="font-weight:normal;">Click</text><text style="font-weight:bold;">&#32;</text><text styleclass="T_Menu">Help menu &gt; Edit Language Database</text><text style="font-weight:bold;">&#32;</text></li>
+            <li styleclass="HowTo Numbered"><text styleclass="HowTo Bulleted">Click the </text><text styleclass="HowTo Bulleted" style="font-style:italic;">&apos;Edit Program Hints and Captions&apos;</text><text styleclass="Body Text">tab</text></li>
+            <li styleclass="HowTo Numbered"><text styleclass="HowTo Bulleted">On the right, scroll down to find a &apos;dialog&apos; and explore it to find the text that you want to edit.</text></li>
+          </list>
+          <para styleclass="Body Text HowTo">The name of each dialog in the list is <text style="font-weight:bold;">not</text> the name of the dialog in <text styleclass="VariableName-IT">MechDesigner</text>. However, with a bit of imagination, you will find the dialog.</para>
+          <para styleclass="Body Text HowTo"><text styleclass="Body Text">Example: </text><text styleclass="Body Text" style="font-style:italic;">dlgsettings</text><text styleclass="Body Text"> (which is the &apos;ACTIVE MOTION SETTINGS&apos; dialog) &gt; Motion tab</text><text styleclass="Image Caption">.</text></para>
+          <list id="1" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Numbered" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:8pt; color:#000000;">
+            <li styleclass="HowTo Numbered"><text styleclass="HowTo Bulleted">Click, pause, click the text in the list, and enter your new text</text></li>
+          </list>
+          <para styleclass="VariableName-indent">or</para>
+          <list id="2" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="5" styleclass="HowTo Numbered" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:8pt; color:#000000;">
+            <li styleclass="HowTo Numbered"><text styleclass="HowTo Bulleted">On the right, enter the new text with your keyboard</text><text styleclass="VariableName">&#32;</text></li>
+          </list>
+          <para styleclass="Body Text">Example shows: <text style="font-style:italic;">&apos;Motion&apos;</text> as the new text</para>
+          <list id="1" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Numbered" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:8pt; color:#000000;">
+            <li styleclass="HowTo Numbered"><text styleclass="HowTo Bulleted">Click </text><text styleclass="T_Menu">Update Modified Text</text><text styleclass="HowTo Bulleted"> button</text><text styleclass="Image Caption">.</text></li>
+            <li styleclass="HowTo Numbered"><text styleclass="HowTo Bulleted">Click the </text><text styleclass="T_Menu">Reload Hints and Captions</text><text styleclass="HowTo Bulleted"> button , to update the text.</text></li>
+            <li styleclass="HowTo Numbered"><text styleclass="HowTo Bulleted">Click the Save Databases button to save the database to the new directory - see Step 1 above.</text></li>
+          </list>
+          <para styleclass="Body Text">Do steps 4 – 7 again and again for different dialogs and fields in the dialog.</para>
+          <para styleclass="HowTo Numbered"><text styleclass="HowTo Bulleted">Before you exit the dialog:</text></para>
+          <list id="1" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Numbered" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:8pt; color:#000000;">
+            <li styleclass="HowTo Numbered"><text styleclass="HowTo Bulleted">Click the </text><text styleclass="T_Menu">Save Databases</text><text styleclass="HowTo Bulleted"> button again to make sure the changes are as expected.</text></li>
+          </list>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass=" " style="text-align:left; text-indent:0px; margin-top:4px; margin-right:0px; margin-bottom:6px; margin-left:0px; line-height:1.00; background-color:transparent; white-space:normal; page-break-before:always; page-break-inside:auto; page-break-after:auto; border:none; tabstops:none;"></para>
+  </body>
+</topic>

@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" status="Under Construction" lasteditedby="Adam" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title translate="true">Reverse Engineering Cams</title>
+  <keywords>
+    <keyword translate="true">Referve Engineering Cams</keyword>
+    <keyword translate="true">Refurbishing Machines</keyword>
+  </keywords>
+  <body>
+    <header>
+      <para styleclass="Heading1"><text styleclass="Heading1" translate="true">Reverse Engineering Cams</text></para>
+    </header>
+    <para styleclass="alert"><text styleclass="alert" translate="true">DRAFT ONLY</text></para>
+    <para styleclass="Heading3_atocs_"><text styleclass="Heading3_atocs_" translate="true">How to Reverse Engineer Cams in MechDesigner</text></para>
+    <para styleclass="Body Text"><text styleclass="Body Text" style="font-weight:bold; font-style:italic;" translate="true">MechDesigner</text><text styleclass="Body Text" translate="true"> is the world&apos;s most flexible Cam Design Software. </text></para>
+    <para styleclass="Body Text"><text styleclass="Body Text" translate="true">However, it is very frequently the case that machines need to be rebuilt. Cams and other wear-parts may need to be replaced.</text></para>
+    <para styleclass="Body Text"><text styleclass="Body Text" translate="true">There is a need to Reverse Engineer the Cams because the coordinates of the original are not readily available.</text></para>
+    <para styleclass="Body Text"><text styleclass="Body Text" translate="true">Frequently, the goal is to replicate the original design. This may be perfectly satisfactory. </text></para>
+    <para styleclass="Body Text"><text styleclass="Body Text" translate="true">However, there is also an opportunity to improve the original cam design. The cam design improvement may afford a 20-40% increase in machine speed.</text></para>
+    <para styleclass="Body Text"><text styleclass="Body Text" translate="true">How is this possible?</text></para>
+    <para styleclass="Body Text HowTo"><text styleclass="Body Text HowTo" style="font-weight:bold; font-style:italic;" translate="true">PSMotion</text><text styleclass="Body Text HowTo" translate="true"> have extensive experience in improving the performance of packaging machines above that of the existing machine through the improvement of the motion and cam design.</text></para>
+    <para styleclass="Body Text"><text styleclass="Body Text" translate="true">Motion design improvements frequently offer the greatest machine performance improvement with less risk, cost and design time.</text></para>
+    <para styleclass="HowTo Numbered"><text styleclass="Body Text HowTo" translate="true">Cams may have been:</text></para>
+    <list id="4" type="ol" listtype="decimal" formatstring="%0:s." format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Numbered" style="font-family:'Segoe UI'; font-size:11pt; color:#000000;">
+      <li styleclass="HowTo Numbered"><text styleclass="Body Text HowTo" translate="true">Drawn and manufactured manually with simple lines and arcs</text></li>
+      <li styleclass="HowTo Numbered"><text styleclass="Body Text HowTo" translate="true">Drawn with only a few simple lines and arcs and manufactured on a simple NC machine that could use only a few lines and arcs.</text></li>
+      <li styleclass="HowTo Numbered"><text styleclass="Body Text HowTo" translate="true">Calculated with motion laws with constant-acceleration and deceleration laws.</text></li>
+    </list>
+    <para styleclass="HowTo Numbered"><text styleclass="Body Text HowTo" translate="true">None of these is state-of-the-art. These cam designs options induce vibrations needlessly.</text></para>
+    <para styleclass="Heading4 HowTo_atoc_"><text styleclass="Heading4 HowTo_atoc_" translate="true">Reverse Engineering a Cam requires a number of steps.</text></para>
+    <para styleclass="Body Text"><text styleclass="Body Text" translate="true">This paper shows the steps you can take using </text><text styleclass="Body Text" style="font-weight:bold; font-style:italic;" translate="true">MechDesigner</text><text styleclass="Body Text" translate="true"> to improve the performance of existing machines by improving the motion and cam design.</text></para>
+    <list id="5" type="ol" listtype="decimal" formatstring="%0:s." format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Numbered" style="font-family:'Segoe UI'; font-size:11pt; color:#000000;">
+      <li styleclass="HowTo Numbered"><text styleclass="HowTo Numbered" style="text-decoration:underline;" translate="true">Measure the Surface of the Original Cam</text></li>
+    </list>
+    <para styleclass="HowTo Numbered"><text styleclass="Body Text HowTo" translate="true">There are number of ways one may measure the original cam.</text></para>
+    <para styleclass="Body Text HowTo"><text styleclass="Body Text HowTo" translate="true">Typically, the coordinate-data is measured as X,Y or R,</text><text styleclass="Body Text HowTo" style="font-size:11pt;" translate="true">Θ</text><text styleclass="Body Text HowTo" style="font-size:12pt;" translate="true">.</text></para>
+    <para styleclass="Body Text HowTo"><text styleclass="Body Text HowTo" translate="true">The coordinate-data may or may not compensate for the probe diameter.</text></para>
+    <para styleclass="Body Text HowTo"><text styleclass="Body Text HowTo" translate="true">Typical tools include CMM machines and special rigs.</text></para>
+    <list id="5" type="ol" listtype="decimal" formatstring="%0:s." format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Numbered" style="font-family:'Segoe UI'; font-size:11pt; color:#000000;">
+      <li styleclass="HowTo Numbered"><text styleclass="HowTo Numbered" style="text-decoration:underline;" translate="true">Create a Graph of Cam Radius vs Cam Angle</text></li>
+    </list>
+    <para styleclass="Body Text HowTo"><text styleclass="Body Text HowTo" translate="true">The data may look smooth in a graph. However, when it is differentiated numerically it is clear that the data is noisy.</text></para>
+    <para styleclass="Body Text HowTo"><text styleclass="Body Text HowTo" translate="true">If the Cam is manufactured directly from the coordinate-data, it would be </text><text styleclass="Body Text HowTo" style="font-style:italic;" translate="true">&apos;bumpy&apos;</text><text styleclass="Body Text HowTo" translate="true">, or </text><text styleclass="Body Text HowTo" style="font-style:italic;" translate="true">&apos;wavy&apos;</text><text styleclass="Body Text HowTo" translate="true">.</text></para>
+    <list id="5" type="ol" listtype="decimal" formatstring="%0:s." format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Numbered" style="font-family:'Segoe UI'; font-size:11pt; color:#000000;">
+      <li styleclass="HowTo Numbered"><text styleclass="HowTo Numbered" style="text-decoration:underline;" translate="true">Create a function that approximates the original graph</text></li>
+    </list>
+    <para styleclass="Body Text HowTo"><text styleclass="Body Text HowTo" translate="true">To make the Cam &apos;smooth&apos; we fit a continuous curve to the Cam-Coordinates Data.</text></para>
+    <para styleclass="Body Text HowTo"><text styleclass="Body Text HowTo" translate="true">There are two mathematical functions that we could use.</text></para>
+    <list id="6" type="ul" listtype="bullet" formatstring="·" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+      <li styleclass="HowTo Bulleted"><text styleclass="HowTo Bulleted" translate="true">Polynomials</text></li>
+      <li styleclass="HowTo Bulleted"><text styleclass="HowTo Bulleted" translate="true">Harmonic Series</text></li>
+    </list>
+    <para styleclass="Body Text HowTo"><text styleclass="Body Text HowTo" translate="true">We have found the best way to recreate the graph is with a Harmonic Series.</text></para>
+    <list id="5" type="ol" listtype="decimal" formatstring="%0:s." format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Numbered" style="font-family:'Segoe UI'; font-size:11pt; color:#000000;">
+      <li styleclass="HowTo Numbered"><text styleclass="HowTo Numbered" style="text-decoration:underline;" translate="true">Use the curve to redefine the Cam</text></li>
+    </list>
+    <para styleclass="HowTo Numbered"><text styleclass="Body Text HowTo" translate="true">The curve is &apos;continuous&apos;. We can differentiate the curve to give velocity and acceleration. </text></para>
+    <list id="5" type="ol" listtype="decimal" formatstring="%0:s." format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Numbered" style="font-family:'Segoe UI'; font-size:11pt; color:#000000;">
+      <li styleclass="HowTo Numbered"><text styleclass="HowTo Numbered" style="text-decoration:underline;" translate="true">Add a kinematic-chain for the Cam and a Cam-Follower that is in continuous contact with the Cam</text><text styleclass="HowTo Numbered" translate="true">.</text></li>
+    </list>
+    <para styleclass="Body Text HowTo"><text styleclass="Body Text HowTo" translate="true">If you know the kinematic-chain details of the machine, then replicate it in </text><text styleclass="Body Text HowTo" style="font-weight:bold; font-style:italic;" translate="true">MechDesigner</text></para>
+    <para styleclass="Body Text HowTo"><text styleclass="Body Text HowTo" translate="true">If you do not know the kinematic-chain, then you must make a &apos;best guess&apos;. It is best to make a selection between a Translating Cam-Follower or a Swinging-Arm Cam-Follower. </text></para>
+    <para styleclass="Body Text HowTo"><text styleclass="Body Text HowTo" translate="true">Add a circular Cam-Follower to a:</text></para>
+    <list id="7" type="ul" listtype="bullet" formatstring="·" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+      <li styleclass="HowTo Bulleted"><text styleclass="HowTo Bulleted" translate="true">Slider for a Translating Cam-Follower. The Slider is usually be &apos;in-line&apos; with the center of the Cam</text></li>
+      <li styleclass="HowTo Bulleted"><text styleclass="HowTo Bulleted" translate="true">Rocker for a Swinging-Arm Cam-Follower. </text></li>
+      <list id="7" level="1" type="ul" listtype="bullet" formatstring="o" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="line-height:1.15; font-family:'Courier New'; font-size:11pt; color:#000000;">
+        <li styleclass="HowTo Bulleted" style="line-height:1.15;"><text styleclass="HowTo Bulleted" translate="true">Make the length of the swinging arm approximately 2 ∕ 3 the average radius of the Cam. </text></li>
+        <li styleclass="HowTo Bulleted" style="line-height:1.15;"><text styleclass="HowTo Bulleted" translate="true">Position the center of the swinging arm about 4</text><text styleclass="Body Text2-Note" translate="true"> ∕ 3</text><text styleclass="HowTo Bulleted" translate="true"> the average radius of cam from the center of the Cam.</text></li>
+      </list>
+    </list>
+    <list id="5" type="ol" listtype="decimal" formatstring="%0:s." format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Numbered" style="font-family:'Segoe UI'; font-size:11pt; color:#000000;">
+      <li styleclass="HowTo Numbered"><text styleclass="HowTo Numbered" style="font-weight:normal; text-decoration:underline;" translate="true">Use the &apos;Magnetic-Joint&apos; tool.</text></li>
+      <li styleclass="HowTo Numbered"><text styleclass="HowTo Numbered" style="font-weight:normal; text-decoration:underline;" translate="true">Cycle the Mechanism</text><text styleclass="HowTo Numbered" style="font-weight:normal;" translate="true">.</text></li>
+    </list>
+    <para styleclass="Body Text HowTo"><text styleclass="Body Text HowTo" translate="true">The Motion-Dimension FB is &apos;back-driven&apos; by the Magnetic-Joint so that it can &apos;record&apos; a motion given to it by the shape of the Cam and the Configuration of the Cam-Follower.</text></para>
+    <list id="5" type="ol" listtype="decimal" formatstring="%0:s." format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Numbered" style="font-family:'Segoe UI'; font-size:11pt; color:#000000;">
+      <li styleclass="HowTo Numbered"><text styleclass="HowTo Numbered" style="text-decoration:underline;" translate="true">Record the motion of the Cam-Follower with a Graph FB.</text></li>
+      <li styleclass="HowTo Numbered"><text styleclass="HowTo Numbered" translate="true">Transfer the motion of the Cam-Follower from the Graph FB to </text><text styleclass="HowTo Numbered" style="font-weight:bold; font-style:italic;" translate="true">MotionDesigner</text><text styleclass="HowTo Numbered" translate="true"> as a &apos;Z Raw Data&apos; Segment, and then convert this data to an &apos;Overlay Trace&apos;.</text></li>
+      <li styleclass="HowTo Numbered"><text styleclass="HowTo Numbered" translate="true">Recreate the motion in </text><text styleclass="HowTo Numbered" style="font-weight:bold; font-style:italic;" translate="true">MotionDesigner</text><text styleclass="HowTo Numbered" translate="true"> with the Motion-Laws that are the same as the original motion, if you can recognize them. Or, the closest fit. </text></li>
+      <li styleclass="HowTo Numbered"><text styleclass="HowTo Numbered" translate="true">Use the new motion to design a 2D-Cam with the same Cam-Follower configuration. You can compare the new Motion with the old, and also the profile of the Cam.</text></li>
+    </list>
+    <para styleclass="HowTo Numbered"><image src="ExampleCam.png" scale="86.22%" width="271" height="244" styleclass="Image Caption"></image></para>
+  </body>
+</topic>

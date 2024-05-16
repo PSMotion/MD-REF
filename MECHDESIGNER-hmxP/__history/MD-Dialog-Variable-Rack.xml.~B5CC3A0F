@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" modified="2023-04-09T10:15:57.267+01:00" lasteditedby="Adam" version="2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title>Dialog-Variable-Rack</title>
+  <keywords>
+    <keyword>Dialog<keyword>Variable-Rack</keyword></keyword>
+  </keywords>
+  <body>
+    <header>
+      <para styleclass="Heading1">Dialog-Variable-Rack</para>
+    </header>
+    <para styleclass="Heading2">THE VARIABLE RACK dialog</para>
+    <para styleclass="Body Text HowTo">See <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-How-to-Open-a-Dialog-Box">&apos;How to edit an Element&apos;</link> to open the Variable-Rack dialog.</para>
+    <para styleclass="Body Text HowTo"><table styleclass="Standard" rowcount="9" colcount="2">
+      <tr style="vertical-align:top">
+        <td colspan="2">
+          <para styleclass="Body Text">There are three buttons at the top of the dialog</para>
+          <list id="0" type="ul" listtype="bullet" formatstring="·" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:8pt; color:#000000;">
+            <li styleclass="HowTo Bulleted"><text styleclass="VariableName">Rebuild Profile button: </text></li>
+          </list>
+          <para styleclass="Body Text Howindent4bullets">If you edit any of the parameters in this dialog, or ANY other parameter in ANY other dialog, you <text style="font-weight:bold; color:#ff0000;">must </text><text style="font-weight:normal; color:#000000;">use the </text><text style="font-style:italic;">&apos;Rebuild Profile&apos;,</text> &apos;Rebuild Solids&apos; and &apos;Save STEP&apos; buttons.</para>
+          <list id="1" type="ul" listtype="bullet" formatstring="·" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:8pt; color:#000000;">
+            <li styleclass="HowTo Bulleted"><text styleclass="VariableName">Rebuild Solids button ...</text></li>
+            <li styleclass="HowTo Bulleted"><text styleclass="VariableName">Save &apos;STEP&apos;</text></li>
+          </list>
+          <para styleclass="Body Text Howindent4bullets">To save the surfaces in the STEP file format.</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td colspan="2">
+          <para styleclass="Normal"><image src="VR-Dialog-Box-Top.png" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:278px; border-right:none;">
+        </td>
+        <td style="border-left:none;">
+          <para styleclass="BodyText BI">GEAR TAB</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:278px;">
+          <para styleclass="Normal"><image src="VR-Dialog-Geartab-GearParams.png" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="Body Text"><text style="background-color:#f79646;">Gear Tooth Parameters</text> </para>
+          <para styleclass="Body Text"></para>
+          <para styleclass="Body Text"><text styleclass="VariableName">Pinion Tooth N: </text>The number of gear teeth on the Pinion.</para>
+          <para styleclass="Body Text"></para>
+          <para styleclass="BodyText BI"><text styleclass="VariableName">Normal Module:</text> <text styleclass="Body Text">See &apos;Normal Module&apos; , the Module using the Normal Pitch.</text></para>
+          <para styleclass="BodyText BI"></para>
+          <para styleclass="BodyText BI"><text styleclass="VariableName">Helix Angle, β : </text><text styleclass="Body Text">See Helix Angle.</text></para>
+          <para styleclass="BodyText BI"></para>
+          <para styleclass="Body Text"><text styleclass="VariableName">Pressure Angle Normal to Tooth,  αn </text><text styleclass="BodyText BI"> :</text> See Normal Pressure Angle</para>
+          <para styleclass="Body Text"></para>
+          <para styleclass="Body Text"><text styleclass="VariableName">Tooth Width, b </text><text styleclass="BodyText BI">:</text> This is the minimum working face-width of the pinion and rack gear.</para>
+          <para styleclass="Body Text"></para>
+          <para styleclass="Body Text"><text styleclass="VariableName">Left Right hand radio buttons : </text>Please select one of these.</para>
+          <para styleclass="BodyText BI"></para>
+          <para styleclass="BodyText BI"></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:278px;">
+          <para styleclass="Normal"><image src="VR-Dialog-Geartab-GearParams2.png" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="VariableName">Tooth center Angle: xxxx</para>
+          <para styleclass="Body Text"></para>
+          <para styleclass="BodyText BI"><text styleclass="VariableName">Pinion center Axis to Rack top:</text> <text styleclass="Body Text">Distance from the Pinion&apos;s rotating Axis to the Top face of the Rack</text></para>
+          <para styleclass="BodyText BI"></para>
+          <para styleclass="BodyText BI"><text styleclass="VariableName">Tooth Half Angle, β : </text><text styleclass="Body Text">The angle given by the half of the tooth width</text></para>
+          <para styleclass="BodyText BI"></para>
+          <para styleclass="VariableName">Involute Maximum Option : &apos;Stop At Top&apos; or &apos;Specify Diameter&apos;</para>
+          <para styleclass="Body Text"></para>
+          <para styleclass="Body Text"><text styleclass="VariableName">Maximum Involute Diameter : </text>xxxx</para>
+          <para styleclass="Body Text"></para>
+          <para styleclass="VariableName">Helix Lead :  Read Only </para>
+          <para styleclass="VariableName"></para>
+          <para styleclass="VariableName">Base Circle Diameter :  Read Only</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:278px;">
+        </td>
+        <td>
+          <para styleclass="BodyText BI">DISPLAY TAB</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:278px;">
+          <para styleclass="Normal"><image src="VR-Dialog-Geartab-DisplayParams2.png" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="Body Text"><text styleclass="VariableName">Axial Point Count: </text>Number of Data Points given in the display across the width of the Rack / Pinion</para>
+          <para styleclass="Body Text"></para>
+          <para styleclass="BodyText BI"><text styleclass="VariableName">Point Count per Profile: </text><text styleclass="Body Text">Number or Data Points for the complete profile </text></para>
+          <para styleclass="BodyText BI"></para>
+          <para styleclass="BodyText BI"><text styleclass="VariableName">Point Density :</text><text styleclass="Body Text"> xxx</text></para>
+          <para styleclass="BodyText BI"></para>
+          <para styleclass="VariableName">Section Profile Helix Angle:</para>
+          <para styleclass="Body Text"></para>
+          <para styleclass="Body Text"><text styleclass="VariableName">Display and Save Options:  </text><text style="font-weight:bold;"> </text>Radio buttons: Pinion ; Rack ; Both</para>
+          <para styleclass="Body Text"></para>
+          <para styleclass="Body Text"><text styleclass="VariableName">Display Kinematic or B-Spline Surfaces:   </text>Radio buttons: Kinematic ; B-Spline ; Both</para>
+          <para styleclass="Body Text"></para>
+          <para styleclass="VariableName">Pinion Color</para>
+          <para styleclass="VariableName">Pinion Color</para>
+          <para styleclass="BodyText BI"></para>
+          <para styleclass="BodyText BI"><text styleclass="VariableName">Modify Control Points for Interpolation :</text><text style="font-weight:normal;"> check-box</text></para>
+          <para styleclass="BodyText BI"><text style="font-weight:normal;">Use when...</text></para>
+          <para styleclass="Body Text"><text styleclass="VariableName">Extrapolate Surface: </text><text styleclass="BodyText BI" style="font-weight:normal;">check-box</text></para>
+          <para styleclass="Body Text"><text styleclass="BodyText BI" style="font-weight:normal;">Use when...</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:278px;">
+        </td>
+        <td>
+          <para styleclass="BodyText BI">B-SPLINE TAB</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:278px;">
+          <para styleclass="Body Text"><image src="VR-Dialog-Spline-B-SplineParams2.png" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="Separator">B-Spline Parameters</para>
+          <para styleclass="Body Text"></para>
+          <para styleclass="Body Text"><text styleclass="VariableName">Z Control Point Count: Number</text> of Data Points given in the display across the width of the Rack / Pinion</para>
+          <para styleclass="Body Text"></para>
+          <para styleclass="BodyText BI"><text styleclass="VariableName">X Control Point Count: </text><text styleclass="Body Text">Number or Data Points for the complete profile </text></para>
+          <para styleclass="BodyText BI"></para>
+          <para styleclass="BodyText BI"><text styleclass="VariableName">Re-sample B-spline Surface : </text><text styleclass="Body Text">Check-Box</text></para>
+          <para styleclass="BodyText BI"></para>
+          <para styleclass="VariableName">Upper Y Limit ( Distance from Pivot center )</para>
+          <para styleclass="VariableName"></para>
+          <para styleclass="VariableName">Lower Y Limit : ( Distance from Pivot )  </para>
+          <para styleclass="Body Text"></para>
+          <para styleclass="Body Text"></para>
+          <para styleclass="Body Text"></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Body Text HowTo"></para>
+  </body>
+</topic>

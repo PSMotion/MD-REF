@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" status="Under Construction" modified="2022-04-25T09:47:52.250+01:00" lasteditedby="Adam" version="2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title>Dialog: Funktions-Block: Punkt-Daten</title>
+  <keywords>
+    <keyword>Dialog:<keyword>Function-Block : Point-Data</keyword></keyword>
+    <keyword>Point Data dialog</keyword>
+  </keywords>
+  <body>
+    <header>
+      <para styleclass="Heading1">Dialog: Funktions-Block: Punkt-Daten</para>
+    </header>
+    <para styleclass="Heading2">Point-Data FB</para>
+    <para styleclass="SeeAlso">siehe <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Command-FB-Point-Data">Punkt-Daten-FB hinzufügen</link></para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="Body Text HowTo">Fügen Sie einen <text styleclass="Element">Punktdaten-FB</text> hinzu, um die Bewegung eines <text styleclass="Element">Punktes</text> in Bezug auf das <text styleclass="Element">Basisteil</text> zu messen.</para>
+    <para styleclass="Body Text HowTo">Seine drei Ausgangsanschlüsse geben, bezogen auf <text styleclass="HowTo Bulleted">die</text>&#32;<link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-Plane-Mechanism" styleclass="HowTo Bulleted">Mechanismusebene</link><text styleclass="HowTo Bulleted">,</text> die <text styleclass="Element">Punktwerte an</text>:</para>
+    <list id="0" type="ul" listtype="bullet" formatstring="&#232;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="3" styleclass="HowTo Bulleted" style="font-family:Wingdings; font-size:11pt; color:#000000;">
+      <li styleclass="HowTo Bulleted"><text styleclass="Body Text">die Bewegungswerte parallel zur X-Achse</text></li>
+      <li styleclass="HowTo Bulleted"><text styleclass="Body Text">Bewegungswerte parallel zur Y-Achse</text></li>
+      <li styleclass="HowTo Bulleted">Die Größe der Bewegungswerte<text styleclass="Body Text HowTo2"> ist gleich:</text></li>
+    </list>
+    <list id="1" type="ul" listtype="bullet" formatstring="&#183;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Arial; font-size:11pt; color:#000000;">
+      <list id="1" level="1" type="ul" listtype="bullet" formatstring="&#111;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:&apos;Courier New&apos;; font-size:11pt; color:#000000;">
+        <li styleclass="HowTo Bulleted"><text styleclass="VariableName">√(X2 + Y2)</text></li>
+      </list>
+    </list>
+    <para styleclass="Body Text"><text styleclass="Notes">Anmerkung: </text>Die<text styleclass="VariableName-IT">Bewegungswerte</text> umfassen die <text styleclass="VariableName">Position</text>, die <text styleclass="VariableName">Geschwindigkeit</text> und die <text styleclass="VariableName">Beschleunigung</text>.</para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="Heading3_atocs_" style="text-indent:-18px; margin-left:18px;">Dialogfenster Punktdaten FB öffnen</para>
+    <para styleclass="Body Text"><table styleclass="Default" rowcount="1" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:150px;">
+          <para styleclass="Image Caption"><image src="MD-GA-PointDataFB.png" scale="-99.90%" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="Body Text"><text styleclass="Body Table">Bearbeiten</text><text styleclass="VariableName">&#32;</text><text styleclass="Body Table" style="font-weight:normal; font-style:normal;">den </text><text styleclass="Element">FB Punktdaten</text><text styleclass="Body Table" style="font-weight:normal; font-style:normal;">:</text></para>
+          <para styleclass="Body Text HowTo"><table styleclass="PopupTable2" rowcount="1" colcount="1" style="background-color:#ffffff;">
+            <tr style="vertical-align:top">
+              <td style="border-top:none; border-right:none; border-bottom:none;">
+                <list id="2" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="B Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="B Bullets"><text styleclass="Body Text">Double-click the </text><text styleclass="Element">Point-Data FB</text> in the <text styleclass="Interface">graphic-area</text><text styleclass="VariableName">&#32;</text></li>
+                </list>
+                <para styleclass="VariableName-IT">- oder -</para>
+                <list id="3" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="B Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="B Bullets"><text styleclass="SeeAlso">Siehe </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-How-to-Open-a-Dialog-Box" styleclass="SeeAlso">Wie öffne ich ein Dialogfeld</link>?<text styleclass="VariableName">&#32;</text></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Body Table">Das <text styleclass="Element">Dialogfeld &quot;Punktdaten&quot;</text> ist nun geöffnet.</para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading3_atocs_" style="text-indent:-18px; margin-left:18px;">Punktdaten-Dialogfeld</para>
+    <para styleclass="Body Text HowTo"><table styleclass="Standard" rowcount="2" colcount="2" style="width:auto; head-row-background-color:#ffffff; alt-row-background-color:none;">
+      <thead style="vertical-align:top">
+        <td style="width:245px;">
+          <para styleclass="Normal"><image src="MD-Dialog-FB-PointData-0.ipp" align="left" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="Parameter-Header">Wählen Sie einen Punkt:</para>
+          <para styleclass="Body Text HowTo"><table styleclass="PopupTable2" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td style="border-top:none; border-right:none; border-bottom:none;">
+                <list id="4" type="ol" listtype="lower-alpha" formatstring="&#49;&#46;&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="B Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:10pt; font-weight:bold; color:#000000;">
+                  <li styleclass="B Bullets"><text style="font-style:italic;">&#32;</text><text style="font-style:normal;">Klicken Sie auf</text> einen <text styleclass="Element">Punkt</text> im <text styleclass="Interface">Grafikbereich</text></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+        </td>
+      </thead>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Normal"><image src="MD-Dialog-FB-PointData-1.ipp" align="left" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="Body Table">Wenn sich der richtige <text styleclass="Element">Punkt</text> in der Auswahlbox befindet.</para>
+          <para styleclass="Body Text HowTo"><table styleclass="PopupTable2" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td style="border-top:none; border-right:none; border-bottom:none;">
+                <list id="5" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="2" styleclass="B Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="B Bullets"><text style="font-style:normal;">Klicken Sie auf</text>&#32;<image src="OK-tiny-11-15.png" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Image Caption">&#32;</text> , um das <text styleclass="Element">Dialogfeld &quot;Punktdaten&quot;</text>zu schließen.<text styleclass="VariableName">&#32;</text></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading3_atocs_">To use the Point-Data FB </para>
+    <para styleclass="Body Text"><table styleclass="Default" rowcount="3" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:123px;">
+          <para styleclass="VariableName">Verwendung:</para>
+        </td>
+        <td>
+          <para styleclass="Body Table">Verbinden Sie einen Draht von seinem Ausgangsanschluss mit dem Eingangsanschluss <text styleclass="HowTo Numbered">eines </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Command-FB-Graph" styleclass="Element">Graph FB</link><text styleclass="HowTo Numbered"> - zeichnen Sie die Position, Geschwindigkeit und Beschleunigung des </text><text styleclass="Element">Punktes</text><text styleclass="HowTo Numbered"> in Richtung der X- und Y-Achse &#160;auf &#160;- </text><text styleclass="VariableName-IT">siehe auch: Top-Tip</text></para>
+          <para styleclass="Body Table">Verbinde einen Draht von seinem Ausgangsanschluss mit dem Eingangsanschluss eines <text styleclass="Element">Motion FBs</text> - verwende die Bewegung des <text styleclass="Element">Punktes</text> als unabhängige (X-Achse) für eine Bewegung.</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:123px;">
+          <para styleclass="VariableName">Top-Tipp :</para>
+        </td>
+        <td>
+          <para styleclass="Body Table">Um Position, Geschwindigkeit und Beschleunigung desselben Punktes in einem <text styleclass="Element">Diagramm</text> darzustellen <text styleclass="Element">FB</text>:</para>
+          <list id="6" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo Bulleted">Ziehen Sie <text styleclass="VariableName-IT">drei Drähte</text> von einem Ausgangsanschluss zu <text styleclass="VariableName-IT">drei verschiedenen Eingangsanschlüssen</text> eines <text styleclass="Element">Graph FB</text><text styleclass="VariableName">&#32;</text></li>
+            <li styleclass="Popup Box"><text styleclass="Body Text">Verwenden Sie die </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-FunctionBlock-Graph" anchor="YAxisDisplay" styleclass="Body Text">Anzeigeoptionen</link>der<link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-FunctionBlock-Graph" anchor="YAxisDisplay" styleclass="Body Text">Y-Achse</link><text styleclass="Body Text">, um die einzelnen Bewegungsableitungen auszuwählen.</text></li>
+          </list>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:123px;">
+          <para styleclass="VariableName">Siehe auch :</para>
+        </td>
+        <td>
+          <para styleclass="VariableName"><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Function-Blocks-Schematic-DataValuesChannels">Verbinden von FBs</link></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Body Text" style="page-break-before:always;"></para>
+  </body>
+</topic>

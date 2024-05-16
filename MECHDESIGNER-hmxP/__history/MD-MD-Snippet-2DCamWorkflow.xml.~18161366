@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" modified="2023-03-30T09:49:59.236+01:00" lasteditedby="Adam" version="2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title>MD-Snippet-2DCamWorkflow</title>
+  <body>
+    <header>
+      <para styleclass="Heading1">MD-Snippet-2DCamWorkflow</para>
+    </header>
+    <para styleclass="Heading4 Toggle_atocs_">2D-Cam: Work-flow</para>
+    <para styleclass="Body Text"><table styleclass="Default" rowcount="1" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <list id="0" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; color:#000080;">
+            <li styleclass="Bullets"><text styleclass="Parameter-Header" style="color:#ff0000;">YOU ARE HERE: &#160;</text><text styleclass="Body Text">Add a</text><text styleclass="Interface2">&#32;</text><text styleclass="Element">2D-Cam</text><text styleclass="SeeAlso"> - see </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Command-Add2DCam" styleclass="SeeAlso">Machine elements toolbar &gt; Add 2D-Cam</link></li>
+          </list>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="Body Text HowTo">IF the new <text styleclass="Element">2D-Cam</text> is a <text styleclass="VariableName">Conjugate-Cam</text><text styleclass="Body Text"> or a </text><text styleclass="VariableName">Groove-Cam </text>(or other <text styleclass="Interface">Body-Closed Cam</text>):</para>
+          <list id="1" type="ol" listtype="lower-alpha" formatstring="&#32;&#49;&#46;&#37;&#48;&#58;&#115;&#46;&#32;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo Bulleted">Add a <text styleclass="Element">Conjugate-Cam FB</text><text styleclass="VariableName"> -</text><text styleclass="SeeAlso"> see </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Command-AddConjugateCam-FB" styleclass="SeeAlso">Machine elements toolbar &gt; Add Conjugate Cam FB</link><text styleclass="VariableName">&#32;</text></li>
+            <li styleclass="Body Text">Edit the <text styleclass="Element">Conjugate-Cam FB</text> to add at least two <text styleclass="Element">2D-Cams</text> - <text styleclass="SeeAlso">see </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-Conjugate-Cam-FB" styleclass="SeeAlso">Dialogs: Conjugate-Cam dialog-box</link>. </li>
+          </list>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <list id="2" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="2" styleclass="Body Text" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="Body Text">Select the <text styleclass="Element-Header">2D-Cam</text> or the <text styleclass="Element-Header">Conjugate-Cam</text> as the Power Source for the Follower - <text styleclass="SeeAlso">see </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-ConfigurePowerSource" styleclass="SeeAlso">Dialogs &gt; Configure-Power Source</link><text styleclass="VariableName">&#32;</text></li>
+            <li styleclass="Body Text">Review the <text styleclass="Element-Header">2D-Cam</text><text styleclass="Interface2"> : </text><text styleclass="VariableName">Display, Properties, Life</text><text styleclass="Interface2">, ... - </text><text styleclass="SeeAlso">see </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-2DCam" styleclass="SeeAlso">Dialogs &gt; 2D-Cam Properties dialog-box</link><text styleclass="SeeAlso">&#32;</text><text styleclass="Interface2">&#32;</text></li>
+          </list>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <list id="3" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="4" styleclass="Body Text" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="Body Text">Add a <text styleclass="Element">Cam-Data FB</text> - <text styleclass="SeeAlso">see </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Command-AddFBCamData" styleclass="SeeAlso">Kinematic FBs &gt; Add Cam-Data FB</link><text styleclass="VariableName">&#32;</text></li>
+            <li styleclass="Bullets"><text styleclass="Body Text HowTo">Edit the </text><text styleclass="Element">Cam-Data FB</text><text styleclass="Body Text HowTo"> to link it to the </text><text styleclass="Element">2D-Cam-</text><text styleclass="VariableName"> - </text><text styleclass="SeeAlso">see </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-FunctionBlock-CamData" anchor="CAMDATAFB-LINKTO2DCAM" styleclass="SeeAlso">Dialog &gt;Cam-Data FB : Cam Analysis</link></li>
+          </list>
+          <list id="4" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="6" styleclass="Body Text" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; color:#000080;">
+            <li styleclass="Body Text"><text styleclass="Bullets">Connect wires from the </text><text styleclass="Element">Cam-Data FB</text><text styleclass="Bullets"> to a </text><text styleclass="Element">Graph FB</text><text styleclass="Bullets"> to analyse 5 parameters </text><text styleclass="VariableName"> - see </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-FunctionBlock-CamData" anchor="CAMDATAFB-LINKTO2DCAM" styleclass="SeeAlso">Dialog &gt;Cam-Data FB : Cam Analysis</link></li>
+            <li styleclass="Body Text">Edit the <text styleclass="Element">Cam-Data FB</text> again to Calculate the Cam-Coordinates<text styleclass="HowTo Bulleted"> - </text><text styleclass="SeeAlso">see </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-FunctionBlock-CamCoordinates" styleclass="SeeAlso">Dialog &gt; Cam-Data FB : Cam-Coordinates</link>&#32;</li>
+          </list>
+        </td>
+      </tr>
+    </table></para>
+  </body>
+</topic>

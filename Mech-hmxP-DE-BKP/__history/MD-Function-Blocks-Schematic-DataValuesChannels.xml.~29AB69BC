@@ -1,0 +1,325 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" modified="2022-06-05T17:26:09.946+01:00" lasteditedby="Adam" version="2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title>Function-Blocks | Connect, Parameter-Values, &amp; Channels</title>
+  <keywords>
+    <keyword>Function-Blocks<keyword>Data-Values and Data Channels</keyword></keyword>
+    <keyword>How to Connect Function-Blocks</keyword>
+  </keywords>
+  <body>
+    <header>
+      <para styleclass="Heading1">Function-Blocks | Connect, Parameter-Values, &amp; Channels</para>
+    </header>
+    <para styleclass="Heading3_atocs_">Funktions-Blöcke: Drähte und Steckverbinder</para>
+    <para styleclass="Body Text" style="text-align:center;"><image src="MD-FB-concept8ba.png" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"><caption><![CDATA[Schematic: Function-Block Wires and Connectors]]></caption></image></para>
+    <para styleclass="Body Text" style="text-align:center;"></para>
+    <para styleclass="Heading3_atocs_"><anchor id="HowtoConnectFBs"><keywords><keyword>How to<keyword>Connect Function-Blocks</keyword></keyword></keywords></anchor>VIDEO : Wie man Funktionsblöcke verbindet:<conditional-text type="IF" value="CHM"/></para>
+    <para styleclass="Body Text HowTo"><table styleclass="PopupTable" rowcount="1" colcount="1" style="width:240px; border-width:1px; border-spacing:0px; cell-border-width:0px; border-color:#993300; border-style:solid;">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Normal"><toggle type="picture" print-expanded="true" help-expanded="false" src-collapsed="ConnectingFB-1280x720tscproj.gif" src-expanded="ConnectingFB-1280x720tscproj.gif" scale="25.00%" width="320" height="180" styleclass="Image Caption" figurelistinclude="0"><caption><![CDATA[How to Connect FB]]></caption><title>How to Connect FB</title></toggle></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Body Text"><conditional-text type="END"/><conditional-text type="IF" value="HTML,EBOOK"/></para>
+    <para styleclass="Body Text HowTo"><table styleclass="PopupTable" rowcount="1" colcount="1" style="width:240px; border-width:1px; border-spacing:0px; cell-border-width:0px; border-color:#993300; border-style:solid;">
+      <tr style="vertical-align:top">
+        <td style="width:472px;">
+          <para styleclass="Normal"><video src="ConnectingFBs1280x720.mp4" width="1280px" height="720px" autostart="false" loop="false" showcontrols="true" playbutton="true" previewimage="ConnectingFBs1280x720_preview.jpg" scale="25.00%" styleclass="Image Caption"><title>How to Connect FBs</title><caption><![CDATA[How to Connect FBs]]></caption></video></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Body Text"><conditional-text type="END"/><conditional-text type="IF" value="PDF"/><link displaytype="text" defaultstyle="true" type="filelink" href="ConnectingFB-1280x720tscproj.gif">Double-click to watch Video Clip</link><conditional-text type="END"/></para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="Body Text"><anchor id="DataTypes" styleclass="VariableName"><keywords><keyword>Data-Channels<keyword>Data on Wires</keyword><keyword>Data: Wire Channels</keyword><keyword>Data: Units</keyword></keyword></keywords></anchor><text styleclass="Heading3_atocs_">Funktionssperren: Daten-Typ und Daten-Kanäle</text></para>
+    <para styleclass="Body Text HowTo">Each <text styleclass="VariableName-IT" style="font-style:normal;">Function-Block</text> output-connector outs data - which we call its <text styleclass="VariableName-IT" style="font-style:normal;">Data-Type.</text></para>
+    <para styleclass="Body Text HowTo">Each <text styleclass="VariableName-IT" style="font-style:normal;">Data-Type</text> has <text styleclass="VariableName">3</text>&#32;<text styleclass="VariableName-IT" style="font-style:normal;">Data-Channels.</text></para>
+    <para styleclass="Body Text HowTo"><text styleclass="Body Text">For example: </text></para>
+    <list id="0" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+      <li styleclass="HowTo Bulleted">The <text styleclass="VariableName">Data-Type</text> from a <text styleclass="Element">Motion FB</text> is the <text styleclass="VariableName">Motion Data-Type</text></li>
+      <li styleclass="HowTo Bulleted"><text styleclass="Body Text">The </text><text styleclass="VariableName">Data-Channels</text><text styleclass="Body Text"> are: </text><text styleclass="VariableName-IT" style="font-style:normal;">Position, Velocity and Acceleration</text><text styleclass="Body Text"> (Linear or Angular)</text></li>
+    </list>
+    <para styleclass="Heading4 Toggle_atocs_">Wires, Data-Channels , Data-Type and Units</para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="19" colcount="5" style="width:auto; cell-padding:2px; page-break-inside:auto; border-width:0px; border-spacing:0px; border-collapse:collapse; cell-border-width:1px; border-color:#000000; border-style:solid; background-color:none; head-row-background-color:#c0c0c0; alt-row-background-color:#ebebeb;">
+      <thead style="vertical-align:bottom">
+        <td style="width:22%;">
+          <para styleclass="Notes" style="text-align:center;">FB</para>
+          <para styleclass="Notes" style="text-align:center;">Output-Connector</para>
+        </td>
+        <td>
+          <para styleclass="Notes" style="text-align:center;">Data -Type</para>
+        </td>
+        <td>
+          <para styleclass="Notes" style="text-align:center;">Data-Channel 1 </para>
+          <para styleclass="Notes" style="text-align:center;">Data-Type &amp; Units</para>
+        </td>
+        <td>
+          <para styleclass="Notes" style="text-align:center;">Data-Channel 2</para>
+          <para styleclass="Notes" style="text-align:center;">Data-Type &amp; Units</para>
+        </td>
+        <td>
+          <para styleclass="Notes" style="text-align:center;">Data-Channel 3</para>
+          <para styleclass="Notes" style="text-align:center;">Data-Type &amp; Units</para>
+        </td>
+      </thead>
+      <tr style="vertical-align:middle">
+        <td style="width:22%; background-color:#f2f2f2;">
+          <para styleclass="Element" style="text-align:right;">Linear Motion FB</para>
+        </td>
+        <td style="vertical-align:middle; height:37px; background-color:#f2f2f2;">
+          <para styleclass="T_Menu" style="text-align:center;">Motion</para>
+        </td>
+        <td style="height:37px; background-color:#f2f2f2;">
+          <para styleclass="T_Menu" style="text-align:center;">Machine Angle</para>
+        </td>
+        <td style="height:37px; background-color:#f2f2f2;">
+          <para styleclass="T_Menu" style="text-align:center;">Machine Angular Velocity</para>
+        </td>
+        <td style="height:37px; background-color:#f2f2f2;">
+          <para styleclass="T_Menu" style="text-align:center;">Machine Angular Acceleration</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td rowspan="2" style="vertical-align:middle; width:22%;">
+          <para styleclass="Element" style="text-align:right;">Gearing FB</para>
+        </td>
+        <td rowspan="2" style="vertical-align:middle;">
+          <para styleclass="T_Menu" style="text-align:center;">Motion</para>
+        </td>
+        <td style="vertical-align:top;">
+          <para styleclass="T_Menu" style="text-align:center;">Position - mm</para>
+        </td>
+        <td style="vertical-align:top;">
+          <para styleclass="T_Menu" style="text-align:center;">Linear Velocity - mm/s</para>
+        </td>
+        <td style="vertical-align:top;">
+          <para styleclass="T_Menu" style="text-align:center;">Linear Acceleration - mm/s/s</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="vertical-align:top;">
+          <para styleclass="T_Menu" style="text-align:center;">Angle - deg</para>
+        </td>
+        <td style="vertical-align:top;">
+          <para styleclass="T_Menu" style="text-align:center;">Angular Velocity deg/s</para>
+        </td>
+        <td style="vertical-align:top;">
+          <para styleclass="T_Menu" style="text-align:center;">Angular Acceleration deg/s/s</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td rowspan="2" style="vertical-align:middle; width:22%;">
+          <para styleclass="Element" style="text-align:right;">Motion FB</para>
+        </td>
+        <td rowspan="2" style="vertical-align:middle;">
+          <para styleclass="T_Menu" style="text-align:center;"></para>
+        </td>
+        <td style="vertical-align:top;">
+          <para styleclass="T_Menu" style="text-align:center;">Position - mm</para>
+        </td>
+        <td style="vertical-align:top;">
+          <para styleclass="T_Menu" style="text-align:center;">Linear Velocity - mm/s</para>
+        </td>
+        <td style="vertical-align:top;">
+          <para styleclass="T_Menu" style="text-align:center;">Linear Acceleration - mm/s/s</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="vertical-align:top;">
+          <para styleclass="T_Menu" style="text-align:center;">Angle - deg</para>
+        </td>
+        <td style="vertical-align:top;">
+          <para styleclass="T_Menu" style="text-align:center;">Angular Velocity - rad/s</para>
+        </td>
+        <td style="vertical-align:top;">
+          <para styleclass="T_Menu" style="text-align:center;">Angular Acceleration - deg/s/s</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td rowspan="2" style="vertical-align:middle; width:22%;">
+          <para styleclass="Element" style="text-align:right;">Motion-Dimension FB</para>
+        </td>
+        <td rowspan="2" style="vertical-align:middle;">
+          <para styleclass="T_Menu" style="text-align:center;"></para>
+        </td>
+        <td style="vertical-align:top;">
+          <para styleclass="T_Menu" style="text-align:center;">Position (mm)</para>
+        </td>
+        <td style="vertical-align:top;">
+          <para styleclass="T_Menu" style="text-align:center;">Linear Velocity -mm/s </para>
+        </td>
+        <td style="vertical-align:top;">
+          <para styleclass="T_Menu" style="text-align:center;">Linear Acceleration - mm/s/s</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="vertical-align:top;">
+          <para styleclass="T_Menu" style="text-align:center;">Angle -deg</para>
+        </td>
+        <td style="vertical-align:top;">
+          <para styleclass="T_Menu" style="text-align:center;">Angular Velocity -rad/s</para>
+        </td>
+        <td style="vertical-align:top;">
+          <para styleclass="T_Menu" style="text-align:center;">Angular Acceleration - rad/s/s</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td rowspan="2" style="vertical-align:middle; width:22%;">
+          <para styleclass="Element" style="text-align:right;">Measurement FB</para>
+        </td>
+        <td rowspan="2" style="vertical-align:middle;">
+          <para styleclass="T_Menu" style="text-align:center;"></para>
+        </td>
+        <td style="vertical-align:top;">
+          <para styleclass="T_Menu" style="text-align:center;">Position - mm</para>
+        </td>
+        <td style="vertical-align:top;">
+          <para styleclass="T_Menu" style="text-align:center;">Linear Velocity - mm/s</para>
+        </td>
+        <td style="vertical-align:top;">
+          <para styleclass="T_Menu" style="text-align:center;">Linear Acceleration - mm/s/s</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="vertical-align:top;">
+          <para styleclass="T_Menu" style="text-align:center;">Angle -deg</para>
+        </td>
+        <td style="vertical-align:top;">
+          <para styleclass="T_Menu" style="text-align:center;">Angular Velocity -rad/s</para>
+        </td>
+        <td style="vertical-align:top;">
+          <para styleclass="T_Menu" style="text-align:center;">Angular Acceleration - rad/s/s</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="vertical-align:middle; width:22%;">
+          <para styleclass="Element" style="text-align:right;">Point FB</para>
+        </td>
+        <td style="vertical-align:middle;">
+          <para styleclass="T_Menu" style="text-align:center;"></para>
+        </td>
+        <td style="vertical-align:top;">
+          <para styleclass="T_Menu" style="text-align:center;">X Position mm</para>
+          <para styleclass="T_Menu" style="text-align:center;">Y Position - mm</para>
+          <para styleclass="T_Menu" style="text-align:center;">Magnitude - mm</para>
+        </td>
+        <td style="vertical-align:top;">
+          <para styleclass="T_Menu" style="text-align:center;">X Velocity - mm/s</para>
+          <para styleclass="T_Menu" style="text-align:center;">Y Velocity - mm/s</para>
+          <para styleclass="T_Menu" style="text-align:center;">Mag. Velocity- mm/s</para>
+        </td>
+        <td style="vertical-align:top;">
+          <para styleclass="T_Menu" style="text-align:center;">X Acceleration - mm/s/s</para>
+          <para styleclass="T_Menu" style="text-align:center;">Y Acceleration - mm/s/s</para>
+          <para styleclass="T_Menu" style="text-align:center;">Mag. Acceleration - mm/s/s</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td rowspan="4" style="vertical-align:middle; width:22%;">
+          <para styleclass="Element" style="text-align:right;">Cam-Data FB</para>
+        </td>
+        <td rowspan="4" style="vertical-align:middle;">
+          <para styleclass="T_Menu" style="text-align:center;">Data for Inside and Outside Cam</para>
+        </td>
+        <td style="vertical-align:top;">
+          <para styleclass="T_Menu" style="text-align:center;">Pressure Angle - deg</para>
+        </td>
+        <td style="vertical-align:top;">
+          <para styleclass="T_Menu" style="text-align:center;">Contact Pressure Angel 1 - deg</para>
+        </td>
+        <td style="vertical-align:top;">
+          <para styleclass="T_Menu" style="text-align:center;">Contact Pressure Angle 2 - deg</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="vertical-align:top;">
+          <para styleclass="T_Menu" style="text-align:center;">Radius-of-Curvature Cam 1</para>
+        </td>
+        <td style="vertical-align:top;">
+          <para styleclass="T_Menu" style="text-align:center;">Radius-of-Curvature Cam 2</para>
+        </td>
+        <td style="vertical-align:top;">
+          <para styleclass="T_Menu" style="text-align:center;">----</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="vertical-align:top;">
+          <para styleclass="T_Menu" style="text-align:center;">Contact Force Total - N</para>
+        </td>
+        <td style="vertical-align:top;">
+          <para styleclass="T_Menu" style="text-align:center;">Contact Force, X component - N</para>
+        </td>
+        <td style="vertical-align:top;">
+          <para styleclass="T_Menu" style="text-align:center;">Contact Force, Y component</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="vertical-align:top;">
+          <para styleclass="T_Menu" style="text-align:center;">Shear Stress Cam 1 - N/mm<text style="font-size:7pt; vertical-align:super;">2</text></para>
+        </td>
+        <td style="vertical-align:top;">
+          <para styleclass="T_Menu" style="text-align:center;">Shear Stress Cam 2 &#160;- N/mm<text style="font-size:7pt; vertical-align:super;">2</text></para>
+        </td>
+        <td style="vertical-align:top;">
+          <para styleclass="T_Menu" style="text-align:center;">------</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td rowspan="3" style="vertical-align:middle; width:22%;">
+          <para styleclass="Element" style="text-align:right;">Force-Data FB</para>
+        </td>
+        <td rowspan="3" style="vertical-align:middle;">
+          <para styleclass="T_Menu" style="text-align:center;">Force</para>
+        </td>
+        <td style="vertical-align:top;">
+          <para styleclass="T_Menu" style="text-align:center;">Joint Total Force / Torque</para>
+        </td>
+        <td style="vertical-align:top;">
+          <para styleclass="T_Menu" style="text-align:center;">X Component - N</para>
+        </td>
+        <td style="vertical-align:top;">
+          <para styleclass="T_Menu" style="text-align:center;">Y Component - N</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="vertical-align:top;">
+          <para styleclass="T_Menu" style="text-align:center;">Cam Contact Force - N</para>
+        </td>
+        <td style="vertical-align:top;">
+          <para styleclass="T_Menu" style="text-align:center;">X Component - N</para>
+        </td>
+        <td style="vertical-align:top;">
+          <para styleclass="T_Menu" style="text-align:center;">Y Component &#160;- N</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="vertical-align:top;">
+          <para styleclass="T_Menu" style="text-align:center;">Spring Force - N</para>
+        </td>
+        <td style="vertical-align:top;">
+          <para styleclass="T_Menu" style="text-align:center;">X Component - N</para>
+        </td>
+        <td style="vertical-align:top;">
+          <para styleclass="T_Menu" style="text-align:center;">Y Component - N</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="vertical-align:middle; width:22%;">
+          <para styleclass="Element" style="text-align:right;">Math FB</para>
+        </td>
+        <td style="vertical-align:middle;">
+          <para styleclass="T_Menu" style="text-align:center;">Force or Motion</para>
+        </td>
+        <td style="vertical-align:top;">
+          <para styleclass="T_Menu" style="text-align:center;">Output Data Type -Units</para>
+        </td>
+        <td style="vertical-align:top;">
+          <para styleclass="T_Menu" style="text-align:center;">Outer Data Type - Units</para>
+        </td>
+        <td style="vertical-align:top;">
+          <para styleclass="T_Menu" style="text-align:center;">Outer Data Type- Units</para>
+        </td>
+      </tr>
+    </table></para>
+  </body>
+</topic>

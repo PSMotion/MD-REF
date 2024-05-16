@@ -1,0 +1,192 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" modified="2022-09-24T11:52:06.319+01:00" lasteditedby="Adam" version="2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title>Gear-Pair2</title>
+  <body>
+    <header>
+      <para styleclass="Heading1">Gear-Pair2</para>
+    </header>
+    <para styleclass="Heading2">Gear-Pair</para>
+    <para styleclass="SeeAlso">See: <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Command-AddGear-Pair">Add Gear-Pair</link></para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="Heading3_atocs_">Terminology and definitions:</para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="5" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:150px;">
+          <para styleclass="Popup Box2" style="text-align:right;">Gear Mesh:</para>
+        </td>
+        <td>
+          <para styleclass="Popup Box">Inter-locking gear-teeth that allow a torque and motion to be transmitted from one shaft to a different shaft.</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:150px;">
+          <para styleclass="Popup Box2" style="text-align:right;">External Gear Mesh : </para>
+        </td>
+        <td>
+          <para styleclass="Popup Box">The gears have teeth that engage and diverge out from their centers-of-rotation.</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:150px;">
+          <para styleclass="Popup Box2" style="text-align:right;">Internal Mesh : </para>
+        </td>
+        <td>
+          <para styleclass="Popup Box">One of the gears has teeth that converge in to its center-of-rotation.</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:150px;">
+          <para styleclass="Popup Box2" style="text-align:right;">Simple Gear-Pair : </para>
+        </td>
+        <td>
+          <para styleclass="Popup Box">Two gears that rotate about fixed centers.</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:150px;">
+          <para styleclass="Popup Box2" style="text-align:right;">Epicyclic Gear-Pair : </para>
+        </td>
+        <td>
+          <para styleclass="Popup Box">One gear orbits around the center of the other gear.</para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="Heading4 Toggle_atocs_">How to open the Gear-Pair dialog-box</para>
+    <para styleclass="Body Text"><table styleclass="Standard" rowcount="1" colcount="2" style="width:auto; head-row-background-color:#ffffff; alt-row-background-color:none;">
+      <thead style="vertical-align:top">
+        <td style="width:240px; border-right:none;">
+          <para styleclass="Normal"><image src="MD-GEARPAIR-EDIT.ipp" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td style="border-left:none;">
+          <para styleclass="Body Text">Edit the<text styleclass="Element"> Gear-Pair</text><text style="font-weight:normal; font-style:normal;">:</text></para>
+          <para styleclass="Body Text HowTo"><table styleclass="PopupTable2" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td style="border-top:none; border-right:none; border-bottom:none;">
+                <list id="0" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="B Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="B Bullets"><text styleclass="Body Text">Double-click a </text><text styleclass="Element">Gear-Pair </text><text styleclass="Body Text">in the </text><text styleclass="Interface">graphic-area</text><text styleclass="Body Text"> or </text><text styleclass="Interface">Assembly-Tree</text><text styleclass="Body Text">.</text><text styleclass="VariableName">&#32;</text></li>
+                </list>
+                <para styleclass="VariableName-IT">- or -</para>
+                <list id="1" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="B Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="B Bullets"><text styleclass="SeeAlso">See </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-How-to-Open-a-Dialog-Box" styleclass="SeeAlso">How to Open a Dialog-Box</link><text styleclass="VariableName"> &#160;</text></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Body Text HowTo"><text styleclass="Normal">The </text><text styleclass="Element">Gear-Pair dialog-box</text><text styleclass="Normal"> is now open.</text></para>
+        </td>
+      </thead>
+    </table></para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="Heading3_atocs_"><anchor id="Gear-PairDialog"><keywords><keyword>Gear-Pair dialog-box</keyword></keywords></anchor>Gear-Pair dialog-box</para>
+    <para styleclass="Body Text"><table styleclass="Standard" rowcount="1" colcount="2" style="width:auto;">
+      <tr style="vertical-align:top">
+        <td style="width:253px;">
+          <para styleclass="Normal" style="text-align:left;"><image src="MD-Dialog-GearPair.png" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="Body Text">There are three tabs in the <text styleclass="Element">Gear-Pair dialog-box</text>. </para>
+          <para styleclass="Heading4 Toggle_atocs_2">Define tab</para>
+          <para styleclass="Heading4 Toggle_atocs_2">Adjustments tab</para>
+          <para styleclass="Heading4 Toggle_atocs_2">Parameters tab</para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading4 Toggle_atocs_">Define tab</para>
+    <para styleclass="Body Text HowTo" style="text-indent:-36px; margin-left:60px;"><anchor id="DIALOG-GEARPAIR-DEFINE-NOTEETH"><keywords><keyword>Gear-Pair dialog-box<keyword>Define tab</keyword><keyword>Gear Mesh and # Teeth</keyword></keyword></keywords></anchor><image src="tog_plus.gif" scale="100.00%" styleclass="Separator-Header" figurelistinclude="0"></image><tab /><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" src-collapsed="tog_plus.gif" src-expanded="tog_minus.gif" styleclass="Separator-Header"><caption><![CDATA[ Gear Mesh and # Teeth   ]]></caption></toggle></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Standard" rowcount="1" colcount="2" style="width:auto;">
+      <tr style="vertical-align:top">
+        <td style="width:239px;">
+          <para styleclass="Normal"><image src="MD-Dialog-GearPair-Define-MeshandTeeth.png" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="Parameter-Header">Mesh<text styleclass="VariableName-small"> - see Terminology above</text></para>
+          <list id="2" type="ul" listtype="bullet" formatstring="&#111;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="2" styleclass="HowTo Bulleted" style="margin-top:0px; margin-bottom:0px; line-height:1.00; font-family:&apos;Courier New&apos;; font-size:10pt; color:#333399;">
+            <li styleclass="HowTo Bulleted" style="margin-top:0px; margin-bottom:0px; line-height:1.00;"><text styleclass="Parameter">External</text></li>
+          </list>
+          <para styleclass="Body Text HowTo" style="margin-bottom:0px;">- or -</para>
+          <list id="3" type="ul" listtype="bullet" formatstring="&#111;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="margin-top:0px; margin-bottom:0px; line-height:1.00; font-family:&apos;Courier New&apos;; font-size:10pt; color:#333399;">
+            <li styleclass="HowTo Bulleted" style="margin-top:0px; margin-bottom:0px; line-height:1.00;"><text styleclass="Parameter">Internal</text></li>
+          </list>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="Normal"><text styleclass="VariableName"> Read-Only</text></para>
+          <para styleclass="Body Text HowTo"><text styleclass="Parameter-Header">Center Distance</text><text styleclass="VariableName"> -</text></para>
+          <para styleclass="Body Text HowTo"> See also <text styleclass="Parameter">center-distance calculation</text> in <link displaytype="text" defaultstyle="true" type="topiclink" href="" anchor="DIALOG-GEARPAIR-ADJUSTMENTS">Adjustments tab</link></para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="BodyText Bold"><text styleclass="Parameter-Header">Number-of-Teeth, z</text><text styleclass="Parameter-Header" style="font-size:10pt; vertical-align:sub;">1</text><text styleclass="Parameter">&#32;</text><text styleclass="VariableName">(Minimum =5)</text></para>
+          <para styleclass="Body Text HowTo">The <text styleclass="Parameter">number of-teeth</text> on the input-gear - called the Driving-Gear</para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="BodyText Bold"><text styleclass="Parameter-Header">Number-of-Teeth, z</text><text styleclass="Parameter-Header" style="font-size:10pt; vertical-align:sub;">2</text><text styleclass="VariableName"> (Minimum = 5)</text></para>
+          <para styleclass="Body Text HowTo">The <text styleclass="Parameter">number of-teeth</text> on the Driven-Part - or the output from the <text styleclass="Element">Gear-Pair</text>.</para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Body Text HowTo" style="text-indent:-36px; margin-left:60px;"><anchor id="DIALOG-GEAR-PAIR-DEFINE-SEGPARMAETERS"><keywords><keyword>Gear-Pair dialog-box<keyword>Gear Segmentation Parameters</keyword></keyword></keywords></anchor><image src="tog_plus.gif" scale="100.00%" styleclass="Separator-Header" figurelistinclude="0"></image><tab /><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" src-collapsed="tog_plus.gif" src-expanded="tog_minus.gif" styleclass="Separator-Header"><caption><![CDATA[ Gear Segmentation Parameters ]]></caption></toggle></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Standard" rowcount="1" colcount="2" style="width:auto;">
+      <tr style="vertical-align:top">
+        <td style="width:239px;">
+          <para styleclass="Normal" style="text-align:right;"><image src="MD-Dialog-GearPair-Define-GearSegment.png" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="Separator-Header"></para>
+          <para styleclass="Body Text"><text styleclass="Notes">Notes: </text></para>
+          <para styleclass="Body Text HowTo">A <text styleclass="Parameter-Header">Gear-Segment</text> is a gear that must oscillate.</para>
+          <para styleclass="Body Text HowTo"><text styleclass="VariableName">Gear 1</text> or <text styleclass="VariableName">Gear 2</text> can be a <text styleclass="Parameter-Header">Gear-Segment</text></para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="Parameter-Header">Gear # Segmentation </para>
+          <list id="4" type="ul" listtype="bullet" formatstring="&#164;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Wingdings; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted"><text styleclass="Parameter-Header">Complete Gear</text><text styleclass="Body Text"> - a normal gear</text></li>
+            <li styleclass="Parameter-Header">Gear Segment<text styleclass="Body Text"> - to reduce the number of teeth.</text></li>
+          </list>
+          <para styleclass="Body Text">To reduce the number-of-teeth of Gear 1 or Gear 2 </para>
+          <list id="5" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Numbered" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo Numbered">Click <text styleclass="Parameter">⊚ Gear-Segment</text><text styleclass="VariableName">&#32;</text></li>
+            <li styleclass="Body Text">Edit the <text styleclass="Parameter">Start Angle</text>&#32;<text styleclass="VariableName">: Minimum = 0, Maximum = 360</text></li>
+            <li styleclass="Body Text">Edit the <text styleclass="Parameter">Segment Range</text><text styleclass="VariableName"> : Minimum = 0; Maximum 360</text></li>
+          </list>
+          <para styleclass="Body Text HowTo"><text styleclass="Body Text">Each Gear will have an integer number-of-teeth. </text></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading4 Toggle_atocs_"><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" src-collapsed="btn_addkeyword.bmp" src-expanded="btn_delkeyword.bmp" src-print="none"><caption><![CDATA[Adjustments tab]]></caption></toggle></para>
+    <para styleclass="Body Text HowTo" style="text-indent:-36px; margin-left:60px;"><anchor id="DIALOG-GEARPAIR-ADJUSTMENTS" styleclass="Heading4 HowTo_atoc_"><keywords><keyword>Gear-Pair dialog<keyword>Adjustments</keyword></keyword></keywords></anchor><image src="tog_plus.gif" scale="100.00%" styleclass="Separator-Header" figurelistinclude="0"></image><tab /><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" src-collapsed="tog_plus.gif" src-expanded="tog_minus.gif" styleclass="Separator-Header"><caption><![CDATA[ Adjustments  ]]></caption></toggle></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Standard" rowcount="2" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:239px;">
+          <para styleclass="Normal" style="text-align:right;"><image src="MD-Dialog-GearPair-Adjust-Adjust.png" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="Parameter-Header">Gear-Slip (degrees)</para>
+          <para styleclass="Body Text HowTo">These parameters move <text styleclass="VariableName-IT">Gear 1</text> and <text styleclass="VariableName-IT">Gear 2</text> around the rotating center of each <text styleclass="Element">Part</text> at the <text styleclass="Element">Pin-Joint</text>.</para>
+          <para styleclass="Body Text HowTo"><text style="font-weight:normal;">This parameter rotates the gear teeth, not the </text><text styleclass="Element">Part</text><text style="font-weight:normal;">.</text></para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="Body Table">&#32;<text styleclass="Interface2">Top-Tip</text>:<text styleclass="Body Text"> To keep the gears in mesh: </text></para>
+          <para styleclass="VariableName-indent">Gear-Slip 2 = –Z1</para>
+          <para styleclass="VariableName-indent"> ( Z2 × Gear-Slip 1)</para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td colspan="2">
+          <para styleclass="Parameter-Header">Clearance (move gears apart)</para>
+          <para styleclass="Body Text HowTo"><text style="font-weight:normal;">This parameter increases or decreases the length of the Line between the centres of the two Gears.</text></para>
+          <para styleclass="Body Text HowTo"><text style="font-weight:normal;">Usually, </text><text styleclass="Parameter">Clearance</text><text style="font-weight:normal;"> is a +</text><text style="font-size:10pt; font-weight:normal; vertical-align:baseline;">ve</text><text style="font-weight:normal;"> value for External Gears, and a -</text><text style="font-size:10pt; font-weight:normal; vertical-align:baseline;">ve</text><text style="font-weight:normal;"> value for Internal Gears.</text></para>
+          <para styleclass="Body Text HowTo"><text style="font-weight:normal;">You need a small amount of clearance for tolerances that you normally get in Gear-Teeth.</text></para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="Body Text"><text styleclass="Parameter-Header">center-Distance Calculation</text></para>
+          <para styleclass="Body Text HowTo">If <text styleclass="Parameter">External Mesh</text><text styleclass="VariableName-small"> = Clearance </text><text styleclass="VariableName-small" style="font-size:12pt;">+ </text><text styleclass="VariableName-small">(Module</text><text styleclass="VariableName-small" style="font-size:12pt;">×</text><text styleclass="VariableName-small">(Number-of-Teeth Gear1</text><text styleclass="VariableName-small" style="font-size:12pt;">+</text><text styleclass="VariableName-small">Number-of-Teeth Gear2)</text><text styleclass="VariableName-small" style="font-size:12pt;">÷</text><text styleclass="VariableName-small">2)</text></para>
+          <para styleclass="Body Text HowTo">If <text styleclass="Parameter">Internal Mesh</text><text styleclass="VariableName-small"> = Clearance </text><text styleclass="VariableName-small" style="font-size:12pt;">+ </text><text styleclass="VariableName-small">(Module</text><text styleclass="VariableName-small" style="font-size:12pt;">×</text><text styleclass="VariableName-small">(Number-of-Teeth Gear1</text><text styleclass="VariableName-small" style="font-size:12pt;">+</text><text styleclass="VariableName-small">Number-of-Teeth Gear2)</text><text styleclass="VariableName-small" style="font-size:12pt;">÷</text><text styleclass="VariableName-small">2)</text></para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="VariableName">Notes: Recommend Clearance - approximately.</para>
+          <list id="6" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:8pt; color:#000000;">
+            <li styleclass="HowTo Bulleted"><text style="font-weight:normal;">Minimum: 0.006 × (center-Distance)</text><text style="font-size:8pt; font-weight:normal; vertical-align:super;">0.5</text></li>
+            <li styleclass="HowTo Bulleted"><text styleclass="Body Text HowTo" style="font-weight:normal;">Maximum: 0.024 × (center-Distance)</text><text styleclass="Body Text HowTo" style="font-size:8pt; font-weight:normal; vertical-align:super;">0.5</text></li>
+          </list>
+          <para styleclass="Body Text HowTo"><text style="font-weight:normal;">An alternative way to get a small amount of clearance is to reduce the size of the gear teeth and not to change the center-distance.</text></para>
+          <para styleclass="Body Text HowTo"><text style="font-weight:normal;">We do </text><text styleclass="VariableName-IT">not</text><text style="font-weight:normal;"> offer this design parameter.</text></para>
+        </td>
+      </tr>
+    </table></para>
+  </body>
+</topic>

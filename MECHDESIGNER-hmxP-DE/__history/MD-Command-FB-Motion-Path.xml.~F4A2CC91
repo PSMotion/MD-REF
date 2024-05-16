@@ -1,0 +1,193 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" status="Under Construction" modified="2022-09-14T10:20:54.674+01:00" lasteditedby="Adam" version="2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title>Add Bewegungs-pfad FB</title>
+  <meta name="DESCRIPTION" translate="true" value="A Motion-Path FB has many uses. It can define the path of a Robot, a Belt or Chain, and also provide the input for Ram-R and Ram-P Dyads. Example applications of the Ram-R dyad is the extending cylinder that are used by Scissor-Lifts." />
+  <keywords>
+    <keyword>Add<keyword>Function-Block: Motion-Path</keyword></keyword>
+    <keyword>Function-Block<keyword>Motion-Path FB</keyword></keyword>
+    <keyword>Motion-Path Function-Block</keyword>
+    <keyword>Ram-P</keyword>
+    <keyword>Ram-R (Scissor-Lift Cyclinder)</keyword>
+    <keyword>Robot-Path</keyword>
+  </keywords>
+  <body>
+    <header>
+      <para styleclass="Heading1">Add Bewegungs-pfad FB</para>
+    </header>
+    <para styleclass="Heading3_atocs_">Motion-Path Function-Block</para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="SeeAlso">See also <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-FunctionBlock-MotionPath">Motion-Path dialog-box</link></para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="Heading4 Toggle_atocs_">Terminologie</para>
+    <para styleclass="Body Text"><table styleclass="Default" rowcount="3" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:150px;">
+          <para styleclass="Element" style="text-align:right;">Bewegung-Pfad FB : </para>
+        </td>
+        <td>
+          <para styleclass="Popup Box">Ein <text styleclass="Popup Box-Elements">Funktionsbaustein</text>, der einen Bewegungspunkt zu einem Skizzenelement in einem <text styleclass="VariableName-small">Skizzenpfad</text> hinzufügt.</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:150px;">
+          <para styleclass="Interface" style="text-align:right;">Bewegungs-Punkt :<text styleclass="Popup Box2">&#32;</text></para>
+        </td>
+        <td>
+          <para styleclass="Popup Box">Ein <text styleclass="Popup Box2">Motion-Point</text>, der sich entlang des <text styleclass="VariableName-small">Skizzenpfades</text> mit den Bewegungswerten bewegt, die am Eingangsanschluss des <text styleclass="Popup Box-Elements">Motion-Path FBs</text> anliegen. </para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:150px;">
+          <para styleclass="Popup Box2" style="text-align:right;"><text styleclass="VariableName-small">Skizzenpfad</text> : </para>
+        </td>
+        <td>
+          <para styleclass="Popup Box">Ein <text styleclass="VariableName-small">Skizzenpfad</text> ist eine Reihe von <text styleclass="VariableName-small">Skizzenelementen</text>, die Ende an Ende miteinander verbunden sind. Die <text styleclass="Popup Box-Elements">Punkte</text> ( Start- und <text styleclass="Popup Box2">Endpunkte</text>), die jedes benachbarte <text styleclass="VariableName-small">Skizzenelement</text> verbinden , werden &#160;zu <text styleclass="Normal"> einem</text><text styleclass="Popup Box-Elements">Punkt</text><text styleclass="VariableName-small">zusammengefügt</text>. </para>
+          <para styleclass="Popup Box">Der Skizzenpfad kann sein:</para>
+          <list id="0" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Popup Box" style="font-family:Symbol; font-size:10pt; color:#000000;">
+            <li styleclass="Popup Box">a single sketch-element (-)</li>
+            <li styleclass="Popup Box">open (C) or closed (0)</li>
+            <li styleclass="Popup Box">crossed (8) or not-crossed (0) </li>
+          </list>
+          <para styleclass="Popup Box">The <text styleclass="VariableName-small">sketch-path</text> cannot have a branch. <text styleclass="Popup Box-Elements">Point</text> in which three or more <text styleclass="Popup Box-Elements">Points</text> are merged into one <text styleclass="Popup Box-Elements">Point</text>.</para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading4 Toggle_atocs_">Anwendungen eines Bewegung-Pfad FB:</para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="1" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Text">Definieren Sie den Weg eines Roboters.</para>
+          <para styleclass="Body Text">Definieren Sie den Verlauf einer Kette oder eines Bandes </para>
+          <para styleclass="Body Text">Definieren Sie die Bewegung von <text styleclass="Element">Ram-R-</text> und <text styleclass="Element">Ram-P </text><text styleclass="Interface">Dyaden</text>.</para>
+          <para styleclass="Body Text">Eine Anwendung der <text styleclass="Element">Ram-R-Dyade</text> ist das Modell eines Ausfahrzylinders, der eine Scherenhebebühne anheben kann.</para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading3_atocs_">Add Motion-Path FB</para>
+    <para styleclass="Normal"><table styleclass="Default" rowcount="5" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:68px;">
+          <para styleclass="VariableName" style="text-align:right;"><image src="MD-Icon-FB-MotionPath.png" scale="100.00%" figurelistinclude="0"><title>Add Motion-Path FB</title></image></para>
+        </td>
+        <td style="vertical-align:middle;">
+          <para styleclass="T_Menu"><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Command-FB-Kinematics">Symbolleiste Kinematik FB</link> &gt; Bewegungs-pfad FB</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:middle">
+        <td style="width:68px;">
+          <para styleclass="VariableName">Menu : </para>
+        </td>
+        <td>
+          <para styleclass="T_Menu">Menü hinzufügen &gt; Bewegung-Pfad FB hinzufügen</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:68px;">
+          <para styleclass="VariableName">Add : </para>
+        </td>
+        <td>
+          <list id="1" type="ol" listtype="decimal" formatstring="&#83;&#84;&#69;&#80;&#32;&#37;&#48;&#58;&#115;&#58;&#32;" format-charset="DEFAULT_CHARSET" levelreset="false" legalstyle="false" startfrom="1" styleclass="HowTo STEP" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo STEP">Fügen Sie den <text styleclass="Element">FB &quot;Bewegungspfad&quot;</text> zu einem Skizzenpfad hinzu.<text styleclass="VariableName">&#32;</text></li>
+          </list>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td style="border-top:none; border-right:none; border-bottom:none;">
+                <list id="2" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="B Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="B Bullets"><text style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">Klicken Sie auf</text><text style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:italic; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">&#32;</text><text styleclass="T_Menu">Menü Hinzufügen (oder Werkzeugleiste) &gt; Bewegungspfad-FB hinzufügen</text><text styleclass="VariableName">&#32;</text></li>
+                </list>
+                <para styleclass="B Bullets"><text styleclass="Body Text">Der </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-Command-Manager" styleclass="Interface">Command-Manager</link><text styleclass="Body Text"> hat ein Auswahlfeld. </text></para>
+                <list id="2" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="B Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="B Bullets"><text styleclass="HowTo Numbered" style="font-weight:normal; font-style:normal;">Klicken Sie auf </text><text styleclass="Body Text">ein Skizzenelement</text><text styleclass="HowTo Numbered"> im </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-Sketch-Loop" styleclass="HowTo Numbered">Skizzenpfad</link><text styleclass="HowTo Numbered">&#32;</text></li>
+                  <li styleclass="B Bullets"><text styleclass="HowTo Numbered" style="font-style:normal;">Klicken Sie</text><text styleclass="HowTo Numbered"> im </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-Command-Manager" styleclass="Interface">Befehls-Manager</link><text styleclass="Interface">&#32;</text><text styleclass="HowTo Numbered" style="font-style:normal;">auf</text><text styleclass="HowTo Numbered">&#32;</text><image src="OK-tiny-13-17.png" scale="100.00%" styleclass="Image Caption" style="font-size:10pt; vertical-align:baseline;" figurelistinclude="0"></image><text styleclass="HowTo Numbered" style="font-style:italic;">&#32;</text></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Body Text">Der <text styleclass="Element">Bewegungspfad FB</text> befindet sich nun im <text styleclass="Interface">Grafikbereich.</text></para>
+          <para styleclass="Body Text">Ein <text styleclass="Interface">Bewegungspunkt</text> befindet sich am <text styleclass="Interface">Startpunkt</text> des Skizzenelements, das Sie im Skizzenpfad auswählen.</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:68px;">
+          <para styleclass="VariableName">Open : </para>
+        </td>
+        <td>
+          <list id="3" type="ol" listtype="decimal" formatstring="&#83;&#84;&#69;&#80;&#32;&#37;&#48;&#58;&#115;&#58;&#32;" format-charset="DEFAULT_CHARSET" levelreset="false" legalstyle="false" startfrom="2" styleclass="HowTo STEP" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo STEP">Öffnen Sie das <text styleclass="Element">Dialogfeld &quot;Bewegungspfad&quot;</text>.<text styleclass="VariableName">&#32;</text></li>
+          </list>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td style="border-top:none; border-right:none; border-bottom:none;">
+                <list id="4" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="B Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="B Bullets"><text style="font-weight:normal; font-style:normal;">Doppelklick auf</text> einen <text styleclass="Element">Motion-Path FB</text> im <text styleclass="Interface">Grafikbereich</text><text styleclass="VariableName">&#32;</text></li>
+                </list>
+                <para styleclass="VariableName-IT">- oder -</para>
+                <list id="5" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="B Bullets" style="font-family:&apos;Noto Sans&apos;; font-size:11pt; color:#000000;">
+                  <li styleclass="B Bullets"><text styleclass="Body Text">Siehe </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-How-to-Open-a-Dialog-Box" styleclass="Body Text">Öffnen eines Dialogfeldes</link><text styleclass="Body Text">&#32;</text></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Body Text">Das <text styleclass="Element">Dialogfeld Motion-Path FB</text> ist nun geöffnet. <text styleclass="B Bullets" style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:bold; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">&#32;</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:68px;">
+          <para styleclass="VariableName">Dialog : </para>
+        </td>
+        <td>
+          <para styleclass="SeeAlso"><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-FunctionBlock-MotionPath">Dialogfeld &quot;Bewegungspfad&quot;</link>&#32;</para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading4 Toggle_atocs_">Vergleichen: Motion-Path FB und Motion-Dimension FB</para>
+    <para styleclass="Body Text HowTo"><table styleclass="Standard" rowcount="4" colcount="3" style="border-width:0px; border-spacing:0px; border-collapse:collapse; cell-border-width:1px; border-color:#993300; border-style:solid; background-color:#f3f3f3; head-row-background-color:none; alt-row-background-color:none;">
+      <thead style="vertical-align:top">
+        <td style="vertical-align:middle; width:147px;">
+          <para styleclass="VariableName" style="text-align:right;">Funktionsblock : </para>
+        </td>
+        <td style="vertical-align:middle; border-left:none;">
+          <para styleclass="Element" style="text-align:right;">Motion-Path FB &lt;</para>
+        </td>
+        <td style="vertical-align:middle;">
+          <para styleclass="Element">&gt; Motion-Dimension FB</para>
+        </td>
+      </thead>
+      <tr style="vertical-align:top">
+        <td style="vertical-align:middle; width:147px;">
+          <para styleclass="VariableName" style="text-align:right;">Bewegung Element : </para>
+        </td>
+        <td style="vertical-align:middle; border-left:none;">
+          <para styleclass="Element" style="text-align:right;">Motion-Point &lt;</para>
+        </td>
+        <td style="vertical-align:middle;">
+          <para styleclass="Element">&gt; Motion-Part</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="vertical-align:middle; width:147px;">
+          <para styleclass="VariableName" style="text-align:right;">Einschränkung : </para>
+        </td>
+        <td style="vertical-align:middle; border-left:none;">
+          <para styleclass="Element" style="text-align:right;">Sketch-Path &lt;</para>
+        </td>
+        <td style="vertical-align:middle;">
+          <para styleclass="Element">&gt; Joint</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="vertical-align:middle; width:147px;">
+          <para styleclass="VariableName" style="text-align:right;">ERGEBNIS : </para>
+        </td>
+        <td style="vertical-align:middle; border-left:none;">
+          <para styleclass="VariableName-IT" style="text-align:right;">Ein Bewegungspunkt, der gebunden</para>
+          <para styleclass="VariableName-IT" style="text-align:right;">ist ein Skizzen-Element &lt; </para>
+        </td>
+        <td style="vertical-align:middle;">
+          <para styleclass="VariableName-IT">&gt; Ein Motion-Part, der gebunden ist durch ein Gelenk</para>
+        </td>
+      </tr>
+    </table></para>
+  </body>
+</topic>

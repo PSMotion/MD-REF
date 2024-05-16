@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" status="Under Construction" modified="2022-04-20T09:28:14.893+01:00" lasteditedby="Adam" version="2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title>Dialog: Referenzen anzeigen</title>
+  <keywords>
+    <keyword>Dialog<keyword>View References</keyword></keyword>
+    <keyword>View References</keyword>
+  </keywords>
+  <body>
+    <header>
+      <para styleclass="Heading1">Dialog: Referenzen anzeigen</para>
+    </header>
+    <para styleclass="Heading2">Elementverweise anzeigen &#160;(Schreibgeschützt)</para>
+    <para styleclass="SeeAlso">Siehe auch: <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Delete-DependentElements">Abhängige Elemente löschen</link></para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="Body Text">Viele Elemente verweisen auf andere Elemente (oder benötigen diese).</para>
+    <para styleclass="Body Text HowTo">Das <text styleclass="Element">Dialogfeld Elementreferenzen </text><text styleclass="VariableName-IT">(schreibgeschützt</text>) enthält eine Liste von Elementen (die sogenannten <text styleclass="VariableName">Referenzelemente</text>), die im Modell vorhanden sein müssen, um ein komplexeres Element zu erstellen. </para>
+    <para styleclass="Body Text"><table styleclass="Standard" rowcount="4" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Normal"><image src="MD-SW-Show-Element-References.ipp" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Table">Um die <text styleclass="Interface">Referenz-Elemente</text> für ein Element zu sehen:</para>
+          <list id="0" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Numbered" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo Numbered">Klicken Sie auf ein <text styleclass="Element">Element</text> im <text styleclass="Interface">Grafikbereich</text> oder im <text styleclass="Interface">Assembly-Tree</text><text styleclass="VariableName">&#32;</text></li>
+            <li styleclass="HowTo Numbered">Klicken Sie mit der rechten Maustaste auf das <text styleclass="Element">Element</text> im <text styleclass="Interface">Auswahl-Fenster</text><text styleclass="VariableName">&#32;</text></li>
+            <li styleclass="HowTo Numbered">Klicken Sie im <text styleclass="Body Text">Kontextmenü</text>auf <text styleclass="VariableName">Elementreferenzen anzeigen</text>&#32;</li>
+          </list>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Normal"><image src="MD-Dialog-Element-References.ipp" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Table">Die Liste enthält jedes </para>
+          <list id="1" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted"><text styleclass="VariableName">Referenz Elementname</text></li>
+            <li styleclass="VariableName-indent">Nummer(?) </li>
+            <li styleclass="VariableName-indent">Typ des Referenzelements</li>
+            <li styleclass="VariableName-indent">Referenzelement-Eigentümer</li>
+          </list>
+          <para styleclass="Body Text">Z.B.: <text styleclass="Body Text HowTo">Wenn Sie einen </text><text styleclass="Element">Pin-Joint</text>&#32;<text styleclass="Body Text HowTo">hinzufügen , wählen Sie zwei </text><text styleclass="Element">Punkte</text><text styleclass="Body Text HowTo"> in zwei verschiedenen </text><text styleclass="Element">Teilen</text><text styleclass="Body Text HowTo">.</text></para>
+          <para styleclass="Body Text HowTo">Daher muss der <text styleclass="Element">Pin-Joint</text> die beiden <text styleclass="Element">Punkte</text>referenzieren (benötigen) <text styleclass="Element">,</text><text styleclass="Body Text"> die den </text><text styleclass="Element">Teilen gehören.</text></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Body Text" style="page-break-before:always;"></para>
+  </body>
+</topic>

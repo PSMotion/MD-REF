@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" status="Under Construction" modified="2022-06-20T12:12:06.617+01:00" lasteditedby="Adam" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title translate="true">Dwell Motion-Law</title>
+  <keywords>
+    <keyword translate="true">Cam Law: Dwell</keyword>
+    <keyword translate="true">Motion-Law:<keyword translate="true">Dwell</keyword></keyword>
+  </keywords>
+  <body>
+    <header>
+      <para styleclass="Heading1"><text styleclass="Heading1" translate="true">Dwell Motion-Law</text></para>
+    </header>
+    <para styleclass="Heading3_atocs_"><text styleclass="Heading3_atocs_" translate="true">Dwell Cam-Law, Motion-Law</text></para>
+    <para styleclass="Body Text"><table styleclass="Default" rowcount="3" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="VariableName"><text styleclass="VariableName" translate="true">Dwell is a </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MT-Motion-Cam-Laws" anchor="Standard" styleclass="VariableName" translate="true">Traditional Motion-Law</link><text styleclass="VariableName" translate="true">. </text></para>
+          <para styleclass="VariableName"><text styleclass="VariableName" translate="true">Dwell is a Polynomial Motion-Law.</text></para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="Interface2"><text styleclass="Interface2" translate="true">Motion Description </text></para>
+          <para styleclass="Body Text HowTo"><text styleclass="Body Text HowTo" translate="true">The </text><text styleclass="Interface2" translate="true">Dwell</text><text styleclass="Body Text HowTo" translate="true"> motion-law has a constant </text><text styleclass="Interface" translate="true">Position</text><text styleclass="Body Text HowTo" translate="true">, and zero displacement.</text></para>
+          <para styleclass="Body Text HowTo"><text styleclass="Body Text HowTo" translate="true">By definition, its motion-values for </text><text styleclass="Parameter" translate="true">Velocity, Acceleration, </text><text styleclass="Body Text" translate="true">and</text><text styleclass="Parameter" translate="true"> Jerk</text><text styleclass="Body Text HowTo" translate="true"> are zero throughout the </text><text styleclass="Parameter" translate="true">Segment-Width</text><text styleclass="Body Text HowTo" translate="true">.</text></para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="Interface2"><text styleclass="Interface2" translate="true">Motion-Values</text></para>
+          <para styleclass="Body Text HowTo"><text styleclass="Body Text HowTo" translate="true">You </text><text styleclass="Body Text HowTo" style="color:#ff0000;" translate="true">CAN</text><text styleclass="Body Text HowTo" translate="true"> specify the:</text></para>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Bullets"><text styleclass="Parameter-Header" translate="true">Position</text><text styleclass="Body Text" translate="true"> at the </text><text styleclass="Parameter-Header" translate="true">Start</text><text styleclass="Body Text" translate="true"> of the </text><text styleclass="VariableName" translate="true">Dwell Segment</text><text styleclass="Parameter" translate="true"> -</text><text styleclass="HowTo Bulleted" translate="true"> which </text><text styleclass="Body Text" translate="true">usually </text><text styleclass="VariableName" translate="true">flows</text><text styleclass="Body Text" translate="true"> from the </text><text styleclass="Bullets" translate="true">End-Position</text><text styleclass="Body Text" translate="true"> of the </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MT-Previous-Segment" styleclass="Element" translate="true">Previous-Segment</link><text styleclass="VariableName" translate="true">&#32;</text></para>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Body Text HowTo"><text styleclass="Body Text HowTo" translate="true">You </text><text styleclass="Body Text HowTo" style="color:#ff0000;" translate="true">CANNOT</text><text styleclass="Body Text HowTo" translate="true"> specify the:</text></para>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Bullets"><text styleclass="Parameter-Header" translate="true">Position</text><text styleclass="Body Text" translate="true"> at the </text><text styleclass="Parameter-Header" translate="true">End</text><text styleclass="Body Text" translate="true"> of the </text><text styleclass="VariableName" translate="true">Dwell Segment</text><text styleclass="Body Text" translate="true"> - by definition, it is equal to the </text><text styleclass="Parameter-Header" translate="true">Position</text><text styleclass="Body Text" translate="true"> at its </text><text styleclass="Parameter-Header" translate="true">Start</text></para>
+                <para styleclass="Bullets"><text styleclass="Parameter-Header" translate="true">Velocity</text><text styleclass="Bullets" translate="true">&#32;</text><text styleclass="Body Text" translate="true">at the </text><text styleclass="Parameter-Header" translate="true">Start</text><text styleclass="Body Text" translate="true"> or </text><text styleclass="Parameter-Header" translate="true">End</text><text styleclass="Body Text" translate="true"> of the </text><text styleclass="VariableName" translate="true">Dwell Segment</text></para>
+                <para styleclass="Bullets"><text styleclass="Parameter-Header" translate="true">Acceleration</text><text styleclass="Bullets" translate="true">&#32;</text><text styleclass="Body Text" translate="true">at the </text><text styleclass="Parameter-Header" translate="true">Start</text><text styleclass="Body Text" translate="true"> or </text><text styleclass="Parameter-Header" translate="true">End</text><text styleclass="Body Text" translate="true"> of the </text><text styleclass="VariableName" translate="true">Dwell Segment</text></para>
+                <para styleclass="Bullets"><text styleclass="Parameter-Header" translate="true">Jerk</text><text styleclass="Bullets" translate="true">&#32;</text><text styleclass="Body Text" translate="true">at the </text><text styleclass="Parameter-Header" translate="true">Start</text><text styleclass="Body Text" translate="true"> or </text><text styleclass="Parameter-Header" translate="true">End</text><text styleclass="Body Text" translate="true"> of the </text><text styleclass="VariableName" translate="true">Dwell Segment</text></para>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Parameter-Header"><text styleclass="Parameter-Header" translate="true">Segment Parameters</text></para>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Body Text"><text styleclass="Body Text" translate="true">None</text></para>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Body Text"><text styleclass="Parameter-Header" translate="true">Segment-Range</text></para>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Body Text"><text styleclass="Body Text" translate="true">None</text></para>
+              </td>
+            </tr>
+          </table></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Interface2"><text styleclass="Interface2" translate="true">Application Notes</text></para>
+          <para styleclass="Body Text HowTo"><text styleclass="Body Text HowTo" translate="true">Use a </text><text styleclass="VariableName" translate="true">Dwell</text><text styleclass="Body Text HowTo" translate="true"> when you want a tool to be stationary.</text></para>
+          <para styleclass="Body Text HowTo"><text styleclass="Body Text HowTo" translate="true">However, </text><text styleclass="VariableName" translate="true">Dwell</text><text styleclass="Body Text HowTo" translate="true"> segments are used</text><text styleclass="VariableName" translate="true">&#32;</text><text styleclass="Body Text" translate="true">too frequently</text><text styleclass="Body Text HowTo" translate="true">. &#160;Why?</text></para>
+          <para styleclass="Body Text HowTo"><text styleclass="Body Text HowTo" translate="true">The other segments become shorter in duration, and their peak accelerations also increase. Shorter segment are more likely to induce vibration in the mechanism. The Peak Torque of the drive-shaft also increases, and reverses from a positive to a negative torque more rapidly. This can lead to wind-up and over-run of the drive-shaft. </text></para>
+          <para styleclass="Interface2"><text styleclass="Interface2" translate="true">Top-Tip</text></para>
+          <para styleclass="Body Text HowTo"><text styleclass="Body Text HowTo" translate="true">Try </text><text styleclass="VariableName" style="color:#ff0000;" translate="true">not</text><text styleclass="Body Text HowTo" translate="true"> to use a </text><text styleclass="VariableName" translate="true">Dwell</text><text styleclass="Body Text HowTo" translate="true"> segment unless you need a tool to be absolutely stationary for at least 20° range of the X-axis. </text></para>
+          <para styleclass="Body Text HowTo"><text styleclass="Body Text HowTo" translate="true">If the dwell is less than 20°, then. as an alternative, try to delete the </text><text styleclass="VariableName" translate="true">Dwell</text><text styleclass="Body Text HowTo" translate="true"> segment. Then, use segments that are before and after the &apos;dwell&apos; that have zero jerk-values at the Blend-Point that replaces the Dwell segment.</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="vertical-align:top; height:43px;">
+          <para styleclass="" style="text-align:left; text-indent:0px; margin-top:0px; margin-right:0px; margin-bottom:0px; margin-left:0px; line-height:1.00; background-color:transparent; white-space:normal; page-break-inside:auto; page-break-after:auto; border:none; tabstops:none;"><image src="MT-CAMLAW-DWELL.ipp" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+      </tr>
+    </table></para>
+  </body>
+</topic>

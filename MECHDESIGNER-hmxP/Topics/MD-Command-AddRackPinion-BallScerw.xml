@@ -1,0 +1,316 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" status="Under Construction" modified="2024-04-03T16:42:45.540+01:00" lasteditedby="44785" version="2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title>Add Rack-Pinion - Ball-Screw</title>
+  <keywords>
+    <keyword>Add<keyword>Rack-Pinion</keyword></keyword>
+    <keyword>Machine elements toolbar<keyword>Ball-Screw</keyword><keyword>Rack-Pinion</keyword></keyword>
+    <keyword>Mechanism menu<keyword>Ball-Screw</keyword><keyword>Rack-Pinion</keyword></keyword>
+  </keywords>
+  <body>
+    <header>
+      <para styleclass="Heading1">Add Rack-Pinion - Ball-Screw</para>
+    </header>
+    <para styleclass="Heading2" style="page-break-before:always;">Rack-Pinion / Ball-Screw</para>
+    <para styleclass="SeeAlso">See also <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-RackPinion">Rack-Pinion dialog</link></para>
+    <para styleclass="Normal"><line style="height:1px; color:#343400;" /></para>
+    <para styleclass="Body Text HowTo"><text styleclass="T_Menu">Add Rack-Pinion </text><text styleclass="Body Text">removes one(1) degree-of-freedom from a </text><text styleclass="VariableName">rotating-Part</text><text styleclass="Body Text"> or a </text><text styleclass="VariableName">sliding-Part</text><text styleclass="Body Text">.</text></para>
+    <para styleclass="Heading4 Toggle_atocs_">Terminology</para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="4" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:115px;">
+          <para styleclass="Popup Box-Elements">Rack -Pinion : </para>
+        </td>
+        <td>
+          <para styleclass="Popup Box">A <text styleclass="Popup Box-Elements">Rack-Pinion</text> is the term for a sliding, linear-gear (<text styleclass="Element">Rack</text>) that is in mesh with a rotating, circular-gear (<text styleclass="Element">Pinion</text>). </para>
+          <para styleclass="Popup Box">The motion of the two <text styleclass="Popup Box-Elements">Parts</text> is kinematically-related by the <text styleclass="VariableName-small">module</text> and <text styleclass="VariableName-small">number-of-teeth</text> on the <text styleclass="Popup Box-Elements">Pinion</text>.</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:115px;">
+          <para styleclass="Popup Box-Elements">Ball-Screw : </para>
+        </td>
+        <td>
+          <para styleclass="Popup Box">A <text styleclass="Popup Box-Elements">Ball-Screw</text> is a device in which a <text styleclass="VariableName-small">Screw</text> rotates to move a <text styleclass="VariableName-small">Nut</text>, or vice-versa. The Linear-Motion of the <text styleclass="VariableName-small">Nut</text> and the rotation of the <text styleclass="VariableName-small">Screw</text> are related by the <text styleclass="VariableName-small">lead</text> of the screw-thread. </para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:115px;">
+          <para styleclass="VariableName-small" style="text-align:right;">sliding-Part :</para>
+        </td>
+        <td>
+          <para styleclass="Popup Box">a <text styleclass="Popup Box-Elements">Part</text> that is joined to another <text styleclass="Popup Box-Elements">Part</text> with a <text styleclass="Popup Box-Elements">Slide-Joint</text>.</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:115px;">
+          <para styleclass="VariableName-small" style="text-align:right;">rotating-Part :</para>
+        </td>
+        <td>
+          <para styleclass="Popup Box">a <text styleclass="Popup Box-Elements">Part</text> that is joined to another <text styleclass="Popup Box-Elements">Part</text> with a <text styleclass="Popup Box-Elements">Pin-Joint</text>.</para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading3_atocs_">Prepare to do Add Rack-Pinion (typical)</para>
+    <para styleclass="Heading4 Toggle_atocs_2">When the movement of the Rack comes from the Pinion (Driving Pinion)</para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="1" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:236px;">
+          <para styleclass="Image Caption"><image src="MD-GA-RackPinion-Prep-0.png" scale="100.00%" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="Body Text">Elements before you do<text styleclass="T_Menu"> Add Rack-Pinion</text></para>
+          <para styleclass="Body Text"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Body Table"><text styleclass="Element">Line</text><image src="Red-14-1.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Body Text"> - in a </text><text styleclass="VariableName">rotating-Part</text><text styleclass="Body Text"> that is </text><text styleclass="VariableName">kinematically-defined</text></para>
+                <para styleclass="Body Table"><text styleclass="Element">Line</text><image src="Red-14-2.gif" scale="100.00%" styleclass="Element" figurelistinclude="0"></image><text styleclass="Body Text"> - in a </text><text styleclass="VariableName">Sliding-Part</text><text styleclass="Body Text"> that is </text><text styleclass="VariableName" style="color:#ff0000;">not</text><text styleclass="Body Text">&#32;</text><text styleclass="VariableName">kinematically-defined</text></para>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Notes"></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading4 Toggle_atocs_2">When the movement of the Pinion comes from the Rack (Driving Rack)</para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="1" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:236px;">
+          <para styleclass="Image Caption"><image src="MD-DRIVINGRACK-PINION-0.ipp" scale="-99.90%" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="Body Text">Elements before you do <text styleclass="T_Menu">Add Rack-Pinion</text></para>
+          <para styleclass="Body Text"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Body Table"><text styleclass="Element">Line</text><image src="Red-14-1.gif" scale="100.00%" styleclass="Body Text" figurelistinclude="0"></image><text styleclass="Body Text"> - in a </text><text styleclass="VariableName">sliding-Part</text><text styleclass="Body Text"> that is </text><text styleclass="VariableName">kinematically-defined</text></para>
+                <para styleclass="Body Table"><text styleclass="Element">Line</text><image src="Red-14-2.gif" scale="100.00%" styleclass="Body Text" figurelistinclude="0"></image><text styleclass="Body Text"> - in a </text><text styleclass="VariableName">rotating-Part</text><text styleclass="Body Text"> that is </text><text styleclass="VariableName" style="color:#ff0000;">not</text><text styleclass="Body Text">&#32;</text><text styleclass="VariableName">kinematically-defined</text></para>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Notes"></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading3_atocs_">Add Rack-Pinion</para>
+    <para styleclass="Heading4 Toggle_atocs_2">When the movement of the Rack comes from the Pinion (Driving Pinion)</para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="3" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:240px;">
+          <para styleclass="Image Caption"><image src="MD-CM-AddRackPinion-00.png" scale="-99.90%" figurelistinclude="0"></image></para>
+        </td>
+        <td rowspan="3">
+          <list id="0" type="ol" listtype="decimal" formatstring="&#83;&#84;&#69;&#80;&#32;&#37;&#48;&#58;&#115;&#58;&#32;" format-charset="DEFAULT_CHARSET" levelreset="false" legalstyle="false" startfrom="1" styleclass="HowTo STEP" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo STEP">Click Add Rack-Pinion<text styleclass="VariableName">&#32;</text></li>
+          </list>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="2">
+            <tr style="vertical-align:top">
+              <td style="vertical-align:bottom; width:39px;">
+                <para styleclass="Image Caption"><image src="MD-Icon-AddRackPinionBallScrew.png" scale="-99.90%" styleclass="VariableName-IT" figurelistinclude="0"><title>Add Rack-Pinion Ball-Screw icon</title></image></para>
+              </td>
+              <td>
+                <list id="1" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Body Table" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="Body Table"><text styleclass="T_Menu">Mechanism menu &gt; Add Rack-Pinion</text><text styleclass="VariableName">&#32;</text></li>
+                </list>
+                <para styleclass="Body Text"><text style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">OR</text></para>
+                <list id="2" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="B Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="B Bullets"><text styleclass="T_Menu">Machine-elements toolbar &gt; Add Rack-Pinion</text><text styleclass="VariableName">&#32;</text></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Body Text HowTo">In the <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-Command-Manager" styleclass="Interface">Command-Manager</link>, there are two elements to select.</para>
+          <list id="3" type="ol" listtype="decimal" formatstring="&#83;&#84;&#69;&#80;&#32;&#37;&#48;&#58;&#115;&#58;&#32;" format-charset="DEFAULT_CHARSET" levelreset="false" legalstyle="false" startfrom="2" styleclass="HowTo STEP" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo STEP"><text styleclass="VariableName">Select the two elements in the graphics-area</text></li>
+          </list>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <list id="4" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Body Table" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="Body Table"><text styleclass="Body Text">Click </text><text styleclass="Element">Line</text><image src="Red-14-1.gif" scale="100.00%" styleclass="Body Text Howindent4bullets" figurelistinclude="0"></image><text styleclass="Body Text"> - it is in the </text><text styleclass="Element">Part</text><text styleclass="Body Text"> that is </text><text styleclass="VariableName">kinematically-defined. </text></li>
+                  <li styleclass="Body Table"><text styleclass="Body Text">Click </text><text styleclass="Element">Line</text><image src="Red-14-2.gif" scale="100.00%" styleclass="Body Text Howindent4bullets" figurelistinclude="0"></image><text styleclass="Body Text Howindent4bullets">&#32;</text><text styleclass="Body Text">- it is in the </text><text styleclass="Element">Part</text><text styleclass="Body Text"> that is </text><text styleclass="VariableName" style="color:#ff0000;">NOT</text><text styleclass="Body Text">&#32;</text><text styleclass="VariableName">kinematically-defined</text><text styleclass="Body Text">. </text></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+          <list id="5" type="ol" listtype="decimal" formatstring="&#83;&#84;&#69;&#80;&#32;&#37;&#48;&#58;&#115;&#58;&#32;" format-charset="DEFAULT_CHARSET" levelreset="false" legalstyle="false" startfrom="3" styleclass="HowTo STEP" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo STEP"><text styleclass="VariableName">Complete the Command </text></li>
+          </list>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <list id="6" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Body Table" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="Body Table"><text styleclass="Interface">Command-Manager:</text>&#32;<text styleclass="HowTo STEP">Click </text><image src="OK-tiny-11-15.png" scale="100.00%" styleclass="HowTo STEP" figurelistinclude="0"></image><text styleclass="HowTo STEP">&#32;</text><text styleclass="Body Text">to complete </text><text styleclass="T_Menu">Add Rack-Pinion</text><text styleclass="VariableName">.</text></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Normal"><line style="height:1px; color:#343400;" /></para>
+          <para styleclass="VariableName"><text styleclass="Interface2">Result</text> : </para>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Body Text"><text style="font-weight:normal;">The </text><text styleclass="Element">Pinion</text><text style="font-weight:normal;"> is on the </text><text styleclass="VariableName">Rotating-Part</text><text style="font-weight:normal;">. </text></para>
+                <para styleclass="Body Text HowTo"><text style="font-weight:normal;">The rotating-axis of the </text><text styleclass="Element">Pinion</text><text style="font-weight:normal;"> is coincident with the </text><text styleclass="Element">Pin-Joint</text><text style="font-weight:normal;">.</text></para>
+                <para styleclass="Body Text"><text style="font-weight:normal;">The </text><text styleclass="Element">Rack</text><text style="font-weight:normal;"> is on the </text><text styleclass="VariableName">Sliding-Part</text><text style="font-weight:normal;">. </text></para>
+                <para styleclass="Body Text HowTo">The <text styleclass="Element">Rack</text> is parallel <text styleclass="Body Text">with the</text><text styleclass="VariableName">&#32;</text><text styleclass="Element">Slide-Joint</text>. </para>
+                <para styleclass="Body Text">The <text styleclass="VariableName">Pitch-Line</text> of the <text styleclass="Element">Rack</text> is offset from the center of the <text styleclass="Element">Pinion</text> by the <text styleclass="VariableName">Pitch-Circle Radius</text> of the <text styleclass="Element">Pinion</text>.</para>
+                <para styleclass="Body Text"><text style="font-weight:normal;">The </text><text styleclass="VariableName">sliding-Part</text><text style="font-weight:normal;"> is now a </text><text styleclass="Element">Part</text><text style="font-weight:normal;"> that is </text><text styleclass="VariableName">kinematically-defined</text><text style="font-weight:normal;">.</text></para>
+              </td>
+            </tr>
+          </table></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:240px;">
+          <para styleclass="Image Caption"><image src="MD-GA-RackPinion-Prep-0.png" scale="-99.90%" figurelistinclude="0"></image></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:240px;">
+          <para styleclass="Image Caption"><image src="MD-CM-AddRackPinion-01.png" scale="-99.90%" figurelistinclude="0"></image></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading4 Toggle_atocs_2">When the movement of the Pinion comes from the Rack (Driving-Rack)</para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="3" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:240px;">
+          <para styleclass="Image Caption"><image src="MD-CM-AddRackPinion-00.png" scale="-99.90%" figurelistinclude="0"></image></para>
+        </td>
+        <td rowspan="3">
+          <list id="7" type="ol" listtype="decimal" formatstring="&#83;&#84;&#69;&#80;&#32;&#37;&#48;&#58;&#115;&#58;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo STEP" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo STEP">Add Rack-Pinion </li>
+          </list>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="2">
+            <tr style="vertical-align:top">
+              <td style="vertical-align:bottom; width:41px;">
+                <para styleclass="Image Caption"><image src="MD-Icon-AddRackPinionBallScrew.png" scale="100.00%" figurelistinclude="0"><title>Add Rack-Pinion Ball-Screw icon</title></image></para>
+              </td>
+              <td>
+                <list id="8" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Body Table" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="Body Table"><text styleclass="T_Menu">Mechanism menu &gt; Add Rack-Pinion</text><text styleclass="VariableName">&#32;</text></li>
+                </list>
+                <para styleclass="Body Text"><text style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">OR</text></para>
+                <list id="9" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="B Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="B Bullets"><text styleclass="T_Menu">Machine-elements toolbar &gt; Add Rack-Pinion</text><text styleclass="VariableName">&#32;</text></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Body Text HowTo">In the <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-Command-Manager" styleclass="Interface">Command-Manager</link>, there are two elements to select.</para>
+          <list id="10" type="ol" listtype="decimal" formatstring="&#83;&#84;&#69;&#80;&#32;&#37;&#48;&#58;&#115;&#58;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="2" styleclass="HowTo STEP" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo STEP"><text styleclass="VariableName">Select the two elements in the graphics-area </text></li>
+          </list>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <list id="11" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="2" styleclass="Body Table" style="font-family:&apos;Segoe UI&apos;; font-size:11pt; color:#000000;">
+                  <li styleclass="Body Table"><text styleclass="Body Text">Click </text><text styleclass="Element">Line</text><image src="Red-14-1.gif" scale="100.00%" styleclass="Body Text Howindent4bullets" figurelistinclude="0"></image><text styleclass="VariableName">&#32;</text><text styleclass="Body Text">- it is in the </text><text styleclass="Element">Part</text><text styleclass="Body Text"> that is </text><text styleclass="VariableName">kinematically-defined</text><text styleclass="Body Text">. </text></li>
+                  <li styleclass="Body Table"><text styleclass="Body Text">Click </text><text styleclass="Element">Line</text><image src="Red-14-2.gif" scale="100.00%" styleclass="Body Text Howindent4bullets" figurelistinclude="0"></image><text styleclass="Body Text Howindent4bullets">&#32;</text><text styleclass="Body Text">- it is in the </text><text styleclass="Element">Part</text><text styleclass="Body Text"> that is </text><text styleclass="VariableName" style="color:#ff0000;">NOT</text><text styleclass="Body Text">&#32;</text><text styleclass="VariableName">kinematically-defined</text><text styleclass="Body Text">. </text></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+          <list id="12" type="ol" listtype="decimal" formatstring="&#83;&#84;&#69;&#80;&#32;&#37;&#48;&#58;&#115;&#58;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="3" styleclass="HowTo STEP" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo STEP">Complete the Command </li>
+          </list>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <list id="13" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="4" styleclass="Body Table" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="Body Table"><text styleclass="Body Text">Click </text><image src="OK-tiny-11-15.png" scale="100.00%" styleclass="Body Text" figurelistinclude="0"></image><text styleclass="Body Text"> in the</text><text styleclass="HowTo STEP">&#32;</text><text styleclass="Interface">Command-Manager</text><text styleclass="HowTo STEP">.</text><text styleclass="VariableName">&#32;</text></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Body Text"><text style="font-weight:normal;">The </text><text styleclass="Element">Rack-Pinion</text><text style="font-weight:normal;"> is now in the </text><text styleclass="Interface">Assembly-Tree</text><text style="font-weight:normal;">&#32;</text>and graphics-area.</para>
+          <para styleclass="Normal"><line style="height:1px; color:#343400;" /></para>
+          <para styleclass="VariableName"><text styleclass="Interface2">Result</text> : </para>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Body Text"><text style="font-weight:normal;">The </text><text styleclass="Element">Pinion</text><text style="font-weight:normal;"> is on the </text><text styleclass="VariableName">Rotating-Part</text><text style="font-weight:normal;">. </text></para>
+                <para styleclass="Body Text HowTo"><text style="font-weight:normal;">The rotating-axis of the </text><text styleclass="Element">Pinion</text><text style="font-weight:normal;"> is coincident with the </text><text styleclass="Element">Pin-Joint</text><text style="font-weight:normal;">.</text></para>
+                <para styleclass="Body Text"><text style="font-weight:normal;">The </text><text styleclass="Element">Rack</text><text style="font-weight:normal;"> is on the </text><text styleclass="VariableName">Sliding-Part</text><text style="font-weight:normal;">. </text></para>
+                <para styleclass="Body Text HowTo">The <text styleclass="VariableName">Pitch-Line</text> of the <text styleclass="Element">Rack</text> is parallel to the <text styleclass="Element">Slide-Joint</text> and <text styleclass="VariableName">sliding-Part</text>. </para>
+                <para styleclass="Body Text"><text style="font-weight:normal;">The </text><text styleclass="VariableName">rotating-Part</text><text style="font-weight:normal;"> is now a </text><text styleclass="Element">Part</text><text style="font-weight:normal;"> that is </text><text styleclass="VariableName">kinematically-defined</text><text style="font-weight:normal;">.</text></para>
+              </td>
+            </tr>
+          </table></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:240px;">
+          <para styleclass="Image Caption"><image src="MD-DRIVINGRACK-PINION-0.ipp" scale="-99.90%" figurelistinclude="0"></image></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:240px;">
+          <para styleclass="Image Caption"><image src="MD-DRIVINGRACK-PINION-1.ipp" scale="-99.90%" figurelistinclude="0"></image></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading3_atocs_">Kinematics-Tree of Rack-Pinion</para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="2" colcount="2">
+      <tr style="vertical-align:top">
+        <td rowspan="2" style="width:236px;">
+          <para styleclass="Image Caption"><image src="MD-ADD-RACKPINION-KINEMATICS-TREE.ipp" scale="100.00%" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="T_Menu"><image src="Red-14-1.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image>&#32;<text styleclass="VariableName">When the movement of the Pinion comes from the Rack </text></para>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Body Table"><text styleclass="VariableName" style="color:#ff0000;">Before</text> you do <text styleclass="T_Menu">Add Rack-Pinion</text>, there is a <text styleclass="VariableName">sliding-Part</text> that is <text styleclass="Body Text">kinematically-defined and a </text><text styleclass="VariableName">rotating-Part </text><text styleclass="Body Text">that has </text><text styleclass="VariableName" style="color:#ff0000;">one</text> degree-of-freedom.</para>
+                <para styleclass="Body Text"><text styleclass="VariableName" style="color:#ff0000;">After</text> you do <text styleclass="T_Menu">Add Rack-Pinion,</text> the <text styleclass="VariableName">sliding-Part(Rack)</text> and the <text styleclass="VariableName">rotating-Part (Pinion) </text>are <text styleclass="VariableName">kinematically-defined.</text></para>
+              </td>
+            </tr>
+          </table></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="T_Menu"><image src="Red-14-2.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image>&#32;<text styleclass="VariableName">When the movement of the Rack comes from the Pinion</text></para>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Body Table"><text styleclass="VariableName" style="color:#ff0000;">Before</text> you do <text styleclass="T_Menu">Add Rack-Pinion</text>, the <text styleclass="VariableName">rotating-Part</text> is <text styleclass="VariableName">kinematically-defined</text><text styleclass="Body Text"> and the </text><text styleclass="VariableName">sliding-Part </text>has <text styleclass="VariableName" style="color:#ff0000;">one</text> degree-of-freedom.</para>
+                <para styleclass="Body Text"><text styleclass="VariableName" style="color:#ff0000;">After</text> you do <text styleclass="T_Menu">Add Rack-Pinion,</text> the <text styleclass="VariableName">rotating-Part</text> (Pinion) and <text styleclass="VariableName">sliding-Part (Rack) </text>are <text styleclass="VariableName">kinematically-defined</text>, and in one kinematic-chain.</para>
+              </td>
+            </tr>
+          </table></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading3_atocs_">Video of Add Rack-Pinion</para>
+    <para styleclass="Body Text"><conditional-text type="IF" value="CHM"/></para>
+    <para styleclass="Normal"><toggle type="picture" print-expanded="true" help-expanded="false" src-collapsed="ME-AddRackPinion-A.gif" src-expanded="ME-AddRackPinion-A.gif" scale="20.00%" width="256" height="144" styleclass="Image Caption" figurelistinclude="0"><caption><![CDATA[Video: Add Rack-Pinion]]></caption><title>Video: Add Rack-Pinion</title></toggle></para>
+    <para styleclass="Body Text"><conditional-text type="END"/><conditional-text type="IF" value="PDF"/><link displaytype="text" defaultstyle="true" type="filelink" href="ME-AddRackPinion-A.gif">Double-click to watch Video</link><conditional-text type="END"/><conditional-text type="IF" value="HTML,EBOOK"/></para>
+    <para styleclass="Normal"><video src="ME-AddRackPinion-A.mp4" width="1280px" height="720px" autostart="false" loop="false" showcontrols="false" playbutton="true" previewimage="ME-AddRackPinion-A_preview.jpg" scale="20.00%" styleclass="Image Caption"><title>Video: Add Rack-Pinion</title><caption><![CDATA[Video: Add Rack-Pinion]]></caption></video></para>
+    <para styleclass="Body Text"><conditional-text type="END"/></para>
+    <para styleclass="Normal"><line style="height:1px; color:#343400;" /></para>
+    <para styleclass="Heading4 Toggle_atocs_"><conditional-text type="IF" value="USER2"/>Kinematic State <text style="color:#ff0000;">before</text> you do Add Rack-Pinion.</para>
+    <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Popup Box">There are three <text styleclass="Popup Box-Elements">Parts - 1,2,3. </text></para>
+          <para styleclass="Popup Box"><text styleclass="Popup Box-Elements">Part(1) </text>is joined to <text styleclass="Popup Box-Elements">Part(2)</text> with a <text styleclass="Popup Box-Elements">Pin-Joint</text>.</para>
+          <para styleclass="Popup Box"><text styleclass="Popup Box-Elements">Part(3)</text> is joined to <text styleclass="Popup Box-Elements">Part(2)</text> with a <text styleclass="Popup Box-Elements">Slide-Joint</text>.</para>
+          <para styleclass="Popup Box2"><text styleclass="Popup Box-Elements">Part(2)</text>&#32;<text styleclass="Popup Box">is </text><text styleclass="VariableName-small">kinematically-defined</text></para>
+          <para styleclass="Popup Box2"><text styleclass="Popup Box-Elements">Part(1)</text><text styleclass="Popup Box">&#32;</text><text styleclass="Interface2">OR</text><text styleclass="Popup Box">&#32;</text><text styleclass="Popup Box-Elements">Part(3)</text><text styleclass="Popup Box"> is </text><text styleclass="VariableName-small">kinematically-defined</text><text styleclass="Popup Box">&#32;</text><text styleclass="VariableName-small" style="color:#ff0000;">before</text><text styleclass="Popup Box"> you do </text><text styleclass="T_Menusmall">Add Rack-Pinion</text><text styleclass="Popup Box">.</text></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading4 Toggle_atocs_">Kinematic State <text style="color:#ff0000;">after</text> you do Add Rack-Pinion.</para>
+    <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Text"><text styleclass="T_Menusmall">Add Rack-Pinion</text>&#32;<text styleclass="Popup Box">removes</text>&#32;<text styleclass="VariableName" style="color:#ff0000;">one</text>&#32;<text styleclass="Popup Box">degrees-of-freedom</text>.</para>
+          <para styleclass="Popup Box"><text styleclass="Popup Box-Elements">Part(1) </text><text styleclass="Interface2">and</text>&#32;<text styleclass="Popup Box-Elements">Part(3)</text> are <text styleclass="VariableName-small">kinematically-defined</text>&#32;<text styleclass="VariableName-small" style="color:#ff0000;">after</text> you do <text styleclass="T_Menusmall">Add Rack-Pinion</text></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Body Text HowTo"><conditional-text type="END"/></para>
+  </body>
+</topic>

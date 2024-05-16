@@ -1,0 +1,215 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" status="Under Construction" modified="2024-01-24T12:00:52.071Z" lasteditedby="44785" version="2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title>Dialog: Function-Block: Graph</title>
+  <keywords>
+    <keyword>Dialog<keyword>Function-Block : Graph Function-Block</keyword></keyword>
+    <keyword>Graph FB dialog</keyword>
+    <keyword>Graph of Force Data</keyword>
+    <keyword>Graph of Motion data</keyword>
+    <keyword>Plot Graphs</keyword>
+  </keywords>
+  <body>
+    <header>
+      <para styleclass="Heading1">Dialog: Function-Block: Graph</para>
+    </header>
+    <para styleclass="Heading2" style="page-break-before:always;">Graph FB</para>
+    <para styleclass="SeeAlso">see <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Command-AddFBGraph">Add Graph FB</link></para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;"/></para>
+    <para styleclass="Body Text HowTo"><text style="font-weight:normal; font-style:normal;">Use a </text><text styleclass="Element-Header">Graph FB</text><text style="font-weight:normal; font-style:normal;"> to plot </text><text styleclass="VariableName">Kinematic Motion-Data</text><text style="font-weight:normal; font-style:normal;">, </text><text styleclass="VariableName">Kinetostatic Force-Data</text><text style="font-weight:normal; font-style:normal;"> and </text><text styleclass="VariableName">Cam-Data</text><text style="font-weight:normal; font-style:normal;">.</text></para>
+    <para styleclass="Body Text HowTo"><text style="font-weight:normal; font-style:normal;">There are:</text></para>
+    <list id="0" type="ul" listtype="bullet" formatstring="è" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Wingdings; font-size:11pt; color:#000000;">
+      <li styleclass="HowTo Bulleted"><text styleclass="VariableName">4 × Y-axis input</text>:<text styleclass="Body Text HowTo" style="font-weight:normal; font-style:normal;"> the top four(4) input-connectors</text></li>
+      <li styleclass="HowTo Bulleted"><text styleclass="VariableName">1 × X-axis input</text><text styleclass="VariableName-indent">: </text><text styleclass="Body Text HowTo" style="font-weight:normal; font-style:normal;">the bottom input-connector is the </text><text styleclass="VariableName">X-axis</text><text styleclass="Body Text"> for all of the graphs. </text></li>
+    </list>
+    <para styleclass="Body Text HowTo"><text style="font-weight:normal; font-style:normal;">If you do not connect a wire to the X-axis input-connector, the </text><text styleclass="VariableName">X-axis</text><text style="font-weight:normal; font-style:normal;"> of the graph is one machine-cycle, 0 – 360.</text></para>
+    <para styleclass="Heading4 Toggle_atocs_">How to open the Graph Interface</para>
+    <para styleclass="Body Text"><table styleclass="Default" rowcount="1" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:86px;">
+          <para styleclass="Image Caption"><image src="MD-Icon-GraphFB-GA.png" scale="100.00%" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="Body Table">To open the<text styleclass="Element"> Graph FB dialog</text></para>
+          <para styleclass="Body Table"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td style="border-top:none; border-right:none; border-bottom:none;">
+                <list id="1" type="ol" listtype="decimal" formatstring="%0:s." format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="B Bullets" style="font-family:'Segoe UI Semibold'; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="B Bullets"><text styleclass="Body Text">Double-click the </text><text styleclass="Element">Graph FB</text><text styleclass="Body Text"> in the graphics-area</text><text style="font-family:Arial; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">.</text><text styleclass="VariableName"> </text></li>
+                </list>
+                <para styleclass="Interface2">OR</para>
+                <list id="2" type="ol" listtype="decimal" formatstring="%0:s." format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="B Bullets" style="font-family:'Segoe UI Semibold'; font-size:11pt; color:#000080;">
+                  <li styleclass="B Bullets"><text styleclass="SeeAlso">See </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-How-to-Open-a-Dialog-Box" styleclass="SeeAlso">How to Open a dialog</link><text styleclass="SeeAlso">. </text></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Body Text">The <text styleclass="Element-Header">Graph interface</text><text styleclass="Element"> </text>is now open.</para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;"/></para>
+    <para styleclass="Heading3_atocs_">Graph Interface</para>
+    <para styleclass="Body Text"><image src="MD-DIALOG-GRAPH.ipp" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"><caption>Grap dialog/interface</caption></image></para>
+    <para styleclass="Body Text"><image src="1r.gif" scale="100.00%" padding="0 4 0 0" styleclass="Image Caption" style="font-size:6pt; font-style:normal; vertical-align:sub;" figurelistinclude="0"></image><text styleclass="Image Caption" style="font-size:6pt; font-style:normal; vertical-align:sub;"> </text><text styleclass="VariableName">Y–axes</text></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="1" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Text">There is one Y-axis scale for each wire that you connect to an input-connector. Maximum = 4</para>
+          <para styleclass="Body Text">From left to right, the Y-axis scales correspond to each wire that you connect to an input-connectors, from top to bottom.</para>
+          <para styleclass="Body Text HowTo">The color of each Y–axis scale is the same as the graph. </para>
+          <list id="3" type="ol" listtype="decimal" formatstring="%0:s." format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:'Segoe UI'; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted">Edit the colors with the <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-FunctionBlock-GraphSettings">Graph Setting dialog</link>.</li>
+          </list>
+          <para styleclass="Body Text HowTo">The minimum and maximum of the Y-axis scale are the minimum and maximum values of the data at the input-connector. </para>
+          <list id="4" type="ol" listtype="decimal" formatstring="%0:s." format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:'Segoe UI'; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted">Edit the minimum and maximum values for the Y-axis scales with the <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-FunctionBlock-GraphSettings">Graph Setting dialog</link>.</li>
+          </list>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Body Text"><image src="2r.gif" scale="100.00%" padding="0 4 0 0" figurelistinclude="0"></image> <text styleclass="VariableName">Y–axis Data-Channels (Drop-Down): </text>See also <link displaytype="text" defaultstyle="true" type="topiclink" href="" anchor="YAxisDisplay">Y–axis Data-Channel Display Options</link></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="1" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Bullets">Each wire that you connect to an input-connector has 3 Data-Channels.</para>
+          <list id="5" type="ol" listtype="decimal" formatstring="%0:s." format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:'Segoe UI Semibold'; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo Bulleted">Click the drop-down arrow to select which Data-Channel to plot for each wire at the input-connector.<text styleclass="VariableName"> </text></li>
+          </list>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Body Text"><image src="3r.gif" scale="100.00%" padding="0 4 0 0" figurelistinclude="0"></image> <text styleclass="VariableName">Digital Readout (D.R.O.):</text></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="1" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Bullets">The X–axis and the Y1 to Y4-axis values in the Digital Readout are those values of the graph at the position of the vertical cursor<image src="Red-14-6.gif" scale="100.00%" figurelistinclude="0"></image> </para>
+          <para styleclass="Bullets">The Number-Format for the X–axis and Y–axis values is configured in <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-Application-Settings" anchor="App-NumberFormat">Application Settings | Number Format tab.</link></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Body Text"><image src="4r.gif" scale="100.00%" figurelistinclude="0"></image> <text styleclass="VariableName">Graph Area:</text></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="1" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Bullets">There is a graph for each wire you connect to a Y-axis input-connector</para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Body Text"><anchor id="DIALOG-GRAPHTOOLBAR"><keywords><keyword>Graph dialog<keyword>Graph toolbar</keyword></keyword></keywords></anchor><image src="5r.gif" scale="100.00%" figurelistinclude="0"></image> <text styleclass="VariableName">Graph toolbar:</text></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="2" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Bullets"><image src="MD-Dialog-GraphFB-GraphSettings-toolbar.ipp" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Table"><image src="Red-14-1.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Bullets"> Save data as</text></para>
+          <para styleclass="Body Table"><image src="Red-14-2.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Bullets"> Print graphs</text></para>
+          <para styleclass="Bullets"><image src="Red-14-3.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image> Open <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-FunctionBlock-GraphSettings">Graph Settings dialog</link></para>
+          <para styleclass="Bullets"><image src="Red-14-4.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image> Zoom-Out </para>
+          <para styleclass="Body Table"><image src="Red-14-5.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image> Zoom-In</para>
+          <para styleclass="Body Table"><image src="Red-14-6.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Normal"> </text>Zoom-Extents</para>
+          <para styleclass="Bullets"><image src="Red-14-7.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Normal"> </text>Pan Left</para>
+          <para styleclass="Bullets"><image src="Red-14-8.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Normal"> </text>Pan Right</para>
+          <para styleclass="Bullets"><image src="Red-14-9.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Normal"> </text>Copy Graph Data to Clipboard – see below</para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Body Text"><image src="6r.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Normal"> </text><text styleclass="VariableName">Vertical-Cursor</text></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="1" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Table">When you click or drag your pointer in the graph-area<image src="Red-14-4.gif" scale="100.00%" figurelistinclude="0"></image>:</para>
+          <list id="6" type="ul" listtype="bullet" formatstring="·" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullets" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="Bullets">the Vertical-Cursor moves with your pointer</li>
+            <li styleclass="HowTo Bulleted">the Digital-Readouts<image src="Red-14-3.gif" scale="100.00%" figurelistinclude="0"></image> are equal to the Y-axis values of the Vertical-Cursor </li>
+            <li styleclass="HowTo Bulleted">the <text styleclass="Interface">Master Machine Angle</text> continuously updates to equal the X-axis value of the Vertical-Cursor</li>
+            <li styleclass="HowTo Bulleted">the kinematic-chains that are <text styleclass="VariableName">kinematically-defined</text> move to agree with the <text styleclass="Interface">Master Machine Angle.</text></li>
+          </list>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Body Text"><image src="7r.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Normal"> </text><text styleclass="VariableName">Graph Data in Clipboard</text></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="1" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Bullets">To list the graph data-values <image src="Red-14-7.gif" scale="100.00%" figurelistinclude="0"></image>, </para>
+          <list id="7" type="ol" listtype="decimal" formatstring="%0:s." format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:'Segoe UI'; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted">Click the right-most icon in the <text styleclass="VariableName">Graph toolbar</text><image src="Red-14-9.gif" scale="100.00%" figurelistinclude="0"></image>.</li>
+          </list>
+          <para styleclass="HowTo Bulleted">There is one data-point for each Machine Step - see <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-Machine-Settings">Machine-Settings dialog &gt; Number-of-Steps</link>.</para>
+          <para styleclass="Body Text">You can Paste the data:</para>
+          <list id="8" type="ul" listtype="bullet" formatstring="·" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted - compressed" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted - compressed"><text styleclass="Body Text HowTo">to Excel, or Notepad, ...</text></li>
+            <li styleclass="HowTo Bulleted - compressed"><text styleclass="Body Text HowTo">to the </text><text styleclass="VariableName">MotionDesigner</text><text styleclass="Body Text HowTo"> </text><text styleclass="VariableName">Data-Transfer Table</text></li>
+          </list>
+          <para styleclass="Body Text">From the <text styleclass="VariableName">Data-Transfer Table</text>, you can paste the data:</para>
+          <list id="9" type="ul" listtype="bullet" formatstring="·" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted">as a dumb Overlay-Trace to compare it with a motion</li>
+            <li styleclass="HowTo Bulleted">to a Position List, Acceleration List, or Z Raw Data segment-type, and link it to a <text styleclass="Interface">Motion-Part</text><text styleclass="Element"> </text>or <text styleclass="Interface">Motion-Point</text>.</li>
+          </list>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;"/></para>
+    <para styleclass="Heading4 Toggle_atocs_"><anchor id="YAxisDisplay"><keywords><keyword>Graph FB dialog<keyword>Y-axis display options</keyword></keyword></keywords></anchor>Y-Axis Data-Channels:</para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="1" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Table">Each wire that you connect to a <text styleclass="Element">Graph FB</text> has three(3) data-channels.</para>
+          <para styleclass="Body Table">Use the drop-down arrow to select which <text styleclass="VariableName">Y-Axis Data-Channel</text><image src="Red-14-2.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image> to plot for each <text styleclass="VariableName">Y-axis.</text></para>
+          <para styleclass="Body Table">The Data-Channels that are available are a function of the Function-Block and wire you connect at the input to the Graph FB.</para>
+          <para styleclass="Interface2">Data-Channels:</para>
+          <para styleclass="Body Table"><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Command-FB-Kinematics" styleclass="VariableName">Kinematic Function-Blocks</link> (Linear-Motion, Gearing, Motion, Motion-Dimension) you can plot:</para>
+          <list id="10" type="ul" listtype="bullet" formatstring="·" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="VariableName" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="VariableName">Linear or angular position </li>
+            <li styleclass="VariableName">Linear or angular velocity</li>
+            <li styleclass="VariableName">Linear or angular acceleration</li>
+          </list>
+          <para styleclass="Body Table"><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Command-AddFBMeasurement" styleclass="VariableName">Measurement FB</link> or <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Command-AddFBPointData" styleclass="SeeAlso">Point-Data FB</link> you can plot:</para>
+          <list id="10" type="ul" listtype="bullet" formatstring="·" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="VariableName" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="VariableName">Linear or angular position</li>
+            <li styleclass="VariableName">Linear or angular velocity</li>
+            <li styleclass="VariableName">Linear or angular acceleration</li>
+          </list>
+          <para styleclass="Body Table"><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Command-AddFBCamData" styleclass="VariableName">Cam-Data FB</link></para>
+          <list id="10" type="ul" listtype="bullet" formatstring="·" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted - compressed" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted - compressed"><text styleclass="VariableName">Pressure Angle. </text><br/><text styleclass="Body Text Howindent4bullets">You can plot three Pressure Angles – See </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-Cam-Pressure-Angle" styleclass="SeeAlso">Pressure Angle</link></li>
+            <li styleclass="HowTo Bulleted - compressed"><text styleclass="VariableName">Radius-of-Curvature. </text><br/><text styleclass="Body Text Howindent4bullets">You can plot the Radii-of-Curvature of the Inner and the Outer Cam.</text></li>
+            <li styleclass="VariableName">Contact Cam Force</li>
+            <li styleclass="VariableName">Maximum Contact Shear Stress. </li>
+            <li styleclass="VariableName">Sliding-Velocity<text styleclass="Interface2"> </text><br/><text styleclass="Body Text Howindent4bullets">Plot the Sliding-Velocity between the Cam-Profile and Follower-Profile for the </text><text styleclass="Parameter">Inner</text><text styleclass="Interface"> </text><text styleclass="Body Text">Cam and</text><text styleclass="Body Text Howindent4bullets"> the </text><text styleclass="Parameter">Outer</text><text styleclass="Interface"> </text><text styleclass="Body Text">Cam.</text></li>
+          </list>
+          <para styleclass="Body Table"><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Command-FB-Force-Data" styleclass="VariableName">Force-Data FB</link></para>
+          <para styleclass="Body Table">The output form a <text styleclass="Element">Force-Data FB</text> is a function of the element with which it is linked. <text styleclass="SeeAlso">See </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-FunctionBlock-ForceData" styleclass="SeeAlso">Force-Data FB dialog</link></para>
+          <para styleclass="Body Table">If you link a <text styleclass="Element">Force-Data FB</text> to a: </para>
+          <list id="11" type="ul" listtype="bullet" formatstring="Ÿ" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullets" style="font-family:Wingdings; font-size:10pt; color:#000000;">
+            <li styleclass="Bullets"><text styleclass="Element">Pin-Joint</text><text styleclass="Body Text"> with a Motor, you can plot the </text><text styleclass="VariableName">Application Load</text><text styleclass="HowTo Bulleted - compressed">.</text></li>
+            <li styleclass="HowTo Bulleted - compressed"><text styleclass="Element">Slide-Joint</text><text styleclass="Body Text"> with a Motor, you can plot the </text><text styleclass="VariableName">Application Load</text></li>
+            <li styleclass="HowTo Bulleted - compressed"><text styleclass="Body Text">Joint that does not have a Motor, you can plot: </text></li>
+          </list>
+          <list id="12" type="ul" listtype="bullet" formatstring="þ" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted - compressed" style="font-family:Wingdings; font-size:10pt; color:#000000;">
+            <li styleclass="HowTo Bulleted - compressed"><text styleclass="VariableName">Total Force</text><text styleclass="Body Text"> </text>( F<text style="font-size:7pt; vertical-align:sub;">T</text> = √(F<text style="font-size:7pt; vertical-align:sub;">X</text><text style="font-size:7pt; vertical-align:super;">2</text> + F<text style="font-size:7pt; vertical-align:sub;">Y</text><text style="font-size:7pt; vertical-align:super;">2</text>)</li>
+            <li styleclass="HowTo Bulleted - compressed"><text styleclass="VariableName">Force along the X-coordinate of a Point: F</text><text style="font-size:7pt; font-weight:bold; vertical-align:sub;">X</text></li>
+            <li styleclass="HowTo Bulleted - compressed"><text styleclass="VariableName">Force along the Y-coordinate of a Point: F</text><text style="font-size:7pt; font-weight:bold; vertical-align:sub;">Y</text></li>
+          </list>
+          <list id="13" type="ul" listtype="bullet" formatstring="Ÿ" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullets" style="font-family:Wingdings; font-size:11pt; color:#000000;">
+            <li styleclass="Bullets"><text styleclass="Element">2D-Cam</text>:<text styleclass="Body Text"> you can plot the </text><text styleclass="VariableName">Cam Contact Force</text></li>
+            <li styleclass="HowTo Bulleted - compressed"><text styleclass="Element">Spring FB</text>:<text styleclass="Body Text"> you can plot the </text><text styleclass="VariableName">Total Force, X Force, Y Force</text><text styleclass="Body Text"> acting on the Anchor-Point.</text></li>
+          </list>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading4 Toggle_atocs_">Why are the Y–axis values in the DRO<image src="Red-14-3.gif" scale="100.00%" figurelistinclude="0"></image> different to the vector-values in the main graphics-area?</para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="1" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Table">The values may be slightly different because, in the graph, the X–axis and Y–axis values at the D.R.O. must jump from &apos;machine -step&apos; to &apos;machine-step&apos;. See <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-Machine-Settings">Machine Settings dialog &gt; Number-of-Steps</link>.</para>
+          <para styleclass="Body Table">In the<text styleclass="Body Text"> graphics-area, the</text> vector values are calculated for the value of the <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-Master-Machine-Angle">Master Machine Angle</link>, which may not coincide with a machine step.</para>
+        </td>
+      </tr>
+    </table></para>
+  </body>
+</topic>

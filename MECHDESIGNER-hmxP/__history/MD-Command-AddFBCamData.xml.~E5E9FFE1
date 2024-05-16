@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" status="Under Construction" modified="2024-03-05T12:05:20.969Z" lasteditedby="44785" version="2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title>Menu | Function-Block | Cam Data </title>
+  <keywords>
+    <keyword>Add<keyword>Function-Block: Cam-Data</keyword></keyword>
+    <keyword>Cam-Data Function-Block<keyword>Cam Analysis</keyword><keyword>Cam Coordinate Data</keyword><keyword>Caption in graphics-area</keyword></keyword>
+    <keyword>Function-Block<keyword>Cam-Data FB</keyword></keyword>
+  </keywords>
+  <body>
+    <header>
+      <para styleclass="Heading1">Add Cam-Data FB</para>
+    </header>
+    <para styleclass="Heading2" style="page-break-before:always;">Cam-Data FB</para>
+    <para styleclass="SeeAlso">See also: <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-FunctionBlock-CamData">Cam-Data FB &gt; Cam Analysis</link> ; <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-FunctionBlock-CamCoordinates">Cam-Data FB &gt; Cam Coordinates</link></para>
+    <para styleclass="Normal"><line style="height:1px; color:#343400;" /></para>
+    <para styleclass="Heading3_atocs_">Why should I use a Cam-Data FB?</para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="1" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Text">After you link a <text styleclass="Element-Header">Cam-Data FB</text> to a <text styleclass="Element-Header">2D-Cam</text>, you can use it to:</para>
+          <list id="0" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted">calculate<text styleclass="Body Text HowTo"> and save coordinates of the </text><text styleclass="Element-Header">2D-Cam</text><text styleclass="Body Text HowTo"> cam-profile - see </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-FunctionBlock-CamCoordinates" styleclass="Body Text HowTo">Cam-Coordinates</link><text styleclass="Body Text HowTo">, </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-Cam-Coordinates-Formats-2D" styleclass="Body Text HowTo">Cam-Coordinates File Formats</link></li>
+            <li styleclass="HowTo Bulleted">analyze five different design parameters of the <text styleclass="Element-Header">2D-Cam</text> - see <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-FunctionBlock-CamData">Cam Analysis</link>&#32;</li>
+          </list>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading3_atocs_" style="text-indent:-36px; margin-left:36px;"><image src="tog_plus.gif" scale="100.00%" figurelistinclude="0"></image><tab /><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" src-collapsed="tog_plus.gif" src-expanded="tog_minus-DARK.gif"><caption><![CDATA[Cam-Terminology and 2D-Cam Work-flow.]]></caption></toggle></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="1" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Text"><snippet src="MD-Snippet-CamTerminology" inline="false"/></para>
+          <para styleclass="Body Text"><snippet src="MD-Snippet-2DCamWorkflow" inline="false"/></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading3_atocs_">Add Cam-Data FB</para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="1" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:9px;">
+          <para styleclass="BodyText BI" style="text-align:right;"><image src="MD-FB-CamData.ipp" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"><title>Cam-Data FB in Graphic-Area</title><caption><![CDATA[Cam-Data FB in Graphic-Area]]></caption></image></para>
+        </td>
+        <td>
+          <list id="1" type="ol" listtype="decimal" formatstring="&#83;&#84;&#69;&#80;&#32;&#37;&#48;&#58;&#115;&#58;&#32;" format-charset="DEFAULT_CHARSET" levelreset="false" legalstyle="false" startfrom="1" styleclass="HowTo STEP" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo STEP"><text styleclass="B Bullets">Add a </text><text styleclass="Element">Cam-Data FB</text><text styleclass="B Bullets"> to the </text><text styleclass="Body Text">graphics-area</text><text styleclass="VariableName"> &#160;</text></li>
+          </list>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="2" colcount="2">
+            <tr style="vertical-align:top">
+              <td style="width:3px; border-top:none; border-right:none; border-bottom:none;">
+                <para styleclass="VariableName"><image src="MD-Icon-AddCamDataFB.ipp" scale="100.00%" figurelistinclude="0"><title>Add Motion FB</title></image></para>
+              </td>
+              <td style="border:none;">
+                <list id="2" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="Bullets"><text style="font-style:normal;">Click</text><text style="font-family:Arial; font-size:11pt; color:#000000;">&#32;</text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Command-FB-Kinematics" styleclass="T_Menu">Kinematics FB toolbar</link><text styleclass="VariableName"> &gt; </text><text styleclass="T_Menu">Cam-Data FB</text><text styleclass="VariableName">&#32;</text></li>
+                </list>
+                <para styleclass="Interface2">or<text styleclass="T_Menu">&#32;</text></para>
+                <list id="3" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; color:#003300;">
+                  <li styleclass="Bullets"><text styleclass="Body Text">Click</text><text styleclass="T_Menu"> Function-Blocks menu &gt; Cam-Data (FB)</text></li>
+                </list>
+              </td>
+            </tr>
+            <tr style="vertical-align:top">
+              <td colspan="2" style="border-top:none; border-right:none; border-bottom:none;">
+                <list id="4" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="2" styleclass="Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="Bullets"><text styleclass="Body Text">Click the graphics-area</text><text styleclass="VariableName"> &#160;</text></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Body Table">The <text styleclass="Element">Cam-Data FB</text> is now in <text styleclass="Body Text">the graphics-area and </text><text styleclass="Interface">Assembly-Tree</text><text styleclass="Body Text">.</text></para>
+          <para styleclass="Body Table">Now, you must link a <text styleclass="Element">2D-Cam</text><text styleclass="Body Text"> that is in your model to the </text><text styleclass="Element">Cam-Data FB</text>.</para>
+          <para styleclass="SeeAlso">See <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-FunctionBlock-CamData">Cam-Data dialog</link></para>
+        </td>
+      </tr>
+    </table></para>
+  </body>
+</topic>

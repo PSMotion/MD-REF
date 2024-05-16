@@ -1,0 +1,241 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" status="Under Construction" modified="2022-05-20T10:08:06.249+01:00" lasteditedby="Adam" version="2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title>Mechanism | Add 2D Cam</title>
+  <keywords>
+    <keyword>Add<keyword>2D-Cam</keyword></keyword>
+    <keyword>How to...<keyword>Add a 2D-Cam</keyword></keyword>
+    <keyword>Machine elements toolbar<keyword>2D-Cam</keyword></keyword>
+    <keyword>Menu &gt; Add &gt; Mechanism Menu<keyword>Add 2D-Cam</keyword></keyword>
+  </keywords>
+  <body>
+    <header>
+      <para styleclass="Heading1">Menu | Mechanism | Add 2D-Cam</para>
+    </header>
+    <para styleclass="Heading2">Add 2D-Cam</para>
+    <para styleclass="SeeAlso">See also: &#160;<link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-2DCam">2D-Cam dialog-box</link></para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="Body Text HowTo"><text styleclass="Body Text">Wir berechnen das gekrümmte </text><text styleclass="VariableName">Profil</text><text styleclass="Body Text"> (d.h. die </text><text styleclass="Element">2D-Nocke</text><text styleclass="Body Text">) aus der relativen Bewegung einer </text><text styleclass="VariableName">Nocke</text><text styleclass="Body Text"> und der Teile der </text><text styleclass="VariableName">Nockenrolle</text><text styleclass="Body Text">, zusammen mit der Form der </text><text styleclass="VariableName">Nockenrolle</text><text styleclass="Body Text">. </text></para>
+    <para styleclass="Heading4 Toggle_atocs_">Terminologie:</para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="4" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:176px;">
+          <para styleclass="Interface" style="text-align:right;">Nocke / <text styleclass="Popup Box-Elements">2D-Nocke</text> : </para>
+        </td>
+        <td>
+          <para styleclass="Popup Box">Eine <text styleclass="Popup Box2">Kurvenscheibe</text> ist ein gekrümmtes Profil oder eine gekrümmte Oberfläche, die eine Verschiebung (ein Bewegungsgesetz) auf ein <text styleclass="Popup Box2">bewegliches Teil</text> überträgt, entweder durch Punkt- oder Linienkontakt mit einer <text styleclass="Popup Box2">Kurvenrolle</text>.</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:176px;">
+          <para styleclass="Popup Box2" style="text-align:right;">Nocke-Teil : </para>
+        </td>
+        <td>
+          <para styleclass="Popup Box">Das <text styleclass="Popup Box-Elements">Teil</text>, zu dem wir die <text styleclass="Popup Box-Elements">2D-Nocke</text> hinzufügen <text styleclass="Popup Box-Elements">.</text>&#32;</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:176px;">
+          <para styleclass="Popup Box2" style="text-align:right;">Kurvenrolle : </para>
+        </td>
+        <td>
+          <para styleclass="Popup Box">Die Form der <text styleclass="Popup Box2">Skizzenschleife</text> und des <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-Profile-Element" styleclass="Popup Box-Elements">Profils/Extrusion</link>, die in ständigem Kontakt mit der <text styleclass="Popup Box-Elements">2D-Nocke </text>steht<text styleclass="Popup Box-Elements">.</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:176px;">
+          <para styleclass="Popup Box2" style="text-align:right;">Kurvenrolle Teil : </para>
+        </td>
+        <td>
+          <para styleclass="Popup Box">Der Teil, der seine Bewegung von der <text styleclass="Element">2D-Nocke</text> erhält. </para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="Heading4 Toggle_atocs_">2D-Nocken: Elemente, Parameter, Analyse, Koordinaten</para>
+    <para styleclass="Body Text"><table styleclass="Default" rowcount="1" colcount="1" style="border-width:0px; border-spacing:0px; border-collapse:collapse; cell-border-width:1px; border-color:#993300; border-style:solid; background-color:#ebebeb;">
+      <tr style="vertical-align:top">
+        <td>
+          <list id="0" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo Bulleted">Hinzufügen einer <text styleclass="Element">2D-Nocken</text><text styleclass="VariableName"> - </text><text styleclass="SeeAlso">siehe unten</text><text styleclass="VariableName">&#32;</text></li>
+            <li styleclass="HowTo Bulleted"><text styleclass="Body Text">Überprüfen Sie </text>die<text styleclass="Body Text"> Anzeige, Eigenschaften und Lebensdauer </text><text styleclass="Element">der 2D-Nocken</text><text styleclass="SeeAlso">- siehe </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-2DCam" styleclass="SeeAlso">Dialogfenster 2D-Nocken</link></li>
+          </list>
+          <para styleclass="Body Text">Dann:</para>
+          <list id="0" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo Bulleted"><text styleclass="Body Text HowTo">Hinzufügen eines </text><text styleclass="Element">Nocken-Daten FB</text><text styleclass="Body Text HowTo"> - </text><text styleclass="SeeAlso">siehe </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Command-FB-Cam-Data" styleclass="SeeAlso">Hinzufügen eines Nocken-Daten FB</link><text styleclass="VariableName">&#32;</text></li>
+            <li styleclass="HowTo Bulleted"><text styleclass="Body Text HowTo">Verknüpfen Sie die </text><text styleclass="Element">2D-Nocke </text><text styleclass="Body Text HowTo">mit </text>dem <text styleclass="Element">Nocken-Daten FB</text><text styleclass="VariableName"> - </text><text styleclass="SeeAlso">siehe </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Command-FB-Cam-Data" anchor="CAMDATAFB-LINKTO2DCAM" styleclass="SeeAlso">Öffnen und Verknüpfen des FB mit einer 2D-Nocke</link></li>
+          </list>
+          <para styleclass="Body Text">Dann:</para>
+          <list id="1" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="5" styleclass="HowTo Bulleted" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo Bulleted">Analysieren Sie 5 verschiedene Parameter für die <text styleclass="Element">2D-Nocke</text><text styleclass="VariableName"> - siehe</text><text styleclass="SeeAlso">&#32;</text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-FunctionBlock-CamData" anchor="2DCAMDATAFB-CAMANALYSIS" styleclass="SeeAlso">Nocken-Analyse Parameter</link><text styleclass="VariableName">&#32;</text></li>
+            <li styleclass="HowTo Bulleted"><text styleclass="Body Text">Berechnen Sie die Nockenkoordinaten</text> - <text styleclass="SeeAlso">siehe </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-FunctionBlock-CamCoordinates" styleclass="SeeAlso">Cam-Data Dialogfenster - Koordinaten</link><text styleclass="Body Text">&#32;</text></li>
+          </list>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading3_atocs_">Vorbereitung für Add 2D-Cam (typisch)</para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="1" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:220px;">
+          <para styleclass="Image Caption"><image src="MD-GA-Add2DCam-Prep1.png" scale="-99.90%" figurelistinclude="0"><caption><![CDATA[Preparation for Add 2D-Cam]]></caption></image></para>
+        </td>
+        <td>
+          <para styleclass="Body Text">Die Elemente im Modell, bevor wir <text styleclass="T_Menu">2D-Cam hinzufügen</text>:</para>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Bullets"><text styleclass="VariableName">Nockenteil</text><text style="font-family:&apos;Segoe UI Semibold&apos;; font-size:10pt; font-weight:bold; font-style:normal; text-transform:uppercase; vertical-align:baseline; color:#800000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">&#32;</text><image src="Red-14-1.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Body Text"> - kinematisch definiert.</text></para>
+                <para styleclass="Body Table"><text styleclass="VariableName">Kurvenrolle </text><image src="Red-14-2.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Image Caption"> -</text><text styleclass="Body Text"> ein </text><text styleclass="Element">Profil</text><text styleclass="Body Text"> im </text><text styleclass="VariableName">Follower-Teil</text><image src="Red-14-3.gif" scale="100.00%" styleclass="VariableName" figurelistinclude="0"></image></para>
+                <para styleclass="Body Table"><text styleclass="VariableName">Follower-Teil</text><text styleclass="Body Text">&#32;</text><image src="Red-14-3.gif" scale="100.00%" styleclass="VariableName" figurelistinclude="0"></image><text styleclass="Body Text"> - kinematisch definiert.</text></para>
+                <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+                <para styleclass="Body Table">Das <text styleclass="VariableName">Nockenteil</text> bewegt sich normalerweise, kann aber auch stillstehen.</para>
+                <para styleclass="Body Table">Der<text styleclass="VariableName"> Follower Part</text> bewegt sich normalerweise, kann aber auch stationär sein.</para>
+                <para styleclass="Body Table"><text styleclass="Body Text">Das</text><text styleclass="VariableName"> Kurventeil</text><text styleclass="Body Text"> und das </text><text styleclass="VariableName">Folgenteil </text>müssen sich relativ zueinander bewegen<text styleclass="VariableName">.</text></para>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Body Table"><text styleclass="SeeAlso">Siehe auch </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-Cam-Follower-Shape" styleclass="SeeAlso">Form der Kurvenrolle</link></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="Heading3_atocs_">2D-Kamera hinzufügen: </para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="6" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:220px;">
+          <para styleclass="Image Caption"><image src="MD-CM-Add2DCam-0.png" scale="-99.90%" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <list id="2" type="ol" listtype="decimal" formatstring="&#83;&#84;&#69;&#80;&#32;&#37;&#48;&#58;&#115;&#58;&#32;" format-charset="DEFAULT_CHARSET" levelreset="false" legalstyle="false" startfrom="1" styleclass="HowTo STEP" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo STEP"><text styleclass="VariableName">Klicken Sie auf 2D-Nocke hinzufügen </text></li>
+          </list>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="2">
+            <tr style="vertical-align:top">
+              <td style="vertical-align:bottom; width:41px;">
+                <para styleclass="VariableName" style="text-align:right;"><image src="MD-Icon-Add2DCam.png" scale="100.00%" figurelistinclude="0"><title>Add 2D-Cam icon</title></image></para>
+              </td>
+              <td>
+                <list id="3" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Body Table" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="Body Table"><text styleclass="Interface">Mechanismus-Editor:</text><text styleclass="Body Text">&#32;</text><text styleclass="T_Menu">Menü Hinzufügen &gt; Menü Mechanismus &gt; 2D-Nocke hinzufügen</text><text styleclass="VariableName">&#32;</text></li>
+                </list>
+                <para styleclass="Body Text"><text style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">- oder</text><text style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;"> -</text></para>
+                <list id="4" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="B Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="B Bullets"><text styleclass="Interface">Mechanismus-Editor: </text><text styleclass="T_Menu">Werkzeugleiste Maschinenelemente &gt; 2D-Nocken hinzufügen</text><text styleclass="VariableName">&#32;</text></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:220px;">
+          <para styleclass="Image Caption"><image src="MD-GA-Add2DCam-Prep1.png" scale="-99.90%" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <list id="5" type="ol" listtype="decimal" formatstring="&#83;&#84;&#69;&#80;&#32;&#37;&#48;&#58;&#115;&#58;&#32;" format-charset="DEFAULT_CHARSET" levelreset="false" legalstyle="false" startfrom="2" styleclass="HowTo STEP" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo STEP"><text styleclass="VariableName">Markieren Sie die beiden Elemente im Grafikbereich:</text></li>
+          </list>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <list id="6" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="Bullets">Klicken Sie auf <text styleclass="Interface">Part-Outline</text><image src="Red-14-1.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Body Text"> - dies ist das </text><text styleclass="VariableName">Nocke-Teil</text></li>
+                  <li styleclass="Bullets">Klicken Sie auf <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-Profile-Element" styleclass="Element">Profil</link><image src="Red-14-2.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Image Caption">&#32;</text><text styleclass="Body Text">im </text><text styleclass="Popup Box2">Kurvenrolle Teil</text><text styleclass="Body Text">.</text></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:220px;">
+          <para styleclass="Image Caption"><image src="MD-CM-Add2DCam-1.png" scale="-99.90%" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <list id="7" type="ol" listtype="decimal" formatstring="&#83;&#84;&#69;&#80;&#32;&#37;&#48;&#58;&#115;&#58;&#32;" format-charset="DEFAULT_CHARSET" levelreset="false" legalstyle="false" startfrom="3" styleclass="HowTo STEP" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo STEP"><text styleclass="VariableName">Vervollständigen Sie den Befehl </text></li>
+          </list>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <list id="8" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="3" styleclass="Body Table" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="Body Table"><text styleclass="HowTo STEP">Klicken Sie &#160;im </text><text styleclass="Interface">Befehls-Manager</text><text styleclass="HowTo STEP">auf </text><image src="OK-tiny-11-15.png" scale="100.00%" styleclass="HowTo STEP" figurelistinclude="0"></image><text styleclass="HowTo STEP">.</text><text styleclass="VariableName">&#32;</text></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="HowTo STEP"></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:220px;">
+          <para styleclass="Image Caption"><image src="MD-GA-2DCam.ipp" scale="-99.90%" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="VariableName"><text styleclass="Interface2">Ergebnis</text>: Grafik-Bereich</para>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Body Table">Die inneren und äußeren <text styleclass="Element">2D-Nocken</text> werden im <text styleclass="Interface">Grafikbereich</text> angezeigt.</para>
+                <para styleclass="Body Table">Sie können auch die <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-Pitch-Centre-Path">Pitch-Kurve</link> anzeigen </para>
+              </td>
+            </tr>
+          </table></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:220px;">
+          <para styleclass="Image Caption"><image src="MD-AT-2DCam-0.png" scale="-99.90%" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="VariableName"><text styleclass="Interface2">Ergebnis</text> : Assembly-Tree</para>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Body Table"><text styleclass="VariableName-IT" translate="false">MechDesigner</text><text styleclass="Body Text HowTo"> fügt eine </text><text styleclass="VariableName">Kurvenscheibe</text><text styleclass="Body Text HowTo"> als untergeordnetes Element zum </text><text styleclass="Interface">Kurventeil</text><text styleclass="Body Text HowTo"> hinzu </text><text styleclass="Body Text">. &#160;Die </text><text styleclass="Element">2D-Nocke</text><text styleclass="Body Text HowTo"> ist ein unter </text>geordnetes Element der<text styleclass="VariableName">Nockenplatte</text><text styleclass="Body Text HowTo">. </text></para>
+                <para styleclass="Body Table"><text styleclass="Body Text HowTo">Sie können mehrere </text><text styleclass="Element">2D-Nocken</text><text styleclass="Body Text HowTo"> zum gleichen </text><text styleclass="Element">Teil</text><text styleclass="Body Text HowTo"> und zur </text>gleichen<text styleclass="VariableName">Nockenplatte</text><text styleclass="Body Text HowTo">hinzufügen .</text></para>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Body Text">Um die <text styleclass="Element">2D-Cam-Parameter</text> zu bearbeiten,<text styleclass="SeeAlso"> siehe </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-2DCam" styleclass="SeeAlso">Dialogfeld 2D-Cam</link><text styleclass="SeeAlso">.</text></para>
+          <para styleclass="Body Text">Um die <text styleclass="Element">2D-Nocke</text> zu analysieren, <text styleclass="SeeAlso">siehe </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Command-FB-Cam-Data" styleclass="SeeAlso">Cam-Data FB hinzufügen</link>.</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td colspan="2">
+          <para styleclass="Body Table"><text styleclass="VariableName-IT" translate="false">MechDesigner</text><text styleclass="Body Text HowTo"> identifiziert die Nocke als </text><text styleclass="VariableName-IT">gute</text><text styleclass="Body Text HowTo"> oder </text><text styleclass="VariableName-IT">schlechte Nocke.</text><text styleclass="Body Text HowTo">&#32;</text></para>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="3" colcount="2">
+            <tr style="vertical-align:top">
+              <td colspan="2">
+                <para styleclass="Body Table"><text styleclass="Body Text HowTo">Er basiert nur auf dem </text><text styleclass="Body Text">Krümmungsradius</text><text styleclass="Body Text HowTo">der Nocke &#160;im Verhältnis zum Radius des Mitnehmers.</text></para>
+                <para styleclass="Body Text HowTo"><text styleclass="VariableName-indent" style="color:#ff0000;">SIE</text><text styleclass="Body Text"> müssen sich vergewissern, dass die Nocke für Ihre Bedürfnisse geeignet ist.</text></para>
+              </td>
+            </tr>
+            <tr style="vertical-align:top">
+              <td style="width:105px;">
+                <para styleclass="Normal" style="text-align:right;"><image src="MD-AT-2DCam-Good.png" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+              </td>
+              <td style="vertical-align:middle;">
+                <para styleclass="VariableName"><text styleclass="Body Text">Eine </text>gute<text styleclass="HowTo Bulleted"> Nocke</text></para>
+              </td>
+            </tr>
+            <tr style="vertical-align:top">
+              <td style="width:105px;">
+                <para styleclass="Normal" style="text-align:right;"><image src="MD-AT-2DCam-Bad.png" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+              </td>
+              <td style="vertical-align:middle;">
+                <para styleclass="VariableName"><text styleclass="HowTo Bulleted">Eine </text>schlechte<text styleclass="HowTo Bulleted"> Nocke</text></para>
+              </td>
+            </tr>
+          </table></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading3 VIDEO">Video:</para>
+    <para styleclass="Body Text"><conditional-text type="IF" value="PDF"/><link displaytype="text" defaultstyle="true" type="filelink" href="ME-Add2DCam.gif" styleclass="T_Menu">Double-click to watch Add a 2D-Cam</link><conditional-text type="END"/><conditional-text type="IF" value="CHM"/></para>
+    <para styleclass="Normal"><toggle type="picture" print-expanded="true" help-expanded="false" src-collapsed="ME-Add2DCam.gif" src-expanded="ME-Add2DCam.gif" scale="25.00%" width="320" height="180" styleclass="Image Caption" figurelistinclude="0"><caption><![CDATA[Add 2D-Cam]]></caption><title>Add 2D-Cam</title></toggle><conditional-text type="END"/><conditional-text type="IF" value="HTML,EBOOK"/></para>
+    <para styleclass="Normal"><video src="ME-Add2DCam.mp4" width="1280px" height="720px" autostart="false" loop="false" showcontrols="false" playbutton="true" previewimage="ME-Add2DCam_preview.jpg" scale="25.00%" styleclass="Image Caption"><title>Add 2D-Cam</title><caption><![CDATA[Add 2D-Cam]]></caption></video><conditional-text type="END"/></para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="Normal" style="page-break-before:always;"></para>
+  </body>
+</topic>

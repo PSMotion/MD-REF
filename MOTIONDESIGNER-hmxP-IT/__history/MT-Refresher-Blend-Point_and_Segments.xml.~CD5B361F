@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" lasteditedby="Adam" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title translate="true">Refresher: Blend-Point and Segments</title>
+  <body>
+    <header>
+      <para styleclass="Heading1"><text styleclass="Heading1" translate="true">Refresher: Blend-Point and Segments</text></para>
+    </header>
+    <para styleclass="Heading3_atocs_"><text styleclass="Heading3_atocs_" translate="true">A Refresher on Segments and Blend-Points in MotionDesigner</text></para>
+    <para styleclass="Body Text"><table styleclass="AStandard" rowcount="1" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <list id="11" type="ol" listtype="decimal" formatstring="%0:s." format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Numbered" style="font-family:'Segoe UI Semibold'; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Numbered"><text styleclass="HowTo Numbered" translate="true">A motion describes the position that you would like a machine element to follow for a complete machine cycle.</text><text styleclass="VariableName" translate="true"> </text></li>
+          </list>
+          <para styleclass="Body Text HowTo"><text styleclass="Body Text HowTo" translate="true">The velocity, acceleration, and jerk values are motion derivatives of position. </text></para>
+          <para styleclass="Body Text HowTo"><text styleclass="Body Text HowTo" translate="true">There are also many </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MT-Mathematical-Function" styleclass="HowTo Numbered" translate="true">mathematical function</link><text styleclass="Body Text HowTo" translate="true"> that describe the acceleration of the motion. These functions are integrated to obtain velocity and position, or differentiated to obtain jerk. </text></para>
+          <para styleclass="Body Text HowTo"><text styleclass="Body Text HowTo" translate="true">Each mathematical-function is also called a Motion-Law or Cam-Law. There many different Motion-Laws you can choose from, each with different applications or advantages.</text></para>
+          <para styleclass="Body Text HowTo"><text styleclass="Body Text HowTo" translate="true">In </text><text styleclass="VariableName-IT" translate="true">Motion</text><text styleclass="VariableName-IT" translate="true">Designer</text><text styleclass="Body Text HowTo" translate="true">, we use algebraic equations to obtain all motion-derivatives. This means we can input any value for the independent variable (usually machine angle or time) and obtain an exact motion-value.</text></para>
+          <list id="11" type="ol" listtype="decimal" formatstring="%0:s." format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Numbered" style="font-family:'Segoe UI Semibold'; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Numbered"><text styleclass="HowTo Numbered" translate="true">When the motion requirements becomes complex, it is difficult to find a single mathematical function that satisfies all of the motion requirements.</text></li>
+            <li styleclass="HowTo Numbered"><text styleclass="HowTo Numbered" translate="true">Therefore, you will usually split, or divide, a motion into two or more segments. Each segment is also defined by a mathematical function and given a Motion-Law.</text></li>
+            <li styleclass="HowTo Numbered"><text styleclass="Body Text HowTo" translate="true">The </text><text styleclass="Body Text HowTo" style="font-style:italic;" translate="true">splitting (dividing)</text><text styleclass="Body Text HowTo" translate="true"> process is called </text><text styleclass="Body Text HowTo" style="text-decoration:underline;" translate="true">segmentation</text><text styleclass="Body Text HowTo" translate="true">.</text></li>
+            <li styleclass="HowTo Numbered"><text styleclass="HowTo Numbered" translate="true">You must choose how many segments and also choose the Motion-Law for each segment.  </text></li>
+            <li styleclass="HowTo Numbered"><text styleclass="HowTo Numbered" translate="true">You must make sure the total duration of the segments is equal to one machine cycle.</text></li>
+            <li styleclass="HowTo Numbered"><text styleclass="VariableName-IT" translate="true">Motion</text><text styleclass="VariableName-IT" translate="true">Designer</text><text styleclass="HowTo Numbered" translate="true"> joins the Segments end-to-end.</text></li>
+            <li styleclass="HowTo Numbered"><text styleclass="HowTo Numbered" translate="true">We use the term &apos;Blend-Point&apos; to describe an instance where one segment ends and another starts.</text></li>
+          </list>
+          <para styleclass="Normal"><line style="height:2px; color:#ff6600;"/></para>
+          <para styleclass="Body Text HowTo"><text styleclass="Body Text HowTo" translate="true">The </text><text styleclass="VariableName" translate="true">Blend-Points</text><text styleclass="Body Text HowTo" translate="true"> define the motion-values at the start and the end of the Segment.</text></para>
+          <para styleclass="Body Text HowTo"><text styleclass="Body Text HowTo" translate="true">The </text><text styleclass="VariableName" translate="true">Motion-Law</text><text styleclass="Body Text HowTo" translate="true"> defines the &apos;shape&apos; and the motion-values between the Blend-Points.</text></para>
+          <para styleclass="Normal"><line style="height:2px; color:#ff6600;"/></para>
+        </td>
+      </tr>
+    </table></para>
+  </body>
+</topic>

@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" modified="2024-05-12T11:56:55.423Z" lasteditedby="44785" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title translate="true">Motion-Law: Low-Impact Velocity at Crossover</title>
+  <keywords>
+    <keyword translate="true">Cam Law: Low Impact at Crossover</keyword>
+    <keyword translate="true">Low Impact at Crossover</keyword>
+    <keyword translate="true">Motion-Law:<keyword translate="true">Low Impact at Crossover</keyword></keyword>
+  </keywords>
+  <body>
+    <header>
+      <para styleclass="Heading1"><text styleclass="Heading1" translate="true">Low Impact Crossover Motion-Law</text></para>
+    </header>
+    <para styleclass="Heading3 Underline_atocs_" style="page-break-before:always;"><text styleclass="Heading3 Underline_atocs_" translate="true">Low Impact at Crossover.</text></para>
+    <para styleclass="" style="text-align:left; text-indent:0px; margin-top:0px; margin-right:0px; margin-bottom:0px; margin-left:0px; line-height:1.00; background-color:transparent; white-space:normal; page-break-inside:auto; page-break-after:auto; border:none; tabstops:none;"><table styleclass="Default" rowcount="2" colcount="2">
+      <tr style="vertical-align:top">
+        <td colspan="2">
+          <para styleclass="Heading4 Toggle_atocs_"><text styleclass="Heading4 Toggle_atocs_" translate="true">Impact, Overrun, and Crossover.</text></para>
+          <para styleclass="Body Text HowTo"><text styleclass="VariableName" translate="true">Crossover</text><text styleclass="Body Text HowTo" translate="true"> is the timing at which acceleration becomes a deceleration, and vice versa.</text></para>
+          <para styleclass="Body Text HowTo"><text styleclass="Body Text HowTo" translate="true">At crossover, machine components traverse </text><text styleclass="VariableName" translate="true">backlash</text><text styleclass="Body Text HowTo" translate="true"> to </text><text styleclass="VariableName" translate="true">impact</text><text styleclass="Body Text HowTo" translate="true"> with each other. </text></para>
+          <para styleclass="Body Text HowTo"><text styleclass="Body Text HowTo" translate="true">As the Torque reverses, the application inertia may drive the motor. The motor may accelerate so that, for a short period, the motor rotates faster than intended. This is called </text><text styleclass="VariableName" translate="true">overrun</text><text styleclass="Body Text HowTo" translate="true">. As a result, the velocity and acceleration of the Follower may also be greater than intended.</text></para>
+          <para styleclass="Body Text HowTo"><text styleclass="Body Text HowTo" translate="true">A motion-law with </text><text styleclass="VariableName" translate="true">Low Jerk at Crossover</text><text styleclass="Body Text HowTo" translate="true"> means the acceleration changes less rapidly at crossover - which means the Jerk is low at crossover. As the acceleration is low for a longer period, the velocity changes less rapidly, to reduce Impacts and Overrun.</text></para>
+          <para styleclass="Heading4 Toggle_atocs_"><text styleclass="Heading4 Toggle_atocs_" translate="true">Low Impact at Crossover.</text></para>
+          <para styleclass="Body Text HowTo"><text styleclass="VariableName" translate="true">Low or Zero Impact at </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MT-POP-Cross-Over" styleclass="VariableName" translate="true">Crossover</link><text styleclass="Body Text HowTo" translate="true"> motion-law is not available in the </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MT-Motion-Law-Selector" styleclass="Body Text HowTo" translate="true">Motion-Law Selector</link><text styleclass="Body Text HowTo" translate="true">. Use two </text><text styleclass="VariableName" translate="true">Flexible Polynomial motion-laws</text><text styleclass="Body Text HowTo" translate="true">.</text></para>
+          <para styleclass="Body Text HowTo"><text styleclass="Body Text HowTo" translate="true">Velocity and Acceleration are zero at the start and end.</text></para>
+          <para styleclass="Body Text HowTo"><text styleclass="Body Text HowTo" translate="true">Acceleration and Jerk are zero at the mid-point.</text></para>
+          <para styleclass="Body Text HowTo"><text styleclass="Body Text HowTo" translate="true">The </text><text styleclass="VariableName" translate="true">Low Impact at Crossover</text><text styleclass="Body Text HowTo" translate="true"> is typically symmetrical. You can make it asymmetrical if you move the X-axis and the Position at the mid-point. The maximum Velocity should not change, but the maximum Acceleration and Jerk values increase. </text></para>
+          <para styleclass="Interface2"><text styleclass="Interface2" translate="true">Motion-Law Coefficients</text></para>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="4" colcount="2" style="width:500px;">
+            <tr style="vertical-align:middle">
+              <td>
+                <para styleclass="Body Text"><text styleclass="Body Text" translate="true">Velocity Coefficient : </text></para>
+              </td>
+              <td>
+                <para styleclass="Popup Box"><equation styleclass="Popup Box" font-size="28" translate="true"><![CDATA[C_{v} = 1.667]]></equation></para>
+              </td>
+            </tr>
+            <tr style="vertical-align:middle">
+              <td>
+                <para styleclass="Body Text"><text styleclass="Body Text" translate="true">Acceleration Coefficient : </text></para>
+              </td>
+              <td>
+                <para styleclass="Popup Box"><equation styleclass="Popup Box" font-size="28" translate="true"><![CDATA[C_{a}=5.926]]></equation></para>
+              </td>
+            </tr>
+            <tr style="vertical-align:middle">
+              <td>
+                <para styleclass="Body Text"><text styleclass="Body Text" translate="true">Jerk Coefficient : </text></para>
+              </td>
+              <td>
+                <para styleclass="Popup Box"><equation styleclass="Popup Box" font-size="28" translate="true"><![CDATA[C_{j} = 80, -26.667]]></equation></para>
+              </td>
+            </tr>
+            <tr style="vertical-align:middle">
+              <td>
+                <para styleclass="Body Text"><text styleclass="Body Text" translate="true">Jerk at Crossover : </text></para>
+              </td>
+              <td>
+                <para styleclass="Popup Box"><equation styleclass="Popup Box" font-size="28" translate="true"><![CDATA[C_{Jc} = 0.0]]></equation></para>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Heading4 Toggle_atocs_"><text styleclass="Heading4 Toggle_atocs_" translate="true">Two Flexible Polynomial segments to give Low Jerk at Crossover motion-law.</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:360px;">
+          <para styleclass="Image Caption"><image src="MT-CamLaw-Low Impact at Crossover.ipp" imagestyleclass="Default" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"><caption translate="true"><![CDATA[Low Jerk at Crossover (with two Flexible-Polynomial Segments)]]></caption></image></para>
+        </td>
+        <td>
+          <para styleclass="Interface2"><text styleclass="Interface2" translate="true">Motion-Values of each motion-derivative </text><text styleclass="VariableName" translate="true">- Normalized values</text></para>
+          <para styleclass="VariableName"><text styleclass="VariableName" translate="true">Start of rise segment 1 :</text></para>
+          <para styleclass="HowTo Bulleted"><text styleclass="HowTo Bulleted" translate="true">X = 0 ( 0º )</text></para>
+          <list id="0" type="ul" listtype="bullet" formatstring="·" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted"><text styleclass="HowTo Bulleted" translate="true">Position = 0</text></li>
+            <li styleclass="Bullets"><text styleclass="Bullets" translate="true">Velocity = 0</text></li>
+            <li styleclass="Bullets"><text styleclass="Bullets" translate="true">Acceleration = 0</text></li>
+            <li styleclass="Bullets"><text styleclass="Bullets" translate="true">Jerk = Unspecified </text><text styleclass="HowTo Bulleted" translate="true"> ( Actual value = 80</text><text styleclass="HowTo Bulleted" style="font-size:10pt; vertical-align:baseline;" translate="true"> mm//s/s/s</text><text styleclass="HowTo Bulleted" translate="true"> )</text></li>
+          </list>
+          <para styleclass="VariableName"><text styleclass="VariableName" translate="true">Mid-Point :</text></para>
+          <para styleclass="HowTo Bulleted"><text styleclass="HowTo Bulleted" translate="true">X = 0.5 (180º ) </text></para>
+          <list id="1" type="ul" listtype="bullet" formatstring="·" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted"><text styleclass="HowTo Bulleted" translate="true">Position = 0.5</text></li>
+            <li styleclass="HowTo Bulleted"><text styleclass="HowTo Bulleted" translate="true">Velocity = Unspecified ( Actual value = 1.6667</text><text styleclass="HowTo Bulleted" style="font-size:10pt; vertical-align:baseline;" translate="true"> mm/s</text><text styleclass="HowTo Bulleted" translate="true"> )</text></li>
+            <li styleclass="HowTo Bulleted"><text styleclass="HowTo Bulleted" translate="true">Acceleration = </text><text styleclass="Body Text" translate="true">0</text></li>
+            <li styleclass="HowTo Bulleted"><text styleclass="HowTo Bulleted" translate="true">Jerk = </text><text styleclass="Body Text" translate="true">0</text></li>
+          </list>
+          <para styleclass="VariableName"><text styleclass="VariableName" translate="true">End of return Segment 2 :</text></para>
+          <para styleclass="HowTo Bulleted"><text styleclass="HowTo Bulleted" translate="true">X = 1 ( 360º )</text></para>
+          <list id="2" type="ul" listtype="bullet" formatstring="·" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted"><text styleclass="HowTo Bulleted" translate="true">Position = 1</text></li>
+          </list>
+          <list id="0" type="ul" listtype="bullet" formatstring="·" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted"><text styleclass="HowTo Bulleted" translate="true">Velocity = 0</text></li>
+            <li styleclass="HowTo Bulleted"><text styleclass="HowTo Bulleted" translate="true">Acceleration = 0</text></li>
+            <li styleclass="HowTo Bulleted"><text styleclass="HowTo Bulleted" translate="true">Jerk = Unspecified  ( Actual value = 80</text><text styleclass="HowTo Bulleted" style="font-size:10pt; vertical-align:baseline;" translate="true"> mm//s/s/s</text><text styleclass="HowTo Bulleted" translate="true"> )</text></li>
+          </list>
+        </td>
+      </tr>
+    </table></para>
+  </body>
+</topic>

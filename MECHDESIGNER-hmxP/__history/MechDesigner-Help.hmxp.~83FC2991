@@ -1,0 +1,1680 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<helpproject xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="helpproject.xsd" version="2.2" isskin="false" isrepository="false">
+  <config>
+    <repository name="StyleRep-9C" href="..\..\SKINS-9C\StyleRep-9C.hmxr"/>
+    <namespaces/>
+    <export-task-groups>
+      <export-task-group name="Recent Publishes">
+        <export-tasks>
+          <export-task name="Publish as CHM" format="CHM">
+            <task-config-group name="settings">
+              <task-config-value name="outputfile">..\..\SKINS-9-PUBLISH\CHM -MD or MT\MechDesigner.chm</task-config-value>
+              <task-config-value name="skin">..\..\SKINS-9A\CHM-SKIN\CHM_Dark-HM8-PP4.hmskin</task-config-value>
+              <task-config-value name="deletetemp">1</task-config-value>
+              <task-config-value name="make0include">MD17</task-config-value>
+              <task-config-value name="make0includeskin">OPT_BREADTRAIL,OPT_FB,OPT_FOOTER,OPT_HDBG,OPT_HDLOGO,OPT_HDLOGOLINK,OPT_POPUPS,OPT_HOME</task-config-value>
+              <task-config-value name="make0status">*</task-config-value>
+            </task-config-group>
+          </export-task>
+          <export-task name="Publish as EXE" format="EXE">
+            <task-config-group name="settings">
+              <task-config-value name="outputfile">.\FOR DOWNLOADS\MechDesigner.exe</task-config-value>
+              <task-config-value name="make6include">EBOOK</task-config-value>
+              <task-config-value name="make6status">*</task-config-value>
+            </task-config-group>
+          </export-task>
+          <export-task name="Publish as HTM" format="HTM">
+            <task-config-group name="settings">
+              <task-config-value name="outputfile">..\..\SKINS-9-PUBLISH\WEB-testing-MD-MT-only\index.htm</task-config-value>
+              <task-config-value name="skin">..\..\SKINS-9A\WEB-HTML-SKIN\Webhelp, iFrames Responsive, Blue-MD16-A.hmskin</task-config-value>
+              <task-config-value name="make3include">HTML</task-config-value>
+              <task-config-value name="make3status">*</task-config-value>
+            </task-config-group>
+          </export-task>
+          <export-task name="Publish as PDF" format="PDF">
+            <task-config-group name="settings">
+              <task-config-value name="outputfile">MechDesigner-Reference-Help.pdf</task-config-value>
+              <task-config-value name="template">..\..\SKINS-9A\PDF-SKIN\Standard_manualHM8_A4-B.mnl</task-config-value>
+              <task-config-value name="highlighthotspots">0</task-config-value>
+              <task-config-value name="exportcomments">0</task-config-value>
+              <task-config-value name="exportcommentsdate">36526</task-config-value>
+              <task-config-value name="make4include">PDF</task-config-value>
+              <task-config-value name="make4status">*</task-config-value>
+            </task-config-group>
+          </export-task>
+          <export-task name="Publish as RTF" format="RTF">
+            <task-config-group name="settings">
+              <task-config-value name="outputfile">..\..\SKINS-9-PUBLISH\WORD\MechDesignerr.docx</task-config-value>
+              <task-config-value name="template">$(HMSYS)Templates\Word\Word-Template-Simple-A4.docx</task-config-value>
+              <task-config-value name="make5include">PRINT</task-config-value>
+              <task-config-value name="make5status">*</task-config-value>
+            </task-config-group>
+          </export-task>
+          <export-task name="Publish as EPUB" format="EPUB">
+            <task-config-group name="settings">
+              <task-config-value name="outputfile">MechDesigner-5.112-ibook.epub</task-config-value>
+              <task-config-value name="deletetemp">1</task-config-value>
+              <task-config-value name="make7include">EBOOK</task-config-value>
+              <task-config-value name="make7status">*</task-config-value>
+            </task-config-group>
+          </export-task>
+        </export-tasks>
+      </export-task-group>
+    </export-task-groups>
+    <helpwindows>
+      <helpwindow name="Main" left="-1" top="-1" width="-1" height="-1">
+        <caption translate="true">&lt;%TITLE%&gt;</caption>
+        <window-options-chm navigation="true" navigationwidth="220" index="true" search="true" favorite="true" saveregistry="true" buttons="14414">
+          <user-button name="jump1">
+            <caption translate="true">jump1</caption>
+          </user-button>
+          <user-button name="jump2">
+            <caption translate="true">jump2</caption>
+          </user-button>
+          <user-button name="Home">
+            <caption translate="true">Home</caption>
+          </user-button>
+        </window-options-chm>
+      </helpwindow>
+      <helpwindow name="PopupTop" left="194" top="141" width="641" height="480">
+        <caption translate="true">&lt;%TITLE%&gt;</caption>
+        <window-options-chm navigation="true" navigationwidth="200" index="true" search="true" favorite="true" saveregistry="true" buttons="0">
+          <user-button name="Home">
+            <caption translate="true">Home</caption>
+          </user-button>
+          <user-button name="Jump1">
+            <caption translate="true">Jump1</caption>
+          </user-button>
+          <user-button name="Jump2">
+            <caption translate="true">Jump2</caption>
+          </user-button>
+        </window-options-chm>
+      </helpwindow>
+    </helpwindows>
+    <styleclasses>
+      <styleclass name="Equations" shortcut="0" mode="1">
+        <style-set media="screen" type="para">text-indent:0px; margin-top:3px; margin-bottom:4px; margin-left:22px; background-color:#e8e8d0; white-space:normal; border-color:#ff9900; border-style:single; border-width:1px; padding:4px;</style-set>
+        <style-set media="screen" type="text">font-family:Georgia; font-size:12pt; font-weight:bold; font-style:italic; letter-spacing:normal; letter-scaling:130%;</style-set>
+      </styleclass>
+      <styleclass name="InThisTopic Heading" shortcut="0" mode="1">
+        <style-set media="screen" type="para">text-align:center; margin-bottom:0px; white-space:nowrap; page-break-after:avoid; border:none;</style-set>
+        <style-set media="screen" type="text">font-family:Verdana; font-size:10pt; font-weight:bold; text-transform:uppercase; color:#ffffff; letter-spacing:-1px;</style-set>
+      </styleclass>
+      <styleclass name="InThisTopic LinkList" shortcut="0" mode="1">
+        <style-set media="screen" type="para">margin-bottom:1px; white-space:nowrap;</style-set>
+        <style-set media="screen" type="text">font-family:Verdana; font-size:11pt; letter-spacing:-1px;</style-set>
+      </styleclass>
+      <styleclass name="Normal" shortcut="0" mode="1">
+        <style-set media="screen" type="text">font-family:'Segoe UI'; font-size:11pt;</style-set>
+      </styleclass>
+      <styleclass name="Body Text" parentclass="Normal" shortcut="114" mode="1">
+        <style-set media="screen" type="para">margin-top:2px; margin-right:3px; margin-bottom:3px; margin-left:3px;</style-set>
+      </styleclass>
+      <styleclass name="Body Table" parentclass="Body Text" shortcut="49238" mode="1"/>
+      <styleclass name="Body Text  8pt" parentclass="Body Text" shortcut="0">
+        <style-set media="screen" type="para">margin-bottom:0px;</style-set>
+        <style-set media="screen" type="text">font-size:8pt;</style-set>
+      </styleclass>
+      <styleclass name="Body Text  9pt" parentclass="Body Text  8pt" shortcut="0">
+        <style-set media="screen" type="text">font-size:9pt;</style-set>
+      </styleclass>
+      <styleclass name="Body Text  10pt indent" parentclass="Body Text  9pt" shortcut="0">
+        <style-set media="screen" type="para">margin-left:23px;</style-set>
+        <style-set media="screen" type="text">font-size:10pt;</style-set>
+      </styleclass>
+      <styleclass name="Body Text - small" parentclass="Body Text" shortcut="0">
+        <style-set media="screen" type="para">margin-bottom:0px;</style-set>
+        <style-set media="screen" type="text">font-size:8pt;</style-set>
+      </styleclass>
+      <styleclass name="Body Text - bit bigger" parentclass="Body Text - small" shortcut="0">
+        <style-set media="screen" type="text">font-size:9pt;</style-set>
+      </styleclass>
+      <styleclass name="Body Text - bit bit bigger2" parentclass="Body Text - bit bigger" shortcut="0">
+        <style-set media="screen" type="para">margin-left:23px;</style-set>
+        <style-set media="screen" type="text">font-size:10pt;</style-set>
+      </styleclass>
+      <styleclass name="Body Text HowTo" parentclass="Body Text" shortcut="16498" mode="1">
+        <style-set media="screen" type="para">margin-left:26px;</style-set>
+      </styleclass>
+      <styleclass name="Body Text Howindent4bullets" parentclass="Body Text HowTo" shortcut="24651" mode="1">
+        <style-set media="screen" type="para">margin-left:45px;</style-set>
+      </styleclass>
+      <styleclass name="Body Text HowTo2" parentclass="Body Text HowTo" shortcut="49240" mode="1">
+        <style-set media="screen" type="para">margin-left:28px;</style-set>
+      </styleclass>
+      <styleclass name="Body Text2-Note" parentclass="Body Text" nextclass="Body Text HowTo" shortcut="0">
+        <style-set media="screen" type="para">margin-top:2px; margin-bottom:2px;</style-set>
+        <style-set media="screen" type="text">font-size:10pt;</style-set>
+      </styleclass>
+      <styleclass name="BodyText BI" parentclass="Body Text" shortcut="122">
+        <style-set media="screen" type="text">font-family:'Noto Sans';</style-set>
+      </styleclass>
+      <styleclass name="BodyText Bold" parentclass="Body Text" shortcut="122" mode="1">
+        <style-set media="screen" type="text">font-family:'Noto Sans'; font-size:12pt;</style-set>
+      </styleclass>
+      <styleclass name="BodyText Bold-UL" parentclass="BodyText Bold" shortcut="24655" mode="1">
+        <style-set media="screen" type="para">margin-bottom:2px;</style-set>
+        <style-set media="screen" type="text">font-family:'Segoe UI Semibold'; text-transform:uppercase; color:#000080;</style-set>
+      </styleclass>
+      <styleclass name="HowTo Bulleted" parentclass="Body Text" shortcut="24642" mode="1">
+        <style-set media="screen" type="para">text-indent:-23px; margin-bottom:2px; margin-left:49px;</style-set>
+      </styleclass>
+      <styleclass name="B Bullets" parentclass="HowTo Bulleted" shortcut="0">
+        <style-set media="screen" type="para">margin-left:27px;</style-set>
+      </styleclass>
+      <styleclass name="Bullets" parentclass="HowTo Bulleted" shortcut="49218" mode="1">
+        <style-set media="screen" type="para">margin-left:26px;</style-set>
+      </styleclass>
+      <styleclass name="HowTo Bulleted - compressed" parentclass="HowTo Bulleted" shortcut="0" mode="1">
+        <style-set media="screen" type="para">margin-top:2px; margin-bottom:3px;</style-set>
+        <style-set media="screen" type="text">font-size:10pt;</style-set>
+      </styleclass>
+      <styleclass name="HowTo Bulleted - compressed2" parentclass="HowTo Bulleted - compressed" shortcut="0">
+        <style-set media="screen" type="para">text-indent:0px; margin-bottom:0px; margin-left:0px;</style-set>
+      </styleclass>
+      <styleclass name="HowTo Bulleted2" parentclass="HowTo Bulleted" shortcut="0" mode="1">
+        <style-set media="screen" type="para">margin-left:57px;</style-set>
+      </styleclass>
+      <styleclass name="HowTo Bulleted3" parentclass="HowTo Bulleted2" shortcut="0">
+        <style-set media="screen" type="para">text-indent:-22px; margin-bottom:6px; margin-left:68px;</style-set>
+      </styleclass>
+      <styleclass name="HowTo Bulleted4" parentclass="HowTo Bulleted3" shortcut="0">
+        <style-set media="screen" type="para">margin-left:91px;</style-set>
+      </styleclass>
+      <styleclass name="HowTo Bulleted5" parentclass="HowTo Bulleted" shortcut="0">
+        <style-set media="screen" type="para">text-indent:-19px; margin-left:43px;</style-set>
+      </styleclass>
+      <styleclass name="Table Bullets [short]" parentclass="HowTo Bulleted" shortcut="0" mode="1">
+        <style-set media="screen" type="para">text-indent:-68px; margin-left:69px;</style-set>
+      </styleclass>
+      <styleclass name="HowTo Numbered" parentclass="Body Text" shortcut="24654" mode="1">
+        <style-set media="screen" type="para">text-indent:-23px; margin-bottom:2px; margin-left:49px;</style-set>
+      </styleclass>
+      <styleclass name="HowTo STEP" parentclass="HowTo Numbered" shortcut="24641" mode="1">
+        <style-set media="screen" type="para">text-indent:-63px; margin-bottom:1px; margin-left:66px; border:none;</style-set>
+        <style-set media="screen" type="text">font-family:'Segoe UI Semibold';</style-set>
+      </styleclass>
+      <styleclass name="HowTo NO STEP" parentclass="HowTo STEP" shortcut="0" mode="1">
+        <style-set media="screen" type="para">text-indent:0px; margin-bottom:2px; margin-left:0px;</style-set>
+      </styleclass>
+      <styleclass name="Note" parentclass="Body Text" shortcut="0" mode="1">
+        <style-set media="screen" type="para">text-indent:-59px; margin-bottom:3px; margin-left:83px;</style-set>
+        <style-set media="screen" type="text">font-size:10pt;</style-set>
+      </styleclass>
+      <styleclass name="Parameter" parentclass="Body Text" shortcut="24646" mode="1">
+        <style-set media="screen" type="text">font-family:'Segoe UI Semibold'; font-size:10pt; font-weight:bold; text-transform:uppercase; color:#000080;</style-set>
+      </styleclass>
+      <styleclass name="ParameterHeader" parentclass="Parameter" nextclass="Body Table" shortcut="121" mode="1">
+        <style-set media="screen" type="text">font-size:11pt;</style-set>
+      </styleclass>
+      <styleclass name="Parameter-Popup" parentclass="Parameter" shortcut="49222" mode="1">
+        <style-set media="screen" type="text">font-size:9pt; color:#000080;</style-set>
+      </styleclass>
+      <styleclass name="Separator" parentclass="Body Text" shortcut="24647" mode="1">
+        <style-set media="screen" type="text">font-family:'Segoe UI Semibold'; font-size:10pt; text-transform:uppercase; background-color:#ff8000;</style-set>
+      </styleclass>
+      <styleclass name="Separator22" parentclass="Separator" shortcut="49223" mode="1">
+        <style-set media="screen" type="para">margin-top:3px;</style-set>
+        <style-set media="screen" type="text">font-size:11pt;</style-set>
+      </styleclass>
+      <styleclass name="Separator-Header" parentclass="Body Text" shortcut="49223">
+        <style-set media="screen" type="para">margin-top:3px; border:none;</style-set>
+        <style-set media="screen" type="text">font-family:'Segoe UI Semibold'; text-transform:uppercase; background-color:#ff8000;</style-set>
+      </styleclass>
+      <styleclass name="Callouts" parentclass="Normal" shortcut="0">
+        <style-set media="screen" type="para">margin-bottom:5px;</style-set>
+        <style-set media="screen" type="text">font-family:Verdana; font-size:10pt; letter-spacing:-1px;</style-set>
+      </styleclass>
+      <styleclass name="Callouts Bulleted" parentclass="Callouts" shortcut="0">
+        <style-set media="screen" type="para">text-indent:-27px; margin-right:24px; margin-bottom:10px; margin-left:51px;</style-set>
+      </styleclass>
+      <styleclass name="Callouts Header" parentclass="Callouts" shortcut="0">
+        <style-set media="screen" type="para">margin-bottom:3px;</style-set>
+        <style-set media="screen" type="text">font-family:'Segoe UI Semibold'; font-size:11pt; font-weight:bold; letter-spacing:normal;</style-set>
+      </styleclass>
+      <styleclass name="Code Example" parentclass="Normal" shortcut="0" mode="1">
+        <style-set media="screen" type="para">white-space:nowrap;</style-set>
+        <style-set media="screen" type="text">font-family:'Courier New'; font-size:10pt;</style-set>
+      </styleclass>
+      <styleclass name="Comment" parentclass="Normal" shortcut="0" mode="1">
+        <style-set media="screen" type="para">text-align:center;</style-set>
+      </styleclass>
+      <styleclass name="Element" parentclass="Normal" shortcut="123" mode="1">
+        <style-set media="screen" type="para">margin-top:2px; margin-right:2px; margin-bottom:2px; margin-left:2px;</style-set>
+        <style-set media="screen" type="text">font-family:'Segoe UI Semibold'; font-size:10pt; font-weight:bold; text-transform:uppercase; color:#640000;</style-set>
+      </styleclass>
+      <styleclass name="Element-Header" parentclass="Element" nextclass="Body Text" shortcut="8315" mode="1">
+        <style-set media="screen" type="text">font-size:11pt; color:#640000;</style-set>
+      </styleclass>
+      <styleclass name="Interface" parentclass="Element" shortcut="120" mode="1">
+        <style-set media="screen" type="text">color:#000000;</style-set>
+      </styleclass>
+      <styleclass name="Interface2" parentclass="Interface" shortcut="8313" mode="1">
+        <style-set media="screen" type="para">margin-right:3px;</style-set>
+        <style-set media="screen" type="text">font-size:11pt; font-weight:normal;</style-set>
+      </styleclass>
+      <styleclass name="InterfaceLargeRO" parentclass="Interface" shortcut="49220" mode="1">
+        <style-set media="screen" type="para">background-color:#c8dcff; border:none;</style-set>
+        <style-set media="screen" type="text">font-size:11pt; font-weight:normal;</style-set>
+      </styleclass>
+      <styleclass name="InterfaceReadOnly" parentclass="Interface" shortcut="24644" mode="1">
+        <style-set media="screen" type="para">background-color:#c8dcff; border-color:#c6dbff; border-style:single; border-width:1px;</style-set>
+      </styleclass>
+      <styleclass name="VariableName" parentclass="Element" shortcut="8312" mode="1">
+        <style-set media="screen" type="para">margin-right:3px; margin-left:3px;</style-set>
+        <style-set media="screen" type="text">font-size:11pt; text-transform:none; color:#000000;</style-set>
+      </styleclass>
+      <styleclass name="VariableName-indent" parentclass="VariableName" shortcut="24696" mode="1">
+        <style-set media="screen" type="para">margin-left:24px;</style-set>
+      </styleclass>
+      <styleclass name="VariableName-IT" parentclass="VariableName" shortcut="41080" mode="1">
+        <style-set media="screen" type="para">border:none;</style-set>
+        <style-set media="screen" type="text">font-style:italic;</style-set>
+      </styleclass>
+      <styleclass name="VariableName-IT2" parentclass="VariableName-IT" shortcut="49272" mode="1">
+        <style-set media="screen" type="para">margin-left:24px;</style-set>
+      </styleclass>
+      <styleclass name="VariableName-small" parentclass="VariableName" shortcut="49271" mode="1">
+        <style-set media="screen" type="para">margin-top:0px; margin-right:2px;</style-set>
+        <style-set media="screen" type="text">font-size:10pt;</style-set>
+      </styleclass>
+      <styleclass name="Heading1" parentclass="Normal" shortcut="119" mode="1">
+        <style-set media="screen" type="para">page-break-after:avoid;</style-set>
+        <style-set media="screen" type="text">font-size:14pt; font-weight:bold; color:#ffffff;</style-set>
+      </styleclass>
+      <styleclass name="Heading2" parentclass="Normal" nextclass="Body Text HowTo" shortcut="116" mode="1">
+        <style-set media="screen" type="para">margin-top:8px; margin-bottom:4px; page-break-after:avoid; border-color:#343400; border-style:single; border-width:2px; border-top:none; border-right:none; border-left:none; padding:1px;</style-set>
+        <style-set media="screen" type="text">font-size:14pt; font-weight:bold; color:#333300;</style-set>
+      </styleclass>
+      <styleclass name="Heading2 Toggle_atoc_" parentclass="Heading2" nextclass="Body Text HowTo" shortcut="0" mode="1">
+        <style-set media="screen" type="para">text-indent:-20px; margin-top:8px; margin-bottom:4px; margin-left:20px; border:none;</style-set>
+      </styleclass>
+      <styleclass name="Heading3_atocs_" parentclass="Heading2" nextclass="Body Text HowTo" shortcut="117" mode="1">
+        <style-set media="screen" type="para">margin-top:5px; margin-bottom:2px; border:none;</style-set>
+        <style-set media="screen" type="text">font-size:13pt;</style-set>
+        <style-set media="print" type="para">margin-top:5px; margin-bottom:5px; border:none;</style-set>
+        <style-set media="print" type="text">font-weight:bold;</style-set>
+      </styleclass>
+      <styleclass name="Heading3 delte Underline_atocs_" parentclass="Heading3_atocs_" nextclass="Body Text HowTo" shortcut="0">
+        <style-set media="screen" type="para">border:none;</style-set>
+      </styleclass>
+      <styleclass name="Heading3 VIDEO" parentclass="Heading3_atocs_" nextclass="Body Text HowTo" shortcut="8309" mode="1">
+        <style-set media="screen" type="para">margin-top:2px; margin-bottom:0px;</style-set>
+      </styleclass>
+      <styleclass name="Heading4 HowTo_atoc_" parentclass="Normal" shortcut="115" mode="1">
+        <style-set media="screen" type="para">margin-top:5px; margin-right:3px; margin-bottom:3px; margin-left:3px; background-color:#ececda; page-break-after:avoid; border-color:#333300; border-style:single; border-width:1px; padding:1px;</style-set>
+        <style-set media="screen" type="text">font-family:'Segoe UI Semibold'; font-size:12pt; color:#262600;</style-set>
+      </styleclass>
+      <styleclass name="Heading4 HowTo Toggle_atoc_" parentclass="Heading4 HowTo_atoc_" shortcut="8307" mode="1">
+        <style-set media="screen" type="para">margin-right:4px; margin-left:25px;</style-set>
+        <style-set media="screen" type="text">color:#262600;</style-set>
+      </styleclass>
+      <styleclass name="Heading4 Toggle_atocs_" parentclass="Normal" shortcut="24648" mode="1">
+        <style-set media="screen" type="para">margin-top:8px; margin-right:3px; margin-bottom:3px; margin-left:3px; border-color:#000080; border-style:single; border-width:1px; border-top:none; border-right:none; border-bottom:none; border-left:none;</style-set>
+        <style-set media="screen" type="text">font-weight:bold; color:#333300;</style-set>
+      </styleclass>
+      <styleclass name="Heading4 Toggle_atocs_2" parentclass="Heading4 Toggle_atocs_" shortcut="24650" mode="1">
+        <style-set media="screen" type="para">margin-left:24px;</style-set>
+      </styleclass>
+      <styleclass name="Image Caption" parentclass="Normal" shortcut="0" mode="1">
+        <style-set media="screen" type="text">font-family:'Segoe UI Semibold'; font-size:10pt;</style-set>
+      </styleclass>
+      <styleclass name="Notes" parentclass="Normal" shortcut="49230" mode="1">
+        <style-set media="screen" type="para">margin-top:2px; margin-right:2px; margin-bottom:3px; margin-left:3px;</style-set>
+        <style-set media="screen" type="text">font-family:'Segoe UI Semibold'; color:#040404;</style-set>
+      </styleclass>
+      <styleclass name="Popup Box" parentclass="Normal" shortcut="49270" mode="1">
+        <style-set media="screen" type="para">margin-top:1px; margin-right:2px; margin-bottom:1px; margin-left:2px;</style-set>
+        <style-set media="screen" type="text">font-size:10pt;</style-set>
+      </styleclass>
+      <styleclass name="Popup Box2" parentclass="Popup Box" shortcut="41078" mode="1">
+        <style-set media="screen" type="text">font-family:'Segoe UI Semibold'; font-size:9pt; text-transform:uppercase;</style-set>
+      </styleclass>
+      <styleclass name="Popup Box-Elements" parentclass="Popup Box" shortcut="41083" mode="1">
+        <style-set media="screen" type="para">text-indent:1px;</style-set>
+        <style-set media="screen" type="text">font-family:'Segoe UI Semibold'; font-size:9pt; text-transform:uppercase; color:#640000;</style-set>
+      </styleclass>
+      <styleclass name="SeeAlso" parentclass="Normal" shortcut="24652" mode="1">
+        <style-set media="screen" type="para">margin-top:2px; margin-right:2px; margin-bottom:3px; margin-left:2px; page-break-after:avoid;</style-set>
+        <style-set media="screen" type="text">font-family:'Segoe UI Semibold'; color:#000080;</style-set>
+        <style-set media="print" type="para">margin-top:1px; margin-bottom:1px; page-break-after:avoid;</style-set>
+        <style-set media="print" type="text">font-size:10pt; font-weight:bold;</style-set>
+      </styleclass>
+      <styleclass name="SeeAlso-small" parentclass="SeeAlso" shortcut="49228" mode="1">
+        <style-set media="screen" type="para">margin-top:1px; margin-bottom:2px;</style-set>
+        <style-set media="screen" type="text">font-size:10pt;</style-set>
+      </styleclass>
+      <styleclass name="SOLIDWORKS" parentclass="Normal" shortcut="0" mode="1">
+        <style-set media="screen" type="para">margin-top:2px; margin-bottom:3px;</style-set>
+        <style-set media="screen" type="text">font-size:10pt; text-transform:uppercase;</style-set>
+      </styleclass>
+      <styleclass name="T_Code" shortcut="24643" mode="1">
+        <style-set media="screen" type="text">font-family:'Courier New'; font-size:11pt; font-weight:bold; letter-spacing:-1px;</style-set>
+      </styleclass>
+      <styleclass name="T_Emphasis" shortcut="0" mode="1">
+        <style-set media="screen" type="para">background-color:#ffffff; border:none;</style-set>
+        <style-set media="screen" type="text">font-family:'Segoe UI'; font-size:10pt; font-weight:bold; font-style:normal; text-transform:uppercase; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;</style-set>
+      </styleclass>
+      <styleclass name="T_Menu" shortcut="24653" mode="1">
+        <style-set media="screen" type="para">margin-top:2px; margin-right:2px; margin-bottom:3px; margin-left:2px;</style-set>
+        <style-set media="screen" type="text">font-family:'Segoe UI Semibold'; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; color:#003300; letter-spacing:normal; letter-scaling:100%;</style-set>
+      </styleclass>
+      <styleclass name="T_Menusmall" parentclass="T_Menu" shortcut="49229" mode="1">
+        <style-set media="screen" type="para">margin-top:0px; margin-bottom:0px; margin-left:0px;</style-set>
+        <style-set media="screen" type="text">font-family:'Segoe UI Semibold'; font-size:10pt; text-transform:none;</style-set>
+      </styleclass>
+      <styleclass name="T_ToggleLink" shortcut="0" mode="1">
+        <style-set media="screen" type="text">font-family:Tahoma; font-size:10pt; font-weight:bold; letter-spacing:normal;</style-set>
+      </styleclass>
+      <styleclass name="T_ToggleLinkLarge" parentclass="T_ToggleLink" shortcut="0" mode="1">
+        <style-set media="screen" type="text">font-size:11pt;</style-set>
+      </styleclass>
+      <styleclass name="T_Toggletext" shortcut="0" mode="1">
+        <style-set media="screen" type="para">margin-left:3px; background-color:#ccffcc; border-color:#000000; border-style:single; border-width:1px; padding:1px;</style-set>
+        <style-set media="screen" type="text">font-family:'Noto Sans'; font-size:10pt; font-weight:normal; font-style:normal; text-transform:none; color:#008000; background-color:#ccffcc; letter-spacing:normal;</style-set>
+      </styleclass>
+      <styleclass name="T_Camlinks User" parentclass="T_Toggletext" shortcut="0" mode="1">
+        <style-set media="screen" type="para">margin-bottom:6px; background-color:#ff99cc; border-color:#000000; border-style:single; border-width:1px;</style-set>
+        <style-set media="screen" type="text">color:#000000; background-color:#ff99cc;</style-set>
+      </styleclass>
+      <styleclass name="Translation" shortcut="49227" mode="1">
+        <style-set media="screen" type="text">font-family:'Segoe UI Semibold'; font-style:italic; background-color:#ebebeb;</style-set>
+      </styleclass>
+      <tablestyleclass name="Default" mode="1">
+        <style-set media="screen">width:100%; cell-padding:1px; cell-spacing:0px; page-break-inside:auto; border-width:0px; border-spacing:0px; border-collapse:collapse; cell-border-width:1px; border-color:#343400; border-style:solid; background-color:#f3f3f3; head-row-background-color:none; alt-row-background-color:none;</style-set>
+      </tablestyleclass>
+      <tablestyleclass name="Orange1" parentclass="Default" mode="1">
+        <style-set media="screen">width:auto; cell-padding:2px; cell-spacing:0px; page-break-inside:auto; border-width:0px; border-spacing:0px; border-collapse:collapse; cell-border-width:1px; border-color:#993300; border-style:solid; background-color:#f2f2f2; head-row-background-color:none; alt-row-background-color:none;</style-set>
+      </tablestyleclass>
+      <tablestyleclass name="OrangeBar" parentclass="Default" mode="1">
+        <style-set media="screen">width:100%; cell-padding:1px; cell-spacing:0px; page-break-inside:auto; border-width:0px; border-spacing:0px; border-collapse:collapse; cell-border-width:1px; border-color:#993300; border-style:solid; background-color:#f3f3f3; head-row-background-color:none; alt-row-background-color:none;</style-set>
+      </tablestyleclass>
+      <tablestyleclass name="PopupTable" parentclass="Default" mode="1">
+        <style-set media="screen">width:450px; cell-padding:0px; cell-spacing:1px; page-break-inside:auto; border-width:1px; border-spacing:1px; cell-border-width:0px; border-color:#343400; border-style:solid; background-color:#ececec; head-row-background-color:none; alt-row-background-color:none;</style-set>
+      </tablestyleclass>
+      <tablestyleclass name="Block" parentclass="PopupTable" mode="1">
+        <style-set media="screen">width:100%; cell-padding:1px; cell-spacing:0px; page-break-inside:auto; border-width:1px; border-spacing:0px; cell-border-width:0px; border-color:#343400; border-style:solid; background-color:#ffffff; head-row-background-color:none; alt-row-background-color:none;</style-set>
+      </tablestyleclass>
+      <tablestyleclass name="Hint" parentclass="Block" mode="1">
+        <style-set media="screen">width:60%; cell-padding:2px; cell-spacing:0px; page-break-inside:auto; border-width:1px; border-spacing:0px; cell-border-width:0px; border-color:#000000; border-style:solid; background-color:#f2f2f2; head-row-background-color:none; alt-row-background-color:none;</style-set>
+      </tablestyleclass>
+      <tablestyleclass name="PopupTable2" parentclass="PopupTable" mode="1">
+        <style-set media="screen">width:100%; cell-padding:1px; cell-spacing:0px; page-break-inside:auto; border-width:1px; border-spacing:0px; cell-border-width:0px; border-color:#333300; border-style:solid; background-color:#ffffff; head-row-background-color:none; alt-row-background-color:none;</style-set>
+      </tablestyleclass>
+      <tablestyleclass name="Rules" parentclass="Default" mode="1">
+        <style-set media="screen">width:auto; cell-padding:2px; cell-spacing:0px; page-break-inside:auto; border-width:1px; border-spacing:0px; cell-border-width:0px; border-color:#ff6600; border-style:solid; background-color:#dadada; head-row-background-color:none; alt-row-background-color:none;</style-set>
+      </tablestyleclass>
+      <tablestyleclass name="Standard" parentclass="Default" mode="1">
+        <style-set media="screen">width:100%; cell-padding:1px; cell-spacing:0px; page-break-inside:auto; border-width:0px; border-spacing:0px; border-collapse:collapse; cell-border-width:1px; border-color:#993300; border-style:solid; background-color:#f1f1f1; head-row-background-color:none; alt-row-background-color:none;</style-set>
+      </tablestyleclass>
+      <imagestyleclass name="Basic">
+        <style-set media="screen">width:240px;border-style:solid;border-width:1px;border-spacing:0px;border-radius:0px;border-color:#993300;text-align:right;</style-set>
+      </imagestyleclass>
+      <imagestyleclass name="Default" mode="1">
+        <style-set media="screen">border-style:solid;border-width:0px;border-spacing:0px;border-radius:0px;border-color:#333300;</style-set>
+      </imagestyleclass>
+      <imagestyleclass name="Border1pxdporange" parentclass="Default">
+        <style-set media="screen">border-style:solid;border-width:1px;border-spacing:0px;border-radius:0px;border-color:#993300;</style-set>
+      </imagestyleclass>
+      <imagestyleclass name="New Style 2" parentclass="Default" mode="1">
+        <style-set media="screen">border-style:solid;border-width:1px;border-spacing:0px;border-radius:0px;border-color:#ff00ff;</style-set>
+      </imagestyleclass>
+      <imagestyleclass name="Main" mode="1">
+        <style-set media="screen">border-style:solid;border-width:1px;border-spacing:0px;border-radius:0px;border-color:#993300;</style-set>
+      </imagestyleclass>
+    </styleclasses>
+    <config-group name="project">
+      <config-value name="title" translate="true">MechDesigner and MotionDesigner Reference</config-value>
+      <config-value name="author" translate="true">PSMotion Ltd</config-value>
+      <config-value name="copyright" translate="true">© &lt;%year%&gt; PSMotion Ltd</config-value>
+      <config-value name="versionmajor">17</config-value>
+      <config-value name="versionminor">0</config-value>
+      <config-value name="versionbuild">0</config-value>
+      <config-value name="lcid" translate="true">en-us</config-value>
+      <config-value name="charset" translate="true">ANSI_CHARSET</config-value>
+      <config-value name="deffont">font-family:'MS Sans Serif'; font-size:8pt; color:#000000; </config-value>
+      <config-value name="autohelpstart">1129</config-value>
+      <config-value name="autohelpincrement">1</config-value>
+      <config-value name="autohelpanchor">0</config-value>
+      <config-value name="searchpath">..\MD-IMAGES\;..\MD-IMAGES-POP\;..\MD-BUTTONS\;..\MD-VIDEOS\;..\feedscrew\;..\MD-SNIPPETS\</config-value>
+      <config-group name="custombuilds">
+        <config-value name="DEMO">Demo Build</config-value>
+        <config-value name="MD17">MD17</config-value>
+        <config-value name="PROFESSIONAL">MD16</config-value>
+        <config-value name="USER1">BETA</config-value>
+        <config-value name="USER2">User defined 2</config-value>
+        <config-value name="USER3">User defined 3</config-value>
+      </config-group>
+      <config-value name="imageshortcuts_includebaggage">1</config-value>
+      <config-value name="summary" translate="true">MechDesigner Reference Help</config-value>
+      <config-value name="make0include">MD17</config-value>
+      <config-value name="make0status">*</config-value>
+      <config-value name="openchildreadonly">1</config-value>
+      <config-value name="vcsmanuallycheckout">0</config-value>
+      <config-value name="repositorystyleusage">0</config-value>
+      <config-group name="spellcheck">
+        <config-value name="project">0</config-value>
+      </config-group>
+      <config-value name="make6include">EBOOK</config-value>
+      <config-value name="make6status">*</config-value>
+      <config-value name="make3include">HTML</config-value>
+      <config-value name="make3status">*</config-value>
+      <config-value name="topicprefix">MD-</config-value>
+      <config-value name="bidimode">0</config-value>
+      <config-value name="make4include">PDF</config-value>
+      <config-value name="make4status">*</config-value>
+      <config-value name="contents">MD-MechDesigner-Help</config-value>
+      <config-value name="comment">Reference Manual for MechDesigner</config-value>
+      <config-value name="make5include">PRINT</config-value>
+      <config-value name="make5status">*</config-value>
+      <config-value name="make7include">EBOOK</config-value>
+      <config-value name="make7status">*</config-value>
+      <config-value name="tidyxml">1</config-value>
+      <config-value name="historyfiles">1</config-value>
+      <config-value name="historyfilecount">10</config-value>
+      <config-value name="historykeepdeletedfiles">1</config-value>
+      <config-value name="synchronizedwithfile">..\Mech-hmxP-DE-BKP\MechDesigner-Help_DE.hmxp</config-value>
+      <config-value name="synchronizeoption">flag</config-value>
+      <config-value name="synchronizehighlight">0</config-value>
+      <config-value name="make0includeskin">OPT_BREADTRAIL,OPT_FB,OPT_FOOTER,OPT_HDBG,OPT_HDLOGO,OPT_HDLOGOLINK,OPT_POPUPS,OPT_HOME</config-value>
+    </config-group>
+    <config-group name="html">
+      <config-value name="topiceditor">1</config-value>
+      <config-value name="topicsimpleheadercolor">#CC99FF</config-value>
+      <config-value name="topicsimpletextcolor">#FFFFFF</config-value>
+      <config-value name="topicsimplebuttons">1</config-value>
+      <config-group name="TOPICSIMPLEBUTTON1">
+        <config-value name="CAPTION" translate="true">Top</config-value>
+      </config-group>
+      <config-group name="TOPICSIMPLEBUTTON2">
+        <config-value name="CAPTION" translate="true">Previous</config-value>
+      </config-group>
+      <config-group name="TOPICSIMPLEBUTTON3">
+        <config-value name="CAPTION" translate="true">Next</config-value>
+      </config-group>
+      <config-group name="TOPICTEMPLATES">
+        <config-value name="Default" translate="true"><![CDATA[<%DOCTYPE%>
+<html>
+<head>
+   <title><%TOPIC_TITLE%></title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="<%TOPIC_KEYWORDS%>" />
+   <meta http-equiv="Content-Type" content="text/html; charset=<%DOCCHARSET%>" />
+   <IF_CHM><meta http-equiv="X-UA-Compatible" content="IE=8" /></IF_CHM>
+   <IF_HTML><meta http-equiv="X-UA-Compatible" content="IE=edge" /></IF_HTML>
+   <link type="text/css" href="<%STYLESHEET%>" rel="stylesheet" />
+   <style type="text/css">
+     body { margin: 0px; background: #FFFFFF; }
+   </style>
+</head>
+<body>
+
+<IF_TOPIC_HEADER>
+<table style="width:100%; border:none; border-spacing:0px; padding:5px; background:#CC99FF">
+  <tr style="vertical-align:middle">
+    <td style="text-align:left">
+      <%TOPIC_HEADER%>
+    </td>
+    <td style="text-align:right">
+     <a href="<%HREF_DEFAULT_PAGE%>">Top</a>&nbsp;
+     <IF_PREVIOUS_PAGE><a href="<%HREF_PREVIOUS_PAGE%>">Previous</a>&nbsp;</IF_PREVIOUS_PAGE>
+     <IF_NEXT_PAGE><a href="<%HREF_NEXT_PAGE%>">Next</a></IF_NEXT_PAGE>
+    </td>
+  </tr>
+</table>
+</IF_TOPIC_HEADER>
+
+<!-- Placeholder for topic body. -->
+<table style="width:100%;border:none;border-spacing:0px"><tr style="vertical-align:top"><td style="text-align:left;padding:5px">
+<%TOPIC_TEXT%>
+</td></tr></table>
+
+</body>
+</html>]]></config-value>
+      </config-group>
+      <config-value name="toceditor">0</config-value>
+      <config-value name="tocsimpletext1" translate="true"><![CDATA[<p class="navbar"><b>Contents</b>
+<IF_INDEX_PAGE> | <a href="<%HREF_INDEX_PAGE%>">Index</a></IF_INDEX_PAGE>
+<IF_SEARCH_PAGE> | <a href="<%HREF_SEARCH_PAGE%>">Search</a></IF_SEARCH_PAGE>
+</p>
+<hr/>
+]]></config-value>
+      <config-value name="tocsimplefont1">font-family:Arial,Helvetica; font-size:10pt; font-weight:normal; font-style:normal; text-decoration:none; </config-value>
+      <config-value name="tocsimplefont2">font-family:Arial,Helvetica; font-size:9pt; font-weight:normal; font-style:normal; text-decoration:none; </config-value>
+      <config-value name="tocsimplefont3">font-family:Arial,Helvetica; font-size:8pt; font-weight:normal; font-style:normal; text-decoration:none; </config-value>
+      <config-value name="tocsimplefont4">font-family:Arial,Helvetica; font-size:8pt; font-weight:normal; font-style:normal; text-decoration:none; </config-value>
+      <config-value name="tocsimplefont5">font-family:Arial,Helvetica; font-size:8pt; font-weight:normal; font-style:normal; text-decoration:none; </config-value>
+      <config-value name="tocsimplefont6">font-family:Arial,Helvetica; font-size:8pt; font-weight:normal; font-style:normal; text-decoration:none; </config-value>
+      <config-value name="contenttemplate" translate="true"><![CDATA[<%DOCTYPE%>
+<html><head>
+   <title><%TITLE%></title>
+   <meta http-equiv="Content-Type" content="text/html; charset=<%DOCCHARSET%>" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+   <!-- This line includes the general project style sheet (not required) -->
+   <link type="text/css" href="<%STYLESHEET%>" rel="stylesheet" />
+
+   <!-- This block defines the styles of the TOC headings, change them as needed -->
+   <style type="text/css">
+       body { background:#FFF; }
+       .navbar   { font-size: 120%; }
+
+       .heading1 { font-family: Arial,Helvetica; font-weight: normal; font-size: 10pt; color: #000000; text-decoration: none; }
+       .heading2 { font-family: Arial,Helvetica; font-weight: normal; font-size: 9pt; color: #000000; text-decoration: none; }
+       .heading3 { font-family: Arial,Helvetica; font-weight: normal; font-size: 8pt; color: #000000; text-decoration: none; }
+       .heading4 { font-family: Arial,Helvetica; font-weight: normal; font-size: 8pt; color: #000000; text-decoration: none; }
+       .heading5 { font-family: Arial,Helvetica; font-weight: normal; font-size: 8pt; color: #000000; text-decoration: none; }
+       .heading6 { font-family: Arial,Helvetica; font-weight: normal; font-size: 8pt; color: #000000; text-decoration: none; }
+
+       .hilight1 { font-family: Arial,Helvetica; font-weight: normal; font-size: 10pt; color: #FFFFFF; background: #002682; text-decoration: none; }
+       .hilight2 { font-family: Arial,Helvetica; font-weight: normal; font-size: 9pt; color: #FFFFFF; background: #002682; text-decoration: none; }
+       .hilight3 { font-family: Arial,Helvetica; font-weight: normal; font-size: 8pt; color: #FFFFFF; background: #002682; text-decoration: none; }
+       .hilight4 { font-family: Arial,Helvetica; font-weight: normal; font-size: 8pt; color: #FFFFFF; background: #002682; text-decoration: none; }
+       .hilight5 { font-family: Arial,Helvetica; font-weight: normal; font-size: 8pt; color: #FFFFFF; background: #002682; text-decoration: none; }
+       .hilight6 { font-family: Arial,Helvetica; font-weight: normal; font-size: 8pt; color: #FFFFFF; background: #002682; text-decoration: none; }
+
+       /* TOC LIST CSS */
+       #toc    { padding: 0; margin: 0 }
+       #toc li { margin-top: 2px }
+       #toc ul { padding-left: 0; padding-right: 0; margin-left: 0; margin-right: 0 }
+       /* TOC LIST CSS */
+   </style>
+</head>
+<body>
+<p class="navbar"><b>Contents</b>
+<IF_INDEX_PAGE> | <a href="<%HREF_INDEX_PAGE%>">Index</a></IF_INDEX_PAGE>
+<IF_SEARCH_PAGE> | <a href="<%HREF_SEARCH_PAGE%>">Search</a></IF_SEARCH_PAGE>
+</p>
+<hr/>
+
+
+  <!-- Place holder for the TOC - this variable is REQUIRED! -->
+  <%TABLE_OF_CONTENTS%>
+
+
+</body>
+</html>]]></config-value>
+      <config-value name="hasindex">1</config-value>
+      <config-value name="hassearch">1</config-value>
+      <config-value name="contentnumbers">0</config-value>
+      <config-value name="contentnumberstyle">1.1.1.1.1.1</config-value>
+      <config-value name="contentlazysync">0</config-value>
+      <config-value name="contentsingleclick">1</config-value>
+      <config-value name="contentautocollapse">1</config-value>
+      <config-value name="contentexpand">0</config-value>
+      <config-value name="forcetocsync">1</config-value>
+      <config-value name="contentindent">20</config-value>
+      <config-value name="defaulticons">1</config-value>
+      <config-value name="outputfile">..\..\SKINS-9-PUBLISH\WEB-testing-MD-MT-only\index.htm</config-value>
+      <config-value name="skin">..\..\SKINS-9A\WEB-HTML-SKIN\Webhelp, iFrames Responsive, Blue-MD16-A.hmskin</config-value>
+      <config-value name="defaultext">.htm</config-value>
+      <config-value name="cssfile">default.css</config-value>
+      <config-value name="fontsizeencoding">0</config-value>
+      <config-value name="fontsizebase">100</config-value>
+      <config-value name="exportmarkersastext">1</config-value>
+      <config-value name="exportstylenames">1</config-value>
+      <config-value name="exportutf8bom">1</config-value>
+      <config-value name="animations">0</config-value>
+      <config-value name="imagelightbox">1</config-value>
+      <config-value name="synctimestamp">1</config-value>
+      <config-value name="syncarchivebit">0</config-value>
+      <config-value name="imagehint">0</config-value>
+      <config-value name="imageconversion">1</config-value>
+      <config-value name="jpgquality">90</config-value>
+      <config-value name="htmlpopup">3</config-value>
+      <config-group name="htmlpopupjavaoptions">
+        <config-value name="borderwidth">2</config-value>
+        <config-value name="padding">2</config-value>
+        <config-value name="bordercolor">#000000</config-value>
+        <config-value name="bgcolor">#008000</config-value>
+        <config-value name="shadow">1</config-value>
+        <config-value name="roundedborders">1</config-value>
+      </config-group>
+      <config-value name="navigationstyle">4</config-value>
+      <config-value name="frameeditor">1</config-value>
+      <config-value name="layoutthreeframe">0</config-value>
+      <config-value name="contentwidth">30</config-value>
+      <config-value name="headframeheight">100</config-value>
+      <config-value name="contentborder">1</config-value>
+      <config-value name="headframescroll">0</config-value>
+      <config-value name="iframebackcolor">#999999</config-value>
+      <config-value name="iframenavwidth">450</config-value>
+      <config-value name="iframemargins">5</config-value>
+      <config-value name="iframeborderwidth">2</config-value>
+      <config-value name="iframebordercolor">#333333</config-value>
+      <config-value name="iframeheaderheight">60</config-value>
+      <config-value name="iframeheaderhtml" translate="true"><![CDATA[<p><%TITLE%></p>]]></config-value>
+      <config-value name="frametemplate" translate="true"><![CDATA[<!DOCTYPE html>
+<html>
+<head>
+  <title><%TITLE%></title>
+  <meta http-equiv="Content-Type" content="text/html; charset=<%DOCCHARSET%>">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <script type="text/javascript" src="jquery.js"></script>
+  <script type="text/javascript" src="helpman_settings.js"></script>
+  <script type="text/javascript" src="helpman_navigation.js"></script>
+  <script type="text/javascript" src="<%CONTEXTID_JS_FILE%>"></script>
+
+  <link type="text/css" href="<%STYLESHEET%>" rel="stylesheet" />
+
+  <style type="text/css">
+    html,body { margin:0;padding:0;height:100%;overflow:hidden;
+    			       background:#999999;
+    }
+
+    #hmheadbox {
+      position: absolute;
+      left: 5px;
+      right: 5px;
+      top: 5px;
+      height: 60px;
+      background: #FFFFFF;
+      border: 2px solid #333333;
+      }
+
+    #hmheadbox p {
+      font-size: 160%;
+      font-weight: bold;
+      margin-top: 16px;
+      margin-left: 8px;
+     }
+
+    #hmnavbox {
+      position: absolute;
+      left: 5px;
+      width: 450px;
+      min-width: 50px;
+      top: 70px;
+      bottom: 5px;
+      border: 2px solid #333333;
+      }
+
+    #hmcontentbox {
+      position: absolute;
+      top: 70px;
+      right: 5px;
+      bottom: 5px;
+      left: 460px;
+      border: 2px solid #333333;
+      }
+
+    iframe {
+      position: absolute;left:0;top:0;width:100%;height:100%;border:none;
+      }
+  </style>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if (!hmSupportsAbspos()) {
+      	$(window).bind("resize", function() {
+      	  hmNoAbsposResize($("#hmheadbox"), true, false);
+      	  hmNoAbsposResize($("#hmnavbox"), false, true);
+      	  hmNoAbsposResize($("#hmcontentbox"), true, true);
+	    });
+	    $(window).trigger("resize");
+	  }
+      hmCreateVSplitter($("#hmnavbox"),$("#hmcontentbox"));
+    });
+  </script>
+
+</head>
+<body>
+<div id="hmheadbox">
+<p><%TITLE%></p></div>
+<div id="hmnavbox">
+  <iframe name="hmnavigation" id="hmnavigation" src="<%HREF_CONTENT_PAGE%>" seamless="seamless" title="Navigation Pane" frameborder="0"></iframe>
+</div>
+
+<div id="hmcontentbox" >
+  <script type="text/javascript">
+    var defaulttopic="<%HREF_DEFAULT_PAGE%>";
+    if (location.href.lastIndexOf("?") > 0) defaulttopic=location.href.substring(location.href.lastIndexOf("?")+1,location.href.length).replace(/:/g,"");
+    document.write('<iframe name="hmcontent" id="hmcontent" src="'+defaulttopic+'" seamless="seamless" title="Content Page" frameborder="0"></iframe>');
+  </script>
+  <noscript>
+    <iframe name="hmcontent" id="hmcontent" src="<%HREF_DEFAULT_PAGE%>" seamless="seamless" title="Content Page" frameborder="0"></iframe>
+  </noscript>
+</div>
+</body>
+</html>]]></config-value>
+      <config-value name="underscoreexcludesearch">0</config-value>
+      <config-value name="googleanalytics">UA-54060772-1</config-value>
+      <config-value name="replacecharhyphen">1</config-value>
+      <config-value name="highlighthotspots">1</config-value>
+      <config-value name="sitemap">http://mechdesigner.support </config-value>
+    </config-group>
+    <config-group name="user">
+      <config-value name="project.lastexport">0</config-value>
+      <config-group name="winuser">
+        <config-group name="project">
+          <config-value name="lastexport">0</config-value>
+        </config-group>
+      </config-group>
+      <config-group name="kevin">
+        <config-group name="project">
+          <config-value name="lastexport">3</config-value>
+        </config-group>
+        <config-group name="report">
+          <config-value name="type">3</config-value>
+          <config-value name="sort">0</config-value>
+          <config-value name="include">ALL</config-value>
+        </config-group>
+      </config-group>
+      <config-value name="project.mapfile">C:\Documents and Settings\All Users\Documents\PS Motion\07_SOFTWARE\BKP-EMERGENCY\Topic Map\Md Help Topic.txt</config-value>
+      <config-value name="project.mapfileformat">0</config-value>
+      <config-group name="adam">
+        <config-group name="project">
+          <config-value name="lastexport">3</config-value>
+          <config-value name="mapfile">C:\Users\Adam\Documents\My HelpAndManual Projects\CONTEXT#MAPS\Mech-Ref-B</config-value>
+          <config-value name="mapfileformat">1</config-value>
+        </config-group>
+        <config-group name="report">
+          <config-value name="type">3</config-value>
+          <config-value name="sort">0</config-value>
+          <config-value name="include">ALL</config-value>
+          <config-value name="topicclasses">Default,Popup,</config-value>
+        </config-group>
+      </config-group>
+      <config-group name="44785">
+        <config-group name="project">
+          <config-value name="lastexport">0</config-value>
+        </config-group>
+        <config-group name="report">
+          <config-value name="type">3</config-value>
+          <config-value name="sort">1</config-value>
+          <config-value name="include">ALL</config-value>
+          <config-value name="topicclasses">Default,Popup,</config-value>
+        </config-group>
+      </config-group>
+    </config-group>
+    <config-group name="chm">
+      <config-value name="outputfile">..\..\SKINS-9-PUBLISH\CHM -MD or MT\MechDesigner.chm</config-value>
+      <config-value name="deletetemp">1</config-value>
+      <config-value name="usesecondarywindows">1</config-value>
+      <config-value name="skin">..\..\SKINS-9A\CHM-SKIN\CHM_Dark-HM8-PP4.hmskin</config-value>
+      <config-value name="htmlpopuptextfile">CSHelp.txt</config-value>
+      <config-value name="hhcwindowstyles">8388645</config-value>
+      <config-value name="defaultext">.htm</config-value>
+      <config-value name="cssfile">default.css</config-value>
+      <config-value name="fontsizeencoding">0</config-value>
+      <config-value name="fontsizebase">100</config-value>
+      <config-value name="exportmarkersastext">1</config-value>
+      <config-value name="exportstylenames">1</config-value>
+      <config-value name="pixelasem">1</config-value>
+      <config-value name="underscoreexcludesearch">0</config-value>
+      <config-value name="replacecharhyphen">0</config-value>
+      <config-value name="animations">1</config-value>
+      <config-value name="imagelightbox">1</config-value>
+      <config-value name="imagehint">0</config-value>
+      <config-value name="highlighthotspots">1</config-value>
+      <config-value name="svgtopng">1</config-value>
+      <config-value name="imageconversion">1</config-value>
+      <config-value name="jpgquality">90</config-value>
+      <config-value name="htmlpopup">3</config-value>
+      <config-group name="htmlpopupjavaoptions">
+        <config-value name="borderwidth">2</config-value>
+        <config-value name="padding">2</config-value>
+        <config-value name="bordercolor">#000000</config-value>
+        <config-value name="bgcolor">#008000</config-value>
+        <config-value name="shadow">1</config-value>
+        <config-value name="roundedborders">1</config-value>
+      </config-group>
+      <config-value name="embedfilesext">*.pdf, *.txt, *.gif, *.mp4</config-value>
+    </config-group>
+    <config-group name="print">
+      <config-value name="include">PRINT</config-value>
+      <config-value name="template">$(HMMYDOC)HELP-MECHDESIGNER\Standard_manual_A4-1.mnl</config-value>
+      <config-value name="colortext">0</config-value>
+      <config-value name="insertseealso">0</config-value>
+      <config-value name="insertseealsostyle">-1</config-value>
+    </config-group>
+    <config-group name="liststyles">
+      <config-value name="outline6">LEVELS=2;L0.ListType=0;L0.Font.Name=Symbol;L0.Font.Charset=2;L0.FormatString=·;L0.MarkerAlignment=0;L0.StartFrom=1;L1.ListType=0;L1.Font.Name=Courier New;L1.Font.Charset=1;L1.FormatString=o;L1.MarkerAlignment=0;L1.StartFrom=1;</config-value>
+      <config-value name="number6">LEVELS=1;L0.ListType=3;L0.FormatString=STEP %0:s:;L0.MarkerAlignment=0;L0.StartFrom=1;</config-value>
+      <config-value name="bullet2">LEVELS=1;L0.ListType=0;L0.Font.Name=Wingdings;L0.Font.Charset=2;L0.FormatString=¤;L0.MarkerAlignment=0;L0.StartFrom=1;</config-value>
+      <config-value name="outline2">LEVELS=9;L0.ListType=0;L0.Font.Name=Wingdings;L0.Font.Charset=2;L0.FormatString=ç;L0.MarkerAlignment=0;L0.StartFrom=1;L1.ListType=0;L1.Font.Name=Courier New;L1.Font.Charset=0;L1.FormatString=o;L1.MarkerAlignment=0;L1.StartFrom=1;L2.ListType=0;L2.Font.Name=Wingdings;L2.Font.Charset=2;L2.FormatString=§;L2.MarkerAlignment=0;L2.StartFrom=1;L3.ListType=0;L3.Font.Name=Wingdings;L3.Font.Charset=2;L3.FormatString=v;L3.MarkerAlignment=0;L3.StartFrom=1;L4.ListType=0;L4.Font.Name=Wingdings;L4.Font.Charset=2;L4.FormatString=Ø;L4.MarkerAlignment=0;L4.StartFrom=1;L5.ListType=0;L5.Font.Name=Symbol;L5.Font.Charset=2;L5.FormatString=·;L5.MarkerAlignment=0;L5.StartFrom=1;L6.ListType=0;L6.Font.Name=Courier New;L6.Font.Charset=0;L6.FormatString=o;L6.MarkerAlignment=0;L6.StartFrom=1;L7.ListType=0;L7.Font.Name=Wingdings;L7.Font.Charset=2;L7.FormatString=§;L7.MarkerAlignment=0;L7.StartFrom=1;L8.ListType=0;L8.Font.Name=Wingdings;L8.Font.Charset=2;L8.FormatString=v;L8.MarkerAlignment=0;L8.StartFrom=1;</config-value>
+      <config-value name="number1">LEVELS=1;L0.ListType=3;L0.FormatString=Method %0:s) ;L0.MarkerAlignment=0;L0.StartFrom=1;</config-value>
+      <config-value name="outline1">LEVELS=9;L0.ListType=3;L0.FormatString=%0:sb.;L0.MarkerAlignment=0;L0.StartFrom=1;L1.ListType=3;L1.FormatString=%0:s.%1:s.;L1.MarkerAlignment=0;L1.StartFrom=1;L2.ListType=3;L2.FormatString=%0:s.%1:s.%2:s.;L2.MarkerAlignment=0;L2.StartFrom=1;L3.ListType=3;L3.FormatString=%0:s.%1:s.%2:s.%3:s.;L3.MarkerAlignment=0;L3.StartFrom=1;L4.ListType=3;L4.FormatString=%0:s.%1:s.%2:s.%3:s.%4:s.;L4.MarkerAlignment=0;L4.StartFrom=1;L5.ListType=3;L5.FormatString=%0:s.%1:s.%2:s.%3:s.%4:s.%5:s.;L5.MarkerAlignment=0;L5.StartFrom=1;L6.ListType=3;L6.FormatString=%0:s.%1:s.%2:s.%3:s.%4:s.%5:s.%6:s.;L6.MarkerAlignment=0;L6.StartFrom=1;L7.ListType=3;L7.FormatString=%0:s.%1:s.%2:s.%3:s.%4:s.%5:s.%6:s.%7:s.;L7.MarkerAlignment=0;L7.StartFrom=1;L8.ListType=3;L8.FormatString=%0:s.%1:s.%2:s.%3:s.%4:s.%5:s.%6:s.%7:s.%8:s.;L8.MarkerAlignment=0;L8.StartFrom=1;</config-value>
+      <config-value name="number5">LEVELS=1;L0.ListType=4;L0.FormatString= 1.%0:s. ;L0.MarkerAlignment=0;L0.StartFrom=1;</config-value>
+      <config-value name="bullet0">LEVELS=1;L0.ListType=0;L0.Font.Name=Wingdings;L0.Font.Charset=2;L0.FormatString=è;L0.MarkerAlignment=0;L0.StartFrom=1;</config-value>
+      <config-value name="bullet6">LEVELS=1;L0.ListType=0;L0.Font.Name=Wingdings;L0.Font.Charset=2;L0.FormatString=þ;L0.MarkerAlignment=0;L0.StartFrom=1;</config-value>
+      <config-value name="bullet1">LEVELS=1;L0.ListType=0;L0.Font.Name=Wingdings;L0.Font.Charset=2;L0.FormatString=;L0.MarkerAlignment=0;L0.StartFrom=1;</config-value>
+      <config-value name="bullet3">LEVELS=1;L0.ListType=0;L0.Font.Name=Wingdings;L0.Font.Charset=2;L0.FormatString=Ö;L0.MarkerAlignment=0;L0.StartFrom=1;</config-value>
+      <config-value name="bullet5">LEVELS=1;L0.ListType=0;L0.Font.Name=Wingdings 3;L0.Font.Charset=2;L0.FormatString=;L0.MarkerAlignment=0;L0.StartFrom=1;</config-value>
+    </config-group>
+    <config-group name="ebook">
+      <config-value name="outputfile">.\FOR DOWNLOADS\MechDesigner.exe</config-value>
+      <config-value name="template">..\..\..\..\..\Program Files (x86)\EC Software\HelpAndManual6\Templates\eBooks\Ebook_Simple.skin</config-value>
+      <config-value name="left">-1</config-value>
+      <config-value name="top">-1</config-value>
+      <config-value name="width">-1</config-value>
+      <config-value name="height">-1</config-value>
+      <config-value name="maximized">0</config-value>
+      <config-value name="showindex">1</config-value>
+      <config-value name="showsearch">1</config-value>
+      <config-value name="compressviewer">0</config-value>
+      <config-value name="language">English.lng</config-value>
+      <config-value name="enableselect">0</config-value>
+      <config-value name="saveregistry">0</config-value>
+      <config-value name="splashbmp">.\Graphics\icons\logo.bmp</config-value>
+      <config-value name="icon">..\..\Axialis Librarian\Objects\MechDesigner Icons\COMMANDS\MD-32-026A.ico</config-value>
+    </config-group>
+    <config-group name="pdf">
+      <config-value name="outputfile">MechDesigner-Reference-Help.pdf</config-value>
+      <config-value name="template">..\..\SKINS-9A\PDF-SKIN\Standard_manualHM8_A4-B.mnl</config-value>
+      <config-value name="compression">1</config-value>
+      <config-value name="jpegquality">0</config-value>
+      <config-value name="openmode">1</config-value>
+      <config-value name="zoommode">3</config-value>
+      <config-value name="userprint">1</config-value>
+      <config-value name="usercopy">1</config-value>
+      <config-value name="userchange">1</config-value>
+      <config-value name="encrypt128bit">0</config-value>
+      <config-value name="title" translate="true">&lt;%TITLE%&gt;</config-value>
+      <config-value name="author" translate="true">PSMotion Ltd</config-value>
+      <config-value name="style">0</config-value>
+      <config-value name="createoutline">1</config-value>
+      <config-value name="outlinesnumbered">0</config-value>
+      <config-value name="createhotspots">1</config-value>
+      <config-value name="insertseealso">1</config-value>
+      <config-value name="linkcolor">128</config-value>
+      <config-value name="ignoreblank">1</config-value>
+      <config-value name="insertseealsostyle">2</config-value>
+      <config-value name="subject" translate="true">Help Manual for MechDesigner Professional 14</config-value>
+      <config-value name="keywords" translate="true">MechDesigner: Mechanism Design Software, Motion Design Software, kinematics, inverse kinematics, mechanisms, cam design and analysis, force analysis.</config-value>
+      <config-value name="embedfilesext">*.pdf, *.doc, *.xls, *.mp4, *.gif</config-value>
+      <config-value name="embedfonts">1</config-value>
+      <config-value name="cidfontmode">0</config-value>
+      <config-value name="newfontsubsetting">1</config-value>
+      <config-value name="textasglyphs">0</config-value>
+      <config-value name="pdfa">0</config-value>
+      <config-value name="pagelayout">0</config-value>
+      <config-value name="copyright" translate="true">&lt;%COPYRIGHT%&gt;</config-value>
+      <config-value name="copyrightpublicdomain">0</config-value>
+      <config-value name="highlighthotspots">0</config-value>
+      <config-value name="exportcomments">0</config-value>
+      <config-value name="exportcommentsdate">36526</config-value>
+      <config-value name="outlinesnumberedlinks">0</config-value>
+      <config-value name="linkunderline">1</config-value>
+    </config-group>
+    <config-group name="rtf">
+      <config-value name="papersize">A4 210 x 297 mm</config-value>
+      <config-value name="pageorientation">Portrait</config-value>
+      <config-value name="topmargin">720</config-value>
+      <config-value name="bottommargin">720</config-value>
+      <config-value name="leftmargin">720</config-value>
+      <config-value name="rightmargin">833</config-value>
+      <config-value name="flipmargin">1</config-value>
+      <config-value name="headerfont">font-family:Arial; font-size:10pt; font-weight:normal; font-style:normal; text-decoration:none; color:#000000; </config-value>
+      <config-value name="footerfont">font-family:Arial; font-size:10pt; font-weight:normal; font-style:normal; text-decoration:none; color:#000000; </config-value>
+      <config-value name="pagenumfont">font-family:Arial; font-size:10pt; font-weight:normal; font-style:normal; text-decoration:none; color:#000000; </config-value>
+      <config-value name="chapterfont1">font-family:Arial; font-size:14pt; font-weight:normal; font-style:normal; text-decoration:none; color:#000000; </config-value>
+      <config-value name="chapternumbering1">1.2.3</config-value>
+      <config-value name="chapterbreak1">Yes</config-value>
+      <config-value name="chapterfont2">font-family:Arial; font-size:12pt; font-weight:normal; font-style:normal; text-decoration:none; color:#000000; </config-value>
+      <config-value name="chapternumbering2">None</config-value>
+      <config-value name="chapterbreak2">No</config-value>
+      <config-value name="chapterfont3">font-family:Arial; font-size:11pt; font-weight:normal; font-style:normal; text-decoration:none; color:#000000; </config-value>
+      <config-value name="chapternumbering3">None</config-value>
+      <config-value name="chapterbreak3">No</config-value>
+      <config-value name="chapterfont4">font-family:Arial; font-size:10pt; font-weight:normal; font-style:normal; text-decoration:none; color:#000000; </config-value>
+      <config-value name="chapternumbering4">None</config-value>
+      <config-value name="chapterbreak4">No</config-value>
+      <config-value name="chapterfont5">font-family:Arial; font-size:10pt; font-weight:normal; font-style:normal; text-decoration:none; color:#000000; </config-value>
+      <config-value name="chapternumbering5">None</config-value>
+      <config-value name="chapterbreak5">No</config-value>
+      <config-value name="chapterfont6">font-family:Arial; font-size:10pt; font-weight:normal; font-style:normal; text-decoration:none; color:#000000; </config-value>
+      <config-value name="chapternumbering6">None</config-value>
+      <config-value name="chapterbreak6">No</config-value>
+      <config-value name="imagemarker">0</config-value>
+      <config-value name="activehyperlinks">1</config-value>
+      <config-value name="outputfile">..\..\SKINS-9-PUBLISH\WORD\MechDesignerr.docx</config-value>
+      <config-value name="template">$(HMSYS)Templates\Word\Word-Template-Simple-A4.docx</config-value>
+    </config-group>
+    <config-group name="epub">
+      <config-value name="outputfile">MechDesigner-5.112-ibook.epub</config-value>
+      <config-value name="deletetemp">1</config-value>
+      <config-value name="cover">.\Graphics\icons\MD-D4M.png</config-value>
+      <config-value name="title">&lt;%TITLE%&gt;</config-value>
+      <config-value name="creator">&lt;%AUTHOR%&gt;</config-value>
+      <config-value name="rights">&lt;%COPYRIGHT%&gt;</config-value>
+      <config-value name="embedfonts">0</config-value>
+      <config-value name="backcover">.\Graphics\Skin-images\logo.png</config-value>
+      <config-value name="uid">www.psmotion.com - MechDesigner Professional Help-5.104</config-value>
+      <config-value name="subject">Complete Help on MechDesigner Professional</config-value>
+      <config-value name="description">MechDesigner is the complete software solution for mechanism, cam and motion and machine modelling. This is the help doucment.</config-value>
+      <config-value name="creatorfileas">Dr Kevin J Stamp</config-value>
+      <config-value name="publisher">PSMotion Ltd</config-value>
+    </config-group>
+    <config-group name="docx">
+      <config-value name="topiclinkcolor">32768</config-value>
+      <config-value name="internetlinkcolor">32896</config-value>
+      <config-value name="filelinkcolor">13209</config-value>
+      <config-value name="topiclinkstyle">0</config-value>
+      <config-value name="internetlinkstyle">2</config-value>
+      <config-value name="filelinkstyle">7</config-value>
+      <config-value name="enablefilelinksext">*.pdf, *.docx, *.xslx, *.pptx</config-value>
+    </config-group>
+    <config-group name="plugins">
+      <config-value name="deepl">{&quot;sourcelang&quot;:&quot;EN&quot;,&quot;destlang&quot;:&quot;DE&quot;,&quot;defapiglossary&quot;:&quot;&quot;,&quot;glossarycount&quot;:&quot;1&quot;,&quot;glossary0&quot;:&quot;MyGlossary.txt&quot;}</config-value>
+    </config-group>
+    <variables>
+      <variable id="LANGUAGE" type="text" translate="true">USA English: For Example: Color, Dialog, Optimization.</variable>
+      <variable id="TOPIC-ID" type="html" translate="true">Enter value</variable>
+    </variables>
+    <helpcontext-numbers>
+      <helpcontext-number href="MD-Cam-Terminology" value="1044"/>
+      <helpcontext-number href="MD-Can-I-Edit-the-Part-Outline" value="1169"/>
+      <helpcontext-number href="MD-Cannot-select-the-Part-Outline" value="1032"/>
+      <helpcontext-number href="MD-Colors_of_Part_Outlines" value="1295"/>
+      <helpcontext-number href="MD-Command-Add2DCam" value="6460"/>
+      <helpcontext-number href="MD-Command-Add3DCam" value="899"/>
+      <helpcontext-number href="MD-Command-Add3DCam#3DCAMPreparation" value="1297"/>
+      <helpcontext-number href="MD-Command-AddBallJoint" value="810"/>
+      <helpcontext-number href="MD-Command-AddBallJoint#EditConnecting-Part" value="1266"/>
+      <helpcontext-number href="MD-Command-AddConjugateCam-FB" value="1601"/>
+      <helpcontext-number href="MD-Command-AddFBBriefcase" value="1325"/>
+      <helpcontext-number href="MD-Command-AddFBCADControl" value="858"/>
+      <helpcontext-number href="MD-Command-AddFBCamData" value="836"/>
+      <helpcontext-number href="MD-Command-AddFBContinuousCrank" value="12347"/>
+      <helpcontext-number href="MD-Command-AddFBDesignSet" value="1419"/>
+      <helpcontext-number href="MD-Command-AddFBGearing" value="832"/>
+      <helpcontext-number href="MD-Command-AddFBGraph" value="835"/>
+      <helpcontext-number href="MD-Command-AddFBGraph#GraphFBInterface" value="1241"/>
+      <helpcontext-number href="MD-Command-AddFBLinearMotion" value="829"/>
+      <helpcontext-number href="MD-Command-AddFBMaths" value="1389"/>
+      <helpcontext-number href="MD-Command-AddFBMeasurement" value="833"/>
+      <helpcontext-number href="MD-Command-AddFBMeasurement#MeasureDistance" value="1235"/>
+      <helpcontext-number href="MD-Command-AddFBMotion" value="830"/>
+      <helpcontext-number href="MD-Command-AddFBMotionDimension" value="831"/>
+      <helpcontext-number href="MD-Command-AddFBMotionDimension#MotDimSlideJointGen" value="1431"/>
+      <helpcontext-number href="MD-Command-AddFBMotionDimension#SliderMotionDirection" value="1264"/>
+      <helpcontext-number href="MD-Command-AddFBMotionDimension#VideoMotionDimensionFB" value="1242"/>
+      <helpcontext-number href="MD-Command-AddFBMotionPath" value="1358"/>
+      <helpcontext-number href="MD-Command-AddFBParameterControl" value="1484"/>
+      <helpcontext-number href="MD-Command-AddFBPattern" value="1417"/>
+      <helpcontext-number href="MD-Command-AddFBPointCloud" value="1418"/>
+      <helpcontext-number href="MD-Command-AddFBPointData" value="834"/>
+      <helpcontext-number href="MD-Command-AddFBPolynomialFit" value="1482"/>
+      <helpcontext-number href="MD-Command-AddFBStatistics" value="1412"/>
+      <helpcontext-number href="MD-Command-AddGearPair" value="934"/>
+      <helpcontext-number href="MD-Command-AddGearPair-Bevel" value="128"/>
+      <helpcontext-number href="MD-Command-AddMagneticJoint" value="1280"/>
+      <helpcontext-number href="MD-Command-AddMechanism(Mechanism)" value="668"/>
+      <helpcontext-number href="MD-Command-AddPart" value="5070"/>
+      <helpcontext-number href="MD-Command-AddPart#Dragis" value="1456"/>
+      <helpcontext-number href="MD-Command-AddPart#HowtoAddPart" value="1451"/>
+      <helpcontext-number href="MD-Command-AddPinJoint" value="5890"/>
+      <helpcontext-number href="MD-Command-AddPinJoint#AddPinJointSpecialCase" value="932"/>
+      <helpcontext-number href="MD-Command-AddPinJoint#Video-PinJoint" value="1233"/>
+      <helpcontext-number href="MD-Command-AddPulley" value="1384"/>
+      <helpcontext-number href="MD-Command-AddRackPinion-BallScerw" value="1461"/>
+      <helpcontext-number href="MD-Command-AddReferenceGeometry" value="6980"/>
+      <helpcontext-number href="MD-Command-AddScroll" value="1448"/>
+      <helpcontext-number href="MD-Command-AddScroll#PrepAddScroll" value="1449"/>
+      <helpcontext-number href="MD-Command-AddSlideJoint" value="5960"/>
+      <helpcontext-number href="MD-Command-AddTracePoint" value="6540"/>
+      <helpcontext-number href="MD-Command-AddTracePoint#DragaTrace-Point" value="1438"/>
+      <helpcontext-number href="MD-Command-ChangeDyadClosure" value="1414"/>
+      <helpcontext-number href="MD-Command-ChangeDyadClosure#DyadClosure" value="15115"/>
+      <helpcontext-number href="MD-Command-FB-Force-Data" value="846"/>
+      <helpcontext-number href="MD-Command-FB-Kinematics" value="828"/>
+      <helpcontext-number href="MD-Command-Forces-Calculate" value="840"/>
+      <helpcontext-number href="MD-Command-Forces-FB-Spring" value="847"/>
+      <helpcontext-number href="MD-Command-KinematicElements" value="181"/>
+      <helpcontext-number href="MD-Command-ModelElements(Mechanism)" value="1603"/>
+      <helpcontext-number href="MD-Command-ModelElements(Mechanism)#Modeltoolbar" value="1604"/>
+      <helpcontext-number href="MD-Command-ModelElements(Mechanism)-AddPlane" value="667"/>
+      <helpcontext-number href="MD-Command-ModelElements(Mechanism)-AddPlane#PlanetoLine" value="1445"/>
+      <helpcontext-number href="MD-Command-ModelElements(Mechanism)-AddPlane#PlanetoPlane" value="1446"/>
+      <helpcontext-number href="MD-Command-Solids-Add-Hole" value="5460"/>
+      <helpcontext-number href="MD-Command-Solids-Add-Polyline" value="995"/>
+      <helpcontext-number href="MD-Command-Solids-Add-Profile" value="6470"/>
+      <helpcontext-number href="MD-Command-Solids-Auto-Layer" value="5850"/>
+      <helpcontext-number href="MD-Command-Solids-AutoProfile" value="151"/>
+      <helpcontext-number href="MD-Command-Solids-AutoProfiles" value="152"/>
+      <helpcontext-number href="MD-Command-Solids-Extrusion-Visibility" value="155"/>
+      <helpcontext-number href="MD-Delete-DependentElements" value="1291"/>
+      <helpcontext-number href="MD-Dialog-2DCam" value="7174"/>
+      <helpcontext-number href="MD-Dialog-2DCam-CamLifetab" value="1022"/>
+      <helpcontext-number href="MD-Dialog-2DCam-CamLifetab#2DCAM-DIALOG-CAMLIFEFACTORS" value="7054"/>
+      <helpcontext-number href="MD-Dialog-2DCam-CamLifetab#2DCAM-DIALOG-CAMLIFE-FLANK" value="7058"/>
+      <helpcontext-number href="MD-Dialog-2DCam-CamLifetab#2DCAM-DIALOG-CAMLIFE-MATERIAL" value="7056"/>
+      <helpcontext-number href="MD-Dialog-2DCam-DisplayTab" value="1020"/>
+      <helpcontext-number href="MD-Dialog-2DCam-DisplayTab#2DCAM-DIALOG-DISPLAY-OPTIONS" value="7178"/>
+      <helpcontext-number href="MD-Dialog-2DCam-DisplayTab#2DCAM-DIALOG-DISPLAY-VISIBILITIY" value="7076"/>
+      <helpcontext-number href="MD-Dialog-2DCam-ParametersTab" value="7071"/>
+      <helpcontext-number href="MD-Dialog-2DCam-ParametersTab#2DCAM-DIALOG-LIFETIME-PROPERTIES" value="7172"/>
+      <helpcontext-number href="MD-Dialog-2DCam-ParametersTab#2DCAM-DIALOG-PARAMS-TAB" value="7175"/>
+      <helpcontext-number href="MD-Dialog-2DCam-ParametersTab#2DCAM-DIALOG-RANGE-RADIUS" value="7173"/>
+      <helpcontext-number href="MD-Dialog-2DCam-RollerLifeTab" value="1021"/>
+      <helpcontext-number href="MD-Dialog-2DCam-RollerLifeTab#2DCAM-DIALOG-ROLLER-L10" value="7050"/>
+      <helpcontext-number href="MD-Dialog-2DCam-RollerLifeTab#2DCAM-ROLLERTAB-SELECTROLLER" value="7052"/>
+      <helpcontext-number href="MD-Dialog-2DCam-RollerLifeTab#ISO281PARAMETERS" value="7075"/>
+      <helpcontext-number href="MD-Dialog-3DCam" value="994"/>
+      <helpcontext-number href="MD-Dialog-3DCam#3DCam-CamMeshDensity" value="10120"/>
+      <helpcontext-number href="MD-Dialog-3DCam#3DCam-Clearances" value="10122"/>
+      <helpcontext-number href="MD-Dialog-3DCam#3DCam-DataTransfer" value="10124"/>
+      <helpcontext-number href="MD-Dialog-3DCam#3DCam-dialog-SolidWorksPAths" value="10125"/>
+      <helpcontext-number href="MD-Dialog-3DCam#3DCam-Display" value="10123"/>
+      <helpcontext-number href="MD-Dialog-3DCam#3DCam-FlankLength" value="10121"/>
+      <helpcontext-number href="MD-Dialog-3DCam#3Dcam-RebuildSave" value="10126"/>
+      <helpcontext-number href="MD-Dialog-3DCam#3DCam-RollerParameters" value="1489"/>
+      <helpcontext-number href="MD-Dialog-3DCam#Dialog3DCam" value="12222"/>
+      <helpcontext-number href="MD-Dialog-Application-Settings" value="7160"/>
+      <helpcontext-number href="MD-Dialog-Application-Settings#App-Access" value="10022"/>
+      <helpcontext-number href="MD-Dialog-Application-Settings#App-Auto" value="10023"/>
+      <helpcontext-number href="MD-Dialog-Application-Settings#App-General" value="10028"/>
+      <helpcontext-number href="MD-Dialog-Application-Settings#App-Graphics" value="10021"/>
+      <helpcontext-number href="MD-Dialog-Application-Settings#App-NumberFormat" value="10020"/>
+      <helpcontext-number href="MD-Dialog-BallJoint" value="854"/>
+      <helpcontext-number href="MD-Dialog-BallJoint#BallJointDialog" value="853"/>
+      <helpcontext-number href="MD-Dialog-boxes" value="7150"/>
+      <helpcontext-number href="MD-Dialog-CADLine" value="7080"/>
+      <helpcontext-number href="MD-Dialog-CADLine#CADLineDialog" value="12231"/>
+      <helpcontext-number href="MD-Dialog-CADLine#OPenCAD-Line" value="1399"/>
+      <helpcontext-number href="MD-Dialog-CADLine-Display" value="112"/>
+      <helpcontext-number href="MD-Dialog-CADLine-Display#CAD-Line-ImportSW-Display" value="10311"/>
+      <helpcontext-number href="MD-Dialog-CADLine-Display#CADSolidMove" value="10312"/>
+      <helpcontext-number href="MD-Dialog-CADLine-DXF" value="1396"/>
+      <helpcontext-number href="MD-Dialog-CADLine-DXF#Dialog-CAD-Line-Alignment" value="10072"/>
+      <helpcontext-number href="MD-Dialog-CADLine-DXF#Dialog-CAD-Line-DXF-tab" value="10070"/>
+      <helpcontext-number href="MD-Dialog-CADLine-DXF#Dialog-CAD-Line-DXFtab-ConvertElements" value="10073"/>
+      <helpcontext-number href="MD-Dialog-CADLine-DXF#Dialog-CADLine-DXFtab-ElementSelection" value="10071"/>
+      <helpcontext-number href="MD-Dialog-CADLine-DXFLayers" value="1342"/>
+      <helpcontext-number href="MD-Dialog-CADLine-DXFLayers#CADLine-DXFLayers" value="10080"/>
+      <helpcontext-number href="MD-Dialog-CADLine-MassProperties" value="1398"/>
+      <helpcontext-number href="MD-Dialog-CADLine-MassProperties#CAD-Line-MassProperties-Import" value="10078"/>
+      <helpcontext-number href="MD-Dialog-CADLine-MassProperties#CAD-Line-MassProperties-Total" value="10079"/>
+      <helpcontext-number href="MD-Dialog-CADLine-SOLIDWORKS" value="1401"/>
+      <helpcontext-number href="MD-Dialog-CADLine-SOLIDWORKS#CAD-Line-ImportSW-File" value="10074"/>
+      <helpcontext-number href="MD-Dialog-CADLine-STLImport" value="113"/>
+      <helpcontext-number href="MD-Dialog-CADLine-STLImport#CAD-Line-ImportSTLFile" value="10310"/>
+      <helpcontext-number href="MD-Dialog-ConfigurePowerSource" value="821"/>
+      <helpcontext-number href="MD-Dialog-ConfigurePowerSource#ConfigurePowerSource-R10" value="10600"/>
+      <helpcontext-number href="MD-Dialog-Conjugate-Cam-FB" value="2500"/>
+      <helpcontext-number href="MD-Dialog-Conjugate-Cam-FB#CPS-CONJUGATECAM" value="11119"/>
+      <helpcontext-number href="MD-Dialog-Dimension" value="7010"/>
+      <helpcontext-number href="MD-Dialog-Dimension#Dialog-EditDimension" value="10060"/>
+      <helpcontext-number href="MD-Dialog-DXF-Element" value="7060"/>
+      <helpcontext-number href="MD-Dialog-DXF-Element#DXFElement-Edit" value="10090"/>
+      <helpcontext-number href="MD-Dialog-ElementProperties" value="1405"/>
+      <helpcontext-number href="MD-Dialog-Feedscrew-Scroll" value="1478"/>
+      <helpcontext-number href="MD-Dialog-Feedscrew-Scroll#FeedscrewDataTransfer" value="12730"/>
+      <helpcontext-number href="MD-Dialog-Feedscrew-Scroll#Feedscrew-dialog-SolidWorksPaths" value="12740"/>
+      <helpcontext-number href="MD-Dialog-Feedscrew-Scroll#Feedscrew-Display" value="12720"/>
+      <helpcontext-number href="MD-Dialog-Feedscrew-Scroll#Feedscrew-MeshDensity" value="12700"/>
+      <helpcontext-number href="MD-Dialog-Feedscrew-Scroll#Feedscrew-Range" value="12710"/>
+      <helpcontext-number href="MD-Dialog-Feedscrew-Scroll#FeedscrewTroubleShooting" value="12750"/>
+      <helpcontext-number href="MD-Dialog-FunctionBlock-BlendCurve" value="1371"/>
+      <helpcontext-number href="MD-Dialog-FunctionBlock-BlendCurve#BlendCurvedialog" value="1372"/>
+      <helpcontext-number href="MD-Dialog-FunctionBlock-BlendCurve#Blend-CurveDragHandles" value="1441"/>
+      <helpcontext-number href="MD-Dialog-FunctionBlock-Briefcase" value="1331"/>
+      <helpcontext-number href="MD-Dialog-FunctionBlock-Briefcase#DIALOG-BRIEFCASE" value="10445"/>
+      <helpcontext-number href="MD-Dialog-FunctionBlock-CADControl" value="862"/>
+      <helpcontext-number href="MD-Dialog-FunctionBlock-CamCoordinates" value="1248"/>
+      <helpcontext-number href="MD-Dialog-FunctionBlock-CamCoordinates#CamasArcs-CamData" value="1393"/>
+      <helpcontext-number href="MD-Dialog-FunctionBlock-CamCoordinates#CAM-COORDIANTES-TOOLBAR" value="10131"/>
+      <helpcontext-number href="MD-Dialog-FunctionBlock-CamCoordinates#CamCoordinates" value="1316"/>
+      <helpcontext-number href="MD-Dialog-FunctionBlock-CamCoordinates#CAMCOORDSDIALOGMD16" value="10132"/>
+      <helpcontext-number href="MD-Dialog-FunctionBlock-CamCoordinates#Curve" value="1392"/>
+      <helpcontext-number href="MD-Dialog-FunctionBlock-CamData" value="1247"/>
+      <helpcontext-number href="MD-Dialog-FunctionBlock-ContinuousCrank" value="115"/>
+      <helpcontext-number href="MD-Dialog-FunctionBlock-ContinuousCrank#DIALOG-CONTINUOUSCRANK" value="10446"/>
+      <helpcontext-number href="MD-Dialog-FunctionBlock-DesignSet" value="7210"/>
+      <helpcontext-number href="MD-Dialog-FunctionBlock-DesignSet#DesignSetDialogR10" value="10130"/>
+      <helpcontext-number href="MD-Dialog-FunctionBlock-ForceData" value="1060"/>
+      <helpcontext-number href="MD-Dialog-FunctionBlock-Gearing" value="1250"/>
+      <helpcontext-number href="MD-Dialog-FunctionBlock-Gearing#FB-GearingR10" value="10150"/>
+      <helpcontext-number href="MD-Dialog-FunctionBlock-Graph" value="1252"/>
+      <helpcontext-number href="MD-Dialog-FunctionBlock-GraphSettings" value="10190"/>
+      <helpcontext-number href="MD-Dialog-FunctionBlock-GraphSettings#DialogGraphSettings" value="10191"/>
+      <helpcontext-number href="MD-Dialog-FunctionBlock-GraphSettings#Dialog-GraphSet-YAxis" value="10192"/>
+      <helpcontext-number href="MD-Dialog-Function-Block-ImportSOLIDWORKSsketch" value="1459"/>
+      <helpcontext-number href="MD-Dialog-FunctionBlock-LinearMotion" value="1253"/>
+      <helpcontext-number href="MD-Dialog-FunctionBlock-Math" value="10200"/>
+      <helpcontext-number href="MD-Dialog-FunctionBlock-Math#MATH-DIALOG-EQUATIONEDITOR" value="12241"/>
+      <helpcontext-number href="MD-Dialog-FunctionBlock-Math#MATHFBADDINPUT" value="10211"/>
+      <helpcontext-number href="MD-Dialog-FunctionBlock-Math#MATHFBADDOUTPUT" value="10212"/>
+      <helpcontext-number href="MD-Dialog-FunctionBlock-Math#MATHFBOUTPUTDATATYPE" value="10214"/>
+      <helpcontext-number href="MD-Dialog-FunctionBlock-Math#MATHFBUPDATEBUTTON" value="10213"/>
+      <helpcontext-number href="MD-Dialog-FunctionBlock-Math#MathsFBdialog" value="10210"/>
+      <helpcontext-number href="MD-Dialog-FunctionBlock-Motion" value="1251"/>
+      <helpcontext-number href="MD-Dialog-FunctionBlock-Motion#MotionFB-R10" value="10160"/>
+      <helpcontext-number href="MD-Dialog-FunctionBlock-MotionDimension" value="1249"/>
+      <helpcontext-number href="MD-Dialog-FunctionBlock-MotionDimension#Motion-DimensionFBR10" value="10170"/>
+      <helpcontext-number href="MD-Dialog-FunctionBlock-MotionPath" value="1355"/>
+      <helpcontext-number href="MD-Dialog-FunctionBlock-MotionPath#BeltToothPitch" value="10156"/>
+      <helpcontext-number href="MD-Dialog-FunctionBlock-MotionPath#DIALOG-MOTIONPATHFB" value="10180"/>
+      <helpcontext-number href="MD-Dialog-FunctionBlock-MotionPath#MotionPathFB-PointList" value="10183"/>
+      <helpcontext-number href="MD-Dialog-FunctionBlock-MotionPath#MotPathPtPara" value="10184"/>
+      <helpcontext-number href="MD-Dialog-FunctionBlock-MotionPath#MtPAthLenCont" value="10185"/>
+      <helpcontext-number href="MD-Dialog-FunctionBlock-ParameterControl" value="1488"/>
+      <helpcontext-number href="MD-Dialog-FunctionBlock-ParameterControl#PARAMETER-CONTROL-DIALOG" value="1491"/>
+      <helpcontext-number href="MD-Dialog-FunctionBlock-Pattern" value="1300"/>
+      <helpcontext-number href="MD-Dialog-FunctionBlock-Pattern#PatterElement" value="12100"/>
+      <helpcontext-number href="MD-Dialog-FunctionBlock-Pattern#PatternElementPhases" value="12130"/>
+      <helpcontext-number href="MD-Dialog-FunctionBlock-Pattern#PATTERN-ELEMENTS" value="12110"/>
+      <helpcontext-number href="MD-Dialog-FunctionBlock-Pattern#PatternEnable" value="12111"/>
+      <helpcontext-number href="MD-Dialog-FunctionBlock-Pattern#Pattern-PatternElements" value="12120"/>
+      <helpcontext-number href="MD-Dialog-FunctionBlock-Pattern#PhaseVisibility" value="12140"/>
+      <helpcontext-number href="MD-Dialog-FunctionBlock-Pattern#PhaseVisibilityInterface" value="12150"/>
+      <helpcontext-number href="MD-Dialog-FunctionBlock-PointCloud" value="1283"/>
+      <helpcontext-number href="MD-Dialog-FunctionBlock-PointCloud#PointCloudDataFormats" value="10911"/>
+      <helpcontext-number href="MD-Dialog-FunctionBlock-PointCloud#POINT-CLOUD-DIALOG" value="10902"/>
+      <helpcontext-number href="MD-Dialog-FunctionBlock-PointCloud#PointClouddialog-import" value="10910"/>
+      <helpcontext-number href="MD-Dialog-FunctionBlock-PointCloud#PointCloudFitCurve" value="10920"/>
+      <helpcontext-number href="MD-Dialog-FunctionBlock-PointData" value="1299"/>
+      <helpcontext-number href="MD-Dialog-FunctionBlock-PointProperties" value="6990"/>
+      <helpcontext-number href="MD-Dialog-FunctionBlock-PointProperties#Dialog-PointDisplay" value="10220"/>
+      <helpcontext-number href="MD-Dialog-FunctionBlock-PointProperties#MechanismCoordinates" value="10222"/>
+      <helpcontext-number href="MD-Dialog-FunctionBlock-PointProperties#PointPosition" value="10223"/>
+      <helpcontext-number href="MD-Dialog-FunctionBlock-PointProperties#ShowHideKinematicVectors" value="10221"/>
+      <helpcontext-number href="MD-Dialog-FunctionBlock-PolynomialFit" value="1483"/>
+      <helpcontext-number href="MD-Dialog-FunctionBlock-PolynomialFit#PolyFitAcquire" value="1532"/>
+      <helpcontext-number href="MD-Dialog-FunctionBlock-PolynomialFit#PolyFit-Graphtoolbar" value="1536"/>
+      <helpcontext-number href="MD-Dialog-FunctionBlock-PolynomialFit#PolyFit-Results" value="1534"/>
+      <helpcontext-number href="MD-Dialog-FunctionBlock-PolynomialFit#PolyFit-Settings" value="1530"/>
+      <helpcontext-number href="MD-Dialog-FunctionBlock-Spring" value="1011"/>
+      <helpcontext-number href="MD-Dialog-FunctionBlock-Spring#SpringFB-Parameters" value="10255"/>
+      <helpcontext-number href="MD-Dialog-FunctionBlock-Spring#SpringFB-Velocity" value="10256"/>
+      <helpcontext-number href="MD-Dialog-FunctionBlock-Statistics" value="12600"/>
+      <helpcontext-number href="MD-Dialog-FunctionBlock-Statistics#DIALOG-STATISTICS-FB" value="12601"/>
+      <helpcontext-number href="MD-Dialog-GearPair" value="935"/>
+      <helpcontext-number href="MD-Dialog-GearPair#DIALOG-GEARPAIR-DEFINE-NOTEETH" value="941"/>
+      <helpcontext-number href="MD-Dialog-GearPair#DIALOG-GEAR-PAIR-DEFINE-SEGPARMAETERS" value="943"/>
+      <helpcontext-number href="MD-Dialog-GearPair#DIALOG-GEARPAIR-PARAMETERS-GEARTOOTH" value="940"/>
+      <helpcontext-number href="MD-Dialog-GearPair#DIALOG-GEARPAIR-PARAMETERS-PARAMETERS" value="942"/>
+      <helpcontext-number href="MD-Dialog-GearPair#Gear-PairDialog" value="937"/>
+      <helpcontext-number href="MD-Dialog-How-to-Edit-Parameters" value="1481"/>
+      <helpcontext-number href="MD-Dialog-How-to-Open-a-Dialog-Box" value="1471"/>
+      <helpcontext-number href="MD-Dialog-How-to-Open-a-Dialog-Box#EditElementSpecialCase" value="1520"/>
+      <helpcontext-number href="MD-Dialog-Machine-Settings" value="7090"/>
+      <helpcontext-number href="MD-Dialog-Machine-Settings#Dialog_McSettings-SpecifyUnits" value="10031"/>
+      <helpcontext-number href="MD-Dialog-Machine-Settings#Dialog-McSettings-CyclingParameters" value="10030"/>
+      <helpcontext-number href="MD-Dialog-MagneticJoint" value="1282"/>
+      <helpcontext-number href="MD-Dialog-MagneticJoint#MagneticJoint-Enable" value="10810"/>
+      <helpcontext-number href="MD-Dialog-MagneticJoint#MagneticJoint-RadiusControl" value="10820"/>
+      <helpcontext-number href="MD-Dialog-MakeMovie" value="10700"/>
+      <helpcontext-number href="MD-Dialog-MakeMovie#MakeMoviedialogr10-Filenames" value="10710"/>
+      <helpcontext-number href="MD-Dialog-MakeMovie#MakeMovie-framesize" value="10720"/>
+      <helpcontext-number href="MD-Dialog-MakeMovie#MakeMovie-MakeMovie" value="10730"/>
+      <helpcontext-number href="MD-Dialog-Model-Options" value="7200"/>
+      <helpcontext-number href="MD-Dialog-Model-Options#CAD-Synchronize" value="100010"/>
+      <helpcontext-number href="MD-Dialog-Model-Options#Dialog-Model-Lighting" value="100011"/>
+      <helpcontext-number href="MD-Dialog-Plane" value="7040"/>
+      <helpcontext-number href="MD-Dialog-Plane#PLANE-ANGLE" value="7044"/>
+      <helpcontext-number href="MD-Dialog-Plane#PLANE-OFFSET" value="7042"/>
+      <helpcontext-number href="MD-Dialog-ProfileExtrusion" value="7020"/>
+      <helpcontext-number href="MD-Dialog-ProfileExtrusion#EXTRUSION-DIALOG" value="10500"/>
+      <helpcontext-number href="MD-Dialog-ProfileExtrusion#EXTRUSION-DIALOG-COLOROPQUAL" value="10520"/>
+      <helpcontext-number href="MD-Dialog-ProfileExtrusion#EXTRUSION-DIALOG-DEPTHOFFSET" value="10510"/>
+      <helpcontext-number href="MD-Dialog-ProfileExtrusion#ExtrusionMassProperties" value="10530"/>
+      <helpcontext-number href="MD-Dialog-Pulley" value="1385"/>
+      <helpcontext-number href="MD-Dialog-Pulley#Pulleydialogbox" value="10410"/>
+      <helpcontext-number href="MD-Dialog-RackPinion" value="1464"/>
+      <helpcontext-number href="MD-Dialog-RackPinion#DIALOG-RACKPINION-ENABLEBOX" value="1477"/>
+      <helpcontext-number href="MD-Dialog-RackPinion#Rack-Pinion-BallScrew-tab" value="1473"/>
+      <helpcontext-number href="MD-Dialog-RackPinion#RackPinion-Gear-Tooth-tab" value="1474"/>
+      <helpcontext-number href="MD-Dialog-RackPinion#RackPinionParameters" value="1479"/>
+      <helpcontext-number href="MD-Dialog-Rename-Element" value="194"/>
+      <helpcontext-number href="MD-Dialog-Rename-Element#Dialog-RenameElement" value="10050"/>
+      <helpcontext-number href="MD-Dialog-Select-Elements" value="1003"/>
+      <helpcontext-number href="MD-Dialog-ServoGearboxTorqueSpeed" value="114"/>
+      <helpcontext-number href="MD-Dialog-Transition-Curve" value="1116"/>
+      <helpcontext-number href="MD-Dialog-Tutorials" value="1480"/>
+      <helpcontext-number href="MD-Dialog-Variable-Rack" value="12226"/>
+      <helpcontext-number href="MD-Dialog-ViewReferences" value="1391"/>
+      <helpcontext-number href="MD-Display-Filters-toolbar" value="1118"/>
+      <helpcontext-number href="MD-Double-click-to-Edit" value="1220"/>
+      <helpcontext-number href="MD-Download-SolidWorks-Type-Library" value="1347"/>
+      <helpcontext-number href="MD-Edit-ApplicationSettings" value="6350"/>
+      <helpcontext-number href="MD-Edit-AutoUpdate" value="192"/>
+      <helpcontext-number href="MD-Edit-DeleteElement" value="132"/>
+      <helpcontext-number href="MD-Edit-Edit-Database-Files" value="118"/>
+      <helpcontext-number href="MD-Edit-EditElement" value="6355"/>
+      <helpcontext-number href="MD-Edit-MachineSettings" value="6330"/>
+      <helpcontext-number href="MD-Edit-Rebuild-Now" value="1008"/>
+      <helpcontext-number href="MD-Edit-Redo" value="6870"/>
+      <helpcontext-number href="MD-Edit-ShowUndoHistory" value="6890"/>
+      <helpcontext-number href="MD-Edit-Undo" value="6550"/>
+      <helpcontext-number href="MD-ElementExplorer-AssemblyTree" value="104"/>
+      <helpcontext-number href="MD-ElementExplorer-GeometryTree" value="108"/>
+      <helpcontext-number href="MD-ElementExplorer-KinematicsTree" value="106"/>
+      <helpcontext-number href="MD-Element-Visibility" value="116"/>
+      <helpcontext-number href="MD-Export-a-Smooth-Cam" value="1288"/>
+      <helpcontext-number href="MD-Extrusions-Profiles-Sketch-Loops" value="1151"/>
+      <helpcontext-number href="MD-FAQs-General" value="1036"/>
+      <helpcontext-number href="MD-FAQ-Why-can't-SHIFT-Drag-to-Spin" value="1123"/>
+      <helpcontext-number href="MD-FeedBackArea" value="123"/>
+      <helpcontext-number href="MD-FeedBackArea#ExtendedHints-FA" value="1522"/>
+      <helpcontext-number href="MD-FeedBackArea#KinematicVectors-FA" value="1524"/>
+      <helpcontext-number href="MD-FeedBackArea#MachineAngle-FA" value="1527"/>
+      <helpcontext-number href="MD-FeedBackArea#MessageArea-FA" value="1523"/>
+      <helpcontext-number href="MD-File-DownloadTuorials" value="1492"/>
+      <helpcontext-number href="MD-File-Exit" value="1318"/>
+      <helpcontext-number href="MD-File-Import-Library-File" value="120"/>
+      <helpcontext-number href="MD-File-Locations" value="121"/>
+      <helpcontext-number href="MD-File-MakeMovie" value="1173"/>
+      <helpcontext-number href="MD-File-New" value="6820"/>
+      <helpcontext-number href="MD-File-Open" value="6730"/>
+      <helpcontext-number href="MD-File-Open#WhymanyCXLfile" value="1497"/>
+      <helpcontext-number href="MD-File-Open-DXF" value="551"/>
+      <helpcontext-number href="MD-File-Open-LIB-File" value="1321"/>
+      <helpcontext-number href="MD-File-Open-MEC" value="697"/>
+      <helpcontext-number href="MD-File-Open-MEC#DailogCamlinks" value="12223"/>
+      <helpcontext-number href="MD-File-Print" value="6920"/>
+      <helpcontext-number href="MD-File-Printer-Setup" value="6930"/>
+      <helpcontext-number href="MD-File-RecentlyUsed" value="6910"/>
+      <helpcontext-number href="MD-File-RecentlyUsed_2" value="1122"/>
+      <helpcontext-number href="MD-File-Save" value="6860"/>
+      <helpcontext-number href="MD-File-SaveAs" value="6840"/>
+      <helpcontext-number href="MD-File-SaveTimingDiagram" value="1476"/>
+      <helpcontext-number href="MD-Forces-Configure-Power-Source" value="848"/>
+      <helpcontext-number href="MD-Function-Blocks-Schematic-DataValuesChannels" value="1494"/>
+      <helpcontext-number href="MD-Geometry-Arc" value="5230"/>
+      <helpcontext-number href="MD-Geometry-Blend-Curve" value="1368"/>
+      <helpcontext-number href="MD-Geometry-Blend-Curve#BlendCurveWhatis" value="1444"/>
+      <helpcontext-number href="MD-Geometry-Blend-Curve#Smoothness" value="1442"/>
+      <helpcontext-number href="MD-Geometry-CAD-Line" value="5720"/>
+      <helpcontext-number href="MD-Geometry-Circle" value="5130"/>
+      <helpcontext-number href="MD-Geometry-Coincident" value="5430"/>
+      <helpcontext-number href="MD-Geometry-Concentric" value="5530"/>
+      <helpcontext-number href="MD-Geometry-Dimension" value="5410"/>
+      <helpcontext-number href="MD-Geometry-Dimension#DimensionHorVer" value="1470"/>
+      <helpcontext-number href="MD-Geometry-Dimension#DimensionPoint" value="1487"/>
+      <helpcontext-number href="MD-Geometry-Equal" value="5840"/>
+      <helpcontext-number href="MD-Geometry-Horizontal" value="5800"/>
+      <helpcontext-number href="MD-Geometry-Import-SOLIDWORKS-Sketch" value="1443"/>
+      <helpcontext-number href="MD-Geometry-Line" value="5100"/>
+      <helpcontext-number href="MD-Geometry-MergePoints" value="148"/>
+      <helpcontext-number href="MD-Geometry-MidPoint" value="5830"/>
+      <helpcontext-number href="MD-Geometry-Parallel" value="5630"/>
+      <helpcontext-number href="MD-Geometry-Perpendicular" value="5730"/>
+      <helpcontext-number href="MD-Geometry-Point" value="5270"/>
+      <helpcontext-number href="MD-Geometry-Spline" value="1439"/>
+      <helpcontext-number href="MD-Geometry-Tangent" value="5810"/>
+      <helpcontext-number href="MD-Geometry-TransitionCurve" value="1700"/>
+      <helpcontext-number href="MD-Geometry-Vertical" value="5820"/>
+      <helpcontext-number href="MD-Help-About" value="6019"/>
+      <helpcontext-number href="MD-Help-About#TypeLibrarySW" value="9041"/>
+      <helpcontext-number href="MD-Help-Edit-Language-Data" value="1223"/>
+      <helpcontext-number href="MD-Help-Run-Test-Models" value="12261"/>
+      <helpcontext-number href="MD-How_many_Kinematic_Chains" value="1246"/>
+      <helpcontext-number href="MD-How-do-I-move-a-Motion-Dimensi" value="1025"/>
+      <helpcontext-number href="MD-How-Edit_an_Extrusion" value="1150"/>
+      <helpcontext-number href="MD-How-Edit_an_Extrusion#DeleteProfile" value="1157"/>
+      <helpcontext-number href="MD-How-Edit-Length-Part" value="1141"/>
+      <helpcontext-number href="MD-HowIknowIamusingPartEditor" value="1168"/>
+      <helpcontext-number href="MD-How-many-Mechanism-Editors" value="1245"/>
+      <helpcontext-number href="MD-How-many-Parts-can-I-edit" value="1167"/>
+      <helpcontext-number href="MD-How-model-a-Pin-in-a-Slot" value="1219"/>
+      <helpcontext-number href="MD-How-to..." value="1072"/>
+      <helpcontext-number href="MD-How-to-Change-Closure-Dyad" value="1149"/>
+      <helpcontext-number href="MD-How-to-close-the-Part-Editor" value="1082"/>
+      <helpcontext-number href="MD-How-to-Delete-a-Sketch-Element" value="1421"/>
+      <helpcontext-number href="MD-How-to-Delete-Constraints" value="1030"/>
+      <helpcontext-number href="MD-How-to-display-Vel-Acc-Vectors-of-Point" value="1230"/>
+      <helpcontext-number href="MD-How-to-General" value="1035"/>
+      <helpcontext-number href="MD-How-to-start-the-Part-Editor" value="1140"/>
+      <helpcontext-number href="MD-How-to-start-the-Part-Editor#HOWTOSTARTPARTEDITRO" value="1142"/>
+      <helpcontext-number href="MD-Keyboard-Shortcuts" value="1051"/>
+      <helpcontext-number href="MD-Kinematics-Tree-Tools" value="1466"/>
+      <helpcontext-number href="MD-Kinematic-Sub-Assemblies" value="1465"/>
+      <helpcontext-number href="MD-Kinematic-Sub-Assemblies#KinematicTreeSolved" value="1467"/>
+      <helpcontext-number href="MD-Known-Bugs" value="1034"/>
+      <helpcontext-number href="MD-MechanismEditor" value="5510"/>
+      <helpcontext-number href="MD-Mechanism-Editor-FAQs" value="1148"/>
+      <helpcontext-number href="MD-Mechanism-Kinematic-Elements" value="1125"/>
+      <helpcontext-number href="MD-MechDesigner-Help" value="1420"/>
+      <helpcontext-number href="MD-MechEditor-FAQs" value="1027"/>
+      <helpcontext-number href="MD-MechEditor-HowTo" value="1026"/>
+      <helpcontext-number href="MD-MechEditor-Troubleshooting" value="1037"/>
+      <helpcontext-number href="MD-Memopad" value="1237"/>
+      <helpcontext-number href="MD-Menu-Add" value="1500"/>
+      <helpcontext-number href="MD-Menu-Constraints" value="1469"/>
+      <helpcontext-number href="MD-Menu-Constraints#PartEditorRules" value="1493"/>
+      <helpcontext-number href="MD-Menu-Edit" value="150"/>
+      <helpcontext-number href="MD-Menu-Elements-MD17_2" value="1120"/>
+      <helpcontext-number href="MD-Menu-FB-Modelling" value="20100"/>
+      <helpcontext-number href="MD-Menu-File" value="6800"/>
+      <helpcontext-number href="MD-Menu-Filters" value="133"/>
+      <helpcontext-number href="MD-Menu-Forces" value="839"/>
+      <helpcontext-number href="MD-Menu-FunctionBlocks" value="1121"/>
+      <helpcontext-number href="MD-Menu-FunctionBlocks-MD17" value="1114"/>
+      <helpcontext-number href="MD-Menu-Geometry" value="144"/>
+      <helpcontext-number href="MD-Menu-Help" value="549"/>
+      <helpcontext-number href="MD-Menu-Help#DownloadLocalHelp" value="12227"/>
+      <helpcontext-number href="MD-Menu-Internet" value="538"/>
+      <helpcontext-number href="MD-Menu-Internet#DialogDownloadExample" value="12225"/>
+      <helpcontext-number href="MD-Menu-Machine-Elements" value="110"/>
+      <helpcontext-number href="MD-Menu-Modelelements(Model)" value="156"/>
+      <helpcontext-number href="MD-Menu-Modelelements(Model)#Modeltoolbar" value="1512"/>
+      <helpcontext-number href="MD-Menu-Run" value="135"/>
+      <helpcontext-number href="MD-Menus-and-Toolbars-MD16" value="157"/>
+      <helpcontext-number href="MD-Menu-Solids" value="1416"/>
+      <helpcontext-number href="MD-Menu-View" value="149"/>
+      <helpcontext-number href="MD-Menu-View#ViewToolbaricons" value="13456"/>
+      <helpcontext-number href="MD-Menu-Visibility" value="191"/>
+      <helpcontext-number href="MD-ModelEditor" value="5490"/>
+      <helpcontext-number href="MD-Model-Editor-FAQs" value="1423"/>
+      <helpcontext-number href="MD-Modelelements(Model)-AddMechanism" value="5930"/>
+      <helpcontext-number href="MD-Modelelements(Model)-AddMechanism#GRAVITYVECTOR" value="1452"/>
+      <helpcontext-number href="MD-Model-elements(Model)-AddPlane" value="6120"/>
+      <helpcontext-number href="MD-MotionDesigner-Link-Motion" value="558"/>
+      <helpcontext-number href="MD-My-sketch-has-disappeared_-Wha" value="1031"/>
+      <helpcontext-number href="MD-Nothing" value="1000"/>
+      <helpcontext-number href="MD-PartEditor" value="5500"/>
+      <helpcontext-number href="MD-PartEditor-FAQs" value="1029"/>
+      <helpcontext-number href="MD-Part-Editor-FAQs" value="1139"/>
+      <helpcontext-number href="MD-PartEditor-HowTo" value="1028"/>
+      <helpcontext-number href="MD-POP-3D-Cam-Track_Rims" value="903"/>
+      <helpcontext-number href="MD-POP-AnimationSimulation" value="594"/>
+      <helpcontext-number href="MD-POP-Assembly-Tree" value="595"/>
+      <helpcontext-number href="MD-POP-Auto-Profile" value="666"/>
+      <helpcontext-number href="MD-POP-Auto-Profiles-GroundedBearing" value="1204"/>
+      <helpcontext-number href="MD-POP-Ball-Joint-Configurations" value="1160"/>
+      <helpcontext-number href="MD-POP-Ball-Joints" value="815"/>
+      <helpcontext-number href="MD-POP-BasePart" value="100"/>
+      <helpcontext-number href="MD-POP-BaseValue" value="1413"/>
+      <helpcontext-number href="MD-POP-Bell-Crank" value="930"/>
+      <helpcontext-number href="MD-POP-BiArc" value="1017"/>
+      <helpcontext-number href="MD-POP-BirdsNest" value="1324"/>
+      <helpcontext-number href="MD-POP-CAD-Line" value="1502"/>
+      <helpcontext-number href="MD-POP-Cam" value="1004"/>
+      <helpcontext-number href="MD-POP-Cam-Contact-Points" value="1422"/>
+      <helpcontext-number href="MD-POP-Cam-Coordinates-Formats-2D" value="109"/>
+      <helpcontext-number href="MD-POP-Cam-Coordinates-Local-Mechanism" value="1290"/>
+      <helpcontext-number href="MD-POP-Cam-Follower-Motion" value="1162"/>
+      <helpcontext-number href="MD-POP-Camlinks" value="1363"/>
+      <helpcontext-number href="MD-POP-Camlinks-Outlines" value="711"/>
+      <helpcontext-number href="MD-POP-Cam-Maximum-Shear-Stress" value="895"/>
+      <helpcontext-number href="MD-POP-Cam-MaxShearStress-equations" value="1163"/>
+      <helpcontext-number href="MD-POP-Cam-Pitch-Centre-Path" value="814"/>
+      <helpcontext-number href="MD-POP-Cam-Pressure-Angle" value="728"/>
+      <helpcontext-number href="MD-POP-Cam-Radius-of-Curvature" value="1427"/>
+      <helpcontext-number href="MD-POP-Closures" value="1019"/>
+      <helpcontext-number href="MD-POP-Command-Manager" value="649"/>
+      <helpcontext-number href="MD-POP-Commands" value="1273"/>
+      <helpcontext-number href="MD-POP-Congruent-Triangles" value="1364"/>
+      <helpcontext-number href="MD-POP-Conjugate-Cams" value="1602"/>
+      <helpcontext-number href="MD-POP-Connecting-Part" value="860"/>
+      <helpcontext-number href="MD-POP-Contextual-Toolbar" value="1054"/>
+      <helpcontext-number href="MD-POP-Crank" value="857"/>
+      <helpcontext-number href="MD-POP-Cycle" value="1430"/>
+      <helpcontext-number href="MD-POP-Decimal-Mark" value="1165"/>
+      <helpcontext-number href="MD-POP-Definition-Mec-Files" value="1323"/>
+      <helpcontext-number href="MD-POP-Degrees-of-Freedom" value="731"/>
+      <helpcontext-number href="MD-POP-Design-Set" value="709"/>
+      <helpcontext-number href="MD-POP-Dialog-box-definition" value="700"/>
+      <helpcontext-number href="MD-POP-Dimension-Measurement" value="921"/>
+      <helpcontext-number href="MD-POP-Dimension-Reference-Measurement" value="922"/>
+      <helpcontext-number href="MD-POP-Dimension-Static" value="669"/>
+      <helpcontext-number href="MD-POP-Distal" value="103"/>
+      <helpcontext-number href="MD-POP-DRAG" value="117"/>
+      <helpcontext-number href="MD-POP-DRO" value="1298"/>
+      <helpcontext-number href="MD-POP-DXF-Element" value="702"/>
+      <helpcontext-number href="MD-POP-DXF-Entities" value="787"/>
+      <helpcontext-number href="MD-POP-DXF-File" value="703"/>
+      <helpcontext-number href="MD-POP-DXF-Layers" value="788"/>
+      <helpcontext-number href="MD-POP-DXF-Outlines" value="850"/>
+      <helpcontext-number href="MD-POP-Dyad" value="641"/>
+      <helpcontext-number href="MD-POP-Editor" value="727"/>
+      <helpcontext-number href="MD-POP-Element-Explorer" value="652"/>
+      <helpcontext-number href="MD-POP-Elements" value="111"/>
+      <helpcontext-number href="MD-POP-Element-Selected" value="1010"/>
+      <helpcontext-number href="MD-POP-Elements-Reference" value="119"/>
+      <helpcontext-number href="MD-POP-English_Joke" value="1156"/>
+      <helpcontext-number href="MD-POP-Extrusion-Density" value="796"/>
+      <helpcontext-number href="MD-POP-Extrusion-Depth" value="679"/>
+      <helpcontext-number href="MD-POP-Extrusion-Element" value="665"/>
+      <helpcontext-number href="MD-POP-Extrusion-Offset" value="681"/>
+      <helpcontext-number href="MD-POP-FeedBack-Area" value="734"/>
+      <helpcontext-number href="MD-POP-File-Types" value="1403"/>
+      <helpcontext-number href="MD-POP-Follower-Profile-Shape" value="696"/>
+      <helpcontext-number href="MD-POP-Forces" value="1177"/>
+      <helpcontext-number href="MD-POP-Function-Block-Connectors" value="1067"/>
+      <helpcontext-number href="MD-POP-Function-Block-Gearing" value="881"/>
+      <helpcontext-number href="MD-POP-Function-Block-Graph" value="127"/>
+      <helpcontext-number href="MD-POP-Function-Block-Linear-Motion" value="882"/>
+      <helpcontext-number href="MD-POP-Function-Block-Point-Data-Measurement" value="1447"/>
+      <helpcontext-number href="MD-POP-Function-Blocks" value="637"/>
+      <helpcontext-number href="MD-POP-Function-Blocks-Golden" value="638"/>
+      <helpcontext-number href="MD-POP-Function-Block-Toolbar" value="592"/>
+      <helpcontext-number href="MD-POP-Gear-Line-of-Centres" value="1277"/>
+      <helpcontext-number href="MD-POP-Gear-Module" value="1001"/>
+      <helpcontext-number href="MD-POP-Gear-Pair" value="1015"/>
+      <helpcontext-number href="MD-POP-Gear-PCD" value="1014"/>
+      <helpcontext-number href="MD-POP-Gear-Pressure-Angle" value="1002"/>
+      <helpcontext-number href="MD-POP-Gear-Train" value="1041"/>
+      <helpcontext-number href="MD-POP-Geometry-Tree" value="653"/>
+      <helpcontext-number href="MD-POP-Get-Cam-Data" value="789"/>
+      <helpcontext-number href="MD-POP-Graphics-Area" value="1006"/>
+      <helpcontext-number href="MD-POP-Inverse-Kinematics" value="1127"/>
+      <helpcontext-number href="MD-POP-Joint" value="642"/>
+      <helpcontext-number href="MD-POP-Kinematically-Defined-Chain" value="640"/>
+      <helpcontext-number href="MD-POP-Kinematic-Chain" value="639"/>
+      <helpcontext-number href="MD-POP-Kinematic-elements-toolbar" value="657"/>
+      <helpcontext-number href="MD-POP-Kinematic-FB-toolbar" value="1046"/>
+      <helpcontext-number href="MD-POP-Kinematics-Tree" value="608"/>
+      <helpcontext-number href="MD-POP-Layers" value="844"/>
+      <helpcontext-number href="MD-POP-Line-of-Centres" value="1433"/>
+      <helpcontext-number href="MD-POP-Machine-Cycle" value="710"/>
+      <helpcontext-number href="MD-POP-Machine-Simulation-Speed" value="713"/>
+      <helpcontext-number href="MD-POP-Master-Machine-Angle" value="662"/>
+      <helpcontext-number href="MD-POP-Mechanism" value="660"/>
+      <helpcontext-number href="MD-POP-Mechanism-Analysis" value="1381"/>
+      <helpcontext-number href="MD-POP-Mechanism-Editor" value="705"/>
+      <helpcontext-number href="MD-POP-Mechanism-General" value="1110"/>
+      <helpcontext-number href="MD-POP-Mechanism-Synthesis" value="1380"/>
+      <helpcontext-number href="MD-POP-Mechanism-Tab" value="505"/>
+      <helpcontext-number href="MD-POP-Menu-File" value="1501"/>
+      <helpcontext-number href="MD-POP-MergePoints-Defintions" value="1383"/>
+      <helpcontext-number href="MD-POP-Mobility" value="717"/>
+      <helpcontext-number href="MD-POP-Model" value="661"/>
+      <helpcontext-number href="MD-POP-Model-Editor" value="706"/>
+      <helpcontext-number href="MD-POP-Moment-of-Inertia" value="1335"/>
+      <helpcontext-number href="MD-POP-Motion" value="722"/>
+      <helpcontext-number href="MD-POP-Motion-Blend-Point" value="1024"/>
+      <helpcontext-number href="MD-POP-Motion-Derivative" value="1159"/>
+      <helpcontext-number href="MD-POP-Motion-Dimension" value="785"/>
+      <helpcontext-number href="MD-POP-Motion-Dimension-Base-Value" value="723"/>
+      <helpcontext-number href="MD-POP-Motion-Dimension-FB" value="635"/>
+      <helpcontext-number href="MD-POP-Motion-Dimension-FB-Angle" value="698"/>
+      <helpcontext-number href="MD-POP-Motion-Dimension-FB-Linear" value="699"/>
+      <helpcontext-number href="MD-POP-Motion-Driven-Part" value="643"/>
+      <helpcontext-number href="MD-POP-Motion-Driven-Point" value="1370"/>
+      <helpcontext-number href="MD-POP-MotionNames" value="1272"/>
+      <helpcontext-number href="MD-POP-Motion-Path-FB" value="1369"/>
+      <helpcontext-number href="MD-POP-Motion-Period" value="1315"/>
+      <helpcontext-number href="MD-POP-MotionValue" value="784"/>
+      <helpcontext-number href="MD-POP-Number-of-Steps" value="849"/>
+      <helpcontext-number href="MD-POP-Origin" value="1354"/>
+      <helpcontext-number href="MD-POP-Osculating-Circle" value="1517"/>
+      <helpcontext-number href="MD-POP-Overlay-Trace" value="1514"/>
+      <helpcontext-number href="MD-POP-Part" value="570"/>
+      <helpcontext-number href="MD-POP-Part-Added" value="1172"/>
+      <helpcontext-number href="MD-POP-Part-Axes" value="1064"/>
+      <helpcontext-number href="MD-POP-Part-Editor" value="678"/>
+      <helpcontext-number href="MD-POP-Part-Free" value="877"/>
+      <helpcontext-number href="MD-POP-Part-Geometry-definition" value="1065"/>
+      <helpcontext-number href="MD-POP-Part-Kinematically-Defined" value="590"/>
+      <helpcontext-number href="MD-POP-Part-Local-Toolbar" value="659"/>
+      <helpcontext-number href="MD-POP-Part-Offset" value="680"/>
+      <helpcontext-number href="MD-POP-Part-Outline" value="614"/>
+      <helpcontext-number href="MD-POP-Part-Rotating" value="1077"/>
+      <helpcontext-number href="MD-POP-Pi" value="1050"/>
+      <helpcontext-number href="MD-POP-Pin-Joint" value="591"/>
+      <helpcontext-number href="MD-POP-Pitch-Centre-Path" value="792"/>
+      <helpcontext-number href="MD-POP-Pitch-Circle-Diameter" value="1049"/>
+      <helpcontext-number href="MD-POP-Plane" value="503"/>
+      <helpcontext-number href="MD-POP-Plane-Mechanism" value="859"/>
+      <helpcontext-number href="MD-POP-Plane-Part" value="1310"/>
+      <helpcontext-number href="MD-POP-Planes-and-Mechanisms" value="1007"/>
+      <helpcontext-number href="MD-POP-Point" value="1605"/>
+      <helpcontext-number href="MD-POP-Point-Cloud" value="1425"/>
+      <helpcontext-number href="MD-POP-Polyline" value="1009"/>
+      <helpcontext-number href="MD-POP-Power-Source" value="1468"/>
+      <helpcontext-number href="MD-POP-Profile-Element" value="183"/>
+      <helpcontext-number href="MD-POP-Project-Explorer" value="650"/>
+      <helpcontext-number href="MD-POP-Proximal" value="851"/>
+      <helpcontext-number href="MD-POP-Rack-Pinion" value="1023"/>
+      <helpcontext-number href="MD-POP-Ram-P" value="1362"/>
+      <helpcontext-number href="MD-POP-Ram-R" value="1361"/>
+      <helpcontext-number href="MD-POP-Rectilinear-Translation" value="1016"/>
+      <helpcontext-number href="MD-POP-Reference-Geometry" value="1263"/>
+      <helpcontext-number href="MD-POP-Release-Version-Build" value="1507"/>
+      <helpcontext-number href="MD-POP-Restore-Size-of-Open-and-Save-dialog" value="1511"/>
+      <helpcontext-number href="MD-POP-Right-Hand-Rule" value="1042"/>
+      <helpcontext-number href="MD-POP-Rigid-Body" value="1506"/>
+      <helpcontext-number href="MD-POP-Rocker" value="644"/>
+      <helpcontext-number href="MD-POP-Rocker-Geared" value="1066"/>
+      <helpcontext-number href="MD-POP-Rocker-Pulley" value="1386"/>
+      <helpcontext-number href="MD-POP-Rod-End-Joint" value="816"/>
+      <helpcontext-number href="MD-POP-Rotating-Axle" value="718"/>
+      <helpcontext-number href="MD-POP-Save-FileNames" value="936"/>
+      <helpcontext-number href="MD-POP-SCARA-Robot" value="1374"/>
+      <helpcontext-number href="MD-POP-Selection-Window" value="651"/>
+      <helpcontext-number href="MD-POP-Singularites" value="861"/>
+      <helpcontext-number href="MD-POP-Sketch-Element-Arc" value="655"/>
+      <helpcontext-number href="MD-POP-Sketch-Element-Blend-Curve" value="1378"/>
+      <helpcontext-number href="MD-POP-Sketch-Element-CADLine" value="612"/>
+      <helpcontext-number href="MD-POP-Sketch-Element-Circle" value="656"/>
+      <helpcontext-number href="MD-POP-Sketch-Element-Constraints" value="664"/>
+      <helpcontext-number href="MD-POP-Sketch-Element-Dimensions" value="663"/>
+      <helpcontext-number href="MD-POP-Sketch-Element-Free" value="1440"/>
+      <helpcontext-number href="MD-POP-Sketch-Element-Line" value="575"/>
+      <helpcontext-number href="MD-POP-Sketch-Element-Point" value="182"/>
+      <helpcontext-number href="MD-POP-Sketch-Elements" value="654"/>
+      <helpcontext-number href="MD-POP-Sketch-Element-Spline" value="1485"/>
+      <helpcontext-number href="MD-POP-Sketch-Loop" value="613"/>
+      <helpcontext-number href="MD-POP-sketch-loop-quasi" value="1048"/>
+      <helpcontext-number href="MD-POP-Slide-Joint" value="636"/>
+      <helpcontext-number href="MD-POP-Slider" value="648"/>
+      <helpcontext-number href="MD-POP-Sliding-Part" value="1078"/>
+      <helpcontext-number href="MD-POP-Solids" value="1301"/>
+      <helpcontext-number href="MD-POP-SOLIDWORKS-Type-Libraries" value="1215"/>
+      <helpcontext-number href="MD-POP-Spin-Box-Tool" value="1472"/>
+      <helpcontext-number href="MD-POP-STL" value="1313"/>
+      <helpcontext-number href="MD-POP-STL-Deviation-Angle" value="1415"/>
+      <helpcontext-number href="MD-POP-Symbol-Motor" value="1516"/>
+      <helpcontext-number href="MD-POP-Symbols" value="738"/>
+      <helpcontext-number href="MD-POP-Torque-Speed-Curves" value="1426"/>
+      <helpcontext-number href="MD-POP-TracePoint" value="671"/>
+      <helpcontext-number href="MD-POP-Transition-Curve" value="1013"/>
+      <helpcontext-number href="MD-POP-ZXL-FILE" value="1526"/>
+      <helpcontext-number href="MD-ProjectExplorer" value="102"/>
+      <helpcontext-number href="MD-ProjectExplorer-CommandManager" value="105"/>
+      <helpcontext-number href="MD-ProjectExplorer-ElementExplorer" value="161"/>
+      <helpcontext-number href="MD-ProjectExplorer-SelectionWindow" value="101"/>
+      <helpcontext-number href="MD-ProjectExplorer-SelectionWindow#ViewReference" value="10400"/>
+      <helpcontext-number href="MD-RenameElement" value="1075"/>
+      <helpcontext-number href="MD-Selection-Filters" value="131"/>
+      <helpcontext-number href="MD-SNIPPET" value="1039"/>
+      <helpcontext-number href="MD-Snippet-2DCamWorkflow" value="1040"/>
+      <helpcontext-number href="MD-Snippet-BeltPulley-Terminology" value="1128"/>
+      <helpcontext-number href="MD-Snippet-CamTerminology" value="1045"/>
+      <helpcontext-number href="MD-Snippet-DXFTerminology" value="1117"/>
+      <helpcontext-number href="MD-Snippet-GearTerminology" value="1129"/>
+      <helpcontext-number href="MD-Stop-Solids-Turning-Red" value="1424"/>
+      <helpcontext-number href="MD-System-Requirements" value="1043"/>
+      <helpcontext-number href="MD-Translation-of-ENG" value="1047"/>
+      <helpcontext-number href="MD-Type_library_files" value="1434"/>
+      <helpcontext-number href="MD-Visibility-CommandHistory" value="1126"/>
+      <helpcontext-number href="MD-Visibility-DisplayMode" value="1460"/>
+      <helpcontext-number href="MD-Visibility-DockFloat-MotionDesigner" value="193"/>
+      <helpcontext-number href="MD-Visibility-Model-Orthonomal-Perspecive" value="12348"/>
+      <helpcontext-number href="MD-Visibility-Model-Orthonomal-Perspecive_2" value="1119"/>
+      <helpcontext-number href="MD-Visibility-Show-Forces" value="841"/>
+      <helpcontext-number href="MD-Visibility-ShowOtherMechanisms" value="5870"/>
+      <helpcontext-number href="MD-Visibility-SolidsInMechanisms" value="5860"/>
+      <helpcontext-number href="MD-Visibility-SolidsofActiveorAllMechanisms" value="13113"/>
+      <helpcontext-number href="MD-What-are-the-different-element-2D-Cam" value="134"/>
+      <helpcontext-number href="MD-WhatColor-Part-Editor" value="1170"/>
+      <helpcontext-number href="MD-What-does-kinematically-defined-mean" value="1038"/>
+      <helpcontext-number href="MD-WhatisGeometryUsedfor" value="1105"/>
+      <helpcontext-number href="MD-Why_can_I_NOT_add_this_Motion_" value="1287"/>
+      <helpcontext-number href="MD-Why_can_I_not_see_the_BasePart" value="1410"/>
+      <helpcontext-number href="MD-Why-add-a-sketch-loop" value="1144"/>
+      <helpcontext-number href="MD-Why-add-a-sketch-loop#HoverMerge" value="1238"/>
+      <helpcontext-number href="MD-Why-can't-I-SHIFT-Drag-to-Spin" value="1124"/>
+      <helpcontext-number href="MD-Why-Edit-the-BasePart" value="1146"/>
+      <helpcontext-number href="MD-Why-is-it-taking-a-long-time-t" value="1005"/>
+      <helpcontext-number href="MD-Why-is-the-dimension-negative" value="1407"/>
+    </helpcontext-numbers>
+  </config>
+  <xi:include parse="xml" href="Maps/table_of_contents.xml"/>
+  <project-files>
+    <file href="Topics/*.xml" build="ALL" filetype="topic">
+      <file-mod href="MD-Type_library_files.xml"/>
+      <file-mod href="MD-Dialog-Variable-Rack.xml" build="USER3"/>
+      <file-mod href="MD-File-Locations.xml"/>
+      <file-mod href="MD-Help-Edit-Language-Data.xml"/>
+      <file-mod href="MD-Download-SolidWorks-Type-Library.xml"/>
+      <file-mod href="MD-Entrainment-Velocity.xml"/>
+      <file-mod href="MD-Nothing.xml"/>
+      <file-mod href="MD-Edit-Edit-Database-Files.xml"/>
+      <file-mod href="MD-Help-Run-Test-Models.xml"/>
+      <file-mod href="MD-SNIPPET.xml"/>
+      <file-mod href="MD-Snippet-2DCamWorkflow.xml"/>
+      <file-mod href="MD-Translation-of-ENG.xml"/>
+      <file-mod href="MD-Snippet-CamTerminology.xml"/>
+      <file-mod href="MD-Lubrication-Aiso.xml"/>
+      <file-mod href="MD-Menus-and-Toolbars-MD16.xml" build="CHM,HTML,MD17,PDF,PROFESSIONAL"/>
+      <file-mod href="MD-Menu-FunctionBlocks-MD17.xml" build="MD17"/>
+      <file-mod href="MD-Snippet-DXFTerminology.xml"/>
+      <file-mod href="MD-Menu-Add.xml" build="PROFESSIONAL"/>
+      <file-mod href="MD-Edit-ShowUndoHistory.xml" build="PROFESSIONAL"/>
+      <file-mod href="MD-Display-Filters-toolbar.xml" build="PROFESSIONAL"/>
+      <file-mod href="MD-Element-Visibility.xml" build="MD17"/>
+      <file-mod href="MD-Visibility-Model-Orthonomal-Perspecive.xml" build="MD17"/>
+      <file-mod href="MD-Visibility-Model-Orthonomal-Perspecive_2.xml" build="PROFESSIONAL"/>
+      <file-mod href="MD-Menu-Elements-MD17_2.xml" build="MD17"/>
+      <file-mod href="MD-Menu-FunctionBlocks.xml" build="MD17"/>
+      <file-mod href="MD-File-RecentlyUsed.xml" build="PROFESSIONAL"/>
+      <file-mod href="MD-File-RecentlyUsed_2.xml" build="MD17"/>
+      <file-mod href="MD-Visibility-CommandHistory.xml" build="CHM,MD17"/>
+      <file-mod href="MD-File-DownloadTuorials.xml" build="DEMO"/>
+      <file-mod href="MD-Snippet-BeltPulley-Terminology.xml"/>
+      <file-mod href="MD-Snippet-GearTerminology.xml"/>
+    </file>
+    <file href="Topics/PopupTopics/*.xml" build="ALL" filetype="topic"/>
+    <file href="Topics/PopupTopics/Definitions/*.xml" build="ALL" filetype="topic">
+      <file-mod href="MD-POP-File-Types.xml"/>
+      <file-mod href="MD-POP-FeedBack-Area.xml"/>
+      <file-mod href="MD-POP-Function-Block-Point-Data-Measurement.xml"/>
+      <file-mod href="MD-POP-Get-Cam-Data.xml"/>
+      <file-mod href="MD-POP-Layers.xml"/>
+      <file-mod href="MD-POP-Line-of-Centres.xml"/>
+      <file-mod href="MD-POP-Mechanism.xml"/>
+      <file-mod href="MD-POP-Motion-Dimension-FB-Angle.xml"/>
+      <file-mod href="MD-POP-Motion-Dimension-FB-Linear.xml"/>
+      <file-mod href="MD-POP-MotionNames.xml"/>
+      <file-mod href="MD-POP-Motion-Period.xml"/>
+      <file-mod href="MD-POP-Origin.xml"/>
+      <file-mod href="MD-POP-Osculating-Circle.xml"/>
+      <file-mod href="MD-POP-Part-Geometry-definition.xml"/>
+      <file-mod href="MD-POP-Part-Local-Toolbar.xml"/>
+      <file-mod href="MD-POP-Planes-and-Mechanisms.xml"/>
+      <file-mod href="MD-POP-Restore-Size-of-Open-and-Save-dialog.xml"/>
+      <file-mod href="MD-POP-Rod-End-Joint.xml"/>
+      <file-mod href="MD-POP-Rotating-Axle.xml"/>
+      <file-mod href="MD-POP-Save-FileNames.xml"/>
+      <file-mod href="MD-POP-SCARA-Robot.xml"/>
+      <file-mod href="MD-POP-Singularites.xml"/>
+      <file-mod href="MD-POP-Sketch-Element-Free.xml"/>
+      <file-mod href="MD-POP-SOLIDWORKS-Type-Libraries.xml"/>
+      <file-mod href="MD-POP-Symbol-Motor.xml"/>
+      <file-mod href="MD-POP-Zero-Round-Copy-Paste.xml"/>
+      <file-mod href="MD-POP-Rigid-Body.xml"/>
+      <file-mod href="MD-POP-Proximal.xml"/>
+      <file-mod href="MD-POP-Distal.xml"/>
+      <file-mod href="MD-POP-STL-Deviation-Angle.xml"/>
+      <file-mod href="MD-POP-Moment-of-Inertia.xml"/>
+      <file-mod href="MD-POP-Function-Block-Toolbar.xml"/>
+      <file-mod href="MD-POP-Function-Blocks-Golden.xml"/>
+      <file-mod href="MD-POP-3D-Cam-Track_Rims.xml"/>
+    </file>
+    <file href="Baggage/*.*" build="ALL" filetype="baggage"/>
+  </project-files>
+</helpproject>

@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" status="Under Construction" modified="2022-07-26T11:21:36.323+01:00" lasteditedby="Adam" version="2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title>Menu | Function-Block | Motion </title>
+  <keywords>
+    <keyword>Accumulate Output</keyword>
+    <keyword>Add<keyword>Function-Block: Motion</keyword></keyword>
+    <keyword>Function-Block<keyword>Motion FB</keyword></keyword>
+    <keyword>Reset Output</keyword>
+  </keywords>
+  <body>
+    <header>
+      <para styleclass="Heading1">Kinematic FB | Add Motion &#160;FB</para>
+    </header>
+    <para styleclass="Heading3_atocs_">A Motion Function-Block</para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="SeeAlso">See also : <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-FunctionBlock-Motion">Motion FB dialog-box</link></para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="Heading4 Toggle_atocs_">Terminology and Definitions</para>
+    <para styleclass="Body Text"><table styleclass="Default" rowcount="2" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:205px;">
+          <para styleclass="Element" style="text-align:right;">Function-Block : </para>
+        </td>
+        <td>
+          <para styleclass="Element">FB</para>
+          <para styleclass="Popup Box">A <text styleclass="Popup Box-Elements">Function-Block</text> has an input-connector and an output-connector.</para>
+          <para styleclass="Popup Box">A<text styleclass="Element"> Function-Block</text> modifies data at its input-connector to give different data at its output-connector. Different Function-Blocks modify data in different ways.</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:205px;">
+          <para styleclass="Popup Box2" style="text-align:right;"><text styleclass="Popup Box-Elements">Motion FB</text> : </para>
+        </td>
+        <td>
+          <para styleclass="Popup Box">The <text styleclass="Popup Box-Elements">Motion FB</text> makes a link to a Motion in <text styleclass="VariableName-small" style="font-style:italic;">MotionDesigner</text>.</para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading3_atocs_">Motion FB - the function ...</para>
+    <para styleclass="Body Text"><table styleclass="Default" rowcount="1" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Text">A <text styleclass="Element">Motion FB</text> makes a link with one of the <text styleclass="VariableName">Motions</text> in <text styleclass="VariableName-IT">MotionDesigner. tha</text></para>
+          <para styleclass="Body Text">Edit the <text styleclass="Element">Motion FB</text> to select with which Motion you want to make the link.</para>
+          <para styleclass="Body Text">The motion-value at the input-connector corresponds to the X-axis of the Motion that you select.</para>
+          <para styleclass="Body Text">The motion-value at the output-connector is the Y-axis value of the motion that is evaluated from the X-axis value at the input-connector.</para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading3_atocs_">Add Motion FB</para>
+    <para styleclass="Normal"><table styleclass="Default" rowcount="3" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:94px;">
+          <para styleclass="VariableName">Add : </para>
+        </td>
+        <td>
+          <list id="0" type="ol" listtype="decimal" formatstring="&#83;&#84;&#69;&#80;&#32;&#37;&#48;&#58;&#115;&#58;&#32;" format-charset="DEFAULT_CHARSET" levelreset="false" legalstyle="false" startfrom="1" styleclass="HowTo STEP" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:8pt; color:#000000;">
+            <li styleclass="HowTo STEP">Add the<text styleclass="T_Menu">&#32;</text><text styleclass="Element-Header">Motion FB</text> to the graphic-area. </li>
+          </list>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="2" colcount="2">
+            <tr style="vertical-align:top">
+              <td style="width:47px; border-top:none; border-right:none; border-bottom:none;">
+                <para styleclass="VariableName"><image src="MD-Icon-FB-Motion.png" scale="100.00%" figurelistinclude="0"><title>Add Motion FB</title></image></para>
+              </td>
+              <td style="border:none;">
+                <list id="1" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:8pt; color:#000000;">
+                  <li styleclass="Bullets"><text style="font-style:normal;">Click</text><text style="font-family:Arial; font-size:11pt; color:#000000;">&#32;</text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Command-FB-Kinematics" styleclass="T_Menu">Kinematics FB toolbar</link><text styleclass="VariableName"> &gt; </text><text styleclass="T_Menu">Motion FB</text><text styleclass="VariableName">&#32;</text></li>
+                </list>
+                <para styleclass="T_Menu">or </para>
+                <list id="2" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:8pt; color:#000000;">
+                  <li styleclass="Bullets"><text styleclass="Body Text">Click</text><text styleclass="T_Menu"> Add menu &gt; Add Motion FB</text><text styleclass="VariableName">&#32;</text></li>
+                </list>
+              </td>
+            </tr>
+            <tr style="vertical-align:top">
+              <td colspan="2" style="border-top:none; border-right:none; border-bottom:none;">
+                <para styleclass="Bullets"><text styleclass="Body Text">Then:</text></para>
+                <list id="3" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="2" styleclass="Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:8pt; color:#000000;">
+                  <li styleclass="Bullets"><text styleclass="Body Text">Click the </text><text styleclass="Interface">graphic-area</text><text styleclass="VariableName">&#32;</text></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Body Text">The <text styleclass="Element">Motion FB</text> is now in the <text styleclass="Interface">graphic-area</text> (and <text styleclass="Interface">Assembly-Tree</text>).</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:94px;">
+          <para styleclass="VariableName">Edit : </para>
+        </td>
+        <td>
+          <list id="4" type="ol" listtype="decimal" formatstring="&#83;&#84;&#69;&#80;&#32;&#37;&#48;&#58;&#115;&#58;&#32;" format-charset="DEFAULT_CHARSET" levelreset="false" legalstyle="false" startfrom="2" styleclass="HowTo STEP" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:8pt; color:#000000;">
+            <li styleclass="HowTo STEP">Open the <text styleclass="Element-Header">Motion FB dialog-box</text><text styleclass="VariableName">&#32;</text></li>
+          </list>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td style="border-top:none; border-right:none; border-bottom:none;">
+                <list id="5" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="B Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:8pt; color:#000000;">
+                  <li styleclass="B Bullets"><text styleclass="HowTo Bulleted" style="font-style:normal;">Double-click </text><text styleclass="HowTo Bulleted">a </text><text styleclass="Element">Motion FB</text><text styleclass="HowTo Bulleted"> in the </text><text styleclass="Interface">graphic-area</text><text styleclass="Body Text"> or </text><text styleclass="Interface">Assembly-Tree</text><text styleclass="VariableName">&#32;</text></li>
+                </list>
+                <para styleclass="VariableName-IT">- or -</para>
+                <list id="6" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="B Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:8pt; color:#000000;">
+                  <li styleclass="B Bullets"><text styleclass="SeeAlso">See </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-How-to-Open-a-Dialog-Box" styleclass="SeeAlso">How to Open a Dialog-Box</link><text styleclass="Body Text" style="font-weight:bold;">&#32;</text><text styleclass="VariableName">&#32;</text></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Body Text">The <text styleclass="Element">Motion FB dialog-box</text> is now in open.</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:middle">
+        <td style="width:96px;">
+          <para styleclass="VariableName">Dialog : </para>
+        </td>
+        <td>
+          <list id="7" type="ol" listtype="decimal" formatstring="&#83;&#84;&#69;&#80;&#32;&#37;&#48;&#58;&#115;&#58;&#32;" format-charset="DEFAULT_CHARSET" levelreset="false" legalstyle="false" startfrom="3" styleclass="HowTo STEP" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:8pt; color:#000000;">
+            <li styleclass="HowTo STEP">See <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-FunctionBlock-Motion" styleclass="VariableName-IT" style="font-style:normal;">Motion FB dialog-box</link><text styleclass="VariableName">&#32;</text></li>
+          </list>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Body Text HowTo" style="page-break-before:always;"></para>
+  </body>
+</topic>

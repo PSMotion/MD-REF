@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" status="Under Construction" lasteditedby="Adam" version="2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title>Dialog: Delete Dependent Elements</title>
+  <keywords>
+    <keyword>Delete Dependent Elements</keyword>
+  </keywords>
+  <body>
+    <header>
+      <para styleclass="Heading1">Dialog: Delete Dependent Elements</para>
+    </header>
+    <para styleclass="Heading2">Delete Dependent Elements</para>
+    <para styleclass="Body Text"><table styleclass="Standard" rowcount="1" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:200px;">
+          <para styleclass="Normal"><image src="Dialog-DeleteDependentElements.png" scale="100.00%" styleclass="Image Caption"><caption><![CDATA[Warning - When you delete the 'element' you will also delete these elements.]]></caption></image></para>
+        </td>
+        <td>
+          <para styleclass="Body Text">Many elements <text style="font-style:italic;">depend on</text> (need) other elements.</para>
+          <para styleclass="Body Text">They are called <text styleclass="VariableName">Dependent Elements</text></para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="Body Text">For example: </para>
+          <para styleclass="Body Text HowTo">When you add a <text styleclass="Element">Pin-Joint</text>, you select two <text styleclass="Element">Points</text> in two different <text styleclass="Element">Parts</text>.</para>
+          <para styleclass="Body Text HowTo">Thus, the <text styleclass="Element">Pin-Joint</text> depends on (needs) the two <text styleclass="Element">Points</text> in the two <text styleclass="Element">Parts</text>. </para>
+          <para styleclass="Body Text HowTo">If you delete one of the two <text styleclass="Element">Parts</text>, <text styleclass="VariableName-IT">MechDesigner</text> must also delete the <text styleclass="Element">Pin-Joint</text>.</para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="Body Text">The <text styleclass="Interface">Dependent Elements dialog-box</text> is a list of the elements that depend on the element you want to delete and you will also delete if you continue with the delete command.</para>
+          <para styleclass="Body Text">You can:</para>
+          <list id="3" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted"><text styleclass="VariableName">Delete all</text> - click the <image src="OK-tiny-11-15.png" scale="100.00%"></image> button</li>
+          </list>
+          <para styleclass="VariableName-IT2">- or -</para>
+          <list id="3" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted"><text styleclass="VariableName">Cancel, Do NOT delete</text> - click the <image src="Cross-16.ipp" scale="100.00%"></image> button</li>
+          </list>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Body Text" style="page-break-before:always;"></para>
+  </body>
+</topic>

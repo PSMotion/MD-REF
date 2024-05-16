@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" status="Under Construction" lasteditedby="Adam" version="2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title>Dialog: View References</title>
+  <keywords>
+    <keyword>Dialog<keyword>View References</keyword></keyword>
+    <keyword>View References</keyword>
+  </keywords>
+  <body>
+    <header>
+      <para styleclass="Heading1">Dialog: View References</para>
+    </header>
+    <para styleclass="Heading2">Show Element References</para>
+    <para styleclass="SeeAlso">See also: <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Delete-DependentElements">Delete Dependent Elements</link></para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="Body Text">Many elements reference (or need) other elements.</para>
+    <para styleclass="Body Text HowTo">The <text styleclass="Element">Element References dialog-box</text> (<text styleclass="VariableName-IT">Read-Only</text>) is the list of elements (called the <text styleclass="VariableName">Reference Elements</text>) that must be in the model to build a more complex element. </para>
+    <para styleclass="Body Text"><table styleclass="Standard" rowcount="3" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:200px;">
+          <para styleclass="Normal"><image src="MD-SW-Show-Element-References.ipp" scale="100.00%" styleclass="Image Caption"></image></para>
+        </td>
+        <td>
+          <para styleclass="Body Table">To see the <text styleclass="Interface">Reference-Elements</text> of an element:</para>
+          <list id="47" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Numbered" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo Numbered">Click an <text styleclass="Element">Element</text> in the <text styleclass="Interface">Graphics-Area</text> or the <text styleclass="Interface">Assembly-Tree</text><text styleclass="VariableName">&#32;</text></li>
+            <li styleclass="HowTo Numbered">Right-click the <text styleclass="Element">element</text> in the <text styleclass="Interface">Selection-Window</text><text styleclass="VariableName">&#32;</text></li>
+            <li styleclass="HowTo Numbered">Click <text styleclass="VariableName">Show Element references</text> in the <text styleclass="Body Text">contextual-menu</text></li>
+          </list>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:200px;">
+          <para styleclass="Normal"><image src="MD-Dialog-Element-References.ipp" scale="100.00%" styleclass="Image Caption"></image></para>
+        </td>
+        <td>
+          <para styleclass="Body Table">The list includes each </para>
+          <list id="48" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted"><text styleclass="VariableName">Reference Element name</text></li>
+            <li styleclass="VariableName-indent">Number(?) </li>
+            <li styleclass="VariableName-indent">Reference Element Type</li>
+            <li styleclass="VariableName-indent">Reference Element Owner</li>
+          </list>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td colspan="2">
+          <para styleclass="Body Text HowTo"></para>
+          <para styleclass="Body Text">E.g.: <text styleclass="Body Text HowTo">When you add a </text><text styleclass="Element">Pin-Joint</text><text styleclass="Body Text HowTo">, you select two </text><text styleclass="Element">Points</text><text styleclass="Body Text HowTo"> in two different </text><text styleclass="Element">Parts</text><text styleclass="Body Text HowTo">.</text></para>
+          <para styleclass="Body Text HowTo">Thus, the <text styleclass="Element">Pin-Joint</text> must reference (needs) the two <text styleclass="Element">Points,</text><text styleclass="Body Text"> which are owned by the </text><text styleclass="Element">Parts.</text></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Body Text" style="page-break-before:always;"></para>
+  </body>
+</topic>

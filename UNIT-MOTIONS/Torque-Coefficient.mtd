@@ -1,0 +1,274 @@
+MotionDesigner V2.1.1
+Start Motion:Mod-Trap
+$MCPerCYC=3600
+$num=0
+$MStartAng=0
+$MSecsPerCyc=1
+$SCperOU=1
+$SCperSVU=1
+$npt=360
+$XLabel=degree
+$YLabel=mm
+$YVelLabel=mm/s
+$YAccLabel=mm/s^2
+$YJerLabel=mm/s^3
+$M00=0
+$S00=0
+#Modified Trapezoid Segment 01
+$M01=1
+$F01=8
+$W01=10001000
+$T01=0
+$S01=1
+$X01=0
+$Y01=1
+#AutoExt=True
+#MinMove=0
+#posshows=True
+#Velshows=True
+#Accshows=True
+#Jershows=False
+#SymbolSize=2
+End Motion:Mod-Trap
+Start Motion:Mod-Sine
+$MCPerCYC=3600
+$num=0
+$MStartAng=0
+$MSecsPerCyc=1
+$SCperOU=1
+$SCperSVU=1
+$npt=360
+$XLabel=degree
+$YLabel=mm
+$YVelLabel=mm/s
+$YAccLabel=mm/s^2
+$YJerLabel=mm/s^3
+$M00=0
+$S00=0
+#Modified Sine Segment 01
+$M01=1
+$F01=7
+$W01=10001000
+$T01=0
+$S01=1
+$X01=0
+$Y01=1
+#AutoExt=True
+#MinMove=0
+#posshows=True
+#Velshows=True
+#Accshows=True
+#Jershows=False
+#SymbolSize=2
+End Motion:Mod-Sine
+Start Motion:Const-Acc-Dec
+$MCPerCYC=3600
+$num=0
+$MStartAng=0
+$MSecsPerCyc=1
+$SCperOU=1
+$SCperSVU=1
+$npt=360
+$XLabel=degree
+$YLabel=mm
+$YVelLabel=mm/s
+$YAccLabel=mm/s^2
+$YJerLabel=mm/s^3
+$M00=0
+$S00=0
+#Constant Acceleration constant retardation Segment 01
+$M01=1
+$F01=1
+$W01=10001000
+$T01=0
+$S01=1
+$X01=0
+$Y01=1
+#AutoExt=True
+#MinMove=0
+#posshows=True
+#Velshows=True
+#Accshows=True
+#Jershows=False
+#SymbolSize=2
+End Motion:Const-Acc-Dec
+Start Motion:Cycloidal
+$MCPerCYC=3600
+$num=0
+$MStartAng=0
+$MSecsPerCyc=1
+$SCperOU=1
+$SCperSVU=1
+$npt=360
+$XLabel=degree
+$YLabel=mm
+$YVelLabel=mm/s
+$YAccLabel=mm/s^2
+$YJerLabel=mm/s^3
+$M00=0
+$S00=0
+#Cycloidal Segment 01
+$M01=1
+$F01=4
+$W01=10001000
+$T01=0
+$S01=1
+$X01=0
+$Y01=1
+#AutoExt=True
+#MinMove=0
+#posshows=True
+#Velshows=True
+#Accshows=True
+#Jershows=False
+#SymbolSize=2
+End Motion:Cycloidal
+Start Motion:Poly-345
+$MCPerCYC=3600
+$num=0
+$MStartAng=0
+$MSecsPerCyc=1
+$SCperOU=1
+$SCperSVU=1
+$npt=360
+$XLabel=degree
+$YLabel=mm
+$YVelLabel=mm/s
+$YAccLabel=mm/s^2
+$YJerLabel=mm/s^3
+$M00=0
+$S00=0
+#Modified Trapezoid Segment 01
+$M01=1
+$F01=8
+$W01=10001000
+$T01=0
+$S01=1
+$X01=0
+$Y01=1
+#AutoExt=True
+#MinMove=0
+#posshows=True
+#Velshows=True
+#Accshows=True
+#Jershows=False
+#SymbolSize=2
+End Motion:Poly-345
+Start Motion:Motion0
+$MCPerCYC=3600
+$num=0
+$MStartAng=0
+$MSecsPerCyc=1
+$SCperOU=1
+$SCperSVU=1
+$npt=360
+$XLabel=degree
+$YLabel=mm
+$YVelLabel=mm/s
+$YAccLabel=mm/s^2
+$YJerLabel=mm/s^3
+$M00=0
+$S00=0
+#Polynomial Segment 01
+$M01=0.25
+$F01=6
+$W01=12201110
+$T01=0
+$A01=0
+$B01=0
+$C01=64.000000000000026
+$S01=60
+$X01=0
+$Y01=0
+$Z01=63.999999999999936
+#Polynomial Segment 02
+$M02=0.5
+$F02=6
+$W02=12201110
+$T02=70
+$A02=0
+$B02=0
+$C02=21.333333333333344
+$S02=90
+$X02=0
+$Y02=0
+$Z02=21.333333333333312
+#Polynomial Segment 03
+$M03=0.75
+$F03=6
+$W03=22201110
+$T03=90
+$A03=0
+$B03=0
+$C03=-96.000000000000026
+$S03=0
+$X03=0
+$Y03=0
+$Z03=-95.999999999999898
+#Polynomial Segment 04
+$M04=1
+$F04=6
+$W04=22201110
+$T04=0
+$A04=0
+$B04=0
+$C04=0
+$S04=0
+$X04=0
+$Y04=0
+$Z04=0
+#AutoExt=True
+#MinMove=0
+#posshows=True
+#Velshows=True
+#Accshows=True
+#Jershows=False
+#SymbolSize=2
+End Motion:Motion0
+Start Motion:Motion4
+$MCPerCYC=3600
+$num=0
+$MStartAng=0
+$MSecsPerCyc=1
+$SCperOU=1
+$SCperSVU=1
+$npt=360
+$XLabel=degree
+$YLabel=mm
+$YVelLabel=mm/s
+$YAccLabel=mm/s^2
+$YJerLabel=mm/s^3
+$M00=0
+$S00=0
+#Polynomial Segment 01
+$M01=0.3888888888888889
+$F01=6
+$W01=12221111
+$T01=0
+$A01=-2.0284994705683158E-0031
+$B01=1.0432282991494197E-0030
+$C01=2.4143283494600854E-0029
+$S01=90
+$X01=-0.055555555555555552
+$Y01=0
+$Z01=11.999999999999987
+#Polynomial Segment 02
+$M02=1
+$F02=6
+$W02=22111111
+$T02=90
+$A02=-0.055555555555555546
+$B02=2.2222222222222224
+$C02=65.7
+$S02=0
+$X02=0
+$Y02=0
+$Z02=0
+#AutoExt=True
+#MinMove=0
+#posshows=True
+#Velshows=True
+#Accshows=True
+#Jershows=False
+#SymbolSize=2
+End Motion:Motion4

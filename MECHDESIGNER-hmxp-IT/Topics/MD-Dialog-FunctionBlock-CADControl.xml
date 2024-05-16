@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" status="Under Construction" modified="2022-08-23T22:12:21.071+01:00" lasteditedby="Adam" version="2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title>Dialog: Function-Block: CAD Control</title>
+  <keywords>
+    <keyword>Dialog<keyword>Funtion-Block : CAD Control</keyword></keyword>
+  </keywords>
+  <body>
+    <header>
+      <para styleclass="Heading1">Dialog: Function-Block: CAD Control</para>
+    </header>
+    <para styleclass="Heading2" style="page-break-before:always;">CAD Control FB dialog-box</para>
+    <para styleclass="SeeAlso"><text style="font-weight:normal;">see </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Command-FB-CADControl" style="font-weight:normal;">Add CAD-Control FB</link><text style="font-weight:normal;">.</text></para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="Body Text"><table styleclass="Standard" rowcount="3" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:20px;">
+          <para styleclass="Normal" style="text-align:right;"><image src="MD-Icon-FB-CADControl.png" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="Body Table">Use a <text styleclass="Element">CAD Control FB</text> to synchronize <text styleclass="VariableName">Distance</text> or <text styleclass="VariableName">Angle</text> mates in a <text styleclass="SOLIDWORKS">SolidWorks®</text> Assembly model with the motion of <text styleclass="Element">Parts</text> in a <text styleclass="VariableName-IT">MechDesigner</text> model.</para>
+          <para styleclass="Body Table">You can control up to four(4) <text styleclass="SOLIDWORKS">SolidWorks®</text> mates with one <text styleclass="Interface">CAD-Control FB</text>.</para>
+          <para styleclass="Body Table">Why use a <text styleclass="Element">CAD-Control FB</text>? You can use the powerful Evaluation / Validation Tools in <text styleclass="SOLIDWORKS">SolidWorks®</text> to check clearance on Cams, for example.</para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="Body Text"><text styleclass="SeeAlso">See Getting Started Tutorial 6C3: Examine 3D-Cam Clearances</text></para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td colspan="2" style="vertical-align:top;">
+          <para styleclass="Normal"><image src="MD-Dialog-CADControl.png" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td colspan="2" style="vertical-align:top;">
+          <list id="0" type="ol" listtype="decimal" formatstring="&#83;&#84;&#69;&#80;&#32;&#37;&#48;&#58;&#115;&#58;&#32;" format-charset="DEFAULT_CHARSET" levelreset="false" legalstyle="false" startfrom="1" styleclass="HowTo STEP" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:8pt; color:#000000;">
+            <li styleclass="HowTo STEP"><text style="font-style:normal;">Connect wires to the input-connectors of the CAD-Control FB from other FBs in </text><text styleclass="VariableName-IT">MechDesigner</text><text style="font-style:italic;">&#32;</text><text style="font-style:normal;">model. &#160;</text></li>
+          </list>
+          <para styleclass="Body Table"><text style="font-style:normal;">The motion-values at the output of a FB you connect should control a </text><text styleclass="VariableName">Motion-Dimension</text><text style="font-style:normal;"> and be equivalent to a </text><text styleclass="VariableName">Distance</text><text style="font-style:normal;"> or </text><text styleclass="VariableName">Angle</text><text style="font-style:normal;"> Mate in </text><text styleclass="SOLIDWORKS">SolidWorks</text><text style="font-style:normal;"> that you want to control.</text></para>
+          <para styleclass="Body Table"><text style="font-style:normal;">If you want to control a Distance (or Angle) Mate, then make sure Output Data Type in the </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-FunctionBlock-Motion" style="font-style:normal;">Motion FB dialog-box(s)</link><text style="font-style:normal;"> are set to Linear (or Rotary).</text></para>
+          <list id="0" type="ol" listtype="decimal" formatstring="&#83;&#84;&#69;&#80;&#32;&#37;&#48;&#58;&#115;&#58;&#32;" format-charset="DEFAULT_CHARSET" levelreset="false" legalstyle="false" startfrom="1" styleclass="HowTo STEP" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:8pt; color:#000000;">
+            <li styleclass="HowTo STEP"><text styleclass="HowTo Numbered" style="font-style:normal;">Open the </text><text styleclass="SOLIDWORKS">SolidWorks</text><text styleclass="HowTo Numbered" style="font-style:normal;"> Assembly.</text></li>
+            <li styleclass="HowTo STEP"><text styleclass="HowTo Numbered" style="font-style:normal;">Double-Click a </text><text styleclass="Interface">CAD-Control FB</text><text styleclass="HowTo Numbered" style="font-style:normal;"> in the </text><text styleclass="Interface">graphic-area</text><text styleclass="HowTo Numbered" style="font-style:normal;">, to open this dialog-box</text></li>
+          </list>
+          <para styleclass="Body Text HowTo">If necessary, click <text styleclass="Separator">Dimension</text> and <text styleclass="Separator">CAD Model Path</text> to expand the dialog-box. </para>
+          <list id="0" type="ol" listtype="decimal" formatstring="&#83;&#84;&#69;&#80;&#32;&#37;&#48;&#58;&#115;&#58;&#32;" format-charset="DEFAULT_CHARSET" levelreset="false" legalstyle="false" startfrom="1" styleclass="HowTo STEP" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:8pt; color:#000000;">
+            <li styleclass="HowTo STEP"><text styleclass="HowTo Numbered" style="font-style:italic;">Click the </text><text styleclass="VariableName">Refresh</text><text styleclass="HowTo Numbered" style="font-style:italic;"> button.</text></li>
+          </list>
+          <para styleclass="Body Text HowTo">When you click the <text styleclass="VariableName">Refresh</text> button, <text styleclass="VariableName-IT">MechDesigner</text> finds all of the <text styleclass="VariableName">Dimension</text> and <text styleclass="VariableName">Angle</text> mates in your <text styleclass="SOLIDWORKS">SolidWorks®</text> Assembly model.</para>
+          <list id="0" type="ol" listtype="decimal" formatstring="&#83;&#84;&#69;&#80;&#32;&#37;&#48;&#58;&#115;&#58;&#32;" format-charset="DEFAULT_CHARSET" levelreset="false" legalstyle="false" startfrom="1" styleclass="HowTo STEP" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:8pt; color:#000000;">
+            <li styleclass="HowTo STEP"><text styleclass="HowTo Numbered">Click the </text><text styleclass="VariableName">Available Dimensions</text><text styleclass="HowTo Numbered"> down-arrow button to see the mates that have been found in the </text><text styleclass="SOLIDWORKS">SolidWorks®</text><text styleclass="Body Text"> Assembly model.</text></li>
+            <li styleclass="HowTo STEP"><text styleclass="HowTo Numbered">Click, in the </text><text styleclass="VariableName">Available Dimension</text><text styleclass="HowTo Numbered"> list, each </text><text styleclass="VariableName">Dimension</text><text styleclass="HowTo Numbered"> or </text><text styleclass="VariableName">Angle</text><text styleclass="HowTo Numbered"> mate you want to control from </text><text styleclass="VariableName-IT">MechDesigner</text></li>
+          </list>
+          <para styleclass="Body Text HowTo">Repeat to select all of the mates you want to control - to a maximum of 4.</para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="Body Text"><text styleclass="Notes">Note</text>: You <text styleclass="VariableName">must</text> select the mates in the same order (sequence) as the wires that are connected to the input-connectors of the FB. </para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="Body Text">The mates show in the <text styleclass="VariableName">CAD-Dimension Names to Drive</text> box.</para>
+          <para styleclass="Body Text">If the mates are not in the same sequence as the wires you can click the <text styleclass="VariableName">Clear CAD Dimensions</text> button. </para>
+          <para styleclass="Body Text">You can select the mates again.</para>
+          <list id="0" type="ol" listtype="decimal" formatstring="&#83;&#84;&#69;&#80;&#32;&#37;&#48;&#58;&#115;&#58;&#32;" format-charset="DEFAULT_CHARSET" levelreset="false" legalstyle="false" startfrom="1" styleclass="HowTo STEP" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:8pt; color:#000000;">
+            <li styleclass="HowTo STEP"><text styleclass="HowTo Numbered">Click the Drive CAD Enabled check-box at the top of the dialog-box.</text></li>
+          </list>
+          <para styleclass="VariableName"><text style="color:#ff0000;">DO NOT CLOSE THE DIALOG </text>- YOU CAN ONLY CONTROL THE MATES WITH THIS DIALOG OPEN.</para>
+          <para styleclass="Body Text">The position of the Parts in the <text styleclass="SOLIDWORKS">SolidWorks</text><text style="font-weight:normal; font-style:normal;">® Assembly model</text> move* when you move the model in <text styleclass="VariableName-IT">MechDesigner</text>.</para>
+          <list id="0" type="ol" listtype="decimal" formatstring="&#83;&#84;&#69;&#80;&#32;&#37;&#48;&#58;&#115;&#58;&#32;" format-charset="DEFAULT_CHARSET" levelreset="false" legalstyle="false" startfrom="1" styleclass="HowTo STEP" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:8pt; color:#000000;">
+            <li styleclass="HowTo STEP"><text styleclass="HowTo Bulleted">Click </text><image src="OK-tiny-13-17.png" scale="100.00%" styleclass="HowTo Bulleted" style="font-size:10pt; vertical-align:baseline;" figurelistinclude="0"></image><text styleclass="HowTo Bulleted"> at the top of the dialog-box when you have finished using the evaluation and analysis tools in </text><text styleclass="SOLIDWORKS">SolidWorks®</text><text styleclass="HowTo Bulleted">. </text></li>
+          </list>
+          <para styleclass="Body Text"><text style="color:#000000;">* Only use the </text><text styleclass="VariableName">Home, Step Back</text><text style="color:#000000;"> or </text><text styleclass="VariableName">Step-Forward</text><text style="color:#000000;"> buttons in the Run toolbar. </text><text styleclass="VariableName" style="color:#ff0000;">Do not use the Cycle button</text><text style="font-weight:bold; color:#ff0000;">.</text></para>
+        </td>
+      </tr>
+    </table></para>
+  </body>
+</topic>

@@ -1,0 +1,451 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" status="Under Construction" lasteditedby="Adam" version="2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title>Dialog: Cam Coordinates Data</title>
+  <keywords>
+    <keyword>2D-Cam Coordinates<keyword>Cam: Arcs</keyword><keyword>Cam: Chord Error</keyword><keyword>Cam: Export as Points</keyword><keyword>Cam: Export as Points &amp; Lines</keyword><keyword>Cam: Export to SolidWorks</keyword><keyword>Cam: Export with Mechanism Coordinates</keyword><keyword>Cam: Export with Part Coordinates</keyword><keyword>Cam: Local Coordinates</keyword><keyword>Cam: Open / Closed Cam</keyword><keyword>Cam: Save as DXF</keyword><keyword>Cam: Save as STEP</keyword><keyword>Cam: Save as TXT, ASC</keyword><keyword>Closed Cam</keyword><keyword>Open Cam</keyword></keyword>
+    <keyword>Dialog<keyword>Cam-Coordinates</keyword></keyword>
+  </keywords>
+  <body>
+    <header>
+      <para styleclass="Heading1">Dialog: Cam Coordinates</para>
+    </header>
+    <para styleclass="Heading2">Cam-Coordinates dialog-box </para>
+    <para styleclass="SeeAlso">See <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Mechanism-2D-Cam">Add Cam-Data FB</link></para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="Heading4 Toggle_atocs_2" style="text-indent:-36px; margin-left:60px;"><image src="btn_addkeyword.bmp" scale="100.00%"></image><tab /><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" src-collapsed="btn_addkeyword.bmp" src-expanded="btn_delkeyword.bmp" src-print="none"><caption><![CDATA[2D-Cam : Related Elements and Actions]]></caption></toggle></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="4" colcount="3" style="width:100%; background-color:#dbdbdb; head-row-background-color:#ffffff; alt-row-background-color:none;">
+      <thead style="vertical-align:top">
+        <td colspan="3" style="border-top:none; border-right:none; border-left:none;">
+          <para styleclass="Body Text"><text style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">The commands, elements, and dialogs that are related to </text><text styleclass="Element">2D-Cams</text><text style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;"> are:</text></para>
+        </td>
+      </thead>
+      <tr style="vertical-align:top">
+        <td style="width:154px;">
+          <para styleclass="VariableName">STEP 1A</para>
+          <para styleclass="VariableName-indent"><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Mechanism-2D-Cam">Add 2D-Cam</link></para>
+        </td>
+        <td style="vertical-align:top; width:90px;">
+          <para styleclass="VariableName">... optional ...</para>
+          <para styleclass="VariableName"></para>
+        </td>
+        <td>
+          <para styleclass="VariableName">STEP 1B</para>
+          <para styleclass="VariableName-indent">Edit <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-2D-Cam" styleclass="Element">2D-Cam dialog-box</link></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td colspan="2" style="width:254px;">
+          <para styleclass="VariableName">STEP 2A &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160;</para>
+          <para styleclass="VariableName-indent"><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-FB-Cam-Data">Add Cam-Data FB</link>&#32;</para>
+        </td>
+        <td>
+          <para styleclass="VariableName">STEP 2B</para>
+          <para styleclass="VariableName-indent">Edit the <text styleclass="Element">Cam-Data FB </text>to link the FB to a <text styleclass="Element">2D-Cam.</text><text styleclass="Body Text"> &#160;</text></para>
+          <para styleclass="VariableName-indent"><text styleclass="Body Text">Close the </text><text styleclass="Element">Cam-Data dialog-box</text><text styleclass="Body Text"> and do </text>3A<text styleclass="Body Text"> and/or do </text>3B.</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td colspan="2" style="width:254px;">
+          <para styleclass="VariableName">STEP 3A</para>
+          <para styleclass="VariableName-indent">Do <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-FB-Cam-Data" anchor="CamAnalysis">Cam-Analysis</link><text styleclass="Body Text HowTo"> (with </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-FB-Graph">Graph FB</link><text styleclass="Body Text HowTo">)</text></para>
+        </td>
+        <td style="background-color:#e6ccff;">
+          <para styleclass="VariableName">STEP 3B </para>
+          <para styleclass="VariableName-indent">Edit the <text styleclass="Element">Cam-Data FB</text> again. <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-CamCoordinates">Calculate Cam-Coordinates</link></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading3_atocs_" style="text-indent:-18px; margin-left:18px;"><text style="color:#000000;">STEP 3B:</text> Open Cam-Data FB dialog-box</para>
+    <para styleclass="Body Text"><table styleclass="Standard" rowcount="1" colcount="2" style="width:auto; head-row-background-color:#ffffff; alt-row-background-color:none;">
+      <thead style="vertical-align:top">
+        <td style="width:40px; border-right:none;">
+          <para styleclass="BodyText BI" style="text-align:right;"><image src="GA-FB-CamData-simple.png" scale="100.00%" styleclass="Image Caption"></image></para>
+        </td>
+        <td style="border-left:none;">
+          <para styleclass="Body Text">To open the<text styleclass="Element"> Cam-Data dialog-box</text><text style="font-weight:normal; font-style:normal;">:</text></para>
+          <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="1" colcount="1" style="cell-padding:1px; border-width:0px; border-spacing:0px; border-collapse:collapse; cell-border-width:2px; border-color:#993300; border-style:solid;">
+            <tr style="vertical-align:top">
+              <td style="border-top:none; border-right:none; border-bottom:none;">
+                <list id="7" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="B Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="B Bullets"><text styleclass="HowTo Numbered">Double-click the </text><text styleclass="Element">Cam-Data FB</text><text styleclass="Body Text"> in the</text><text styleclass="HowTo Numbered">&#32;</text><text styleclass="Interface">graphic-area</text>.<text styleclass="VariableName">&#32;</text></li>
+                </list>
+                <para styleclass="VariableName-IT">- or -</para>
+                <list id="8" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="B Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="B Bullets"><text style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000080; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">See </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-How-to-Open-a-Dialog-Box" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000080; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">How to Open a Dialog-Box</link><text styleclass="VariableName">&#32;</text></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Body Text">The <text styleclass="Element">Cam-Data dialog-box</text> is now open.</para>
+        </td>
+      </thead>
+    </table></para>
+    <para styleclass="Heading4 Toggle_atocs_2" style="text-indent:-36px; margin-left:60px;"><anchor id="2DCamFiletyepsFormats" styleclass="Body Text HowTo"><keywords><keyword>2D-Cam Table of Available Formats<keyword>TXT</keyword><keyword>STEP</keyword><keyword>DXF</keyword><keyword>BiArcs - Chordal-Error</keyword><keyword>XY Points - equal-machine increments</keyword></keyword></keywords></anchor><image src="btn_addkeyword.bmp" scale="100.00%"></image><tab /><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" src-collapsed="btn_addkeyword.bmp" src-expanded="btn_delkeyword.bmp"><caption><![CDATA[2D-Cam Coordinates: File Formats and File-Types]]></caption></toggle></para>
+    <para styleclass="Body Text HowTo"><table rowcount="7" colcount="4" style="width:750px; cell-padding:0px; cell-spacing:0px; page-break-inside:auto; border-width:0px; border-spacing:0px; border-collapse:collapse; cell-border-width:1px; border-color:#000000; border-style:solid; background-color:none; head-row-background-color:none; alt-row-background-color:none;">
+      <tr style="vertical-align:top">
+        <td colspan="2" style="width:205px; height:20px; background-color:#c0c0c0; border-top:none;">
+          <para styleclass="VariableName" style="text-align:right;"> Save Cam as... : </para>
+        </td>
+        <td style="vertical-align:bottom; width:242px; height:9px; background-color:#dcb9ff;">
+          <para styleclass="VariableName" style="text-align:center;">Bi-Arcs</para>
+        </td>
+        <td style="vertical-align:bottom; width:250px; height:9px; background-color:#dcb9ff;">
+          <para styleclass="VariableName" style="text-align:center;">Equal Machine Angle Increments</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td colspan="2" style="vertical-align:middle; width:205px; height:20px; background-color:#c0c0c0; border-top:none;">
+          <para styleclass="VariableName" style="text-align:right;">STEP : </para>
+        </td>
+        <td style="vertical-align:middle; width:242px; height:20px; border-top:none; border-left:none;">
+          <para styleclass="VariableName" style="text-align:center;">N/A</para>
+        </td>
+        <td style="vertical-align:middle; width:250px; height:20px; border-top:none;">
+          <para styleclass="VariableName" style="text-align:center;">Internal, External as Surfaces</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td colspan="2" style="vertical-align:middle; width:205px; height:23px; background-color:#c0c0c0; border-top:none;">
+          <para styleclass="VariableName" style="text-align:right;">TEXT : </para>
+        </td>
+        <td style="vertical-align:middle; width:242px; height:23px; border-left:none;">
+          <para styleclass="VariableName" style="text-align:center;">Internal, External</para>
+        </td>
+        <td style="vertical-align:middle; width:250px; height:23px;">
+          <para styleclass="VariableName" style="text-align:center;">Internal, External, Pitch-Curve</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td colspan="2" style="vertical-align:middle; width:205px; height:10px; background-color:#c0c0c0; border-top:none;">
+          <para styleclass="VariableName" style="text-align:right;">DXF : </para>
+        </td>
+        <td style="vertical-align:middle; width:242px; height:20px; border-left:none;">
+          <para styleclass="VariableName" style="text-align:center;">Internal, External</para>
+        </td>
+        <td style="vertical-align:middle; width:250px; height:20px;">
+          <para styleclass="VariableName" style="text-align:center;">Internal, External</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="vertical-align:middle; width:135px; height:1px; background-color:#000000; border-top:none;">
+          <para styleclass="VariableName" style="text-align:right;"></para>
+        </td>
+        <td style="vertical-align:middle; width:90px; background-color:#000000; border-top:none;">
+        </td>
+        <td style="vertical-align:middle; width:242px; background-color:#000000;">
+          <para styleclass="VariableName" style="text-align:center;"></para>
+        </td>
+        <td style="vertical-align:middle; width:62px; background-color:#000000;">
+          <para styleclass="VariableName" style="text-align:center;"></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td colspan="2" style="vertical-align:middle; width:90px; height:10px; background-color:#d4d4d4; border-top:none;">
+          <para styleclass="VariableName" style="text-align:right;">Direct export to <text style="font-size:10pt; vertical-align:baseline;">SOLIDWORKS</text> as : </para>
+        </td>
+        <td style="vertical-align:middle; width:242px; height:21px; border-left:none;">
+          <para styleclass="VariableName" style="text-align:center;">Internal, External</para>
+        </td>
+        <td style="vertical-align:middle; width:250px; height:21px;">
+          <para styleclass="VariableName" style="text-align:center;">Internal, External, Pitch-Curve</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td colspan="4" style="width:539px; border-right:none; border-bottom:none; border-left:none;">
+          <para styleclass="VariableName" style="text-align:center;">Table of 2D-Cam file-types and formats</para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="Heading3_atocs_"><text style="color:#000000;">STEP 3B: </text>Cam-Coordinates dialog-box</para>
+    <para styleclass="Body Text"><table styleclass="Standard" rowcount="16" colcount="4" style="width:auto; head-row-background-color:none; alt-row-background-color:#e2e2e2;">
+      <tr style="vertical-align:top">
+        <td colspan="3" style="width:486px;">
+          <para styleclass="Normal"><image src="Dialog-CamCoordinates-MD14-A.png" scale="100.00%" styleclass="Image Caption"><caption><![CDATA[Cam Coordinates dialog-box - MD14.]]></caption></image></para>
+        </td>
+        <td>
+          <para styleclass="Body Text"><text styleclass="VariableName">Top-Tip:</text>&#32;</para>
+          <para styleclass="Body Text HowTo">To &apos;paste&apos; cam coordinate data directly into Excel®</para>
+          <list id="9" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Numbered" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo Numbered">Select the &apos;Tab&apos; delimiter<image src="Red-14-11.gif" scale="100.00%" styleclass="Image Caption"></image><text styleclass="VariableName">&#32;</text></li>
+            <li styleclass="Body Text">Calculate the Data with the Recalculate button<image src="Red-14-8.gif" scale="100.00%" styleclass="Image Caption"></image></li>
+            <li styleclass="Body Text">Click the &apos;Copy all data to the Clipboard <image src="Red-14-3.gif" scale="100.00%" styleclass="Image Caption"></image></li>
+            <li styleclass="Body Text">In excel, Paste Special</li>
+          </list>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="vertical-align:middle; width:8px; background-color:#ffffff;">
+          <para styleclass="Normal"><image src="1r.gif" scale="100.00%" styleclass="Image Caption"></image></para>
+        </td>
+        <td style="vertical-align:middle; width:8px;">
+          <para styleclass="Normal" style="text-align:center;"><image src="Icon-DialogCamCoords-Clear.png" scale="100.00%" styleclass="Image Caption"></image></para>
+        </td>
+        <td colspan="2" style="vertical-align:middle;">
+          <para styleclass="T_Menu">Clear Data in the table</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="vertical-align:middle; width:8px; background-color:#ffffff;">
+          <para styleclass="Normal"><image src="2r.gif" scale="100.00%" styleclass="Image Caption"></image></para>
+        </td>
+        <td style="vertical-align:middle; width:8px;">
+          <para styleclass="Normal" style="text-align:center;"><image src="Icon-DialogCamCoords-Save.png" scale="100.00%" styleclass="Image Caption"></image></para>
+        </td>
+        <td colspan="2">
+          <para styleclass="Body Text"><text styleclass="T_Menu">Save as File types</text></para>
+          <list id="10" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted">STEP</li>
+            <li styleclass="HowTo Bulleted">DXF</li>
+            <li styleclass="HowTo Bulleted">ASC</li>
+            <li styleclass="HowTo Bulleted">TXT</li>
+          </list>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="vertical-align:middle; width:8px; background-color:#ffffff;">
+          <para styleclass="Normal"><image src="3r.gif" scale="100.00%" styleclass="Image Caption"></image></para>
+        </td>
+        <td style="vertical-align:middle; width:8px;">
+          <para styleclass="Normal" style="text-align:center;"><image src="Icon-DialogCamCoords-Clip.png" scale="100.00%" styleclass="Image Caption"></image></para>
+        </td>
+        <td colspan="2" style="vertical-align:middle;">
+          <para styleclass="T_Menu">Copy Data in table to Clipboard</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="vertical-align:middle; width:8px; background-color:#ffffff;">
+          <para styleclass="Normal"><image src="4r.gif" scale="100.00%" styleclass="Image Caption"></image></para>
+        </td>
+        <td style="vertical-align:middle; width:8px;">
+          <para styleclass="Normal" style="text-align:center;"><image src="Icon-DialogCamCoords-Cam1.png" scale="100.00%" styleclass="Image Caption"></image></para>
+          <para styleclass="Normal" style="text-align:center;"><image src="Icon-DialogCamCoords-Cam2.png" scale="100.00%" styleclass="Image Caption"></image></para>
+          <para styleclass="Normal" style="text-align:center;"><image src="Icon-DialogCamCoords-Pitch.png" scale="100.00%" styleclass="Image Caption"></image></para>
+        </td>
+        <td colspan="2">
+          <para styleclass="Body Text">Calculate Coordinates for</para>
+          <list id="11" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted">Internal Cam 1</li>
+            <li styleclass="HowTo Bulleted">External Cam 2</li>
+            <li styleclass="HowTo Bulleted"><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Pitch-Centre-Path">Pitch-Curve</link></li>
+          </list>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="vertical-align:middle; width:8px; background-color:#ffffff;">
+          <para styleclass="Normal"><image src="5r.gif" scale="100.00%" styleclass="Image Caption"></image></para>
+        </td>
+        <td style="vertical-align:middle; width:8px;">
+          <para styleclass="Normal" style="text-align:center;"><image src="Icon-DialogCamCoords-Points.png" scale="100.00%" styleclass="Image Caption"></image></para>
+          <para styleclass="Normal" style="text-align:center;"><image src="Icon-DialogCamCoords-Chords.png" scale="100.00%" styleclass="Image Caption"></image></para>
+        </td>
+        <td colspan="2">
+          <para styleclass="Body Text">Toggle :</para>
+          <para styleclass="Body Text HowTo"><text styleclass="Parameter">Equal Increments:</text><text styleclass="BodyText BI">&#32;</text>Calculate Cam-Coordinates with equal increments of Master Machine Angle with the &apos;Number-of-Points&apos; as entered in &apos;# Points&apos; (10).</para>
+          <para styleclass="Body Text HowTo"><text styleclass="Parameter">Chord Error:</text> Calculate Cam with Biarcs, with a maximum Chord Error equal to the value in Box (10)</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="vertical-align:middle; width:8px; background-color:#ffffff;">
+          <para styleclass="Normal"><image src="6r.gif" scale="100.00%" styleclass="Image Caption"></image></para>
+        </td>
+        <td style="vertical-align:middle; width:8px;">
+          <para styleclass="Normal" style="text-align:center;"><image src="Icon-DialogCamCoords-Lines.png" scale="100.00%" styleclass="Image Caption"></image></para>
+          <para styleclass="Normal" style="text-align:center;"><image src="Icon-DialogCamCoords-BiArcs.png" scale="100.00%" styleclass="Image Caption"></image></para>
+        </td>
+        <td colspan="2">
+          <para styleclass="Body Text">Calculate Cam Coordinates as: </para>
+          <para styleclass="HowTo Bulleted">&#32;<text styleclass="Parameter">XY-Points</text> as Equal Machine Angle Increments</para>
+          <para styleclass="HowTo Bulleted">&#32;<text styleclass="Parameter">Bi-Arcs</text> with a Chord Error</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="vertical-align:middle; width:8px; background-color:#ffffff;">
+          <para styleclass="Normal"><image src="7r.gif" scale="100.00%" styleclass="Image Caption"></image></para>
+        </td>
+        <td style="vertical-align:middle; width:8px;">
+          <para styleclass="Normal" style="text-align:center;"><image src="Icon-DialogCamCoords-SolidWorks.png" scale="100.00%" styleclass="Image Caption"></image></para>
+        </td>
+        <td colspan="2">
+          <para styleclass="Body Text">If <text styleclass="Body Text HowTo" style="font-size:10pt; vertical-align:baseline;">SOLIDWORKS</text> is not open, this button will start <text styleclass="Body Text HowTo" style="font-size:10pt; vertical-align:baseline;">SOLIDWORKS</text><text styleclass="Body Text HowTo" style="font-size:7pt; vertical-align:super;">®</text>. </para>
+          <para styleclass="Body Text">If <text styleclass="Body Text HowTo" style="font-size:10pt; vertical-align:baseline;">SOLIDWORKS</text> is not open, but a Part document is not active, nothing happens. You must open or start a <text styleclass="Body Text HowTo" style="font-size:10pt; vertical-align:baseline;">SOLIDWORKS</text><text styleclass="Body Text HowTo" style="font-size:7pt; vertical-align:super;">®</text> Part document.</para>
+          <para styleclass="Body Text">If a <text styleclass="Body Text HowTo" style="font-size:10pt; vertical-align:baseline;">SOLIDWORKS</text> Part document is open, this button sends the Cam data <text styleclass="Body Text HowTo">to the active </text><text styleclass="Body Text HowTo" style="font-size:10pt; vertical-align:baseline;">SOLIDWORKS</text><text styleclass="Body Text HowTo" style="font-size:7pt; vertical-align:super;">®</text><text styleclass="Body Text HowTo"> Part document. </text></para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="Body Text HowTo">Bi-Arcs are sent to SOLIDWORKS as Arc sketch entities.</para>
+          <para styleclass="Body Text HowTo">Points are sent to SOLIDWORKS as a list for the Curve feature. You use Convert-Entities to convert the Curve to a Spline sketch entity. <text styleclass="SeeAlso">See </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-CamCoordinates" anchor="Curve" styleclass="SeeAlso">Note 4</link></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="vertical-align:middle; width:8px; background-color:#ffffff;">
+          <para styleclass="Normal"><image src="8r.gif" scale="100.00%" styleclass="Image Caption"></image></para>
+        </td>
+        <td style="vertical-align:middle; width:8px;">
+          <para styleclass="Normal" style="text-align:center;"><image src="Icon-DialogCamCoords-RebuildRed.png" scale="100.00%" styleclass="Image Caption"></image></para>
+          <para styleclass="Normal" style="text-align:center;"><image src="Icon-DialogCamCoords-RebuildGreen.png" scale="100.00%" styleclass="Image Caption"></image></para>
+        </td>
+        <td colspan="2">
+          <para styleclass="Body Text"><text styleclass="Parameter">Traffic-Light </text><text styleclass="VariableName" style="color:#ff0000;">Red</text> - <text styleclass="T_Menu">Click to calculate coordinates</text>. </para>
+          <para styleclass="Body Text"><text styleclass="Parameter">Traffic Light </text><text styleclass="VariableName" style="color:#008000;">Green</text> - <text styleclass="T_Menu">Cam Coordinates are ready</text>. You can save them to disk or export to <text style="font-size:10pt;">SOLIDWORKS®</text></para>
+          <para styleclass="Body Text HowTo">When you click this icon, the Cam-Coordinates are calculated with the selections: &#160;</para>
+          <list id="12" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted - compressed" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted - compressed"><image src="Red-14-4.gif" scale="100.00%" styleclass="HowTo Bulleted"></image><text styleclass="HowTo Bulleted"> : Cam 1 or Cam 2 or the Pitch Circle Coordinates</text></li>
+            <li styleclass="HowTo Bulleted"><image src="Red-14-5.gif" scale="100.00%"></image> : Equal increments of the Master Machine Angle(Points only) or Chord Error (Biarcs only)</li>
+            <li styleclass="HowTo Bulleted"><image src="Red-14-10a.gif" scale="100.00%" styleclass="Image Caption"></image> : Specified Number of Point or Chord Error.</li>
+          </list>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="vertical-align:middle; height:30px; background-color:#ffffff;">
+          <para styleclass="Normal"></para>
+          <para styleclass="Normal"></para>
+        </td>
+        <td style="vertical-align:middle; width:8px; height:30px;">
+          <para styleclass="BodyText BI" style="text-align:center;"><image src="Icon-DialogCamCoords-Open.png" scale="100.00%" styleclass="Image Caption"></image></para>
+        </td>
+        <td colspan="2">
+          <para styleclass="Body Text HowTo">(Does not do anything (MD14+)): Closed Cam: When you calculate the Cam-Coordinates, the first and last cam point become different.</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="background-color:#ffffff;">
+        </td>
+        <td style="vertical-align:middle; width:8px; height:30px;">
+          <para styleclass="Normal" style="text-align:center;"><image src="Icon-DialogCamCoords-Closed.png" scale="100.00%" styleclass="Image Caption"></image></para>
+        </td>
+        <td colspan="2">
+          <para styleclass="Body Text HowTo">(Does not do anything (MD14+)) &#160;Open Cam: The first and last coordinate become the same. The cam will be closed.</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="background-color:#ffffff;">
+          <para styleclass="Normal"><image src="9r.gif" scale="100.00%" styleclass="Image Caption"></image></para>
+        </td>
+        <td style="vertical-align:middle; width:8px; height:30px;">
+          <para styleclass="Normal" style="text-align:center;"><image src="Icon-DialogCamCoords-Measurment.ipp" scale="100.00%" styleclass="Image Caption"></image></para>
+        </td>
+        <td colspan="2">
+          <para styleclass="Body Text HowTo">Click to display a Cam &apos;plot&apos; of actual cam-points that are calculated.</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td rowspan="2" style="vertical-align:middle; background-color:#ffffff;">
+          <para styleclass="Normal"><image src="10r.gif" scale="100.00%" styleclass="Image Caption"></image></para>
+        </td>
+        <td style="vertical-align:middle; width:8px;">
+          <para styleclass="Normal" style="text-align:center;"><image src="Cam-ChordalError.bmp" scale="100.00%"></image></para>
+        </td>
+        <td colspan="2">
+          <para styleclass="Parameter" style="margin-left:25px;">Enter Maximum Chord Error</para>
+          <para styleclass="Body Text HowTo">Use with <text styleclass="VariableName">Chord Error</text> option. (Minimum ~0.1µm. Experiment!)</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="vertical-align:middle; width:8px;">
+          <para styleclass="Normal" style="text-align:center;"><image src="CamNumberofPoints.bmp" scale="100.00%" styleclass="Image Caption"></image></para>
+        </td>
+        <td colspan="2">
+          <para styleclass="Parameter" style="margin-left:25px;">Enter Number-of-Points</para>
+          <para styleclass="Body Text HowTo">Use with <text styleclass="VariableName">Equal Increments</text> option. (Maximum ~100,000. Experiment!)</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="vertical-align:middle; background-color:#ffffff;">
+          <para styleclass="Normal"><image src="11r.gif" scale="100.00%" styleclass="Image Caption"></image></para>
+        </td>
+        <td style="vertical-align:middle;">
+          <para styleclass="Body Text" style="text-align:center;"><image src="Icon-DialogCamCoords-SaveOptions.ipp" scale="100.00%" styleclass="Image Caption"></image></para>
+        </td>
+        <td colspan="2" style="vertical-align:middle;">
+          <para styleclass="Body Text HowTo"><text styleclass="VariableName">&apos;Save Options&apos;</text> button (<text styleclass="SeeAlso">See &apos;Save Options&apos; box, below</text>)</para>
+          <para styleclass="Body Text HowTo"><text styleclass="Body Text">Delimiter for a Cam Save as TXT file: </text>Comma (,); Tab ( &#160; ); Colon (:); Space ( ); Semi-Colon (;); Dash (-). </para>
+          <para styleclass="VariableName-indent">STEP File Options:</para>
+          <para styleclass="Body Text HowTo"><text styleclass="Parameter">Spline with End Corrections?</text>&#32;</para>
+          <para styleclass="Body Text HowTo"><text styleclass="Parameter">Spline to Interpolate &apos;actual&apos; Kinematic Points?</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="vertical-align:middle; background-color:#ffffff;">
+          <para styleclass="Normal"><image src="12r.gif" scale="100.00%" styleclass="Image Caption"></image></para>
+        </td>
+        <td colspan="3" style="vertical-align:middle;">
+          <para styleclass="Normal">The Cam Coordinates, using the button settings detailed above.</para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading4 Toggle_atocs_">Save Options:</para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="1" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:372px;">
+          <para styleclass="BodyText BI"><image src="Dialog-CamCoords-SaveOptions.png" scale="100.00%" styleclass="Image Caption"><caption><![CDATA['Save Options' box.]]></caption></image></para>
+        </td>
+        <td>
+          <para styleclass="VariableName"><text styleclass="Body Text">Click the </text>Save Option buttons <text styleclass="Body Text">to show:</text></para>
+          <para styleclass="VariableName-indent">Delimiters</para>
+          <para styleclass="Body Text HowTo">When you save the Cam data to a text file, you can add a different &apos;delimiter&apos; between each column of data at each cam &#160;&apos;index&apos;.</para>
+          <para styleclass="Body Text HowTo">This is useful for those customers that have a &apos;,&apos; as a decimal-separator, and the default &apos;,&apos; as a number delimiter. The two &apos;,&apos; will confuse programs when they import the data.</para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="VariableName-indent">STEP Save Options:</para>
+          <list id="13" type="ul" listtype="bullet" formatstring="&#164;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Wingdings; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted">End Correction</li>
+            <li styleclass="HowTo Bulleted">Interpolate kinematic points.</li>
+          </list>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="VariableName">Notes:</para>
+    <para styleclass="Body Text HowTo"><table styleclass="Top Tip" rowcount="1" colcount="1" style="cell-padding:3px; border-width:1px; border-spacing:0px; cell-border-width:0px; border-color:#ff6600; border-style:solid;">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Text"><anchor id="CamCoordinates"><keywords><keyword>2D-Cam Coordinates Notes<keyword>0,0 of Cam-Coordinates</keyword></keyword></keywords></anchor><text styleclass="VariableName">Note 1: </text>For a rotating <text styleclass="Element">2D-Cam.</text> make sure the center of the rotating Cam is the start-Point of the rotating-Part </para>
+          <para styleclass="Body Text"><anchor id="CamAccuracy"><keywords><keyword>2D-Cam Coordinates Notes<keyword>Accuracy</keyword><keyword>Chord Error and Arcs</keyword></keyword></keywords></anchor><text styleclass="VariableName">Note 2:</text> The maximum error between the true cam and the actual cam data is less with Chord Error and Arcs.</para>
+          <para styleclass="Body Text"><anchor id="Curve"><keywords><keyword>2D-Cam Coordinates Notes<keyword>Export to SOLIDWORKS data</keyword></keyword></keywords></anchor><text styleclass="VariableName">Note 4:</text> The data will be on the Front-View of the SOLIDWORKS document, with Z columns as 0. SOLIDWORKS fits a Spline to it immediately. If you need to put the data on a different plane in SOLIDWORKS, then you will need to change the data slightly in Excel. Add a column of zeros in the X, Y or Z column. Possibly multiply the X-column by -1. to mirror the Part. Then import the data as a Curve entity into SOLIDWORKS.</para>
+          <para styleclass="Normal"><line style="height:1px; color:#ff6600;" /></para>
+          <para styleclass="VariableName"><anchor id="CamasArcs-CamData" styleclass="Body Text - bit bigger"><keywords><keyword>2D-Cam Coordinates Notes<keyword>Cam as Arcs - Cam-Data</keyword></keyword></keywords></anchor>The Cam as BiArc Data has six columns:</para>
+          <para styleclass="Body Text - bit bigger"><table styleclass="Default" rowcount="2" colcount="6" style="width:800px; cell-padding:2px; background-color:#ffffff; head-row-background-color:#999999; alt-row-background-color:none;">
+            <thead style="vertical-align:top">
+              <td>
+                <para styleclass="Normal">1</para>
+              </td>
+              <td>
+                <para styleclass="Normal">2</para>
+              </td>
+              <td>
+                <para styleclass="Normal">3</para>
+              </td>
+              <td>
+                <para styleclass="Normal">4</para>
+              </td>
+              <td>
+                <para styleclass="Normal">5</para>
+              </td>
+              <td>
+                <para styleclass="Normal">6</para>
+              </td>
+            </thead>
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="VariableName-IT">Arc Radius</para>
+              </td>
+              <td>
+                <para styleclass="VariableName-IT">Arc Start Point X Coordinate</para>
+              </td>
+              <td>
+                <para styleclass="VariableName-IT"> Arc End Point X Coordinate</para>
+              </td>
+              <td>
+                <para styleclass="VariableName-IT">Arc Start Point Y Coordinate</para>
+              </td>
+              <td>
+                <para styleclass="VariableName-IT">Arc End Point Y Coordinate</para>
+              </td>
+              <td>
+                <para styleclass="VariableName-IT">Arc Angle Range (degs)</para>
+              </td>
+            </tr>
+          </table></para>
+        </td>
+      </tr>
+    </table></para>
+  </body>
+</topic>

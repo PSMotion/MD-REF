@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" modified="2022-04-25T09:23:25.915+01:00" lasteditedby="Adam" version="2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title>- &gt; Registerkarte Anzeigeoptionen</title>
+  <body>
+    <header>
+      <para styleclass="Heading1">- &gt; Registerkarte Anzeigeoptionen</para>
+    </header>
+    <para styleclass="Heading2">CAD-Line &gt; Registerkarte Anzeigeoptionen</para>
+    <para styleclass="Body Text HowTo">Verwenden Sie die Registerkarte <text styleclass="VariableName">Anzeige-Optionen</text>, um:</para>
+    <list id="0" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+      <li styleclass="HowTo Bulleted">Die<text styleclass="Body Text HowTo">Farbe und Transparenz des importierten</text><text styleclass="Body Text">&#32;</text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-Solids" styleclass="Interface">CAD-Solids</link><text styleclass="Body Text HowTo">zu bearbeiten</text>.<text styleclass="Body Text">&#32;</text></li>
+      <li styleclass="HowTo Bulleted"><text styleclass="Body Text HowTo">Um das importierte</text><text styleclass="Body Text">&#32;</text>CAD-Volumen<text styleclass="Body Text HowTo">ein- oder auszublenden</text><text styleclass="Body Text">&#32;</text></li>
+      <li styleclass="HowTo Bulleted">Zum Verschieben des importierten <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-Solids" styleclass="Interface">CAD-Volumens</link><text styleclass="Body Text"> in Richtung der X-, Y- und/oder Z-Achse.</text></li>
+    </list>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="Body Table"><image src="MD-Dialog-CADLine-DisplayOptions-tab.png" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+    <para styleclass="Separator" style="margin-left:25px;"><anchor id="CAD-Line-ImportSW-Display"><keywords><keyword>Import SolidWorks Part / Assembly<keyword>Display Options</keyword><keyword>Color</keyword><keyword>Transparency</keyword><keyword>Show / Hide</keyword></keyword></keywords></anchor><image src="tog_plus.gif" scale="100.00%" figurelistinclude="0"></image><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" src-collapsed="tog_plus.gif" src-expanded="tog_minus.gif" src-print="none" styleclass="Separator-Header"><caption><![CDATA[ ]]></caption></toggle><text styleclass="Separator-Header"> ANZEIGEOPTIONEN (Display Options </text></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Standard" rowcount="2" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:250px;">
+          <para styleclass="Normal" style="text-align:left;"><image src="MD-Dialog-CADLine-DisplayOptions-Display.png" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="Parameter-Header">SOLID anzeigen</para>
+          <para styleclass="Body Text HowTo">Klicken Sie auf das Kontrollkästchen <text styleclass="Parameter">Solid anzeigen</text>, um das <text styleclass="Interface">CAD-Solid</text>, das sich auf der <text styleclass="Element">CAD-Linie</text> befindet, ein- oder auszublenden.</para>
+          <para styleclass="Body Text"><text styleclass="Notes">Hinweis:</text>&#32;<text styleclass="Body Text HowTo">Sie müssen auch </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Visibility-SolidsInMechanisms" styleclass="T_Menu">Sichtbarkeits-Symbolleiste &gt; Solids in Mechanismen anzeigen</link>&#32;<text styleclass="Body Text HowTo">wählen </text>, um<text styleclass="Parameter"> CAD-Solids</text> in <text styleclass="Interface">Mechanismus-Editoren</text>anzuzeigen.</para>
+          <para styleclass="Parameter-Header">Durchsichtigkeit:</para>
+          <para styleclass="Body Text HowTo">Ziehen Sie den <text styleclass="Parameter">Transparenz-Schieberegler</text>, um die Transparenz des <text styleclass="Interface">CAD-Solid</text> auf der <text styleclass="Element">CAD-Linie</text> zu ändern. Experimentieren!</para>
+          <para styleclass="Parameter-Header">Solid-Farbe:</para>
+          <para styleclass="Body Text HowTo">Klicken Sie auf die Schaltfläche <text styleclass="Parameter">Volltonfarbe</text>, um die Farbe des <text styleclass="Parameter">CAD-Solids</text> mit dem Windows®-Farbwähler zu öffnen und zu bearbeiten. </para>
+          <para styleclass="Body Text"><text styleclass="Parameter-Header">Anzahl der Scheitelpunkte:</text><text style="font-weight:normal;"> (</text><text styleclass="VariableName">nur Lesezugriff</text><text style="font-weight:normal; font-style:normal;">)</text></para>
+          <para styleclass="Body Text HowTo" style="margin-top:0px;">Komplexe Dateien haben mehr Scheitelpunkte. <text styleclass="VariableName-IT">MechDesigner</text> kann langsam auf neue Befehle reagieren, wenn es <text styleclass="VariableName-IT">viele </text><text styleclass="Interface">CAD-Solids</text>gibt<text styleclass="Body Text">, von denen jedes eine</text> große <text styleclass="Parameter">Anzahl von Eckpunkten</text><text styleclass="Body Text"> hat</text>.</para>
+          <para styleclass="Body Text HowTo" style="margin-top:0px;">Wie viele sind zu viele? Versuchen Sie, die <text styleclass="Parameter">Anzahl der Scheitelpunkte</text>auf<text style="font-weight:bold;"> &lt;</text> 10.000 einzustellen.</para>
+          <para styleclass="Body Text HowTo" style="margin-top:0px;">Experimentieren Sie mit den Optionsschaltern <text styleclass="Parameter">Fein</text><text style="font-style:italic;">, </text><text styleclass="Parameter">Grob</text> und <text styleclass="Parameter">Benutzerdefiniert</text> auf der <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-CADLine-SOLIDWORKS">Registerkarte SOLIDWORKS</link>. </para>
+          <para styleclass="Body Text"><text styleclass="SeeAlso">Siehe auch: </text><text styleclass="VariableName">Top-Tipps</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td colspan="2">
+          <para styleclass="Body Text"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="VariableName">Top Tips: </para>
+                <para styleclass="Body Text HowTo">Make a new SOLIDWORKS Configuration if there are many features that add vertices for cosmetic reasons.</para>
+                <para styleclass="Body Text HowTo">In the new configuration, reduce the number of vertices:</para>
+                <list id="1" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+                  <li styleclass="HowTo Bulleted">Remove Fillets, cosmetic fillets.</li>
+                  <li styleclass="HowTo Bulleted">Use Chamfers to show model edges.</li>
+                  <li styleclass="HowTo Bulleted">Do not import models with balls in ball bearings!</li>
+                  <li styleclass="HowTo Bulleted">Make the model as simple as possible.</li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Separator" style="margin-left:25px;"><anchor id="CADSolidMove"><keywords><keyword>CAD-Line<keyword>Move CAD-Solid</keyword></keyword></keywords></anchor><image src="tog_plus.gif" scale="100.00%" figurelistinclude="0"></image><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" src-collapsed="tog_plus.gif" src-expanded="tog_minus.gif" src-print="none" styleclass="Separator-Header"><caption><![CDATA[ CAD Festkörper XYZ Position]]></caption></toggle><text styleclass="Separator-Header"> (CAD-Solid - xyz Position) </text></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Standard" rowcount="1" colcount="2" style="width:auto;">
+      <tr style="vertical-align:top">
+        <td style="width:250px;">
+          <para styleclass="Normal" style="text-align:left;"><image src="MD-Dialog-CADLine-DisplayOptions-XYZ.png" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="Body Table">Wenn sich das importierte <text styleclass="Interface">CAD-Solid</text><text styleclass="Body Text HowTo"> nicht an der richtigen Stelle befindet, können Sie es in Richtung der X-, Y- und Z-Achse verschieben.</text></para>
+          <para styleclass="Notes">Anmerkung: </para>
+          <para styleclass="Body Text HowTo">Sie können ein importiertes <text styleclass="Interface">CAD-Solid</text>&#32;<text styleclass="VariableName" style="color:#ff0000;">nicht</text> rotieren</para>
+          <para styleclass="Body Text HowTo">Sie müssen das CAD-Modell in Ihrer CAD-Software drehen<text styleclass="Body Text">, </text><text styleclass="VariableName" style="color:#ff0000;">bevor</text> Sie es importieren.</para>
+          <para styleclass="Body Text"></para>
+        </td>
+      </tr>
+    </table></para>
+  </body>
+</topic>

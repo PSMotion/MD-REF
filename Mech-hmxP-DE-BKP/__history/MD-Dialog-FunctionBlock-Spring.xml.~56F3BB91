@@ -1,0 +1,180 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" status="Under Construction" modified="2022-03-08T21:27:36.768Z" lasteditedby="Adam" version="2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title>Dialog: Function-Block: Spring</title>
+  <meta name="DESCRIPTION" translate="true" value="A versatile Spring - with parameters for Free-Length, Spring-Rate, Constant Force, Constant Coulomb Force, Damping and Damping-Rate." />
+  <keywords>
+    <keyword>Dialog<keyword>Function-Block : Linear Motor</keyword><keyword>Function-Block : Spring Force</keyword></keyword>
+    <keyword>Spring / Linear Motor</keyword>
+    <keyword>Spring dialog<keyword>Constant Force</keyword><keyword>Drag Force</keyword><keyword>Enable Spring</keyword><keyword>Free Length</keyword><keyword>Friction Force</keyword><keyword>Spring Force Parameters</keyword><keyword>Spring Rate</keyword><keyword>Viscous Force</keyword></keyword>
+  </keywords>
+  <body>
+    <header>
+      <para styleclass="Heading1">Dialog: Function-Block: Spring</para>
+    </header>
+    <para styleclass="Heading2">Spring FB</para>
+    <para styleclass="SeeAlso">See <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Forces-FB-Spring">Add Spring FB</link></para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="Body Text HowTo">Use a <text styleclass="Element">Spring FB</text> to apply a force between two <text styleclass="Element">Points.</text> The name we use for the two <text styleclass="Element">Points</text> is <text styleclass="Interface">Anchor-Points</text><text styleclass="Element">.</text></para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="SeeAlso">See also: </para>
+    <para styleclass="Body Text HowTo"><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-Machine-Settings" anchor="Dialog_McSettings-SpecifyUnits">Machine Settings &gt; Engineering Units</link></para>
+    <para styleclass="Body Text HowTo"><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-ConfigurePowerSource">Configure Power Source</link></para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="Heading3_atocs_" style="text-indent:-18px; margin-left:18px;">Open the Spring FB dialog-box</para>
+    <para styleclass="Body Text HowTo"><table styleclass="Standard" rowcount="2" colcount="2" style="width:auto; head-row-background-color:#ffffff; alt-row-background-color:none;">
+      <thead style="vertical-align:top">
+        <td style="width:40px; border-right:none;">
+          <para styleclass="Normal" style="text-align:right;"><image src="MD-GA-Spring-Edit.png" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td style="border-left:none;">
+          <para styleclass="B Bullets"><text styleclass="VariableName">In Mechanism-Editor:</text></para>
+          <para styleclass="Body Text HowTo"><table styleclass="PopupTable2" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td style="border-top:none; border-right:none; border-bottom:none;">
+                <list id="0" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="B Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="B Bullets"><text styleclass="HowTo Numbered" style="font-style:normal;">Double-click</text><text styleclass="HowTo Numbered"> the </text><text styleclass="Element">Spring-FB</text><text styleclass="HowTo Numbered"> in the </text><text styleclass="Interface">graphic-area</text><text styleclass="VariableName">&#32;</text></li>
+                </list>
+                <para styleclass="Body Text"><text style="font-family:Arial; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">- or -</text></para>
+                <list id="1" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="B Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="B Bullets"><text styleclass="SeeAlso">See </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-How-to-Open-a-Dialog-Box" styleclass="SeeAlso">How to Open a Dialog-Box</link><text styleclass="VariableName"> &#160;</text></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Body Table">The <text styleclass="Element">Spring dialog-box</text> is now open.</para>
+        </td>
+      </thead>
+      <tr style="vertical-align:top">
+        <td colspan="2" style="border-right:none;">
+          <para styleclass="Notes">Note: <text styleclass="Body Text">&#32;</text><text styleclass="Body Text HowTo">It is </text><text styleclass="VariableName-IT" style="color:#ff0000;">not</text><text styleclass="Body Text HowTo"> necessary to connect a wire to the </text><text styleclass="Body Text">input-connector or from the output-connectors of the </text><text styleclass="Element">Spring FB</text><text styleclass="Body Text HowTo">. The input and output-connectors provide extra functionality - see </text><link displaytype="text" defaultstyle="true" type="topiclink" href="" anchor="SpringFBInput-Connector" styleclass="Body Text HowTo">Here</link></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="Heading3_atocs_">Spring dialog-box</para>
+    <para styleclass="Body Text"><image src="MD-Dialog-SpringFB.ipp" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+    <para styleclass="Separator-Header"><anchor id="SpringFB-Parameters"><keywords><keyword>Spring FB<keyword>Spring Parameters</keyword></keyword></keywords></anchor>Spring Parameters </para>
+    <para styleclass="Body Text HowTo"><table styleclass="Standard" rowcount="1" colcount="2" style="cell-padding:0px; border-width:0px; border-spacing:0px; cell-border-width:0px; border-style:none;">
+      <tr style="vertical-align:top">
+        <td style="width:217px; border-top:none; border-right:none; border-bottom:none;">
+          <para styleclass="Normal"><image src="MD-Dialog-SpringFB-SpringParameters.ipp" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <list id="2" type="ul" listtype="bullet" formatstring="&#254;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Body Table" style="font-family:Wingdings; font-size:11pt; color:#000000;">
+            <li styleclass="Body Table"> Check-box to enable the <text styleclass="Element">Spring FB</text>.</li>
+          </list>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="Body Table"><text styleclass="Parameter-Header">Spring-Rate:</text>&#32;</para>
+          <para styleclass="Body Text HowTo"><table styleclass="PopupTable2" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="VariableName">Force Contribution:</para>
+                <para styleclass="Body Text HowTo">= <text styleclass="Parameter">Spring-Rate</text><text styleclass="VariableName"> × </text><equation styleclass="VariableName" font-family="Cambria Math" font-size="28"><![CDATA[abs]]></equation><text styleclass="VariableName">&#32;</text><text styleclass="VariableName" style="font-size:16pt;">|</text><text styleclass="VariableName">&#32;</text><text styleclass="Parameter">Spring-Length</text><text styleclass="VariableName"> – </text><text styleclass="Parameter">Free-Length </text><text styleclass="Parameter" style="font-size:16pt;">|</text></para>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Body Table"><text styleclass="Parameter">Spring-Length</text> is the distance between the two anchor-points. </para>
+          <para styleclass="Body Table">The Force <text styleclass="VariableName" style="color:#ff0000;">always</text> tries to move the anchor-point to the <text styleclass="Parameter">Free-Length</text> (They cannot, of course).</para>
+          <para styleclass="Body Table"><text styleclass="Parameter-Header">Free-Length:</text></para>
+          <para styleclass="Body Text HowTo"><table styleclass="PopupTable2" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Body Table">The natural length of the <text styleclass="VariableName">Spring</text>, when it is not joined to the <text styleclass="Element">Anchor-Points</text>. </para>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="Body Table"><text styleclass="Parameter-Header">Constant-Force:</text>&#32;</para>
+          <para styleclass="Body Text HowTo"><table styleclass="PopupTable2" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Body Table">A positive force will <text styleclass="VariableName" style="color:#ff0000;">PULL</text>&#32;<text styleclass="Element">Anchor-Points</text> together (<text style="font-weight:bold;">o&gt;&gt;&gt; </text><text style="font-size:14pt; font-weight:bold;">+ </text><text style="font-weight:bold;">&lt;&lt;&lt;o</text>)</para>
+                <para styleclass="Body Table">A negative force will <text styleclass="VariableName" style="color:#ff0000;">PUSH</text>&#32;<text styleclass="Element">Anchor-Points</text> apart (<text style="font-weight:bold;">o&lt;&lt;&lt; — &gt;&gt;&gt;o</text>)</para>
+              </td>
+            </tr>
+          </table></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Separator-Header"><anchor id="SpringFB-Velocity"><keywords><keyword>Spring FB<keyword>Velocity Parameters</keyword></keyword></keywords></anchor>Velocity Parameters </para>
+    <para styleclass="Body Text HowTo"><table styleclass="Standard" rowcount="1" colcount="2" style="cell-padding:0px; border-width:0px; border-spacing:0px; cell-border-width:0px; border-style:none;">
+      <tr style="vertical-align:top">
+        <td style="width:217px;">
+          <para styleclass="Normal"><image src="MD-Dialog-SpringFB-VelocityParameters.ipp" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="Body Table"><text styleclass="Parameter-Header">Coulomb Friction Force: </text><text styleclass="VariableName">(F</text><text styleclass="VariableName" style="font-size:10pt; vertical-align:baseline;">f</text><text styleclass="VariableName"> = μ.F</text><text styleclass="VariableName" style="font-size:10pt; vertical-align:baseline;">n</text><text styleclass="VariableName"> )</text></para>
+          <para styleclass="Body Text HowTo"><table styleclass="PopupTable2" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Body Table"><text styleclass="HowTo Bulleted">A </text><text styleclass="Interface">Constant Force</text><text styleclass="HowTo Bulleted"> that is opposite to the direction of the motion.</text></para>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Body Table">This parameter is intended to be <text styleclass="VariableName-IT">similar</text> to a <text styleclass="VariableName">Friction Force</text>. However, it is <text styleclass="VariableName" style="color:#ff0000;">not</text> Friction Force, because the <text styleclass="Parameter-Header">Coulomb Friction-Force</text> parameter is <text styleclass="VariableName" style="color:#ff0000;">not</text> a function of the Normal Force.</para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="Body Table"><text styleclass="Parameter-Header">Viscous Coefficient: </text><text styleclass="VariableName">(F</text><text styleclass="VariableName" style="font-size:10pt; vertical-align:baseline;">v</text><text styleclass="VariableName"> α V ( N/(mm/s) )</text></para>
+          <para styleclass="Body Text HowTo"><table styleclass="PopupTable2" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Body Table">A Force that is proportional to the relative velocity between the <text styleclass="Element">Points</text>.</para>
+                <para styleclass="Body Table">The Force is opposite to the direction of motion.</para>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Body Table"><text styleclass="VariableName">E.g. </text>If the <text styleclass="Parameter">Damping Coefficient = 4</text> and the <text styleclass="Interface">Velocity is +100mm/s</text>, (anchor points moving away from each other), The force pulling the points together is a force of 400N.</para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="Body Table"><text styleclass="Parameter-Header">Drag Factor: </text><text styleclass="VariableName">(F</text><text styleclass="VariableName" style="font-size:10pt; vertical-align:baseline;">d</text><text styleclass="VariableName"> α V2) ( N/((mm/s)</text><text styleclass="VariableName" style="font-size:7pt; vertical-align:super;">2</text><text styleclass="VariableName"> ) )</text></para>
+          <para styleclass="Body Text HowTo"><table styleclass="PopupTable2" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Body Table">A Force that is proportional to square of the relative velocity between the <text styleclass="Element">Points</text>. For example, air resistance.</para>
+                <para styleclass="Body Table">The Force is opposite to the direction of motion.</para>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Body Table"><text styleclass="VariableName">E.g.</text> If the <text styleclass="Parameter">Drag Factor = 4</text>, and the <text styleclass="Interface">Velocity = +100mm/s</text> (anchor-points are moving apart), then the force pulling the anchor-points together is a force of 40000N.</para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="Heading4 Toggle_atocs_"><anchor id="SpringFBInput-Connector"><keywords><keyword>Spring FB<keyword>Input-Connector Data</keyword><keyword>Output-Connector Data</keyword></keyword></keywords></anchor>Input-Connector and Output-Connectors</para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="Body Text" style="text-indent:-32px; margin-left:33px;"><table styleclass="Default" rowcount="1" colcount="1" style="cell-padding:0px; border-width:0px; border-spacing:0px; cell-border-width:0px; border-style:none;">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Interface"><text style="font-size:11pt;">Input-Connector</text></para>
+          <para styleclass="Body Text HowTo">Connect a wire to the input-connector to add a force-function between the <text styleclass="Element">Spring&apos;s</text>&#32;<text styleclass="Interface">Anchor-Points</text>. </para>
+          <para styleclass="Body Text HowTo">The units of the data at the input-connector <text styleclass="VariableName">must</text> be <text styleclass="VariableName">Newtons</text>. Use a <text styleclass="Element">Math FB</text> to convert the data-type of the <text styleclass="VariableName">Motion</text> data-type to the <text styleclass="VariableName">Force</text> data-type.</para>
+          <para styleclass="Body Text HowTo">For example, the function might be designed as a motion. In which case, you would need to connect the output of a <text styleclass="Element">Motion FB</text> , which has units of <text styleclass="VariableName">mm</text> or <text styleclass="VariableName">degrees</text><text styleclass="Body Text"> to a </text><text styleclass="Element">Math FB</text><text styleclass="Body Text"> to convert the units to </text><text styleclass="VariableName">Newtons</text><text styleclass="Body Text">. And then connect the output to the </text><text styleclass="Element">Spring-FB</text></para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="Notes">Note 1: </para>
+          <para styleclass="Body Text HowTo"><text styleclass="VariableName" style="color:#ff0000;">Units inside the </text><text styleclass="Element">Math FB</text><text styleclass="VariableName" style="color:#ff0000;"> become SI units. </text>To convert <text styleclass="VariableName">100mm</text> at the input to a <text styleclass="Element">Math FB</text> to <text styleclass="VariableName">100N</text>, you must:</para>
+          <list id="3" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="VariableName-indent" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="VariableName-indent"><text styleclass="VariableName">Change the Output Data Type to Force (N)</text></li>
+          </list>
+          <para styleclass="VariableName-indent">AND</para>
+          <list id="3" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="VariableName-indent" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="VariableName-indent">Multiply the input-value by 1000 to convert 0.1m to 100N</li>
+          </list>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="Interface"><text style="font-size:11pt;">TOP output-connector</text></para>
+          <para styleclass="Body Text HowTo">Dimension, Velocity and Acceleration relating to the distance between the Spring&apos;s <text styleclass="Interface">anchor-points</text>.</para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="Interface"><text style="font-size:11pt;">Bottom output-connector</text></para>
+          <para styleclass="Body Text HowTo"><text styleclass="VariableName">Total Applied-Force</text> between the Spring&apos;s <text styleclass="Interface">anchor-points</text>. </para>
+          <list id="4" type="ul" listtype="bullet" formatstring="&#183;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Arial; font-size:11pt; color:#000000;">
+            <list id="4" level="1" type="ul" listtype="bullet" formatstring="&#111;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:&apos;Courier New&apos;; font-size:11pt; color:#000000;">
+              <li styleclass="HowTo Bulleted"><text styleclass="VariableName">Total Applied-Force</text> = <text styleclass="VariableName">Force at the Input-connector + Force that results from the</text>&#32;<text styleclass="Parameter-Header">parameters</text><text styleclass="Interface">&#32;</text><text styleclass="VariableName">as set in the</text>&#32;<text styleclass="Element">Spring FB dialog-box</text><text styleclass="VariableName">&#32;</text></li>
+            </list>
+          </list>
+          <para styleclass="HowTo Bulleted">or</para>
+          <list id="4" level="1" type="ul" listtype="bullet" formatstring="&#111;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:&apos;Courier New&apos;; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted"><text styleclass="VariableName">Driving-Force = Linear Motive Force</text>, if you configure the <text styleclass="Element">Spring FB</text> as a <text styleclass="Interface">Linear Motor</text> - <text styleclass="T_Menu">see </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-ConfigurePowerSource" styleclass="T_Menu">Configure Power Source</link></li>
+          </list>
+        </td>
+      </tr>
+    </table></para>
+  </body>
+</topic>

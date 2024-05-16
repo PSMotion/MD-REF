@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" status="Under Construction" modified="2022-10-31T17:58:48.332Z" lasteditedby="Adam" version="2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title>Export a smooth Cam</title>
+  <keywords>
+    <keyword>Cam-Coordinates<keyword>Solid Edge: Curve by Table, Insert XYZ data</keyword><keyword>SolidWorks: Insert Curve XYZ</keyword></keyword>
+  </keywords>
+  <body>
+    <header>
+      <para styleclass="Heading1">Export a smooth Cam</para>
+    </header>
+    <para styleclass="Heading2">Export a smooth Cam </para>
+    <para styleclass="Body Text">You calculate the Cam-Coordinates with a <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-FunctionBlock-CamCoordinates">Cam-Data FB</link>.</para>
+    <para styleclass="Body Text HowTo"><text styleclass="Notes">Note</text>: This topic was written before <text styleclass="VariableName">Save as Biarcs</text> was developed for 2D-Cams. Each <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-BiArc">BiArcs</link> is tangent to two adjacent BiArcs. You can save the Cam with BiArcs as a DXF or export it directly to <text styleclass="SOLIDWORKS">SolidWorks</text>.</para>
+    <para styleclass="Body Text HowTo">Also, you can also <text styleclass="VariableName">Save as STEP</text>, <text styleclass="VariableName">TXT</text>, and <text styleclass="VariableName">SLDCRV</text> file-types. </para>
+    <para styleclass="Heading4 Toggle_atocs_2" style="text-indent:-36px; margin-left:60px;"><image src="tog_plus.gif" scale="100.00%" figurelistinclude="0"></image><tab /><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" src-collapsed="tog_plus.gif" src-expanded="tog_minus.gif"><caption><![CDATA[Export directly to SOLIDWORKS from MechDesigner]]></caption></toggle></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="3" colcount="2">
+      <tr style="vertical-align:top">
+        <td colspan="2">
+          <para styleclass="Body Text">In the <text styleclass="Element">Cam-Coordinate Data dialog</text>, you should calculate the Cam-Coordinates as:</para>
+          <list id="0" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted"><text styleclass="Parameter">Equal increments</text> of the Master Machine Angle - say 360 for a typical &apos;side-plate&apos; size of cam.</li>
+          </list>
+          <para styleclass="HowTo Bulleted">Send Cam Data to <text styleclass="SOLIDWORKS">SolidWorks</text> button.</para>
+          <para styleclass="HowTo Bulleted">Make sure the <text styleclass="SOLIDWORKS">SolidWorks</text> is open, and a Part, existing or new, is the active document.</para>
+          <para styleclass="HowTo Bulleted">The data is sent to <text styleclass="SOLIDWORKS">SolidWorks</text> as a Curve Feature.</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:240px;">
+          <para styleclass="Normal"><image src="MD-SW-CamCurveFeatures.png" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="Body Text HowTo">The Curve feature shows on the XY-Plane, which is the Front View in <text style="font-size:10pt; vertical-align:baseline;">SOLIDWORKS</text>.</para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="Body Text2-Note"><text styleclass="Notes">Note</text>:<text styleclass="Body Text"> To move the Curve feature to the XZ or the YZ Plane, then in the Cam-Coordinated dialog-box: </text></para>
+          <list id="1" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Popup Box" style="font-family:&apos;Segoe UI&apos;; font-size:10pt; color:#000000;">
+            <li styleclass="Popup Box">Click the Save as button, and save the Data as a TXT file. </li>
+            <li styleclass="Popup Box">Edit the data in Excel, and swap the X-data, or Y-data, with the Z-data.</li>
+            <li styleclass="Popup Box">Save the Data to NotePad</li>
+          </list>
+          <para styleclass="Popup Box">Then, in SOLIDWORKS:</para>
+          <list id="1" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Popup Box" style="font-family:&apos;Segoe UI&apos;; font-size:10pt; color:#000000;">
+            <li styleclass="Popup Box">Click Insert menu &gt; Curve &gt; Curve Through XYZ Points...</li>
+          </list>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:240px;">
+          <para styleclass="Normal"><image src="MD-SW-CurveExtrusded.png" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="HowTo Numbered"><text styleclass="Body Text HowTo">In </text><text styleclass="Body Text HowTo" style="font-size:10pt; vertical-align:baseline;">SOLIDWORKS</text><text styleclass="Body Text HowTo">:</text></para>
+          <list id="2" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Numbered" style="font-family:&apos;Noto Sans&apos;; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Numbered"><text styleclass="Body Text HowTo">Select a Plane that is coplanar or parallel to the Curve feature.</text></li>
+            <li styleclass="HowTo Numbered"><text styleclass="Body Text HowTo">Start a sketch on the Plane</text></li>
+            <li styleclass="HowTo Numbered"><text styleclass="Body Text HowTo">Use </text><text styleclass="VariableName-IT">Convert Entities</text><text styleclass="Body Text HowTo"> in </text><text styleclass="SOLIDWORKS">SolidWorks</text><text style="font-size:7pt; vertical-align:super;">®</text><text styleclass="Body Text HowTo"> sketch editor</text></li>
+            <li styleclass="HowTo Numbered"><text styleclass="Body Text HowTo">Extrude the Curve.</text></li>
+          </list>
+          <para styleclass="Body Text HowTo">You can see the Cam does not have any facets.</para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading3_atocs_">To import into other CAD</para>
+    <para styleclass="Heading4 Toggle_atocs_2" style="text-indent:-36px; margin-left:60px;"><image src="tog_plus.gif" scale="100.00%" figurelistinclude="0"></image><tab /><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" src-collapsed="tog_plus.gif" src-expanded="tog_minus.gif" src-print="none"><caption><![CDATA[Open Excel®]]></caption></toggle></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="1" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <list id="3" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Numbered" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo Numbered">Open the file, with <text styleclass="VariableName">file-type as... *.TXT </text></li>
+            <li styleclass="HowTo Numbered">Select delimiter, as a &apos;,&apos; or &apos;tab&apos;.</li>
+          </list>
+          <para styleclass="Body Text HowTo">You want the &apos;X&apos; and &apos;Y&apos; Cam Points in separate columns. </para>
+          <para styleclass="HowTo Numbered">Experiment with the import options if necessary.</para>
+          <list id="3" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Numbered" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo Numbered">Tidy up the data, remove headers etc.</li>
+            <li styleclass="HowTo Numbered">Move all the data so the first X Point starts at Cell A1, and the first Y Point at B1.</li>
+            <li styleclass="HowTo Numbered">Add a Column for the Z-Axis, and fill it with Zeros (0).</li>
+            <li styleclass="HowTo Numbered">If necessary, make the first and last point to be identical.</li>
+          </list>
+          <para styleclass="Body Text HowTo">Experiment as necessary. Some CAD will close the cam for you, other CAD will not.</para>
+          <list id="4" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="7" styleclass="HowTo Numbered" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo Numbered">If necessary, scale the Cam-Data to the units you are working in your CAD<text styleclass="VariableName">&#32;</text></li>
+            <li styleclass="HowTo Numbered">Save your data as an Excel<text style="font-size:7pt; vertical-align:super;">®</text> spreadsheet, for back-up purposes.</li>
+            <li styleclass="HowTo Numbered">Save your Data to a NotePad<text style="font-size:7pt; vertical-align:super;">®</text><text styleclass="Body Text"> file.</text></li>
+          </list>
+          <para styleclass="Body Text">You will use the file that you save in <text styleclass="HowTo Numbered">Excel</text><text styleclass="HowTo Numbered" style="font-size:7pt; vertical-align:super;">®</text> or NotePad<text styleclass="HowTo Numbered" style="font-size:7pt; vertical-align:super;">®</text> to import into your CAD.</para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading4 Toggle_atocs_2" style="text-indent:-36px; margin-left:60px;"><image src="tog_plus.gif" scale="100.00%" figurelistinclude="0"></image><tab /><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" src-collapsed="tog_plus.gif" src-expanded="tog_minus.gif" src-print="none"><caption><![CDATA[Import Cam Data into Solid Edge]]></caption></toggle></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="1" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Heading4 Toggle_atocs_">Insert Object / Curve by Table</para>
+          <para styleclass="Body Text">Select:</para>
+          <list id="5" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Numbered" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo Numbered">Surfacing tab → Curves group → Keypoint → Curve By Table<text styleclass="VariableName">&#32;</text></li>
+            <li styleclass="HowTo Numbered"><text styleclass="Body Text">On the Insert Object dialog-box, set the </text><text styleclass="VariableName">Create from File</text><text styleclass="Body Text"> option and click OK.</text></li>
+          </list>
+          <para styleclass="Body Text HowTo">Browse to and Open your Excel® spreadsheet </para>
+          <para styleclass="Body Text HowTo"><text styleclass="VariableName">Curve by Table</text><text styleclass="Body Text"> uses an Excel spreadsheet to define a construction curve. The spreadsheet, which is embedded in the Solid Edge document, allows you to more easily import your data.</text></para>
+          <para styleclass="Heading4 Toggle_atocs_"><toggle type="picture" print-expanded="true" help-expanded="false" src-collapsed="MD-SolidEdge-CurvebyTable command-A.ipp" src-expanded="MD-SolidEdge-CurvebyTable command-A.ipp" scale="-80.00%" styleclass="Image Caption" figurelistinclude="0"><caption><![CDATA[Solid Edge : Keypoint > Curve by Table]]></caption></toggle></para>
+          <para styleclass="Normal"><image src="MD-SolidEdge-CurvebyTable command.ipp" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"><caption><![CDATA[Solid Edge: Curve by Table Parameters dialog]]></caption></image></para>
+          <para styleclass="Normal"></para>
+          <para styleclass="Heading4 Toggle_atocs_">Curve by Table Parameters</para>
+          <para styleclass="VariableName">Curve Fit</para>
+          <list id="6" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="margin-top:0px; margin-bottom:0px; font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted" style="margin-top:0px; margin-bottom:0px;"><text styleclass="Body Text">Linear Segment</text></li>
+          </list>
+          <para styleclass="HowTo Numbered" style="margin-top:0px; margin-bottom:0px;">Creates line segments between the data points in the table.</para>
+          <list id="7" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="margin-top:0px; margin-bottom:0px; font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted" style="margin-top:0px; margin-bottom:0px;"><text styleclass="Body Text">Smoothing Off</text></li>
+          </list>
+          <para styleclass="Body Text HowTo" style="margin-top:0px; margin-bottom:0px;">Applies the direct curve fit method to the data points in the table. &#160;Using this method, the curve passes directly through the points.</para>
+          <list id="8" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="margin-top:0px; margin-bottom:0px; font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted" style="margin-top:0px; margin-bottom:0px;"><text styleclass="Body Text">Smoothing On</text></li>
+          </list>
+          <para styleclass="Body Text HowTo" style="margin-top:0px; margin-bottom:0px;">Applies the &apos;least squares&apos; curve fit method to the data points in the table. &#160;Selecting this option enables the tolerance drop list. &#160;Using this method, the curve path is controlled by the tolerance value and does need to touch the points.</para>
+          <list id="9" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="margin-top:0px; margin-bottom:0px; font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted" style="margin-top:0px; margin-bottom:0px;"><text styleclass="Body Text">Tolerance</text></li>
+          </list>
+          <para styleclass="Body Text HowTo">Allows you to specify a tolerance for the Smoothing On option. &#160;Gives the maximum distance the curve can deviate from the points.</para>
+          <para styleclass="VariableName">Curve End Conditions</para>
+          <list id="10" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="margin-top:0px; margin-bottom:0px; font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted" style="margin-top:0px; margin-bottom:0px;"><text styleclass="Body Text">Open</text></li>
+          </list>
+          <para styleclass="Body Text HowTo" style="margin-top:0px; margin-bottom:0px;">Allows you to specify an open curve. For example, the first and last data points do not touch each other or any part of the curve.</para>
+          <list id="11" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="margin-top:0px; margin-bottom:0px; font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted" style="margin-top:0px; margin-bottom:0px;"><text styleclass="Body Text">Closed</text><text style="font-weight:normal; font-style:italic;">&#32;</text></li>
+          </list>
+          <para styleclass="Body Text HowTo" style="margin-top:0px; margin-bottom:0px;">Specifies a closed curve. For example, the first and last data points can touch one another or any part of the curve. When this option is set, the Periodic and Natural options become available.</para>
+          <list id="12" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted">Periodic</li>
+          </list>
+          <para styleclass="Body Text HowTo">Connects the first data point with the last data point to make a smooth tangent closed curve.</para>
+          <list id="13" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted"><text styleclass="Body Text">Natural</text></li>
+          </list>
+          <para styleclass="Body Text HowTo">Creates a closed curve without a tangency condition.</para>
+          <para styleclass="Body Text">Note: The &apos;Curve by Table&apos; Feature will fail if the first and last data points in the spreadsheet are coincident. If you select &apos;Closed&apos;, delete the last point in the table that is coincident with the first.</para>
+          <para styleclass="VariableName">Coordinate System</para>
+          <para styleclass="Body Text HowTo" style="margin-top:0px; margin-bottom:0px;">Allows you to select coordinate systems to offset the curve data to. Make the coordinate system prior to creating the curve through table of points.</para>
+          <para styleclass="VariableName">Number-of-points</para>
+          <para styleclass="Body Text HowTo">Records the total number-of-points in spreadsheet.</para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="Heading4 Toggle_atocs_">Possible Problems with Curve by Table</para>
+          <para styleclass="Body Text">The following are possible error messages resulting from Curve by Table:</para>
+          <list id="14" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted">Invalid Geometry: Edit Feature Inputs</li>
+          </list>
+          <para styleclass="Body Text HowTo">The data points in the spreadsheet are incorrect. Check the spreadsheet and make certain you have input at least two rows of X,Y,Z coordinates, have not skipped any cells, and have not entered data points that define a curve that runs back through itself either in 2D or 3D.</para>
+          <list id="15" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted">Curve Is Self Intersecting</li>
+          </list>
+          <para styleclass="Body Text HowTo">The curve runs back through itself in 2D or 3D. Change the data points in the spreadsheet.</para>
+          <list id="16" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted">Units Set Out Of Range</li>
+          </list>
+          <para styleclass="Body Text HowTo">The units are too large. Make sure the diameter of the model is less than five kilometers.</para>
+          <list id="17" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted">Curve By Table Feature Failed</li>
+          </list>
+          <para styleclass="Body Text HowTo">Closed and Periodic options are set on the Curve Table Parameters dialog-box, and the first and last data points in the spreadsheet are coincident. Change one of the coincident data points.</para>
+        </td>
+      </tr>
+    </table></para>
+  </body>
+</topic>

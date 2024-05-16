@@ -1,0 +1,224 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" status="Under Construction" modified="2024-01-24T12:00:51.382Z" lasteditedby="44785" version="2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title>Change Dyad Closure</title>
+  <keywords>
+    <keyword>Change Closure of Assur-Group</keyword>
+    <keyword>Change Closure of Dyad</keyword>
+    <keyword>Closure</keyword>
+    <keyword>How to ...<keyword>Change the assembly configuration of mehanism</keyword><keyword>Change the Closure of a Dyad / Mechanism</keyword></keyword>
+    <keyword>Kinematic elements toolbar<keyword>Change Dyad Closure</keyword></keyword>
+    <keyword>Menu &gt; Add &gt; Mechanism Menu<keyword>Change Dyad Closure</keyword></keyword>
+  </keywords>
+  <body>
+    <header>
+      <para styleclass="Heading1">Change Dyad Closure</para>
+    </header>
+    <para styleclass="Heading2" style="page-break-before:always;">Change Dyad Closure / Change Configuration of Dyad&apos;s Assembly.</para>
+    <para styleclass="Heading4 Toggle_atocs_">Terminology</para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="9" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:110px;">
+          <para styleclass="VariableName-small" style="text-align:right;"> Dyad : </para>
+          <para styleclass="VariableName-small" style="text-align:right;">also known as Assur Group : </para>
+        </td>
+        <td style="width:503px;">
+          <para styleclass="Popup Box">A <text styleclass="VariableName-small">dyad</text> is an assembly of two <text styleclass="Popup Box-Elements">Parts</text> and three <text styleclass="VariableName-small">joints</text>.</para>
+          <para styleclass="Popup Box">There is one joint that joins the two <text styleclass="Popup Box-Elements">Parts</text> together.</para>
+          <para styleclass="Popup Box">The two other joints join the <text styleclass="Popup Box-Elements">Parts </text>to two other <text styleclass="Popup Box-Elements">Parts</text> that are <text styleclass="VariableName-small">kinematically-defined</text>.</para>
+          <para styleclass="Popup Box">The two <text styleclass="Popup Box-Elements">Parts</text> and three joints in a <text styleclass="VariableName-small">dyad</text> are <text styleclass="VariableName-small">kinematically-defined</text>.</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:110px;">
+          <para styleclass="VariableName-small" style="text-align:right;">Assur Groups : </para>
+        </td>
+        <td style="width:503px;">
+          <para styleclass="Popup Box">Another name for a <text styleclass="VariableName-small">dyad</text> </para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:110px;">
+          <para styleclass="VariableName-small" style="text-align:right;">Dyad Closures : </para>
+        </td>
+        <td style="width:503px;">
+          <para styleclass="Popup Box">The different ways you can assemble the two <text styleclass="Popup Box-Elements">Parts</text> of a <text styleclass="VariableName-small">dyad</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td colspan="2" style="width:503px;">
+          <para styleclass="Popup Box"><text styleclass="VariableName-small">Configuration of the Dyad&apos;s Assembly</text> is a different way to express <text styleclass="VariableName-small">Dyad Closure</text>. </para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:110px;">
+          <para styleclass="VariableName-small" style="text-align:right;">Types of Dyad : </para>
+        </td>
+        <td style="width:503px;">
+          <para styleclass="Popup Box"><text styleclass="VariableName-small">Planar Dyads</text>: <text styleclass="VariableName-small">R-R-R, R-R-P, R-P-R, R-P-P, P-R-P</text></para>
+          <para styleclass="Popup Box"><text styleclass="VariableName-small">Spatial Dyads</text>: <text styleclass="VariableName-small">S-S-R, S-S-P</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:110px;">
+          <para styleclass="VariableName-small" style="text-align:right;">R : </para>
+        </td>
+        <td style="width:503px;">
+          <para styleclass="VariableName-small">Revolute Joint = <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Command-AddPinJoint">Pin-Joint</link></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:110px;">
+          <para styleclass="VariableName-small" style="text-align:right;">P : </para>
+        </td>
+        <td style="width:503px;">
+          <para styleclass="VariableName-small">Prismatic Joint = <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Command-AddSlideJoint">Slide-Joint</link></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:110px;">
+          <para styleclass="VariableName-small" style="text-align:right;">S : </para>
+        </td>
+        <td style="width:503px;">
+          <para styleclass="VariableName-small">Spherical Joint = <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Command-AddBallJoint">Ball-Joint</link></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td colspan="2" style="width:450px;">
+          <para styleclass="SeeAlso">See more: <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-Dyad">Dyads</link></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading3_atocs_">Change Dyad Closure</para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="2" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:240px;">
+          <para styleclass="Image Caption"><image src="MD-GA-RRR-Closure-01.ipp" scale="-99.90%" figurelistinclude="0"><title>RRR Dyad - Closure 1</title><caption>RRR Dyad
+Closure 1</caption></image></para>
+          <para styleclass="Normal"><image src="MD-CM-ChangeDyadClosure-1.ipp" imagestyleclass="Default" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"><caption>Command-Manager: Change Dyad Closure</caption></image></para>
+          <para styleclass="Normal"><image src="MD-GA-RRR-Closure-02.ipp" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"><title>RRR Dyad - Closure 2</title><caption>RRR Dyad
+Closure 2</caption></image></para>
+        </td>
+        <td>
+          <list id="0" type="ol" listtype="decimal" formatstring="STEP %0:s: " format-charset="DEFAULT_CHARSET" levelreset="false" legalstyle="false" startfrom="1" styleclass="HowTo STEP" style="font-family:'Segoe UI Semibold'; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo STEP">Start the Change Dyad Closure command</li>
+          </list>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="2" style="width:100%;">
+            <tr style="vertical-align:top">
+              <td style="vertical-align:bottom; width:39px;">
+                <para styleclass="VariableName-IT" style="text-align:center;"><image src="MD-Icon-ChangeDyadClosure.png" scale="100.00%" figurelistinclude="0"><title>Change Dyad Closure icon</title></image></para>
+              </td>
+              <td>
+                <list id="1" type="ol" listtype="decimal" formatstring="%0:s." format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Body Table" style="font-family:'Segoe UI Semibold'; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="Body Table"><text styleclass="Interface">Mechanism-Editor:</text><text styleclass="Body Text"> </text><text styleclass="T_Menu">Add menu &gt; Mechanism menu  &gt; Change Dyad Closure</text><text styleclass="VariableName"> </text></li>
+                </list>
+                <para styleclass="Body Text"><text style="font-family:'Segoe UI Semibold'; font-size:11pt; font-weight:bold; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">OR</text></para>
+                <list id="2" type="ol" listtype="decimal" formatstring="%0:s." format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="B Bullets" style="font-family:'Segoe UI Semibold'; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="B Bullets"><text styleclass="Interface">Mechanism-Editor: </text><text styleclass="T_Menu">Kinematic elements toolbar &gt; Change-Dyad Closure</text><text styleclass="VariableName"> </text></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Body Text HowTo">The <text styleclass="Interface">Command-Manager</text> indicates you must select a <text styleclass="Element">Part</text> in the <text styleclass="VariableName">Dyad</text>.</para>
+          <list id="3" type="ol" listtype="decimal" formatstring="STEP %0:s: " format-charset="DEFAULT_CHARSET" levelreset="false" legalstyle="false" startfrom="2" styleclass="HowTo STEP" style="font-family:'Segoe UI Semibold'; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo STEP"><text styleclass="VariableName">Select one Part in the Dyad</text></li>
+          </list>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <list id="4" type="ol" listtype="decimal" formatstring="%0:s." format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="2" styleclass="Bullets" style="font-family:'Segoe UI Semibold'; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="Bullets"><text style="font-weight:normal;">Click the</text><text style="font-weight:normal; font-style:normal;"> </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-Part-Outline" styleclass="Interface">Part-Outline</link><text style="font-weight:normal; font-style:normal;"> of a </text><text styleclass="Element">Part </text>in the <text styleclass="VariableName">Dyad</text> whose assembly-configuration (Dyad-Closure) you want to change.<text styleclass="VariableName"> </text></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+          <list id="5" type="ol" listtype="decimal" formatstring="STEP %0:s: " format-charset="DEFAULT_CHARSET" levelreset="false" legalstyle="false" startfrom="3" styleclass="HowTo STEP" style="font-family:'Segoe UI Semibold'; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo STEP"><text styleclass="VariableName">Complete the Command </text></li>
+          </list>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1" style="width:100%;">
+            <tr style="vertical-align:top">
+              <td>
+                <list id="6" type="ol" listtype="decimal" formatstring="%0:s." format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="3" styleclass="Body Table" style="font-family:'Segoe UI Semibold'; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="Body Table"><text styleclass="HowTo STEP">Click </text><image src="OK-tiny-11-15.png" scale="100.00%" styleclass="HowTo STEP" figurelistinclude="0"></image><text styleclass="HowTo STEP"> in the </text><text styleclass="Interface">Command-Manager</text><text styleclass="VariableName"> </text></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Body Text HowTo">The configuration of the assembly (Dyad Closure) should now be different. </para>
+          <para styleclass="Body Text">&lt;&lt;&lt; To the left, compare the bottom image with the top image.</para>
+          <list id="5" type="ol" listtype="decimal" formatstring="STEP %0:s: " format-charset="DEFAULT_CHARSET" levelreset="false" legalstyle="false" startfrom="3" styleclass="HowTo STEP" style="font-family:'Segoe UI Semibold'; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo STEP"><text styleclass="VariableName">Do again, if needed </text></li>
+          </list>
+          <para styleclass="Body Text HowTo"></para>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1" style="width:100%;">
+            <tr style="vertical-align:top">
+              <td>
+                <list id="7" type="ol" listtype="decimal" formatstring="%0:s." format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="4" styleclass="Bullets" style="font-family:'Segoe UI Semibold'; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="Bullets">If necessary, do <text styleclass="VariableName">1 to 3</text> again and again to find the configuration of the assembly you want to apply to your design<text styleclass="VariableName">. </text></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td colspan="2">
+          <para styleclass="VariableName">Top-Tip:</para>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1" style="width:100%;">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Body Text">When there are many <text styleclass="VariableName">Dyads</text> in the model it is sometime not easy to see which <text styleclass="VariableName">Dyad</text> whose closure you need to change.</para>
+                <list id="8" type="ol" listtype="decimal" formatstring="%0:s." format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Numbered" style="font-family:'Segoe UI Semibold'; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="HowTo Numbered"><text styleclass="Interface2">Kinematics-Tree</text><text styleclass="HowTo Bulleted" style="font-style:normal;">: Click to Expand each </text><text styleclass="VariableName">Kinematic-Chain</text><text styleclass="HowTo Bulleted" style="font-style:normal;"> in the </text><text styleclass="Interface" style="font-style:normal;">Kinematics-Tree</text><text styleclass="VariableName" style="font-style:normal;"> </text></li>
+                  <li styleclass="HowTo Numbered"><text styleclass="Interface2">Kinematics-Tree</text><text style="font-style:normal;">: Click each</text> <text styleclass="VariableName">Dyad</text></li>
+                </list>
+                <para styleclass="Body Text">When you click to explore each dyad in the <text styleclass="Interface2">Kinematics-Tree</text>, the five elements in the Dyad (<text styleclass="VariableName">2 </text><text styleclass="Element">Parts</text><text styleclass="VariableName"> + 3 </text><text styleclass="Element">Joints</text>) become <text styleclass="VariableName" style="color:#ff0000;">red</text> in the graphics-area.</para>
+              </td>
+            </tr>
+          </table></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Body Text"><anchor id="DyadClosure" styleclass="Heading4 Toggle_atocs_2"><keywords><keyword>4 x Assembly Configurations of an RRP Dyad</keyword><keyword>4 x Closures of RRP dyad</keyword></keywords></anchor><text styleclass="Heading4 Toggle_atocs_">Assembly-Configurations of the RRP Dyad</text></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="4" colcount="1">
+      <tr style="vertical-align:top">
+        <td style="border-bottom:none;">
+          <para styleclass="Body Text"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="VariableName-IT"><text styleclass="Body Text">The joints in the </text><text styleclass="VariableName">R-R-P</text><text styleclass="Body Text"> Dyad are: </text><text styleclass="VariableName">Revolute – Revolute – Prismatic.</text></para>
+                <para styleclass="VariableName-IT"><text styleclass="Body Text">In </text><text styleclass="VariableName">MechDesigner</text><text styleclass="Body Text">, the equal joint names are: </text><text styleclass="VariableName">Pin-Joint – Pin-Joint</text><text styleclass="Body Text"> </text><text styleclass="VariableName">–</text><text styleclass="Body Text"> </text><text styleclass="VariableName">Slide-Joint</text><text styleclass="Body Text">.</text></para>
+                <para styleclass="Body Text">There are 4 possible assembly configurations (Dyad Closures).</para>
+              </td>
+            </tr>
+          </table></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="border-top:none;">
+          <para styleclass="VariableName-IT"><text styleclass="Body Text">The image below shows an </text><text style="font-style:normal;">Offset-Slider-Crank</text><text styleclass="Body Text"> mechanism.</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="background-color:#ffffff;">
+          <para styleclass="Normal" style="page-break-inside:avoid;"><image src="MD-RRP-4Closures-schematic.ipp" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"><caption>4 x Assembly Configurations of an Offset-Crank-Slider</caption></image></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Text"><text styleclass="Element">Part</text><image src="Red-14-1b.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Body Text HowTo"> is the </text><text styleclass="VariableName">Crank</text> - to illustrate the 4 Dyad closures, it does NOT move.</para>
+          <para styleclass="Body Text"><text styleclass="VariableName">Dyad</text>: The two <text styleclass="Element">Parts</text> in the <text styleclass="VariableName">R-R-P dyad</text> are <text styleclass="Element">Parts</text> <image src="Red-14-2.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><image src="Red-14-3.gif" scale="100.00%" figurelistinclude="0"></image>. </para>
+          <para styleclass="Body Text">To imagine the four assembly-configurations, do not add the <text styleclass="Element">Pin-Joint</text><text styleclass="Interface2"> (R2)</text> between <text styleclass="Element">Part</text><image src="Red-14-2.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image>  and <text styleclass="Element">Part</text><image src="Red-14-3.gif" scale="100.00%" styleclass="Body Text HowTo" figurelistinclude="0"></image>.</para>
+          <para styleclass="Body Text HowTo"><text styleclass="Element">Part</text><image src="Red-14-2.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image> can only rotate around the <text styleclass="Element">Pin-Joint</text>, <text styleclass="Interface2">R1</text>, at the end of the Crank. </para>
+          <para styleclass="VariableName-indent"><text styleclass="Body Text HowTo">Therefore, </text><text styleclass="Element">Pin-Joint</text> R2<text styleclass="Body Text HowTo"> can </text><text styleclass="VariableName" style="color:#ff0000;">ONLY</text><text styleclass="Body Text HowTo"> be around the </text><text style="color:#ff0000;">red circle</text> at the end of <text styleclass="Element">Part</text><image src="Red-14-2.gif" scale="100.00%" figurelistinclude="0"></image>.</para>
+          <para styleclass="Body Text HowTo"><text styleclass="Element">Part</text><image src="Red-14-3.gif" scale="100.00%" figurelistinclude="0"></image> can only slide along the <text styleclass="Element">Slide-Joint</text><text styleclass="Body Text">, </text><text styleclass="Interface2">P1</text><text styleclass="Body Text">, along </text><text styleclass="Element">Line</text><image src="Red-14-4.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Image Caption">.</text></para>
+          <para styleclass="Body Text"><text styleclass="Interface2">Important</text>: The <text styleclass="Element">Point</text> in <text styleclass="Element">Part</text><image src="Red-14-3.gif" scale="100.00%" styleclass="Body Text HowTo" figurelistinclude="0"></image> for the <text styleclass="Element">Pin-Joint</text> (<text styleclass="VariableName">R2</text>) is <text styleclass="VariableName" style="color:#ff0000;">offset</text> from the <text styleclass="Element">Slide-Joint</text> <text styleclass="Body Text HowTo">and </text><text styleclass="VariableName" style="color:#ff0000;">not on</text><text styleclass="Body Text HowTo"> the </text><text styleclass="Element">Slide-Joint</text><text styleclass="Body Text HowTo">. </text></para>
+          <para styleclass="VariableName-indent"><text styleclass="Body Text HowTo">Therefore, </text><text styleclass="Element">Pin-Joint</text><text styleclass="VariableName"> </text>R2<text styleclass="Body Text HowTo"> can, also, </text><text styleclass="VariableName" style="color:#ff0000;">ONLY</text><text styleclass="Body Text HowTo"> be along the </text><text styleclass="VariableName-IT" style="font-style:normal; color:#ff0000;">red lines</text><text styleclass="Body Text"> </text><text styleclass="Body Text HowTo">that are offset from the </text><text styleclass="Element">Slide-Joint</text><text styleclass="Body Text">.</text></para>
+          <para styleclass="Body Text">The <text styleclass="VariableName-IT" style="font-style:normal; color:#ff0000;">red circle</text> intersects the <text styleclass="VariableName-IT" style="font-style:normal; color:#ff0000;">red lines</text>. at 4 places.</para>
+          <para styleclass="Body Text HowTo"><text styleclass="Body Text">Therefore, the </text><text styleclass="Element">Pin-Joint</text> <text styleclass="VariableName">R2</text><text styleclass="VariableName" style="font-size:10pt; vertical-align:baseline;"> </text><text styleclass="Body Text">can </text><text styleclass="VariableName" style="color:#ff0000;">ONLY</text><text styleclass="Body Text"> be at 4 places. </text></para>
+          <para styleclass="Body Text HowTo"><text styleclass="Body Text">Therefore, the </text><text styleclass="VariableName">Offset Slider-Crank</text><text styleclass="Body Text"> has 4 possible assembly configurations (Dyad Closures).</text></para>
+        </td>
+      </tr>
+    </table></para>
+  </body>
+</topic>

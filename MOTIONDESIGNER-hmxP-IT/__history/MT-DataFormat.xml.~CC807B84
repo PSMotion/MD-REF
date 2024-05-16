@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../helpproject.xsl" ?>
+<topic class="Popup" template="Default" status="Under Construction" modified="2022-03-06T18:30:56.347Z" lasteditedby="Adam" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../helpproject.xsd">
+  <title translate="true">Data Format</title>
+  <keywords>
+    <keyword translate="true">Motion<keyword translate="true">Data Format</keyword></keyword>
+  </keywords>
+  <body>
+    <para styleclass="" style="text-align:left; text-indent:0px; margin-top:0px; margin-right:0px; margin-bottom:0px; margin-left:0px; line-height:1.00; background-color:transparent; white-space:normal; page-break-inside:auto; page-break-after:auto; border:none; tabstops:none;"><table styleclass="MotionPupup" rowcount="1" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="VariableName-small"><text styleclass="VariableName-small" translate="true">General</text></para>
+          <para styleclass="" style="text-align:left; text-indent:0px; margin-top:0px; margin-right:0px; margin-bottom:0px; margin-left:0px; line-height:1.00; background-color:transparent; white-space:normal; page-break-inside:auto; page-break-after:auto; border:none; tabstops:none;"><text style="font-family:Arial; font-size:10pt; color:#000000;" translate="true">The value is converted to the shortest possible decimal string using fixed or scientific format. </text><text style="font-family:Arial; font-size:10pt; text-decoration:underline; color:#000000;" translate="true">Trailing zeros are removed, </text><text style="font-family:Arial; font-size:10pt; color:#000000;" translate="true">a decimal point appears only if necessary.</text></para>
+          <para styleclass="VariableName-small"><text styleclass="VariableName-small" translate="true">Scientific (Exponent)</text></para>
+          <para styleclass="" style="text-align:left; text-indent:0px; margin-top:0px; margin-right:0px; margin-bottom:0px; margin-left:0px; line-height:1.00; background-color:transparent; white-space:normal; page-break-inside:auto; page-break-after:auto; border:none; tabstops:none;"><text style="font-family:Arial; font-size:10pt; color:#000000;" translate="true">The value is converted to a string of the form &apos;-d.ddd...E+dddd&apos;. The resulting string starts with a minus sign if the number is negative, and one digit always precedes the decimal point. The total number of digits before the exponent in the resulting string (including the one before the decimal point) is given by the Precision parameter. The &apos;E&apos; exponent character in the resulting string is always followed by a plus or minus sign and up to four digits. The Digits parameter specifies the minimum number of digits in the exponent (between 0 and 4).</text></para>
+          <para styleclass="VariableName-small"><text styleclass="VariableName-small" translate="true">Fixed</text></para>
+          <para styleclass="" style="text-align:left; text-indent:0px; margin-top:0px; margin-right:0px; margin-bottom:0px; margin-left:0px; line-height:1.00; background-color:transparent; white-space:normal; page-break-inside:auto; page-break-after:auto; border:none; tabstops:none;"><text style="font-family:Arial; font-size:10pt; color:#000000;" translate="true">The value is converted to a string of the form &apos;-ddd.ddd...&apos;. The resulting string starts with a minus sign if the number is negative, and at least one digit always precedes the decimal point. The number of digits after the decimal point is given by the Digits parameter--it must be between 0 and 18. If the number of digits to the left of the decimal point is more than the specified precision, the resulting value will use scientific format.</text></para>
+          <para styleclass="VariableName-small"><text styleclass="VariableName-small" translate="true">Number</text><text style="font-family:Arial; font-size:10pt; font-weight:bold; color:#000000;" translate="true">&#32;</text></para>
+          <para styleclass="" style="text-align:left; text-indent:0px; margin-top:0px; margin-right:0px; margin-bottom:0px; margin-left:0px; line-height:1.00; background-color:transparent; white-space:normal; page-break-inside:auto; page-break-after:auto; border:none; tabstops:none;"><text style="font-family:Arial; font-size:10pt; color:#000000;" translate="true">The value is converted to a string of the form &apos;-d,ddd,ddd.ddd...&apos;. The Number format corresponds to the ffFixed format, except that the resulting string contains thousand separators. </text></para>
+        </td>
+      </tr>
+    </table></para>
+  </body>
+</topic>

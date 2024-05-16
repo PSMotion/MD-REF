@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" status="Under Construction" modified="2022-03-21T17:11:43.993Z" lasteditedby="Adam" version="2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title>Dialog: Configure Power Source</title>
+  <keywords>
+    <keyword>Configure Power Source dialog</keyword>
+    <keyword>Dialog<keyword>Configure Power Source</keyword></keyword>
+    <keyword>Force Vector - Colors</keyword>
+    <keyword>Force Vectors - show/hide</keyword>
+    <keyword>Motor Elements</keyword>
+  </keywords>
+  <body>
+    <header>
+      <para styleclass="Heading1">Dialog: Configure Power Source</para>
+    </header>
+    <para styleclass="Heading2">Configure Power Source</para>
+    <para styleclass="Body Text HowTo">Use <text styleclass="VariableName">Configure Power Source</text> to make sure each <text styleclass="Element">Motion-Dimension</text> (and <text styleclass="VariableName">degree-of-freedom)</text> in each <text styleclass="VariableName">Kinematic-Chain</text>, in each <text styleclass="Interface">Mechanism-Editor</text>, receives its <text styleclass="VariableName">Power</text><text styleclass="Body Text"> from the correct element(s). </text></para>
+    <para styleclass="Body Text HowTo">When we <text styleclass="VariableName">Configure the Power-Source</text> correctly, the <text styleclass="VariableName">Load Inertia</text> is referred to the correct element and the <text styleclass="VariableName">Application-Load</text> is calculated correctly.</para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="VariableName">For example: </para>
+    <para styleclass="Body Table">We design and specify the motion at a sliding <text styleclass="VariableName">Tool-Part</text>, with a <text styleclass="Element">Motion-Dimension</text> and <text styleclass="Interface">Slider</text>. We add a mechanism (<text styleclass="VariableName">RRR dyad</text>). One of the two <text styleclass="Element">Parts</text> in the <text styleclass="VariableName">RRR dyad</text> is a Follower-Part, with a Roller. </para>
+    <para styleclass="Body Table">The actual Power-Source to drive the Follower-Roller is a <text styleclass="Element">2D-Cam</text>. </para>
+    <para styleclass="Body Table">However, the default Power-Source in the model is the <text styleclass="Element">Motion-Dimension</text><text styleclass="Body Text"> at the </text><text styleclass="Interface">Slider</text><text styleclass="Element">,</text> which is the <text styleclass="VariableName">Tool-Part</text>. </para>
+    <para styleclass="Body Table">Thus, you must do <text styleclass="T_Menu">Configure-Power-Source</text> to select the <text styleclass="Element-Header">2D-Cam</text> as the Power-Source.</para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="Body Text HowTo"><text styleclass="VariableName">Power-Source</text> elements can be: </para>
+    <list id="0" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+      <li styleclass="HowTo Bulleted"><text styleclass="Element">Pin-Joint</text> - we calculate the <text styleclass="VariableName">Application-Load</text> and we can also size a Motor and Gearbox - <text styleclass="SeeAlso">see </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-ServoGearboxTorqueSpeed" styleclass="SeeAlso">Gearbox and Servo-Sizing</link>.</li>
+      <li styleclass="HowTo Bulleted"><text styleclass="Element">Slide-Joint</text> - we calculate the <text styleclass="VariableName">Application-Load</text> for a Linear-Motor. &#160;</li>
+      <li styleclass="HowTo Bulleted"><text styleclass="Element">2D-Cam</text><text styleclass="Body Text"> - we calculate the </text><text styleclass="VariableName">Contact-Force</text><text styleclass="Body Text">, the Cam-Life, and the Roller-Life - </text><text styleclass="SeeAlso">see </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-2DCam" styleclass="SeeAlso">2D-Cam dialog-box</link></li>
+      <li styleclass="HowTo Bulleted"><text styleclass="Element">Conjugate Cams</text><text styleclass="Body Text"> - we calculate the </text><text styleclass="VariableName">Contact-Force</text><text styleclass="Body Text"> against the </text><text styleclass="VariableName">Conjugate-Cams</text><text styleclass="Body Text">, the Cam-Life, and the Roller-Life. </text><text styleclass="SeeAlso">see </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-2DCam" styleclass="SeeAlso">2D-Cam dialog-box</link></li>
+      <li styleclass="HowTo Bulleted"><text styleclass="Element">Springs</text><text styleclass="Body Text"> - </text>we calculate the <text styleclass="VariableName">Application-Load</text> for a Linear-Motor.</li>
+    </list>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="Heading3_atocs_">Open Configure Power Source dialog-box</para>
+    <para styleclass="Body Text HowTo"><table styleclass="Standard" rowcount="2" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Normal"><image src="MD-KT-ConfigurePowerSource.png" scale="-99.90%" styleclass="Image Caption" style="color:#000000;" figurelistinclude="0"><caption><![CDATA[Configure-Power-Source in the Kinematics-Tree]]></caption></image></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="VariableName-indent">Kinematics-Tree:</para>
+          <para styleclass="Body Text HowTo"><table styleclass="PopupTable2" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td style="border-top:none; border-right:none; border-bottom:none;">
+                <list id="1" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="B Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="B Bullets"><text styleclass="Interface">Kinematics-Tree: </text><text style="font-style:normal;">Click</text><text style="font-style:italic;">&#32;</text>a <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-Kinematically-Defined-Chain">kinematically-defined</link>&#32;<text styleclass="VariableName">Kinematic-Chain</text><image src="Red-14-1.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="VariableName">&#32;</text></li>
+                </list>
+                <para styleclass="B Bullets"><text styleclass="Body Text">Make sure it is selected - the </text><text styleclass="Body Text" style="color:#ffffff; background-color:#0080ff;"> Kinematic-Chain </text><text styleclass="Body Text"> should be </text><text styleclass="Body Text" style="color:#ffffff; background-color:#0080ff;">Blue</text><text styleclass="Body Text">.</text></para>
+                <list id="1" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="B Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="B Bullets"><text styleclass="Interface">Kinematics-Tree: </text><text styleclass="HowTo Bulleted" style="font-style:normal;">Right-Click</text><text styleclass="HowTo Bulleted"> the same </text><text styleclass="VariableName" style="color:#ffffff; background-color:#0080ff;">Kinematic-Chain</text><text styleclass="VariableName"> &#160;</text></li>
+                  <li styleclass="B Bullets"><text styleclass="Interface">Kinematics-Tree: </text><text styleclass="HowTo Bulleted" style="font-style:normal;">Click</text><text styleclass="HowTo Bulleted">&#32;</text><text styleclass="VariableName-IT">Configure Power Source</text><image src="Red-14-2.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="HowTo Bulleted"> in the contextual-menu</text></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Body Text">The <text styleclass="Interface">Configure Power Source dialog-box</text> is now open.</para>
+          <para styleclass="VariableName">- OR -</para>
+          <para styleclass="VariableName-indent">Forces toolbar:</para>
+          <para styleclass="Body Text HowTo"><table styleclass="PopupTable2" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td style="border-top:none; border-right:none; border-bottom:none;">
+                <list id="2" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="B Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="B Bullets"><text styleclass="Interface">Kinematics-Tree: </text><text style="font-style:normal;">Click</text><text style="font-style:italic;">&#32;</text>a <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-Kinematically-Defined-Chain">kinematically-defined</link>&#32;<text styleclass="VariableName">Kinematic-Chain</text><image src="Red-14-1.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></li>
+                  <li styleclass="B Bullets"><text styleclass="Interface">Mechanism-Editor: </text><text styleclass="VariableName">Click </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Forces-Configure-Power-Source" styleclass="VariableName">Force toolbar &gt; Configure Power Source</link><image src="Red-14-2.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="HowTo Bulleted">&#32;</text></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Body Text">The <text styleclass="Interface">Configure Power Source dialog-box</text> is now open.</para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="Heading3_atocs_"><anchor id="ConfigurePowerSource-R10"><keywords><keyword>Configure Power Source - R10</keyword></keywords></anchor>Configure Power Source</para>
+    <para styleclass="Body Text HowTo"><text style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">You must </text><text styleclass="VariableName">Configure Power Source</text><text style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;"> for each </text><text styleclass="VariableName">Kinematic-Chain.</text><text style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">&#32;</text></para>
+    <para styleclass="Body Text HowTo"><text style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">There are two tabs in the dialog-box:</text></para>
+    <para styleclass="Heading4 Toggle_atocs_2" style="text-indent:-36px; margin-left:60px;"><image src="tog_plus.gif" scale="100.00%" figurelistinclude="0"></image><tab /><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" src-collapsed="tog_plus.gif" src-expanded="tog_minus.gif"><caption><![CDATA[Power Source tab]]></caption></toggle></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Standard" rowcount="3" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Separator-Header">Motion Dimensions</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Normal"><image src="MD-Dialog-ConPowSource-PowSo.png" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Parameter-Header">Motion-Dimensions <text styleclass="Body Text">and</text> Motor Elements <text styleclass="VariableName">Box </text><image src="Red-14-1.gif" scale="100.00%" styleclass="VariableName" figurelistinclude="0"></image></para>
+          <para styleclass="Body Table"><text style="font-style:normal;">In box</text>&#32;<image src="Red-14-1.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image>, even if the<text style="font-style:normal;">&#32;</text><text styleclass="Parameter">Motor Element</text><text style="font-style:normal;"> to the left of a </text><text styleclass="Parameter">Motion-Dimension </text><text style="font-style:normal;">is correct, please do </text><text styleclass="VariableName">1</text><text style="font-style:normal;"> and </text><text styleclass="VariableName">2</text></para>
+          <para styleclass="Body Text HowTo">Do <text styleclass="VariableName">1 </text><text styleclass="Body Text">and</text><text styleclass="VariableName"> 2</text> for <text styleclass="Parameter-Header" style="color:#ff0000;">all</text>&#32;<text styleclass="Parameter-Header">Motion-Dimensions</text> in <text styleclass="Body Text" style="font-style:normal;">box</text><text styleclass="Body Text">&#32;</text><image src="Red-14-1.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Image Caption">:</text></para>
+          <para styleclass="Body Text HowTo"><table styleclass="PopupTable2" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td style="border-top:none; border-right:none; border-bottom:none;">
+                <list id="3" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="Bullets">In box <image src="Red-14-1.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image> - Click a <text styleclass="Parameter">Motion-Dimension - Rocker</text><text styleclass="Body Text"> or </text><text styleclass="Parameter">Slider - </text>to make it <text styleclass="VariableName">active</text></li>
+                </list>
+                <list id="4" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="2" styleclass="Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="Bullets">In box <image src="Red-14-2.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Image Caption"> - </text><text styleclass="HowTo Numbered">Click a </text><text styleclass="Parameter">Motor Element</text><text styleclass="VariableName">&#32;</text></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Body Table">The <text styleclass="Parameter-Header">Motor Element</text>&#32;<text styleclass="Body Text">in box </text><image src="Red-14-2.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Image Caption">&#32;</text>is now the <text styleclass="Interface2">Power-Source</text> for the <text styleclass="VariableName">active</text>&#32;<text styleclass="Parameter-Header">Motion-Dimension</text><text styleclass="Body Text"> that is in box </text><image src="Red-14-1.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Body Text"> .</text></para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="SeeAlso">See also : <image src="MD-Globe-www.png" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image>&#32;<link displaytype="text" defaultstyle="true" type="weblink" href="http://mechdesigner.support/index.htm?md-using-forces.htm" target="_blank" styleclass="Body Text">Tutorial 13 - Forces: introduction</link><text styleclass="Body Text">.</text></para>
+          <para styleclass="SeeAlso">See also : <text styleclass="T_Menu">Machine elements toolbar &gt; </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Command-ConjugateCam-FB" styleclass="T_Menu">Add Conjugate-Cam FB</link><text styleclass="Body Text HowTo" style="font-style:normal;">. </text></para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading4 Toggle_atocs_2" style="text-indent:-36px; margin-left:60px;"><anchor id="ConfigurePowerSource-ColorR9"><keywords><keyword>Configure Power Source<keyword>Colors for Vectors</keyword></keyword></keywords></anchor><image src="btn_addkeyword.bmp" scale="100.00%" figurelistinclude="0"></image><tab /><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" src-collapsed="btn_addkeyword.bmp" src-expanded="btn_delkeyword.bmp" src-print="none"><caption><![CDATA[Display Colors tab]]></caption></toggle></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Standard" rowcount="2" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Normal"><image src="MD-Dialog-ConPowSource-Colors.png" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Table">When you <text styleclass="T_Menu">Display Force/Torque Vectors - See Display Force Vectors</text></para>
+          <para styleclass="Body Table">For <text styleclass="VariableName">EACH</text>&#32;<text styleclass="Element">Part</text><text styleclass="VariableName">:</text></para>
+          <para styleclass="Body Table"><table styleclass="PopupTable2" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td style="border-top:none; border-right:none; border-bottom:none;">
+                <list id="5" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Body Table" style="font-family:Symbol; font-size:10pt; color:#000000;">
+                  <li styleclass="Body Table">Change the color of the <text styleclass="Interface">Part-Outline</text> and <text styleclass="Interface">Force-Vector</text></li>
+                  <li styleclass="Body Table"><text styleclass="Bullets">Display the </text><text styleclass="Interface">Force-Vector</text><text styleclass="Bullets">:</text></li>
+                </list>
+                <para styleclass="HowTo Bulleted"><text styleclass="VariableName-indent">a</text> - at the Joint</para>
+                <para styleclass="HowTo Bulleted"><text styleclass="VariableName-indent">b</text> - as a Polygon of Forces</para>
+                <para styleclass="HowTo Bulleted"><text styleclass="VariableName-IT">a and b</text></para>
+                <para styleclass="HowTo Bulleted"><text styleclass="VariableName-IT">not a</text> and <text styleclass="VariableName-IT">not b</text></para>
+                <list id="6" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Body Table" style="font-family:Symbol; font-size:10pt; color:#000000;">
+                  <li styleclass="Body Table">Show or Hide the <text styleclass="Interface">Force-Vector</text></li>
+                </list>
+                <para styleclass="VariableName">These options do not help me very much!</para>
+              </td>
+            </tr>
+          </table></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Body Text HowTo" style="page-break-before:always;"></para>
+  </body>
+</topic>

@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" status="Under Construction" lasteditedby="Adam" version="2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title>How do I add a Sketch-Loop?</title>
+  <keywords>
+    <keyword>How to Video:<keyword>Add a sketch-loop</keyword><keyword>Merge Points</keyword></keyword>
+  </keywords>
+  <body>
+    <header>
+      <para styleclass="Heading1">How do I add a Sketch-Loop?</para>
+    </header>
+    <para styleclass="Heading3_atocs_">Edit a sketch-path or sketch-loop</para>
+    <para styleclass="Body Text"><text style="font-style:italic;">A </text><text styleclass="Element">Sketch-Loop</text> is a sketch that does not have breaks and the <text styleclass="Element">Points</text> that join the sketch-elements are merged into one <text styleclass="Element">Point</text>.</para>
+    <para styleclass="Body Text HowTo">Generally, do not make a sketch-loop unless you intend to add to it a <text styleclass="Element">Profile/Extrusion</text> (Solid) or a <text styleclass="Element">Motion-Path FB</text>.</para>
+    <para styleclass="Heading4 Toggle_atocs_">*About Merge-Points</para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="1" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Text">Each <text styleclass="Element">Line</text> or <text styleclass="Element">Arc</text> you add to the <text styleclass="Interface">graphic-area</text> has a <text styleclass="Element">Point</text> at each end.</para>
+          <para styleclass="Body Text HowTo">In the <text styleclass="Interface">Part-Editor</text>, you have two options when you want the ends of two sketch-elements to move to the same position. You can:</para>
+          <list id="3" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#003300;">
+            <li styleclass="HowTo Bulleted">make the <text styleclass="Element">Points</text> coincident with <text styleclass="T_Menu">Constraints toolbar &gt; </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Geometry-Coincident" styleclass="T_Menu">Add Coincident</link></li>
+          </list>
+          <para styleclass="HowTo Bulleted">- or -</para>
+          <list id="3" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#003300;">
+            <li styleclass="HowTo Bulleted">merge the <text styleclass="Element">Points</text> with <text styleclass="T_Menu">Geometry toolbar &gt; </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Geometry-MergePoints" styleclass="T_Menu">Merge-Points</link>&#32;</li>
+          </list>
+          <para styleclass="HowTo Bulleted">In each case, the two <text styleclass="Element">Points</text> show in the <text styleclass="Interface">graphic-area</text> as one <text styleclass="Element">Point</text>. However:</para>
+          <list id="4" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted"><text styleclass="T_Menu">Add Coincident Constraint</text> does not remove a <text styleclass="Element">Point</text>. </li>
+            <li styleclass="HowTo Bulleted"><text styleclass="T_Menu">Add Merge-Points</text> removes one <text styleclass="Element">Point</text></li>
+          </list>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading4 Toggle_atocs_">Why Merge-Points?</para>
+    <para styleclass="Body Text HowTo">Use <text styleclass="Element">Merge-Points</text> when you want to make an open or closed sketch-path.</para>
+    <para styleclass="Body Text HowTo">You can use a sketch path for a <text styleclass="Element">Motion-Path FB</text></para>
+    <para styleclass="Body Text HowTo">You can use a closed sketch-path (sketch-loop) for a Profile element.</para>
+    <para styleclass="Heading4 Toggle_atocs_"><anchor id="HoverMerge"><keywords><keyword>How to ...<keyword>Merge Points for a Sketch-loop</keyword><keyword>Hover and Merge Points</keyword></keyword><keyword>Video...<keyword>Hover + Drag to merge points</keyword><keyword>Use the Merge-Points tool</keyword></keyword></keywords></anchor><image src="tog_plus.gif" scale="100.00%"></image><tab /><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" src-collapsed="tog_plus.gif" src-expanded="tog_minus.gif" src-print="none"><caption><![CDATA[Sketch-Loops with the Hover Technique and Merge-Points Tool]]></caption></toggle></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Standard" rowcount="1" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Text">There are two ways to merge two Points into one Point: </para>
+          <list id="5" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:10pt; color:#000000;">
+            <li styleclass="HowTo Bulleted">Dynamically, as you add the sketch-elements, with the <text styleclass="Interface">Hover Technique</text></li>
+            <li styleclass="HowTo Bulleted">Later, after you add the sketch-elements with <text styleclass="Element">Geometry toolbar &gt; Merge-Points</text>.</li>
+          </list>
+          <para styleclass="Body Text" style="margin-top:0px;"><table styleclass="Top Tip" rowcount="1" colcount="1" style="width:auto;">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Normal"><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Geometry-MergePoints" anchor="HoverTechnique">Video of Hover Technique</link></para>
+              </td>
+            </tr>
+          </table></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading4 Toggle_atocs_"><image src="tog_plus.gif" scale="100.00%"></image><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" src-collapsed="tog_plus.gif" src-expanded="tog_minus.gif" src-print="none"><caption><![CDATA[Why do Sketch-Loops fail]]></caption></toggle>?</para>
+    <para styleclass="Body Text HowTo"><table styleclass="Standard" rowcount="1" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Text CAP-ITALICS" style="text-align:left; text-indent:0px; margin-top:0px; margin-right:0px; margin-bottom:0px; margin-left:0px; line-height:1.00; background-color:transparent; white-space:normal; page-break-inside:auto; page-break-after:auto; border:none; tabstops:none;"><text styleclass="VariableName">Condition 1: </text><text styleclass="Interface"> Coincident Points, and not Merged</text></para>
+          <para styleclass="Body Text HowTo"><text styleclass="Element">Points</text><text styleclass="Body Text"> are not recognized as part of a sketch-loop when they are coincident.</text></para>
+          <para styleclass="Body Text HowTo"><text styleclass="Body Text">You must merge the </text><text styleclass="Element">Points</text><text styleclass="Body Text"> into one </text><text styleclass="Element">Point</text><text styleclass="Body Text"> where each </text><text styleclass="Element">Line</text><text styleclass="Body Text"> and </text><text styleclass="Element">Arc</text><text styleclass="Body Text"> join.</text></para>
+          <para styleclass="Body Text CAP-ITALICS" style="text-align:left; text-indent:0px; margin-top:0px; margin-right:0px; margin-bottom:0px; margin-left:0px; line-height:1.00; background-color:transparent; white-space:normal; page-break-inside:auto; page-break-after:auto; border:none; tabstops:none;"><text styleclass="VariableName">Condition 2: &#160;</text><text styleclass="Interface">Branches</text><text style="font-family:Arial; font-size:10pt; font-weight:normal; font-style:normal; text-decoration:none; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;"> &#160;</text></para>
+          <para styleclass="Body Text HowTo">You CANNOT merge <text style="text-decoration:underline;">three</text>&#32;<text styleclass="Element">Points</text> into one <text styleclass="Element">Point</text> - for example, the ends of three <text styleclass="Element">Lines</text> or Arcs - you have a <text styleclass="Interface">&apos;Branch-Point&apos;</text>. A <text styleclass="Interface">Branch-Point</text> is <text style="text-decoration:underline;">not</text> O.K.</para>
+          <para styleclass="Body Text HowTo">You CAN merge two <text styleclass="Element">Points</text>, then make a different <text styleclass="Element">Point</text> become <text styleclass="Interface">Coincident</text>. This is NOT a <text styleclass="Interface">Branch-Point</text>.</para>
+          <para styleclass="Body Text CAP-ITALICS" style="text-align:left; text-indent:0px; margin-top:0px; margin-right:0px; margin-bottom:0px; margin-left:0px; line-height:1.00; background-color:transparent; white-space:normal; page-break-inside:auto; page-break-after:auto; border:none; tabstops:none;"><text styleclass="VariableName">Condition 3:</text><text style="font-family:Arial; font-size:10pt; font-weight:normal; font-style:normal; text-decoration:none; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">&#32;</text><text styleclass="Interface">Figures=of-Eight</text></para>
+          <para styleclass="Body Text HowTo">A sketch-element can not cross another sketch-element in the same sketch-loop.</para>
+          <para styleclass="Body Text HowTo">A sketch-element cannot osculate, or touch, another sketch-element in the same sketch-loop.</para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading4 Toggle_atocs_"><image src="tog_plus.gif" scale="100.00%"></image><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" src-collapsed="tog_plus.gif" src-expanded="tog_minus.gif" src-print="none"><caption><![CDATA[Example sketch-loops]]></caption></toggle>&#32;</para>
+    <para styleclass="Normal"><table styleclass="Standard" rowcount="5" colcount="2">
+      <tr style="vertical-align:top">
+        <td colspan="2">
+          <para styleclass="Body Text" style="margin-top:0px;"><table styleclass="Top Tip" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Normal"><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-MergePoints-both">Video of Hover Technique and Merge-Points tool</link></para>
+              </td>
+            </tr>
+          </table></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:127px;">
+          <para styleclass="Normal"><image src="SketchLoop-circle.bmp" scale="100.00%"></image></para>
+        </td>
+        <td>
+          <para styleclass="Body Text CAP-ITALICS" style="text-align:left; text-indent:0px; margin-top:0px; margin-right:0px; margin-bottom:0px; margin-left:0px; line-height:1.00; background-color:transparent; white-space:normal; page-break-inside:auto; page-break-after:auto; border:none; tabstops:none;"><text style="font-family:Arial; font-size:10pt; font-weight:normal; font-style:normal; text-decoration:none; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">Circle</text></para>
+          <para styleclass="Body Text">The Circle is a sketch-loop. A Circle is frequently used for a Cam-Follower.</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:127px;">
+          <para styleclass="Normal"><image src="SketchLoop-lines.bmp" scale="100.00%" styleclass="Image Caption"></image></para>
+        </td>
+        <td>
+          <para styleclass="Body Text CAP-ITALICS" style="text-align:left; text-indent:0px; margin-top:0px; margin-right:0px; margin-bottom:0px; margin-left:0px; line-height:1.00; background-color:transparent; white-space:normal; page-break-inside:auto; page-break-after:auto; border:none; tabstops:none;"><text style="font-family:Arial; font-size:10pt; font-weight:normal; font-style:normal; text-decoration:none; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">Lines</text></para>
+          <para styleclass="Body Text">Lines joined, with Points merged.</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:127px;">
+          <para styleclass="Normal"><image src="SketchLoop-line-arcs.bmp" scale="100.00%" styleclass="Image Caption"></image></para>
+        </td>
+        <td>
+          <para styleclass="Body Text CAP-ITALICS" style="text-align:left; text-indent:0px; margin-top:0px; margin-right:0px; margin-bottom:0px; margin-left:0px; line-height:1.00; background-color:transparent; white-space:normal; page-break-inside:auto; page-break-after:auto; border:none; tabstops:none;"><text style="font-family:Arial; font-size:10pt; font-weight:normal; font-style:normal; text-decoration:none; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">Lines and Arcs</text></para>
+          <para styleclass="Body Text">Lines and Arcs, with Points merged.</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:127px;">
+          <para styleclass="Normal"><image src="SketchLoop-arcs-arcs.bmp" scale="100.00%" styleclass="Image Caption"></image></para>
+        </td>
+        <td>
+          <para styleclass="BodyText BI">Arcs and Arcs</para>
+          <para styleclass="Body Text">Arcs and Arcs, with Points merged.</para>
+          <para styleclass="Body Text"></para>
+        </td>
+      </tr>
+    </table></para>
+  </body>
+</topic>

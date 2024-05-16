@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" modified="2023-02-02T12:04:06.043Z" lasteditedby="Adam" version="2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title>Add Polynomial-Fit FB</title>
+  <keywords>
+    <keyword>Add<keyword>Function-Block: Polynomial Fit FB</keyword></keyword>
+    <keyword>Modeling FB menu<keyword>Polynomial Fit FB</keyword></keyword>
+  </keywords>
+  <body>
+    <header>
+      <para styleclass="Heading1">Add Polynomial-Fit FB</para>
+    </header>
+    <para styleclass="Heading3_atocs_" style="page-break-before:always;">Why use a Polynomial-Fit FB?</para>
+    <para styleclass="Body Text"><table styleclass="Default" rowcount="1" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Table">It is often the case that your &apos;motion-design&apos; is defined for a Tool/End-Effector. Then, you add more <text styleclass="Body Text">Parts</text> and join them to the Tool-Part to create a more complex kinematic-chain. A different <text styleclass="Body Text">Part</text> to the Tool-Part is driven by a servo-motor. This is normal inverse-kinematics.</para>
+          <para styleclass="Body Table">To get the motion for the servo-motor you can use a <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Command-FB-Measurement">Measurement FB</link>, and add a <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Command-FB-Graph">Graph FB</link>, and export the positional points for the servo-controller. </para>
+          <para styleclass="Body Table">While this is often satisfactory, it is often preferable to give the servo-controller a series of polynomials rather than a series of a data-points.</para>
+          <para styleclass="Body Table"><text styleclass="Body Text HowTo">The output from the </text><text styleclass="Element">Polynomial Fit FB</text><text styleclass="Body Text HowTo"> is the &apos;best-fit&apos; motion to the data at its input-connector, but defined as a series of 5</text><text styleclass="Body Text HowTo" style="font-size:7pt; vertical-align:super;">th</text><text styleclass="Body Text HowTo"> order Polynomials.</text></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="Heading3_atocs_">Add Polynomial-Fit FB</para>
+    <para styleclass="Normal"><table styleclass="Default" rowcount="3" colcount="3">
+      <tr style="vertical-align:top">
+        <td style="width:100px;">
+          <para styleclass="VariableName" style="text-align:right;">What to do : </para>
+          <para styleclass="VariableName" style="text-align:right;"></para>
+        </td>
+        <td colspan="2">
+          <list id="0" type="ol" listtype="decimal" formatstring="&#83;&#84;&#69;&#80;&#32;&#37;&#48;&#58;&#115;&#58;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo STEP" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo STEP">Add the Statistics FB to the graphic-area </li>
+          </list>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="2" colcount="2">
+            <tr style="vertical-align:top">
+              <td style="vertical-align:bottom; width:41px;">
+                <para styleclass="VariableName-IT" style="text-align:right;"><image src="MD-Icon-FB-PolyFit.png" scale="100.00%" style="font-style:normal;" figurelistinclude="0"><title>Add Polynomial-Fit FB</title></image></para>
+              </td>
+              <td>
+                <list id="1" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Body Table" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; color:#003300;">
+                  <li styleclass="Body Table"><text styleclass="Body Text">Click </text><text styleclass="T_Menu">Add menu &gt; Mechanism menu &#160;&gt; Add Polynomial-Fit FB </text></li>
+                </list>
+                <para styleclass="VariableName">OR</para>
+                <list id="2" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="B Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; color:#003300;">
+                  <li styleclass="B Bullets"><text styleclass="Body Text">Click</text><text styleclass="Interface">&#32;</text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Menu-FB-Modelling" styleclass="T_Menu">Modeling FB toolbar</link><text styleclass="T_Menu"> &gt; Add Polynomial-Fit FB </text></li>
+                </list>
+              </td>
+            </tr>
+            <tr style="vertical-align:top">
+              <td colspan="2" style="vertical-align:bottom;">
+                <para styleclass="B Bullets"><text styleclass="Body Text">Then:</text></para>
+                <list id="3" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="2" styleclass="B Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="B Bullets"><text styleclass="Body Text">Click the </text><text styleclass="Interface">graphic-area</text><text styleclass="VariableName">&#32;</text></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Body Text HowTo">The <text styleclass="Element">Polynomial-Fit FB</text> is now in the<text style="font-family:Arial; font-size:11pt; color:#000000;">&#32;</text><text styleclass="Interface">graphic-area</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td colspan="2" style="width:120px;">
+          <para styleclass="Image Caption"><image src="MD-GA-PolyFitFB.ipp" scale="100.00%" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <list id="4" type="ol" listtype="decimal" formatstring="&#83;&#84;&#69;&#80;&#32;&#37;&#48;&#58;&#115;&#58;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="2" styleclass="HowTo STEP" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo STEP">Connect a wire to its input-connector.</li>
+          </list>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <list id="5" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="B Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="B Bullets"><text style="font-style:normal;">Drag a wire from a different </text><text styleclass="Element">FB</text><text style="font-style:normal;"> to the input-connector of the </text><text styleclass="Element">Polynomial-Fit FB</text><text styleclass="VariableName">&#32;</text></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Body Text HowTo">A wire is now connected to the input-connector of the <text styleclass="Element">Polynomial-Fit FB</text>.</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td colspan="3">
+          <list id="6" type="ol" listtype="decimal" formatstring="&#83;&#84;&#69;&#80;&#32;&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="3" styleclass="HowTo STEP" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo STEP"><text styleclass="VariableName">Open the Polynomial-Fit FB: </text></li>
+          </list>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <list id="7" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="B Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="B Bullets"><text styleclass="Body Text">Double-click a </text><text styleclass="Element">Polynomial-Fit FB</text><text styleclass="Body Text"> in the </text><text styleclass="Interface">graphic-area</text><text styleclass="VariableName">&#32;</text></li>
+                </list>
+                <para styleclass="VariableName-IT">OR</para>
+                <list id="8" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="B Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="B Bullets"><text styleclass="SeeAlso">See </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-How-to-Open-a-Dialog-Box" styleclass="SeeAlso">How to Open a Dialog-Box</link><text styleclass="VariableName">&#32;</text></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Body Text HowTo">The <text styleclass="Element">Polynomial-Fit dialog-box</text> is now open.</para>
+          <list id="9" type="ol" listtype="decimal" formatstring="&#83;&#84;&#69;&#80;&#32;&#37;&#48;&#58;&#115;&#58;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="4" styleclass="HowTo STEP" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo STEP"><text styleclass="SeeAlso">See </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-FunctionBlock-PolynomialFit" styleclass="SeeAlso">Polynomial Fit dialog-box</link><text styleclass="VariableName">&#32;</text></li>
+          </list>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="Notes">Notes:</para>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Bullets">Wires<text styleclass="Body Text"> that connect </text><text styleclass="Element">Function-Blocks</text><text styleclass="Body Text"> have </text><text styleclass="VariableName">3 Data-Channels</text> (<text styleclass="Body Text">in most cases).</text></para>
+                <para styleclass="Bullets">The three(3) <text styleclass="VariableName">Data-Channels</text> are usually:</para>
+                <list id="10" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+                  <li styleclass="HowTo Bulleted">Position, Velocity, and Acceleration. </li>
+                  <li styleclass="HowTo Bulleted">Total Force, Force X, and Force Y.</li>
+                  <li styleclass="Body Text"><text styleclass="SeeAlso">See</text><text style="font-weight:normal;">&#32;</text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Function-Blocks-Schematic-DataValuesChannels" anchor="DataTypes" styleclass="VariableName">Data-Channels</link><text style="font-weight:normal;"> for more information.</text></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Normal"></para>
+  </body>
+</topic>

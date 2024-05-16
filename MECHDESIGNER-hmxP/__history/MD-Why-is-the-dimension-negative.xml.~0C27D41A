@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" status="Under Construction" modified="2022-11-21T17:10:08.590Z" lasteditedby="Adam" version="2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title>Why is the dimension &apos;negative&apos; in the Dimension dialog&apos;?</title>
+  <keywords>
+    <keyword>Dimension dialog<keyword>Negative dimension</keyword></keyword>
+    <keyword>Negative Dimensions - why?</keyword>
+    <keyword>Why is the dimension &apos;negative&apos;.</keyword>
+  </keywords>
+  <body>
+    <header>
+      <para styleclass="Heading1">Why is the dimension &apos;negative&apos; in the Dimension dialog&apos;?</para>
+    </header>
+    <para styleclass="Heading3_atocs_">Why is my dimension negative?</para>
+    <para styleclass="Heading4 Toggle_atocs_">Negative Dimensions.</para>
+    <para styleclass="Body Text HowTo"><text styleclass="Body Text">The </text><text style="font-weight:bold; font-style:italic; color:#ff0000;">–</text><text styleclass="Body Text">&#32;</text><text styleclass="VariableName">sign</text><text styleclass="Body Text"> appears if the coordinate of the dimension is </text><text styleclass="VariableName">negative</text><text styleclass="Body Text">. </text></para>
+    <para styleclass="Body Text HowTo"><text styleclass="Body Text">Generally, do not delete the </text><text style="font-weight:bold; font-style:italic; color:#ff0000;">–</text><text styleclass="Body Text">&#32;</text><text styleclass="VariableName">sign</text><text styleclass="Body Text">, but edit the dimension in the normal way.</text></para>
+    <para styleclass="Heading4 Toggle_atocs_">More Details</para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="2" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:240px;">
+          <para styleclass="Normal" style="text-align:right;"><image src="MD-Negative-DimA.png" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="Body Text"><text styleclass="Element-Header">Lines</text><text styleclass="Body Text HowTo"> have an X-Y coordinate-system. </text></para>
+          <list id="0" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:10pt; color:#000000;">
+            <li styleclass="HowTo Bulleted">The Origin of a Line is at its <text styleclass="Interface">start-Point</text></li>
+            <li styleclass="HowTo Bulleted">The +X-axis of a Line is from its <text styleclass="Interface">start-Point</text><text styleclass="Body Text">(1)</text> to its <text styleclass="Interface">end-Point</text><text styleclass="Body Text">(2)</text></li>
+            <li styleclass="HowTo Bulleted"><text styleclass="Body Text HowTo">The +Y-axis of a Line is at +90º from Line. </text></li>
+          </list>
+          <para styleclass="Element"><text styleclass="Body Text HowTo">When we add a dimension that is a perpendicular-distance from the </text>Line<text styleclass="Body Text HowTo">, the </text></para>
+          <list id="1" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted">dimension will be Positive if in <text styleclass="VariableName">+y-axis</text> half of the <text styleclass="Element">Line</text><text styleclass="Body Text"> (blue area in the image)</text></li>
+            <li styleclass="HowTo Bulleted">dimension will be Negative if in the <text styleclass="VariableName">–y-axis</text> of the <text styleclass="Element">Line </text><text styleclass="Body Text">(green area in the image)</text></li>
+          </list>
+          <para styleclass="Body Text">In the top image:</para>
+          <list id="2" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted">Dimensions from the <text styleclass="Element">Line</text><text styleclass="VariableName">(1 to 2)</text> to Points <text styleclass="VariableName">a </text>and <text styleclass="VariableName">b</text> will be <text styleclass="VariableName">positive</text></li>
+            <li styleclass="HowTo Bulleted"><text styleclass="Body Text HowTo">Dimensions from the </text><text styleclass="Element">Line</text><text styleclass="Body Text HowTo"> to Points </text><text styleclass="VariableName">c </text><text styleclass="Body Text HowTo">and </text><text styleclass="VariableName">d</text><text styleclass="Body Text HowTo"> will be </text><text styleclass="VariableName">negative</text></li>
+          </list>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:240px;">
+          <para styleclass="Normal" style="text-align:right;"><image src="MD-Negative-DimB.png" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="Body Text">The <text styleclass="Interface2">X-AXIS</text> and<text styleclass="Interface2"> Y-AXIS</text> of a <text styleclass="Element">Part</text> each has its own <text styleclass="Body Text HowTo">coordinate-system.</text></para>
+          <para styleclass="Body Text"><text styleclass="Body Text HowTo">The image to the left shows the Coordinate-System of the </text><text styleclass="Interface2">Y-AXIS</text></para>
+          <para styleclass="Body Text HowTo">The local +<text styleclass="VariableName">x-axis</text> of the <text styleclass="VariableName">Y-AXIS</text> of a <text styleclass="Element">Part</text> is along the <text styleclass="VariableName">Y-AXIS</text>!</para>
+          <para styleclass="Body Text HowTo">Thus, the local <text styleclass="VariableName">+y-axis</text> of the<text styleclass="Interface2"> Y-axis</text> of a <text styleclass="Element">Part</text> is at +90º from <text styleclass="Interface2">Y-axis </text></para>
+          <para styleclass="Body Text HowTo">Thus a dimension that is a perpendicular-distance from the Y-AXIS to a Point is in the green area will be negative ...</para>
+          <para styleclass="Body Text HowTo">... and this is in the <text styleclass="Interface2">+X axis</text> direction of the <text styleclass="Element">Part</text>!</para>
+        </td>
+      </tr>
+    </table></para>
+  </body>
+</topic>

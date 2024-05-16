@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" status="Under Construction" modified="2022-03-14T14:48:25.543Z" lasteditedby="Adam" version="2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title>Edit | Command History</title>
+  <keywords>
+    <keyword>Edit menu<keyword>Show Command History</keyword></keyword>
+  </keywords>
+  <body>
+    <header>
+      <para styleclass="Heading1">Edit | Command History</para>
+    </header>
+    <para styleclass="Heading3_atocs_">Command-History</para>
+    <para styleclass="" style="text-align:left; text-indent:0px; margin-top:0px; margin-right:0px; margin-bottom:0px; margin-left:0px; line-height:1.00; background-color:transparent; white-space:normal; page-break-inside:auto; page-break-after:auto; border:none; tabstops:none;"><table styleclass="Standard" rowcount="3" colcount="2">
+      <tr style="vertical-align:top">
+        <td colspan="2">
+          <para styleclass="Body Text"><table styleclass="PopupTable2" rowcount="2" colcount="2">
+            <tr style="vertical-align:top">
+              <td style="width:43px; border:none;">
+                <para styleclass="Normal" style="text-align:right;"><image src="MD-Icon-CommandHistory.png" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"><title>Command-History icon</title></image></para>
+              </td>
+              <td style="vertical-align:middle; border-top:none; border-right:none; border-bottom:none;">
+                <list id="0" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="B Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="B Bullets"><text styleclass="Body Text Howindent4bullets">Click </text><text styleclass="T_Menu">Edit toolbar &gt;Command History</text><text styleclass="VariableName">&#32;</text></li>
+                </list>
+              </td>
+            </tr>
+            <tr style="vertical-align:top">
+              <td style="width:43px; border:none;">
+                <para styleclass="VariableName-IT" style="text-align:center;">- or -</para>
+              </td>
+              <td style="vertical-align:middle; border-top:none; border-right:none; border-bottom:none;">
+                <list id="1" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="B Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="B Bullets"><text styleclass="Body Text">Click</text><text styleclass="SeeAlso">&#32;</text><text styleclass="VariableName">&#32;</text><text styleclass="T_Menu">Edit menu &gt; Command History</text><text styleclass="VariableName">&#32;</text></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:240px;">
+          <para styleclass="Normal"><image src="MD-Dialog-CommandHistory.png" scale="-99.90%" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="Body Text">When you open <text styleclass="Interface">Command History</text>, all of the commands you have completed will have a <image src="OK-tiny-11-15.png" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+          <para styleclass="Body Text"><text styleclass="Body Text HowTo">The most recent command is at the top of the list. </text></para>
+          <para styleclass="Body Text">Use <text styleclass="Interface">Command History</text> to undo and redo any number of commands.</para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="Notes">To Undo commands:</para>
+          <list id="2" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:&apos;Segoe UI&apos;; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted">Select a command lower in the <text styleclass="Interface">Command History</text>.</li>
+          </list>
+          <para styleclass="Body Text HowTo"><text styleclass="VariableName-IT">MechDesigner</text> asks permission before the model is undone to the command you select.</para>
+          <para styleclass="SeeAlso">See also: <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Edit-Undo">Undo</link></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:240px;">
+          <para styleclass="Image Caption"><image src="MD-Dialog-CommandHistory-Undone.png" scale="-99.90%" figurelistinclude="0"><caption><![CDATA[Command History dialog-box]]></caption></image></para>
+        </td>
+        <td>
+          <para styleclass="Notes">To Redo commands:</para>
+          <list id="3" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:&apos;Segoe UI&apos;; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted">Select a command higher than the undone commands</li>
+          </list>
+          <para styleclass="Body Text HowTo"><text styleclass="VariableName-IT">MechDesigner</text><text styleclass="Body Text"> rebuilds the commands you were undone.</text></para>
+          <para styleclass="Interface"><text styleclass="Notes" style="color:#ff0000;">Warning:</text><text styleclass="Notes">&#32;</text></para>
+          <para styleclass="Body Text HowTo">If you do a new command, it becomes the top command. You will not be able to <text styleclass="VariableName">redo</text> the <text styleclass="VariableName">undone</text> commands.</para>
+          <para styleclass="SeeAlso">See also: <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Edit-Redo">Redo</link></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="" style="text-align:left; text-indent:0px; margin-top:0px; margin-right:0px; margin-bottom:0px; margin-left:0px; line-height:1.00; background-color:transparent; white-space:normal; page-break-before:always; page-break-inside:auto; page-break-after:auto; border:none; tabstops:none;"></para>
+  </body>
+</topic>

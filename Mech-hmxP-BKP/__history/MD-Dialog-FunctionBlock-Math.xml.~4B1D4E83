@@ -1,0 +1,421 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" status="Under Construction" modified="2022-06-24T14:05:38.045+01:00" lasteditedby="Adam" version="2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title>Dialog: Function-Block: Math (with Calculator)</title>
+  <keywords>
+    <keyword>Dialog<keyword>Funtion-Block : Math</keyword></keyword>
+    <keyword>Math FB dialog</keyword>
+  </keywords>
+  <body>
+    <header>
+      <para styleclass="Heading1">Dialog: Function-Block: Math (with Calculator)</para>
+    </header>
+    <para styleclass="Heading2" style="page-break-before:always;">Math FB (with Calculator)</para>
+    <para styleclass="SeeAlso">See <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Command-FB-Maths">Add Math FB</link> See also : <text styleclass="VariableName-IT">&#32;</text><image src="MD-Globe-www.png" scale="100.00%" styleclass="VariableName-IT" style="font-size:7pt; vertical-align:sub;" figurelistinclude="0"></image><link displaytype="text" defaultstyle="true" type="weblink" href="http://mechdesigner.support/index.htm?maths_fb.htm" target="_blank" styleclass="VariableName-IT">Tutorial 18: Math FB</link></para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="Body Text HowTo">Use a <text styleclass="Element">Math FB </text>to add new math functions.</para>
+    <para styleclass="Body Text HowTo">Use a <text styleclass="Element">Math FB</text> to change the Data-Type, (the units of the data). E.g. Change Motion units to Force units, and connect a <text styleclass="Element">Math FB</text> to a <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Command-Forces-FB-Spring">Spring FB</link>. </para>
+    <para styleclass="Body Text HowTo">A <text styleclass="Interface2">Calculator</text> interface can help you select different functions.</para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="Heading3_atocs_" style="text-indent:-18px; margin-left:18px;">Open Math FB dialog-box</para>
+    <para styleclass="Body Text"><table styleclass="Standard" rowcount="1" colcount="2" style="width:auto; head-row-background-color:#ffffff; alt-row-background-color:none;">
+      <thead style="vertical-align:top">
+        <td style="width:30px;">
+          <para styleclass="Normal" style="text-align:right;"><image src="MD-Icon-FB-Maths.png" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Body Text">&#32;</text></para>
+        </td>
+        <td>
+          <para styleclass="Body Text"><text style="font-weight:normal; font-style:normal;">Edit the </text><text styleclass="Element">Math FB</text><text style="font-weight:normal; font-style:normal;">:</text></para>
+          <para styleclass="Body Text HowTo"><table styleclass="PopupTable2" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td style="border-top:none; border-right:none; border-bottom:none;">
+                <list id="0" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="B Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="B Bullets"><text styleclass="Body Text">Double-click the </text><text styleclass="Element">Math FB</text><text styleclass="Body Text"> in the </text><text styleclass="Interface">graphic-area</text><text styleclass="VariableName">&#32;</text></li>
+                </list>
+                <para styleclass="Body Text"><text style="font-family:Arial; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">- or -</text></para>
+                <list id="1" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="B Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="B Bullets"><text styleclass="SeeAlso">See </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-How-to-Open-a-Dialog-Box" styleclass="SeeAlso">How to Open a Dialog-Box</link><text styleclass="VariableName">&#32;</text></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Body Text">The <text styleclass="Element">Math FB dialog-box</text> is now open.</para>
+        </td>
+      </thead>
+    </table></para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="Body Text"><anchor id="MathsFBdialog" styleclass="Heading3_atocs_"><keywords><keyword>Maths FB dialog-box<keyword>Connectors</keyword><keyword>Output Data-Type</keyword></keyword></keywords></anchor><text styleclass="Heading3_atocs_">Math FB dialog-box</text></para>
+    <para styleclass="Body Text"><table styleclass="Standard" rowcount="1" colcount="1" style="width:auto;">
+      <tr style="vertical-align:top">
+        <td style="vertical-align:top;">
+          <para styleclass="Normal"><image src="MD-Dialog-FB-Math.ipp" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading4 Toggle_atocs_">Math FB Interface</para>
+    <para styleclass="Body Text"><anchor id="MATHFBADDINPUT" styleclass="Parameter-Header"><keywords><keyword>Math FB<keyword>Add Input-Connector</keyword></keyword></keywords></anchor><text styleclass="Parameter-Header">Add Input</text> button<image src="Red-14-1b.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="1" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <list id="2" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="Bullets">Click the <link displaytype="button" type="topiclink" href="" anchor="MATHFBADDINPUT">Add Input</link><text styleclass="Body Text"> button to add an input</text>-connectors <text styleclass="Body Text">to the </text><text styleclass="Element">Math FB</text><text styleclass="VariableName">.</text></li>
+          </list>
+          <para styleclass="Body Text HowTo">You need one input-connector for each variable or parameter in your equation.</para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Body Text"><anchor id="MATHFBADDOUTPUT" styleclass="Parameter-Header"><keywords><keyword>Math FB<keyword>Add Output-Connector</keyword></keyword></keywords></anchor><text styleclass="Parameter-Header">Add Output</text> button<image src="Red-14-2.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="1" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <list id="3" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="Bullets">Click the <link displaytype="button" type="topiclink" href="" anchor="MATHFBADDOUTPUT">Add Output</link><text styleclass="Parameter">&#32;</text>button<text styleclass="Parameter">&#32;</text>to add an output-connector from <text styleclass="Body Text">the </text><text styleclass="Element">Math FB</text><text styleclass="VariableName">. </text></li>
+          </list>
+          <para styleclass="Body Text HowTo">You need one output-connector for each output. </para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Body Text"><anchor id="MATHFBUPDATEBUTTON" styleclass="Parameter-Header"><keywords><keyword>Math FB<keyword>Update Button</keyword><keyword>Update Equations</keyword></keyword></keywords></anchor><text styleclass="Parameter-Header">Update </text>button<image src="Red-14-3.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Parameter-Header">&#32;</text></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="1" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <list id="4" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="Bullets">Click the <link displaytype="button" type="topiclink" href="" anchor="MathsFBdialog">Update</link> button <text styleclass="VariableName">when you:</text></li>
+          </list>
+          <list id="5" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:10pt; color:#333399;">
+            <li styleclass="HowTo Bulleted">Change the <text styleclass="Parameter">Output Data-Type</text></li>
+            <li styleclass="HowTo Bulleted">Edit an equation</li>
+          </list>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="VariableName"><anchor id="MATHFBOUTPUTDATATYPE" styleclass="Parameter-Header"><keywords><keyword>Math FB<keyword>Output Data-Type</keyword><keyword>Output Units</keyword><keyword>Units</keyword></keyword></keywords></anchor><text styleclass="Parameter-Header">Output Data-Type</text><image src="Red-14-4.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="1" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Table">The <text styleclass="Parameter">Output Data-Type</text> applies to <text styleclass="Interface2" style="color:#ff0000;">All</text><text styleclass="Body Text"> of </text><text styleclass="VariableName">output-connectors</text><text styleclass="Body Text"> from the </text><text styleclass="Element">Math FB</text><text styleclass="Body Text">.</text></para>
+          <para styleclass="Body Table">To select a different <text styleclass="Parameter">Output Data-Type</text></para>
+          <list id="6" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="Bullets">Click the drop-down box<image src="Red-14-4.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="VariableName">&#32;</text></li>
+            <li styleclass="Bullets">Select the <text styleclass="Parameter">Output Data-Type</text><text styleclass="VariableName">&#32;</text></li>
+          </list>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="Body Table"><text styleclass="Notes">Notes</text>: Inside the <text styleclass="Element">Math FB</text>, all units are <text styleclass="VariableName">SI units</text>. </para>
+          <para styleclass="Body Table">A change to the <text styleclass="Parameter-Header">Data-Type</text> may change the value at the output-connector of the <text styleclass="Element">Math FB</text>.</para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading4 HowTo_atoc_"><anchor id="MATHFB-EQUATION"><keywords><keyword>Math FB<keyword>Equation-Editor</keyword></keyword></keywords></anchor>Equations<image src="Red-14-5.gif" scale="100.00%" figurelistinclude="0"></image></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="1" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Table">There are three(3) <text styleclass="Parameter">Equations</text> for each <text styleclass="VariableName">output-connector</text></para>
+          <para styleclass="Body Table"><text styleclass="VariableName">See below for more explanations.</text></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Notes">Output Data-Type. Output-Connectors, Data-Channels</para>
+    <para styleclass="Body Text HowTo"><table styleclass="Standard" rowcount="1" colcount="1" style="width:auto;">
+      <tr style="vertical-align:top">
+        <td style="vertical-align:top;">
+          <para styleclass="Body Text"><table styleclass="PopupTable2" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Body Table">The <text styleclass="Parameter-Header">Output Data-Type</text> defines the units for all of the equations for all of the output-connectors.</para>
+                <para styleclass="Body Table">Each <text styleclass="VariableName">output-connector</text> has <text styleclass="VariableName">three(3) Data-Channels</text>.</para>
+                <para styleclass="Body Table"><text styleclass="Body Text HowTo">You can enter one(1) equation for each </text><text styleclass="VariableName">Data-Channel.</text></para>
+                <para styleclass="Body Table"><text styleclass="Body Text">Therefore, you can enter three</text><text styleclass="Body Text HowTo">(3) equations for each </text><text styleclass="VariableName">output-connector</text><text styleclass="Body Text HowTo">&#32;</text></para>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="VariableName">For example: </para>
+          <para styleclass="Body Table">If you select <text styleclass="Parameter-Header">Linear Coordinates</text> as the <text styleclass="Parameter-Header">Output Data-Type</text> then <text styleclass="VariableName" style="color:#ff0000;">ALL</text> equations use <text styleclass="VariableName">Linear Units</text></para>
+          <para styleclass="Body Table">If you have two(2) <text styleclass="VariableName">output-connectors</text>, there are 6 equations.</para>
+          <list id="7" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullets" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="Bullets">The units for <text styleclass="VariableName">Data-Channels</text>&#32;<text styleclass="Body Text">0 &amp; 3 are Dis, with units of </text><equation styleclass="Body Table" font-size="28"><![CDATA[m]]></equation></li>
+            <li styleclass="HowTo Bulleted">The units for <text styleclass="VariableName">Data-Channels</text>&#32;<text styleclass="Body Text">1 &amp; 4 are &apos;Vel&apos;, with units of </text><equation styleclass="Body Table" font-size="28"><![CDATA[m.s^{-1}]]></equation></li>
+            <li styleclass="HowTo Bulleted">The units for <text styleclass="VariableName">Data-Channel</text><text styleclass="Body Text">s</text>&#32;<text styleclass="Body Text">2 &amp; 5 are &apos;Acc&apos;, with units of </text><equation styleclass="Body Table" font-size="28"><![CDATA[m.s^{-2}]]></equation></li>
+            <li styleclass="HowTo Bulleted"><text styleclass="Body Table">Data-Channels/Equations 0, 1, 2 are for output-connector 1</text></li>
+            <li styleclass="HowTo Bulleted"><text styleclass="Body Table">Data-Channels/Equations 3, 4, 5 are for output-connector 2</text></li>
+          </list>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="VariableName">Wire Numbers / input-connectors and Data-Channels</para>
+    <para styleclass="Body Text HowTo"><table styleclass="Standard" rowcount="3" colcount="2" style="width:auto;">
+      <tr style="vertical-align:top">
+        <td colspan="2">
+          <para styleclass="Body Table">The image below shows three(3) <text styleclass="VariableName">Wires</text> connected to three(3) <text styleclass="VariableName">Input-Connectors</text>.</para>
+          <para styleclass="Body Table">Each <text styleclass="VariableName">Wire</text> has three <text styleclass="VariableName">Data-Channels</text>.</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:240px; border-bottom:none;">
+          <para styleclass="Normal"><image src="MD-Dialog-FB-Maths-InputConnector-DataChannels.png" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"><caption><![CDATA[3 Wires, 3 Input-Connectors
+Each wire has 3 Data-Channels]]></caption></image></para>
+        </td>
+        <td style="border-bottom:none;">
+          <para styleclass="Bullets"><text styleclass="Parameter-Header">Wire-Numbers</text><text styleclass="Body Text"> - refer to the</text><text styleclass="Body Text HowTo"> image above.</text></para>
+          <para styleclass="VariableName-indent"><text style="color:#ff0000;">Wire numbers start at 0</text></para>
+          <list id="8" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="VariableName" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="VariableName">Input-Connector 1, Wire 0 - connected to the TOP input-connector</li>
+            <li styleclass="VariableName">Input-Connector 2, Wire 1</li>
+            <li styleclass="VariableName">Input-Connector 3, Wire 2 - connected to the BOTTOM input-connector</li>
+          </list>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td colspan="2" style="border-bottom:none;">
+          <para styleclass="Body Table">Each wire has 3(three) data-channels. </para>
+          <para styleclass="Body Table"><text style="font-style:normal;">Each data-channel is designated with a letter:</text></para>
+          <list id="9" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted"><text styleclass="VariableName-IT">p = Data-Channel 1</text></li>
+            <li styleclass="VariableName-IT">v = Data-Channel 2</li>
+            <li styleclass="VariableName-IT">a = Data-Channel 3</li>
+          </list>
+          <para styleclass="Body Text" style="margin-top:0px;"><text styleclass="Body Text HowTo">The format to reference a Wire-Number and Data-Channel in an equation is</text></para>
+          <para styleclass="Body Text HowTo">&#32;<text styleclass="Parameter-Header">Data-Channel (Wire-Number)</text></para>
+          <para styleclass="VariableName"><text styleclass="Interface2">Example -</text> Entries in an Equation: </para>
+          <para styleclass="Body Text HowTo"><text styleclass="VariableName-IT" style="font-style:normal;">p(0) :</text><text styleclass="Body Text"> &#160;</text><text styleclass="VariableName-IT" style="font-style:normal;">p</text><text styleclass="Body Text"> refers to </text><text styleclass="VariableName-IT" style="font-style:normal;">Data-channel 1</text><text styleclass="Body Text"> ; and </text><text styleclass="VariableName-IT" style="font-style:normal;">(0)</text><text styleclass="Body Text"> refers to </text><text styleclass="VariableName-IT" style="font-style:normal;">input-connector 1</text></para>
+          <para styleclass="Body Text HowTo"><text styleclass="VariableName-IT" style="font-style:normal;">a(2) : </text><text styleclass="Body Text">&#32;</text><text styleclass="VariableName-IT" style="font-style:normal;">a</text><text styleclass="Body Text"> refers to </text><text styleclass="VariableName-IT" style="font-style:normal;">Data-channel 3</text><text styleclass="Body Text"> ; and </text><text styleclass="VariableName-IT" style="font-style:normal;">(2)</text><text styleclass="Body Text"> refers to </text><text styleclass="VariableName-IT" style="font-style:normal;">input-connector 3</text></para>
+          <para styleclass="Body Text HowTo"><text styleclass="VariableName-IT" style="font-style:normal;">v(1) : </text><text styleclass="Body Text">&#32;</text><text styleclass="VariableName-IT" style="font-style:normal;">v</text><text styleclass="Body Text"> refers to </text><text styleclass="VariableName-IT" style="font-style:normal;">Data-channel 2</text><text styleclass="Body Text"> &#160;; and </text><text styleclass="VariableName-IT" style="font-style:normal;">(1)</text><text styleclass="Body Text"> refers to </text><text styleclass="VariableName-IT" style="font-style:normal;">input-connector 2</text></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Parameter-Header">How many input and output-connectors?</para>
+    <para styleclass="Body Text HowTo"><table styleclass="Standard" rowcount="8" colcount="1" style="width:auto;">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Text"><text style="font-weight:normal;">As an example, to calculate </text><text styleclass="VariableName">Power</text><text style="font-weight:normal;"> :</text></para>
+          <para styleclass="Body Text HowTo"><text style="font-size:16pt; font-weight:normal;">P = &#160;Ʈ . ω</text></para>
+          <para styleclass="VariableName">Power (N.m./sec) = Torque(N.m.) × Angular Velocity (rad/sec)</para>
+          <para styleclass="Body Text HowTo"><text styleclass="VariableName">Torque data</text><text style="font-weight:normal;"> and </text><text styleclass="VariableName">Angular-Velocity data</text><text style="font-weight:normal;"> are inputs to the equation.</text></para>
+          <para styleclass="Body Text HowTo"><text styleclass="VariableName">Power</text><text style="font-weight:normal;"> is the output. </text></para>
+          <para styleclass="Body Text HowTo"><text style="font-weight:normal;">We need </text><text styleclass="VariableName">two input-connectors </text><text style="font-weight:normal;">and </text><text styleclass="VariableName">one output-connector</text><text style="font-weight:normal;">.</text></para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="Body Text"><text styleclass="VariableName">Edit the</text>&#32;<text styleclass="Element">Math FB</text>&#32;<text styleclass="VariableName">to open the</text>&#32;<text styleclass="Element">Math FB dialog-box</text>.</para>
+          <list id="10" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo Bulleted">Add two Input-Connectors with the <text styleclass="Parameter-Header">Add-Input</text> button<text styleclass="VariableName">&#32;</text></li>
+            <li styleclass="HowTo Bulleted"><text styleclass="Body Text">Select </text><text styleclass="VariableName">Power</text><text styleclass="Body Text"> for the </text><text styleclass="Parameter-Header">Output Data-Type</text><text styleclass="VariableName">. </text></li>
+            <li styleclass="HowTo Bulleted"><text styleclass="Body Text">Click </text><text styleclass="Parameter-Header">UPDATE</text><text styleclass="Body Text"> button</text></li>
+          </list>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Normal"><image src="MD-Maths-FB-ForceTorque.png" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="VariableName">Prepare the model (see above)</para>
+          <list id="11" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Numbered" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo Numbered"><text style="font-weight:normal;">Add a </text><text styleclass="Interface">Rocker</text><text style="font-weight:bold;"> - </text><text styleclass="VariableName">see Tutorial 1 </text></li>
+            <li styleclass="HowTo Numbered"><text style="font-weight:normal;">Edit the </text><text styleclass="Element">CAD-Line</text><text style="font-weight:normal;"> of the </text><text styleclass="Interface">Rocker</text><text style="font-weight:normal;">, to open the </text><text styleclass="Element">CAD-Line dialog-box.</text></li>
+          </list>
+          <para styleclass="Body Text HowTo">In <text styleclass="T_Menu">CAD-Line dialog-box &gt; </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-CADLine-MassProperties">Mass Properties tab</link> &gt; <text styleclass="Separator">User Mass Properties</text> . <br/>Enter a value for the <text styleclass="VariableName">Mass.</text></para>
+          <para styleclass="Body Text HowTo">Enter X and Y values to move the <text styleclass="VariableName">Center-of-Mass</text> away from the <text styleclass="Interface">start-Point</text> (origin) of the <text styleclass="Element">CAD-Line</text>.</para>
+          <list id="12" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="3" styleclass="HowTo Numbered" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo Numbered"><text style="font-weight:normal;">Add a </text><text styleclass="Element">Force-Data FB</text><text style="font-weight:normal;">, open the </text><text styleclass="Element">Force-Data FB dialog-box</text><text style="font-weight:normal;">, select the </text><text styleclass="Element">Pin-Joint</text><text style="font-weight:normal;">, and select the </text><text styleclass="Element">Point</text><text style="font-weight:normal;"> in the </text><text styleclass="Element">Base-Part</text><text style="font-weight:normal;"> to find the </text><text styleclass="VariableName">Torque</text><text style="font-weight:normal;"> that acts-on the </text><text styleclass="Element">Base-Part</text><text style="font-weight:normal;">.</text><text styleclass="VariableName">&#32;</text></li>
+          </list>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Normal"><image src="MD-Dialog-FB-Maths-PowerCalc-Ex-01A.png" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Text">See image above - the <text styleclass="Parameter-Header">Data-Channels</text> on the <text styleclass="Parameter-Header">wire</text> of the <text styleclass="Element">Force-Data FB</text><image src="Red-14-3.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image> and the <text styleclass="Element">Motion-Dimension FB</text><image src="Red-14-4.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="Body Text">The <text styleclass="Element">Math FB</text> uses SI units for all data &apos;inside&apos;. </para>
+          <para styleclass="Heading4 HowTo_atoc_">Enter the Equation</para>
+          <para styleclass="Body Table">Click the first equation in the <text styleclass="Element">Math FB</text></para>
+          <para styleclass="Body Table">The <text styleclass="Interface2">Equation-Editor</text> opens - see below.</para>
+          <para styleclass="Body Table">We need to enter this equation</para>
+          <para styleclass="VariableName-indent">Q0 [Power] = p(0)*v(1)</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Normal"><image src="MD-Dialog-MathFB-Equation-Power.ipp" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Table"><text styleclass="VariableName">p(0) = Wire-Number 0 (top input-connector), Channel 1 (p = Torque) </text></para>
+          <para styleclass="VariableName-indent"><text style="font-size:14pt;">×</text></para>
+          <para styleclass="Body Table"><text styleclass="VariableName">v(1) = Wire-Number 1 (input-connector below top), Channel 2 (v = Angular Velocity)</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="VariableName">SYNTAX and VALID Equations</para>
+          <para styleclass="Body Text HowTo"><text style="font-weight:normal;">Click the </text><text styleclass="Parameter-Header">Update</text><text style="font-weight:normal;"> after you edit the equation to find out if the syntax is correct</text></para>
+          <para styleclass="Body Text HowTo"><text style="font-weight:normal;">For example, it may not have correct number of parentheses. The reason is given as a message in the </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-FeedBackArea" anchor="MessageArea-FA" style="font-weight:normal;">Feedback-Area</link><text style="font-weight:normal;">.</text></para>
+          <para styleclass="Body Text HowTo"><text style="font-weight:normal;">The </text><image src="OK-tiny-11-15.png" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text style="font-weight:normal;"> at the left of each equation shows if its syntax is correct.</text></para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="VariableName"><text style="color:#ff0000;">IMPORTANT</text>&#32;</para>
+          <para styleclass="VariableName-indent"><text style="color:#ff0000;">Data from Motion FBs</text><text styleclass="Heading4 Toggle_atocs_">&#32;</text></para>
+          <para styleclass="Body Text HowTo">If you connect a wire from a <text styleclass="Element">Motion FB</text> to the input of a <text styleclass="Element">Math FB</text>, Set the <text styleclass="Parameter-Header">Output Data-Type</text><text styleclass="Body Text"> in the </text><text style="font-size:14pt; font-weight:bold; color:#ff0000;">MOTION FB</text><text styleclass="Body Text"> to </text><text styleclass="Parameter-Header">Linear</text><text styleclass="Body Text"> or </text><text styleclass="Parameter-Header">Rotary.</text></para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading3_atocs_">MORE ABOUT UNITS &apos;inside&apos; the Math FB</para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="1" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Text">There are 4 possible sources of confusion with respect to &apos;units&apos; when you use the <text styleclass="Element">Math FB</text>.</para>
+          <para styleclass="Interface2">SI Units</para>
+          <para styleclass="Body Table">Inside<text styleclass="Body Text HowTo2"> the </text><text styleclass="Element">Math FB</text><text styleclass="Body Text HowTo2">, the units are </text><text styleclass="Interface2">SI.</text><text styleclass="Body Text HowTo2" style="font-weight:bold; font-style:italic;">&#32;</text></para>
+          <para styleclass="Body Table"><text styleclass="VariableName">Example</text>:</para>
+          <list id="13" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted">If the <text styleclass="Element">Motion FB</text> is set to <text styleclass="VariableName-IT">Rotary</text>, and the output from it is 90º, then the value internal to the <text styleclass="Element">Math FB</text> is 1.57<text style="font-size:10pt; vertical-align:baseline;">radians</text>.</li>
+            <li styleclass="HowTo Bulleted"><text styleclass="Body Text HowTo2">If the </text><text styleclass="Element">Motion FB</text><text styleclass="Body Text HowTo2"> is set to </text><text styleclass="VariableName-IT">Linear</text><text styleclass="Body Text HowTo2">, and the output from it is 100</text><text styleclass="Body Text HowTo2" style="font-size:10pt; vertical-align:baseline;">mm</text><text styleclass="Body Text HowTo2">, the value internal to the </text><text styleclass="Element">Math FB</text><text styleclass="Body Text HowTo2"> is 0.1</text><text styleclass="Body Text HowTo2" style="font-size:10pt; vertical-align:baseline;">m</text><text styleclass="Body Text HowTo2" style="font-style:italic;">.</text></li>
+          </list>
+          <para styleclass="Body Text HowTo">If you multiply these together with the <text styleclass="Element">Math FB</text>, the internal result is 0.157 - of course.</para>
+          <para styleclass="Interface2">SI Units are converted to Engineering Units</para>
+          <para styleclass="Body Table">The <text styleclass="VariableName-IT" style="font-style:normal;">SI units</text> and values that are internal to the <text styleclass="Element">Math FB</text><text style="font-style:italic;">&#32;</text>are converted back to <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-Machine-Settings">Engineering Units</link> of the <text styleclass="Parameter-Header">Output Data-Type</text>.</para>
+          <para styleclass="Body Table"><text styleclass="VariableName">Example continued...</text></para>
+          <list id="14" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted">If the <text styleclass="Parameter-Header">Output Data-Type</text> is <text styleclass="Parameter">Linear Coordinates</text>, then <text styleclass="VariableName-indent">0.157</text> becomes <text styleclass="VariableName-indent">157mm</text> at the output-connector when the Engineering Units in the <text styleclass="Interface">Machine Settings dialog-box</text> are <text styleclass="VariableName-indent">mm.</text></li>
+            <li styleclass="HowTo Bulleted3">If the <text styleclass="Parameter-Header">Output Data-Type</text> is <text styleclass="Parameter">Rotary Coordinates</text>, then <text styleclass="VariableName-indent">0.157</text> becomes <text styleclass="VariableName-indent">9º</text> at the output-connector when the Engineering Units in the <text styleclass="Interface">Machine Settings dialog-box </text>are <text styleclass="VariableName-indent">degrees</text>. </li>
+          </list>
+          <para styleclass="HowTo Bulleted3">The reason? <text styleclass="VariableName">0.157rads (inside the Math FB)</text> = <text styleclass="VariableName-indent">9º (outside the Math FB).</text></para>
+          <para styleclass="VariableName">Linear-Coordinates to a Rocker, Rotary-Coordinates to a Slider </para>
+          <para styleclass="Body Table"><text styleclass="VariableName">Example continued...</text></para>
+          <para styleclass="VariableName-IT2">Rotary units connected to a Linear Slider - that is probably not intended</para>
+          <para styleclass="Body Text HowTo2">In the <text styleclass="Element">Math FB</text>, if you set the <text styleclass="Parameter-Header">Output Data Type</text> to <text styleclass="Parameter">Rotary Coordinates</text>, then<text style="font-style:italic;">&#32;</text><text styleclass="VariableName">0.157</text> becomes <text styleclass="VariableName">0.157</text><text styleclass="VariableName" style="font-size:10pt; vertical-align:baseline;">rads</text> internally. This becomes <text styleclass="VariableName">9º</text> at the output, when the Engineering-Units are <text styleclass="VariableName">degrees</text>. </para>
+          <para styleclass="Body Text HowTo2">If you connect the <text styleclass="Element">Math FB </text>to a <text styleclass="Element">Motion-Dimension FB</text> to move a <text styleclass="VariableName">Slider</text>, then the <text style="font-style:italic;">9º </text>becomes <text style="font-style:italic;">9mm</text>.</para>
+          <para styleclass="VariableName-IT2">Linear Units connected to a Rotary Rocker - that is probably not intended</para>
+          <para styleclass="Body Text HowTo2">In the <text styleclass="Element">Math FB</text>, if you set the <text styleclass="Parameter-Header">Output Data Type</text> to <text styleclass="Parameter">Linear Coordinates</text>, then<text style="font-style:italic;">&#32;</text><text styleclass="VariableName">0.157</text> is <text styleclass="VariableName">0.157</text><text styleclass="VariableName" style="font-size:10pt; vertical-align:baseline;">m</text><text style="font-style:italic;">&#32;</text><text styleclass="Body Text">internally. This becomes </text><text styleclass="VariableName">157</text><text styleclass="VariableName" style="font-size:10pt; vertical-align:baseline;">mm</text><text styleclass="Body Text"> at the output when the Engineering-Units</text> are <text styleclass="VariableName">mm</text>.<br/>If you connect the <text styleclass="Element">Math FB</text> to a <text styleclass="Element">Motion-Dimension FB</text> to move a <text styleclass="VariableName">Rocker</text>, then the Rocker rotates <text styleclass="VariableName">157º.</text></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Normal"><anchor id="MATH-DIALOG-EQUATIONEDITOR" styleclass="Heading3_atocs_"><keywords><keyword>Math dialog-box<keyword>Equation-Editor</keyword><keyword>Calculator</keyword></keyword></keywords></anchor><text styleclass="Heading3_atocs_">Equation-Editor with Calculator</text></para>
+    <para styleclass="Body Text"><table styleclass="Default" rowcount="5" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="VariableName"><image src="MD-Dialog-MathFB-Eqtn-Editorr.ipp" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"><caption><![CDATA[Equation-Editor with Calculator]]></caption></image></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Table">The <text styleclass="Interface2">Equation-Editor </text>provides a few of the common mathematical functions. </para>
+          <para styleclass="Body Table">You have the options to add these functions, when needed, with each equation.</para>
+          <para styleclass="Body Text"><text styleclass="Notes">Note 1</text>: </para>
+          <para styleclass="Body Table">When <text styleclass="VariableName-IT">open and close brackets</text> show within a function button, you must enter a value or an input variable.</para>
+          <para styleclass="Body Text HowTo"><text styleclass="Notes">For example</text>, <text styleclass="VariableName-IT">Sin( )</text>, you must enter at least one wire input. <text styleclass="VariableName-IT">Sin(p(1))</text><text styleclass="VariableName">&#32;</text><text styleclass="Body Text">will calculate</text> the trigonometric <text styleclass="VariableName-IT">&apos;Sine&apos; </text>of the position value of the second input-connector/ wire... </para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="Body Text"><text styleclass="Notes">Note 2:</text></para>
+          <list id="15" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted"><text styleclass="VariableName">p(0)</text><text styleclass="Body Text HowTo"> is data on data-channel 1, at the top, or input-connector </text><text styleclass="VariableName">#1, </text></li>
+            <li styleclass="HowTo Bulleted"><text styleclass="VariableName">p(1)</text><text styleclass="Body Text HowTo"> is data on data-channel 1, at input-connector </text><text styleclass="VariableName">#2</text><text styleclass="Body Text HowTo">, </text></li>
+            <li styleclass="HowTo Bulleted"><text styleclass="VariableName">p(2)</text><text styleclass="Body Text HowTo"> is data on data-channel 1, at input-connector </text><text styleclass="VariableName">#3</text><text styleclass="Body Text HowTo">, ...</text></li>
+          </list>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="Body Text"><text styleclass="Notes">Note 3: </text><text styleclass="VariableName">ALL</text> data &apos;inside&apos; the <text styleclass="VariableName">Math FB</text> are <text styleclass="VariableName" style="color:#ff0000;">SI units</text>. </para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="Heading4 HowTo_atoc_">Calculator functions </para>
+          <list id="16" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Numbered" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo Numbered"><text styleclass="VariableName">Position, Velocity and Acceleration Values for an linear or angular input</text></li>
+          </list>
+          <list id="17" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted3" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted3"><text styleclass="VariableName-IT2">P( ) ; V( ) ; A( )</text></li>
+          </list>
+          <list id="16" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Numbered" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo Numbered"><text styleclass="VariableName">Standard Algebra</text></li>
+          </list>
+          <list id="18" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted3" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted3"><text styleclass="VariableName-indent">Arithmetic: +, –, &#160;∕ , *</text></li>
+            <li styleclass="VariableName-IT2">Power: ^</li>
+            <li styleclass="VariableName-IT2">Brackets: ( )</li>
+          </list>
+          <list id="16" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Numbered" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo Numbered"><text styleclass="VariableName">Boolean</text></li>
+          </list>
+          <list id="19" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted3" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted3"><text style="font-size:14pt; font-weight:bold;">&gt; </text><text styleclass="VariableName-indent">: &lt;output&gt; =1 if &lt;value 1&gt; </text><text styleclass="VariableName-indent" style="font-size:14pt;">&gt;</text><text styleclass="VariableName-indent" style="font-size:11pt;"> &lt;value 2&gt;, else 0</text></li>
+            <li styleclass="HowTo Bulleted3"><text style="font-size:14pt; font-weight:bold;">&lt; </text><text styleclass="VariableName-indent">: &lt;output&gt; =1 if &lt;value 1&gt; </text><text styleclass="VariableName-indent" style="font-size:14pt;">&gt;</text><text styleclass="VariableName-indent" style="font-size:11pt;"> &lt;value 2&gt;, else 0</text></li>
+          </list>
+          <list id="20" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="4" styleclass="HowTo Bulleted" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo Bulleted"><text styleclass="VariableName">Trigonometry (all inputs in radians) </text></li>
+          </list>
+          <list id="21" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted3" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted3"><text styleclass="VariableName-IT2">Standard: Sin( ), Cosine( ), Tangent( )</text></li>
+            <li styleclass="VariableName-IT2">Hyperbolic: Sinh( ), Cosh( ), Tansh( )</li>
+            <li styleclass="VariableName-IT2">Inverse: ArcSin( ), ArcCos( ) , ArcTan2( ; )</li>
+          </list>
+          <list id="22" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="5" styleclass="HowTo Numbered" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo Numbered"><text styleclass="VariableName">Limit</text><text styleclass="VariableName-IT"> (input ; maximum value ; minimum value)</text><text styleclass="VariableName"> : </text></li>
+          </list>
+          <para styleclass="Body Text Howindent4bullets"><text styleclass="VariableName-IT">&lt;output&gt; = &lt;input&gt; if &lt;input&gt; is less than maximum value AND more than minimum value.</text></para>
+          <para styleclass="Body Text Howindent4bullets"><text styleclass="VariableName-IT">&lt;output&gt; = &#160;&lt;maximum-value&gt; if &lt;input&gt; is greater than maximum</text></para>
+          <para styleclass="Body Text Howindent4bullets"><text styleclass="VariableName-IT">&lt;output&gt; = &#160;&lt;minimum-value&gt; if &lt;input&gt; is less than minimum</text></para>
+          <list id="23" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="6" styleclass="HowTo Numbered" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; font-style:italic; color:#000000;">
+            <li styleclass="HowTo Numbered"><text styleclass="VariableName">OverLimit</text><text style="font-weight:normal;">&#32;</text><text styleclass="VariableName-IT">(input ; limit-value) : </text></li>
+          </list>
+          <para styleclass="Body Text Howindent4bullets">&#32;<text styleclass="VariableName-IT2">&lt;output&gt; = &lt;input&gt; &#160;if &lt;input&gt; is &apos;greater than limit-value&apos;</text></para>
+          <para styleclass="Body Text Howindent4bullets">&#32;<text styleclass="VariableName-IT2">&lt;output&gt; = &lt;limit-value&gt; &#160;if &lt;input&gt; is &apos;less than limit-value&apos;</text></para>
+          <list id="24" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="7" styleclass="HowTo Numbered" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo Numbered"><text styleclass="VariableName">UnderLimit</text><text style="font-weight:normal;">&#32;</text><text styleclass="VariableName-IT">(input ; limit value)</text><text style="font-weight:normal;">&#32;</text><text styleclass="VariableName">: </text></li>
+          </list>
+          <para styleclass="Body Text Howindent4bullets">&#32;<text styleclass="VariableName-IT2">&lt;output&gt; = &lt;input&gt; &#160;if &lt;input&gt; is &apos;less than limit-value&apos;</text></para>
+          <para styleclass="Body Text Howindent4bullets">&#32;<text styleclass="VariableName-IT">&lt;output&gt; = &lt;limit-value&gt; &#160;if &lt;input&gt; is &apos;greater than limit-value&apos;</text></para>
+          <list id="25" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="8" styleclass="HowTo Numbered" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo Numbered"><text styleclass="VariableName">XLimits</text><text style="font-weight:normal;">&#32;</text><text styleclass="VariableName-IT">(input ; maximum value ; minimum value) </text><text styleclass="VariableName">: </text></li>
+          </list>
+          <para styleclass="Body Text Howindent4bullets"><text styleclass="VariableName-IT">&lt;output&gt; = &lt;input&gt; if &lt;input&gt; is &apos;greater than maximum value&apos; OR less than minimum value&apos;.</text></para>
+          <para styleclass="Body Text Howindent4bullets"><text styleclass="VariableName-IT">&lt;output&gt; = &#160;&lt;maximum-value&gt; if &lt;input&gt; is &apos;less than maximum&apos; AND &apos;more than minimum-value</text></para>
+          <para styleclass="Body Text Howindent4bullets"><text styleclass="VariableName-IT">&lt;output&gt; = &#160;&lt;minimum-value&gt; if &lt;input&gt; is &apos;greater than minimum-value AND &apos;less than maximum-value&apos;</text></para>
+          <list id="26" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="9" styleclass="HowTo Bulleted" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo Bulleted"><text styleclass="VariableName-indent">Numerical Keypad</text><text styleclass="VariableName">&#32;</text></li>
+            <li styleclass="HowTo Bulleted"><text styleclass="VariableName-indent">1...9, 0, Π</text>.</li>
+            <li styleclass="HowTo Bulleted"><text styleclass="VariableName-indent">Abs( ) </text></li>
+            <li styleclass="HowTo Bulleted"><text styleclass="VariableName-indent">Mag( ; ) (assumes the two values are &apos;orthogonal&apos; and uses Pythagoras to find the &apos;resultant&apos;)</text></li>
+            <li styleclass="HowTo Bulleted"><text styleclass="VariableName-indent">Sqrt( );</text></li>
+            <li styleclass="HowTo Bulleted"><text styleclass="VariableName-indent">DegToRad( )</text></li>
+            <li styleclass="HowTo Bulleted"><text styleclass="VariableName-indent">RadToDeg( )</text></li>
+          </list>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Normal"><image src="MD-Graph-Maths-Limit-Example.png" align="left" scale="-99.90%" padding="0 3 0 0" figurelistinclude="0"></image></para>
+          <para styleclass="VariableName">Limit Function</para>
+          <para styleclass="VariableName-indent">Limit (input ; maximum value ; minimum value) : </para>
+          <para styleclass="Body Text HowTo">&lt;output&gt; = &lt;input&gt; if &lt;input&gt; is less than maximum value AND greater than minimum value.</para>
+          <para styleclass="Body Text HowTo">&lt;output&gt; = &#160;&lt;maximum-value&gt; if &lt;input&gt; is greater than maximum</para>
+          <para styleclass="Body Text HowTo">&lt;output&gt; = &#160;&lt;minimum-value&gt; if &lt;input&gt; is greater than minimum</para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="Body Text"></para>
+          <para styleclass="Body Text"></para>
+          <para styleclass="Body Text">Note that the arguments in the Limit Function are SI units for the units in the model.</para>
+          <para styleclass="Body Text HowTo">E.g.: 75 as <text style="font-size:10pt; vertical-align:baseline;">millimeters m</text><text styleclass="Body Text"> in the model is </text><text style="font-size:10pt; vertical-align:baseline;">&#32;</text>0.075 as <text style="font-size:10pt; vertical-align:baseline;">meters</text><text styleclass="Body Text"> in the function.</text></para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Normal"><image src="MD-Graph-Maths-Limit-Example3.png" align="left" scale="-99.90%" padding="0 3 0 0" figurelistinclude="0"></image></para>
+          <para styleclass="VariableName">Under Limit Function</para>
+          <para styleclass="VariableName-indent">UnderLimit (input ; limit value) : </para>
+          <para styleclass="Body Text HowTo"> &lt;output&gt; = &lt;input&gt; &#160;if &lt;input&gt; is &apos;less than limit-value&apos;</para>
+          <para styleclass="Body Text HowTo"> &lt;output&gt; = &lt;limit-value&gt; &#160;if &lt;input&gt; is &apos;greater than limit-value&apos;</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Normal"><image src="MD-Graph-Maths-Limit-Example2.png" align="left" scale="-99.90%" padding="0 3 0 0" figurelistinclude="0"></image></para>
+          <para styleclass="VariableName">Over Limit Function</para>
+          <para styleclass="VariableName-indent">OverLimit (input ; limit-value) : </para>
+          <para styleclass="Body Text HowTo"> &lt;output&gt; = &lt;input&gt; &#160;if &lt;input&gt; is &apos;greater than limit-value&apos;</para>
+          <para styleclass="Body Text HowTo"> &lt;output&gt; = &lt;limit-value&gt; &#160;if &lt;input&gt; is &apos;less than limit-value&apos;</para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Body Text" style="page-break-before:always;"></para>
+  </body>
+</topic>

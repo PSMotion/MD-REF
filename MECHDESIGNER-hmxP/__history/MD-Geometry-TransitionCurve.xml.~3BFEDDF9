@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" modified="2024-01-07T18:25:28.787Z" lasteditedby="44785" version="2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title>Add Transition Curve</title>
+  <meta name="DESCRIPTION" translate="true" value="A Transition-Curve is used to eliminate Polygonal Action with Chains.It is good all the way down to 3 teeth on the sprocket. There is not versiation in Velocity or Tension in the Chain as it travels around the Track." />
+  <keywords>
+    <keyword>Add<keyword>Transition-Curve</keyword></keyword>
+    <keyword>Chordal Action</keyword>
+    <keyword>Geometry toolbar<keyword>Transitkion Curve</keyword></keyword>
+    <keyword>Polygonal Action</keyword>
+    <keyword>Sketch Element: Transition-Curve</keyword>
+    <keyword>Sketch-Element<keyword>Transition-Curve</keyword></keyword>
+  </keywords>
+  <body>
+    <header>
+      <para styleclass="Heading1">Add Transition Curve</para>
+    </header>
+    <para styleclass="VariableName" style="page-break-before:always;"><text style="color:#ff0000;">The Transition-Curve is not available with the Trial License.</text></para>
+    <para styleclass="VariableName"><text style="color:#ff0000;">It is ONLY available with the Premium License.</text></para>
+    <para styleclass="Heading3_atocs_">About Transition-Curve</para>
+    <para styleclass="Body Text HowTo">The <text styleclass="VariableName">PSMotion Transition-Curve</text><text styleclass="VariableName" style="font-size:7pt; vertical-align:super;">©</text> is used to eliminate:</para>
+    <list id="0" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+      <li styleclass="HowTo Bulleted">the Polygonal-Action, also referred to as Chordal-Action, <text styleclass="Interface2">and</text>&#32;</li>
+      <li styleclass="HowTo Bulleted">the Linear Velocity-Discontinuity </li>
+    </list>
+    <para styleclass="HowTo Bulleted">each time a chain-link moves onto a chain-sprocket (chain-tooth).</para>
+    <para styleclass="Heading4 Toggle_atocs_">About Polygonal-Action (Chordal Action) and Chains</para>
+    <para styleclass="Heading4 Toggle_atocs_"><table styleclass="Default" rowcount="1" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Text"><image src="MD-Polygonal-Action-B.png" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"><caption><![CDATA[Standard Sprocket and Polygonal Action]]></caption></image></para>
+          <para styleclass="Body Text">The sprocket with <equation font-size="28"><![CDATA[Z]]></equation> number of teeth, with a tooth pitch, <equation font-size="28"><![CDATA[P]]></equation>, rotates at a constant speed, <equation font-size="28"><![CDATA[N]]></equation> (RPM). </para>
+          <para styleclass="Body Text">In the top image, the chain is tangent with the Pitch-Circle of the Sprocket. &#160;However, when the sprocket rotates by <equation style="vertical-align:text-bottom" font-size="28"><![CDATA[\lfrac{\alpha}{2}]]></equation> radians, the chain link is nearer to the center of the sprocket. Therefore, as the chain moves up and down, the effective radius of the sprocket changes to give a uneven, non-constant chain velocity.</para>
+          <para styleclass="Body Text">The linear speed of the chain is maximum in the top image.</para>
+          <para styleclass="Body Text HowTo"><equation><![CDATA[V_{max}= Z.P.N/60  =\ \pi.d.N/60 \ \ [m/s]]]></equation>&#32;</para>
+          <para styleclass="Body Text">The linear speed of the chain is a minimum in the bottom image.</para>
+          <para styleclass="Body Text HowTo"><equation><![CDATA[V_{min}=\frac{\pi.d..N}{60}.\cos \left( \lfrac{\alpha}{2} \right)\ \ [m/s]]]></equation>&#32;</para>
+          <para styleclass="Body Text">The e Linear-Acceleration of the chain is discontinuous at the instant the chain starts to move upwards.</para>
+          <para styleclass="Body Text">Polygonal-Action creates two(2) problems</para>
+          <list id="1" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted">Velocity Variation in the Chain</li>
+          </list>
+          <para styleclass="Body Text Howindent4bullets">In the general case, if a Driving Sprocket is rotating at constant Angular Velocity, the chain does not move at constant Linear Velocity. </para>
+          <para styleclass="Body Text Howindent4bullets">The ratio of Maximum and Minimum Velocity increases as you reduce the number-of-teeth on the drive sprocket. </para>
+          <list id="1" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted">Tension Variation in the Chain.</li>
+          </list>
+          <para styleclass="Body Text Howindent4bullets">As a chain link engages with a tooth, the chain accelerates, and thus there is a tension variation.</para>
+          <para styleclass="Body Text Howindent4bullets">Also, the pitch of the chain link is not constant. </para>
+          <para styleclass="Body Text">Usually, it is recommended that you use more than 17 teeth on a standard sprocket. Bicycle sprockets have fewer, but the derailleur compensates for the velocity and tension-variations.</para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading3_atocs_">Add Transition-Curve</para>
+    <para styleclass="Normal"><table styleclass="Standard" rowcount="3" colcount="3">
+      <tr style="vertical-align:top">
+        <td rowspan="3" style="width:42px; border-right:none;">
+          <para styleclass="Normal" style="text-align:center;"><image src="MD-Toolbar-SE-TransitionCurve.ipp" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td style="vertical-align:middle; width:74px;">
+          <para styleclass="VariableName">Toolbar : </para>
+        </td>
+        <td style="vertical-align:middle;">
+          <para styleclass="T_Menu"><text styleclass="VariableName">Part-Editor :</text> Geometry Toolbar &gt; Transition-Curve</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:middle">
+        <td style="width:74px;">
+          <para styleclass="VariableName">Menu : </para>
+        </td>
+        <td>
+          <para styleclass="T_Menu"><text styleclass="VariableName">Part-Editor :</text> Add menu &gt; Geometry sub-menu&gt; &gt; Transition-Curve</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td colspan="2">
+          <para styleclass="VariableName">To add a Transition-Curve</para>
+          <para styleclass="Body Text HowTo"><table styleclass="PopupTable2" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td style="border-top:none; border-right:none; border-bottom:none;">
+                <list id="2" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; color:#003300;">
+                  <li styleclass="Bullets">Click <text styleclass="T_Menu">Geometry-toolbar &gt; Transition-Curve</text></li>
+                  <li styleclass="HowTo Bulleted" style="text-align:left; text-indent:-24px; margin-top:0px; margin-right:0px; margin-bottom:0px; margin-left:48px; line-height:1.00; white-space:normal; page-break-inside:auto; page-break-after:auto; tabstops:none;">Drag to add a Line</li>
+                </list>
+                <para styleclass="HowTo Bulleted" style="text-align:left; text-indent:-24px; margin-top:0px; margin-right:0px; margin-bottom:0px; margin-left:48px; line-height:1.00; white-space:normal; page-break-inside:auto; page-break-after:auto; tabstops:none;">The Transition-Curve is added.</para>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Body Text"><text styleclass="SeeAlso">You can see that the Transition Curve is easy to add. However, it must be used with Pulleys and Chains to be useful.</text></para>
+          <para styleclass="Body Text"></para>
+          <para styleclass="Body Text"><text styleclass="SeeAlso">A Tutorial will show you how to apply the Transition Curve to a Long-Link Chain.</text></para>
+          <para styleclass="Body Text"></para>
+        </td>
+      </tr>
+    </table></para>
+  </body>
+</topic>

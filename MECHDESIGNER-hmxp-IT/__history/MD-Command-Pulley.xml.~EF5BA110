@@ -1,0 +1,278 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" status="Under Construction" modified="2022-06-02T14:12:21.255+01:00" lasteditedby="Adam" version="2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title>Mechanism | Add Pulley</title>
+  <keywords>
+    <keyword>Add<keyword>Pulley</keyword></keyword>
+    <keyword>Machine elements toolbar<keyword>Add Pulley</keyword></keyword>
+    <keyword>Menu &gt; Add &gt; Mechanism Menu<keyword>Add Pulley</keyword></keyword>
+  </keywords>
+  <body>
+    <header>
+      <para styleclass="Heading1">Mechanism | Add Pulley</para>
+    </header>
+    <para styleclass="Heading2">Add Pulley</para>
+    <para styleclass="SeeAlso">See also : <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-Pulley">Pulley dialog-box</link></para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="Heading4 Toggle_atocs_">Terminology and definitions:</para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="5" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:169px;">
+          <para styleclass="Popup Box-Elements" style="text-align:right;">Pulley : </para>
+        </td>
+        <td>
+          <para styleclass="Popup Box">A rotating wheel with teeth on its outside diameter. </para>
+          <para styleclass="Popup Box">The angular motion of the Pulley and the linear motion of a Belt are related by the radius of the Pulley. The radius of the Pulley is defined by the number-of-teeth around its diameter, and the pitch of each tooth.</para>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <para styleclass="Popup Box">There are two types of Pulley.</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:169px;">
+          <para styleclass="VariableName-small" style="text-align:right;">Type 1: Driving Pulley : </para>
+        </td>
+        <td>
+          <para styleclass="Popup Box">The pre-defined angular motion of the <text styleclass="Popup Box-Elements">Pulley</text> specifies the linear motion of the <text styleclass="VariableName-small">Belt</text>.</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:169px;">
+          <para styleclass="VariableName-small" style="text-align:right;">Type 2: Driven Pulley : </para>
+        </td>
+        <td>
+          <para styleclass="Popup Box">The pre-defined linear motion of the <text styleclass="VariableName-small">Belt</text> specifies the angular motion of the <text styleclass="Popup Box-Elements">Pulley</text>.</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:169px;">
+          <para styleclass="VariableName-small" style="text-align:right;">Belt: </para>
+        </td>
+        <td>
+          <para styleclass="Popup Box">It is a Timing-Belt (we do not show the Teeth on the <text styleclass="VariableName-small">Belt</text>). The <text styleclass="VariableName-small">Belt</text> does not slip relative to the Teeth on the <text styleclass="Popup Box-Elements">Pulley</text>. Practically, the <text styleclass="VariableName-small">Belt</text> wraps around at least two <text styleclass="Popup Box-Elements">Pulleys</text>. </para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="Popup Box">The motion of a <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-Motion-Driven-Point" styleclass="Popup Box2">Motion-Point</link> on a <text styleclass="VariableName-small">sketch-loop</text> represents the motion of the <text styleclass="VariableName-small">Belt; </text>the shape of the sketch-loop represents the path of the Belt.</para>
+          <para styleclass="Popup Box">The <text styleclass="VariableName-small">sketch-loop</text> should have an <text styleclass="Popup Box-Elements">Arc</text> sketch-element for each <text styleclass="Popup Box-Elements">Pulley</text>. The <text styleclass="Popup Box-Elements">Pulleys</text> will rotate at the <text styleclass="Popup Box2">center-Point</text> of each <text styleclass="Popup Box-Elements">Arc</text>.</para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading4 Toggle_atocs_">Kinematic State <text style="color:#ff0000;">before</text> you do Add Pulley.</para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="1" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Popup Box"><text styleclass="VariableName-small">Type 1</text>: A <text styleclass="VariableName-small">rotating-Part</text> is <text styleclass="VariableName-small">kinematically-defined</text>. There is a <text styleclass="Popup Box2">Motion-Point</text> (see <text styleclass="T_Menusmall">Add Motion-Path FB</text>).</para>
+          <para styleclass="Popup Box">There is not a motion relationship between the <text styleclass="VariableName-small">rotating-Part</text> and a <text styleclass="Popup Box2">Motion-Point</text> on a <text styleclass="VariableName-small">Belt</text>.</para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="Popup Box"><text styleclass="VariableName-small">Type &#160;2: </text>A <text styleclass="VariableName-small">rotating-Part</text> is <text styleclass="VariableName-small" style="color:#ff0000;">not</text>&#32;<text styleclass="VariableName-small">kinematically-defined</text>. There is a <text styleclass="Popup Box2">Motion-Point</text> (see <text styleclass="T_Menusmall">Add Motion-Path FB</text>).</para>
+          <para styleclass="Popup Box">There is not a motion relationship between the <text styleclass="VariableName-small">rotating-Part</text> and a <text styleclass="Popup Box2">Motion-Point</text> on a <text styleclass="VariableName-small">Belt</text>.</para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading4 Toggle_atocs_">Kinematic State <text style="color:#ff0000;">after</text> you do Add Pulley.</para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="1" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Popup Box"><text styleclass="VariableName-small">Type 1: </text>A <text styleclass="VariableName-small">rotating-Part</text> is <text styleclass="VariableName-small">kinematically-defined</text>. and a <text styleclass="VariableName-small">Driving-Pulley</text>.</para>
+          <para styleclass="Popup Box">The motion of the <text styleclass="Popup Box-Elements">Pulley</text>, its <text styleclass="Parameter-Popup">number-of-teeth</text>, and <text styleclass="Parameter-Popup">tooth-pitch</text>, now specify the motion of the <text styleclass="Popup Box2">Motion-Point</text> along the <text styleclass="VariableName-small">sketch-path</text> (the <text styleclass="VariableName-small">Belt</text>).</para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="VariableName-small">Type 2: <text styleclass="Popup Box">A </text>rotating-Part is kinematically-defined <text styleclass="Popup Box">and a </text>Driven-Pulley<text styleclass="Popup Box">.</text></para>
+          <para styleclass="Popup Box">The motion of the <text styleclass="Popup Box2">Motion-Point</text> along the <text styleclass="VariableName-small">sketch-path</text> (the <text styleclass="VariableName-small">Belt</text>), together with the <text styleclass="Parameter-Popup">Number-of-Teeth</text>, and <text styleclass="Parameter-Popup">Tooth-Pitch</text>, now specify the motion of the <text styleclass="Popup Box-Elements">Pulley</text>.</para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="Heading3_atocs_">Kinematics-Tree of Pulley</para>
+    <para styleclass="Body Text HowTo"><text styleclass="T_Menu">Add Pulley </text><text styleclass="Body Text">for a Driven-Pulley removes </text><text styleclass="VariableName" style="color:#ff0000;">one</text><text styleclass="Body Text"> degrees-of-freedom.</text></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="1" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:236px;">
+          <para styleclass="Image Caption"><image src="MD-ADD-PULLEY-KINEMATIC-TREE.ipp" scale="100.00%" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="T_Menu">Pulley</para>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Body Table"><text styleclass="VariableName" style="color:#ff0000;">Before</text> you do <text styleclass="T_Menu">Add Pulley</text>, to a <text styleclass="VariableName">rotating-Part</text> that is not <text styleclass="Body Text">kinematically-defined, the </text><text styleclass="VariableName">rotating-Part</text><text styleclass="Body Text"> has</text>&#32;<text styleclass="VariableName" style="color:#ff0000;">one</text> degree-of-freedom.</para>
+                <para styleclass="Body Text"><text styleclass="VariableName" style="color:#ff0000;">After</text> you do <text styleclass="T_Menu">Add Pulley,</text> the <text styleclass="VariableName">rotating-Part</text> becomes a <text styleclass="VariableName">Pulley-Rocker </text>and kinematically-defined.</para>
+                <para styleclass="Body Text">A <text styleclass="Element">Path-Joint</text> is a child to the <text styleclass="Element">Pulley-Rocker</text>.</para>
+              </td>
+            </tr>
+          </table></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="Heading3_atocs_">PREPARATION (TYPICAL)</para>
+    <para styleclass="Heading3_atocs_">Prepare the Sketch-Path for the Belt.</para>
+    <para styleclass="Body Text HowTo"><table styleclass="Standard" rowcount="2" colcount="2" style="width:auto;">
+      <tr style="vertical-align:top">
+        <td style="width:200px;">
+          <para styleclass="Normal"><image src="MD-ADD-PULLEY-SKETCH-PATH.ipp" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td rowspan="2">
+          <para styleclass="VariableName"><text styleclass="Interface2">Preparation 1</text>: Add a sketch-path to represent the path of the Belt. </para>
+          <para styleclass="Body Text HowTo">The <text styleclass="Interface">sketch-path</text> should include only<text styleclass="B Bullets">&#32;</text><text styleclass="Element">Lines</text><text styleclass="B Bullets"> and </text><text styleclass="Element">Arcs</text><text styleclass="B Bullets">. </text><text styleclass="Body Text">Usually, add </text><text styleclass="Element">Tangent-Constraints</text><text styleclass="Body Text"> between each </text><text styleclass="Element">Line</text><text styleclass="Body Text"> and </text><text styleclass="Element">Arc</text><text styleclass="Body Text">. Do </text><text styleclass="VariableName" style="color:#ff0000;">not</text><text styleclass="Body Text"> add </text><text styleclass="Element">equal</text><text styleclass="Body Text"> constraint to the </text><text styleclass="Element">Arcs.</text></para>
+          <para styleclass="Body Text HowTo">The <text styleclass="Interface">sketch-path</text> is <text styleclass="Body Text">usually a closed </text><text styleclass="Interface">sketch-loop</text><text styleclass="Body Text">. It is usually helpful to fully define the sketch-path.</text></para>
+          <para styleclass="Body Text HowTo"><table styleclass="PopupTable2" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <list id="0" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="Bullets"><text styleclass="Interface">Mechanism-Editor</text><text styleclass="Body Text">: Edit the </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-BasePart" styleclass="Element">Base-Part</link><text styleclass="Body Text"> (usually) or an </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-Part" styleclass="Element">Added-Part</link><text styleclass="VariableName">&#32;</text></li>
+                  <li styleclass="Body Table"><text styleclass="Interface">Part-Editor: </text>Add a <text styleclass="Interface">sketch-path</text> to represent the path of the <text styleclass="VariableName">Belt</text></li>
+                  <li styleclass="Body Table"><text styleclass="Interface">Part-Editor</text>: Add <text styleclass="Element">Tangent Constraints</text> between each <text styleclass="Element">Line</text> and <text styleclass="Element">Arc</text>. </li>
+                  <li styleclass="Body Table"><text styleclass="Interface">Part-Editor:</text><text styleclass="Bullets"> Add a dimension to the radius of each </text><text styleclass="Element">Arc</text><text styleclass="VariableName">. </text></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Notes">Note: <text styleclass="Interface2" style="color:#ff0000;">If</text><text styleclass="Body Text HowTo"> a rotating-Part (and Pulley) is a </text><text styleclass="Interface">Rocker:</text></para>
+          <para styleclass="Body Text HowTo"><table styleclass="PopupTable2" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <list id="1" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="5" styleclass="Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="Bullets"><text styleclass="Interface">Part-Editor</text>: Add a <text styleclass="Element">Line</text> from the <text styleclass="Interface">center-Point</text> of the <text styleclass="Element">Arc</text> that will be the rotating-axis of the <text styleclass="Interface">Rocker</text>.<text styleclass="VariableName">&#32;</text></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Body Text HowTo">Then, you will be able to add a <text styleclass="Element">Motion-Dimension FB</text> to the <text styleclass="VariableName">rotating-Part</text> in the <text styleclass="Interface">Mechanism-Editor.</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Normal"><image src="MD-ADD-PULLEY-SKETCH-PATH-2.ipp" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading3_atocs_">Add the Motion-Path FB to the Sketch-Path</para>
+    <para styleclass="Body Text HowTo"><table styleclass="Standard" rowcount="1" colcount="2" style="width:auto;">
+      <tr style="vertical-align:top">
+        <td style="width:206px;">
+          <para styleclass="Normal"><image src="MD-ADD-PULLEY-MOTIONPATH-FB-3.ipp" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="VariableName"><text styleclass="Interface2">Preparation 2: </text><text styleclass="Element">MOTION-PATH FB</text></para>
+          <para styleclass="Body Text HowTo">Add<text styleclass="VariableName" style="color:#ff0000;"> ONE</text>&#32;<text styleclass="Element">Motion-Path FB</text> to the sketch-path.</para>
+          <para styleclass="Body Text HowTo"><table styleclass="PopupTable2" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <list id="2" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="Bullets">Click <text styleclass="T_Menu">Kinematic FB toolbar &gt; Add Motion-Path FB</text><text styleclass="VariableName">.</text></li>
+                  <li styleclass="HowTo Bulleted">Click a sketch-element in the <text styleclass="Interface">sketch-path</text></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Body Text HowTo">The <text styleclass="Element">Motion-Path FB</text> is in the <text styleclass="Interface">graphic-area</text> and the <text styleclass="Interface">Motion-Point</text> is at the <text styleclass="Interface">start-Point</text> of the sketch-element you select.</para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading3_atocs_">Prepare the Rotating-Parts that become the Pulleys.</para>
+    <para styleclass="Body Text HowTo"><table styleclass="Standard" rowcount="2" colcount="2" style="width:auto;">
+      <tr style="vertical-align:top">
+        <td style="width:206px;">
+          <para styleclass="Normal"><image src="MD-ADD-PULLEY-DRIVING-4.ipp" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="VariableName"><text styleclass="Interface2">Preparation 3A: TYPE 1: </text>DRIVING-PULLEY</para>
+          <para styleclass="Body Text HowTo">You can add a <text styleclass="VariableName" style="color:#ff0000;">ZERO</text> or a maximum of <text styleclass="VariableName" style="color:#ff0000;">ONE</text>&#32;<text styleclass="VariableName">Driving-Pulley</text> to each Belt. The <text styleclass="VariableName">rotating-Part</text> is kinematically-defined before we do <text styleclass="T_Menu">Add Pulley</text>. </para>
+          <para styleclass="Body Text HowTo"><table styleclass="PopupTable2" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <list id="3" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="3" styleclass="Bullets" style="font-family:&apos;Noto Sans&apos;; font-size:11pt; color:#000000;">
+                  <li styleclass="Bullets">Add a <text styleclass="Interface">Rocker</text><text styleclass="Body Text"> with its </text><text styleclass="Element">Pin-Joint</text><text styleclass="Body Text"> at the </text><text styleclass="Interface">center-Point</text><text styleclass="Body Text"> of the </text><text styleclass="Element">Arc</text><text styleclass="Body Text"> with a </text><text styleclass="Element">Line</text><text styleclass="Body Text"> (see </text><text styleclass="Interface">Preparation 1: 5</text><text styleclass="Body Text">, above)</text></li>
+                </list>
+                <para styleclass="Body Text">OR </para>
+                <list id="4" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="3" styleclass="Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="Bullets">Add <text styleclass="Element">Parts</text> to the model, in which there is a <text styleclass="VariableName">rotating-Part</text> with a <text styleclass="Element">Pin-Joint</text> at the center of the <text styleclass="Element">Arc</text> in the <text styleclass="VariableName">sketch-path</text><text styleclass="Body Text"> of the </text><text styleclass="VariableName">Belt </text>and it is kinematically-defined<text styleclass="VariableName">.</text></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:206px;">
+          <para styleclass="Normal"><image src="MD-ADD-PULLEY-DRIVEN-5.ipp" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="VariableName"><text styleclass="Interface2">Preparation 3b: TYPE 2: </text>DRIVEN-PULLEY</para>
+          <para styleclass="Body Text HowTo">The motion of the <text styleclass="Element">Belt</text> and the <text styleclass="VariableName">Pitch-Circle Diameter</text> specify the motion of <text styleclass="VariableName">Driven-Pulleys.</text></para>
+          <para styleclass="Body Text HowTo">The <text styleclass="VariableName">rotating-Part</text> are <text styleclass="VariableName" style="color:#ff0000;">not</text> kinematically-defined before we do <text styleclass="T_Menu">Add Pulley</text>.</para>
+          <para styleclass="Body Text HowTo"><table styleclass="PopupTable2" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <list id="5" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="4" styleclass="Bullets" style="font-family:&apos;Noto Sans&apos;; font-size:11pt; color:#000000;">
+                  <li styleclass="Bullets">Add <text styleclass="VariableName">rotating-Parts</text> to be <text styleclass="VariableName">Driven-Pulleys</text>, with a<text styleclass="Element"> Pin-Joints</text> at the <text styleclass="Interface">centre-Point</text> of each <text styleclass="Element">Arc</text> with a <text styleclass="VariableName">Driven-Pulley</text>.</li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="Heading3_atocs_">ADD PULLEY</para>
+    <para styleclass="Body Text HowTo"><table styleclass="Standard" rowcount="2" colcount="2" style="width:auto;">
+      <tr style="vertical-align:top">
+        <td style="width:206px;">
+          <para styleclass="Normal"><image src="MD-CM-AddPulley-1.png" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td rowspan="2">
+          <para styleclass="Body Text HowTo"><text style="font-style:normal;">Click</text>&#32;<text styleclass="T_Menu">Machine elements toolbar &gt; Add Pulley</text><text style="font-weight:bold;">&#32;</text></para>
+          <para styleclass="Body Text HowTo"><table styleclass="PopupTable2" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <list id="6" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="Bullets"><text style="font-style:normal;">Click</text> a <text styleclass="Element">Pin-Joint</text> at the center of a <text styleclass="VariableName">rotating-Part</text><text styleclass="Body Text" style="font-size:14pt; font-weight:bold;">*</text><text styleclass="Body Text">.</text><text styleclass="VariableName">&#32;</text></li>
+                  <li styleclass="HowTo Numbered"><text style="font-style:normal;">Click</text> the <text styleclass="Element">Motion-Path FB.</text></li>
+                </list>
+                <para styleclass="Body Table">The <text styleclass="Interface">Part-Editor</text> opens</para>
+                <list id="6" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Numbered" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="HowTo Numbered"><text style="font-style:normal;">Click</text> the dimension that defines the radius of the <text styleclass="Element">Arc.</text></li>
+                </list>
+                <para styleclass="Body Table">The <text styleclass="Interface">Part-Editor</text> closes</para>
+                <list id="6" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Numbered" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="HowTo Numbered"><text style="font-style:normal;">Click</text> the <text styleclass="VariableName">rotating-Part</text><text style="font-size:14pt; font-weight:bold;">*</text> that has a <text styleclass="Element">Pin-Joint </text><text styleclass="Body Text">(</text><text styleclass="VariableName">see 1</text><text styleclass="Body Text">)</text> at the <text styleclass="Interface">center-Point</text> of the <text styleclass="Element">Arc</text><text styleclass="Body Text"> (</text><text styleclass="VariableName">see 3</text><text styleclass="Body Text">)</text></li>
+                  <li styleclass="HowTo Numbered"><text style="font-style:normal;">Click</text><text styleclass="Body Text">&#32;</text><image src="OK-tiny-11-15.png" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Body Text"> in the </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-Command-Manager" styleclass="Interface">Command-Manager</link></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Body Text"><text style="font-size:14pt; font-weight:bold;">*</text> If the <text styleclass="VariableName">rotating-Part</text> is :</para>
+          <list id="7" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted">kinematically-defined - the motion of the<text styleclass="Body Text">&#32;</text><text styleclass="Element">Pulley</text><text styleclass="Body Text"> will move the </text><text styleclass="Element">Belt</text><text styleclass="Body Text"> (</text><text styleclass="VariableName">Driving-Pulley</text><text styleclass="Body Text">),</text></li>
+            <li styleclass="HowTo Bulleted"><text styleclass="VariableName" style="color:#ff0000;">not</text> kinematically-defined <text styleclass="Body Text">- the motion of the </text><text styleclass="Element">Belt</text><text styleclass="Body Text"> will move the </text><text styleclass="Element">Pulley</text><text styleclass="Body Text"> (</text><text styleclass="VariableName">Driven-Pulley</text><text styleclass="Body Text">),</text></li>
+          </list>
+          <para styleclass="Interface2">Result<text styleclass="VariableName">:</text></para>
+          <para styleclass="Body Text HowTo"><table styleclass="PopupTable2" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Body Table">New <text styleclass="Element">Pulley element</text> schematic shows in the <text styleclass="Interface">graphic-area</text>.</para>
+                <list id="8" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullets" style="font-family:Symbol; font-size:11pt; color:#000000;">
+                  <li styleclass="Bullets">Use the <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-FunctionBlock-MotionPath" styleclass="Element">Motion-Path dialog-box</link><text styleclass="Body Text"> to edit the </text><text styleclass="Parameter">Tooth-Pitch</text><text styleclass="Body Text"> and </text><text styleclass="Parameter">length</text><text styleclass="Body Text"> of the </text><text styleclass="VariableName">Belt</text><text styleclass="Body Text">.</text></li>
+                </list>
+                <para styleclass="Body Table">The <text styleclass="Element">Pulley</text> has an integer number-of-teeth.</para>
+                <list id="9" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullets" style="font-family:Symbol; font-size:11pt; color:#000000;">
+                  <li styleclass="Bullets">Use the <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-Pulley" styleclass="Element">Pulley dialog-box</link> to edit the <text styleclass="Parameter">number-of-teeth</text> on each <text styleclass="Element">Pulley</text>.</li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:206px;">
+          <para styleclass="Normal"><image src="MD-ADD-PULLEY-6.ipp" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading3_atocs_">Video: Add Pulley<text styleclass="VariableName">:</text></para>
+    <para styleclass="Body Text"><text style="font-family:Arial; font-size:11pt; font-weight:bold; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">&#32;</text><conditional-text type="IF" value="PDF"/><link displaytype="text" defaultstyle="true" type="filelink" href="KE-AddPulley.gif">Double-click to watch : Add Pulley and Belt</link><conditional-text type="END"/><conditional-text type="IF" value="CHM"/></para>
+    <para styleclass="Normal"><toggle type="picture" print-expanded="true" help-expanded="false" src-collapsed="KE-AddPulley.gif" src-expanded="KE-AddPulley.gif" scale="20.00%" width="256" height="144" styleclass="Image Caption" figurelistinclude="0"><caption><![CDATA[Video: Add Pulley and Belt]]></caption><title>Video: Add Pulley and Belt</title></toggle><conditional-text type="END"/><conditional-text type="IF" value="HTML,EBOOK"/></para>
+    <para styleclass="Normal"><video src="KE-AddPulley.mp4" width="1280px" height="720px" autostart="false" loop="false" showcontrols="false" playbutton="true" previewimage="KE-AddPulley_preview.jpg" scale="20.00%" styleclass="Image Caption"><title>Video: Add Pulley and Belt</title><caption><![CDATA[Video: Add Pulley and Belt]]></caption></video><conditional-text type="END"/></para>
+  </body>
+</topic>

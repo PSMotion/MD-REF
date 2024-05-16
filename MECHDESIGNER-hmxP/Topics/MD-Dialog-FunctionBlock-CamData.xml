@@ -1,0 +1,196 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" status="Under Construction" modified="2024-04-15T18:20:25.270+01:00" lasteditedby="44785" version="2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title>Dialog: Function-Block: Cam-Analysis</title>
+  <meta name="DESCRIPTION" translate="true" value="The Cam-Data FB has two outputs - 1: Parameters for Cam-Analysis at the Output-Connectors; 2: Cam-Coordinates  in different formats." />
+  <keywords>
+    <keyword>2D-Cam Analysis<keyword>Contact-Force</keyword><keyword>Contact-Stress</keyword><keyword>Pressure Angle</keyword><keyword>Radius of Curvature</keyword><keyword>Sliding-Velocity</keyword></keyword>
+    <keyword>Cam-Data dialog</keyword>
+    <keyword>Cam-Data Function-Block</keyword>
+    <keyword>Dialog<keyword>Cam-Data</keyword></keyword>
+  </keywords>
+  <body>
+    <header>
+      <para styleclass="Heading1">Dialog: Cam-Data FB</para>
+    </header>
+    <para styleclass="Heading2" style="page-break-before:always;">Cam-Data FB &gt; Cam-Analysis</para>
+    <para styleclass="SeeAlso"><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Command-AddFBCamData">See also Add Cam-Data FB</link></para>
+    <para styleclass="Heading4 Toggle_atocs_"><snippet src="MD-Snippet-2DCamWorkflow" inline="false"/></para>
+    <para styleclass="Heading3_atocs_"><anchor id="CAMDATAFB-LINKTO2DCAM"><keywords><keyword>Cam-Data FB<keyword>Link wto a 2D-Cam</keyword></keyword></keywords></anchor>Link the Cam-Data FB to a 2D-Cam</para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="8" colcount="3">
+      <tr style="vertical-align:top">
+        <td colspan="3">
+          <para styleclass="Element"><text styleclass="Body Text">After you add a </text>Cam-Data FB<text styleclass="Body Text">, you must link it to a </text>2D-Cam<text styleclass="Body Text">. To link it you must open the </text>Cam-Data dialog<text styleclass="Body Text">.</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:9px;">
+          <para styleclass="Image Caption"><image src="MD-FB-CamData-DC.ipp" scale="100.00%" figurelistinclude="0"><title>Double-click FB to open the dialog-box</title></image></para>
+        </td>
+        <td colspan="2">
+          <para styleclass="Body Text"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td style="border-top:none; border-right:none; border-bottom:none;">
+                <list id="0" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="B Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="B Bullets"><text style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">Double-click the </text><text style="font-family:&apos;Segoe UI Semibold&apos;; font-size:10pt; font-weight:bold; font-style:normal; text-transform:uppercase; vertical-align:baseline; color:#800000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">Cam-Data FB</text><text style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;"> to open the </text><text style="font-family:&apos;Segoe UI Semibold&apos;; font-size:10pt; font-weight:bold; font-style:normal; text-transform:uppercase; vertical-align:baseline; color:#800000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">Cam-data dialog</text><text styleclass="VariableName">&#32;</text></li>
+                </list>
+                <para styleclass="Interface2">OR</para>
+                <list id="1" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="B Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="B Bullets"><text styleclass="SeeAlso">See </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-How-to-Open-a-Dialog-Box" styleclass="SeeAlso">How to open a dialog</link><text styleclass="VariableName">&#32;</text></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Body Table"><text style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">The </text><text styleclass="Element-Header">Cam-Data</text><text styleclass="Element"> dialog</text><text style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;"> is now open</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td colspan="3">
+          <para styleclass="Body Text"><text styleclass="ParameterHeader" style="color:#000000; background-color:#b8cde5;">Selected 2D-Cam is</text> box<image src="Red-14-1.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">: is empty. You must now select a </text><text styleclass="Element">2D-Cam</text>.</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td colspan="3">
+          <para styleclass="Body Text"><image src="MD-DIALOG-2DCAM-SELECT-2DCAM-0.ipp" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"><caption><![CDATA[Cam-Data dialog - NOT linked to a 2D-Cam]]></caption></image></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td colspan="2" style="vertical-align:top; width:16px;">
+          <para styleclass="Image Caption"><image src="MD-CLICK2D-CAM-GA.ipp" scale="-99.90%" figurelistinclude="0"><caption><![CDATA[Click to select a 2D-Cam]]></caption></image></para>
+        </td>
+        <td style="vertical-align:middle;">
+          <para styleclass="Body Text"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td style="border-top:none; border-right:none; border-bottom:none;">
+                <list id="2" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="2" styleclass="B Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="B Bullets"><text styleclass="HowTo Numbered" style="font-style:normal;">Click</text><text styleclass="HowTo Numbered"> a </text><text styleclass="Element">2D-Cam</text><text styleclass="HowTo Numbered"> in </text><text styleclass="Body Text">the graphics-area or the </text><text styleclass="Interface">Assembly-Tree</text><text styleclass="VariableName">&#32;</text></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Body Text">The <text styleclass="Element">2D-Cam</text> is now in the <text style="background-color:#80ff80;">Selected 2D-Cam is</text>&#32;<image src="Red-14-1.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Image Caption">&#32;</text>box - see image below.</para>
+          <para styleclass="Body Text"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td style="border-top:none; border-right:none; border-bottom:none;">
+                <list id="3" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="3" styleclass="B Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="B Bullets"><text styleclass="HowTo Numbered" style="font-style:normal;">Click</text><text styleclass="HowTo Numbered">&#32;</text><image src="Red-14-2.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="HowTo Numbered"> (</text><equation styleclass="HowTo Numbered"><![CDATA[\otimes]]></equation><text styleclass="HowTo Numbered">) to close the </text><text styleclass="Element">Cam-Data dialog</text><text styleclass="VariableName">&#32;</text></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td colspan="3" style="vertical-align:top;">
+          <para styleclass="Normal"><image src="MD-DIALOG-2DCAM-SELECT-2DCAM-0A.ipp" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"><caption><![CDATA[Cam-Data FB linked to 2D-Cam 'Cam Outer']]></caption></image></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="vertical-align:top;">
+          <para styleclass="Normal"><image src="MD-FB-CAMDATA-1.ipp" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td colspan="2" style="vertical-align:top;">
+          <para styleclass="Body Text">The caption above the <text styleclass="Element">Cam-Data FB</text> is the element-name of the <text styleclass="Element">Cam-Data</text> element - <text styleclass="SeeAlso">see </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-Rename-Element" styleclass="SeeAlso">Rename element dialog</link>&#32;</para>
+          <para styleclass="Body Text">The caption above the element-name is the name of the <text styleclass="Element">2D-Cam</text> element, that has the link with the <text styleclass="Element">Cam-Data FB</text>.</para>
+          <para styleclass="Normal"><line style="height:1px; color:#343400;" /></para>
+          <para styleclass="Body Text"><text styleclass="VariableName">TOP-TIP</text>: When there are two or more <text styleclass="Element">2D-Cams</text> in the <text styleclass="Interface">Mechanism-Editor</text>:</para>
+          <list id="4" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Body Text HowTo" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="Body Text HowTo">Edit the color of the <text styleclass="Element">2D-Cam</text> - <text styleclass="SeeAlso">see </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-2DCam-ParametersTab" styleclass="SeeAlso">2D-Cam dialog : Display tab &gt;</link><text styleclass="Separator"> Display Options </text><text styleclass="VariableName">&#32;</text></li>
+            <li styleclass="Body Text HowTo">Rename the <text styleclass="Element">2D-Cam</text> element to its color - <text styleclass="SeeAlso">see </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-Rename-Element" styleclass="SeeAlso">Rename dialog</link></li>
+          </list>
+          <para styleclass="Body Text HowTo">Now, it is easier to see the link between a <text styleclass="Element">2D-Cam</text> and <text styleclass="Element">Cam-Data FB</text><text styleclass="Body Text">.</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td colspan="3" style="vertical-align:top;">
+          <para styleclass="Body Text">After you link the 2D-Cam to a Cam-Data FB, you can :</para>
+          <list id="5" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted"><text styleclass="VariableName">Analyze 5 Cam parameters - see</text><text styleclass="SeeAlso">&#32;</text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-FunctionBlock-CamData" anchor="2DCAMDATAFB-CAMANALYSIS" styleclass="SeeAlso">Cam-Analysis Parameters</link><text styleclass="Body Text">&#32;</text></li>
+            <li styleclass="HowTo Bulleted"><text styleclass="VariableName">Calculate the Cam&apos;s Coordinates </text>- <text styleclass="SeeAlso">see </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-FunctionBlock-CamCoordinates" styleclass="SeeAlso">Cam-Coordinates dialog</link><text styleclass="Body Text">&#32;</text></li>
+          </list>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Body Text"><anchor id="2DCAMDATAFB-CAMANALYSIS" styleclass="Heading4 Toggle_atocs_2"><keywords><keyword>2D-Cam Analysis Parameters<keyword>Contact Force</keyword><keyword>Maximum Shear-Stress</keyword><keyword>Radius-of-Curvature</keyword><keyword>Pressure-Angle</keyword><keyword>Sliding-Velocity</keyword></keyword></keywords></anchor><text styleclass="Heading3_atocs_">Cam-Data FB: Cam Analysis Parameters</text></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="2" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Normal" style="text-align:left;"><image src="MD-GA-FB-CamData.ipp" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"><caption><![CDATA[Analysis Parameters from Cam-Data FB]]></caption></image></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Table">The five output-connectors from the <text styleclass="Element">Cam-Data FB</text><text styleclass="Body Text"> provide:</text></para>
+          <list id="6" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000080;">
+            <li styleclass="HowTo Bulleted"><text styleclass="VariableName">F &#160;: </text><text styleclass="ParameterHeader">Contact Force</text><text styleclass="VariableName"> : </text><text styleclass="SeeAlso">See </text><link displaytype="text" defaultstyle="true" type="topiclink" href="" anchor="CAMANALYSIS-CONTACTFORCE" styleclass="SeeAlso">Note 1</link></li>
+            <li styleclass="HowTo Bulleted"><text styleclass="VariableName">Ԏ : </text><text styleclass="ParameterHeader">Contact Maximum Shear Stress</text><text styleclass="VariableName"> : </text>See <link displaytype="text" defaultstyle="true" type="topiclink" href="" anchor="CAMANALYSIS-MAXSHEARSTRESS">Note 2</link></li>
+            <li styleclass="HowTo Bulleted"><text styleclass="VariableName">ρ : </text><text styleclass="ParameterHeader">Radius-of-Curvature</text><text styleclass="VariableName"> : </text>See <link displaytype="text" defaultstyle="true" type="topiclink" href="" anchor="CAMANALYSIS-ROC">Note 3</link></li>
+            <li styleclass="HowTo Bulleted"><text styleclass="VariableName">μ : </text><text styleclass="ParameterHeader">Pressure Angle</text><text styleclass="VariableName"> : </text>See <link displaytype="text" defaultstyle="true" type="topiclink" href="" anchor="CAMANALYSIS-PRESSUREANGLE">Note 4</link></li>
+            <li styleclass="HowTo Bulleted"><text styleclass="VariableName">Ue : </text><text styleclass="ParameterHeader">Sliding Velocity</text><text styleclass="VariableName"> : </text><text styleclass="Body Text">see </text><link displaytype="text" defaultstyle="true" type="topiclink" href="" anchor="CAMANALYSIS-SLIDINGVELOCITY" styleclass="Body Text">Note 5</link></li>
+          </list>
+          <para styleclass="Body Text"><text style="font-size:11pt; font-weight:normal; font-style:normal;">Drag wires from the output-connectors of the </text><text styleclass="Element">Cam-Data FB</text><text style="font-size:11pt; font-weight:normal; font-style:normal;"> to a </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Command-AddFBGraph" styleclass="Element">Graph FB</link><text style="font-size:11pt; font-weight:normal; font-style:normal;">, a </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-FunctionBlock-Math" styleclass="Element">Math FB</link><text style="font-size:11pt; font-weight:normal; font-style:normal;"> or a </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Command-AddFBStatistics" styleclass="Element">Statistics FB</link></para>
+          <para styleclass="Body Text"><text style="font-size:11pt; font-weight:normal; font-style:normal;">Make sure you select the correct Cam-Profile (</text><text styleclass="Parameter">Inner, Outer,</text> or <text styleclass="Parameter">Pitch-Center Path</text><text style="font-size:11pt; font-weight:normal; font-style:normal;">) in the </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Command-AddFBGraph" anchor="YAxisDisplay" styleclass="Parameter">Y–axis display option</link><text style="font-size:11pt; font-weight:normal; font-style:normal;"> of the </text><text styleclass="Element">Graph FB</text><text style="font-size:11pt; font-weight:normal; font-style:normal;"> interface.</text></para>
+          <para styleclass="Normal"><line style="height:1px; color:#343400;" /></para>
+          <para styleclass="Notes">Top-Tip: </para>
+          <para styleclass="Body Text">When there are two or more <text styleclass="Element-Header">2D-Cams</text>, connect wires from the <text styleclass="VariableName">same</text> output-connector of <text styleclass="VariableName">different</text>&#32;<text styleclass="Element">Cam-Data FBs</text> to the <text styleclass="VariableName">same</text>&#32;<text styleclass="Element">Graph FB</text>. E.g. Plot <text styleclass="Parameter">Pressure-Angle</text> of up to four <text styleclass="Element">2D-Cams</text> with one <text styleclass="Element">Graph FB</text>.</para>
+          <para styleclass="Interface2">AND</para>
+          <para styleclass="Body Text">Set the <text styleclass="ParameterHeader">Minimum Y-axis</text> and <text styleclass="ParameterHeader">Maximum Y-axis</text> values of all graphs to be equal to each other. Use the <text styleclass="ParameterHeader">Set all</text> option in the <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-FunctionBlock-GraphSettings">Graph Settings</link>. Then it is even easier to compare the same parameter for each <text styleclass="Element-Header">2D-Cam</text> with the same graph limits. If the plot exceeds the limits, it is easier to see.</para>
+          <para styleclass="Normal"><line style="height:1px; color:#343400;" /></para>
+          <para styleclass="Notes"><anchor id="CAMANALYSIS-CONTACTFORCE" styleclass="Body Text"><keywords><keyword>2D-Cam Analysis Notes<keyword>Note 1: Contact Force</keyword></keyword></keywords></anchor>Note 1: </para>
+          <para styleclass="Body Text HowTo">Do <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-ConfigurePowerSource">Configure the Power Source</link> before you can analyze the Contact-Force.</para>
+          <para styleclass="Body Text HowTo">If <text styleclass="Parameter">Contact-Force</text> is 0.0<text style="font-size:10pt; vertical-align:baseline;">N</text> in the <text styleclass="Element">Graph FB</text>, and the <text styleclass="VariableName">Configure Power Source</text> is correct, change the Cam from <text styleclass="Parameter">Inner</text> to <text styleclass="Parameter">Outer</text>, or <text styleclass="Body Text">vice versa, in the </text><text styleclass="Parameter">Graph FB &gt; Y-axis Options</text><text styleclass="Body Text">.</text></para>
+          <para styleclass="Body Text"><anchor id="CAMANALYSIS-MAXSHEARSTRESS"><keywords><keyword>2D-Cam Analysis Notes<keyword>Note 2: Maximum Shear Stress Assumptions</keyword></keyword></keywords></anchor><text styleclass="Notes">Note 2: </text></para>
+          <para styleclass="Body Text HowTo">Do <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-ConfigurePowerSource">Configure the Power Source</link> before you can analyze the Contact-Force.</para>
+          <para styleclass="Body Text HowTo">If <text styleclass="Parameter">Shear-Stress</text> is 0.0<text style="font-size:10pt; vertical-align:baseline;">Nm</text><text style="font-size:7pt; vertical-align:super;">–2</text> in the <text styleclass="Element">Graph FB</text>, and the <text styleclass="VariableName">Configure Power Source</text> is correct, change the Cam from <text styleclass="Parameter">Inner</text> to <text styleclass="Parameter">Outer</text>, or <text styleclass="Body Text">vice versa, in the </text><text styleclass="Parameter">Graph FB &gt; Y-axis Options</text><text styleclass="Body Text">.</text></para>
+          <para styleclass="Normal"><line style="height:1px; color:#343400;" /></para>
+          <para styleclass="Body Text HowTo">The <text styleclass="VariableName">Maximum Shear Stress</text> is not on the surface of the Cam - it is a little below its surface. The <text styleclass="VariableName">Maximum Shear Stress</text> and its depth below the surface is a function of the material properties of the contacting bodies.</para>
+          <para styleclass="VariableName">Material Properties:</para>
+          <list id="7" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted"><text styleclass="VariableName">Follower-Profile</text>: <equation><![CDATA[E=210GPa]]></equation>, <equation><![CDATA[\nu=0.3]]></equation></li>
+            <li styleclass="HowTo Bulleted"><text styleclass="VariableName">Cam-Profile</text>: <equation><![CDATA[E=210GPa]]></equation>, <equation><![CDATA[\nu=0.3]]></equation>, or from the Steel Selection in <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-2DCam-CamLifetab" styleclass="SeeAlso">2D-Cam dialog</link><text styleclass="SeeAlso"> &gt; </text><text styleclass="Separator">Cam-Life tab</text></li>
+          </list>
+          <para styleclass="Body Text">To calculate Maximum Shear-Stress, we assume that friction is zero and the Cam-Profile and Follower Profile are perfectly smooth.</para>
+          <para styleclass="Normal"><line style="height:1px; color:#343400;" /></para>
+          <para styleclass="Body Text"><anchor id="CAMANALYSIS-ROC"><keywords><keyword>2D-Cam Analysis Notes<keyword>Note 3: Radius of Curvature</keyword></keyword></keywords></anchor><text styleclass="Notes">Note 3: </text></para>
+          <para styleclass="Body Text HowTo">By convention, the <text styleclass="Parameter">Radius-of-Curvature (ROC)</text> of a Follower-Roller is positive.</para>
+          <para styleclass="Body Text HowTo">When the cam is convex relative to the Roller, the <text styleclass="Parameter">ROC</text> of the cam is positive.</para>
+          <para styleclass="Body Text HowTo">When the cam is concave relative to the Roller, the <text styleclass="Parameter">ROC</text> of the cam is negative.</para>
+          <para styleclass="Body Table"><text styleclass="Parameter">Radius-of-Curvature</text> of the <text styleclass="VariableName">Pitch-Curve</text> is not available. If you need to know the <text styleclass="Parameter">Radius-of-Curvature</text> of the <text styleclass="Parameter">Pitch-Curve</text>, export the <text styleclass="Parameter">Radius-of-Curvature</text> of the <text styleclass="Parameter">Inner</text> and <text styleclass="Parameter">Outer</text> cams to Excel, and calculate the average.</para>
+          <para styleclass="Normal"><line style="height:1px; color:#343400;" /></para>
+          <para styleclass="Body Text"><anchor id="CAMANALYSIS-PRESSUREANGLE"><keywords><keyword>2D-Cam Analysis Notes<keyword>Note 4: Pressure Angle</keyword></keyword></keywords></anchor><text styleclass="Notes">Note 4: </text></para>
+          <para styleclass="Body Text HowTo">The <text styleclass="Parameter">Pressure Angle</text> is through the center of the <text styleclass="VariableName">Follower-Roller</text>. There are two other <text styleclass="Parameter">Pressure Angles</text> available: the <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-Cam-Pressure-Angle">Contact Pressure Angle</link> of the <text styleclass="Parameter">Inner</text> and <text styleclass="Parameter">Outer</text> Cams - these are labeled as <text styleclass="Parameter">Inside Cont. PR, Ang</text>. in the <text styleclass="T_Menu">Graph FB &gt; Y-axis display options</text>.</para>
+          <para styleclass="Body Text HowTo">These should be used with a Flat-Faced Follower-Profile, only.</para>
+          <para styleclass="Body Text HowTo">We do not calculate for you the <text styleclass="Parameter">Pressure Angle</text> of a Stationary Cam.</para>
+          <para styleclass="Normal"><line style="height:1px; color:#343400;" /></para>
+          <para styleclass="Notes"><anchor id="CAMANALYSIS-SLIDINGVELOCITY"><keywords><keyword>2D-Cam Analysis Notes<keyword>Note 5: Sliding Velocity, Ue/2</keyword><keyword>Note 5: Entrainment-Velocity, Ue</keyword></keyword></keywords></anchor>Note 5: </para>
+          <para styleclass="Body Text HowTo">The <text styleclass="Parameter">Sliding-Velocity</text> assumes the <text styleclass="VariableName">Follower-Profile</text> does not roll, even if the Profile represents a Roller; it assumes it slides over the <text styleclass="VariableName">Cam-Profile</text>. Use the <text styleclass="Parameter">Sliding-Velocity</text> to calculate the Film Thickness of the lubricating oil between the <text styleclass="VariableName">Follower-Profile</text> and <text styleclass="VariableName">Cam-Profile</text>. If you know the surface finish of the <text styleclass="VariableName">Cam-Profile</text> and the <text styleclass="VariableName">Follower-Profile</text>, you can also calculate the <text styleclass="VariableName">Film Thickness Ratio</text>, <equation font-size="28"><![CDATA[\lambda]]></equation>. This is an important parameter as it strongly influences the life of the cam. A <text styleclass="VariableName">Film Thickness Ratio</text> of less than 1 means that metal asperities of the Follower-Profile and Cam-Profile contact each other, and wear occurs. </para>
+          <para styleclass="VariableName-indent">Sliding Velocity = (Velocity of Cam-Profile – Velocity of Follower-Profile)</para>
+          <para styleclass="VariableName-indent">Entrainment Velocity = (Velocity of Cam-Profile +Velocity of Follower-Profile) ÷ 2</para>
+          <para styleclass="VariableName-indent">Slip-Slide-Ratio = Sliding-Velocity ÷ Entrainment Velocity</para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading4 Toggle_atocs_2" style="text-indent:-36px; margin-left:60px;"><image src="tog_plus.gif" scale="100.00%" figurelistinclude="0"></image><tab /><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" src-collapsed="tog_plus.gif" src-expanded="tog_minus.gif"><caption><![CDATA[Contact Force / Contact Shear-Stress]]></caption></toggle></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="1" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Table"><text styleclass="VariableName" style="color:#ff0000;">You</text>&#32;<text styleclass="VariableName">must</text> do <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-ConfigurePowerSource">Configure Power Source</link> to calculate correctly the <text styleclass="Parameter">Contact-Force</text> and <text styleclass="Parameter">Contact Shear-Stress</text>.</para>
+          <para styleclass="Body Table">There are four methods to show the <text styleclass="VariableName">Contact-Force</text> and <text styleclass="VariableName">Shear-Stress</text> between the Cam and the Follower.</para>
+          <para styleclass="VariableName">Display in the graphics-area:</para>
+          <para styleclass="Body Table"><text styleclass="VariableName">Method 1:</text><text styleclass="SeeAlso">&#32;</text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Command-Forces-Show-Force-Vectors" styleclass="SeeAlso">Forces toolbar &gt; Display Force-Vectors</link> button<text styleclass="VariableName">. </text></para>
+          <para styleclass="Body Text HowTo">Two equal and opposite Force-Vectors radiate from the Contact-Point between the Cam and Follower. They are:</para>
+          <list id="8" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Body Text Howindent4bullets" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="Body Text Howindent4bullets">the force vector that ACTS-ON the Follower-Profile and Follower-Part</li>
+            <li styleclass="HowTo Numbered">the force vector that ACTS-ON the Cam-Profile and Cam-Part. </li>
+          </list>
+          <para styleclass="Body Text HowTo2"><text styleclass="VariableName-indent">You</text> must analyze if the force between the Cam-Profile and the Follower-Profile is active or not active (less than zero Newtons).</para>
+          <para styleclass="Body Table"><text styleclass="VariableName">Method 2: </text>Use: <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-2DCam-DisplayTab" anchor="2DCAM-DIALOG-DISPLAY-OPTIONS" styleclass="T_Menu">2D-Cam dialog &gt; Display tab &gt; Cam Display Options &gt; Contact-Force</link><text styleclass="VariableName">. Plot with a Graph-FB:</text></para>
+          <para styleclass="VariableName">Method 3: <text styleclass="HowTo Bulleted">Add a </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Command-FB-Force-Data">Force-Data FB</link><text styleclass="HowTo Bulleted">, edit it select the </text><text styleclass="Element">2D-Cam</text><text styleclass="HowTo Bulleted"> as the </text><text styleclass="Parameter">Force element</text><text styleclass="HowTo Bulleted">, plot with a </text><text styleclass="Element">Graph FB</text>.</para>
+          <para styleclass="Body Text"><text styleclass="VariableName">Method 4: </text><text styleclass="HowTo Bulleted">Use the </text><text styleclass="Element">Cam-Data FB</text><text styleclass="HowTo Bulleted" style="font-style:italic;">&#32;</text>to plot <text styleclass="Parameter">Contact Force</text> from the top output-connector <text styleclass="HowTo Bulleted">with a </text><text styleclass="Element">Graph FB</text><text styleclass="HowTo Bulleted">.</text></para>
+          <para styleclass="Body Text HowTo2">Contact-Force is <text style="font-weight:bold;">= </text>0<text style="font-size:10pt; vertical-align:baseline;"> N</text> if Contact-Force <text style="font-weight:bold;">≤</text> 0 <text style="font-size:10pt; vertical-align:baseline;">N</text>. </para>
+          <para styleclass="Body Text HowTo"><text styleclass="VariableName">Method 4</text> is best if you need to know if the Cam-Force is less than or equal to zero Newtons</para>
+        </td>
+      </tr>
+    </table></para>
+  </body>
+</topic>

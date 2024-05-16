@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" status="Under Construction" modified="2024-02-13T17:29:49.288Z" lasteditedby="44785" version="2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title>Add Force-Data FB</title>
+  <keywords>
+    <keyword>Add<keyword>Function-Block: Force-Data</keyword></keyword>
+    <keyword>Analyze the Force at a Joint.</keyword>
+    <keyword>Force menu<keyword>Force Data FB</keyword></keyword>
+    <keyword>Force toolbar<keyword>Add Force Data FB</keyword></keyword>
+    <keyword>Function-Block<keyword>Force Data FB</keyword></keyword>
+  </keywords>
+  <body>
+    <header>
+      <para styleclass="Heading1">Add Force-Data FB</para>
+    </header>
+    <para styleclass="Heading2" style="page-break-before:always;"><anchor id="ForceDataFB" styleclass="Body Text HowTo"><keywords><keyword>Force Data FB<keyword>Select Joint, Cam, or Spring</keyword><keyword>Select Point</keyword></keyword></keywords></anchor><text styleclass="Heading3_atocs_">Why add a Force-Data FB?</text></para>
+    <para styleclass="SeeAlso">See also: <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-FunctionBlock-ForceData" styleclass="T_Menu">Force-Data FB dialog</link></para>
+    <para styleclass="Normal"><line style="height:1px; color:#343400;" /></para>
+    <para styleclass="Body Text HowTo">Use a <text styleclass="Element">Force-Data FB</text> to measure the <text styleclass="VariableName">force</text><text styleclass="BodyText BI">*</text> that <text styleclass="VariableName" style="color:#ff0000;">acts ON</text> a <text styleclass="Element">Point</text> at a <text styleclass="Element">Joint</text><text styleclass="Body Text">, </text><text styleclass="Element">Spring</text><text styleclass="Body Text">, </text><text styleclass="Element">2D-Cam</text><text styleclass="Body Text">, </text><text styleclass="Element">Pulley</text><text styleclass="Body Text">, or </text><text styleclass="Element">Rack-Pinion</text><text styleclass="Body Text">.</text></para>
+    <para styleclass="Body Text HowTo"><text styleclass="Body Text">It is important to </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-ConfigurePowerSource" styleclass="Element">Configure Power Source</link><text styleclass="Body Text"> correctly to calculate Force</text><text styleclass="BodyText BI">*</text><text styleclass="Body Text">.</text></para>
+    <para styleclass="Body Text"><text styleclass="BodyText BI">*</text><text styleclass="Body Table">&#32;</text><text styleclass="VariableName">Force</text> is the generic term we use for Force and Torque data.</para>
+    <para styleclass="Heading3_atocs_">Add Force-Data FB</para>
+    <para styleclass="Body Text"><table styleclass="Default" rowcount="3" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:240px;">
+          <para styleclass="Image Caption"><image src="MD-Icon-FB-ForceData.png" scale="-99.90%" figurelistinclude="0"><caption><![CDATA[Force-Data FB in graphic-area]]></caption></image></para>
+        </td>
+        <td>
+          <para styleclass="Body Text"><text styleclass="VariableName">STEP 1: Add the Force-Data FB to the graphics-area.</text></para>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="2" colcount="2">
+            <tr style="vertical-align:top">
+              <td style="vertical-align:bottom; width:41px;">
+                <para styleclass="VariableName-IT" style="text-align:right;"><image src="MD-Icon-Force-FB-ForcesData.png" scale="100.00%" padding="0 2 0 0" figurelistinclude="0"></image></para>
+              </td>
+              <td>
+                <list id="0" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Body Table" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="Body Table"><text styleclass="Body Text">Click </text><text styleclass="T_Menu">Add menu &gt; Forces sub-menu &#160;&gt; Add Force-Data FB</text><text styleclass="VariableName">&#32;</text></li>
+                </list>
+                <para styleclass="VariableName">OR</para>
+                <list id="1" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="B Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="B Bullets"><text styleclass="Body Text">Click</text><text styleclass="Interface">&#32;</text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Menu-Forces" styleclass="T_Menu">Forces toolbar</link><text styleclass="T_Menu"> &gt; Add Force-Data FB</text><text styleclass="VariableName">&#32;</text></li>
+                </list>
+              </td>
+            </tr>
+            <tr style="vertical-align:top">
+              <td colspan="2" style="vertical-align:bottom;">
+                <para styleclass="Body Text">Then:</para>
+                <list id="2" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="2" styleclass="B Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="B Bullets"><text styleclass="Body Text">Click the graphics-area</text><text styleclass="VariableName">&#32;</text></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Body Text">The <text styleclass="Element">Force-Data FB</text> is now in the graphics-area<text styleclass="Interface">.</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:240px;">
+          <para styleclass="Image Caption"><image src="MD-Icon-FB-ForceData-DblClk.png" scale="-99.90%" figurelistinclude="0"><caption><![CDATA[Doube-click to edit Force-Data FB]]></caption></image></para>
+        </td>
+        <td>
+          <list id="3" type="ol" listtype="decimal" formatstring="&#83;&#84;&#69;&#80;&#32;&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="2" styleclass="HowTo STEP" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo STEP">Open the Force-Data FB dialog </li>
+          </list>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <list id="4" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="B Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="B Bullets"><text styleclass="HowTo Numbered" style="font-style:normal;">Double-click the</text><text styleclass="HowTo Numbered">&#32;</text><text styleclass="Element">Force-Data FB</text><text styleclass="HowTo Numbered"> to open the </text><text styleclass="Element">Force-Data dialog</text><text styleclass="VariableName">. </text></li>
+                </list>
+                <para styleclass="VariableName-IT"><text style="font-style:normal;">OR</text></para>
+                <para styleclass="SeeAlso">See <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-How-to-Open-a-Dialog-Box">&apos;How to open a dialog&apos;</link></para>
+              </td>
+            </tr>
+          </table></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="vertical-align:top; width:240px;">
+          <para styleclass="Image Caption"><image src="MD-DIALOG-FORCEDATA.ipp" scale="-99.90%" figurelistinclude="0"><caption><![CDATA[Force-Data FB dialog]]></caption></image></para>
+        </td>
+        <td style="vertical-align:top;">
+          <list id="5" type="ol" listtype="decimal" formatstring="&#83;&#84;&#69;&#80;&#32;&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="3" styleclass="HowTo STEP" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo STEP">Link the Force-Data FB to a Force-Element and a Point </li>
+          </list>
+          <list id="6" type="ol" listtype="upper-alpha" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="B Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="B Bullets"><text styleclass="VariableName">Select a Force-Element</text></li>
+          </list>
+          <para styleclass="B Bullets"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <list id="7" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Body Table" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="Body Table">Click a Force-element in<text styleclass="Body Text"> the graphics-area or</text> the <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-Assembly-Tree" styleclass="Interface">Assembly-Tree</link><text styleclass="VariableName">&#32;</text></li>
+                </list>
+                <para styleclass="Body Table">Force-elements include: <text styleclass="Element">Joint</text>, <text styleclass="Element">2D-Cam,</text>&#32;<text styleclass="Element">Spring, Pulley, Rack-Pinion,</text>&#32;</para>
+                <para styleclass="Body Table"><text styleclass="HowTo Bulleted">A list of </text><text styleclass="Parameter">Available Points</text><text styleclass="HowTo Bulleted"> shows in the box below.</text></para>
+              </td>
+            </tr>
+          </table></para>
+          <list id="8" type="ol" listtype="upper-alpha" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="2" styleclass="B Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="B Bullets"><text styleclass="VariableName">Select a Point in the box of Available Points</text></li>
+          </list>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <list id="9" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Body Table" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="Body Table">Click a <text styleclass="Element">Point</text> in the box below <text styleclass="Parameter">Available Points</text><text styleclass="VariableName">&#32;</text></li>
+                </list>
+                <para styleclass="Body Table">If you select a:</para>
+                <list id="10" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullets" style="font-family:Symbol; font-size:10pt; color:#000080;">
+                  <li styleclass="Bullets"><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-Pin-Joint" styleclass="Element">Pin-Joint</link><text styleclass="HowTo Bulleted"> - there are two(2) </text><text styleclass="Parameter">Available Points</text><br/><text styleclass="HowTo Bulleted">One </text><text styleclass="Element">Point</text><text styleclass="HowTo Bulleted"> on each </text><text styleclass="Element">Part</text><text styleclass="HowTo Bulleted"> of the </text><text styleclass="Element">Pin-Joint</text></li>
+                  <li styleclass="HowTo Bulleted"><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-Slide-Joint" styleclass="Element">Slide-Joint</link><text styleclass="Body Text"> - </text>there are f<text styleclass="Body Text">our(4) </text><text styleclass="Parameter">Available Points</text><br/><text styleclass="Body Text">Two </text><text styleclass="Element">Points</text><text styleclass="Body Text"> on each </text><text styleclass="Element">Line</text><text styleclass="Body Text"> of the </text><text styleclass="Element">Slide-Joint</text></li>
+                  <li styleclass="HowTo Bulleted"><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Command-Add2DCam" styleclass="Element">2D-Cam</link><text styleclass="Body Text"> - zero(0) </text><text styleclass="Parameter">Available Points</text><br/><text styleclass="Interface">Contact Point</text><text styleclass="Body Text"> is selected</text></li>
+                  <li styleclass="HowTo Bulleted"><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Command-Forces-FB-Spring" styleclass="Element">Spring FB</link><text styleclass="Body Text"> - two(2) </text><text styleclass="Parameter">Available Points</text><text styleclass="Body Text">&#32;</text><br/><text styleclass="Body Text">The </text><text styleclass="Element">Spring&apos;s</text><text styleclass="Body Text"> Anchor </text><text styleclass="Element">Points</text></li>
+                  <li styleclass="HowTo Bulleted"><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Command-AddRackPinion-BallScerw" styleclass="Element">Rack-Pinion</link><text styleclass="Body Text"> - two(2) </text><text styleclass="Parameter">Available Points</text><text styleclass="Body Text">&#32;</text><br/><text styleclass="Body Text HowTo">The </text><text styleclass="Interface">Contact-Points</text><text styleclass="Body Text HowTo"> between the </text><text styleclass="Element">Rack and Pinion</text></li>
+                </list>
+                <para styleclass="Notes">Note: <text styleclass="Body Text HowTo">Even if a </text><text styleclass="Element">Point</text><text styleclass="Body Text HowTo"> shows in the </text><text styleclass="Parameter-Header" style="font-family:Arial; font-size:10pt; font-weight:normal; font-style:normal; text-decoration:none; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">Selected Force Output Element </text><text styleclass="Body Text">box</text><text styleclass="Body Text HowTo">, click the </text><text styleclass="Element">Point</text><text styleclass="Body Text HowTo"> in the </text><text styleclass="Parameter">Available Points</text><text styleclass="Body Text HowTo"> box.</text></para>
+              </td>
+            </tr>
+          </table></para>
+          <list id="8" type="ol" listtype="upper-alpha" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="2" styleclass="B Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="B Bullets"><text styleclass="VariableName">Complete the command &#160;</text></li>
+          </list>
+          <para styleclass="B Bullets"><table styleclass="PopupTable2" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <list id="11" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="3" styleclass="Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="Bullets">Click <image src="OK-tiny-11-15.png" scale="100.00%" figurelistinclude="0"></image> to close the<text styleclass="Body Text">&#32;</text><text styleclass="Element-Header">Force-Data FB</text><text styleclass="VariableName">&#32;</text></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Body Text"></para>
+  </body>
+</topic>

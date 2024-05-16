@@ -1,0 +1,1530 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" modified="2024-04-30T14:38:54.328+01:00" lasteditedby="44785" version="2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title>Dialog: 2D-Cam &gt; Roller Life tab</title>
+  <keywords>
+    <keyword>Dialog<keyword>2D-Cam - Roller tab</keyword></keyword>
+  </keywords>
+  <body>
+    <header>
+      <para styleclass="Heading1">-&gt; Roller Life tab</para>
+    </header>
+    <para styleclass="Heading3_atocs_"><text styleclass="Heading2">2D-Cam &gt; Roller Life tab</text></para>
+    <para styleclass="Normal"><line style="height:1px; color:#343400;" /></para>
+    <para styleclass="Body Table"><text styleclass="Notes">Notes</text>: </para>
+    <para styleclass="Body Text HowTo">Make sure the <text styleclass="Element-Header">2D-Cam</text> or <text styleclass="Element-Header">Conjugate Cam FB</text> is the power-source for the Follower (and its kinematic-chain) - <text styleclass="SeeAlso">See</text>&#32;<link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-ConfigurePowerSource">Configure Power Source</link></para>
+    <para styleclass="Body Text HowTo">The Roller you select in this tab - <text styleclass="VariableName">Roller Life</text> - controls the radius/diameter of the <text styleclass="VariableName">Follower-Roller</text> in the model. </para>
+    <para styleclass="Body Text HowTo">Other names for a <text styleclass="VariableName">Follower-Roller </text><text styleclass="Body Text">bearing are: </text><text styleclass="VariableName">Track-Roller</text><text styleclass="Body Text">, </text><text styleclass="VariableName">Track-Follower</text><text styleclass="Body Text">, and </text><text styleclass="VariableName">Cam-Follower</text><text styleclass="Body Text">.</text></para>
+    <para styleclass="Normal"><line style="height:1px; color:#343400;" /></para>
+    <para styleclass="Body Table"><text styleclass="Body Text">To Calculate the </text><text styleclass="VariableName">Roller Life</text>, you must: </para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="1" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Interface2">Parameters <text styleclass="VariableName">tab</text> ( <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-2DCam-ParametersTab" anchor="2DCAM-DIALOG-LIFETIME-PROPERTIES" styleclass="VariableName">Parameters tab &gt;</link><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-2DCam-ParametersTab" styleclass="Separator"> Enable Lifetimes, Edit Safety-Factor</link><text styleclass="Separator">&#32;</text><text styleclass="VariableName"> ) </text></para>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <list id="0" type="ol" listtype="decimal" formatstring="&#83;&#84;&#69;&#80;&#32;&#37;&#48;&#58;&#115;&#58;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo STEP" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; color:#000000;">
+                  <li styleclass="HowTo STEP"><text styleclass="Body Text">Enable </text><text styleclass="ParameterHeader">Show Roller and Cam Life</text>&#32;</li>
+                  <li styleclass="HowTo STEP">Enter a <text styleclass="ParameterHeader">Safety Factor</text> (CAM)</li>
+                </list>
+                <para styleclass="Body Text"><text styleclass="Notes">Note</text>: The <text styleclass="VariableName">Safety-Factor</text> of the Roller is<text styleclass="Heading4 HowTo_atoc_">&#32;</text>equal to the <text styleclass="VariableName" style="color:#ff0000;">Square</text> of the <text styleclass="VariableName">Safety-Factor of the Cam.</text></para>
+                <para styleclass="Normal"><line style="height:1px; color:#343400;" /></para>
+                <para styleclass="Body Text"><text styleclass="Notes">Top-Tip</text> - Enter <text styleclass="Parameter">Safety-Factor = 1</text> to help you to understand the <text styleclass="VariableName">Roller Life</text> results.</para>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="VariableName"><text styleclass="Interface2">Roller Life</text> tab</para>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <list id="1" type="ol" listtype="decimal" formatstring="&#83;&#84;&#69;&#80;&#32;&#37;&#48;&#58;&#115;&#58;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo STEP" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; color:#000000;">
+                  <li styleclass="HowTo STEP">Select a Roller bearing manufacturer and Roller bearing</li>
+                </list>
+                <para styleclass="Body Text">If you <text styleclass="ParameterHeader">Enable ISO 281 Modification Factors</text><text styleclass="VariableName">:</text></para>
+                <list id="1" type="ol" listtype="decimal" formatstring="&#83;&#84;&#69;&#80;&#32;&#37;&#48;&#58;&#115;&#58;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo STEP" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; color:#000000;">
+                  <li styleclass="HowTo STEP">Select or enter a <text styleclass="ParameterHeader">Reliability Factor</text></li>
+                  <li styleclass="HowTo STEP">Enter the <text styleclass="ParameterHeader">Oil Operating Temperature</text>, and <text styleclass="ParameterHeader">Oil Viscosity</text> at two other <text styleclass="ParameterHeader">Temperatures</text> (usually 40ºC and 100ºC)</li>
+                  <li styleclass="HowTo STEP">Enter the <text styleclass="ParameterHeader">Lubrication Type</text> and select the <text styleclass="ParameterHeader">Contamination Level</text></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="VariableName">Review the Roller&apos;s Lifetime</para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Normal"><image src="MD-DIALO0G-2DCAM-ROLLERLIFE-ROLLERBEARING.ipp" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"><caption><![CDATA[2D-Cam dialog > Roller Life tab 
+Select a Manufacturer and Bearing Part-Number of Parameter]]></caption></image></para>
+    <para styleclass="Normal"><line style="height:1px; color:#343400;" /></para>
+    <para styleclass="Heading3_atocs_"><anchor id="2DCAM-DIALOG-ROLLER"><keywords><keyword>2D-Cam dialog<keyword>Roller tab</keyword></keyword></keywords></anchor>Roller Life tab</para>
+    <para styleclass="Body Text HowTo" style="text-indent:-36px; margin-left:60px;"><anchor id="2DCAM-ROLLERTAB-SELECTROLLER" styleclass="Heading4 Toggle_atocs_"><keywords><keyword>2D-Cam dialog<keyword>Roller Manufacturer</keyword><keyword>Roller Part-Number, Diameter, ...</keyword><keyword>Roller Lifetime</keyword></keyword><keyword>Follower-Roller Manufacturers:<keyword>THK</keyword><keyword>SKF</keyword><keyword>INA</keyword><keyword>FAG</keyword><keyword>KOYO</keyword><keyword>NSK</keyword></keyword></keywords></anchor><image src="tog_plus.gif" scale="100.00%" styleclass="Heading4 Toggle_atocs_" figurelistinclude="0"></image><tab /><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" src-collapsed="tog_plus.gif" src-expanded="tog_minus.gif" styleclass="Heading4 Toggle_atocs_"><caption><![CDATA[Select a Roller bearing Manufacturer]]></caption><title>Click to exapand /collapse</title></toggle><text styleclass="Heading4 Toggle_atocs_"> and Part-Number.</text></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="1" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <list id="2" type="ol" listtype="decimal" formatstring="&#83;&#84;&#69;&#80;&#32;&#37;&#48;&#58;&#115;&#58;&#32;" format-charset="DEFAULT_CHARSET" levelreset="false" legalstyle="false" startfrom="1" styleclass="HowTo STEP" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo STEP">Select a Follower-Roller bearing Manufacturer <image src="Red-14-1.gif" scale="100.00%" figurelistinclude="0"></image>&#32;</li>
+          </list>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <list id="3" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Body Table" style="font-family:&apos;Segoe UI&apos;; font-size:11pt; color:#000000;">
+                  <li styleclass="Body Table">Click the drop-down list box to select a Follower-Roller Bearing Manufacturer</li>
+                </list>
+                <para styleclass="Body Table">Available Manufacturers<text styleclass="Body Text">: </text><text styleclass="VariableName-indent">SKF, INA/FAG, KOYO, NSK, THK</text></para>
+                <para styleclass="Body Text">When you select a manufacturer, the bearing <text styleclass="VariableName">Part-Numbers</text> and their parameters show in the table <image src="Red-14-2.gif" scale="100.00%" styleclass="HowTo STEP" figurelistinclude="0"></image>.</para>
+              </td>
+            </tr>
+          </table></para>
+          <list id="2" type="ol" listtype="decimal" formatstring="&#83;&#84;&#69;&#80;&#32;&#37;&#48;&#58;&#115;&#58;&#32;" format-charset="DEFAULT_CHARSET" levelreset="false" legalstyle="false" startfrom="1" styleclass="Body Text" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; color:#000000;">
+            <li styleclass="Body Text"><text styleclass="HowTo STEP">Select a Roller Bearing from the table </text><image src="Red-14-2.gif" scale="100.00%" styleclass="HowTo STEP" figurelistinclude="0"></image><text styleclass="HowTo STEP">&#32;</text></li>
+          </list>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="3" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Notes">Note: <text styleclass="Body Text">Click a </text><text styleclass="VariableName">Header</text><text styleclass="Body Text"> to sort by that </text><text styleclass="VariableName">Header</text><text styleclass="Body Text">. For example, click</text><text styleclass="Body Text HowTo">&#32;</text><text styleclass="VariableName">OD</text><text styleclass="Body Text HowTo"> to sort by </text><text styleclass="VariableName">Outside-Diameter.</text></para>
+                <para styleclass="Normal"><line style="height:1px; color:#343400;" /></para>
+                <list id="4" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Body Table" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="Body Table">Click a <text styleclass="VariableName">Part-Number from the table </text><image src="Red-14-2.gif" scale="100.00%" styleclass="HowTo STEP" figurelistinclude="0"></image></li>
+                </list>
+              </td>
+            </tr>
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Body Table"><image src="MD-CAM-FOLLOWER-PNo.ipp" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"><caption><![CDATA[Cam-Follower Radius
+& Follower-Roller Part- Number]]></caption></image></para>
+              </td>
+            </tr>
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Body Text"><text styleclass="VariableName" style="color:#ff0000;">IMPORTANT NOTES </text></para>
+                <list id="5" type="ol" listtype="upper-alpha" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Body Text" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="Body Text">You <text styleclass="VariableName" style="color:#ff0000;">must </text>add a <text styleclass="VariableName">Radius dimension</text> to the <text styleclass="Element-Header">Circle</text> before you select a <text styleclass="VariableName">Roller</text>.<text styleclass="VariableName">&#32;</text></li>
+                  <li styleclass="Body Text">The <text styleclass="VariableName">Radius dimension</text> of the <text styleclass="Element">Circle</text> sketch-element that represents the <text styleclass="VariableName">Roller</text> changes<text styleclass="VariableName" style="color:#ff0000;"> IMMEDIATELY </text>to the <text styleclass="VariableName">OD/2</text> of the bearing you select (± <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-2DCam-ParametersTab" anchor="2DCAM-DIALOG-RANGE-RADIUS" styleclass="SeeAlso">Radial Clearance</link>). </li>
+                  <li styleclass="Body Text">The <text styleclass="VariableName">Part-Number</text> of the <text styleclass="VariableName">Roller</text> is in the graphics-area under the Radius dimension - see image above</li>
+                  <li styleclass="Body Text">The <text styleclass="VariableName">Radius dimension</text> of the <text styleclass="Element">Circle</text> sketch-element that represents the <text styleclass="VariableName">Roller</text> is now read-only. </li>
+                </list>
+                <para styleclass="Body Text">To change the Radius of the <text styleclass="VariableName">Roller</text>:</para>
+                <list id="6" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+                  <li styleclass="HowTo Bulleted">Select a different <text styleclass="VariableName">Part-Number</text> for the <text styleclass="VariableName">Roller </text>bearing</li>
+                </list>
+                <para styleclass="HowTo Bulleted"><text styleclass="Body Text HowTo">or </text></para>
+                <list id="6" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+                  <li styleclass="HowTo Bulleted"><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-2DCam-ParametersTab" anchor="2DCAM-DIALOG-LIFETIME-PROPERTIES" styleclass="Body Text HowTo">Disable Show Roller and Cam Lifetimes check-box</link><text styleclass="Body Text HowTo">, and then edit the Radius dimension with the </text><text styleclass="Interface">Part-Editor</text><text styleclass="Body Text HowTo">.</text></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Body Table">You can see immediately the <text styleclass="VariableName">Basic Rating Life, </text><equation styleclass="Body Text;vertical-align:text-bottom" style="font-family:Arial; font-size:10pt; font-weight:normal; font-style:normal; text-decoration:none; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;vertical-align:text-bottom" font-size="28"><![CDATA[L_{10}\ ]]></equation><text styleclass="Body Text"> in the </text><text styleclass="Separator">L10 for Roller: Part Number </text><text styleclass="Body Text"> separator.</text></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Body Text HowTo" style="text-indent:-36px; margin-left:60px;"><anchor id="ISO281PARAMETERS" styleclass="Separator-Header"><keywords><keyword>Roller Lifetime<keyword>ISO 281 Modification Factors</keyword><keyword>a1</keyword><keyword>aiso</keyword><keyword>Contamination-Factors</keyword><keyword>Oil Temperature</keyword><keyword>Oil Viscosity</keyword><keyword>Reliability Factor</keyword></keyword></keywords></anchor><image src="tog_plus.gif" scale="100.00%" styleclass="Separator-Header" figurelistinclude="0"></image><tab /><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" src-collapsed="tog_plus.gif" src-expanded="tog_minus.gif" styleclass="Separator-Header"><caption><![CDATA[ ISO 281 Parameters ]]></caption><title>Click to exapand /collapse</title></toggle></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="1" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="HowTo STEP"><text styleclass="VariableName">To see these factors, enable the ISO 281 Modification Factors</text><image src="Red-14-5.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+          <para styleclass="Body Text">We calculate for you the <equation styleclass="HowTo Bulleted" style="vertical-align:baseline;vertical-align:text-bottom" font-size="28"><![CDATA[a_{1}]]></equation><text styleclass="HowTo Bulleted" style="vertical-align:baseline;"> and </text><equation styleclass="HowTo Bulleted" style="vertical-align:baseline;vertical-align:text-bottom" font-size="28"><![CDATA[a_{iso}]]></equation><text styleclass="HowTo Bulleted" style="vertical-align:baseline;"> modification factors as you enter the parameters below.</text></para>
+          <para styleclass="HowTo STEP"><image src="MD-Roller-Life-ISO281 Parameters.ipp" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"><caption><![CDATA[ISO 281 Modification Factors]]></caption></image></para>
+          <para styleclass="Heading4 Toggle_atocs_"><image src="1r.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Image Caption">&#32;</text>Reliability Factor (a1)</para>
+          <list id="7" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted"><text styleclass="VariableName">Reliability drop-down</text>: Use the drop-down<text styleclass="Normal"> to select, from a standard list of reliability percentages.</text></li>
+          </list>
+          <para styleclass="Body Text Howindent4bullets">The drop-down list is the standard range of <text styleclass="VariableName">Reliability Factors</text> (90 to 99.95%) as given in ISO 281. </para>
+          <para styleclass="HowTo Bulleted"><text styleclass="Body Text HowTo">or</text></para>
+          <list id="7" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted"><text styleclass="VariableName">Reliability Factor:</text><text styleclass="Body Text HowTo"> as a percentage. </text></li>
+          </list>
+          <para styleclass="Body Text Howindent4bullets">In this case, we find for you the nearest <text styleclass="VariableName">Reliability Factor</text> to the <text styleclass="VariableName">Reliability-Factors</text> in the drop-down list and ISO 281.</para>
+          <para styleclass="Normal"><line style="height:1px; color:#343400;" /></para>
+          <para styleclass="Heading4 Toggle_atocs_"><image src="2r.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Image Caption">&#32;</text>Operating Viscosity</para>
+          <para styleclass="Body Text">The operating viscosity of the oil (or Base Oil in a Grease) is function of its Viscosity Grade, Viscosity Index, and the Operating Temperature.</para>
+          <para styleclass="Body Text HowTo">To calculate these, you must enter these parameters:</para>
+          <list id="8" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted">Operating Temperature, <equation font-size="28"><![CDATA[\celsius]]></equation></li>
+            <li styleclass="HowTo Bulleted">Temperature <equation style="vertical-align:baseline;vertical-align:text-bottom" font-size="28"><![CDATA[T_{1}]]></equation> , and Viscosity <equation style="vertical-align:baseline;vertical-align:text-bottom" font-size="28"><![CDATA[\nu_{1}]]></equation> at Temperature <equation style="vertical-align:baseline;vertical-align:text-bottom" font-size="28"><![CDATA[T_{1}]]></equation></li>
+            <li styleclass="HowTo Bulleted">Temperature <equation style="vertical-align:baseline;vertical-align:text-bottom" font-size="28"><![CDATA[T_{2}]]></equation><text style="vertical-align:baseline;"> , and </text>Viscosity <equation style="vertical-align:baseline;vertical-align:text-bottom" font-size="28"><![CDATA[\nu_{2}]]></equation><text style="vertical-align:baseline;">&#32;</text>at temperature <equation style="vertical-align:baseline;vertical-align:text-bottom" font-size="28"><![CDATA[T_{2}]]></equation></li>
+          </list>
+          <para styleclass="VariableName">Rules<text styleclass="Body Text HowTo">:</text></para>
+          <list id="9" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted"><equation styleclass="Body Text HowTo;vertical-align:text-bottom" style="font-family:Arial; font-size:10pt; font-weight:normal; font-style:normal; text-decoration:none; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;" font-size="28"><![CDATA[T_{1} < T_{2}]]></equation><text styleclass="Body Text HowTo"> and </text><equation styleclass="Body Text HowTo;vertical-align:text-bottom" style="font-family:Arial; font-size:10pt; font-weight:normal; font-style:normal; text-decoration:none; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;" font-size="32"><![CDATA[\nu_{1} > \nu_{2}]]></equation></li>
+          </list>
+          <para styleclass="Body Text"><text styleclass="VariableName">Note</text>: </para>
+          <para styleclass="Body Text HowTo">The ISO VG of an oil equates to <equation style="vertical-align:baseline;vertical-align:text-bottom" font-size="26"><![CDATA[T_{1}= 40\celsius]]></equation> and <equation style="vertical-align:baseline;vertical-align:text-bottom" font-size="26"><![CDATA[\nu_{1}=ISO\ VG]]></equation></para>
+          <para styleclass="Body Text HowTo"><text style="vertical-align:baseline;">Lubricating Oil and Grease datasheets usually provide the Viscosity at </text><equation style="vertical-align:baseline;" font-size="28"><![CDATA[40\celsius]]></equation><text style="vertical-align:baseline;"> and at </text><equation style="vertical-align:baseline;" font-size="28"><![CDATA[100\celsius]]></equation><text style="vertical-align:baseline;">.</text></para>
+          <para styleclass="Normal"><line style="height:1px; color:#343400;" /></para>
+          <para styleclass="Heading4 Toggle_atocs_"><image src="3r.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image> Lubrication Type </para>
+          <para styleclass="Body Text">Select one of these lubrication methods:</para>
+          <list id="10" type="ul" listtype="bullet" formatstring="&#164;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Wingdings; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted"><text styleclass="Interface2">Oil Filtered On-Line</text>: Circulating oil lubrication with the oil filtered on-line before being supplied to the bearings</li>
+            <li styleclass="HowTo Bulleted"><text styleclass="Interface2">Oil Filtered Off-line</text>: Oil bath lubrication, or circulating oil lubrication with off-line filters (or without filtration)</li>
+            <li styleclass="HowTo Bulleted"><text styleclass="Interface2">Grease</text>.</li>
+          </list>
+          <para styleclass="HowTo Bulleted">Oil-Mist Lubrication is not considered.</para>
+          <para styleclass="Interface2"><image src="4r.gif" imagestyleclass="Default" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Image Caption">&#32;</text><text styleclass="Heading4 Toggle_atocs_">Contamination Factors for each Lubrication-Type</text></para>
+          <para styleclass="Interface2">Oil Filtered On-Line</para>
+          <para styleclass="Body Text HowTo">Select, in the drop-down list box, the <text styleclass="VariableName">Filtration Ratio</text>, <equation style="vertical-align:baseline;vertical-align:text-bottom" font-size="28"><![CDATA[\beta_{x\left( c \right)}]]></equation><text style="vertical-align:baseline;">. </text></para>
+          <para styleclass="Body Text HowTo">The operating, or actual, Filtration-Ratio should be as high, and if not higher, than the Filtration-Ratio you select. </para>
+          <list id="11" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted"><equation styleclass="Body Text" font-size="28"><![CDATA[x]]></equation><text styleclass="Body Text"> - the contamination</text> particle size, in μm, with ISO 11171 calibration.</li>
+            <li styleclass="HowTo Bulleted"><equation styleclass="Body Text;vertical-align:text-bottom" style="font-family:Arial; font-size:10pt; font-weight:normal; font-style:normal; text-decoration:none; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;vertical-align:text-bottom" font-size="28"><![CDATA[\beta_{x\left( c \right)}]]></equation><text styleclass="Body Text"> - filtration</text> ratio at contamination particle size <equation font-size="28"><![CDATA[x]]></equation></li>
+          </list>
+          <para styleclass="Body Text HowTo">The designation (c) signifies that the particle counters — of particles of size <equation style="vertical-align:baseline;vertical-align:text-bottom" font-size="28"><![CDATA[x\ \mu m ]]></equation> — shall be APC (automatic optical single-particle counter) calibrated in accordance with ISO 11171.</para>
+          <para styleclass="Body Text HowTo">Also, the oil system shall have cleanliness within the range indicated by the cleanliness code according to ISO 4406 - for example, <text styleclass="VariableName">17/14</text></para>
+          <para styleclass="Body Text"><table styleclass="Block" rowcount="5" colcount="1" style="width:300px; border-width:0px; border-spacing:0px; border-collapse:collapse; cell-border-width:1px; border-color:#343400; border-style:solid; head-row-background-color:#c0c0c0; alt-row-background-color:none;">
+            <thead style="vertical-align:top">
+              <td>
+                <para styleclass="VariableName" style="text-align:center;">Filtration Ratio and Filtration Code</para>
+              </td>
+            </thead>
+            <tr style="vertical-align:bottom">
+              <td>
+                <para styleclass="VariableName" style="text-align:center;"><equation style="vertical-align:baseline;vertical-align:text-bottom" font-size="28"><![CDATA[\beta_{6\left( c \right)} \ = 200 \ ]]></equation> ; ISO 4406 Code; -/13/10</para>
+              </td>
+            </tr>
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="VariableName" style="text-align:center;"><equation style="vertical-align:baseline;vertical-align:text-bottom" font-size="28"><![CDATA[\beta_{12\left( c \right)} = 200\ ]]></equation>; ISO 4406 Code; -/15/12</para>
+              </td>
+            </tr>
+            <tr style="vertical-align:bottom">
+              <td>
+                <para styleclass="VariableName" style="text-align:center;"><equation style="vertical-align:baseline;vertical-align:text-bottom" font-size="28"><![CDATA[\beta_{25\left( c \right)} = 75\ \ \  ]]></equation>; ISO 4406 Code; -/17/14</para>
+              </td>
+            </tr>
+            <tr style="vertical-align:bottom">
+              <td>
+                <para styleclass="VariableName" style="text-align:center;"><equation style="vertical-align:baseline;vertical-align:text-bottom" font-size="28"><![CDATA[\beta_{40\left( c \right)} = 75\ \ \  ]]></equation>; ISO 4406 Code; -/19/16</para>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Normal"><line style="height:1px; color:#343400;" /></para>
+          <para styleclass="Interface2">Oil Filtered Off-Line</para>
+          <para styleclass="Body Text HowTo">Select, in the drop-down list box, the <text styleclass="VariableName">Cleanliness Codes, according to ISO 4406</text>, that best represents the anticipated operating condition.</para>
+          <para styleclass="Body Text"><table styleclass="Block" rowcount="6" colcount="1" style="width:300px; border-width:0px; border-spacing:0px; border-collapse:collapse; cell-border-width:1px; border-color:#343400; border-style:solid; head-row-background-color:#c0c0c0; alt-row-background-color:none;">
+            <thead style="vertical-align:top">
+              <td>
+                <para styleclass="VariableName" style="text-align:center;">Filtration Code</para>
+              </td>
+            </thead>
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="VariableName" style="text-align:center;">ISO 4406 Code; -/13/10</para>
+              </td>
+            </tr>
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="VariableName" style="text-align:center;">ISO 4406 Code; -/15/12</para>
+              </td>
+            </tr>
+            <tr style="vertical-align:middle">
+              <td>
+                <para styleclass="VariableName" style="text-align:center;">ISO 4406 Code; -/17/14</para>
+              </td>
+            </tr>
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="VariableName" style="text-align:center;">ISO 4406 Code; -/19/16</para>
+              </td>
+            </tr>
+            <tr style="vertical-align:middle">
+              <td>
+                <para styleclass="VariableName" style="text-align:center;">ISO 4406 Code; -/21/18</para>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Normal"><line style="height:1px; color:#343400;" /></para>
+          <para styleclass="Interface2">Grease<text styleclass="VariableName">&#32;</text></para>
+          <para styleclass="Body Text HowTo">Select, in the drop-down list box, the <text styleclass="VariableName">Level of Contamination</text> that best represents the operating conditions.</para>
+          <para styleclass="Body Text"><table styleclass="Block" rowcount="6" colcount="2" style="head-row-background-color:#c0c0c0; alt-row-background-color:#ffffff;">
+            <thead style="vertical-align:top">
+              <td style="width:106px;">
+                <para styleclass="VariableName" style="text-align:center;">Level of contamination</para>
+              </td>
+              <td style="vertical-align:bottom;">
+                <para styleclass="VariableName">Operating Conditions</para>
+              </td>
+            </thead>
+            <tr style="vertical-align:middle">
+              <td style="width:106px;">
+                <para styleclass="VariableName" style="text-align:center;">High cleanliness</para>
+              </td>
+              <td>
+                <para styleclass="Body Text">Clean assembly with careful flushing; good sealing in relation to operating conditions; re-greasing carried out continuously or at short intervals</para>
+                <para styleclass="Body Text">Bearings, greased for life with effective sealing capacity in relation to operating conditions - for example, sealed bearings</para>
+              </td>
+            </tr>
+            <tr style="vertical-align:middle">
+              <td style="width:106px;">
+                <para styleclass="VariableName" style="text-align:center;">Normal cleanliness</para>
+              </td>
+              <td>
+                <para styleclass="Body Text">Clean assembly with flushing; good sealing in relation to operating conditions; re-greasing according to manufacturer’s specification</para>
+                <para styleclass="Body Text">Bearings, greased for life with proper sealing capacity in relation to the operating conditions - for example, shielded bearings</para>
+              </td>
+            </tr>
+            <tr style="vertical-align:middle">
+              <td style="width:106px;">
+                <para styleclass="VariableName" style="text-align:center;">Slight to typical contamination</para>
+              </td>
+              <td>
+                <para styleclass="Body Text">Clean assembly; moderate sealing capacity in relation to operating conditions; re-greasing according to manufacturer’s specifications</para>
+              </td>
+            </tr>
+            <tr style="vertical-align:middle">
+              <td style="width:106px;">
+                <para styleclass="VariableName" style="text-align:center;">Severe contamination</para>
+              </td>
+              <td>
+                <para styleclass="Body Text">Assembly in workshop; bearing and application not adequately washed after mounting; poor sealing capacity in relation to operating conditions; re-greasing intervals longer than recommended by manufacturer</para>
+              </td>
+            </tr>
+            <tr style="vertical-align:middle">
+              <td style="width:106px;">
+                <para styleclass="VariableName" style="text-align:center;">Very severe contamination</para>
+              </td>
+              <td>
+                <para styleclass="Body Text">Assembly in contaminated environment; inadequate sealing; long re-greasing intervals</para>
+              </td>
+            </tr>
+          </table></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Body Text HowTo" style="text-indent:-36px; margin-left:60px;"><anchor id="2DCAM-DIALOG-ROLLER-L10"><keywords><keyword>2D-Cam dialog<keyword>Roller L10 Lifetime</keyword><keyword>Roller Lnm Lifetime</keyword><keyword>L10: cycles, hours, years</keyword><keyword>Lnm: cycles, hours, years</keyword></keyword></keywords></anchor><image src="tog_plus.gif" scale="100.00%" styleclass="Separator-Header" figurelistinclude="0"></image><tab /><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" src-collapsed="tog_plus.gif" src-expanded="tog_minus.gif" styleclass="Separator-Header"><caption><![CDATA[ Roller Life :  Bearing P/N                                  ]]></caption><title>Click to exapand /collapse</title></toggle></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="1" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Text">These parameters are calculated automatically when you select a Roller, and/or enable ISO 281 factors.</para>
+          <para styleclass="Body Text"><image src="MD-DIALOG-2DCAM-ROLLERLIFE-RESULTS.ipp" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"><caption><![CDATA[Life for the seleced Roller(Cam-Follower Bearing)]]></caption></image></para>
+          <para styleclass="Normal"><line style="height:1px; color:#343400;" /></para>
+          <para styleclass="Heading4 Toggle_atocs_">Basic Rating Life, <equation style="vertical-align:baseline;vertical-align:text-bottom" font-size="28"><![CDATA[L_{10}]]></equation></para>
+          <para styleclass="Body Text HowTo"><text styleclass="Body Text">This states that if the bearing load, </text><equation styleclass="Body Text" font-size="32"><![CDATA[P]]></equation><text styleclass="Body Text">, is equal to the </text><text styleclass="VariableName">Basic Dynamic Load Rating</text><text styleclass="Body Text">, </text><equation styleclass="Body Text" font-size="32"><![CDATA[C]]></equation><text styleclass="Body Text">, then there is a 90% reliability that the bearing survives 1 million rotations, if manufactured with commonly used high quality material, of good manufacturing quality, and operating under conventional operating conditions. </text></para>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1" style="width:100%;">
+            <tr style="vertical-align:top">
+              <td style="width:963px;">
+                <para styleclass="VariableName">Basic Rating Life</para>
+                <para styleclass="Body Text HowTo"><equation styleclass="Normal" font-size="32"><![CDATA[L_{10}=\left( \frac{C}{P} \right)^{p}\ ]]></equation></para>
+                <para styleclass="Normal"><line style="height:1px; color:#343400;" /></para>
+                <para styleclass="VariableName">Operation in Hours</para>
+                <para styleclass="Body Text HowTo">We also calculate the Roller life as operating hours.</para>
+                <para styleclass="Body Text HowTo"><text styleclass="VariableName">Basic Rating Life (Hours)</text></para>
+                <para styleclass="Body Text HowTo"><equation styleclass="Normal" font-size="32"><![CDATA[L_{10}\ hrs =\frac{10^{6}}{60.n}.L_{10}]]></equation><text styleclass="Normal">&#32;</text></para>
+                <para styleclass="Normal"><line style="height:1px; color:#343400;" /></para>
+                <para styleclass="VariableName"> Operation in Years</para>
+                <para styleclass="Body Text HowTo">We also calculate the Cam-Life as operating years. One year is 8760 hours (24hours, 365 days).</para>
+                <para styleclass="Body Text HowTo"><text styleclass="VariableName">Basic Rating Life (Years)</text></para>
+                <para styleclass="Body Text HowTo"><equation font-size="32"><![CDATA[L_{10}\ years = \frac{L_{10h}}{8760}]]></equation></para>
+                <para styleclass="Normal"><table styleclass="Block" rowcount="7" colcount="2">
+                  <tr style="vertical-align:top">
+                    <td style="vertical-align:middle; width:82px;">
+                      <para styleclass="Body Text HowTo"><equation font-size="28"><![CDATA[L_{10}\ ]]></equation></para>
+                    </td>
+                    <td>
+                      <para styleclass="Body Text">Basic Load Rating (at 90% reliability) (millions of revolutions)</para>
+                    </td>
+                  </tr>
+                  <tr style="vertical-align:top">
+                    <td style="vertical-align:middle; width:82px;">
+                      <para styleclass="Body Text HowTo"><equation font-size="28"><![CDATA[L_{10hrs}]]></equation></para>
+                    </td>
+                    <td>
+                      <para styleclass="Body Text">Basic Load Rating (at 90% reliability) (operating hours)</para>
+                    </td>
+                  </tr>
+                  <tr style="vertical-align:top">
+                    <td style="vertical-align:middle; width:82px;">
+                      <para styleclass="Body Text HowTo"><equation font-size="28"><![CDATA[L_{10\ yrs}\ ]]></equation></para>
+                    </td>
+                    <td>
+                      <para styleclass="Body Text">Basic Load Rating (at 90% reliability) (operating years)</para>
+                    </td>
+                  </tr>
+                  <tr style="vertical-align:top">
+                    <td style="vertical-align:middle; width:82px;">
+                      <para styleclass="Body Text HowTo"><equation font-size="32"><![CDATA[C]]></equation></para>
+                    </td>
+                    <td>
+                      <para styleclass="Body Text">Basic dynamic load rating (kN) of the Roller bearing</para>
+                    </td>
+                  </tr>
+                  <tr style="vertical-align:top">
+                    <td style="vertical-align:middle; width:82px;">
+                      <para styleclass="Body Text HowTo"><equation font-size="32"><![CDATA[P]]></equation></para>
+                    </td>
+                    <td>
+                      <para styleclass="Body Text">Equivalent dynamic bearing load ( kN ) (See image above : <text styleclass="VariableName">Equiv Load</text>)</para>
+                      <para styleclass="Body Text HowTo">The load continuously changes as the Cam rotates. Thus, we calculate for you an equivalent load.</para>
+                    </td>
+                  </tr>
+                  <tr style="vertical-align:top">
+                    <td style="vertical-align:middle; width:82px;">
+                      <para styleclass="Body Text HowTo"><equation font-size="32"><![CDATA[n]]></equation></para>
+                    </td>
+                    <td>
+                      <para styleclass="Body Text">Roller rotating speed (RPM)</para>
+                      <para styleclass="Body Text HowTo">The speed continuously changes as the Cam rotates. Thus, we calculate for you an equivalent speed.</para>
+                    </td>
+                  </tr>
+                  <tr style="vertical-align:top">
+                    <td style="vertical-align:middle; width:82px;">
+                      <para styleclass="Body Text HowTo"><equation font-size="32"><![CDATA[p]]></equation></para>
+                    </td>
+                    <td>
+                      <para styleclass="Body Text">Exponent of the life equation</para>
+                      <para styleclass="Body Text">= 3 for ball bearings</para>
+                      <para styleclass="Body Text">=10/3 for roller bearings</para>
+                    </td>
+                  </tr>
+                </table></para>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Heading4 Toggle_atocs_">Modified Rating Life, <equation style="vertical-align:baseline;vertical-align:text-bottom" font-size="28"><![CDATA[L_{nm}]]></equation></para>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1" style="width:100%;">
+            <tr style="vertical-align:top">
+              <td style="width:963px;">
+                <para styleclass="VariableName">Modified Rating Life - as per ISO 281 </para>
+                <para styleclass="Body Text HowTo">We must calculate for you:</para>
+                <list id="12" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+                  <li styleclass="HowTo Bulleted"><equation styleclass="Normal;vertical-align:text-bottom" style="font-family:Arial; font-size:10pt; font-weight:normal; font-style:normal; text-decoration:none; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;vertical-align:text-bottom" font-size="28"><![CDATA[a_{1}]]></equation><text styleclass="Normal"> - </text> a factor for Reliability - <link displaytype="text" defaultstyle="true" type="topiclink" href="" anchor="2DCAM-ROLLERLIFE-RELIABILITYFACTOR">see below</link></li>
+                  <li styleclass="HowTo Bulleted"><equation styleclass="Normal;vertical-align:text-bottom" style="font-family:Arial; font-size:10pt; font-weight:normal; font-style:normal; text-decoration:none; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;vertical-align:text-bottom" font-size="28"><![CDATA[a_{iso}]]></equation><text styleclass="Body Text"> - a factor</text> calculated with a System Approach - <link displaytype="text" defaultstyle="true" type="topiclink" href="" anchor="2DCAM-ROLLERLIFE-RELIABILITYFACTOR">see below</link></li>
+                </list>
+                <para styleclass="Body Text HowTo"><equation styleclass="Normal" font-size="36"><![CDATA[L_{nm}=a_{1}. a_{iso}.L_{10} \ ]]></equation></para>
+                <para styleclass="Body Text HowTo"><text styleclass="Normal">see above for </text><equation styleclass="Body Text HowTo;vertical-align:text-bottom" style="font-family:Arial; font-size:10pt; font-weight:normal; font-style:normal; text-decoration:none; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;vertical-align:text-bottom" font-size="28"><![CDATA[L_{10}]]></equation><text styleclass="Body Text HowTo;vertical-align:text-bottom" style="font-family:Arial; font-size:10pt; font-weight:normal; font-style:normal; text-decoration:none; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">&#32;</text></para>
+                <para styleclass="Body Text HowTo"><text styleclass="Normal">see below for </text><equation styleclass="Normal;vertical-align:text-bottom" style="font-family:Arial; font-size:10pt; font-weight:normal; font-style:normal; text-decoration:none; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;vertical-align:text-bottom" font-size="28"><![CDATA[a_{1}]]></equation><text styleclass="Normal"> and </text><equation styleclass="Normal;vertical-align:text-bottom" style="font-family:Arial; font-size:10pt; font-weight:normal; font-style:normal; text-decoration:none; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;vertical-align:text-bottom" font-size="28"><![CDATA[a_{iso}]]></equation><text styleclass="Normal"> factors.</text></para>
+                <para styleclass="Normal"><line style="height:1px; color:#343400;" /></para>
+                <para styleclass="VariableName">Operation in Hours</para>
+                <para styleclass="Body Text HowTo">We also calculate the Roller life as operating hours.</para>
+                <para styleclass="Body Text HowTo"><text styleclass="VariableName">Modified Rating Life (Hours)</text></para>
+                <para styleclass="Body Text HowTo"><equation styleclass="Normal" font-size="32"><![CDATA[L_{nm}hrs= \frac{10^{6}}{60.n}L_{nm}]]></equation><text styleclass="Normal">&#32;</text></para>
+                <para styleclass="Normal"><line style="height:1px; color:#343400;" /></para>
+                <para styleclass="VariableName"> Operation in Years</para>
+                <para styleclass="Body Text HowTo">We also calculate the Cam-Life as operating years. One year is 8760 hours (24hours, 365 days).</para>
+                <para styleclass="Body Text HowTo"><text styleclass="VariableName">Modified Rating Life (Years)</text></para>
+                <para styleclass="Body Text HowTo"><equation font-size="32"><![CDATA[L_{nm}\ years = \frac{L_{nmh}}{8760}]]></equation></para>
+                <para styleclass="Normal"><table styleclass="Block" rowcount="10" colcount="2">
+                  <tr style="vertical-align:top">
+                    <td style="vertical-align:middle; width:82px;">
+                      <para styleclass="Body Text HowTo"><equation font-size="28"><![CDATA[L_{10}\ ]]></equation></para>
+                    </td>
+                    <td>
+                      <para styleclass="Body Text">Basic Life Rating (at 90% reliability) (millions of revolutions)</para>
+                    </td>
+                  </tr>
+                  <tr style="vertical-align:top">
+                    <td style="vertical-align:middle; width:82px;">
+                      <para styleclass="Body Text HowTo"><equation font-size="28"><![CDATA[L_{nm}\ ]]></equation></para>
+                    </td>
+                    <td>
+                      <para styleclass="Body Text">Modified Life Rating (at <equation><![CDATA[100-n\percent]]></equation> reliability) (millions of revolutions)</para>
+                    </td>
+                  </tr>
+                  <tr style="vertical-align:top">
+                    <td style="vertical-align:middle; width:82px;">
+                      <para styleclass="Body Text HowTo"><equation font-size="28"><![CDATA[L_{nm}\ hrs]]></equation></para>
+                    </td>
+                    <td>
+                      <para styleclass="Body Text">Modified Life Rating (at <equation><![CDATA[100-n\percent]]></equation> reliability) (operating hours)</para>
+                    </td>
+                  </tr>
+                  <tr style="vertical-align:top">
+                    <td style="vertical-align:middle; width:82px;">
+                      <para styleclass="Body Text HowTo"><equation font-size="28"><![CDATA[L_{nm}\ yrs]]></equation></para>
+                    </td>
+                    <td>
+                      <para styleclass="Body Text">Basic Load Rating (at 90% reliability (operating years))</para>
+                    </td>
+                  </tr>
+                  <tr style="vertical-align:top">
+                    <td style="vertical-align:middle; width:82px;">
+                      <para styleclass="Body Text HowTo"><equation font-size="28"><![CDATA[a_{1}\ ]]></equation></para>
+                    </td>
+                    <td>
+                      <para styleclass="VariableName"><text styleclass="Body Text">Life modification factor for Reliability</text> - <link displaytype="text" defaultstyle="true" type="topiclink" href="" anchor="2DCAM-ROLLERLIFE-RELIABILITYFACTOR" styleclass="SeeAlso">see below</link></para>
+                    </td>
+                  </tr>
+                  <tr style="vertical-align:top">
+                    <td style="vertical-align:middle; width:82px;">
+                      <para styleclass="Body Text HowTo"><equation font-size="28"><![CDATA[a_{iso}\ ]]></equation></para>
+                    </td>
+                    <td>
+                      <para styleclass="VariableName"><text styleclass="Body Text">Life modification factor for Systems Approach - </text><link displaytype="text" defaultstyle="true" type="topiclink" href="" anchor="2DCAM-ROLLERLIFE-RELIABILITYFACTOR">see below</link></para>
+                    </td>
+                  </tr>
+                  <tr style="vertical-align:top">
+                    <td style="vertical-align:middle; width:82px;">
+                      <para styleclass="Body Text HowTo"><equation font-size="32"><![CDATA[C]]></equation></para>
+                    </td>
+                    <td>
+                      <para styleclass="Body Text">Basic dynamic load rating (kN) of the Roller bearing</para>
+                    </td>
+                  </tr>
+                  <tr style="vertical-align:top">
+                    <td style="vertical-align:middle; width:82px;">
+                      <para styleclass="Body Text HowTo"><equation font-size="32"><![CDATA[P]]></equation></para>
+                    </td>
+                    <td>
+                      <para styleclass="Body Text">Equivalent dynamic load ( kN )</para>
+                      <para styleclass="Body Text HowTo">The load usually continuously changes as the Cam rotates. Thus, we calculate for you an equivalent load.</para>
+                    </td>
+                  </tr>
+                  <tr style="vertical-align:top">
+                    <td style="vertical-align:middle; width:82px;">
+                      <para styleclass="Body Text HowTo"><equation font-size="32"><![CDATA[n]]></equation></para>
+                    </td>
+                    <td>
+                      <para styleclass="Body Text">Mean roller rotating speed</para>
+                      <para styleclass="Body Text HowTo">The speed usually continuously changes as the Cam rotates. Thus, we calculate for you its mean speed.</para>
+                    </td>
+                  </tr>
+                  <tr style="vertical-align:top">
+                    <td style="vertical-align:middle; width:82px;">
+                      <para styleclass="Body Text HowTo"><equation font-size="32"><![CDATA[p]]></equation></para>
+                    </td>
+                    <td>
+                      <para styleclass="Body Text">Exponent of the life equation</para>
+                      <para styleclass="Body Text">= 3 for ball bearings</para>
+                      <para styleclass="Body Text">=10/3 for roller bearings</para>
+                    </td>
+                  </tr>
+                </table></para>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Heading4 Toggle_atocs_">Operating Life</para>
+          <para styleclass="Body Text HowTo">The actual operating life is the life achieved by the bearing. It may differ significantly from the life we calculate.</para>
+          <para styleclass="Body Text HowTo"><text styleclass="VariableName">It is not possible to calculate the actual operating life</text><text styleclass="Body Text">, as there is a range</text> of possible installation and operating conditions. The most reliable method to estimate the operating life is to compare the installation and operating conditions with similar applications.</para>
+          <para styleclass="VariableName">Possible factors that influence the Operating Life</para>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <list id="13" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+                  <li styleclass="HowTo Bulleted">deviating operating data</li>
+                  <li styleclass="HowTo Bulleted">misalignment between the shaft and housing</li>
+                  <li styleclass="HowTo Bulleted">insufficient or excessive operating clearance</li>
+                  <li styleclass="HowTo Bulleted">contamination</li>
+                  <li styleclass="HowTo Bulleted">insufficient lubrication</li>
+                  <li styleclass="HowTo Bulleted">excessive operating temperature</li>
+                  <li styleclass="HowTo Bulleted">oscillating bearing movement with small swivel angles</li>
+                  <li styleclass="HowTo Bulleted">high vibration and false brinelling</li>
+                  <li styleclass="HowTo Bulleted">high shock loads (static overloading)</li>
+                  <li styleclass="HowTo Bulleted">damage to the bearing when it is installed</li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Normal"><line style="height:1px; color:#343400;" /></para>
+    <para styleclass="Heading3_atocs_"><anchor id="2DCAM-ROLLERLIFE-RELIABILITYFACTOR" styleclass="Heading4 Toggle_atocs_2"><keywords><keyword>Follower-Roller<keyword>Reliability Factor, a1</keyword></keyword></keywords></anchor>Bearing Life Modification Factors</para>
+    <para styleclass="Heading4 Toggle_atocs_2" style="text-indent:-36px; margin-left:60px;"><image src="tog_plus.gif" scale="100.00%" figurelistinclude="0"></image><tab /><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" src-collapsed="tog_plus.gif" src-expanded="tog_minus.gif"><caption><![CDATA[Life Modification Factors for Reliability, ]]></caption></toggle><equation style="vertical-align:baseline;vertical-align:text-bottom" font-size="28"><![CDATA[a_{1}]]></equation></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="1" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Text">The <text styleclass="VariableName">Reliability Factor</text> is constant for all application conditions.</para>
+          <para styleclass="Body Text HowTo">The drop-down list has the standard <text styleclass="VariableName">Reliability Factor</text> percentages (90 to 99.95%), as given in ISO 281. </para>
+          <para styleclass="Body Text HowTo">Modified Life Rating (at <equation><![CDATA[100-n\percent]]></equation> reliability) (millions of revolutions)</para>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="16" colcount="4" style="width:350px; border-width:0px; border-spacing:0px; border-collapse:collapse; cell-border-width:1px; border-color:#343400; border-style:solid; head-row-background-color:#c0c0c0; alt-row-background-color:none;">
+            <thead style="vertical-align:middle">
+              <td>
+                <para styleclass="VariableName-small" style="text-align:center;">Reliability</para>
+              </td>
+              <td>
+                <para styleclass="VariableName-small" style="text-align:center;">Failure Probability</para>
+              </td>
+              <td>
+                <para styleclass="VariableName-small" style="text-align:center;"><equation font-size="28"><![CDATA[L_{nm}]]></equation></para>
+              </td>
+              <td style="vertical-align:bottom;">
+                <para styleclass="VariableName-small" style="text-align:center;"><equation font-size="28"><![CDATA[a_{1}]]></equation> Factor</para>
+              </td>
+            </thead>
+            <thead style="vertical-align:middle">
+              <td>
+                <para styleclass="VariableName-small" style="text-align:center;">%</para>
+              </td>
+              <td>
+                <para styleclass="VariableName-small" style="text-align:center;">%</para>
+              </td>
+              <td>
+                <para styleclass="VariableName-small" style="text-align:center;">-</para>
+              </td>
+              <td style="vertical-align:bottom;">
+                <para styleclass="VariableName-small" style="text-align:center;">-</para>
+              </td>
+            </thead>
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Normal" style="text-align:center;"><text styleclass="" style="font-family:Calibri; font-size:11pt; color:#000000;">90</text></para>
+              </td>
+              <td>
+                <para styleclass="Normal" style="text-align:center;"><text styleclass="" style="font-family:Calibri; font-size:11pt; color:#000000;">10</text></para>
+              </td>
+              <td>
+                <para styleclass="Normal" style="text-align:center;"><equation styleclass="Body Text" font-size="24"><![CDATA[L_{10m}]]></equation></para>
+              </td>
+              <td>
+                <para styleclass="Normal" style="text-align:center;"><text styleclass="" style="font-family:Calibri; font-size:11pt; color:#000000;">1</text></para>
+              </td>
+            </tr>
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Normal" style="text-align:center;"><text styleclass="" style="font-family:Calibri; font-size:11pt; color:#000000;">95</text></para>
+              </td>
+              <td>
+                <para styleclass="Normal" style="text-align:center;"><text styleclass="" style="font-family:Calibri; font-size:11pt; color:#000000;">5</text></para>
+              </td>
+              <td>
+                <para styleclass="Normal" style="text-align:center;"><equation styleclass="Body Text" font-size="24"><![CDATA[L_{5m}]]></equation></para>
+              </td>
+              <td>
+                <para styleclass="Normal" style="text-align:center;"><text styleclass="" style="font-family:Calibri; font-size:11pt; color:#000000;">0,64</text></para>
+              </td>
+            </tr>
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Normal" style="text-align:center;"><text styleclass="" style="font-family:Calibri; font-size:11pt; color:#000000;">96</text></para>
+              </td>
+              <td>
+                <para styleclass="Normal" style="text-align:center;"><text styleclass="" style="font-family:Calibri; font-size:11pt; color:#000000;">4</text></para>
+              </td>
+              <td>
+                <para styleclass="Normal" style="text-align:center;"><equation styleclass="Body Text" font-size="24"><![CDATA[L_{4m}]]></equation></para>
+              </td>
+              <td>
+                <para styleclass="Normal" style="text-align:center;"><text styleclass="" style="font-family:Calibri; font-size:11pt; color:#000000;">0,55</text></para>
+              </td>
+            </tr>
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Normal" style="text-align:center;"><text styleclass="" style="font-family:Calibri; font-size:11pt; color:#000000;">97</text></para>
+              </td>
+              <td>
+                <para styleclass="Normal" style="text-align:center;"><text styleclass="" style="font-family:Calibri; font-size:11pt; color:#000000;">3</text></para>
+              </td>
+              <td>
+                <para styleclass="Normal" style="text-align:center;"><equation styleclass="Body Text" font-size="24"><![CDATA[L_{3m}]]></equation></para>
+              </td>
+              <td>
+                <para styleclass="Normal" style="text-align:center;"><text styleclass="" style="font-family:Calibri; font-size:11pt; color:#000000;">0,47</text></para>
+              </td>
+            </tr>
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Normal" style="text-align:center;"><text styleclass="" style="font-family:Calibri; font-size:11pt; color:#000000;">98</text></para>
+              </td>
+              <td>
+                <para styleclass="Normal" style="text-align:center;"><text styleclass="" style="font-family:Calibri; font-size:11pt; color:#000000;">2</text></para>
+              </td>
+              <td>
+                <para styleclass="Normal" style="text-align:center;"><equation styleclass="Body Text" font-size="24"><![CDATA[L_{2m}]]></equation></para>
+              </td>
+              <td>
+                <para styleclass="Normal" style="text-align:center;"><text styleclass="" style="font-family:Calibri; font-size:11pt; color:#000000;">0,37</text></para>
+              </td>
+            </tr>
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Normal" style="text-align:center;"><text styleclass="" style="font-family:Calibri; font-size:11pt; color:#000000;">99</text></para>
+              </td>
+              <td>
+                <para styleclass="Normal" style="text-align:center;"><text styleclass="" style="font-family:Calibri; font-size:11pt; color:#000000;">1</text></para>
+              </td>
+              <td>
+                <para styleclass="Normal" style="text-align:center;"><equation styleclass="Body Text" font-size="24"><![CDATA[L_{1m}]]></equation></para>
+              </td>
+              <td>
+                <para styleclass="Normal" style="text-align:center;"><text styleclass="" style="font-family:Calibri; font-size:11pt; color:#000000;">0,25</text></para>
+              </td>
+            </tr>
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Normal" style="text-align:center;"><text styleclass="" style="font-family:Calibri; font-size:11pt; color:#000000;">99,2</text></para>
+              </td>
+              <td>
+                <para styleclass="Normal" style="text-align:center;"><text styleclass="" style="font-family:Calibri; font-size:11pt; color:#000000;">0.8</text></para>
+              </td>
+              <td>
+                <para styleclass="Normal" style="text-align:center;"><equation styleclass="Body Text" font-size="24"><![CDATA[L_{0.8m}]]></equation></para>
+              </td>
+              <td>
+                <para styleclass="Normal" style="text-align:center;"><text styleclass="" style="font-family:Calibri; font-size:11pt; color:#000000;">0,22</text></para>
+              </td>
+            </tr>
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Normal" style="text-align:center;"><text styleclass="" style="font-family:Calibri; font-size:11pt; color:#000000;">99,4</text></para>
+              </td>
+              <td>
+                <para styleclass="Normal" style="text-align:center;"><text styleclass="" style="font-family:Calibri; font-size:11pt; color:#000000;">0.6</text></para>
+              </td>
+              <td>
+                <para styleclass="Normal" style="text-align:center;"><equation styleclass="Body Text" font-size="24"><![CDATA[L_{0.6m}]]></equation></para>
+              </td>
+              <td>
+                <para styleclass="Normal" style="text-align:center;"><text styleclass="" style="font-family:Calibri; font-size:11pt; color:#000000;">0,19</text></para>
+              </td>
+            </tr>
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Normal" style="text-align:center;"><text styleclass="" style="font-family:Calibri; font-size:11pt; color:#000000;">99,6</text></para>
+              </td>
+              <td>
+                <para styleclass="Normal" style="text-align:center;"><text styleclass="" style="font-family:Calibri; font-size:11pt; color:#000000;">0.4</text></para>
+              </td>
+              <td>
+                <para styleclass="Normal" style="text-align:center;"><equation styleclass="Body Text" font-size="24"><![CDATA[L_{0.4m}]]></equation></para>
+              </td>
+              <td>
+                <para styleclass="Normal" style="text-align:center;"><text styleclass="" style="font-family:Calibri; font-size:11pt; color:#000000;">0,16</text></para>
+              </td>
+            </tr>
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Normal" style="text-align:center;"><text styleclass="" style="font-family:Calibri; font-size:11pt; color:#000000;">99,8</text></para>
+              </td>
+              <td>
+                <para styleclass="Normal" style="text-align:center;"><text styleclass="" style="font-family:Calibri; font-size:11pt; color:#000000;">0.2</text></para>
+              </td>
+              <td>
+                <para styleclass="Normal" style="text-align:center;"><equation styleclass="Body Text" font-size="24"><![CDATA[L_{0.2m}]]></equation></para>
+              </td>
+              <td>
+                <para styleclass="Normal" style="text-align:center;"><text styleclass="" style="font-family:Calibri; font-size:11pt; color:#000000;">0,12</text></para>
+              </td>
+            </tr>
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Normal" style="text-align:center;"><text styleclass="" style="font-family:Calibri; font-size:11pt; color:#000000;">99,9</text></para>
+              </td>
+              <td>
+                <para styleclass="Normal" style="text-align:center;"><text styleclass="" style="font-family:Calibri; font-size:11pt; color:#000000;">0.1</text></para>
+              </td>
+              <td>
+                <para styleclass="Normal" style="text-align:center;"><equation styleclass="Body Text" font-size="24"><![CDATA[L_{0.1m}]]></equation></para>
+              </td>
+              <td>
+                <para styleclass="Normal" style="text-align:center;"><text styleclass="" style="font-family:Calibri; font-size:11pt; color:#000000;">0,093</text></para>
+              </td>
+            </tr>
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Normal" style="text-align:center;"><text styleclass="" style="font-family:Calibri; font-size:11pt; color:#000000;">99,92</text></para>
+              </td>
+              <td>
+                <para styleclass="Normal" style="text-align:center;"><text styleclass="" style="font-family:Calibri; font-size:11pt; color:#000000;">0.08</text></para>
+              </td>
+              <td>
+                <para styleclass="Normal" style="text-align:center;"><equation styleclass="Body Text" font-size="24"><![CDATA[L_{0.08m}]]></equation></para>
+              </td>
+              <td>
+                <para styleclass="Normal" style="text-align:center;"><text styleclass="" style="font-family:Calibri; font-size:11pt; color:#000000;">0,087</text></para>
+              </td>
+            </tr>
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Normal" style="text-align:center;"><text styleclass="" style="font-family:Calibri; font-size:11pt; color:#000000;">99,94</text></para>
+              </td>
+              <td>
+                <para styleclass="Normal" style="text-align:center;"><text styleclass="" style="font-family:Calibri; font-size:11pt; color:#000000;">0.06</text></para>
+              </td>
+              <td>
+                <para styleclass="Normal" style="text-align:center;"><equation styleclass="Body Text" font-size="24"><![CDATA[L_{0.06m}]]></equation></para>
+              </td>
+              <td>
+                <para styleclass="Normal" style="text-align:center;"><text styleclass="" style="font-family:Calibri; font-size:11pt; color:#000000;">0,080</text></para>
+              </td>
+            </tr>
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Normal" style="text-align:center;"><text styleclass="" style="font-family:Calibri; font-size:11pt; color:#000000;">99,95</text></para>
+              </td>
+              <td>
+                <para styleclass="Normal" style="text-align:center;"><text styleclass="" style="font-family:Calibri; font-size:11pt; color:#000000;">0.05</text></para>
+              </td>
+              <td>
+                <para styleclass="Normal" style="text-align:center;"><equation styleclass="Body Text" font-size="24"><![CDATA[L_{0.05m}]]></equation></para>
+              </td>
+              <td>
+                <para styleclass="Normal" style="text-align:center;"><text styleclass="" style="font-family:Calibri; font-size:11pt; color:#000000;">0,077</text></para>
+              </td>
+            </tr>
+          </table></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading4 Toggle_atocs_2" style="text-indent:-36px; margin-left:60px;"><image src="tog_plus.gif" scale="100.00%" figurelistinclude="0"></image><tab /><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" src-collapsed="tog_plus.gif" src-expanded="tog_minus.gif"><caption><![CDATA[Life Modification Factor: a System Approach]]></caption></toggle>, <equation styleclass="VariableName;vertical-align:text-bottom" style="font-family:Arial; font-size:10pt; font-weight:normal; font-style:normal; text-decoration:none; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;" font-size="28"><![CDATA[a_{iso}\ ]]></equation></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="1" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Text">The <text styleclass="VariableName">Life Modification factor</text>, <equation style="vertical-align:baseline;vertical-align:text-bottom" font-size="28" margin-horizontal="3"><![CDATA[a_{iso}]]></equation><text style="vertical-align:baseline;">, i</text>s a complex interaction between Oil or Grease Viscosity Grade, Filtration, Contamination, Oil Operating Temperature, the Fatigue load capacity of the Roller, the rotational-speed of the Roller, and the diameter of the Roller.</para>
+          <para styleclass="Body Text">The equations given in ISO 281 to calculate these factors are empirical, complex, and interrelated. All of the factors, except <equation styleclass="VariableName" style="vertical-align:baseline;vertical-align:text-bottom" font-size="28"><![CDATA[C_{u}]]></equation>, are a function of the bearing speed and bearing load. In a cam mechanism, the speed and load on the roller continually change. Therefore, we calculate for you the factors at each step and integrate them to find their equivalent values.</para>
+          <para styleclass="Body Text HowTo"><equation styleclass="Normal" style="vertical-align:baseline;vertical-align:text-bottom" font-size="32"><![CDATA[a_{iso} = f\left( \frac{e_{c}.C_{u}}{P},\kappa \right)]]></equation></para>
+          <para styleclass="Body Text"><table styleclass="Block" rowcount="5" colcount="2" style="border-width:0px; border-spacing:0px; border-collapse:collapse; cell-border-width:1px; border-color:#343400; border-style:solid;">
+            <tr style="vertical-align:middle">
+              <td style="width:47px;">
+                <para styleclass="VariableName" style="text-align:center;"><equation font-size="28"><![CDATA[a_{iso}\ ]]></equation></para>
+              </td>
+              <td>
+                <para styleclass="Body Text">Life modification factor, using a systems approach</para>
+              </td>
+            </tr>
+            <tr style="vertical-align:middle">
+              <td style="width:47px;">
+                <para styleclass="VariableName" style="text-align:center;"><equation style="vertical-align:baseline;vertical-align:text-bottom" font-size="32"><![CDATA[C_{u}]]></equation></para>
+              </td>
+              <td>
+                <para styleclass="Body Text">Fatigue Limit of Bearing (N)</para>
+              </td>
+            </tr>
+            <tr style="vertical-align:middle">
+              <td style="width:47px;">
+                <para styleclass="VariableName" style="text-align:center;"><equation font-size="32"><![CDATA[P]]></equation></para>
+              </td>
+              <td>
+                <para styleclass="Body Text">Dynamic Load (N)</para>
+              </td>
+            </tr>
+            <tr style="vertical-align:middle">
+              <td style="width:47px;">
+                <para styleclass="VariableName" style="text-align:center;"><equation font-size="32"><![CDATA[\kappa]]></equation></para>
+              </td>
+              <td>
+                <para styleclass="Body Text">Viscosity Ratio (-)</para>
+              </td>
+            </tr>
+            <tr style="vertical-align:middle">
+              <td style="width:47px;">
+                <para styleclass="VariableName" style="text-align:center;"><equation font-size="32"><![CDATA[e_{C}]]></equation></para>
+              </td>
+              <td>
+                <para styleclass="Body Text">Contamination Factor (-)</para>
+              </td>
+            </tr>
+          </table></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading4 Toggle_atocs_2" style="text-indent:-36px; margin-left:60px;"><image src="tog_plus.gif" scale="100.00%" figurelistinclude="0"></image><tab /><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" src-collapsed="tog_plus.gif" src-expanded="tog_minus.gif"><caption><![CDATA[Fatigue Limit of Bearing, ]]></caption></toggle><equation style="vertical-align:baseline;vertical-align:text-bottom" font-size="32"><![CDATA[C_{u}]]></equation> (<equation font-size="28"><![CDATA[N]]></equation>)</para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="4" colcount="2">
+      <tr style="vertical-align:top">
+        <td colspan="2">
+          <para styleclass="Body Table">ISO 281 defines the fatigue limit, <equation styleclass="VariableName" style="font-size:15pt; vertical-align:baseline;vertical-align:text-bottom" font-size="28" margin-horizontal="2"><![CDATA[C_{u}]]></equation><text styleclass="Body Text">, for a </text>bearing as the load below which metal fatigue does not occur. </para>
+          <para styleclass="Body Table">With poor lubrication, or contamination of the lubricant in particular, the bearing can fatigue at loads which are significantly below the fatigue limit,<equation styleclass="VariableName" style="font-size:15pt; vertical-align:baseline;vertical-align:text-bottom" font-size="28" margin-horizontal="2"><![CDATA[C_{u}]]></equation><text styleclass="Body Text">.</text></para>
+          <para styleclass="Body Table">For the fatigue limit<text styleclass="Body Text">&#32;</text>to be a valid value, the lubricant film must fully separate the rolling elements from the raceways and that dents from contaminants or from handling do not exist on the rolling surfaces.</para>
+          <para styleclass="Body Table">The contamination factor, <equation styleclass="VariableName" style="font-size:15pt; vertical-align:baseline;vertical-align:text-bottom" font-size="32"><![CDATA[e_{c}]]></equation> takes into account how the level of solid particle contamination of the lubricant influences the calculated bearing fatigue life. The particles cause indentations in the rolling surfaces of the bearing, and these indentations increase the local contact stress, which reduces the expected fatigue life.</para>
+          <list id="14" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted"><equation styleclass="VariableName" style="font-size:10pt; vertical-align:sub;" font-size="32"><![CDATA[e_{c}=1]]></equation> means perfectly clean conditions without any indentations.</li>
+            <li styleclass="Body Text"><equation style="font-size:7pt; vertical-align:sub;" font-size="28"><![CDATA[e_{c}\to0]]></equation> means severely contaminated conditions resulting in pronounced indentations.</li>
+          </list>
+          <para styleclass="Body Table">In the <text styleclass="VariableName">SKF</text> rating life model, contamination, designated by the contamination factor,<equation styleclass="VariableName" style="font-size:15pt; vertical-align:baseline;" font-size="32"><![CDATA[e_{c}]]></equation> , acts as a stress raiser, thereby reducing the fatigue load limit to <equation font-size="28"><![CDATA[e_{c}.C_{u}]]></equation>.</para>
+          <para styleclass="Body Table">We then compare the reduced fatigue load limit, <equation style="vertical-align:baseline;vertical-align:text-bottom" font-size="28"><![CDATA[e_{c}.C_{u}]]></equation>, to the actual bearing load, <equation font-size="28"><![CDATA[P]]></equation>, to give a <text styleclass="VariableName">fatigue resistance value</text><text styleclass="Body Text"> of </text><equation style="font-size:7pt; vertical-align:sub;" font-size="28" margin-vertical="3"><![CDATA[(\lfrac{e_{c}.C_{u}}{P})]]></equation>&#32;</para>
+          <list id="15" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted">Conditions that are clean and a load that is less than the fatigue load limit give a high fatigue resistance value.</li>
+            <li styleclass="Body Text">Conditions that are contaminated and a load that is more than the fatigue load limit give a low fatigue resistance value.</li>
+          </list>
+          <para styleclass="Body Text"><text styleclass="Body Table">The stress-raising influence of contamination on fatigue depends on a number of parameters, including: bearing size, relative lubricant condition, size and distribution of </text>solid contaminant particles, and types of contaminants (soft, hard, etc.). Therefore, it is not meaningful to enter a value for the contamination factor <equation style="vertical-align:baseline;vertical-align:text-bottom" font-size="32"><![CDATA[e_{c}]]></equation> that has general validity.</para>
+          <para styleclass="Normal"><line style="height:1px; color:#343400;" /></para>
+          <para styleclass="Body Table">If a catalog does not list the <text styleclass="VariableName">Fatigue Load Limit</text>, and the mean bearing diameter is less than <equation font-size="28"><![CDATA[\emptyset 100mm]]></equation><text style="font-size:10pt; vertical-align:baseline;">.</text><text styleclass="Body Text"> (nearly</text> all Follower-Roller Bearings are less than <equation font-size="28"><![CDATA[\emptyset 100mm]]></equation>), then you can use this approximation:</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:middle">
+        <td style="width:106px;">
+          <para styleclass="VariableName"><equation font-size="32"><![CDATA[\cong{\sfrac{C_{0}}{8.2}}]]></equation></para>
+        </td>
+        <td>
+          <para styleclass="VariableName">Roller and needle bearings, with a Mean Diameter &lt; 100mm<text style="font-size:10pt; font-style:italic; vertical-align:baseline;">.</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:middle">
+        <td style="width:106px;">
+          <para styleclass="VariableName"><equation font-size="32"><![CDATA[\cong={\sfrac{C_{0}}{22}}]]></equation></para>
+        </td>
+        <td>
+          <para styleclass="VariableName">Ball bearings, with a Mean Diameter &lt; 100<text style="font-size:10pt; vertical-align:baseline;">mm</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td colspan="2">
+          <para styleclass="VariableName">Mean Diameter = (Outside Diameter + Inside Diameter) / 2 </para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading4 Toggle_atocs_2" style="text-indent:-36px; margin-left:60px;"><image src="tog_plus.gif" scale="100.00%" figurelistinclude="0"></image><tab /><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" src-collapsed="tog_plus.gif" src-expanded="tog_minus.gif"><caption><![CDATA[Viscosity Ratio, ]]></caption></toggle><equation font-size="32"><![CDATA[\kappa]]></equation></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="1" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Text">The <text styleclass="VariableName">Viscosity Ratio, </text><equation styleclass="VariableName" font-size="32"><![CDATA[\kappa]]></equation>, indicates the quality of the lubricant film formation.</para>
+          <para styleclass="Body Text">The lubricant-film separates the raceway and rolling-elements. It is expressed as:</para>
+          <para styleclass="Body Text HowTo"><equation styleclass="Image Caption" font-size="36"><![CDATA[\kappa=\frac{\nu}{\nu_{1}}]]></equation></para>
+          <para styleclass="Body Text"><table styleclass="Block" rowcount="2" colcount="3">
+            <tr style="vertical-align:top">
+              <td style="vertical-align:middle; width:55px;">
+                <para styleclass="Body Text HowTo"><equation style="font-family:Georgia; font-size:10pt; font-weight:normal; vertical-align:sub;" font-size="32"><![CDATA[\nu_{1}]]></equation></para>
+              </td>
+              <td style="vertical-align:middle; width:82px;">
+                <para styleclass="Normal" style="text-align:center;"><equation styleclass="HowTo Bulleted" style="font-size:10pt; font-weight:bold; vertical-align:baseline;" font-size="28"><![CDATA[\sfrac{mm^{2}}{s}]]></equation></para>
+              </td>
+              <td>
+                <para styleclass="Body Text"><text styleclass="VariableName">Reference Kinematic Viscosity</text>&#32;<text styleclass="HowTo Bulleted">- a function of the bearing&apos;s diameter and its rotating speed.</text></para>
+              </td>
+            </tr>
+            <tr style="vertical-align:top">
+              <td style="vertical-align:middle; width:55px;">
+                <para styleclass="Body Text HowTo"><equation style="font-family:Georgia; font-size:14pt; font-weight:normal; font-style:italic;" font-size="32"><![CDATA[\nu]]></equation></para>
+              </td>
+              <td style="vertical-align:middle; width:82px;">
+                <para styleclass="Normal" style="text-align:center;"><equation styleclass="HowTo Bulleted" style="font-size:10pt; font-weight:bold; vertical-align:baseline;" font-size="28"><![CDATA[\sfrac{mm^{2}}{s}]]></equation></para>
+              </td>
+              <td>
+                <para styleclass="Body Text"><text styleclass="VariableName">Kinematic Viscosity at operating temperature</text><text styleclass="HowTo Bulleted"> - function of oil viscosity grade and temperature.</text></para>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Normal"><line style="height:1px; color:#343400;" /></para>
+          <para styleclass="Body Text"><text styleclass="Notes">Note 1: </text><text styleclass="VariableName">Viscosity Ratio, </text><equation styleclass="VariableName" font-size="32"><![CDATA[\kappa]]></equation><text styleclass="Body Text HowTo"> , assumes that the surface finish and hardness are for Follower-Roller bearings. </text></para>
+          <para styleclass="Notes">Note 2: <text styleclass="Body Text">An approximate relationship between </text><text styleclass="VariableName">Film Thickness Ratio </text><equation styleclass="VariableName" font-size="32"><![CDATA[\lambda]]></equation><text styleclass="Body Text"> and </text><text styleclass="VariableName">Viscosity Ratio, </text><equation styleclass="VariableName" font-size="32"><![CDATA[\kappa]]></equation><text styleclass="VariableName">,</text><text styleclass="Body Text"> is: </text></para>
+          <para styleclass="Body Text HowTo"><equation styleclass="VariableName" style="font-size:7pt; vertical-align:super;" font-size="36"><![CDATA[\kappa =\lambda^{1.3}]]></equation></para>
+          <para styleclass="Body Text HowTo"></para>
+          <para styleclass="Body Text HowTo"><equation font-size="28"><![CDATA[\lambda =\frac{ h_{min}}{\left( R_{q1}^{2}+ R_{q2}^{2}\right)^{0.5}}]]></equation>&#32;</para>
+          <para styleclass="Body Text"><table styleclass="Block" rowcount="3" colcount="2" style="border-width:0px; border-spacing:0px; border-collapse:collapse; cell-border-width:1px; border-color:#343400; border-style:solid;">
+            <tr style="vertical-align:top">
+              <td style="vertical-align:middle; width:145px;">
+                <para styleclass="Body Text" style="text-align:center;"><equation styleclass="Body Text HowTo" font-size="36"><![CDATA[\lambda]]></equation></para>
+              </td>
+              <td style="vertical-align:middle;">
+                <para styleclass="Body Text"><text styleclass="VariableName">Film Thickness Ratio</text> - <text styleclass="Normal">the ratio of the actual film thickness to the composite roughness of the rolling elements and raceway surfaces.</text></para>
+              </td>
+            </tr>
+            <tr style="vertical-align:top">
+              <td style="vertical-align:middle; width:145px;">
+                <para styleclass="Body Text" style="text-align:center;"><equation styleclass="Normal" font-size="28"><![CDATA[h_{min}]]></equation></para>
+              </td>
+              <td style="vertical-align:middle;">
+                <para styleclass="VariableName">Minimum film thickness</para>
+              </td>
+            </tr>
+            <tr style="vertical-align:top">
+              <td style="vertical-align:middle; width:145px;">
+                <para styleclass="Body Text" style="text-align:center;"><equation styleclass="Normal" font-size="32"><![CDATA[R_{q}]]></equation></para>
+              </td>
+              <td style="vertical-align:middle;">
+                <para styleclass="VariableName">RMS Roughness of the Rolling-Elements, or Rolling-Raceways<text styleclass="Body Text">.</text></para>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Normal"><line style="height:1px; color:#343400;" /></para>
+          <para styleclass="Notes">Notes: </para>
+          <para styleclass="Body Text HowTo">A <text styleclass="VariableName">Viscosity-Ratio </text>less than 0.1 is outside of the limits of <text styleclass="VariableName">ISO 281</text>. It is near to metal-to-metal contact.</para>
+          <para styleclass="Body Text HowTo">A <text styleclass="VariableName">Viscosity-Ratio</text> greater than 4 is the maximum that can be used by <text styleclass="VariableName">ISO 281</text>. However, <text styleclass="VariableName">ISO 281</text> states that the <text styleclass="VariableName">Viscosity-Ratio</text> is equal to 4 if it is actually greater than 4. A viscosity-ratio greater than 4 is getting too high for bearings. The needles or balls may slide and refuse to roll in the &apos;thick-oil&apos;, or the oil may churn and increase the oil and bearing temperatures. </para>
+          <para styleclass="Body Text HowTo">A <text styleclass="VariableName">Viscosity-Ratio</text> in the range of 1.5 - 2.5 is approximately ideal.</para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading4 Toggle_atocs_2" style="text-indent:-36px; margin-left:60px;"><image src="tog_plus.gif" scale="100.00%" figurelistinclude="0"></image><tab /><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" src-collapsed="tog_plus.gif" src-expanded="tog_minus.gif"><caption><![CDATA[Reference Kinematic Viscosity, ]]></caption></toggle><equation style="vertical-align:baseline;vertical-align:text-bottom" font-size="32"><![CDATA[\nu_{1}]]></equation></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="4" colcount="2">
+      <tr style="vertical-align:top">
+        <td colspan="2">
+          <para styleclass="Body Text">The Reference Kinematic-Viscosity, <equation style="vertical-align:baseline;vertical-align:text-bottom" font-size="32"><![CDATA[\nu_{1}]]></equation> (sometimes called the Rated, or Required Viscosity) is the viscosity that is required to separate the surfaces, with combined Cam-Profile and Follower-Roller Roughness values : <equation style="font-size:7pt; vertical-align:sub;" font-size="28"><![CDATA[R_{q}=\left( R_{q.c}^{2} + R_{q.f}^{2} \right)^{\lfrac{1}{2}}]]></equation><text style="font-size:7pt; vertical-align:sub;">.</text></para>
+          <para styleclass="Body Text">It assumes that the oil is a mineral oil, with a Viscosity-Index of approximately 100.</para>
+          <para styleclass="Body Text">Synthetic Hydrocarbon type oils can be used. </para>
+          <para styleclass="Body Text"><equation styleclass="VariableName-indent" style="font-size:12pt;" font-size="28"><![CDATA[\upsilon_{1} = 45000.n^{-0.83}.D_{m}^{-0.5}\cdots ]]></equation><text styleclass="VariableName-indent" style="font-size:12pt;"> if </text><equation styleclass="VariableName-indent" style="font-size:12pt;" font-size="24"><![CDATA[n<1000 RPM]]></equation></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td colspan="2">
+          <para styleclass="Body Text"><equation styleclass="VariableName-indent" style="font-size:12pt;" font-size="28"><![CDATA[\upsilon_{1} = 4500.n^{-0.5}.D_{m}^{-0.5}\cdots]]></equation><text styleclass="VariableName-indent" style="font-size:12pt;"> if </text><equation styleclass="VariableName-indent" style="font-size:12pt;" font-size="24"><![CDATA[n>1000 RPM]]></equation></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td rowspan="2" style="width:166px;">
+          <para styleclass="Body Text HowTo" style="text-align:right;"></para>
+          <para styleclass="Body Text"><equation styleclass="VariableName-indent" font-size="28"><![CDATA[D_{m}= \sfrac{\left( D+d \right)}{2}]]></equation></para>
+          <para styleclass="Body Text HowTo" style="text-align:right;"></para>
+        </td>
+        <td style="vertical-align:middle;">
+          <para styleclass="Body Table">&#32;<equation styleclass="VariableName" font-size="24"><![CDATA[d]]></equation> - inside diameter of Follower-Roller </para>
+        </td>
+      </tr>
+      <tr style="vertical-align:middle">
+        <td>
+          <para styleclass="Body Table">&#32;<equation><![CDATA[D]]></equation> - outside diameter of Follower-Roller</para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading4 Toggle_atocs_2" style="text-indent:-36px; margin-left:60px;"><image src="tog_plus.gif" scale="100.00%" figurelistinclude="0"></image><tab /><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" src-collapsed="tog_plus.gif" src-expanded="tog_minus.gif"><caption><![CDATA[Kinematic Viscosity at operating temperature, ]]></caption></toggle><equation styleclass="Body Text HowTo;vertical-align:text-bottom" style="font-family:Arial; font-size:10pt; font-weight:normal; font-style:normal; text-decoration:none; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;" font-size="32"><![CDATA[\upsilon\  @\  T_{3}]]></equation></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="1" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Text"><text styleclass="Body Text HowTo">We calculate for you the Viscosity, </text><equation styleclass="Body Text HowTo" font-size="32"><![CDATA[\upsilon]]></equation><text styleclass="Body Text HowTo"> , at the </text><text styleclass="VariableName">Operating Temperature, </text><equation styleclass="Heading4 Toggle_atocs_2" style="vertical-align:baseline;vertical-align:text-bottom" font-size="28"><![CDATA[T_{3}]]></equation><text styleclass="Body Text HowTo"> , from the Viscosity at two other temperatures. </text></para>
+          <para styleclass="Body Text"><text styleclass="Body Text HowTo">Nearly always, the two other temperatures are </text><equation styleclass="Body Text HowTo"><![CDATA[40\celsius]]></equation><text styleclass="Body Text HowTo"> and </text><equation styleclass="Body Text HowTo"><![CDATA[100\celsius]]></equation><text styleclass="Body Text HowTo">, but not necessarily.</text></para>
+          <para styleclass="Body Text HowTo">The lubricant&apos;s data-sheet usually specifies the Viscosity at <equation><![CDATA[40\celsius]]></equation>&#32;<text styleclass="Body Text">(</text><equation styleclass="Body Text;vertical-align:text-bottom" style="font-family:Arial; font-size:10pt; font-weight:normal; font-style:normal; text-decoration:none; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;vertical-align:text-bottom" font-size="28"><![CDATA[\nu_{40}]]></equation><text styleclass="Body Text"> ) and</text>&#32;<equation><![CDATA[100\celsius]]></equation>&#32;<text styleclass="Body Text">(</text><equation styleclass="Body Text;vertical-align:text-bottom" style="font-family:Arial; font-size:10pt; font-weight:normal; font-style:normal; text-decoration:none; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;vertical-align:text-bottom" font-size="28"><![CDATA[\nu_{100}]]></equation><text styleclass="Body Text"> )</text></para>
+          <para styleclass="Body Text HowTo">You must enter all four parameters in the dialog: </para>
+          <list id="16" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted">2 x temperatures, <equation style="vertical-align:baseline;vertical-align:text-bottom" font-size="28"><![CDATA[T_{1}]]></equation> and <equation style="vertical-align:baseline;vertical-align:text-bottom" font-size="28"><![CDATA[T_{2}]]></equation> &#160;</li>
+            <li styleclass="HowTo Bulleted">2 x viscosity at those two temperatures, <equation style="vertical-align:baseline;vertical-align:text-bottom" font-size="28"><![CDATA[\nu_{1}]]></equation> and <equation style="vertical-align:baseline;vertical-align:text-bottom" font-size="28"><![CDATA[\nu_{2}]]></equation></li>
+          </list>
+          <para styleclass="Body Text HowTo">You must also enter the Operating-<text styleclass="Body Text">Temperature, </text><equation styleclass="Body Text;vertical-align:text-bottom" style="font-family:Arial; font-size:10pt; font-weight:normal; font-style:normal; text-decoration:none; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;vertical-align:text-bottom" font-size="28"><![CDATA[T_{3}]]></equation><text styleclass="Body Text;vertical-align:text-bottom" style="font-family:Arial; font-size:10pt; font-weight:normal; font-style:normal; text-decoration:none; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">.</text></para>
+          <para styleclass="Body Text">We calculate the Viscosity at the Operating-Temperature, <equation styleclass="Body Text;vertical-align:text-bottom" style="font-family:Arial; font-size:10pt; font-weight:normal; font-style:normal; text-decoration:none; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;" font-size="32"><![CDATA[\nu]]></equation><text styleclass="Body Text;vertical-align:text-bottom" style="font-family:Arial; font-size:10pt; font-weight:normal; font-style:normal; text-decoration:none; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">.</text></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading4 Toggle_atocs_2" style="text-indent:-36px; margin-left:60px;"><image src="tog_plus.gif" scale="100.00%" figurelistinclude="0"></image><tab /><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" src-collapsed="tog_plus.gif" src-expanded="tog_minus.gif"><caption><![CDATA[Contamination Factor, ]]></caption></toggle><equation style="vertical-align:baseline;vertical-align:text-bottom" font-size="32"><![CDATA[e_{C}]]></equation></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="5" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Table">If a contaminant particle moves to the inside of a bearing the rollers (or balls), outer-race, and inner-race are prone to dent because of the <text styleclass="VariableName">small internal bearing clearances</text> and the small rolling radii of the rollers (or balls). An indent leads to localized stress, which will decrease the life of the bearing.</para>
+          <para styleclass="Body Table">The contamination may even prevent the rollers (or balls) rotating.</para>
+          <para styleclass="Body Table"><text styleclass="Body Text">The contamination factors that reduce the lifetime of a Follower-Roller bearing are a function of the:</text></para>
+          <list id="17" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted">diameter of the Follower-Roller </li>
+            <li styleclass="Body Table"><text styleclass="Body Text">lubricant film thickness (</text>viscosity ratio, <equation font-size="28"><![CDATA[\kappa]]></equation>)</li>
+            <li styleclass="Body Table">size, type, and hardness of the particle contaminant. </li>
+          </list>
+          <para styleclass="Body Table">Guide values for the contamination factor are in the table below. They are typical levels of contamination for well lubricated bearings.</para>
+          <para styleclass="VariableName">Contamination and Lubrication Method.</para>
+          <para styleclass="Body Table">We can find for you the contamination factors with these lubrication methods:</para>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <list id="18" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+                  <li styleclass="HowTo Bulleted">Circulating oil lubrication with the oil filtered on-line before it is supplied to the bearings.<text styleclass="VariableName">&#32;</text></li>
+                  <li styleclass="HowTo Bulleted">Oil bath lubrication or circulating oil lubrication with off-line filters.</li>
+                  <li styleclass="HowTo Bulleted">Grease lubrication.</li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="VariableName">Circulating oil lubrication with On-Line Filtration, before being supplied to the bearings.</para>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Body Text">In order to achieve the calculated bearing rating life, the bearings must be operated both from the beginning and after oil changes under the assumed conditions. It is therefore important to clean the bearings and the application thoroughly <text styleclass="VariableName">before</text> mounting. It is also important to filter the oil <text styleclass="VariableName">before</text> it is introduced into the system. The filter used for this purpose should be at least as effective as the filter in the system itself.</para>
+                <para styleclass="Body Text">For recirculating oil lubrication with continuous oil filtration, the contamination factor, <equation styleclass="VariableName" style="font-size:15pt; vertical-align:baseline;vertical-align:text-bottom" font-size="32"><![CDATA[e_{c}]]></equation> can be determined by means of equations (or diagrams). The diagrams or equations to be used is selected on the basis of the filter retention rate βx(c) according to ISO 16889 and the oil cleanliness code according to ISO 4406. The index (c) is the (automatically counted) particle size in <equation style="font-size:7pt; vertical-align:sub;" font-size="28" margin-vertical="1"><![CDATA[\mu m]]></equation> according to ISO 1171.</para>
+              </td>
+            </tr>
+          </table></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="VariableName">Oil bath Lubrication, or Recirculating Oil Lubrication, with Off-Line Filtration.</para>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Body Text">For oil bath lubrication or recirculating oil lubrication with offline filtration, the contamination factor, <equation styleclass="VariableName" style="font-size:15pt; vertical-align:baseline;vertical-align:text-bottom" font-size="32"><![CDATA[e_{c}]]></equation> , can be determined by means of equations or diagrams. You base which diagram you select on the oil cleanliness code. according to ISO 4406.</para>
+                <para styleclass="Body Text">The filtration ratio <equation styleclass="Body Text;vertical-align:text-bottom" style="font-family:Arial; font-size:10pt; font-weight:normal; font-style:normal; text-decoration:none; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;" font-size="28"><![CDATA[\beta x\left( c \right)]]></equation>, with particle size <equation><![CDATA[x]]></equation> in <equation styleclass="Body Text;vertical-align:text-bottom" style="font-family:Arial; font-size:10pt; font-weight:normal; font-style:normal; text-decoration:none; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;" font-size="28"><![CDATA[\mu m(c)]]></equation> according to ISO 16889[6], is the most influencing factor. The contamination level corresponds mainly to the condition of the oil before it passes the on-line filter.</para>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Body Table"><text styleclass="Notes">NOTE</text></para>
+          <para styleclass="Body Text HowTo">Research concludes that it is difficult to accurately find the oil cleanliness especially if you analyze very clean oils. It is easy to pollute an oil-sample, with oil additives that precipitate into the oil and particle calculation.</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Table"><text styleclass="VariableName">Grease Lubrication, Contamination Factors</text></para>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Body Text">It is much easier to seal a bearing that is lubricated with a grease than with an oil. It is easier to design the machine.</para>
+                <para styleclass="Body Text">With grease-lubricated Follower-Roller bearings, we differentiate between bearings:</para>
+                <list id="19" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+                  <li styleclass="HowTo Bulleted">that you (or the OEM) lubricate one time for the lifetime of the bearings </li>
+                  <li styleclass="HowTo Bulleted">that you must re-lubricate. </li>
+                </list>
+                <para styleclass="Body Text">In general terms lifetime lubrication does not depend on the bearing but on the requirements of the particular application.</para>
+                <para styleclass="Body Text">For grease lubrication, you must estimate the Contamination Level from the descriptions below.</para>
+                <para styleclass="Body Text HowTo"><text styleclass="VariableName-indent">Step 1:</text> Consider the potential contamination from the application. For example, is the Follower-Roller running in an open cam-track near to the stack of case-blanks in a Case-Packer? If yes, I would use the <text styleclass="VariableName">Severe Contamination</text>. </para>
+                <para styleclass="Body Text HowTo"><text styleclass="VariableName-indent">Step 2: </text>Find the <text styleclass="VariableName">Viscosity Ratio, </text><equation styleclass="VariableName" font-size="32"><![CDATA[\kappa]]></equation><text styleclass="Body Text"> - see above</text></para>
+                <para styleclass="Body Text HowTo"><text styleclass="VariableName-indent">Step 3:</text> Find <text styleclass="VariableName">mean diameter</text><text styleclass="VariableName-IT2">, </text><equation styleclass="VariableName" style="font-size:10pt; vertical-align:sub;" font-size="32"><![CDATA[D_{m}]]></equation> - see above</para>
+                <para styleclass="Body Text HowTo"><text styleclass="VariableName-indent">Step 4:</text> Calculate the level of Contamination, <equation styleclass="VariableName" style="font-size:10pt; vertical-align:sub;" font-size="32"><![CDATA[e_{c}]]></equation></para>
+                <para styleclass="Body Text">The contamination level can be very low with open, small bearings. Therefore, you should at least purchase Shielded Follower-Roller bearings if the diameter is less than 40<text styleclass="Popup Box">mm</text>.</para>
+              </td>
+            </tr>
+          </table></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Interface2"><text styleclass="Heading4 Toggle_atocs_">Simplified Values of Oil Contamination Factor ,</text>&#32;<equation font-size="32"><![CDATA[e_{c}]]></equation></para>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="8" colcount="3" style="border-width:0px; border-spacing:0px; border-collapse:collapse; cell-border-width:1px; border-color:#343400; border-style:solid; head-row-background-color:#c0c0c0; alt-row-background-color:none;">
+            <thead style="vertical-align:top">
+              <td style="vertical-align:bottom; width:214px;">
+                <para styleclass="VariableName" style="text-align:center; margin-top:1px;">Contamination Level</para>
+              </td>
+              <td style="width:109px;">
+                <para styleclass="VariableName" style="text-align:center; margin-top:1px;"><equation font-size="28"><![CDATA[D_{m}<100]]></equation></para>
+              </td>
+              <td style="width:110px;">
+                <para styleclass="VariableName" style="text-align:center; margin-top:1px;"><equation font-size="28"><![CDATA[D_{m}\geq100]]></equation></para>
+              </td>
+            </thead>
+            <tr style="vertical-align:top">
+              <td style="width:214px;">
+                <para styleclass="VariableName">Extremely high cleanliness: </para>
+                <para styleclass="Body Text">Particle size less than lubricant film thickness, laboratory conditions</para>
+              </td>
+              <td style="vertical-align:middle; width:109px;">
+                <para styleclass="VariableName" style="text-align:center;">1</para>
+              </td>
+              <td style="vertical-align:middle; width:110px;">
+                <para styleclass="VariableName" style="text-align:center;">1</para>
+              </td>
+            </tr>
+            <tr style="vertical-align:top">
+              <td style="width:214px;">
+                <para styleclass="VariableName">High Cleanliness: </para>
+                <para styleclass="Body Text">Oil filtered with extremely fine filter</para>
+                <para styleclass="Normal"><line style="height:1px; color:#343400;" /></para>
+                <para styleclass="Body Text">Equivalent to bearing greased for life with good seals.</para>
+                <para styleclass="Body Text">Very clean mounting with careful flushing, Continuous re-lubrication</para>
+              </td>
+              <td style="vertical-align:middle; width:109px;">
+                <para styleclass="VariableName" style="text-align:center;">0.8 to 0.6</para>
+              </td>
+              <td style="vertical-align:middle; width:110px;">
+                <para styleclass="VariableName" style="text-align:center;">0.9 to 0.8</para>
+              </td>
+            </tr>
+            <tr style="vertical-align:top">
+              <td style="width:214px;">
+                <para styleclass="VariableName">Normal Cleanliness: </para>
+                <para styleclass="Body Text">Oil filtered with fine filter. </para>
+                <para styleclass="Body Text">Equivalent to bearing greased for life and shielded</para>
+              </td>
+              <td style="vertical-align:middle; width:109px;">
+                <para styleclass="VariableName" style="text-align:center;">0.6 to 0.5</para>
+              </td>
+              <td style="vertical-align:middle; width:110px;">
+                <para styleclass="VariableName" style="text-align:center;">0.8 to 0.6</para>
+              </td>
+            </tr>
+            <tr style="vertical-align:top">
+              <td style="width:214px;">
+                <para styleclass="VariableName">Slight Contamination:</para>
+                <para styleclass="Body Text">Oil is slightly contaminated.</para>
+              </td>
+              <td style="vertical-align:middle; width:109px;">
+                <para styleclass="VariableName" style="text-align:center;">0.5 to 0.3</para>
+              </td>
+              <td style="vertical-align:middle; width:110px;">
+                <para styleclass="VariableName" style="text-align:center;">0.6 to 0.4</para>
+              </td>
+            </tr>
+            <tr style="vertical-align:top">
+              <td style="width:214px;">
+                <para styleclass="Popup Box"><text styleclass="VariableName">Typical Contamination</text><text styleclass="Normal">:</text></para>
+                <para styleclass="Body Text">Conditions typical of bearings without integral seals, course filtering, wear particles and ingress from surroundings</para>
+              </td>
+              <td style="vertical-align:middle; width:109px;">
+                <para styleclass="VariableName" style="text-align:center;">0.3 to 0.1</para>
+              </td>
+              <td style="vertical-align:middle; width:110px;">
+                <para styleclass="VariableName" style="text-align:center;">0.4 to 0.2</para>
+              </td>
+            </tr>
+            <tr style="vertical-align:top">
+              <td style="width:214px;">
+                <para styleclass="VariableName">Severe Contamination: </para>
+                <para styleclass="Body Text">Bearing Environment heavily contaminated, Bearing inadequately sealed</para>
+              </td>
+              <td style="vertical-align:middle; width:109px;">
+                <para styleclass="VariableName" style="text-align:center;">0.1 to 0</para>
+              </td>
+              <td style="vertical-align:middle; width:110px;">
+                <para styleclass="VariableName" style="text-align:center;">0.1 to 0</para>
+              </td>
+            </tr>
+            <tr style="vertical-align:top">
+              <td style="width:214px;">
+                <para styleclass="VariableName">Very high or Extremely high contamination</para>
+              </td>
+              <td style="vertical-align:middle; width:109px;">
+                <para styleclass="VariableName" style="text-align:center;">0</para>
+              </td>
+              <td style="vertical-align:middle; width:110px;">
+                <para styleclass="VariableName" style="text-align:center;">0</para>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Heading4 Toggle_atocs_">Contamination Level for Grease Lubrication</para>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Body Text"><text styleclass="VariableName">High Cleanliness</text><text styleclass="Normal">: </text></para>
+                <para styleclass="Body Text HowTo">Very clean assembly, careful flushing; very good sealing system relative to the operating conditions; re-greasing is continuous or at short intervals</para>
+                <para styleclass="Body Text HowTo">Sealed bearings that are greased for life, with appropriate sealing capacity for the operating conditions.</para>
+                <para styleclass="Body Text"><text styleclass="VariableName">Normal Cleanliness</text><text styleclass="Normal">: </text></para>
+                <para styleclass="Body Text HowTo">Clean assembly; good sealing system relative to the operating conditions; re-greasing according to manufacturer’s specifications</para>
+                <para styleclass="Body Text HowTo">Shielded bearings, greased for life with proper sealing capacity for the operating conditions,</para>
+                <para styleclass="VariableName">Slight to Typical Contamination<text styleclass="Body Text">:</text></para>
+                <para styleclass="Body Text HowTo">Clean assembly; moderate sealing capacity relative to the operating conditions; Re-greasing according to manufacturer’s specifications</para>
+                <para styleclass="Body Text"><text styleclass="VariableName">Severe Contamination</text><text styleclass="Normal">: </text></para>
+                <para styleclass="Body Text HowTo">Assembly in workshop; bearing and application not adequately washed prior to mounting; ineffective seal relative to the operating conditions; re-greasing intervals longer than recommended by manufacturer</para>
+                <para styleclass="VariableName">Very Severe Contamination</para>
+                <para styleclass="Body Text HowTo">Assembly in contaminated environment; inadequate sealing system; too long re-greasing</para>
+                <para styleclass="Body Text HowTo">intervals</para>
+              </td>
+            </tr>
+          </table></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading4 Toggle_atocs_2" style="text-indent:-36px; margin-left:60px;"><image src="tog_plus.gif" scale="100.00%" figurelistinclude="0"></image><tab /><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" src-collapsed="tog_plus.gif" src-expanded="tog_minus.gif"><caption><![CDATA[Contamination Levels, ISO 4406 (Contamination of Oil)]]></caption></toggle></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="1" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Text">The table below provides scale values as a function of particle concentration (particles/ml) - it is from ISO 4406</para>
+          <para styleclass="Body Text">A three number code defines the amount of contamination for three particle sizes: 4, 6, and 14 μm. Each time a number increases by 1, the quantity of particles is doubled for a particular particle size.</para>
+          <para styleclass="Body Text">Example: <text styleclass="VariableName">ISO code =</text><text styleclass="VariableName" style="color:#9bbb59;"> 21</text><text styleclass="VariableName"> / </text><text styleclass="VariableName" style="color:#f79646;">19</text><text styleclass="VariableName"> / </text><text styleclass="VariableName" style="color:#4f81bd;">17</text><text styleclass="VariableName">&#32;</text></para>
+          <para styleclass="Body Text">This Contamination Class describes a fluid containing:</para>
+          <list id="20" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted">between 10,000 and 20 ,000 particles of ≥ 4 μm(c) per 1 ml sample</li>
+            <li styleclass="HowTo Bulleted">between 2,500 and 5 ,000 particles of ≥ 6 μm(c) per 1 ml sample</li>
+            <li styleclass="HowTo Bulleted">between 640 and 1 300 particles of ≥ 14 μm(c) per 1 ml sample</li>
+          </list>
+          <para styleclass="HowTo Bulleted">If the leading number is missing, then that size of particle is not counted.</para>
+          <para styleclass="Normal"><table styleclass="Block" rowcount="30" colcount="3" style="width:400px; border-width:0px; border-spacing:0px; border-collapse:collapse; cell-border-width:1px; border-color:#343400; border-style:solid; head-row-background-color:#c0c0c0; alt-row-background-color:none;">
+            <thead style="vertical-align:top">
+              <td style="width:120px; height:20px;">
+                <para styleclass="" style="text-align:center; text-indent:0px; margin-top:0px; margin-right:0px; margin-bottom:0px; margin-left:0px; line-height:1.00; background-color:transparent; white-space:normal; page-break-inside:auto; page-break-after:auto; border:none; tabstops:none;"><text styleclass="" style="font-family:Calibri; font-size:11pt; font-weight:bold; color:#000000;">Scale Number</text></para>
+              </td>
+              <td style="width:68px; height:20px;">
+                <para styleclass="" style="text-align:center; text-indent:0px; margin-top:0px; margin-right:0px; margin-bottom:0px; margin-left:0px; line-height:1.00; background-color:transparent; white-space:normal; page-break-inside:auto; page-break-after:auto; border:none; tabstops:none;"><text styleclass="" style="font-family:Calibri; font-size:11pt; font-weight:bold; color:#000000;">More than</text></para>
+              </td>
+              <td style="width:68px; height:20px;">
+                <para styleclass="" style="text-align:center; text-indent:0px; margin-top:0px; margin-right:0px; margin-bottom:0px; margin-left:0px; line-height:1.00; background-color:transparent; white-space:normal; page-break-inside:auto; page-break-after:auto; border:none; tabstops:none;"><text styleclass="" style="font-family:Calibri; font-size:11pt; font-weight:bold; color:#000000;">Up to</text></para>
+              </td>
+            </thead>
+            <tr style="vertical-align:top">
+              <td style="vertical-align:top; width:120px; height:20px;">
+                <para styleclass="" style="text-align:center; text-indent:0px; margin-top:0px; margin-right:0px; margin-bottom:0px; margin-left:0px; line-height:1.00; background-color:transparent; white-space:normal; page-break-inside:auto; page-break-after:auto; border:none; tabstops:none;"><text styleclass="" style="font-family:Calibri; font-size:11pt; color:#000000;">28 </text></para>
+              </td>
+              <td style="vertical-align:top; width:68px; height:20px;">
+                <para styleclass="" style="text-align:center; text-indent:0px; margin-top:0px; margin-right:0px; margin-bottom:0px; margin-left:0px; line-height:1.00; background-color:transparent; white-space:normal; page-break-inside:auto; page-break-after:auto; border:none; tabstops:none;"><text styleclass="" style="font-family:Calibri; font-size:11pt; color:#000000;">1,300,000</text></para>
+              </td>
+              <td style="vertical-align:top; width:68px; height:20px;">
+                <para styleclass="" style="text-align:center; text-indent:0px; margin-top:0px; margin-right:0px; margin-bottom:0px; margin-left:0px; line-height:1.00; background-color:transparent; white-space:normal; page-break-inside:auto; page-break-after:auto; border:none; tabstops:none;"><text styleclass="" style="font-family:Calibri; font-size:11pt; color:#000000;">2,500,000</text></para>
+              </td>
+            </tr>
+            <tr style="vertical-align:top">
+              <td style="vertical-align:top; width:120px; height:22px;">
+                <para styleclass="" style="text-align:center; text-indent:0px; margin-top:0px; margin-right:0px; margin-bottom:0px; margin-left:0px; line-height:1.00; background-color:transparent; white-space:normal; page-break-inside:auto; page-break-after:auto; border:none; tabstops:none;"><text styleclass="" style="font-family:Calibri; font-size:11pt; color:#000000;">27</text></para>
+              </td>
+              <td style="vertical-align:top; width:68px; height:22px;">
+                <para styleclass="" style="text-align:center; text-indent:0px; margin-top:0px; margin-right:0px; margin-bottom:0px; margin-left:0px; line-height:1.00; background-color:transparent; white-space:normal; page-break-inside:auto; page-break-after:auto; border:none; tabstops:none;"><text styleclass="" style="font-family:Calibri; font-size:11pt; color:#000000;">640,000</text></para>
+              </td>
+              <td style="vertical-align:top; width:68px; height:22px;">
+                <para styleclass="" style="text-align:center; text-indent:0px; margin-top:0px; margin-right:0px; margin-bottom:0px; margin-left:0px; line-height:1.00; background-color:transparent; white-space:normal; page-break-inside:auto; page-break-after:auto; border:none; tabstops:none;"><text styleclass="" style="font-family:Calibri; font-size:11pt; color:#000000;">1,300,000</text></para>
+              </td>
+            </tr>
+            <tr style="vertical-align:top">
+              <td style="vertical-align:top; width:120px; height:23px;">
+                <para styleclass="" style="text-align:center; text-indent:0px; margin-top:0px; margin-right:0px; margin-bottom:0px; margin-left:0px; line-height:1.00; background-color:transparent; white-space:normal; page-break-inside:auto; page-break-after:auto; border:none; tabstops:none;"><text styleclass="" style="font-family:Calibri; font-size:11pt; color:#000000;">26</text></para>
+              </td>
+              <td style="vertical-align:top; width:68px; height:23px;">
+                <para styleclass="" style="text-align:center; text-indent:0px; margin-top:0px; margin-right:0px; margin-bottom:0px; margin-left:0px; line-height:1.00; background-color:transparent; white-space:normal; page-break-inside:auto; page-break-after:auto; border:none; tabstops:none;"><text styleclass="" style="font-family:Calibri; font-size:11pt; color:#000000;">320,000</text></para>
+              </td>
+              <td style="vertical-align:top; width:68px; height:23px;">
+                <para styleclass="" style="text-align:center; text-indent:0px; margin-top:0px; margin-right:0px; margin-bottom:0px; margin-left:0px; line-height:1.00; background-color:transparent; white-space:normal; page-break-inside:auto; page-break-after:auto; border:none; tabstops:none;"><text styleclass="" style="font-family:Calibri; font-size:11pt; color:#000000;">640,000</text></para>
+              </td>
+            </tr>
+            <tr style="vertical-align:top">
+              <td style="vertical-align:top; width:120px; height:20px;">
+                <para styleclass="" style="text-align:center; text-indent:0px; margin-top:0px; margin-right:0px; margin-bottom:0px; margin-left:0px; line-height:1.00; background-color:transparent; white-space:normal; page-break-inside:auto; page-break-after:auto; border:none; tabstops:none;"><text styleclass="" style="font-family:Calibri; font-size:11pt; color:#000000;">25</text></para>
+              </td>
+              <td style="vertical-align:top; width:68px; height:20px;">
+                <para styleclass="" style="text-align:center; text-indent:0px; margin-top:0px; margin-right:0px; margin-bottom:0px; margin-left:0px; line-height:1.00; background-color:transparent; white-space:normal; page-break-inside:auto; page-break-after:auto; border:none; tabstops:none;"><text styleclass="" style="font-family:Calibri; font-size:11pt; color:#000000;">160,000</text></para>
+              </td>
+              <td style="vertical-align:top; width:68px; height:20px;">
+                <para styleclass="" style="text-align:center; text-indent:0px; margin-top:0px; margin-right:0px; margin-bottom:0px; margin-left:0px; line-height:1.00; background-color:transparent; white-space:normal; page-break-inside:auto; page-break-after:auto; border:none; tabstops:none;"><text styleclass="" style="font-family:Calibri; font-size:11pt; color:#000000;">320,000</text></para>
+              </td>
+            </tr>
+            <tr style="vertical-align:top">
+              <td style="vertical-align:top; width:120px; height:19px;">
+                <para styleclass="" style="text-align:center; text-indent:0px; margin-top:0px; margin-right:0px; margin-bottom:0px; margin-left:0px; line-height:1.00; background-color:transparent; white-space:normal; page-break-inside:auto; page-break-after:auto; border:none; tabstops:none;"><text styleclass="" style="font-family:Calibri; font-size:11pt; color:#000000;">24</text></para>
+              </td>
+              <td style="vertical-align:top; width:68px; height:19px;">
+                <para styleclass="" style="text-align:center; text-indent:0px; margin-top:0px; margin-right:0px; margin-bottom:0px; margin-left:0px; line-height:1.00; background-color:transparent; white-space:normal; page-break-inside:auto; page-break-after:auto; border:none; tabstops:none;"><text styleclass="" style="font-family:Calibri; font-size:11pt; color:#000000;">80,000</text></para>
+              </td>
+              <td style="vertical-align:top; width:68px; height:19px;">
+                <para styleclass="" style="text-align:center; text-indent:0px; margin-top:0px; margin-right:0px; margin-bottom:0px; margin-left:0px; line-height:1.00; background-color:transparent; white-space:normal; page-break-inside:auto; page-break-after:auto; border:none; tabstops:none;"><text styleclass="" style="font-family:Calibri; font-size:11pt; color:#000000;">160,000</text></para>
+              </td>
+            </tr>
+            <tr style="vertical-align:top">
+              <td style="vertical-align:top; width:120px; height:23px;">
+                <para styleclass="" style="text-align:center; text-indent:0px; margin-top:0px; margin-right:0px; margin-bottom:0px; margin-left:0px; line-height:1.00; background-color:transparent; white-space:normal; page-break-inside:auto; page-break-after:auto; border:none; tabstops:none;"><text styleclass="" style="font-family:Calibri; font-size:11pt; color:#000000;">23</text></para>
+              </td>
+              <td style="vertical-align:top; width:68px; height:23px;">
+                <para styleclass="" style="text-align:center; text-indent:0px; margin-top:0px; margin-right:0px; margin-bottom:0px; margin-left:0px; line-height:1.00; background-color:transparent; white-space:normal; page-break-inside:auto; page-break-after:auto; border:none; tabstops:none;"><text styleclass="" style="font-family:Calibri; font-size:11pt; color:#000000;">40,000</text></para>
+              </td>
+              <td style="vertical-align:top; width:68px; height:23px;">
+                <para styleclass="" style="text-align:center; text-indent:0px; margin-top:0px; margin-right:0px; margin-bottom:0px; margin-left:0px; line-height:1.00; background-color:transparent; white-space:normal; page-break-inside:auto; page-break-after:auto; border:none; tabstops:none;"><text styleclass="" style="font-family:Calibri; font-size:11pt; color:#000000;">80,000</text></para>
+              </td>
+            </tr>
+            <tr style="vertical-align:top">
+              <td style="vertical-align:top; width:120px; height:19px;">
+                <para styleclass="" style="text-align:center; text-indent:0px; margin-top:0px; margin-right:0px; margin-bottom:0px; margin-left:0px; line-height:1.00; background-color:transparent; white-space:normal; page-break-inside:auto; page-break-after:auto; border:none; tabstops:none;"><text styleclass="" style="font-family:Calibri; font-size:11pt; color:#000000;">22</text></para>
+              </td>
+              <td style="vertical-align:top; width:68px; height:19px;">
+                <para styleclass="" style="text-align:center; text-indent:0px; margin-top:0px; margin-right:0px; margin-bottom:0px; margin-left:0px; line-height:1.00; background-color:transparent; white-space:normal; page-break-inside:auto; page-break-after:auto; border:none; tabstops:none;"><text styleclass="" style="font-family:Calibri; font-size:11pt; color:#000000;">20,000</text></para>
+              </td>
+              <td style="vertical-align:top; width:68px; height:19px;">
+                <para styleclass="" style="text-align:center; text-indent:0px; margin-top:0px; margin-right:0px; margin-bottom:0px; margin-left:0px; line-height:1.00; background-color:transparent; white-space:normal; page-break-inside:auto; page-break-after:auto; border:none; tabstops:none;"><text styleclass="" style="font-family:Calibri; font-size:11pt; color:#000000;">40,000</text></para>
+              </td>
+            </tr>
+            <tr style="vertical-align:top">
+              <td style="width:120px; height:19px;">
+                <para styleclass="" style="text-align:center; text-indent:0px; margin-top:0px; margin-right:0px; margin-bottom:0px; margin-left:0px; line-height:1.00; background-color:transparent; white-space:normal; page-break-inside:auto; page-break-after:auto; border:none; tabstops:none;"><text styleclass="" style="font-family:Calibri; font-size:11pt; color:#ffffff; background-color:#748c43;">21</text></para>
+              </td>
+              <td style="width:68px; height:19px;">
+                <para styleclass="" style="text-align:center; text-indent:0px; margin-top:0px; margin-right:0px; margin-bottom:0px; margin-left:0px; line-height:1.00; background-color:transparent; white-space:normal; page-break-inside:auto; page-break-after:auto; border:none; tabstops:none;"><text styleclass="" style="font-family:Calibri; font-size:11pt; color:#ffffff; background-color:#748c43;">10,000</text></para>
+              </td>
+              <td style="width:68px; height:19px;">
+                <para styleclass="" style="text-align:center; text-indent:0px; margin-top:0px; margin-right:0px; margin-bottom:0px; margin-left:0px; line-height:1.00; background-color:transparent; white-space:normal; page-break-inside:auto; page-break-after:auto; border:none; tabstops:none;"><text styleclass="" style="font-family:Calibri; font-size:11pt; color:#ffffff; background-color:#748c43;">20,000</text></para>
+              </td>
+            </tr>
+            <tr style="vertical-align:top">
+              <td style="vertical-align:top; width:120px; height:19px;">
+                <para styleclass="" style="text-align:center; text-indent:0px; margin-top:0px; margin-right:0px; margin-bottom:0px; margin-left:0px; line-height:1.00; background-color:transparent; white-space:normal; page-break-inside:auto; page-break-after:auto; border:none; tabstops:none;"><text styleclass="" style="font-family:Calibri; font-size:11pt; color:#000000;">20</text></para>
+              </td>
+              <td style="vertical-align:top; width:68px; height:19px;">
+                <para styleclass="" style="text-align:center; text-indent:0px; margin-top:0px; margin-right:0px; margin-bottom:0px; margin-left:0px; line-height:1.00; background-color:transparent; white-space:normal; page-break-inside:auto; page-break-after:auto; border:none; tabstops:none;"><text styleclass="" style="font-family:Calibri; font-size:11pt; color:#000000;">5,000</text></para>
+              </td>
+              <td style="vertical-align:top; width:68px; height:19px;">
+                <para styleclass="" style="text-align:center; text-indent:0px; margin-top:0px; margin-right:0px; margin-bottom:0px; margin-left:0px; line-height:1.00; background-color:transparent; white-space:normal; page-break-inside:auto; page-break-after:auto; border:none; tabstops:none;"><text styleclass="" style="font-family:Calibri; font-size:11pt; color:#000000;">10,000</text></para>
+              </td>
+            </tr>
+            <tr style="vertical-align:top">
+              <td style="width:120px; height:19px;">
+                <para styleclass="" style="text-align:center; text-indent:0px; margin-top:0px; margin-right:0px; margin-bottom:0px; margin-left:0px; line-height:1.00; background-color:transparent; white-space:normal; page-break-inside:auto; page-break-after:auto; border:none; tabstops:none;"><text styleclass="" style="font-family:Calibri; font-size:11pt; color:#ffffff; background-color:#b97034;">19</text></para>
+              </td>
+              <td style="width:68px; height:19px;">
+                <para styleclass="" style="text-align:center; text-indent:0px; margin-top:0px; margin-right:0px; margin-bottom:0px; margin-left:0px; line-height:1.00; background-color:transparent; white-space:normal; page-break-inside:auto; page-break-after:auto; border:none; tabstops:none;"><text styleclass="" style="font-family:Calibri; font-size:11pt; color:#ffffff; background-color:#b97034;">2,500</text></para>
+              </td>
+              <td style="width:68px; height:19px;">
+                <para styleclass="" style="text-align:center; text-indent:0px; margin-top:0px; margin-right:0px; margin-bottom:0px; margin-left:0px; line-height:1.00; background-color:transparent; white-space:normal; page-break-inside:auto; page-break-after:auto; border:none; tabstops:none;"><text styleclass="" style="font-family:Calibri; font-size:11pt; color:#ffffff; background-color:#b97034;">5,000</text></para>
+              </td>
+            </tr>
+            <tr style="vertical-align:top">
+              <td style="vertical-align:top; width:120px; height:20px;">
+                <para styleclass="" style="text-align:center; text-indent:0px; margin-top:0px; margin-right:0px; margin-bottom:0px; margin-left:0px; line-height:1.00; background-color:transparent; white-space:normal; page-break-inside:auto; page-break-after:auto; border:none; tabstops:none;"><text styleclass="" style="font-family:Calibri; font-size:11pt; color:#000000;">18</text></para>
+              </td>
+              <td style="vertical-align:top; width:68px; height:20px;">
+                <para styleclass="" style="text-align:center; text-indent:0px; margin-top:0px; margin-right:0px; margin-bottom:0px; margin-left:0px; line-height:1.00; background-color:transparent; white-space:normal; page-break-inside:auto; page-break-after:auto; border:none; tabstops:none;"><text styleclass="" style="font-family:Calibri; font-size:11pt; color:#000000;">1,300</text></para>
+              </td>
+              <td style="vertical-align:top; width:68px; height:20px;">
+                <para styleclass="" style="text-align:center; text-indent:0px; margin-top:0px; margin-right:0px; margin-bottom:0px; margin-left:0px; line-height:1.00; background-color:transparent; white-space:normal; page-break-inside:auto; page-break-after:auto; border:none; tabstops:none;"><text styleclass="" style="font-family:Calibri; font-size:11pt; color:#000000;">2,500</text></para>
+              </td>
+            </tr>
+            <tr style="vertical-align:top">
+              <td style="width:120px; height:19px;">
+                <para styleclass="" style="text-align:center; text-indent:0px; margin-top:0px; margin-right:0px; margin-bottom:0px; margin-left:0px; line-height:1.00; background-color:transparent; white-space:normal; page-break-inside:auto; page-break-after:auto; border:none; tabstops:none;"><text styleclass="" style="font-family:Calibri; font-size:11pt; color:#ffffff; background-color:#3b618e;">17</text></para>
+              </td>
+              <td style="width:68px; height:19px;">
+                <para styleclass="" style="text-align:center; text-indent:0px; margin-top:0px; margin-right:0px; margin-bottom:0px; margin-left:0px; line-height:1.00; background-color:transparent; white-space:normal; page-break-inside:auto; page-break-after:auto; border:none; tabstops:none;"><text styleclass="" style="font-family:Calibri; font-size:11pt; color:#ffffff; background-color:#3b618e;">640</text></para>
+              </td>
+              <td style="width:68px; height:19px;">
+                <para styleclass="" style="text-align:center; text-indent:0px; margin-top:0px; margin-right:0px; margin-bottom:0px; margin-left:0px; line-height:1.00; background-color:transparent; white-space:normal; page-break-inside:auto; page-break-after:auto; border:none; tabstops:none;"><text styleclass="" style="font-family:Calibri; font-size:11pt; color:#ffffff; background-color:#3b618e;">1,300</text></para>
+              </td>
+            </tr>
+            <tr style="vertical-align:top">
+              <td style="vertical-align:top; width:120px; height:20px;">
+                <para styleclass="" style="text-align:center; text-indent:0px; margin-top:0px; margin-right:0px; margin-bottom:0px; margin-left:0px; line-height:1.00; background-color:transparent; white-space:normal; page-break-inside:auto; page-break-after:auto; border:none; tabstops:none;"><text styleclass="" style="font-family:Calibri; font-size:11pt; color:#000000;">16</text></para>
+              </td>
+              <td style="vertical-align:top; width:68px; height:20px;">
+                <para styleclass="" style="text-align:center; text-indent:0px; margin-top:0px; margin-right:0px; margin-bottom:0px; margin-left:0px; line-height:1.00; background-color:transparent; white-space:normal; page-break-inside:auto; page-break-after:auto; border:none; tabstops:none;"><text styleclass="" style="font-family:Calibri; font-size:11pt; color:#000000;">320</text></para>
+              </td>
+              <td style="vertical-align:top; width:68px; height:20px;">
+                <para styleclass="" style="text-align:center; text-indent:0px; margin-top:0px; margin-right:0px; margin-bottom:0px; margin-left:0px; line-height:1.00; background-color:transparent; white-space:normal; page-break-inside:auto; page-break-after:auto; border:none; tabstops:none;"><text styleclass="" style="font-family:Calibri; font-size:11pt; color:#000000;">640</text></para>
+              </td>
+            </tr>
+            <tr style="vertical-align:top">
+              <td style="vertical-align:top; width:120px; height:21px;">
+                <para styleclass="" style="text-align:center; text-indent:0px; margin-top:0px; margin-right:0px; margin-bottom:0px; margin-left:0px; line-height:1.00; background-color:transparent; white-space:normal; page-break-inside:auto; page-break-after:auto; border:none; tabstops:none;"><text styleclass="" style="font-family:Calibri; font-size:11pt; color:#000000;">15</text></para>
+              </td>
+              <td style="vertical-align:top; width:68px; height:21px;">
+                <para styleclass="" style="text-align:center; text-indent:0px; margin-top:0px; margin-right:0px; margin-bottom:0px; margin-left:0px; line-height:1.00; background-color:transparent; white-space:normal; page-break-inside:auto; page-break-after:auto; border:none; tabstops:none;"><text styleclass="" style="font-family:Calibri; font-size:11pt; color:#000000;">160</text></para>
+              </td>
+              <td style="vertical-align:top; width:68px; height:21px;">
+                <para styleclass="" style="text-align:center; text-indent:0px; margin-top:0px; margin-right:0px; margin-bottom:0px; margin-left:0px; line-height:1.00; background-color:transparent; white-space:normal; page-break-inside:auto; page-break-after:auto; border:none; tabstops:none;"><text styleclass="" style="font-family:Calibri; font-size:11pt; color:#000000;">320</text></para>
+              </td>
+            </tr>
+            <tr style="vertical-align:top">
+              <td style="width:120px;">
+                <para styleclass="" style="text-align:center; text-indent:0px; margin-top:0px; margin-right:0px; margin-bottom:0px; margin-left:0px; line-height:1.00; background-color:transparent; white-space:normal; page-break-inside:auto; page-break-after:auto; border:none; tabstops:none;"><text styleclass="" style="font-family:Calibri; font-size:11pt; color:#000000;">14</text></para>
+              </td>
+              <td style="width:68px;">
+                <para styleclass="" style="text-align:center; text-indent:0px; margin-top:0px; margin-right:0px; margin-bottom:0px; margin-left:0px; line-height:1.00; background-color:transparent; white-space:normal; page-break-inside:auto; page-break-after:auto; border:none; tabstops:none;"><text styleclass="" style="font-family:Calibri; font-size:11pt; color:#000000;">80</text></para>
+              </td>
+              <td style="width:68px;">
+                <para styleclass="" style="text-align:center; text-indent:0px; margin-top:0px; margin-right:0px; margin-bottom:0px; margin-left:0px; line-height:1.00; background-color:transparent; white-space:normal; page-break-inside:auto; page-break-after:auto; border:none; tabstops:none;"><text styleclass="" style="font-family:Calibri; font-size:11pt; color:#000000;">160</text></para>
+              </td>
+            </tr>
+            <tr style="vertical-align:top">
+              <td style="vertical-align:top; width:120px; height:19px;">
+                <para styleclass="" style="text-align:center; text-indent:0px; margin-top:0px; margin-right:0px; margin-bottom:0px; margin-left:0px; line-height:1.00; background-color:transparent; white-space:normal; page-break-inside:auto; page-break-after:auto; border:none; tabstops:none;"><text styleclass="" style="font-family:Calibri; font-size:11pt; color:#000000;">13</text></para>
+              </td>
+              <td style="vertical-align:top; width:68px; height:19px;">
+                <para styleclass="" style="text-align:center; text-indent:0px; margin-top:0px; margin-right:0px; margin-bottom:0px; margin-left:0px; line-height:1.00; background-color:transparent; white-space:normal; page-break-inside:auto; page-break-after:auto; border:none; tabstops:none;"><text styleclass="" style="font-family:Calibri; font-size:11pt; color:#000000;">40</text></para>
+              </td>
+              <td style="vertical-align:top; width:68px; height:19px;">
+                <para styleclass="" style="text-align:center; text-indent:0px; margin-top:0px; margin-right:0px; margin-bottom:0px; margin-left:0px; line-height:1.00; background-color:transparent; white-space:normal; page-break-inside:auto; page-break-after:auto; border:none; tabstops:none;"><text styleclass="" style="font-family:Calibri; font-size:11pt; color:#000000;">80</text></para>
+              </td>
+            </tr>
+            <tr style="vertical-align:top">
+              <td style="vertical-align:top; width:120px; height:19px;">
+                <para styleclass="" style="text-align:center; text-indent:0px; margin-top:0px; margin-right:0px; margin-bottom:0px; margin-left:0px; line-height:1.00; background-color:transparent; white-space:normal; page-break-inside:auto; page-break-after:auto; border:none; tabstops:none;"><text styleclass="" style="font-family:Calibri; font-size:11pt; color:#000000;">12</text></para>
+              </td>
+              <td style="vertical-align:top; width:68px; height:19px;">
+                <para styleclass="" style="text-align:center; text-indent:0px; margin-top:0px; margin-right:0px; margin-bottom:0px; margin-left:0px; line-height:1.00; background-color:transparent; white-space:normal; page-break-inside:auto; page-break-after:auto; border:none; tabstops:none;"><text styleclass="" style="font-family:Calibri; font-size:11pt; color:#000000;">20</text></para>
+              </td>
+              <td style="vertical-align:top; width:68px; height:19px;">
+                <para styleclass="" style="text-align:center; text-indent:0px; margin-top:0px; margin-right:0px; margin-bottom:0px; margin-left:0px; line-height:1.00; background-color:transparent; white-space:normal; page-break-inside:auto; page-break-after:auto; border:none; tabstops:none;"><text styleclass="" style="font-family:Calibri; font-size:11pt; color:#000000;">40</text></para>
+              </td>
+            </tr>
+            <tr style="vertical-align:top">
+              <td style="vertical-align:top; width:120px; height:19px;">
+                <para styleclass="" style="text-align:center; text-indent:0px; margin-top:0px; margin-right:0px; margin-bottom:0px; margin-left:0px; line-height:1.00; background-color:transparent; white-space:normal; page-break-inside:auto; page-break-after:auto; border:none; tabstops:none;"><text styleclass="" style="font-family:Calibri; font-size:11pt; color:#000000;">11</text></para>
+              </td>
+              <td style="vertical-align:top; width:68px; height:19px;">
+                <para styleclass="" style="text-align:center; text-indent:0px; margin-top:0px; margin-right:0px; margin-bottom:0px; margin-left:0px; line-height:1.00; background-color:transparent; white-space:normal; page-break-inside:auto; page-break-after:auto; border:none; tabstops:none;"><text styleclass="" style="font-family:Calibri; font-size:11pt; color:#000000;">10</text></para>
+              </td>
+              <td style="vertical-align:top; width:68px; height:19px;">
+                <para styleclass="" style="text-align:center; text-indent:0px; margin-top:0px; margin-right:0px; margin-bottom:0px; margin-left:0px; line-height:1.00; background-color:transparent; white-space:normal; page-break-inside:auto; page-break-after:auto; border:none; tabstops:none;"><text styleclass="" style="font-family:Calibri; font-size:11pt; color:#000000;">20</text></para>
+              </td>
+            </tr>
+            <tr style="vertical-align:top">
+              <td style="vertical-align:top; width:120px; height:19px;">
+                <para styleclass="" style="text-align:center; text-indent:0px; margin-top:0px; margin-right:0px; margin-bottom:0px; margin-left:0px; line-height:1.00; background-color:transparent; white-space:normal; page-break-inside:auto; page-break-after:auto; border:none; tabstops:none;"><text styleclass="" style="font-family:Calibri; font-size:11pt; color:#000000;">10</text></para>
+              </td>
+              <td style="vertical-align:top; width:68px; height:19px;">
+                <para styleclass="" style="text-align:center; text-indent:0px; margin-top:0px; margin-right:0px; margin-bottom:0px; margin-left:0px; line-height:1.00; background-color:transparent; white-space:normal; page-break-inside:auto; page-break-after:auto; border:none; tabstops:none;"><text styleclass="" style="font-family:Calibri; font-size:11pt; color:#000000;">4</text></para>
+              </td>
+              <td style="vertical-align:top; width:68px; height:19px;">
+                <para styleclass="" style="text-align:center; text-indent:0px; margin-top:0px; margin-right:0px; margin-bottom:0px; margin-left:0px; line-height:1.00; background-color:transparent; white-space:normal; page-break-inside:auto; page-break-after:auto; border:none; tabstops:none;"><text styleclass="" style="font-family:Calibri; font-size:11pt; color:#000000;">10</text></para>
+              </td>
+            </tr>
+            <tr style="vertical-align:top">
+              <td style="vertical-align:top; width:120px; height:20px;">
+                <para styleclass="" style="text-align:center; text-indent:0px; margin-top:0px; margin-right:0px; margin-bottom:0px; margin-left:0px; line-height:1.00; background-color:transparent; white-space:normal; page-break-inside:auto; page-break-after:auto; border:none; tabstops:none;"><text styleclass="" style="font-family:Calibri; font-size:11pt; color:#000000;">9</text></para>
+              </td>
+              <td style="vertical-align:top; width:68px; height:20px;">
+                <para styleclass="" style="text-align:center; text-indent:0px; margin-top:0px; margin-right:0px; margin-bottom:0px; margin-left:0px; line-height:1.00; background-color:transparent; white-space:normal; page-break-inside:auto; page-break-after:auto; border:none; tabstops:none;"><text styleclass="" style="font-family:Calibri; font-size:11pt; color:#000000;">2.5</text></para>
+              </td>
+              <td style="vertical-align:top; width:68px; height:20px;">
+                <para styleclass="" style="text-align:center; text-indent:0px; margin-top:0px; margin-right:0px; margin-bottom:0px; margin-left:0px; line-height:1.00; background-color:transparent; white-space:normal; page-break-inside:auto; page-break-after:auto; border:none; tabstops:none;"><text styleclass="" style="font-family:Calibri; font-size:11pt; color:#000000;">4</text></para>
+              </td>
+            </tr>
+            <tr style="vertical-align:top">
+              <td style="vertical-align:top; width:120px; height:19px;">
+                <para styleclass="" style="text-align:center; text-indent:0px; margin-top:0px; margin-right:0px; margin-bottom:0px; margin-left:0px; line-height:1.00; background-color:transparent; white-space:normal; page-break-inside:auto; page-break-after:auto; border:none; tabstops:none;"><text styleclass="" style="font-family:Calibri; font-size:11pt; color:#000000;">8</text></para>
+              </td>
+              <td style="vertical-align:top; width:68px; height:19px;">
+                <para styleclass="" style="text-align:center; text-indent:0px; margin-top:0px; margin-right:0px; margin-bottom:0px; margin-left:0px; line-height:1.00; background-color:transparent; white-space:normal; page-break-inside:auto; page-break-after:auto; border:none; tabstops:none;"><text styleclass="" style="font-family:Calibri; font-size:11pt; color:#000000;">1.3</text></para>
+              </td>
+              <td style="vertical-align:top; width:68px; height:19px;">
+                <para styleclass="" style="text-align:center; text-indent:0px; margin-top:0px; margin-right:0px; margin-bottom:0px; margin-left:0px; line-height:1.00; background-color:transparent; white-space:normal; page-break-inside:auto; page-break-after:auto; border:none; tabstops:none;"><text styleclass="" style="font-family:Calibri; font-size:11pt; color:#000000;">2.5</text></para>
+              </td>
+            </tr>
+            <tr style="vertical-align:top">
+              <td style="vertical-align:top; width:120px; height:19px;">
+                <para styleclass="" style="text-align:center; text-indent:0px; margin-top:0px; margin-right:0px; margin-bottom:0px; margin-left:0px; line-height:1.00; background-color:transparent; white-space:normal; page-break-inside:auto; page-break-after:auto; border:none; tabstops:none;"><text styleclass="" style="font-family:Calibri; font-size:11pt; color:#000000;">7</text></para>
+              </td>
+              <td style="vertical-align:top; width:68px; height:19px;">
+                <para styleclass="" style="text-align:center; text-indent:0px; margin-top:0px; margin-right:0px; margin-bottom:0px; margin-left:0px; line-height:1.00; background-color:transparent; white-space:normal; page-break-inside:auto; page-break-after:auto; border:none; tabstops:none;"><text styleclass="" style="font-family:Calibri; font-size:11pt; color:#000000;">0.64</text></para>
+              </td>
+              <td style="vertical-align:top; width:68px; height:19px;">
+                <para styleclass="" style="text-align:center; text-indent:0px; margin-top:0px; margin-right:0px; margin-bottom:0px; margin-left:0px; line-height:1.00; background-color:transparent; white-space:normal; page-break-inside:auto; page-break-after:auto; border:none; tabstops:none;"><text styleclass="" style="font-family:Calibri; font-size:11pt; color:#000000;">1.3</text></para>
+              </td>
+            </tr>
+            <tr style="vertical-align:top">
+              <td style="vertical-align:top; width:120px; height:19px;">
+                <para styleclass="" style="text-align:center; text-indent:0px; margin-top:0px; margin-right:0px; margin-bottom:0px; margin-left:0px; line-height:1.00; background-color:transparent; white-space:normal; page-break-inside:auto; page-break-after:auto; border:none; tabstops:none;"><text styleclass="" style="font-family:Calibri; font-size:11pt; color:#000000;">6</text></para>
+              </td>
+              <td style="vertical-align:top; width:68px; height:19px;">
+                <para styleclass="" style="text-align:center; text-indent:0px; margin-top:0px; margin-right:0px; margin-bottom:0px; margin-left:0px; line-height:1.00; background-color:transparent; white-space:normal; page-break-inside:auto; page-break-after:auto; border:none; tabstops:none;"><text styleclass="" style="font-family:Calibri; font-size:11pt; color:#000000;">0.32</text></para>
+              </td>
+              <td style="vertical-align:top; width:68px; height:19px;">
+                <para styleclass="" style="text-align:center; text-indent:0px; margin-top:0px; margin-right:0px; margin-bottom:0px; margin-left:0px; line-height:1.00; background-color:transparent; white-space:normal; page-break-inside:auto; page-break-after:auto; border:none; tabstops:none;"><text styleclass="" style="font-family:Calibri; font-size:11pt; color:#000000;">0.64</text></para>
+              </td>
+            </tr>
+            <tr style="vertical-align:top">
+              <td style="vertical-align:top; width:120px; height:19px;">
+                <para styleclass="" style="text-align:center; text-indent:0px; margin-top:0px; margin-right:0px; margin-bottom:0px; margin-left:0px; line-height:1.00; background-color:transparent; white-space:normal; page-break-inside:auto; page-break-after:auto; border:none; tabstops:none;"><text styleclass="" style="font-family:Calibri; font-size:11pt; color:#000000;">5</text></para>
+              </td>
+              <td style="vertical-align:top; width:68px; height:19px;">
+                <para styleclass="" style="text-align:center; text-indent:0px; margin-top:0px; margin-right:0px; margin-bottom:0px; margin-left:0px; line-height:1.00; background-color:transparent; white-space:normal; page-break-inside:auto; page-break-after:auto; border:none; tabstops:none;"><text styleclass="" style="font-family:Calibri; font-size:11pt; color:#000000;">0.16</text></para>
+              </td>
+              <td style="vertical-align:top; width:68px; height:19px;">
+                <para styleclass="" style="text-align:center; text-indent:0px; margin-top:0px; margin-right:0px; margin-bottom:0px; margin-left:0px; line-height:1.00; background-color:transparent; white-space:normal; page-break-inside:auto; page-break-after:auto; border:none; tabstops:none;"><text styleclass="" style="font-family:Calibri; font-size:11pt; color:#000000;">0.32</text></para>
+              </td>
+            </tr>
+            <tr style="vertical-align:top">
+              <td style="vertical-align:top; width:120px; height:19px;">
+                <para styleclass="" style="text-align:center; text-indent:0px; margin-top:0px; margin-right:0px; margin-bottom:0px; margin-left:0px; line-height:1.00; background-color:transparent; white-space:normal; page-break-inside:auto; page-break-after:auto; border:none; tabstops:none;"><text styleclass="" style="font-family:Calibri; font-size:11pt; color:#000000;">4</text></para>
+              </td>
+              <td style="vertical-align:top; width:68px; height:19px;">
+                <para styleclass="" style="text-align:center; text-indent:0px; margin-top:0px; margin-right:0px; margin-bottom:0px; margin-left:0px; line-height:1.00; background-color:transparent; white-space:normal; page-break-inside:auto; page-break-after:auto; border:none; tabstops:none;"><text styleclass="" style="font-family:Calibri; font-size:11pt; color:#000000;">0.08</text></para>
+              </td>
+              <td style="vertical-align:top; width:68px; height:19px;">
+                <para styleclass="" style="text-align:center; text-indent:0px; margin-top:0px; margin-right:0px; margin-bottom:0px; margin-left:0px; line-height:1.00; background-color:transparent; white-space:normal; page-break-inside:auto; page-break-after:auto; border:none; tabstops:none;"><text styleclass="" style="font-family:Calibri; font-size:11pt; color:#000000;">0.16</text></para>
+              </td>
+            </tr>
+            <tr style="vertical-align:top">
+              <td style="vertical-align:top; width:120px; height:19px;">
+                <para styleclass="" style="text-align:center; text-indent:0px; margin-top:0px; margin-right:0px; margin-bottom:0px; margin-left:0px; line-height:1.00; background-color:transparent; white-space:normal; page-break-inside:auto; page-break-after:auto; border:none; tabstops:none;"><text styleclass="" style="font-family:Calibri; font-size:11pt; color:#000000;">3</text></para>
+              </td>
+              <td style="vertical-align:top; width:68px; height:19px;">
+                <para styleclass="" style="text-align:center; text-indent:0px; margin-top:0px; margin-right:0px; margin-bottom:0px; margin-left:0px; line-height:1.00; background-color:transparent; white-space:normal; page-break-inside:auto; page-break-after:auto; border:none; tabstops:none;"><text styleclass="" style="font-family:Calibri; font-size:11pt; color:#000000;">0.04</text></para>
+              </td>
+              <td style="vertical-align:top; width:68px; height:19px;">
+                <para styleclass="" style="text-align:center; text-indent:0px; margin-top:0px; margin-right:0px; margin-bottom:0px; margin-left:0px; line-height:1.00; background-color:transparent; white-space:normal; page-break-inside:auto; page-break-after:auto; border:none; tabstops:none;"><text styleclass="" style="font-family:Calibri; font-size:11pt; color:#000000;">0.08</text></para>
+              </td>
+            </tr>
+            <tr style="vertical-align:top">
+              <td style="vertical-align:top; width:120px; height:20px;">
+                <para styleclass="" style="text-align:center; text-indent:0px; margin-top:0px; margin-right:0px; margin-bottom:0px; margin-left:0px; line-height:1.00; background-color:transparent; white-space:normal; page-break-inside:auto; page-break-after:auto; border:none; tabstops:none;"><text styleclass="" style="font-family:Calibri; font-size:11pt; color:#000000;">2</text></para>
+              </td>
+              <td style="vertical-align:top; width:68px; height:20px;">
+                <para styleclass="" style="text-align:center; text-indent:0px; margin-top:0px; margin-right:0px; margin-bottom:0px; margin-left:0px; line-height:1.00; background-color:transparent; white-space:normal; page-break-inside:auto; page-break-after:auto; border:none; tabstops:none;"><text styleclass="" style="font-family:Calibri; font-size:11pt; color:#000000;">0.02</text></para>
+              </td>
+              <td style="vertical-align:top; width:68px; height:20px;">
+                <para styleclass="" style="text-align:center; text-indent:0px; margin-top:0px; margin-right:0px; margin-bottom:0px; margin-left:0px; line-height:1.00; background-color:transparent; white-space:normal; page-break-inside:auto; page-break-after:auto; border:none; tabstops:none;"><text styleclass="" style="font-family:Calibri; font-size:11pt; color:#000000;">0.04</text></para>
+              </td>
+            </tr>
+            <tr style="vertical-align:top">
+              <td style="vertical-align:top; width:120px; height:19px;">
+                <para styleclass="" style="text-align:center; text-indent:0px; margin-top:0px; margin-right:0px; margin-bottom:0px; margin-left:0px; line-height:1.00; background-color:transparent; white-space:normal; page-break-inside:auto; page-break-after:auto; border:none; tabstops:none;"><text styleclass="" style="font-family:Calibri; font-size:11pt; color:#000000;">1</text></para>
+              </td>
+              <td style="vertical-align:top; width:68px; height:19px;">
+                <para styleclass="" style="text-align:center; text-indent:0px; margin-top:0px; margin-right:0px; margin-bottom:0px; margin-left:0px; line-height:1.00; background-color:transparent; white-space:normal; page-break-inside:auto; page-break-after:auto; border:none; tabstops:none;"><text styleclass="" style="font-family:Calibri; font-size:11pt; color:#000000;">0.01</text></para>
+              </td>
+              <td style="vertical-align:top; width:68px; height:19px;">
+                <para styleclass="" style="text-align:center; text-indent:0px; margin-top:0px; margin-right:0px; margin-bottom:0px; margin-left:0px; line-height:1.00; background-color:transparent; white-space:normal; page-break-inside:auto; page-break-after:auto; border:none; tabstops:none;"><text styleclass="" style="font-family:Calibri; font-size:11pt; color:#000000;">0.02</text></para>
+              </td>
+            </tr>
+            <tr style="vertical-align:top">
+              <td style="vertical-align:top; width:120px; height:20px;">
+                <para styleclass="" style="text-align:center; text-indent:0px; margin-top:0px; margin-right:0px; margin-bottom:0px; margin-left:0px; line-height:1.00; background-color:transparent; white-space:normal; page-break-inside:auto; page-break-after:auto; border:none; tabstops:none;"><text styleclass="" style="font-family:Calibri; font-size:11pt; color:#000000;">0</text></para>
+              </td>
+              <td style="vertical-align:top; width:68px; height:20px;">
+                <para styleclass="" style="text-align:center; text-indent:0px; margin-top:0px; margin-right:0px; margin-bottom:0px; margin-left:0px; line-height:1.00; background-color:transparent; white-space:normal; page-break-inside:auto; page-break-after:auto; border:none; tabstops:none;"><text styleclass="" style="font-family:Calibri; font-size:11pt; color:#000000;">0</text></para>
+              </td>
+              <td style="vertical-align:top; width:68px; height:20px;">
+                <para styleclass="" style="text-align:center; text-indent:0px; margin-top:0px; margin-right:0px; margin-bottom:0px; margin-left:0px; line-height:1.00; background-color:transparent; white-space:normal; page-break-inside:auto; page-break-after:auto; border:none; tabstops:none;"><text styleclass="" style="font-family:Calibri; font-size:11pt; color:#000000;">0.01</text></para>
+              </td>
+            </tr>
+          </table></para>
+        </td>
+      </tr>
+    </table></para>
+  </body>
+</topic>

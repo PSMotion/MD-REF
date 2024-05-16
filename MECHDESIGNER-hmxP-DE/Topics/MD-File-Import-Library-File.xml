@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" modified="2022-04-14T12:06:28.515+01:00" lasteditedby="Adam" version="2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title>File | Import Library File</title>
+  <keywords>
+    <keyword>File menu<keyword>Import Library File</keyword></keyword>
+    <keyword>Import Library File</keyword>
+  </keywords>
+  <body>
+    <header>
+      <para styleclass="Heading1">File | Import Library File</para>
+    </header>
+    <para styleclass="Heading3_atocs_">Bibliotheksdatei importieren</para>
+    <para styleclass="Body Text HowTo">Eine <text styleclass="VariableName">Bibliotheksdatei</text> ist ein Modell, das Sie in das aktive Modell importieren können. Sie hat den Dateityp <text styleclass="VariableName">LXL</text>. </para>
+    <para styleclass="Body Text HowTo">In der Regel importieren Sie eine <text styleclass="VariableName">Bibliotheksdatei</text>, um Zeit zu sparen. </para>
+    <para styleclass="Body Text HowTo">Die <text styleclass="VariableName">Import Library File-Schnittstelle</text> - siehe unten - verweist auf die:</para>
+    <list id="0" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:8pt; color:#000000;">
+      <li styleclass="HowTo Bulleted"><text styleclass="Interface2">Standardbibliothek</text><text styleclass="VariableName"> - </text><text styleclass="Body Text Howindent4bullets">Kunden, die sich für </text>den<text styleclass="VariableName">jährlichen Support</text>entscheiden<text styleclass="Body Text Howindent4bullets">, können diese von unserer Website herunterladen.</text></li>
+      <li styleclass="VariableName-indent"><text styleclass="Interface2">Benutzerbibliothek</text> - <text styleclass="Body Text Howindent4bullets">Sie können eine eigene Bibliothek erstellen - </text><text styleclass="SeeAlso">siehe Anmerkungen unten</text></li>
+    </list>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="Body Text"><text style="color:#ff0000;">Kleine Warnungen</text></para>
+    <list id="1" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:8pt; color:#000000;">
+      <li styleclass="HowTo Bulleted">Sie können den <text styleclass="T_Menu">Import von Bibliotheksdateien</text> nicht rückgängig machen - Sie können jedoch die einzelnen Elemente löschen.</li>
+      <li styleclass="HowTo Bulleted">Wenn Sie <text styleclass="T_Menu">eine Bibliotheksdatei</text> unmittelbar nach dem Start von <text styleclass="T_Menu">Importieren</text>&#32;<text styleclass="VariableName-IT">MechDesigner</text>starten, hat das Modell noch keinen Dateinamen.</li>
+    </list>
+    <para styleclass="Body Text Howindent4bullets">Das<text styleclass="VariableName">automatische Speichern</text><text styleclass="Body Text"> beginnt erst, nachdem Sie das Modell gespeichert haben.</text></para>
+    <para styleclass="Body Text" style="page-break-before:always;"><table styleclass="Default" rowcount="3" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <list id="2" type="ol" listtype="decimal" formatstring="&#83;&#84;&#69;&#80;&#32;&#37;&#48;&#58;&#115;&#58;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo STEP" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:8pt; color:#000000;">
+            <li styleclass="HowTo STEP">Klicken Sie auf , um eine Ebene, ein Teil oder nichts vorzuwählen.<text styleclass="VariableName">&#32;</text></li>
+          </list>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Body Text">Wenn Sie eine<text styleclass="Body Table">Vorauswahl treffen (um das Element in das </text><text styleclass="Interface">Auswahl-Fenster</text>zu<text styleclass="Body Table">setzen ), wird a:</text></para>
+                <list id="3" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullets" style="font-family:Symbol; font-size:8pt; color:#000000;">
+                  <li styleclass="Bullets"><text styleclass="Element">Ebene</text><text styleclass="Body Table"> - die </text><text styleclass="VariableName">Bibliotheksdatei</text><text styleclass="Body Table"> öffnet sich in einem neuen </text><text styleclass="Interface">Mechanismus-Editor</text><text styleclass="Body Text">, der der </text><text styleclass="Element">Ebene</text><text styleclass="Body Text"> hinzugefügt wird &#160;</text></li>
+                </list>
+                <list id="4" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullets" style="font-family:Symbol; font-size:8pt; color:#000000;">
+                  <li styleclass="Bullets"><text styleclass="Element">Teil</text><text styleclass="HowTo Bulleted"> (oder </text>Basisteil<text styleclass="HowTo Bulleted">) - das </text><text styleclass="VariableName">Bibliotheksmodell </text><text styleclass="HowTo Bulleted">öffnet sich auf dem </text><text styleclass="Element">Teil</text><text styleclass="HowTo Bulleted"> als untergeordnetes Modell zum </text><text styleclass="Element">Teil</text><text styleclass="Body Text"> - das Bibliotheksmodell kann nur Geometrie oder ein kinematisches Modell sein.</text></li>
+                  <li styleclass="Body Table"><text styleclass="VariableName">Nichts</text><text styleclass="HowTo Bulleted"> - die </text><text styleclass="VariableName">Bibliotheksdatei</text><text styleclass="HowTo Bulleted"> wird geöffnet und mit dem aktiven </text><text styleclass="Interface">Mechanismus-Editor</text><text styleclass="HowTo Bulleted"> zusammengeführt.</text></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+          <list id="5" type="ol" listtype="decimal" formatstring="&#83;&#84;&#69;&#80;&#32;&#37;&#48;&#58;&#115;&#58;&#32;" format-charset="DEFAULT_CHARSET" levelreset="false" legalstyle="false" startfrom="2" styleclass="HowTo STEP" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:8pt; color:#000000;">
+            <li styleclass="HowTo STEP">File toolbar &gt; Import Library-File </li>
+          </list>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Image Caption"><image src="MD-Toolbar-File-ImportLibraryFile-Arroow.png" scale="-99.90%" figurelistinclude="0"></image></para>
+              </td>
+            </tr>
+          </table></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Text"><image src="MD-OpenLibraryFile-interface.ipp" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <list id="6" type="ol" listtype="decimal" formatstring="&#83;&#84;&#69;&#80;&#32;&#37;&#48;&#58;&#115;&#58;&#32;" format-charset="DEFAULT_CHARSET" levelreset="false" legalstyle="false" startfrom="3" styleclass="HowTo STEP" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:8pt; color:#000000;">
+            <li styleclass="HowTo STEP"><text styleclass="VariableName">Suchen Sie nach einer Standard- oder Benutzerbibliotheksdatei</text></li>
+          </list>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Body Text">Wenn Sie auf eine <text styleclass="VariableName">Bibliotheksdatei</text> klicken, sehen Sie</para>
+                <para styleclass="Body Text"><image src="Red-14-3.gif" scale="100.00%" figurelistinclude="0"></image> Ein Vorschaubild der <text styleclass="VariableName">Library-Datei</text>&#32;</para>
+                <para styleclass="Body Text"><image src="Red-14-4.gif" scale="100.00%" figurelistinclude="0"></image> Eine Beschreibung der <text styleclass="VariableName">Bibliotheksdatei</text> und wie Sie ihre Parameter bearbeiten können.</para>
+              </td>
+            </tr>
+          </table></para>
+          <list id="7" type="ol" listtype="decimal" formatstring="&#83;&#84;&#69;&#80;&#32;&#37;&#48;&#58;&#115;&#58;&#32;" format-charset="DEFAULT_CHARSET" levelreset="false" legalstyle="false" startfrom="4" styleclass="HowTo STEP" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:8pt; color:#000000;">
+            <li styleclass="HowTo STEP"><text styleclass="VariableName">Klicken Sie auf die &#160;Schaltfläche</text><text styleclass="Interface2">Laden</text><image src="Red-14-5.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="VariableName">&#32;</text></li>
+          </list>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="SeeAlso"><text styleclass="Notes">Note: To add to your </text><text styleclass="Interface2">User Library</text></para>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <list id="8" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:8pt; color:#000000;">
+                  <li styleclass="HowTo Bulleted"><text styleclass="Bullets">Save a model as a Library File in the </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-Library-File" styleclass="VariableName">User Library path</link></li>
+                </list>
+                <para styleclass="Body Table">Um Ihre <text styleclass="Interface2">User-Library</text> optimal nutzen zu können, sollten Sie diese Dateien zusätzlich zur LXL-Datei speichern<text styleclass="Body Text">:</text></para>
+                <list id="9" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullets" style="font-family:Symbol; font-size:8pt; color:#000000;">
+                  <li styleclass="Bullets">libraryfilename<text styleclass="VariableName">.PNG - </text><text styleclass="HowTo Bulleted">verwenden Sie das </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-File-Print" styleclass="T_Menu">Menü Datei &gt; Drucken &gt; Bild speichern</link><text styleclass="HowTo Bulleted">, um ein Bild als Vorschau der </text><text styleclass="VariableName">Bibliotheksdatei</text>zu<text styleclass="HowTo Bulleted"> speichern </text><text styleclass="VariableName">.</text></li>
+                  <li styleclass="Bullets"><text styleclass="Body Text">libraryfilename</text><text styleclass="VariableName">.RTF</text>-<text styleclass="HowTo Bulleted"> verwenden Sie </text><text styleclass="Body Text"> z </text>.<text styleclass="HowTo Bulleted">B. </text><text styleclass="Body Text">Word®</text><text styleclass="HowTo Bulleted">, um das Modell und die zu bearbeitenden Elemente zu beschreiben (normalerweise mit einem </text><text styleclass="VariableName">Design-Set</text><text styleclass="HowTo Bulleted">).</text></li>
+                  <li styleclass="Bullets"><text styleclass="Body Text">libraryfilename24</text><text styleclass="VariableName">.PNG </text>-<text styleclass="Body Text"> verwenden Sie ein Bildbearbeitungsprogramm, um ein Bild mit 24x24 Pixeln und einem transparenten Hintergrund zu erstellen (beachten Sie, dass der Dateiname mit 24 angehängt wird).</text></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+          <list id="10" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:8pt; color:#000000;">
+            <li styleclass="HowTo Bulleted"></li>
+          </list>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+        </td>
+      </tr>
+    </table></para>
+  </body>
+</topic>

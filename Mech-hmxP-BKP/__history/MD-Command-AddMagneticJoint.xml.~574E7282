@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" status="Under Construction" modified="2022-03-30T10:03:07.673+01:00" lasteditedby="Adam" version="2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title>Mechanism | Add Magnetic-Joint</title>
+  <keywords>
+    <keyword>Add<keyword>Magnetic-Joint</keyword><keyword>Magnet-Joint</keyword></keyword>
+    <keyword>Joint<keyword>Magnet</keyword><keyword>Magnetic</keyword></keyword>
+    <keyword>Kinematic elements toolbar<keyword>Add Magnetic-Joint</keyword></keyword>
+    <keyword>Magentic-Joint</keyword>
+    <keyword>Magnet-Joint</keyword>
+    <keyword>Menu &gt; Add &gt; Mechanism Menu<keyword>Add Magnetic-Joint</keyword></keyword>
+    <keyword>Reverse-Engineer Cams</keyword>
+  </keywords>
+  <body>
+    <header>
+      <para styleclass="Heading1">Mechanism | Add Magnetic-Joint</para>
+    </header>
+    <para styleclass="Heading2">Add Magnetic-Joint</para>
+    <para styleclass="SeeAlso">See also: <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-MagneticJoint">Magnetic-Joint dialog</link></para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="Heading4 Toggle_atocs_">What is a Magnetic-Joint</para>
+    <para styleclass="Body Text HowTo"><text styleclass="Body Text">A </text><text styleclass="VariableName">Magnetic-Joint</text><text style="font-style:normal;">&#32;</text>pulls a <text styleclass="VariableName-IT">circular</text>&#32;<text styleclass="Element">Profile </text>to be in contact with an <text styleclass="VariableName-IT">irregular</text>&#32;<text styleclass="Element">Profile</text><text styleclass="Body Text"> or a </text><text styleclass="Element">Curve</text><text styleclass="HowTo Bulleted">. </text></para>
+    <para styleclass="Body Text HowTo">The shape of the <text styleclass="VariableName-IT">irregular</text>&#32;<text styleclass="Element">Profile</text> is:</para>
+    <list id="0" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+      <li styleclass="HowTo Bulleted">the shape of a <text styleclass="Interface">sketch-loop</text>, or</li>
+      <li styleclass="Body Text HowTo">the shape of a <text styleclass="Element">Curve</text> that is derived from a <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Command-FB-Point-Cloud" styleclass="Element">Point-Cloud</link><text styleclass="Element">,</text><text styleclass="Body Text">&#32;</text></li>
+    </list>
+    <para styleclass="Body Text HowTo">A frequent application of a <text styleclass="Element">Magnetic-Joint</text> is to <text styleclass="VariableName-IT">reverse-engineer</text> a cam.</para>
+    <para styleclass="Body Text HowTo">Do not use the command for normal modeling.</para>
+    <para styleclass="Heading3_atocs_">Add Magnetic-Joint</para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="8" colcount="3">
+      <tr style="vertical-align:middle">
+        <td>
+          <para styleclass="VariableName" style="text-align:right;"><image src="MD-Icon-AddMagneticJoint.png" scale="100.00%" padding="0 4 0 0" figurelistinclude="0"><title>Add Magnetic-Joint icon</title></image></para>
+        </td>
+        <td colspan="2">
+          <para styleclass="T_Menu">Machine elements toolbar : Add Magnetic-Joint </para>
+        </td>
+      </tr>
+      <tr style="vertical-align:middle">
+        <td style="width:88px;">
+          <para styleclass="VariableName">Menu : </para>
+        </td>
+        <td colspan="2">
+          <para styleclass="T_Menu">Add menu &gt; Mechanism sub-menu &gt; Add Magnetic-Joint</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:middle">
+        <td style="width:88px;">
+          <para styleclass="VariableName">Dialog : </para>
+        </td>
+        <td colspan="2">
+          <para styleclass="T_Menu"><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-MagneticJoint" styleclass="SeeAlso">Magnetic-Joint dialog-box</link></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td colspan="2" style="width:240px;">
+          <para styleclass="Normal"><image src="MD-GA-AddMagJoint-Prep-01.png" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td rowspan="3">
+          <para styleclass="VariableName">PREPARED ELEMENTS:</para>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Bullets"><image src="Red-14-1b.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;"> A </text><text style="font-family:&apos;Segoe UI Semibold&apos;; font-size:10pt; font-weight:bold; font-style:normal; text-transform:uppercase; vertical-align:baseline; color:#800000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">Part</text><text style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">, to which the </text><text style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">Irregular-Profile</text><image src="Red-14-2.gif" scale="100.00%" style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:italic; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;" figurelistinclude="0"></image><text style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;"> is a child.</text></para>
+                <para styleclass="Bullets"><image src="Red-14-2.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image> An <text styleclass="VariableName">Irregular-Profile</text>, which is a </para>
+                <list id="1" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+                  <li styleclass="HowTo Bulleted"><text styleclass="Element">Profile</text><text styleclass="Body Text"> that you add to a </text><text styleclass="Interface">sketch-loop</text><text styleclass="Body Text">, </text><text styleclass="Interface2">or</text><text styleclass="Bullets">&#32;</text></li>
+                  <li styleclass="HowTo Bulleted"><text styleclass="Element">Curve</text><text styleclass="Bullets"> that you calculate from a </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-Point-Cloud" styleclass="Interface">Point-Cloud</link></li>
+                </list>
+                <para styleclass="Bullets"><image src="Red-14-5.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Body Text"> A </text><text styleclass="Element">Part</text>, to which there a<text styleclass="Body Text">&#32;</text><text styleclass="VariableName">Circular Profile</text><image src="Red-14-4.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="VariableName">&#32;</text>is a child.</para>
+                <para styleclass="Bullets"><image src="Red-14-3.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image> &#160;The <text styleclass="Element">Motion-Dimension FB </text><text styleclass="Body Text">that becomes driven by action of the </text><text styleclass="Element">Magnetic-Joint</text><text styleclass="Body Text">&#32;</text></para>
+                <para styleclass="Bullets"><text styleclass="Body Text">The </text><text styleclass="Element">Magnetic-Joint</text><text styleclass="Body Text"> pulls the </text><text styleclass="VariableName">Circular-Profile</text><image src="Red-14-4.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Body Text"> onto the </text><text styleclass="VariableName">Irregular-Profile</text><image src="Red-14-2.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="VariableName">.</text></para>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <list id="2" type="ol" listtype="decimal" formatstring="&#83;&#84;&#69;&#80;&#32;&#37;&#48;&#58;&#115;&#58;&#32;" format-charset="DEFAULT_CHARSET" levelreset="false" legalstyle="false" startfrom="1" styleclass="HowTo STEP" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo STEP">&#32;<text styleclass="VariableName">Pre-Position the Circular Profile</text></li>
+          </list>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <list id="3" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="B Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="B Bullets"><text styleclass="Body Text">Move the model</text> to the Home position, with <text styleclass="T_Menu">ALT+H</text>&#32;<text styleclass="Body Text">key combination.</text><text styleclass="VariableName">&#32;</text></li>
+                </list>
+                <list id="4" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="2" styleclass="Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="Bullets"><text style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">Edit the </text><text style="font-family:&apos;Segoe UI Semibold&apos;; font-size:10pt; font-weight:bold; font-style:normal; text-transform:uppercase; vertical-align:baseline; color:#800000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">Motion-Dimension FB</text><image src="Red-14-3.gif" scale="100.00%" style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;" figurelistinclude="0"></image><text style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;"> | </text><text style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:uppercase; vertical-align:baseline; color:#333399; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">Base-Value</text><text style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;"> until the:</text><text style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">&#32;</text></li>
+                </list>
+                <para styleclass="Body Text HowTo">Distance from the <text styleclass="VariableName">Circular-Profile</text><image src="Red-14-4.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image> to the <text styleclass="VariableName">Irregular-Profile</text><image src="Red-14-2.gif" scale="100.00%" styleclass="VariableName" figurelistinclude="0"></image><text styleclass="VariableName">&#32;</text></para>
+                <para styleclass="Body Text HowTo"><text styleclass="VariableName">&lt; &#160;0.5 × Radius of</text>&#32;<text styleclass="VariableName">Circular-Profile</text><image src="Red-14-4.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <list id="5" type="ol" listtype="decimal" formatstring="&#83;&#84;&#69;&#80;&#32;&#37;&#48;&#58;&#115;&#58;&#32;" format-charset="DEFAULT_CHARSET" levelreset="false" legalstyle="false" startfrom="2" styleclass="VariableName" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="VariableName"><text styleclass="T_Menu">Add Magnetic-Joint</text>&#32;</li>
+          </list>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <list id="6" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="B Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="B Bullets"><text styleclass="VariableName">Click </text><text styleclass="T_Menu">Machine elements toolbar &gt; Add Magnetic-Joint</text><text styleclass="VariableName">&#32;</text></li>
+                </list>
+                <para styleclass="Body Text">The <text styleclass="Interface">Command-Manager</text> has three(3) selection-boxes:</para>
+                <list id="6" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="B Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="B Bullets"><text styleclass="Body Text">Click the </text><text styleclass="VariableName">Irregular Profile</text><image src="Red-14-2.gif" scale="100.00%" styleclass="VariableName" figurelistinclude="0"></image></li>
+                  <li styleclass="B Bullets"><text styleclass="Body Text">Click the </text><text styleclass="Element">Motion-Dimension FB</text><image src="Red-14-3.gif" scale="100.00%" styleclass="VariableName" figurelistinclude="0"></image></li>
+                  <li styleclass="B Bullets"><text styleclass="Body Text">Click </text><text styleclass="VariableName">Circular Profile</text><image src="Red-14-4.gif" scale="100.00%" styleclass="VariableName" figurelistinclude="0"></image></li>
+                  <li styleclass="B Bullets"><text styleclass="Body Text">Click </text><image src="MD-OK-tiny-11-15.png" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Body Text"> in the </text><text styleclass="Interface">Command-Manager</text></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="VariableName">Result::</para>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Body Table">The <text styleclass="Element">Magnetic-Joint</text>&#32;<text styleclass="VariableName-IT">pulls</text> the <text styleclass="VariableName">Circular-Profile</text><image src="Red-14-2.gif" scale="100.00%" figurelistinclude="0"></image> to be in contact with the <text styleclass="VariableName">Irregular-Profile</text><image src="Red-14-4.gif" scale="100.00%" figurelistinclude="0"></image>. </para>
+                <para styleclass="B Bullets">A <text styleclass="VariableName-IT">Point Symbol</text><image src="Red-14-6.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image> is at the contact. </para>
+                <para styleclass="Body Text">The <text styleclass="Element">Magnetic-Joint FB</text><image src="Red-14-7.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image> shows near to the <text styleclass="VariableName-IT">Point-Symbol</text><image src="Red-14-6.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+                <para styleclass="Body Text">A <text styleclass="Interface">Magnetic-Joint icon</text><image src="Red-14-8.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image> is near to the <text styleclass="Element">Motion-Dimension FB</text><image src="Red-14-3.gif" scale="100.00%" styleclass="HowTo Bulleted" figurelistinclude="0"></image><text styleclass="HowTo Bulleted"> that </text>is driven by the <text styleclass="Element">Magnetic-Joint.</text></para>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Body Text">To edit the <text styleclass="Element">3D-Cam</text> parameters:<text styleclass="SeeAlso">&#32;</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td colspan="2" style="width:240px;">
+          <para styleclass="Normal"><image src="MD-CM-AddMagneticJoint-1.png" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td colspan="2" style="width:240px;">
+          <para styleclass="Normal"><image src="MD-GA-AddMagJoint-Prep-02.png" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td colspan="3">
+          <para styleclass="Notes">Notes:</para>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Body Table">The <text styleclass="VariableName">Magnetic-Joint</text> does not use closed-form mathematical equations. The position of the <text styleclass="VariableName">Magnetic Driven-Part</text> is solved with iterative, root-finding techniques. </para>
+                <para styleclass="Body Table">The<text style="font-style:normal;">&#32;</text><text styleclass="VariableName">Magnetic-Joint</text><text style="font-style:normal;"> may fail if the </text><text styleclass="VariableName">Circular-Profile</text><text style="font-style:normal;"> and </text><text styleclass="VariableName">Irregular-Profile</text><text style="font-style:normal;"> cannot stay in continuous contact for a complete machine-cycle.</text></para>
+                <para styleclass="Body Table"><text style="font-style:normal;">The model will take longer in time to solve if you have many </text><text styleclass="VariableName">Magnetic-Joints</text><text style="font-style:normal;"> in the model.</text></para>
+              </td>
+            </tr>
+          </table></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td colspan="3">
+          <para styleclass="Body Text"><text styleclass="SeeAlso">See also:</text><text style="font-family:Arial; font-size:11pt; font-weight:bold; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">&#32;</text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-MagneticJoint" styleclass="SeeAlso">Magnetic-Joint dialog-box</link><text styleclass="SeeAlso">, </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Command-Solids-AutoProfile" styleclass="SeeAlso">Add Profile</link><text styleclass="SeeAlso">, </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-Sketch-Loop" styleclass="SeeAlso">Sketch-Loop</link><text styleclass="SeeAlso">, </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Command-FB-Motion-Dimension" styleclass="SeeAlso">Add Motion-Dimension FB</link><text styleclass="SeeAlso">; YouTube Video : </text><link displaytype="text" defaultstyle="true" type="weblink" href="&lt;%LINK_CAPTION%&gt;" target="_blank" styleclass="SeeAlso">http://youtu.be/IME9Eb4mpQE</link><text styleclass="SeeAlso">&#32;</text></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading3_atocs_">Video: <conditional-text type="IF" value="PDF"/><link displaytype="text" defaultstyle="true" type="filelink" href="ME-AddMagJoint.gif" styleclass="Body Text">Double-click to watch Video Clip</link><conditional-text type="END"/><conditional-text type="IF" value="CHM"/></para>
+    <para styleclass="Normal"><toggle type="picture" print-expanded="true" help-expanded="false" src-collapsed="ME-AddMagJoint.gif" src-expanded="ME-AddMagJoint.gif" scale="20.00%" width="256" height="144" styleclass="Image Caption" figurelistinclude="0"><caption><![CDATA[How to Add a Magnetic-Joint]]></caption><title>How to Add a Magnetic-Joint</title></toggle></para>
+    <para styleclass="Body Text"><conditional-text type="END"/><conditional-text type="IF" value="HTML,EBOOK"/></para>
+    <para styleclass="Heading1"><video src="ME-AddMagJoint.mp4" width="1280px" height="720px" autostart="false" loop="false" showcontrols="false" playbutton="true" previewimage="ME-AddMagJoint_preview.jpg" scale="20.00%" styleclass="Image Caption"><title>How to Add a Magnetic-Joint</title><caption><![CDATA[How to Add a Magnetic-Joint]]></caption></video></para>
+    <para styleclass="Body Text"><conditional-text type="END"/></para>
+    <para styleclass="Body Text" style="page-break-before:always;"></para>
+  </body>
+</topic>

@@ -1,0 +1,842 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" status="Under Construction" modified="2022-08-23T17:52:32.048+01:00" lasteditedby="Adam" version="2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title>Dialog: Gear-Pair</title>
+  <keywords>
+    <keyword>Dialog<keyword>Gear-Pair</keyword></keyword>
+    <keyword>Diametric Pitch</keyword>
+    <keyword>Gear Centres: Distance between Centres</keyword>
+    <keyword>Gear Design Parameters</keyword>
+    <keyword>Gear Segments</keyword>
+    <keyword>Gearing Definitions</keyword>
+    <keyword>Gearing Equations</keyword>
+    <keyword>Gear-Pair dialog-box<keyword>Addendum</keyword><keyword>Dedendum</keyword><keyword>External</keyword><keyword>Gear Mesh</keyword><keyword>Internal</keyword><keyword>Line-of-Centres</keyword><keyword>Mesh</keyword><keyword>Module</keyword><keyword>Number-of-Teeth</keyword><keyword>Pressure Angle</keyword></keyword>
+    <keyword>Line of Centres</keyword>
+  </keywords>
+  <body>
+    <header>
+      <para styleclass="Heading1">Dialog: Gear-Pair</para>
+    </header>
+    <para styleclass="Heading2">Gear-Pair</para>
+    <para styleclass="SeeAlso">See: <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Command-AddGear-Pair">Add Gear-Pair</link></para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="Heading3_atocs_">Terminology and definitions:</para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="5" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:150px;">
+          <para styleclass="Popup Box2" style="text-align:right;">Gear Mesh:</para>
+        </td>
+        <td>
+          <para styleclass="Popup Box">Inter-locking gear-teeth that allows a torque to be transmitted from shaft to shaft.</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:150px;">
+          <para styleclass="Popup Box2" style="text-align:right;">External Gear Mesh : </para>
+        </td>
+        <td>
+          <para styleclass="Popup Box">The gears have teeth that engage and diverge out from their centers-of-rotation.</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:150px;">
+          <para styleclass="Popup Box2" style="text-align:right;">Internal Mesh : </para>
+        </td>
+        <td>
+          <para styleclass="Popup Box">One of the gears has teeth that converge in to its center-of-rotation.</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:150px;">
+          <para styleclass="Popup Box2" style="text-align:right;">Simple Gear-Pair : </para>
+        </td>
+        <td>
+          <para styleclass="Popup Box">Two gears that rotate about fixed centers.</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:150px;">
+          <para styleclass="Popup Box2" style="text-align:right;">Epicyclic Gear-Pair : </para>
+        </td>
+        <td>
+          <para styleclass="Popup Box">One gear orbits around the center of the other gear.</para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="Heading4 Toggle_atocs_">Open Gear-Pair dialog-box</para>
+    <para styleclass="Body Text"><table styleclass="Standard" rowcount="1" colcount="2" style="width:auto; head-row-background-color:#ffffff; alt-row-background-color:none;">
+      <thead style="vertical-align:top">
+        <td style="width:240px; border-right:none;">
+          <para styleclass="Normal"><image src="MD-GA-AddGearPair-05.png" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td style="border-left:none;">
+          <para styleclass="Body Text">Edit the<text styleclass="Element"> Gear-Pair</text><text style="font-weight:normal; font-style:normal;">:</text></para>
+          <para styleclass="Body Text HowTo"><table styleclass="PopupTable2" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td style="border-top:none; border-right:none; border-bottom:none;">
+                <list id="0" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="B Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="B Bullets"><text styleclass="Body Text">Double-click a </text><text styleclass="Element">Gear-Pair </text><text styleclass="Body Text">in the </text><text styleclass="Interface">graphic-area</text><text styleclass="Body Text"> or </text><text styleclass="Interface">Assembly-Tree</text><text styleclass="Body Text">.</text><text styleclass="VariableName">&#32;</text></li>
+                </list>
+                <para styleclass="VariableName-IT">- or -</para>
+                <list id="1" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="B Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="B Bullets"><text styleclass="SeeAlso">See </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-How-to-Open-a-Dialog-Box" styleclass="SeeAlso">How to Open a Dialog-Box</link><text styleclass="VariableName"> &#160;</text></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Body Text HowTo"><text styleclass="Normal">The </text><text styleclass="Element">Gear-Pair dialog-box</text><text styleclass="Normal"> is now open.</text></para>
+        </td>
+      </thead>
+    </table></para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="Heading3_atocs_"><anchor id="Gear-PairDialog"><keywords><keyword>Gear-Pair dialog-box</keyword></keywords></anchor>Gear-Pair dialog-box</para>
+    <para styleclass="Body Text"><table styleclass="Standard" rowcount="1" colcount="2" style="width:auto;">
+      <tr style="vertical-align:top">
+        <td style="width:253px;">
+          <para styleclass="Normal" style="text-align:left;"><image src="MD-Dialog-GearPair.png" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="Body Text">There are three tabs in the <text styleclass="Element">Gear-Pair dialog-box</text>. </para>
+          <para styleclass="Heading4 Toggle_atocs_2">Define tab</para>
+          <para styleclass="Heading4 Toggle_atocs_2">Adjustments tab</para>
+          <para styleclass="Heading4 Toggle_atocs_2">Parameters tab</para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading4 Toggle_atocs_"><anchor id="Dialog-GearPairDefine" styleclass="Heading4 HowTo_atoc_"><keywords><keyword>Gear-Pair dialog<keyword>Define tab</keyword></keyword></keywords></anchor><image src="btn_addkeyword.bmp" scale="100.00%" figurelistinclude="0"></image><tab /><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" src-collapsed="btn_addkeyword.bmp" src-expanded="btn_delkeyword.bmp" src-print="none"><caption><![CDATA[Define tab]]></caption></toggle></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Standard" rowcount="2" colcount="2" style="width:auto;">
+      <tr style="vertical-align:top">
+        <td style="width:239px;">
+          <para styleclass="Normal"><image src="MD-Dialog-GearPair-Define-MeshandTeeth.png" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="Separator-Header">Gear Mesh and # Teeth </para>
+          <para styleclass="Parameter-Header">Mesh<text styleclass="VariableName-small"> - see Terminology above</text></para>
+          <list id="2" type="ul" listtype="bullet" formatstring="&#111;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="2" styleclass="HowTo Bulleted" style="margin-top:0px; margin-bottom:0px; line-height:1.00; font-family:&apos;Courier New&apos;; font-size:10pt; color:#333399;">
+            <li styleclass="HowTo Bulleted" style="margin-top:0px; margin-bottom:0px; line-height:1.00;"><text styleclass="Parameter">External</text></li>
+          </list>
+          <para styleclass="Body Text HowTo" style="margin-bottom:0px;">- or -</para>
+          <list id="3" type="ul" listtype="bullet" formatstring="&#111;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="margin-top:0px; margin-bottom:0px; line-height:1.00; font-family:&apos;Courier New&apos;; font-size:10pt; color:#333399;">
+            <li styleclass="HowTo Bulleted" style="margin-top:0px; margin-bottom:0px; line-height:1.00;"><text styleclass="Parameter">Internal</text></li>
+          </list>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="Normal"><text styleclass="Parameter-Header">center Distance</text><text styleclass="VariableName"> - (Read-Only)</text></para>
+          <para styleclass="Normal"><text styleclass="SeeAlso-small">see </text><text styleclass="Parameter">center-distance calculation</text><text styleclass="SeeAlso-small"> in </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-GearPair" anchor="Adjustmentstab" styleclass="SeeAlso-small">Adjustments tab</link></para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="BodyText Bold"><text styleclass="Parameter-Header">Number-of-Teeth, z</text><text styleclass="Parameter-Header" style="font-size:10pt; vertical-align:sub;">1</text><text styleclass="Parameter">&#32;</text><text styleclass="VariableName">(Minimum =5)</text></para>
+          <para styleclass="Body Text HowTo">The <text styleclass="Parameter">number of-teeth</text> on the input-gear - called the Driving-Gear</para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="BodyText Bold"><text styleclass="Parameter-Header">Number-of-Teeth, z</text><text styleclass="Parameter-Header" style="font-size:10pt; vertical-align:sub;">2</text><text styleclass="VariableName"> (Minimum = 5)</text></para>
+          <para styleclass="Body Text HowTo">The <text styleclass="Parameter">number of-teeth</text> on the Driven-Part - or the output from the <text styleclass="Element">Gear-Pair</text>.</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:239px;">
+          <para styleclass="Normal" style="text-align:right;"><image src="MD-Dialog-GearPair-Define-GearSegment.png" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="Separator-Header">Gear Segment Parameters </para>
+          <para styleclass="Body Text"><text styleclass="Notes">Notes: </text></para>
+          <para styleclass="Body Text HowTo">A <text styleclass="Parameter-Header">Gear-Segment</text> is a gear that must oscillate.</para>
+          <para styleclass="Body Text HowTo"><text styleclass="VariableName">Gear 1</text> or <text styleclass="VariableName">Gear 2</text> can be a <text styleclass="Parameter-Header">Gear-Segment</text></para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="Parameter-Header">Gear # Segmentation </para>
+          <list id="4" type="ul" listtype="bullet" formatstring="&#164;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Wingdings; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted"><text styleclass="Parameter-Header">Complete Gear</text><text styleclass="Body Text"> - a normal gear</text></li>
+            <li styleclass="Parameter-Header">Gear Segment<text styleclass="Body Text"> - to reduce the number of teeth.</text></li>
+          </list>
+          <para styleclass="Body Text">To reduce the number-of-teeth of Gear 1 or Gear 2 </para>
+          <list id="5" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Numbered" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo Numbered">Click <text styleclass="Parameter">⊚ Gear-Segment</text><text styleclass="VariableName">&#32;</text></li>
+            <li styleclass="Body Text">Edit the <text styleclass="Parameter">Start Angle</text>&#32;<text styleclass="VariableName">: Minimum = 0, Maximum = 360</text></li>
+            <li styleclass="Body Text">Edit the <text styleclass="Parameter">Segment Range</text><text styleclass="VariableName"> : Minimum = 0; Maximum 360</text></li>
+          </list>
+          <para styleclass="Body Text HowTo"><text styleclass="Body Text">Each Gear will have an integer number-of-teeth. </text></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading4 Toggle_atocs_"><anchor id="Adjustmentstab" styleclass="Heading4 HowTo_atoc_"><keywords><keyword>Gear-Pair dialog<keyword>Adjustments tab</keyword></keyword></keywords></anchor><image src="btn_addkeyword.bmp" scale="100.00%" figurelistinclude="0"></image><tab /><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" src-collapsed="btn_addkeyword.bmp" src-expanded="btn_delkeyword.bmp" src-print="none"><caption><![CDATA[Adjustments tab]]></caption></toggle></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Standard" rowcount="2" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:239px;">
+          <para styleclass="Normal" style="text-align:right;"><image src="MD-Dialog-GearPair-Adjust-Adjust.png" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="Separator-Header">Adjustments<text styleclass="Separator">&#32;</text></para>
+          <para styleclass="Parameter-Header">Gear-Slip (degrees)</para>
+          <para styleclass="Body Text HowTo">These parameters move <text styleclass="VariableName-IT">Gear 1</text> and <text styleclass="VariableName-IT">Gear 2</text> around the rotating center of each <text styleclass="Element">Part</text> at the <text styleclass="Element">Pin-Joint</text>.</para>
+          <para styleclass="Body Text HowTo"><text style="font-weight:normal;">This parameter rotates the gear teeth, not the </text><text styleclass="Element">Part</text><text style="font-weight:normal;">.</text></para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="Body Table">&#32;<text styleclass="Interface2">Top-Tip</text>:<text styleclass="Body Text"> To keep the gears in mesh: </text></para>
+          <para styleclass="VariableName-indent">Gear-Slip 2 = –Z1</para>
+          <para styleclass="VariableName-indent"> ( Z2 × Gear-Slip 1)</para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td colspan="2">
+          <para styleclass="Parameter-Header">Clearance (move gears apart), j<text style="font-size:10pt; vertical-align:baseline;">r</text></para>
+          <para styleclass="Body Text HowTo"><text style="font-weight:normal;">This parameter increases or decreases the center-distance between the two gears.</text></para>
+          <para styleclass="Body Text HowTo"><text style="font-weight:normal;">It is intended to add a small amount of Backlash (Play) between the gears - and thus it should usually be a +</text><text style="font-size:10pt; font-weight:normal; vertical-align:baseline;">ve</text><text style="font-weight:normal;"> value.</text></para>
+          <para styleclass="Body Text HowTo"><text style="font-weight:normal;">Although backlash may be introduced by increasing the center-Distance, it is more typical to thin the gear-teeth. The minimum value should be enough to accommodate a Lubricating Film. </text></para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="Body Text"><text styleclass="Parameter-Header">center-Distance Calculation</text></para>
+          <para styleclass="Body Text HowTo">If <text styleclass="Parameter">External Mesh</text><text styleclass="VariableName-small"> = Clearance </text><text styleclass="VariableName-small" style="font-size:12pt;">+ </text><text styleclass="VariableName-small">(Module</text><text styleclass="VariableName-small" style="font-size:12pt;">×</text><text styleclass="VariableName-small">(Number-of-Teeth Gear1</text><text styleclass="VariableName-small" style="font-size:12pt;">+</text><text styleclass="VariableName-small">Number-of-Teeth Gear2)</text><text styleclass="VariableName-small" style="font-size:12pt;">÷</text><text styleclass="VariableName-small">2)</text></para>
+          <para styleclass="Body Text HowTo">If <text styleclass="Parameter">Internal Mesh</text><text styleclass="VariableName-small"> = Clearance </text><text styleclass="VariableName-small" style="font-size:12pt;">+ </text><text styleclass="VariableName-small">(Module</text><text styleclass="VariableName-small" style="font-size:12pt;">×</text><text styleclass="VariableName-small">(Number-of-Teeth Gear1</text><text styleclass="VariableName-small" style="font-size:12pt;">+</text><text styleclass="VariableName-small">Number-of-Teeth Gear2)</text><text styleclass="VariableName-small" style="font-size:12pt;">÷</text><text styleclass="VariableName-small">2)</text></para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="VariableName">Notes: Recommend Clearance - approximately.</para>
+          <list id="6" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:8pt; color:#000000;">
+            <li styleclass="HowTo Bulleted"><text style="font-weight:normal;">Minimum: 0.006 × (center-Distance)</text><text style="font-size:8pt; font-weight:normal; vertical-align:super;">0.5</text></li>
+            <li styleclass="HowTo Bulleted"><text styleclass="Body Text HowTo" style="font-weight:normal;">Maximum: 0.024 × (center-Distance)</text><text styleclass="Body Text HowTo" style="font-size:8pt; font-weight:normal; vertical-align:super;">0.5</text></li>
+          </list>
+          <para styleclass="Body Text HowTo"><text style="font-weight:normal;">An alternative way to get a small amount of clearance is to reduce the size of the gear teeth and not to change the center-distance.</text></para>
+          <para styleclass="Body Text HowTo"><text style="font-weight:normal;">We do </text><text styleclass="VariableName-IT">not</text><text style="font-weight:normal;"> offer this design parameter.</text></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading4 Toggle_atocs_"><anchor id="Parameterstab" styleclass="Heading4 HowTo_atoc_"><keywords><keyword>Gear-Pair dialog<keyword>Parameters tab</keyword></keyword></keywords></anchor><image src="btn_addkeyword.bmp" scale="100.00%" figurelistinclude="0"></image><tab /><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" src-collapsed="btn_addkeyword.bmp" src-expanded="btn_delkeyword.bmp" src-print="none"><caption><![CDATA[Parameters tab]]></caption></toggle></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Standard" rowcount="8" colcount="2">
+      <tr style="vertical-align:top">
+        <td rowspan="7" style="width:240px;">
+          <para styleclass="Normal" style="text-align:right;"><image src="MD-Dialog-GearPair-Define-Param-GearToothParam.png" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="Separator-Header">Gear Tooth Parameters </para>
+          <para styleclass="Body Text HowTo">Edit Gear Tooth Parameters to define the shape of the gear teeth.</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Text"><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-Gear-Module" styleclass="Parameter-Header">Module</link><text styleclass="Parameter" style="font-weight:normal;">&#32;</text><text styleclass="Parameter-Header" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#333399; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">m</text><text style="font-weight:normal; font-style:italic;">&#32;</text><text styleclass="VariableName">= P.C.D (in mm) &#160;∕ &#160;Number-of-Teeth. </text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Text"><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-Gear-Pressure-Angle" styleclass="Parameter-Header">Pressure-Angle</link><text styleclass="Parameter-Header">&#32;</text><text styleclass="Parameter-Header" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#333399; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">α</text> - <text styleclass="VariableName">default = 20º</text>&#32;</para>
+          <para styleclass="Body Text HowTo">Standard gears are 20º. </para>
+          <para styleclass="Body Text HowTo">Other standards are: </para>
+          <list id="7" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted">14º, 17.5º (weaker, quieter), </li>
+            <li styleclass="HowTo Bulleted"><text styleclass="Body Text HowTo">22.5º and 25º (stronger, noisier).</text></li>
+          </list>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Text"><text styleclass="Parameter-Header">Addendum</text><text styleclass="Parameter-Header" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#333399; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">, ha</text><text styleclass="Parameter-Header"> - </text><text styleclass="VariableName">default = m</text>. </para>
+          <para styleclass="Body Text HowTo">The radial height of the gear tooth from the Pitch Circle to the top of the tooth.</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Text"><text styleclass="Parameter-Header">Dedendum, </text><text styleclass="Parameter-Header" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#333399; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">hf - </text><text styleclass="VariableName">default = m * 1.25</text>. </para>
+          <para styleclass="Body Text HowTo">The radial depth of the gear tooth below the Pitch Circle to the root of the tooth. </para>
+          <para styleclass="Body Text HowTo">The <text styleclass="Parameter">Dedendum</text> is usually larger than the <text styleclass="Parameter">Addendum</text> to give clearance for the teeth.</para>
+          <para styleclass="VariableName-indent">If 0.25&lt;m&lt;1, Dedendum is usually = m *.1.4</para>
+          <para styleclass="VariableName-indent">If &#160;m&gt;1, Dedendum is usually = m *.1.25</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Text"><text styleclass="Parameter-Header">Root-Radius</text>, <text styleclass="Parameter-Header" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#333399; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">rf</text> - <text styleclass="VariableName">Default is 0.3 * m</text></para>
+          <para styleclass="Body Text HowTo">The small fillet between the Flank and the Root of the Gear Tooth. </para>
+          <para styleclass="Body Text">Note: In reality, if the gear is manufactured from a Hob/Rack Cutter, then the root of the gear is a Trochoid.</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Text"><text styleclass="Parameter-Header"># Points along Profile</text></para>
+          <para styleclass="Body Text HowTo">The number of &apos;facets&apos; along the gear tooth flank (and around the two Root Radii). </para>
+          <para styleclass="Body Text HowTo">To display Gears more accurately, increase the number of points. </para>
+          <para styleclass="Body Text HowTo">Otherwise, 4 is adequate, 10 is good. </para>
+          <para styleclass="Body Text HowTo">There is a CPU overhead when drawing Gear-Pairs, do not increase the number of facets without a good reason.</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:240px;">
+          <para styleclass="Normal" style="text-align:right;"><image src="MD-Dialog-GearPair-Define-Param-GearParam.png" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="Separator-Header">Gear Parameters<text styleclass="Body Text"> &#160;</text><text styleclass="VariableName">all Read-Only</text></para>
+          <para styleclass="Parameter-Header">Contact-Ratio: <text styleclass="Body Text">ε</text></para>
+          <para styleclass="Body Text HowTo"><text styleclass="VariableName">Contact-Ratio</text> should <text styleclass="VariableName-IT">not</text> be less than 1.1. <text styleclass="VariableName">Contact-Ratio</text> should be a minimum of 1.2 for working gears. See <link displaytype="text" defaultstyle="true" type="topiclink" href="" anchor="Contact-Ratio">below</link> for more details.</para>
+          <para styleclass="Parameter-Header">Working Clearance = Dedendum - Addendum </para>
+          <para styleclass="Body Text HowTo">The distance between the top land of a gear tooth and the bottom land of the gear with which is meshed.</para>
+          <para styleclass="Parameter-Header">Gear 1 PCD &amp; Gear 2 PCD</para>
+          <para styleclass="Body Text HowTo">PCD = Pitch Circle Diameter. </para>
+          <para styleclass="Body Text HowTo">PCD = Module * Number-of-Teeth, (m*z)</para>
+          <para styleclass="Parameter-Header">Normal Backlash (mm)</para>
+          <para styleclass="Body Text HowTo">This is the gap (backlash) between the gear-flanks &#160;you can measure with a &apos;feeler gauge&apos;.</para>
+          <para styleclass="Body Text HowTo"><text styleclass="Parameter">Normal Backlash</text> is a function of the <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-GearPair" anchor="Adjustmentstab" styleclass="Parameter">center Distance Adjustment</link> parameter ONLY.</para>
+          <para styleclass="Parameter-Header">Angular Backlash - Gear 1 (deg) <text styleclass="Body Text">jΘ1</text></para>
+          <para styleclass="Body Text HowTo">This parameter gives the maximum rotation of Gear 1 if you do not move Gear 2. </para>
+          <para styleclass="Body Text HowTo"><text styleclass="Parameter">Angular Backlash</text> is a function of the <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-GearPair" anchor="Adjustmentstab" styleclass="Parameter">center Distance Adjustment</link> parameter ONLY.</para>
+          <para styleclass="Parameter-Header">Angular Backlash - Gear 2 (deg)</para>
+          <para styleclass="Body Text HowTo">This parameter gives the maximum rotation of Gear 2 if you do not move Gear 1. </para>
+          <para styleclass="Body Text HowTo"><text styleclass="Parameter">Angular Backlash</text> is a function of the <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-GearPair" anchor="Adjustmentstab" styleclass="Parameter">center Distance Adjustment</link> parameter ONLY.</para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Normal"><line style="height:4px; color:#993300;" /></para>
+    <para styleclass="Heading3_atocs_"><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" src-collapsed="tog_plus.gif" src-expanded="tog_minus.gif"><caption><![CDATA[Useful Gearing Calculations and Equations]]></caption></toggle></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="2" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:243px;">
+          <para styleclass="Body Text"><image src="MD-gear-parameters2.png" align="left" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"><title>Gear Terminology: Working Depth, Addendum, Dedendum, Whole Depth, Pitch Circle</title></image></para>
+        </td>
+        <td>
+          <para styleclass="Parameter-Header">For information:</para>
+          <para styleclass="Body Text HowTo">Working Clearance = Dedendum - Addendum</para>
+          <para styleclass="Body Text HowTo">Working Depth = Addendum * 2</para>
+          <para styleclass="Body Text HowTo">Tooth Depth = Addendum + Dedendum</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td colspan="2">
+          <para styleclass="Body Text"><anchor id="Contact-Ratio"><keywords><keyword>Contact-Ratio</keyword></keywords></anchor>Each gear tooth is in contact with another gear tooth as it moves through the meshing position.</para>
+          <para styleclass="Normal"><text styleclass="Body Text HowTo">The </text><text styleclass="VariableName">Contact-Ratio</text><text styleclass="Body Text HowTo"> gives the number-of-teeth that are in contact, on average, as they pass through the meshing point. A </text><text styleclass="VariableName">contact ratio</text><text styleclass="Body Text HowTo"> between 1 and 2 means that contact alternates between two and one pairs of teeth in contact at any one time. Gears that have a high </text><text styleclass="VariableName">contact-ratio</text><text styleclass="Body Text HowTo"> are smoother and quieter. The </text><text styleclass="VariableName">contact-ratio</text><text styleclass="Body Text HowTo"> of an Internal Gear-Pair is higher than that of a similar External Gear-air, even greater than 2. </text></para>
+          <para styleclass="Body Text HowTo">If the <text styleclass="VariableName">Contact-Ratio</text> is too low, then consider these options: </para>
+          <list id="8" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted">Decrease the pressure-angle</li>
+            <li styleclass="HowTo Bulleted">Increase the number-of-teeth</li>
+            <li styleclass="HowTo Bulleted">Increase the working-depth</li>
+          </list>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading4 Toggle_atocs_"><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" src-collapsed="btn_addkeyword.bmp" src-expanded="btn_delkeyword.bmp" src-print="none"><caption><![CDATA[Gearing Equations]]></caption></toggle></para>
+    <para styleclass="Normal"><table styleclass="Default" rowcount="19" colcount="3" style="head-row-background-color:#c0c0c0; alt-row-background-color:none;">
+      <thead style="vertical-align:top">
+        <td style="width:180px;">
+          <para styleclass="VariableName">TO OBTAIN</para>
+        </td>
+        <td style="width:223px;">
+          <para styleclass="VariableName">FROM KNOWN</para>
+        </td>
+        <td>
+          <para styleclass="VariableName">USE THIS FORMULA</para>
+        </td>
+      </thead>
+      <tr style="vertical-align:top">
+        <td style="width:180px; background-color:#c0c0c0;">
+          <para styleclass="VariableName">Pitch Diameter</para>
+        </td>
+        <td style="width:223px; background-color:#c0c0c0;">
+          <para styleclass="Body Text">Module, <text style="font-style:italic;">m</text>, number-of-teeth, <text style="font-style:italic;">N</text></para>
+        </td>
+        <td style="background-color:#c0c0c0;">
+          <para styleclass="Body Text"><text style="font-style:italic;">D = mN</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:180px;">
+          <para styleclass="VariableName">Circular Pitch</para>
+        </td>
+        <td style="width:223px;">
+          <para styleclass="Body Text">Module</para>
+        </td>
+        <td>
+          <para styleclass="Body Text">p<text style="font-size:7pt; font-style:italic; vertical-align:sub;">c</text> = <text style="font-style:italic;">m.</text>π = <text style="font-style:italic;">D.π &#160;∕ &#160;N</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:180px;">
+          <para styleclass="VariableName">Module</para>
+        </td>
+        <td style="width:223px;">
+          <para styleclass="Body Text">Diametrical Pitch, P<text style="font-style:italic;">d</text></para>
+        </td>
+        <td>
+          <para styleclass="Body Text">m = 25.4 &#160;∕ &#160;P<text style="font-size:7pt; font-style:italic; vertical-align:sub;">d</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:180px;">
+          <para styleclass="VariableName">Number-of-Teeth</para>
+        </td>
+        <td style="width:223px;">
+          <para styleclass="Body Text">Module, <text style="font-style:italic;">m,</text> Pitch Diameter, <text style="font-style:italic;">D</text></para>
+        </td>
+        <td>
+          <para styleclass="Body Text"><text style="font-style:italic;">N = D &#160;∕ &#160;m</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:180px;">
+          <para styleclass="VariableName">Addendum</para>
+        </td>
+        <td style="width:223px;">
+          <para styleclass="Body Text">Module, <text style="font-style:italic;">m</text></para>
+        </td>
+        <td>
+          <para styleclass="Body Text"><text style="font-style:italic;">a = m</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:180px;">
+          <para styleclass="VariableName">Dedendum</para>
+        </td>
+        <td style="width:223px;">
+          <para styleclass="Body Text">Module, <text style="font-style:italic;">m</text></para>
+        </td>
+        <td>
+          <para styleclass="Body Text">b = 1.25<text style="font-style:italic;">m</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:180px;">
+          <para styleclass="VariableName">Outside Diameter</para>
+        </td>
+        <td style="width:223px;">
+          <para styleclass="Body Text">Module, <text style="font-style:italic;">m</text>, Pitch Diameter, <text style="font-style:italic;">D</text>, or number-of-teeth, <text style="font-style:italic;">N</text></para>
+        </td>
+        <td>
+          <para styleclass="Body Text"><text style="font-style:italic;">D</text><text style="font-size:7pt; font-style:italic; vertical-align:sub;">o</text><text style="font-style:italic;"> = D </text>+ 2<text style="font-style:italic;">m</text> = <text style="font-style:italic;">m</text> (<text style="font-style:italic;">N</text> + 2)</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:180px;">
+          <para styleclass="VariableName">Root Diameter</para>
+        </td>
+        <td style="width:223px;">
+          <para styleclass="Body Text">Pitch Diameter, <text style="font-style:italic;">D, </text>Module, <text style="font-style:italic;">m</text></para>
+        </td>
+        <td>
+          <para styleclass="Body Text"><text style="font-style:italic;">D</text><text style="font-size:7pt; font-style:italic; vertical-align:sub;">R</text><text style="font-style:italic;"> = D</text> – 2.5<text style="font-style:italic;">m</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:180px;">
+          <para styleclass="VariableName">Base Circle Diameter </para>
+        </td>
+        <td style="width:223px;">
+          <para styleclass="Body Text">Pitch Diameter &amp; Pressure Angle</para>
+        </td>
+        <td>
+          <para styleclass="Body Text"><text style="font-style:italic;">Db = D</text> cos <text style="font-style:italic;">μ</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:180px;">
+          <para styleclass="VariableName">Base Pitch </para>
+        </td>
+        <td style="width:223px;">
+          <para styleclass="Body Text">Module, <text style="font-style:italic;">m, &amp;</text> Pressure Angle, <text style="font-style:italic;">μ</text></para>
+        </td>
+        <td>
+          <para styleclass="Body Text">p<text style="font-size:7pt; vertical-align:sub;">b</text> = <text style="font-style:italic;">m</text>&#32;<text style="font-style:italic;">π</text> cos <text style="font-style:italic;">μ</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:180px;">
+          <para styleclass="VariableName">Tooth Thickness at </para>
+          <para styleclass="VariableName">Standard Pitch Diameter </para>
+        </td>
+        <td style="width:223px;">
+          <para styleclass="Body Text">Module,<text style="font-style:italic;"> m</text></para>
+        </td>
+        <td>
+          <para styleclass="Body Text">T<text style="font-size:7pt; font-style:normal; vertical-align:sub;">std</text> = <text style="font-style:italic;">π. m &#160;∕ </text>2</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:180px;">
+          <para styleclass="VariableName">center Distance </para>
+        </td>
+        <td style="width:223px;">
+          <para styleclass="Body Text">Module, <text style="font-style:italic;">m,</text> number-of-teeth, <text style="font-style:italic;">N</text></para>
+        </td>
+        <td>
+          <para styleclass="Body Text">C = <text style="font-style:italic;">m . (N</text><text style="font-size:7pt; font-style:italic; vertical-align:sub;">1</text><text style="font-style:italic;"> + N</text><text style="font-size:7pt; font-style:italic; vertical-align:sub;">2</text><text style="font-style:italic;">) ∕ 2 </text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:180px;">
+          <para styleclass="VariableName">Contact Ratio for Spur Gears</para>
+          <para styleclass="VariableName">( 1 &lt; CR &lt; 2 )</para>
+        </td>
+        <td style="width:223px;">
+          <para styleclass="Body Text">Outside Radii, Base Circle Radii, center Distance, Pressure Angle</para>
+        </td>
+        <td>
+          <para styleclass="Body Text">CR = (√R<text style="font-size:7pt; font-style:italic; vertical-align:sub;">01</text><text style="font-size:7pt; vertical-align:super;">2 </text>– R<text style="font-size:7pt; font-style:italic; vertical-align:sub;">b1</text><text style="font-size:7pt; vertical-align:super;">2</text> + √R<text style="font-size:7pt; font-style:italic; vertical-align:sub;">02</text><text style="font-size:7pt; vertical-align:super;">2 </text>– R<text style="font-size:7pt; font-style:italic; vertical-align:sub;">b2</text><text style="font-size:7pt; vertical-align:super;">2</text> – C sin μ) &#160;∕ &#160;m π cos μ </para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:180px;">
+          <para styleclass="VariableName">Backlash (linear) </para>
+        </td>
+        <td style="width:223px;">
+          <para styleclass="Body Text">Change in center Distance, ΔC</para>
+        </td>
+        <td>
+          <para styleclass="Body Text">B = 2( ΔC )tan μ</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:180px;">
+          <para styleclass="VariableName">Backlash (linear) </para>
+        </td>
+        <td style="width:223px;">
+          <para styleclass="Body Text">Change in Tooth Thickness, ΔT</para>
+        </td>
+        <td>
+          <para styleclass="Body Text">B = ΔT</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:180px;">
+          <para styleclass="VariableName">Backlash (linear) along </para>
+          <para styleclass="VariableName">Line-of-action </para>
+        </td>
+        <td style="width:223px;">
+          <para styleclass="Body Text">Linear Backlash along Pitch Circle, B</para>
+        </td>
+        <td>
+          <para styleclass="Body Text">B<text style="font-size:7pt; vertical-align:sub;">LA</text> = B cos μ </para>
+          <para styleclass="Body Text"></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:180px;">
+          <para styleclass="VariableName">Backlash, Angular </para>
+        </td>
+        <td style="width:223px;">
+          <para styleclass="Body Text">Linear Backlash, D</para>
+        </td>
+        <td>
+          <para styleclass="Body Text">B<text style="font-size:7pt; vertical-align:sub;">a</text> = 6880 B ∕ D (arc minutes) &#160;</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:180px;">
+          <para styleclass="VariableName">Min. No. of Teeth </para>
+          <para styleclass="VariableName">for No Undercutting </para>
+        </td>
+        <td style="width:223px;">
+          <para styleclass="Body Text">Pressure Angle, <text style="font-size:10pt; vertical-align:baseline;">μ</text></para>
+        </td>
+        <td>
+          <para styleclass="Body Text">N<text style="font-size:7pt; vertical-align:sub;">c</text> = 2 ∕ sin<text style="font-size:7pt; vertical-align:super;">2 </text><text style="font-size:10pt; vertical-align:baseline;">μ</text></para>
+          <para styleclass="Body Text"><text style="font-size:10pt; vertical-align:baseline;">Nc (20º) = ~17 Teeth</text></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading4 Toggle_atocs_" style="text-indent:-36px; margin-left:36px;"><image src="btn_addkeyword.bmp" scale="100.00%" figurelistinclude="0"></image><tab /><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" src-collapsed="btn_addkeyword.bmp" src-expanded="btn_delkeyword.bmp" src-print="none"><caption><![CDATA[Useful Gearing Definitions]]></caption></toggle></para>
+    <para styleclass="Body Text"><table styleclass="Default" rowcount="29" colcount="2" style="head-row-background-color:#c0c0c0; alt-row-background-color:none;">
+      <thead style="vertical-align:top">
+        <td style="width:172px;">
+          <para styleclass="VariableName" style="text-align:right;">Term</para>
+        </td>
+        <td>
+          <para styleclass="VariableName">Definition</para>
+        </td>
+      </thead>
+      <tr style="vertical-align:top">
+        <td style="width:172px;">
+          <para styleclass="VariableName" style="text-align:right;">Addendum:</para>
+        </td>
+        <td>
+          <para styleclass="Body Text">the height of the gear tooth above the pitch circle diameter</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:172px;">
+          <para styleclass="VariableName" style="text-align:right;">Backlash:</para>
+        </td>
+        <td>
+          <para styleclass="Body Text">the angle the output shaft of the gearbox can move without the input shaft moving</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:172px;">
+          <para styleclass="VariableName" style="text-align:right;">Base Circle:</para>
+        </td>
+        <td>
+          <para styleclass="Body Text">an imaginary circle used in involute gearing to generate the involutes that form the tooth profiles</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:172px;">
+          <para styleclass="VariableName" style="text-align:right;">Bevel Gears:</para>
+        </td>
+        <td>
+          <para styleclass="Body Text">used for right-angle applications. There are two types of bevel gears which are straight and spiral</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:172px;">
+          <para styleclass="VariableName" style="text-align:right;">center distance:</para>
+        </td>
+        <td>
+          <para styleclass="Body Text">distance between the axes of two meshed gears - Length of the Line-of centers</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:172px;">
+          <para styleclass="VariableName" style="text-align:right;">Circular Thickness:</para>
+        </td>
+        <td>
+          <para styleclass="Body Text">the thickness of the tooth on the pitch circle.</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:172px;">
+          <para styleclass="VariableName" style="text-align:right;">Dedendum:</para>
+        </td>
+        <td>
+          <para styleclass="Body Text">the depth of the tooth below the diameter of the pitch circle.</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:172px;">
+          <para styleclass="VariableName" style="text-align:right;">Diametrical Pitch:</para>
+        </td>
+        <td>
+          <para styleclass="Body Text">the teeth per inch of the diameter of the pitch circle</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:172px;">
+          <para styleclass="VariableName" style="text-align:right;">Differential Gear:</para>
+        </td>
+        <td>
+          <para styleclass="Body Text">a bevel gear which allows two shafts to rotate at a different speed.</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:172px;">
+          <para styleclass="VariableName" style="text-align:right;">Gear:</para>
+        </td>
+        <td>
+          <para styleclass="Body Text">a wheel with teeth that meshes with another wheel with teeth to translate motion.</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:172px;">
+          <para styleclass="VariableName" style="text-align:right;">Gear center:</para>
+        </td>
+        <td>
+          <para styleclass="Body Text">the center of the pitch circle.</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:172px;">
+          <para styleclass="VariableName" style="text-align:right;">Gear Train:</para>
+        </td>
+        <td>
+          <para styleclass="Body Text">two or more gears meshed by their teeth. A gear train generates power speed through the meshed gears rotating</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:172px;">
+          <para styleclass="VariableName" style="text-align:right;">Gear Ratio:</para>
+        </td>
+        <td>
+          <para styleclass="Body Text">the ratio between the numbers of teeth of meshing gears.</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:172px;">
+          <para styleclass="VariableName" style="text-align:right;">Helical Gear:</para>
+        </td>
+        <td>
+          <para styleclass="Body Text">gear with the gear teeth cut at angles</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:172px;">
+          <para styleclass="VariableName" style="text-align:right;">Line of Contact:</para>
+        </td>
+        <td>
+          <para styleclass="Body Text">the line or curve along which two tooth surfaces are tangent to each other</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:172px;">
+          <para styleclass="VariableName" style="text-align:right;">Involute:</para>
+        </td>
+        <td>
+          <para styleclass="Body Text">the curve which describes a line which is unwound from the circumference of the gear</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:172px;">
+          <para styleclass="VariableName" style="text-align:right;">Pinion:</para>
+        </td>
+        <td>
+          <para styleclass="Body Text">a small cogwheel which fits into a larger gear or track.</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:172px;">
+          <para styleclass="VariableName" style="text-align:right;">Pitch Circle:</para>
+        </td>
+        <td>
+          <para styleclass="Body Text">the curve of intersection of a pitch surface of revolution and a plane of rotation</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:172px;">
+          <para styleclass="VariableName" style="text-align:right;">Pitch Diameter:</para>
+        </td>
+        <td>
+          <para styleclass="Body Text">the diameter of the pitch circle</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:172px;">
+          <para styleclass="VariableName" style="text-align:right;">Pitch Radius:</para>
+        </td>
+        <td>
+          <para styleclass="Body Text">the radius of the pitch circle</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:172px;">
+          <para styleclass="VariableName" style="text-align:right;">Planetary Gears:</para>
+        </td>
+        <td>
+          <para styleclass="Body Text">a system that consists of three components: the sun gear, ring gear, and two or more planet gears. The sun gear is in the center, the ring gear is the outermost gear, and the planet gears are the gears surrounding the sun gear inside the ring gear.</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:172px;">
+          <para styleclass="VariableName" style="text-align:right;">Pressure Angle:</para>
+        </td>
+        <td>
+          <para styleclass="Body Text">the angle between the line-of-action and the normal (90º, perpendicular) to the surface of the tooth</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:172px;">
+          <para styleclass="VariableName" style="text-align:right;">Spiral Bevel Gears:</para>
+        </td>
+        <td>
+          <para styleclass="Body Text">shafts whose axes are perpendicular (90º) to each other and are used in right-angle applications</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:172px;">
+          <para styleclass="VariableName" style="text-align:right;">Spur Gear:</para>
+        </td>
+        <td>
+          <para styleclass="Body Text">connect parallel shafts which have involute teeth that are parallel to the shaft</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:172px;">
+          <para styleclass="VariableName" style="text-align:right;">Sun Gear:</para>
+        </td>
+        <td>
+          <para styleclass="Body Text">a gearwheel that rotates around its own axis and has other gears (planet gears) that rotate around it</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:172px;">
+          <para styleclass="VariableName" style="text-align:right;">Torsional Strength:</para>
+        </td>
+        <td>
+          <para styleclass="Body Text">the measure of the amount of torque that a radial shaft can sustain during its rotation in a mechanical system</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:172px;">
+          <para styleclass="VariableName" style="text-align:right;">Working Depth:</para>
+        </td>
+        <td>
+          <para styleclass="Body Text">the max depth a tooth of one gear extends into the tooth gear of a mating gear</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:172px;">
+          <para styleclass="VariableName" style="text-align:right;">Worm Gear:</para>
+        </td>
+        <td>
+          <para styleclass="Body Text">a gear with one or more teeth with screwed threads</para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading4 Toggle_atocs_" style="text-indent:-36px; margin-left:36px;"><image src="btn_addkeyword.bmp" scale="100.00%" figurelistinclude="0"></image><tab /><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" src-collapsed="btn_addkeyword.bmp" src-expanded="btn_delkeyword.bmp" src-print="none"><caption><![CDATA[Gear Modifications]]></caption></toggle></para>
+    <para styleclass="Body Text"><table styleclass="Default" rowcount="6" colcount="2" style="head-row-background-color:#c0c0c0; alt-row-background-color:none;">
+      <thead style="vertical-align:top">
+        <td style="width:172px;">
+          <para styleclass="VariableName">Image</para>
+        </td>
+        <td>
+          <para styleclass="VariableName">Term</para>
+        </td>
+      </thead>
+      <tr style="vertical-align:top">
+        <td style="width:240px;">
+          <para styleclass="Normal"><image src="MD-Crowning.png" scale="-99.90%" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="Normal"><text styleclass="Body Text">Crowning:</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:240px;">
+          <para styleclass="Normal"><image src="MD-End-Relief.png" scale="-99.90%" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="Body Text">End-Relief</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:240px;">
+          <para styleclass="Normal"><image src="MD-Semi-Topping.png" scale="-99.90%" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="Body Text">Topping and Semi-Topping</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:240px;">
+          <para styleclass="Normal"><image src="MD-Edge-Radius.png" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="Body Text">End Radius and Edge Radius/End Relief</para>
+          <para styleclass="Body Text">Top Round/Semi-topping</para>
+          <para styleclass="Body Text"></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:240px;">
+          <para styleclass="Normal"><image src="MD-Definition-CircularPitch.png" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="Body Text">Definition of Circular Pitch, p</para>
+          <para styleclass="Body Text">Circular Pitch &#160;= pitch circle circumference(pi.d) / number of teeth(z) ; <text styleclass="Equations" style="font-weight:normal;">p = Π.d / z</text></para>
+          <para styleclass="Body Text">Module = Pitch Diameter(d) / Number of Teeth(z)<text styleclass="Equations" style="font-weight:normal;"> ; m = d/z</text></para>
+          <para styleclass="Body Text">Circular Pitch(p) / Module(m) =<text style="font-style:italic;"> pi</text> ; <text styleclass="Equations" style="font-weight:normal;">p/m = Π</text></para>
+          <para styleclass="Body Text">Pitch Diameter(d) = module(m)*number of teeth(z) ;<text styleclass="Equations" style="font-weight:normal;"> d = m.z</text></para>
+          <para styleclass="Body Text"></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="3" colcount="2" style="cell-padding:0px; border-width:0px; border-spacing:0px; cell-border-width:0px; border-style:none;">
+      <tr style="vertical-align:top">
+        <td style="width:243px;">
+          <para styleclass="Body Text"></para>
+        </td>
+        <td>
+          <para styleclass="Parameter-Header"></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td colspan="2">
+          <para styleclass="Body Text"></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td colspan="2">
+          <para styleclass="Heading4 Toggle_atocs_" style="text-indent:-36px; margin-left:36px;"><image src="btn_addkeyword.bmp" scale="100.00%" figurelistinclude="0"></image></para>
+          <para styleclass="Body Text"></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Body Text HowTo" style="page-break-before:always;"></para>
+  </body>
+</topic>

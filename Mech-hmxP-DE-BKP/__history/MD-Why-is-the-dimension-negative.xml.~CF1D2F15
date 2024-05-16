@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" status="Under Construction" lasteditedby="Adam" version="2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title>Why is the dimension &apos;negative&apos; in the Dimension dialog&apos;?</title>
+  <keywords>
+    <keyword>Dimension dialog<keyword>Negative dimension</keyword></keyword>
+    <keyword>Negative Dimensions - why?</keyword>
+    <keyword>Why is the dimension &apos;negative&apos;.</keyword>
+  </keywords>
+  <body>
+    <header>
+      <para styleclass="Heading1">Why is the dimension &apos;negative&apos; in the Dimension dialog&apos;?</para>
+    </header>
+    <para styleclass="Heading3_atocs_">Why is my dimension negative?</para>
+    <para styleclass="VariableName">Negative Dimensions.</para>
+    <para styleclass="Body Text HowTo"><text styleclass="Body Text">The RULE: the dimension for a Perpendicular Distance from a Line, or Axis,</text></para>
+    <para styleclass="Body Text HowTo"><text styleclass="Body Text">The </text><text style="font-weight:bold; font-style:italic; color:#ff0000;">–</text><text styleclass="Body Text"> sign appears if the coordinate of the dimension is </text><text styleclass="VariableName">negative</text><text styleclass="Body Text">. </text></para>
+    <para styleclass="Body Text HowTo"><text styleclass="Body Text">However, the </text><text style="font-weight:bold; font-style:italic; color:#ff0000;">–</text><text styleclass="Body Text">&#32;</text><text styleclass="VariableName">sign</text><text styleclass="Body Text"> shows even when you do not expect to see it!</text></para>
+    <para styleclass="Body Text HowTo"><text styleclass="VariableName" style="color:#ff0000;">Do not delete</text><text styleclass="Body Text"> the </text><text style="font-weight:bold; font-style:italic; color:#ff0000;">–</text><text styleclass="Body Text">&#32;</text><text styleclass="VariableName">sign</text><text styleclass="Body Text"> if you </text><text styleclass="VariableName">do not want to change the sign of the dimension</text><text styleclass="Body Text">.</text></para>
+    <para styleclass="Body Text HowTo"><text styleclass="Body Text">Generally, ignore the </text><text style="font-weight:bold; font-style:italic; color:#ff0000;">–</text><text styleclass="Body Text">&#32;</text><text styleclass="VariableName">sign</text><text styleclass="Body Text">, and edit the dimension in the normal way.</text></para>
+    <para styleclass="Heading4 Toggle_atocs_">More Details</para>
+    <para styleclass="Body Text HowTo"><table styleclass="Standard" rowcount="2" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:159px;">
+          <para styleclass="Normal" style="text-align:right;"><text styleclass="Image Caption">`</text><image src="MD-Negative-DimA.png" scale="100.00%" styleclass="Image Caption"></image></para>
+        </td>
+        <td rowspan="2">
+          <para styleclass="VariableName">Dimension convention in MechDesigner:</para>
+          <para styleclass="Body Text"><text styleclass="Element">Lines</text><text styleclass="Body Text HowTo"> have an X-Y coordinante-system. </text></para>
+          <list id="16" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted">The Origin of a Line is at its <text styleclass="Interface">start-Point</text>. </li>
+            <li styleclass="HowTo Bulleted">The +X-axis of a Line is from its <text styleclass="Interface">start-Point</text> to its <text styleclass="Interface">end-Point.</text></li>
+            <li styleclass="HowTo Bulleted"><text styleclass="Body Text HowTo">The +Y-axis of a Line is at +90º from Line. &#160;The Origin </text></li>
+          </list>
+          <para styleclass="Body Text HowTo">We can add a dimension from the Line to a Point* - which we call a Perpendicular Distance.</para>
+          <para styleclass="Body Text HowTo">When we add a dimension that is a perpendicular distance from the <text styleclass="Element">Line</text>, the dimension will be Positive if in +Y-axis half of the Line, and Negative if in the -Y-axis of the Line</para>
+          <para styleclass="Body Text HowTo">Dimensions from the <text styleclass="Element">Line</text> to Points <text styleclass="VariableName">a </text>and <text styleclass="VariableName">b</text> will be <text styleclass="VariableName">positive</text></para>
+          <para styleclass="Body Text HowTo">Dimensions from the <text styleclass="Element">Line</text> to Points <text styleclass="VariableName">c </text>and <text styleclass="VariableName">d</text> will be <text styleclass="VariableName">negative</text></para>
+          <para styleclass="Body Text HowTo"></para>
+          <para styleclass="Body Text HowTo">The 0,0 is at its <text styleclass="Interface">start-Point</text>, and its <text styleclass="Interface">X-axis</text> from its <text styleclass="Interface">start-Point</text> to its <text styleclass="Interface">end-Point</text>. </para>
+          <para styleclass="Body Text HowTo">The X-Y axes at the origin of a Part are treated like a Line. You can use the Axis to add a Linear Dimension or an Angular Dimension.</para>
+          <para styleclass="Body Text HowTo">The X-Y axes of the <text styleclass="Interface">Y-axis</text> are not shown. Its 0,0 is at its <text styleclass="Interface">start-Point</text>, and its <text styleclass="Interface">X-axis</text> from its <text styleclass="Interface">start-Point</text> to its <text styleclass="Interface">end-Point</text>. </para>
+          <para styleclass="Body Text HowTo"></para>
+          <para styleclass="Body Text HowTo"><text styleclass="Element">Lines</text><text style="font-weight:normal;"> AND </text><text styleclass="Element">Axes</text><text style="font-weight:normal;"> have a Coordinate System (Origin and +x,+y) . This includes the Part-axes : X–axis and the Y–axis. Each axis has an origin and an +x–axis direction and a +y–axis direction. &#160; </text></para>
+          <para styleclass="Body Text HowTo"><text style="font-weight:normal;">When we dimension using the Y–axis, or a Line in the Y-axis direction, then its +x–axis direction is </text><text styleclass="HowTo Bulleted" style="font-weight:normal;">along the +Y–axis of the Part.</text></para>
+          <para styleclass="Body Text HowTo"><text style="font-weight:normal;">In the image, the area with the &apos;</text><text style="font-weight:normal; color:#000000; background-color:#ffa8a8;">patch</text><text style="font-weight:normal; color:#000000; background-color:transparent;">&apos; is all –ve in the Coordinate System of the Y–axis, or a Line in the Y-axis</text></para>
+          <para styleclass="Body Text HowTo"><text style="font-weight:normal; color:#000000; background-color:transparent;">Therefore, is this case, when we dimension the Point</text><image src="Red-14-1b.gif" scale="100.00%" styleclass="Image Caption"></image><text styleclass="Image Caption">&#32;</text><text style="font-weight:normal; color:#000000; background-color:transparent;">along the X–axis from the Y-axis of the Part, it is along the negative direction of the y-axis of the Line.</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:159px;">
+          <para styleclass="Normal" style="text-align:right;"></para>
+        </td>
+      </tr>
+    </table></para>
+  </body>
+</topic>

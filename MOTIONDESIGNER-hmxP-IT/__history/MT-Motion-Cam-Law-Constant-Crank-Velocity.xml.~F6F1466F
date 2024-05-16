@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" status="Under Construction" modified="2022-03-11T10:07:53.418Z" lasteditedby="Adam" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title translate="true">CV Inverse Crank [Special]</title>
+  <keywords>
+    <keyword translate="true">Cam Law: Consant-Crank-Velocity</keyword>
+    <keyword translate="true">Motion-Law:<keyword translate="true">&apos;Constant-Crank-Velocity&apos;</keyword></keyword>
+  </keywords>
+  <body>
+    <header>
+      <para styleclass="Heading1"><text styleclass="Heading1" translate="true">CV Inverse Crank</text></para>
+    </header>
+    <para styleclass="Heading3_atocs_"><text styleclass="Heading3_atocs_" translate="true">Constant-Velocity Inverse Crank</text></para>
+    <para styleclass="Body Text"><table styleclass="AStandard" rowcount="5" colcount="3">
+      <tr style="vertical-align:top">
+        <td colspan="3">
+          <para styleclass="VariableName"><text styleclass="VariableName" translate="true">CV (Constant Velocity) Inverse Crank </text><text styleclass="Body Text" translate="true">is similar to the </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MT-Motion-Cam-Law-Y-Inverse-Sinusoid" styleclass="Body Text" translate="true">Y–Inverse Sinusoid</link><text styleclass="Body Text" translate="true"> Motion-Law. </text></para>
+          <para styleclass="Body Text"><text styleclass="Body Text" translate="true">We urge you to use this motion-law in preference to the Y-Inverse Sinusoid. </text></para>
+          <para styleclass="Body Text"><text styleclass="Body Text" translate="true">This segment can be used more than once in one machine cycle, whereas the Y-Inverse-Sinusoid can be used only one time.</text></para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="Body Table"><text styleclass="Body Table" translate="true">This segment is best explained by considering the X and Y motion components of a </text><text styleclass="Element" translate="true">Point</text><text styleclass="Body Table" translate="true"> that is at the end of a rotating-Part or </text><text styleclass="Interface" translate="true">Crank</text><text styleclass="Body Table" translate="true">.</text></para>
+          <para styleclass="Body Text HowTo"><text styleclass="Body Text HowTo" translate="true">When a </text><text styleclass="Interface" translate="true">Crank</text><text styleclass="Body Text HowTo" translate="true"> rotates with </text><text styleclass="Interface2" translate="true">Constant angular</text><text styleclass="Body Text HowTo" translate="true"> velocity, the motion of a </text><text styleclass="Element" translate="true">Point</text><text styleclass="Body Text HowTo" translate="true"> at the end of the </text><text styleclass="Interface" translate="true">Crank</text><text styleclass="Body Text" translate="true"> that is </text><text styleclass="Body Text HowTo" translate="true">projected onto a </text><text styleclass="Element" translate="true">Line</text><text styleclass="Body Text HowTo" translate="true"> is </text><text styleclass="Interface2" translate="true">Simple-Harmonic-Motion</text><text styleclass="Body Text HowTo" translate="true"> (a Sine function)</text></para>
+          <para styleclass="Body Text HowTo"><text styleclass="Body Text" translate="true">When you apply the </text><text styleclass="Interface2" translate="true">CV-Inverse-Crank</text><text styleclass="Body Text" translate="true"> segment to a </text><text styleclass="Interface" translate="true">Crank</text><text styleclass="Body Text" translate="true">, the motion of a </text><text styleclass="Element" translate="true">Point</text><text styleclass="Body Text" translate="true">&#32;</text><text styleclass="Body Text HowTo" translate="true">at the end of the </text><text styleclass="Element" translate="true">Crank</text><text styleclass="Body Text HowTo" translate="true"> that is projected onto a </text><text styleclass="Element" translate="true">Line</text><text styleclass="Body Text HowTo" translate="true">&#32;</text><text styleclass="Body Text" translate="true">can be made to move with a constant </text><text styleclass="Interface2" translate="true">linear velocity</text><text styleclass="Body Text" translate="true"> for a phase of the </text><text styleclass="Element" translate="true">Crank&apos;s</text><text styleclass="Body Text" translate="true"> rotation.</text></para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="Interface2"><text styleclass="Interface2" translate="true">SEGMENT-EDITOR</text></para>
+          <para styleclass="Body Text"><text styleclass="VariableName" translate="true">In the Segment Editor</text><text styleclass="Body Text" translate="true"> - see image below with Segment-Parameters</text><image src="Red-14-2.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><image src="Red-14-4.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><image src="Red-14-5.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+          <para styleclass="Body Text HowTo"><text styleclass="Body Text HowTo" translate="true">You can set the:</text></para>
+          <list id="0" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted"><text styleclass="HowTo Bulleted" translate="true">Minimum Velocity</text><image src="Red-14-2.gif" scale="100.00%" styleclass="HowTo Bulleted" figurelistinclude="0"></image><text styleclass="HowTo Bulleted" translate="true"> : or the Angle, relative to the Base-Value of the Minimum-Velocity</text></li>
+            <li styleclass="HowTo Bulleted"><text styleclass="HowTo Bulleted" translate="true">Rel Start</text><image src="Red-14-4.gif" scale="100.00%" styleclass="HowTo Bulleted" figurelistinclude="0"></image><text styleclass="HowTo Bulleted" translate="true"> : the angle relative to </text><image src="Red-14-2.gif" scale="100.00%" styleclass="HowTo Bulleted" figurelistinclude="0"></image></li>
+            <li styleclass="HowTo Bulleted"><text styleclass="HowTo Bulleted" translate="true">Rel End</text><image src="Red-14-5.gif" scale="100.00%" styleclass="HowTo Bulleted" figurelistinclude="0"></image><text styleclass="HowTo Bulleted" translate="true"> : the angle relative to </text><image src="Red-14-2.gif" scale="100.00%" styleclass="HowTo Bulleted" figurelistinclude="0"></image></li>
+          </list>
+          <para styleclass="Body Text"><text styleclass="Body Text" translate="true">If you use the </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MT-Motion-Cam-Law-Flexible-Polynomial" styleclass="Body Text" translate="true">Flexible-Polynomial Segment</link><text styleclass="Body Text" translate="true"> before and after this segment, you can:</text></para>
+          <list id="1" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted"><text styleclass="HowTo Bulleted" translate="true">Use the </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MT-Blend-PointEditor-ControlButtons" styleclass="HowTo Bulleted" translate="true">Blend Control Button</link><text styleclass="HowTo Bulleted" translate="true"> to make the End of the Flexible-Polynomial Segment match the start of this Segment.</text></li>
+            <li styleclass="HowTo Bulleted"><text styleclass="HowTo Bulleted" translate="true">Use the </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MT-Blend-PointEditor-ControlButtons" styleclass="HowTo Bulleted" translate="true">Blend Control Button</link><text styleclass="HowTo Bulleted" translate="true"> to make the Start of the Flexible-Polynomial Segment match the end of this Segment</text><text styleclass="Body Text" translate="true">.</text></li>
+          </list>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="VariableName"><image src="MT-SegmentParameters-CCV.png" scale="100.00%" styleclass="VariableName" figurelistinclude="0"><caption translate="true"><![CDATA[Segment-Parameters of the 'Constant-Velocity Inverse]]></caption></image></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:233px;">
+          <para styleclass="" style="text-align:left; text-indent:0px; margin-top:0px; margin-right:0px; margin-bottom:0px; margin-left:0px; line-height:1.00; background-color:transparent; white-space:normal; page-break-inside:auto; page-break-after:auto; border:none; tabstops:none;"><image src="MT-CamLaw-Y-Inverse-Sinusoid-SegParameters-Schematic.ipp" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"><title translate="true">Schematic of Crank made to give a constant linear velocity from Angle(4) (defined by Start-Position(1), to Angle(5), defined by the End-Position(2).</title></image></para>
+        </td>
+        <td colspan="2">
+          <para styleclass="Heading4 Toggle_atocs_"><text styleclass="Interface2" translate="true">Segment Editor</text><text styleclass="VariableName" translate="true"> : Segment-Parameters</text></para>
+          <para styleclass="Body Text"><text styleclass="VariableName" translate="true">Minimum Velocity</text><image src="Red-14-2.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="VariableName" translate="true"> : the Angle of Minimum Velocity</text></para>
+          <para styleclass="Body Table"><text styleclass="Body Table" translate="true">This is the angle, </text><text styleclass="VariableName-IT" style="color:#ff0000;" translate="true">after</text><text styleclass="Body Table" translate="true"> the </text><text styleclass="Parameter-Header" translate="true">Base-Value</text><image src="Red-14-1.gif" scale="100.00%" styleclass="Body Table" figurelistinclude="0"></image><text styleclass="Body Table" style="font-size:14pt; font-weight:bold;" translate="true">*</text><text styleclass="Body Table" translate="true"> of the Crank, at which the angular velocity of the Crank is a minimum. At all other angles, within the range of this segment, the angular velocity of the Crank is greater than the </text><text styleclass="VariableName" translate="true">Minimum Velocity</text><text styleclass="Body Table" translate="true">.</text></para>
+          <para styleclass="Body Table"><text styleclass="Body Table" translate="true">The direction of the Constant-Velocity vector for Point</text><image src="Red-14-3.gif" scale="100.00%" styleclass="Body Table" figurelistinclude="0"></image><text styleclass="Body Table" translate="true"> on the Crank is projected onto an imaginary Line</text><image src="Red-14-6.gif" scale="100.00%" styleclass="Body Table" figurelistinclude="0"></image><text styleclass="Body Table" translate="true">, which is perpendicular to the </text><text styleclass="VariableName-IT" translate="true">Angle of Minimum Velocity</text><image src="Red-14-2.gif" scale="100.00%" styleclass="Body Table" figurelistinclude="0"></image><text styleclass="Body Table" translate="true">.</text></para>
+          <para styleclass="Body Table"><text styleclass="Body Table" style="font-size:14pt; font-weight:bold;" translate="true">*</text><text styleclass="Body Table" translate="true">The </text><text styleclass="Parameter" translate="true">Base-Value</text><image src="Red-14-1.gif" scale="100.00%" styleclass="Body Table" figurelistinclude="0"></image><text styleclass="Body Table" translate="true"> is the parameter defined in the </text><text styleclass="Element" translate="true">Motion-Dimension FB dialog</text><text styleclass="Body Table" translate="true"> for the Crank, </text><text styleclass="VariableName" translate="true">not</text><text styleclass="Body Table" translate="true"> by the position of the End of the Previous-Segment.</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td colspan="3">
+          <para styleclass="VariableName"><text styleclass="VariableName" translate="true">Rel. Start</text><image src="Red-14-4.gif" scale="100.00%" styleclass="VariableName" figurelistinclude="0"></image><text styleclass="VariableName" translate="true"> : the Relative Angle before the Minimum Velocity Angle</text></para>
+          <para styleclass="Body Text HowTo"><text styleclass="Body Text HowTo" translate="true">The angle, </text><text styleclass="VariableName-IT" translate="true">before</text><text styleclass="Body Text HowTo" translate="true"> from the </text><text styleclass="VariableName-IT" translate="true">Angle of Minimum Velocity</text><image src="Red-14-2.gif" scale="100.00%" styleclass="Body Text HowTo" figurelistinclude="0"></image><text styleclass="Body Text HowTo" translate="true">, at which the Constant-Velocity of Point</text><image src="Red-14-3.gif" scale="100.00%" styleclass="Body Text HowTo" figurelistinclude="0"></image><text styleclass="Body Text HowTo" translate="true"> starts.</text></para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="VariableName"><text styleclass="VariableName" translate="true">Rel. End</text><image src="Red-14-5.gif" scale="100.00%" styleclass="VariableName" figurelistinclude="0"></image><text styleclass="VariableName" translate="true"> : the Relative Angle after the Minimum Velocity Angle</text></para>
+          <para styleclass="Body Text HowTo"><text styleclass="Body Text HowTo" translate="true">The angle, </text><text styleclass="VariableName-IT" translate="true">after</text><text styleclass="Body Text HowTo" translate="true"> the </text><text styleclass="VariableName-IT" translate="true">Angle of Minimum Velocity</text><image src="Red-14-2.gif" scale="100.00%" styleclass="Body Text HowTo" figurelistinclude="0"></image><text styleclass="Body Text HowTo" translate="true">, at which the Constant-Velocity of Point</text><image src="Red-14-3.gif" scale="100.00%" styleclass="Body Text HowTo" figurelistinclude="0"></image><text styleclass="Body Text HowTo" translate="true"> ends.</text></para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="Notes"><text styleclass="Notes" translate="true">Note: </text></para>
+          <para styleclass="Body Text"><text styleclass="Body Text" translate="true">The Crank rotates Counter-Clockwise when </text><text styleclass="VariableName" translate="true">Rel. Start</text><text styleclass="Body Text HowTo" translate="true"> is a </text><text styleclass="VariableName" translate="true">Negative #</text><text styleclass="Body Text HowTo" translate="true"> &#160;and </text><text styleclass="VariableName-indent" translate="true">Rel. End</text><text styleclass="Body Text HowTo" translate="true"> is a</text><text styleclass="VariableName-indent" translate="true"> Positive #</text></para>
+          <para styleclass="Body Text"><text styleclass="Body Text" translate="true">The Crank rotates Clockwise when </text><text styleclass="VariableName" translate="true">Rel. Start</text><text styleclass="Body Text HowTo" translate="true"> is a </text><text styleclass="VariableName" translate="true">Positive #</text><text styleclass="Body Text HowTo" translate="true"> &#160;and </text><text styleclass="VariableName-indent" translate="true">Rel. End</text><text styleclass="Body Text HowTo" translate="true"> is a</text><text styleclass="VariableName-indent" translate="true"> Negative #</text></para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="Body Text"><text styleclass="Body Text" translate="true">The velocity of the Point</text><image src="Red-14-3.gif" scale="100.00%" styleclass="Body Text" figurelistinclude="0"></image><text styleclass="Body Text" translate="true"> when projected on to the Line</text><image src="Red-14-6.gif" scale="100.00%" styleclass="Body Text" figurelistinclude="0"></image><text styleclass="Body Text" translate="true"> is constant while the crank moves within the angular range of:</text></para>
+          <para styleclass="Body Text HowTo"><text styleclass="Body Text HowTo" translate="true">Start Angle = </text><image src="Red-14-1.gif" scale="100.00%" styleclass="Body Text HowTo" figurelistinclude="0"></image><text styleclass="Body Text HowTo" translate="true"> + </text><image src="Red-14-2.gif" scale="100.00%" styleclass="Body Text HowTo" figurelistinclude="0"></image><text styleclass="Body Text HowTo" translate="true"> - </text><image src="Red-14-4.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+          <para styleclass="Body Text HowTo"><text styleclass="Body Text HowTo" translate="true">...to...</text></para>
+          <para styleclass="Body Text HowTo"><text styleclass="Body Text HowTo" translate="true">End Angle = </text><image src="Red-14-1.gif" scale="100.00%" styleclass="Body Text HowTo" figurelistinclude="0"></image><text styleclass="Body Text HowTo" translate="true"> + </text><image src="Red-14-2.gif" scale="100.00%" styleclass="Body Text HowTo" figurelistinclude="0"></image><text styleclass="Body Text HowTo" translate="true"> + </text><image src="Red-14-5.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Body Text HowTo" translate="true">&#32;</text></para>
+          <para styleclass="Body Text"><text styleclass="Body Text" translate="true">The linear velocity and the length</text><image src="Red-14-7.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Body Text" translate="true"> of the Constant-Velocity of the Point along the line depends on the:</text></para>
+          <list id="2" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted"><text styleclass="HowTo Bulleted" translate="true">Segment-Width</text></li>
+            <li styleclass="HowTo Bulleted"><text styleclass="HowTo Bulleted" translate="true">Length of the Rocker/Crank</text></li>
+            <li styleclass="HowTo Bulleted"><text styleclass="HowTo Bulleted" translate="true">Segment-Parameters Rel Start Angle + Rel End Angle.</text></li>
+          </list>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td colspan="2" style="width:284px;">
+          <para styleclass="" style="text-align:right; text-indent:0px; margin-top:0px; margin-right:0px; margin-bottom:0px; margin-left:0px; line-height:1.00; background-color:transparent; white-space:normal; page-break-inside:auto; page-break-after:auto; border:none; tabstops:none;"><image src="MT-CamLaw-CVConstantVelocity-2x.ipp" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"><caption translate="true"><![CDATA[CV Inverse-Crank2 x ]]></caption></image></para>
+        </td>
+        <td style="height:255px;">
+          <para styleclass="VariableName"></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td colspan="3">
+          <para styleclass="VariableName"><text styleclass="VariableName" translate="true">An example motion with four segments and two CV Inverse Crank</text></para>
+          <para styleclass="VariableName"><text styleclass="VariableName" translate="true">Segment 1: Constant-Velocity Inverse-Crank</text></para>
+          <list id="3" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:10pt; color:#333399;">
+            <li styleclass="HowTo Bulleted"><text styleclass="Parameter" translate="true">X-axis : 0 to 90º</text></li>
+          </list>
+          <para styleclass="Body Table"><text styleclass="Parameter-Header" translate="true">Segment Parameters</text><text styleclass="Body Table" translate="true"> are: </text></para>
+          <list id="4" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:10pt; color:#333399;">
+            <li styleclass="HowTo Bulleted"><text styleclass="Parameter" translate="true">Angle of Minimum Velocity = 90º</text></li>
+            <li styleclass="Body Table"><text styleclass="Parameter" translate="true">Relative Start Angle = -30º</text></li>
+            <li styleclass="Body Table"><text styleclass="Parameter" translate="true">Relative End = 30º</text></li>
+          </list>
+          <para styleclass="Body Table"><text styleclass="Body Table" translate="true">With these Parameters:</text></para>
+          <list id="4" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Parameter" style="font-family:Symbol; font-size:10pt; color:#333399;">
+            <li styleclass="Parameter"><text styleclass="Parameter" translate="true">When X-axis = 0º ; Y–axis = 60º. </text></li>
+            <li styleclass="Parameter"><text styleclass="Parameter" translate="true">When X-axis =90 ; Y–axis = 120º</text></li>
+          </list>
+          <para styleclass="VariableName"><text styleclass="VariableName" translate="true">Segment 2: Flexible-Polynomial</text></para>
+          <list id="3" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:10pt; color:#333399;">
+            <li styleclass="HowTo Bulleted"><text styleclass="Parameter" translate="true">X-axis : 90 to 180º</text></li>
+          </list>
+          <list id="5" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted"><text styleclass="Parameter" translate="true">Y-axis at Start P=120</text><text styleclass="VariableName" translate="true">. V, A, J </text><text styleclass="HowTo Bulleted" translate="true">flow from the end of the Constant-Crank-Velocity Segment.</text></li>
+            <li styleclass="HowTo Bulleted"><text styleclass="Parameter" translate="true">Y-axis at End 240º</text></li>
+          </list>
+          <para styleclass="VariableName"><text styleclass="VariableName" translate="true">Segment 3: Constant-Velocity Inverse-Crank</text></para>
+          <list id="3" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:10pt; color:#333399;">
+            <li styleclass="HowTo Bulleted"><text styleclass="HowTo Bulleted" translate="true">X-axis : 180 to 270º</text></li>
+          </list>
+          <para styleclass="Body Table"><text styleclass="Parameter-Header" translate="true">Segment Parameters</text><text styleclass="Body Table" translate="true"> are: </text></para>
+          <list id="4" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:10pt; color:#333399;">
+            <li styleclass="HowTo Bulleted"><text styleclass="Parameter" translate="true">Angle of Minimum Velocity = 270º</text></li>
+            <li styleclass="Body Table"><text styleclass="Parameter" translate="true">Relative Start Angle = -30º</text></li>
+            <li styleclass="Body Table"><text styleclass="Parameter" translate="true">Relative End = 30º</text></li>
+          </list>
+          <para styleclass="Body Table"><text styleclass="Body Table" translate="true">With these Parameters:</text></para>
+          <list id="4" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Parameter" style="font-family:Symbol; font-size:10pt; color:#333399;">
+            <li styleclass="Parameter"><text styleclass="Parameter" translate="true">When X-axis = 180º ; Y–axis = 240º</text></li>
+            <li styleclass="Parameter"><text styleclass="Parameter" translate="true">When X-axis =270 ; Y–axis = 300º</text></li>
+          </list>
+          <para styleclass="VariableName"><text styleclass="VariableName" translate="true">Segment 4: Flexible-Polynomial</text></para>
+          <list id="3" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Parameter" style="font-family:Symbol; font-size:10pt; color:#333399;">
+            <li styleclass="Parameter"><text styleclass="Parameter" translate="true">X-axis : 90 to 180º</text></li>
+          </list>
+          <list id="5" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Parameter" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="Parameter"><text styleclass="Parameter" translate="true">Y-axis P at Start = 300º</text><text styleclass="HowTo Bulleted" translate="true">. &#160;</text><text styleclass="Interface2" translate="true">V, A, J </text><text styleclass="HowTo Bulleted" translate="true">flow from the end of the </text><text styleclass="VariableName" translate="true">Constant-Crank-Velocity Segment</text><text styleclass="HowTo Bulleted" translate="true">.</text></li>
+            <li styleclass="HowTo Bulleted"><text styleclass="Parameter" translate="true">Y=axis at End = 420º. </text></li>
+          </list>
+        </td>
+      </tr>
+    </table></para>
+  </body>
+</topic>

@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" status="Under Construction" lasteditedby="Adam" version="2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title>Why can I not delete a Sketch-Element</title>
+  <keywords>
+    <keyword>How to...<keyword>Delete an Sketch-Element</keyword></keyword>
+  </keywords>
+  <body>
+    <header>
+      <para styleclass="Heading1">Why can I not delete a sketch-element?</para>
+    </header>
+    <para styleclass="Body Text"><table styleclass="Standard" rowcount="10" colcount="2">
+      <tr style="vertical-align:top">
+        <td colspan="2">
+          <para styleclass="Body Text">There are special conditions when <text styleclass="VariableName-IT">MechDesigner</text> does not let you delete a sketch-element. </para>
+          <para styleclass="Body Text">The sketch-element is usually used by another element in a Mechanism-Editor.</para>
+          <para styleclass="VariableName">Example 1: Sketch-element used by a sketch-loop and a Profile.</para>
+          <para styleclass="Body Text">You cannot delete a sketch-element that is used by a <text styleclass="Element">Profile</text>, UNLESS you first delete the <text styleclass="Element">Profile</text>.</para>
+          <para styleclass="VariableName">Example 2: Delete a Line that is used by a Plane and the Plane is used a Mechanism-Editor.</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:133px;">
+          <para styleclass="Normal" style="text-align:right;"><image src="Delete1.bmp" scale="100.00%" styleclass="Image Caption"></image></para>
+        </td>
+        <td>
+          <para styleclass="Body Text"><text styleclass="VariableName">Example 1: </text><text styleclass="HowTo STEP" style="font-weight:normal;">Delete a </text><text styleclass="Element">Line</text><text styleclass="HowTo STEP" style="font-weight:normal; font-style:normal;">.</text></para>
+          <para styleclass="Body Text"><text styleclass="HowTo STEP" style="font-weight:normal; font-style:normal;">The image to the left, there is a Part with a number of long lines that radiate (are rays) from its origin.</text></para>
+          <para styleclass="Body Text"><text styleclass="HowTo STEP" style="font-weight:normal; font-style:normal;">Each long </text><text styleclass="Element">line</text><text styleclass="HowTo STEP" style="font-weight:normal; font-style:normal;"> has a short </text><text styleclass="Element">line</text><text styleclass="HowTo STEP" style="font-weight:normal; font-style:normal;"> that is perpendicular to the </text><text styleclass="Interface">end-Point</text><text styleclass="HowTo STEP" style="font-weight:normal; font-style:normal;"> of the long </text><text styleclass="Element">line</text><text styleclass="HowTo STEP" style="font-weight:normal; font-style:normal;">.</text></para>
+          <para styleclass="Body Text"><text styleclass="HowTo STEP" style="font-weight:normal; font-style:normal;">We want to delete one of the short lines.</text></para>
+          <para styleclass="Body Text"><text styleclass="HowTo STEP" style="font-weight:normal; font-style:normal;">So, &apos;Start the Part-Editor&apos;....</text></para>
+          <list id="12" type="ol" listtype="decimal" formatstring="&#32;&#83;&#84;&#69;&#80;&#32;&#37;&#48;&#58;&#115;&#58;&#32;" format-charset="DEFAULT_CHARSET" levelreset="false" legalstyle="false" startfrom="1" styleclass="HowTo STEP" style="font-family:&apos;Segoe UI&apos;; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo STEP"><text style="font-weight:normal;">Double-click</text><text style="font-weight:normal; font-style:normal;"> on the </text><text styleclass="VariableName" style="color:#005000;">Green</text><text style="font-weight:normal; font-style:normal;">&#32;</text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Part-Outline" styleclass="Interface">Part-Outline</link><text style="font-weight:normal; font-style:normal;">.</text></li>
+          </list>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:133px;">
+          <para styleclass="Normal" style="text-align:right;"><image src="Delete2.bmp" scale="100.00%" styleclass="Image Caption"></image></para>
+        </td>
+        <td>
+          <list id="13" type="ol" listtype="decimal" formatstring="&#32;&#83;&#84;&#69;&#80;&#32;&#37;&#48;&#58;&#115;&#58;&#32;" format-charset="DEFAULT_CHARSET" levelreset="false" legalstyle="false" startfrom="2" styleclass="HowTo STEP" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo STEP"><text style="font-weight:normal;">Hover + Right-click the </text><text styleclass="Element">Line</text><text styleclass="VariableName">&#32;</text></li>
+            <li styleclass="HowTo STEP"><text style="font-weight:normal; font-style:normal;">Click the Delete command in the contextual toolbar/menu</text></li>
+          </list>
+          <para styleclass="HowTo STEP"><text styleclass="VariableName-IT">MechDesigner</text><text styleclass="Body Text" style="font-weight:normal; font-style:normal;"> does not delete the element. Why?</text></para>
+          <list id="13" type="ol" listtype="decimal" formatstring="&#32;&#83;&#84;&#69;&#80;&#32;&#37;&#48;&#58;&#115;&#58;&#32;" format-charset="DEFAULT_CHARSET" levelreset="false" legalstyle="false" startfrom="2" styleclass="HowTo STEP" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo STEP"><text styleclass="HowTo NO STEP" style="font-weight:normal; font-style:normal;">Read the Message in the Message area.</text></li>
+          </list>
+          <para styleclass="Body Text HowTo"><text style="font-weight:normal; font-style:normal;">It tells you that it is not possible to delete the </text><text styleclass="Element">Line</text><text style="font-weight:normal; font-style:normal;"> - (which we had renamed to LRoller8), as </text><text styleclass="Element">Plane</text><text style="font-weight:normal; font-style:normal;"> is dependent on it.</text></para>
+          <para styleclass="Body Text HowTo"><text style="font-weight:normal; font-style:normal;">Therefore, close the </text><text styleclass="Interface">Part-Editor</text><text style="font-weight:normal; font-style:normal;"> to delete the </text><text styleclass="Element">Plane</text><text style="font-weight:normal; font-style:normal;">.</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td colspan="2">
+          <para styleclass="Normal"><toggle type="picture" print-expanded="true" help-expanded="false" src-collapsed="Delete3.bmp" src-expanded="Delete3.bmp" scale="50.00%" width="406" height="27" styleclass="Image Caption"><caption><![CDATA[Click to Expand or Collapse]]></caption></toggle></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Normal"><image src="Delete4.bmp" scale="100.00%" styleclass="Image Caption"></image></para>
+        </td>
+        <td>
+          <list id="14" type="ol" listtype="decimal" formatstring="&#32;&#83;&#84;&#69;&#80;&#32;&#37;&#48;&#58;&#115;&#58;&#32;" format-charset="DEFAULT_CHARSET" levelreset="false" legalstyle="false" startfrom="4" styleclass="HowTo NO STEP" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo NO STEP"><text style="font-weight:normal; font-style:normal;">Close the Part-Editor - </text><text style="font-weight:normal; font-style:italic;">Double-click</text><text style="font-weight:normal; font-style:normal;"> a Line</text><text styleclass="VariableName">&#32;</text></li>
+            <li styleclass="HowTo NO STEP"><text style="font-weight:normal; font-style:normal;">Click and Delete the Plane</text></li>
+          </list>
+          <para styleclass="Body Text"><text style="font-weight:normal; font-style:normal;">You can:</text></para>
+          <list id="15" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted - compressed" style="font-family:Symbol; font-size:10pt; color:#000000;">
+            <li styleclass="HowTo Bulleted - compressed"><text style="font-style:italic;">&apos;Hover + Right-Click&apos;</text> and Click the &apos;Delete&apos; icon, </li>
+          </list>
+          <para styleclass="HowTo Bulleted - compressed">- or -</para>
+          <list id="16" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted - compressed" style="font-family:Symbol; font-size:10pt; color:#000000;">
+            <li styleclass="HowTo Bulleted - compressed"><text style="font-style:italic;">Right-Click</text> it in the Selection-Window and </li>
+            <li styleclass="HowTo Bulleted - compressed"><text style="font-style:italic;">Click</text> the &apos;Delete...&apos; option - see the image to the left.</li>
+          </list>
+          <para styleclass="Body Text"><text style="font-weight:bold; font-style:italic;">MechDesigner</text><text style="font-weight:normal; font-style:normal;"> does not delete the Plane. Why is this? Look in the Message Area.</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td colspan="2">
+          <para styleclass="Normal"><toggle type="picture" print-expanded="true" help-expanded="false" src-collapsed="Delete5.bmp" src-expanded="Delete5.bmp" scale="50.00%" width="405" height="40" styleclass="Image Caption"><caption><![CDATA[Click to Expand or Collapse]]></caption></toggle></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Normal"><image src="Delete6.bmp" scale="100.00%"></image></para>
+        </td>
+        <td>
+          <para styleclass="Body Text">First delete the Mechanism that is dependent by the Plane.</para>
+          <list id="17" type="ol" listtype="decimal" formatstring="&#32;&#83;&#84;&#69;&#80;&#32;&#37;&#48;&#58;&#115;&#58;&#32;" format-charset="DEFAULT_CHARSET" levelreset="false" legalstyle="false" startfrom="6" styleclass="HowTo NO STEP" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo NO STEP"><text style="font-weight:normal; font-style:normal;">Delete the Mechanism..</text><text styleclass="VariableName">. </text></li>
+          </list>
+          <para styleclass="Body Text2-Note">NOTE: SAVE YOUR MODEL with a new file-name BEFORE AND IMMEDIATELY AFTER YOU DELETE A MECHANISM. THERE IS A KNOWN BUG IF YOU DELETE MECHANISMS. After you have deleted a Mechanism, exit MechDesigner, then restart and open the file with the new file-name.</para>
+          <list id="18" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted"><text style="font-weight:normal; font-style:normal;">Navigate to the Mechanism that is dependent on the Plane in the Assembly-Tree, Right-click, select Delete - this option is shown to the left.</text></li>
+          </list>
+          <para styleclass="HowTo Bulleted" style="margin-top:0px; margin-bottom:0px; line-height:1.15;"><text style="font-weight:normal; font-style:normal;">- or -</text></para>
+          <list id="19" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted"><text style="font-weight:normal; font-style:italic;">Click</text><text style="font-weight:normal; font-style:normal;"> the Mechanism name-tab at the top of the graphic-area and delete it in the Assembly-Tree.</text></li>
+          </list>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Normal"><image src="Delete7.bmp" scale="100.00%"></image></para>
+        </td>
+        <td>
+          <para styleclass="Body Text"><text styleclass="VariableName-IT">MechDesigner</text> reminds you with a Warning you will delete a Mechanism. This is because it may be a significant to part of your model. You will delete the &apos;Children&apos; of the Mechanism, also.</para>
+          <para styleclass="Body Text">You can now delete the Plane.</para>
+          <list id="20" type="ol" listtype="decimal" formatstring="&#32;&#83;&#84;&#69;&#80;&#32;&#37;&#48;&#58;&#115;&#58;&#32;" format-charset="DEFAULT_CHARSET" levelreset="false" legalstyle="false" startfrom="7" styleclass="HowTo NO STEP" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo NO STEP"><text style="font-weight:normal; font-style:normal;">Delete the Plane</text><text styleclass="VariableName">&#32;</text></li>
+          </list>
+          <para styleclass="Body Text"><text style="font-weight:normal; font-style:italic;">Hover + Right Click</text><text style="font-weight:normal; font-style:normal;"> the Plane and select the &apos;Delete&apos; icon.</text></para>
+          <para styleclass="Body Text"><text style="font-weight:normal; font-style:normal;">The image to the Left shows you have deleted the Plane.</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Normal"><image src="Delete9.bmp" scale="100.00%"></image></para>
+        </td>
+        <td>
+          <list id="21" type="ol" listtype="decimal" formatstring="&#32;&#83;&#84;&#69;&#80;&#32;&#37;&#48;&#58;&#115;&#58;&#32;" format-charset="DEFAULT_CHARSET" levelreset="false" legalstyle="false" startfrom="8" styleclass="HowTo NO STEP" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo NO STEP"><text style="font-weight:normal; font-style:normal;">Delete the Line...with keyboard &apos;Delete&apos;</text><text styleclass="VariableName">&#32;</text></li>
+          </list>
+          <para styleclass="Body Text"><text styleclass="HowTo Bulleted" style="font-weight:normal; font-style:italic;">Click</text><text styleclass="HowTo Bulleted" style="font-weight:normal; font-style:normal;"> the Line in the graphic-area, then </text></para>
+          <list id="22" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:&apos;Segoe UI&apos;; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted"><text style="font-weight:normal; font-style:italic;">Click</text><text style="font-weight:normal; font-style:normal;"> the Line in the Selection-Window, then</text></li>
+            <li styleclass="HowTo Bulleted"><text style="font-weight:normal; font-style:italic;">Use</text><text style="font-weight:normal; font-style:normal;"> the keyboard &apos;Delete&apos;</text></li>
+          </list>
+          <para styleclass="HowTo Bulleted"><text style="font-weight:normal; font-style:normal;">- or -</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Normal"><image src="Delete8.bmp" scale="100.00%"></image></para>
+        </td>
+        <td>
+          <para styleclass="HowTo Bulleted"><text style="font-weight:normal; font-style:normal;">Use the contextual icon palette</text></para>
+          <list id="23" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:&apos;Segoe UI&apos;; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted"><text style="font-weight:normal; font-style:italic;">&apos;Hover + Right-Click&apos;</text><text style="font-weight:normal; font-style:normal;"> the Line</text></li>
+            <li styleclass="HowTo Bulleted"><text style="font-weight:normal; font-style:italic;">Click</text><text style="font-weight:normal; font-style:normal;"> the &apos;Delete&apos; icon.</text></li>
+          </list>
+        </td>
+      </tr>
+    </table></para>
+  </body>
+</topic>

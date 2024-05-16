@@ -1,0 +1,184 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" status="Under Construction" modified="2024-02-12T21:24:18.265Z" lasteditedby="44785" version="2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title>Dialog: Rack-Pinion / Ball-screw</title>
+  <keywords>
+    <keyword>Add<keyword>Ball-Screw</keyword></keyword>
+    <keyword>Dialog<keyword>Ball-Screw</keyword><keyword>Rack-Pinion</keyword></keyword>
+    <keyword>Number of Teeth: Rack-Pinion</keyword>
+    <keyword>Rack Pinion Design Parameters</keyword>
+    <keyword>Rack-Pinion dialog<keyword>Addendum</keyword><keyword>Dedendum</keyword><keyword>Gear Mesh</keyword><keyword>Mesh</keyword><keyword>Module</keyword><keyword>Number-of-Teeth</keyword><keyword>Pressure Angle</keyword></keyword>
+  </keywords>
+  <body>
+    <header>
+      <para styleclass="Heading1">Dialog: Rack-Pinion / Ball-screw</para>
+    </header>
+    <para styleclass="Heading2" style="page-break-before:always;">Rack-Pinion / Ball-Screw</para>
+    <para styleclass="SeeAlso">See: <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Command-AddRackPinion-BallScerw">Add Rack-Pinion</link></para>
+    <para styleclass="Normal"><line style="height:1px; color:#343400;" /></para>
+    <para styleclass="Body Text">After you add a <text styleclass="Element">Rack-Pinion</text> element, you can (optionally) convert it to a <text styleclass="Element">Ball-Screw</text> and <text styleclass="Element">Nut</text>.</para>
+    <para styleclass="Body Text HowTo">A <text styleclass="Element">Pinion</text> is a gear-wheel with teeth that engage with a <text styleclass="Body Text">straight gear, or </text><text styleclass="Element">Rack</text><text styleclass="Body Text">.</text></para>
+    <para styleclass="Body Text HowTo">A <text styleclass="Element">Ball-Screw</text> is a shaft with threads that engage with a <text styleclass="Element">Nut</text> with the same thread.</para>
+    <para styleclass="Body Text HowTo">The motion of the <text styleclass="Element">Rack</text> (or <text styleclass="Element">Pinion</text>) controls the motion of the <text styleclass="Element">Pinion</text> (or <text styleclass="Element">Rack</text>).</para>
+    <para styleclass="Body Text HowTo">Or, the motion of the <text styleclass="Element">Ball-Screw</text> (or <text styleclass="Element">Nut</text>) controls the motion of the <text styleclass="Element">Nut</text> (or <text styleclass="Element">Ball-Screw</text>).</para>
+    <para styleclass="Body Text HowTo">Use the <text styleclass="Element">Rack-Pinion</text>&#32;<text styleclass="Element">dialog</text> to edit the parameters for the <text styleclass="Element">Rack</text><text styleclass="Body Text"> and </text><text styleclass="Element">Pinion</text><text styleclass="Body Text">&#32;</text>(module, number, etc), <text styleclass="Body Text">or a </text><text styleclass="Element">Ball-Screw</text><text styleclass="Body Text"> (Pitch, Diameter, ...).</text></para>
+    <para styleclass="Normal"><line style="height:1px; color:#343400;" /></para>
+    <para styleclass="Heading4 Toggle_atocs_">How to open the Rack-Pinion dialog</para>
+    <para styleclass="Body Text"><table styleclass="Default" rowcount="1" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:240px;">
+          <para styleclass="Normal"><image src="MD-GA-EditRackPinion.png" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="Body Text">Edit the<text styleclass="Element"> Rack-Pinion</text><text style="font-weight:normal; font-style:normal;">:</text></para>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td style="border-top:none; border-right:none; border-bottom:none;">
+                <list id="0" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="B Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="B Bullets"><text styleclass="Body Text">Double-click a </text><text styleclass="Element">Rack-Pinion </text><text styleclass="Body Text">in the graphics-area or </text><text styleclass="Interface">Assembly-Tree</text><text styleclass="Body Text">.</text><text styleclass="VariableName">&#32;</text></li>
+                </list>
+                <para styleclass="Interface2">OR</para>
+                <list id="1" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="B Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="B Bullets"><text styleclass="SeeAlso">See </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-How-to-Open-a-Dialog-Box" styleclass="SeeAlso">How to Open a dialog</link><text styleclass="VariableName"> &#160;</text></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Body Text HowTo"><text styleclass="Normal">The </text><text styleclass="Element">Rack-Pinion dialog</text><text styleclass="Normal"> is now open.</text></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Normal"><line style="height:1px; color:#343400;" /></para>
+    <para styleclass="Heading3_atocs_"><anchor id="DIALOG-RACKPINION-ENABLEBOX"><keywords><keyword>Rack-Pinion dialog<keyword>Enable Rack-Pinion OR Ball-Screw.</keyword></keyword></keywords></anchor>Rack-Pinion / Ball-Screw dialog</para>
+    <para styleclass="Body Text"><table styleclass="Default" rowcount="1" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:235px;">
+          <para styleclass="Normal" style="text-align:left;"><image src="MD-DIALOG-RACKPINION-A.ipp" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"><caption><![CDATA[Rack-Pinion / Ball-Screw dialog]]></caption></image></para>
+        </td>
+        <td>
+          <para styleclass="Body Text">The format of the Rack-Pinion dialog changes when you enable:</para>
+          <list id="2" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#343400;">
+            <li styleclass="HowTo Bulleted"><text styleclass="Heading4 Toggle_atocs_2">Rack-Pinion (default)</text></li>
+          </list>
+          <para styleclass="Body Text HowTo"><text styleclass="Interface2">OR</text></para>
+          <list id="2" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#343400;">
+            <li styleclass="HowTo Bulleted"><text styleclass="Heading4 Toggle_atocs_2">Ball-Screw</text></li>
+          </list>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading4 Toggle_atocs_">Rack-Pinion enabled:</para>
+    <para styleclass="Normal" style="text-align:left;"><image src="MD-DIALOG-RACKPINION.ipp" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+    <para styleclass="Body Text HowTo" style="text-indent:-36px; margin-left:60px;"><anchor id="RackPinion-Gear-Tooth-tab" styleclass="Heading4 Toggle_atocs_"><keywords><keyword>Rack-Pinion dialog<keyword>Gear Tooth tab</keyword></keyword></keywords></anchor><image src="tog_plus.gif" scale="100.00%" styleclass="Separator-Header" figurelistinclude="0"></image><tab /><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" src-collapsed="tog_plus.gif" src-expanded="tog_minus.gif" styleclass="Separator-Header"><caption><![CDATA[ Tooth Parameters ]]></caption></toggle></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="8" colcount="2">
+      <tr style="vertical-align:top">
+        <td rowspan="8" style="width:238px;">
+          <para styleclass="Image Caption"><image src="MD-Dialog-RackPinion-GearTeeth.png" scale="-99.90%" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="Body Text"><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-Gear-Module" styleclass="ParameterHeader">Module</link><text styleclass="Parameter">&#32;</text><text style="font-weight:bold;">=</text> P.C.D. ÷ <text styleclass="Parameter">Number-of-Teeth</text> on <text styleclass="Element">Pinion</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Text">Rack/Pinion Ratio<text styleclass="Body Text HowTo"> (</text><text styleclass="Body Text HowTo" style="font-size:10pt; vertical-align:baseline;">degrees</text>),<text styleclass="Body Text HowTo"> per Rack Displacement</text> (<text style="font-size:10pt; vertical-align:baseline;">mm</text>).</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Text"><text styleclass="Body Text HowTo">Read-only:</text></para>
+          <para styleclass="Body Text HowTo"><text styleclass="Parameter">Rack/Pinion Ratio</text> (deg/<text style="font-size:10pt; vertical-align:baseline;">mm</text>) - number of degrees the Pinion must rotate to move the Rack by 1<text style="font-size:10pt; vertical-align:baseline;">mm.</text></para>
+          <para styleclass="Body Text HowTo"><text styleclass="Parameter">Pitch Circle Diameter</text><text styleclass="Parameter-Header" style="font-family:Arial; font-size:10pt; font-weight:normal; font-style:normal; text-decoration:none; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">&#32;</text>(<text style="font-size:10pt; vertical-align:baseline;">mm</text>) - the effective diameter of the Pitch Circle of the Pinion. The abbreviation is P.C.D.</para>
+          <para styleclass="Body Text HowTo"><text styleclass="Body Text">P.C.D. (</text><text styleclass="Body Text" style="font-size:10pt; vertical-align:baseline;">mm</text><text styleclass="Body Text">) = &#160;Number-of-Teeth × Module</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Text"><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-Gear-Pressure-Angle" styleclass="ParameterHeader">Pressure Angle</link> (Default <text style="font-weight:bold;">=</text> 20º). </para>
+          <para styleclass="Body Text HowTo">The Pressure Angle of gears is usually 20º. Other standard Pressure-Angles are: <text style="font-weight:normal;">14º</text>, 17.5º (weaker, quieter), and <text style="font-weight:normal;">22.5º, &#160;25º</text> (stronger, noisier).</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Text"><text styleclass="ParameterHeader">Addendum</text><text styleclass="Parameter">&#32;</text>(Usually <text style="font-weight:bold;">=</text> Module). </para>
+          <para styleclass="Body Text HowTo">The height of the gear tooth from the Pitch-Circle to the tip of the tooth.</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Text"><text styleclass="ParameterHeader">Dedendum</text> (Usually = Module × 1.25 (Module&gt;1)). </para>
+          <para styleclass="Body Text HowTo">The depth of the gear tooth below the Pitch-Circle to the root of the tooth. </para>
+          <para styleclass="Body Text HowTo">The <text styleclass="Parameter">Dedendum</text> is larger than the <text styleclass="Parameter">Addendum</text> to give clearance for the tooth-tip of the two gears that engage with each other.</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Text"><text styleclass="ParameterHeader">Root Radius</text> (Usually = &#160;0.3 × Module)</para>
+          <para styleclass="Body Text HowTo">The small fillet between the Flank and the Root of the Gear Tooth.</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="ParameterHeader">Points per Tooth Flank</para>
+          <para styleclass="Body Text HowTo">The number of points on each Involute of each gear tooth. &#160;6 is OK. More points make your model slower to edit.</para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Body Text HowTo" style="text-indent:-36px; margin-left:60px;"><anchor id="RackPinionParameters" styleclass="Heading4 Toggle_atocs_"><keywords><keyword>Rack and Pinion Gear Parameters</keyword></keywords></anchor><image src="tog_plus.gif" scale="100.00%" styleclass="Separator-Header" figurelistinclude="0"></image><tab /><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" src-collapsed="tog_plus.gif" src-expanded="tog_minus.gif" styleclass="Separator-Header"><caption><![CDATA[ Rack and Pinion Parameters ]]></caption></toggle></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="1" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:238px;">
+          <para styleclass="Normal"><image src="MD-Dialog-RackPinion-General.png" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="ParameterHeader">Shift the Rack by<text styleclass="Parameter-Header" style="font-family:Arial; font-size:10pt; font-weight:normal; font-style:normal; text-decoration:none; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">:</text></para>
+          <para styleclass="Body Text HowTo"><text style="font-style:normal;">Move</text> the <text styleclass="Element">rack</text> along its pitch-line by # number-of-teeth.</para>
+          <para styleclass="ParameterHeader">Number-of-Teeth, Rack<text styleclass="Parameter-Header" style="font-family:Arial; font-size:10pt; font-weight:normal; font-style:normal; text-decoration:none; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">:</text></para>
+          <para styleclass="Body Text HowTo">The <text styleclass="Parameter">number-of-teeth</text> on the <text styleclass="Element">Rack</text>. </para>
+          <para styleclass="Body Text HowTo">Edit the <text styleclass="Parameter">Number-of-Teeth</text> on the <text styleclass="Element">Rack</text> so that it stays in mesh with the <text styleclass="Element">Pinion</text> for a machine-cycle</para>
+          <para styleclass="Parameter-Header" style="text-align:left; text-indent:0px; margin-top:0px; margin-right:0px; margin-bottom:0px; margin-left:0px; line-height:1.00; background-color:transparent; white-space:normal; page-break-inside:auto; page-break-after:auto; border:none; tabstops:none;"><text styleclass="ParameterHeader"># Number-of-Teeth</text><text style="font-family:Arial; font-size:10pt; font-weight:normal; font-style:normal; text-decoration:none; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">, </text><text styleclass="ParameterHeader">Pinion</text><text style="font-family:Arial; font-size:10pt; font-weight:normal; font-style:normal; text-decoration:none; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">:</text></para>
+          <para styleclass="Body Text HowTo">The number-of-teeth on the <text styleclass="Element">Pinion.</text>&#32;</para>
+          <para styleclass="Body Text HowTo">As you increase the number-of-teeth, the PCD increase, unless you also edit the Module.</para>
+          <para styleclass="ParameterHeader">Align Mesh<text styleclass="Parameter-Header" style="font-family:Arial; font-size:10pt; font-weight:normal; font-style:normal; text-decoration:none; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">:</text></para>
+          <para styleclass="Body Text HowTo">When <text styleclass="HowTo Bulleted">you add two(2) </text><text styleclass="Element">Racks</text><text styleclass="HowTo Bulleted"> to one(1) </text><text styleclass="Element">Pinion</text><text styleclass="HowTo Bulleted">, you usually see two(2) </text><text styleclass="Element">Pinions</text><text styleclass="Body Text"> on the same axis. If you want</text><text styleclass="HowTo Bulleted"> to see one(1) </text><text styleclass="Element">Pinion</text><text styleclass="HowTo Bulleted">, click one of these options:</text></para>
+          <list id="3" type="ul" listtype="bullet" formatstring="&#164;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Wingdings; font-size:10pt; color:#000080;">
+            <li styleclass="HowTo Bulleted"><text styleclass="Parameter">Shift Rack</text></li>
+            <li styleclass="HowTo Bulleted"><text styleclass="Parameter">Shift Pinion</text></li>
+            <li styleclass="HowTo Bulleted"><text styleclass="Parameter">Do not Shift</text></li>
+          </list>
+          <para styleclass="ParameterHeader">Rack on the<text styleclass="Parameter-Header" style="font-family:Arial; font-size:10pt; font-weight:normal; font-style:normal; text-decoration:none; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">:</text></para>
+          <para styleclass="Body Text HowTo">The positive-direction of <text styleclass="VariableName">Rack-Pinion</text> and <text styleclass="VariableName">Ball-Screw</text> model are specified when you select <text styleclass="Parameter">Right</text> or <text styleclass="Parameter">Left</text>.</para>
+          <list id="4" type="ul" listtype="bullet" formatstring="&#164;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="margin-top:0px; margin-bottom:0px; font-family:Wingdings; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted" style="margin-top:0px; margin-bottom:0px;"><text styleclass="Parameter">Right </text><text styleclass="Body Text">(default) </text></li>
+          </list>
+          <para styleclass="Body Text HowTo">When the <text styleclass="Element">Pinion</text> (Ball-Screw Shaft) rotates <text styleclass="VariableName">Counter-Clockwise</text>, the <text styleclass="Element">Rack</text> (Ball-Screw Nut) move in the <text styleclass="VariableName">Positive-Direction</text> of the <text styleclass="Element">Slide-Joint.</text></para>
+          <list id="4" type="ul" listtype="bullet" formatstring="&#164;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="margin-top:0px; margin-bottom:0px; font-family:Wingdings; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted" style="margin-top:0px; margin-bottom:0px;"><text styleclass="Parameter">Left </text>&#32;</li>
+          </list>
+          <para styleclass="Body Text HowTo">When the <text styleclass="Element">Pinion</text> (Ball-Screw Shaft) rotates <text styleclass="VariableName">Clockwise</text>, the <text styleclass="Element">Rack </text>(Ball-Screw Nut) move in the <text styleclass="VariableName">Negative-Direction</text> of the <text styleclass="Element">Slide-Joint.</text></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading4 Toggle_atocs_">Ball-Screw enabled :</para>
+    <para styleclass="Body Text"><image src="MD-DIALOG-RACKPINION-B.ipp" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+    <para styleclass="Body Text HowTo" style="text-indent:-36px; margin-left:60px;"><anchor id="Rack-Pinion-BallScrew-tab" styleclass="Heading4 Toggle_atocs_"><keywords><keyword>Rack-Pinion dialog<keyword>Ball-Screw parameters</keyword></keyword></keywords></anchor><image src="tog_plus.gif" scale="100.00%" styleclass="Separator-Header" figurelistinclude="0"></image><tab /><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" src-collapsed="tog_plus.gif" src-expanded="tog_minus.gif" styleclass="Separator-Header"><caption><![CDATA[ Ball Screws Parameters ]]></caption></toggle></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="1" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:238px;">
+          <para styleclass="Image Caption"><image src="MD-Dialog-RackPinion-BallScrewParams.png" scale="-99.90%" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="Body Text">The symbol in the graphics-area for a <text styleclass="Parameter-Header" style="font-family:Arial; font-size:10pt; font-weight:normal; font-style:normal; text-decoration:none; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">Ball-Screw</text> is a <text styleclass="VariableName">Helix/Screw.</text></para>
+          <para styleclass="Normal"><text styleclass="Body Text">There are two parameters:</text></para>
+          <list id="5" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullets" style="font-family:Symbol; font-size:10pt; color:#000000;">
+            <li styleclass="Bullets"><text styleclass="ParameterHeader">Ball-Screw Lead</text><text styleclass="HowTo Bulleted"> (</text><text styleclass="HowTo Bulleted" style="font-size:10pt; vertical-align:baseline;">mm</text><text styleclass="HowTo Bulleted">) - distance the </text><text styleclass="Interface">Sliding-Part</text><text styleclass="HowTo Bulleted"> moves after one(1) rotation of the </text><text styleclass="Interface">Rotating-Part.</text></li>
+            <li styleclass="HowTo Bulleted"><text styleclass="ParameterHeader">Ball-Screw Diameter</text> (<text style="font-size:10pt; vertical-align:baseline;">mm</text>) - diameter of the <text styleclass="Interface">Ball-Screw</text> symbol <text styleclass="Body Text">in the graphics-area</text>.</li>
+          </list>
+          <para styleclass="Normal"><line style="height:1px; color:#343400;" /></para>
+          <para styleclass="Body Text">The length of the <text styleclass="Element">Ball-Screw</text> is equal to the length of the <text styleclass="Element">Line</text> in the <text styleclass="Interface">sliding-Part</text> - see <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Command-AddRackPinion-BallScerw">Add Rack-Pinion</link>.</para>
+          <para styleclass="Body Text">The <text styleclass="VariableName">Nut</text> (<text styleclass="Interface">Sliding-Part</text>) of the <text styleclass="Element">Ball-Screw</text> moves in the <text styleclass="VariableName">Positive-Direction</text> of the <text styleclass="Element">Slide-Joint</text> when the <link displaytype="text" defaultstyle="true" type="topiclink" href="" anchor="RackPinionParameters" styleclass="Parameter">Rack-Side</link> is set to <text styleclass="Parameter">Right </text>- <text styleclass="SeeAlso">see </text><link displaytype="text" defaultstyle="true" type="topiclink" href="" anchor="RackPinionParameters" styleclass="SeeAlso">General tab</link></para>
+        </td>
+      </tr>
+    </table></para>
+  </body>
+</topic>

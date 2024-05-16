@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" status="Under Construction" modified="2024-02-13T10:40:09.071Z" lasteditedby="44785" version="2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title>CAD-Line dialog &gt; SOLIDWORKS tab</title>
+  <keywords>
+    <keyword>CAD-Line dialog<keyword>Import SOLIDWORKS file</keyword><keyword>SOLIDWORKS Configurations</keyword><keyword>SOLIDWORKS tab</keyword></keyword>
+    <keyword>Chinese Traditional font<keyword>SOLIDWORKS: name of Configuration feature</keyword></keyword>
+    <keyword>Dialog<keyword>CAD-Line - SOLIDWORKS tab</keyword></keyword>
+  </keywords>
+  <body>
+    <header>
+      <para styleclass="Heading1">-&gt; SOLIDWORKS tab</para>
+    </header>
+    <para styleclass="Heading2">CAD-Line &gt; SOLIDWORKS tab</para>
+    <para styleclass="SeeAlso">See also: <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-CADLine-MassProperties">Mass-Properties tab</link>, <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-CADLine-DXF">DXF tab</link>, <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-CADLine-STLImport">STL Import tab</link>, <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-CADLine-Display">Display Options tab</link>. </para>
+    <para styleclass="Body Text">Enable <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Visibility-SolidsInMechanisms" styleclass="T_Menu">Visibility toolbar &gt; Show Solids in Mechanisms</link> to see <text styleclass="VariableName">CAD</text><text styleclass="Interface">-Solids</text> in <text styleclass="Interface">Mechanism-Editors</text>.</para>
+    <para styleclass="Normal"><line style="height:1px; color:#343400;" /></para>
+    <para styleclass="Body Text">Use the <text styleclass="VariableName">SOLIDWORKS tab</text> to:</para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="1" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <list id="0" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullets" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="Bullets">Import a SOLIDWORKS Part/Assembly <toggle type="inline" print-expanded="true" help-expanded="false" defaultstyle="true"><caption><![CDATA[document]]></caption><hidden-text styleclass=""><![CDATA[ ( SOLIDWORKS refers to their CAD files as documents )]]></hidden-text></toggle> onto a <text styleclass="Element-Header">CAD-Line</text>&#32;<text styleclass="Body Text">- </text><link displaytype="text" defaultstyle="true" type="topiclink" href="" anchor="CAD-Line-ImportSW-File">see below</link><text styleclass="Body Text">.</text></li>
+            <li styleclass="HowTo Bulleted">Remove a <text styleclass="Bullets">SOLIDWORKS</text> Part/Assembly document from a <text styleclass="Element-Header">CAD-Line</text><text styleclass="Body Text">.</text></li>
+            <li styleclass="HowTo Bulleted">Open a SOLIDWORKS Part/Assembly document in SOLIDWORKS that you have previously imported onto a <text styleclass="Element-Header">CAD-Line</text><text styleclass="Body Text">.</text></li>
+            <li styleclass="HowTo Bulleted">Control the surface accuracy of a SOLIDWORKS Part/Assembly document when you import it from SOLIDWORKS.</li>
+            <li styleclass="HowTo Bulleted">Rename the <text styleclass="Element-Header">CAD-Line</text> to the name of the active SOLIDWORKS Part/Assembly document.</li>
+          </list>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Normal"><line style="height:1px; color:#343400;" /></para>
+    <para styleclass="Body Table"><text styleclass="Body Text">In </text><text styleclass="Interface2">SolidWorks</text>:</para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="1" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <list id="1" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullets" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="Bullets">Make sure the SOLIDWORKS Part/Assembly document you want to import is open and it is the active document. &#160;</li>
+            <li styleclass="Bullets">Make sure the SOLIDWORKS Part/Assembly document has a file-name.</li>
+            <li styleclass="Bullets">Usually, add a Coordinate-System feature to the SOLIDWORKS Part/Assembly document to align it with the <text styleclass="Element-Header">CAD-Line</text>.</li>
+            <li styleclass="Bullets">Usually, simplify the SOLIDWORKS document to reduce the complexity of the model.</li>
+          </list>
+          <para styleclass="Normal"><line style="height:1px; color:#343400;" /></para>
+          <para styleclass="Body Text"><text styleclass="VariableName">Warning</text><text styleclass="Image Caption">: </text>The <text styleclass="Bullets">SOLIDWORKS </text>Part/Assembly document does not import into<text styleclass="Image Caption">&#32;</text><text styleclass="VariableName">MechDesigner</text> if, in <text styleclass="Bullets">SOLIDWORKS, </text>you use a Chinese Traditional font to name a Configuration<text styleclass="Image Caption">.</text></para>
+          <para styleclass="Body Text">Rename the <text styleclass="VariableName">Configuration feature</text> with a <text styleclass="VariableName">Western font</text>.</para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading3_atocs_">CAD-Line dialog</para>
+    <para styleclass="Heading4 Toggle_atocs_">SolidWorks tab</para>
+    <para styleclass="Body Table"><image src="MD-Dialog-CADLine-SolidWorks tab.png" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"><caption><![CDATA[CAD-Line dialog> SOLIDWORKS tab]]></caption></image></para>
+    <para styleclass="Normal"><line style="height:1px; color:#343400;" /></para>
+    <para styleclass="Separator-Header"><anchor id="CAD-Line-ImportSW-File"><keywords><keyword>Import SOLIDWORKS document<keyword>Coordinate Systems and SOLIDWORKS</keyword><keyword>Import File Quality from SOLIDWORKS</keyword></keyword></keywords></anchor> Import from SOLIDWORKS </para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="1" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:274px;">
+          <para styleclass="Image Caption"><image src="MD-Dialog-CADLine-SWtab.ipp" scale="-99.90%" figurelistinclude="0"><caption><![CDATA[CAD-Line dialog > SOLIDWORKS tab]]></caption></image></para>
+        </td>
+        <td>
+          <para styleclass="Body Text"><text styleclass="VariableName" style="color:#ff0000;">STEP 1:</text><text style="font-family:&apos;Segoe UI Semibold&apos;;">&#32;</text><text styleclass="VariableName">Click the </text><text styleclass="ParameterHeader">Read </text><image src="Red-14-2.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="VariableName"> button</text></para>
+          <para styleclass="Bullets"><text styleclass="VariableName">WAIT</text><text styleclass="Body Table"> until t</text>he:</para>
+          <list id="2" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullets" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="Bullets"><text styleclass="Parameter">SolidWorks® Part/Assembly</text><text styleclass="Body Table"> (read-only) shows in box </text><image src="Red-14-4.gif" scale="100.00%" styleclass="Body Table" figurelistinclude="0"></image></li>
+            <li styleclass="Bullets"><text styleclass="Parameter">SolidWorks Configuration</text>&#32;<text styleclass="Body Table">(read-only) shows in box </text><image src="Red-14-5.gif" scale="100.00%" styleclass="Body Table" figurelistinclude="0"></image></li>
+            <li styleclass="Bullets"><text styleclass="Parameter">Model Status</text><text styleclass="Body Table"> (read-only) shows in box </text><image src="Red-14-6.gif" scale="100.00%" styleclass="Body Table" figurelistinclude="0"></image></li>
+          </list>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Popup Box"><text styleclass="VariableName-small">Model Status:</text></para>
+                <para styleclass="Popup Box"><text styleclass="VariableName-small"> Unavailable</text> - before you import SolidWorks® document the first time.</para>
+                <para styleclass="Popup Box"><text styleclass="VariableName-small"> Out of Date</text> - the file in box<image src="Red-14-4.gif" scale="100.00%" figurelistinclude="0"></image> is older than the current date/time. </para>
+                <para styleclass="Popup Box"><text styleclass="VariableName-small"> Up to Date</text> - the date/time of file in box<image src="Red-14-4.gif" scale="100.00%" figurelistinclude="0"></image> is the equal to the date/time when imported.</para>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Body Text"><text styleclass="VariableName" style="color:#ff0000;">STEP 2:</text><text styleclass="VariableName"> If there is more than one Coordinate-System, select a</text><text styleclass="ParameterHeader"> Coordinate-System </text><image src="Red-14-8.gif" scale="100.00%" figurelistinclude="0"></image>.</para>
+          <para styleclass="Body Text"><text styleclass="VariableName" style="color:#ff0000;">STEP 3:</text><text styleclass="VariableName"> Click the </text><text styleclass="ParameterHeader">Import</text><text style="font-weight:bold;">&#32;</text><image src="Red-14-12.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Image Caption">&#32;</text><text styleclass="VariableName">Button</text></para>
+          <para styleclass="Body Table"><text styleclass="Interface2">Wait</text> - a large model can take time to import.</para>
+          <para styleclass="Normal"><line style="height:1px; color:#343400;" /></para>
+          <para styleclass="VariableName"><text styleclass="ParameterHeader">Optional Buttons</text><text styleclass="Parameter-Header" style="font-family:Arial; font-size:10pt; font-weight:normal; font-style:normal; text-decoration:none; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">(</text><image src="Red-14-1b.gif" scale="100.00%" styleclass="Parameter-Header" style="font-family:Arial; font-size:10pt; font-weight:normal; font-style:normal; text-decoration:none; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;" figurelistinclude="0"></image><image src="Red-14-3.gif" scale="100.00%" styleclass="Body Table" figurelistinclude="0"></image><text styleclass="Parameter-Header" style="font-family:Arial; font-size:10pt; font-weight:normal; font-style:normal; text-decoration:none; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">)</text></para>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Body Table"><text styleclass="VariableName">Button</text><image src="Red-14-1b.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="VariableName"> : </text><text styleclass="Parameter">Remove</text><text styleclass="Parameter-Header" style="font-family:Arial; font-size:10pt; font-weight:normal; font-style:normal; text-decoration:none; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;"> :</text> the <text styleclass="SOLIDWORKS">SolidWorks®</text> document in box <image src="Red-14-4.gif" scale="100.00%" figurelistinclude="0"></image> from the<text styleclass="Body Text">&#32;</text><text styleclass="Element">CAD-Line</text></para>
+                <para styleclass="Body Table"><text styleclass="VariableName">Button</text><image src="Red-14-3.gif" scale="100.00%" figurelistinclude="0"></image>&#32;<text styleclass="Parameter-Header" style="font-family:Arial; font-size:10pt; font-weight:normal; font-style:normal; text-decoration:none; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">: </text><text styleclass="Parameter">OPEN</text><text styleclass="Parameter-Header" style="font-family:Arial; font-size:10pt; font-weight:normal; font-style:normal; text-decoration:none; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;"> :</text><text styleclass="Body Text"> the document in box </text><image src="Red-14-4.gif" scale="100.00%" styleclass="Body Text" figurelistinclude="0"></image><text styleclass="Body Text"> (that you have previously imported) in </text><text styleclass="SOLIDWORKS">SolidWorks®</text></para>
+                <para styleclass="Body Table"><text styleclass="VariableName">Button</text><image src="Red-14-11.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image> : <text styleclass="Parameter">Rename CAD-Line</text><text styleclass="Body Text"> to the file-name of the </text><text styleclass="SOLIDWORKS">SolidWorks</text> document <text styleclass="Body Text">in box</text><image src="Red-14-4.gif" scale="100.00%" styleclass="Body Text" figurelistinclude="0"></image>.</para>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Interface2"><text styleclass="ParameterHeader">CAD-Solid File Quality</text>&#32;<image src="Red-14-10a.gif" scale="100.00%" figurelistinclude="0"></image></para>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <list id="3" type="ul" listtype="bullet" formatstring="&#164;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Body Table" style="font-family:Wingdings; font-size:11pt; color:#000000;">
+                  <li styleclass="Body Table">&#32;<text styleclass="VariableName">Fine</text><text styleclass="HowTo Bulleted">: more vertices</text></li>
+                  <li styleclass="Body Table"><text styleclass="VariableName"> Coarse</text><text styleclass="HowTo Bulleted" style="font-weight:normal; font-style:normal;">: fewer vertices</text></li>
+                  <li styleclass="Body Table"><text styleclass="VariableName"> Custom</text><text styleclass="HowTo Bulleted"> : edit</text></li>
+                </list>
+                <list id="4" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+                  <li styleclass="HowTo Bulleted"><text styleclass="Parameter">Linear Deviation</text><image src="Red-14-7.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="B Bullets">: Maximum =0.5mm; Minimum =0.014mm - see </text><text styleclass="VariableName" style="color:#ff0000;">Warning</text><text styleclass="VariableName">&#32;</text></li>
+                  <li styleclass="HowTo Bulleted2"><text styleclass="Parameter">Angular Deviation</text><image src="Red-14-9.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image>: Maximum =30º; Minimum =0.4º - see <text styleclass="VariableName" style="color:#ff0000;">Warning</text></li>
+                </list>
+                <para styleclass="Normal"><line style="height:1px; color:#343400;" /></para>
+                <para styleclass="Body Text"><text styleclass="VariableName" style="color:#ff0000;">Warning</text><text styleclass="Body Table"> : </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-CADLine-Display" anchor="CAD-Line-ImportSW-Display" styleclass="Body Table">Number-of-Vertices</link><text styleclass="Body Table"> increase rapidly as you reduce the </text><text styleclass="Parameter">Linear/Angular Deviation</text> to give a large STL file. A large STL file <text styleclass="Body Table">will also slow down </text><text styleclass="VariableName">MechDesigner</text><text styleclass="Body Table"> when you try to edit the model.</text></para>
+                <para styleclass="Body Text"><text styleclass="Body Table">Often the appearance of the </text><text styleclass="Interface2">CAD</text><text styleclass="Body Table">-</text><text styleclass="Interface">Solid</text><text styleclass="Body Table"> does not improve. Experiment! </text><text styleclass="SeeAlso">See: </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-CADLine-STLImport" anchor="EdgeAngleLimit" styleclass="SeeAlso">Edge Angle Limit</link><text styleclass="Body Text HowTo">.</text></para>
+              </td>
+            </tr>
+          </table></para>
+        </td>
+      </tr>
+    </table></para>
+  </body>
+</topic>

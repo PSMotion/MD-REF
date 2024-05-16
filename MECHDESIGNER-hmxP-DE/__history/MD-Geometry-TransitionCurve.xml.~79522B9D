@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" modified="2022-02-23T11:38:31.583Z" lasteditedby="Adam" version="2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title>Geometry-TransitionCurve</title>
+  <meta name="DESCRIPTION" translate="true" value="A Transition-Curve is used to eliminate Polygonal Action with Chains.It is good all the way down to 3 teeth on the sprocket. There is not versiation in Velocity or Tension in the Chain as it travels around the Track." />
+  <keywords>
+    <keyword>Add<keyword>Transition-Curve</keyword></keyword>
+    <keyword>Geometry toolbar<keyword>Transiton Curve</keyword></keyword>
+    <keyword>Sketch Element: Transition-Curve</keyword>
+    <keyword>Sketch-Element<keyword>Transition-Curve</keyword></keyword>
+  </keywords>
+  <body>
+    <header>
+      <para styleclass="Heading1">Geometry-TransitionCurve</para>
+    </header>
+    <para styleclass="Heading3_atocs_">Transition-Curve</para>
+    <para styleclass="Body Text HowTo">The PSMotion Transition-Curve<text style="font-size:7pt; vertical-align:super;">©</text> is used to completely eliminate Polygonal Action - also referred to as Chordal Action - as a Chain moves between two Sprockets. </para>
+    <para styleclass="Body Text HowTo">The geometry of chain-links and sprockets mean that the chain lifts and falls. Also, the chain-links have a linear velocity variation as each link moves onto a sprocket.</para>
+    <para styleclass="Body Text HowTo">Polygonal-Action increases as the number-of-teeth in the sprockets decrease.</para>
+    <para styleclass="Body Text HowTo">Polygonal-Action creates two(2) problems</para>
+    <list id="0" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+      <li styleclass="HowTo Bulleted">Velocity Variation in the Chain</li>
+    </list>
+    <para styleclass="Body Text Howindent4bullets">In the general case, if a Driving Sprocket is rotating at constant speed, the chain does not move at Constant Velocity. </para>
+    <para styleclass="Body Text Howindent4bullets">The peak to peak velocity variation increases as you reduce the number of teeth on the drive sprocket. Most usually, it is &#160;recommended that you use more than 17 teeth. </para>
+    <list id="0" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+      <li styleclass="HowTo Bulleted">Tension Variation in the Chain.</li>
+    </list>
+    <para styleclass="Body Text Howindent4bullets">As a chain link engages with a tooth, the chain accelerates, and thus there is a tension variation.</para>
+    <para styleclass="Body Text Howindent4bullets">Also, the pitch of the chain link is not constant </para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="Normal"><table styleclass="Standard" rowcount="4" colcount="3">
+      <tr style="vertical-align:top">
+        <td rowspan="4" style="width:49px; border-right:none;">
+          <para styleclass="Normal" style="text-align:center;"><image src="MD-Toolbar-SE-TransitionCurve.ipp" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td style="width:86px;">
+          <para styleclass="VariableName-IT" style="text-align:right;">Toolbar : </para>
+        </td>
+        <td style="vertical-align:middle; width:829px;">
+          <para styleclass="T_Menu"><text styleclass="VariableName">Part-Editor :</text> Geometry Toolbar &gt; Transition-Curve</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:86px;">
+          <para styleclass="VariableName-IT" style="text-align:right;">Menu : </para>
+        </td>
+        <td style="width:829px;">
+          <para styleclass="T_Menu"><text styleclass="VariableName">Part-Editor :</text> Add menu &gt; Geometry sub-menu&gt; &gt; Transition-Curve</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td colspan="2">
+          <para styleclass="VariableName">To add a Transition-Curve</para>
+          <para styleclass="Body Text HowTo"><table styleclass="PopupTable2" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td style="border-top:none; border-right:none; border-bottom:none;">
+                <list id="1" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; color:#003300;">
+                  <li styleclass="Bullets">Click <text styleclass="T_Menu">Geometry-toolbar &gt; Merge-Points</text></li>
+                  <li styleclass="HowTo Bulleted" style="text-align:left; text-indent:-24px; margin-top:0px; margin-right:0px; margin-bottom:0px; margin-left:48px; line-height:1.00; white-space:normal; page-break-inside:auto; page-break-after:auto; tabstops:none;">Click a <text styleclass="Element">Point</text>, <text styleclass="Interface">start-Point</text>, <text styleclass="Interface">end-Point</text>, <text styleclass="Interface">center-Point</text></li>
+                  <li styleclass="HowTo Bulleted" style="text-align:left; text-indent:-24px; margin-top:0px; margin-right:0px; margin-bottom:0px; margin-left:48px; line-height:1.00; white-space:normal; page-break-inside:auto; page-break-after:auto; tabstops:none;"><text styleclass="Body Text">Click a different </text><text styleclass="Element">Point</text><text styleclass="Body Text">, </text><text styleclass="Interface">start-Point</text><text styleclass="Body Text">, </text><text styleclass="Interface">end-Point</text><text styleclass="Body Text">, or </text><text styleclass="Interface">center-Point</text></li>
+                  <li styleclass="HowTo Bulleted" style="text-align:left; text-indent:-24px; margin-top:0px; margin-right:0px; margin-bottom:0px; margin-left:48px; line-height:1.00; white-space:normal; page-break-inside:auto; page-break-after:auto; tabstops:none;"><text styleclass="Body Text">Click the </text><text styleclass="Interface">graphic-area</text></li>
+                </list>
+                <para styleclass="Body Text">You may need to exit the <text styleclass="Interface">Part-Editor</text> then edit the <text styleclass="Element">Part</text> again.</para>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Body Text"><text styleclass="VariableName">Use Merge-points for</text><text styleclass="Body Text HowTo" style="font-style:italic;">:</text></para>
+          <list id="2" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted"><text styleclass="Interface">Sketch-Loops</text>: for <text styleclass="Element">Profile elements</text><text styleclass="VariableName">&#32;</text></li>
+            <li styleclass="HowTo Bulleted"><text styleclass="Interface">Sketch-Loops</text>: for <text styleclass="Element">Motion-Paths, Belts, motion Guidance</text>.</li>
+            <li styleclass="HowTo Bulleted"><text styleclass="Interface">Gear-Trains</text><text styleclass="Body Text HowTo">: between different Line-of-Centers</text></li>
+            <li styleclass="HowTo Bulleted"><text styleclass="Element">Pulleys</text><text styleclass="Body Text HowTo">: between the </text><text styleclass="Interface">center-Point</text><text styleclass="Body Text HowTo"> of an </text><text styleclass="Element">Arc</text><text styleclass="Body Text HowTo"> and a </text><text styleclass="Element">Line</text><text styleclass="Body Text HowTo"> to add a </text><text styleclass="Element">Driving Pulley</text><text styleclass="Body Text HowTo">.</text></li>
+          </list>
+          <para styleclass="Body Text">Add <text styleclass="Element">Coincident Constraints</text> for construction geometry</para>
+          <para styleclass="SeeAlso" style="margin-left:0px;">See also: <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Sketch-Loop">sketch-path</link>, <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Geometry-Coincident">Add Coincident Constraint</link>.</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td colspan="2">
+          <para styleclass="Notes">Notes:</para>
+          <list id="3" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted">You CANNOT do <text styleclass="T_Menu">Merge-Point command</text> to merge a <text styleclass="Element">Point</text> with the Origin of an <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Part" styleclass="Element">Added-Part</link> (the <text styleclass="Element">CAD-Line&apos;s</text>&#32;<text styleclass="Element">start-Point</text>)</li>
+            <li styleclass="HowTo Bulleted">You CAN, however, merge a <text styleclass="Interface">start-Point</text> or <text styleclass="Interface">end-Point</text> of a sketch-element if you <text style="font-style:italic;">&apos;drag to&apos;</text> or <text style="font-style:italic;">&apos;drag from&apos;</text> the Part&apos;s Origin, (<text styleclass="Element">CAD-Line&apos;s</text>&#32;<text styleclass="Element">start-Point</text>)</li>
+            <li styleclass="HowTo Bulleted">If you merge three(3) <text styleclass="Element">Points</text> to become one <text styleclass="Element">Point</text>, you have a <text styleclass="Interface">&apos;Branch-Point</text>’. A <text styleclass="Interface">sketch-loop</text> cannot have a <text styleclass="Interface">Branch-Point</text>.</li>
+          </list>
+        </td>
+      </tr>
+    </table></para>
+  </body>
+</topic>

@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" status="Under Construction" modified="2022-03-21T14:34:01.779Z" lasteditedby="Adam" version="2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title>Solids | Auto-Layer</title>
+  <keywords>
+    <keyword>Auto-Layer</keyword>
+    <keyword>Solids Menu<keyword>Auto-Layer</keyword></keyword>
+  </keywords>
+  <body>
+    <header>
+      <para styleclass="Heading1">Solids | Auto-Layer</para>
+    </header>
+    <para styleclass="Heading3_atocs_">What is &apos;Auto-Layer&apos;?</para>
+    <para styleclass="Body Text HowTo"><text styleclass="T_Menu">Auto-Layer</text> automatically adds an <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-Extrusion-Offset" styleclass="Parameter">Extrusion-Offset</link> to all <text styleclass="Element">Extrusions</text>. It is intended that extrusions do not collide as the machine cycles.</para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;"/></para>
+    <para styleclass="Notes">Note: </para>
+    <para styleclass="Body Text HowTo">Before you do <text styleclass="T_Menu">Auto-Layer</text> this command, you would usually do <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Command-Solids-AutoProfiles" styleclass="T_Menu">Solids toolbar &gt; Auto-Profile (Mechanism)</link></para>
+    <para styleclass="Body Text HowTo">To see <text styleclass="Interface">Solids</text>, do <text styleclass="T_Menu">Visibility toolbar &gt; </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Visibility-SolidsInMechanisms" styleclass="T_Menu">Show Solids in Mechanisms</link> to see  <text styleclass="Interface">Solids</text>.</para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;"/></para>
+    <para styleclass="Heading3_atocs_">Auto-Layer</para>
+    <para styleclass="Normal"><table styleclass="Standard" rowcount="5" colcount="3" style="head-row-background-color:#ffffff; alt-row-background-color:none;">
+      <thead style="vertical-align:top">
+        <td rowspan="2" style="width:30px;">
+          <para styleclass="VariableName" style="text-align:right;"><image src="MD-Icon-AutoLayer.png" scale="100.00%" figurelistinclude="0"></image></para>
+        </td>
+        <td style="width:76px; height:26px;">
+          <para styleclass="VariableName" style="text-align:right;">Toolbar : </para>
+        </td>
+        <td style="vertical-align:middle;">
+          <para styleclass="T_Menu">Solids toolbar &gt; Auto-Layer</para>
+        </td>
+      </thead>
+      <tr style="vertical-align:top">
+        <td style="width:76px; height:26px;">
+          <para styleclass="VariableName" style="text-align:right;">Menu : </para>
+        </td>
+        <td style="vertical-align:middle;">
+          <para styleclass="T_Menu">Add menu &gt; Mechanism sub-menu &gt; Solids sub-menu &gt; Auto-Layer </para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td colspan="2" style="width:122px;">
+          <para styleclass="VariableName" style="text-align:right;">To Layer : </para>
+        </td>
+        <td>
+          <list id="0" type="ol" listtype="decimal" formatstring="%0:s." format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="B Bullets" style="font-family:'Segoe UI Semibold'; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="B Bullets"><text styleclass="HowTo Bulleted">Click </text><text styleclass="T_Menu">Solids toolbar &gt; Auto-Layer</text><text styleclass="VariableName"> </text></li>
+          </list>
+          <para styleclass="VariableName-IT">- or -</para>
+          <list id="1" type="ol" listtype="decimal" formatstring="%0:s." format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="B Bullets" style="font-family:'Segoe UI Semibold'; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="B Bullets"><text styleclass="HowTo Bulleted">Click </text><text styleclass="T_Menu">Add menu &gt; Mechanism sub-menu &gt; Solids sub-menu &gt; Auto-Layer</text><text styleclass="VariableName"> </text></li>
+          </list>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td colspan="2" style="width:122px;">
+          <para styleclass="VariableName" style="text-align:right;">Result : </para>
+        </td>
+        <td>
+          <para styleclass="Body Text"><text styleclass="T_Menu">Auto-Layer</text> applies <text styleclass="Parameter">Extrusion-Offset</text> and <text styleclass="Parameter">Part-Offset</text> to move each <text styleclass="Element">Extrusion</text> element by a different offset distance. </para>
+          <para styleclass="Body Text">After <text styleclass="T_Menu">Auto-Layer</text>, when you do <text styleclass="T_Menu">Run menu &gt; Cycle</text>, <text styleclass="Element">Extrusions</text> should move across each other, and not move through each other.</para>
+          <para styleclass="Body Text">You can also edit the <text styleclass="Parameter-Header">Extrusion-Offset</text> and <text styleclass="Parameter-Header">Part-Offset</text> of each <text styleclass="Element">Extrusion</text> with the <text styleclass="Element">Extrusion dialog-box</text>.</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td colspan="3">
+          <para styleclass="Body Text"><conditional-text type="IF" value="PDF"/><link displaytype="text" defaultstyle="true" type="filelink" href="AutoLayer.gif">Double-click to watch Solids menu &gt; Auto-Layer</link><conditional-text type="END"/><conditional-text type="IF" value="CHM"/></para>
+          <para styleclass="Heading3_atocs_"><toggle type="picture" print-expanded="true" help-expanded="false" src-collapsed="AutoLayer.gif" src-expanded="AutoLayer.gif" scale="30.00%" width="192" height="144" styleclass="Image Caption" figurelistinclude="0"><caption><![CDATA[Auto-Layer]]></caption><title>Auto-Layer</title></toggle><conditional-text type="END"/><conditional-text type="IF" value="HTML,EBOOK"/></para>
+          <para styleclass="Normal"><video src="AutoLayer.mp4" width="640px" height="480px" autostart="false" loop="false" showcontrols="false" playbutton="true" previewimage="AutoLayer_preview.jpg" scale="30.00%" styleclass="Image Caption"><title>Auto-Layer</title><caption><![CDATA[Auto-Layer]]></caption></video></para>
+          <para styleclass="Body Text"><conditional-text type="END"/></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Normal" style="page-break-before:always;"></para>
+  </body>
+</topic>

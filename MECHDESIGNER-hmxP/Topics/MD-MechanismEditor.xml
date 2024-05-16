@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" status="Under Construction" modified="2024-05-14T15:56:07.299+01:00" lasteditedby="44785" version="2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title>2.2 Mechanism-Editor</title>
+  <keywords>
+    <keyword>Editor<keyword>Mechanism</keyword></keyword>
+    <keyword>Mechanism-Editor:</keyword>
+  </keywords>
+  <body>
+    <header>
+      <para styleclass="Heading1">2.2 Mechanism-Editor</para>
+    </header>
+    <para styleclass="Heading2" style="page-break-before:always;"><image src="2r.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Image Caption">&#32;</text>Mechanism-Editor </para>
+    <para styleclass="Heading3_atocs_">What is a Mechanism-Editor?</para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="1" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Text">Each <text styleclass="Element-Header">Mechanism</text><text styleclass="VariableName"> element</text> that you add to the model with the <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Command-AddMechanism(Mechanism)">Add Mechanism</link> command, adds a new working environment of a <text styleclass="VariableName">Mechanism-Editor</text>.</para>
+          <para styleclass="Body Text">Each working environment includes the <text styleclass="VariableName">Mechanism name-tab</text>, the <text styleclass="VariableName">graphics-area</text>, the <text styleclass="VariableName">XY-axes</text>, and a <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-BasePart" styleclass="Element">Base-Part</link>. The <text styleclass="Element">Base-Part</text> represents the fixed frame of the <text styleclass="VariableName">Mechanism-Editor</text>.</para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading3_atocs_">Why add a Mechanism-Editor?</para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="1" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Text">Use the working environment of <text styleclass="VariableName">Mechanism-Editors</text> to add nearly all of the other elements, and so build your model.</para>
+          <para styleclass="Body Text">You <text styleclass="VariableName">MUST</text> use the <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Menu-Modelelements(Model)" styleclass="VariableName">Model-Editor</link> to add at least one <text styleclass="VariableName">Mechanism-Editor</text>.</para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading3_atocs_">Mechanism-Editor workspace</para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="2" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Normal"><image src="MD-EDITOR-MECHANISM-EX.ipp" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"><caption><![CDATA[Mechanism-Editor- Example]]></caption></image></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="VariableName">Graphics-area <text styleclass="Body Text">: to which you add Kinematic and Machine elements, Kinematic and Modeling Function-Blocks, Solids, Force elements, and other elements.</text></para>
+          <para styleclass="VariableName">Toolbars <text styleclass="Body Text">: to the left, right, above, and below the graphics-area</text><text styleclass="SeeAlso"> - see also Menus and Toolbars</text>, below</para>
+          <para styleclass="VariableName">Name-tabs <text styleclass="Body Text">: each </text><text styleclass="Interface">Mechanism-Editor</text><text styleclass="Body Text"> has a name tab.</text></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading3_atocs_">Menus and Toolbars:</para>
+    <para styleclass="Body Text HowTo">The commands that are in each toolbar are also <text styleclass="T_Menu">Mechanism menu</text><text styleclass="Body Text">, </text><text styleclass="T_Menu">Function-Blocks menu</text><text styleclass="Body Text">, </text><text styleclass="T_Menu">Forces menu</text><text styleclass="Body Text">, and </text><text styleclass="T_Menu">MD-Solids menu.</text></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="1" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Text"><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Command-KinematicElements" styleclass="VariableName">Mechanism menu</link></para>
+          <para styleclass="Body Text HowTo"><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Command-ModelElements(Mechanism)" styleclass="SeeAlso">Model elements toolbar</link><text styleclass="Body Text"> - left of the graphics-area - </text><text styleclass="Bullets">add </text><text styleclass="Element">Planes</text><text styleclass="Bullets"> and add </text><text styleclass="Interface">Mechanism-Editors</text><text styleclass="Bullets"> to </text><text styleclass="Element">Planes</text></para>
+          <para styleclass="Body Text HowTo"><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Command-KinematicElements" styleclass="SeeAlso">Kinematic elements toolbar</link><text styleclass="Body Text"> - left of the graphics-area - add the basic kinematic elements to build kinematic-chains</text></para>
+          <para styleclass="Body Text HowTo"><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Menu-Machine-Elements" styleclass="SeeAlso">Machine elements toolbar</link><text styleclass="Body Text"> - left of the graphics-area - add more complex functional parts to your model</text></para>
+          <para styleclass="VariableName"><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Menu-FunctionBlocks">Function-Blocks menu</link></para>
+          <para styleclass="Body Text HowTo"><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Command-FB-Kinematics" styleclass="SeeAlso">Kinematic Function-Blocks toolbar</link><text styleclass="Body Text"> - right of the graphics-area - plan and measure the motion of each kinematic-chain</text></para>
+          <para styleclass="Body Text HowTo"><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Menu-FB-Modelling" styleclass="SeeAlso">Modeling Function-Blocks toolbar</link><text styleclass="Body Text"> - above the graphics-area - tools that help you do more complex modeling</text></para>
+          <para styleclass="VariableName"><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Menu-Forces">Forces menu</link></para>
+          <para styleclass="Body Text HowTo"><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Menu-Forces" styleclass="SeeAlso">Force elements toolbar</link><text styleclass="Body Text"> - right of the graphics-area - measure force, torque, and power that is required to drive each kinematic-chain</text></para>
+          <para styleclass="VariableName"><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Menu-Solids">MD-Solids menu</link></para>
+          <para styleclass="Body Text HowTo"><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Menu-Solids" styleclass="SeeAlso">MD-Solids toolbar</link><text styleclass="Body Text"> - above the graphics-area - add Solid elements as Extrusions that are extruded from sketch-loops</text></para>
+        </td>
+      </tr>
+    </table></para>
+  </body>
+</topic>

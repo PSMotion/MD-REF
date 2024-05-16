@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" status="Under Construction" modified="2024-05-12T12:02:04.254Z" lasteditedby="44785" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title translate="true">Sinusoidal Motion-Law</title>
+  <keywords>
+    <keyword translate="true">Cam Law: Sinusoidal</keyword>
+    <keyword translate="true">Motion-Law:<keyword translate="true">Sinusoidal</keyword></keyword>
+  </keywords>
+  <body>
+    <header>
+      <para styleclass="Heading1"><text styleclass="Heading1" translate="true">Sinusoidal Motion-Law</text></para>
+    </header>
+    <para styleclass="Heading3_atocs_" style="page-break-before:always;"><text styleclass="Heading3_atocs_" translate="true">Sinusoid Cam-Law, Motion-Law</text></para>
+    <para styleclass="" style="text-align:left; text-indent:0px; margin-top:0px; margin-right:0px; margin-bottom:0px; margin-left:0px; line-height:1.00; background-color:transparent; white-space:normal; page-break-inside:auto; page-break-after:auto; border:none; tabstops:none;"><table styleclass="Default" rowcount="2" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Text"><text styleclass="Interface2" translate="true">Motion Description</text></para>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Body Text"><text styleclass="VariableName" translate="true">This</text><text styleclass="Body Text" translate="true"> is a </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MT-Motion-Cam-Laws" anchor="Standard" styleclass="Body Text" translate="true">Traditional Motion-Law</link><text styleclass="Body Text" translate="true">.</text></para>
+                <para styleclass="Body Table"><text styleclass="Body Table" translate="true">This motion-law is a Sinusoid or </text><text styleclass="VariableName" translate="true">Sine-Wave</text><text styleclass="Body Table" translate="true">. The </text><text styleclass="Parameter" translate="true">Segment-Parameters</text><text styleclass="Body Table" translate="true"> can define the number of Sinusoids, the phase at which the Sinusoid starts, and the amplitude of the Sinusoid.</text></para>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Heading4 Toggle_atocs_"><text styleclass="Interface2" translate="true">Motion-Values</text></para>
+          <para styleclass="Body Text HowTo"><text styleclass="Body Text HowTo" translate="true">You </text><text styleclass="Body Text HowTo" style="color:#ff0000;" translate="true">CAN</text><text styleclass="Body Text HowTo" translate="true"> control the:</text></para>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Parameter"><text styleclass="Parameter" translate="true">Start Position</text></para>
+                <para styleclass="Body Text HowTo"><text styleclass="Body Text HowTo" translate="true">The </text><text styleclass="Parameter" translate="true">Start-Position</text><text styleclass="Body Text HowTo" translate="true"> usually </text><text styleclass="VariableName" translate="true">flows</text><text styleclass="Body Text HowTo" translate="true"> from the </text><text styleclass="Parameter" translate="true">End-Position</text><text styleclass="Body Text HowTo" translate="true"> of the </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MT-POP-Previous-Segment" styleclass="Element" translate="true">Previous-Segment</link><text styleclass="Element" translate="true">.</text></para>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Body Text HowTo"><text styleclass="Body Text HowTo" translate="true">You </text><text styleclass="Body Text HowTo" style="color:#ff0000;" translate="true">CANNOT</text><text styleclass="Body Text HowTo" translate="true"> control the:</text></para>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Parameter"><text styleclass="Parameter" translate="true">End Position</text></para>
+                <para styleclass="Bullets"><text styleclass="Parameter" translate="true">Start Velocity</text><text styleclass="Body Text" translate="true"> and </text><text styleclass="Parameter" translate="true">End Velocity</text><text styleclass="Body Text" translate="true"> </text></para>
+                <para styleclass="Bullets"><text styleclass="Parameter" translate="true">Start Acceleration</text><text styleclass="Body Text" translate="true"> and </text><text styleclass="Parameter" translate="true">End Acceleration</text><text styleclass="Body Text" translate="true"> </text></para>
+                <para styleclass="Bullets"><text styleclass="Parameter" translate="true">Start Jerk</text><text styleclass="Body Text" translate="true"> and </text><text styleclass="Parameter" translate="true">End Jerk </text></para>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Interface2"><text styleclass="Interface2" translate="true">Segment Parameters</text></para>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Body Text CAPITALICS" style="text-align:left; text-indent:0px; margin-top:0px; margin-right:0px; margin-bottom:0px; margin-left:0px; line-height:1.00; background-color:transparent; white-space:normal; page-break-inside:auto; page-break-after:auto; border:none; tabstops:none;"><image src="MT-CamLaw-Sinusoid-SegParameters.ipp" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+                <para styleclass="Body Text"><text styleclass="Parameter" translate="true">Phase</text><text styleclass="Parameter-Header" style="font-family:Arial; font-size:10pt; font-weight:normal; font-style:normal; text-decoration:none; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;" translate="true"> </text><text styleclass="VariableName" translate="true">- (degrees)</text></para>
+                <para styleclass="Body Text HowTo"><text styleclass="Body Text HowTo" translate="true">Enter the circular degrees at the start of the segment</text></para>
+                <para styleclass="Body Text"><text styleclass="Parameter" translate="true">Number-of-Cycles</text><text styleclass="Parameter-Header" style="font-family:Arial; font-size:10pt; font-weight:normal; font-style:normal; text-decoration:none; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;" translate="true"> - </text><text styleclass="VariableName" translate="true">(360 degrees / Cycle)</text></para>
+                <para styleclass="Body Text HowTo"><text styleclass="Body Text HowTo" translate="true">Enter </text><text styleclass="Parameter" translate="true">Number-of-Cycles</text></para>
+                <para styleclass="Body Text HowTo"><text styleclass="Body Text HowTo" translate="true">One machine-cycle = 360 of the circular sinusoidal function.</text></para>
+                <para styleclass="Parameter"><text styleclass="Parameter" translate="true">Amplitude</text></para>
+                <para styleclass="Body Text HowTo"><text styleclass="Body Text HowTo" translate="true">This is the Maximum amplitude of the Sine wave</text></para>
+                <para styleclass="Body Text HowTo"><text styleclass="Body Text HowTo" translate="true">Amplitude = Peak-to-Peak / 2</text></para>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Interface2"><text styleclass="Interface2" translate="true">Segment-Range</text></para>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Parameter"><text styleclass="Parameter" translate="true">Start-Range</text></para>
+                <para styleclass="Parameter"><text styleclass="Parameter" translate="true">End- Range</text></para>
+                <para styleclass="Parameter"><text styleclass="Parameter" translate="true">0 ≤ Start-Range &lt; End-Range ≤ 1</text></para>
+              </td>
+            </tr>
+          </table></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="vertical-align:top; height:43px;">
+          <para styleclass="Image Caption"><image src="MT-CamLaw-Sinusoid.ipp" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"><caption translate="true"><![CDATA[SINUSOID  segment 
+Amplitude =0.5 ; Number of Cycles = 1, Phase = 0]]></caption></image></para>
+        </td>
+      </tr>
+    </table></para>
+  </body>
+</topic>

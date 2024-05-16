@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" status="Under Construction" modified="2023-05-25T13:46:21.268+01:00" lasteditedby="Adam" version="2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title>Why do I need to add Geometry to the Base-Part?</title>
+  <keywords>
+    <keyword>Base-Part<keyword>Why is ther no Geometry in the Base-Part?</keyword></keyword>
+  </keywords>
+  <body>
+    <header>
+      <para styleclass="Heading1">Why do I need to add Geometry to the Base-Part?</para>
+    </header>
+    <para styleclass="Heading3_atocs_">Why do I need to add geometry to the Base-Part?</para>
+    <list id="0" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Body Text HowTo" style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+      <li styleclass="Body Text HowTo">Why is there not a <text styleclass="Element">CAD-Line</text> in the <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-BasePart" styleclass="Element">Base-Part</link>?<text style="font-weight:bold;">&#32;</text></li>
+    </list>
+    <para styleclass="Body Text HowTo">We do not want you to automatically add Joints to the Origin of the <text styleclass="Element">Base-Part.</text></para>
+    <para styleclass="Body Text HowTo"><text styleclass="Body Text HowTo2">However, you are welcome to do this.</text></para>
+    <list id="1" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="2" styleclass="HowTo Numbered" style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+      <li styleclass="HowTo Numbered">Why?<text style="font-weight:bold;">&#32;</text></li>
+    </list>
+    <para styleclass="Body Text HowTo">For the <text styleclass="Element">Base-Part</text>, we have found it to be useful to add <text styleclass="Element">Points</text> and <text styleclass="Element">Lines</text> that are <text style="text-decoration:underline;">not</text> at the Origin or along the X-axis or Y–axis. We then add dimensions to give the position of the Points and Lines relative to the origin of the <text styleclass="Element">Base-Part</text>.</para>
+    <list id="2" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="3" styleclass="HowTo Numbered" style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+      <li styleclass="HowTo Numbered">Why?<text style="font-weight:bold;">&#32;</text></li>
+    </list>
+    <para styleclass="Body Text HowTo">You can <text style="text-decoration:underline;">edit</text> the dimensions later, and also add them to a <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Command-AddFBDesignSet" styleclass="Element">Design-Set</link>.</para>
+    <list id="3" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="4" styleclass="HowTo Numbered" style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+      <li styleclass="HowTo Numbered">Why edit <text styleclass="Element">Points</text> and <text styleclass="Element">Lines</text> in the <text styleclass="Element">Base-Parts</text>?<text style="font-weight:bold;">&#32;</text></li>
+    </list>
+    <para styleclass="Body Text HowTo">You have the design flexibility to:</para>
+    <list id="4" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Numbered" style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+      <li styleclass="HowTo Numbered">Move the Joints, if the <text styleclass="Element">Points</text> or <text styleclass="Element">Lines</text> are used for Joints<text style="font-weight:bold;">&#32;</text></li>
+      <li styleclass="HowTo Numbered">Move the <text styleclass="Element">Plane</text> and <text styleclass="Interface">Mechanism-Editor</text> in the Machine Frame, if a <text styleclass="Element">Line</text> is used for a new <text styleclass="Element">Plane</text> and then <text styleclass="Interface">Mechanism-Editor</text>.</li>
+    </list>
+  </body>
+</topic>

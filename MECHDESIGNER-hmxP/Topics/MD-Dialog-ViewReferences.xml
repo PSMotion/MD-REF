@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" status="Under Construction" modified="2024-04-01T15:14:25.854+01:00" lasteditedby="44785" version="2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title>Dialog: View References</title>
+  <keywords>
+    <keyword>Dialog<keyword>View References</keyword></keyword>
+    <keyword>View References</keyword>
+  </keywords>
+  <body>
+    <header>
+      <para styleclass="Heading1">Dialog: View References</para>
+    </header>
+    <para styleclass="Heading2" style="page-break-before:always;">Show Element References</para>
+    <para styleclass="SeeAlso">See also: <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Delete-DependentElements">Delete Dependent Elements</link></para>
+    <para styleclass="Normal"><line style="height:1px; color:#343400;" /></para>
+    <para styleclass="Body Text">Many elements reference, or need, other elements.</para>
+    <para styleclass="Body Text HowTo"><text styleclass="VariableName">Show Element References</text><text styleclass="Body Text"> is a list of those elements</text> that a more complex element needs.</para>
+    <para styleclass="Body Text HowTo">For example, when you add a <text styleclass="Element">Pin-Joint</text>, you select one <text styleclass="Element">Point</text> from two different <text styleclass="Element">Parts</text><text styleclass="Body Text">. Therefore</text>, the <text styleclass="VariableName">Reference Elements</text> of the <text styleclass="Element">Pin-Joint</text> are the two <text styleclass="Element">Points</text><text styleclass="Body Text">.</text></para>
+    <para styleclass="Body Text"><table styleclass="Default" rowcount="4" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Normal"><image src="MD-SW-Show-Element-References.ipp" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"><caption><![CDATA[Selection--Window: Right-Click]]></caption></image></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Table">To Show <text styleclass="VariableName">Element References</text> for an element:</para>
+          <list id="0" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Numbered" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo Numbered">Click an <text styleclass="Element">Element</text> in <text styleclass="Body Text">the graphics-area, or the</text>&#32;<text styleclass="Interface">Assembly-Tree</text><text styleclass="VariableName">&#32;</text></li>
+          </list>
+          <para styleclass="HowTo Numbered">The element should be in the <text styleclass="Interface">Selection-Window</text><text styleclass="Body Text">.</text></para>
+          <para styleclass="HowTo Numbered">Right-click the <text styleclass="Element">element</text> in the <text styleclass="Interface">Selection-Window</text><text styleclass="VariableName">&#32;</text></para>
+          <list id="0" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Numbered" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo Numbered">Click <text styleclass="VariableName">Show Element References</text> in the <text styleclass="Body Text">shortcut menu</text></li>
+          </list>
+          <para styleclass="HowTo Numbered"><text styleclass="Body Text">The </text><text styleclass="VariableName">List References for: element-name</text><text styleclass="Body Text"> shows.</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Normal"><image src="MD-Dialog-Element-References.ipp" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"><title>EXAMPLE: Element References for a 2D-Cam</title><caption><![CDATA[EXAMPLE: Element References for a 2D-Cam]]></caption></image></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Table">The example shows the: </para>
+          <list id="1" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted"><text styleclass="VariableName">Reference Element name</text></li>
+            <li styleclass="VariableName-indent">Number </li>
+            <li styleclass="VariableName-indent">Reference Element Type</li>
+            <li styleclass="VariableName-indent">Reference Element Owner</li>
+          </list>
+        </td>
+      </tr>
+    </table></para>
+  </body>
+</topic>

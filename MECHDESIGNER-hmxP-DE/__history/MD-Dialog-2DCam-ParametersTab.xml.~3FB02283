@@ -1,0 +1,171 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" modified="2022-09-06T14:14:19.323+01:00" lasteditedby="Adam" version="2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title>Dialog: 2D-Cam &gt; Parameters tab</title>
+  <keywords>
+    <keyword>2D-Cam dialog-box<keyword>Parameters tab</keyword></keyword>
+  </keywords>
+  <body>
+    <header>
+      <para styleclass="Heading1">-&gt; Parameters tab</para>
+    </header>
+    <para styleclass="Heading2"><anchor id="2DCAM-DIALOG-PARAMS-TAB"><keywords><keyword>2D-Cam dialog-box<keyword>Parameters tab</keyword></keyword></keywords></anchor> 2D-Cam dialog-box: Parameters tab</para>
+    <para styleclass="Body Text"><image src="MD-DIALOG-2DCAM-PARAMETERS-CLOSED.ipp" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"><caption><![CDATA[2D-Cam dialog: Parameters tab]]></caption></image></para>
+    <para styleclass="Heading3_atocs_">Parameters tab</para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="Separator-Header" style="text-indent:-36px; margin-left:39px;"><anchor id="2DCAM-DIALOG-RANGE-RADIUS" styleclass="Body Text HowTo"><keywords><keyword>2D-Cam dialog-box<keyword>Minimum Radius Warning</keyword><keyword>Display Cam Range</keyword><keyword>Radius - Undercutting Warrning</keyword></keyword></keywords></anchor><image src="tog_plus.gif" scale="100.00%" figurelistinclude="0"></image><tab /><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" src-collapsed="tog_plus.gif" src-expanded="tog_minus.gif"><caption><![CDATA[ Cam Range and Radius...      ]]></caption></toggle></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="3" colcount="2">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Normal" style="text-align:right;"><image src="MD-Dialog-2DCam-CamParameters-CamRange.ipp" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="Body Table"><image src="Red-14-1.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Parameter-Header"> Radialer Spalt / Play (</text><text styleclass="Parameter">mm</text><text styleclass="Parameter-Header">) </text><text styleclass="Body Text"> Default = 0</text></para>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="3" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Normal"><image src="MD-DIALOG-2DCAM-COORDINATES-RADIAL-CLEARANCE.ipp" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"><caption><![CDATA[Cam without Radial Clearance]]></caption></image></para>
+              </td>
+            </tr>
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Normal"><image src="MD-DIALOG-2DCAM-COORDINATES-RADIAL-CLEARANCE-1.ipp" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"><caption><![CDATA[Cam with 0.2mm Radial Clearance]]></caption></image></para>
+              </td>
+            </tr>
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Body Text">Mit diesem Parameter wird ein neues Nockenprofil berechnet, das gegenüber dem echten Nockenprofil versetzt ist.</para>
+                <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+                <para styleclass="Body Table"><text styleclass="VariableName">E.G.1: Rillen-Nocken-Typ</text> (<text styleclass="Body Text HowTo">+ve) : ein </text>kleines<text styleclass="Body Text HowTo"> Spiel für ein Rollenlager, das zwischen die Nockenflanken eines Rillenkurventyps passt.</text></para>
+                <para styleclass="Body Table"><text styleclass="VariableName">E.G. 2: Konjugierter Nockentyp</text><text styleclass="Body Text HowTo"> (+ve) : ein geringes Spiel zum Ausgleich von Montagetoleranzen bei einem konjugierten Nockentyp. </text></para>
+                <para styleclass="Body Table"><text styleclass="VariableName">E.G. 3: Grobschnitt</text><text styleclass="Body Text HowTo"> (–ve) : können Sie Daten für einen Rohschnitt der Kurve exportieren.</text></para>
+                <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+                <para styleclass="VariableName">Hinweis: </para>
+                <list id="0" type="ol" listtype="lower-alpha" formatstring="&#37;&#48;&#58;&#115;&#41;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Body Text HowTo" style="font-family:&apos;Noto Sans&apos;; font-size:11pt; color:#000000;">
+                  <li styleclass="Body Text HowTo"><text styleclass="Body Text">Sie können den Radialabstand auch im </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-FunctionBlock-CamCoordinates" styleclass="SeeAlso">Dialogfeld Nockenkoordinaten</link><text styleclass="Body Text">bearbeiten .</text></li>
+                  <li styleclass="Body Text HowTo">Kurvenrollen haben oft eine große negative Toleranz - z.B. <equation styleclass="Body Text;vertical-align:text-bottom" style="font-family:Arial; font-size:10pt; font-weight:normal; font-style:normal; text-decoration:none; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;vertical-align:text-bottom" font-size="26"><![CDATA[0\  - \ 50\mu m]]></equation><text styleclass="Body Text"> - was zu viel oder zu wenig Spiel für einen Nutenstößel bedeuten kann!</text></li>
+                  <li styleclass="Body Text HowTo">Kurvenrollen haben oft eine große negative Toleranz - z.B. <equation styleclass="Body Text;vertical-align:text-bottom" style="font-family:Arial; font-size:10pt; font-weight:normal; font-style:normal; text-decoration:none; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;vertical-align:text-bottom" font-size="26"><![CDATA[0\  - \ 50\mu m]]></equation><text styleclass="Body Text"> - was für eine Nutkurve ausreichend oder auch zu viel Spiel sein kann.</text></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:228px;">
+          <para styleclass="Normal" style="text-align:right;"><image src="MD-RADIUSCURVATUREWARNING.ipp" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"><caption><![CDATA[Cam-Profile RED = Warning]]></caption></image></para>
+        </td>
+        <td>
+          <para styleclass="Body Table"><image src="Red-14-2.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Parameter-Header"> Nocken ROC &apos;Soft-Limit&apos; ( %)</text></para>
+          <para styleclass="Body Table"><text styleclass="Body Text">Default - see </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-Application-Settings" anchor="App-General" styleclass="SeeAlso">Application Settings</link><text styleclass="SeeAlso"> &gt; General tab &gt; Cam Radius Soft-Limits = Default value.</text></para>
+          <para styleclass="Body Text">Der Parameter vergleicht den Radius der Nocke (ROC) mit dem Radius der Rolle. Er ist NUR eine Warnung.</para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Body Table"><text styleclass="VariableName" style="color:#ff0000;">Warnung, wenn: </text><text styleclass="Body Text">&#32;</text><equation styleclass="Body Text;vertical-align:text-bottom" style="font-family:Arial; font-size:10pt; font-weight:normal; font-style:normal; text-decoration:none; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;" font-size="28" color="#0039e3"><![CDATA[ \left| \lfrac{Roc_{cam}}{R_{foll}} \right|\times 100\percent < \left( Soft-Limit \right)\percent]]></equation><text styleclass="VariableName">...</text></para>
+                <para styleclass="Body Text">... dann <text styleclass="Body Text HowTo"> ist das </text><text styleclass="VariableName">Cam-Profil</text> nur<text styleclass="Normal"> zur </text><text styleclass="VariableName" style="color:#ff0000;">Warnung </text><text styleclass="Interface2" style="color:#ff0000;">ROT</text><text styleclass="Element" style="color:#ff0000;">.</text></para>
+                <para styleclass="Body Text">Sie sollten Ihre Nocken auf Unterschneidungen, hohe Kontaktspannung, geringe Lebensdauer usw. untersuchen.</para>
+                <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+                <para styleclass="Body Text">Z.B.: Wenn <text styleclass="Parameter-Header">Cam ROC &apos;Soft-Limit&apos; = 100%</text> ...</para>
+                <para styleclass="Body Text HowTo">... dann ist das <text styleclass="VariableName">Nockenprofil</text>&#32;<text styleclass="Interface2" style="color:#ff0000;">ROT</text>, wenn <text styleclass="VariableName">der Krümmungsradius der Nocke</text> kleiner ist als der <text styleclass="VariableName">Radius der Rolle. </text></para>
+              </td>
+            </tr>
+          </table></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:228px;">
+          <para styleclass="Normal"><image src="MD-CAM-REDUCED-RANGE.ipp" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"><caption><![CDATA[Example:
+Cam Start 'NOT EQUAL' to 0
+Cam Range < 360]]></caption></image></para>
+        </td>
+        <td>
+          <para styleclass="Body Table"><image src="Red-14-3.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Parameter-Header"> Nocken Start ; </text><text styleclass="Body Text">Standard = 0 : Siehe Bild - &#160;z.B. </text><image src="Red-14-1.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+          <para styleclass="Body Table"><text styleclass="Parameter-Header"> &#160; &#160; Nockenreihe &#160;</text> Standard = 360 &#160;: Siehe Bild - <text styleclass="Body Text">z.B. </text><image src="Red-14-1.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Image Caption"> zu </text><image src="Red-14-2.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Parameter-Header">;</text></para>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Body Table"><text style="font-style:normal;">Verwenden:</text></para>
+                <list id="1" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+                  <li styleclass="HowTo Bulleted"><text style="font-style:normal;">um die Nocke für weniger als 360 des Maschinenzyklus anzuzeigen, </text><text styleclass="VariableName">und/oder </text></li>
+                  <li styleclass="HowTo Bulleted"><text style="font-style:normal;">um diese Anzeige bei einem anderen </text><text styleclass="Interface">Master-Maschinenwinkel</text><text style="font-style:normal;">zu starten &#160;</text></li>
+                </list>
+                <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+                <para styleclass="Body Table"><text styleclass="Interface2">Z.B.1 </text><text styleclass="VariableName">Ein Kurventeil dreht sich N(Umdrehungen) / Maschinenzyklus. Geben Sie dann</text>&#32;<text styleclass="Parameter-Header">Cam Start: 0 </text><text styleclass="Body Text">und</text><text styleclass="Parameter-Header"> Nockenbereich: 360 / N(</text><text styleclass="Parameter">Umdrehungen</text><text styleclass="Parameter-Header">)</text><text styleclass="Body Text">&#32;</text></para>
+                <para styleclass="Body Table"><text styleclass="Interface2">Z.B. 2 </text><text styleclass="VariableName">Schlitznocken</text><text styleclass="Body Text"> können offen sein (eine Seitenwand), schneller Rücklauf (3:1): </text><text styleclass="Parameter-Header">Nocken Start: ? </text><text styleclass="Body Text">und</text><text styleclass="Parameter-Header"> Nockenbereich: 270</text></para>
+              </td>
+            </tr>
+          </table></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Separator-Header" style="text-indent:-36px; margin-left:39px;"><anchor id="2DCAM-DIALOG-LIFETIME-PROPERTIES" styleclass="Body Text"><keywords><keyword>2D-Cam dialog-box<keyword>Enable Roller and Cam Lifetime calculations</keyword><keyword>Enter Cam-Stress Safety-Factor</keyword></keyword></keywords></anchor><image src="tog_plus.gif" scale="100.00%" figurelistinclude="0"></image><tab /><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" src-collapsed="tog_plus.gif" src-expanded="tog_minus.gif"><caption><![CDATA[ Enable Lifetime, Edit Safety-Factor  ]]></caption></toggle></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="3" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:255px;">
+          <para styleclass="Normal"><image src="MD-DIALOG-2DCAM-PARAMETERS-ENABLE-LIFETIMES.ipp" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"><caption><![CDATA[Cam-Follower Material Properties]]></caption></image></para>
+        </td>
+        <td>
+          <list id="2" type="ul" listtype="bullet" formatstring="&#254;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Body Table" style="font-family:Wingdings; font-size:11pt; color:#333399;">
+            <li styleclass="Body Table"><text styleclass="Parameter-Header"> Show Roller and Cam Lifetimes</text></li>
+          </list>
+          <para styleclass="Body Text"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Body Text">Wenn Sie dieses Kontrollkästchen aktivieren, <text styleclass="Body Table">fügen wir zwei neue Registerkarten hinzu.</text></para>
+                <list id="3" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+                  <li styleclass="HowTo Bulleted"><text styleclass="Interface2">Walzenleben</text> - <text styleclass="SeeAlso">see </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-2DCam-RollerLifeTab" styleclass="SeeAlso">Roller Life</link>&#32;</li>
+                  <li styleclass="HowTo Bulleted"><text styleclass="Interface2">Nockenleben</text><text styleclass="Body Text"> - </text><text styleclass="SeeAlso">see </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-2DCam-CamLifetab" styleclass="SeeAlso">Cam Life</link><text styleclass="Body Text">&#32;</text></li>
+                </list>
+                <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+                <para styleclass="Body Text"><text styleclass="Notes">Hinweis</text>: Bei &#160;aktivierten <text styleclass="VariableName">Lebensdauern</text> berechnen wir die Lebensdauer des <text styleclass="Parameter-Header">äußeren</text>&#32;<text styleclass="Interface2" style="color:#ff0000;">oder</text> des <text styleclass="Parameter-Header">inneren</text> Nockenprofils. Wir entfernen die &#160;Optionen für <text styleclass="Normal"> die</text><text styleclass="Parameter-Header">Nuten</text> auf <text styleclass="Normal"> der</text><text styleclass="VariableName">Registerkarte Anzeige.</text></para>
+                <para styleclass="SeeAlso">Siehe<text styleclass="VariableName">&#32;</text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-2DCam-DisplayTab" anchor="2DCAM-DIALOG-DISPLAY-VISIBILITIY" styleclass="VariableName">Display tab &gt;</link><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-2DCam-DisplayTab" anchor="2DCAM-DIALOG-DISPLAY-VISIBILITIY" styleclass="Separator"> Cam Display options </link><text styleclass="Separator">&#32;</text><text styleclass="HowTo STEP">&#32;</text></para>
+              </td>
+            </tr>
+          </table></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td colspan="2">
+          <para styleclass="Body Table"><text styleclass="Parameter-Header">Sicherheits-Faktor (Nocken)</text></para>
+          <para styleclass="Body Text"><text styleclass="Parameter">Sicherheitsfaktor</text> gilt für die <text styleclass="VariableName">Kontaktspannung der Nocke</text> UND die <text styleclass="VariableName">äquivalente Kontaktkraft der Rolle (Last)</text></para>
+          <para styleclass="Body Text"><text styleclass="VariableName">Registerkarte Nockenleben</text></para>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Body Text"><text styleclass="VariableName">Dynamische maximale Kontaktspannung der Nocke = maximale Kontaktspannung × </text><text styleclass="Parameter-Header">Sicherheitsfaktor (Nocke)</text></para>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="VariableName">Registerkarte Rollenleben</para>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Body Text"><text styleclass="Notes" style="color:#ff0000;">ANMERKUNG</text><text styleclass="Interface2" style="color:#ff0000;">: </text><text styleclass="Interface2">Sicherheitsfaktor</text><text styleclass="Body Text HowTo"> (</text><text style="color:#ff0000;">Rolle</text><text styleclass="Body Text HowTo">)</text><text styleclass="VariableName"> =</text><text styleclass="Parameter-Header"> Sicherheitsfaktor (</text><text styleclass="Parameter-Header" style="color:#ff0000;">Nocken</text><text styleclass="Parameter-Header">)</text><text styleclass="Parameter-Header" style="font-size:12pt; vertical-align:super; color:#ff0000;">2</text></para>
+                <para styleclass="Body Text">Z.B.: Wenn <text styleclass="Parameter">Sicherheitsfaktor (Nocken)</text> = 1,1 ; <text styleclass="Interface">Sicherheitsfaktor (Rolle) </text><text styleclass="Body Text HowTo">= 1,21</text></para>
+                <para styleclass="Body Text"><equation styleclass="VariableName" font-size="32"><![CDATA[\therefore]]></equation><text styleclass="VariableName"> Dynamische äquivalente Belastung der Rolle = äquivalente Belastung × </text><text styleclass="Parameter-Header">Sicherheitsfaktor (Nocken)</text><text styleclass="Parameter" style="font-size:12pt; vertical-align:super; color:#ff0000;">2</text></para>
+              </td>
+            </tr>
+          </table></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td colspan="2">
+          <para styleclass="Body Table">Der <text styleclass="Parameter-Header">Sicherheitsfaktor</text> sollte mindestens die folgenden Punkte berücksichtigen.</para>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Body Text">Überlegen Sie, wie die Nockenwelle angetrieben wird - durch einen Servomotor mit konstanter Geschwindigkeit oder durch einen Einzylinder-Dieselmotor?</para>
+                <para styleclass="Body Text">Was treibt der Cam-Follower an - einen reibungslos arbeitenden Papierfalter oder eine Schmiedepresse?</para>
+                <para styleclass="Body Text">Steifigkeit, Starrheit, Trägheit, Eigenfrequenz und Spiel der Nutzlast im Verhältnis zur Drehgeschwindigkeit der Nockenwelle.</para>
+                <para styleclass="Body Text">Wie groß ist die Schwere der Bewegung?</para>
+                <para styleclass="Body Text">Gibt es ein Spiel im Antriebssystem und/oder im angetriebenen System.</para>
+              </td>
+            </tr>
+          </table></para>
+        </td>
+      </tr>
+    </table></para>
+  </body>
+</topic>

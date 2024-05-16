@@ -1,0 +1,258 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" modified="2022-03-27T10:27:37.423+01:00" lasteditedby="Adam" version="2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title>Mechanism | Add Bevel Gear-Pair</title>
+  <keywords>
+    <keyword>Add<keyword>Bevel Gears</keyword></keyword>
+    <keyword>Machine elements toolbar<keyword>Add Gear-Pair [Bevel]</keyword></keyword>
+    <keyword>Menu &gt; Add &gt; Mechanism Menu<keyword>Gear-Pair [Bevel]</keyword></keyword>
+  </keywords>
+  <body>
+    <header>
+      <para styleclass="Heading1">Mechanism | Add Bevel Gear-Pair</para>
+    </header>
+    <para styleclass="Heading2">Add Bevel Gear-Pair</para>
+    <para styleclass="SeeAlso">See also: <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-GearPair">Gear-Pair dialog-box</link>&#32;</para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="Heading3_atocs_">What is a Bevel Gear-Pair?</para>
+    <para styleclass="Body Text HowTo">A <text styleclass="VariableName-IT">Bevel Gear-Pair </text>is two(2) Gears that rotate in mesh, with each gear on a different <text styleclass="VariableName-IT">Plane</text>. with intersecting rotational-axes.</para>
+    <para styleclass="Body Text HowTo"><text styleclass="VariableName">Gear-1</text> is the <text styleclass="VariableName-IT">Driving-Gear</text>. Its motion is defined before you add the <text styleclass="VariableName-IT">Bevel Gear-Pair</text>. </para>
+    <para styleclass="Body Text HowTo">The motion of <text styleclass="VariableName">Gear-2</text> is a function of the gear ratio and the mesh.</para>
+    <para styleclass="Body Text HowTo">The gears may have an external or an internal mesh.</para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="Heading3_atocs_">Add Bevel Gear-Pair command</para>
+    <para styleclass="Body Text HowTo">We use the same command to add a <text styleclass="Element">Bevel Gear-Pair</text>. as we use to add a <text styleclass="Element">Gear-Pair</text></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Standard" rowcount="3" colcount="2" style="width:auto;">
+      <tr style="vertical-align:middle">
+        <td style="width:130px; height:26px;">
+          <para styleclass="VariableName" style="text-align:right;"><image src="MD-Icon-AddGearPair.png" scale="100.00%" figurelistinclude="0"><title>R13 -Icon Add Gear-Pair</title></image></para>
+        </td>
+        <td>
+          <para styleclass="T_Menu">Machine Elements Toolbar : Add Gear-Pair</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:middle">
+        <td style="width:130px; height:26px;">
+          <para styleclass="VariableName" style="text-align:right;">Menu : </para>
+        </td>
+        <td>
+          <para styleclass="Body Text"><text styleclass="T_Menu">Add menu &gt; Mechanism sub-menu &gt; Add Gear-Pair</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:middle">
+        <td style="width:130px; height:26px;">
+          <para styleclass="VariableName" style="text-align:right;">Edit Gear-Pair : </para>
+        </td>
+        <td>
+          <para styleclass="Element"><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-GearPair">Gear-Pair dialog-box</link></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="Heading3_atocs_">Prepare Bevel Gear-Pair</para>
+    <para styleclass="Body Text">The preparation to add a Bevel Gear-Pair is more complex than <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Command-AddGear-Pair" styleclass="T_Menu">Add Gear-Pair</link>.</para>
+    <para styleclass="Body Text HowTo">We can compare <text styleclass="T_Menu">Add Gear-Pair</text> and <text styleclass="T_Menu">Add Bevel Gear-Pair</text>.</para>
+    <para styleclass="Body Text HowTo"><table styleclass="PopupTable" rowcount="3" colcount="2" style="border-width:0px; border-spacing:0px; border-collapse:collapse; cell-border-width:1px; border-color:#993300; border-style:solid;">
+      <tr style="vertical-align:top">
+        <td style="background-color:#ececec;">
+          <para styleclass="T_Menusmall" style="text-align:center;">Add Gear-Pair</para>
+        </td>
+        <td style="background-color:#ececec;">
+          <para styleclass="T_Menusmall" style="text-align:center;">Add Bevel Gear-Pair</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Popup Box" style="text-align:center;"><text styleclass="VariableName-small">3</text>&#32;<text styleclass="Popup Box-Elements">Lines</text> and <text styleclass="VariableName-small">2</text>&#32;<text styleclass="Popup Box-Elements">Pin-Joints</text></para>
+        </td>
+        <td>
+          <para styleclass="Popup Box" style="text-align:center;"><text styleclass="VariableName-small">3</text>&#32;<text styleclass="Popup Box-Elements">Lines</text> and <text styleclass="VariableName-small">2</text>&#32;<text styleclass="Popup Box-Elements">Pin-Joints</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Popup Box" style="text-align:center;"><text styleclass="VariableName-small">1</text>&#32;<text styleclass="Popup Box2">Mechanism-Editor</text></para>
+        </td>
+        <td>
+          <para styleclass="Popup Box" style="text-align:center;"><text styleclass="VariableName" style="color:#ff0000;">2</text>&#32;<text styleclass="Popup Box2">Mechanism-Editor</text></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Body Text HowTo"><text styleclass="Body Text">The </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-Plane-Mechanism" styleclass="Body Text">Mechanism-Planes</link><text styleclass="Body Text"> of the two(2) </text><text styleclass="Interface">Mechanism-Editors</text><text styleclass="Body Text"> must intersect. They are frequently perpendicular to each other.</text></para>
+    <para styleclass="Body Text HowTo"><text styleclass="Body Text">For convenience, the we call the two </text><text styleclass="Interface">Mechanism-Editors</text><text styleclass="Body Text">&#32;</text><text styleclass="Interface2">Mechanism-A</text><text styleclass="Body Text"> and </text><text styleclass="Interface2">Mechanism-B.</text></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="5" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:236px;">
+          <para styleclass="Normal"><image src="MD-GA-Rotating-Part.ipp" scale="99.99%" width="240" height="180" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td style="border-top:none;">
+          <para styleclass="VariableName"><text styleclass="Interface2">Preparation A</text>: <text styleclass="Interface2">Mechanism A</text></para>
+          <para styleclass="Body Text HowTo"><table styleclass="PopupTable2" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Body Table"><text styleclass="Element">Line</text><image src="Red-14-1.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Body Text"> &amp; </text><text styleclass="Element">Line</text><image src="Red-14-3.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Image Caption">&#32;</text><text styleclass="Body Text">are in </text><text styleclass="Element">Parts</text><text styleclass="Body Text"> that are </text><text styleclass="Interface">kinematically-defined </text></para>
+                <para styleclass="Body Table"><text styleclass="Element">Lines</text><image src="Red-14-1.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><image src="Red-14-2.gif" scale="100.00%" styleclass="Element" figurelistinclude="0"></image><text styleclass="Image Caption">&#32;</text><text styleclass="Body Text">are joined with </text><text styleclass="Element">Pin-Joints</text><text styleclass="Body Text"> to each end of </text><text styleclass="Element">Line</text><image src="Red-14-3.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+                <para styleclass="Body Table"><text styleclass="Element">Line</text><image src="Red-14-3.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Element">&#32;</text><text styleclass="Body Text">has a </text><text styleclass="Element">dimension</text><image src="Red-14-4.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Element">&#32;</text><text styleclass="Body Text">(in the </text><text styleclass="Interface">Part-Editor</text><text styleclass="Body Text">)</text></para>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Body Text"><text styleclass="SeeAlso">See </text><image src="MD-Globe-www.png" scale="70.00%" width="14" height="14" styleclass="SeeAlso" figurelistinclude="0"></image><text styleclass="SeeAlso">&#32;</text><link displaytype="text" defaultstyle="true" type="weblink" href="http://mechdesigner.support/index.htm?mechdesigner-tutorial-1-add-crank.htm" target="_blank" styleclass="SeeAlso">Tutorial 1: Add a Rotating-Part</link>.</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:236px;">
+          <para styleclass="Normal"><image src="MD-BEVEL-ADDPLANE-MOVEPLANE.ipp" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="VariableName">Preparation 2: Add a Plane to the Line in the Base-Part</para>
+          <list id="0" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="margin-top:0px; font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo Bulleted" style="margin-top:0px;"><text styleclass="Body Text">Click </text><text styleclass="T_Menu">Model menu (or toolbar) &gt; Add Plane</text><text styleclass="VariableName">&#32;</text></li>
+            <li styleclass="HowTo Bulleted" style="margin-top:0px;"><text styleclass="Body Text">Click the </text><text styleclass="Element">Line</text><image src="Red-14-3.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Body Text"> in the </text><text styleclass="Element">Base-Part</text></li>
+          </list>
+          <list id="1" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="margin-top:0px; font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted" style="margin-top:0px;"><text styleclass="Body Text">In the Add Plane dialog:</text></li>
+          </list>
+          <list id="2" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Numbered" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo Numbered">Click the <text styleclass="Parameter-Header">Move Plane to end-Point</text><image src="Red-14-4.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image> check-box<text styleclass="VariableName">&#32;</text></li>
+            <li styleclass="HowTo Numbered"><text styleclass="Body Text HowTo">Enter</text><text styleclass="Parameter">&#32;</text>90º in the <text styleclass="Parameter-Header">Rotate around the Z-axis</text><image src="Red-14-5.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></li>
+            <li styleclass="HowTo Numbered">Enter 90º (default value) is in <text styleclass="Parameter-Header">Rotate around the x-axis</text><image src="Red-14-6.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image>.</li>
+          </list>
+          <para styleclass="HowTo Numbered"><image src="MD-GA-AddPlane-End-Point.png" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:236px;">
+          <para styleclass="Normal"><image src="MD-BEVEL--02.ipp" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="VariableName">Preparation 3: Add a Mechanism-Editor to the new Plane</para>
+          <list id="3" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="margin-top:0px; font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo Bulleted" style="margin-top:0px;"><text styleclass="Body Text">Click </text><text styleclass="T_Menu">Model toolbar &gt; Add Mechanism-Editor</text><text styleclass="VariableName">&#32;</text></li>
+            <li styleclass="HowTo Bulleted" style="margin-top:0px;"><text styleclass="Body Text">Click the new </text><text styleclass="Element">Plane</text><image src="Red-14-7.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></li>
+          </list>
+          <para styleclass="HowTo Bulleted" style="margin-top:0px;"><text styleclass="Body Text">You jump to the new </text><text styleclass="Interface">Mechanism-Editor</text></para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="Body Table">A) Do <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Visibility-ShowOtherMechanisms" styleclass="T_Menu">Visibility toolbar&gt; Show other Kinematic and Sketch elements</link></para>
+          <para styleclass="Body Table">B) Do <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Visibility-ShowOtherMechanisms" anchor="VISIBILITY-SHOW-OTHER-MECH-LIGHTBULB" styleclass="VariableName">Show with other Kinematic and Sketch-Elements</link><text styleclass="VariableName">&#32;</text></para>
+          <para styleclass="Body Table">C) Spin the model to show the other kinematic and sketch-elements </para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:236px;">
+          <para styleclass="Normal"><image src="MD-BEVEL--03.ipp" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="VariableName">Preparation 4: Add a new Part and Pin-Joint </para>
+          <list id="4" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="Bullets">Click <text styleclass="T_Menu">Kinematic elements toolbar &gt; Add Part</text><text styleclass="VariableName"> | </text>Drag to add the <text styleclass="Element">Part</text><image src="Red-14-8.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="VariableName">&#32;</text></li>
+            <li styleclass="HowTo Bulleted" style="margin-top:0px;"><text styleclass="Body Text">Click </text><text styleclass="T_Menu">Kinematic elements toolbar &gt; Add Pin-Joint</text><image src="Red-14-10a.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></li>
+            <list id="4" level="1" type="ol" listtype="lower-alpha" formatstring="&#37;&#49;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="margin-top:0px; font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+              <li styleclass="HowTo Bulleted" style="margin-top:0px;"><text styleclass="Body Text">Click the </text><text styleclass="Interface">start-Point</text><text styleclass="Body Text"> of the new </text><text styleclass="Element">Part</text></li>
+              <li styleclass="HowTo Bulleted" style="margin-top:0px;"><text styleclass="Body Text">Click the </text><text styleclass="Interface2" style="color:#ff0000;">end-Point</text><image src="Red-14-9.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Body Text"> of the sketch </text><text styleclass="Interface2" style="color:#ff0000;">Line</text><text styleclass="Body Text"> in the </text><text styleclass="Interface2" style="color:#ff0000;">Other Mechanism</text></li>
+            </list>
+          </list>
+          <para styleclass="Body Table">The <text styleclass="Element">Part</text><image src="Red-14-8.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image> will jump to a new place, that I cannot predict! Do not be concerned to where the <text styleclass="Element">Part</text> moves. It has a <text styleclass="VariableName" style="color:#0000ff;">Blue</text>&#32;<text styleclass="Interface">Part-Outline</text>.</para>
+          <list id="4" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="margin-top:0px; font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo Bulleted" style="margin-top:0px;"><text styleclass="Body Text">Click the original</text><text styleclass="T_Menu"> Mechanism-Editor</text></li>
+          </list>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td colspan="2">
+          <para styleclass="SeeAlso">See also: <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-Rocker-Geared">Geared-Rocker</link>, <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-Dyad">Dyads</link> and <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-ElementExplorer-KinematicsTree">Kinematics-Tree</link></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading3_atocs_">Add Bevel Gear-Pair command</para>
+    <para styleclass="Normal"><table styleclass="Standard" rowcount="6" colcount="2">
+      <tr style="vertical-align:top">
+        <td colspan="2">
+          <para styleclass="Body Table">Do the Preparation - see above.</para>
+          <para styleclass="Body Table">Make sure the active <text styleclass="Interface">Mechanism-Editor</text> has the rotating-<text styleclass="Element">Part</text> that has the <text styleclass="VariableName" style="color:#005000;">Green</text>&#32;<text styleclass="Interface">Part-Outline.</text></para>
+          <para styleclass="Body Table">Make sure: <text styleclass="T_Menu">Visibility toolbar &gt; Show other Kinematic and Sketch elements (set to Show).</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:30px;">
+          <para styleclass="Normal" style="text-align:right;"><image src="MD-Icon-AddGearPair.png" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <list id="5" type="ol" listtype="decimal" formatstring="&#83;&#84;&#69;&#80;&#32;&#37;&#48;&#58;&#115;&#58;&#32;" format-charset="DEFAULT_CHARSET" levelreset="false" legalstyle="false" startfrom="1" styleclass="HowTo STEP" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo STEP"><text styleclass="Body Text">Click </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Menu-Machine-Elements" styleclass="T_Menu">Machine elements toolbar</link><text styleclass="T_Menu"> &gt; Add Gear Pair</text><text styleclass="VariableName">&#32;</text></li>
+          </list>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:30px;">
+          <para styleclass="Normal"><image src="MD-ADDBEVELGEAR--01.ipp" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="Body Text">The <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-Command-Manager" styleclass="Interface">Command-Manager</link> instruction is:</para>
+          <para styleclass="Body Text HowTo"><table styleclass="Hint" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Popup Box">Add Gears: Driving Gear is Green Part; Driven-Gear is Blue Part. Parts joined to Green Line with Pin-Joints.</para>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Body Text">The four elements to click to add the <text styleclass="Element">Bevel Gear-Pair</text><text style="font-style:italic;">:</text></para>
+          <para styleclass="Body Text HowTo"><image src="Red-14-1.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="HowTo Numbered" style="font-family:Arial; font-size:11pt; color:#000000;">&#32;</text>The <text styleclass="Element">Line</text> along the center of the rotating-Part with the <text styleclass="VariableName" style="color:#005000;">Green</text>&#32;<text styleclass="Interface">Part-Outline</text></para>
+          <para styleclass="Body Text HowTo"><image src="Red-14-2.gif" scale="100.00%" figurelistinclude="0"></image> The <text styleclass="Element">Line</text> along the center of the <text styleclass="Element">Part</text> in the &apos;other Mechanism&apos;</para>
+          <para styleclass="Body Text HowTo"><image src="Red-14-3.gif" scale="100.00%" figurelistinclude="0"></image> The <text styleclass="Element">Line</text> in <text styleclass="Element">Base-Part</text></para>
+          <para styleclass="Body Text HowTo"><image src="Red-14-4.gif" scale="100.00%" figurelistinclude="0"></image> The dimension of <text styleclass="Element">Line</text><image src="Red-14-3.gif" scale="100.00%" figurelistinclude="0"></image>&#32;</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:30px;">
+          <para styleclass="Normal"><image src="MD-ADDBEVELGEAR--CM-02.ipp" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="Body Text">Refer to the hints in the <text styleclass="Interface">Command-Manager</text> and elements 1 - 4 &#160;in the image above:</para>
+          <list id="6" type="ol" listtype="decimal" formatstring="&#83;&#84;&#69;&#80;&#32;&#37;&#48;&#58;&#115;&#58;&#32;" format-charset="DEFAULT_CHARSET" levelreset="false" legalstyle="false" startfrom="2" styleclass="HowTo STEP" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo STEP"><text styleclass="VariableName">Click the </text><text styleclass="VariableName" style="color:#005000;">Green</text><text styleclass="VariableName"> Line on Gear Part 1 </text></li>
+          </list>
+          <para styleclass="Body Text HowTo">The <text styleclass="Element">CAD-Line</text><image src="Red-14-1.gif" scale="100.00%" figurelistinclude="0"></image> along the kinematically-defined <text styleclass="Element">Part</text>. This <text styleclass="Element">Part</text> has a <text styleclass="VariableName" style="color:#005000;">Green</text>&#32;<link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-Part-Outline" styleclass="Interface">Part-Outline</link>.</para>
+          <list id="7" type="ol" listtype="decimal" formatstring="&#83;&#84;&#69;&#80;&#32;&#37;&#48;&#58;&#115;&#58;&#32;" format-charset="DEFAULT_CHARSET" levelreset="false" legalstyle="false" startfrom="3" styleclass="HowTo STEP" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo STEP"><text styleclass="VariableName">Click the </text><text styleclass="VariableName" style="color:#0000ff;">Blue</text><text styleclass="VariableName"> Line on Gear Part 2 &#160;</text></li>
+          </list>
+          <para styleclass="Body Text HowTo">The <text styleclass="Element">CAD-Line</text><image src="Red-14-2.gif" scale="100.00%" figurelistinclude="0"></image> in the <text styleclass="Element">Part</text> in the other <text styleclass="Interface">Mechanism-Editor</text>. It is not yet a kinematically-defined <text styleclass="Element">Part</text>. This <text styleclass="Element">Part</text> has a <text styleclass="VariableName" style="color:#0000ff;">Blue</text>&#32;<text styleclass="Interface">Part-Outline</text><text styleclass="Element">.</text></para>
+          <list id="8" type="ol" listtype="decimal" formatstring="&#83;&#84;&#69;&#80;&#32;&#37;&#48;&#58;&#115;&#58;&#32;" format-charset="DEFAULT_CHARSET" levelreset="false" legalstyle="false" startfrom="4" styleclass="HowTo STEP" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo STEP"><text styleclass="VariableName">Click the </text><text styleclass="VariableName" style="color:#005000;">Green</text><text styleclass="VariableName"> Line joining Gear centers </text></li>
+          </list>
+          <para styleclass="Body Text HowTo">The <text styleclass="Element">Line</text><image src="Red-14-3.gif" scale="100.00%" figurelistinclude="0"></image><text styleclass="Element">&#32;</text>is in the <text styleclass="Element">Base-Part</text> to which <text styleclass="VariableName-IT">Gear Part 1</text> is joined with a <text styleclass="Element">Pin-Joint</text>. The <text styleclass="Element">Base-Part</text> has a <text styleclass="VariableName" style="color:#005000;">Green</text>&#32;<text styleclass="Interface">Part-Outline</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:30px;">
+          <para styleclass="Normal"><image src="MD-ADDBEVELGEAR--GA-02.ipp" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="Body Text">The <text styleclass="Interface">Part-Editor</text> opens to show <text styleclass="Element">Line</text><image src="Red-14-3.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image> and its dimension<image src="Red-14-4.gif" scale="100.00%" styleclass="HowTo STEP" figurelistinclude="0"></image>.</para>
+          <list id="9" type="ol" listtype="decimal" formatstring="&#83;&#84;&#69;&#80;&#32;&#37;&#48;&#58;&#115;&#58;&#32;" format-charset="DEFAULT_CHARSET" levelreset="false" legalstyle="false" startfrom="5" styleclass="HowTo STEP" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo STEP"><text styleclass="VariableName">Click the center Distance Dimension </text><image src="Red-14-4.gif" scale="100.00%" figurelistinclude="0"></image>&#32;<text styleclass="VariableName">&#32;</text></li>
+          </list>
+          <para styleclass="Body Text Howindent4bullets">Click the arrowhead, or the dimension line<image src="Red-14-4.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Image Caption">.</text></para>
+          <para styleclass="Body Text Howindent4bullets">The command will not complete if you click the <text styleclass="Element">Line</text><image src="Red-14-3.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image> or the <text styleclass="Interface">Dimension-Value.</text></para>
+          <para styleclass="Body Text"></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:30px;">
+          <para styleclass="Normal"><image src="MD-ADDBEVELGEAR--GA-03.ipp" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <list id="10" type="ol" listtype="decimal" formatstring="&#83;&#84;&#69;&#80;&#32;&#37;&#48;&#58;&#115;&#58;&#32;" format-charset="DEFAULT_CHARSET" levelreset="false" legalstyle="false" startfrom="6" styleclass="HowTo STEP" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo STEP">&#32;<text styleclass="VariableName-IT" style="font-style:normal;">Click</text><text styleclass="VariableName-IT">&#32;</text><image src="OK-tiny-11-15.png" scale="100.00%" styleclass="VariableName-IT" figurelistinclude="0"></image><text styleclass="VariableName-IT"> in the </text><text styleclass="Interface">Command-Manager</text><text styleclass="VariableName"> &#160;</text></li>
+          </list>
+          <list id="11" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted">The distance between the Gear-centers is a function of the number-of-teeth, module and mesh of the gears.</li>
+            <li styleclass="HowTo Bulleted">The default <text styleclass="Element">Bevel Gear-Pair</text> elements have an external mesh.</li>
+            <li styleclass="HowTo Bulleted">All the <text styleclass="Element">Parts</text> are now <text styleclass="Body Text">kinematically-defined</text>&#32;<text styleclass="Element">Parts</text>.</li>
+            <li styleclass="HowTo Bulleted"><text styleclass="Element">Gear Part 2</text> is now identified in the <text styleclass="Interface">Kinematics-Tree</text> as a <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-Rocker-Geared">Geared-Rocker</link></li>
+          </list>
+          <para styleclass="Body Text"><text styleclass="SeeAlso">See </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-GearPair" styleclass="SeeAlso">Gear-Pair dialog-box</link> to edit the gear parameters</para>
+        </td>
+      </tr>
+    </table></para>
+  </body>
+</topic>

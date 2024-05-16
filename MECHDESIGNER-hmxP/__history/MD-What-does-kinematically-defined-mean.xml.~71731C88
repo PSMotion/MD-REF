@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" modified="2023-06-01T10:54:35.718+01:00" lasteditedby="Adam" version="2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title>What does kinematically-defined mean?</title>
+  <keywords>
+    <keyword>Definition<keyword>kinematically-defined</keyword></keyword>
+  </keywords>
+  <body>
+    <header>
+      <para styleclass="Heading1">What does kinematically-defined mean?</para>
+    </header>
+    <para styleclass="Heading4 Toggle_atocs_">What does kinematically-defined mean?</para>
+    <para styleclass="Heading4 Toggle_atocs_"><text styleclass="VariableName">It relates to the number of degrees of freedom and number of Motion-Dimensions in a kinematic-chain.</text></para>
+    <para styleclass="Heading4 Toggle_atocs_"><text styleclass="Body Text">There are two kinematic-states of </text><text styleclass="Element-Header">Parts</text><text styleclass="Body Text">.</text></para>
+    <para styleclass="Body Text"><table styleclass="Default" rowcount="3" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:205px;">
+          <para styleclass="VariableName" style="text-align:right;">Not kinematically-defined : </para>
+        </td>
+        <td>
+          <para styleclass="Popup Box">The <text styleclass="Element">Part</text> has <text styleclass="VariableName-small" style="color:#ff0000;">one</text> or <text styleclass="VariableName-small" style="color:#ff0000;">more</text> degrees-of-freedom, and its Mobility &#160;is not zero.</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:205px;">
+          <para styleclass="VariableName" style="text-align:right;">kinematically-defined : </para>
+        </td>
+        <td>
+          <para styleclass="Popup Box">The <text styleclass="Popup Box-Elements">Part</text> has a <text styleclass="VariableName-small" style="color:#ff0000;">zero</text>&#32;<text styleclass="VariableName">Mobility</text>. </para>
+          <para styleclass="Popup Box">Its position, velocity, and acceleration are fully specified. </para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td colspan="2">
+          <para styleclass="VariableName">Mobility of a Kinematic-chain = </para>
+          <para styleclass="Body Text HowTo"> # Degrees-of-Freedom – # Motion-Dimensions.</para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="VariableName"># Degrees-of-Freedom of a kinematic-chain <equation style="vertical-align:baseline;vertical-align:text-bottom" font-size="28"><![CDATA[= 3.\left( N-1 \right)-2.J]]></equation></para>
+          <para styleclass="Body Text HowTo">N = Number of <text styleclass="Element">Parts</text></para>
+          <para styleclass="Body Text HowTo">J= Number of <text styleclass="Element">Joints</text></para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="Body Text">All <text styleclass="Element-Header">Parts</text> in the model must be <text styleclass="VariableName">kinematically-defined</text>&#32;<text styleclass="VariableName" style="color:#ff0000;">before</text> you should analyse any motion and force data.</para>
+        </td>
+      </tr>
+    </table></para>
+  </body>
+</topic>

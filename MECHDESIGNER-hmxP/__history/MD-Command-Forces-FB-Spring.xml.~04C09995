@@ -1,0 +1,218 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" status="Under Construction" modified="2023-10-16T12:50:56.895+01:00" lasteditedby="44785" version="2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title>Add Spring FB</title>
+  <keywords>
+    <keyword>Add<keyword>Function-Block: Linear Motor</keyword><keyword>Function-Block: Spring-Force</keyword></keyword>
+    <keyword>Force<keyword>Constant Force</keyword><keyword>Constant &apos;Friction&apos; Force</keyword><keyword>Coulomb Force</keyword><keyword>Drag Force</keyword><keyword>Spring Force</keyword><keyword>Viscous Damping</keyword></keyword>
+    <keyword>Force menu<keyword>Add Spring FB</keyword></keyword>
+    <keyword>Force toolbar<keyword>Add Spring FB</keyword></keyword>
+    <keyword>Function-Block<keyword>Spring FB</keyword></keyword>
+    <keyword>Spring FB<keyword>Constant Force</keyword><keyword>Coulomb Friction</keyword><keyword>Drag Froce</keyword><keyword>Free-Length</keyword><keyword>Spring-Rate</keyword></keyword>
+  </keywords>
+  <body>
+    <header>
+      <para styleclass="Heading1">Add Spring FB</para>
+    </header>
+    <para styleclass="Heading3_atocs_"><anchor id="SpringForcedb"></anchor>Why add a Spring FB?</para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="SeeAlso">See also: <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-FunctionBlock-Spring">Spring FB dialog</link></para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="Body Text HowTo">Use a <text styleclass="Element-Header">Spring FB</text><text style="font-style:italic;">&#32;</text>to add a force between two <text styleclass="Element">Points</text><text styleclass="BodyText BI">*</text><text styleclass="Body Text">. The </text><text styleclass="Element">Points</text><text styleclass="BodyText BI">*</text><text styleclass="Body Text"> are usually in different </text><text styleclass="Element">Parts</text><text styleclass="Body Text">.</text></para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="Body Text"><text styleclass="BodyText BI">*</text><text styleclass="Body Table">&#32;</text><text styleclass="Element">Point</text><text styleclass="Interface">, start-Point, end-Point, center-Point.</text></para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="Body Text HowTo">A <text styleclass="Element-Header">Spring FB</text> can superimpose these forces:</para>
+    <list id="0" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+      <li styleclass="HowTo Bulleted"><text styleclass="ParameterHeader">Spring Force</text> - a force proportional to the dimensional difference between the Spring&apos;s <text styleclass="Interface">Anchor-Point</text> and its <text styleclass="Parameter">Free-Length</text>.</li>
+      <li styleclass="HowTo Bulleted"><text styleclass="ParameterHeader">Constant Force</text> - a constant force that pulls or pushes the Spring&apos;s <text styleclass="Interface">Anchor-Points</text>, throughout the machine-cycle.</li>
+      <li styleclass="HowTo Bulleted"><text styleclass="ParameterHeader">Coulomb Constant-Force</text> - a constant force that acts in the opposite direction to the relative velocity between the <text styleclass="Element">Spring&apos;s</text><text styleclass="Interface"> Anchor-Point</text>.</li>
+      <li styleclass="HowTo Bulleted"><text styleclass="ParameterHeader">Drag-Force</text> - a force that is proportional to the relative velocity between the <text styleclass="Body Text">Spring&apos;s</text><text styleclass="Interface"> Anchor-Points</text>.</li>
+      <li styleclass="HowTo Bulleted"><text styleclass="ParameterHeader">Drag Force-Squared</text> - a force that is proportional to the square of the relative velocity between the <text styleclass="Body Text">Spring&apos;s</text><text styleclass="Interface"> Anchor-Points</text>.</li>
+      <li styleclass="HowTo Bulleted"><text styleclass="ParameterHeader">Force-Function</text> - a force-function that you add to the input-connector of the <text styleclass="Element">Spring FB</text>.</li>
+    </list>
+    <para styleclass="Body Text HowTo">The <text styleclass="VariableName">Forces values</text><text styleclass="Body Text"> are</text> superimposed (added) to together to give the <text styleclass="VariableName">Total-Force</text> at the output-connector.</para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="VariableName">Terminology:</para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="3" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="vertical-align:middle; width:150px;">
+          <para styleclass="VariableName-small" style="text-align:right;">Anchor-Points : </para>
+        </td>
+        <td>
+          <para styleclass="Popup Box">The two(2) <text styleclass="Popup Box-Elements">Points</text> that define the axis through which the <text styleclass="Popup Box-Elements">Spring FB</text> applies its Force.</para>
+          <para styleclass="Popup Box">You select the Points when you add a <text styleclass="Popup Box-Elements">Spring FB</text>.</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="vertical-align:middle; width:150px;">
+          <para styleclass="VariableName-small" style="text-align:right;">Force element : </para>
+        </td>
+        <td>
+          <para styleclass="Popup Box">A <text styleclass="Popup Box-Elements">Spring FB</text> is a <text styleclass="VariableName-small">Force-Element</text>. </para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="vertical-align:middle; width:150px;">
+          <para styleclass="VariableName-small" style="text-align:right;">Linear Motive Force : </para>
+        </td>
+        <td>
+          <para styleclass="Popup Box">The <text styleclass="Element">Spring FB</text> can become a Power-Source. It indicates the Application Force that you must supply to drive the Kinematic-Chain. </para>
+          <para styleclass="VariableName-small">A Linear Motor would provide the Linear-Force.</para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="Heading3_atocs_">Add Spring FB</para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="2" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="vertical-align:bottom; width:240px; border-bottom:none;">
+          <para styleclass="Normal"><image src="MD-GA-SpringFB.png" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"><caption><![CDATA[Spring FB in the graphic-area]]></caption></image></para>
+        </td>
+        <td style="border-bottom:none;">
+          <list id="1" type="ol" listtype="decimal" formatstring="&#83;&#84;&#69;&#80;&#32;&#37;&#48;&#58;&#115;&#58;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo STEP" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo STEP">Start the Add Spring FB command</li>
+          </list>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="2">
+            <tr style="vertical-align:top">
+              <td style="vertical-align:bottom; width:41px;">
+                <para styleclass="Image Caption"><image src="MD-Icon-Force-FB-Spring.png" scale="100.00%" figurelistinclude="0"></image></para>
+              </td>
+              <td>
+                <list id="2" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Body Table" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="Body Table"><text styleclass="Body Text">Click </text><text styleclass="T_Menu">Add menu &gt; Forces sub-menu &#160;&gt; Add Spring FB</text><text styleclass="VariableName">&#32;</text></li>
+                </list>
+                <para styleclass="VariableName">OR</para>
+                <list id="3" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="B Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="B Bullets"><text styleclass="Body Text">Click</text><text styleclass="Interface">&#32;</text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Menu-Forces" styleclass="T_Menu">Forces toolbar</link><text styleclass="T_Menu"> &gt; Add Spring FB</text><text styleclass="VariableName">&#32;</text></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+          <list id="1" type="ol" listtype="decimal" formatstring="&#83;&#84;&#69;&#80;&#32;&#37;&#48;&#58;&#115;&#58;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo STEP" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo STEP">Select the Anchor-Points</li>
+          </list>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td style="vertical-align:bottom;">
+                <list id="4" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Body Table" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="Body Table">Click two different <text styleclass="Element">Points</text> - the <text styleclass="Interface">Anchor-Points </text>- in two different <text styleclass="Element">Parts</text>.<text styleclass="VariableName">&#32;</text></li>
+                </list>
+                <para styleclass="Body Text">The distance between the two <text styleclass="Element">Points</text> shows next to your mouse-pointer.</para>
+                <list id="4" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="HowTo Bulleted">Click <text styleclass="Body Text">the graphic-area to place the dimension and the </text><text styleclass="Element">Spring FB</text><text styleclass="VariableName">. </text></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Body Text HowTo">The <text styleclass="Element">Spring FB</text> is now in the graphic-area.</para>
+          <list id="1" type="ol" listtype="decimal" formatstring="&#83;&#84;&#69;&#80;&#32;&#37;&#48;&#58;&#115;&#58;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo STEP" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo STEP">Open the <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-FunctionBlock-Spring" styleclass="SeeAlso">Spring FB dialog</link></li>
+          </list>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td colspan="2" style="border-top:none;">
+          <para styleclass="BodyText BI"><text styleclass="Element-Header">Spring FB</text><text styleclass="Body Text"> in the graphic-area:</text></para>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="3" colcount="2">
+            <tr style="vertical-align:middle">
+              <td style="width:82px;">
+                <para styleclass="Interface" style="text-align:right;">Symbol <image src="Red-14-1b.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+              </td>
+              <td>
+                <para styleclass="Bullets"><text styleclass="Element">FB</text><text styleclass="Image Caption"> - </text><text styleclass="Body Text">see </text><text styleclass="Element">Spring FB connectors</text></para>
+              </td>
+            </tr>
+            <tr style="vertical-align:middle">
+              <td style="width:82px;">
+                <para styleclass="Interface" style="text-align:right;">Symbol <image src="Red-14-2.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+              </td>
+              <td>
+                <para styleclass="Bullets"><text styleclass="Element">Spring</text><text styleclass="HowTo Bulleted">&#32;</text><text styleclass="Body Text">between the</text><text styleclass="HowTo Bulleted">&#32;</text><text styleclass="Interface">anchor-points</text></para>
+              </td>
+            </tr>
+            <tr style="vertical-align:middle">
+              <td style="width:82px;">
+                <para styleclass="Interface" style="text-align:right;"><image src="Red-14-3.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+              </td>
+              <td>
+                <para styleclass="Element">Dimension<text styleclass="Body Text"> between the </text><text styleclass="Interface">anchor-points</text></para>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Interface2">Note: <text styleclass="Body Text HowTo" style="color:#ff0000;">Positive</text><text styleclass="HowTo Bulleted2"> (</text><text styleclass="Body Text HowTo" style="color:#0000ff;">Negative</text><text styleclass="HowTo Bulleted2">) force values </text><text styleclass="Body Text HowTo" style="color:#ff0000;">Pull</text><text styleclass="HowTo Bulleted2"> (</text><text styleclass="Body Text HowTo" style="color:#0000ff;">Push</text><text styleclass="HowTo Bulleted2">) the </text><text styleclass="Body Text">Anchor-Points</text><text styleclass="HowTo Bulleted2">&#32;</text><text styleclass="Body Text HowTo" style="color:#ff0000;">together</text><text styleclass="HowTo Bulleted2"> (</text><text styleclass="Body Text HowTo" style="color:#0000ff;">apart</text><text styleclass="HowTo Bulleted2">)</text><text styleclass="Body Text">.</text></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading3_atocs_"><anchor id="SpringFBStates"><keywords><keyword>Spring FB<keyword>State 1 - Enabled Spring</keyword><keyword>State 2 - Disabled Spring</keyword><keyword>State 3 - Linear Motor</keyword></keyword></keywords></anchor>Spring FB States:</para>
+    <para styleclass="Body Text HowTo">The <text styleclass="Element">Spring FB</text> can be in three different <text styleclass="VariableName">states.</text></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="6" colcount="1">
+      <tr style="vertical-align:top">
+        <td style="border-bottom:none;">
+          <para styleclass="Interface2">STATE 1:<text styleclass="BodyText BI">&#32;</text><text styleclass="VariableName">The Spring FB is enabled. </text></para>
+          <para styleclass="Body Text HowTo">The default state. The <text styleclass="Element">Spring FB</text> exerts a Force that is defined by the parameters in the <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-FunctionBlock-Spring" anchor="SpringFB-Parameters" styleclass="SeeAlso">Spring FB dialog</link>.</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="border-top:none;">
+          <para styleclass="Normal"><image src="MD-GA-SpringFB-Active.png" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"><caption><![CDATA[Spring FB - Enabled]]></caption></image></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="border-bottom:none;">
+          <para styleclass="Body Text"><text styleclass="Interface2">STATE 2:</text>&#32;<text styleclass="VariableName">The Spring FB is not enabled.</text></para>
+          <para styleclass="HowTo Numbered">To enable/disable the <text styleclass="Element">Spring FB</text></para>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <list id="5" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="Bullets">Edit the <text styleclass="Element">Spring FB</text> to open the <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-FunctionBlock-Spring" styleclass="Element">Spring FB dialog</link><text styleclass="VariableName">&#32;</text></li>
+                </list>
+                <para styleclass="Body Text HowTo">In the <text styleclass="Element">Spring FB dialog</text></para>
+                <list id="5" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Numbered" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="HowTo Numbered">Select / deselect the <text styleclass="Parameter">Enable Check-box</text>.</li>
+                  <li styleclass="HowTo Numbered">Click <image src="OK-tiny-11-15.png" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image> to close the dialog.</li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="border-top:none;">
+          <para styleclass="Normal"><image src="MD-GA-SpringFB-NotActive.png" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"><caption><![CDATA[Spring FB > Not enabled]]></caption></image></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="vertical-align:top;">
+          <para styleclass="Body Text"><text styleclass="Interface2">STATE 3:</text>&#32;<text styleclass="VariableName">The Spring FB is a Linear Motor </text></para>
+          <para styleclass="Body Text HowTo">To change the <text styleclass="Element">Spring</text> to a <text styleclass="VariableName">Linear-Motor</text></para>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <list id="6" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="HowTo Bulleted">Open the <text styleclass="VariableName">Configure Power Source dialog</text> of the kinematic-chain for which the <text styleclass="Element">Spring FB</text> will be <text styleclass="VariableName">Linear-Motor. </text></li>
+                </list>
+                <para styleclass="Body Text">In the <text styleclass="VariableName">Configure Power Source dialog</text>:</para>
+                <list id="6" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Numbered" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="HowTo Numbered">Click the <text styleclass="Element">Motion-Dimension FB</text> that applies the motion to the kinematic-chain</li>
+                  <li styleclass="HowTo Numbered">Click the <text styleclass="Element">Spring FB</text> as the <text styleclass="Interface">Power Source</text>,</li>
+                </list>
+                <para styleclass="Body Text">The <text styleclass="Element">Spring FB</text> is now a <text styleclass="VariableName">Linear Motor</text>.</para>
+                <list id="6" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Numbered" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="HowTo Numbered">Close the <text styleclass="Element">Configure Power Source dialog</text>.</li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="SeeAlso">See - <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Forces-Configure-Power-Source">Configure Power Source</link></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Normal"><image src="MD-GA-SpringFB-LinearMotor.png" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"><caption><![CDATA[Spring FB > Linear Motor]]></caption></image></para>
+        </td>
+      </tr>
+    </table></para>
+  </body>
+</topic>

@@ -1,0 +1,545 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" modified="2024-01-02T10:59:58.529Z" lasteditedby="44785" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title translate="true">Motion-Law Equations</title>
+  <body>
+    <header>
+      <para styleclass="Heading1"><text styleclass="Heading1" translate="true">Motion-Law Equations</text></para>
+    </header>
+    <para styleclass="Body Text HowTo"><equation styleclass="Normal" font-size="32" translate="true"><![CDATA[x = normalized \ input \ variable \ \left( 0\to1 \right)]]></equation></para>
+    <para styleclass="Body Text HowTo"><equation styleclass="Normal" font-size="32" translate="true"><![CDATA[f\left( x \right)= Position
+]]></equation></para>
+    <para styleclass="Body Text HowTo"><equation styleclass="Normal" font-size="32" translate="true"><![CDATA[f^{'}
+\left( x \right)= Velocity]]></equation></para>
+    <para styleclass="Body Text HowTo"><equation styleclass="Normal" font-size="32" translate="true"><![CDATA[f^{''}
+\left( x \right)=Acceleration
+
+]]></equation></para>
+    <para styleclass="Body Text HowTo"><equation styleclass="Normal" font-size="32" translate="true"><![CDATA[f^{'''}
+\left( x \right)=Jerk]]></equation></para>
+    <para styleclass="Heading3_atocs_"><text styleclass="Heading3_atocs_" translate="true">Dwell</text></para>
+    <para styleclass="Body Text"><table styleclass="Default" rowcount="1" colcount="2" style="cell-padding:3px; border-width:1px; border-spacing:0px; cell-border-width:0px; border-color:#993300; border-style:solid;">
+      <tr style="vertical-align:middle">
+        <td style="width:128px;">
+          <para styleclass="Body Text"><equation styleclass="Normal" font-size="32" translate="true"><![CDATA[0 \leq x \leq 1 ]]></equation></para>
+        </td>
+        <td>
+          <para styleclass="Body Text"><equation styleclass="Normal" font-size="32" translate="true"><![CDATA[f\left( x \right)=0]]></equation><text styleclass="Normal" translate="true"> ; </text><equation styleclass="Normal" font-size="32" translate="true"><![CDATA[f^{'}
+\left( x \right)=0]]></equation><text styleclass="Normal" translate="true"> ; </text><equation styleclass="Normal" font-size="32" translate="true"><![CDATA[f^{''}
+\left( x \right)=0
+
+]]></equation><text styleclass="Normal" translate="true"> ; </text><equation styleclass="Normal" font-size="32" translate="true"><![CDATA[f^{'''}
+\left( x \right)=0]]></equation></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading3_atocs_"><text styleclass="Heading3_atocs_" translate="true">Constant Velocity</text></para>
+    <para styleclass="Body Text"><table styleclass="Default" rowcount="1" colcount="2" style="cell-padding:3px; border-width:1px; border-spacing:0px; cell-border-width:0px; border-color:#993300; border-style:solid;">
+      <tr style="vertical-align:middle">
+        <td style="width:128px;">
+          <para styleclass="Body Text"><equation styleclass="Normal" font-size="32" translate="true"><![CDATA[0 \leq x \leq 1 ]]></equation></para>
+        </td>
+        <td>
+          <para styleclass="Body Text HowTo"><equation styleclass="Normal" font-size="32" translate="true"><![CDATA[f\left( x \right)=x]]></equation><text styleclass="Normal" translate="true"> ; </text><equation styleclass="Normal" font-size="32" translate="true"><![CDATA[f^{'}
+\left( x \right)=1]]></equation><text styleclass="Normal" translate="true"> ; </text><equation styleclass="Normal" font-size="32" translate="true"><![CDATA[f^{''}
+\left( x \right)=0
+
+]]></equation><text styleclass="Normal" translate="true"> ; </text><equation styleclass="Normal" font-size="32" translate="true"><![CDATA[f^{'''}
+\left( x \right)=0]]></equation></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading3_atocs_"><text styleclass="Heading3_atocs_" translate="true">Constant-Acceleration, Constant-Deceleration (CACD)</text></para>
+    <para styleclass="Body Text"><table styleclass="Default" rowcount="8" colcount="2" style="cell-padding:3px; border-width:1px; border-spacing:0px; cell-border-width:0px; border-color:#993300; border-style:solid;">
+      <tr style="vertical-align:middle">
+        <td style="width:128px;">
+          <para styleclass="Body Text"><equation styleclass="Normal" font-size="32" translate="true"><![CDATA[0 \leq x \leq 0.5 ]]></equation></para>
+        </td>
+        <td>
+          <para styleclass="Body Text HowTo"><equation styleclass="Normal" font-size="32" translate="true"><![CDATA[f\left( x \right)=2.x^{2}]]></equation></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:middle">
+        <td style="width:128px;">
+        </td>
+        <td>
+          <para styleclass="Body Text HowTo"><equation styleclass="Normal" font-size="32" translate="true"><![CDATA[f^{'}
+\left( x \right)=4.x]]></equation></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:middle">
+        <td style="width:128px;">
+        </td>
+        <td>
+          <para styleclass="Body Text HowTo"><equation styleclass="Normal" font-size="32" translate="true"><![CDATA[f^{''}
+\left( x \right)=4]]></equation></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:middle">
+        <td style="width:128px;">
+        </td>
+        <td>
+          <para styleclass="Body Text HowTo"><equation styleclass="Normal" font-size="32" translate="true"><![CDATA[f^{'''}
+\left( x \right)=0]]></equation></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:middle">
+        <td style="width:128px;">
+          <para styleclass="Body Text"><equation styleclass="Normal" font-size="36" translate="true"><![CDATA[0.5 < x \leq 1 ]]></equation></para>
+        </td>
+        <td>
+          <para styleclass="Body Text HowTo"><equation styleclass="Normal" font-size="32" translate="true"><![CDATA[f\left( x \right)=1-2.\left( x-1 \right)^{2}]]></equation></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:middle">
+        <td style="width:128px;">
+        </td>
+        <td>
+          <para styleclass="Body Text HowTo"><equation styleclass="Normal" font-size="32" translate="true"><![CDATA[f^{'}
+\left( x \right)=-4.\left( x-1 \right)]]></equation></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:middle">
+        <td style="width:128px;">
+        </td>
+        <td>
+          <para styleclass="Body Text HowTo"><equation styleclass="Normal" font-size="32" translate="true"><![CDATA[f^{''}
+\left( x \right)=-4]]></equation></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:middle">
+        <td style="width:128px;">
+        </td>
+        <td>
+          <para styleclass="Body Text HowTo"><equation styleclass="Normal" font-size="32" translate="true"><![CDATA[f^{'''}
+\left( x \right)=0]]></equation></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading3_atocs_"><text styleclass="Heading3_atocs_" translate="true">Simple Harmonic Motion (SHM)</text></para>
+    <para styleclass="Body Text"><table styleclass="Default" rowcount="4" colcount="2" style="cell-padding:3px; border-width:1px; border-spacing:0px; cell-border-width:0px; border-color:#993300; border-style:solid;">
+      <tr style="vertical-align:middle">
+        <td style="width:129px;">
+          <para styleclass="Body Text"><equation styleclass="Normal" font-size="36" translate="true"><![CDATA[0 \leq x \leq 1]]></equation></para>
+        </td>
+        <td>
+          <para styleclass="Body Text HowTo"><equation styleclass="Normal" font-size="32" translate="true"><![CDATA[f\left( x \right)=\frac{1}{2}\left\[ 1-\cos \left( \pi.x \right) \right\]]]></equation></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:middle">
+        <td style="width:129px;">
+        </td>
+        <td>
+          <para styleclass="Body Text HowTo"><equation styleclass="Normal" font-size="32" translate="true"><![CDATA[f^{'}
+\left( x \right)=\frac{\pi}{2}.\sin \left( \pi.x \right)]]></equation></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:middle">
+        <td style="width:129px;">
+        </td>
+        <td>
+          <para styleclass="Body Text HowTo"><equation styleclass="Normal" font-size="32" translate="true"><![CDATA[f^{''}
+\left( x \right)=\frac{\pi^{2}}{2}.\cos \left( \pi.x \right)]]></equation></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:middle">
+        <td style="width:129px;">
+        </td>
+        <td>
+          <para styleclass="Body Text HowTo"><equation styleclass="Normal" font-size="32" translate="true"><![CDATA[f^{'''}
+\left( x \right)=-\frac{\pi^{3}}{2}.\sin \left( \pi.x \right)]]></equation></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading3_atocs_"><text styleclass="Heading3_atocs_" translate="true">Cycloidal </text></para>
+    <para styleclass="Body Text"><table styleclass="Default" rowcount="4" colcount="2" style="cell-padding:3px; border-width:1px; border-spacing:0px; cell-border-width:0px; border-color:#993300; border-style:solid;">
+      <tr style="vertical-align:middle">
+        <td style="width:129px;">
+          <para styleclass="Body Text"><equation styleclass="Normal" font-size="36" translate="true"><![CDATA[0 \leq x \leq 1]]></equation></para>
+        </td>
+        <td>
+          <para styleclass="Body Text HowTo"><equation styleclass="Normal" font-size="32" translate="true"><![CDATA[f\left( x \right)=x-\frac{1}{2.\pi}.\sin \left( 2.\pi.x \right)]]></equation></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:middle">
+        <td style="width:129px;">
+        </td>
+        <td>
+          <para styleclass="Body Text HowTo"><equation styleclass="Normal" font-size="32" translate="true"><![CDATA[f^{'}\left( x \right)=1-\cos \left( 2.\pi.x \right)]]></equation></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:middle">
+        <td style="width:129px;">
+        </td>
+        <td>
+          <para styleclass="Body Text HowTo"><equation styleclass="Normal" font-size="32" translate="true"><![CDATA[f^{''}
+\left( x \right)=2.\pi.\sin \left( 2.\pi.x \right)]]></equation></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:middle">
+        <td style="width:129px;">
+        </td>
+        <td>
+          <para styleclass="Body Text HowTo"><equation styleclass="Normal" font-size="32" translate="true"><![CDATA[f^{'''}
+\left( x \right)=4.\pi^{2}.\cos \left( 2.\pi.x \right)]]></equation></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading3_atocs_"><text styleclass="Heading3_atocs_" translate="true">Polynomial 2-3</text></para>
+    <para styleclass="Body Text"><table styleclass="Default" rowcount="4" colcount="2" style="cell-padding:3px; border-width:1px; border-spacing:0px; cell-border-width:0px; border-color:#993300; border-style:solid;">
+      <tr style="vertical-align:middle">
+        <td style="width:129px;">
+          <para styleclass="Interface"><equation styleclass="Normal" font-size="36" translate="true"><![CDATA[0 \leq x \leq 1]]></equation></para>
+        </td>
+        <td>
+          <para styleclass="Body Text HowTo"><equation styleclass="Normal" font-size="32" translate="true"><![CDATA[f\left( x \right)=
+3.x^{2}-2.x^{3}]]></equation></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:middle">
+        <td style="width:129px;">
+        </td>
+        <td>
+          <para styleclass="Body Text HowTo"><equation styleclass="Normal" font-size="32" translate="true"><![CDATA[f^{'}\left( x \right) = 6.x-6.x^{2}]]></equation></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:middle">
+        <td style="width:129px;">
+        </td>
+        <td>
+          <para styleclass="Body Text HowTo"><equation styleclass="Normal" font-size="32" translate="true"><![CDATA[f^{''}\left( x \right)=6-12.x]]></equation></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:middle">
+        <td style="width:129px;">
+        </td>
+        <td>
+          <para styleclass="Body Text HowTo"><equation styleclass="Normal" font-size="32" translate="true"><![CDATA[f^{'''}\left( x \right)=12]]></equation></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading3_atocs_"><text styleclass="Heading3_atocs_" translate="true">Polynomial 3-4-5</text></para>
+    <para styleclass="Body Text"><table styleclass="Default" rowcount="4" colcount="2" style="cell-padding:3px; border-width:1px; border-spacing:0px; cell-border-width:0px; border-color:#993300; border-style:solid;">
+      <tr style="vertical-align:middle">
+        <td style="width:129px;">
+          <para styleclass="Body Text"><equation styleclass="Normal" font-size="36" translate="true"><![CDATA[0 \leq x \leq 1]]></equation></para>
+        </td>
+        <td>
+          <para styleclass="Body Text HowTo"><equation styleclass="Normal" font-size="32" translate="true"><![CDATA[f\left( x \right)=6.x^{5}-15.x^{4}+10.x^{3}]]></equation></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:middle">
+        <td style="width:129px;">
+        </td>
+        <td>
+          <para styleclass="Body Text HowTo"><equation styleclass="Normal" font-size="32" translate="true"><![CDATA[f^{'}\left( x \right) = 30.x^{4}-60.x^{3}+30.x^{2}]]></equation></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:middle">
+        <td style="width:129px;">
+        </td>
+        <td>
+          <para styleclass="Body Text HowTo"><equation styleclass="Normal" font-size="32" translate="true"><![CDATA[f^{''}\left( x \right)=120.x^{3}-180.x^{2}+60.x]]></equation></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:middle">
+        <td style="width:129px;">
+        </td>
+        <td>
+          <para styleclass="Body Text HowTo"><equation styleclass="Normal" font-size="32" translate="true"><![CDATA[f^{'''}\left( x \right)=360.x^{2}-360.x^{}+60]]></equation></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading3_atocs_"><text styleclass="Heading3_atocs_" translate="true">Polynomial 4-5-6-7</text></para>
+    <para styleclass="Body Text"><table styleclass="Default" rowcount="4" colcount="2" style="cell-padding:3px; border-width:1px; border-spacing:0px; cell-border-width:0px; border-color:#993300; border-style:solid;">
+      <tr style="vertical-align:middle">
+        <td style="width:130px;">
+          <para styleclass="Body Text"><equation styleclass="Normal" font-size="36" translate="true"><![CDATA[0 \leq x \leq 1]]></equation></para>
+        </td>
+        <td>
+          <para styleclass="Body Text HowTo"><equation styleclass="Normal" font-size="32" translate="true"><![CDATA[f\left( x \right)=-20.x^{7}+70.x^{6}-84.x^{5}+35.x^{4}]]></equation></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:middle">
+        <td style="width:129px;">
+        </td>
+        <td>
+          <para styleclass="Body Text HowTo"><equation styleclass="Normal" font-size="32" translate="true"><![CDATA[f^{'}\left( x \right) = -140.x^{6}+420.x^{5}-420.x^{4}+140.x^{3}]]></equation></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:middle">
+        <td style="width:129px;">
+        </td>
+        <td>
+          <para styleclass="Body Text HowTo"><equation styleclass="Normal" font-size="32" translate="true"><![CDATA[f^{''}\left( x \right)=-840.x^{5}+2100.x^{4}-1680.x^{3}+420.x^{2}]]></equation></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:middle">
+        <td style="width:129px;">
+        </td>
+        <td>
+          <para styleclass="Body Text HowTo"><equation styleclass="Normal" font-size="32" translate="true"><![CDATA[f^{'''}\left( x \right)=-4200.x^{4}+8400.x^{3}-5040.x^{2}+840.x ]]></equation></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading3_atocs_"><text styleclass="Heading3_atocs_" translate="true">Modified Sinusoid</text></para>
+    <para styleclass="Body Text"><table styleclass="Default" rowcount="12" colcount="2" style="cell-padding:3px; border-width:1px; border-spacing:0px; cell-border-width:0px; border-color:#993300; border-style:solid;">
+      <tr style="vertical-align:middle">
+        <td style="width:130px;">
+          <para styleclass="Body Text"><equation styleclass="Normal" font-size="32" translate="true"><![CDATA[0 \leq x \leq 0.125 ]]></equation></para>
+        </td>
+        <td>
+          <para styleclass="Body Text HowTo"><equation styleclass="Normal" font-size="32" translate="true"><![CDATA[f\left( x \right)=\frac{1}{\pi+4}.\left\[ \pi.x-\frac{1}{4}.\sin \left( 4.\pi.x \right) \right\]]]></equation></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:middle">
+        <td style="width:130px;">
+        </td>
+        <td>
+          <para styleclass="Body Text HowTo"><equation styleclass="Normal" font-size="36" translate="true"><![CDATA[f^{'}\left( x \right)=\frac{\pi}{\pi+4}.\left\[ 1- cos \left( 4.\pi.x \right) \right\]
+]]></equation></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:middle">
+        <td style="width:130px;">
+        </td>
+        <td>
+          <para styleclass="Body Text HowTo"><equation styleclass="Normal" font-size="36" translate="true"><![CDATA[f^{''}\left( x \right)=\frac{4.\pi^{2}}{\pi+4}.sin \left( 4.\pi.x \right)
+]]></equation></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:middle">
+        <td style="width:130px;">
+        </td>
+        <td>
+          <para styleclass="Body Text HowTo"><equation styleclass="Normal" font-size="36" translate="true"><![CDATA[f^{'''}\left( x \right)=\frac{16.\pi^{3}}{\pi+4}.cos \left( 4.\pi.x \right)
+]]></equation></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:middle">
+        <td style="width:130px;">
+          <para styleclass="Body Text"><equation styleclass="Normal" font-size="36" translate="true"><![CDATA[0.125 < x \leq 0.875]]></equation></para>
+        </td>
+        <td>
+          <para styleclass="Body Text HowTo"><equation styleclass="Normal" font-size="32" translate="true"><![CDATA[f\left( x \right)=\frac{1}{\pi+4}\left\[ 2+\pi.x-\frac{9}{4
+}.\cos \left\{ 4.\pi.\left( x-0.125 \right)/3 \right\} \right\]]]></equation></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:middle">
+        <td style="width:130px; height:24px;">
+        </td>
+        <td>
+          <para styleclass="Body Text HowTo"><equation styleclass="Normal" font-size="32" translate="true"><![CDATA[f^{'}\left( x \right)=\frac{1}{\pi+4}\left\[\pi+3.\pi.\sin \left\{ 4.\pi.\left( x-0.125 \right)/3 \right\} \right\]]]></equation></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:middle">
+        <td style="width:130px;">
+        </td>
+        <td>
+          <para styleclass="Body Text HowTo"><equation styleclass="Body Text HowTo" font-size="32" translate="true"><![CDATA[f^{''}\left( x \right)=\frac{4.\pi^{2}}{\pi+4}.cos\{ 4.\pi\left( x-0.125 \right) /3\right\}]]></equation></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:middle">
+        <td style="width:130px;">
+        </td>
+        <td>
+          <para styleclass="Body Text HowTo"><equation styleclass="Body Text HowTo" font-size="32" translate="true"><![CDATA[f^{'''}(x)=\frac{-16.\pi^{3}}{3.\left( \pi+4 \right)}.\sin \left\{ 4.\pi\left( x-0.125 \right) /3\right\}]]></equation></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:middle">
+        <td style="width:130px;">
+          <para styleclass="Body Text"><equation styleclass="Normal" font-size="36" translate="true"><![CDATA[0.875 < x \leq 1]]></equation></para>
+        </td>
+        <td>
+          <para styleclass="Body Text HowTo"><equation styleclass="Normal" font-size="32" translate="true"><![CDATA[f\left( x \right)=\frac{1}{4+\pi}.\left\[4+ \pi.x-\frac{1}{4}.\sin \left( 4.\pi.x \right) \right\]]]></equation></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:middle">
+        <td style="width:130px;">
+        </td>
+        <td>
+          <para styleclass="Body Text HowTo"><equation styleclass="Body Text HowTo" font-size="32" translate="true"><![CDATA[f^{'}\left( x \right)=\frac{\pi}{\pi+4}\left\[ 1-\cos \left( 4.\pi.x \right) \right\]]]></equation></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:middle">
+        <td style="width:130px;">
+        </td>
+        <td>
+          <para styleclass="Body Text HowTo"><equation styleclass="Normal" font-size="36" translate="true"><![CDATA[f^{''}\left( x \right)=\frac{4.\pi^{2}}{\pi+4}.sin \left( 4.\pi.x \right)
+]]></equation></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:middle">
+        <td style="width:130px;">
+        </td>
+        <td>
+          <para styleclass="Body Text HowTo"><equation styleclass="Normal" font-size="36" translate="true"><![CDATA[f^{'''}\left( x \right)=\frac{16.\pi^{3}}{\pi+4}.cos \left( 4.\pi.x \right)
+]]></equation></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Body Text"></para>
+    <para styleclass="Heading3_atocs_"><text styleclass="Heading3_atocs_" translate="true">Modified Trapezoid</text></para>
+    <para styleclass="Body Text"><table styleclass="Default" rowcount="20" colcount="2" style="cell-padding:3px; border-width:1px; border-spacing:0px; cell-border-width:0px; border-color:#993300; border-style:solid;">
+      <tr style="vertical-align:middle">
+        <td style="width:128px;">
+          <para styleclass="Body Text"><equation styleclass="Normal" font-size="32" translate="true"><![CDATA[0 \leq x \leq 0.125 ]]></equation></para>
+        </td>
+        <td>
+          <para styleclass="Body Text HowTo"><equation styleclass="Normal" font-size="32" translate="true"><![CDATA[f\left( x \right)=\frac{1}{\pi+2}.\left\[2.x-\frac{1}{2.\pi}.\sin \left( 4.\pi.x \right) \right\]]]></equation></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:middle">
+        <td style="width:128px;">
+        </td>
+        <td>
+          <para styleclass="Body Text HowTo"><equation styleclass="Normal" font-size="36" translate="true"><![CDATA[f^{'}\left( x \right)=\frac{2}{\pi+2}.\left\[ 1- cos \left( 4.\pi.x \right) \right\]
+]]></equation></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:middle">
+        <td style="width:128px;">
+        </td>
+        <td>
+          <para styleclass="Body Text HowTo"><equation styleclass="Normal" font-size="36" translate="true"><![CDATA[f^{''}\left( x \right)=\frac{8.\pi}{\pi+2}.sin \left( 4.\pi.x \right)
+]]></equation></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:middle">
+        <td style="width:128px;">
+        </td>
+        <td>
+          <para styleclass="Body Text HowTo"><equation styleclass="Normal" font-size="36" translate="true"><![CDATA[f^{'''}\left( x \right)=\frac{32.\pi^{2}}{\pi+2}.cos \left( 4.\pi.x \right)
+]]></equation></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:middle">
+        <td style="width:128px;">
+          <para styleclass="Body Text"><equation styleclass="Normal" font-size="36" translate="true"><![CDATA[0.125 < x \leq 0.375]]></equation></para>
+        </td>
+        <td>
+          <para styleclass="Body Text HowTo"><equation styleclass="Normal" font-size="32" translate="true"><![CDATA[f\left( x \right)=\frac{1}{\pi+2}.\left\[4.\pi.x^{2}-\left( \pi-2)x+\sfrac{\pi}{16}-\sfrac{1}{2.\pi^{2}} \right\]]]></equation></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:middle">
+        <td style="width:128px;">
+        </td>
+        <td>
+          <para styleclass="Body Text HowTo"><equation styleclass="Normal" font-size="36" translate="true"><![CDATA[f^{'}\left( x \right)=\frac{1}{\pi+2}.\left\[8.\pi.x-\pi+2]
+]]></equation></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:middle">
+        <td style="width:128px;">
+        </td>
+        <td>
+          <para styleclass="Body Text HowTo"><equation styleclass="Normal" font-size="36" translate="true"><![CDATA[f^{''}\left( x \right)=\frac{8.\pi}{\pi+2}
+]]></equation></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:middle">
+        <td style="width:128px;">
+        </td>
+        <td>
+          <para styleclass="Body Text HowTo"><equation styleclass="Normal" font-size="36" translate="true"><![CDATA[f^{'''}\left( x \right)=0]]></equation></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:middle">
+        <td style="width:128px;">
+          <para styleclass="Body Text"><equation styleclass="Normal" font-size="36" translate="true"><![CDATA[0.375 < x \leq 0.625]]></equation></para>
+        </td>
+        <td>
+          <para styleclass="Body Text HowTo"><equation styleclass="Normal" font-size="32" translate="true"><![CDATA[f\left( x \right)=\frac{1}{\pi+2}
+\left\[ 2\left( \pi+1 \right)x-0.625-\frac{1}{2.\pi}.\cos \left\[ 4.\pi\left( x-0.375 \right) \right\] \right\]]]></equation></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:middle">
+        <td style="width:128px; height:24px;">
+        </td>
+        <td>
+          <para styleclass="Body Text HowTo"><equation styleclass="Normal" font-size="32" translate="true"><![CDATA[f^{'}\left( x \right)=\frac{1}{\pi+2}
+\left\[ 2\left( \pi+1 \right)+2.\sin \left\[ 4.\pi\left( x-0.375 \right) \right\] \right\]]]></equation></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:middle">
+        <td style="width:128px;">
+        </td>
+        <td>
+          <para styleclass="Body Text HowTo"><equation styleclass="Normal" font-size="32" translate="true"><![CDATA[f^{''}\left( x \right)=\frac{8.\pi.\cos \left\[ 4.\pi\left( x-0.375 \right) \right\]}{\pi+2}]]></equation></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:middle">
+        <td style="width:128px;">
+        </td>
+        <td>
+          <para styleclass="Body Text HowTo"><equation styleclass="Normal" font-size="32" translate="true"><![CDATA[f^{'''}\left( x \right)=\frac{-32.\pi^{2}.\sin \left\[ 4.\pi\left( x-0.375 \right) \right\]}{\pi+2}]]></equation></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:middle">
+        <td style="width:128px;">
+          <para styleclass="Body Text"><equation styleclass="Normal" font-size="36" translate="true"><![CDATA[0.625 <
+ x \leq 0.875]]></equation></para>
+        </td>
+        <td>
+          <para styleclass="Body Text HowTo"><equation styleclass="Normal" font-size="32" translate="true"><![CDATA[f\left( x \right)=\frac{-1}{\pi+2}.\left\[4.\pi.\left( 1-x\right)^{2}-\left( \pi-2)\left( 1-x \right)+\sfrac{\pi}{16}-\sfrac{1}{2.\pi^{2}} \right\]-1]]></equation></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:middle">
+        <td style="width:128px;">
+        </td>
+        <td>
+          <para styleclass="Body Text HowTo"><equation styleclass="Normal" font-size="36" translate="true"><![CDATA[f^{'}\left( x \right)=\frac{1}{\pi+2}.\left\[8.\pi.\left( 1-x \right)-\pi+2]
+]]></equation></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:middle">
+        <td style="width:128px;">
+        </td>
+        <td>
+          <para styleclass="Body Text HowTo"><equation styleclass="Normal" font-size="36" translate="true"><![CDATA[f^{''}\left( x \right)=\frac{-8.\pi}{\pi+2}
+]]></equation></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:middle">
+        <td style="width:128px;">
+        </td>
+        <td>
+          <para styleclass="Body Text HowTo"><equation styleclass="Normal" font-size="36" translate="true"><![CDATA[f^{'''}\left( x \right)=0]]></equation></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:middle">
+        <td style="width:128px;">
+          <para styleclass="Body Text"><equation styleclass="Normal" font-size="36" translate="true"><![CDATA[0.875 <
+ x \leq 1]]></equation></para>
+        </td>
+        <td>
+          <para styleclass="Body Text HowTo"><equation styleclass="Normal" font-size="32" translate="true"><![CDATA[f\left( x \right)=\frac{-1}{\pi+2}.\left\[ 2.(1-x)-\frac{1}{2.\pi}.\sin\left\{ 4.\pi.\left( 1-x \right) \right\} \right\]-1]]></equation></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:middle">
+        <td style="width:128px;">
+        </td>
+        <td>
+          <para styleclass="Body Text HowTo"><equation styleclass="Normal" font-size="36" translate="true"><![CDATA[f^{'}\left( x \right)=\frac{2}{\pi+2}.\left\[ 1- cos \left( 4.\pi.x \right) \right\]
+]]></equation></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:middle">
+        <td style="width:128px;">
+        </td>
+        <td>
+          <para styleclass="Body Text HowTo"><equation styleclass="Normal" font-size="36" translate="true"><![CDATA[f^{''}\left( x \right)=\frac{-8.\pi}{\pi+2}.sin \left( 4.\pi.x \right)
+]]></equation></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:middle">
+        <td style="width:128px;">
+        </td>
+        <td>
+          <para styleclass="Body Text HowTo"><equation styleclass="Normal" font-size="36" translate="true"><![CDATA[f^{'''}\left( x \right)=\frac{32.\pi^{2}}{\pi+2}.cos \left( 4.\pi.x \right)
+]]></equation></para>
+        </td>
+      </tr>
+    </table></para>
+  </body>
+</topic>

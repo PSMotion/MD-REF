@@ -1,0 +1,178 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" modified="2022-03-21T12:14:39.503Z" lasteditedby="Adam" version="2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title>Mechanism | Add Conjugate Cam FB</title>
+  <keywords>
+    <keyword>Add<keyword>Conjugate Cam FB</keyword></keyword>
+    <keyword>Machine elements toolbar<keyword>Add Conjugate Cam FB</keyword></keyword>
+    <keyword>Menu &gt; Add &gt; Mechanism Menu<keyword>Add Conjugate Cam FB</keyword></keyword>
+  </keywords>
+  <body>
+    <header>
+      <para styleclass="Heading1">Mechanism | Add Conjugate Cam FB</para>
+    </header>
+    <para styleclass="Heading2">Add Conjugate Cam FB</para>
+    <para styleclass="SeeAlso">See <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-Conjugate-Cam-FB">Conjugate-Cam dialog-box</link></para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;"/></para>
+    <para styleclass="Heading4 Toggle_atocs_" style="text-indent:-36px; margin-left:36px;"><image src="tog_plus.gif" scale="100.00%" figurelistinclude="0"></image><tab/><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" src-collapsed="tog_plus.gif" src-expanded="tog_minus.gif"><caption><![CDATA[About Conjugate Cams]]></caption></toggle></para>
+    <para styleclass="Body Text HowTo"><table styleclass="PopupTable2" rowcount="1" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Table">The design of a cam-system must make sure the Follower (usually a Roller) is in continuous contact with the cam-profile at all machine-speeds. There are two(2) design options:</para>
+          <list id="0" type="ol" listtype="upper-alpha" formatstring="%0:s." format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullets" style="font-family:'Segoe UI Semibold'; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="Bullets"><text styleclass="VariableName">Force-Closed Cam</text><text styleclass="HowTo Bulleted"> - an external force pushes or pulls the follower-roller against the cam-profile. E.g. a Spring, Air-Cylinder, Gravity, Magnet, ...</text><text styleclass="VariableName"> </text></li>
+            <li styleclass="HowTo Bulleted"><text styleclass="VariableName">Body-Closed Cam</text> - a minimum of two(2) follower-rollers, in one <text styleclass="Element">Part,</text> are in continuous contact with two(2) cam-profiles in another <text styleclass="Element">Part</text>. The interactions between <text styleclass="Body Text">the cams and followers prevent them from separating.</text></li>
+          </list>
+          <list id="1" type="ul" listtype="bullet" formatstring="·" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullets" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="Bullets">The two(2) Cams are in a <text styleclass="Element">Part</text><text styleclass="VariableName"> </text></li>
+          </list>
+          <list id="2" type="ul" listtype="bullet" formatstring="·" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullets" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="Bullets">The two(2) Followers (usually Rollers) are in a different <text styleclass="Element">Part</text>.</li>
+          </list>
+          <para styleclass="Bullets"><text styleclass="VariableName">Body-Closed Cams</text><text styleclass="Body Text Howindent4bullets">, are also called </text><text styleclass="VariableName">Conjugate-Cams</text><text styleclass="Body Text Howindent4bullets">. </text></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading4 Toggle_atocs_">Why do we need to add the Conjugate-Cam FB ?</para>
+    <para styleclass="Body Text HowTo"><text styleclass="HowTo Bulleted">When there is a Cam in one kinematic-chain and one Follower in a different kinematic-chain, we can assign the Power-Source to the Cam. Then, we can calculate the Contact-Force for the complete machine-cycle.</text></para>
+    <para styleclass="Body Text HowTo"><text styleclass="HowTo Bulleted">When there are two Cams and two Followers in a </text><text styleclass="VariableName">Body-Closed Cam</text><text styleclass="HowTo Bulleted"> system, we use a </text><text styleclass="Element">Conjugate-Cam FB</text><text styleclass="HowTo Bulleted"> when the force analysis is important. We use it to calculate the Power-Source correctly, as the Power-Source can move from one Cam to the other and back again, in one machine-cycle.</text></para>
+    <para styleclass="Heading3_atocs_">2D-Cam : Related Elements</para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="7" colcount="3" style="width:100%; background-color:#dadada; head-row-background-color:#ffffff; alt-row-background-color:none;">
+      <thead style="vertical-align:top">
+        <td colspan="3" style="border-top:none; border-right:none; border-left:none;">
+          <para styleclass="Body Text"><text style="font-family:'Segoe UI'; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">The commands, elements, and dialogs that relate to </text><text styleclass="Element">2D-Cams</text><text style="font-family:'Segoe UI'; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;"> are:</text></para>
+        </td>
+      </thead>
+      <tr style="vertical-align:top">
+        <td style="width:154px;">
+          <para styleclass="VariableName">STEP 1A</para>
+          <para styleclass="VariableName-indent"><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Command-Add2DCam">Add 2D-Cam</link></para>
+        </td>
+        <td style="vertical-align:top; width:90px;">
+          <para styleclass="VariableName">... optional ...</para>
+          <para styleclass="VariableName"></para>
+        </td>
+        <td>
+          <para styleclass="VariableName">STEP 1B</para>
+          <para styleclass="VariableName-indent">Edit <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-2DCam" styleclass="Element">2D-Cam dialog-box</link></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td colspan="2" style="width:254px;">
+          <para styleclass="VariableName">STEP 2A                  </para>
+          <para styleclass="VariableName-indent"><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Command-FB-Cam-Data">Add Cam-Data FB</link> </para>
+        </td>
+        <td>
+          <para styleclass="VariableName">STEP 2B</para>
+          <para styleclass="VariableName-indent">Edit the <text styleclass="Element">Cam-Data FB </text>to link the FB to a <text styleclass="Element">2D-Cam.</text><text styleclass="Body Text">  </text></para>
+          <para styleclass="VariableName-indent"><text styleclass="Body Text">Close the </text><text styleclass="Element">Cam-Data dialog-box</text><text styleclass="Body Text"> and do </text>3A<text styleclass="Body Text"> and/or do </text>3B.</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td colspan="3" style="background-color:#e6ccf8;">
+          <para styleclass="VariableName">If there is a Conjugate-Cam: </para>
+          <para styleclass="VariableName-indent">Add Conjugate Cam FB - see below</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td colspan="3">
+          <para styleclass="VariableName">STEP 3A </para>
+          <para styleclass="VariableName-indent"><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-FunctionBlock-CamData">Cam-Analysis</link><text styleclass="Body Text HowTo"> (with </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Command-FB-Graph">Graph FB</link><text styleclass="Body Text HowTo">)</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td colspan="3">
+          <para styleclass="VariableName">STEP 4 </para>
+          <para styleclass="VariableName-indent">Edit the <text styleclass="Element">Cam-Data FB</text> again. <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-FunctionBlock-CamCoordinates">Calculate Cam-Coordinates</link></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td colspan="3">
+          <para styleclass="Body Text"><table styleclass="PopupTable2" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="VariableName"><text style="color:#ff0000;">IMPORTANT</text> : Cam Contact-Force and Contact-Stress, Cam-Life, Roller-Life</para>
+                <para styleclass="Body Table">To analyze <text styleclass="VariableName">Cam-Force</text> and <text styleclass="VariableName">Cam Contact-Stress</text>, the power-flow between the cam-part and the follower-part must be correct. </para>
+                <para styleclass="VariableName-indent">See <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-ConfigurePowerSource">Configure Power Source</link></para>
+              </td>
+            </tr>
+          </table></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading3_atocs_">Add Conjugate Cam FB</para>
+    <para styleclass="Body Text HowTo"><table styleclass="Standard" rowcount="6" colcount="2" style="width:auto;">
+      <tr style="vertical-align:middle">
+        <td style="width:200px;">
+          <para styleclass="VariableName-IT" style="text-align:right;"><image src="MD-Icon-AddConjugateCamFB.png" scale="100.00%" figurelistinclude="0"></image></para>
+        </td>
+        <td style="height:26px;">
+          <para styleclass="T_Menu"><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Menu-Machine-Elements">Machine elements toolbar</link> : Add Conjugate Cam FB</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:200px;">
+          <para styleclass="VariableName-IT" style="text-align:right;">Menu : </para>
+        </td>
+        <td>
+          <para styleclass="Body Text"><text styleclass="T_Menu">Add menu &gt; Mechanism sub-menu &gt; Add Conjugate-Cam FB</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:200px;">
+          <para styleclass="Normal"><image src="MD-FB-ADDCONJUGATECAM-01.ipp" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="VariableName">Preparation:</para>
+          <para styleclass="Body Text">You need in the model.</para>
+          <para styleclass="Body Text HowTo">two(2)<text styleclass="HowTo Numbered"> </text><text styleclass="Element">2D-Cams</text><text styleclass="Body Text" style="font-weight:bold;"> </text></para>
+          <list id="3" type="ul" listtype="bullet" formatstring="·" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:10pt; color:#000000;">
+            <li styleclass="HowTo Bulleted"><text styleclass="Element">2D-Cams</text> should be on one <text styleclass="Element">Part. </text><text styleclass="Body Text">E.g. a </text><text styleclass="Interface">Crank</text></li>
+            <li styleclass="HowTo Bulleted">Follower-Rollers* should be on a different <text styleclass="Element">Part</text><text styleclass="Body Text">. E.g. a </text><text styleclass="Interface">Rocker</text></li>
+          </list>
+          <para styleclass="Body Table">* Rollers and/or Flat-Faced Followers.</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:200px;">
+          <para styleclass="Normal"><image src="MD-FB-ADDCONJUGATECAM-02.ipp" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td rowspan="2" style="vertical-align:middle;">
+          <para styleclass="VariableName">What to do:</para>
+          <para styleclass="Body Text HowTo"><table styleclass="PopupTable2" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <list id="4" type="ol" listtype="decimal" formatstring="%0:s." format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Body Table" style="font-family:'Segoe UI Semibold'; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="Body Table"><text style="font-weight:normal; font-style:normal;">Click</text><text style="font-weight:normal; font-style:italic;"> </text><text styleclass="T_Menu">Machine-elements toolbar &gt; Add Conjugate-Cam FB</text><text styleclass="VariableName"> </text></li>
+                  <li styleclass="HowTo Numbered"><text styleclass="HowTo Bulleted">Click the </text><text styleclass="Interface">graphic-area</text><text styleclass="HowTo Bulleted">.</text></li>
+                </list>
+                <para styleclass="Body Text HowTo">The <text styleclass="Element">Conjugate-Cam-FB</text> is now in the <text styleclass="Interface">graphic-area</text>. </para>
+                <list id="5" type="ol" listtype="decimal" formatstring="%0:s." format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="3" styleclass="Body Table" style="font-family:'Segoe UI Semibold'; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="Body Table"><text style="font-weight:normal; font-style:normal;">Edit the </text><text styleclass="Element">Conjugate-Cam FB</text><text style="font-weight:normal; font-style:normal;"> to open the </text><text styleclass="Element">Conjugate-Cam FB dialog-box</text><text style="font-weight:bold; font-style:normal;">.</text><text styleclass="VariableName"> </text></li>
+                </list>
+                <para styleclass="HowTo Numbered"><text styleclass="VariableName">We must select the two 2D-Cams.</text></para>
+                <list id="5" type="ol" listtype="decimal" formatstring="%0:s." format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="3" styleclass="HowTo Numbered" style="font-family:'Segoe UI Semibold'; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="HowTo Numbered"><text style="font-weight:normal; font-style:normal;">Click the two(2) </text><text styleclass="Element">2D-Cams</text><text style="font-weight:normal; font-style:normal;"> in the </text><text styleclass="Interface">graphic-area</text><text style="font-weight:normal; font-style:normal;"> or the </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-Assembly-Tree" styleclass="Interface">Assembly-Tree</link><text style="font-weight:normal; font-style:normal;">.</text></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:200px;">
+          <para styleclass="Normal"><image src="MD-FB-ADDCONJUGATECAM-04.ipp" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"><caption><![CDATA[Conjugate-Cam dialog-box]]></caption></image></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td colspan="2">
+          <para styleclass="Body Text"><text style="font-weight:normal; font-style:normal;">In the </text><text styleclass="Element">Conjugate-Cam dialog-box</text><text style="font-weight:normal; font-style:normal;"> you will see:</text></para>
+          <para styleclass="VariableName-indent"><text styleclass="VariableName">Cam-Track </text><text styleclass="Body Text">: the names of the two(2)</text><text style="font-weight:normal; font-style:normal;"> </text><text styleclass="Element">2D-Cams</text><text styleclass="Body Text"> that are the </text><text style="font-weight:normal; font-style:normal;">Conjugate-Cams.</text></para>
+          <para styleclass="VariableName-indent">Cam-Flank Visible<text styleclass="Body Text HowTo"> :</text><text styleclass="HowTo Numbered" style="font-weight:normal; font-style:normal;"> these should be the Cam Flanks: Inner or Outer.</text></para>
+          <para styleclass="Body Text HowTo"><text style="font-weight:normal; font-style:normal;">When you open the </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Forces-Configure-Power-Source" style="font-weight:normal; font-style:normal;">Configure-Power Source dialog-box</link><text style="font-weight:normal; font-style:normal;">, the </text><text styleclass="VariableName">Conjugate-Cam</text><text style="font-weight:normal; font-style:normal;"> is available to select as a </text><text styleclass="VariableName">Motor-Element</text><text style="font-weight:normal; font-style:normal;">.</text></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Normal" style="page-break-before:always;"></para>
+  </body>
+</topic>

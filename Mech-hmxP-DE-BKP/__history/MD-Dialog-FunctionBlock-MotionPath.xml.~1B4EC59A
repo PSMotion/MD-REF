@@ -1,0 +1,408 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" status="Under Construction" modified="2022-04-22T11:53:52.812+01:00" lasteditedby="Adam" version="2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title>Dialog: Function-Block: Motion-Path</title>
+  <keywords>
+    <keyword>Dialog<keyword>Function-Block : Motion-Path FB</keyword></keyword>
+    <keyword>Motion-Path dialog</keyword>
+    <keyword>Move a Point along a Curve / Sketch</keyword>
+    <keyword>Move a Point along a sketch path</keyword>
+  </keywords>
+  <body>
+    <header>
+      <para styleclass="Heading1">Dialog: Function-Block: Motion-Path</para>
+    </header>
+    <para styleclass="Heading2">Motion-Path FB</para>
+    <para styleclass="SeeAlso">see <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Command-FB-Motion-Path">Add Motion-Path FB</link></para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="Body Text HowTo">Ein <text styleclass="Element">Bewegungspfad-FB</text> fügt einen <text styleclass="Interface">Bewegungspunkt</text> zu einem <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-Sketch-Loop" styleclass="Element">Skizzenpfad</link><text styleclass="Element">&#32;</text>hinzu<text styleclass="Body Text">.</text></para>
+    <para styleclass="Body Text HowTo">Bewegungswerte am Eingangsanschluss des <text styleclass="Element">Bewegungspfad-FB</text><text styleclass="Body Text">&#32;</text>bewegen den <text styleclass="Interface">Motion-Point</text> entlang des <text styleclass="Interface">Skizzenpfades</text>.</para>
+    <para styleclass="Body Text HowTo"><text styleclass="Body Text">Das </text><text styleclass="Element">Dialogfeld &quot;Bewegungspfad&quot;</text><text styleclass="Body Text"> ermöglicht es Ihnen, weitere </text><text styleclass="Interface">Bewegungspunkte</text><text styleclass="Body Text"> hinzuzufügen </text><text styleclass="Interface">,</text><text styleclass="Body Text"> sie entlang des </text><text styleclass="Interface">Skizzenpfads</text><text styleclass="Body Text"> zu verteilen , die Länge des </text><text styleclass="Interface">Skizzenpfads</text><text styleclass="Body Text"> zu steuern , ... .</text></para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="Heading4 Toggle_atocs_">Wichtiger Hinweis zu Data-Type</para>
+    <para styleclass="Body Text HowTo"><text styleclass="Body Text Howindent4bullets">Der Weg</text>, den<text styleclass="Interface">der/die Motion-Point(s</text>)<text styleclass="Body Text Howindent4bullets"> entlang des </text><text styleclass="Interface">Skizzenpfades</text><text styleclass="Body Text Howindent4bullets"> zurücklegen , ist eine Funktion des</text><text styleclass="VariableName"> Datentyps</text><text styleclass="Body Text Howindent4bullets"> am Eingangsanschluss des </text><text styleclass="Element">Motion-Path FB</text><text styleclass="Body Text Howindent4bullets">. </text>Wenn der <text styleclass="VariableName">Datentyp</text> ist:</para>
+    <list id="0" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+      <li styleclass="HowTo Bulleted"><text styleclass="Interface2">Lineareinheiten</text>, <text style="font-size:10pt; vertical-align:baseline;">mm</text>,<text styleclass="Body Text HowTo"> der </text><text styleclass="Interface">Motion-Point</text><text styleclass="Body Text HowTo"> bewegt sich um eine Strecke =</text><text styleclass="Body Text Howindent4bullets">&#32;</text><text styleclass="VariableName">input </text><text styleclass="Body Text">(</text><text styleclass="Body Text" style="font-size:10pt; vertical-align:baseline;">mm</text><text styleclass="Body Text">)</text></li>
+    </list>
+    <list id="1" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+      <li styleclass="HowTo Bulleted"><text styleclass="Body Text"> Winkeleinheiten,</text><text styleclass="VariableName">&#32;</text><text styleclass="Body Text HowTo" style="font-size:10pt; vertical-align:baseline;">Grad</text><text styleclass="VariableName">,</text><text styleclass="Body Text">&#32;</text><text styleclass="Body Text HowTo">der </text><text styleclass="Interface">Bewegungspunkt</text><text styleclass="Body Text HowTo"> bewegt sich um eine Strecke =</text><text styleclass="VariableName"> Eingabe × Gesamtlänge der Skizzenbahn/360 </text><text styleclass="Body Text">(</text><text styleclass="Body Text" style="font-size:10pt; vertical-align:baseline;">mm</text><text styleclass="Body Text">)</text></li>
+    </list>
+    <para styleclass="SeeAlso">Siehe mehr <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-FunctionBlock-MotionPath" anchor="MotionRangeMotionFB">Motion-Path Range and Motion FB</link></para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="Heading3_atocs_" style="text-indent:-18px; margin-left:18px;">Dialogfeld &quot;Bewegungspfad&quot; öffnen</para>
+    <para styleclass="Body Text"><table styleclass="Default" rowcount="1" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:40px;">
+          <para styleclass="Interface" style="text-align:right;"><image src="MD-Icon-FB-MotionPath.png" scale="100.00%" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="Body Text">Bearbeiten<text styleclass="VariableName">&#32;</text><text style="font-weight:normal; font-style:normal;">den </text><text styleclass="Element">Motion-Path FB</text><text style="font-weight:normal; font-style:normal;">:</text></para>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td style="border-top:none; border-right:none; border-bottom:none;">
+                <list id="2" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="B Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="B Bullets"><text styleclass="Body Text">Doppelklick auf den </text><text styleclass="Element" style="font-size:10pt;">Motion-Path FB</text><text styleclass="Body Text"> im </text><text styleclass="Interface">Grafikbereich</text><text styleclass="VariableName">&#32;</text></li>
+                </list>
+                <para styleclass="VariableName-IT">- oder -</para>
+                <list id="3" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="B Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="B Bullets"><text styleclass="SeeAlso">Siehe </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-How-to-Open-a-Dialog-Box" styleclass="SeeAlso">Öffnen einer Dialogbox</link><text styleclass="VariableName">&#32;</text></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Body Text">Die <text styleclass="Element">Motion-Path-Dialogbox</text> ist nun geöffnet.</para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="Body Text"><anchor id="Dialog-MotionPathr10" styleclass="Heading3_atocs_"><keywords><keyword>Motion-Path FB<keyword>Dialog box</keyword></keyword><keyword>Dialog<keyword>Motion-Path FB</keyword></keyword></keywords></anchor><text styleclass="Heading3_atocs_"> Dialogfeld &quot;Bewegungspfad</text></para>
+    <para styleclass="Body Text"><image src="MD-Dialog-MotionPathFB.png" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="Body Text"><text styleclass="Notes">Hinweis</text>: <text styleclass="VariableName">Registerkarte Übergangskurven</text> - <text styleclass="VariableName">MD16</text></para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="Heading4 HowTo_atoc_">Registerkarte Punktparameter</para>
+    <para styleclass="Body Text HowTo" style="text-indent:-36px; margin-left:60px;"><anchor id="MotPathPtPara" styleclass="Heading4 Toggle_atocs_2"><keywords><keyword>Motion-Path FB<keyword>Point Parameters</keyword></keyword></keywords></anchor><text styleclass="Heading4 Toggle_atocs_2">&#32;</text><image src="tog_plus.gif" scale="100.00%" styleclass="Separator-Header" figurelistinclude="0"></image><tab /></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="4" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:231px;">
+          <para styleclass="Normal"><image src="MD-DIALOG-MOTIONPATH-PT-PARAMS-PT-PARAMS.ipp" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td style="border-bottom:none;">
+          <para styleclass="Body Table"><image src="Red-14-1b.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Image Caption">&#32;</text><text styleclass="Parameter-Header"># BewegungsPunkte:</text><text styleclass="Body Text"> | Standard = 1</text></para>
+          <para styleclass="Body Text HowTo"><text styleclass="Body Table">So bearbeiten Sie die Anzahl der </text><text styleclass="Interface">Bewegungspunkte</text><text styleclass="Body Table"> auf dem </text><text styleclass="Interface">Skizzenpfad:</text></para>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <list id="4" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Body Table" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="Body Table">Erhöhen oder verringern Sie die <text styleclass="Parameter"> Anzahl der Motion-Points</text><text styleclass="VariableName">&#32;</text></li>
+                  <li styleclass="Body Table"><text styleclass="Body Text HowTo">Klicken Sie auf </text><link displaytype="button" type="topiclink" href="" anchor="MotPathPtPara">Re-Generate Motion-Points</link></li>
+                </list>
+                <para styleclass="Body Table">Die <text styleclass="Interface">Bewegungspunkte</text><text styleclass="Body Text"> werden gleichmäßig über die Gesamtlänge (Standardfall) des </text><text styleclass="Interface">Skizzenpfads</text><text styleclass="Body Text"> verteilt </text><text styleclass="Interface">.</text></para>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Body Text HowTo">The button is at bottom of <text styleclass="Separator">Point Parameters</text> separator.</para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="Body Table"><image src="Red-14-2.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Normal">&#32;</text><text styleclass="Parameter-Header">Phasenbereich</text><text styleclass="Body Text HowTo"> | Voreinstellung = 360 </text></para>
+          <para styleclass="Body Table"><image src="Red-14-3.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Normal">&#32;</text><text styleclass="Parameter-Header">Linearer Bereich | </text><text styleclass="Body Text">Standard = Länge des </text><text styleclass="Interface">Skizzenpfads</text><text styleclass="Body Text">.</text></para>
+          <para styleclass="Body Text HowTo">So verteilen Sie <text styleclass="Interface">Bewegungspunkte</text> über einen reduzierten Bereich (kürzere Länge) des <text styleclass="Interface">Skizzenpfads</text>&#32;</para>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <list id="5" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullets" style="font-family:&apos;Noto Sans&apos;; font-size:11pt; color:#000000;">
+                  <li styleclass="Bullets"><text styleclass="Body Text">Bearbeiten Sie den </text><image src="Red-14-2.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Body Text">&#32;</text><text styleclass="Parameter-Header">Phasenbereich</text><text styleclass="Body Table"> (</text><text styleclass="Body Table" style="font-size:10pt; vertical-align:baseline;">deg</text><text styleclass="Body Table">)</text></li>
+                </list>
+                <para styleclass="Body Text">- ODER -</para>
+                <list id="6" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullets" style="font-family:&apos;Noto Sans&apos;; font-size:11pt; color:#000000;">
+                  <li styleclass="Bullets">Bearbeiten Sie den <image src="Red-14-3.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image>&#32;<text styleclass="Parameter-Header">Linearbereich</text><text styleclass="Body Table">&#32;</text><text styleclass="Body Text" style="font-size:10pt; vertical-align:baseline;">(mm</text><text styleclass="Body Text">)</text></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Body Text HowTo">Wenn Sie den <text styleclass="Parameter">Phasenbereich</text><image src="Red-14-2.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Image Caption">&#32;</text>bearbeiten<text styleclass="Body Text">, wird automatisch</text>auch der<text styleclass="Parameter"> lineare Bereich</text><image src="Red-14-3.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Body Text"> aktualisiert und umgekehrt.</text></para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="Notes">Note: </para>
+          <para styleclass="Body Text">Wenn Sie die <text styleclass="Parameter">Anzahl der Bewegungspunkte</text><image src="Red-14-1b.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Image Caption">&#32;</text>bearbeiten &#160;und Sie zuvor auch <text styleclass="Element">Stiftgelenke</text> mit <text styleclass="Interface">Bewegungspunkten</text> erstellt haben , müssen Sie die <text styleclass="Element">Stiftgelenke</text> erneut hinzufügen.</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td colspan="2">
+          <para styleclass="Body Text HowTo">Die <text styleclass="Interface">Bewegungspunkte</text> sind gleichmäßig entlang des <text styleclass="Parameter">Phasenbereichs</text> und des <text styleclass="Parameter">linearen Bereichs</text> der <text styleclass="Interface">Skizzenbahn</text> verteilt.</para>
+          <para styleclass="Body Text HowTo">Die Verteilung der <text styleclass="Interface">Motion-Points</text> lässt sich am besten anhand von Beispielen veranschaulichen. Wir fordern Sie auf, zu experimentieren.</para>
+          <para styleclass="VariableName"><text styleclass="Interface2">Beispiel</text></para>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="VariableName"><text styleclass="Body Text">Die tatsächliche Länge eines Skizzenpfads beträgt </text>127,<text style="font-size:10pt; vertical-align:baseline;">5 mm</text>.</para>
+                <para styleclass="Body Table"><text styleclass="Parameter-Header">Anzahl der Bewegungspunkte = 3</text><text styleclass="Parameter">. </text></para>
+                <para styleclass="Body Table"><text styleclass="Parameter-Header">Phasenbereich =360</text><text styleclass="Body Text"> (und </text><text styleclass="Parameter-Header">Linearbereich = 127.5</text><text styleclass="Body Text">) </text></para>
+                <para styleclass="Body Text2-Note" style="margin-left:25px;"><text styleclass="Body Text">The 3 </text><text styleclass="Interface">Motion-Points</text><text styleclass="Body Text"> are equally spaced over </text><text styleclass="VariableName">127.5</text><text styleclass="VariableName" style="font-size:10pt; vertical-align:baseline;">mm. </text><text styleclass="Body Text">The distance between each </text><text styleclass="Interface">Motion-Point</text><text styleclass="Body Text">&#32;</text><text styleclass="VariableName">= 127.5/3</text><text styleclass="VariableName" style="font-size:10pt; vertical-align:baseline;">mm</text><text styleclass="VariableName"> =42.5</text><text styleclass="VariableName" style="font-size:10pt; vertical-align:baseline;">mm</text></para>
+                <para styleclass="Body Text2-Note" style="margin-left:25px;"><text styleclass="Body Text">Position of </text><text styleclass="Parameter">Motion-Point #1 = 0</text><text styleclass="Parameter" style="font-size:8pt;">mm</text><text styleclass="Parameter">, Motion-Point #2 = 42.5mm,</text><text styleclass="Body Text"> and </text><text styleclass="Parameter">Motion-Point #3 = 85.0mm</text></para>
+                <para styleclass="Body Table"><text styleclass="Parameter-Header">Phasenbereich =120</text><text styleclass="Body Text"> (und </text><text styleclass="Parameter-Header">Linearbereich = 42.5</text><text styleclass="Body Text">) </text></para>
+                <para styleclass="Body Text2-Note" style="margin-left:25px;"><text styleclass="Body Text">Die</text>&#32;<text styleclass="Body Text">3 </text><text styleclass="Interface">Motion-Points</text><text styleclass="Body Text"> sind nun über eine lineare Länge von </text><text styleclass="VariableName">127,5/3 = 42,</text><text styleclass="VariableName" style="font-size:10pt; vertical-align:baseline;">5mm</text><text styleclass="Body Text"> verteilt </text><text styleclass="VariableName">.</text></para>
+                <para styleclass="Body Text2-Note" style="margin-left:25px;"><text styleclass="Body Text">Der Abstand zwischen den einzelnen Motion-Points beträgt nun </text><text styleclass="VariableName">42,5/(3-1) = 21,25mm</text></para>
+                <para styleclass="Body Text2-Note" style="margin-left:25px;"><text styleclass="Body Text">Position des </text><text styleclass="Parameter">Bewegungspunktes #1 = 0mm, Bewegungspunkt #2 = 21,25</text><text styleclass="Body Text"> und </text><text styleclass="Parameter">Bewegungspunkt #3 = 42,5mm</text></para>
+              </td>
+            </tr>
+          </table></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td colspan="2">
+          <para styleclass="Body Table"><text styleclass="Parameter-Header">Phasenversatz (</text><text styleclass="Parameter-Header" style="font-size:10pt; vertical-align:baseline;">deg</text><text styleclass="Parameter-Header">) | </text><text styleclass="Body Text">Voreinstellung = 0</text></para>
+          <para styleclass="Body Table"><text styleclass="Parameter-Header">LinearerVersatz (</text><text styleclass="Parameter-Header" style="font-size:10pt; vertical-align:baseline;">mm</text><text styleclass="Parameter-Header">) | </text>Voreinstellung<text styleclass="Body Text">= 0</text></para>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Body Table"><text styleclass="Parameter-Header">Phasenversatz</text><text styleclass="Body Text HowTo" style="font-weight:normal; font-style:normal;"> und </text><text styleclass="Parameter-Header">Linearer Versatz</text><text styleclass="Body Text HowTo" style="font-weight:normal;"> bewegung ALLER </text><text styleclass="Interface">Bewegungspunkte</text><text styleclass="Body Text"> entlang des Skizzenpfades.</text><text styleclass="Element">&#32;</text><text styleclass="Body Text">Die Offset-Werte geben die Position von </text><text styleclass="Interface">Motion-Point #1</text><text styleclass="Body Text">an , wenn</text><text styleclass="Body Text HowTo" style="font-weight:normal;"> der</text><text styleclass="Body Text" style="font-weight:normal;"> Bewegungswert am Eingangsanschluss des </text><text styleclass="Element">Motion-Path FBs</text><text styleclass="Body Text" style="font-weight:normal;"> gleich 0 ist; oder, wenn kein Draht an seinem Eingangsanschluss angeschlossen ist.</text><text styleclass="Body Text HowTo">&#32;</text></para>
+                <para styleclass="Body Text HowTo"><text styleclass="Parameter">Phase-Offset</text>: entspricht die Länge des Skizzenpfads <text styleclass="VariableName-IT" style="font-style:normal;">360</text><text styleclass="VariableName-IT">. </text></para>
+                <para styleclass="Body Text Howindent4bullets">Wenn z.B. <text styleclass="VariableName">Input = 360</text>, UND Daten-Typ ist rotierend, ist der <text styleclass="Interface">Motion-Point</text> wieder an seiner Startposition.</para>
+                <para styleclass="Body Text HowTo"><text styleclass="Parameter-Header">Linearer Versatz</text>: setzt die Länge des Skizzenpfads mit seiner <text styleclass="VariableName-IT">tatsächlichen linearen Länge</text>gleich . </para>
+                <para styleclass="Body Text Howindent4bullets">Wenn z.B. <text styleclass="VariableName">Input = 360</text>, UND Daten-Typ ist linear, ist der <text styleclass="Interface">Motion-Point</text> 360 mm von seiner Startposition entfernt.</para>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Interface2">Beispiel</para>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="VariableName"><text styleclass="Body Text HowTo">Ein Skizzenpfad ist 127,5 mm lang. Es gibt </text><text styleclass="Interface2">1 Bewegungs-Punkt</text><text styleclass="Interface">.</text></para>
+                <list id="7" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullets" style="font-family:Symbol; font-size:11pt; color:#000000;">
+                  <li styleclass="Bullets">Ein <text styleclass="Parameter">Phasen-Offset=40</text><text style="font-size:10pt; vertical-align:baseline;">(deg</text>) verschiebt den <text styleclass="Interface">Bewegungspunkt Nr. 1 </text>auf 127,5×40 ∕ 360=14,16mm entlang der Skizzenbahn. </li>
+                </list>
+                <list id="8" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullets" style="font-family:Symbol; font-size:11pt; color:#000000;">
+                  <li styleclass="Bullets">Ein <text styleclass="Parameter">Linear-Offset=40(</text><text style="font-size:10pt; vertical-align:baseline;">mm</text>) verschiebt den <text styleclass="Interface">Bewegungspunkt Nr. 1 </text><text styleclass="Body Text">um 40 mm</text>entlang des Skizzenpfads<text styleclass="Body Text">. </text></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td colspan="2">
+          <para styleclass="Body Text"><text styleclass="Parameter-Header">Schaltfläche &quot;Motion-Points neu generieren</text></para>
+          <para styleclass="Body Text HowTo">Klicken Sie auf diese Schaltfläche, um die im <text style="font-style:normal;">Parameter</text>&#32;<text styleclass="Parameter">Anzahl der </text>Bewegungspunkte<text style="font-style:italic;">&#32;</text>angegebenen <text styleclass="Interface">Bewegungspunkte</text> zu erzeugen<text style="font-style:italic;">.</text></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Body Text HowTo" style="text-indent:-36px; margin-left:60px;"><anchor id="MotionPathFB-PointList" styleclass="Body Text"><keywords><keyword>Motion-Path Dialog box<keyword>Point List</keyword><keyword>Data Dispaly in Graphic Area</keyword></keyword></keywords></anchor><text styleclass="Body Text">&#32;</text><image src="tog_plus.gif" scale="100.00%" styleclass="Separator-Header" figurelistinclude="0"></image><tab /><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" src-collapsed="tog_plus.gif" src-expanded="tog_minus.gif" styleclass="Separator-Header"><caption><![CDATA[Point List and Data Display ]]></caption></toggle></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Standard" rowcount="1" colcount="2" style="width:auto;">
+      <tr style="vertical-align:top">
+        <td style="width:231px;">
+          <para styleclass="Normal"><image src="MD-DIALOG-MOTIONPATH-PT-PARAMS-PT-LIST.ipp" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td style="border-top:none; border-right:none; border-bottom:none;">
+          <para styleclass="Body Text"><text styleclass="VariableName">Bewegungspunkt-Informationen</text><text style="font-weight:normal;"> - </text><text styleclass="VariableName-IT">schreibgeschützt</text></para>
+          <para styleclass="VariableName">Überschriften: Name | Index | Phase</para>
+          <list id="9" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted"><text styleclass="VariableName-IT">Name</text> ist der Name, der zur Identifizierung des <text styleclass="Interface">Motion-Points</text> vergeben wird </li>
+          </list>
+          <para styleclass="Body Text Howindent4bullets">Wenn Sie auf einen <text styleclass="Interface">Motion-Point</text> in der Liste klicken, wird dieser im <text styleclass="Interface">Grafikbereich</text>&#32;<text styleclass="VariableName-IT" style="color:#ff0000;">rot</text> dargestellt.</para>
+          <list id="10" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted"><text styleclass="VariableName-IT">Index</text> ist die <text styleclass="Interface">Motion-Point</text> Nummernidentität</li>
+          </list>
+          <list id="11" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:10pt; color:#000000;">
+            <li styleclass="HowTo Bulleted"><text styleclass="VariableName-IT">Phase</text> ist die relative Verschiebung entlang der Skizzenbahn, bezogen auf den ersten <text styleclass="Interface">Bewegungspunkt</text></li>
+          </list>
+          <para styleclass="Parameter-Header">Daten des ersten Punktes anzeigen als:</para>
+          <para styleclass="Body Text HowTo">Sie können die Entfernung des <text styleclass="Interface">Bewegungspunkts Nr. 1 </text>anzeigen, wenn Sie das Modell bewegen. Die Entfernung wird über dem Bewegungspunkt Nr. 1 angezeigt.</para>
+          <list id="12" type="ul" listtype="bullet" formatstring="&#164;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="2" styleclass="HowTo Bulleted" style="font-family:Wingdings; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted"><text styleclass="Parameter">Nichts anzeigen</text> - oberhalb des <text styleclass="Interface">Motion-Points #1</text> im <text styleclass="Interface">Grafikbereich</text>wird nichts angezeigt</li>
+            <li styleclass="HowTo Bulleted"><text styleclass="Parameter">Entfernung anzeigen</text> - die lineare Entfernung, die der <text styleclass="Interface">Bewegungspunkt Nr. 1</text> entlang des <text styleclass="Interface">Skizzenpfads</text>zurückgelegt hat</li>
+            <li styleclass="HowTo Bulleted"><text styleclass="Parameter">Phase anzeigen</text> - die Winkeldistanz, um die sich der <text styleclass="Interface">Bewegungspunkt Nr. 1</text> entlang der <text styleclass="Interface">Skizzenbahn</text> bewegt hat, wobei 360 gleich der vollen Länge der <text styleclass="Interface">Skizzenbahn</text> ist.</li>
+          </list>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading4 HowTo_atoc_">Registerkarte Längenkontrolle</para>
+    <para styleclass="Body Text HowTo" style="text-indent:-36px; margin-left:60px;"><anchor id="MtPAthLenCont" styleclass="Body Text"><keywords><keyword>Motion-Path FB<keyword>Control Path Length with Dimension</keyword></keyword></keywords></anchor><text styleclass="Body Text">&#32;</text><image src="tog_plus.gif" scale="100.00%" styleclass="Separator-Header" figurelistinclude="0"></image><tab /><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" src-collapsed="tog_plus.gif" src-expanded="tog_minus.gif" styleclass="Separator-Header"><caption><![CDATA[Control Length of Path]]></caption></toggle><text styleclass="Separator-Header">&#32;</text></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Standard" rowcount="3" colcount="2" style="width:auto;">
+      <tr style="vertical-align:top">
+        <td colspan="2">
+          <para styleclass="Body Text">Wählen Sie eine Bemaßung aus, um die Länge des <text styleclass="Interface">Skizzenpfads</text> zu steuern, der mit dem <text styleclass="Element">FB &quot;Bewegungspfad&quot;</text>verknüpft ist <text styleclass="Element">.</text></para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="Interface2">Wichtig</para>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Body Text">Im <text styleclass="Interface">Teile-Editor</text> sollte die <text styleclass="Interface">Skizzenbahn</text>&#32;<text styleclass="VariableName">vollständig mit Zwangsbedingungen versehen</text> sein <text styleclass="VariableName" style="color:#ff0000;">, bevor</text>Sie die<text styleclass="Parameter">Kontrollbemaßung</text><text styleclass="Body Text HowTo"> auswählen </text><text styleclass="Parameter">.</text></para>
+                <para styleclass="Body Text">Wenn Sie dann die <text styleclass="Parameter">Kontroll-Bemaßung</text> bearbeiten, wird der <text styleclass="Interface">Skizzenpfad</text> besser vorhersehbar.</para>
+              </td>
+            </tr>
+          </table></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:234px;">
+          <para styleclass="Normal"><image src="MD-Dialog-MotionPathFB-LengthControl-Control.png" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="Body Table"><text styleclass="Body Text">Die &#160;Taste</text>für<text styleclass="VariableName">die Längenkontrolle</text><image src="Red-14-1b.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Body Text">&#32;</text></para>
+          <para styleclass="Body Table"><text styleclass="Body Text">&#32;</text><link displaytype="button" type="topiclink" href="" anchor="MtPAthLenCont">START: Length Control </link> OR <text style="font-size:10pt; vertical-align:baseline;">&#32;</text><link displaytype="button" type="topiclink" href="" anchor="MtPAthLenCont">STOP: Length Control</link>.</para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="Body Table"><text styleclass="VariableName">START der Längenkontrolle des Bewegungspfads mit einer Dimension:</text></para>
+          <para styleclass="Body Text HowTo"><table styleclass="PopupTable2" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <list id="13" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Body Table" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:10pt; font-weight:bold; color:#333399;">
+                  <li styleclass="Body Table">Klicken Sie auf die <text styleclass="Parameter">Schaltfläche </text><image src="Red-14-1b.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><link displaytype="button" type="topiclink" href="" anchor="MtPAthLenCont">START Length Control </link></li>
+                </list>
+                <para styleclass="Body Text HowTo">Der <text styleclass="Interface">Part-Editor</text> öffnet sich.</para>
+                <list id="14" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Numbered" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; color:#000080;">
+                  <li styleclass="HowTo Numbered"><text styleclass="Body Text HowTo">Klicken Sie auf eine Bemaßung, die die Länge der </text><text styleclass="Interface">Skizzenbahn</text><text styleclass="Body Text HowTo">steuern kann . </text><text styleclass="SeeAlso">Siehe Hinweis 1 unten.</text></li>
+                </list>
+                <para styleclass="Body Text HowTo">Der <text styleclass="Interface">Teile-Editor</text> wird geschlossen. </para>
+                <para styleclass="Body Table">Der Name der <text styleclass="Interface">Control-Dimension</text> steht jetzt unter der Schaltfläche.</para>
+                <para styleclass="Body Table">Z.B. <text styleclass="Parameter">Dimensionsname</text><text styleclass="VariableName"> DimPtoP4</text><image src="Red-14-2.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Parameter">&#32;</text></para>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="VariableName">Zum STOPP der Längenkontrolle des Bewegungspfades mit einer Dimension:</para>
+          <para styleclass="Body Text HowTo"><table styleclass="PopupTable2" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <list id="15" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Body Table" style="font-family:&apos;Noto Sans&apos;; font-size:11pt; color:#000000;">
+                  <li styleclass="Body Table">Klicken Sie auf die <text styleclass="Parameter">Schaltfläche</text>&#32;<image src="Red-14-1b.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><link displaytype="button" type="topiclink" href="" anchor="MtPAthLenCont">STOP Length Control</link></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td colspan="2">
+          <para styleclass="VariableName">Schreibgeschützt</para>
+          <para styleclass="Body Text HowTo"><table styleclass="PopupTable2" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Body Table"><text styleclass="Parameter">Control-Dimension Length</text>&#32;<text styleclass="VariableName-IT">(read-only)</text><image src="Red-14-3.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+                <para styleclass="Body Text HowTo">Der Wert der Dimension, die Sie als <text styleclass="Parameter">Control-Dimension</text><image src="Red-14-2.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image> ausgewählt haben.</para>
+                <para styleclass="Body Table"><text styleclass="Parameter">Actual Path Length</text><text styleclass="Body Text"> -</text><text styleclass="VariableName-IT"> (read only)</text><image src="Red-14-4.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+                <para styleclass="Body Text HowTo">Die Länge des Skizzenpfads, der mit dem <text styleclass="Element">FB &quot;Bewegungspfad&quot;</text>v erbunden ist</para>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Body Text"><text styleclass="Parameter-Header">Zielpfadlänge</text><image src="Red-14-5.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image> - <text styleclass="SeeAlso">see Note 2 below</text></para>
+          <para styleclass="Body Text HowTo"><table styleclass="PopupTable2" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <list id="16" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="3" styleclass="Body Table" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="Body Table">Edit to specify the length of the sketch-path <text styleclass="Body Text HowTo">associated with the </text><text styleclass="Element">Motion-Path FB</text><text styleclass="VariableName">&#32;</text></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Body Text"><text styleclass="Parameter-Header">Control-Dimension Min</text><image src="Red-14-6.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Parameter-Header"> / Max</text><image src="Red-14-7.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Parameter-Header">&#32;</text><text styleclass="SeeAlso">- see Note 3 below</text></para>
+          <para styleclass="Body Text HowTo"><table styleclass="PopupTable2" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Body Table">The <text styleclass="Parameter">Control-Dimensions Minimum</text><image src="Red-14-6.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image> is estimated as 0.5 × Control-Dimension - <text styleclass="SeeAlso-small">see Note 3.</text></para>
+                <para styleclass="Body Table">The <text styleclass="Parameter">Control-Dimensions Minimum</text><image src="Red-14-7.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image> is estimated as 2.0 × Control-Dimension<text styleclass="Body Text"> - </text><text styleclass="SeeAlso-small">see Note 3.</text></para>
+                <list id="17" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="4" styleclass="Body Table" style="font-family:&apos;Noto Sans&apos;; font-size:11pt; color:#000000;">
+                  <li styleclass="Body Table">Edit the <text styleclass="Parameter">Control-Dimension Minimum</text><image src="Red-14-6.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image> and <text styleclass="Parameter">Maximum</text><image src="Red-14-7.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image> limits</li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading4 Toggle_atocs_2" style="text-indent:-36px; margin-left:60px;"><image src="tog_plus.gif" scale="100.00%" figurelistinclude="0"></image><tab /><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" src-collapsed="tog_plus.gif" src-expanded="tog_minus.gif"><caption><![CDATA[Notes 1,2,3 ]]></caption></toggle></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="1" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="VariableName"><text styleclass="SeeAlso">Note 1: </text><text styleclass="Parameter-Header">Steuerung-Dimension</text></para>
+          <para styleclass="Body Text HowTo">Die <text styleclass="Parameter-Header">Steuerungs-Dimension</text> sollte sein:</para>
+          <para styleclass="Body Text HowTo"><table styleclass="PopupTable2" rowcount="2" colcount="2" style="border-width:0px; border-spacing:0px; border-collapse:collapse; cell-border-width:1px; border-color:#993300; border-style:solid;">
+            <tr style="vertical-align:top">
+              <td style="width:100px;">
+                <para styleclass="Body Table"><text styleclass="VariableName">DimPtoP# </text></para>
+              </td>
+              <td style="width:640px;">
+                <para styleclass="Body Table">Abstand zwischen zwei <text styleclass="Element">Punkten</text></para>
+              </td>
+            </tr>
+            <tr style="vertical-align:top">
+              <td style="width:100px;">
+                <para styleclass="Body Table"><text styleclass="VariableName">DimL#</text></para>
+              </td>
+              <td style="width:640px;">
+                <para styleclass="Body Table">Länge einer <text styleclass="Element">Linie</text></para>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Body Text HowTo">Die <text styleclass="Parameter-Header">Steuerungs-Dimension</text> sollte <text styleclass="VariableName" style="color:#ff0000;">NICHT</text> sein:</para>
+          <para styleclass="Body Text HowTo"><table styleclass="PopupTable2" rowcount="2" colcount="2" style="border-width:0px; border-spacing:0px; border-collapse:collapse; cell-border-width:1px; border-color:#993300; border-style:solid;">
+            <tr style="vertical-align:top">
+              <td style="width:101px;">
+                <para styleclass="Body Table"><text styleclass="VariableName">DimPtoL#</text></para>
+              </td>
+              <td>
+                <para styleclass="Body Table">Senkrechter Abstand eines <text styleclass="Element">Punktes</text><text styleclass="Body Text"> zu einer </text><text styleclass="Element">Linie</text></para>
+              </td>
+            </tr>
+            <tr style="vertical-align:top">
+              <td colspan="2">
+                <para styleclass="Body Table"><text styleclass="VariableName" style="color:#787771;">Gray</text><text styleclass="Body Text HowTo">, bevor Sie ihn auswählen. Es wird z.B. mit einem </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-Design-Set" styleclass="Body Text HowTo">Design-Set</link><text styleclass="Body Text HowTo"> gesteuert </text></para>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="Body Text"><text styleclass="SeeAlso">Note 2:</text><text styleclass="Notes">&#32;</text><text styleclass="Parameter-Header">Zielpfad-Länge</text></para>
+          <para styleclass="Body Text HowTo">Bearbeiten Sie die <text styleclass="Parameter">Soll-Trassenlänge</text> in kleinen Schritten. Wenn sich die <text styleclass="Parameter">Ist-Bahnlänge</text> nicht ändert, <text styleclass="SeeAlso">siehe Hinweis 3</text></para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="Body Text"><text styleclass="SeeAlso">Note 3:</text><text styleclass="Notes">&#32;</text><text styleclass="Parameter-Header">Control-dimension min </text>and/or<text styleclass="Parameter-Header"> MAX</text></para>
+          <para styleclass="VariableName">Nachricht im <text styleclass="Interface">Feedback-Bereich</text>:</para>
+          <para styleclass="Body Text"><image src="MD-FeedbackMsg - ControlDimensionMin too samall.ipp" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+          <para styleclass="Body Text HowTo">Oft sind die Werte für <text styleclass="Parameter">die Kontrollabmessungen </text><text styleclass="Parameter-Header">Min</text> oder <text styleclass="Parameter-Header">Max</text> so gewählt, dass die <text styleclass="Parameter">Ist-Pfadlänge</text> gleich der <text styleclass="Parameter">Soll-Pfadlänge </text>sein kann <text styleclass="Parameter">. </text></para>
+          <para styleclass="Body Text HowTo">Die <text styleclass="VariableName-IT">Wurzelfindungsmathematik</text> ist jedoch durcheinander geraten!</para>
+          <list id="18" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted">Erhöhen oder verringern Sie die<text styleclass="Body Text"> Werte für</text> die <text styleclass="Parameter">Control-Dimension Min/Max</text><text styleclass="Body Text"> und versuchen Sie dann</text>, die <text styleclass="Parameter">Zielpfad-Länge</text><text styleclass="Body Text"> erneut zu bearbeiten.</text></li>
+            <li styleclass="HowTo Bulleted"><text styleclass="Body Text">Möglicherweise müssen Sie diese Werte so bearbeiten, dass sie fast der tatsächlichen Länge der </text><text styleclass="Parameter">Control-Dimension</text>entsprechen<text styleclass="Body Text">.</text></li>
+          </list>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="VariableName"></para>
+    <para styleclass="Body Text HowTo" style="text-indent:-36px; margin-left:60px;"><anchor id="BeltToothPitch" styleclass="Body Text"><keywords><keyword>Motion-Path FB<keyword>BeltToothPitch</keyword></keyword></keywords></anchor><text styleclass="Body Text">&#32;</text><image src="tog_plus.gif" scale="100.00%" styleclass="Separator-Header" figurelistinclude="0"></image><tab /><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" src-collapsed="tog_plus.gif" src-expanded="tog_minus.gif" styleclass="Separator-Header"><caption><![CDATA[Belt Tooth Pitch ]]></caption></toggle></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="1" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:250px;">
+          <para styleclass="Normal"><image src="MD-Dialog-MotionPathFB-LengthControl-Belt.png" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="Body Text"><text styleclass="Heading4 Toggle_atocs_2">&#32;</text><text styleclass="Body Text HowTo">Die </text><text styleclass="Parameter-Header">Riemenzahnteilung</text><text styleclass="Body Text HowTo"> verändert die Riemenlänge nicht. </text></para>
+          <para styleclass="Body Text HowTo">Der Durchmesser einer <text styleclass="Element">Riemenscheibe</text> ist eine Funktion der <text styleclass="Parameter-Header">Anzahl der Zähne</text><text styleclass="Body Text">&#32;</text><text styleclass="VariableName" style="color:#ff0000;">UND</text><text styleclass="Body Text">&#32;</text><text styleclass="Parameter-Header">Riemenzahnteilung.</text></para>
+          <para styleclass="Body Table">&#32;<text styleclass="SeeAlso">Siehe </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-Pulley" anchor="Pulleydialogbox" styleclass="SeeAlso">Dialogfeld Riemenscheibe</link></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="Heading3_atocs_" style="text-indent:-36px; margin-left:36px;">BEWEGUNGSPFAD UND DATENTYPEN</para>
+    <para styleclass="Heading3_atocs_" style="text-indent:-36px; margin-left:36px;"><anchor id="MotionRangeMotionFB"><keywords><keyword>Motion FB<keyword>Motion-Path FB and Range</keyword><keyword>Output Data-Type</keyword></keyword></keywords></anchor><image src="tog_plus.gif" scale="100.00%" styleclass="Interface2" figurelistinclude="0"></image><tab /><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" src-collapsed="tog_plus.gif" src-expanded="tog_minus.gif" styleclass="Interface2"><caption><![CDATA[Daten-Typ und MOTION-POINTS]]></caption></toggle></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="1" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Table">Die Position der <text styleclass="Interface">Motion-Points</text> entlang des <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-Sketch-Loop" styleclass="Interface">Skizzenpfades</link> ist eine Funktion des <text styleclass="VariableName">Datentyps</text> am Eingangsanschluss des <text styleclass="Element">Motion-Path FB</text>. </para>
+          <para styleclass="Body Table">Der <text styleclass="VariableName">Data-Type</text> am Eingangsanschluss <text styleclass="VariableName" style="color:#ff0000;">muss</text>&#32;<text styleclass="Parameter-Header">Linear</text> oder <text styleclass="Parameter-Header">Rotary</text>sein<text styleclass="VariableName">.</text></para>
+          <para styleclass="Body Table"><text style="font-size:12pt;">&#32;</text><text styleclass="Parameter-Header">Daten-Typ = </text><text styleclass="Parameter-Header" style="color:#ff0000;">Linear</text><text styleclass="Parameter-Header">&#32;</text></para>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Body Table">Die Position des <text styleclass="Interface">Motion-Points #1</text> entlang des <text styleclass="Interface">Skizzenpfades</text> hat einen Maßstab von 1 : 1 mit dem Motion-Wert am Eingangsanschluss zum <text styleclass="Element">Motion-Path FB</text></para>
+                <para styleclass="Body Table">∴ die Position<text styleclass="HowTo Bulleted"> des </text><text styleclass="Interface">Bewegungspunkts Nr. 1</text><text styleclass="HowTo Bulleted"> entlang des Skizzenpfads = Bewegungswert am Eingangsanschluss (</text><text styleclass="HowTo Bulleted" style="font-size:10pt; vertical-align:baseline;">mm</text><text styleclass="HowTo Bulleted">).</text></para>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Body Table"><text styleclass="Parameter" style="font-size:12pt;">Daten-Typ = </text><text styleclass="Parameter" style="font-size:12pt; color:#ff0000;">Rotierend</text><text styleclass="Parameter">&#32;</text></para>
+          <para styleclass="Body Text HowTo"><table styleclass="PopupTable2" rowcount="1" colcount="1" style="background-color:#ffffff;">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Body Table">Die Position des <text styleclass="Interface">Bewegungspunkts Nr. 1</text> entlang des <text styleclass="Interface">Skizzenpfads</text> hat einen Maßstab von <text styleclass="VariableName">360 : 1 × Pfadlänge.</text></para>
+                <para styleclass="Body Table">∴ die Position<text styleclass="HowTo Bulleted"> des </text><text styleclass="Interface">Bewegungspunkts Nr. 1</text>entlang<text styleclass="HowTo Bulleted"> des Skizzenpfads </text><text styleclass="HowTo Bulleted" style="font-weight:bold;">=</text><text styleclass="HowTo Bulleted"> Gesamtlänge des Skizzenpfads </text><text styleclass="HowTo Bulleted" style="font-weight:bold;">× </text><text styleclass="HowTo Bulleted">Bewegungswert am Eingangsanschluss (</text><text styleclass="HowTo Bulleted" style="font-size:10pt; vertical-align:baseline;">Grad</text><text styleclass="HowTo Bulleted">)</text><text styleclass="VariableName">/360</text><text styleclass="Body Text">)</text></para>
+              </td>
+            </tr>
+          </table></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Interface2" style="text-indent:-36px; margin-left:36px;"><image src="tog_plus.gif" scale="100.00%" figurelistinclude="0"></image><tab /><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" src-collapsed="tog_plus.gif" src-expanded="tog_minus.gif"><caption><![CDATA[Output Data-Types from Function-Blocks]]></caption></toggle></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="1" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Table"><text style="font-size:12pt;">&#32;</text><text styleclass="Element-Header">Motion FB</text><text style="font-size:12pt;"> &gt;</text><text styleclass="Body Text" style="font-size:12pt;">&#32;</text><text styleclass="Parameter" style="font-size:12pt;">Ausgangsdaten-Typ</text><text styleclass="Body Text">&#32;</text></para>
+          <para styleclass="Body Text HowTo">Legen Sie den <text styleclass="Parameter">Ausgangsdatentyp</text>&#32;<text styleclass="Body Text">als </text><text styleclass="Parameter">rotierend</text><text styleclass="Body Text"> oder </text><text styleclass="Parameter">linear</text> fest<text styleclass="Parameter">.</text>&#32;</para>
+          <para styleclass="Body Text HowTo"><text styleclass="SeeAlso">Siehe auch </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-FunctionBlock-Motion" styleclass="SeeAlso">Dialogfeld &quot;Motion FB</link></para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="Body Table"><text style="font-size:12pt;">&#32;</text><text styleclass="Element-Header">Linear-Motion FB</text><text style="font-size:12pt;"> &gt;</text><text styleclass="Body Text" style="font-size:12pt;">&#32;</text><text styleclass="Parameter" style="font-size:12pt;">Ausgangsdaten-Typ</text><text styleclass="Body Text">&#32;</text></para>
+          <para styleclass="Body Text HowTo">Der <text styleclass="Parameter">Ausgangsdatentyp</text> ist Rotary</para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="Body Table"><text style="font-size:12pt;">&#32;</text><text styleclass="Element-Header">Math FB</text><text style="font-size:12pt;"> &gt;</text><text styleclass="Body Text" style="font-size:12pt;">&#32;</text><text styleclass="Parameter" style="font-size:12pt;">Ausgabe-Datentyp</text><text styleclass="Body Text">&#32;</text></para>
+          <para styleclass="Body Text HowTo">Legen Sie den <text styleclass="Parameter">Ausgabedatentyp</text> als <text styleclass="Parameter">Drehkoordinaten</text> oder <text styleclass="Parameter">Linearkoordinaten</text> fest.</para>
+          <para styleclass="Body Text HowTo"><text styleclass="SeeAlso">Siehe auch </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-FunctionBlock-Math" anchor="MATHFBOUTPUTDATATYPE" styleclass="SeeAlso">Math FB</link></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Body Text"></para>
+  </body>
+</topic>

@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" status="Under Construction" modified="2022-09-09T17:40:52.162+01:00" lasteditedby="Adam" version="2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title>Dialog: Add and Edit Plane</title>
+  <keywords>
+    <keyword>Dialog<keyword>Plane</keyword></keyword>
+    <keyword>Edit Plane<keyword>Angle</keyword><keyword>Move Plane to end-Point</keyword><keyword>Offset</keyword><keyword>Parameters</keyword><keyword>Rotate about X-axis</keyword><keyword>Rotate about Y-axis</keyword><keyword>Rotate about Z-axis</keyword></keyword>
+  </keywords>
+  <body>
+    <header>
+      <para styleclass="Heading1">Dialog: Ebene</para>
+    </header>
+    <para styleclass="Heading2">Add / Edit Plane</para>
+    <para styleclass="SeeAlso">Siehe auch: <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Model-elements(Model)-AddPlane">Modell-Editor &gt; Ebene hinzufügen</link> und <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Command-ModelElements(Mechanism)-AddPlane">Mechanismus-Editor &gt; Ebene hinzufügen</link></para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="Body Text HowTo">Das <text styleclass="Element">Dialogfeld &quot;Ebene&quot;</text> wird geöffnet, wenn Sie <text styleclass="T_Menu">Ebene hinzufügen</text> wählen.</para>
+    <para styleclass="Body Text HowTo">Sie können die festen <text styleclass="Element">Ebenen</text> im <text styleclass="Interface">Modell-Editor</text> nicht bearbeiten. </para>
+    <para styleclass="Body Text HowTo">Sie können eine <text styleclass="Element">Ebene </text>bearbeiten<text styleclass="Body Text">, die Sie mit </text><text styleclass="T_Menu">Ebene hinzufügen</text><text styleclass="Body Text"> zum Modell hinzufügen</text><text styleclass="Element">.</text></para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="Heading4 Toggle_atocs_">Dialogfeld &quot;Ebene öffnen</para>
+    <para styleclass="Body Text HowTo"><table styleclass="Standard" rowcount="1" colcount="2" style="width:auto; head-row-background-color:#ffffff; alt-row-background-color:none;">
+      <thead style="vertical-align:top">
+        <td style="width:240px; border-right:none;">
+          <para styleclass="Image Caption"><image src="MD-AT-EditPlane.png" scale="-99.90%" figurelistinclude="0"><caption><![CDATA[Edit Plane]]></caption></image></para>
+        </td>
+        <td style="border-left:none;">
+          <para styleclass="Body Table">Das <text styleclass="Element">Dialogfeld &quot;Ebene&quot;</text> wird geöffnet, wenn Sie <text styleclass="T_Menu">Ebene hinzufügen</text> wählen.</para>
+          <para styleclass="Body Text HowTo">Um eine <text styleclass="Element">Ebene </text>zu bearbeiten <text styleclass="Element">:</text></para>
+          <para styleclass="Body Text HowTo"><table styleclass="PopupTable2" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td style="border-top:none; border-right:none; border-bottom:none;">
+                <list id="0" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="B Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="B Bullets"><text styleclass="Body Text Howindent4bullets">Klicken Sie mit der rechten Maustaste auf eine </text><text styleclass="Element">Ebene</text><text styleclass="Body Text Howindent4bullets"> im </text><text styleclass="Interface">Assembly-Tree</text><text styleclass="VariableName">. </text></li>
+                  <li styleclass="B Bullets"><text styleclass="Body Text">Klicken Sie &#160;im Kontextmenü auf </text><text styleclass="VariableName">Element bearbeiten</text></li>
+                </list>
+                <para styleclass="VariableName-IT"> oder</para>
+                <list id="1" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="B Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="B Bullets"><text styleclass="SeeAlso">Siehe </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-How-to-Open-a-Dialog-Box" styleclass="SeeAlso">Öffnen eines Dialogfeldes</link><text styleclass="VariableName">&#32;</text></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Body Table">Das <text styleclass="Element">Dialogfeld &quot;Ebene</text> &quot; ist nun geöffnet.</para>
+        </td>
+      </thead>
+    </table></para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="Heading3_atocs_">Dialogfeld &quot;Ebene</para>
+    <para styleclass="Body Text HowTo"><text styleclass="Body Text">Das </text><text styleclass="Element">Dialogfeld &quot;Ebene&quot;</text><text styleclass="Body Text"> hat zwei Konfigurationen, die wir </text><text styleclass="Parameter-Header">&quot;Ebenendefinitionen&quot;</text><text styleclass="Body Text"> nennen.</text></para>
+    <para styleclass="Heading4 Toggle_atocs_2"><anchor id="PLANE-OFFSET"><keywords><keyword>Plane Definition:<keyword>Offset from Plane</keyword></keyword></keywords></anchor><image src="btn_addkeyword.bmp" scale="100.00%" figurelistinclude="0"></image><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" src-collapsed="btn_addkeyword.bmp" src-expanded="btn_delkeyword.bmp" src-print="none"><caption><![CDATA[ Offset from Plane]]></caption></toggle></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="2" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="vertical-align:bottom; width:240px;">
+          <para styleclass=" " style="text-align:left; text-indent:0px; margin-top:0px; margin-right:0px; margin-bottom:0px; margin-left:0px; line-height:1.00; background-color:transparent; white-space:normal; page-break-inside:auto; page-break-after:auto; border:none; tabstops:none;"><image src="MD-Dialog-AddPlane-Offset.png" scale="-99.90%" style="font-family:&apos;Segoe UI&apos;; font-size:8pt; font-weight:normal; font-style:normal; text-decoration:none; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="Body Table"><image src="Red-14-1b.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image>&#32;<text styleclass="VariableName">Neues Ebene</text><text styleclass="Interface">:</text><text styleclass="Body Text HowTo">&#32;</text><text styleclass="Parameter">Plane6</text></para>
+          <para styleclass="Body Table"><image src="Red-14-2.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image>&#32;<text styleclass="VariableName">Ebene Definition</text><text styleclass="Parameter">: Offset from Plane</text></para>
+          <para styleclass="Body Table"><image src="Red-14-4.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image>&#32;<text styleclass="VariableName">FeldElement</text>&#32;<text styleclass="VariableName">-</text> das Element, das Sie als Referenz für <text styleclass="Normal">die </text><text styleclass="VariableName">Ebenendefinition</text> auswählen </para>
+          <para styleclass="Body Table"><text styleclass="VariableName">Zu bearbeitende Parameter</text>:</para>
+          <para styleclass="Body Table">&#32;<image src="Red-14-3.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Image Caption">&#32;</text><text styleclass="Parameter-Header">Distance to New Plane</text><text style="font-style:italic;">&#32;</text><text styleclass="HowTo Bulleted">&#32;</text></para>
+          <para styleclass="Body Table">Das Versatzmaß zur neuen <text styleclass="Element">Ebene</text><image src="Red-14-1b.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image> von der <text styleclass="Element">Ebene</text> im Feld <text styleclass="Interface">Element</text><image src="Red-14-4.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Image Caption">.</text>&#32;</para>
+          <para styleclass="Normal"></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td colspan="2" style="vertical-align:bottom;">
+          <para styleclass="Notes">Hinweis:</para>
+          <para styleclass="Body Text">Die XY-Achsen der neuen <text styleclass="Element">Ebene</text><image src="Red-14-1b.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image> sind: </para>
+          <list id="2" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullets" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="Bullets">parallel zur ausgewählten <text styleclass="Element">Ebene</text><image src="Red-14-4.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Body Text">&#32;</text></li>
+            <li styleclass="HowTo Bulleted">auf der <text styleclass="Interface">Z-Achse</text> der <text styleclass="Element">Ebene</text><image src="Red-14-1b.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Body Text"> um den </text><text styleclass="Parameter">Abstand zur neuen Ebene.</text></li>
+          </list>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading4 Toggle_atocs_2"><anchor id="PLANE-ANGLE"><keywords><keyword>Plane Definition:<keyword>Angle from Line</keyword></keyword></keywords></anchor><image src="btn_addkeyword.bmp" scale="100.00%" figurelistinclude="0"></image><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" src-collapsed="btn_addkeyword.bmp" src-expanded="btn_delkeyword.bmp" src-print="none"><caption><![CDATA[ Winkel von der Linie]]></caption></toggle></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="2" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:254px;">
+          <para styleclass="Normal"><image src="MD-DIALOG-PLANE-LINE.ipp" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="Body Table"><image src="Red-14-1b.gif" scale="100.00%" figurelistinclude="0"></image><text styleclass="VariableName"> Neue Ebene:</text>&#32;<text styleclass="Parameter">Ebene4</text><text styleclass="VariableName">&#32;</text></para>
+          <para styleclass="Body Table"><image src="Red-14-2.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Interface2">&#32;</text><text styleclass="VariableName">Ebene Definition</text><text styleclass="Interface2">: </text><text styleclass="Parameter">Winkel von Linie</text><text styleclass="VariableName">&#32;</text></para>
+          <para styleclass="Body Table"><image src="Red-14-4.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="VariableName"> Element: </text>das Element, das Sie als Referenz für die <text styleclass="VariableName">Ebenendefinition </text>auswählen</para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="VariableName">Zu bearbeitende Parameter:</para>
+          <para styleclass="Body Table"><image src="Red-14-5.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Parameter">&#32;</text><text styleclass="Parameter-Header">Ebene zum Endpunkt verschieben</text><text styleclass="Body Text"> : ankreuzfeld - </text></para>
+          <para styleclass="Body Table"><text styleclass="Body Text">Aktivieren Sie diese Option, um den Ursprung der </text><text styleclass="Element">Ebene</text><text styleclass="Body Text"> vom </text><text styleclass="Interface">Startpunkt</text><text styleclass="Body Text"> zum </text><text styleclass="Interface">Endpunkt</text><text styleclass="Parameter">&#32;</text><text styleclass="Body Text Howindent4bullets">der </text><text styleclass="Element">Linie</text> zu<text styleclass="Body Text">verschieben </text><text styleclass="Body Text Howindent4bullets">, die sich im </text><text styleclass="Body Text"> Elementfeld</text><text styleclass="Body Text Howindent4bullets"> befindet </text>.<image src="Red-14-4.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+          <para styleclass="Body Text"><text styleclass="VariableName">Hinweis</text>: <text styleclass="Body Text HowTo">Sie </text><text styleclass="VariableName-IT" style="font-style:normal; color:#ff0000;">müssen</text><text styleclass="Body Text HowTo"> dieses Kontrollkästchen anklicken, wenn Sie ein </text><text styleclass="Element">Kegelrad-Paar</text><text styleclass="Body Text HowTo"> hinzufügen möchten</text>.<text styleclass="VariableName">&#32;</text></para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="Body Table"><image src="Red-14-3.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image>&#32;<text styleclass="Parameter-Header">Rotationsachsen</text></para>
+          <list id="3" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullets" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="Bullets"><text styleclass="Parameter-Header">Drehen um die X-Achse</text><text styleclass="Body Text"> : Drehen Sie die neue </text><text styleclass="Element">Ebene</text><text styleclass="Body Text"> um die &#160;Richtung der &#160;aktiven </text><text styleclass="Interface">X-Achse</text><text styleclass="Body Text"> der neuen </text><text styleclass="Element">Ebene.</text><text styleclass="Body Text">&#32;</text></li>
+            <li styleclass="HowTo Bulleted"><text styleclass="Parameter-Header">Drehen um die Y-Achse</text> : <text styleclass="Body Text">Drehen Sie die neue </text><text styleclass="Element">Ebene</text><text styleclass="Body Text"> um die &#160;Richtung der &#160;aktiven</text><text styleclass="Element">&#32;</text><text styleclass="Interface">Y-Achse</text><text styleclass="Body Text"> der neuen </text><text styleclass="Element">Ebene.</text><text styleclass="Body Text">&#32;</text></li>
+            <li styleclass="HowTo Bulleted"><text styleclass="Parameter-Header">Drehen um die Z-Achse</text><text styleclass="Body Text"> :Drehen Sie die neue </text><text styleclass="Element">Ebene</text><text styleclass="Body Text"> um die &#160;Richtung der &#160;aktiven </text><text styleclass="Interface">z-Achse</text><text styleclass="Body Text"> der neuen </text><text styleclass="Element">Ebene.</text><text styleclass="Body Text">&#32;</text></li>
+          </list>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td colspan="2">
+          <para styleclass="Body Text"><text styleclass="VariableName">Hinweis</text><text styleclass="Notes">:</text></para>
+          <para styleclass="Body Text HowTo"><text styleclass="VariableName">Standard Ursprung der neuen Ebene</text> - <text styleclass="HowTo Bulleted">der </text><text styleclass="Interface">Startpunkt</text><text styleclass="HowTo Numbered"> der ausgewählten </text><text styleclass="Element">Linie</text></para>
+          <para styleclass="Body Text HowTo"><text styleclass="VariableName">Standard-X-Achse der neuen Ebene</text><text styleclass="Element"> - </text><text styleclass="HowTo Numbered">vom </text><text styleclass="Interface">Startpunkt</text><text styleclass="HowTo Numbered"> zum </text><text styleclass="Interface">Endpunkt</text><text styleclass="HowTo Numbered"> der ausgewählten </text><text styleclass="Element">Linie</text><text styleclass="HowTo Numbered">.</text></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading4 Toggle_atocs_">Verwandte Themen</para>
+    <para styleclass="Body Text HowTo"><text styleclass="Interface">Model-Editor</text>: <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Model-elements(Model)-AddPlane">Model toolbar &gt; Add Plane</link></para>
+    <para styleclass="Body Text HowTo"><text styleclass="Interface">Mechanism-Editor:</text>&#32;<link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Command-ModelElements(Mechanism)-AddPlane">Model toolbar &gt; Add Plane</link></para>
+    <para styleclass="Body Text HowTo"><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-How-to-Open-a-Dialog-Box">How to open a dialog-box</link></para>
+    <para styleclass="Body Text HowTo"><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-How-to-Open-a-Dialog-Box">How to edit a parameter</link></para>
+  </body>
+</topic>

@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" status="Under Construction" modified="2022-03-09T21:26:08.312Z" lasteditedby="Adam" version="2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title>Forces | Configure Power Source</title>
+  <keywords>
+    <keyword>Force Menu<keyword>Configure Power Source</keyword></keyword>
+  </keywords>
+  <body>
+    <header>
+      <para styleclass="Heading1">Forces | Configure Power Source</para>
+    </header>
+    <para styleclass="Heading3_atocs_">Configure Power Source</para>
+    <para styleclass="Body Text HowTo">Use <text styleclass="VariableName-IT">Configure Power Source</text><text style="font-weight:normal; font-style:normal; color:#000000;"> to identify the element that is the Power-Source for each </text><text styleclass="Body Text">kinematic-chain .</text></para>
+    <para styleclass="Body Text HowTo"><text style="font-weight:normal; font-style:normal; color:#000000;">Kinematic-chains can source their power from: </text><text styleclass="Element">Joints(Motor)</text><text style="font-weight:normal; font-style:normal; color:#000000;">, </text><text styleclass="Element">2D-Cams</text><text style="font-weight:normal; font-style:normal; color:#000000;">, </text><text styleclass="Element">Springs, pulleys.</text></para>
+    <para styleclass="Heading3_atocs_">Default Power-Source</para>
+    <para styleclass="Body Text HowTo"><table styleclass="Standard" rowcount="1" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="vertical-align:bottom; width:200px;">
+          <para styleclass="Normal"><image src="MD-GA-MotorElement.png" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="Body Text">To see the <text styleclass="VariableName">Motor-Symbol</text>: </para>
+          <list id="0" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#003300;">
+            <li styleclass="HowTo Bulleted"><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Forces-Show-Force-Vectors" styleclass="T_Menu">Force toolbar &gt; Show Force Vectors</link></li>
+            <li styleclass="HowTo Bulleted"><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Forces-Calculate" styleclass="T_Menu">Forces toolbar &gt; Calculate Forces</link></li>
+          </list>
+          <para styleclass="Body Text">In the default case, there is a <text styleclass="VariableName">Motor-Symbol</text><image src="Red-14-1b.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image> is at the joint with the <text styleclass="Element">Motion-Dimension FB</text> . A Motor-Symbol represents a <text styleclass="VariableName">Power-Source</text> at a Joint.</para>
+          <para styleclass="Body Text">If the <text styleclass="VariableName">Power-Source</text> is not the correct <text styleclass="Element">joint</text>, <text styleclass="Element">2D-Cam</text>, <text styleclass="Element">Spring</text>, ... , you will need to move it with <text styleclass="Element">Configure Power-Source dialog-box</text></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Normal"><text styleclass="Heading3_atocs_">To open the Configure Power-Source dialog-box</text></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Standard" rowcount="6" colcount="3" style="width:auto;">
+      <tr style="vertical-align:top">
+        <td style="width:100px;">
+          <para styleclass="VariableName-IT" style="text-align:right;"><image src="MD-Icon-ConfigurePowerSourceFB.png" scale="100.00%" padding="0 2 0 0" figurelistinclude="0"><title>Configure Power Source icon</title></image></para>
+        </td>
+        <td colspan="2" style="vertical-align:middle;">
+          <para styleclass="T_Menu">Forces toolbar &gt; Configure Power Source</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:middle">
+        <td style="width:100px;">
+          <para styleclass="VariableName-IT" style="text-align:right;">Menu : </para>
+        </td>
+        <td colspan="2">
+          <para styleclass="T_Menu">Add menu &gt; Forces sub-menu &gt; Configure Power Source</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:100px;">
+          <para styleclass="VariableName-IT" style="text-align:right;">Dialog-box : </para>
+        </td>
+        <td colspan="2" style="height:26px;">
+          <para styleclass="VariableName"><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-ConfigurePowerSource">Configure Power Source dialog-box</link></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:100px;">
+          <para styleclass="VariableName-IT" style="text-align:right;">What to do : </para>
+        </td>
+        <td colspan="2">
+          <para styleclass="Body Text">There are three methods you can do to open the <text styleclass="Element">Configure Power Source dialog</text>:</para>
+          <list id="1" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo Bulleted">Click the <text styleclass="Interface">Kinematic-Chain</text> in the <text styleclass="VariableName">Kinematics-Tree</text>.<text styleclass="VariableName">&#32;</text></li>
+          </list>
+          <list id="2" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="2" styleclass="HowTo Numbered" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo Numbered"><text style="font-style:normal;">Click</text>&#32;<text styleclass="T_Menu">Force toolbar &gt; Configure Power Source</text><text styleclass="Body Text"> icon</text><text styleclass="VariableName">&#32;</text></li>
+          </list>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td colspan="2" style="width:100px;">
+          <para styleclass="VariableName-IT" style="text-align:right;"><image src="MD-KT-ConfigurePowerSource.png" scale="100.00%" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="VariableName-IT" style="margin-bottom:0px;">- or - ( see left ) - </para>
+          <list id="3" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo Bulleted">Click the <text styleclass="Interface">Kinematic-Chain</text> in the <text styleclass="VariableName">Kinematics-Tree</text>.<text styleclass="VariableName">&#32;</text></li>
+            <li styleclass="HowTo Bulleted"><text style="font-style:normal;">Right-click</text> the Kinematic Chain</li>
+            <li styleclass="HowTo Bulleted"><text styleclass="Body Text HowTo" style="font-style:normal;">Click</text><text styleclass="Body Text HowTo">&#32;</text><text styleclass="VariableName-IT">Configure Power Source</text><text styleclass="Body Text HowTo"> in the pop-up</text></li>
+          </list>
+          <para styleclass="VariableName-IT" style="margin-top:0px; margin-bottom:0px;"> - or -</para>
+          <list id="4" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo Bulleted">Click the <text styleclass="Interface">Kinematic-Chain</text> in the <text styleclass="VariableName">Kinematics-Tree</text>.<text styleclass="VariableName">&#32;</text></li>
+            <li styleclass="HowTo Bulleted"><text styleclass="VariableName">Press ALT+P </text><text styleclass="Body Text">keys on your keyboard.</text></li>
+          </list>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:88px;">
+          <para styleclass="VariableName-IT" style="text-align:right;">Result : </para>
+        </td>
+        <td colspan="2">
+          <para styleclass="Body Text">The <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-ConfigurePowerSource" styleclass="Element">Configure Power Source dialog-box</link> opens.</para>
+        </td>
+      </tr>
+    </table></para>
+  </body>
+</topic>

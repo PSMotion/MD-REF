@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" status="Under Construction" lasteditedby="Adam" version="2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title>Dialog: View References</title>
+  <keywords>
+    <keyword>Dialog<keyword>View References</keyword></keyword>
+    <keyword>View References</keyword>
+  </keywords>
+  <body>
+    <header>
+      <para styleclass="Heading1">Dialog: View References</para>
+    </header>
+    <para styleclass="Heading2">Show Element References</para>
+    <para styleclass="Body Text"><table styleclass="Standard" rowcount="1" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:200px;">
+          <para styleclass="Normal"><image src="Dialog-ListReferencesfor.png" scale="100.00%" styleclass="Image Caption"></image></para>
+        </td>
+        <td>
+          <para styleclass="SeeAlso">See also: <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Delete-Dependent-Elements">Delete Dependent Elements</link></para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="Body Text">To see the <text styleclass="Interface">Reference-Elements</text> of an element:</para>
+          <list id="2" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Numbered" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo Numbered">Right-click an <text styleclass="Element">element</text> in the <text styleclass="Interface">Selection-Window</text><text styleclass="VariableName">&#32;</text></li>
+            <li styleclass="HowTo Numbered">Click <text styleclass="VariableName">Show element references</text> in the <text styleclass="Body Text">contextual-menu</text></li>
+          </list>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="Body Text">Many elements reference (need) other elements.</para>
+          <para styleclass="Body Text HowTo">The <text styleclass="VariableName">Element References dialog-box</text> (<text styleclass="VariableName-IT">Read-Only</text>) is the list of elements (called the Reference Elements) that must be in the model to build a more complex element. </para>
+          <para styleclass="Body Text HowTo">The list includes each <text styleclass="VariableName">Reference Element name</text><text styleclass="Body Text">, its </text><text styleclass="VariableName">Reference Element Type</text>, and its <text styleclass="VariableName">Reference Element Owner</text>.</para>
+          <para styleclass="Body Text">For example, </para>
+          <para styleclass="Body Text HowTo">When you add a <text styleclass="Element">Pin-Joint</text>, you select two <text styleclass="Element">Points</text> in two different <text styleclass="Element">Parts</text>.</para>
+          <para styleclass="Body Text HowTo">Thus, the <text styleclass="Element">Pin-Joint</text> must reference (needs) the two <text styleclass="Element">Points,</text><text styleclass="Body Text"> which are owned by the </text><text styleclass="Element">Parts.</text></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Body Text" style="page-break-before:always;"></para>
+  </body>
+</topic>

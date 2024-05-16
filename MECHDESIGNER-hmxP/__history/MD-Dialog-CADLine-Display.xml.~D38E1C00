@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" modified="2024-03-23T09:35:22.460Z" lasteditedby="44785" version="2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title>CAD-Line dialog &gt; Display Options tab</title>
+  <keywords>
+    <keyword>Dialog<keyword>CAD-Line - Display Option tab</keyword></keyword>
+  </keywords>
+  <body>
+    <header>
+      <para styleclass="Heading1">-&gt; Display Options tab</para>
+    </header>
+    <para styleclass="Heading2">CAD-Line &gt; Display Options tab</para>
+    <para styleclass="Body Text">Use <text styleclass="VariableName">Display-Option</text> tab to:</para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="1" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <list id="0" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullets" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="Bullets"><text styleclass="Body Table">Edit the color and transparency of a</text>&#32;<link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-Solids" styleclass="Interface2">CAD</link><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-Solids" styleclass="Interface">-Solid</link>.</li>
+            <li styleclass="HowTo Bulleted"><text styleclass="Body Text HowTo">Toggle the Show or Hide a</text><text styleclass="Body Text">&#32;</text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-Solids" styleclass="Interface2">CAD</link><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-Solids" styleclass="Interface">-Solid</link><text styleclass="Body Text"> .</text></li>
+            <li styleclass="HowTo Bulleted">Move a <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-Solids" styleclass="Interface2">CAD</link><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-Solids" styleclass="Interface">-Solid</link><text styleclass="Body Text"> in the X, Y, Z-axis directions.</text></li>
+          </list>
+          <para styleclass="Body Text"><text styleclass="Interface2">Cad</text><text styleclass="Interface">-Solids</text> are those solid models you import onto a <text styleclass="Element">CAD-Line</text> with the <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-CADLine" styleclass="SeeAlso">CAD-Line dialog</link></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Normal"><line style="height:1px; color:#343400;" /></para>
+    <para styleclass="Body Table"><image src="MD-Dialog-CADLine-DisplayOptions-tab.png" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"><caption><![CDATA[CAD-Line dialog > Display Options tab]]></caption></image></para>
+    <para styleclass="Normal"><line style="height:1px; color:#343400;" /></para>
+    <para styleclass="Body Text HowTo" style="text-indent:-36px; margin-left:60px;"><anchor id="CAD-Line-ImportSW-Display" styleclass="Separator"><keywords><keyword>Import SOLIDWORKS document<keyword>Display Options</keyword><keyword>Color</keyword><keyword>Transparency</keyword><keyword>Show / Hide</keyword></keyword></keywords></anchor><image src="tog_plus.gif" scale="100.00%" styleclass="Separator-Header" figurelistinclude="0"></image><tab /><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" src-collapsed="tog_plus.gif" src-expanded="tog_minus.gif" styleclass="Separator-Header"><caption><![CDATA[ Display Options ]]></caption><title>Click to exapand /collapse</title></toggle></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="2" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:250px;">
+          <para styleclass="Normal" style="text-align:left;"><image src="MD-Dialog-CADLine-DisplayOptions-Display.png" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="BodyText BI"><text styleclass="ParameterHeader">Show SOLID</text> (check-box)</para>
+          <para styleclass="Body Text HowTo">Click the <text styleclass="Parameter">Show Solid</text> check-box to show or hide the <text styleclass="Interface">CAD-Solid</text> that is on the <text styleclass="Element">CAD-Line</text>.</para>
+          <para styleclass="Body Text"><text styleclass="Notes">Note:</text>&#32;<text styleclass="Body Text HowTo">Enable </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Visibility-SolidsInMechanisms" styleclass="T_Menu">Visibility toolbar &gt; Show Solids in Mechanisms</link> to show<text styleclass="Parameter">&#32;</text><text styleclass="Interface2">CAD</text><text styleclass="Parameter">-</text><text styleclass="Interface">Solids</text> in <text styleclass="Interface">Mechanism-Editors</text></para>
+          <para styleclass="ParameterHeader">Transparency:</para>
+          <para styleclass="Body Text HowTo">Drag the <text styleclass="Parameter">Transparency</text> slider-bar to change the transparency of the <text styleclass="Interface2">CAD</text><text styleclass="Interface">-Solid</text> on the <text styleclass="Element">CAD-Line</text>. Experiment!</para>
+          <para styleclass="ParameterHeader">Solid color:</para>
+          <para styleclass="Body Text HowTo">Click the <text styleclass="Parameter">Solid Color</text> button to open and edit the color of the <text styleclass="Interface2">CAD</text><text styleclass="Interface">-Solid</text> with the Windows® color picker, </para>
+          <para styleclass="Body Text"><text styleclass="ParameterHeader">Number of Vertices: </text><text style="font-weight:normal;">(</text><text styleclass="VariableName">read-only</text><text style="font-weight:normal; font-style:normal;">)</text></para>
+          <para styleclass="Body Text HowTo" style="margin-top:0px;">Complex files have more vertices. <text styleclass="VariableName">MechDesigner</text> may be slow to respond to new commands when there are <text styleclass="VariableName">many</text><text styleclass="VariableName-IT">&#32;</text><text styleclass="Interface2">CAD</text><text styleclass="Interface">-Solids</text><text styleclass="Body Text">, each with</text> many <text styleclass="Parameter">Number-of-Vertices</text>.</para>
+          <para styleclass="Body Text HowTo" style="margin-top:0px;">How many is too many? Try to make <text styleclass="Parameter">Number-of-Vertices</text><text style="font-weight:bold;"> &lt;</text> 10,000.</para>
+          <para styleclass="Body Text HowTo" style="margin-top:0px;">Experiment with the <text styleclass="Parameter">Fine</text><text style="font-style:italic;">, </text><text styleclass="Parameter">Coarse</text> and <text styleclass="Parameter">Custom</text> radio-buttons in the <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-CADLine-SOLIDWORKS">SOLIDWORKS tab</link>. </para>
+          <para styleclass="Body Text"><text styleclass="SeeAlso">See also: </text><text styleclass="VariableName">Top-Tips</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td colspan="2">
+          <para styleclass="Body Text"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="VariableName">Top Tips: </para>
+                <para styleclass="Body Text HowTo">Make a new SOLIDWORKS Configuration if there are many features that add vertices only for cosmetic reasons.</para>
+                <para styleclass="Body Text HowTo">In the new configuration, reduce the number of vertices:</para>
+                <list id="1" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+                  <li styleclass="HowTo Bulleted">Remove Fillets, cosmetic fillets.</li>
+                  <li styleclass="HowTo Bulleted">Use Chamfers to show model edges.</li>
+                  <li styleclass="HowTo Bulleted">Do not import models with balls in ball bearings!</li>
+                  <li styleclass="HowTo Bulleted">Do not import models of a Servomotor - they are often huge.</li>
+                  <li styleclass="HowTo Bulleted">Make the model as simple as possible.</li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Body Text HowTo" style="text-indent:-36px; margin-left:60px;"><anchor id="CADSolidMove" styleclass="Separator"><keywords><keyword>CAD-Line<keyword>Move CAD-Solid</keyword></keyword></keywords></anchor><image src="tog_plus.gif" scale="100.00%" styleclass="Separator-Header" figurelistinclude="0"></image><tab /><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" src-collapsed="tog_plus.gif" src-expanded="tog_minus.gif" styleclass="Separator-Header"><caption><![CDATA[ CAD Solid XYZ Position ]]></caption><title>Click to exapand /collapse</title></toggle></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="1" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:250px;">
+          <para styleclass="Normal" style="text-align:left;"><image src="MD-Dialog-CADLine-DisplayOptions-XYZ.png" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="ParameterHeader">Move CAD-Solid - X<text styleclass="Body Text"> (or</text> Y<text styleclass="Body Text">, or </text>Z<text styleclass="Body Text">)-</text>axis</para>
+          <para styleclass="Body Text HowTo">If your <text styleclass="Interface2">CAD</text><text styleclass="Interface">-Solid</text> is not in the correct place use the <text styleclass="Parameter">Move CAD-Solid - X (or Y, or Z)</text> to translate the CAD-Model.</para>
+          <para styleclass="Body Text HowTo">Note that you cannot<text styleclass="Body Text"> rotate the</text>&#32;<text styleclass="VariableName">CAD</text><text styleclass="Interface">-Solid.</text></para>
+          <para styleclass="Notes">Notes: </para>
+          <para styleclass="Body Text HowTo"><text styleclass="VariableName" style="color:#ff0000;">Before</text> you import a <text styleclass="VariableName">CAD-</text><text styleclass="Interface">Solid</text><text styleclass="Body Text">:</text></para>
+          <para styleclass="Body Text HowTo">If you use the <text styleclass="VariableName">STL Import tab</text> to import your CAD model, rotate your mode in your CAD software</para>
+          <para styleclass="Body Text HowTo">If you use the <text styleclass="SOLIDWORKS" style="font-size:11pt;">SolidWorks</text><text styleclass="VariableName"> tab</text> to import your CAD model, add a <text styleclass="VariableName">Coordinate System</text> feature such that the X-axis aligns with the <text styleclass="Element">CAD-Line</text> and the Origin is coincident with the start-Point of the <text styleclass="Element">CAD-Line</text>&#32;<text styleclass="VariableName" style="color:#ff0000;">before</text> you import it.</para>
+        </td>
+      </tr>
+    </table></para>
+  </body>
+</topic>

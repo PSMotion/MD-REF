@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" status="Under Construction" modified="2024-02-05T19:36:06.605Z" lasteditedby="44785" version="2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title>Geometry-Tree</title>
+  <keywords>
+    <keyword>Geometry Tree<keyword>Constraints</keyword><keyword>Dimensions</keyword><keyword>Sketch-Elements</keyword></keyword>
+  </keywords>
+  <body>
+    <header>
+      <para styleclass="Heading1">Geometry-Tree</para>
+    </header>
+    <para styleclass="Heading3_atocs_">Element-Explorer - Geometry-Tree</para>
+    <para styleclass="Normal"><line style="height:1px; color:#343400;" /></para>
+    <para styleclass="Normal"><text styleclass="Notes">Note</text><text styleclass="Body Text">: If you cannot explore the </text><text styleclass="Interface2">Geometry-Tree</text><text styleclass="Body Text">, click </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Edit-Rebuild-Now" styleclass="T_Menu">Edit menu &gt; Rebuild now</link><text styleclass="Body Text">.</text></para>
+    <para styleclass="Normal"><line style="height:1px; color:#343400;" /></para>
+    <para styleclass="Body Text HowTo">The <text styleclass="Interface2">Geometry-Tree</text> replaces the <text styleclass="Interface">Kinematics-Tree</text> when you start the <text styleclass="Interface">Part-Editor</text>.</para>
+    <para styleclass="Heading4 Toggle_atocs_2">Example Geometry-Tree</para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="1" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:240px;">
+          <para styleclass="Normal"><image src="MD-PE-GeometryTree.png" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"><title>Example: Geometry in Element-Explorer</title><caption><![CDATA[Example: Geometry in Element-Explorer]]></caption></image></para>
+        </td>
+        <td>
+          <para styleclass="VariableName">What is a Constraint-Loop?</para>
+          <para styleclass="Body Text">A <text styleclass="VariableName">Constraint-Loop</text> (labeled Constraints) is a list of the constraints that are between a set of sketch-elements. </para>
+          <para styleclass="Body Text">If you add a Constraint between sketch-elements that are in different Constraint-Loops, they combine to give one Constraint-Loop.</para>
+          <para styleclass="Body Table">For example:</para>
+          <list id="0" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted">Add Horizontal Constraint to Line1 = Constraint Loop #1</li>
+            <li styleclass="HowTo Bulleted">Add Horizontal Constraint to Line2 = Constraint Loop #2</li>
+          </list>
+          <para styleclass="HowTo Bulleted">There are 2 × Constraint Loops.</para>
+          <list id="0" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted">Add a Horizontal Constraint between a Point in Line 1 and a Point in Line 2, = </li>
+          </list>
+          <para styleclass="HowTo Bulleted">Now there is 1 × Constraint Loop</para>
+          <para styleclass="Normal"><line style="height:1px; color:#343400;" /></para>
+          <para styleclass="VariableName">Constraints and the Selection-Window</para>
+          <para styleclass="Body Table">If you:</para>
+          <list id="1" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted"><text styleclass="VariableName">Click</text>&#32;<text styleclass="Body Text HowTo">a </text><text styleclass="Element-Header">Line</text><text styleclass="Element">&#32;</text><text styleclass="Body Text HowTo">:</text></li>
+          </list>
+          <para styleclass="Body Text HowTo">the <text styleclass="Element-Header">Line</text> shows in the <text styleclass="Interface">Selection-Window</text></para>
+          <list id="1" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted"><text styleclass="VariableName" style="color:#ff0000;">SHIFT+Click</text><text styleclass="Body Text HowTo"> a </text><text styleclass="Element-Header">Line</text><text styleclass="Body Text HowTo"> :</text></li>
+          </list>
+          <para styleclass="Body Text HowTo">the <text styleclass="Element-Header">Line</text><text styleclass="Element">&#32;</text><text styleclass="Interface2">AND</text> any <text styleclass="Interface2" style="color:#ff0000;">Constraints</text> that have been added to the <text styleclass="Element-Header">Line</text> show in the <text styleclass="Interface">Selection-Window.</text></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Normal" style="page-break-before:always;"></para>
+  </body>
+</topic>

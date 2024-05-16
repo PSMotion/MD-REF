@@ -1,0 +1,217 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" status="Under Construction" modified="2024-01-24T12:00:52.221Z" lasteditedby="44785" version="2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title>Dialog: Point: Vectors and Point Location</title>
+  <meta name="DESCRIPTION" translate="true" value="Kinematics - Show Velocity and Acceleration Vectors - total or X, Y, Z Velocity components."/>
+  <keywords>
+    <keyword>Dialog<keyword>Function-Block : Point Properties and Position</keyword></keyword>
+    <keyword>Motion Vectors<keyword>Acceleration, Velocity</keyword><keyword>X Velocity Component</keyword><keyword>Y Velocity Component</keyword><keyword>Z Velocity Component</keyword></keyword>
+    <keyword>Point Acceleration</keyword>
+    <keyword>Point Positiion<keyword>Fix Constraint</keyword><keyword>Lock &amp; Specify</keyword><keyword>Position in Mechanism Coordinates</keyword><keyword>Position in Part Coordinates</keyword></keyword>
+    <keyword>Point Velocity</keyword>
+    <keyword>Show<keyword>Point Acceleration</keyword><keyword>Point Velocity</keyword></keyword>
+    <keyword>Vector: Acceleration - Show/Hide</keyword>
+    <keyword>Vector: Velocity - Show/Hide</keyword>
+    <keyword>Vectors<keyword>Acceleration</keyword><keyword>Velocity</keyword></keyword>
+  </keywords>
+  <body>
+    <header>
+      <para styleclass="Heading1">Dialog: Point Properties</para>
+    </header>
+    <para styleclass="Heading2" style="page-break-before:always;"><anchor id="Dialog-PointDisplay"><keywords><keyword>Dialog<keyword>Point Vectors and Positions</keyword></keyword></keywords></anchor>Point Properties</para>
+    <para styleclass="Body Text HowTo">Use the <text styleclass="Element-Header">Point-Properties dialog</text> to:</para>
+    <list id="0" type="ul" listtype="bullet" formatstring="·" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+      <li styleclass="HowTo Bulleted">Show the <text styleclass="VariableName">Velocity Vectors</text><text styleclass="Body Text"> and </text><text styleclass="VariableName">Acceleration Vectors</text> of a <text styleclass="Interface">Point</text><text styleclass="BodyText BI">*.</text> </li>
+      <li styleclass="HowTo Bulleted">Find the exact X and Y coordinates of a <text styleclass="Interface">Point</text><text styleclass="BodyText BI">*</text> in the XY-Plane of the <text styleclass="Interface">Mechanism-Editor</text>.</li>
+      <li styleclass="Interface"><text styleclass="HowTo Bulleted">Find the exact x, y and z coordinates of a </text>Point<text styleclass="BodyText BI">*</text><text styleclass="HowTo Bulleted"> relative to the xy-axes of a </text><text styleclass="Element">Part</text><text styleclass="HowTo Bulleted">.</text></li>
+      <li styleclass="HowTo Bulleted">Edit the x, y (and z) positions of a <text styleclass="Interface">Point</text><text styleclass="BodyText BI">*</text>, in a <text styleclass="Element">Part</text> - ONLY if the position of the <text styleclass="Interface">Point</text><text styleclass="BodyText BI">*</text> does not have ANY dimensions or constraints.</li>
+    </list>
+    <para styleclass="HowTo Bulleted"><text styleclass="BodyText BI">*</text> <text styleclass="Element">Point</text>, <text styleclass="Interface">start-Point</text>, <text styleclass="Interface">end-Point</text>, <text styleclass="Interface">center-Point</text>.</para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;"/></para>
+    <para styleclass="Heading4 Toggle_atocs_">How to open the Point Properties dialog</para>
+    <para styleclass="Body Text"><table styleclass="Default" rowcount="1" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:40px;">
+          <para styleclass="Normal" style="text-align:right;"><image src="MD-Double-click-Point.png" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="Body Text">To open the <text styleclass="Element">Point Properties dialog</text></para>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <list id="1" type="ol" listtype="decimal" formatstring="%0:s." format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="B Bullets" style="font-family:'Segoe UI Semibold'; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="B Bullets"><text styleclass="HowTo Numbered" style="font-style:normal;">Double-click</text><text styleclass="HowTo Numbered"> the </text><text styleclass="Element">Point</text><text styleclass="HowTo Numbered"> in </text><text styleclass="Body Text">the graphics-area</text><text styleclass="VariableName"> </text></li>
+                </list>
+                <para styleclass="Interface2">OR</para>
+                <list id="2" type="ol" listtype="decimal" formatstring="%0:s." format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="B Bullets" style="font-family:'Segoe UI Semibold'; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="B Bullets"><text styleclass="SeeAlso">See </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-How-to-Open-a-Dialog-Box" styleclass="SeeAlso">How to Open a dialog</link><text styleclass="VariableName">  </text></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Body Text HowTo">The <text styleclass="Element-Header">Point Properties dialog</text> is now open.</para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;"/></para>
+    <para styleclass="Heading3_atocs_">Point Properties dialog</para>
+    <para styleclass="Body Text"><image src="MD-Dialog-PointPosandVectors.png" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"><caption>Point-Properties dialog</caption></image></para>
+    <para styleclass="Separator-Header" style="text-indent:-36px; margin-left:39px;"><anchor id="ShowHideKinematicVectors"><keywords><keyword>Show or Hide Kinematic Vectors</keyword><keyword>Velocity Vector</keyword><keyword>Acceleration Vector</keyword></keywords></anchor><image src="tog_plus.gif" scale="100.00%" figurelistinclude="0"></image><tab/><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" src-collapsed="tog_plus.gif" src-expanded="tog_minus.gif"><caption> Kinematic Vectors </caption></toggle></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="4" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="vertical-align:top; width:241px;">
+          <para styleclass="Normal"><image src="MD-Dialog-PointProperties-KinVect.ipp" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td style="vertical-align:top;">
+          <para styleclass="Separator-Header"><text styleclass="ParameterHeader">Velocity </text><text styleclass="Body Text">and</text><text styleclass="ParameterHeader"> Acceleration Vector</text><text styleclass="Parameter-Header" style="font-family:Arial; font-size:10pt; font-weight:normal; font-style:normal; text-decoration:none; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;"> </text><text styleclass="Body Text">check-boxes</text></para>
+          <list id="3" type="ul" listtype="bullet" formatstring="q" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullets" style="font-family:Wingdings; font-size:11pt; color:#000000;">
+            <li styleclass="Bullets"><text styleclass="Parameter">Show Velocity Vector</text><text styleclass="VariableName"> - </text><text styleclass="Body Text HowTo">evaluated at each machine step with closed-form algorithms</text></li>
+            <li styleclass="Bullets"><text styleclass="Parameter">Show Acceleration Vector</text><text styleclass="Body Text"> - </text><text styleclass="Body Text HowTo">evaluated at each machine step with closed-form algorithms</text></li>
+          </list>
+          <list id="4" type="ul" listtype="bullet" formatstring="q" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullets" style="font-family:Wingdings; font-size:11pt; color:#000000;">
+            <li styleclass="Bullets"><text styleclass="Parameter">Show Numerical Vectors</text><text styleclass="Body Text"> - </text><text styleclass="Body Text HowTo">calculated numerically with a simple difference algorithm. </text></li>
+          </list>
+          <para styleclass="Body Table"><text styleclass="Notes">NOTE</text>: Usually, do <text styleclass="VariableName" style="color:#ff0000;">not</text> show the <text styleclass="Parameter">Numerical Vectors</text>. If you do show them, you will need to jog the <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-Master-Machine-Angle">MMA</link> back and forward by a small angle so that we can calculate the values correctly. If you see there is a difference between the numerical vectors and the Kinematic Vectors, please email psmotion!</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td colspan="2" style="vertical-align:top;">
+          <para styleclass="Body Table">If you show <text styleclass="Parameter">Velocity</text> and <text styleclass="Parameter">Acceleration vectors</text>, or both:</para>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <list id="5" type="ul" listtype="bullet" formatstring="·" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullets" style="font-family:Symbol; font-size:11pt; color:#000000;">
+                  <li styleclass="Bullets">The <text styleclass="VariableName" style="color:#ff0000;">length</text> of the <text styleclass="Interface">vectors</text> are proportional to the <text styleclass="Element">Point&apos;s</text> instantaneous <text styleclass="VariableName">Velocity</text> and <text styleclass="VariableName">Acceleration</text>.</li>
+                  <li styleclass="Bullets">The <text styleclass="VariableName" style="color:#ff0000;">direction</text> of the <text styleclass="Interface">Vectors</text> are in the direction of the <text styleclass="VariableName">Velocity</text> and <text styleclass="VariableName">Acceleration</text></li>
+                  <li styleclass="HowTo Bulleted" style="margin-top:0px;">The <text styleclass="VariableName" style="color:#ff0000;">magnitude</text> of the <text styleclass="Interface">vectors</text><text styleclass="Body Text"> are at the</text> Vectors&apos; arrowhead.</li>
+                </list>
+                <para styleclass="Body Table">See <text styleclass="T_Menu">Edit menu &gt;Application-Settings &gt; Graphics &gt; Display Colors</text> to edit the <text styleclass="VariableName" style="color:#ff0000;">color</text> of the vectors.</para>
+              </td>
+            </tr>
+          </table></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td colspan="2" style="vertical-align:top;">
+          <para styleclass="ParameterHeader">Scope</para>
+          <para styleclass="Body Text HowTo">Calculate and display the <text styleclass="VariableName">Velocity and Acceleration Vectors</text> relative to the: </para>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <list id="6" type="ul" listtype="bullet" formatstring="·" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullets" style="font-family:Symbol; font-size:11pt; color:#000000;">
+                  <li styleclass="Bullets"><text styleclass="Parameter">Local </text><text styleclass="VariableName">xyz axes</text><text styleclass="Body Text"> - </text><text styleclass="Interface">Mechanism Axes</text><text styleclass="Body Text"> (default)</text></li>
+                  <li styleclass="Body Text"><text styleclass="Parameter">Global </text><text styleclass="VariableName">XYZ axes</text><text styleclass="Interface"> </text>- <text styleclass="Interface">MODEL AXES.</text></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="ParameterHeader">Velocity Vector Options</para>
+          <para styleclass="Body Text HowTo">Display <text styleclass="VariableName" style="color:#ff0000;">Velocity</text><text styleclass="VariableName"> Vectors</text> as: </para>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <list id="7" type="ul" listtype="bullet" formatstring="·" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullets" style="font-family:Symbol; font-size:11pt; color:#000000;">
+                  <li styleclass="Bullets"><text styleclass="Parameter">Magnitude </text><text styleclass="Body Text">(default) of the </text><text styleclass="VariableName">Velocity</text><text styleclass="HowTo Bulleted">, </text><text styleclass="VariableName">or</text></li>
+                  <li styleclass="HowTo Bulleted"><text styleclass="ParameterHeader">X </text><text styleclass="Parameter">component</text> only of the <text styleclass="VariableName">Velocity</text>, <text styleclass="VariableName">or</text></li>
+                  <li styleclass="HowTo Bulleted"><text styleclass="ParameterHeader">Y </text><text styleclass="Parameter">component</text> only of the <text styleclass="VariableName">Velocity</text>, <text styleclass="VariableName">or</text></li>
+                  <li styleclass="HowTo Bulleted"><text styleclass="ParameterHeader">z </text><text styleclass="Parameter">Component</text> only of the <text styleclass="VariableName">Velocity</text></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;"/></para>
+          <para styleclass="Body Table">Use only the X, Y, and Z Velocity component to compare a X, Y, or Z Velocity component of <text styleclass="Element">Point</text> in different mechanisms. </para>
+          <para styleclass="Body Table"><text styleclass="Body Text">For example, to compare</text><text styleclass="HowTo Bulleted"> the X (or Y or Z) velocity of a </text><text styleclass="Element">Point</text><text styleclass="HowTo Bulleted"> on a </text><text styleclass="Body Text HowTo">Transfer-Tool</text><text styleclass="HowTo Bulleted"> with the velocity of a conveyor.</text></para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;"/></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="vertical-align:top; width:240px;">
+          <para styleclass="Normal"><image src="MD-Point-Velocity-Acceleration Vecotors.png" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td style="vertical-align:top;">
+          <para styleclass="VariableName">Scale and Length of Vectors</para>
+          <para styleclass="Body Table">Edit the length of the vectors, use the buttons in<text styleclass="HowTo Bulleted"> the </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-FeedBackArea" styleclass="HowTo Bulleted">Feedback-Area</link><text styleclass="HowTo Bulleted">:</text></para>
+          <para styleclass="Body Table"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Body Text" style="text-align:center;"><image src="MD-FA-VectorButtons.png" align="left" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+                <para styleclass="Normal"></para>
+                <para styleclass="Normal"></para>
+                <para styleclass="Normal"><line style="height:1px; color:#993300;"/></para>
+                <para styleclass="Body Table"><text styleclass="Parameter-Header" style="font-family:Arial; font-size:14pt; font-weight:normal; font-style:normal; text-decoration:none; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">V </text>Click <image src="Red-14-1.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><image src="Red-14-2.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image> to increase / decrease the length of the <text styleclass="VariableName">Velocity Vector</text></para>
+                <para styleclass="Body Table"><text styleclass="Parameter-Header" style="font-family:Arial; font-size:14pt; font-weight:normal; font-style:normal; text-decoration:none; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">A </text>Click <image src="Red-14-1.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><image src="Red-14-2.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image> to increase / decrease the length of the <text styleclass="VariableName">Acceleration Vector</text> </para>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="T_Menu"><text styleclass="SeeAlso">See: </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-Application-Settings" anchor="App-Graphics">App-Settings &gt; Graphics tab</link> &gt; <text styleclass="Separator">Display colors</text><text styleclass="Body Text"> | </text><text styleclass="Parameter">Vel/Acc Vectors</text></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Separator-Header" style="text-indent:-36px; margin-left:39px;"><anchor id="MechanismCoordinates"><keywords><keyword>Point Position - Mechanism Coordinates</keyword></keywords></anchor><image src="tog_plus.gif" scale="100.00%" figurelistinclude="0"></image><tab/><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" src-collapsed="tog_plus.gif" src-expanded="tog_minus.gif"><caption> Mechanism Coordinates (read-only) </caption></toggle></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="1" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="vertical-align:top; width:241px;">
+          <para styleclass="Normal"><image src="MD-Dialog-PointProperties-MechCoords.ipp" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td style="vertical-align:top;">
+          <para styleclass="Body Table">The <text styleclass="Element">Point coordinates </text> (X, Y, Z ) relative to the <text styleclass="Interface">Origin</text> of the <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-Plane-Mechanism" styleclass="Interface">Mechanism-Plane</link> and <text styleclass="Element">Base-Part.</text></para>
+          <para styleclass="Bullets"><text style="font-weight:normal;">The X, Y, Z dimensions are read-only.</text></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Separator-Header" style="text-indent:-36px; margin-left:39px;"><anchor id="PointPosition"><keywords><keyword>Point Position in Part Coordinates</keyword><keyword>Point Position.</keyword></keywords></anchor><image src="tog_plus.gif" scale="100.00%" figurelistinclude="0"></image><tab/><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" src-collapsed="tog_plus.gif" src-expanded="tog_minus.gif"><caption> Point Coordinates: Read-Write </caption></toggle></para>
+    <para styleclass="Heading4 Toggle_atocs_2"><table styleclass="Default" rowcount="1" colcount="1" style="cell-padding:0px; border-width:0px; border-spacing:0px; cell-border-width:0px; border-style:none; background-color:none;">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Heading4 Toggle_atocs_">Point with Constraints</para>
+          <para styleclass="Body Text"><table styleclass="Default" rowcount="1" colcount="2">
+            <tr style="vertical-align:top">
+              <td style="width:241px;">
+                <para styleclass="Normal"><image src="MD-Dialog-PointProperties-PointCoords-Contraints.ipp" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+              </td>
+              <td>
+                <para styleclass="Body Table">If the <text styleclass="Element">Point</text> has one or more constraint (for example, Vertical Constraint, or a Dimension), then you <text styleclass="VariableName" style="color:#ff0000;">cannot</text> edit its <text styleclass="Body Text">x, y coordinates</text> with this dialog.</para>
+                <para styleclass="Body Table">You can edit its z coordinates.</para>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Heading4 Toggle_atocs_">Point without Constraints</para>
+          <para styleclass="Body Text"><table styleclass="Default" rowcount="2" colcount="2">
+            <tr style="vertical-align:top">
+              <td style="vertical-align:top; width:241px;">
+                <para styleclass="Normal"><image src="MD-Dialog-PointProperties-PointCoords-Lock.ipp" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+              </td>
+              <td style="vertical-align:top;">
+                <para styleclass="Body Table">If the <text styleclass="Element">Point</text> does not have a constraint (or dimension) in the <text styleclass="Interface">Part</text>, then it is possible to edit the position of the <text styleclass="Element">Point</text> in this dialog</para>
+                <para styleclass="Normal"><line style="height:1px; color:#993300;"/></para>
+                <para styleclass="ParameterHeader">Lock and Edit Point&apos;s Position:</para>
+                <para styleclass="VariableName-indent"><text styleclass="Body Text HowTo">The</text> <text styleclass="Element">Point coordinates</text> <text styleclass="VariableName">(x , y, z)</text> <text styleclass="Body Text">are relative to the </text><text styleclass="Element">Part&apos;s</text><text styleclass="Body Text"> axes:</text></para>
+                <list id="8" type="ul" listtype="bullet" formatstring="¤" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullets" style="font-family:Wingdings; font-size:10pt; color:#000080;">
+                  <li styleclass="Bullets"><text styleclass="Parameter">Lock and Edit here</text></li>
+                </list>
+                <para styleclass="Body Text HowTo">Edit the <text styleclass="Parameter">x, y </text>and/or <text styleclass="Parameter">z</text> coordinate of the <text styleclass="Element">Point</text></para>
+                <para styleclass="Normal"><line style="height:1px; color:#993300;"/></para>
+                <para styleclass="Notes">Note:</para>
+                <para styleclass="Body Text HowTo"><text styleclass="Body Text Howindent4bullets">If you click </text><text styleclass="Parameter">Lock and Edit here</text><text styleclass="Body Text Howindent4bullets"> check-box, you </text><text styleclass="VariableName" style="color:#ff0000;">cannot</text><text styleclass="Body Text Howindent4bullets"> edit the position of the </text><text styleclass="Element">Point</text><text styleclass="Body Text Howindent4bullets"> with the </text><text styleclass="Interface">Part-Editor</text><text styleclass="Body Text Howindent4bullets">.</text></para>
+                <para styleclass="Normal"><line style="height:1px; color:#993300;"/></para>
+                <para styleclass="Bullets"></para>
+              </td>
+            </tr>
+            <tr style="vertical-align:top">
+              <td style="vertical-align:top; width:241px;">
+                <para styleclass="Normal"><image src="MD-Dialog-PointProperties-PointCoords-PrtEd.ipp" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+              </td>
+              <td style="vertical-align:top;">
+                <list id="9" type="ul" listtype="bullet" formatstring="¤" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullets" style="font-family:Wingdings; font-size:11pt; color:#000000;">
+                  <li styleclass="Bullets"><text styleclass="Parameter">Edit in Part-Editor</text><text styleclass="VariableName"> </text></li>
+                </list>
+                <para styleclass="Body Text Howindent4bullets">You can edit the position of the <text styleclass="Element">Point</text> with the <text styleclass="Interface">Part-Editor.</text></para>
+              </td>
+            </tr>
+          </table></para>
+        </td>
+      </tr>
+    </table></para>
+  </body>
+</topic>

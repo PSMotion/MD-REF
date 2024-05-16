@@ -1,0 +1,363 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" modified="2023-11-08T16:25:15.867Z" lasteditedby="44785" version="2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title>-&gt; Cam Life tab</title>
+  <keywords>
+    <keyword>Dialog<keyword>2D-Cam - Cam Life tab</keyword></keyword>
+  </keywords>
+  <body>
+    <header>
+      <para styleclass="Heading1">-&gt; Cam Life tab</para>
+    </header>
+    <para styleclass="Heading3_atocs_"><anchor id="2DCAM-DIALOG-CAMLIFE"><keywords><keyword>2D-Cam dialog<keyword>Cam-Life tab</keyword></keyword></keywords></anchor><text styleclass="Heading2">2D-Cam &gt; Cam Life tab</text></para>
+    <para styleclass="Body Table">To <text styleclass="VariableName">Calculate Cam Life</text>, you must : </para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="1" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="VariableName">Parameters tab</para>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <list id="0" type="ol" listtype="decimal" formatstring="&#83;&#84;&#69;&#80;&#32;&#37;&#48;&#58;&#115;&#58;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo STEP" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; color:#000000;">
+                  <li styleclass="HowTo STEP">Enable Show Roller and Cam Life </li>
+                  <li styleclass="HowTo STEP">Enter a safety factor (CAM)</li>
+                </list>
+                <para styleclass="HowTo STEP"><text styleclass="SeeAlso">See</text><text styleclass="VariableName">&#32;</text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-2DCam-ParametersTab" anchor="2DCAM-DIALOG-LIFETIME-PROPERTIES" styleclass="VariableName">Parameters tab &gt;</link><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-2DCam-ParametersTab" styleclass="Separator"> Enable Lifetimes, Edit Safety-Factor</link><text styleclass="Separator">&#32;</text>&#32;</para>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="VariableName">Cam Life tab</para>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <list id="1" type="ol" listtype="decimal" formatstring="&#83;&#84;&#69;&#80;&#32;&#37;&#48;&#58;&#115;&#58;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo STEP" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; color:#000000;">
+                  <li styleclass="HowTo STEP">Enable / Disable “Allow Pitting to ~15% of the Cam Surface”</li>
+                  <li styleclass="HowTo STEP">Select a Steel Category, Heat-Treatment, and Steel Quality for the Cam</li>
+                  <li styleclass="HowTo STEP">Enter the Steel&apos;s Hardness as HV, HB, or HRC, within the Minimum and Maximum Hardness Limits</li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="HowTo STEP">Review the Cam&apos;s Lifetime</para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Normal"><image src="MD-Dialog-2dCam-CamLifetab-CamLifeFactors.png" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"><caption><![CDATA[2D-Cam dialog > Cam Life tab]]></caption></image></para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="Heading3_atocs_">Cam Life: tab</para>
+    <para styleclass="Body Text HowTo" style="text-indent:-36px; margin-left:60px;"><anchor id="2DCAM-DIALOG-CAMLIFEFACTORS" styleclass="Body Text"><keywords><keyword>2D-Cam dialog<keyword>Cam-Life-: Allow Pitting:?</keyword></keyword></keywords></anchor><image src="tog_plus.gif" scale="100.00%" styleclass="Heading4 Toggle_atocs_" figurelistinclude="0"></image><tab /><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" src-collapsed="tog_plus.gif" src-expanded="tog_minus.gif" styleclass="Heading4 Toggle_atocs_"><caption><![CDATA[Enable Pitting Factor]]></caption><title>Click to exapand /collapse</title></toggle></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="1" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Heading4 Toggle_atocs_">Allow Pitting to ~15% of Cam Surface</para>
+          <para styleclass="Body Text"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Body Table"><text styleclass="VariableName">Steels and Cast-Irons of Categories 1, 2, 3, 4, 6, 8, 9, 10, and 11</text> (See<text styleclass="Body Text"> Cam Life Results below</text>) </para>
+                <para styleclass="Body Table">These categories allow a small amount of surface pitting to occur, at which time the pitting stabilizes. This is called non-progressive pitting.</para>
+                <para styleclass="Body Table">If you allow up to ~15% pitting, the cam-life is extended. </para>
+                <para styleclass="Body Table">In <text styleclass="VariableName">mission-critical</text> applications, for example <text styleclass="VariableName">manned flight</text> - you would <text styleclass="VariableName" style="color:#ff0000;">not</text>&#32;<text styleclass="VariableName">Allow Pitting</text>.</para>
+                <para styleclass="Body Table">Also, if this is a new and important application, then I would not <text styleclass="VariableName">Allow Pitting</text>.</para>
+              </td>
+            </tr>
+          </table></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Body Text HowTo" style="text-indent:-36px; margin-left:60px;"><anchor id="2DCAM-DIALOG-CAMLIFE-MATERIAL" styleclass="Body Text"><keywords><keyword>2D-Cam dialog<keyword>Cam Life - Cam Material and Hardness</keyword></keyword></keywords></anchor><image src="tog_plus.gif" scale="100.00%" styleclass="Separator-Header" figurelistinclude="0"></image><tab /><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" src-collapsed="tog_plus.gif" src-expanded="tog_minus.gif" styleclass="Separator-Header"><caption><![CDATA[ Cam Material and Hardness ]]></caption><title>Click to exapand /collapse</title></toggle></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="1" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Normal"><image src="MD-Dialog-2DCam-CamLife-Material.ipp" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"><caption><![CDATA[Enter the Hardness as HB, HV, or HRC]]></caption></image></para>
+          <para styleclass="Heading4 Toggle_atocs_">Select a Steel Category, Heat-Treatment, and Quality</para>
+          <para styleclass="Body Text"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Body Text"><image src="Red-14-1b.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Body Text HowTo"> There are 14 Steel/Cast-Iron and Heat-Treatment categories, each with 3 Quality levels (ML,MQ,ME) - identical to the ISO 6336-5 Standard for Gears.</text></para>
+                <para styleclass="Interface2">Steels Categories and Heat-Treatment</para>
+                <list id="2" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="HowTo Bulleted">Normalized, Low-Carbon Wrought-Steels<text style="font-size:10pt; vertical-align:super;">a</text> - St<text styleclass="VariableName">&#32;</text></li>
+                  <li styleclass="HowTo Bulleted">Normalized, Low-Carbon, Cast-Steels<text style="font-size:10pt; vertical-align:super;">a</text> &#160; - St(cast)</li>
+                  <li styleclass="HowTo Bulleted">Black Malleable Cast-Iron - &#160;GTS (perl)</li>
+                  <li styleclass="HowTo Bulleted"><text styleclass="VariableName">Nodular Spheroidal Cast-Iron - GGG &#160;( </text><image src="Red-14-2.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="VariableName">&#32;</text><text styleclass="SeeAlso">- see image above )</text></li>
+                  <li styleclass="HowTo Bulleted">Grey Cast-Iron - GGG</li>
+                  <li styleclass="HowTo Bulleted">Through-Hardened Wrought Carbon-Steel<text style="font-size:10pt; vertical-align:super;">b</text> - V</li>
+                  <li styleclass="HowTo Bulleted">Through-Hardened Wrought Alloy-Steels<text style="font-size:10pt; vertical-align:super;">b</text> - V</li>
+                  <li styleclass="HowTo Bulleted">Through-Hardened Cast Carbon-Steel - V(cast)</li>
+                  <li styleclass="HowTo Bulleted">Through-Hardened Cast Alloy-Steel - V(cast)</li>
+                  <li styleclass="HowTo Bulleted">Case-Hardened Wrought-Steels<text style="font-size:10pt; vertical-align:super;">c</text> - Eh</li>
+                  <li styleclass="HowTo Bulleted">Flame or Induction-Hardened Wrought or Cast-Steels (IF)</li>
+                  <li styleclass="HowTo Bulleted">Nitrided Nitriding Wrought-Steels<text style="font-size:10pt; vertical-align:super;">d</text> - NT(nitr)</li>
+                  <li styleclass="HowTo Bulleted">Through-Hardened Nitrided-Steel<text style="font-size:10pt; vertical-align:super;">b</text> - NV(nitr)</li>
+                  <li styleclass="HowTo Bulleted">Through-Hardened Nitro-Carburized Wrought-Steel<text style="font-size:10pt; vertical-align:super;">e</text> - (NV (nitr-car) </li>
+                </list>
+                <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+                <para styleclass="Body Table"><text styleclass="VariableName">a - ISO 4948-2 (ISO10020) Part 2</text><text styleclass="Body Text"> - Classification of unalloyed and alloy steels according to main quality classes and main property or application</text></para>
+                <para styleclass="Body Table"><text styleclass="VariableName">b - ISO 683-1</text> - Heat-treated Steels, alloy steels and free-cutting steel Part 1 - Quenched &amp; Tempered unalloyed steels</para>
+                <para styleclass="Body Table"><text styleclass="VariableName">c - ISO 683-11 </text>- Heat-treated Steels, alloy steels and free-cutting steel Part 11 - Wrought Case Hardening steels </para>
+                <para styleclass="Body Table"><text styleclass="VariableName">d - ISO 683-10</text> - Heat-treated Steels, alloy steels and free-cutting steel Part 1 - Quenched &amp; tempered unalloyed steels</para>
+                <para styleclass="Body Text">e - <text styleclass="VariableName">ISO 683-1</text>,<text styleclass="VariableName"> ISO683-10</text>, or <text styleclass="VariableName">ISO 683-11</text></para>
+                <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+                <para styleclass="Interface2">Steel Quality<image src="Red-14-2.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+                <para styleclass="Body Text HowTo">The <text styleclass="VariableName">Steel Quality Standards</text> are:</para>
+                <para styleclass="Body Text HowTo"><text styleclass="VariableName">ML </text> - &#160;Modest demands on the material quality and the heat treatment process</para>
+                <para styleclass="Body Text HowTo"><text styleclass="VariableName">MQ</text> - Material Quality and Heat-Treatment standards met by experienced manufacturer.</para>
+                <para styleclass="Body Text HowTo"><text styleclass="VariableName">ME </text> - High degree of reliability of Material Quality and Heat-Treatment process.</para>
+                <para styleclass="Body Table">The requirements to be met for different steel qualities include: Chemical Analysis, Melting Practice, Surface Crack Detection after machining, and Hardness must be measured. Sometimes, to confirm the analysis a test piece is prepared and heat-treated together with cam - See ISO 3663-5.</para>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="Heading4 Toggle_atocs_">Enter the Steel&apos;s Hardness within the High and Low Hardness Limits</para>
+          <para styleclass="Body Text"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Body Table"><image src="Red-14-3.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="VariableName">&#32;</text><text styleclass="VariableName" style="color:#ff0000;">Enter a Hardness value</text><text styleclass="VariableName"> in the HB, HV, </text><text styleclass="VariableName" style="color:#ff0000;">or</text><text styleclass="VariableName"> HRC hardness scale - see image above</text></para>
+                <para styleclass="VariableName">The default Hardness is the average of the Upper and Lower Hardness Limits</para>
+                <para styleclass="Body Text">The <text styleclass="VariableName">Hardness</text>&#32;<text styleclass="VariableName" style="color:#ff0000;">you enter</text> must be within the <text styleclass="VariableName">Upper Hardness Limit</text> and <text styleclass="VariableName">Lower Hardness Limit</text>. The limits are specified <text styleclass="Bullets">in ISO 6336-5.</text></para>
+                <para styleclass="Body Text HowTo"><text styleclass="VariableName-indent">Lower H Limit </text><text styleclass="VariableName-indent" style="font-size:14pt;">≤</text><text styleclass="VariableName-indent"> Actual Hardness (HB, HV, HRC) </text><text styleclass="VariableName-indent" style="font-size:14pt;">≤</text><text styleclass="VariableName-indent"> Upper H Limit</text></para>
+                <para styleclass="Body Text">In the example above, you can enter a Hardness in the range of <text styleclass="VariableName">175-300HB</text>, <text styleclass="VariableName">178-315HV</text>, or <text styleclass="VariableName">9-32HRC</text>.</para>
+                <para styleclass="Body Text">When you enter a Hardness value under one of the <text styleclass="VariableName">Hardness Scales</text>, the other two <text styleclass="VariableName">Hardness Scales</text> update automatically.</para>
+              </td>
+            </tr>
+          </table></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading4 Toggle_atocs_"><anchor id="2DCAM-DIALOG-CAMLIFE-FLANK"><keywords><keyword>2D-Cam dialog<keyword>Cam Life - Cam Life Results</keyword></keyword></keywords></anchor><text styleclass="Heading3_atocs_">Cam-Life Results</text></para>
+    <para styleclass="Body Text HowTo" style="text-indent:-36px; margin-left:60px;"><image src="tog_plus.gif" scale="100.00%" styleclass="Separator-Header" figurelistinclude="0"></image><tab /><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" src-collapsed="tog_plus.gif" src-expanded="tog_minus.gif" styleclass="Separator-Header"><caption><![CDATA[ Inner / outer  flank + Steel Category # , Quality, and Category Name  ]]></caption><title>Click to exapand /collapse</title></toggle></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="1" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Text"><image src="MD-DIALOG-2DCAM-CAMLIFE-RESULTS.ipp" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+          <para styleclass="Body Table"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Body Table"><text styleclass="VariableName">The Orange Separator indicates the Flank, Steel Category, Steel Quality, Heat-Treatment Type and/or Steel-Type with Steel Acronym are indicated in the separator.</text></para>
+                <para styleclass="Body Table"><text styleclass="VariableName">E.G: </text><text styleclass="Separator" style="font-weight:bold;"> Inner Flank: 004 ML Nodular / Ductile / Spherical Cast Iron (GGG) </text></para>
+                <para styleclass="Body Text HowTo"><text styleclass="VariableName">Flank : Inner</text></para>
+                <para styleclass="Body Text HowTo"><text styleclass="VariableName">Steel Category : 004</text></para>
+                <para styleclass="Body Text HowTo"><text styleclass="VariableName">Steel Quality : ML</text></para>
+                <para styleclass="Body Text HowTo"><text styleclass="VariableName">Steel Name : Nodular / Ductile / Spherical Cast Iron</text></para>
+                <para styleclass="Body Text HowTo"><text styleclass="VariableName">Steel Acronym : GGG</text></para>
+                <para styleclass="Interface2">The Results are<text styleclass="VariableName">:</text></para>
+                <para styleclass="VariableName">Maximum Contact Stress (MPa - Mega-Pascals)<text styleclass="Body Table">&#32;</text></para>
+                <para styleclass="Body Text HowTo">When you select the Follower-Roller - <text styleclass="Body Text">see </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-2DCam-RollerLifeTab" styleclass="VariableName">Roller-Life tab</link><text styleclass="VariableName">&#32;</text>- we can use the combined Geometry and Materials of the Cam and the Follower-Roller to calculate the maximum contact-stress.</para>
+                <para styleclass="VariableName">Maximum Dynamic Contact-Stress &#160;- (MPa - Mega-Pascals)<text styleclass="Body Table">&#32;</text></para>
+                <para styleclass="Body Text HowTo">Maximum Contact-Stress × Safety Factor - see <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-2DCam-ParametersTab" anchor="2DCAM-DIALOG-LIFETIME-PROPERTIES" styleclass="SeeAlso">Parameters tab &gt; Enable Lifetime, Edit Safety-Factor</link></para>
+                <para styleclass="VariableName">Maximum Allowable Contact Stress </para>
+                <para styleclass="Body Text HowTo">A property of the<text styleclass="VariableName"> Steel-Category</text><text styleclass="Body Text">, </text><text styleclass="VariableName">Heat-Treatment</text><text styleclass="Body Text">, and </text><text styleclass="VariableName">Steel Quality</text><text styleclass="Body Text"> that you select, together with the </text><text styleclass="VariableName">Surface</text>&#32;<text styleclass="VariableName">Hardness </text><text styleclass="Body Text">that you enter - see above </text><link displaytype="text" defaultstyle="true" type="topiclink" href="" anchor="2DCAM-DIALOG-CAMLIFE-MATERIAL" styleclass="SeeAlso">Cam Materials and Hardness</link><text styleclass="SeeAlso">&#32;</text><image src="Red-14-3.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Body Text">&#32;</text></para>
+                <para styleclass="Body Text"><text styleclass="VariableName">Dynamic / Allowable (-)</text></para>
+                <para styleclass="Body Text HowTo">Ratio of <text styleclass="VariableName">Maximum Dynamic Contact-Stress : Maximum Allowable Contact Stress</text>.</para>
+                <para styleclass="Body Text HowTo">We apply the ratio to the <text styleclass="VariableName">Y-axis</text> on the plot of <text styleclass="VariableName">Life(X-axis) vs Ratio of Dynamic/Allowable(Y-axis)</text> - see plot below. Each Steel Category has a different plot.</para>
+                <para styleclass="VariableName">Depth of Max Shear Stress (mm)</para>
+                <para styleclass="Body Text HowTo">The <text styleclass="VariableName">Maximum Shear-Stress</text> is below the surface. The Depth of Maximum Shear-Stress is a function of the size and shape of the contact between the Follower-Roller and Cam-Profile.</para>
+                <para styleclass="Body Text HowTo">Recommended: <text styleclass="VariableName">Minimum Depth of Surface-Hardness &gt; ~2 × Depth of Maximum Shear-Stress</text>.</para>
+                <para styleclass="VariableName">Maximum Shear Stress</para>
+                <para styleclass="Body Text HowTo">Approximately 0.78 x Maximum Contact-Stress (depending on the contact geometry).</para>
+                <para styleclass="VariableName">Dynamic Shear-Stress</para>
+                <para styleclass="Body Text HowTo">Maximum Shear-Stress x Safety-Factor - see <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-2DCam-ParametersTab">Parameters tab &gt; Enable Lifetime, Edit Safety-Factor</link></para>
+                <para styleclass="Body Text"><image src="MD-CamLifeSN-B.png" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"><caption><![CDATA[S-N (Log-Log) Curves for different Steel Categories (based on ISO 6336)
+Y-axis = Maximum Dynamic Contact-Stress/Allowable Contact-Stress of Steel, Quality, Hardness
+X-axis = Life in Number of Machine-Cycles]]></caption></image></para>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Body Text"><text styleclass="VariableName">Cam Lifetime</text>:</para>
+          <para styleclass="Body Table"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Body Table"><text styleclass="VariableName">Y (in graph below) = &#160;Maximum Dynamic Contact Stress </text><equation styleclass="VariableName" style="font-size:7pt; vertical-align:sub;" font-size="36"><![CDATA[\slash ]]></equation><text styleclass="VariableName"> Allowable Contact Stress </text></para>
+                <para styleclass="Body Text HowTo">When Y=1, Cam Lifetime = 1. &#160;</para>
+                <para styleclass="Body Text HowTo">1 Life of Steel-Categories 1: 1.0 × 10^9 cycles, </para>
+                <para styleclass="Body Text HowTo">1 Life of Steel-Categories 2: 1.5 × 10^7cycles; </para>
+                <para styleclass="Body Text HowTo">1 Life of Steel Categories 4: 5.0 × 10^6 cycles</para>
+                <para styleclass="Body Text HowTo">1 Life of Steel Categories 4: 5.0 × 10^6 cycles</para>
+                <para styleclass="Body Text HowTo">When Y &gt; 1, Cam Lifetime is reduced.</para>
+                <para styleclass="Body Text HowTo">When Y &lt; 0.85, Cam-Lifetime is infinite (Greater than 10^10 cycles)</para>
+                <para styleclass="Body Text HowTo">When Life &lt; 10^5 cycles, Contact-Stress plays a more important role, also, ratcheting and shakedown stress. </para>
+                <para styleclass="Body Table"><text styleclass="VariableName">Cam-Life N</text><text styleclass="Body Text HowTo">&#32;</text><text styleclass="VariableName">(Millions of Cam Rotations)</text><text styleclass="Body Text HowTo">&#32;</text></para>
+                <para styleclass="Body Text HowTo">Millions of Cycles, 99% reliability. </para>
+                <para styleclass="Body Text HowTo">Maximum - 10,000,000,000 (10<text style="font-size:9pt; vertical-align:super;">10</text> rotations / 10 billion)</para>
+                <para styleclass="Body Table"><text styleclass="VariableName">Cam-Life Hrs</text></para>
+                <para styleclass="Body Text HowTo">Number of Hours, based on Millions of Cam-Life Rotations and Machine Speed (RPM).</para>
+                <para styleclass="Body Table"><text styleclass="VariableName">Cam-Life Yrs</text></para>
+                <para styleclass="Body Text HowTo">Number of Years, based on 8760 hours per year.</para>
+              </td>
+            </tr>
+          </table></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Body Table"><conditional-text type="IF" value="USER1"/></para>
+    <para styleclass="VariableName">Cu <text styleclass="Body Text">The fatigue limit load Cu in accordance with ISO 281 is defined as the load below which, under laboratory conditions, no fatigue occurs in the material. The fatigue limit load Cu serves as a calculation value for determining the life adjustment factor aISO and not as a design criterion. With poor lubrication or contamination of the lubricant in particular, it is also possible for the material to undergo fatigue at loads which are significantly below the fatigue limit load Cu.</text></para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="Body Text">The values for the life adjustment factor a1 were redefined in ISO 281:2007 and differ from the previous data</para>
+    <para styleclass="VariableName">Viscosity: ISO 3448 Viscosity classification</para>
+    <para styleclass="Body Text">The ISO viscosity classification is recommended for industrial applications. The reference temperature of <equation><![CDATA[40\celsius]]></equation> represents the operating temperature in machinery. Each subsequent Viscosity grade (VG) within the classification has approximately a <equation><![CDATA[50\percent]]></equation> higher viscosity, whereas the minimum and maximum values of each grade ranges <equation><![CDATA[\pm10\percent]]></equation> from the mid-point. </para>
+    <para styleclass="Body Text"></para>
+    <para styleclass="Body Text">For example, <text styleclass="VariableName">ISO VG 22</text> refers to a viscosity grade of <equation style="vertical-align:baseline;vertical-align:text-bottom"><![CDATA[22\lfrac{mm^{2}}{s} \pm10\percent \ at 40\celsius]]></equation></para>
+    <para styleclass="Body Text"><link displaytype="text" defaultstyle="true" type="weblink" href="https://www.tribology-abc.com/calculators/iso_3348.htm">The viscosity at different temperatures can be calculated</link> using the viscosity at <equation><![CDATA[40\celsius]]></equation> and the viscosity index (VI), or the viscosity at two temperatures, which represents the temperature dependency of the lubricant.</para>
+    <para styleclass="Interface2"></para>
+    <para styleclass="Interface2">Reference viscosity</para>
+    <para styleclass="Normal" style="margin-top:14px; line-height:1.00; tabstops:none;"><text style="font-family:&apos;Times New Roman&apos;; font-size:12pt; text-decoration:none; vertical-align:baseline; color:#000000;">The </text><text styleclass="Interface2">reference viscosity</text><text styleclass="Body Text"> ν1 is determined from the mean bearing diameter dM = (D + d)/2 and the operating speed n </text><link displaytype="text" defaultstyle="true" type="weblink" href="https://medias.schaeffler.co.uk/en/load-carrying-capacity-and-life#20548140299" styleclass="Body Text">? Figure</link><text styleclass="Body Text">.</text></para>
+    <para styleclass="VariableName"></para>
+    <para styleclass="VariableName">Nominal viscosity</para>
+    <para styleclass="Body Text">The nominal viscosity of the oil at +40 °C is determined from the required operating viscosity ν and the operating temperature ϑ, <link displaytype="text" defaultstyle="true" type="weblink" href="https://medias.schaeffler.co.uk/en/load-carrying-capacity-and-life#20548072843">? Figure</link>. In the case of greases, ν is the operating viscosity of the base oil.</para>
+    <para styleclass="Body Text">In the case of heavily loaded bearings with a high proportion of sliding contact, the temperature in the contact area of the rolling elements may be up to 20 K higher than the temperature measured on the stationary ring (without the influence of any external heat sources).</para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="VariableName">Roughness of Bearings Seats</para>
+    <para styleclass="VariableName">Ra must not be too high</para>
+    <para styleclass="Body Text">The roughness of the bearing seats must be matched to the tolerance class of the bearings. The mean roughness value Ra must not be too high, in order to maintain the interference loss within limits. Shafts must be ground, while bores must be precision turned. For further information on this subject <link displaytype="text" defaultstyle="true" type="weblink" href="https://medias.schaeffler.co.uk/en/design-of-bearing-arrangements#21071329291">? Table</link> and product chapter.</para>
+    <para styleclass="VariableName">Roughness values for cylindrical bearing seating surfaces – guide values</para>
+    <para styleclass="Normal" style="line-height:1.00; tabstops:none;"><table rowcount="7" colcount="6" style="width:auto; cell-padding:1px; cell-spacing:2px; page-break-inside:auto; border-width:0px; border-spacing:2px; cell-border-width:0px; border-style:none; background-color:none; head-row-background-color:none; alt-row-background-color:none;">
+      <tr style="vertical-align:top">
+        <td style="vertical-align:middle;">
+          <para styleclass="Body Text" style="text-align:center;"></para>
+        </td>
+        <td style="vertical-align:middle;">
+        </td>
+        <td colspan="4" style="vertical-align:middle;">
+          <para styleclass="Normal"></para>
+          <para styleclass="Body Text" style="text-align:center;">Ramax</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td colspan="2" rowspan="2" style="vertical-align:middle;">
+          <para styleclass="Body Text" style="text-align:center;">mm</para>
+        </td>
+        <td colspan="4" style="vertical-align:middle;">
+          <para styleclass="Body Text" style="text-align:center;">μm</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td colspan="4" style="vertical-align:middle;">
+          <para styleclass="Body Text" style="text-align:center;">Diameter tolerance (IT grade)</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="vertical-align:middle;">
+          <para styleclass="Body Text" style="text-align:center;">over</para>
+        </td>
+        <td style="vertical-align:middle;">
+          <para styleclass="Body Text" style="text-align:center;">incl.</para>
+        </td>
+        <td style="vertical-align:middle;">
+          <para styleclass="Body Text" style="text-align:center;">IT7</para>
+        </td>
+        <td style="vertical-align:middle;">
+          <para styleclass="Body Text" style="text-align:center;">IT6</para>
+        </td>
+        <td style="vertical-align:middle;">
+          <para styleclass="Body Text" style="text-align:center;">IT5</para>
+        </td>
+        <td style="vertical-align:middle;">
+          <para styleclass="Body Text" style="text-align:center;">IT4</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="vertical-align:middle;">
+          <para styleclass="Body Text" style="text-align:center;">‒</para>
+        </td>
+        <td style="vertical-align:middle;">
+          <para styleclass="Body Text" style="text-align:center;">80</para>
+        </td>
+        <td style="vertical-align:middle;">
+          <para styleclass="Body Text" style="text-align:center;">1,6</para>
+        </td>
+        <td style="vertical-align:middle;">
+          <para styleclass="Body Text" style="text-align:center;">0,8</para>
+        </td>
+        <td style="vertical-align:middle;">
+          <para styleclass="Body Text" style="text-align:center;">0,4</para>
+        </td>
+        <td style="vertical-align:middle;">
+          <para styleclass="Body Text" style="text-align:center;">0,2</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="vertical-align:middle;">
+          <para styleclass="Body Text" style="text-align:center;">80</para>
+        </td>
+        <td style="vertical-align:middle;">
+          <para styleclass="Body Text" style="text-align:center;">500</para>
+        </td>
+        <td style="vertical-align:middle;">
+          <para styleclass="Body Text" style="text-align:center;">1,6</para>
+        </td>
+        <td style="vertical-align:middle;">
+          <para styleclass="Body Text" style="text-align:center;">1,6</para>
+        </td>
+        <td style="vertical-align:middle;">
+          <para styleclass="Body Text" style="text-align:center;">0,8</para>
+        </td>
+        <td style="vertical-align:middle;">
+          <para styleclass="Body Text" style="text-align:center;">0,4</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="vertical-align:middle;">
+          <para styleclass="Body Text" style="text-align:center;">500</para>
+        </td>
+        <td style="vertical-align:middle;">
+          <para styleclass="Body Text" style="text-align:center;">1  250</para>
+        </td>
+        <td style="vertical-align:middle;">
+          <para styleclass="Body Text" style="text-align:center;">3,2</para>
+        </td>
+        <td style="vertical-align:middle;">
+          <para styleclass="Body Text" style="text-align:center;">1,6</para>
+        </td>
+        <td style="vertical-align:middle;">
+          <para styleclass="Body Text" style="text-align:center;">1,6</para>
+        </td>
+        <td style="vertical-align:middle;">
+          <para styleclass="Body Text" style="text-align:center;">0,8</para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Interface2">Raceways with direct bearing arrangements</para>
+    <para styleclass="Body Text">The raceways must be produced as a rolling bearing raceway</para>
+    <para styleclass="Body Text HowTo">In rolling bearings without an inner ring, the rolling elements run directly on the shaft, while in bearings without an outer ring they run directly in the housing bore. The shaft and/or housing bore must therefore be produced as a rolling bearing raceway; steels, surface hardness and hardening depth.</para>
+    <para styleclass="Body Text HowTo">The raceways must be free of waviness and precision machined (grinding and honing); for design of raceways see product chapter.</para>
+    <para styleclass="VariableName">The fits have a major influence on the bearing clearance</para>
+    <para styleclass="Body Text HowTo">The shaft and housing fits have a considerable influence on the bearing and operating clearance of the rolling bearing; this must be taken into consideration in determining the tolerances.</para>
+    <para styleclass="Interface2">Steels for the raceways</para>
+    <para styleclass="VariableName">Through hardening steels</para>
+    <para styleclass="Body Text">Through hardening steels in accordance with ISO 683-17 (e. g. 100Cr6) are suitable as materials for rolling bearing raceways in direct bearing arrangements. These can also be surface layer hardened.</para>
+    <para styleclass="Body Text">Case hardening steels must conform to DIN EN ISO 683-17 (e. g. 17MnCr5, 18CrNiMo7-6) or EN 10084 (e. g. 16MnCr5).</para>
+    <para styleclass="Body Text">For flame and induction hardening, steels to DIN EN ISO 683-17 must be used (e. g. C56E2, 43CrMo4) or DIN 17212 (e. g. Cf53).</para>
+    <para styleclass="Heading3" style="text-align:left; text-indent:0px; margin-top:19px; margin-right:0px; margin-bottom:0px; margin-left:0px; line-height:1.00; background-color:transparent; white-space:normal; page-break-inside:auto; page-break-after:auto; border:none; tabstops:none;"><text styleclass="Interface2">Surface Hardness and Hardening Depth</text></para>
+    <para styleclass="VariableName">Nominal surface hardness: ≧ 670 HV</para>
+    <para styleclass="Body Text">The hardness values apply to raceways, axial washers and shaft shoulders. Steels hardened by means of case, flame or induction hardening must have a surface hardness of 670 HV to 840 HV and an adequate hardening depth CHD or SHD.</para>
+    <para styleclass="VariableName"></para>
+    <para styleclass="VariableName">Determining CHD and SHD</para>
+    <para styleclass="Body Text HowTo">The requisite case hardening depth CHD for case hardening steels is determined in accordance with <text styleclass="Body Text">CHD&gt;= 0.052Dw</text>, while the requisite surface hardening depth SHD for steels for induction surface layer hardening is determined in accordance with ? Equation SHD&gt;=140.Dw/Rp0.2</para>
+    <para styleclass="Body Text">Dw Rolling Element diameter</para>
+    <para styleclass="VariableName"></para>
+    <para styleclass="VariableName">Nominal hardening depth ≧ 0,3 mm</para>
+    <para styleclass="Body Text HowTo">In accordance with DIN EN ISO 15787:2010, the hardening depth is the depth of the hardened surface zone at which there is still a hardness of 550 HV1. It is measured on the finish ground shaft and must correspond to the stated values, but must in any case be ≧ 0,3 mm.</para>
+    <para styleclass="VariableName"></para>
+    <para styleclass="VariableName">DETERMINING THE CASE HARDENING DEPTH.</para>
+    <para styleclass="VariableName">Approximation value for case hardening depth</para>
+    <para styleclass="Body Text">An approximation value for determining the minimum hardness depth can be found in Eqtn CHD&gt;= 0.052 Dw. </para>
+    <para styleclass="Body Text">The reference value for the load present is the equivalent stress in accordance with the distortion energy hypothesis (DEH) as a function of the rolling element diameter Dw and the magnitude of the load.</para>
+    <para styleclass="VariableName">Case hardening depth</para>
+    <para styleclass="Body Text">Eqtn CHD&gt;= 0.052 Dw</para>
+    <para styleclass="Body Text">The local hardness must always be above the local requisite hardness, which can be calculated from the equivalent stress.</para>
+    <para styleclass="Body Text"><image src="MD-Bearings-CHD.ipp" scale="-70.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+    <para styleclass="Interface2">DETERMINING THE SURFACE HARDENING DEPTH</para>
+    <para styleclass="Body Text HowTo">For the calculation of the surface hardening depth SHD applies.</para>
+    <para styleclass="VariableName">Surface hardening depth</para>
+    <para styleclass="Body Text HowTo">SHD&gt;= 140.Dw/Rp0.2</para>
+    <para styleclass="Body Text HowTo"><image src="MD-sURFACEhARDNESSmAPP.ipp" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+    <para styleclass="Body Text"></para>
+    <para styleclass="Interface2">Raceway Hardness is less than 670 HV?</para>
+    <para styleclass="Body Text HowTo">If the raceway fulfils the requirements for rolling bearing materials but its hardness value is less than 670 HV (58 HRC), the load on the bearing arrangement cannot be as high as the full load carrying capacity of the bearing. In order to determine the load carrying capacity, the basic dynamic load rating C of the bearings must be multiplied by the reduction factor fH and the basic static load rating C0r by the reduction factor fH0 <link displaytype="text" defaultstyle="true" type="weblink" href="https://medias.schaeffler.co.uk/en/design-of-bearing-arrangements#21251942795">? Figure</link> and <link displaytype="text" defaultstyle="true" type="weblink" href="https://medias.schaeffler.co.uk/en/design-of-bearing-arrangements#21252061451">? Figure</link>.</para>
+    <para styleclass="Body Text HowTo"><image src="MD-Bearings-Hardness factor- INA.ipp" scale="-70.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+    <para styleclass="Body Text">EG Basic rating life of the mating track, track made from 42CrMo4 V, hardness 350 HV</para>
+    <para styleclass="Body Text">Wear of the mating track, track made from EN-GJS-500-7</para>
+    <para styleclass="Body Text">Wear of the mating track, track made from 58CrV4</para>
+    <para styleclass="Body Text"><conditional-text type="END"/></para>
+  </body>
+</topic>

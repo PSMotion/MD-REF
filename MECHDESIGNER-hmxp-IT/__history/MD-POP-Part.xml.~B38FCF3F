@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../helpproject.xsl" ?>
+<topic class="Popup" template="Default" status="Under Construction" modified="2022-02-05T22:58:59.914Z" lasteditedby="Adam" version="2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../helpproject.xsd">
+  <title>Part</title>
+  <keywords>
+    <keyword>Bar</keyword>
+    <keyword>Definition<keyword>Part</keyword></keyword>
+    <keyword>Link</keyword>
+    <keyword>Part Types<keyword>Added-Part</keyword><keyword>BasePart</keyword><keyword>Connecting-Part</keyword></keyword>
+  </keywords>
+  <body>
+    <para styleclass="Normal"><table styleclass="PopupTable" rowcount="4" colcount="2">
+      <tr style="vertical-align:top">
+        <td colspan="2">
+          <para styleclass="Popup Box"><text styleclass="Popup Box-Elements">Parts</text><text style="font-weight:normal; font-style:normal;">&#32;</text>are rigid-bodies we join with joints to build a <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Kinematic-Chain">kinematic-chain</link>.</para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="Popup Box2">Kinematic states of a Part</para>
+          <list id="0" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Popup Box" style="font-family:Symbol; font-size:9pt; color:#000000;">
+            <li styleclass="Popup Box"><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Part-Kinematically-Defined" styleclass="VariableName-small">Kinematically-Defined</link> (also called a <text styleclass="VariableName-small">Solved</text> or <text styleclass="VariableName-small" style="color:#005000;">Green</text>&#32;<text styleclass="Popup Box-Elements">Part</text><text styleclass="Popup Box2">)</text></li>
+          </list>
+          <list id="1" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Popup Box" style="font-family:Symbol; font-size:9pt; color:#000000;">
+            <li styleclass="Popup Box"><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Part-Free" styleclass="VariableName-small">Not Kinematically-Defined</link> (also called a <text styleclass="VariableName-small">Free</text> or <text styleclass="VariableName-small" style="color:#0000ff;">Blue</text>&#32;<text styleclass="Popup Box-Elements">Part</text><text styleclass="Popup Box2">)</text></li>
+            <li styleclass="Popup Box"><text styleclass="VariableName-small">Names </text><text style="font-weight:normal; font-style:normal;">we do </text><text styleclass="Popup Box2" style="color:#ff0000;">NOT</text><text style="font-weight:normal; font-style:normal;"> use in this help are: </text><text styleclass="Popup Box2">Link, Bar, member.</text></li>
+          </list>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:121px;">
+          <para styleclass="Normal"><image src="MD-Pop-AddedPartPop.ipp" scale="100.00%" padding="0 3 0 0" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="Popup Box"><text styleclass="Popup Box2">Mechanism-Editor:</text></para>
+          <list id="2" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Popup Box" style="font-family:Symbol; font-size:9pt; color:#000000;">
+            <li styleclass="Popup Box"><text styleclass="Popup Box2">Part-Outline</text><text style="font-weight:normal; font-style:normal;"> is </text><text styleclass="VariableName-small" style="color:#0000ff;">Blue</text><text style="font-weight:normal; font-style:italic; color:#000000;"> or </text><text styleclass="VariableName-small" style="color:#005000;">Green</text><text styleclass="Popup Box2">&#32;</text></li>
+            <li styleclass="Popup Box"><text styleclass="Popup Box2">X-axis</text><text style="font-weight:normal; font-style:italic;"> is </text><text styleclass="VariableName-small" style="color:#ca6500;">Orange</text><text style="font-weight:normal; font-style:italic;">&#32;</text></li>
+            <li styleclass="Popup Box"><text styleclass="Popup Box2">Y-axis</text><text style="font-weight:normal; font-style:italic;"> is </text><text styleclass="VariableName-small" style="color:#008000;">Green</text></li>
+            <li styleclass="Popup Box"><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Sketch-Element-CADLine" styleclass="Popup Box2">Cad-Line</link><text style="font-weight:normal; font-style:italic;"> from its </text><text styleclass="Popup Box2">start-Point</text><text style="font-weight:normal; font-style:italic;"> to its </text><text styleclass="Popup Box2">end-Paint</text></li>
+          </list>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:121px;">
+          <para styleclass="Popup Box"><image src="MD-Pop-Part-inPartEditor.png" scale="100.00%" padding="0 3 0 0" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="Popup Box"><text styleclass="Popup Box2">Part-Editor:</text></para>
+          <list id="3" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Popup Box" style="font-family:Symbol; font-size:10pt; color:#000000;">
+            <li styleclass="Popup Box"><text styleclass="Popup Box2">X-axis</text><text style="font-weight:normal; font-style:italic;"> is </text><text styleclass="VariableName-small" style="color:#ca6500;">Orange</text><text style="font-weight:normal; font-style:italic;">&#32;</text></li>
+            <li styleclass="Popup Box"><text styleclass="Popup Box2">Y-axis</text><text style="font-weight:normal; font-style:italic;"> is </text><text styleclass="VariableName-small" style="color:#008000;">Green</text></li>
+            <li styleclass="Popup Box"><text styleclass="Popup Box2">Cad-Line</text><text style="font-weight:normal; font-style:italic;"> is </text><text styleclass="VariableName-small">Black</text></li>
+          </list>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="Popup Box"></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td colspan="2">
+          <para styleclass="SeeAlso-small">See also: <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Mechanism-Part">Add Part</link>, <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Part-Outline">Part-Outline</link>, <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Part-Added">Note on Added-Parts</link></para>
+        </td>
+      </tr>
+    </table></para>
+  </body>
+</topic>

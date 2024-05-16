@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" modified="2023-05-15T10:33:04.838+01:00" lasteditedby="Adam" version="2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title>What does kinematically-defined mean?</title>
+  <body>
+    <header>
+      <para styleclass="Heading1">What does kinematically-defined mean?</para>
+    </header>
+    <para styleclass="Heading4 Toggle_atocs_">Kinematic states of <text styleclass="Element-Header">Parts</text></para>
+    <para styleclass="Heading4 Toggle_atocs_"><text styleclass="Body Text">There are two kinematic-states of </text><text styleclass="Element-Header">Parts</text><text styleclass="Body Text">.</text></para>
+    <para styleclass="Body Text"><table styleclass="Default" rowcount="3" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:205px;">
+          <para styleclass="Popup Box2" style="text-align:right;"><text styleclass="VariableName-small">Not kinematically-defined</text> : </para>
+        </td>
+        <td>
+          <para styleclass="Popup Box">The state of a <text styleclass="Element">Part</text> when it has <text styleclass="VariableName-small" style="color:#ff0000;">one</text> or <text styleclass="VariableName-small" style="color:#ff0000;">more</text> degrees-of-freedom.</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:205px;">
+          <para styleclass="Popup Box2" style="text-align:right;"><text styleclass="VariableName-small">kinematically-defined</text> : </para>
+        </td>
+        <td>
+          <para styleclass="Popup Box">The state of a <text styleclass="Popup Box-Elements">Part</text> when it has <text styleclass="VariableName-small" style="color:#ff0000;">zero</text>&#32;<text styleclass="VariableName">Mobility</text>. </para>
+          <para styleclass="Popup Box">Its position, velocity, and acceleration are fully specified. </para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td colspan="2">
+          <para styleclass="VariableName">Mobility of a Kinematic-chain = </para>
+          <para styleclass="Body Text HowTo"> # Degrees-of-Freedom – # Motion-Dimensions.</para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="VariableName"># Degrees-of-Freedom <equation style="vertical-align:middle"><![CDATA[= 3.\left( N-1 \right)-2.J]]></equation></para>
+          <para styleclass="Body Text">N = Number of <text styleclass="Element">Parts</text></para>
+          <para styleclass="Body Text">J= Number of <text styleclass="Element">Joints</text></para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="Body Text">All <text styleclass="Element-Header">Parts</text> in the model must be <text styleclass="VariableName">kinematically-defined</text>&#32;<text styleclass="VariableName" style="color:#ff0000;">before</text> you should analyse any motion and force data.</para>
+        </td>
+      </tr>
+    </table></para>
+  </body>
+</topic>

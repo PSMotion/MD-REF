@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" status="Under Construction" lasteditedby="Adam" version="2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title>Open LXL file-type</title>
+  <keywords>
+    <keyword>How to...<keyword>Move a Mechanism Editor to a different Plane</keyword></keyword>
+    <keyword>LXL</keyword>
+    <keyword>Open<keyword>LXL Library File</keyword></keyword>
+  </keywords>
+  <body>
+    <header>
+      <para styleclass="Heading1">Open LXL File-Type</para>
+    </header>
+    <para styleclass="Heading3_atocs_">Library file Limitations:</para>
+    <para styleclass="Body Text"><table styleclass="Standard" rowcount="1" colcount="1" style="cell-padding:0px; border-width:0px; border-spacing:0px; cell-border-width:0px; border-style:none;">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Text">There are three different options when you open a Library File. </para>
+          <list id="148" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted">Preselect a <text styleclass="Element">Plane</text> - the model in the <text styleclass="VariableName">Library file</text> is opened onto a new Mechanism-Editor,. The Library file and model is a child to the <text styleclass="Element">Plane</text> and the <text styleclass="Interface">Mechanism-Editor</text>.</li>
+            <li styleclass="HowTo Bulleted">Preselect a <text styleclass="Element">Part</text> - the &#160;model in the <text styleclass="VariableName">Library fie </text>is opened onto the <text styleclass="Element">Part</text>. The Library file and model is a child to the <text styleclass="Element">Part</text>. </li>
+            <li styleclass="HowTo Bulleted">Preselect <text styleclass="VariableName" style="color:#ff0000;">nothing</text> - the model in the <text styleclass="VariableName">Library fie</text> is opened and merged with the active <text styleclass="Interface">Mechanism-Editor</text>.</li>
+          </list>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <list id="149" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Numbered" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo Numbered"><text style="font-style:normal;">Click a </text><text styleclass="Interface">Plane</text><text style="font-style:normal;"> that is a child to the active </text><text styleclass="Interface">Model-Editor</text><text style="font-style:normal;"> or </text><text styleclass="Interface">Mechanism-Editor</text><text styleclass="VariableName">&#32;</text></li>
+          </list>
+          <para styleclass="Body Text HowTo"><text style="font-style:normal;">The </text><text styleclass="Interface">Plane</text><text style="font-style:normal;">&#32;</text><text styleclass="VariableName-IT" style="color:#ff0000;">MUST</text><text style="font-style:normal;"> show in the </text><text styleclass="Interface">Selection-Window.</text></para>
+          <list id="149" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Numbered" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo Numbered"><text styleclass="HowTo Bulleted" style="font-style:normal;">Click</text><text styleclass="HowTo Bulleted">&#32;</text><text styleclass="T_Menu">File &gt; Open </text></li>
+          </list>
+          <para styleclass="Body Text HowTo"><text styleclass="Body Text">The </text><text styleclass="VariableName-IT">Windows® File Open</text><text styleclass="Body Text"> interface starts.</text></para>
+          <list id="149" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Numbered" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo Numbered"><text styleclass="Body Text">In the </text><text styleclass="VariableName">Files of type</text><text styleclass="Body Text"> drop-down, select </text><text styleclass="VariableName">Library files</text><text styleclass="Body Text"> (*.LXL) </text></li>
+          </list>
+          <para styleclass="Body Text"><image src="Dialog-OpenLibraryFile.png" scale="100.00%" styleclass="Image Caption"></image></para>
+          <list id="150" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="4" styleclass="HowTo Numbered" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo Numbered">Explore to, and select, a <text styleclass="VariableName">Library File </text></li>
+            <li styleclass="HowTo Numbered"><text style="font-weight:normal;">Click the </text><text styleclass="T_Menu">Open </text><text styleclass="Body Text">button</text></li>
+            <li styleclass="HowTo Numbered"><text style="font-style:normal;">Click</text>&#32;<image src="OK-tiny-11-15.png" scale="100.00%" styleclass="Image Caption"></image> in the <text styleclass="Interface">Command-Manager</text></li>
+          </list>
+          <para styleclass="VariableName-IT">MechDesigner<text styleclass="Body Text"> adds the </text><text styleclass="HowTo Numbered">model in the </text><text styleclass="VariableName">Library File</text><text styleclass="HowTo Numbered"> to a new </text><text styleclass="Interface">Mechanism-Editor</text><text styleclass="HowTo Numbered"> (and name-tab) as a child to the </text><text styleclass="Interface">Plane</text><text styleclass="Body Text"> you select in 1, above. </text></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading4 Toggle_atocs_2"><image src="tog_plus.gif" scale="100.00%"></image><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" src-collapsed="tog_plus.gif" src-expanded="tog_minus.gif"><caption><![CDATA[To move a model to a different Plane:]]></caption></toggle></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Standard" rowcount="1" colcount="1" style="cell-padding:0px; border-width:0px; border-spacing:0px; cell-border-width:0px; border-style:none;">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Text">You can use the Library file-type to move a model in one <text styleclass="Interface">Mechanism-Editor</text> to a different <text styleclass="Interface">Plane</text> and <text styleclass="Interface">Mechanism-Editor</text></para>
+          <list id="151" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Numbered" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo Numbered"><text styleclass="Body Text">Save your model, in the normal way, as a backup </text><text style="font-style:italic;">- see </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-File-SaveAs" style="font-style:italic;">Save</link><text styleclass="VariableName">&#32;</text></li>
+            <li styleclass="HowTo Numbered"><text style="font-style:normal;">Click the name-tab of the </text><text styleclass="Interface">Mechanism-Editor</text><text style="font-style:normal;"> with the kinematic-chains you want to move </text></li>
+            <li styleclass="HowTo Numbered"><text style="font-style:normal;">Click </text><text styleclass="T_Menu">File &gt; Save as : File of type LXL</text></li>
+            <li styleclass="HowTo Numbered"><text style="font-style:normal;">Open the Library File - see </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-File-Open-LIB-File" style="font-style:normal;">Open Library File</link></li>
+            <li styleclass="HowTo Numbered"><text style="font-style:normal;">Select a different </text><text styleclass="Element" style="font-style:normal;">Plane</text><text style="font-style:normal;"> for the new </text><text styleclass="Interface">Mechanism-Editor</text></li>
+            <li styleclass="HowTo Numbered"><text style="font-style:normal;">Save your model with a new file-name.</text></li>
+            <li styleclass="HowTo Numbered"><text style="font-style:normal;">Delete the original </text><text styleclass="Interface">Mechanism-Editor</text></li>
+          </list>
+        </td>
+      </tr>
+    </table></para>
+  </body>
+</topic>

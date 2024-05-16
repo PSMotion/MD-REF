@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" status="Under Construction" modified="2023-04-27T12:51:54.262+01:00" lasteditedby="Adam" version="2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title>Configure Power Source</title>
+  <keywords>
+    <keyword>Force Menu<keyword>Configure Power Source</keyword></keyword>
+  </keywords>
+  <body>
+    <header>
+      <para styleclass="Heading1">Configure Power Source</para>
+    </header>
+    <para styleclass="Heading3_atocs_" style="page-break-before:always;">Why Configure Power Source?</para>
+    <para styleclass="Body Text HowTo">There is one <text styleclass="VariableName">Power-Source</text><text style="font-weight:normal; font-style:normal; color:#000000;"> for each degree-of-freedom in a kinematic-chain.</text></para>
+    <para styleclass="Body Text HowTo"><text style="font-weight:normal; font-style:normal; color:#000000;">In the default case, the </text><text styleclass="VariableName">Power-Source</text><text style="font-weight:normal; font-style:normal; color:#000000;"> for a degree-of-freedom is located at the Joint whose position and motion are defined by a </text><text styleclass="Element-Header">Motion-Dimension FB</text><text style="font-weight:normal; font-style:normal; color:#000000;">. The Power-Source may need to be moved to a different joint or element.</text></para>
+    <para styleclass="Body Text HowTo"><text style="font-weight:normal; font-style:normal; color:#000000;">You use the </text><text styleclass="VariableName">Configure Power-Source</text><text style="font-weight:normal; font-style:normal; color:#000000;"> interface to specify</text><text styleclass="HowTo Bulleted" style="font-weight:normal; font-style:normal; color:#000000;"> which element is the </text><text styleclass="VariableName">Power-Source</text><text styleclass="HowTo Bulleted" style="font-weight:normal; font-style:normal; color:#000000;"> for each degree-of-freedom in a </text><text styleclass="Body Text">kinematic-chain.</text></para>
+    <para styleclass="HowTo Bulleted"><text styleclass="Body Text HowTo" style="font-weight:normal; font-style:normal; color:#000000;">These elements can be a </text><text styleclass="VariableName">Power-Source</text><text styleclass="Body Text HowTo" style="font-weight:normal; font-style:normal; color:#000000;">: </text><text styleclass="Element-Header">Joints</text><text styleclass="Element">&#32;</text><text styleclass="Body Text">(as Motors)</text><text styleclass="Body Text HowTo" style="font-weight:normal; font-style:normal; color:#000000;">, </text><text styleclass="Element-Header">2D-Cams</text><text styleclass="Body Text">, </text><text styleclass="Element-Header">Springs</text><text styleclass="Body Text">, and </text><text styleclass="Element-Header">pulleys</text><text styleclass="Element">.</text></para>
+    <para styleclass="Heading3_atocs_">To identify the Power-Source</para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="2" colcount="1">
+      <tr style="vertical-align:top">
+        <td style="vertical-align:bottom;">
+          <para styleclass="Normal"><image src="MD-GA-MotorElement.png" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="vertical-align:bottom;">
+          <para styleclass="Body Text">In the default case, there is a <text styleclass="VariableName">Power-Source</text> at a joint whose motion is identified by a <text styleclass="Element">Motion-Dimension FB</text>. </para>
+          <para styleclass="Body Text">A <text styleclass="VariableName">Motor-Symbol</text><image src="Red-14-1.gif" imagestyleclass="Default" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image> represents a <text styleclass="VariableName">Power-Source</text> at a Joint.</para>
+          <para styleclass="Body Text">To see the <text styleclass="VariableName">Motor-Symbol,</text> enable:</para>
+          <list id="0" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#003300;">
+            <li styleclass="HowTo Bulleted"><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Command-Forces-Show-Force-Vectors" styleclass="T_Menu">Force toolbar &gt; Force Vectors: Display</link><text styleclass="T_Menu">: </text></li>
+            <li styleclass="HowTo Bulleted"><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Command-Forces-Calculate" styleclass="T_Menu">Forces toolbar &gt; Force Vectors: Calculate</link></li>
+          </list>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Normal"><text styleclass="Heading3_atocs_">To open the Configure Power-Source dialog</text></para>
+    <para styleclass="Body Text HowTo">There are four(4) methods to open the <text styleclass="Element">Configure Power-Source dialog.</text></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="4" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Interface2">Method 1</para>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="2">
+            <tr style="vertical-align:top">
+              <td style="vertical-align:bottom; width:41px;">
+                <para styleclass="Image Caption"><image src="MD-GA-MotorElement-double-click.ipp" imagestyleclass="Default" scale="100.00%" figurelistinclude="0"><caption><![CDATA[Double-Click the Motor-Symbol]]></caption></image></para>
+              </td>
+              <td>
+                <para styleclass="VariableName"><text styleclass="Bullets">If you can see a </text>Motor-Symbol</para>
+                <list id="1" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="Bullets">Double-click the <text styleclass="VariableName">Motor Symbol</text>.<text styleclass="VariableName">&#32;</text></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Body Text HowTo"><text styleclass="Normal">The </text><text styleclass="Element">Configure Power Source dialog</text><text styleclass="Normal"> is now open.</text></para>
+          <para styleclass="HowTo STEP"><text styleclass="VariableName">METHOD 2</text></para>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="2">
+            <tr style="vertical-align:top">
+              <td style="vertical-align:bottom; width:41px;">
+                <para styleclass="Image Caption"><image src="MD-Icon-ConfigurePowerSourceFB.png" scale="100.00%" figurelistinclude="0"><title>Configure Power Source icon</title></image></para>
+              </td>
+              <td>
+                <list id="2" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="Bullets">Click the <text styleclass="Interface2">Kinematics-Tree</text><text styleclass="Body Text"> in the </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-ProjectExplorer-ElementExplorer" styleclass="VariableName">Element-Explorer</link><text styleclass="VariableName">&#32;</text></li>
+                  <li styleclass="Bullets">Click the <text styleclass="VariableName">Kinematic-Chain</text> for which you want to identify the Power-Source <text styleclass="VariableName">&#32;</text></li>
+                </list>
+                <para styleclass="Bullets"><text styleclass="VariableName">T</text><text styleclass="Body Text">he </text><text styleclass="Body Text" style="color:#ffffff; background-color:#0080ff;">Kinematic-Chain</text><text styleclass="Body Text"> should be </text><text styleclass="Body Text" style="color:#ffffff; background-color:#0080ff;">Blue</text><text styleclass="Body Text">.</text></para>
+                <list id="2" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="Bullets"><text style="font-style:normal;">Click</text>&#32;<link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Menu-Forces" styleclass="T_Menu">Force toolbar</link><text styleclass="T_Menu"> &gt; Configure Power Source</text><text styleclass="Body Text"> icon</text><text styleclass="VariableName">&#32;</text></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Body Text HowTo"><text styleclass="Normal">The </text><text styleclass="Element">Configure Power Source dialog</text><text styleclass="Normal"> is now open.</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Image Caption"><image src="MD-KT-ConfigurePowerSource.png" imagestyleclass="Border1pxdporange" scale="-99.90%" figurelistinclude="0"><caption><![CDATA[Configure Power Source from Kinematics-Tree]]></caption></image></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="HowTo STEP"><text styleclass="VariableName">METHOD 3 (&lt;&lt;&lt; see image above )</text></para>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td style="vertical-align:bottom;">
+                <para styleclass="Bullets">In the <text styleclass="VariableName">Kinematics-Tree:</text></para>
+                <list id="3" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="Bullets">Click the <text styleclass="Interface2">Kinematics-Tree</text><text styleclass="Body Text"> in the </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-ProjectExplorer-ElementExplorer" styleclass="VariableName">Element-Explorer</link><text styleclass="VariableName">&#32;</text></li>
+                  <li styleclass="Bullets">Click the <text styleclass="VariableName">Kinematic-Chain</text></li>
+                </list>
+                <para styleclass="Bullets"><text styleclass="VariableName">T</text><text styleclass="Body Text">he </text><text styleclass="Body Text" style="color:#ffffff; background-color:#0080ff;"> Kinematic-Chain </text><text styleclass="Body Text"> label in the </text><text styleclass="VariableName">Kinematics-Tree</text><text styleclass="Body Text"> should be </text><text styleclass="Body Text" style="color:#ffffff; background-color:#0080ff;">Blue</text><text styleclass="Body Text">.</text></para>
+                <list id="3" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="Bullets"><text styleclass="HowTo Bulleted" style="font-style:normal;">Right-click</text><text styleclass="HowTo Bulleted"> the</text><text styleclass="Body Text">&#32;</text><text styleclass="Body Text" style="color:#ffffff; background-color:#0080ff;"> Kinematic-Chain </text><text styleclass="Body Text"> in the </text><text styleclass="VariableName">Kinematics-Tree</text></li>
+                  <li styleclass="Bullets"><text styleclass="Body Text HowTo" style="font-style:normal;">Click</text><text styleclass="Body Text HowTo">&#32;</text><text styleclass="VariableName">Configure Power Source</text><text styleclass="Body Text HowTo"> in the shortcut menu</text></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Body Text HowTo"><text styleclass="Normal">The </text><text styleclass="Element">Configure Power Source dialog</text><text styleclass="Normal"> is now open.</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="HowTo STEP"><text styleclass="VariableName">METHOD 4</text></para>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td style="vertical-align:bottom;">
+                <list id="4" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="Bullets">Click the <text styleclass="Interface2">Kinematics-Tree</text><text styleclass="Body Text"> in the </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-ProjectExplorer-ElementExplorer" styleclass="VariableName">Element-Explorer</link><text styleclass="VariableName">&#32;</text></li>
+                  <li styleclass="Bullets">Click the <text styleclass="VariableName">Kinematic-Chain</text></li>
+                  <li styleclass="Bullets"><text styleclass="Body Text">Press the </text><text styleclass="VariableName">ALT+P </text><text styleclass="Body Text">keyboard shortcut</text></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Body Text HowTo"><text styleclass="Normal">The </text><text styleclass="Element">Configure Power Source dialog</text><text styleclass="Normal"> is now open.</text></para>
+          <para styleclass="SeeAlso">See <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-ConfigurePowerSource">Configure Power Source dialog</link>.</para>
+        </td>
+      </tr>
+    </table></para>
+  </body>
+</topic>

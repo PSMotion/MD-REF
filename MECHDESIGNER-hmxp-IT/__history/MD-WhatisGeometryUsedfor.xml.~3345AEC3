@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" status="Under Construction" modified="2022-07-09T15:19:49.086+01:00" lasteditedby="Adam" version="2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title>Why edit a Part?</title>
+  <keywords>
+    <keyword>Part Editor<keyword>Why Edit a Part?</keyword></keyword>
+  </keywords>
+  <body>
+    <header>
+      <para styleclass="Heading1">Why edit a Part?</para>
+    </header>
+    <para styleclass="Heading3_atocs_">Why Edit a Part?</para>
+    <para styleclass="Body Text">There are a many reasons why you may want to edit a <text styleclass="Element">Part</text>.</para>
+    <para styleclass="Heading4 Toggle_atocs_2"><image src="tog_plus.gif" scale="100.00%" figurelistinclude="0"></image><tab /><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" src-collapsed="tog_plus.gif" src-expanded="tog_minus.gif" src-print="none"><caption><![CDATA[Edit the Length of Parts]]></caption></toggle></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Standard" rowcount="1" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:183px;">
+          <para styleclass="Normal"><image src="MD-PE-LengthDimension.png" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="Body Table">You must edit the <text styleclass="Element">Part</text> to specify its exact length.</para>
+          <para styleclass="Body Table">See also<text styleclass="Normal">: </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-How-Edit-Length-Part" styleclass="Normal">Edit the Length of a Part, Edit Dimension</link></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading4 Toggle_atocs_2"><image src="tog_plus.gif" scale="100.00%" figurelistinclude="0"></image><tab /><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" src-collapsed="tog_plus.gif" src-expanded="tog_minus.gif" src-print="none"><caption><![CDATA[Pin-Joints, Slide-Joints and Ball-Joints]]></caption></toggle></para>
+    <para styleclass="Heading4 Toggle_atocs_2"><table styleclass="Standard" rowcount="1" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:31px; height:65px;">
+          <para styleclass="Normal"><image src="MD-PE-LinePoint.png" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="Body Table">In a <text styleclass="Element">Part</text>, you can use the <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-Sketch-Element-CADLine">CAD-Line</link> for a <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-Slide-Joint">Slide-Joint</link> and its <text styleclass="Interface">start-Point </text>and <text styleclass="Interface">end-Points</text> for <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-Pin-Joint">Pin-Joints</link>&#32;</para>
+          <para styleclass="Body Table">To add a joint between a <text styleclass="Element">Part</text> and the <text styleclass="Element">Base-Part</text>, you MUST add a minimum of one sketch-element to the <text styleclass="Element">Base-Part</text>. </para>
+          <para styleclass="Body Table">You can also add new <text styleclass="Element">Lines,</text>&#32;<text styleclass="Element">CAD-Lines</text>, and <text styleclass="Element">Points</text> for joints at other locations in any <text styleclass="Element">Part</text>.</para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading4 Toggle_atocs_2"><image src="tog_plus.gif" scale="100.00%" figurelistinclude="0"></image><tab /><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" src-collapsed="tog_plus.gif" src-expanded="tog_minus.gif" src-print="none"><caption><![CDATA[Trace Points ]]></caption></toggle></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Standard" rowcount="1" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:31px; height:65px;">
+          <para styleclass="Normal"><image src="MD-PE-Point4Trace.png" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="Body Table">You can add a <text styleclass="Element">Point</text> to a <text styleclass="Element">Part</text> and then view the trace of that <text styleclass="Element">Point</text> on the <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-Plane-Mechanism" styleclass="Interface">Mechanism-Plane</link> during a machine-cycle.</para>
+          <para styleclass="Body Table">See <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Command-Trace-Point" styleclass="T_Menu">Add Trace-Point</link>.</para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading4 Toggle_atocs_2"><image src="tog_plus.gif" scale="100.00%" figurelistinclude="0"></image><tab /><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" src-collapsed="tog_plus.gif" src-expanded="tog_minus.gif" src-print="none"><caption><![CDATA[Sketch-Loops ]]></caption></toggle></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Standard" rowcount="1" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:140px;">
+          <para styleclass="Normal"><image src="MD-EG-Sketch-Loop.png" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="Body Table">You must sketch a <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-Sketch-Loop">sketch-loop</link> before you can add a &#160;<link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-Extrusion-Element" styleclass="Element">Profile / Extrusion</link>. .</para>
+          <para styleclass="Body Table">Use the <text styleclass="Interface">Part-Editor</text> to add the sketch-elements for the sketch-loop.</para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading4 Toggle_atocs_2"><image src="tog_plus.gif" scale="100.00%" figurelistinclude="0"></image><tab /><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" src-collapsed="tog_plus.gif" src-expanded="tog_minus.gif" src-print="none"><caption><![CDATA[Cam-Follower Profiles]]></caption></toggle></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Standard" rowcount="1" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:162px; height:65px;">
+          <para styleclass="Normal"><image src="MD-PE-CamFollower.png" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td style="height:65px;">
+          <para styleclass="Body Table">Each Cam needs a <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-Cam-Follower-Shape">Cam-Follower</link>. A Cam-Follower must be sketched in the <text styleclass="Element">Part</text> as a sketch-loop.</para>
+          <para styleclass="Body Table">You must also sketch the shape of the &apos;Cam-Blank&apos; with the <text styleclass="Element">3D-Ca</text>ms.</para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading4 Toggle_atocs_2"><image src="tog_plus.gif" scale="100.00%" figurelistinclude="0"></image><tab /><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" src-collapsed="tog_plus.gif" src-expanded="tog_minus.gif" src-print="none"><caption><![CDATA[Plot exact Kinematic Data]]></caption></toggle></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Standard" rowcount="1" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:162px; height:65px;">
+          <para styleclass="Normal"><image src="MD-Point-Velocity-Acceleration Vecotors-Small.png" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="Body Table">For any <text styleclass="Element">Point</text> that you add to a <text styleclass="Element">Part</text>, you can:</para>
+          <list id="0" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullets" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="Bullets">Show the instantaneous kinematic vectors (Velocity and Acceleration) of a <text styleclass="Element">Point</text> with the <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-FunctionBlock-PointProperties" styleclass="Element">Point Properties dialog-box</link><text styleclass="VariableName">&#32;</text></li>
+            <li styleclass="HowTo Bulleted">Plot motion-values of Position, Velocity and Acceleration throughout the machine-cycle with the <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Command-FB-Point-Data" styleclass="Element">Point-Data FB</link> or <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Command-FB-Measurement" styleclass="Element">Measurement FB</link> wired to a <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Command-FB-Graph" styleclass="Element">Graph FB</link></li>
+          </list>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading4 Toggle_atocs_2"><image src="tog_plus.gif" scale="100.00%" figurelistinclude="0"></image><tab /><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" src-collapsed="tog_plus.gif" src-expanded="tog_minus.gif" src-print="none"><caption><![CDATA[Add a CAD-Line]]></caption></toggle></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Standard" rowcount="1" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Table">You can add <text styleclass="Element">CAD-Lines</text> to any <text styleclass="Element">Part</text>. You can use the <text styleclass="Element">CAD-Line</text> to import <text styleclass="Interface">DXF drawings</text><text styleclass="HowTo Bulleted">, </text><text styleclass="SOLIDWORKS">SolidWorks</text><text styleclass="HowTo Bulleted"> parts, or STL file-types. </text></para>
+          <para styleclass="Body Table"><text styleclass="Element">CAD-Lines</text><text styleclass="HowTo Bulleted"> can be on top of each other, or at different positions in the </text><text styleclass="Element">Part.</text></para>
+          <para styleclass="Body Table">There is also a <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-Sketch-Element-CADLine" styleclass="Element">CAD-Line</link> between the <text styleclass="Interface">start-Point</text> and <text styleclass="Interface">end-Point</text> of every <text styleclass="Element">Part</text> you add &#160;to the model.</para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading4 Toggle_atocs_2"><image src="tog_plus.gif" scale="100.00%" figurelistinclude="0"></image><tab /><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" src-collapsed="tog_plus.gif" src-expanded="tog_minus.gif" src-print="none"><caption><![CDATA[Constraint Based Editing Tools for Mechanism Synthesis]]></caption></toggle></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Standard" rowcount="1" colcount="1">
+      <tr style="vertical-align:top">
+        <td style="width:599px;">
+          <para styleclass="Body Text">See Mechanism-Synthesis.</para>
+          <list id="1" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted">Three, Four and Five Position Synthesis</li>
+            <li styleclass="HowTo Bulleted">Coupler Curve and Coupler Point Synthesis</li>
+            <li styleclass="HowTo Bulleted">Function Generation</li>
+          </list>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading4 Toggle_atocs_2"><image src="tog_plus.gif" scale="100.00%" figurelistinclude="0"></image><tab /><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" src-collapsed="tog_plus.gif" src-expanded="tog_minus.gif" src-print="none"><caption><![CDATA[To add sketch-elements for a Measurement FB Dimension]]></caption></toggle>&#32;</para>
+    <para styleclass="Body Text HowTo"><table styleclass="Standard" rowcount="1" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:100px;">
+          <para styleclass="Normal"><image src="MD-EG-MeasurementFB.png" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="Body Table">Add a <text styleclass="Element">Measurement FB</text> between two sketch-elements. <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Command-FB-Measurement">See Add Measurement FB</link></para>
+          <para styleclass="Body Table">The output from a <text styleclass="Element">Measurement FB</text> is the dimension, velocity, and acceleration between the two sketch-elements.</para>
+          <para styleclass="Body Table">The output from a <text styleclass="Element">Point-Data FB</text> is position, velocity and acceleration of a <text styleclass="Element">Point</text>.</para>
+          <para styleclass="Body Table">You can use the output of a <text styleclass="Element">Measurement FB</text> or <text styleclass="Element">Point-Data FB</text> as the independent variable (X-axis) of a different <text styleclass="Element">FB</text>.</para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading4 Toggle_atocs_2"><image src="tog_plus.gif" scale="100.00%" figurelistinclude="0"></image><tab /><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" src-collapsed="tog_plus.gif" src-expanded="tog_minus.gif" src-print="none"><caption><![CDATA[Add a Point or Line for a Spring FB]]></caption></toggle></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Standard" rowcount="1" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:100px;">
+          <para styleclass="Normal"><image src="MD-EG-SpringFB.png" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="Body Table">Add a <text styleclass="Element">Point</text> or <text styleclass="Element">Line</text> added to anchor a <text styleclass="Element">Spring FB</text>.</para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading4 Toggle_atocs_2"><image src="tog_plus.gif" scale="100.00%" figurelistinclude="0"></image><tab /><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" src-collapsed="tog_plus.gif" src-expanded="tog_minus.gif" src-print="none"><caption><![CDATA[Add a Sketch-Path or Loop for a Motion-Path.]]></caption></toggle></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Standard" rowcount="1" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:100px;">
+          <para styleclass="Normal"><image src="MD-EG-Motion-PathFB.png" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="Body Table">A <text styleclass="Element">Motion-Path FB</text> needs an open or closed sketch-element, sketch-path, or sketch-loop.</para>
+          <para styleclass="Body Table">You must add a <text styleclass="Element">Motion-Path FB</text> to add a <text styleclass="Element">Pulley</text> - the sketch-loop is the path of the <text styleclass="Interface">Belt</text>.</para>
+        </td>
+      </tr>
+    </table></para>
+  </body>
+</topic>

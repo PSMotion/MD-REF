@@ -1,0 +1,239 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" status="Under Construction" modified="2022-03-26T13:12:27.040Z" lasteditedby="Adam" version="2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title>Mechanism | Add Reference Geometry</title>
+  <keywords>
+    <keyword>Copy sketch-elements</keyword>
+    <keyword>Kinematic elements toolbar<keyword>Reference Geometry</keyword></keyword>
+    <keyword>Menu &gt; Add &gt; Mechanism Menu<keyword>Add Reference Geometry</keyword></keyword>
+  </keywords>
+  <body>
+    <header>
+      <para styleclass="Heading1">Mechanism | Add Reference Geometry</para>
+    </header>
+    <para styleclass="Heading2">Add Reference Geometry</para>
+    <para styleclass="Heading3_atocs_">What is Reference Geometry</para>
+    <para styleclass="Body Text HowTo"><text styleclass="VariableName">Reference Geometry</text> is a sketch-element in the active <text styleclass="Interface">Mechanism-Editor</text>, that is a copy of a sketch-element from a different <text styleclass="Interface">Mechanism-Editor.</text><text styleclass="Body Text"> The source and reference sketch-element have the same motion.</text></para>
+    <para styleclass="VariableName">Terminology: </para>
+    <para styleclass="Body Table"><table styleclass="PopupTable2" rowcount="2" colcount="2" style="border-width:0px; border-spacing:0px; border-collapse:collapse; cell-border-width:1px; border-color:#993300; border-style:solid;">
+      <tr style="vertical-align:top">
+        <td style="width:159px;">
+          <para styleclass="VariableName-small">Source Sketch-Element : </para>
+        </td>
+        <td style="width:581px;">
+          <para styleclass="Popup Box">A sketch-element, in a moving or stationary <text styleclass="Element">Part</text> in a different <text styleclass="Interface">Mechanism-Editor</text>.</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:159px;">
+          <para styleclass="VariableName-small">Reference Sketch-Element :</para>
+        </td>
+        <td style="width:581px;">
+          <para styleclass="Popup Box">The copy of the <text styleclass="VariableName-small">Source sketch-element</text>&#32;<text styleclass="Interface2" style="color:#ff0000;">and</text><text styleclass="VariableName">&#32;</text>motion in the <text styleclass="Popup Box-Elements">Base-Part</text> of the active <text styleclass="Interface">Mechanism-Editor</text>.</para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Body Text HowTo"><text styleclass="VariableName">Two Rules:</text></para>
+    <list id="0" type="ol" listtype="upper-alpha" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+      <li styleclass="HowTo Bulleted">The two(2) <text styleclass="Interface">Mechanism-Editors</text> are parallel to each other<text styleclass="VariableName">&#32;</text></li>
+      <li styleclass="HowTo Bulleted"><text styleclass="Body Text">The two(2) </text><text styleclass="Interface">Mechanism-Editors</text><text styleclass="Body Text"> do not move relative to each other. </text></li>
+    </list>
+    <para styleclass="Body Text HowTo">You must think carefully, if you do not observe these rules.</para>
+    <para styleclass="Heading3_atocs_">Add Reference Geometry</para>
+    <para styleclass="Normal"><table styleclass="Default" rowcount="6" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:98px;">
+          <para styleclass="VariableName" style="text-align:right;"><image src="MD-Icon-AddReferenceGeometry.png" scale="100.00%" figurelistinclude="0"><title>Add Reference Geometry icon</title></image></para>
+        </td>
+        <td style="vertical-align:middle; height:26px;">
+          <para styleclass="T_Menu"> Kinematic Elements Toolbar : Add Reference Geometry</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:98px; height:26px;">
+          <para styleclass="VariableName">Menu : </para>
+        </td>
+        <td style="height:26px;">
+          <para styleclass="T_Menu"> Add menu &gt; Mechanism sub-menu &gt; Add Reference Geometry</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:98px;">
+          <para styleclass="VariableName">Preparation : </para>
+        </td>
+        <td>
+          <para styleclass="Bullets"><text style="font-style:normal;">Two(2) </text><text styleclass="Interface">Mechanism-Editors</text><text style="font-style:normal;">, which are usually on parallel </text><text styleclass="Interface">Mechanism-Planes</text><text style="font-style:normal;">.</text></para>
+          <para styleclass="Bullets"><text style="font-style:normal;">For convenience, we can name the </text><text styleclass="Interface">Mechanism-Editors</text><text style="font-style:normal;"> the </text><text styleclass="Interface2">Source</text><text style="font-style:normal;"> and the </text><text styleclass="Interface2">Reference</text><text style="font-style:normal;">.</text></para>
+          <list id="1" type="ol" listtype="decimal" formatstring="&#83;&#84;&#69;&#80;&#32;&#37;&#48;&#58;&#115;&#58;&#32;" format-charset="DEFAULT_CHARSET" levelreset="false" legalstyle="false" startfrom="1" styleclass="HowTo STEP" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo STEP">Preparation<text styleclass="VariableName">&#32;</text></li>
+          </list>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <list id="2" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullets" style="font-family:Symbol; font-size:10pt; color:#000000;">
+                  <li styleclass="Bullets">Click <text styleclass="Interface2">Reference</text><text styleclass="Interface">&#32;</text></li>
+                  <li styleclass="HowTo Bulleted"><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Display-Filters" styleclass="T_Menu">Display toolbar &gt; Show / hide Profiles</link><text styleclass="HowTo Numbered"> - hide </text><text styleclass="Element">Profile</text><text styleclass="HowTo Numbered"> elements.</text></li>
+                  <li styleclass="HowTo Bulleted"><text styleclass="T_Menu">Visibility toolbar &gt; </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Visibility-ShowOtherMechanisms" styleclass="T_Menu">Show other Kinematic and Sketch elements</link><text styleclass="T_Menu">&#32;</text><text styleclass="Body Text">- show sketch-elements in the </text><text styleclass="Interface2">Source</text><text styleclass="Body Text">.</text></li>
+                </list>
+                <para styleclass="Body Text HowTo">Make sure the <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Visibility-ShowOtherMechanisms" styleclass="T_Menu">Light-Bulb is ON</link> in the name-tab of the <text styleclass="Interface2">Source</text>&#32;</para>
+                <list id="2" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:10pt; color:#000000;">
+                  <li styleclass="HowTo Bulleted"><text styleclass="T_Menu">View toolbar &gt; Spin</text><text styleclass="HowTo Numbered" style="font-style:normal;"> to see the sketch-element in the </text><text styleclass="VariableName">Source</text></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <list id="1" type="ol" listtype="decimal" formatstring="&#83;&#84;&#69;&#80;&#32;&#37;&#48;&#58;&#115;&#58;&#32;" format-charset="DEFAULT_CHARSET" levelreset="false" legalstyle="false" startfrom="1" styleclass="HowTo STEP" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo STEP">Copy the sketch-element from the <text styleclass="Interface2">Source</text> to the <text styleclass="Interface2">Reference</text><text styleclass="VariableName">&#32;</text></li>
+          </list>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <list id="3" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="B Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; color:#003300;">
+                  <li styleclass="B Bullets"><text style="font-style:normal;">Click</text><text style="font-family:Arial; font-size:11pt; color:#000000;">&#32;</text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Command-FB-Kinematics" styleclass="T_Menu">Kinematics FB toolbar</link><text styleclass="VariableName"> &gt; &#160;</text><text styleclass="T_Menu" style="font-style:normal;">Add Reference-Geometry</text></li>
+                  <li styleclass="B Bullets"><text styleclass="HowTo Numbered" style="font-style:normal;">Click a </text><text styleclass="Body Text">sketch-element</text><text styleclass="HowTo Numbered" style="font-style:normal;"> (</text><text styleclass="Element" style="font-style:normal;">Circle</text><text styleclass="HowTo Numbered" style="font-style:normal;">, </text><text styleclass="Element" style="font-style:normal;">Arc</text><text styleclass="HowTo Numbered" style="font-style:normal;"> or </text><text styleclass="Element" style="font-style:normal;">Line</text><text styleclass="HowTo Numbered" style="font-style:normal;">) in the </text><text styleclass="VariableName">Source</text></li>
+                  <li styleclass="B Bullets"><text styleclass="HowTo Numbered" style="font-style:normal;">Click </text><image src="OK-tiny-11-15.png" scale="100.00%" styleclass="Image Caption" style="font-style:normal;" figurelistinclude="0"></image><text styleclass="HowTo Numbered"> in the </text><text styleclass="Interface">Command-Manager</text></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Body Table">A copy of the sketch-element <text styleclass="VariableName" style="color:#ff0000;">AND</text> its Motion, in <text styleclass="Interface2">Source</text> is made in the <text styleclass="Element">Base-Part</text> of <text styleclass="Interface2">Reference</text>. </para>
+          <para styleclass="Body Table">The new sketch-element is <text styleclass="Interface">Reference Geometry</text>.</para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="Body Text">Do <text styleclass="VariableName">STEP 2</text> again to copy more sketch-elements.</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:98px;">
+          <para styleclass="VariableName">Video : </para>
+        </td>
+        <td>
+          <para styleclass="Body Text"><conditional-text type="IF" value="PDF"/><link displaytype="text" defaultstyle="true" type="filelink" href="KE-AddReferenceGeometry.gif">Double-click to watch Video Clip</link><conditional-text type="END"/><conditional-text type="IF" value="CHM"/></para>
+          <para styleclass="Body Text"><table styleclass="PopupTable2" rowcount="1" colcount="1" style="width:240px;">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Normal"><toggle type="picture" print-expanded="true" help-expanded="false" src-collapsed="KE-AddReferenceGeometry.gif" src-expanded="KE-AddReferenceGeometry.gif" scale="20.00%" width="256" height="144" styleclass="Image Caption" figurelistinclude="0"><caption><![CDATA[Add Reference Geometry]]></caption><title>Add Referecne-Geometry</title></toggle></para>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Body Text"><conditional-text type="END"/><conditional-text type="IF" value="HTML,EBOOK"/></para>
+          <para styleclass="Body Text"><table styleclass="PopupTable2" rowcount="1" colcount="1" style="width:240px;">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Normal"><video src="KE-AddReferenceGeometry.mp4" width="1280px" height="720px" autostart="true" loop="false" showcontrols="false" playbutton="true" flashversion="6" previewimage="KE-AddReferenceGeometry_preview.jpg" scale="20.00%" styleclass="Image Caption"><title>Add Reference-Geometry</title></video></para>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Body Text"><conditional-text type="END"/></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:98px;">
+          <para styleclass="VariableName">Preparation : </para>
+        </td>
+        <td>
+          <para styleclass="Body Text">See Below - More Details</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:98px;">
+          <para styleclass="VariableName">Notes : </para>
+        </td>
+        <td>
+          <list id="4" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted">You cannot delete or edit a <text styleclass="Element">reference sketch-element</text>. You must delete or edit the <text styleclass="Element">source sketch-element</text> in the source <text styleclass="Element">Mechanism-Editor</text>.</li>
+            <li styleclass="HowTo Bulleted"><text styleclass="Element">Reference Geometry</text> element names are <text styleclass="VariableName">RefLine</text> or <text styleclass="VariableName">RefCircle</text>.</li>
+          </list>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading4 Toggle_atocs_2"><image src="tog_plus.gif" scale="100.00%" figurelistinclude="0"></image><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" src-collapsed="tog_plus.gif" src-expanded="tog_minus.gif" src-print="none"><caption><![CDATA[How to Add Reference Geometry - More Details]]></caption></toggle></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="7" colcount="2">
+      <tr style="vertical-align:top">
+        <td colspan="2">
+          <para styleclass="Body Text">You need <text styleclass="VariableName">two(2)</text>&#32;<text styleclass="Interface">Mechanism-Editors</text>.</para>
+          <list id="5" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted"><text styleclass="VariableName">Mechanism A</text><text styleclass="Interface">:</text> The source <text styleclass="Interface">Mechanism-Editor</text> with the source <text styleclass="Interface">sketch-element</text> in a <text styleclass="Element">Part</text> you want to &apos;reference&apos;.</li>
+            <li styleclass="HowTo Bulleted"><text styleclass="VariableName">Mechanism B:</text> The active <text styleclass="Interface">Mechanism-Editor</text><text styleclass="Body Text HowTo"> to which you want to add the source </text><text styleclass="Interface">sketch-element</text><text styleclass="Body Text HowTo"> to become </text><text styleclass="Element">Reference Geometry</text><text styleclass="Body Text HowTo">.</text></li>
+          </list>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Normal" style="text-align:right;"><image src="MD-Icon-Visibility-Other Mech-SHOW.png" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"><title>Show other PArt-Outlines and Sketches</title></image></para>
+        </td>
+        <td>
+          <list id="6" type="ol" listtype="decimal" formatstring="&#83;&#84;&#69;&#80;&#32;&#37;&#48;&#58;&#115;&#58;&#32;" format-charset="DEFAULT_CHARSET" levelreset="false" legalstyle="false" startfrom="1" styleclass="HowTo STEP" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo STEP">Make <text styleclass="VariableName">Mechanism &apos;B&apos; active </text></li>
+            <li styleclass="HowTo STEP">Click <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Visibility-ShowOtherMechanisms" styleclass="T_Menu">Visibility toolbar &gt; Show other Kinematic and Sketch elements</link></li>
+          </list>
+          <para styleclass="HowTo STEP"><text styleclass="T_Menu" style="color:#ff0000;">New 14.3</text><text styleclass="T_Menu">: Do also: </text></para>
+          <list id="7" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Numbered" style="font-family:&apos;Noto Sans&apos;; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Numbered">Right-click the <text styleclass="Interface">Mechanism name-tab</text> of <text styleclass="VariableName">Mechanism A</text> with Source sketch-elements</li>
+            <li styleclass="HowTo Numbered"> Click <text styleclass="VariableName-IT">Show with other Kinematic and Sketch-Elements</text></li>
+          </list>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:128px;">
+          <para styleclass="Normal"><image src="MD-GA-ReferenceGeometry-Prep1.png" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <list id="8" type="ol" listtype="decimal" formatstring="&#83;&#84;&#69;&#80;&#32;&#37;&#48;&#58;&#115;&#58;&#32;" format-charset="DEFAULT_CHARSET" levelreset="false" legalstyle="false" startfrom="3" styleclass="HowTo STEP" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo STEP">Spin the model (keyboard arrow keys) to view the sketch in the <text styleclass="VariableName">Mechanism A. </text></li>
+          </list>
+          <para styleclass="Body Text HowTo">In the image to the left, the active <text styleclass="VariableName">Mechanism B</text> is in front of the source <text styleclass="VariableName">Mechanism A</text></para>
+          <para styleclass="Body Text HowTo">You cannot <text style="font-style:normal;">select</text> the <text style="font-weight:bold; color:#787771;">gray</text> geometry from <text styleclass="VariableName">Mechanism-A</text>&#32;<text style="text-decoration:underline;">before</text> you start <text style="font-style:italic;">Add Reference Geometry</text>.</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:128px;">
+          <para styleclass="Normal" style="text-align:right;"><image src="MD-Icon-AddReferenceGeometry.png" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"><title>Reference Geometry icon</title></image></para>
+        </td>
+        <td>
+          <list id="9" type="ol" listtype="decimal" formatstring="&#83;&#84;&#69;&#80;&#32;&#37;&#48;&#58;&#115;&#58;&#32;" format-charset="DEFAULT_CHARSET" levelreset="false" legalstyle="false" startfrom="4" styleclass="HowTo STEP" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo STEP">Click <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Command-KinematicElements" styleclass="T_Menu">Kinematic element toolbar</link><text styleclass="T_Menu"> &gt; Add Reference-Geometry</text><text styleclass="VariableName">&#32;</text></li>
+          </list>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:128px;">
+          <para styleclass="Normal" style="text-align:right;"><image src="MD-CM-ReferenceGeometry-Prep2.png" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="VariableName">Command-Manager</para>
+          <para styleclass="Body Text HowTo">The <text styleclass="VariableName">Command-Manager</text> instruction is:</para>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Popup Box">Add Lines, Circles or Arcs to the active Mechanism with Lines, Circles or Arcs in a different Mechanism.</para>
+              </td>
+            </tr>
+          </table></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:128px;">
+          <para styleclass="Normal" style="text-align:right;"><image src="MD-CM-ReferenceGeometry-Prep3.png" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <list id="10" type="ol" listtype="decimal" formatstring="&#83;&#84;&#69;&#80;&#32;&#37;&#48;&#58;&#115;&#58;&#32;" format-charset="DEFAULT_CHARSET" levelreset="false" legalstyle="false" startfrom="5" styleclass="HowTo STEP" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo STEP"><text styleclass="HowTo Numbered" style="font-style:normal;">Click</text><text styleclass="HowTo Numbered"> the sketch-element in </text><text styleclass="VariableName">Mechanism A</text><text styleclass="HowTo Numbered"> you want to &apos;copy&apos; as Reference-Geometry to </text><text styleclass="VariableName">Mechanism B.</text></li>
+          </list>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:128px;">
+          <para styleclass="Normal"><image src="MD-GA-ReferenceGeometry.png" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <list id="11" type="ol" listtype="decimal" formatstring="&#83;&#84;&#69;&#80;&#32;&#37;&#48;&#58;&#115;&#58;&#32;" format-charset="DEFAULT_CHARSET" levelreset="false" legalstyle="false" startfrom="6" styleclass="HowTo STEP" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo STEP"><text styleclass="HowTo Numbered" style="font-style:normal;">Click</text><text styleclass="HowTo Numbered">&#32;</text><image src="OK-tiny-13-17.png" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="HowTo Numbered">&#32;</text><text styleclass="Body Text">in the </text><text styleclass="VariableName">Command-Manager </text></li>
+          </list>
+          <para styleclass="Body Text HowTo">The sketch-element shows in the <text styleclass="VariableName">Mechanism B.</text>&#32;</para>
+          <para styleclass="Body Text HowTo">Do <text styleclass="VariableName">STEPS 3-5</text> again to add more <text styleclass="Element">Reference Geometry sketch-elements</text>.</para>
+        </td>
+      </tr>
+    </table></para>
+  </body>
+</topic>

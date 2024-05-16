@@ -1,0 +1,179 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" modified="2024-01-05T11:28:11.285Z" lasteditedby="44785" version="2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title>Known-Bugs</title>
+  <body>
+    <header>
+      <para styleclass="Heading1">Known-Bugs</para>
+    </header>
+    <para styleclass="Heading4 Toggle_atocs_">16.1.386</para>
+    <para styleclass="Body Text HowTo">Spin-Boxes in MotionDesigner</para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="4" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="VariableName">When does it happen?</para>
+          <para styleclass="Body Text HowTo">When you open the Segment Editor or the Blend-Point Editor, the Spin-Box tool does not show in the Motion-Value data-boxes</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="VariableName">Result</para>
+          <para styleclass="Body Text HowTo">Nothing</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="VariableName">Solution<text styleclass="Normal">:</text></para>
+          <para styleclass="HowTo Bulleted">In each data-box that does not show the Spin-Box tool:</para>
+          <list id="0" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo Bulleted">Double-click, and<text styleclass="VariableName">&#32;</text></li>
+            <li styleclass="HowTo Bulleted">Double-click again.</li>
+          </list>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="VariableName">Version when corrected:</para>
+          <para styleclass="Body Text HowTo">It is weird one and we are not sure why this happens.</para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading4 Toggle_atocs_">16.1.386</para>
+    <para styleclass="Body Text HowTo">Continuous Crank Fails if the motion ...</para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="4" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="VariableName">When does it happen?</para>
+          <para styleclass="Body Text HowTo">If the Motion of the Tool-Part has a dwell that is not at the maximum or minimum of its motion-range, then the <text styleclass="Element-Header">Continuous-Crank FB</text> will not work as expected. </para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="VariableName">Result</para>
+          <para styleclass="Body Text HowTo">The Crank changes to the incorrect length.</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="VariableName">Temporary Solution<text styleclass="Normal">:</text></para>
+          <para styleclass="HowTo Bulleted">None</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="VariableName">Version when corrected:</para>
+          <para styleclass="Body Text HowTo">Coming Soon</para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading4 Toggle_atocs_">16.1.336</para>
+    <para styleclass="Body Text HowTo">Hangs after Importing Library Model</para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="4" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="VariableName">When does it happen?</para>
+          <list id="1" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; color:#003300;">
+            <li styleclass="HowTo Bulleted">Open a Library file with <text styleclass="T_Menu">File toolbar &gt; Import Library Model</text></li>
+          </list>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="VariableName">Result</para>
+          <para styleclass="Body Text HowTo">You <text styleclass="Body Text">cannot</text> select anything with your mouse.</para>
+          <para styleclass="Body Text HowTo">The model seems to hang.</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="VariableName">Temporary Solution<text styleclass="Normal">:</text></para>
+          <list id="2" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:&apos;Segoe UI&apos;; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted">Press the <text styleclass="Interface2">ALT+C</text> keyboard combination to Cycle the model.</li>
+            <li styleclass="HowTo Bulleted">Press <text styleclass="Interface2">ALT+C</text> again to stop the model cycling.</li>
+          </list>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="VariableName">Version when corrected:</para>
+          <para styleclass="Body Text HowTo">16.1.342</para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="Heading4 Toggle_atocs_">16.1.336</para>
+    <para styleclass="Body Text HowTo"><text styleclass="Interface2">SolidWorks</text><text styleclass="VariableName"> 2018</text>.</para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="4" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="VariableName">When does it happen?</para>
+          <para styleclass="HowTo Bulleted">Help about &gt; Type Libraries are <text styleclass="SOLIDWORKS">SolidWorks 2018 -</text><text styleclass="Body Text"> and all good to go.</text></para>
+          <list id="3" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo Bulleted">Start <text styleclass="SOLIDWORKS">SolidWorks 2018, </text><text styleclass="Body Text">and open a Part document</text><text styleclass="VariableName">. </text></li>
+            <li styleclass="HowTo Bulleted">In MD: Edit a <text styleclass="Element">CAD-Line</text>&#32;</li>
+            <li styleclass="HowTo Bulleted">Import <text styleclass="SOLIDWORKS">SolidWorks</text> document...crash</li>
+          </list>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="VariableName">Result</para>
+          <para styleclass="Body Text HowTo">Will not open a SW2018 document - my 16-1-336 tries to activate <text styleclass="SOLIDWORKS">SolidWorks</text> 2020!</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="VariableName">Temporary Solution<text styleclass="Normal">:</text></para>
+          <para styleclass="HowTo Bulleted">None - can you use a different release of <text styleclass="SOLIDWORKS">SolidWorks</text>?</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="VariableName">Version when corrected:</para>
+          <para styleclass="Body Text HowTo">16-1-342 - not yet released.</para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Normal"><line style="height:3px; color:#993300;" /></para>
+    <para styleclass="Heading4 Toggle_atocs_">16.1.328</para>
+    <para styleclass="Body Text HowTo">Lighting - Ambient increases to the Maximum</para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="4" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="VariableName">When does it happen?</para>
+          <list id="4" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:&apos;Segoe UI&apos;; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted">Add a <text styleclass="Element">Profile</text><text styleclass="Body Text">&#32;</text></li>
+            <li styleclass="HowTo Bulleted">Enable <text styleclass="T_Menu">Show Solids in Mechanism-Editors</text></li>
+            <li styleclass="HowTo Bulleted">Disable <text styleclass="T_Menu">Show Solids in Mechanism-Editors</text></li>
+          </list>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="VariableName">Result</para>
+          <para styleclass="Body Text HowTo">The Ambient Lighting increases to a maximum</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="VariableName">Solution<text styleclass="Normal">:</text></para>
+          <list id="5" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:&apos;Segoe UI&apos;; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted">Save the model if not already saved</li>
+            <li styleclass="HowTo Bulleted">Click the <text styleclass="Element">Model</text> element at the top of the Assembly-Tree</li>
+            <li styleclass="HowTo Bulleted">Right-click the <text styleclass="Element">Model </text><text styleclass="Body Text">element</text></li>
+          </list>
+          <para styleclass="Body Text HowTo">The <text styleclass="Element">Model-Options dialog</text> is now open</para>
+          <list id="5" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:&apos;Segoe UI&apos;; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted">Drag the <text styleclass="Parameter">Ambient Lighting Slider</text> to almost the minimum.</li>
+          </list>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="VariableName">Version when corrected:</para>
+          <para styleclass="Body Text HowTo">Not yet corrected.</para>
+        </td>
+      </tr>
+    </table></para>
+  </body>
+</topic>

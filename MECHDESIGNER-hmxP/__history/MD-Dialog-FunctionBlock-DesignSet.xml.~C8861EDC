@@ -1,0 +1,365 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" status="Under Construction" modified="2024-03-08T14:03:53.445Z" lasteditedby="44785" version="2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title>Dialog: Function-Block: Design-Set</title>
+  <keywords>
+    <keyword>Design-Set dialog</keyword>
+    <keyword>Dialog<keyword>Design-Set FB</keyword></keyword>
+  </keywords>
+  <body>
+    <header>
+      <para styleclass="Heading1">Dialog: Function-Block: Design-Set</para>
+    </header>
+    <para styleclass="Heading2" style="page-break-before:always;">Design-Set FB</para>
+    <para styleclass="SeeAlso">See <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Command-AddFBDesignSet">Add Design-Set</link></para>
+    <para styleclass="Normal"><line style="height:1px; color:#343400;" /></para>
+    <para styleclass="Body Text HowTo">Use <text styleclass="Element-Header">Design-Sets</text><text styleclass="Body Text"> to edit a number of dimensions and parameters in one place - with the </text><text styleclass="Element">Design-Set dialog</text><text styleclass="Body Text">.</text></para>
+    <para styleclass="Body Text HowTo">Add to a <text styleclass="Element-Header">Design-Set</text> those dimensions and parameters that you believe to be important to the outcome of a design-objective. </para>
+    <para styleclass="Body Text HowTo">You can add more than one <text styleclass="Element">Design-Set</text><text styleclass="Body Text">.</text></para>
+    <para styleclass="Normal"><line style="height:1px; color:#343400;" /></para>
+    <para styleclass="Body Text"><text styleclass="VariableName">Question</text>:</para>
+    <para styleclass="Body Text HowTo">Why use a <text styleclass="Element-Header">Design-Set</text><text styleclass="VariableName">?</text></para>
+    <para styleclass="Body Text"><text styleclass="VariableName">Answers:</text> Three good reasons:</para>
+    <list id="0" type="ol" listtype="upper-alpha" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Body Text HowTo" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+      <li styleclass="Body Text HowTo">Frequently, you edit many times the same dimensions and parameters to improve a design objective. You can add to, and edit them<text styleclass="Body Text"> directly with, a </text><text styleclass="Element">Design-Set</text><text styleclass="Body Text">.</text><text styleclass="VariableName">&#32;</text></li>
+      <li styleclass="Body Text HowTo">If you need to open the model after a period of time, a <text styleclass="Element">Design-Set</text> reminds you of which dimensions and parameters are important to your design. Also, you can give your model to a different engineer, and tell him to ONLY edit the dimensions and parameters in the <text styleclass="Element">Design-Set</text>.</li>
+      <li styleclass="Body Text HowTo">When dimensions are in a <text styleclass="Element">Design-Set</text>, you cannot only edit them with the <text styleclass="Element">Design-Set</text>.</li>
+    </list>
+    <para styleclass="Normal"><line style="height:1px; color:#343400;" /></para>
+    <para styleclass="VariableName">IMPORTANT</para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="1" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Table"><text style="color:#000000;">After you add a </text><text styleclass="Parameter">dimension</text><text style="color:#000000;"> to a </text><text styleclass="Element">Design-Set</text><text style="color:#000000;">, you </text><text styleclass="VariableName-IT" style="font-style:normal; color:#ff0000;">CAN ONLY</text><text style="color:#000000;"> use the </text><text styleclass="Element">Design-Set</text><text style="color:#000000;"> to edit that </text><text styleclass="Parameter">dimension</text><text styleclass="Body Text">.</text></para>
+          <para styleclass="Body Table"><text style="color:#000000;">To edit a </text><text styleclass="Parameter">dimension</text><text style="color:#000000;"> in the </text><text styleclass="Interface">Part-Editor</text><text style="color:#000000;"> again, you must delete the </text><text styleclass="Parameter">dimension</text><text style="color:#000000;"> from the </text><text styleclass="Element">Design-Set</text><text styleclass="Body Text">. </text></para>
+          <para styleclass="Body Table"><text style="color:#000000;">A </text><text styleclass="Parameter">dimension</text><text style="color:#000000;"> that is in the </text><text styleclass="Element">Design-Set</text><text style="color:#000000;"> is </text><text style="font-weight:bold; color:#787771;">gray</text><text style="color:#000000;"> in the </text><text styleclass="Interface">Part-Editor</text> - to indicate you cannot edit it.</para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Normal"><line style="height:1px; color:#343400;" /></para>
+    <para styleclass="VariableName-IT"><text styleclass="Interface2">Top-Tips:</text><text styleclass="Image Caption">&#32;</text></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="1" colcount="1">
+      <tr style="vertical-align:middle">
+        <td>
+          <list id="1" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullets" style="font-family:&apos;Segoe UI&apos;; font-size:11pt; color:#000000;">
+            <li styleclass="Bullets"><text style="font-style:normal;">Rename</text><text styleclass="Body Text HowTo"> each </text><text styleclass="Body Text">dimension</text><text styleclass="Body Text HowTo"> to a name that will help you know its function in the </text><text styleclass="Element">Design-Set</text><text styleclass="Body Text">. </text></li>
+            <li styleclass="Bullets"><text styleclass="Body Text">Rename</text><text styleclass="Body Text HowTo"> each </text><text styleclass="Element">Design-Set</text><text styleclass="Body Text HowTo"> to remind of its design-objective.</text></li>
+          </list>
+          <para styleclass="Bullets"><text styleclass="Body Text HowTo">See </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-Application-Settings" anchor="App-NumberFormat" styleclass="Parameter">Show Dimension-Names</link><text styleclass="Body Text HowTo"> , and </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-Application-Settings" anchor="App-Graphics" styleclass="Parameter">Show Function-Block Names</link></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Normal"><line style="height:1px; color:#343400;" /></para>
+    <para styleclass="Heading4 Toggle_atocs_">How to open the Design-Set FB dialog</para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="1" colcount="2">
+      <thead style="vertical-align:top">
+        <td style="width:40px;">
+          <para styleclass="Normal" style="text-align:right;"><image src="MD-Icon-FB-DesignSet.png" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="Body Text">Edit<text styleclass="VariableName">&#32;</text><text style="font-weight:normal; font-style:normal;">the </text><text styleclass="Element">Design-Set FB</text></para>
+          <para styleclass="Body Table"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <list id="2" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="B Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="B Bullets"><text styleclass="HowTo Numbered" style="font-style:normal;">Double-click</text><text styleclass="HowTo Numbered"> the </text><text styleclass="Element">Design-Set FB</text><text styleclass="HowTo Numbered"> in </text><text styleclass="Body Text">the graphics-area</text><text styleclass="VariableName">&#32;</text></li>
+                </list>
+                <para styleclass="Interface2">OR</para>
+                <list id="3" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="B Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="B Bullets"><text styleclass="SeeAlso">See </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-How-to-Open-a-Dialog-Box" styleclass="SeeAlso">How to Open a dialog</link><text styleclass="VariableName"> &#160;</text></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+        </td>
+      </thead>
+    </table></para>
+    <para styleclass="Body Text">The <text styleclass="Element-Header">Design-Set dialog</text> is now open.</para>
+    <para styleclass="Normal"><line style="height:1px; color:#343400;" /></para>
+    <para styleclass="Heading2"><anchor id="DESIGNSETDIALOG" styleclass="Heading3_atocs_"><keywords><keyword>Design-Set dialog<keyword>Lock / Unlock Design-Set</keyword><keyword>Rebuild</keyword></keyword></keywords></anchor><text styleclass="Heading3_atocs_">Design-Set dialog</text></para>
+    <para styleclass="Heading4 Toggle_atocs_2" style="text-indent:-36px; margin-left:60px;"><image src="tog_plus.gif" scale="100.00%" figurelistinclude="0"></image><tab /><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" src-collapsed="tog_plus.gif" src-expanded="tog_minus.gif"><caption><![CDATA[Design-Set toolbar]]></caption></toggle></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="2" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Normal"><image src="MD-Dialog-DesignSet-mt.png" scale="-99.90%" styleclass="Image Caption" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:normal;" figurelistinclude="0"><title>Design-Set - LOCKED</title><caption><![CDATA[Design-Set dialog - LOCKED]]></caption></image></para>
+          <para styleclass="Normal"><image src="MD-Dialog-DesignSEt-Col.png" scale="-99.90%" styleclass="Image Caption" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:normal;" figurelistinclude="0"><title>Design-Set - UNLOCKED</title><caption><![CDATA[Design-Set dialog - UNLOCKED]]></caption></image></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Text">When you open the <text styleclass="Element">Design-Set dialog</text>, the toolbar is locked. It is <text styleclass="Interface2" style="color:#ff0000;">NOT</text> active.</para>
+          <para styleclass="VariableName">The Design-Set toolbar icons - when active - are:</para>
+          <para styleclass="Body Table"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Bullets"><image src="Red-14-1.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Image Caption">&#32;</text><text styleclass="Image Caption" style="font-weight:normal; font-style:normal;">:</text><text styleclass="Image Caption"> &#160;</text><text styleclass="Interface">Add element-row</text></para>
+                <para styleclass="B Bullets"><image src="Red-14-2.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Body Text"> : &#160;</text><text styleclass="Interface">Delete element-row</text></para>
+                <para styleclass="B Bullets"><image src="Red-14-3.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Image Caption" style="font-style:normal;">&#32;</text><text styleclass="Image Caption" style="font-weight:normal; font-style:normal;">:</text><text styleclass="Image Caption" style="font-style:normal;">&#32;</text><text styleclass="Image Caption">&#32;</text><text styleclass="Interface">Padlock : Lock / Unlock Toggle</text></para>
+                <para styleclass="B Bullets"><image src="Red-14-4.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="HowTo Bulleted">&#32;</text><text styleclass="Body Text">: &#160;</text><text styleclass="Interface">Rebuild Model</text></para>
+                <para styleclass="Normal"><line style="height:1px; color:#343400;" /></para>
+                <para styleclass="B Bullets"><image src="Red-14-5.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Image Caption">&#32;</text><text styleclass="Body Text">: &#160;</text><image src="MD-Ok-Bar-16.png" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Body Text">&#32;</text><text styleclass="Interface">OK, Close, Undo Edits, Help</text></para>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="VariableName">To enable the Design-Set toolbar icons</para>
+          <para styleclass="Body Table"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <list id="4" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="Bullets">Click the <text styleclass="Interface">Padlock</text> icon <image src="Red-14-3.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image>.<text styleclass="VariableName">&#32;</text></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Body Text">The icons in the toolbar are <text styleclass="VariableName">colorized</text> and the <text styleclass="Element">Design-Set</text> interface is <text styleclass="VariableName">active</text>.</para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading4 Toggle_atocs_2" style="text-indent:-36px; margin-left:60px;"><anchor id="DesignSetDialogR10"><keywords><keyword>Design-Set dialog<keyword>Add Element-Rows</keyword><keyword>Remove Element-Rows</keyword></keyword></keywords></anchor><image src="btn_addkeyword.bmp" scale="100.00%" figurelistinclude="0"></image><tab /><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" src-collapsed="btn_addkeyword.bmp" src-expanded="btn_delkeyword.bmp" src-print="none"><caption><![CDATA[Add or Delete Element-Rows]]></caption></toggle></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="2" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Normal"><image src="MD-Dialog-DesignSet-2xElementRow-0.png" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"><title>Design-Set - 2 Element Rows</title><caption><![CDATA[Design-Set - 2 Element Rows]]></caption></image></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="VariableName">To add Element-Rows</para>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <list id="5" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="Bullets"><text style="font-style:normal;">Click</text><text style="font-style:italic;">&#32;</text><text style="font-style:normal;">the</text>&#32;<text styleclass="Interface">Padlock</text><image src="Red-14-3.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="HowTo Bulleted">&#32;</text><text styleclass="Body Text">- the toolbar is now colorized.</text><text styleclass="VariableName">&#32;</text></li>
+                  <li styleclass="HowTo Bulleted"><text style="font-style:normal;">Click</text><text style="font-style:italic;">&#32;</text><text styleclass="Interface">Add Element-Row</text><image src="Red-14-1.gif" scale="100.00%" figurelistinclude="0"></image> one time for <text styleclass="Body Text HowTo">each dimension or parameter you want to add to the </text><text styleclass="Element">Design-Set</text><text styleclass="Body Text HowTo">. </text></li>
+                </list>
+                <para styleclass="Body Text HowTo"><text style="color:#000000;">In the image above, there are two </text><text styleclass="VariableName">Element-Rows</text><image src="Red-14-6.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><image src="Red-14-7.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image>.</para>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Body Text"><text styleclass="VariableName">The active Element-Row</text>.</para>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Body Text">The<text styleclass="Body Text HowTo">&#32;</text><text styleclass="VariableName">active Element-row</text><image src="Red-14-6.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image> has a white box around its perimeter.</para>
+                <para styleclass="Body Text">To make a different <text styleclass="VariableName">Element Row</text> the <text styleclass="VariableName">active Element-Row</text>:</para>
+                <list id="6" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="Bullets">Click in the <text styleclass="VariableName">Select in graphics</text><image src="Red-14-7.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image> label<text styleclass="VariableName"> - </text><text styleclass="Body Text">or the parameter name</text><text styleclass="VariableName">&#32;</text></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="VariableName">To delete an Element-Row</para>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <list id="7" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="Bullets">Click the <text styleclass="VariableName">Select in Graphics</text> label to make it the <text styleclass="VariableName">active Element-Row</text></li>
+                  <li styleclass="HowTo Numbered"><text style="font-style:normal;">Click</text>&#32;<text styleclass="Interface">Delete Element-Row</text><image src="Red-14-2.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading4 Toggle_atocs_2" style="text-indent:-36px; margin-left:60px;"><image src="btn_addkeyword.bmp" scale="100.00%" figurelistinclude="0"></image><tab /><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" src-collapsed="btn_addkeyword.bmp" src-expanded="btn_delkeyword.bmp" src-print="none"><caption><![CDATA[Link a Dimension to an Element-Row]]></caption></toggle></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="2" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Normal"><image src="MD-Dialog-DesignSet-DimSelected.png" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Table"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <list id="8" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="Bullets"><text style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">If necessary, open the </text><text style="font-family:&apos;Segoe UI Semibold&apos;; font-size:10pt; font-weight:bold; font-style:normal; text-transform:uppercase; vertical-align:baseline; color:#800000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">Design-Set dialog</text><text style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">&#32;</text></li>
+                  <li styleclass="HowTo Numbered"><text style="font-style:normal;">Click</text><text style="font-style:italic;">&#32;</text>the <text styleclass="VariableName">Select in graphics</text><text style="font-style:italic;">&#32;</text><text styleclass="Body Text">label of an </text><text styleclass="VariableName">Element-Row</text>, so that it <text styleclass="Body Text">is </text><text styleclass="HowTo Bulleted">the </text><text styleclass="VariableName">active Element-Row</text><text styleclass="Body Text">.</text></li>
+                  <li styleclass="HowTo Numbered">Edit a <text styleclass="Element">Part</text></li>
+                  <li styleclass="HowTo Numbered"><text styleclass="Body Text">Click the arrowhead of a </text><text styleclass="Element">dimension</text><text styleclass="Body Text" style="font-weight:normal;"> in the </text><text styleclass="Interface">Part-Editor</text><text styleclass="VariableName">&#32;</text></li>
+                </list>
+                <para styleclass="VariableName">Result:</para>
+                <para styleclass="Body Text HowTo"><text style="font-weight:normal;">The </text><text styleclass="VariableName">Dimension name</text><image src="Red-14-1.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text style="font-weight:normal;"> replaces the </text><text styleclass="VariableName">Select in graphics</text><text style="font-weight:normal;"> (DimPtoP4)</text></para>
+                <para styleclass="Body Text HowTo"><text style="font-weight:normal;">The </text><text styleclass="VariableName">Dimension Units</text><text style="font-weight:normal;"> name replace the </text><text styleclass="VariableName">Property Value</text><text style="font-weight:normal;"> (DimUnits)</text></para>
+                <para styleclass="Body Text HowTo"><text style="font-weight:normal;">The </text><text styleclass="VariableName">Dimension value</text><image src="Red-14-2.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text style="font-weight:normal;"> replaces the</text><text style="font-weight:normal; color:#000000;">&#32;</text><text style="color:#000000;">&#32;</text><text styleclass="VariableName">Property Value</text> (42.87580515)</para>
+                <para styleclass="Body Text HowTo">The <text styleclass="VariableName" style="color:#ff00ff;">Locked Padlock</text><image src="Red-14-3.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image> is colorized. In this state, you <text styleclass="VariableName">cannot overwrite</text> this <text styleclass="VariableName">Element-Row. </text></para>
+                <para styleclass="Body Text HowTo">The next <text styleclass="VariableName">Element-Row</text> is the <text styleclass="VariableName">Active Element-Row </text>(a white box is around the <text styleclass="VariableName">Element-Row</text>)</para>
+              </td>
+            </tr>
+          </table></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading4 Toggle_atocs_2" style="text-indent:-36px; margin-left:60px;"><image src="tog_plus.gif" scale="100.00%" figurelistinclude="0"></image><tab /><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" src-collapsed="tog_plus.gif" src-expanded="tog_minus.gif"><caption><![CDATA[Maximum and Minimum 'Hard-Limits']]></caption></toggle></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="2" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="VariableName">Maximum and Minimum &apos;Hard-Limits&apos;</para>
+          <para styleclass="Body Text">It is frequently useful to set maximum and minimum limits for each dimension or parameter in the <text styleclass="VariableName">Design-Set.</text></para>
+          <para styleclass="Normal"><image src="MD-Dialog-DesignSet-DimSelected-Min-Max Limits.png" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Table">To edit the Maximum and Minimum limits:</para>
+          <para styleclass="Body Table"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <list id="9" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="Bullets">Click the up/down arrow <text styleclass="VariableName">Min-Max button</text><image src="Red-14-4.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="VariableName"> - see image above</text></li>
+                </list>
+                <para styleclass="Body Text HowTo">The <text styleclass="VariableName">Minimum</text> and <text styleclass="VariableName">Maximum</text> data-boxes are now active.</para>
+                <list id="9" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="HowTo Bulleted">Edit the <text styleclass="VariableName">Minimum</text> and <text styleclass="VariableName">Maximum</text> values<text styleclass="Image Caption">.</text></li>
+                  <li styleclass="HowTo Bulleted"><text styleclass="Body Text HowTo">Continue to edit the Dimension</text><image src="Red-14-2.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Body Text HowTo"> - but now it cannot be less-than the </text><text styleclass="VariableName">Minimum</text><text styleclass="Body Text HowTo"> or more-than the </text><text styleclass="VariableName">Maximum</text><text styleclass="Body Text HowTo"> values.</text></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading4 Toggle_atocs_2" style="text-indent:-36px; margin-left:60px;"><image src="tog_plus.gif" scale="100.00%" figurelistinclude="0"></image><tab /><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" src-collapsed="tog_plus.gif" src-expanded="tog_minus.gif"><caption><![CDATA[Replace a Dimension or Parameter]]></caption></toggle></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="1" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Text">To replace a Dimension or Parameter in an <text styleclass="VariableName">Element-Row</text> with a different Dimension or Parameter.</para>
+          <para styleclass="Body Table"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <list id="10" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="Bullets">Click the <text styleclass="VariableName">Dimension name</text> to make it the <text styleclass="VariableName">Active Element-Row</text>.<text styleclass="VariableName">&#32;</text></li>
+                  <li styleclass="HowTo Bulleted">Click a<text styleclass="VariableName" style="color:#ff00ff;"> Locked Pink Padlock</text><image src="Red-14-3.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Image Caption">&#32;</text><text styleclass="Body Text">so that it is a </text><text styleclass="VariableName" style="color:#404040;">Unlocked Grey Padlock</text><text styleclass="Body Text">. </text></li>
+                  <li styleclass="HowTo Bulleted"><text styleclass="Body Text">Click a different Dimension or Parameter in your model and graphics-area.</text></li>
+                  <li styleclass="HowTo Bulleted">Click the<text styleclass="VariableName" style="color:#404040;"> Unlocked Grey Padlock</text><image src="Red-14-3.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image> so it is a <text styleclass="VariableName" style="color:#ff00ff;">Locked Pink Padlock</text><text styleclass="Body Text">.</text></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Normal"><line style="height:1px; color:#343400;" /></para>
+    <para styleclass="Heading3_atocs_">Parameter Lists in different Element-Types:</para>
+    <para styleclass="Heading3_atocs_"><text styleclass="Body Text HowTo">In addition to dimensions, you can link parameters from dialogs for different element types with a Design-Set.</text></para>
+    <para styleclass="Heading3_atocs_"><text styleclass="Body Text HowTo">For example: Parameters of FBs, Parameters of a Gear-Pair, Parameters of a CAD-Line, and other elements.</text></para>
+    <para styleclass="Heading4 Toggle_atocs_"><image src="btn_addkeyword.bmp" scale="100.00%" figurelistinclude="0"></image><tab /><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" src-collapsed="btn_addkeyword.bmp" src-expanded="btn_delkeyword.bmp" src-print="none"><caption><![CDATA[Link a Parameter (from a dialog-box) with an Element-Row]]></caption></toggle></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="1" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="VariableName">Select the Element-Type:</para>
+          <para styleclass="Body Table"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <list id="11" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="Bullets">Open the <text styleclass="Element">Design-Set dialog</text><text styleclass="VariableName">&#32;</text></li>
+                  <li styleclass="HowTo Numbered"><text styleclass="HowTo Bulleted" style="font-style:normal;">Click</text><text styleclass="HowTo Bulleted"> the </text><text styleclass="VariableName">Element-Row</text><text styleclass="HowTo Bulleted"> to make it the </text><text styleclass="VariableName">Active Element-Row</text></li>
+                  <li styleclass="HowTo Numbered"><text styleclass="HowTo Bulleted" style="font-weight:normal; font-style:normal;">Click the </text><text styleclass="Interface" style="font-weight:normal; font-style:normal;">Padlock</text><text styleclass="HowTo Bulleted" style="font-weight:normal; font-style:normal;"> icon in the Design-Set toolbar, to unlock the </text><text styleclass="Element" style="font-weight:normal; font-style:normal;">Design-Set</text><text styleclass="HowTo Bulleted" style="font-weight:normal; font-style:normal;">.</text></li>
+                  <li styleclass="Bullets"><text style="font-style:normal;">Click</text> the <text styleclass="Element">element-type</text> in <text styleclass="Body Text">the graphics-area or</text> the <text styleclass="Interface">Assembly-Tree</text><text styleclass="VariableName">&#32;</text></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Body Table">If the <text styleclass="VariableName">Element-Type </text>has only one(1) <text styleclass="ParameterHeader">Parameter</text></para>
+          <para styleclass="Body Table"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Body Text">The <text styleclass="Parameter">Parameter</text> passes immediately into the <text styleclass="VariableName">Element Row</text>. </para>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Body Table">If the <text styleclass="VariableName">Element-Type</text> has two(2) or more <text styleclass="ParameterHeader">Parameters</text>:</para>
+          <para styleclass="Body Table"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Body Text">A list of <text styleclass="Parameter">Parameters</text> that you can select show in a box.</para>
+                <para styleclass="Normal"><line style="height:1px; color:#343400;" /></para>
+                <para styleclass="Body Text"><text styleclass="SeeAlso">See below: &apos;Parameter Lists in different-elements&apos; </text>below<text styleclass="SeeAlso">. </text>If you cannot identify the <text styleclass="Parameter">Parameter</text> from its name, then experiment.</para>
+                <para styleclass="Normal"><line style="height:1px; color:#343400;" /></para>
+                <list id="12" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="Bullets"><text style="font-style:normal;">Click the </text><text styleclass="Parameter">Parameter</text> in the list<text styleclass="VariableName">&#32;</text></li>
+                  <li styleclass="HowTo Numbered"><text styleclass="HowTo Bulleted" style="font-style:normal;">Click</text><text styleclass="HowTo Bulleted"> the </text><image src="OK-tiny-13-17.png" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="HowTo Bulleted"> button to close the </text><text styleclass="Parameter">Parameter</text><text styleclass="HowTo Bulleted"> box</text></li>
+                </list>
+                <para styleclass="Body Text HowTo">The <text styleclass="Parameter">Parameter</text> name and its value shows in the <text styleclass="VariableName">Element-Row</text> in the <text styleclass="Element">Design-Set</text>.</para>
+              </td>
+            </tr>
+          </table></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Normal"><line style="height:1px; color:#343400;" /></para>
+    <para styleclass="Heading4 Toggle_atocs_">Available Element-Types and their Parameters</para>
+    <para styleclass="Heading4 Toggle_atocs_2" style="text-indent:-36px; margin-left:60px;"><image src="btn_addkeyword.bmp" scale="100.00%" figurelistinclude="0"></image><tab /><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" src-collapsed="btn_addkeyword.bmp" src-expanded="btn_delkeyword.bmp"><caption><![CDATA[Linear-Motion Function-Block]]></caption></toggle></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="1" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Text">When you click a <text styleclass="Element">Linear Motion FB</text>, you add: </para>
+          <list id="13" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted"><text styleclass="Parameter">Linear Motion</text><text styleclass="Body Text"> as the </text><text styleclass="VariableName">Element Name</text></li>
+            <li styleclass="HowTo Bulleted"><text styleclass="Parameter">OutputStart_Units</text><text styleclass="Body Text"> as the parameter.</text></li>
+          </list>
+          <para styleclass="Body Text"><text styleclass="Parameter">OutputStart_Units</text><text styleclass="Parameter-Header" style="font-family:Arial; font-size:10pt; font-weight:normal; font-style:normal; text-decoration:none; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;"> ≡ </text><text styleclass="Parameter">Start-Angle</text> parameter in the <text styleclass="Element">Linear-Motion dialog</text><text styleclass="Interface">.</text></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading4 Toggle_atocs_2" style="text-indent:-36px; margin-left:60px;"><image src="btn_addkeyword.bmp" scale="100.00%" figurelistinclude="0"></image><tab /><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" src-collapsed="btn_addkeyword.bmp" src-expanded="btn_delkeyword.bmp"><caption><![CDATA[Motion-Dimension Function-Block]]></caption></toggle></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="1" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Text">When you click a <text styleclass="Element">Motion-Dimension FB</text>, you add:</para>
+          <para styleclass="Body Text HowTo"><text styleclass="Parameter">Mot-Dim Rocker</text><text styleclass="Parameter-Header" style="font-family:Arial; font-size:10pt; font-weight:normal; font-style:normal; text-decoration:none; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">&#32;</text><text styleclass="Body Text">(or </text><text styleclass="Parameter">Slider</text><text styleclass="Body Text">) as the </text><text styleclass="VariableName">Element Name</text></para>
+          <para styleclass="Body Text HowTo"><text styleclass="Parameter">BaseUnits</text><text styleclass="Body Text"> as the parameter.</text></para>
+          <para styleclass="Body Text"><text styleclass="Parameter">BaseUnits</text><text styleclass="Parameter-Header" style="font-family:Arial; font-size:10pt; font-weight:normal; font-style:normal; text-decoration:none; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;"> ≡ </text><text styleclass="Parameter">Base-Value</text> in the <text styleclass="Element">Motion-Dimension dialog</text><text styleclass="Interface">.</text></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading4 Toggle_atocs_2" style="text-indent:-36px; margin-left:60px;"><image src="btn_addkeyword.bmp" scale="100.00%" figurelistinclude="0"></image><tab /><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" src-collapsed="btn_addkeyword.bmp" src-expanded="btn_delkeyword.bmp"><caption><![CDATA[Gearing Function-Block]]></caption></toggle></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="1" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Normal"><image src="MD-Dialog-DesignSet-GearingFBParameters.png" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading4 Toggle_atocs_2" style="text-indent:-36px; margin-left:60px;"><image src="btn_addkeyword.bmp" scale="100.00%" figurelistinclude="0"></image><tab /><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" src-collapsed="btn_addkeyword.bmp" src-expanded="btn_delkeyword.bmp"><caption><![CDATA[Gear-Pair]]></caption></toggle></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="1" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Normal"><image src="MD-Dialog-Design-Set-GearPairParameters.png" align="left" scale="-99.90%" padding="0 3 0 0" styleclass="Image Caption" figurelistinclude="0"></image></para>
+          <para styleclass="Body Text"> Do not select Phase1 or Phase2 for the Design-Set.</para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading4 Toggle_atocs_2" style="text-indent:-36px; margin-left:60px;"><image src="btn_addkeyword.bmp" scale="100.00%" figurelistinclude="0"></image><tab /><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" src-collapsed="btn_addkeyword.bmp" src-expanded="btn_delkeyword.bmp"><caption><![CDATA[Rack-Pinion / Ball-Screw]]></caption></toggle></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="1" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Normal"><image src="MD-Dialog-Design-Set-Parameters-RackPinion.png" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading4 Toggle_atocs_2" style="text-indent:-36px; margin-left:60px;"><image src="btn_addkeyword.bmp" scale="100.00%" figurelistinclude="0"></image><tab />CAD-Line</para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="1" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Normal"><image src="MD-Dialog-Design-Set-Parameters-CADLine.png" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading4 Toggle_atocs_2" style="text-indent:-36px; margin-left:60px;"><image src="btn_addkeyword.bmp" scale="100.00%" figurelistinclude="0"></image><tab />Pulley</para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="1" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Text">When you click a <text styleclass="Element">Pulley</text>, you add </para>
+          <list id="14" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted"><text styleclass="Parameter">Path Joint</text><text styleclass="Body Text"> as the </text><text styleclass="VariableName">Element Name</text><text styleclass="Body Text">&#32;</text></li>
+            <li styleclass="HowTo Bulleted"><text styleclass="Parameter">Tooth-Count</text><text styleclass="Body Text"> as the parameter.</text></li>
+          </list>
+          <para styleclass="Body Text"><text styleclass="Parameter">Tooth-count</text><text styleclass="Parameter-Header" style="font-family:Arial; font-size:10pt; font-weight:normal; font-style:normal; text-decoration:none; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;"> ≡ </text><text styleclass="Parameter">number of Pulley teeth</text> parameter in the <text styleclass="Element">Pulley dialog</text><text styleclass="Interface">.</text></para>
+        </td>
+      </tr>
+    </table></para>
+  </body>
+</topic>

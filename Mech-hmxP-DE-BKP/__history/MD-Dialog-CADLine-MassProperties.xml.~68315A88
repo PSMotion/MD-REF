@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" status="Under Construction" modified="2022-03-14T17:07:15.476Z" lasteditedby="Adam" version="2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title>- &gt; Mass Properties tab</title>
+  <keywords>
+    <keyword>CAD-Line dialog<keyword>Mass Properties tab</keyword></keyword>
+    <keyword>Dialog<keyword>CAD-Line - Mass Properties</keyword></keyword>
+    <keyword>Mass<keyword>Inertia</keyword><keyword>Mass</keyword><keyword>Moment of Inertia</keyword><keyword>Radius of Gyration</keyword></keyword>
+  </keywords>
+  <body>
+    <header>
+      <para styleclass="Heading1">- &gt; Mass Properties tab</para>
+    </header>
+    <para styleclass="Heading2">CAD-Line &gt; Mass Properties tab</para>
+    <para styleclass="SeeAlso">See also : <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-CADLine" styleclass="Body Text">CAD-Line dialog-box</link></para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="Body Text HowTo">Use the <text styleclass="VariableName">Mass-Properties</text><text styleclass="Body Text"> tab</text></para>
+    <list id="0" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+      <li styleclass="HowTo Bulleted">Enter user-defined mass properties <text styleclass="Body Text">- </text><link displaytype="text" defaultstyle="true" type="topiclink" href="" anchor="CAD-Line-MassProperties-User">see below</link></li>
+      <li styleclass="HowTo Bulleted">Import the mass-properties of a <text styleclass="SOLIDWORKS">SolidWorks</text> document - <link displaytype="text" defaultstyle="true" type="topiclink" href="" anchor="CAD-Line-MassProperties-Import">see below</link>&#32;</li>
+      <li styleclass="HowTo Bulleted">Review the total <text styleclass="VariableName">Mass-Properties</text> on the <text styleclass="Element">Part</text> - <link displaytype="text" defaultstyle="true" type="topiclink" href="" anchor="CAD-Line-MassProperties-Total">see below</link></li>
+    </list>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="Heading3_atocs_">CAD-Line dialog-box</para>
+    <para styleclass="Heading4 HowTo_atoc_">Mass Properties tab</para>
+    <para styleclass="Body Table"><image src="MD-Dialog-CADLine-MassProps-tab.png" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"><caption><![CDATA[CAD-Line dialog-box - Mass. Properties tab]]></caption></image></para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="Body Text HowTo" style="text-indent:-36px; margin-left:60px;"><anchor id="CAD-Line-MassProperties-User" styleclass="Separator-Header"><keywords><keyword>Dialog-Box<keyword>Mass-Properties - User defined</keyword></keyword></keywords></anchor><image src="tog_plus.gif" scale="100.00%" styleclass="Separator-Header" figurelistinclude="0"></image><tab /><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" src-collapsed="tog_plus.gif" src-expanded="tog_minus.gif" src-print="none" styleclass="Separator-Header"><caption><![CDATA[ User Mass Properties ]]></caption></toggle></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Standard" rowcount="2" colcount="2" style="background-color:none;">
+      <tr style="vertical-align:top">
+        <td style="width:251px;">
+          <para styleclass="Image Caption"><image src="MD-Dialog-CADLine-MasProps_User.ipp" scale="-99.90%" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="Body Table"><table styleclass="Default" rowcount="4" colcount="1" style="cell-padding:0px; border-width:0px; border-spacing:0px; cell-border-width:0px; border-style:none;">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Body Text"><text styleclass="Parameter-Header">Mass</text> (Units: <equation styleclass="Parameter-Header" font-size="24" color="#000080"><![CDATA[kg]]></equation><text styleclass="Parameter-Header">)</text></para>
+              </td>
+            </tr>
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Body Text"><text styleclass="Parameter-Header">center-of-Mass: X–axis &#160;</text>(units: <equation styleclass="Parameter" style="font-family:&apos;Segoe UI Semibold&apos;; font-weight:bold; font-style:normal; text-transform:none; color:#333399; background-color:transparent; letter-spacing:normal; letter-scaling:100%;" font-size="24" color="#000080"><![CDATA[mm ]]></equation>)</para>
+                <para styleclass="Body Table">The X-axis is the <text styleclass="Element">CAD-Line</text>, and zero(0) is at the <text styleclass="Interface">start-Point</text>.</para>
+              </td>
+            </tr>
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Body Text"><text styleclass="Parameter-Header">center-of-Mass: Y–axis (</text>units: <equation font-size="24" color="#000080"><![CDATA[mm ]]></equation>)</para>
+                <para styleclass="Body Table">The Y-axis is at +90º, and zero(0) is at the <text styleclass="Interface">start-Point</text></para>
+              </td>
+            </tr>
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+                <para styleclass="Parameter-Header">Moment of Inertia, (<text styleclass="Body Text">units </text><equation styleclass="Body Text" font-size="24" color="#000080"><![CDATA[kg.m^{2}]]></equation><text styleclass="VariableName-IT" style="font-size:10pt; vertical-align:baseline; color:#ff0000;">NOT</text><text styleclass="Body Text">&#32;</text><equation styleclass="Body Text HowTo" style="font-family:&apos;Segoe UI&apos;; font-size:14pt; font-style:italic; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;" font-size="24" color="#000080"><![CDATA[kg.mm^{2}]]></equation><text styleclass="Body Text">)</text></para>
+                <para styleclass="Body Text">The Inertia about the Center-of-Mass.</para>
+                <para styleclass="Body Text">You can enter one of: </para>
+                <para styleclass="Body Text HowTo"><text styleclass="Parameter-Header">Radius-of-Gyration</text><text styleclass="Popup Box">&#32;</text><equation styleclass="Popup Box" font-size="24" color="#000080"><![CDATA[\left( mm \right)]]></equation><text styleclass="Body Text">, </text><text styleclass="VariableName">or</text><text styleclass="Body Text">&#32;</text></para>
+                <para styleclass="Body Text HowTo"><text styleclass="Parameter-Header">Moment-of-Inertia </text><text styleclass="Popup Box">&#32;</text><equation styleclass="Popup Box" font-size="24" color="#000080"><![CDATA[\left( kg.m^{2} \right)]]></equation></para>
+              </td>
+            </tr>
+          </table></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td colspan="2">
+          <para styleclass="Body Table">If <text style="font-weight:normal;">you</text> enter <text styleclass="Parameter-Header">Moment-of-Inertia</text>, then the equivalent <text styleclass="Parameter-Header">Radius-of-Gyration, </text><equation styleclass="VariableName-IT" style="font-size:10pt; vertical-align:sub;" font-size="28"><![CDATA[k_{g}]]></equation><text styleclass="VariableName-IT">&#32;</text><text styleclass="Body Text">is :</text></para>
+          <para styleclass="Body Text HowTo"><equation styleclass="Image Caption" font-size="28" color="#000080"><![CDATA[k_{g}=\sqrt{\frac{I_{g}}{m}}]]></equation></para>
+          <para styleclass="Body Table">If <text styleclass="Body Text">you</text> enter <text styleclass="Parameter-Header">Radius-of-Gyration</text>, then the equivalent <text styleclass="Parameter-Header">Moment-of-Inertia, </text><equation styleclass="Parameter-Header" font-size="28"><![CDATA[I_{g}]]></equation><text styleclass="Body Text"> is:</text></para>
+          <para styleclass="Body Text HowTo"><equation styleclass="Image Caption" font-size="28" color="#000080"><![CDATA[I_{g}= M.k_{g}^{2}]]></equation></para>
+          <para styleclass="Body Table">If you do not enter <text styleclass="Parameter-Header">Inertia</text> or <text styleclass="Parameter-Header">Radius-of-Gyration</text> - the mass is equivalent to a <text styleclass="Parameter-Header">Mass at a Point.</text></para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="Interface2">Parallel Axis Theorem</para>
+          <para styleclass="Body Text HowTo">We use the <text styleclass="VariableName">Parallel Axis Theorem</text> to calculate the <text styleclass="VariableName">Moment-of-Inertia, </text><equation styleclass="VariableName" font-size="28"><![CDATA[I_{o}]]></equation> about the <text styleclass="Element">Part&apos;s</text> rotational axis, at <equation font-size="28"><![CDATA[O]]></equation></para>
+          <para styleclass="Body Text HowTo"><equation style="font-size:14pt;" font-size="28" color="#000080"><![CDATA[I_{o}=I_{g}+M.h^{2}]]></equation><text style="font-size:14pt;">&#32;</text><text styleclass="Body Text">where </text><equation style="font-size:14pt;" font-size="28"><![CDATA[h]]></equation><text styleclass="Body Text"> = distance from the Center-of-Mass to the rotational axis, at </text><equation font-size="28"><![CDATA[O]]></equation></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Body Text HowTo" style="text-indent:-36px; margin-left:60px;"><anchor id="CAD-Line-MassProperties-Import" styleclass="Separator-Header"><keywords><keyword>Import Mass Properties from CAD</keyword></keywords></anchor><image src="tog_plus.gif" scale="100.00%" styleclass="Separator-Header" figurelistinclude="0"></image><tab /><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" src-collapsed="tog_plus.gif" src-expanded="tog_minus.gif" src-print="none" styleclass="Separator-Header"><caption><![CDATA[SolidWorks Mass Properties ]]></caption></toggle></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Standard" rowcount="2" colcount="2" style="background-color:none;">
+      <tr style="vertical-align:top">
+        <td colspan="2">
+          <para styleclass="Body Table">When you import a <text styleclass="SOLIDWORKS">SolidWorks</text> document onto a <text styleclass="Element">CAD-Line</text>, you can also import the <text styleclass="Interface2" style="font-size:10pt; vertical-align:baseline;">SolidWorks</text><text styleclass="VariableName"> Mass-Properties</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:248px;">
+          <para styleclass="Normal" style="text-align:left;"><image src="MD-Dialog-CADLine-MasProps_SW.ipp" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="Body Text"><text styleclass="VariableName">Button</text><text styleclass="Body Text HowTo">&#32;</text><image src="Red-14-1b.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Image Caption">&#32;</text><text styleclass="Parameter-Header">IMPORT / UPDATE SolidWorks Mass Properties</text></para>
+          <para styleclass="Body Table"><text styleclass="Notes">Note</text>: <text styleclass="Body Text">Before you click button </text><image src="Red-14-1b.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Body Text">, make sure the active </text><text styleclass="SOLIDWORKS">SolidWorks</text><text styleclass="Body Text"> document is on the </text><text styleclass="Element">CAD-Line</text><text styleclass="Body Text">. </text></para>
+          <para styleclass="Body Table"><table styleclass="Default" rowcount="4" colcount="1" style="cell-padding:0px; border-width:0px; border-spacing:0px; cell-border-width:0px; border-style:none;">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Parameter-Header">Mass : (<text style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:normal; font-style:italic; text-transform:none; vertical-align:baseline; color:#333399; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">kg</text>)</para>
+                <para styleclass="Body Text HowTo">The <text styleclass="Parameter">Mass</text> of the active <text styleclass="SOLIDWORKS">SolidWorks</text> document.</para>
+              </td>
+            </tr>
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Parameter-Header">center-of-Mass : X-axis: (<text styleclass="Parameter" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:10pt; font-weight:bold; font-style:normal; text-transform:none; vertical-align:baseline; color:#333399; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">mm</text>)</para>
+                <para styleclass="Body Text HowTo"><text styleclass="Body Text">The distance on the X-axis from the </text><text styleclass="Element">CAD-Line</text><text styleclass="Body Text">&#32;</text><text styleclass="Interface">start-Point</text><text styleclass="Body Text"> to the </text><text styleclass="Parameter">center-of-Mass.</text></para>
+              </td>
+            </tr>
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Parameter-Header">center-of-Mass Y-axis<text styleclass="VariableName">&#32;</text>(<text styleclass="Parameter" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:10pt; font-weight:bold; font-style:normal; text-transform:none; vertical-align:baseline; color:#333399; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">mm</text>)</para>
+                <para styleclass="Body Text HowTo"><text styleclass="Body Text">The distance on the Y-axis, from the </text><text styleclass="Element">CAD-Line</text><text styleclass="Body Text">&#32;</text><text styleclass="Interface">start-Point</text><text styleclass="Body Text"> to the </text><text styleclass="Parameter">center-of-Mass</text><text styleclass="Body Text">.</text></para>
+              </td>
+            </tr>
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Parameter-Header">Moment-of-Inertia <equation styleclass="Popup Box" font-size="24" color="#000080"><![CDATA[\left( kg.m^{2} \right)]]></equation></para>
+                <para styleclass="HowTo Bulleted"><text styleclass="Body Text">The </text><text styleclass="Parameter">Inertia</text><text styleclass="Body Text"> with respect to the </text><text styleclass="Parameter">Center-of-Mass</text></para>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="VariableName">Button <image src="Red-14-2.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Normal">&#32;</text><text styleclass="Parameter-Header">Remove SolidWorks Mass Properties</text></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Body Text HowTo" style="text-indent:-36px; margin-left:60px;"><anchor id="CAD-Line-MassProperties-Total" styleclass="Separator-Header"><keywords><keyword>CAD-Line dialog-box<keyword>Total Mass Properties from CAD</keyword></keyword></keywords></anchor><image src="tog_plus.gif" scale="100.00%" styleclass="Separator-Header" figurelistinclude="0"></image><tab /><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" src-collapsed="tog_plus.gif" src-expanded="tog_minus.gif" src-print="none" styleclass="Separator-Header"><caption><![CDATA[ Total Mass Properties ]]></caption></toggle></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="2" colcount="2">
+      <tr style="vertical-align:top">
+        <td colspan="2">
+          <para styleclass="VariableName">Total Mass Properties:</para>
+          <para styleclass="Body Text HowTo">The <text styleclass="VariableName">Total Mass Properties</text> is for <text styleclass="VariableName" style="color:#ff0000;">ALL</text>&#32;<text styleclass="Element">CAD-Lines</text> in one <text styleclass="Element">Part.</text></para>
+          <para styleclass="Body Text"><text styleclass="VariableName">EXPLICITLY</text>: the <text styleclass="VariableName">Total Mass Properties</text> include, for each <text styleclass="Element">Part</text>, <text styleclass="VariableName" style="color:#ff0000;">ALL</text> of those:</para>
+          <list id="1" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted"><text styleclass="VariableName">Mass</text><text styleclass="Body Text HowTo"> and </text><text styleclass="VariableName">Mass-Properties</text><text styleclass="Body Text HowTo"> as calculated for </text><text styleclass="VariableName" style="color:#ff0000;">ALL</text>&#32;<text styleclass="Element">Profile/Extrusions</text><text styleclass="Body Text"> in the </text><text styleclass="Element">Part</text><text styleclass="Body Text">&#32;</text></li>
+            <li styleclass="HowTo Bulleted"><text styleclass="VariableName">User Mass-Properties</text><text styleclass="Body Text"> as defined for</text>&#32;<text styleclass="VariableName" style="color:#ff0000;">ALL</text>&#32;<text styleclass="Element">CAD-Lines</text> in the <text styleclass="Element">Part</text></li>
+            <li styleclass="HowTo Bulleted"><text styleclass="Interface2" style="font-size:10pt; vertical-align:baseline;">SolidWorks</text><text styleclass="VariableName"> Mass-Properties</text><text styleclass="Parameter-Header">&#32;</text><text styleclass="Body Text">as defined for </text><text styleclass="VariableName" style="color:#ff0000;">ALL</text><text styleclass="Body Text">&#32;</text><text styleclass="Element">CAD-Lines</text><text styleclass="Body Text"> in the </text><text styleclass="Element">Part</text></li>
+          </list>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:270px;">
+          <para styleclass="Normal"><image src="MD-Dialog-CADLine-MasProps_Total.ipp" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="VariableName">NOTES:</para>
+          <para styleclass="VariableName">Parallel-Axis Theorem </para>
+          <para styleclass="Body Text HowTo"><text styleclass="VariableName-IT2">Inertia about Part&apos;s Rotational-Axis = Total Inertia about center-of-Mass + Mass×(Distance to Part&apos;s Rotational-Axis)</text><text style="font-size:9pt; font-weight:bold; vertical-align:super;">2</text></para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="VariableName">Relationship between Moment-of-Inertia and Radius of Gyration</para>
+          <para styleclass="Body Text HowTo"><text styleclass="VariableName-IT2">Total Inertia (about center-of-Mass) = Total Mass×(Radius-of-Gyration)</text><text style="font-size:10pt; font-weight:bold; font-style:normal; vertical-align:super;">2</text></para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="VariableName">Total Mass of Part = </para>
+          <para styleclass="VariableName-indent">Mass of all <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-ProfileExtrusion" anchor="ExtrusionMassProperties">Extrusions</link> +<text styleclass="Body Text">&#32;</text><text style="color:#ff0000;">Total mass of other CAD-Lines in the same Part</text></para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="VariableName">Total Inertia about the Part&apos;s center-of-Gravity = </para>
+          <para styleclass="VariableName-indent">Inertia of all Extrusions <text style="color:#ff0000;">+ Total Inertia of other CAD-Lines in the same Part</text></para>
+        </td>
+      </tr>
+    </table></para>
+  </body>
+</topic>

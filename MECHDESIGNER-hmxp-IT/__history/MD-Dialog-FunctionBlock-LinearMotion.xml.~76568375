@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" status="Under Construction" modified="2022-03-21T11:42:19.110Z" lasteditedby="Adam" version="2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title>Dialog: Function-Block: Linear-Motion</title>
+  <keywords>
+    <keyword>Clock</keyword>
+    <keyword>Dialog<keyword>Funtion-Block : Linear Motion</keyword></keyword>
+    <keyword>Linear Motion dialog</keyword>
+    <keyword>Machine-Clock</keyword>
+  </keywords>
+  <body>
+    <header>
+      <para styleclass="Heading1">Dialog: Function-Block: Linear-Motion</para>
+    </header>
+    <para styleclass="Heading2">Linear-Motion FB </para>
+    <para styleclass="SeeAlso">See <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Command-Add-FBLinearMotion">Add Linear-Motion FB</link></para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;"/></para>
+    <para styleclass="Body Text HowTo">The <text styleclass="VariableName">default</text> output from the <text styleclass="Element">Linear-Motion FB</text> is equal to the <text styleclass="Interface">Master-Machine-Angle</text><text styleclass="VariableName"> (MMA)</text></para>
+    <para styleclass="Body Text HowTo">Use the <text styleclass="Element">Linear-Motion dialog-box</text> to delay or advance the output relative to the <text styleclass="Interface">Master-Machine-Angle</text><text styleclass="VariableName">.</text></para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;"/></para>
+    <para styleclass="Body Text"><text styleclass="Notes">Note</text>: I usually use a <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-FunctionBlock-Gearing" styleclass="Element">Gearing FB</link> to delay or advance the output relative to the <text styleclass="Interface">Master-Machine-Angle</text><text styleclass="VariableName">.</text></para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;"/></para>
+    <para styleclass="Heading3_atocs_" style="text-indent:-18px; margin-left:18px;">Open Linear-Motion dialog-box</para>
+    <para styleclass="Body Text"><table styleclass="Standard" rowcount="1" colcount="2" style="width:auto; head-row-background-color:#ffffff; alt-row-background-color:none;">
+      <thead style="vertical-align:top">
+        <td style="width:40px; border-right:none;">
+          <para styleclass="Interface" style="text-align:right;"><image src="MD-Icon-FB-LinearMotion.png" scale="100.00%" padding="0 2 0 0" figurelistinclude="0"></image></para>
+        </td>
+        <td style="border-left:none;">
+          <para styleclass="Body Text">Edit the<text styleclass="Element"> Linear-Motion FB</text><text style="font-weight:normal; font-style:normal;">:</text></para>
+          <para styleclass="Body Table"><table styleclass="PopupTable2" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td style="border-top:none; border-right:none; border-bottom:none;">
+                <list id="0" type="ol" listtype="decimal" formatstring="%0:s." format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="B Bullets" style="font-family:'Segoe UI Semibold'; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="B Bullets"><text styleclass="Body Text Howindent4bullets">Double-click the </text><text styleclass="Element">Linear-Motion FB</text><text styleclass="Body Text Howindent4bullets"> in the </text><text styleclass="Interface">graphic-area</text><text styleclass="VariableName">. </text></li>
+                </list>
+                <para styleclass="VariableName-IT">- or -</para>
+                <list id="1" type="ol" listtype="decimal" formatstring="%0:s." format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="B Bullets" style="font-family:'Segoe UI Semibold'; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="B Bullets"><text styleclass="SeeAlso">See </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-How-to-Open-a-Dialog-Box" styleclass="SeeAlso">How to Open a Dialog-Box</link><text styleclass="VariableName"> </text></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Body Text">The <text styleclass="Element">Linear-Motion FB dialog-box</text> is now open.</para>
+        </td>
+      </thead>
+    </table></para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;"/></para>
+    <para styleclass="Heading3_atocs_">Linear-Motion dialog-box</para>
+    <para styleclass="Body Text"><table styleclass="Top Tip" rowcount="1" colcount="1" style="width:400px; background-color:#f3f3f3;">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Text" style="text-align:center;">The <text styleclass="Element">Linear-Motion FB</text> function is:</para>
+          <para styleclass="Body Text HowTo" style="text-align:center;"><text styleclass="VariableName">Output  = MMA</text><text styleclass="Interface2"> + start-angle </text><image src="Red-14-1.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Standard" rowcount="1" colcount="2" style="width:auto;">
+      <tr style="vertical-align:top">
+        <td style="width:240px;">
+          <para styleclass="Normal" style="text-align:right;"><image src="MD-Dialog-LinearMotionFB.ipp" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"><caption><![CDATA[Linear Motion FB dialog-box]]></caption></image></para>
+        </td>
+        <td>
+          <para styleclass="Body Table"><text styleclass="Parameter-Header">Start-Angle : </text><image src="Red-14-1.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+          <para styleclass="Body Text HowTo"><table styleclass="PopupTable2" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Body Table">Enter a real number in the data-box<image src="Red-14-1.gif" scale="100.00%" figurelistinclude="0"></image></para>
+                <para styleclass="Body Table">A positive value will advance the timing.</para>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Body Table"><text styleclass="Parameter-Header">Output Options: </text><image src="Red-14-2.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+          <para styleclass="Body Text HowTo"><table styleclass="PopupTable2" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <list id="2" type="ul" listtype="bullet" formatstring="¤" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Body Table" style="font-family:Wingdings; font-size:11pt; color:#000000;">
+                  <li styleclass="Body Table"> <text styleclass="Parameter">Reset each Cycle (default)</text><text styleclass="VariableName"> </text><br/><text styleclass="VariableName">Output = Master Machine Angle + </text><image src="Red-14-1.gif" scale="100.00%" styleclass="VariableName" figurelistinclude="0"></image><text styleclass="VariableName"> </text></li>
+                </list>
+                <list id="3" type="ul" listtype="bullet" formatstring="¤" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Body Table" style="font-family:Wingdings; font-size:11pt; color:#000000;">
+                  <li styleclass="Body Table"> <text styleclass="Parameter">Accumulate</text><text styleclass="VariableName"> </text><br/><text styleclass="VariableName">Output = (Revs × 360) + Master Machine Angle + </text><image src="Red-14-1.gif" scale="100.00%" styleclass="VariableName" figurelistinclude="0"></image></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Body Text" style="page-break-before:always;"></para>
+  </body>
+</topic>

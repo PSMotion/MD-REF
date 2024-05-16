@@ -1,0 +1,413 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../helpproject.xsl" ?>
+<topic class="Popup" template="Default" status="Under Construction" lasteditedby="Adam" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../helpproject.xsd">
+  <title translate="true">Motion Veloicty and Acceleration Coefficients</title>
+  <keywords>
+    <keyword translate="true">Motion-Coefficients<keyword translate="true">Acceleration Coefficients</keyword><keyword translate="true">Veloicty Coefficients</keyword></keyword>
+  </keywords>
+  <body>
+    <para styleclass="Heading2"><text styleclass="Heading2" translate="true">MOTION-LAW COEFFICIENTS.</text></para>
+    <para styleclass="Body Text"><text styleclass="Body Text" translate="true">There are two coefficients that help define the characteristics of a Motion-Laws:</text></para>
+    <para styleclass="Body Text HowTo"><text styleclass="Body Text" style="font-family:Georgia; font-size:14pt;" translate="true">C</text><text styleclass="Body Text" style="font-family:Georgia; font-size:12pt; vertical-align:sub;" translate="true">v </text><text styleclass="Body Text" translate="true">= Velocity Coefficient</text></para>
+    <para styleclass="Body Text HowTo"><text styleclass="Body Text" style="font-family:Georgia; font-size:14pt;" translate="true">C</text><text styleclass="Body Text" style="font-family:Georgia; font-size:12pt; vertical-align:sub;" translate="true">a</text><text styleclass="Body Text HowTo" style="font-size:11pt; font-weight:bold; font-style:italic;" translate="true"> </text><text styleclass="Body Text HowTo" style="font-weight:normal; font-style:normal;" translate="true">= Acceleration Coefficient</text></para>
+    <para styleclass="Body Text HowTo"><text styleclass="Body Text HowTo" style="font-weight:normal; font-style:normal; text-decoration:underline;" translate="true">Actual Maximum Velocity</text><text styleclass="Body Text HowTo" style="font-weight:normal; font-style:normal;" translate="true"> = </text><text styleclass="Body Text" style="font-family:Georgia; font-size:14pt;" translate="true">C</text><text styleclass="Body Text" style="font-family:Georgia; font-size:12pt; vertical-align:sub;" translate="true">v</text><text styleclass="Body Text HowTo" style="font-weight:normal; font-style:normal;" translate="true"> </text><text styleclass="Body Text HowTo" style="font-weight:bold; font-style:normal;" translate="true">×</text><text styleclass="Body Text HowTo" style="font-weight:normal; font-style:normal;" translate="true"> Output Stroke / stroke time</text></para>
+    <para styleclass="Body Text HowTo"><text styleclass="Body Text HowTo" style="font-weight:normal; font-style:normal; text-decoration:underline;" translate="true">Actual Maximum Acceleration</text><text styleclass="Body Text HowTo" style="font-weight:normal; font-style:normal;" translate="true"> = </text><text styleclass="Body Text" style="font-family:Georgia; font-size:14pt;" translate="true">C</text><text styleclass="Body Text" style="font-family:Georgia; font-size:12pt; vertical-align:sub;" translate="true">a</text><text styleclass="Body Text HowTo" style="font-weight:normal; font-style:normal;" translate="true"> </text><text styleclass="Body Text HowTo" style="font-weight:bold; font-style:normal;" translate="true">×</text><text styleclass="Body Text HowTo" style="font-weight:normal; font-style:normal;" translate="true"> Output Stroke / stroke time</text><text styleclass="Body Text HowTo" style="font-size:9pt; font-weight:normal; font-style:normal; vertical-align:super;" translate="true">2</text></para>
+    <para styleclass="Body Text"><text styleclass="VariableName" translate="true">Stroke</text><text styleclass="Body Text" translate="true"> is the actual distance moved.</text></para>
+    <para styleclass="Heading3_atocs_"><text styleclass="Heading3_atocs_" translate="true">TRADITIONAL MOTION-LAW</text></para>
+    <para styleclass="Body Text HowTo"><table styleclass="PopupTable2" rowcount="8" colcount="4" style="width:500px; cell-padding:2px; border-width:1px; border-spacing:0px; border-collapse:collapse; cell-border-width:1px; border-color:#000000; border-style:solid; head-row-background-color:#99cc00; alt-row-background-color:#c0c0c0;">
+      <thead style="vertical-align:top">
+        <td style="width:157px;">
+          <para styleclass="VariableName"><text styleclass="VariableName" translate="true">Motion-Law Name</text></para>
+        </td>
+        <td style="width:103px;">
+          <para styleclass="VariableName" style="text-align:center;"><text styleclass="VariableName" translate="true">Velocity Coefficient </text></para>
+          <para styleclass="VariableName" style="text-align:center;"><text styleclass="VariableName" translate="true">Cv</text></para>
+        </td>
+        <td style="width:110px;">
+          <para styleclass="VariableName" style="text-align:center;"><text styleclass="VariableName" translate="true">Acceleration Coefficient</text></para>
+          <para styleclass="VariableName" style="text-align:center;"><text styleclass="VariableName" translate="true">Ca</text></para>
+        </td>
+        <td style="width:174px;">
+          <para styleclass="VariableName" style="text-align:center;"><text styleclass="VariableName" translate="true">Notes</text></para>
+          <para styleclass="VariableName" style="text-align:center;"><text styleclass="VariableName" translate="true">When used for a &apos;Rise&apos; or &apos;Return&apos;</text></para>
+        </td>
+      </thead>
+      <tr style="vertical-align:top">
+        <td style="width:157px;">
+          <para styleclass="VariableName"><text styleclass="VariableName" translate="true">Constant Acceleration, Parabolic</text></para>
+        </td>
+        <td style="vertical-align:middle; width:103px;">
+          <para styleclass="Body Text" style="text-align:center;"><text styleclass="Body Text" translate="true">2</text></para>
+        </td>
+        <td style="vertical-align:middle; width:110px;">
+          <para styleclass="Body Text" style="text-align:center;"><text styleclass="Body Text" translate="true">4</text></para>
+        </td>
+        <td style="vertical-align:middle; width:174px;">
+          <para styleclass="Body Text" style="text-align:left;"><text styleclass="Body Text" translate="true">Poor Motion</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:157px;">
+          <para styleclass="VariableName"><text styleclass="VariableName" translate="true">Simple Harmonic</text></para>
+        </td>
+        <td style="vertical-align:middle; width:103px;">
+          <para styleclass="Body Text" style="text-align:center;"><text styleclass="Body Text" translate="true">1.570796 (</text><text styleclass="Body Text" style="font-family:Georgia; font-size:12pt;" translate="true">π</text><text styleclass="Body Text" style="font-family:Georgia;" translate="true">/2</text><text styleclass="Body Text" translate="true">)</text></para>
+        </td>
+        <td style="vertical-align:middle; width:110px;">
+          <para styleclass="Body Text" style="text-align:center;"><text styleclass="Body Text" translate="true">4.934803 (</text><text styleclass="Body Text" style="font-family:Georgia;" translate="true">π</text><text styleclass="Body Text" style="font-family:Georgia; font-size:7pt; vertical-align:super;" translate="true">2</text><text styleclass="Body Text" style="font-family:Georgia;" translate="true">/2</text><text styleclass="Body Text" translate="true">)</text></para>
+        </td>
+        <td style="vertical-align:middle; width:174px;">
+          <para styleclass="Body Text" style="text-align:left;"><text styleclass="Body Text" translate="true">Poor Motion </text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:157px;">
+          <para styleclass="VariableName"><text styleclass="VariableName" translate="true">Cycloidal</text></para>
+        </td>
+        <td style="vertical-align:middle; width:103px;">
+          <para styleclass="Body Text" style="text-align:center;"><text styleclass="Body Text" translate="true">2</text></para>
+        </td>
+        <td style="vertical-align:middle; width:110px;">
+          <para styleclass="Body Text" style="text-align:center;"><text styleclass="Body Text" translate="true">6.263185</text></para>
+        </td>
+        <td style="vertical-align:middle; width:174px;">
+          <para styleclass="Body Text" style="text-align:left;"><text styleclass="Body Text" translate="true">Good</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:157px;">
+          <para styleclass="VariableName"><text styleclass="VariableName" translate="true">Modified Trapezoid</text></para>
+        </td>
+        <td style="vertical-align:middle; width:103px;">
+          <para styleclass="Body Text" style="text-align:center;"><text styleclass="Body Text" translate="true">2</text></para>
+        </td>
+        <td style="vertical-align:middle; width:110px;">
+          <para styleclass="Body Text" style="text-align:center;"><text styleclass="Body Text" translate="true">4.888124</text></para>
+        </td>
+        <td style="vertical-align:middle; width:174px;">
+          <para styleclass="Body Text" style="text-align:left;"><text styleclass="Body Text" translate="true">OK for High Inertia/Stiff</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:157px;">
+          <para styleclass="VariableName"><text styleclass="VariableName" translate="true">Polynomial 345</text></para>
+        </td>
+        <td style="vertical-align:middle; width:103px;">
+          <para styleclass="Body Text" style="text-align:center;"><text styleclass="Body Text" translate="true">1.875</text></para>
+        </td>
+        <td style="vertical-align:middle; width:110px;">
+          <para styleclass="Body Text" style="text-align:center;"><text styleclass="Body Text" translate="true">5.773503</text></para>
+        </td>
+        <td style="vertical-align:middle; width:174px;">
+          <para styleclass="Body Text" style="text-align:left;"><text styleclass="Body Text" translate="true">Good General</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:157px;">
+          <para styleclass="VariableName"><text styleclass="VariableName" translate="true">Polynomial 4567</text></para>
+        </td>
+        <td style="vertical-align:middle; width:103px;">
+          <para styleclass="Body Text" style="text-align:center;"><text styleclass="Body Text" translate="true">2.1875</text></para>
+        </td>
+        <td style="vertical-align:middle; width:110px;">
+          <para styleclass="Body Text" style="text-align:center;"><text styleclass="Body Text" translate="true">7.5132</text></para>
+        </td>
+        <td style="vertical-align:middle; width:174px;">
+          <para styleclass="Body Text" style="text-align:left;"><text styleclass="Body Text" translate="true">Good if Stiff Input</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:157px;">
+          <para styleclass="VariableName"><text styleclass="VariableName" translate="true">Modified Sine</text></para>
+        </td>
+        <td style="vertical-align:middle; width:103px;">
+          <para styleclass="Body Text" style="text-align:center;"><text styleclass="Body Text" translate="true">1.759603</text></para>
+        </td>
+        <td style="vertical-align:middle; width:110px;">
+          <para styleclass="Body Text" style="text-align:center;"><text styleclass="Body Text" translate="true">5.527957</text></para>
+        </td>
+        <td style="vertical-align:middle; width:174px;">
+          <para styleclass="Body Text" style="text-align:left;"><text styleclass="Body Text" translate="true">Good Overall Motion</text></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading3_atocs_"><text styleclass="Heading3_atocs_" translate="true">SINE-CONSTANT-COSINE ACCELERATION MOTION-LAWS </text></para>
+    <para styleclass="Body Text HowTo"><table styleclass="PopupTable2" rowcount="10" colcount="6" style="width:500px; cell-padding:2px; border-width:1px; border-spacing:0px; border-collapse:collapse; cell-border-width:1px; border-color:#000000; border-style:solid; head-row-background-color:#99cc00; alt-row-background-color:#c0c0c0;">
+      <thead style="vertical-align:top">
+        <td colspan="6" style="width:409px; background-color:#dfdfdf;">
+          <para styleclass="Body Text"><text styleclass="Body Text" translate="true">Edit the </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MT-SegmentEditor-Segment-Parameters" styleclass="Body Text" translate="true">Segment Parameters</link><text styleclass="Body Text" translate="true"> (Fractions) of the </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MT-Motion-Cam-Law-Sine-Constant-Cosine-CV" styleclass="Body Text" style="font-weight:normal;" translate="true">Sine-Constant-Cosine Acceleration</link><text styleclass="VariableName-small" translate="true">(SCCA) Motion-Law</text><text styleclass="Body Text" translate="true"> to give many of the popular motion cam motion-laws for industrial cams. The most common variations are symmetrical, and they have a constant-velocity in the central part.</text></para>
+          <para styleclass="Body Text"><text styleclass="Body Text" translate="true">Enter the Segment-Parameters in the boxes in the </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MT-Segment-Editor" styleclass="Body Text" translate="true">Segment Editor</link><text styleclass="Body Text" translate="true">.</text></para>
+        </td>
+      </thead>
+      <tr style="vertical-align:top">
+        <td rowspan="2" style="background-color:#99cc00;">
+          <para styleclass="VariableName"><text styleclass="VariableName" translate="true">Motion-Law Name</text></para>
+        </td>
+        <td colspan="2" style="vertical-align:middle; width:229px; background-color:#99cc00;">
+          <para styleclass="VariableName"><text styleclass="VariableName" translate="true">Coefficients</text></para>
+        </td>
+        <td colspan="3" style="vertical-align:middle; width:116px; background-color:#99cc00;">
+          <para styleclass="VariableName"><text styleclass="VariableName" translate="true">SCCA Parameters (Factors)</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="vertical-align:middle; width:103px; background-color:#99cc00;">
+          <para styleclass="VariableName" style="text-align:center;"><text styleclass="VariableName" translate="true">Velocity Coefficient</text></para>
+          <para styleclass="Body Text HowTo" style="text-align:center;"><text styleclass="Body Text" style="font-family:Georgia; font-size:14pt;" translate="true">C</text><text styleclass="Body Text" style="font-family:Georgia; font-size:12pt; vertical-align:sub;" translate="true">v</text></para>
+        </td>
+        <td style="vertical-align:middle; width:110px; background-color:#99cc00;">
+          <para styleclass="VariableName" style="text-align:center;"><text styleclass="VariableName" translate="true">Acceleration Coefficients</text></para>
+          <para styleclass="Body Text HowTo" style="text-align:center;"><text styleclass="Body Text" style="font-family:Georgia; font-size:14pt;" translate="true">C</text><text styleclass="Body Text" style="font-family:Georgia; font-size:12pt; vertical-align:sub;" translate="true">a</text></para>
+        </td>
+        <td style="vertical-align:middle; width:80px; background-color:#99cc00;">
+          <para styleclass="VariableName" style="text-align:center;"><text styleclass="VariableName" translate="true">a</text></para>
+        </td>
+        <td style="vertical-align:middle; width:58px; background-color:#99cc00;">
+          <para styleclass="VariableName" style="text-align:center;"><text styleclass="VariableName" translate="true">b</text></para>
+        </td>
+        <td style="vertical-align:middle; width:58px; background-color:#99cc00;">
+          <para styleclass="VariableName" style="text-align:center;"><text styleclass="VariableName" translate="true">c</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:157px;">
+          <para styleclass="VariableName"><text styleclass="VariableName" translate="true">Modified-Sine </text><br/><text styleclass="VariableName" translate="true">CV 0%</text></para>
+        </td>
+        <td style="vertical-align:middle; width:103px;">
+          <para styleclass="Body Text" style="text-align:center;"><text styleclass="Body Text" translate="true">1.760</text></para>
+        </td>
+        <td style="vertical-align:middle; width:110px;">
+          <para styleclass="Body Text" style="text-align:center;"><text styleclass="Body Text" translate="true">5.528</text></para>
+        </td>
+        <td style="vertical-align:middle; width:80px;">
+          <para styleclass="Body Text" style="text-align:center;"><text styleclass="Body Text" translate="true">0.25</text></para>
+        </td>
+        <td style="vertical-align:middle; width:58px;">
+          <para styleclass="Body Text" style="text-align:center;"><text styleclass="Body Text" translate="true">0</text></para>
+        </td>
+        <td style="vertical-align:middle; width:58px;">
+          <para styleclass="Body Text" style="text-align:center;"><text styleclass="Body Text" translate="true">0.75</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:157px;">
+          <para styleclass="VariableName"><text styleclass="VariableName" translate="true">Modified-Sine </text><br/><text styleclass="VariableName" translate="true">CV 20%</text></para>
+        </td>
+        <td style="vertical-align:middle; width:103px;">
+          <para styleclass="Body Text" style="text-align:center;"><text styleclass="Body Text" translate="true">1.528</text></para>
+        </td>
+        <td style="vertical-align:middle; width:110px;">
+          <para styleclass="Body Text" style="text-align:center;"><text styleclass="Body Text" translate="true">5.999</text></para>
+        </td>
+        <td style="vertical-align:middle; width:80px;">
+          <para styleclass="Body Text" style="text-align:center;"><text styleclass="Body Text" translate="true"> 0.2</text></para>
+        </td>
+        <td style="vertical-align:middle; width:58px;">
+          <para styleclass="Body Text" style="text-align:center;"><text styleclass="Body Text" translate="true">0</text></para>
+        </td>
+        <td style="vertical-align:middle; width:58px;">
+          <para styleclass="Body Text" style="text-align:center;"><text styleclass="Body Text" translate="true">0.6</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:157px;">
+          <para styleclass="VariableName"><text styleclass="VariableName" translate="true">Modified-Sine </text><br/><text styleclass="VariableName" translate="true">CV 33%</text></para>
+        </td>
+        <td style="vertical-align:middle; width:103px;">
+          <para styleclass="Body Text" style="text-align:center;"><text styleclass="Body Text" translate="true">1.404</text></para>
+        </td>
+        <td style="vertical-align:middle; width:110px;">
+          <para styleclass="Body Text" style="text-align:center;"><text styleclass="Body Text" translate="true">6.616</text></para>
+        </td>
+        <td style="vertical-align:middle; width:80px;">
+          <para styleclass="Body Text" style="text-align:center;"><text styleclass="Body Text" translate="true"> 0.1667</text></para>
+        </td>
+        <td style="vertical-align:middle; width:58px;">
+          <para styleclass="Body Text" style="text-align:center;"><text styleclass="Body Text" translate="true">0</text></para>
+        </td>
+        <td style="vertical-align:middle; width:58px;">
+          <para styleclass="Body Text" style="text-align:center;"><text styleclass="Body Text" translate="true">0.5</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:157px;">
+          <para styleclass="VariableName"><text styleclass="VariableName" translate="true">Modified-Sine </text><br/><text styleclass="VariableName" translate="true">CV 50%</text></para>
+        </td>
+        <td style="vertical-align:middle; width:103px;">
+          <para styleclass="Body Text" style="text-align:center;"><text styleclass="Body Text" translate="true">1.275</text></para>
+        </td>
+        <td style="vertical-align:middle; width:110px;">
+          <para styleclass="Body Text" style="text-align:center;"><text styleclass="Body Text" translate="true">8.0127</text></para>
+        </td>
+        <td style="vertical-align:middle; width:80px;">
+          <para styleclass="Body Text" style="text-align:center;"><text styleclass="Body Text" translate="true">0.125</text></para>
+        </td>
+        <td style="vertical-align:middle; width:58px;">
+          <para styleclass="Body Text" style="text-align:center;"><text styleclass="Body Text" translate="true">0</text></para>
+        </td>
+        <td style="vertical-align:middle; width:58px;">
+          <para styleclass="Body Text" style="text-align:center;"><text styleclass="Body Text" translate="true">0.375</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:157px;">
+          <para styleclass="VariableName"><text styleclass="VariableName" translate="true">Modified-Sine </text><br/><text styleclass="VariableName" translate="true">CV 66% </text></para>
+        </td>
+        <td style="vertical-align:middle; width:103px;">
+          <para styleclass="Body Text" style="text-align:center;"><text styleclass="Body Text" translate="true">1.168</text></para>
+        </td>
+        <td style="vertical-align:middle; width:110px;">
+          <para styleclass="Body Text" style="text-align:center;"><text styleclass="Body Text" translate="true">11.009</text></para>
+        </td>
+        <td style="vertical-align:middle; width:80px;">
+          <para styleclass="Body Text" style="text-align:center;"><text styleclass="Body Text" translate="true">0.0833</text></para>
+        </td>
+        <td style="vertical-align:middle; width:58px;">
+          <para styleclass="Normal" style="text-align:center;"><text styleclass="Body Text" translate="true">0</text></para>
+        </td>
+        <td style="vertical-align:middle; width:58px;">
+          <para styleclass="Normal" style="text-align:center;"><text styleclass="Body Text" translate="true">0.25</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:157px;">
+          <para styleclass="VariableName"><text styleclass="VariableName" translate="true">Cycloidal </text><br/><text styleclass="VariableName" translate="true">CV 50%</text></para>
+        </td>
+        <td style="vertical-align:middle; width:103px;">
+          <para styleclass="Body Text" style="text-align:center;"><text styleclass="Body Text" translate="true">1.333</text></para>
+        </td>
+        <td style="vertical-align:middle; width:110px;">
+          <para styleclass="Body Text" style="text-align:center;"><text styleclass="Body Text" translate="true">8.378</text></para>
+        </td>
+        <td style="vertical-align:middle; width:80px;">
+          <para styleclass="Body Text" style="text-align:center;"><text styleclass="Body Text" translate="true">0.25</text></para>
+        </td>
+        <td style="vertical-align:middle; width:58px;">
+          <para styleclass="Body Text" style="text-align:center;"><text styleclass="Body Text" translate="true">0</text></para>
+        </td>
+        <td style="vertical-align:middle; width:58px;">
+          <para styleclass="Body Text" style="text-align:center;"><text styleclass="Body Text" translate="true">0.25</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:157px;">
+          <para styleclass="VariableName"><text styleclass="VariableName" translate="true">Trapezoidal Velocity </text><br/><text styleclass="VariableName" translate="true">CV 33%</text></para>
+        </td>
+        <td style="vertical-align:middle; width:103px;">
+          <para styleclass="Body Text" style="text-align:center;"><text styleclass="Body Text" translate="true">1.5</text></para>
+        </td>
+        <td style="vertical-align:middle; width:110px;">
+          <para styleclass="Body Text" style="text-align:center;"><text styleclass="Body Text" translate="true">4.5</text></para>
+        </td>
+        <td style="vertical-align:middle; width:80px;">
+          <para styleclass="Body Text" style="text-align:center;"><text styleclass="Body Text" translate="true">0</text></para>
+        </td>
+        <td style="vertical-align:middle; width:58px;">
+          <para styleclass="Body Text" style="text-align:center;"><text styleclass="Body Text" translate="true">0.6667</text></para>
+        </td>
+        <td style="vertical-align:middle; width:58px;">
+          <para styleclass="Body Text" style="text-align:center;"><text styleclass="Body Text" translate="true">0</text></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading3_atocs_"><text styleclass="Heading3_atocs_" translate="true">3 HARMONIC SERIES MOTION-LAWS</text></para>
+    <para styleclass="Body Text HowTo"><table styleclass="PopupTable2" rowcount="6" colcount="6" style="width:500px; cell-padding:2px; border-width:1px; border-spacing:0px; border-collapse:collapse; cell-border-width:1px; border-color:#000000; border-style:solid; head-row-background-color:#99cc00; alt-row-background-color:#c0c0c0;">
+      <thead style="vertical-align:top">
+        <td colspan="6" style="width:409px; background-color:#dfdfdf;">
+          <para styleclass="Body Text"><text styleclass="Body Text" translate="true">Edit the </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MT-SegmentEditor-Segment-Parameters" styleclass="Body Text" translate="true">Segment Parameters</link><text styleclass="Body Text" translate="true"> of the </text><text styleclass="VariableName" translate="true">Triple Harmonic Motion-Law</text><text styleclass="Body Text" translate="true"> to give alternatives to some of the popular motion-laws.</text></para>
+          <para styleclass="Body Text"><text styleclass="Body Text" translate="true">Enter the Segment-Parameters for each Harmonic in the </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MT-Segment-Editor" styleclass="Body Text" translate="true">Segment Editor</link><text styleclass="Body Text" translate="true">.</text></para>
+        </td>
+      </thead>
+      <tr style="vertical-align:top">
+        <td rowspan="2" style="width:142px; background-color:#99cc00;">
+          <para styleclass="VariableName"><text styleclass="VariableName" translate="true">Motion-Law Name</text></para>
+        </td>
+        <td colspan="2" style="vertical-align:middle; width:172px; background-color:#99cc00;">
+          <para styleclass="VariableName" style="text-align:center;"><text styleclass="VariableName" translate="true">Coefficients</text></para>
+        </td>
+        <td colspan="3" style="vertical-align:middle; width:116px; background-color:#99cc00;">
+          <para styleclass="VariableName" style="text-align:center;"><text styleclass="VariableName" translate="true">SCCA Parameters (Factors)</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="vertical-align:middle; width:78px; background-color:#99cc00;">
+          <para styleclass="VariableName" style="text-align:center;"><text styleclass="VariableName" translate="true">Velocity</text><text styleclass="Body Text" style="font-weight:bold;" translate="true"> </text></para>
+          <para styleclass="Body Text HowTo" style="text-align:center; margin-left:0px;"><text styleclass="Body Text" style="font-family:Georgia; font-size:14pt;" translate="true">C</text><text styleclass="Body Text" style="font-family:Georgia; font-size:12pt; vertical-align:sub;" translate="true">v</text></para>
+        </td>
+        <td style="vertical-align:middle; width:88px; background-color:#99cc00;">
+          <para styleclass="VariableName"><text styleclass="VariableName" translate="true">Acceleration</text></para>
+          <para styleclass="Body Text HowTo" style="text-align:center; margin-left:0px;"><text styleclass="Body Text" style="font-family:Georgia; font-size:14pt;" translate="true">C</text><text styleclass="Body Text" style="font-family:Georgia; font-size:12pt; vertical-align:sub;" translate="true">a</text></para>
+        </td>
+        <td style="vertical-align:middle; width:50px; background-color:#99cc00;">
+          <para styleclass="VariableName" style="text-align:center;"><text styleclass="VariableName" translate="true">a</text></para>
+        </td>
+        <td style="vertical-align:middle; width:50px; background-color:#99cc00;">
+          <para styleclass="VariableName" style="text-align:center;"><text styleclass="VariableName" translate="true">b</text></para>
+        </td>
+        <td style="vertical-align:middle; width:55px; background-color:#99cc00;">
+          <para styleclass="VariableName" style="text-align:center;"><text styleclass="VariableName" translate="true">c</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:142px;">
+          <para styleclass="VariableName"><text styleclass="VariableName" translate="true">3 Harmonic - Modified Trapezoidal</text></para>
+        </td>
+        <td style="vertical-align:middle; width:78px;">
+          <para styleclass="Body Text" style="text-align:center;"><text styleclass="Body Text" translate="true">2.0</text></para>
+        </td>
+        <td style="vertical-align:middle; width:88px;">
+          <para styleclass="Body Text" style="text-align:center;"><text styleclass="Body Text" translate="true">5.16</text></para>
+        </td>
+        <td style="vertical-align:middle; width:50px;">
+          <para styleclass="Body Text" style="text-align:center;"><text styleclass="Body Text" translate="true">5.96</text></para>
+        </td>
+        <td style="vertical-align:middle; width:50px;">
+          <para styleclass="Body Text" style="text-align:center;"><text styleclass="Body Text" translate="true">0</text></para>
+        </td>
+        <td style="vertical-align:middle; width:55px;">
+          <para styleclass="Body Text" style="text-align:center;"><text styleclass="Body Text" translate="true">0.9696</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:142px;">
+          <para styleclass="VariableName"><text styleclass="VariableName" translate="true">3-Harmonic - Modified Sine </text></para>
+        </td>
+        <td style="vertical-align:middle; width:78px;">
+          <para styleclass="Body Text" style="text-align:center;"><text styleclass="Body Text" translate="true">1.72</text></para>
+        </td>
+        <td style="vertical-align:middle; width:88px;">
+          <para styleclass="Body Text" style="text-align:center;"><text styleclass="Body Text" translate="true">6.07</text></para>
+        </td>
+        <td style="vertical-align:middle; width:50px;">
+          <para styleclass="Body Text" style="text-align:center;"><text styleclass="Body Text" translate="true"> 5.1968</text></para>
+        </td>
+        <td style="vertical-align:middle; width:50px;">
+          <para styleclass="Body Text" style="text-align:center;"><text styleclass="Body Text" translate="true">1.7690</text></para>
+        </td>
+        <td style="vertical-align:middle; width:55px;">
+          <para styleclass="Body Text" style="text-align:center;"><text styleclass="Body Text" translate="true">0.6057</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:142px;">
+          <para styleclass="VariableName"><text styleclass="VariableName" translate="true">3-Harmonic - Zero-Jerk at Crossover</text></para>
+        </td>
+        <td style="vertical-align:middle; width:78px;">
+          <para styleclass="Body Text" style="text-align:center;"><text styleclass="Body Text" translate="true">2.0</text></para>
+        </td>
+        <td style="vertical-align:middle; width:88px;">
+          <para styleclass="Body Text" style="text-align:center;"><text styleclass="Body Text" translate="true">9.42</text></para>
+        </td>
+        <td style="vertical-align:middle; width:50px;">
+          <para styleclass="Body Text" style="text-align:center;"><text styleclass="Body Text" style="font-family:Georgia; font-size:12pt;" translate="true"> 9*Π/4</text></para>
+        </td>
+        <td style="vertical-align:middle; width:50px;">
+          <para styleclass="Body Text" style="text-align:center;"><text styleclass="Body Text" translate="true">0</text></para>
+        </td>
+        <td style="vertical-align:middle; width:55px;">
+          <para styleclass="Body Text" style="text-align:center;"><text styleclass="Body Text" style="font-family:Georgia; font-size:12pt;" translate="true">-3*Π/4</text></para>
+        </td>
+      </tr>
+    </table></para>
+  </body>
+</topic>

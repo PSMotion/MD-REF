@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" modified="2022-04-14T10:52:06.712+01:00" lasteditedby="Adam" version="2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title>File | Save Timing Diagram</title>
+  <keywords>
+    <keyword>CSV - Motion Timing Diagram.</keyword>
+    <keyword>File menu<keyword>Save Timing Diagram.</keyword></keyword>
+    <keyword>Save motions for Timing Diagram.</keyword>
+    <keyword>Timing Diagram.xlsx</keyword>
+  </keywords>
+  <body>
+    <header>
+      <para styleclass="Heading1">File | Save Timing Diagram</para>
+    </header>
+    <para styleclass="Heading3_atocs_">File menu &gt; Save Timing Diagrams</para>
+    <para styleclass="Body Text"><table styleclass="Default" rowcount="1" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Text">Ein <text styleclass="Interface">Zeitdiagramm</text> zeigt das relative Timing von mehr als einer Bewegung.</para>
+          <para styleclass="Body Text">Ein <text styleclass="Interface">Timing-Diagramm</text>:</para>
+          <list id="0" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullets" style="font-family:Symbol; font-size:8pt; color:#000000;">
+            <li styleclass="Bullets">Zeigt jede Bewegung als Diagramm, mit Linien zwischen den XY-Positionen der einzelnen Blend-Points.</li>
+            <li styleclass="HowTo Bulleted">Jedes Diagramm steht über dem anderen.</li>
+          </list>
+          <para styleclass="Body Text"><image src="MD-TimingDiagram.png" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"><title>Typisches Timing-Diagramm mit 4 BewegungenTypisches</title><caption><![CDATA[Timing-Diagramm mit 2 Bewegungen]]></caption></image></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading4 Toggle_atocs_">Verwendung der Timing-Diagramme</para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="1" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="VariableName">MechDesigner</para>
+          <para styleclass="Body Text HowTo"><table styleclass="PopupTable2" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td style="border-top:none; border-right:none; border-bottom:none;">
+                <list id="1" type="ol" listtype="decimal" formatstring="&#83;&#84;&#69;&#80;&#32;&#37;&#48;&#58;&#115;&#58;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo STEP" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:8pt; color:#000000;">
+                  <li styleclass="HowTo STEP">Menü Datei &gt; Zeitdiagramm speichern</li>
+                </list>
+                <para styleclass="Body Text">Die Anträge in <text styleclass="VariableName-IT">MotionDesigner</text> werden als Microsoft Excel® Comma Separated Values<text style="font-style:normal;">(CSV</text>)-Datei gespeichert.</para>
+                <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+                <para styleclass="Body Text"><text style="font-weight:normal; font-style:normal;">Die &#160;CSV-Datei speichert:</text></para>
+                <list id="2" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:8pt; color:#000000;">
+                  <li styleclass="HowTo Bulleted"><text styleclass="Element">Bewegungsname</text><text styleclass="Body Text">&#32;</text></li>
+                  <li styleclass="HowTo Bulleted"><text styleclass="Element">Blend-Point</text><text styleclass="Body Text">: </text><text style="font-weight:normal; font-style:normal;">X-Achse </text><text styleclass="Body Text">und Y-Achse Werte</text><text style="font-weight:normal; font-style:normal;">&#32;</text></li>
+                </list>
+                <para styleclass="Body Text"><text style="font-weight:normal; font-style:normal;">Die CSV-Datei speichert nicht:</text></para>
+                <list id="3" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:8pt; color:#000000;">
+                  <li styleclass="HowTo Bulleted"><text style="font-weight:normal; font-style:normal;">Bewegungsgesetze (Nockengesetze)</text></li>
+                  <li styleclass="HowTo Bulleted"><text style="font-weight:normal; font-style:normal;">Ableitungen der Bewegung</text></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="VariableName-IT"><text style="font-style:normal;">Microsoft Excel</text></para>
+          <para styleclass="Body Text HowTo"><table styleclass="PopupTable2" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td style="border-top:none; border-right:none; border-bottom:none;">
+                <list id="4" type="ol" listtype="decimal" formatstring="&#83;&#84;&#69;&#80;&#32;&#37;&#48;&#58;&#115;&#58;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo STEP" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:8pt; color:#000000;">
+                  <li styleclass="HowTo STEP">Öffnen Sie das Microsoft Excel-Arbeitsblatt mit Makrofunktion: Timing-Diagramme.XLSM</li>
+                </list>
+                <para styleclass="HowTo STEP">Es befindet sich unter:</para>
+                <list id="5" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="VariableName-indent" style="font-family:Symbol; font-size:8pt; color:#000000;">
+                  <li styleclass="VariableName-indent">&lt;LocalAppData&gt; \ Timing Diagram.xlsm</li>
+                </list>
+                <para styleclass="HowTo Bulleted"><text styleclass="VariableName">oder .</text></para>
+                <list id="5" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="VariableName-indent" style="font-family:Symbol; font-size:8pt; color:#000000;">
+                  <li styleclass="VariableName-indent">&lt;CommonAppData&gt; \ Timing Diagram.xlsm</li>
+                </list>
+                <list id="6" type="ol" listtype="decimal" formatstring="&#83;&#84;&#69;&#80;&#32;&#37;&#48;&#58;&#115;&#58;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="2" styleclass="HowTo STEP" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:8pt; color:#000000;">
+                  <li styleclass="HowTo STEP">Stellen Sie sicher, dass Sie Makros und Inhalte aktivieren.</li>
+                  <li styleclass="HowTo STEP"><text styleclass="HowTo Numbered" style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">Klick </text><text styleclass="VariableName">1: CSV-Datei des Zeitdiagramms öffnen</text></li>
+                </list>
+                <para styleclass="Body Text HowTo">Suchen Sie die <text styleclass="Body Text">CSV-Datei</text>, die Sie auf der Festplatte gespeichert haben, und öffnen Sie sie mit <text styleclass="T_Menu">MechDesigner </text>: Menü Datei &gt; Zeitdiagramm speichern</para>
+                <para styleclass="Body Text">HINWEIS: Schauen Sie sich die Y-Achse der beiden Bewegungen im Timing-Diagramm in der obigen Abbildung genau an. <text styleclass="Body Text HowTo">Das Datenformat verschiebt das obere Bewegungsdiagramm leicht nach rechts. Dies müssen Sie korrigieren.</text></para>
+                <para styleclass="Body Text">Formatieren Sie die Daten der Y-Achse von &apos;Motion0&apos; so, dass ihr Datenformat die gleiche Anzahl von Dezimalstellen hat wie &apos;Motion1, 2, ...&apos;. </para>
+                <list id="7" type="ol" listtype="decimal" formatstring="&#83;&#84;&#69;&#80;&#32;&#37;&#48;&#58;&#115;&#58;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="4" styleclass="HowTo STEP" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:8pt; color:#000000;">
+                  <li styleclass="HowTo STEP">Klick 2: Zeitdiagramm erstellen </li>
+                  <li styleclass="HowTo STEP">Sehen Sie sich das Arbeitsblatt Zeitdiagramman, um das Zeitdiagramm für jede Bewegung zu sehen.</li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+        </td>
+      </tr>
+    </table></para>
+  </body>
+</topic>

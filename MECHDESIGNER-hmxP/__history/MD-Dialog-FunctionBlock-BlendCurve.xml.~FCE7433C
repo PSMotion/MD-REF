@@ -1,0 +1,280 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" status="Under Construction" modified="2023-05-24T21:32:13.200+01:00" lasteditedby="Adam" version="2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title>Dialog: Blend-Curve</title>
+  <meta name="DESCRIPTION" translate="true" value="Blend-Curves can blend with Lines and Arcs with Continuous Curvature and Curvature-Rate - to guide robots with smooth transitions, and less vibrations." />
+  <keywords>
+    <keyword>Blend-Curve dialog<keyword>Angle</keyword><keyword>Curvature</keyword><keyword>Curvature Rate</keyword><keyword>Velocity-Scaling</keyword></keyword>
+    <keyword>Motion Continuity along Curve</keyword>
+    <keyword>Sketch Curvature Continuity</keyword>
+    <keyword>Sketch-Element<keyword>Blend-Curve</keyword></keyword>
+    <keyword>Smooth Curve</keyword>
+    <keyword>Spline - alternative</keyword>
+    <keyword>Dialog<keyword>Blend-Curve</keyword></keyword>
+  </keywords>
+  <body>
+    <header>
+      <para styleclass="Heading1">Dialog: Blend-Curve</para>
+    </header>
+    <para styleclass="Heading2" style="page-break-before:always;">Blend-Curve</para>
+    <para styleclass="SeeAlso">See also <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Geometry-Blend-Curve">Add Blend-Curve</link></para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="Heading4 Toggle_atocs_">About the Blend-Curve</para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="1" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Text">A <text styleclass="Element-Header">Blend-Curve</text> is a sketch-element that has a <text styleclass="Interface2">start-Point</text> and an <text styleclass="Interface2">end-Point</text>.</para>
+          <para styleclass="Body Text">Use the <text styleclass="Element-Header">Blend-Curve dialog</text> to edit geometric-properties <text styleclass="VariableName" style="color:#ff0000;">AT</text> its <text styleclass="Interface2">start-Point</text> and <text styleclass="VariableName" style="color:#ff0000;">AT</text> its <text styleclass="Interface2">end-Point</text>. The properties you can edit are its:</para>
+          <list id="0" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:8pt; color:#000000;">
+            <li styleclass="HowTo Bulleted"><text styleclass="Parameter-Header">Angle</text><text styleclass="Body Text">&#32;</text></li>
+            <li styleclass="HowTo Bulleted"><text styleclass="Parameter-Header">Curvature</text>&#32;</li>
+            <li styleclass="HowTo Bulleted"><text styleclass="Parameter-Header">Curvature Rate</text> &#160;</li>
+          </list>
+          <para styleclass="Body Text">Typically, you <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-MergePoints-Defintions">merge</link> the <text styleclass="Interface">start-Point</text> and/or <text styleclass="Interface">end-Point</text> of the <text styleclass="Element">Blend-Curve</text> with other sketch-elements. </para>
+          <para styleclass="Body Text">The default geometric-properties ensure <link displaytype="text" defaultstyle="true" type="topiclink" href="" anchor="BlendCurveSmoothness">geometric continuity</link> of the <text styleclass="Element">Blend-Curve</text> with adjacent sketch-elements.</para>
+          <para styleclass="Element"><text styleclass="Interface2">Case 0 :</text><text styleclass="Body Text"> You do NOT merge the </text><text styleclass="Element-Header">Blend-Curve</text><text styleclass="Body Text"> with another sketch-element. You can edit these geometric-properties at its </text><text styleclass="Interface">start-Point</text><text styleclass="Body Text"> and </text><text styleclass="Interface">end-Point</text><text styleclass="Body Text">:</text></para>
+          <list id="0" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:8pt; color:#000000;">
+            <li styleclass="HowTo Bulleted"><text styleclass="Parameter-Header">Angle</text><text styleclass="Body Text"> (default = 0)</text></li>
+            <li styleclass="HowTo Bulleted"><text styleclass="Parameter-Header">Curvature</text>&#32;<text styleclass="Body Text"> (default = 0)</text></li>
+            <li styleclass="HowTo Bulleted"><text styleclass="Parameter-Header">Curvature Rate</text>&#32;<text styleclass="Body Text"> (default = 0)</text></li>
+          </list>
+          <para styleclass="Body Table"><text styleclass="Interface2">Case 1 :</text> You do merge the <text styleclass="Interface">start-Point</text> and/or <text styleclass="Interface">end-Point</text> of the <text styleclass="Element-Header">Blend-Curve</text> with a <text styleclass="Element-Header">Line.</text></para>
+          <list id="0" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:8pt; color:#000000;">
+            <li styleclass="HowTo Bulleted"><text styleclass="Parameter-Header">Angle</text><text styleclass="Body Text"> is equal to the angle of the </text><text styleclass="Element">Line</text></li>
+            <li styleclass="HowTo Bulleted"><text styleclass="Parameter-Header">Curvature</text> is equal to zero</li>
+            <li styleclass="HowTo Bulleted"><text styleclass="Parameter-Header">Curvature Rate</text> &#160;is equal to zero</li>
+          </list>
+          <para styleclass="Body Table"><text styleclass="Interface2">Case 2 : </text><text styleclass="Body Text">You do merge the</text>&#32;<text styleclass="Interface">start-Point</text> and/or <text styleclass="Interface">end-Point</text> of the <text styleclass="Element-Header">Blend-Curve</text> with an <text styleclass="Element-Header">Arc.</text></para>
+          <list id="0" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:8pt; color:#000000;">
+            <li styleclass="HowTo Bulleted"><text styleclass="Parameter-Header">Angle</text><text styleclass="Body Text"> is equal to the tangent of the </text><text styleclass="Element">Arc</text><text styleclass="Body Text">&#32;</text></li>
+            <li styleclass="HowTo Bulleted"><text styleclass="Parameter-Header">Curvature</text> is equal to 1 / Radius of the Arc (m)</li>
+            <li styleclass="HowTo Bulleted"><text styleclass="Parameter-Header">Curvature Rate</text> - is equal to zero</li>
+          </list>
+          <para styleclass="Body Table"><text styleclass="Interface2">Case 3 : </text><text styleclass="Body Text">You do merge </text>the <text styleclass="Interface">start-Point</text> and/or <text styleclass="Interface">end-Point</text> of the <text styleclass="Element-Header">Blend-Curve</text> with a <text styleclass="Element-Header">Blend-Curve.</text></para>
+          <para styleclass="Body Text HowTo">Edit the <text styleclass="Interface2">end-Point</text> of a <text styleclass="Element">Blend-Curve</text> that you merge with the <text styleclass="Interface">start-Point</text> of an adjacent, or following, <text styleclass="Element">Blend-Curve</text>.</para>
+          <para styleclass="Body Text HowTo"> In the <text styleclass="Element">Blend-Curve dialog</text><text styleclass="Body Text">, </text><text styleclass="HowTo Bulleted">edit the:</text></para>
+          <list id="0" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:8pt; color:#000000;">
+            <li styleclass="HowTo Bulleted"><text styleclass="Parameter-Header">Angle</text><text styleclass="Body Text"> : Disable the </text><text styleclass="Interface2">end-Point</text><text styleclass="Body Text">&#32;</text><text styleclass="Parameter">Angle</text><text styleclass="Body Text"> check-box: edit the </text><text styleclass="Parameter">Angle</text><text styleclass="Body Text"> - the angle of the adjacent </text><text styleclass="Element">Blend-Curve</text><text styleclass="Body Text"> with equal the angle you enter.</text></li>
+            <li styleclass="HowTo Bulleted"><text styleclass="Parameter-Header">Curvature</text> : <text styleclass="Body Text">Disable the </text><text styleclass="Interface2">end-Point</text><text styleclass="Body Text">&#32;</text><text styleclass="Parameter">Curvature</text><text styleclass="Body Text"> check-box: edit the </text><text styleclass="Parameter">Curvature</text><text styleclass="Body Text"> - the curvature of the adjacent </text><text styleclass="Element">Blend-Curve</text><text styleclass="Body Text"> with equal the curvature you enter.</text></li>
+            <li styleclass="HowTo Bulleted"><text styleclass="Parameter-Header">Curvature-Rate</text> : <text styleclass="Body Text">Disable the </text><text styleclass="Interface">end-Point</text><text styleclass="Body Text">&#32;</text><text styleclass="Parameter">Curvature-Rate</text><text styleclass="Body Text"> check-box: edit the </text><text styleclass="Parameter">Curvature-Rate</text><text styleclass="Body Text"> - the curvature-rate of the adjacent </text><text styleclass="Element">Blend-Curve</text><text styleclass="Body Text"> with equal the curvature-rate you enter.</text></li>
+          </list>
+          <para styleclass="Body Table">You can edit the geometric-properties</para>
+          <list id="1" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:8pt; color:#000000;">
+            <li styleclass="HowTo Bulleted"><text styleclass="VariableName">Exactly</text> : with the <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-FunctionBlock-BlendCurve" anchor="BlendCurvedialog" styleclass="SeeAlso">Blend-Curve dialog</link><text styleclass="Body Text">&#32;</text></li>
+            <li styleclass="HowTo Bulleted"><text styleclass="VariableName">Approximately</text><text styleclass="Body Text HowTo"> : with the </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-FunctionBlock-BlendCurve" anchor="Blend-CurveDragHandles" styleclass="SeeAlso">Blend-Curve drag-handles</link><text styleclass="Element" style="color:#ff0000;">.</text></li>
+          </list>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading3_atocs_"><anchor id="BlendCurvedialog"><keywords><keyword>Blend-Curve<keyword>Edit Exactly with Dialog-box</keyword></keyword></keywords></anchor>Edit Exactly</para>
+    <para styleclass="Heading4 Toggle_atocs_2" style="text-indent:-36px; margin-left:60px;"><image src="tog_plus.gif" scale="100.00%" figurelistinclude="0"></image><tab /><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" src-collapsed="tog_plus.gif" src-expanded="tog_minus.gif"><caption><![CDATA[Open the Blend-Point dialog]]></caption></toggle></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="1" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:75px;">
+          <para styleclass="Normal" style="text-align:right;"><image src="MD-GA-Blend-Curve-Edit.png" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="Body Table">In the <text styleclass="Interface">Part-Editor</text> or the <text styleclass="Interface">Mechanism-Editor</text>:</para>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td style="border-top:none; border-right:none; border-bottom:none;">
+                <list id="2" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="B Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:8pt; color:#000000;">
+                  <li styleclass="B Bullets"><text styleclass="HowTo Numbered" style="font-style:normal;">Double-click</text><text styleclass="HowTo Numbered"> the </text><text styleclass="Element">Blend-Curve</text><text styleclass="HowTo Numbered"> in </text><text styleclass="Body Text">the graphic-area</text><text styleclass="VariableName">&#32;</text></li>
+                </list>
+                <para styleclass="Interface2">OR</para>
+                <list id="3" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="B Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:8pt; color:#000000;">
+                  <li styleclass="B Bullets"><text styleclass="SeeAlso">See </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-How-to-Open-a-Dialog-Box" styleclass="SeeAlso">How to Open a dialog</link><text styleclass="VariableName"> &#160;</text></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Body Table">The <text styleclass="Element-Header">Blend-Curve dialog</text> is now open.</para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading4 Toggle_atocs_2" style="text-indent:-36px; margin-left:60px;"><image src="tog_plus.gif" scale="100.00%" figurelistinclude="0"></image><tab /><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" src-collapsed="tog_plus.gif" src-expanded="tog_minus.gif"><caption><![CDATA[Blend-Curve dialog]]></caption></toggle></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="2" colcount="3">
+      <tr style="vertical-align:top">
+        <td colspan="2" style="width:256px;">
+          <para styleclass="Image Caption"><image src="MD-Dialog-Blend-Curve-Collapsed.png" scale="-99.90%" figurelistinclude="0"><caption><![CDATA[Blend-Curve dialog]]></caption></image></para>
+        </td>
+        <td>
+          <para styleclass="Body Table"><text style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">There are two </text><text styleclass="Body Text">separators</text><text style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">:</text></para>
+          <para styleclass="Body Table">&#32;<text styleclass="Separator-Header"> Start-Point...</text></para>
+          <para styleclass="Body Table">&#32;<text styleclass="Separator-Header"> End-Point...</text></para>
+          <para styleclass="Body Table">The parameters are the same for the two separators.</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:240px;">
+          <para styleclass="Image Caption"><image src="MD-Dialog-Blend-Curve-StartPointEnd-Point.png" scale="-99.90%" figurelistinclude="0"></image></para>
+        </td>
+        <td colspan="2">
+          <para styleclass="Separator"><text styleclass="Separator-Header"> Start Point ... </text><text styleclass="Body Text">&#32;</text><text styleclass="VariableName">/</text><text styleclass="Body Text">&#32;</text><text styleclass="Separator-Header">End Point ...</text></para>
+          <para styleclass="Body Table"><text styleclass="Parameter-Header">Angle (Units: º):</text></para>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Parameter">Blend / Free <text styleclass="Body Text">check-box:</text></para>
+                <list id="4" type="ul" listtype="bullet" formatstring="&#254;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Body Table" style="font-family:Wingdings; font-size:8pt; color:#000000;">
+                  <li styleclass="Body Table"> (DEFAULT) The <text styleclass="Parameter-Header">angle</text> of the <text styleclass="Element">Blend-Curve</text> (<text styleclass="VariableName" style="color:#ff0000;">at</text> its <text styleclass="Interface">start-Point</text> / <text styleclass="Interface">end-Point</text>) is equal to the <text styleclass="Parameter">angle</text> of the adjacent sketch-element </li>
+                </list>
+                <list id="5" type="ul" listtype="bullet" formatstring="&#113;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Body Table" style="font-family:Wingdings; font-size:8pt; color:#000000;">
+                  <li styleclass="Body Table"> Edit the <text styleclass="Parameter-Header">angle</text> of the <text styleclass="Element">Blend-Curve</text> (<text styleclass="VariableName" style="color:#ff0000;">at</text> its <text styleclass="Interface">start-Point</text> / <text styleclass="Interface">end-Point</text>).</li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Body Table"><text styleclass="Parameter-Header">Curvature k (Units:1 ∕ meter):</text></para>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Parameter">Blend<text styleclass="Body Text"> / </text>Free<text styleclass="Body Text"> check-box:</text></para>
+                <list id="6" type="ul" listtype="bullet" formatstring="&#254;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Body Table" style="font-family:Wingdings; font-size:8pt; color:#000000;">
+                  <li styleclass="Body Table">(DEFAULT) The <text styleclass="Parameter-Header">curvature</text> of the <text styleclass="Element">Blend-Curve</text> (<text styleclass="VariableName" style="color:#ff0000;">at</text> its <text styleclass="Interface">start-Point</text> / <text styleclass="Interface">end-Point</text>) is equal to the <text styleclass="Parameter">curvature</text> of the adjacent sketch-element.</li>
+                </list>
+                <list id="7" type="ul" listtype="bullet" formatstring="&#113;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Body Table" style="font-family:Wingdings; font-size:8pt; color:#000000;">
+                  <li styleclass="Body Table">Edit the <text styleclass="Parameter-Header">curvature</text> for the <text styleclass="Element">Blend-Curve</text> (<text styleclass="VariableName" style="color:#ff0000;">at</text> its <text styleclass="Interface">start-Point</text> / <text styleclass="Interface">end-Point</text>).</li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Body Table"><text styleclass="Parameter-Header">Curvature-Rate dk ∕ ds (Units: 1 ∕ m^2):</text></para>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Parameter">Blend / Free<text styleclass="Body Text"> check-box:</text></para>
+                <list id="8" type="ul" listtype="bullet" formatstring="&#254;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Body Table" style="font-family:Wingdings; font-size:8pt; color:#000000;">
+                  <li styleclass="Body Table"> The <text styleclass="Parameter-Header">curvature-rate</text> of the <text styleclass="Element">Blend-Curve</text> (<text styleclass="VariableName" style="color:#ff0000;">at</text> the<text styleclass="Interface"> start-Point </text>/ <text styleclass="Interface">end-Point</text>) is equal to the <text styleclass="Parameter">curvature-rate</text> of the adjacent sketch-element </li>
+                </list>
+                <list id="9" type="ul" listtype="bullet" formatstring="&#113;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Body Table" style="font-family:Wingdings; font-size:8pt; color:#000000;">
+                  <li styleclass="Body Table"> (DEFAULT) Edit a <text styleclass="Parameter-Header">curvature-rate</text> for the <text styleclass="Element">Blend-Curve</text> (<text styleclass="VariableName" style="color:#ff0000;">at</text> its <text styleclass="Interface">start-Point</text> / <text styleclass="Interface">end-Point</text>).</li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Body Table"><text styleclass="Parameter-Header">Velocity Scaling</text><text styleclass="Parameter"> (</text><text styleclass="Parameter" style="color:#ff0000;">no</text><text styleclass="Parameter"> units)</text></para>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Body Table">Increase <text styleclass="Parameter">Velocity-Scaling</text> to <text styleclass="VariableName">inflate</text> the balloon!</para>
+                <para styleclass="Body Table">Decrease <text styleclass="Parameter">Velocity-Scaling</text> to <text styleclass="VariableName">deflate</text> the balloon!</para>
+                <para styleclass="Bullets"><text styleclass="Parameter">Velocity Scaling</text><text styleclass="Body Text" style="font-style:normal;"> does not have units. </text></para>
+                <para styleclass="Bullets"><text style="font-style:normal;">Default = 1 ; Maximum = 10 ; Minimum 0.01</text></para>
+              </td>
+            </tr>
+          </table></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading3_atocs_"><anchor id="Blend-CurveDragHandles"><keywords><keyword>Blend-Curve<keyword>Edit Approximately with Drag-Handles</keyword></keyword></keywords></anchor>Edit Approximately</para>
+    <para styleclass="Heading4 Toggle_atocs_2" style="text-indent:-36px; margin-left:60px;"><image src="tog_plus.gif" scale="100.00%" figurelistinclude="0"></image><tab /><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" src-collapsed="tog_plus.gif" src-expanded="tog_minus.gif"><caption><![CDATA[Enable / disable Blend-Curve drag-handles]]></caption></toggle></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="1" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:240px;">
+          <para styleclass="Normal"><image src="MD-GA-BlendCurve-Handles-A.png" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"><caption><![CDATA[Drag handles in the Graphic-Area]]></caption></image></para>
+        </td>
+        <td>
+          <para styleclass="Body Table"><text styleclass="VariableName">To show the Drag-Handles</text></para>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <list id="10" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:8pt; color:#000000;">
+                  <li styleclass="Bullets"><text style="font-style:normal;">Click</text> the <text styleclass="Element">Blend-Curve</text> one time<text styleclass="VariableName">&#32;</text></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Body Table">Now, you can see the <text styleclass="VariableName">Drag-Handles</text> at the <text styleclass="Interface">start-Point</text> and the <text styleclass="Interface">end-Point </text></para>
+          <para styleclass="Body Table"><text styleclass="VariableName">There are two(2) Drag-Handle types:</text></para>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Body Text"><image src="Red-14-1.gif" scale="100.00%" figurelistinclude="0"></image>&#32;<text styleclass="VariableName">Arrowhead Drag-Handle</text></para>
+                <para styleclass="Body Text"><image src="Red-14-2.gif" scale="100.00%" figurelistinclude="0"></image> &#160;<text styleclass="VariableName">Circle Drag-Handle</text> (not easy to see)</para>
+              </td>
+            </tr>
+          </table></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading4 Toggle_atocs_2" style="text-indent:-36px; margin-left:60px;"><image src="tog_plus.gif" scale="100.00%" figurelistinclude="0"></image><tab /><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" src-collapsed="tog_plus.gif" src-expanded="tog_minus.gif"><caption><![CDATA[Blend-Curve drag-handles]]></caption></toggle></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="2" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:240px;">
+          <para styleclass="Normal"><image src="MD-GA-BlendCurve-Handles-BDrag.png" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"><caption><![CDATA[Arrowhead Drag-Handle]]></caption></image></para>
+        </td>
+        <td>
+          <para styleclass="Body Table"><text styleclass="VariableName">Arrowhead Drag-Handles</text> - this controls the <text styleclass="Parameter-Header">Angle</text> and the <text styleclass="Parameter-Header">Velocity-Scaling Factor</text></para>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <list id="11" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:8pt; color:#000000;">
+                  <li styleclass="Bullets"><text style="font-style:normal;">Double-click an</text>&#32;<text styleclass="VariableName">Arrowhead Drag-Handle</text><text styleclass="Body Text"> to enable it</text><text styleclass="VariableName">. </text></li>
+                </list>
+                <para styleclass="Body Text HowTo">The <text styleclass="VariableName">Drag-Handle</text> should now be <text styleclass="VariableName" style="color:#0000ff;">blue</text><text styleclass="Body Text"> - it is enabled</text></para>
+                <list id="12" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="2" styleclass="Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:8pt; color:#000000;">
+                  <li styleclass="Bullets"><text style="font-style:normal;">Drag the </text><text styleclass="VariableName-IT" style="font-style:normal; color:#0000ff;">blue</text><text style="font-weight:bold; font-style:normal; color:#0000ff;">&#32;</text><text style="font-style:normal;">arrowhead </text><text styleclass="VariableName">relative to </text><text styleclass="HowTo Bulleted">the </text><text styleclass="Interface">start-(or end-)Point</text><text styleclass="VariableName">: </text></li>
+                </list>
+                <para styleclass="Body Table"><image src="Red-14-1b.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="HowTo Bulleted">&#32;</text><text styleclass="VariableName">Rotate the arrowhead </text><text styleclass="HowTo Bulleted">to control the </text><text styleclass="Parameter">angle</text><text styleclass="HowTo Bulleted"> of the </text><text styleclass="Element">Blend-Curve</text><text styleclass="HowTo Bulleted">.</text></para>
+                <para styleclass="Body Table"><image src="Red-14-2.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Body Text">&#32;</text><text styleclass="VariableName">Move the arrowhead away </text><text styleclass="HowTo Bulleted">to increase the </text><text styleclass="Parameter">Velocity-Scaling factor</text></para>
+                <list id="13" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="3" styleclass="Bullets" style="font-family:&apos;Segoe UI&apos;; font-size:8pt; color:#000000;">
+                  <li styleclass="Bullets"><text style="font-style:normal;">Double-click the</text>&#32;<text styleclass="VariableName">Arrowhead Drag-Handles</text><text styleclass="Body Text"> again.</text></li>
+                </list>
+                <para styleclass="Body Text HowTo">The <text styleclass="VariableName">Drag-Handle</text> should now be <text styleclass="VariableName" style="color:#008000;">green</text><text styleclass="Body Text"> - it is disabled.</text></para>
+              </td>
+            </tr>
+          </table></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:240px;">
+          <para styleclass="Normal"><image src="MD-GA-BlendCurve-Handles-BDragB.png" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"><caption><![CDATA[Circle Drag-Handle]]></caption></image></para>
+        </td>
+        <td>
+          <para styleclass="Body Table"><text styleclass="VariableName">Circle Drag-Handle</text><text styleclass="Body Text"> - this controls the </text><text styleclass="Parameter-Header">Curvature</text></para>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <list id="14" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:8pt; color:#000000;">
+                  <li styleclass="Bullets"><text style="font-style:normal;">Double-click a </text><text styleclass="VariableName">Circle Drag-Handle (not easy to see!) </text></li>
+                </list>
+                <para styleclass="Body Text HowTo">The <text styleclass="VariableName">Drag-Handle</text> should now be <text styleclass="VariableName" style="color:#0000ff;">blue</text><text styleclass="VariableName"> (not easy to see!)</text><text styleclass="Body Text"> - it is enabled.</text></para>
+                <para styleclass="Body Text HowTo">At the default position <text styleclass="HowTo Bulleted">(vertically-up), the </text><text styleclass="Parameter">Curvature</text><text styleclass="HowTo Bulleted"> = 0 (a straight-line).</text></para>
+                <list id="14" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Numbered" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:8pt; color:#000000;">
+                  <li styleclass="HowTo Numbered"><text styleclass="VariableName">Rotate the </text><text styleclass="VariableName-IT" style="font-style:normal; color:#0000ff;">blue</text><text styleclass="Body Text HowTo"> circle around the </text><text styleclass="Interface">start (or end-)Point:</text><text styleclass="VariableName">&#32;</text></li>
+                </list>
+                <para styleclass="Bullets"><image src="Red-14-1b.gif" scale="100.00%" styleclass="Body Text HowTo" figurelistinclude="0"></image> In a <text styleclass="VariableName" style="color:#ff0000;">clockwise</text> direction to increase the <text styleclass="Parameter-Header" style="font-size:14pt;">+</text><text styleclass="Parameter-Header">ve </text><text styleclass="Parameter">curvature</text></para>
+                <para styleclass="Bullets"><image src="Red-14-1b.gif" scale="100.00%" styleclass="Body Text HowTo" figurelistinclude="0"></image><text styleclass="Body Text HowTo"> In a </text><text styleclass="VariableName" style="color:#ff0000;">counter-clockwise </text><text styleclass="Body Text">direction to increase the </text><text styleclass="Parameter-Header" style="font-size:14pt;">–</text><text styleclass="Parameter-Header">ve </text><text styleclass="Parameter">curvature</text></para>
+                <para styleclass="Body Table">When the <text styleclass="VariableName-IT" style="font-style:normal; color:#0000ff;">blue</text><text styleclass="Body Text HowTo"> circle</text> is vertically-down the <text styleclass="Parameter">Curvature</text> is a large +ve or –ve value.</para>
+                <list id="15" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="3" styleclass="Bullets" style="font-family:&apos;Segoe UI&apos;; font-size:8pt; color:#000000;">
+                  <li styleclass="Bullets"><text style="font-style:normal;">Double-click the</text>&#32;<text styleclass="VariableName">Circle Drag-Handle</text><text styleclass="Body Text"> again.</text></li>
+                </list>
+                <para styleclass="Body Text HowTo">The <text styleclass="VariableName">Drag-Handle</text> should now be <text styleclass="VariableName" style="color:#008000;">green</text><text styleclass="Body Text"> - it is disabled.</text></para>
+              </td>
+            </tr>
+          </table></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Body Text"><anchor id="BlendCurveSmoothness" styleclass="Heading3_atocs_"><keywords><keyword>Curvature and Curvature Rate Notes</keyword></keywords></anchor><text styleclass="Heading3_atocs_">Note on Curvature and Curvature-Rate</text></para>
+    <para styleclass="Heading4 Toggle_atocs_2" style="text-indent:-36px; margin-left:60px;"><image src="tog_plus.gif" scale="100.00%" figurelistinclude="0"></image><tab /><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" src-collapsed="tog_plus.gif" src-expanded="tog_minus.gif"><caption><![CDATA[Curvature and Curvature-Rate]]></caption></toggle></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="1" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Interface2">Curvature (<text styleclass="VariableName">k</text>) =<text styleclass="VariableName"> 1 / Radius of Curvature</text></para>
+          <para styleclass="Body Text HowTo">The <text styleclass="VariableName">Radius-of-Curvature</text> and the <text styleclass="VariableName">Curvature</text> of a simple sketch-elements is constant. For example:</para>
+          <list id="16" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:8pt; color:#000000;">
+            <li styleclass="HowTo Bulleted"><text styleclass="VariableName">Radius of Curvature of a Line = ∞, Curvature of a Line = 0</text></li>
+            <li styleclass="HowTo Bulleted"><text styleclass="VariableName">Radius of Curvature of an Arc or Circle = Radius, Curvature of a Circle = 1 ∕ Circle Radius, </text></li>
+          </list>
+          <para styleclass="HowTo Bulleted"><text styleclass="Body Text HowTo">For example, if a </text><text styleclass="Body Text">circle has a radius of 20</text><text styleclass="Body Text" style="font-size:10pt; vertical-align:baseline;">mm</text><text styleclass="Body Text">, its curvature = 1/0.02</text><text styleclass="Body Text" style="font-size:10pt; vertical-align:baseline;">m</text><text styleclass="Body Text"> = 50/</text><text styleclass="Body Text" style="font-size:10pt; vertical-align:baseline;">m</text><text styleclass="Body Text">.</text></para>
+          <para styleclass="Body Text HowTo">However, the <text styleclass="VariableName">Radius-of-Curvature</text> continually changes along a general curve.</para>
+          <para styleclass="Body Text HowTo"><text styleclass="Body Text">Thus, the </text><text styleclass="VariableName">Curvature</text><text styleclass="Body Text"> also continually changes along a general curve.</text></para>
+          <para styleclass="Interface2">Curvature-Rate<text styleclass="VariableName"> = &#160;dk/ds</text></para>
+          <para styleclass="Body Text HowTo"><text styleclass="VariableName">Curvature-Rate</text> = rate-of-change of <text styleclass="VariableName">curvature (k) </text>with respect to the <text styleclass="VariableName">displacement (s)</text> along the curve.</para>
+        </td>
+      </tr>
+    </table></para>
+  </body>
+</topic>

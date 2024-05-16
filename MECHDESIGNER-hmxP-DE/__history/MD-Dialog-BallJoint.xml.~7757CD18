@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" status="Under Construction" modified="2022-04-20T14:10:20.999+01:00" lasteditedby="Adam" version="2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title>Dialog: Kugelgelenke</title>
+  <keywords>
+    <keyword>Ball-Joint dialog-box</keyword>
+    <keyword>Dialog<keyword>Ball-Joint</keyword></keyword>
+    <keyword>How to edit a Ball-Joint:<keyword>Effective Mass</keyword><keyword>Offset from Mechanism Plane</keyword><keyword>Radius</keyword></keyword>
+  </keywords>
+  <body>
+    <header>
+      <para styleclass="Heading1">Dialog: Kugelgelenke</para>
+    </header>
+    <para styleclass="Heading2">Kugelgelenke</para>
+    <para styleclass="SeeAlso">Siehe: <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Command-AddBall-Joint">Kugelgelenk hinzufügen</link>. Tutorial 12: Einen räumlichen Mechanismus entwerfen</para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="Body Text HowTo">Wir verwenden den <text styleclass="Element">Ball-Joint</text> für räumliche Mechanismen. </para>
+    <para styleclass="Body Text HowTo">In den meisten Fällen verbinden <text styleclass="Element">Kugelgelenke</text>&#32;<text styleclass="Element">Teile</text>, die sich in verschiedenen <text styleclass="Interface">Mechanismus-Editoren</text>befinden<text styleclass="Body Text">, so dass ihre </text><text styleclass="Interface">Mechanismus-Ebenen</text> senkrecht<text style="font-family:Tahoma;">(⊥)</text> sind.</para>
+    <para styleclass="Body Text HowTo"><text styleclass="Body Text"> An jedem Ende eines </text><text styleclass="Element">Teils</text><text styleclass="Body Text"> muss ein </text><text styleclass="Element">Kugelgelenk</text><text styleclass="Body Text"> angebracht werden . </text></para>
+    <para styleclass="Body Text HowTo"><text styleclass="Body Text">Der abgeleitete Name für ein </text><text styleclass="Element">Teil</text><text styleclass="Body Text"> mit </text><text styleclass="Element">Kugelgelenken</text><text styleclass="Body Text"> an jedem Ende ist ein </text><text styleclass="Interface">Verbindungsteil.</text></para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="Heading3_atocs_">Dialogfeld &quot;Kugelgelenk&quot; öffnen</para>
+    <para styleclass="Body Text"><table styleclass="Standard" rowcount="2" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:240px;">
+          <para styleclass="Normal" style="text-align:right;"><image src="MD-GA-Click-BallJoint.png" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="Body Text">Das <text styleclass="Element">Kugelgelenkelement </text>kann sich <text styleclass="VariableName-IT">innerhalb</text> des Symbols des <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-Connecting-Part" styleclass="Element">Verbindungsteils</link> befinden.</para>
+          <list id="0" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Numbered" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo Numbered">Bewegen Sie den Mauszeiger über das Ende des <text styleclass="Interface">Verbindungsteils</text>, bis das <text styleclass="Element">Kugelgelenk</text>&#32;<text styleclass="VariableName-IT" style="color:#ff0000;">rot</text> ist - siehe Bild<text styleclass="VariableName">. </text></li>
+            <li styleclass="HowTo Numbered"><text style="font-style:normal;">Klicken Sie auf</text> das Symbol des <text styleclass="Element">Kugelgelenks</text><image src="Red-14-1.gif" scale="100.00%" figurelistinclude="0"></image>. </li>
+          </list>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:240px;">
+          <para styleclass="Normal"><image src="MD-SW-BallJoint-Edit.png" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"><title>Kugelgelenk im Auswahl-FensterKugelgelenkBall-Joint</title><caption><![CDATA[Kugelgelenke im Auswahl-Fenster]]></caption></image></para>
+        </td>
+        <td>
+          <para styleclass="HowTo Numbered">Das <text styleclass="Element">Ball-Joint-Element</text> sollte sich im <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-Selection-Window" styleclass="Interface">Auswahl-Fenster</link>befinden<text style="font-weight:bold;">&#32;</text></para>
+          <list id="1" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="3" styleclass="HowTo Numbered" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo Numbered"><text style="font-style:normal;">Klicken Sie mit der rechten Maustaste auf</text> den <text styleclass="Element">Ball-Joint</text> im <text styleclass="Interface">Auswahlfenster</text><text styleclass="VariableName">&#32;</text></li>
+            <li styleclass="HowTo Numbered"><text style="font-style:normal;">Klicken Sie</text> im Kontext-Menü<text style="font-style:normal;">auf</text>&#32;<text styleclass="VariableName">Element bearbeiten </text>.</li>
+          </list>
+          <para styleclass="Body Text">Die <text styleclass="Element">Ball-Joint Dialogbox</text> ist nun geöffnet.</para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="Heading3_atocs_"><anchor id="BallJointDialog"><keywords><keyword>Ball-Joint parameters<keyword>Ball-Diameter</keyword><keyword>Ball-Offset</keyword><keyword>Ball-Mass</keyword></keyword></keywords></anchor>Ball-Joint dialog-box</para>
+    <para styleclass="Body Text HowTo">Normalerweise fügen Sie zwei <text styleclass="Element">Kugelgelenke</text> hinzu und bearbeiten sie - eines an jedem Ende des <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-Connecting-Part" styleclass="Interface">Verbindungsteils</link>.</para>
+    <para styleclass="Body Text HowTo"><table styleclass="Standard" rowcount="3" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:231px;">
+          <para styleclass="Normal" style="text-align:right;"><image src="MD-Dialog-BallJoint.ipp" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="Body Table"><text styleclass="Parameter-Header">Kugeldurchmesser</text></para>
+          <para styleclass="Body Text HowTo"><table styleclass="PopupTable2" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Body Table">Durchmesser des Ballsymbols im <text styleclass="Interface">Grafikbereich.</text></para>
+                <para styleclass="Body Table">Der Kugeldurchmesser<text styleclass="Body Text HowTo"> hat </text><text styleclass="VariableName" style="color:#ff0000;">keinen</text><text styleclass="Body Text HowTo"> Einfluss auf die Kinematik-Analyse.</text></para>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="Body Table"><text styleclass="Parameter-Header">Kugel versatz &#160;</text><text styleclass="BodyText BI">(±)</text></para>
+          <para styleclass="Body Text HowTo"><table styleclass="PopupTable2" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Body Table">Senkrechter Abstand <text styleclass="BodyText BI">(±)</text> von der <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-Plane-Mechanism" styleclass="Element">Mechanismusebene</link> zum Mittelpunkt des <text styleclass="Element">Kugelgelenks.</text></para>
+                <para styleclass="Body Table">Der Kugel-Offset<text styleclass="Body Text HowTo"> wirkt sich auf die Kinematik-Analyse aus.</text></para>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="Body Table"><text styleclass="Parameter-Header">Kugelmasse</text></para>
+          <para styleclass="Body Text HowTo"><table styleclass="PopupTable2" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Body Table">Masse des <text styleclass="Element">Kugelgelenks</text>.</para>
+                <para styleclass="Body Table">Ihr Massenschwerpunkt ist koplanar mit der <text styleclass="Interface">Mechanismusebene</text>, auch wenn der <text styleclass="Parameter">Kugelversatz ≠ 0 ist. </text></para>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:231px;">
+          <para styleclass="Normal" style="text-align:right;"><image src="MD-GA-BallJoint-Offset.png" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="VariableName">Beispiel für Kugelversatz : Z = 10mm</para>
+          <para styleclass="Body Text">&lt;&lt;&lt; Bild zeigt Modell aus der linken Ansicht - <text styleclass="T_Menu">Ansicht Werkzeugleiste &gt; Ansicht links</text>&#32;<text styleclass="VariableName">(Shortcut : F7).</text></para>
+          <para styleclass="HowTo Bulleted"><image src="Red-14-1b.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image>&#32;<text styleclass="Body Text HowTo">Das </text><text styleclass="Element">Kugelgelenk</text><text styleclass="Body Text HowTo"> befindet sich auf der </text><text styleclass="Interface">Mechanismusebene</text><text styleclass="Body Text HowTo">, wenn der </text><text styleclass="Parameter">Kugel-Offset</text><text styleclass="Body Text HowTo"> = 0mm</text>ist<text styleclass="Body Text HowTo">.</text></para>
+          <para styleclass="HowTo Bulleted"><image src="Red-14-2.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image> In der Abbildung ist der<text styleclass="Body Text HowTo">&#32;</text><text styleclass="Parameter">Ball-Offset</text><text styleclass="Body Text HowTo"> = </text><text styleclass="VariableName">10mm</text><text styleclass="Body Text"> in Richtung der +Z-Achse</text><text styleclass="Body Text HowTo">.</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td colspan="2">
+          <para styleclass="VariableName">Wann ist der Parameter <text styleclass="Parameter-Header">Kugel-Versetzt</text> zu verwenden?</para>
+          <para styleclass="Body Text - bit bit bigger2"><text styleclass="Body Text">Alle anderen kinematischen Elemente befinden sich auf </text>der <text styleclass="Interface">Mechanismus-Ebene</text><text styleclass="Body Text">. &#160;Der Mittelpunkt der </text><text styleclass="Element">Kugelgelenke </text>befindet sich<text styleclass="Body Text"> jedoch &#160;häufig </text><text styleclass="VariableName-IT" style="color:#ff0000;">nicht</text><text styleclass="Body Text"> auf </text>der Mechanismusebene<text styleclass="Interface">. </text><text styleclass="Body Text HowTo">Es ist wichtig, dass der Versatz zum Mittelpunkt des </text><text styleclass="Element">Kugelgelenks</text><text styleclass="Body Text HowTo"> korrekt ist, um sicherzustellen, dass die kinematische Analyse korrekt ist.</text></para>
+          <para styleclass="SeeAlso">Siehe auch : <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-Ball-Joint-Configurations">Kugelgelenk-Konfigurationen</link></para>
+        </td>
+      </tr>
+    </table></para>
+  </body>
+</topic>

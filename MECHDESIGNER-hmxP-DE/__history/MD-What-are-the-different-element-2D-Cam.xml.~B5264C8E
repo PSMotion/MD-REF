@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" modified="2022-04-04T19:33:04.599+01:00" lasteditedby="Adam" version="2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title>What are the different 2D-Cam elements</title>
+  <keywords>
+    <keyword>2D-Cam<keyword>Roadmap of different elements</keyword></keyword>
+  </keywords>
+  <body>
+    <header>
+      <para styleclass="Heading1">What are the different 2D-Cam elements</para>
+    </header>
+    <para styleclass="Body Text"><text styleclass="Normal">These are the different elements and Function-Blocks you need to know, and how they are related.</text></para>
+    <para styleclass="Body Text"><table styleclass="Default" rowcount="3" colcount="3">
+      <tr style="vertical-align:top">
+        <td style="width:232px;">
+          <para styleclass="VariableName">STEP 1A</para>
+          <para styleclass="Body Text HowTo"><text style="font-weight:bold;">&#32;</text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Command-Add2DCam" styleclass="Element">Add 2D-Cam</link></para>
+          <para styleclass="HowTo Bulleted">Select a:</para>
+          <list id="0" type="ul" listtype="bullet" formatstring="&#232;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Wingdings; font-size:10pt; color:#800000;">
+            <li styleclass="HowTo Bulleted">Part: the <text styleclass="Element">Cam-Part</text></li>
+            <li styleclass="HowTo Bulleted">Profile: the <text styleclass="Element">Cam-Follower</text></li>
+          </list>
+        </td>
+        <td style="width:174px;">
+          <para styleclass="Body Text" style="text-align:center;"><text style="font-weight:normal;">&gt;&gt;&gt;... optional ...&gt;&gt;&gt;</text></para>
+          <para styleclass="Normal" style="text-align:center;"></para>
+        </td>
+        <td>
+          <para styleclass="Normal"><text style="font-weight:bold;">&#32;</text><text styleclass="VariableName">STEP 1B</text></para>
+          <para styleclass="Normal"><text styleclass="VariableName">Open</text><text style="font-weight:bold; font-style:italic;">: </text><text styleclass="Element">2D-Cam dialog-box</text></para>
+          <list id="1" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted">Display Cam1, Pitch-Circle, Cam2</li>
+            <li styleclass="HowTo Bulleted">Display Cam as Profile, Pressure Angle, Contact-Force*, ...</li>
+            <li styleclass="HowTo Bulleted">Display Color</li>
+            <li styleclass="HowTo Bulleted">Roller-Life, Cam-Life</li>
+          </list>
+          <para styleclass="Body Text">Note: Make sure <text style="font-weight:bold; font-style:italic;">*</text><text styleclass="Parameter">material-properties</text> are correct for <text styleclass="VariableName">STEP 3A</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td colspan="2" style="width:174px;">
+          <para styleclass="VariableName">STEP 2A</para>
+          <para styleclass="Normal" style="text-align:left;"><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Command-FB-Cam-Data" styleclass="Element">Add Cam-Data FB</link><text styleclass="Body Text HowTo" style="font-weight:bold; font-style:italic;">&#32;</text></para>
+        </td>
+        <td>
+          <para styleclass="VariableName">STEP 2B</para>
+          <para styleclass="Body Text">Link <text styleclass="Element">2D-Cam</text> to <text styleclass="Element">Cam-Data FB</text></para>
+          <list id="2" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Numbered" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo Numbered"><text styleclass="Body Text">Open</text>&#32;<link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-FunctionBlock-CamCoordinates">Cam-Coordinates dialog-box</link><text styleclass="VariableName">&#32;</text></li>
+            <li styleclass="HowTo Numbered"><text styleclass="Body Text HowTo">Select the </text><text styleclass="Element">2D-Cam</text></li>
+            <li styleclass="HowTo Numbered"><text styleclass="HowTo Bulleted">Do </text><text styleclass="VariableName">STEP 3B</text><text styleclass="HowTo Bulleted"> immediately, &#160;</text></li>
+          </list>
+          <para styleclass="HowTo Numbered"><text styleclass="HowTo Bulleted">or </text></para>
+          <list id="3" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="3" styleclass="HowTo Numbered" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo Numbered"><text styleclass="HowTo Bulleted">Do </text><text styleclass="VariableName">STEP 3A</text><text styleclass="HowTo Bulleted">, then do </text><text styleclass="VariableName">STEP 2B</text><text styleclass="HowTo Bulleted"> and </text><text styleclass="VariableName">STEP 3B</text><text styleclass="HowTo Bulleted" style="font-weight:bold;">&#32;</text><text styleclass="HowTo Bulleted" style="font-weight:normal;">again</text><text styleclass="HowTo Bulleted" style="font-weight:bold;">.</text><text styleclass="VariableName">&#32;</text></li>
+          </list>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td colspan="2" style="width:416px;">
+          <para styleclass="VariableName">STEP 3A</para>
+          <para styleclass="Body Text HowTo">If Conjugate Cams, Add Conjugate Cam FB</para>
+          <para styleclass="Body Text HowTo">Cam-Analysis (with <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Command-FB-Graph" styleclass="Element" style="font-weight:normal;">Graph FB</link><text style="font-weight:normal; font-style:italic;">)</text></para>
+          <para styleclass="Body Text HowTo">Output-Connectors from <text styleclass="Element">Cam-Data FB</text>:</para>
+          <para styleclass="Body Text HowTo"><text style="font-size:14pt; font-weight:bold;">*</text>See <text styleclass="VariableName">STEP 1B</text> to edit <text styleclass="Parameter">Material Properties</text></para>
+          <list id="4" type="ul" listtype="bullet" formatstring="&#232;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Parameter" style="font-family:Wingdings; font-size:11pt; color:#008000;">
+            <li styleclass="Parameter">Contact-Force<text style="font-size:14pt; color:#000000;">*</text><text styleclass="Body Text" style="color:#008000;">&#32;</text></li>
+            <li styleclass="Parameter">Contact-Shear-Stress<text style="font-size:12pt; font-weight:normal; color:#000000;">*</text><text styleclass="Body Text">&#32;</text></li>
+            <li styleclass="Parameter">Radius-of-Curvature<text style="font-size:12pt;">&#32;</text></li>
+            <li styleclass="Parameter">Pressure-Angle<text style="font-size:12pt;">&#32;</text></li>
+            <li styleclass="Parameter">Sliding Velocity<text style="font-size:12pt;">&#32;</text></li>
+          </list>
+          <para styleclass="Body Text"><text style="font-size:14pt; font-weight:bold;">*</text>See<text style="font-size:14pt; font-weight:bold;">&#32;</text><text styleclass="VariableName">STEP 3A</text><text style="font-size:14pt; font-weight:bold;">&#32;</text><text styleclass="Parameter">Contact-Force, Contact-Stress</text><text styleclass="Normal" style="font-weight:bold;">&#32;</text><text styleclass="VariableName">analysis: </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-ConfigurePowerSource" styleclass="Normal">Configure Power Source</link><text styleclass="Normal">, </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-CADLine-MassProperties" styleclass="Normal">Mass Properties of Parts</link><text styleclass="Normal">.</text></para>
+        </td>
+        <td>
+          <para styleclass="Normal"><text style="font-weight:bold;">&#32;</text><text styleclass="VariableName">STEP 3B </text></para>
+          <para styleclass="Body Text HowTo"><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-FunctionBlock-CamCoordinates" styleclass="HowTo Bulleted" style="font-weight:normal;">Calculate Cam-Coordinates as Points or Arcs</link></para>
+          <list id="5" type="ul" listtype="bullet" formatstring="&#232;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Wingdings; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted">Save as DXF, TXT, STEP</li>
+            <li styleclass="HowTo Bulleted">Transfer cams directly to SOLIDWORKS</li>
+            <li styleclass="HowTo Bulleted">Save As Points, Arcs</li>
+          </list>
+        </td>
+      </tr>
+    </table></para>
+  </body>
+</topic>

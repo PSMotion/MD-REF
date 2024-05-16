@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" status="Under Construction" modified="2022-04-20T07:19:44.064+01:00" lasteditedby="Adam" version="2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title>- &gt; Mass Properties tab</title>
+  <keywords>
+    <keyword>CAD-Line dialog<keyword>Mass Properties tab</keyword></keyword>
+    <keyword>Dialog<keyword>CAD-Line - Mass Properties</keyword></keyword>
+    <keyword>Mass<keyword>Inertia</keyword><keyword>Mass</keyword><keyword>Moment of Inertia</keyword><keyword>Radius of Gyration</keyword></keyword>
+  </keywords>
+  <body>
+    <header>
+      <para styleclass="Heading1">- &gt; Mass Properties tab</para>
+    </header>
+    <para styleclass="Heading2">CAD-Linie &gt; Registerkarte Masseneigenschaften</para>
+    <para styleclass="SeeAlso">Siehe auch : <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-CADLine" styleclass="Body Text">Dialogfeld CAD-Linie</link></para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="Body Text HowTo">Verwenden Sie die<text styleclass="Body Text"> Registerkarte</text>&#32;<text styleclass="VariableName">Masseneigenschaften</text></para>
+    <list id="0" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+      <li styleclass="HowTo Bulleted">Benutzerdefinierte Masseneigenschaften eingeben <text styleclass="Body Text">- </text><link displaytype="text" defaultstyle="true" type="topiclink" href="" anchor="CAD-Line-MassProperties-User">siehe unten</link></li>
+      <li styleclass="HowTo Bulleted">Importieren der Masseneigenschaften eines <text styleclass="SOLIDWORKS">SolidWorks</text> Dokuments - <link displaytype="text" defaultstyle="true" type="topiclink" href="" anchor="CAD-Line-MassProperties-Import">siehe unten</link>&#32;</li>
+      <li styleclass="HowTo Bulleted">Überprüfen Sie die gesamten <text styleclass="VariableName">Masseneigenschaften</text> des <text styleclass="Element">Teils</text> - <link displaytype="text" defaultstyle="true" type="topiclink" href="" anchor="CAD-Line-MassProperties-Total">siehe unten</link></li>
+    </list>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="Heading3_atocs_">Dialogfeld CAD-Linie</para>
+    <para styleclass="Heading4 HowTo_atoc_">Registerkarte Masseneigenschaften</para>
+    <para styleclass="Body Table"><image src="MD-Dialog-CADLine-MassProps-tab.png" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"><caption><![CDATA[Dialogfeld CAD-Linien - Registerkarte Masse. Eigenschaften]]></caption></image></para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="Body Text HowTo" style="text-indent:-36px; margin-left:60px;"><anchor id="CAD-Line-MassProperties-User" styleclass="Separator-Header"><keywords><keyword>Dialog-Box<keyword>Mass-Properties - User defined</keyword></keyword></keywords></anchor><image src="tog_plus.gif" scale="100.00%" styleclass="Separator-Header" figurelistinclude="0"></image><tab /><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" src-collapsed="tog_plus.gif" src-expanded="tog_minus.gif" src-print="none" styleclass="Separator-Header"><caption><![CDATA[ Benutzer-Masseneigenschaften ]]></caption></toggle></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="2" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:251px;">
+          <para styleclass="Image Caption"><image src="MD-Dialog-CADLine-MasProps_User.ipp" scale="-99.90%" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="Body Table"><table styleclass="Block" rowcount="4" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Body Text"><text styleclass="Parameter-Header">Mass</text> (Units: <equation styleclass="Parameter-Header" font-size="24" color="#000080"><![CDATA[kg]]></equation><text styleclass="Parameter-Header">)</text></para>
+              </td>
+            </tr>
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Body Text"><text styleclass="Parameter-Header">Masseschwerpunkt: X-Achse </text>(Einheiten: <equation styleclass="Parameter" style="font-family:&apos;Segoe UI Semibold&apos;; font-weight:bold; font-style:normal; text-transform:none; color:#333399; background-color:transparent; letter-spacing:normal; letter-scaling:100%;" font-size="24" color="#000080"><![CDATA[mm ]]></equation>)</para>
+                <para styleclass="Body Table">Die X-Achse ist die <text styleclass="Element">CAD-Linie</text>, und der Nullpunkt (0) liegt am <text styleclass="Interface">Startpunkt</text>.</para>
+              </td>
+            </tr>
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Body Text"><text styleclass="Parameter-Header">Masseschwerpunkt: Y-Achse (</text>Einheiten: <equation font-size="24" color="#000080"><![CDATA[mm ]]></equation>)</para>
+                <para styleclass="Body Table">Die Y-Achse liegt bei +90º, und der Nullpunkt (0) befindet sich am <text styleclass="Interface">Startpunkt</text></para>
+              </td>
+            </tr>
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+                <para styleclass="Parameter-Header">Moment of Inertia, (<text styleclass="Body Text">units </text><equation styleclass="Body Text" font-size="24" color="#000080"><![CDATA[kg.m^{2}]]></equation><text styleclass="VariableName-IT" style="font-size:10pt; vertical-align:baseline; color:#ff0000;">NOT</text><text styleclass="Body Text">&#32;</text><equation styleclass="Body Text HowTo" style="font-family:&apos;Segoe UI&apos;; font-size:14pt; font-style:italic; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;" font-size="24" color="#000080"><![CDATA[kg.mm^{2}]]></equation><text styleclass="Body Text">)</text></para>
+                <para styleclass="Body Text">The Inertia about the Center-of-Mass.</para>
+                <para styleclass="Body Text">Sie können eine der folgenden Angaben machen: </para>
+                <para styleclass="Body Text HowTo"><text styleclass="Parameter-Header">Trägheitsradius</text><text styleclass="Popup Box">&#32;</text><equation styleclass="Popup Box" font-size="24" color="#000080"><![CDATA[\left( mm \right)]]></equation><text styleclass="Popup Box">, </text><text styleclass="VariableName">oder</text><text styleclass="Body Text">&#32;</text></para>
+                <para styleclass="Body Text HowTo"><text styleclass="Parameter-Header">Trägheitsmoment</text><text styleclass="Popup Box">&#32;</text><equation styleclass="Popup Box" font-size="24" color="#000080"><![CDATA[\left( kg.m^{2} \right)]]></equation></para>
+              </td>
+            </tr>
+          </table></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td colspan="2">
+          <para styleclass="Body Table">Wenn <text style="font-weight:normal;">Sie</text> das <text styleclass="Parameter-Header">Trägheitsmoment</text> eingeben, erhalten Sie den entsprechenden <text styleclass="Parameter-Header">Trägheitsradius </text>, <equation styleclass="VariableName-IT" style="font-size:10pt; vertical-align:sub;" font-size="28"><![CDATA[k_{g}]]></equation><text styleclass="VariableName-IT">&#32;</text><text styleclass="Body Text">gleich :</text></para>
+          <para styleclass="Body Text HowTo"><equation styleclass="Image Caption" font-size="28" color="#000080"><![CDATA[k_{g}=\sqrt{\frac{I_{g}}{m}}]]></equation></para>
+          <para styleclass="Body Table">Wenn <text styleclass="Body Text">Sie</text> den <text styleclass="Parameter-Header">Trägheitsradius</text> eingeben, dann entspricht das <text styleclass="Parameter-Header">Trägheitsmoment </text>, <equation styleclass="Parameter-Header" font-size="28"><![CDATA[I_{g}]]></equation><text styleclass="Body Text"> ist:</text></para>
+          <para styleclass="Body Text HowTo"><equation styleclass="Image Caption" font-size="28" color="#000080"><![CDATA[I_{g}= M.k_{g}^{2}]]></equation></para>
+          <para styleclass="Body Table">Wenn Sie keine <text styleclass="Parameter-Header">Trägheit</text> oder keinen <text styleclass="Parameter-Header">Trägheitsradius</text> eingeben, entspricht die Masse einer <text styleclass="Parameter-Header">Punktmasse.</text></para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="Interface2">Satz von der Parallelität der Achsen</para>
+          <para styleclass="Body Text HowTo">Wir verwenden den <text styleclass="VariableName">Satz von der Parallelität der Achsen</text>, um das <text styleclass="VariableName">Trägheitsmoment </text>zu berechnen, <equation styleclass="VariableName" font-size="28"><![CDATA[I_{o}]]></equation> um die Rotationsachse <text styleclass="Element">des Teils</text>, bei <equation font-size="28"><![CDATA[O]]></equation></para>
+          <para styleclass="Body Text HowTo"><equation style="font-size:14pt;" font-size="28" color="#000080"><![CDATA[I_{o}=I_{g}+M.h^{2}]]></equation><text style="font-size:14pt;">&#32;</text><text styleclass="Body Text">wobei </text><equation style="font-size:14pt;" font-size="28"><![CDATA[h]]></equation><text styleclass="Body Text"> = Abstand vom Masseschwerpunkt zur Rotationsachse bei &apos;</text><equation font-size="28"><![CDATA[O]]></equation>&apos;.</para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Body Text HowTo" style="text-indent:-36px; margin-left:60px;"><anchor id="CAD-Line-MassProperties-Import" styleclass="Separator-Header"><keywords><keyword>Import Mass Properties from CAD</keyword></keywords></anchor><image src="tog_plus.gif" scale="100.00%" styleclass="Separator-Header" figurelistinclude="0"></image><tab /><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" src-collapsed="tog_plus.gif" src-expanded="tog_minus.gif" src-print="none" styleclass="Separator-Header"><caption><![CDATA[SolidWorks Masse-Eigenschaften ]]></caption></toggle></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="2" colcount="2">
+      <tr style="vertical-align:top">
+        <td colspan="2">
+          <para styleclass="Body Table">Wenn Sie ein <text styleclass="SOLIDWORKS">SolidWorks</text> Dokument in eine <text styleclass="Element">CAD-Linie</text> importieren, können Sie auch die <text styleclass="Interface2" style="font-size:10pt; vertical-align:baseline;">SolidWorks</text><text styleclass="VariableName"> Mass-Properties</text>importieren</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:248px;">
+          <para styleclass="Normal" style="text-align:left;"><image src="MD-Dialog-CADLine-MasProps_SW.ipp" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="Body Text"><text styleclass="VariableName">Schaltfläche</text><text styleclass="Body Text HowTo">&#32;</text><image src="Red-14-1b.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image>&#32;<text styleclass="Image Caption">&#32;</text><text styleclass="Parameter-Header">IMPORT / UPDATE SolidWorks Masseneigenschaften</text></para>
+          <para styleclass="Body Table"><text styleclass="Notes">Hinweis</text>: <text styleclass="Body Text">Bevor Sie auf die Schaltfläche </text><image src="Red-14-1b.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Body Text">klicken, vergewissern Sie sich, dass &#160;sich &#160;das aktive </text><text styleclass="SOLIDWORKS">SolidWorks</text><text styleclass="Body Text"> Dokument in der </text><text styleclass="Element">CAD-Linie</text><text styleclass="Body Text"> befindet.</text></para>
+          <para styleclass="Body Table"><table styleclass="Block" rowcount="4" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Parameter-Header">Masse :<text style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:normal; font-style:italic; text-transform:none; vertical-align:baseline; color:#333399; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">(kg</text>)</para>
+                <para styleclass="Body Text HowTo">Die <text styleclass="Parameter">Masse</text> des aktiven <text styleclass="SOLIDWORKS">SolidWorks</text> Dokuments.</para>
+              </td>
+            </tr>
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Parameter-Header">Masseschwerpunkt: X-Achse:<text styleclass="Parameter" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:10pt; font-weight:bold; font-style:normal; text-transform:none; vertical-align:baseline; color:#333399; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">(mm</text>)</para>
+                <para styleclass="Body Text HowTo"><text styleclass="Body Text">Der Abstand auf der X-Achse vom </text><text styleclass="Interface">Startpunkt</text>der<text styleclass="Element">CAD-Linie</text><text styleclass="Body Text"> &#160;zum </text><text styleclass="Parameter">Masseschwerpunkt.</text></para>
+              </td>
+            </tr>
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Parameter-Header">Massenschwerpunkt Y-Achse<text styleclass="VariableName">&#32;</text><text styleclass="Parameter" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:10pt; font-weight:bold; font-style:normal; text-transform:none; vertical-align:baseline; color:#333399; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">(mm</text>)</para>
+                <para styleclass="Body Text HowTo"><text styleclass="Body Text">Der Abstand auf der Y-Achse, vom </text><text styleclass="Interface">Startpunkt</text>der<text styleclass="Element">CAD-Linie</text><text styleclass="Body Text"> &#160;zum </text><text styleclass="Parameter">Massenschwerpunkt</text><text styleclass="Body Text">.</text></para>
+              </td>
+            </tr>
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Parameter-Header">Massenträgheitsmoment <equation styleclass="Popup Box" font-size="24" color="#000080"><![CDATA[\left( kg.m^{2} \right)]]></equation></para>
+                <para styleclass="Body Text HowTo">Die <text styleclass="Parameter">Trägheit</text> in Bezug auf den <text styleclass="Parameter">Massenschwerpunkt</text></para>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="VariableName">Schaltfläche <image src="Red-14-2.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Normal">&#32;</text><text styleclass="Parameter-Header">SolidWorks Masseneigenschaften entfernen</text></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Body Text HowTo" style="text-indent:-36px; margin-left:60px;"><anchor id="CAD-Line-MassProperties-Total" styleclass="Separator-Header"><keywords><keyword>CAD-Line dialog-box<keyword>Total Mass Properties from CAD</keyword></keyword></keywords></anchor><image src="tog_plus.gif" scale="100.00%" styleclass="Separator-Header" figurelistinclude="0"></image><tab /><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" src-collapsed="tog_plus.gif" src-expanded="tog_minus.gif" src-print="none" styleclass="Separator-Header"><caption><![CDATA[ Total Mass Properties ]]></caption></toggle></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="2" colcount="2">
+      <tr style="vertical-align:top">
+        <td colspan="2">
+          <para styleclass="VariableName">Gesamtmasse-Eigenschaften:</para>
+          <para styleclass="Body Text HowTo">Die <text styleclass="VariableName">Gesamtmasseneigenschaften</text> gelten für <text styleclass="VariableName" style="color:#ff0000;">ALLE</text>&#32;<text styleclass="Element">CAD-Linien</text> in einem <text styleclass="Element">Teil.</text></para>
+          <para styleclass="Body Text"><text styleclass="VariableName">EXPLICITLY</text>: Die <text styleclass="VariableName">Gesamtmasseneigenschaften</text> umfassen für jedes <text styleclass="Element">Teil</text>&#32;<text styleclass="VariableName" style="color:#ff0000;">ALLE</text> diese Eigenschaften:</para>
+          <list id="1" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted"><text styleclass="VariableName">Masse</text><text styleclass="Body Text HowTo"> und </text><text styleclass="VariableName">Masseneigenschaften</text><text styleclass="Body Text HowTo">, die für </text><text styleclass="VariableName" style="color:#ff0000;">ALLE</text>&#32;<text styleclass="Element">Profile/Extrusionen</text><text styleclass="Body Text"> im </text><text styleclass="Element">Teil</text><text styleclass="Body Text HowTo"> berechnet wurden </text><text styleclass="Body Text">&#32;</text></li>
+            <li styleclass="HowTo Bulleted"><text styleclass="VariableName">Benutzermasseneigenschaften</text><text styleclass="Body Text">, wie für</text>&#32;<text styleclass="VariableName" style="color:#ff0000;">ALLE</text>&#32;<text styleclass="Element">CAD-Linien</text> im <text styleclass="Element">Teil</text><text styleclass="Body Text"> definiert</text>&#32;</li>
+            <li styleclass="HowTo Bulleted"><text styleclass="Interface2" style="font-size:10pt; vertical-align:baseline;">SolidWorks</text><text styleclass="VariableName"> Masseneigenschaften</text><text styleclass="Parameter-Header">&#32;</text><text styleclass="Body Text">wie für </text><text styleclass="VariableName" style="color:#ff0000;">ALLE</text><text styleclass="Body Text">&#32;</text><text styleclass="Element">CAD-Linien</text><text styleclass="Body Text"> im </text><text styleclass="Element">Teil</text>definiert</li>
+          </list>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:270px;">
+          <para styleclass="Normal"><image src="MD-Dialog-CADLine-MasProps_Total.ipp" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="VariableName">HINWEISE:</para>
+          <para styleclass="VariableName">Satz von der parallelen Achse </para>
+          <para styleclass="Body Text HowTo"><text styleclass="VariableName-IT2">Trägheit um die Rotationsachse des Teils = Gesamtträgheit um den Massenschwerpunkt + Masse×(Abstand zur Rotationsachse des Teils)</text><text style="font-size:9pt; font-weight:bold; vertical-align:super;">2</text></para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="VariableName">Beziehung zwischen Trägheitsmoment und Trägheitsradius (Radius of Gyration)</para>
+          <para styleclass="Body Text HowTo"><text styleclass="VariableName-IT2">Gesamtträgheit (um den Masseschwerpunkt) = Gesamtmasse×(Trägheitsradius)</text><text style="font-size:10pt; font-weight:bold; font-style:normal; vertical-align:super;">2</text></para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="VariableName">Gesamtmasse des Teils = </para>
+          <para styleclass="VariableName-indent">Masse aller <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-ProfileExtrusion" anchor="ExtrusionMassProperties">Extrusionen</link> +<text styleclass="Body Text">&#32;</text><text style="color:#ff0000;">Gesamtmasse der anderen CAD-Linien im gleichen Teil</text></para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="VariableName">Gesamtträgheit um den Schwerpunkt des Teils = </para>
+          <para styleclass="VariableName-indent">Trägheit aller Extrusionen <text style="color:#ff0000;">+ Gesamtträgheit der anderen CAD-Linien im selben Teil</text></para>
+        </td>
+      </tr>
+    </table></para>
+  </body>
+</topic>

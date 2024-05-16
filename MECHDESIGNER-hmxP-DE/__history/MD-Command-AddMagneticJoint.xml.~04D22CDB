@@ -1,0 +1,203 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" status="Under Construction" modified="2022-05-17T11:17:20.433+01:00" lasteditedby="Adam" version="2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title>Mechanism | Add Magnetic-Joint</title>
+  <keywords>
+    <keyword>Add<keyword>Magnetic-Joint</keyword><keyword>Magnet-Joint</keyword></keyword>
+    <keyword>Joint<keyword>Magnet</keyword><keyword>Magnetic</keyword></keyword>
+    <keyword>Kinematic elements toolbar<keyword>Add Magnetic-Joint</keyword></keyword>
+    <keyword>Magentic-Joint</keyword>
+    <keyword>Magnet-Joint</keyword>
+    <keyword>Menu &gt; Add &gt; Mechanism Menu<keyword>Add Magnetic-Joint</keyword></keyword>
+    <keyword>Reverse-Engineer Cams</keyword>
+  </keywords>
+  <body>
+    <header>
+      <para styleclass="Heading1">Mechanism | Add Magnetic-Joint</para>
+    </header>
+    <para styleclass="Heading2">Magnetisches Gelenk hinzufügen</para>
+    <para styleclass="SeeAlso">Siehe auch: <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-MagneticJoint">Magnetic-Joint-Dialog</link></para>
+    <para styleclass="Body Text"><text styleclass="SeeAlso">See also:</text><text style="font-family:Arial; font-size:11pt; font-weight:bold; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">&#32;</text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Command-Solids-AutoProfile" styleclass="SeeAlso">Add Profile</link><text styleclass="SeeAlso">, </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-Sketch-Loop" styleclass="SeeAlso">Sketch-Loop</link><text styleclass="SeeAlso">, </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Command-FB-Motion-Dimension" styleclass="SeeAlso">Add Motion-Dimension FB</link><text styleclass="SeeAlso">; </text></para>
+    <para styleclass="Body Text"><text styleclass="SeeAlso">YouTube Video : </text><link displaytype="text" defaultstyle="true" type="weblink" href="&lt;%LINK_CAPTION%&gt;" target="_blank" styleclass="SeeAlso">http://youtu.be/IME9Eb4mpQE</link><text styleclass="SeeAlso">&#32;</text></para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="Heading4 Toggle_atocs_">Was ist ein Magnetic-Joint?</para>
+    <para styleclass="VariableName">Terminology: </para>
+    <para styleclass="Body Table"><table styleclass="Default" rowcount="4" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:159px;">
+          <para styleclass="Popup Box2" style="text-align:right;"><text styleclass="Popup Box-Elements">Magnetic-Joint</text> : </para>
+        </td>
+        <td style="width:581px;">
+          <para styleclass="Popup Box">Eine <text styleclass="VariableName-small">Magnetkupplung</text> zieht ein <text styleclass="VariableName-small">rundes</text><text styleclass="Body Text HowTo">&#32;</text><text styleclass="Popup Box-Elements">Profil</text> in Kontakt mit einem<text styleclass="Body Text HowTo">&#32;</text><text styleclass="VariableName-IT">unregelmäßigen*</text><text styleclass="Body Text HowTo">&#32;</text><text styleclass="Popup Box-Elements">Profil</text><text styleclass="Element">.</text><text styleclass="HowTo Bulleted">&#32;</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:159px;">
+          <para styleclass="Popup Box2" style="text-align:right;">Profile : </para>
+        </td>
+        <td style="width:581px;">
+          <para styleclass="Popup Box">Zwei Konturen, die eine Kopie der Form einer <text styleclass="Popup Box2">Skizzenschleife</text> sind, die den Bereich einer <text styleclass="Popup Box-Elements">Extrusion </text>angeben<text styleclass="Popup Box-Elements">&#32;</text> - an <text styleclass="Popup Box2">MD-Solid</text>. <text styleclass="SeeAlso-small">See </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Command-Solids-Add-Profile" styleclass="SeeAlso-small">Add Profile</link></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:159px;">
+          <para styleclass="Popup Box-Elements" style="text-align:right;">Kurve : </para>
+        </td>
+        <td style="width:581px;">
+          <para styleclass="Popup Box">The shape that we derive from <text styleclass="Body Text HowTo">a </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Command-FB-Point-Cloud" styleclass="Element">Point-Cloud</link><text styleclass="Element">.</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:159px;">
+          <para styleclass="Popup Box2" style="text-align:right;">Punkt-Wolke : </para>
+        </td>
+        <td style="width:581px;">
+          <para styleclass="Popup Box">Koordinaten für eine Form, die Sie importieren - <text styleclass="SeeAlso-small">Siehe Punkt-Wolke FB</text></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Notes">WICHTIG:</para>
+    <para styleclass="Body Text"><table styleclass="Default" rowcount="1" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="VariableName">Verwenden Sie den Befehl <text style="color:#ff0000;">nicht</text> für die normale Modellierung.</para>
+          <para styleclass="Body Text HowTo">Bei <text styleclass="VariableName">Magnetic-Joints </text><text styleclass="Body Table">werden keine geschlossenen mathematischen Gleichungen verwendet. Die Position des </text><text styleclass="Element">Teils</text><text styleclass="Body Table">, das von der </text><text styleclass="VariableName">Magnetkupplung</text><text styleclass="Body Table"> angetrieben wird </text><text styleclass="Normal">,</text><text styleclass="Body Table"> wird mit iterativen Wurzelfindungsmethoden gelöst. </text></para>
+          <para styleclass="Body Text HowTo">Das <text style="font-style:normal;">Modell ist langsam zu lösen, wenn es viele </text><text styleclass="VariableName">magnetische Verbindungen</text><text style="font-style:normal;">gibt .</text></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading3_atocs_">Vorbereitung für &apos;Add Magnetic-Joint&apos; (typisch)</para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="1" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:240px;">
+          <para styleclass="Normal"><image src="MD-GA-AddMagJoint-Prep-01.png" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td style="width:386px;">
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Bullets"><image src="Red-14-1b.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;"> A </text><text style="font-family:&apos;Segoe UI Semibold&apos;; font-size:10pt; font-weight:bold; font-style:normal; text-transform:uppercase; vertical-align:baseline; color:#800000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">Part</text><text style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">, to which the </text><text style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">Irregular-Profile</text><image src="Red-14-2.gif" scale="100.00%" style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:italic; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;" figurelistinclude="0"></image><text style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;"> is a child.</text></para>
+                <para styleclass="Bullets"><image src="Red-14-2.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image> Ein <text styleclass="VariableName">unregelmäßiges Profil</text>, d.h. ein </para>
+                <list id="0" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+                  <li styleclass="HowTo Bulleted"><text styleclass="Element">Profil</text>, das<text styleclass="Body Text"> Sie zu einer </text><text styleclass="Interface">Skizzenschleife</text><text styleclass="Body Text"> hinzufügen </text>, </li>
+                </list>
+                <para styleclass="HowTo Bulleted"><text styleclass="Interface2">oder</text><text styleclass="Bullets">&#32;</text></para>
+                <list id="0" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+                  <li styleclass="HowTo Bulleted"><text styleclass="Element">Kurve</text><text styleclass="Bullets">, die Sie aus einer </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-Point-Cloud" styleclass="Interface">Punktwolke</link><text styleclass="Bullets"> berechnen </text></li>
+                </list>
+                <para styleclass="Bullets"><image src="Red-14-5.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Body Text"> Ein </text><text styleclass="Element">Teil</text>, zu dem es ein<text styleclass="Body Text">&#32;</text><text styleclass="VariableName">Rundprofil</text><image src="Red-14-4.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="VariableName">&#32;</text> gibt<text styleclass="Normal">,</text>ist ein Kind.</para>
+                <para styleclass="Bullets"><image src="Red-14-3.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image> &#160;Die <text styleclass="Element">Bewegungsdimension FB </text><text styleclass="Body Text">, die durch die Wirkung des </text><text styleclass="Element">Magnetic-Joints </text><text styleclass="Body Text">angetrieben wird.</text></para>
+                <para styleclass="Body Text">Das <text styleclass="Element">Magnetgelenk</text> zieht das <text styleclass="VariableName">Rundprofil</text><image src="Red-14-4.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image> auf das <text styleclass="VariableName">Unregelmäßigkeitsprofil</text><image src="Red-14-2.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="VariableName">.</text></para>
+              </td>
+            </tr>
+          </table></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading3_atocs_">Add Magnetic-Joint</para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="3" colcount="2">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Normal"><image src="MD-GA-AddMagJoint-Prep-01.png" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td rowspan="2">
+          <list id="1" type="ol" listtype="decimal" formatstring="&#83;&#84;&#69;&#80;&#32;&#37;&#48;&#58;&#115;&#58;&#32;" format-charset="DEFAULT_CHARSET" levelreset="false" legalstyle="false" startfrom="1" styleclass="HowTo STEP" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo STEP"><text styleclass="VariableName">Vorpositionierung des Kreisprofils</text></li>
+          </list>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <list id="2" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="B Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="B Bullets"><text styleclass="Body Text">Bewegen Sie das Modell</text> mit der <text styleclass="Body Text">Tastenkombination</text>&#32;<text styleclass="T_Menu">ALT+H</text> in die Ausgangsposition.<text styleclass="VariableName">&#32;</text></li>
+                </list>
+                <list id="3" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="2" styleclass="Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="Bullets"><text style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">Bearbeiten Sie den </text><text style="font-family:&apos;Segoe UI Semibold&apos;; font-size:10pt; font-weight:bold; font-style:normal; text-transform:uppercase; vertical-align:baseline; color:#800000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">Motion-Dimension FB</text><image src="Red-14-3.gif" scale="100.00%" style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;" figurelistinclude="0"></image><text style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;"> | </text><text style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:uppercase; vertical-align:baseline; color:#333399; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">Base-Value</text><text style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;"> so, dass der:</text><text style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">&#32;</text></li>
+                </list>
+                <para styleclass="Body Text HowTo">Abstand vom <text styleclass="VariableName">Rundprofil</text><image src="Red-14-4.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image> zum <text styleclass="VariableName">Unregelmäßigkeitsprofil</text><image src="Red-14-2.gif" scale="100.00%" styleclass="VariableName" figurelistinclude="0"></image><text styleclass="VariableName">&#32;</text></para>
+                <para styleclass="Body Text HowTo">&lt;<text styleclass="VariableName">0,5 × Radius des</text>&#32;<text styleclass="VariableName">Kreisprofils</text><image src="Red-14-4.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+              </td>
+            </tr>
+          </table></para>
+          <list id="4" type="ol" listtype="decimal" formatstring="&#83;&#84;&#69;&#80;&#32;&#37;&#48;&#58;&#115;&#58;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="2" styleclass="HowTo STEP" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo STEP">Magnetisches Gelenk hinzufügen<text styleclass="VariableName">&#32;</text></li>
+          </list>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="2" colcount="2">
+            <tr style="vertical-align:top">
+              <td colspan="2" style="vertical-align:bottom;">
+                <list id="5" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Body Table" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; color:#003300;">
+                  <li styleclass="Body Table"><text styleclass="Interface">Mechanismus-Editor:</text><text styleclass="Body Text">&#32;</text><text styleclass="T_Menu">Menü Hinzufügen &gt; Menü Mechanismus &gt; Magnetisches Gelenk hinzufügen</text></li>
+                </list>
+                <para styleclass="Body Text"><text style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">- or</text><text style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;"> -</text></para>
+              </td>
+            </tr>
+            <tr style="vertical-align:top">
+              <td style="vertical-align:bottom; width:41px;">
+                <para styleclass="VariableName" style="text-align:right;"><image src="MD-Icon-AddMagneticJoint.png" scale="100.00%" padding="0 4 0 0" figurelistinclude="0"><title>Add Magnetic-Joint icon</title></image></para>
+              </td>
+              <td>
+                <list id="6" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="B Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="B Bullets"><text styleclass="Interface">Mechanismus-Editor: </text><text styleclass="T_Menu">Kinematik-Elemente Werkzeugleiste &gt; Magnetisches Gelenk hinzufügen</text><text styleclass="VariableName">&#32;</text></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+          <list id="4" type="ol" listtype="decimal" formatstring="&#83;&#84;&#69;&#80;&#32;&#37;&#48;&#58;&#115;&#58;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="2" styleclass="HowTo STEP" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo STEP">Wählen Sie die Elemente <text styleclass="VariableName">im Grafikbereich</text>aus<text styleclass="VariableName">:</text></li>
+          </list>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <list id="7" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="B Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="B Bullets"><text styleclass="Body Text">Klicken Sie auf das </text><text styleclass="VariableName">unregelmäßige Profil</text><image src="Red-14-2.gif" scale="100.00%" styleclass="VariableName" figurelistinclude="0"></image></li>
+                  <li styleclass="B Bullets"><text styleclass="Body Text">Klicken Sie auf den </text><text styleclass="Element">FB Bewegungsmaße</text><image src="Red-14-3.gif" scale="100.00%" styleclass="VariableName" figurelistinclude="0"></image></li>
+                  <li styleclass="B Bullets">Klicken Sie<text styleclass="Body Text">auf </text>das<text styleclass="VariableName">kreisförmige Profil</text><image src="Red-14-4.gif" scale="100.00%" styleclass="VariableName" figurelistinclude="0"></image></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+          <list id="8" type="ol" listtype="decimal" formatstring="&#83;&#84;&#69;&#80;&#32;&#37;&#48;&#58;&#115;&#58;&#32;" format-charset="DEFAULT_CHARSET" levelreset="false" legalstyle="false" startfrom="3" styleclass="HowTo STEP" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo STEP"><text styleclass="VariableName">Vervollständigen Sie den Befehl </text></li>
+          </list>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <list id="9" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="3" styleclass="Body Table" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="Body Table"><text styleclass="Interface">Befehls-Manager:</text>&#32;<text styleclass="HowTo STEP">Klicken Sie &#160;im </text><text styleclass="Interface">Befehls-Manager</text>&#32;<text styleclass="HowTo STEP">auf </text><image src="OK-tiny-11-15.png" scale="100.00%" styleclass="HowTo STEP" figurelistinclude="0"></image><text styleclass="HowTo STEP">.</text><text styleclass="VariableName">&#32;</text></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:240px;">
+          <para styleclass="Normal"><image src="MD-CM-AddMagneticJoint-1.png" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:240px;">
+          <para styleclass="Normal"><image src="MD-GA-AddMagJoint-Prep-02.png" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="Interface2">Das Ergebnis<text styleclass="VariableName">:</text></para>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Body Table">Die <text styleclass="Element">Magnetkupplung</text>&#32;<text styleclass="VariableName-IT">zieht</text> das <text styleclass="VariableName">Rundprofil</text><image src="Red-14-2.gif" scale="100.00%" figurelistinclude="0"></image> in Kontakt mit dem <text styleclass="VariableName">Unregelmäßigkeitsprofil</text><image src="Red-14-4.gif" scale="100.00%" figurelistinclude="0"></image>. </para>
+                <para styleclass="B Bullets">Ein <text styleclass="VariableName">Punktsymbol</text> am Kontakt. </para>
+                <para styleclass="Body Text">Der <text styleclass="Element">Magnetic-Joint FB</text><image src="Red-14-7.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image> zeigt in der Nähe des <text styleclass="VariableName-IT">Punkt-Symbols</text><image src="Red-14-6.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+                <para styleclass="Body Text">Ein <text styleclass="Interface">Magnetic-Joint-Symbol</text><image src="Red-14-8.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image> befindet sich in der Nähe des <text styleclass="Element">Motion-Dimension FB</text><image src="Red-14-3.gif" scale="100.00%" styleclass="HowTo Bulleted" figurelistinclude="0"></image><text styleclass="HowTo Bulleted">, der </text>durch den <text styleclass="Element">Magnetic-Joint </text>gesteuert wird <text styleclass="Element">.</text></para>
+              </td>
+            </tr>
+          </table></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading3_atocs_">Video: <conditional-text type="IF" value="PDF"/><link displaytype="text" defaultstyle="true" type="filelink" href="ME-AddMagJoint.gif" styleclass="Body Text">Doppelklick zum Ansehen des Videoclips</link><conditional-text type="END"/><conditional-text type="IF" value="CHM"/></para>
+    <para styleclass="Normal"><toggle type="picture" print-expanded="true" help-expanded="false" src-collapsed="ME-AddMagJoint.gif" src-expanded="ME-AddMagJoint.gif" scale="20.00%" width="256" height="144" styleclass="Image Caption" figurelistinclude="0"><caption><![CDATA[How to Add a Magnetic-Joint]]></caption><title>How to Add a Magnetic-Joint</title></toggle></para>
+    <para styleclass="Body Text"><conditional-text type="END"/><conditional-text type="IF" value="HTML,EBOOK"/></para>
+    <para styleclass="Heading1"><video src="ME-AddMagJoint.mp4" width="1280px" height="720px" autostart="false" loop="false" showcontrols="false" playbutton="true" previewimage="ME-AddMagJoint_preview.jpg" scale="20.00%" styleclass="Image Caption"><title>How to Add a Magnetic-Joint</title><caption><![CDATA[How to Add a Magnetic-Joint]]></caption></video></para>
+    <para styleclass="Body Text"><conditional-text type="END"/></para>
+    <para styleclass="Body Text" style="page-break-before:always;"></para>
+  </body>
+</topic>

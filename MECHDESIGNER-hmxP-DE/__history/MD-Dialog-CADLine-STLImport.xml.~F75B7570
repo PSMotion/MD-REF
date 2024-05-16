@@ -1,0 +1,187 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" modified="2022-04-21T10:09:54.982+01:00" lasteditedby="Adam" version="2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title>- &gt; STL Import tab</title>
+  <keywords>
+    <keyword>CAD-Line dialog box<keyword>Import STL file</keyword></keyword>
+    <keyword>Dialog<keyword>CAD-Line - SOLIDWORKS tab</keyword></keyword>
+  </keywords>
+  <body>
+    <header>
+      <para styleclass="Heading1">- &gt; STL Import tab</para>
+    </header>
+    <para styleclass="Heading2">CAD-Linie &gt; Registerkarte STL-Import</para>
+    <para styleclass="SeeAlso">Siehe auch : <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-CADLine">Dialogfeld CAD-Linie</link></para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="Body Text">Verwenden Sie diese Registerkarte, wenn Sie nicht über <text styleclass="SOLIDWORKS">SolidWorks</text> verfügen.</para>
+    <para styleclass="Body Text HowTo">Verwenden Sie <text styleclass="VariableName">STL-Import</text>, um:</para>
+    <list id="0" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+      <li styleclass="HowTo Bulleted"><text styleclass="Body Text HowTo">Eine </text><text styleclass="Body Text">STL-Datei </text><text styleclass="Body Text HowTo">importieren </text><text styleclass="Body Text">- sie wird zu einem </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-Solids" styleclass="Interface">CAD-Solid</link><text styleclass="Body Text"> in </text><text styleclass="VariableName-IT">MechDesigner</text><text styleclass="Body Text">&#32;</text></li>
+      <li styleclass="HowTo Bulleted">Bearbeiten Sie die Lineareinheiten so, dass sie den Lineareinheiten der ursprünglichen STL-Datei entsprechen.</li>
+      <li styleclass="HowTo Bulleted">Bearbeiten Sie die <text styleclass="Parameter-Header">Kantenwinkelgrenze</text>, um Facettenlinien zu entfernen.</li>
+    </list>
+    <para styleclass="VariableName">Bevor Sie eine STL-Datei in Ihrem CAD-System speichern:</para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="1" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Table"><text styleclass="HowTo Bulleted">Drehen Sie das Modell in Ihrer CAD-Software in die korrekte Ausrichtung in Bezug auf die </text><text styleclass="VariableName">Mechanismus-Ebene</text><text styleclass="Body Text">, bevor Sie es importieren.</text></para>
+          <para styleclass="Body Table">Speichern Sie das Modell (in Ihrer CAD-Software) als <text styleclass="VariableName">binären STL-Dateityp.</text></para>
+          <para styleclass="Body Table">Merken Sie sich die <text styleclass="VariableName">linearen Einheiten</text>.</para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="VariableName">Nachdem Sie eine STL-Datei importiert haben:</para>
+    <para styleclass="Bullets"><table styleclass="Default" rowcount="1" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Bullets"><text styleclass="SeeAlso">Siehe </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-CADLine-Display" anchor="CADSolidMove" styleclass="SeeAlso">Registerkarte Anzeigeoptionen</link><text styleclass="Body Table">, um die STL-Datei in den Richtungen der X-, Y- und Z-Achse zu verschieben.</text></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="Heading3_atocs_">CAD-Linien-Dialogfeld</para>
+    <para styleclass="Heading4 HowTo_atoc_">Registerkarte STL-Import</para>
+    <para styleclass="Body Table"><image src="MD-Dialog-CADLine-STL Import-tab.png" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+    <para styleclass="Separator" style="text-indent:-36px; margin-left:61px;"><anchor id="CAD-Line-ImportSTLFile"><keywords><keyword>CAD-Line -Import STL File</keyword><keyword>Edge Angle Limit</keyword></keywords></anchor><image src="btn_addkeyword.bmp" scale="100.00%" styleclass="Separator-Header" figurelistinclude="0"></image><tab /><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" src-collapsed="btn_addkeyword.bmp" src-expanded="btn_delkeyword.bmp" src-print="none" styleclass="Separator-Header"><caption><![CDATA[  STL File Import ]]></caption></toggle></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="3" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:240px;">
+          <para styleclass="Normal" style="text-align:left;"><image src="MD-DIALOG-CADLINE-STILIMPORT.ipp" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="Body Table"><text styleclass="Notes">Hinweis</text>: <text styleclass="Body Text HowTo">Um das Modell zu sehen, tun Sie </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Visibility-SolidsInMechanisms" styleclass="T_Menu">Visibility toolbar &gt; Show Solids in Mechanisms</link></para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="Body Table"><text styleclass="Parameter-Header">STL-Datei importieren -</text><text styleclass="Body Text HowTo"> um eine STL-Datei zu importieren</text></para>
+          <list id="1" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Numbered" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo Numbered">Klicken Sie auf die Schaltfläche <text styleclass="Parameter">Durchsuchen</text><text styleclass="VariableName">&#32;</text></li>
+            <li styleclass="HowTo Numbered"><text styleclass="Body Text HowTo">Durchsuchen Sie eine STL-Datei und wählen Sie sie aus.</text></li>
+            <li styleclass="HowTo Numbered"><text styleclass="HowTo Bulleted">Klicken Sie auf die &#160;Schaltfläche</text><text styleclass="Parameter">Importieren</text></li>
+          </list>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="VariableName"><text styleclass="Parameter-Header">Kantenwinkelgrenze </text><text styleclass="Body Text">- siehe Bilder unten.</text></para>
+          <para styleclass="Body Text HowTo">Zur Änderung der <text styleclass="VariableName-IT">sichtbaren</text> Qualität der STL-Datei im <text styleclass="Interface">Grafikbereich</text>.</para>
+          <para styleclass="Body Text HowTo">Edge Angle<text styleclass="Parameter">Limit</text><text style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;"> analysiert den spitzen Winkel zwischen zwei benachbarten Facetten.</text></para>
+          <list id="2" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted"><text style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">Wenn der Winkel </text><text styleclass="VariableName">kleiner</text><text style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">ist </text><text styleclass="VariableName">als</text><text style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;"> die </text><text styleclass="Parameter">Kantenwinkelgrenze</text><text style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">, wird </text><text styleclass="VariableName">keine</text><text style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;"> Linie zwischen den beiden Facetten angezeigt.</text></li>
+            <li styleclass="HowTo Bulleted">Ist der<text styleclass="Body Text HowTo" style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">Winkel </text><text styleclass="VariableName">größer als</text><text styleclass="Body Text HowTo" style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;"> der </text><text styleclass="Parameter">Kantenwinkelgrenzwert</text><text styleclass="Body Text HowTo" style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">, </text>wird<text styleclass="Body Text HowTo" style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;"> eine Linie zwischen den beiden Facetten angezeigt.</text></li>
+          </list>
+          <para styleclass="Parameter-Header">Schaltfläche &quot;Volltonfarbe&quot; <text styleclass="Body Text">-</text><text styleclass="Body Text HowTo"> zum Bearbeiten der Farbe der STL-Datei:</text></para>
+          <list id="3" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo Bulleted">Klicken Sie auf die Schaltfläche<text styleclass="Body Text">&#32;</text><text styleclass="Parameter">Solid Color</text><text styleclass="VariableName">&#32;</text></li>
+            <li styleclass="HowTo Numbered"><text styleclass="Body Text HowTo">Wählen Sie eine Farbe im Windows Color Picker® aus </text></li>
+            <li styleclass="HowTo Numbered"><text styleclass="Body Text HowTo">Klicken Sie auf OK in der Windows-Farbauswahl®.</text></li>
+          </list>
+          <para styleclass="Parameter-Header">STL-Datei-Einheiten</para>
+          <para styleclass="Body Text HowTo">Wählen Sie die Einheiten aus, die mit den Einheiten der <text styleclass="VariableName">STL-Originaldatei</text> übereinstimmen. </para>
+          <para styleclass="Body Text HowTo">Versuchen Sie Meter, [m], wenn Sie sich nicht sicher sind.</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:240px;">
+          <para styleclass="Normal"><image src="MD-CADLINE-EDGELIMIT-0.png" scale="-99.90%" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="VariableName"><text styleclass="Body Text HowTo" style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">Bild mit zu vielen Facettenkanten.</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:240px;">
+          <para styleclass="Normal"><image src="MD-CADLINE-EDGELIMIT-1.png" scale="-99.90%" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="Body Text">Bilder mit nicht so vielen Facettenrändern.</para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading4 Toggle_atocs_" style="text-indent:-32px; margin-left:32px;">STL DATEI-GRÖSSE</para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="1" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Text">In der <text styleclass="Interface2">STL-Datei</text>&#32;<text styleclass="VariableName-IT">werden</text> die Oberflächen des CAD-Modells als ein Netz aus Dreiecken <text styleclass="VariableName-IT">mosaikartig dargestellt</text>. Jedes Dreieck kann als eine kleine Fläche - eine Facette - erscheinen. Die Anzahl der Facetten ist abhängig von: </para>
+          <list id="4" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted">der Komplexität des Originalmodells und </li>
+            <li styleclass="HowTo Bulleted">wie genau die STL-Datei das ursprüngliche CAD-Modell tesselieren soll.</li>
+          </list>
+          <para styleclass="Body Text">Um komplexe Modelle zu erstellen und viele STL-Dateien zu importieren, benötigen Sie eine:</para>
+          <list id="5" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted"><text styleclass="Interface2" style="color:#ff0000;">Kleine</text> STL-Dateigröße.</li>
+            <li styleclass="HowTo Bulleted"><text styleclass="Interface2" style="color:#ff0000;">UND</text> sie soll wie das ursprüngliche CAD-Modell aussehen.</li>
+            <li styleclass="HowTo Bulleted"><text styleclass="Interface2" style="color:#ff0000;">UND</text> die Facetten nicht zu sehen, oder nur die Facetten zu sehen, die echte Kanten oder Ecken definieren.</li>
+          </list>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading4 Toggle_atocs_" style="text-indent:-32px; margin-left:32px;"><anchor id="EdgeAngleLimit"><keywords><keyword>Edge Angle Limit<keyword>How to reduce CAD file-size and Imporve Appearance.</keyword></keyword></keywords></anchor><text styleclass="Interface2">Strategies to reduce the STL file-size.</text></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="3" colcount="2">
+      <tr style="vertical-align:top">
+        <td colspan="2">
+          <para styleclass="Interface2">Strategie 1:</para>
+          <para styleclass="Interface2"><text styleclass="VariableName-indent">Reduzieren Sie die Komplexität des ursprünglichen CAD-Modells, um eine KLEINE Dateigröße zu erhalten.</text></para>
+          <para styleclass="Body Text HowTo">Fügen Sie eine neue Konfiguration für das CAD-Modell hinzu. In der neuen Konfiguration:</para>
+          <list id="6" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted">Führen Sie eine Geometrieprüfung der CAD-Modelldatei durch, um festzustellen, ob sie kleine Lücken oder Whisker aufweist.</li>
+          </list>
+          <list id="7" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted">Heben Sie kleine Verrundungen auf, insbesondere wenn sie keine Funktion haben. </li>
+            <li styleclass="HowTo Bulleted">Ersetzen Sie Verrundungen durch Fasen, insbesondere entlang gerader Kanten.</li>
+            <li styleclass="HowTo Bulleted">Hängen Sie alle Verbindungselemente aus.</li>
+            <li styleclass="HowTo Bulleted">Hängen Sie Befestigungslöcher und Lochmerkmale aus.</li>
+            <li styleclass="HowTo Bulleted">Hängen Sie alle kosmetischen Details ab.</li>
+          </list>
+          <para styleclass="Interface2">Strategie 2: </para>
+          <para styleclass="Body Text"><text styleclass="VariableName-indent">Reduzieren Sie die Genauigkeit der STL-Datei.</text></para>
+          <para styleclass="Body Table">Es gibt zwei Parameter zur Steuerung der Genauigkeit der STL-Datei. Diese befinden sich auf der Registerkarte <text styleclass="SOLIDWORKS">SOLIDWORKS</text>.</para>
+          <para styleclass="Parameter-Header">Lineare Abweichung <text styleclass="VariableName">: </text></para>
+          <para styleclass="Body Text"><text style="font-weight:normal;">Die maximale </text><text styleclass="Parameter">lineare Abweichung</text><text style="font-weight:normal;"> (Abstand) zwischen der Oberfläche des ursprünglichen CAD-Modells und der tesselierten Oberfläche der STL-Datei. </text></para>
+          <para styleclass="Parameter-Header">Winkelabweichung <text styleclass="VariableName">: </text></para>
+          <para styleclass="Body Table">Die maximale <text styleclass="Parameter">Winkelabweichung</text> zwischen benachbarten Facetten der mosaikartigen Oberfläche der STL-Datei.</para>
+          <para styleclass="Body Table">Wenn Sie nicht über <text styleclass="SOLIDWORKS">SolidWorks</text> verfügen, müssen Sie diese Parameter in Ihrem 3D-CAD finden, bevor Sie in der STL-Datei speichern. Möglicherweise sind sie Optionen im Dialogfeld <text styleclass="T_Menu">Speichern unter &gt; STL-Dateityp</text>.</para>
+          <para styleclass="Interface2">Strategie 3: </para>
+          <para styleclass="Interface2"><text styleclass="VariableName">Verwenden Sie den &#160;Parameter </text>Kantenwinkelgrenze<text styleclass="VariableName"> - siehe </text><text styleclass="Separator-Header">STL-Dateiimport</text><text styleclass="VariableName"> oben</text></para>
+          <para styleclass="Body Text HowTo">STL-Dateien können ihre Facetten zeigen. Sie können die Darstellung der Facetten mit meiner <text styleclass="VariableName">Magic Number</text> verbessern!</para>
+          <para styleclass="Body Text HowTo"><text styleclass="Parameter-Header">Kantenwinkelgrenze</text> = <text styleclass="Parameter-Header">Winkelabweichung </text><text styleclass="VariableName">× 3,14159÷2 </text></para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="Interface2">Examples</para>
+          <para styleclass="Body Text HowTo">Nachfolgend sehen Sie zwei Bilder desselben SOLIDWORKS Teils. </para>
+          <para styleclass="Body Text HowTo">Sie scheinen fast identisch zu sein. Allerdings gibt es einen großen Unterschied in der Anzahl der Facetten und Scheitelpunkte. </para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="vertical-align:top; width:240px;">
+          <para styleclass="Image Caption"><image src="MD-STL-File-many-vertices.png" scale="-99.90%" figurelistinclude="0"><caption><![CDATA[STL tessellation: Large number of Vertices]]></caption></image></para>
+        </td>
+        <td style="vertical-align:top; width:568px;">
+          <para styleclass="VariableName">BAD - viele Facetten</para>
+          <list id="8" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted">Lineare Abweichung = 0,014 mm und</li>
+            <li styleclass="HowTo Bulleted">Winklige Abweichung = 0,4º</li>
+          </list>
+          <para styleclass="Normal">Es gibt </para>
+          <list id="9" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted">119132 Scheitelpunkte </li>
+            <li styleclass="HowTo Bulleted">~40000 Dreiecke</li>
+            <li styleclass="HowTo Bulleted">Die STL-Datei ist <text styleclass="VariableName">3,5 Megabyte</text>groß.</li>
+          </list>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="vertical-align:top; width:240px;">
+          <para styleclass="Image Caption"><image src="MD-STL-File-few-vertices.png" scale="-99.90%" figurelistinclude="0"><caption><![CDATA[STL tessellation: Few number of Vertices]]></caption></image></para>
+        </td>
+        <td style="vertical-align:top; width:568px;">
+          <para styleclass="VariableName">GUT - wenige Facetten</para>
+          <list id="10" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted">Lineare Abweichung = 0,<text style="font-size:10pt; vertical-align:baseline;">5 mm</text> und </li>
+            <li styleclass="HowTo Bulleted">Winklige Abweichung = 5º</li>
+          </list>
+          <para styleclass="Normal">Es gibt:</para>
+          <list id="11" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted">7533 Scheitelpunkte </li>
+            <li styleclass="HowTo Bulleted">2500 Dreiecke</li>
+            <li styleclass="HowTo Bulleted">Die STL-Datei ist <text styleclass="VariableName">0,365 Megabyte</text><text styleclass="Body Text"> größe</text>&#32;</li>
+          </list>
+        </td>
+      </tr>
+    </table></para>
+  </body>
+</topic>

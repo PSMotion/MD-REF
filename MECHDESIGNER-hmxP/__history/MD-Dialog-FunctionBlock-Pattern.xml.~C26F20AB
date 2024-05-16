@@ -1,0 +1,447 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" status="Under Construction" modified="2024-04-28T20:29:50.972+01:00" lasteditedby="44785" version="2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title>Dialog: Function-Block: Pattern</title>
+  <keywords>
+    <keyword>Dialog<keyword>Function-Block : Pattern FB</keyword></keyword>
+    <keyword>Pattern FB<keyword>dialog</keyword></keyword>
+    <keyword>Switch display of Md-Solids and CAD-Solids.</keyword>
+  </keywords>
+  <body>
+    <header>
+      <para styleclass="Heading1">Dialog: Function-Block: Pattern</para>
+    </header>
+    <para styleclass="Heading2" style="page-break-before:always;">Pattern FB</para>
+    <para styleclass="SeeAlso">See <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Command-AddFBPattern">Add Pattern FB</link>&#32;</para>
+    <para styleclass="Normal"><line style="height:1px; color:#343400;" /></para>
+    <para styleclass="Body Text HowTo">If you use regular CAD, you know about circular and linear arrays. In <text styleclass="VariableName">MechDesigner</text><text styleclass="VariableName-IT">,</text> there is more complexity because <text styleclass="Element">parts</text> frequently have complex motions.</para>
+    <list id="0" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+      <li styleclass="HowTo Bulleted">A <text styleclass="Element">Pattern FB</text> makes <text styleclass="VariableName">Copies</text> of <text styleclass="Element">Profile</text><text styleclass="Body Text">/</text><text styleclass="Element">Extrusions</text> (<text styleclass="Interface2">MD</text><text styleclass="Interface">-Solids</text>) and <text styleclass="Interface2">CAD</text>-<text styleclass="Interface">Solids</text> - see <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-Solids" styleclass="Interface">Solids</link><text styleclass="Body Text">,</text></li>
+      <li styleclass="Body Text HowTo"><text styleclass="Body Text">The </text><text styleclass="Element">Pattern FB</text><text styleclass="Body Text"> anticipates the motion of each </text><text styleclass="VariableName">Copy</text><text styleclass="Body Text"> and puts each </text><text styleclass="VariableName">Copy</text><text styleclass="Body Text"> at a position that corresponds to its phase of the machine-cycle.</text></li>
+      <li styleclass="Body Text HowTo"><text styleclass="Body Text">The </text><text styleclass="Element">Pattern FB</text><text styleclass="Body Text"> can </text><text styleclass="HowTo Bulleted">show or hide a </text><text styleclass="VariableName">Copy</text><text styleclass="HowTo Bulleted"> for a machine-cycle.</text></li>
+      <li styleclass="Body Text HowTo"><text styleclass="Body Text">The </text><text styleclass="Element">Pattern FB</text><text styleclass="Body Text"> can use a timing-chart to show or hide </text><text styleclass="VariableName">Copies</text><text styleclass="Body Text"> as they pass through different phases of the machine-cycle.</text></li>
+    </list>
+    <para styleclass="Normal"><line style="height:1px; color:#343400;" /></para>
+    <para styleclass="SeeAlso"><text styleclass="Body Text HowTo">Use </text><text styleclass="T_Menu">Visibility toolbar &gt; </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Visibility-SolidsInMechanisms" styleclass="T_Menu">Show Solids in Mechanisms</link><text styleclass="T_Menu">&#32;</text><text styleclass="Body Text HowTo">to see the </text><text styleclass="VariableName">Copies</text><text styleclass="Body Text HowTo"> that we generate for you with the </text><text styleclass="Element">Pattern FB</text><text styleclass="Body Text">.</text></para>
+    <para styleclass="Normal"><line style="height:1px; color:#343400;" /></para>
+    <para styleclass="Heading4 Toggle_atocs_">How to open the Pattern FB dialog</para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="1" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:40px;">
+          <para styleclass="Normal" style="text-align:center;"><image src="MD-Icon-FB-Pattern.png" align="left" scale="100.00%" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="Body Text">Open the<text styleclass="Element">&#32;</text><text styleclass="Element-Header">Pattern FB</text><text styleclass="Element"> dialog:</text></para>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <list id="1" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Body Table" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="Body Table"><text style="font-style:normal;">Click</text> the <text styleclass="Element">Pattern FB</text> in the <text styleclass="Interface">Assembly-Tree</text>.<text styleclass="VariableName">&#32;</text></li>
+                </list>
+                <para styleclass="Body Text">The <text styleclass="Element">Pattern FB</text> is now in the <text styleclass="Interface">Selection-Window</text></para>
+                <list id="2" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="2" styleclass="Body Table" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="Body Table"><text style="font-style:normal;">Right-click</text> the <text styleclass="Element">Pattern FB</text> element in the <text styleclass="Interface">Selection-Window</text><text styleclass="VariableName">&#32;</text></li>
+                  <li styleclass="HowTo Bulleted"><text style="font-style:normal;">Click</text>&#32;<text styleclass="VariableName-indent">Edit element</text> in <text styleclass="Body Text">the shortcut menu</text></li>
+                </list>
+                <para styleclass="Interface2">OR</para>
+                <list id="3" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Body Table" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="Body Table"><text styleclass="SeeAlso">See </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-How-to-Open-a-Dialog-Box" styleclass="SeeAlso">How to Open a dialog</link>.<text styleclass="VariableName">&#32;</text></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Body Text">The <text styleclass="Element-Header">Pattern FB </text><text styleclass="Element">dialog </text>is now open.</para>
+    <para styleclass="Normal"><line style="height:1px; color:#343400;" /></para>
+    <para styleclass="Heading2"><anchor id="PatterElement"><keywords><keyword>Pattern dialog</keyword></keywords></anchor><text styleclass="Heading3_atocs_">Pattern dialog</text></para>
+    <para styleclass="Body Text"><table styleclass="Default" rowcount="1" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:237px;">
+          <para styleclass="Normal" style="text-align:left;"><image src="MD-DIALOG-FB-PATTERN.ipp" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"><caption><![CDATA[Pattern FB dialog]]></caption></image></para>
+        </td>
+        <td>
+          <para styleclass="Body Text"> There are two tabs in the <text styleclass="Element-Header">Pattern FB</text><text styleclass="Element"> dialog</text>:</para>
+          <para styleclass="Heading4 Toggle_atocs_2">Pattern Elements</para>
+          <para styleclass="Heading4 Toggle_atocs_2">Phase Visibilities</para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading4 Toggle_atocs_"><anchor id="PATTERN-ELEMENTS" styleclass="Heading4 HowTo_atoc_"><keywords><keyword>Pattern dialog<keyword>Pattern Elements tab</keyword></keyword></keywords></anchor>Pattern Elements tab</para>
+    <para styleclass="Separator-Header"><anchor id="PatternEnable" styleclass="Heading4 Toggle_atocs_"><keywords><keyword>Pattern dialog<keyword>Enable Pattern</keyword><keyword>Pattern Type</keyword></keyword></keywords></anchor><image src="tog_plus.gif" scale="100.00%" figurelistinclude="0"></image><tab /><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" src-collapsed="tog_plus.gif" src-expanded="tog_minus.gif"><caption><![CDATA[Enable and Pattern Type ]]></caption></toggle></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="2" colcount="1">
+      <tr style="vertical-align:top">
+        <td style="width:223px;">
+          <para styleclass="Image Caption"><image src="MD-DIALOG-FB-PATTERN-PatElement-EnableType.ipp" scale="-99.90%" figurelistinclude="0"></image></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Text"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <list id="4" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="Bullets"><text style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">Click </text><text styleclass="ParameterHeader">Enable</text><text style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;"> check-box to make the </text><text style="font-family:&apos;Segoe UI Semibold&apos;; font-size:10pt; font-weight:bold; font-style:normal; text-transform:uppercase; vertical-align:baseline; color:#800000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">Pattern</text><text style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;"> dialog active</text><text style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">&#32;</text></li>
+                  <li styleclass="HowTo Bulleted">Click <text styleclass="ParameterHeader">Space Pattern</text> or <text styleclass="ParameterHeader">Phase Pattern</text>.</li>
+                </list>
+                <para styleclass="Body Text HowTo"><text style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">These two options take a </text><text styleclass="VariableName">snap-shot</text><text style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;"> of the path of a </text><text styleclass="Interface">Solid</text>. The Pattern shows copies of the <text styleclass="Interface">Solid</text> at equal increments of its path in the machine-cycle.</para>
+                <list id="5" type="ul" listtype="bullet" formatstring="&#164;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Wingdings; font-size:11pt; color:#000000;">
+                  <li styleclass="HowTo Bulleted"><text style="font-family:Arial; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">&#32;</text><text styleclass="Parameter">Space Pattern</text> (<text styleclass="Notes">Note:</text> I rarely use this option!)</li>
+                </list>
+                <para styleclass="Body Text Howindent4bullets">When you cycle the model:</para>
+                <list id="6" type="ol" listtype="lower-alpha" formatstring="&#37;&#48;&#58;&#115;&#41;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted3" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="HowTo Bulleted3">Each copy of the <text styleclass="Interface">Solid</text> moves with the <text styleclass="Element">Part</text><text styleclass="VariableName">&#32;</text></li>
+                </list>
+                <para styleclass="VariableName"><text styleclass="Interface2">OR</text><text styleclass="Body Text" style="font-family:Arial; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">&#32;</text></para>
+                <list id="7" type="ul" listtype="bullet" formatstring="&#164;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Wingdings; font-size:10pt; color:#000080;">
+                  <li styleclass="HowTo Bulleted"><text style="font-family:Arial; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">&#32;</text><text styleclass="Parameter">Phase Pattern</text></li>
+                </list>
+                <list id="8" type="ol" listtype="lower-alpha" formatstring="&#37;&#48;&#58;&#115;&#41;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted3" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="HowTo Bulleted3"><text style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">Each copy of the </text><text styleclass="Interface">Solid</text><text style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;"> moves along the normal path of the </text><text styleclass="Interface">Solid.</text><text styleclass="Body Text">&#32;</text><text style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">&#32;</text></li>
+                  <li styleclass="Body Text HowTo">Each copy of the <text styleclass="Interface">Solid</text> is at an advanced position in the machine-cycle.</li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Separator-Header"><anchor id="Pattern-PatternElements"><keywords><keyword>Pattern dialog<keyword>Select Pattern-Elements</keyword><keyword>Motions to Linearize</keyword></keyword></keywords></anchor><image src="tog_plus.gif" scale="100.00%" figurelistinclude="0"></image><tab /><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" src-collapsed="tog_plus.gif" src-expanded="tog_minus.gif" src-print="none"><caption><![CDATA[Pattern Elements ]]></caption></toggle></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="3" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Normal"><image src="MD-DIALOG-FB-PATTERN-PatElement-PatternType.ipp" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"><caption><![CDATA[Pattern-Elements]]></caption></image></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Parameter-Header" style="text-align:left; text-indent:0px; margin-top:0px; margin-right:0px; margin-bottom:0px; margin-left:0px; line-height:1.00; background-color:transparent; white-space:normal; page-break-inside:auto; page-break-after:auto; border:none; tabstops:none;"><text styleclass="ParameterHeader">Pattern-Elements</text><image src="Red-14-4.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+          <para styleclass="Body Text HowTo" style="margin-top:0px;"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Body Text"><text styleclass="Interface2">Solid</text><text styleclass="Body Text HowTo"> elements from which we make for you </text><text styleclass="VariableName">copies</text><text styleclass="Body Text HowTo"> for the </text><text styleclass="VariableName">Space Pattern</text><text styleclass="Body Text HowTo"> or </text><text styleclass="VariableName">Phase Pattern</text><text styleclass="Parameter">.</text></para>
+                <para styleclass="Body Text">There<text styleclass="Body Text HowTo"> are two categories of</text><text styleclass="Body Table">&#32;</text><text styleclass="Interface">Solid</text><text styleclass="Body Text HowTo"> elements you can add as </text><text styleclass="Parameter">Pattern Elements</text><text styleclass="Body Text HowTo">: </text></para>
+                <list id="9" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+                  <li styleclass="HowTo Bulleted"><text styleclass="Interface2">MD-Solids</text><text styleclass="Body Text"> - </text><text styleclass="Element">Profile/Extrusions</text><text styleclass="Body Text"> - you </text><text styleclass="VariableName" style="color:#ff0000;">MUST</text><text styleclass="Body Text"> select the </text><text styleclass="Element">Extrusion</text><text styleclass="Body Text">&#32;</text></li>
+                  <li styleclass="HowTo Bulleted"><text styleclass="Interface2">CAD-Solids</text><text styleclass="Body Text"> - </text><text styleclass="Interface">Solids</text><text styleclass="Body Text"> you import onto a </text><text styleclass="Element">CAD-Line</text><text styleclass="Body Text"> - you can select the </text><text styleclass="Interface">CAD-Solid</text><text styleclass="Body Text"> or the </text><text styleclass="Element">CAD-Line</text><text styleclass="Body Text">.</text></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Body Text"><text styleclass="ParameterHeader">Motion to Linearize</text><image src="Red-14-5.gif" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+          <para styleclass="Body Text HowTo" style="margin-top:0px;"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Body Text">A <text styleclass="Element">Motion FB</text><image src="Red-14-5.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image> can linearize the motion of the <text styleclass="Interface">Solids</text> in <text styleclass="Parameter">Pattern-Elements</text><image src="Red-14-4.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image>. <text styleclass="Interface2">Experiment!</text></para>
+                <list id="10" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullets" style="font-family:Symbol; font-size:11pt; color:#000000;">
+                  <li styleclass="Bullets">If the <text styleclass="Interface">Solids </text>in the <text styleclass="Parameter">Pattern-Elements</text><image src="Red-14-4.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image> move as you expect, <text styleclass="VariableName" style="color:#ff0000;">do not add</text> a <text styleclass="Element">Motion FB</text>.</li>
+                </list>
+                <list id="11" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullets" style="font-family:Symbol; font-size:11pt; color:#000000;">
+                  <li styleclass="Bullets">If the <text styleclass="Interface">Solids</text> in the <text styleclass="Parameter">Pattern-Elements</text><image src="Red-14-4.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image> do <text styleclass="VariableName" style="color:#ff0000;">not</text> move as you expect, <text styleclass="VariableName" style="color:#ff0000;">do add</text> a <text styleclass="Element">Motion FB</text> - but this may not solve the problem!</li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="VariableName">Add SOLIDS<text styleclass="Body Text"> to the </text><text styleclass="Parameter">Pattern-Elements</text><text styleclass="Body Text"> box</text><image src="Red-14-4.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+          <para styleclass="Body Text"><table styleclass="Block" rowcount="2" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Body Text"><image src="MD-Dialog-PatternElements-toolbar.png" align="left" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"><caption><![CDATA[Pattern-Elements toolbar]]></caption></image></para>
+              </td>
+            </tr>
+            <tr style="vertical-align:top">
+              <td>
+                <list id="12" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Body Table" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="Body Table"><text styleclass="T_Menu">Pattern-Elements toolbar</text><text styleclass="B Bullets" style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">: Click the </text><text styleclass="B Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">Padlock</text><image src="Red-14-1.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="B Bullets" style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;"> to unlock the</text><text styleclass="VariableName"> toolbar </text></li>
+                  <li styleclass="B Bullets"><text styleclass="VariableName">graphics-area</text><text styleclass="Body Text">:</text><text style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">&#32;</text><text styleclass="VariableName" style="color:#ff0000;">SHIFT + Click</text><text style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">&#32;</text><text styleclass="Element">Profile</text><text style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;"> elements to add </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-Solids" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:10pt; font-weight:bold; font-style:normal; text-transform:uppercase; vertical-align:baseline; color:#800000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">Extrusion</link><text styleclass="Body Text"> elements that </text><text styleclass="VariableName" style="color:#ff0000;">you cannot see</text><text styleclass="VariableName">&#32;</text></li>
+                </list>
+                <para styleclass="B Bullets"><text styleclass="VariableName">OR</text></para>
+                <list id="13" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="2" styleclass="B Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="B Bullets"><text styleclass="VariableName">graphics-area</text><text style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">: </text><text styleclass="VariableName" style="color:#ff0000;">CLICK</text><text style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">&#32;</text><text styleclass="Element">Extrusion</text><text style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;"> elements that </text><text styleclass="VariableName" style="color:#ff0000;">you can see</text><text style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;"> to add </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-Solids" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:10pt; font-weight:bold; font-style:normal; text-transform:uppercase; vertical-align:baseline; color:#800000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">Extrusion</link><text styleclass="Body Text"> elements</text><text styleclass="VariableName">&#32;</text></li>
+                </list>
+                <para styleclass="B Bullets"><text styleclass="VariableName">OR </text></para>
+                <list id="14" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="2" styleclass="B Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="B Bullets"><text styleclass="VariableName">graphics-area</text><text styleclass="Body Text"> or </text><text styleclass="Interface">Assembly-Tree</text><text style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">: Click </text><text style="font-family:&apos;Segoe UI Semibold&apos;; font-size:10pt; font-weight:bold; font-style:normal; text-transform:uppercase; vertical-align:baseline; color:#800000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">CAD-Lines</text><text style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;"> onto which a </text><text styleclass="Interface">CAD-Solid</text><text style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;"> has been imported.</text><text style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">&#32;</text></li>
+                </list>
+                <list id="15" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="3" styleclass="B Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="B Bullets"><text styleclass="T_Menu">Pattern-Elements toolbar</text><text style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">: Click the </text><text style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">Padlock</text><image src="Red-14-1.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;"> to lock the </text><text styleclass="T_Menu">toolbar</text><text style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;"> and box.</text><text styleclass="VariableName">&#32;</text></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Body Text HowTo"><text styleclass="Interface2">Solid</text> elements are now in the <text styleclass="Parameter">Pattern Elements</text> box as <text styleclass="Element">Extrusions</text> and/or <text styleclass="Element">CAD-Lines</text>.</para>
+          <para styleclass="Normal"><line style="height:1px; color:#343400;" /></para>
+          <para styleclass="VariableName">To add a <text styleclass="Element">Motion FB</text> to the <text styleclass="Parameter">Motion to Linearize</text> box<image src="Red-14-5.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image>&#32;</para>
+          <para styleclass="Body Text"><table styleclass="Block" rowcount="2" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Body Text"><image src="MD-Dialog-PatternElements-toolbar.png" align="left" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"><caption><![CDATA[Pattern-Elements toolbar]]></caption></image></para>
+              </td>
+            </tr>
+            <tr style="vertical-align:top">
+              <td>
+                <list id="16" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="B Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="B Bullets"><text styleclass="T_Menu">Pattern-Elements toolbar</text><text style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">: Click the </text><text style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">Padlock</text><image src="Red-14-1.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;"> to unlock the </text><text styleclass="T_Menu">Pattern-Elements toolbar</text><text style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">.</text><text styleclass="VariableName">&#32;</text></li>
+                  <li styleclass="B Bullets"><text styleclass="Body Text">graphics-area or </text><text styleclass="Interface">Assembly-Tree: </text><text styleclass="Body Text">Click a </text><text styleclass="Element">Motion FB</text><text styleclass="Interface2">&#32;</text></li>
+                  <li styleclass="B Bullets"><text styleclass="T_Menu">Pattern-Elements toolbar</text><text style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">: Click the </text><text style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">Padlock</text><image src="Red-14-1.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;"> to lock the </text><text styleclass="T_Menu">Pattern-Elements toolbar</text><text style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;"> and box.</text><text styleclass="VariableName">&#32;</text></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Body Text HowTo">A <text styleclass="Element">Motion FB</text><text styleclass="BodyText BI">&#32;</text>is now in the <text styleclass="Parameter">Motions to Linearize</text> box</para>
+          <para styleclass="Normal"><line style="height:1px; color:#343400;" /></para>
+          <para styleclass="VariableName">To remove a <text styleclass="Interface2">Solid</text><image src="Red-14-4.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image> or <text styleclass="Element">Motion FB</text><image src="Red-14-5.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+          <para styleclass="Body Text"><table styleclass="Block" rowcount="2" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Body Text"><image src="MD-Dialog-PatternElements-toolbar.png" align="left" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"><caption><![CDATA[Pattern-Elements toolbar]]></caption></image></para>
+              </td>
+            </tr>
+            <tr style="vertical-align:top">
+              <td>
+                <list id="17" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="B Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="B Bullets"><text styleclass="T_Menu">Pattern-Elements toolbar</text><text style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">: Click the </text><text style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">Padlock</text><image src="Red-14-1.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;"> to unlock the </text><text styleclass="T_Menu">Pattern-Elements toolbar</text><text style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">.</text><text styleclass="VariableName">&#32;</text></li>
+                  <li styleclass="B Bullets"><text style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">Click to select a </text><text styleclass="Parameter">Pattern-Element</text><text style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;"> or a </text><text styleclass="Element">Motion FB</text><text style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">&#32;</text></li>
+                  <li styleclass="B Bullets"><text styleclass="Body Text HowTo">Click the </text><text styleclass="Parameter">Remove Solid</text><image src="Red-14-2.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Parameter">&#32;</text><text styleclass="Body Text HowTo">or the </text><text styleclass="Parameter">Remove Motion FB</text><image src="Red-14-3.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Body Text HowTo"> button in the </text><text styleclass="T_Menu">Pattern-Elements toolbar</text></li>
+                  <li styleclass="B Bullets"><text styleclass="T_Menu">Pattern-Elements toolbar</text><text style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">: Click the </text><text style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">Padlock</text><image src="Red-14-1.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;"> to lock the </text><text styleclass="T_Menu">Pattern-Elements toolbar</text><text style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;"> and box.</text><text styleclass="VariableName">&#32;</text></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading4 Toggle_atocs_"><anchor id="PhaseVisibility" styleclass="Heading4 HowTo_atoc_"><keywords><keyword>Pattern dialog<keyword>Phase Visibility tab</keyword></keyword></keywords></anchor>Phase Visibilities tab</para>
+    <para styleclass="Body Text">To help understand <text styleclass="VariableName">Phase-Visibilities</text>, we can use a Clock as an example.</para>
+    <para styleclass="Body Text HowTo">Imagine a chain is wrapped around a circular 12-hour clock. There are 12 chain-links in the chain.</para>
+    <para styleclass="Body Text HowTo">The chain moves continuously around the clock. One of the chain-links is the Source <text styleclass="Parameter">Pattern-Element</text> (<text styleclass="Interface">Solid</text>).</para>
+    <list id="18" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+      <li styleclass="HowTo Bulleted">Use <text styleclass="Separator">PHASES</text> to decide how many chain-links you want in the chain - called <text styleclass="Parameter"># Copies</text> - in this example, 12 chain-links</li>
+      <li styleclass="HowTo Bulleted">Use <text styleclass="Separator">PHASES</text><text styleclass="Body Text">&#32;</text>to hide one or more chain-links (the Copies) permanently, as it moves <text styleclass="Interface2" style="color:#ff0000;">all</text> the way around the clock.</li>
+      <li styleclass="HowTo Bulleted">Nearly always, use <text styleclass="Separator">PHASES</text><text styleclass="Body Text">&#32;</text>to <text styleclass="Parameter">Hide Source Pattern-Element</text>.</li>
+      <li styleclass="HowTo Bulleted"><text styleclass="Body Text HowTo">Use </text><text styleclass="Separator">Pattern Visibility</text><text styleclass="Body Text HowTo"> to hide each chain-link, one link after the next link, as it moves between hours, for example, between 6 and 9 o&apos;clock.</text></li>
+    </list>
+    <para styleclass="Separator-Header"><anchor id="PatternElementPhases" styleclass="Body Text HowTo"><keywords><keyword>Pattern dialog<keyword>Pattern Visibilities - Phases</keyword></keyword></keywords></anchor><image src="tog_plus.gif" scale="100.00%" figurelistinclude="0"></image><tab /><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" src-collapsed="tog_plus.gif" src-expanded="tog_minus.gif" src-print="none"><caption><![CDATA[Phases ]]></caption></toggle></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="4" colcount="2">
+      <tr style="vertical-align:top">
+        <td colspan="2" style="vertical-align:top;">
+          <para styleclass="Normal"><image src="MD-DIALOG-FB-PATTERN-PhaseVis-Phases.ipp" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td colspan="2" style="vertical-align:top;">
+          <para styleclass="Body Text"><text styleclass="Separator">Phases</text><text styleclass="Body Text HowTo"> are copies of a </text><text styleclass="ParameterHeader">Pattern-Elements</text><text styleclass="Body Text HowTo">.</text></para>
+          <para styleclass="Body Text"><text styleclass="ParameterHeader"># Copies</text>: from 1 to 100 : <text styleclass="HowTo Bulleted">The number of copies of the </text><text styleclass="Parameter">Pattern-Elements</text><text styleclass="Interface">&#32;</text><text styleclass="HowTo Bulleted">to be in the </text><text styleclass="VariableName">Pattern</text>.</para>
+          <para styleclass="Normal"><line style="height:1px; color:#343400;" /></para>
+          <para styleclass="Body Text">The format of the <text styleclass="Separator">Phases</text> separator is slightly different for the <text styleclass="Parameter">Space Pattern</text> and the <text styleclass="Parameter">Phase Pattern</text>.</para>
+          <para styleclass="Normal"><line style="height:1px; color:#343400;" /></para>
+          <para styleclass="Body Text"><text styleclass="VariableName">IF</text>&#32;<text styleclass="ParameterHeader">Space Pattern</text></para>
+          <para styleclass="Body Text HowTo">&#32;<text styleclass="Parameter">Start Angle, Final Angle</text>: </para>
+          <list id="19" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted">The <text styleclass="ParameterHeader">Copies</text> show at equal intervals from the <text styleclass="Parameter">Start Angle</text> to the <text styleclass="Parameter">Final Angle</text><text styleclass="Body Text">. </text></li>
+          </list>
+          <para styleclass="Normal"><line style="height:1px; color:#343400;" /></para>
+          <para styleclass="Body Text"><text styleclass="VariableName">IF</text>&#32;<text styleclass="ParameterHeader">Phase Pattern</text></para>
+          <para styleclass="Body Text HowTo"><text styleclass="Parameter">Final Angle = ?</text></para>
+          <para styleclass="Body Text HowTo">The concept of a <text styleclass="VariableName">Motion-Period</text> is important.</para>
+          <para styleclass="Body Table">If <text styleclass="Parameter">Final Angle</text> is 360, then the <text styleclass="VariableName">Motion-Period</text> is equal to <text styleclass="VariableName">1 Machine-Cycle</text></para>
+          <para styleclass="Body Table">If <text styleclass="Parameter">Final Angle</text><text styleclass="Body Text HowTo"> is, for example, 20º, the </text><text styleclass="VariableName">Motion-Period</text><text styleclass="Body Text HowTo"> is 20º.</text></para>
+          <list id="19" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted">The <text styleclass="Parameter"># Copies</text> show at regular intervals within one <text styleclass="VariableName">Motion-Period</text>, from <text styleclass="Parameter">Home Angle</text> (<text styleclass="Interface">MMA=0</text>) to <text styleclass="Parameter">Final Angle</text><text styleclass="Body Text">.</text></li>
+          </list>
+          <list id="20" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted">The <text styleclass="Parameter">Phase Pattern </text>repeats one time for each <text styleclass="VariableName">Motion-Period</text> or 36 ∕ 20 = 18 times in 1 Machine-Cycle. </li>
+            <li styleclass="Body Text Howindent4bullets">You can show or hide each copy within each <text styleclass="VariableName">Motion-Period</text> - see <text styleclass="Separator">Phase Visibility</text> separator.</li>
+          </list>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td colspan="2" style="vertical-align:top;">
+          <para styleclass="ParameterHeader">Hide Source Pattern Element:</para>
+          <para styleclass="Body Text"><text styleclass="Parameter">Source Pattern Elements</text><text styleclass="Body Text HowTo"> are those </text><text styleclass="Interface">Solids</text><text styleclass="Body Text HowTo"> that are you select in the model as </text><text styleclass="Parameter">Pattern-Elements</text>, and<text styleclass="Body Text HowTo"> show in the </text><text styleclass="Separator">Pattern Elements</text><text styleclass="Body Text HowTo"> separator of the</text>&#32;<link displaytype="text" defaultstyle="true" type="topiclink" href="" anchor="Pattern-PatternElements" styleclass="VariableName">Pattern-Elements tab</link><text styleclass="VariableName">.</text></para>
+          <para styleclass="Body Text">Nearly always, hide the <text styleclass="Parameter">source Pattern-Element</text>. This is because the <text styleclass="Parameter">source Pattern-Element</text> and the first <text styleclass="Parameter">copy</text> (at 0<text style="font-family:&apos;Font Awesome 5 Free Regular&apos;; font-size:14pt;">°</text>) are at the same position. It can be confusing if you hide the Copy at 0<text style="font-family:&apos;Font Awesome 5 Free Regular&apos;; font-size:14pt;">°</text> but the <text styleclass="Parameter">Source Pattern-Element</text> is in the model.</para>
+          <list id="21" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo Bulleted">Click a <text styleclass="Parameter">Pattern-Element</text> in the <link displaytype="text" defaultstyle="true" type="topiclink" href="" anchor="Pattern-PatternElements" styleclass="Separator">Pattern Elements</link> separator and <link displaytype="text" defaultstyle="true" type="topiclink" href="" anchor="Pattern-PatternElements" styleclass="VariableName">Pattern-Elements tab</link><text styleclass="Body Text">.</text><text styleclass="VariableName">&#32;</text></li>
+          </list>
+          <para styleclass="HowTo Bulleted"><text styleclass="Body Text HowTo">It should show in the</text><text styleclass="VariableName">&#32;</text><link displaytype="text" defaultstyle="true" type="topiclink" href="" anchor="PhaseVisibilityInterface" styleclass="Separator">Phase-Visibilities</link><text styleclass="Body Text"> separator, if you want to see you have selected it.</text></para>
+          <list id="21" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo Bulleted">Click the <text styleclass="Parameter">Hide Source Pattern Element </text><text styleclass="Body Text">check-box.</text></li>
+          </list>
+          <para styleclass="Normal"><line style="height:1px; color:#343400;" /></para>
+          <para styleclass="Interface2">Copies Box</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="vertical-align:top; width:213px;">
+          <para styleclass="Normal"><image src="MD-Dialog-Pattern-Copies-ShowHide.png" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td style="vertical-align:top;">
+          <list id="22" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Body Table" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="Body Table"><text styleclass="Body Text">To hide a</text>&#32;<text styleclass="VariableName">Copy</text> for the total <text styleclass="VariableName">Motion-Period</text>, click a <image src="OK-tiny-13-17.png" scale="100.00%" figurelistinclude="0"></image> next to the phase angle of a <text styleclass="VariableName">Copy</text> to show a <image src="MD-CROSS.png" scale="100.00%" figurelistinclude="0"></image>.</li>
+            <li styleclass="HowTo Bulleted"><text styleclass="Body Text">To show</text> a <text styleclass="VariableName">Copy</text> for the total <text styleclass="VariableName">Motion-Period</text><text styleclass="VariableName-IT">, </text>click a <image src="MD-CROSS.png" scale="100.00%" figurelistinclude="0"></image> next to the phase angle of a <text styleclass="VariableName">Copy</text> to show a <image src="OK-tiny-13-17.png" scale="100.00%" figurelistinclude="0"></image>.</li>
+          </list>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Separator-Header"><anchor id="PhaseVisibilityInterface" styleclass="Heading4 Toggle_atocs_"><keywords><keyword>Pattern dialog<keyword>Pattern Visibility</keyword></keyword></keywords></anchor><image src="tog_plus.gif" scale="100.00%" figurelistinclude="0"></image><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" src-collapsed="tog_plus.gif" src-expanded="tog_minus.gif" src-print="none"><caption><![CDATA[   Pattern Visibility]]></caption></toggle></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="2" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="vertical-align:top; width:223px;">
+          <para styleclass="Normal"><image src="MD-DIALOG-FB-PATTERN-PhaseVis-PhaseVis.ipp" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"><caption><![CDATA[Phase-Visibilities > Pattern-Visvibility]]></caption></image></para>
+        </td>
+        <td>
+          <para styleclass="Body Table"><text styleclass="Notes">Note</text>: <text styleclass="Separator">Pattern Visibility</text>&#32;<image src="Red-14-1b.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Image Caption">&#32;</text><text styleclass="Body Text">shows only if you select</text><text styleclass="Body Text HowTo">&#32;</text><text styleclass="Parameter">Phase Pattern</text><text styleclass="Body Text"> - </text><text styleclass="SeeAlso">see </text><link displaytype="text" defaultstyle="true" type="topiclink" href="" anchor="PatternEnable" styleclass="SeeAlso">Enable and Type</link><link displaytype="text" defaultstyle="true" type="topiclink" href="" anchor="PatternEnable" styleclass="HowTo Bulleted">.</link></para>
+          <para styleclass="Body Table">Use <text styleclass="Separator">Pattern Visibility</text>&#32;<text styleclass="Body Text">to show or hide a </text><text styleclass="Parameter">Pattern-Element</text>&#32;<text styleclass="Body Text">for different periods within the </text><text styleclass="VariableName">Motion-Period. </text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td colspan="2" style="vertical-align:top;">
+          <para styleclass="Body Text">To edit the <text styleclass="VariableName">Visibility o</text>f a <text styleclass="Parameter">Pattern-Element</text>:</para>
+          <para styleclass="Body Table"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <list id="23" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Body Table" style="font-family:&apos;Segoe UI&apos;; font-size:11pt; color:#000000;">
+                  <li styleclass="Body Table"><text style="font-weight:normal;">Click an </text><text styleclass="Element">Extrusion</text><text styleclass="Body Text"> or </text><text styleclass="Element">CAD-Line</text><text style="font-weight:normal;"> in the </text><text styleclass="Parameter">Pattern Elements</text><text style="font-weight:normal;"> box - </text><text styleclass="SeeAlso">see </text><link displaytype="text" defaultstyle="true" type="topiclink" href="" anchor="PatterElement" styleclass="SeeAlso">Pattern-Elements tab</link><text style="font-weight:normal;">&#32;</text></li>
+                </list>
+                <para styleclass="Body Table"><text styleclass="Body Text">The element - </text><text styleclass="Element">Extrusion</text><text styleclass="Body Text"> or </text><text styleclass="Element">CAD-Line</text><text styleclass="Body Text"> - must show in the </text><text styleclass="Parameter">Pattern-Element to Edit</text><image src="Red-14-2.gif" scale="100.00%" styleclass="VariableName-indent" figurelistinclude="0"></image><text styleclass="Body Text"> box.</text></para>
+                <list id="23" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Body Table" style="font-family:&apos;Segoe UI&apos;; font-size:11pt; color:#000000;">
+                  <li styleclass="Body Table">Click the <text styleclass="Parameter">Edit Visibility of Pattern-Element</text><text styleclass="Parameter-Header" style="font-family:Arial; font-size:10pt; font-weight:normal; font-style:normal; text-decoration:none; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">...</text> button<image src="Red-14-3.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Image Caption">.</text></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Body Text">The <text styleclass="VariableName">Pattern Visibility</text><text styleclass="Element">&#32;</text>interface is now open.</para>
+          <para styleclass="Body Text">You can now edit the Visibility of the element that is in the <text styleclass="Parameter">Pattern-Element to Edit</text><image src="Red-14-2.gif" scale="100.00%" styleclass="VariableName-indent" figurelistinclude="0"></image> box.</para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading4 Toggle_atocs_"><image src="tog_plus.gif" scale="100.00%" figurelistinclude="0"></image><tab /><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" src-collapsed="tog_plus.gif" src-expanded="tog_minus.gif"><caption><![CDATA[How to use the Pattern Visibility interface]]></caption></toggle></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="8" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Text"><text styleclass="VariableName-indent">Refer to the image below:</text></para>
+          <para styleclass="Body Text"><image src="Red-14-1.gif" scale="100.00%" styleclass="VariableName-indent" figurelistinclude="0"></image><text styleclass="VariableName-indent"> Pattern-Element box (top-left)- </text><text styleclass="Body Text HowTo">Identifies the </text><link displaytype="text" defaultstyle="true" type="topiclink" href="" anchor="PatterElement" styleclass="Parameter">Pattern-Element</link><text styleclass="Body Text HowTo"> you are editing.</text></para>
+          <para styleclass="Body Text"><image src="Red-14-2.gif" scale="100.00%" styleclass="VariableName-indent" figurelistinclude="0"></image><text styleclass="VariableName-indent"> Phase Visibility Timing Chart -</text> this chart controls the <text styleclass="VariableName">Visible-Period</text> of the <text styleclass="Parameter">Pattern-Element</text>&#32;<text styleclass="Body Text HowTo">(</text><text styleclass="Interface">Solid</text><text styleclass="Body Text HowTo">)</text> in the Motion-Period.</para>
+          <para styleclass="VariableName">As an example:</para>
+          <para styleclass="Body Text HowTo">In the image below, the chart is <text styleclass="VariableName">High</text> from 0º to 360º. This means the <text styleclass="VariableName">Visible-Period</text> for the <text styleclass="Parameter">Pattern-Element</text> is a complete motion-period.</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Normal"><image src="MD-Dialog-Pattern-PhaseVisibilities-Interface-A.png" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Text">There are two(2) <text styleclass="Interface2">Nodes</text> that identify and control the timing of each <text styleclass="VariableName">Visible-Period</text> in the chart.</para>
+          <list id="24" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted">Node at the Start - <text styleclass="VariableName">Start-Node</text>&#32;<image src="Red-14-3.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></li>
+            <li styleclass="HowTo Bulleted">Node at the End - <text styleclass="VariableName">End-Node</text>&#32;<image src="Red-14-4.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></li>
+          </list>
+          <para styleclass="Body Text">To edit a <text styleclass="VariableName">Visible-Period</text> for the <text styleclass="Parameter">Pattern-Element</text> you must edit the timing of the <text styleclass="VariableName">Start-Node</text> and/or <text styleclass="VariableName">End-Node.</text></para>
+          <list id="25" type="ol" listtype="decimal" formatstring="&#83;&#84;&#69;&#80;&#32;&#32;&#32;&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo STEP" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo STEP">(Example) Edit the Start-Node and End-Node to define a Visible-Period.</li>
+          </list>
+          <para styleclass="VariableName-indent"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <list id="26" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Body Table" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="Body Table">Click the <text styleclass="VariableName">Start-Node</text><image src="Red-14-3.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="VariableName">. </text></li>
+                </list>
+                <para styleclass="Body Table">When the <text styleclass="VariableName">Start-Node</text> is <text styleclass="VariableName" style="color:#ff0000;">Red</text><text styleclass="Body Text"> ... </text></para>
+                <list id="26" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Body Table" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="Body Table">Edit the<text styleclass="Body Text">&#32;</text><text styleclass="Parameter">Node&apos;s Timing</text><image src="Red-14-5.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Body Text"> - to control the start of the </text><text styleclass="VariableName">Visible-Period</text><text styleclass="Body Text">.</text></li>
+                </list>
+                <para styleclass="Body Table">Do <text styleclass="VariableName">1 </text><text styleclass="Body Text">and</text><text styleclass="VariableName"> 2</text> again, but click the <text styleclass="VariableName">End-Node</text><image src="Red-14-4.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image>, to control the end of the <text styleclass="VariableName">Visible-Period</text> for the <text styleclass="Parameter">Pattern-Element</text><text styleclass="Body Text">.</text></para>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Body Text">The image below shows the new timing of the <text styleclass="VariableName">Visible-Period</text> for the <text styleclass="Parameter">Pattern-Element (</text><text styleclass="Element">Extrusion</text>).</para>
+          <para styleclass="Body Text">It starts at 50 and end at 150 in the Machine-Cycle.</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Normal"><image src="MD-Dialog-Pattern-PhaseVisibilities-Interface-B.png" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <list id="27" type="ol" listtype="decimal" formatstring="&#83;&#84;&#69;&#80;&#32;&#32;&#32;&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="2" styleclass="HowTo STEP" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo STEP">(Example continued...) Add a new Visible-Period</li>
+          </list>
+          <para styleclass="VariableName-indent"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Body Table">- see image above.</para>
+                <list id="28" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Body Table" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; color:#000000;">
+                  <li styleclass="Body Table">Click <image src="MD-Switch.png" scale="100.00%" styleclass="Image Caption" style="font-size:6pt; vertical-align:sub;" figurelistinclude="0"></image><text styleclass="Image Caption">&#32;</text><text styleclass="Parameter">Add Node</text>&#32;<text styleclass="Image Caption" style="font-size:6pt; vertical-align:sub;">&#32;</text>button<text styleclass="Interface2">&#32;</text><image src="Red-14-6.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></li>
+                  <li styleclass="Body Table">Click the <text styleclass="Parameter">Phase Visibility Chart</text> in a <text styleclass="VariableName" style="color:#ff0000;">free</text> area<image src="Red-14-7.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image> that is <text styleclass="VariableName" style="color:#ff0000;">not</text> in the <text styleclass="VariableName">Visible-Period</text> (50 to 150) - see cursor in the image above.</li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="VariableName-indent"><text styleclass="Body Text HowTo">There is now a new </text><text styleclass="VariableName">Visible-Period</text><text styleclass="Body Text HowTo"> in the</text><text styleclass="HowTo STEP">&#32;</text><text styleclass="Parameter">Phase-Visibility Chart</text><text styleclass="Body Text"> - see image below.</text></para>
+          <list id="29" type="ol" listtype="decimal" formatstring="&#83;&#84;&#69;&#80;&#32;&#32;&#32;&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="3" styleclass="HowTo STEP" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo STEP">(Example continued...) Edit the Start-Node and End-Node to define the timing of the new Visible-Period.</li>
+          </list>
+          <para styleclass="VariableName-indent"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <list id="30" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Body Table" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="Body Table">Click the <text styleclass="VariableName">Start-Node</text><image src="Red-14-3.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image> or <text styleclass="VariableName">End-Node</text><image src="Red-14-4.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="VariableName">&#32;</text><text styleclass="Body Text">of the new </text><text styleclass="VariableName">Visible-Period</text></li>
+                </list>
+                <para styleclass="Body Table">When a <text styleclass="VariableName">Node</text> is <text styleclass="VariableName" style="color:#ff0000;">Red</text><text styleclass="Body Text"> ... </text></para>
+                <list id="30" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Body Table" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="Body Table">Edit <text styleclass="Body Text">the </text><text styleclass="Parameter">Node&apos;s Timing</text><image src="Red-14-5.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></li>
+                </list>
+                <para styleclass="Body Table">Do <text styleclass="VariableName">1 </text><text styleclass="Body Text">and</text><text styleclass="VariableName"> 2</text> again to define the new <text styleclass="VariableName">Visible-Period</text> for the <text styleclass="Parameter">Pattern-Element</text></para>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Body Text">The image below shows the two <text styleclass="VariableName">Visible-Periods</text> in the <text styleclass="Parameter">Phase-Visibility Chart</text> for the <text styleclass="Parameter">Pattern-Element</text> (<text styleclass="Element">Extrusion</text>)<text styleclass="Element">&#32;</text></para>
+          <para styleclass="Body Text HowTo"><text styleclass="VariableName">Visible Period</text>&#32;<image src="MD-Red-1-17-Sq.ipp" scale="100.00%" figurelistinclude="0"></image> - starts at 50 and ends at 150</para>
+          <para styleclass="Body Text HowTo"><text styleclass="VariableName">Visible-Period</text>&#32;<image src="MD-Red-2-17-Sq.ipp" scale="100.00%" figurelistinclude="0"></image> - starts at 200 and ends at 300</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Normal"><image src="MD-Dialog-Pattern-PhaseVisibilities-Interface.png" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <list id="31" type="ol" listtype="decimal" formatstring="&#83;&#84;&#69;&#80;&#32;&#32;&#32;&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="4" styleclass="HowTo STEP" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo STEP">(Example continued...) Delete a Visible-Period </li>
+          </list>
+          <para styleclass="VariableName-indent"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <list id="32" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Body Table" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="Body Table">Click the <text styleclass="VariableName">Start-Node</text> or <text styleclass="VariableName">End-Node </text><text styleclass="Body Text">of the </text><text styleclass="VariableName">Visible Period</text><text styleclass="Body Text"> you want to </text><text styleclass="VariableName">delete</text><text styleclass="Body Text">.</text><text styleclass="VariableName">&#32;</text></li>
+                </list>
+                <para styleclass="Body Table">In the image above the <text styleclass="VariableName">End-Node</text><image src="Red-14-8.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image> of <text styleclass="VariableName">Visible-Period </text><image src="MD-Red-1-17-Sq.ipp" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image> is <text styleclass="VariableName" style="color:#ff0000;">Red</text><text styleclass="Body Text"> ... </text></para>
+                <list id="32" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Body Table" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="Body Table"><text styleclass="HowTo Bulleted">Click </text><image src="MD-RemoveSwitch.png" scale="100.00%" styleclass="HowTo Bulleted" figurelistinclude="0"></image><text styleclass="Interface2">DELETE-Node</text><text styleclass="Image Caption">&#32;</text><image src="Red-14-9.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></li>
+                </list>
+                <para styleclass="Body Text">We delete <text styleclass="VariableName">Visible-Period</text><image src="MD-Red-1-17-Sq.ipp" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image> for you from the <text styleclass="Parameter">Phase-Visibility Chart</text> for the <text styleclass="Parameter">Pattern-Element</text> (<text styleclass="Element">Extrusion</text>)<text styleclass="Element">&#32;</text></para>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Body Text">The image below shows one <text styleclass="VariableName">Visible-Period</text> in the the <text styleclass="Parameter">Phase-Visibility Chart </text>for the <text styleclass="Parameter">Pattern-Element</text> (<text styleclass="Element">Extrusion</text>)<text styleclass="Element">&#32;</text></para>
+          <para styleclass="Body Text">You can now Click <image src="OK-tiny-11-15.png" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image> to close the <text styleclass="VariableName">Pattern Visibility interface</text>.</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Image Caption"><image src="MD-Dialog-Pattern-PhaseVisibilities-Interface-C.png" scale="-99.90%" figurelistinclude="0"></image></para>
+        </td>
+      </tr>
+    </table></para>
+  </body>
+</topic>

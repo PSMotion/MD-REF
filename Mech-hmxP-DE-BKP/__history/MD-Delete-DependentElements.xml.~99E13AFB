@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" status="Under Construction" modified="2022-05-03T13:46:12.664+01:00" lasteditedby="Adam" version="2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title>Dialog: Abhängige Elemente löschen</title>
+  <keywords>
+    <keyword>Delete Dependent Elements</keyword>
+  </keywords>
+  <body>
+    <header>
+      <para styleclass="Heading1">Dialog: Abhängige Elemente löschen</para>
+    </header>
+    <para styleclass="Heading2">Abhängige Elemente löschen</para>
+    <para styleclass="Body Text">Viele Elemente <text styleclass="VariableName">hängen von anderen Elementen ab (brauchen sie)</text>. <text styleclass="SeeAlso">Siehe </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-ViewReferences" styleclass="SeeAlso">Ansicht Referenzen</link><text styleclass="SeeAlso">.</text></para>
+    <para styleclass="Body Text">Sie haben eine Parent-to-Child-Beziehung.</para>
+    <para styleclass="Body Text"><table styleclass="Standard" rowcount="2" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Normal"><image src="MD-Dialog-DeleteDependentElements.png" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"><caption><![CDATA[Achtung - Wenn Sie das "Element" löschen, löschen Sie auch diese Elemente.]]></caption></image></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Normal"><text styleclass="Body Text">Das </text><text styleclass="VariableName">Dialogfeld &quot;Abhängige löschen&quot;</text><text styleclass="Body Text"> weist Sie darauf hin, dass Sie, wenn Sie ein Element löschen möchten, auch ein oder mehrere andere Elemente löschen werden.</text></para>
+          <para styleclass="Normal"><text styleclass="Body Text">Sie können:</text></para>
+          <list id="0" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:8pt; color:#000000;">
+            <li styleclass="HowTo Bulleted"><text styleclass="VariableName">Löschen</text> - klicken Sie auf die Schaltfläche <image src="MD-OK-tiny-11-15.png" scale="100.00%" figurelistinclude="0"></image>&#32;</li>
+          </list>
+          <para styleclass="VariableName-IT2">- oder -</para>
+          <list id="0" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:8pt; color:#000000;">
+            <li styleclass="HowTo Bulleted"><text styleclass="VariableName">Löschen abbrechen</text> - klicken Sie auf die Schaltfläche <image src="MD-Cross-16x16.ipp" scale="100.00%" figurelistinclude="0"></image>&#32;</li>
+          </list>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="Body Text">Ein Beispiel: </para>
+          <para styleclass="Body Text HowTo">Wenn Sie einen <text styleclass="Element">DREHGELENK</text> hinzufügen, wählen Sie zwei <text styleclass="Element">Punkte</text> in zwei verschiedenen <text styleclass="Element">Teilen</text>.</para>
+          <para styleclass="Body Text HowTo">Der <text styleclass="Element">DREHGELENK</text> hängt also von den beiden <text styleclass="Element">Punkten</text><text styleclass="Body Text"> und den beiden </text><text styleclass="Element">Teilen</text>ab (benötigt diese)<text styleclass="Body Text">. </text></para>
+          <list id="1" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:8pt; color:#000000;">
+            <li styleclass="HowTo Bulleted">Um einen der <text styleclass="Element">Punkte</text> zu löschen, werden Sie gewarnt, dass Sie auch den <text styleclass="Element">DREHGELENK</text> löschen werden.</li>
+            <li styleclass="HowTo Bulleted">Um eines der <text styleclass="Element">Teile </text><text styleclass="Body Text">zu löschen , </text>werden Sie gewarnt, dass Sie auch den <text styleclass="Element">DREHGELENK</text><text styleclass="Body Text"> löschen </text>werden<text styleclass="Body Text">. </text></li>
+          </list>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Body Text" style="page-break-before:always;"></para>
+  </body>
+</topic>

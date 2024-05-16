@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" status="Under Construction" modified="2023-05-01T11:53:19.159+01:00" lasteditedby="Adam" version="2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title>Kinematics-Tree</title>
+  <keywords>
+    <keyword>Kinematics Tree<keyword>Dyads</keyword><keyword>Geared Rocker</keyword><keyword>Kinematically Defined Chain</keyword><keyword>Kinematic-Chains</keyword><keyword>Motion-Parts</keyword><keyword>Rocker</keyword><keyword>Slider</keyword></keyword>
+  </keywords>
+  <body>
+    <header>
+      <para styleclass="Heading1">Kinematics-Tree</para>
+    </header>
+    <para styleclass="Heading3_atocs_">Element-Explorer - Kinematics-Tree</para>
+    <para styleclass="Normal"><text styleclass="Notes">Note</text><text styleclass="Body Text">: If you cannot see or explore the </text><text styleclass="Interface">Kinematics-Tree</text><text styleclass="Body Text">, click </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Edit-AutoUpdate" styleclass="T_Menu">Rebuild now</link><text styleclass="Body Text">.</text></para>
+    <para styleclass="Normal"><text styleclass="Body Text">See also: </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Kinematic-Sub-Assemblies" styleclass="Body Text">Kinematic-Symbols</link><text styleclass="Body Text">, and </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Kinematics-Tree-Tools" styleclass="Body Text">Configure-Power Source/ Change Dyad Closure</link></para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="Body Text">The <text styleclass="Interface2">Kinematics-Tree</text> is the kinematic-structure of each <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-Kinematic-Chain">kinematic-chain</link> in the model.</para>
+    <para styleclass="Body Text">We compile the <text styleclass="Interface2">Kinematic-Tree</text> for you as you add Kinematic elements and Kinematic FBs to your model.</para>
+    <para styleclass="Body Text HowTo">You can explore to see which elements are in each kinematic-chain. If you click on any kinematic-chain or element in the kinematic-structure, it will show as selected elements in the graphic-area.</para>
+    <para styleclass="Body Text HowTo">You can use the <text styleclass="Interface2">Kinematic-Tree</text> to <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Kinematics-Tree-Tools">Configure the Power Source</link> of each kinematic-chain.</para>
+    <para styleclass="Body Text HowTo"><table styleclass="Standard" rowcount="2" colcount="2">
+      <tr style="vertical-align:top">
+        <td colspan="2" style="border-bottom:none;">
+          <para styleclass="Body Text"><table styleclass="Default" rowcount="1" colcount="2" style="cell-padding:0px; border-width:0px; border-spacing:0px; cell-border-width:0px; border-style:none;">
+            <tr style="vertical-align:top">
+              <td style="vertical-align:middle; width:1px;">
+                <para styleclass="Body Text HowTo" style="margin-left:0px;"><image src="MD-Icon-KinChainHead.png" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+              </td>
+              <td style="vertical-align:middle;">
+                <para styleclass="Normal"> This icon is at the<text styleclass="Body Text"> top of the </text><text styleclass="Interface2">Kinematic-Tree</text><text styleclass="Body Text"> to the left of the name </text><text styleclass="VariableName">Mechanisms.</text></para>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Normal"><text styleclass="Notes">Note</text><text styleclass="Body Text">: If you cannot see </text><text styleclass="VariableName">Mechanisms</text><text styleclass="Body Text">, or explore the </text><text styleclass="Interface2">Kinematics-Tree</text><text styleclass="Body Text">, click </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Edit-AutoUpdate" styleclass="T_Menu">Rebuild now</link><text styleclass="Body Text">.</text></para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="VariableName">The structure of the Kinematics-Tree is as follows</para>
+          <list id="0" type="ul" listtype="bullet" formatstring="&#214;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Interface2" style="font-family:Wingdings; font-size:11pt; color:#000000;">
+            <li styleclass="Interface2"> Mechanisms:</li>
+            <list id="0" level="1" type="ul" listtype="bullet" formatstring="&#214;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Interface2" style="font-family:Wingdings; font-size:11pt; color:#000000;">
+              <li styleclass="Interface2"> Kinematic-Chains</li>
+              <list id="0" level="2" type="ul" listtype="bullet" formatstring="&#214;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Interface2" style="font-family:Wingdings; font-size:11pt; color:#000000;">
+                <li styleclass="Interface2"> Kinematic Sub-assemblies</li>
+                <list id="0" level="3" type="ul" listtype="bullet" formatstring="&#214;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Interface2" style="font-family:Wingdings; font-size:11pt; color:#000000;">
+                  <li styleclass="Interface2"> Kinematic Elements</li>
+                </list>
+              </list>
+            </list>
+            <list id="0" level="1" type="ul" listtype="bullet" formatstring="&#214;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Interface2" style="font-family:Wingdings; font-size:11pt; color:#000000;">
+              <li styleclass="Interface2">Unsolved Mechs</li>
+            </list>
+          </list>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="Body Text"><image src="MD-Icon-Solved-KinChain.png" scale="100.00%" styleclass="Image Caption" style="font-size:6pt; vertical-align:sub;" figurelistinclude="0"></image>&#32;<text styleclass="Interface2">Kinematic-Chain</text><text styleclass="VariableName"> &#160;</text></para>
+          <para styleclass="HowTo Numbered"><text styleclass="Body Text">These kinematic-chains have a </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-Mobility" styleclass="Interface">Mobility</link><text styleclass="Interface">&#32;</text><text styleclass="Body Text">of zero(0). The kinematic-chain is </text><text styleclass="VariableName">kinematically-defined</text><text styleclass="Body Text" style="font-weight:normal;">.</text></para>
+          <para styleclass="HowTo Numbered"><text styleclass="Body Text" style="font-weight:normal;">You can explore the kinematic-chain to find </text><text styleclass="Interface2">Kinematic Sub-Assemblies</text><text styleclass="Body Text" style="font-weight:normal;"> (see below) and </text><text styleclass="Interface2">kinematic elements</text><text styleclass="Body Text" style="font-weight:normal;">.</text></para>
+          <para styleclass="Body Text"><image src="MD-Icon-NotSolved-KinChain.png" scale="100.00%" styleclass="Image Caption" style="font-size:7pt; vertical-align:sub;" figurelistinclude="0"></image><text styleclass="HowTo Numbered">&#32;</text><text styleclass="Interface2">Unsolved Mechs</text><text styleclass="VariableName">&#32;</text></para>
+          <para styleclass="HowTo Numbered"><text styleclass="Body Text">These kinematic-chains have a mobility that is greater than zero(0). The kinematic-chains are not </text><text styleclass="VariableName">kinematically-defined</text><text styleclass="Body Text" style="font-weight:normal;">.</text></para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:240px;">
+          <para styleclass="Normal"><image src="MD-PE-KinematicsTree-Example.png" scale="-99.90%" styleclass="Image Caption" style="font-weight:normal;" figurelistinclude="0"><title>Example: Kinematics-Tree in Element-Explorer</title><caption><![CDATA[Example: Kinematics-Tree in Element-Explorer]]></caption></image></para>
+        </td>
+        <td style="border-top:none;">
+          <para styleclass="VariableName"><text styleclass="Interface2">Kinematic-Sub-Assemblies</text> (Solved Mechanisms ONLY):</para>
+          <para styleclass="Body Text HowTo">These are compiled as:</para>
+          <list id="1" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Numbered" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo Numbered"><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-Motion-Driven-Part">Motion-Parts</link><text styleclass="VariableName">&#32;</text></li>
+            <list id="1" level="1" type="ol" listtype="lower-alpha" formatstring="&#37;&#49;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Numbered" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+              <li styleclass="HowTo Numbered"><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-Rocker">Rockers</link></li>
+              <li styleclass="HowTo Numbered"><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-Slider">Sliders</link></li>
+            </list>
+          </list>
+          <list id="1" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Numbered" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo Numbered"><text styleclass="VariableName">Motion-Paths</text></li>
+            <li styleclass="HowTo Numbered"><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-Dyad">Dyads</link> - all dyads have <text styleclass="VariableName-IT" style="font-weight:normal; font-style:normal;">two</text>&#32;<text styleclass="Element">Parts</text> and <text styleclass="VariableName-IT" style="font-weight:normal; font-style:normal;">three</text>&#32;<text styleclass="Element">Joints</text>&#32;</li>
+          </list>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="VariableName">We represent Dyads for you with a letter for each of its joints:</para>
+          <para styleclass="Body Text HowTo"><text styleclass="VariableName">R = Revolute-Joint = </text><text styleclass="Element">Pin-Joint</text></para>
+          <para styleclass="Body Text HowTo"><text styleclass="VariableName">P = Prismatic-Joint = </text><text styleclass="Element">Slide-Joint</text></para>
+          <para styleclass="Body Text HowTo"><text styleclass="VariableName">S = Spherical-Joint = </text><text styleclass="Element">Ball-Joint</text></para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <list id="2" type="ol" listtype="bullet" formatstring="&#183;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Arial; font-size:11pt; color:#000000;">
+            <list id="2" level="1" type="ol" listtype="lower-alpha" formatstring="&#37;&#49;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+              <li styleclass="HowTo Bulleted"> RRR<text styleclass="VariableName">&#32;</text></li>
+              <li styleclass="HowTo Bulleted"> RRP</li>
+              <li styleclass="HowTo Bulleted"> RPR</li>
+              <li styleclass="HowTo Bulleted"> PRP</li>
+              <li styleclass="HowTo Bulleted"> RPP</li>
+              <li styleclass="HowTo Bulleted"> Ram-R</li>
+              <li styleclass="HowTo Bulleted"> Ram-P</li>
+              <li styleclass="HowTo Bulleted"> SSR</li>
+              <li styleclass="HowTo Bulleted"> SSP</li>
+            </list>
+          </list>
+          <list id="3" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="4" styleclass="HowTo Numbered" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo Numbered"><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-Rocker-Geared">Geared-Rockers</link><text styleclass="VariableName">&#32;</text></li>
+            <li styleclass="HowTo Numbered"><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-Rack-Pinion">Rack-Pinion / Pinion-Rack</link></li>
+            <li styleclass="HowTo Numbered"><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-Rocker-Pulley">Geared-Pulley</link></li>
+          </list>
+        </td>
+      </tr>
+    </table></para>
+  </body>
+</topic>

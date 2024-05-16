@@ -1,0 +1,344 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" status="Under Construction" modified="2022-04-23T13:52:18.029+01:00" lasteditedby="Adam" version="2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title>Dialog: Function-Block: Point-Cloud</title>
+  <keywords>
+    <keyword>Data Import - Point-Cloud</keyword>
+    <keyword>Dialog<keyword>Function-Block : Point Cloud</keyword><keyword>Point-Cloud, Curve-Fitting Tool</keyword></keyword>
+    <keyword>Point-Cloud dialog</keyword>
+  </keywords>
+  <body>
+    <header>
+      <para styleclass="Heading1">Dialog: Function-Block: Point-Cloud</para>
+    </header>
+    <para styleclass="Heading2">Point-Cloud FB</para>
+    <para styleclass="SeeAlso">See <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Command-FB-Point-Cloud">Add Point-Cloud</link></para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="Body Table">Use a <text styleclass="Element">Point Cloud</text> to:</para>
+    <para styleclass="Body Text HowTo"><text styleclass="Interface2">Import-data (</text><text styleclass="Body Text">Point-Cloud, TXT file-type</text><text styleclass="Interface2">)</text></para>
+    <para styleclass="Body Text HowTo">Usually, the <text styleclass="Element">Point-Cloud</text> are coordinates of a cam-profile, which are measured with a <text styleclass="VariableName">Coordinate Measurement Machine</text> (CMM).</para>
+    <para styleclass="Body Text HowTo"><text styleclass="Interface2">Fit-a-Curve to the data</text></para>
+    <para styleclass="Body Text HowTo">Use <text styleclass="Element">Point-Cloud dialog-box</text> to fit a <text styleclass="VariableName">Curve</text><text styleclass="Body Text"> to the </text><text styleclass="VariableName">Imported-Data.</text><text styleclass="Body Text">&#32;</text></para>
+    <para styleclass="Body Text HowTo">The <text styleclass="VariableName">Curve</text> is a continuous-function that is a good-fit to the <text styleclass="VariableName">imported-data</text>.</para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="Heading3_atocs_">Open a Point-Cloud dialog-box</para>
+    <para styleclass="Body Text"><table styleclass="Default" rowcount="1" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:31px;">
+          <para styleclass="Body Text"><image src="MD-Icon-FB-PointCloud.png" scale="100.00%" padding="0 4 0 0" styleclass="Normal" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="Body Text">Open the <text styleclass="Element">Point-Cloud dialog-box</text></para>
+          <para styleclass="Body Text HowTo"><table styleclass="PopupTable2" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td style="border-top:none; border-right:none; border-bottom:none;">
+                <list id="0" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="B Bullets" style="font-family:&apos;Noto Sans&apos;; font-size:11pt; color:#000000;">
+                  <li styleclass="B Bullets"><text styleclass="HowTo Numbered" style="font-style:normal;">Double-click</text><text styleclass="HowTo Numbered"> a </text><text styleclass="Element">Point-Cloud FB</text><text styleclass="HowTo Numbered">&#32;</text><text styleclass="Body Text">in the </text><text styleclass="Interface">graphic-area</text>&#32;</li>
+                </list>
+                <para styleclass="VariableName-IT">-or - </para>
+                <para styleclass="SeeAlso">...see <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-How-to-Open-a-Dialog-Box">How to open a Dialog-Box</link></para>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Body Text HowTo"><text styleclass="Normal">The </text><text styleclass="Element">Point-Cloud dialog-box</text><text styleclass="Normal"> is now open.</text></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="Heading3_atocs_"><anchor id="POINT-CLOUD-DIALOG"><keywords><keyword>Point-Cloud dialog-box</keyword></keywords></anchor>Point-Cloud dialog-box</para>
+    <para styleclass="Body Text"><table styleclass="Default" rowcount="1" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:301px;">
+          <para styleclass="Normal"><image src="MD-DIALOG-FB-POINT-CLOUD.ipp" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="Body Text">There are two tabs:</para>
+          <para styleclass="Heading4 HowTo Toggle_atoc_">STEP 1: Import Data </para>
+          <para styleclass="Heading4 HowTo Toggle_atoc_">STEP 2: Fit Curve to Data </para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading4 HowTo_atoc_"><anchor id="PointClouddialog-import"><keywords><keyword>Point Cloud dialog box<keyword>Import Data</keyword></keyword></keywords></anchor><image src="btn_addkeyword.bmp" scale="100.00%" figurelistinclude="0"></image><tab /><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" src-collapsed="btn_addkeyword.bmp" src-expanded="btn_delkeyword.bmp"><caption><![CDATA[STEP 1: Import Data]]></caption></toggle></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="5" colcount="2">
+      <tr style="vertical-align:top">
+        <td colspan="2">
+          <para styleclass="Body Table">Do <text styleclass="Parameter-Header">A, B, and C.</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:242px;">
+          <para styleclass="Normal"><image src="MD-Dialog-PointCloud-Import-BrowseImportbuttons.ipp" scale="100.00%" padding="0 4 0 0" styleclass="Image Caption" figurelistinclude="0"><caption><![CDATA[Import and Browse buttons]]></caption></image></para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="Normal"><image src="MD-Dialog-PointCloud-Import-Format.ipp" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"><caption><![CDATA[Example File Format]]></caption></image></para>
+        </td>
+        <td>
+          <para styleclass="Parameter-Header">A. Browse...</para>
+          <para styleclass="Body Text HowTo">Click the <text styleclass="Parameter-Header">Browse</text><text styleclass="Parameter">... </text>button to select the data-file.</para>
+          <para styleclass="Body Text HowTo">The data-file must by an ASCII, or TXT file-type.</para>
+          <para styleclass="Body Text HowTo">The file-name will show in the <text styleclass="Parameter">Data-File (Read-Only) </text>box. A preview of the data-file is in the box below.</para>
+          <para styleclass="Parameter-Header">B. Edit File-Format </para>
+          <para styleclass="Body Text HowTo">Headers in the file will not be imported.</para>
+          <para styleclass="Body Text HowTo">The data should be rows of data-points - see <text styleclass="VariableName">Data-Points</text> below</para>
+          <para styleclass="Body Text HowTo">You can remove extra <text styleclass="VariableName-IT" style="font-style:normal;">data</text> from columns/rows with the <text styleclass="Parameter">Edit File-Format</text> box. See <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-FunctionBlock-PointCloud" anchor="PointCloudDataFormats" styleclass="VariableName">File Formats</link> below.</para>
+          <para styleclass="Parameter-Header">c. Import button</para>
+          <para styleclass="Body Text HowTo">Click the <text styleclass="Parameter-Header">Import</text> button to import the <text styleclass="Element">Point-Cloud</text> data-file. </para>
+          <para styleclass="Body Text HowTo">The <text styleclass="Element">Point-Cloud</text> is a continuous line in the <text styleclass="Interface">graphic-area</text>.</para>
+          <para styleclass="SeeAlso">See also: <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-FunctionBlock-PointCloud" anchor="Point-CloudMessage" styleclass="Body Text">Messages</link></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td colspan="2">
+          <para styleclass="Heading4 Toggle_atocs_">Data-Points</para>
+          <para styleclass="Body Table"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Body Table">The <text styleclass="VariableName">File Format</text>&#32;<text styleclass="VariableName-IT" style="color:#ff0000;">must</text> include at least these terms:</para>
+                <list id="1" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullets" style="font-family:Symbol; font-size:11pt; color:#000000;">
+                  <li styleclass="Bullets"><text styleclass="VariableName">(x) (y) </text>: if each data-point is an <text styleclass="Interface2">X</text> and <text styleclass="Interface2">Y</text><text style="font-style:italic;">&#32;</text><text style="font-style:normal;">coordinate</text></li>
+                </list>
+                <para styleclass="Interface2">OR</para>
+                <list id="1" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+                  <li styleclass="HowTo Bulleted"><text styleclass="VariableName">(Radius)</text>&#32;<text styleclass="VariableName">(Angle)</text> : if each data-point is a <text styleclass="VariableName">Radius</text> and <text styleclass="VariableName">Angle</text><text style="font-style:italic;">&#32;</text><text style="font-style:normal;">coordinate</text><text style="font-style:italic;">.</text></li>
+                </list>
+                <para styleclass="Body Table">Characters that are ignored in the data-file:</para>
+                <list id="2" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullets" style="font-family:Symbol; font-size:11pt; color:#000000;">
+                  <li styleclass="Bullets">Header lines, when entered as text.</li>
+                </list>
+                <list id="1" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+                  <li styleclass="HowTo Bulleted"><text styleclass="Body Text">ASCII characters that are NOT:</text><text styleclass="VariableName"> . , -, 0–9,</text><text styleclass="Body Text"> in all lines.</text></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:232px;">
+          <para styleclass="Normal"><image src="MD-Dialog-PointCloud-Import-OffsetScale.ipp" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"><caption><![CDATA[Optional: Data Offset and Scale option]]></caption></image></para>
+        </td>
+        <td>
+          <para styleclass="Heading4 Toggle_atocs_"><anchor id="PointCloudDataOptions"><keywords><keyword>Point-Cloud dialog-box<keyword>Point-Cloud Options</keyword></keyword></keywords></anchor>Options: </para>
+          <para styleclass="Parameter-Header">x , y </para>
+          <para styleclass="Body Table">When you add a <text styleclass="Element">Point-Cloud</text>, you select a <text styleclass="Element">Part</text>. The <text styleclass="Element">Part</text> has an <text styleclass="Interface">Origin</text> - its <text styleclass="Interface">start-Point</text> - where its XY coordinates are (0,0)</para>
+          <para styleclass="Body Table">When the <text styleclass="Element">Point-Cloud</text> has a measurement-offset of (<text styleclass="Parameter-Header">X,</text>&#32;<text styleclass="Parameter-Header">Y)</text>, you can remove the offset. Enter (-<text styleclass="Parameter-Header">X,</text> -<text styleclass="Parameter-Header">Y)</text><text styleclass="Body Text">, which is the</text> negative of the offset.</para>
+          <para styleclass="Body Table">Or, to offset the <text styleclass="Element">Point-Cloud</text>, by (X,Y), enter (X,Y) values.</para>
+          <para styleclass="Parameter-Header">File Rotary Units ; File Linear Units</para>
+          <para styleclass="Body Table">Select the units that match those of the <text styleclass="VariableName">original</text>&#32;<text styleclass="Element">Point-Cloud</text> data-file</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td colspan="2">
+          <para styleclass="Heading4 Toggle_atocs_"><anchor id="PointCloudDataFormats"><keywords><keyword>Point-Cloud dialog-box<keyword>Data-File Formats</keyword></keyword></keywords></anchor>File Formats:</para>
+          <para styleclass="Body Text"><text styleclass="Parameter-Header">Pre-Select a File Format</text></para>
+          <para styleclass="Body Text HowTo">To help you with the formatting, you can use the <text styleclass="Parameter">Pre-Select a File Format</text> from the drop-down list-box.</para>
+          <para styleclass="Body Text HowTo"><image src="MD-Dialog-PointCloud-PreselectFormat.png" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+          <para styleclass="Body Text HowTo">When any of these formats do not represent the format of the data in your data-file, then edit the format in the <text styleclass="Parameter-Header">Edit File Format</text> box directly.</para>
+          <para styleclass="Heading4 Toggle_atocs_">Example: Data-Files &amp; File-Formats and the Enter File Format text.</para>
+          <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="1" colcount="1" style="border-width:0px; border-spacing:0px; border-collapse:collapse; cell-border-width:1px; border-color:#993300; border-style:solid; background-color:#f3f3f3;">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="VariableName"><text styleclass="Interface2">Example 1:</text> Data-File:</para>
+                <para styleclass="Body Text HowTo"><image src="MD-Dialog-PointCloud-examplefxample.ipp" scale="-99.90%" styleclass="VariableName-IT" figurelistinclude="0"><title>Example data-file to import as a Point-Cloud</title></image></para>
+                <para styleclass="Body Text HowTo">&#32;<text styleclass="VariableName">Enter File Format: () () (x) (y)</text></para>
+                <para styleclass="VariableName">Why?</para>
+                <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="5" colcount="2" style="background-color:#ffffff;">
+                  <tr style="vertical-align:top">
+                    <td style="width:245px;">
+                      <para styleclass="VariableName"><text style="color:#ff0000;"> Line 1</text></para>
+                    </td>
+                    <td>
+                      <para styleclass="Body Table">Not<text styleclass="Body Text HowTo"> imported - </text>text only &#160;<text styleclass="VariableName" style="color:#ff0000;">(A, B, C, ... Z)</text></para>
+                    </td>
+                  </tr>
+                  <tr style="vertical-align:top">
+                    <td style="width:245px;">
+                      <para styleclass="VariableName"><text style="color:#ff0000;"> Line 2</text></para>
+                    </td>
+                    <td>
+                      <para styleclass="Body Table">Not<text styleclass="Body Text HowTo"> imported - </text>text only &#160;<text styleclass="VariableName" style="color:#ff0000;">(A, B, C, ... Z)</text></para>
+                    </td>
+                  </tr>
+                  <tr style="vertical-align:top">
+                    <td style="width:245px; height:23px;">
+                      <para styleclass="VariableName"> Line 3 <text style="color:#ff0000;">Column 1 </text>&amp; <text style="color:#ff0000;">Column 2</text>:</para>
+                    </td>
+                    <td style="height:23px;">
+                      <para styleclass="Body Table"><text styleclass="VariableName" style="color:#ff0000;">Not imported</text><text styleclass="Body Text HowTo"> because of &#160;</text><text styleclass="VariableName" style="color:#ff0000;">() ()</text><text style="color:#ff0000;">&#32;</text><text styleclass="Body Text">in the </text>File Format<text styleclass="VariableName" style="color:#ff0000;"> () () </text><text styleclass="VariableName">(x) (y)</text>&#32;<text styleclass="Body Text">removes these Columns</text></para>
+                    </td>
+                  </tr>
+                  <tr style="vertical-align:top">
+                    <td style="width:245px;">
+                      <para styleclass="VariableName"> Line 3 Column 3 &amp; Column 4</para>
+                    </td>
+                    <td>
+                      <para styleclass="Body Table"><text styleclass="VariableName">Imported</text><text styleclass="Body Text HowTo"> because the </text><text styleclass="VariableName">(x) (y) </text><text styleclass="Body Text">in the </text>File Format<text styleclass="Body Text"> &#160;</text><text styleclass="VariableName">() () (x) (y)</text><text styleclass="Body Text"> identify that these Columns as x, y data</text></para>
+                    </td>
+                  </tr>
+                  <tr style="vertical-align:top">
+                    <td style="width:245px;">
+                      <para styleclass="VariableName"> Lines 4, 5, 6, ...</para>
+                    </td>
+                    <td>
+                      <para styleclass="Body Table">Equal to <text styleclass="VariableName" style="color:#005000;">Line 3</text></para>
+                    </td>
+                  </tr>
+                </table></para>
+                <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+                <para styleclass="VariableName"><text styleclass="Interface2">Example 2:</text> Data-File </para>
+                <para styleclass="Body Text HowTo"><text styleclass="VariableName">Data Format: </text><text style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">N100 G00 X10 Y25 Z27</text></para>
+                <para styleclass="Body Text HowTo"><text styleclass="VariableName">Enter</text><text styleclass="Parameter-Header">&#32;</text><text styleclass="VariableName">File Format: () () (x) (y) ()</text></para>
+                <para styleclass="VariableName-IT">Why?</para>
+                <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="3" colcount="2" style="background-color:#ffffff;">
+                  <tr style="vertical-align:top">
+                    <td style="width:186px;">
+                      <para styleclass="Normal" style="text-align:center;"><text styleclass="VariableName" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; font-style:normal; text-decoration:line-through; text-transform:none; vertical-align:baseline; color:#ff0000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">N</text><text styleclass="VariableName">100 </text><text styleclass="VariableName" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; font-style:normal; text-decoration:line-through; text-transform:none; vertical-align:baseline; color:#ff0000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">G</text><text styleclass="VariableName">00 </text><text styleclass="VariableName" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; font-style:normal; text-decoration:line-through; text-transform:none; vertical-align:baseline; color:#ff0000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">X</text><text styleclass="VariableName">10 </text><text styleclass="VariableName" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; font-style:normal; text-decoration:line-through; text-transform:none; vertical-align:baseline; color:#ff0000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">Y</text><text styleclass="VariableName">25 </text><text styleclass="VariableName" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; font-style:normal; text-decoration:line-through; text-transform:none; vertical-align:baseline; color:#ff0000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">Z</text><text styleclass="VariableName">27</text></para>
+                    </td>
+                    <td>
+                      <para styleclass="Body Text"><text styleclass="VariableName" style="color:#ff0000;">Letters</text> &#160;not imported <text styleclass="VariableName" style="color:#ff0000;">(A, B, C, ... Z)</text></para>
+                    </td>
+                  </tr>
+                  <tr style="vertical-align:top">
+                    <td style="width:186px; height:23px;">
+                      <para styleclass="Body Text" style="text-align:center;"><text style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; font-style:normal; text-decoration:line-through; text-transform:none; vertical-align:baseline; color:#ff0000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">N100</text>&#32;<text style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; font-style:normal; text-decoration:line-through; text-transform:none; vertical-align:baseline; color:#ff0000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">G00</text><text style="color:#ff0000;">&#32;</text><text style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; font-style:normal; text-decoration:line-through; text-transform:none; vertical-align:baseline; color:#ff0000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">X</text><text styleclass="VariableName">10</text>&#32;<text style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; font-style:normal; text-decoration:line-through; text-transform:none; vertical-align:baseline; color:#ff0000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">Y</text><text styleclass="VariableName">25</text>&#32;<text style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; font-style:normal; text-decoration:line-through; text-transform:none; vertical-align:baseline; color:#ff0000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">Z27</text></para>
+                    </td>
+                    <td style="height:23px;">
+                      <para styleclass="Body Text"><text styleclass="VariableName" style="color:#ff0000;">Column 1</text><text styleclass="Body Text HowTo" style="color:#ff0000;">,</text><text styleclass="Body Text HowTo">&#32;</text><text styleclass="VariableName" style="color:#ff0000;">Column 2</text><text styleclass="Body Text HowTo">, and </text><text styleclass="VariableName" style="color:#ff0000;">Column 5</text><text styleclass="Body Text HowTo" style="color:#ff0000;">&#32;</text><text styleclass="Body Text HowTo">- not imported - the </text><text styleclass="VariableName" style="color:#ff0000;">()</text><text styleclass="Body Text HowTo"> in the </text><text styleclass="VariableName">File Format</text><text styleclass="Body Text HowTo">&#32;</text><text styleclass="Parameter-Header" style="color:#ff0000;">()</text><text styleclass="Parameter-Header">&#32;</text><text styleclass="Parameter-Header" style="color:#ff0000;">()</text><text styleclass="Parameter-Header"> (x) (y) </text><text styleclass="Parameter-Header" style="color:#ff0000;">()</text></para>
+                    </td>
+                  </tr>
+                  <tr style="vertical-align:top">
+                    <td style="width:186px;">
+                      <para styleclass="Normal" style="text-align:center;"><text styleclass="VariableName" style="color:#005000;">10 25</text></para>
+                    </td>
+                    <td>
+                      <para styleclass="Normal"> Imported - <text styleclass="Body Text">the</text><text styleclass="Parameter-Header"> (X)</text> and<text styleclass="Parameter-Header"> (Y)</text><text styleclass="Body Text"> in the </text><text styleclass="VariableName">File Format</text><text styleclass="Body Text HowTo">&#32;</text><text styleclass="Parameter-Header" style="color:#ff0000;">()</text><text styleclass="Parameter-Header">&#32;</text><text styleclass="Parameter-Header" style="color:#ff0000;">()</text><text styleclass="Parameter-Header"> (x) (y) </text><text styleclass="Parameter-Header" style="color:#ff0000;">()</text></para>
+                    </td>
+                  </tr>
+                </table></para>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="VariableName-IT" style="text-align:left;"><anchor id="Point-CloudMessage"><keywords><keyword>Point-Cloud<keyword>Feedback Messages</keyword><keyword>Message</keyword></keyword></keywords></anchor>Feedback Messages:</para>
+          <para styleclass="Body Text HowTo"><image src="MD-FA-Point-Cloud Message.ipp" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+          <para styleclass="Normal"><line style="height:2px; color:#993300;" /></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading4 HowTo_atoc_"><anchor id="PointCloudFitCurve"><keywords><keyword>Point Cloud dialog box<keyword>Fit Curve to data</keyword></keyword></keywords></anchor><image src="btn_addkeyword.bmp" scale="100.00%" figurelistinclude="0"></image><tab /><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" src-collapsed="btn_addkeyword.bmp" src-expanded="btn_delkeyword.bmp" src-print="none"><caption><![CDATA[STEP 2: Fit Curve to Data]]></caption></toggle></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="2" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Text">When you import a <text styleclass="Element">Point-Cloud</text>, the chart<image src="Red-14-1b.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image> shows the <text styleclass="VariableName-IT">Point-Cloud</text><text styleclass="HowTo Bulleted"> in</text><text styleclass="VariableName" style="color:#0000ff;"> (</text><text styleclass="VariableName" style="color:#00ffff;">Cyan</text><text styleclass="VariableName" style="color:#0000ff;">)</text><text styleclass="HowTo Bulleted" style="font-weight:bold; color:#0000ff;">&#32;</text><text styleclass="HowTo Bulleted">and the </text><text styleclass="VariableName-IT">Continuous Curve</text><text styleclass="HowTo Bulleted"> in</text><text styleclass="HowTo Bulleted" style="color:#95b3d8;">&#32;</text><text styleclass="VariableName" style="color:#95b3d8;">(</text><text styleclass="VariableName" style="color:#ff00ff;">Pink</text><text styleclass="VariableName" style="color:#95b3d8;">)</text><text styleclass="HowTo Bulleted">.</text></para>
+          <para styleclass="Body Text"><table styleclass="Block" rowcount="1" colcount="2">
+            <tr style="vertical-align:top">
+              <td style="width:20px;">
+                <para styleclass="Body Text" style="text-align:center;"><image src="MD-Information.png" scale="100.00%" padding="0 4 0 4" styleclass="Image Caption" figurelistinclude="0"></image></para>
+              </td>
+              <td>
+                <para styleclass="Body Text">In the chart below, the <text styleclass="VariableName-IT" style="font-style:normal;">Continuous Curve</text> does <text styleclass="VariableName-IT" style="color:#ff0000;">not</text> follow the <text styleclass="VariableName">Point-Cloud</text> - this is illustrative ONLY. </para>
+                <para styleclass="Body Text">The two charts will show as one chart after you successfully <text styleclass="VariableName">Fit the Curve to the Point-Cloud</text>.</para>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Body Text"><image src="MD-Dialog-FB-PointCloud-FitCurvetoData=LH3.ipp" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Heading4 Toggle_atocs_">Parameters</para>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <list id="3" type="ol" listtype="upper-alpha" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Body Text" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; color:#333399;">
+                  <li styleclass="Body Text"><text styleclass="Parameter-Header">Original Data Accuracy</text><image src="Red-14-2.gif" scale="100.00%" styleclass="HowTo Numbered" figurelistinclude="0"></image><text styleclass="Parameter-Header">&#32;</text></li>
+                </list>
+                <para styleclass="Body Text HowTo"><text styleclass="Body Text">This is a judgment you must make. Start with </text><text styleclass="HowTo Bulleted">0.1, then reduce it to approximately 0.01 - but see </text><link displaytype="text" defaultstyle="true" type="topiclink" href="" anchor="OriginalDataAccuracy" styleclass="HowTo Bulleted">below</link><text styleclass="HowTo Bulleted"> for more thoughts.</text></para>
+                <list id="4" type="ol" listtype="upper-alpha" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="2" styleclass="Parameter-Header" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; color:#333399;">
+                  <li styleclass="Parameter-Header">Auto-Fit check-box and Fit Curve button<image src="Red-14-4.gif" scale="100.00%" figurelistinclude="0"></image>&#32;</li>
+                </list>
+                <para styleclass="Body Text HowTo">Usually, you can click the <text styleclass="Parameter">Auto-Fit... check-box</text> to put a tick in the check-box - see options</para>
+                <list id="5" type="ol" listtype="upper-alpha" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="3" styleclass="Body Text" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; color:#333399;">
+                  <li styleclass="Body Text"><text styleclass="Parameter-Header">Increase the # Harmonics</text><image src="Red-14-3.gif" scale="100.00%" styleclass="Parameter-Header" figurelistinclude="0"></image><text styleclass="Parameter-Header">&#32;</text></li>
+                </list>
+                <para styleclass="Body Text HowTo">Edit the <text styleclass="Parameter"># Harmonics</text><image src="Red-14-3.gif" scale="100.00%" styleclass="Body Text" style="font-weight:bold;" figurelistinclude="0"></image>&#32;</para>
+                <para styleclass="Body Text HowTo">The <text styleclass="VariableName">Continuous-Curve</text> becomes nearer to the <text styleclass="VariableName">Imported Data</text> as you increase the <text styleclass="VariableName"># Harmonic</text><image src="Red-14-3.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Image Caption">.</text></para>
+                <list id="5" type="ol" listtype="upper-alpha" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="3" styleclass="Body Text" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; color:#333399;">
+                  <li styleclass="Body Text"><text styleclass="Parameter-Header">Fit-Quality =~1 ? </text><image src="Red-14-5.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></li>
+                </list>
+                <para styleclass="Body Text HowTo">When <text styleclass="Parameter">Fit Quality Traffic Light</text> becomes <text styleclass="VariableName" style="color:#005000;">Green</text>, <text styleclass="VariableName-IT" style="font-style:normal;">STOP</text><text styleclass="Body Text">, or </text></para>
+                <para styleclass="Body Text HowTo">When the number in the <text styleclass="Parameter">Fit-Quality Number box</text><image src="Red-14-5.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image> is near to, or equal to, one (1), <text styleclass="VariableName-IT" style="font-style:normal;">STOP</text></para>
+                <para styleclass="Body Text HowTo"><text styleclass="VariableName-IT">If you add more harmonics, the fitted-curve may oscillate with an amplitude equal to the Original Data Accuracy.</text></para>
+                <list id="5" type="ol" listtype="upper-alpha" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="3" styleclass="Body Text" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; color:#333399;">
+                  <li styleclass="Body Text"><text styleclass="Parameter-Header">Display Options</text><image src="Red-14-6.gif" scale="100.00%" styleclass="Parameter-Header" figurelistinclude="0"></image></li>
+                </list>
+                <para styleclass="Body Text HowTo">Click one of the four radio-buttons</para>
+                <list id="6" type="ul" listtype="bullet" formatstring="&#162;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Wingdings; font-size:10pt; color:#333399;">
+                  <li styleclass="HowTo Bulleted"><text styleclass="Parameter">Show Nothing</text></li>
+                  <li styleclass="Parameter">Points only</li>
+                  <li styleclass="Parameter">Point and Curve</li>
+                  <li styleclass="Parameter">Curve Only</li>
+                </list>
+                <para styleclass="Body Text HowTo">The view of the graph and the <text styleclass="Element">Point-Cloud</text> in the <text styleclass="Interface">Graphic-Area</text> will match the radio-button.</para>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Heading4 Toggle_atocs_">Steps to do:</para>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <list id="7" type="ol" listtype="upper-alpha" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Body Text" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="Body Text"><text styleclass="VariableName">Edit the # Harmonics</text></li>
+                </list>
+                <list id="8" type="ul" listtype="bullet" formatstring="&#254;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Wingdings; font-size:11pt; color:#000000;">
+                  <li styleclass="HowTo Bulleted"><text styleclass="Parameter-Header">Auto-Fit </text>Check-box</li>
+                </list>
+                <para styleclass="Body Text HowTo"><text styleclass="Body Text">The </text><text styleclass="Element">Curve</text><text styleclass="Body Text"> updates immediately each time edit the</text><text styleclass="VariableName">&#32;</text><text styleclass="Parameter"># Harmonics</text><text styleclass="Body Text">&#32;</text></para>
+                <list id="9" type="ul" listtype="bullet" formatstring="&#113;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="3" styleclass="HowTo Bulleted" style="font-family:Wingdings; font-size:11pt; color:#000000;">
+                  <li styleclass="HowTo Bulleted"><text styleclass="Parameter-Header">Auto-Fit</text> check-box is clear.</li>
+                </list>
+                <para styleclass="Body Text HowTo">The <text styleclass="Element">Curve</text> only updates when you click <text styleclass="Parameter">Fit Curve</text><image src="Red-14-4.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Parameter">&#32;</text></para>
+                <list id="7" type="ol" listtype="upper-alpha" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="VariableName-indent" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="VariableName-indent">Do A again</li>
+                </list>
+                <para styleclass="HowTo Bulleted">Do until the <text styleclass="Parameter">Fit-Quality</text> and the <text styleclass="Parameter">Traffic-Light</text> becomes <text styleclass="VariableName" style="color:#003700;">Green</text> or <text styleclass="VariableName" style="color:#ff8000;">Orange</text></para>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="Heading4 Toggle_atocs_"><text styleclass="Parameter-Header">Velocity and Acceleration Graphs and Filter Width</text><image src="7r.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Body Text">The default plot is for Position. If you want to look at the plot of the Point-Cloud as Velocity or Acceleration (<image src="Red-14-8.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Normal">)</text>, then click the <text styleclass="VariableName" style="font-size:14pt;">V</text> or the<text style="font-size:14pt;">&#32;</text><text styleclass="VariableName" style="font-size:14pt;">A</text> icons. </para>
+                <para styleclass="Body Text">If the plot of the Velocity or Acceleration data is noisy you can smooth it (remove the noise) with the Filter-Width<image src="Red-14-7.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image> . This may help you identify the original Motion-Law. </para>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Heading4 Toggle_atocs_"><anchor id="OriginalDataAccuracy"><keywords><keyword>Point-Cloud Original Data Accuracy<keyword>Thoughts and Approximations</keyword></keyword></keywords></anchor>Original Data Accuracy<image src="2r.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+          <para styleclass="Body Text HowTo"><table styleclass="PopupTable2" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="VariableName-IT">Thoughts:</para>
+                <list id="10" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+                  <li styleclass="HowTo Bulleted">Consider 0.1, then reduce it to approximately 0.01. </li>
+                  <li styleclass="Body Text HowTo">Do not enter a value that is more accurate than the original accuracy of the data. For example, if the data has 2 d.p. , then 0.05 OK, and 0.001 is not a sensible value.</li>
+                  <li styleclass="HowTo Bulleted">Is the skill of the person that measured the Cam-Profile a factor?</li>
+                  <li styleclass="HowTo Bulleted">Is the cam clean? Is the cam worn? Is the cam damaged?</li>
+                </list>
+                <para styleclass="VariableName-IT"><text style="font-style:normal;">Machine Measurement Accuracy Approximations: per 100mm Diameter of Cam Diameter:</text></para>
+                <list id="11" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+                  <li styleclass="HowTo Bulleted">Temperature-Controlled (18-22ºC) CMM approximately 0.2 - 5<text styleclass="Body Text HowTo" style="font-style:italic;">µm</text></li>
+                  <li styleclass="HowTo Bulleted"><text styleclass="Body Text HowTo">Non-temperature-controlled CMM &#160;approximately 2 - 10</text><text styleclass="Body Text HowTo" style="font-style:italic;">µm</text><text styleclass="Body Text HowTo"> (~h4 tolerances on a </text><equation styleclass="Body Text HowTo"><![CDATA[\emptyset ]]></equation><text styleclass="Body Text HowTo">100</text><text styleclass="Body Text HowTo" style="font-size:10pt; vertical-align:baseline;">mm</text><text styleclass="Body Text HowTo"> shaft)</text></li>
+                  <li styleclass="HowTo Bulleted"><text styleclass="Body Text HowTo">Portable CMM approximately 5 - 20</text><text styleclass="Body Text HowTo" style="font-style:italic;">µm</text><text styleclass="Body Text">&#32;</text><text styleclass="Body Text HowTo">(~h5-h6 / </text><equation styleclass="Body Text HowTo"><![CDATA[\emptyset ]]></equation><text styleclass="Body Text HowTo">100</text><text styleclass="Body Text HowTo" style="font-size:10pt; vertical-align:baseline;">mm</text><text styleclass="Body Text HowTo"> shaft)</text></li>
+                  <li styleclass="HowTo Bulleted"><text styleclass="Body Text HowTo">Test Rigs are variable, but you should aim for approximately 20 - 100</text><text styleclass="Body Text HowTo" style="font-style:italic;">µm</text><text styleclass="Body Text HowTo"> (~h8-h9 for a </text><equation styleclass="Body Text HowTo"><![CDATA[\emptyset ]]></equation><text styleclass="Body Text HowTo">100</text><text styleclass="Body Text HowTo" style="font-size:10pt; vertical-align:baseline;">mm</text><text styleclass="Body Text HowTo"> shaft)</text></li>
+                </list>
+                <para styleclass="HowTo Bulleted"><text styleclass="Body Text HowTo">Consider a Tolerance Class: e.g. h6</text></para>
+              </td>
+            </tr>
+          </table></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Body Text HowTo"></para>
+  </body>
+</topic>

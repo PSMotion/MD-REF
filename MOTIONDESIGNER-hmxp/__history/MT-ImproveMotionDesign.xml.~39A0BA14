@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" status="Under Construction" modified="2023-03-04T11:39:57.944Z" lasteditedby="Adam" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title translate="true">To Improve a Motion</title>
+  <keywords>
+    <keyword translate="true">How to ...<keyword translate="true">Improve a Motion Design</keyword></keyword>
+  </keywords>
+  <body>
+    <header>
+      <para styleclass="Heading1"><text styleclass="Heading1" translate="true">To Improve a Motion</text></para>
+    </header>
+    <para styleclass="Heading3_atocs_"><text styleclass="Heading3_atocs_" translate="true">Improve the Motion</text></para>
+    <para styleclass="Body Text"><text styleclass="Body Text" translate="true">This is a very subjective problem. A good motion for one application may not be a good motion for another.</text></para>
+    <para styleclass="Body Text"><text styleclass="Body Text" translate="true">An attempt to answer...</text></para>
+    <para styleclass="Body Text"><text styleclass="VariableName" translate="true">Assumptions</text><text styleclass="Body Text" translate="true">:</text></para>
+    <list id="0" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+      <li styleclass="HowTo Bulleted"><text styleclass="HowTo Bulleted" translate="true">The motion is for a machine, and not a cartoon character.</text></li>
+      <li styleclass="HowTo Bulleted"><text styleclass="HowTo Bulleted" translate="true">The motion</text><text styleclass="Body Text" translate="true"> is intended for a machine where the machine elements reciprocate, oscillate, index, or the speed modulates in some way.</text></li>
+    </list>
+    <para styleclass="Body Text"><text styleclass="VariableName" translate="true">General Advice</text><text styleclass="Body Text" translate="true">:</text></para>
+    <list id="1" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+      <li styleclass="HowTo Bulleted"><text styleclass="HowTo Bulleted" translate="true">If possible, use the Flexible Polynomial Motion-Law for all of the segments in your motion. This motion-law has the most motion-design flexibility. </text></li>
+      <li styleclass="HowTo Bulleted"><text styleclass="Body Text HowTo" translate="true">Remove Velocity Discontinuities. </text></li>
+      <li styleclass="HowTo Bulleted"><text styleclass="Body Text HowTo" translate="true">Remove Acceleration Discontinuities, in nearly every machine design circumstance</text></li>
+      <li styleclass="HowTo Bulleted"><text styleclass="HowTo Bulleted" translate="true">Always ask yourself &apos;Can I reduce the number of segments?&apos; Use a minimum number of segments. </text></li>
+      <li styleclass="HowTo Bulleted"><text styleclass="HowTo Bulleted" translate="true">Always ask yourself &apos;Can I delete a Dwell Segment?&apos; Try to remove Dwell Segments - especially short dwells. Usually it is better to remove a Dwell segment, and give the adjacent segments zero-jerk.</text></li>
+      <li styleclass="HowTo Bulleted"><text styleclass="HowTo Bulleted" translate="true">Reduce the number of motion specifications.</text></li>
+    </list>
+    <para styleclass="Body Text Howindent4bullets"><text styleclass="Body Text Howindent4bullets" translate="true">E.G. You can make a motion continuous in position, but it may be possible not to specify the actual position at a Blend-Point.</text></para>
+    <list id="1" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+      <li styleclass="HowTo Bulleted"><text styleclass="Body Text HowTo" translate="true">Try to make the peak acceleration values of each segment similar to each other, or try to give similar motion durations.</text></li>
+    </list>
+    <para styleclass="Body Text Howindent4bullets"><text styleclass="Body Text Howindent4bullets" translate="true">This is not always possible or desirable. But consider balancing the motion to give similar motion durations or peak accelerations, or both.</text></para>
+    <list id="2" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+      <li styleclass="HowTo Bulleted"><text styleclass="HowTo Bulleted" translate="true">Can you reduce (or even increase) the distance a part is moved? </text></li>
+    </list>
+    <para styleclass="Heading3_atocs_"><text styleclass="Heading3_atocs_" translate="true">Why select different Motion-Laws?</text></para>
+    <para styleclass="HowTo Bulleted"><text styleclass="HowTo Bulleted" translate="true">A motion-law might:</text></para>
+    <list id="3" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+      <li styleclass="HowTo Bulleted"><text styleclass="HowTo Bulleted" translate="true">give more flexibility for you to specify the motion-derivatives at the Blend-Points</text></li>
+      <li styleclass="HowTo Bulleted"><text styleclass="HowTo Bulleted" translate="true">suit the mechanical system. For example, the motion-law might have a &apos;low peak maximum velocity&apos;.</text></li>
+      <li styleclass="HowTo Bulleted"><text styleclass="HowTo Bulleted" translate="true">give a good dynamic response to the mechanical system. For example, the motion-law might have a good response to system backlash, low drive stiffness.</text></li>
+      <li styleclass="HowTo Bulleted"><text styleclass="Body Text" translate="true">agree with a company preference(!) - for example Modified Sinusoid is often a company preference.</text></li>
+    </list>
+    <para styleclass="Body Text HowTo"><text styleclass="Body Text HowTo" translate="true">However, I nearly always design my motions with the Flexible-Polynomial segments as they give me almost all of the flexibility I need.</text></para>
+  </body>
+</topic>

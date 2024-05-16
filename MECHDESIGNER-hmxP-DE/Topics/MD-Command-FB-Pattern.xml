@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" status="Under Construction" modified="2022-09-14T10:17:00.826+01:00" lasteditedby="Adam" version="2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title>Add Pattern FB</title>
+  <keywords>
+    <keyword>Add<keyword>Function-Block: Pattern</keyword></keyword>
+    <keyword>Camlinks: Show / Hide</keyword>
+    <keyword>Modeling FB menu:<keyword>Pattern FB</keyword></keyword>
+    <keyword>Pattern FB<keyword>Add</keyword></keyword>
+    <keyword>Show or Hide a Solid/Extrusion</keyword>
+  </keywords>
+  <body>
+    <header>
+      <para styleclass="Heading1">Add Pattern FB</para>
+    </header>
+    <para styleclass="Heading3_atocs_">What is the Pattern tool?</para>
+    <para styleclass="Body Text HowTo"><table styleclass="PopupTable2" rowcount="1" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Text">A <text styleclass="Element">Pattern FB</text> makes an array of one or more <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-Solids" styleclass="Element">Solids</link>.</para>
+          <para styleclass="Body Text">A <text styleclass="Element">Pattern</text> is similar to a circular or linear array as found in your CAD. </para>
+          <para styleclass="Body Text">However, the <text styleclass="Element">Pattern FB</text> must anticipate the motion of each <text styleclass="Interface">Solid</text> in the array at each instant in a machine-cycle relative to the other Parts in the model</para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="Body Text">When you use <text styleclass="Element">Pattern FB</text> to hide a<text styleclass="Element">&#32;</text><text styleclass="VariableName-IT">copy</text><text styleclass="Element">&#32;</text>of a <text styleclass="Interface">Solid</text> at phases in the machine-cycle, you also remove its <text styleclass="Parameter-Header">Mass-Properties.</text></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="Heading3_atocs_">Add Pattern FB</para>
+    <para styleclass="Body Text"><table styleclass="Default" rowcount="2" colcount="2">
+      <tr style="vertical-align:top">
+        <td rowspan="2" style="width:100px;">
+          <para styleclass="VariableName" style="text-align:right;">What to do :</para>
+          <para styleclass="VariableName" style="text-align:right;"></para>
+        </td>
+        <td>
+          <list id="0" type="ol" listtype="decimal" formatstring="&#83;&#84;&#69;&#80;&#32;&#37;&#48;&#58;&#115;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo STEP" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo STEP">Add the Pattern FB to the graphic-data &#160;</li>
+          </list>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="2">
+            <tr style="vertical-align:top">
+              <td style="vertical-align:middle; width:41px;">
+                <para styleclass="VariableName-IT" style="text-align:right;"><image src="MD-Icon-FB-Pattern.png" scale="100.00%" padding="0 2 0 0" style="font-style:normal;" figurelistinclude="0"><title>Add Pattern FB</title></image></para>
+              </td>
+              <td>
+                <list id="1" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Body Table" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="Body Table"><text styleclass="Body Text">Click </text><text styleclass="T_Menu">Add menu &gt; Mechanism menu &#160;&gt; Add Pattern FB</text><text styleclass="VariableName">&#32;</text></li>
+                </list>
+                <para styleclass="VariableName">- or -</para>
+                <list id="2" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="B Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="B Bullets"><text styleclass="Body Text">Click</text><text styleclass="Interface">&#32;</text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Menu-FB-Modelling" styleclass="T_Menu">Modeling FB toolbar</link><text styleclass="T_Menu"> &gt; Add Pattern FB</text><text styleclass="VariableName">&#32;</text></li>
+                </list>
+                <list id="3" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="2" styleclass="B Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="B Bullets"><text styleclass="Body Text">Click the </text><text styleclass="Interface">graphic-area</text><text styleclass="VariableName">&#32;</text></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Body Text HowTo">The <text styleclass="Element">Pattern FB</text> is in the <text styleclass="Interface">graphic-area.</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <list id="4" type="ol" listtype="decimal" formatstring="&#83;&#84;&#69;&#80;&#32;&#37;&#48;&#58;&#115;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="2" styleclass="HowTo STEP" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo STEP">Open the Pattern dialog-box: </li>
+          </list>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td style="border-top:none; border-right:none; border-bottom:none;">
+                <list id="5" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="B Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="B Bullets"><text styleclass="Body Text">Double-click a </text><text styleclass="Element">Pattern FB</text><text style="font-family:Arial; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">&#32;</text><text styleclass="Body Text">in the </text><text styleclass="Interface">graphic-area</text><text styleclass="Body Text"> (or </text><text styleclass="Interface">Assembly-Tree</text><text styleclass="VariableName"> )</text></li>
+                </list>
+                <para styleclass="VariableName">- or -</para>
+                <para styleclass="Body Text"><text styleclass="SeeAlso">See </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-How-to-Open-a-Dialog-Box" styleclass="SeeAlso">How to Open a Dialog-Box</link><text styleclass="SeeAlso">.</text><text styleclass="VariableName">&#32;</text></para>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Body Text HowTo"><text style="font-family:Arial; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">The </text><text styleclass="Element">Pattern dialog-box</text> is now open<text style="font-family:Arial; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">.</text></para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <list id="6" type="ol" listtype="decimal" formatstring="&#83;&#84;&#69;&#80;&#32;&#37;&#48;&#58;&#115;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="3" styleclass="HowTo STEP" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo STEP"><text styleclass="SeeAlso">See </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-FunctionBlock-PointCloud" styleclass="SeeAlso">Pattern-FB dialog-box</link><text styleclass="SeeAlso">.</text><text styleclass="VariableName">&#32;</text></li>
+          </list>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading4 Toggle_atocs_">Application Note: Pattern FB and a Driving Pulley: </para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="1" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Text">If you want to use the <text styleclass="Element">Pattern FB </text>to model an array (Pattern) of a <text styleclass="Interface">Solid</text> element along the complete <text styleclass="Parameter-Header">belt-length</text>, you must make changes to the timing of the <text styleclass="Element">Pulley</text>.</para>
+          <list id="7" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo Bulleted">Add a <text styleclass="Element">Gearing FB</text> to the input-connector of the <text styleclass="Element">Motion-Dimension FB</text> that is driving the <text styleclass="Element">Pulley</text><text styleclass="VariableName">&#32;</text></li>
+            <li styleclass="HowTo Bulleted"><text styleclass="Body Text Howindent4bullets">Open the </text><text styleclass="Element">Gearing FB dialog-box</text></li>
+            <li styleclass="HowTo Bulleted"><text styleclass="Body Text Howindent4bullets">Make the </text><text styleclass="Parameter-Header">Gearing Ratio</text><text styleclass="Interface"> = </text><text styleclass="Parameter-Header">Belt-Length / Pulley-Circumference</text><text styleclass="Body Text Howindent4bullets">.</text></li>
+          </list>
+          <para styleclass="Body Text">The <text styleclass="Element">Pattern</text> of the <text styleclass="Interface">Solid</text> elements should now be at equal spaces along the complete <text styleclass="Parameter-Header">Belt-Length</text>.</para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Body Text HowTo"></para>
+    <para styleclass="Normal" style="page-break-before:always;"></para>
+  </body>
+</topic>

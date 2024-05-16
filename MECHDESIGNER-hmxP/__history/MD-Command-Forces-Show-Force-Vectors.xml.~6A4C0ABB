@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" status="Under Construction" modified="2023-08-21T13:22:01.901+01:00" lasteditedby="44785" version="2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title>Force-Vectors: Display)</title>
+  <keywords>
+    <keyword>Force menu<keyword>Force Vectors: Display</keyword></keyword>
+    <keyword>Force toolbar<keyword>Force Vectors: Display</keyword></keyword>
+  </keywords>
+  <body>
+    <header>
+      <para styleclass="Heading1">Force-Vectors: Display</para>
+      <para styleclass="Heading1"></para>
+    </header>
+    <para styleclass="Notes" style="page-break-before:always;"><anchor id="ForceVectorsShowIF"><keywords><keyword>Force Vectors<keyword>Display</keyword><keyword>Show if active...</keyword></keyword></keywords></anchor><text styleclass="Heading3_atocs_">Forces toolbar &gt; Force-Vectors: Display</text></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="5" colcount="3">
+      <tr style="vertical-align:top">
+        <td style="width:34px;">
+          <para styleclass="Normal" style="text-align:right;"><image src="MD-Icon-Force-Vectors-Show.png" align="right" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td colspan="2" style="vertical-align:middle; height:13px;">
+          <para styleclass="T_Menu">Forces toolbar &gt; Enable Force-Vectors: Display</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:34px;">
+          <para styleclass="Normal" style="text-align:right;"><image src="MD-Icon-Force-Vectors-Hide.png" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td colspan="2" style="vertical-align:middle; height:13px;">
+          <para styleclass="T_Menu">Forces toolbar &gt; Disable Force-Vectors: Display</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:middle">
+        <td colspan="2" style="width:100px;">
+          <para styleclass="VariableName" style="text-align:right;">Menu : </para>
+        </td>
+        <td>
+          <para styleclass="T_Menu">Add menu &gt; Forces sub-menu &gt; Enable/Disable Force-Vectors: Display</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td colspan="3">
+          <para styleclass="Notes">Force-Vectors show <text styleclass="Interface2" style="color:#ff0000;">only</text> when...</para>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <list id="0" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullets" style="font-family:Symbol; font-size:11pt; color:#003300;">
+                  <li styleclass="Bullets"><text styleclass="Body Text">Enable: </text><text styleclass="T_Menu">Force toolbar &gt; </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Command-Forces-Calculate" styleclass="T_Menu">Force-Vectors: Calculate</link></li>
+                </list>
+                <para styleclass="Interface2">AND</para>
+                <list id="0" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullets" style="font-family:Symbol; font-size:11pt; color:#003300;">
+                  <li styleclass="Bullets"><text styleclass="Body Text">Enable: </text><text styleclass="T_Menu">Force toolbar &#160;&gt; Force-Vectors: Display</text></li>
+                </list>
+                <para styleclass="Interface2">AND</para>
+                <list id="0" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullets" style="font-family:Symbol; font-size:11pt; color:#003300;">
+                  <li styleclass="Bullets"><text styleclass="HowTo Numbered">A minimum of one </text><text styleclass="Element">Part</text><text styleclass="HowTo Numbered"> is </text><text styleclass="VariableName">kinematically-defined</text><text styleclass="HowTo Numbered"> and it has a mass(</text><text styleclass="HowTo Numbered" style="font-size:10pt; vertical-align:baseline;">kg</text><text styleclass="HowTo Numbered">) - see </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-CADLine-MassProperties" styleclass="Element">CAD-Line dialog | Mass Properties</link><text styleclass="Element">.</text></li>
+                </list>
+                <para styleclass="Interface2">AND/or</para>
+                <list id="1" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullets" style="font-family:Symbol; font-size:11pt; color:#000000;">
+                  <li styleclass="Bullets">A <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Command-Forces-FB-Spring" styleclass="Element">Spring FB</link> applies a Force between two <text styleclass="Element">Points</text> and the <text styleclass="Element">Parts</text> are kinematic-defined.</li>
+                </list>
+                <para styleclass="Interface2">AND</para>
+                <list id="2" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullets" style="font-family:Symbol; font-size:11pt; color:#000000;">
+                  <li styleclass="Bullets"><text styleclass="Body Text">Enable: </text><text styleclass="T_Menu">Display Filters toolbar &gt; Display Part-Outlines</text> (default)</li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Body Text"><text styleclass="VariableName">Force-Vectors in the graphic-area </text></para>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Body Text">Each <text styleclass="VariableName">Force-Vector</text> is the <text styleclass="VariableName">Force</text> that <text styleclass="VariableName" style="color:#ff0000;">ACTS-ON</text> a <text styleclass="Element">Part</text> at a Joint in a kinematic-chain.</para>
+                <para styleclass="Body Text HowTo"><text styleclass="VariableName">Vector Location</text><text styleclass="Body Text">: as rays from </text><text styleclass="Element">Points</text><text styleclass="Body Text"> at </text><text styleclass="Element">Pin-Joints</text><text styleclass="Body Text">, </text><text styleclass="Element">Slide-Joints</text><text styleclass="Body Text">,</text><text styleclass="Element"> Springs</text><text styleclass="Body Text">, </text><text styleclass="Element">Cam Contacts</text><text styleclass="Body Text">, </text><text styleclass="Element">gear contacts</text><text styleclass="Body Text">, </text><text styleclass="Element">belts</text><text styleclass="Body Text">. </text></para>
+                <para styleclass="Body Text HowTo"><text styleclass="VariableName">Vector Direction</text>:<text styleclass="HowTo Bulleted"> they are in the direction of the </text><text styleclass="VariableName">Force-Vector</text></para>
+                <para styleclass="Body Text HowTo"><text styleclass="VariableName">Vector Length</text><text styleclass="Body Text">: their length is scaled</text><text styleclass="HowTo Bulleted"> to the magnitude of the Force - </text><text styleclass="SeeAlso">see </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-FeedBackArea" anchor="KinematicVectors-FA" styleclass="SeeAlso">Vector Scale buttons</link></para>
+                <para styleclass="Body Text HowTo"><text styleclass="VariableName">Vector Magnitude</text>:<text styleclass="HowTo Bulleted"> the Force that acts on the </text><text styleclass="Element">Point</text><text styleclass="HowTo Bulleted"> is at the arrowhead of each vector</text></para>
+                <para styleclass="Body Text HowTo"><text styleclass="VariableName">Vector Color</text>: <text styleclass="Popup Box2">- </text><text styleclass="SeeAlso">see below </text><link displaytype="text" defaultstyle="true" type="topiclink" href="" anchor="COLORS-PARTOUTLINESandFORCE" styleclass="SeeAlso">Colors: Part-Outlines and Force-Vectors</link><text styleclass="Body Text">.</text></para>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="VariableName">Rotary Driving Moment / Driving Torque</para>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Body Text">The <text styleclass="VariableName">Torque-Vector</text> is the <text styleclass="VariableName">Application-Torque</text> that a motor and gear-box must be able to drive. </para>
+                <para styleclass="Body Text HowTo"><text styleclass="VariableName">Location</text><text styleclass="Body Text">: at a </text><text styleclass="Popup Box-Elements">Pin-Joint</text><text styleclass="Body Text"> that you select to drive the kinematic-chain - &#160;</text><text styleclass="SeeAlso">see </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Forces-Configure-Power-Source" styleclass="SeeAlso">Configure Power Source</link></para>
+                <para styleclass="Body Text HowTo"><text styleclass="VariableName">Length</text>: <text styleclass="Body Text">proportional to the magnitude of the Torque.</text></para>
+                <para styleclass="Interface2">Important<text styleclass="Body Text">:</text></para>
+                <para styleclass="Body Text HowTo">The <text styleclass="VariableName">Torque-Vector</text> does <text styleclass="VariableName">NOT</text> include the torque to accelerate the inertia of a <text styleclass="VariableName">Servo-motor</text><text styleclass="Body Text"> or </text><text styleclass="VariableName">Gearbox</text></para>
+                <para styleclass="Body Text HowTo">To select and include a <text styleclass="VariableName">Servo-motor</text> and <text styleclass="VariableName">Gearbox - </text><text styleclass="SeeAlso">see</text>&#32;<link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-ServoGearboxTorqueSpeed" styleclass="SeeAlso">Kinematic Servo-motor and Gearbox Sizing</link>.</para>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="VariableName">Linear Driving-Force</para>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Body Text">The <text styleclass="VariableName">Driving-Force</text> is the instantaneous <text styleclass="VariableName">Force</text> to drive the kinematic-chain. </para>
+                <para styleclass="Body Text HowTo"><text styleclass="VariableName">Location</text><text styleclass="Body Text">: at a</text><text styleclass="Popup Box-Elements"> Slide-Joint</text><text styleclass="Body Text"> that you select to drive the kinematic-chain </text><text styleclass="SeeAlso">- see also: </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Forces-Configure-Power-Source" styleclass="SeeAlso">Configure Power Source</link><text styleclass="SeeAlso">)</text></para>
+                <para styleclass="Body Text HowTo"><text styleclass="VariableName">Length</text><text styleclass="Body Text">: proportional to the magnitude of the </text>Driving-Force<text styleclass="Body Text">.</text></para>
+                <para styleclass="Interface2">Important<text styleclass="Body Text">:</text></para>
+                <para styleclass="Body Text HowTo">The <text styleclass="VariableName">Driving-Force</text> does <text styleclass="VariableName">NOT</text> include a <text styleclass="VariableName">Linear Servo-motor </text><text styleclass="Body Text">to drive the kinematic-chain.</text></para>
+                <para styleclass="Body Text HowTo">There is <text styleclass="VariableName">NOT</text> a database of <text styleclass="VariableName">Linear Servo-motors.</text></para>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Normal"><anchor id="COLORS-PARTOUTLINESandFORCE" styleclass="VariableName"><keywords><keyword>Force Vectors<keyword>Colors of the Vectors and Part-Outlines.</keyword></keyword></keywords></anchor><text styleclass="VariableName">Colors: Part-Outlines and Force-Vectors </text></para>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Body Text">When you enable <text styleclass="VariableName">Force-Vectors: Display</text>, the color of each <text styleclass="Interface">Part-Outline</text> is changed. </para>
+                <para styleclass="Body Text">The colors become the same color as the <text styleclass="VariableName">Force-Vector</text> that <text styleclass="VariableName" style="color:#ea0000;">ACTS-ON</text> the <text styleclass="Element">Part</text>, at a <text styleclass="Element">Point</text> in the <text styleclass="Element">Part.</text></para>
+                <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+                <para styleclass="Interface2">TOP-TIP</para>
+                <para styleclass="Body Text HowTo">To help identify which <text styleclass="VariableName">Force-Vectors</text> that act on a <text styleclass="Element">Part: </text></para>
+                <list id="3" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="HowTo Bulleted">Hover above a <text styleclass="Interface">Part-Outline</text><text styleclass="VariableName">&#32;</text></li>
+                </list>
+                <para styleclass="Body Text HowTo">The <text styleclass="Interface">Part-Outline</text>&#32;<text styleclass="VariableName" style="color:#ff0000;">AND</text> the <text styleclass="VariableName">Force-Vector</text> that <text styleclass="Interface2" style="color:#ff0000;">ACTs-ON</text> the <text styleclass="Element">Part</text> change to the selected color, usually <text styleclass="VariableName" style="color:#ff0000;">RED</text>. &#160;</para>
+                <para styleclass="Body Text">Use <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Forces-Configure-Power-Source" styleclass="SeeAlso">Configure Power Source</link> to edit the color of each <text styleclass="VariableName">Force-Vector</text>, and/or to hide <text styleclass="VariableName">Force-Vectors</text> that act on different <text styleclass="Element">Parts</text>.</para>
+              </td>
+            </tr>
+          </table></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td colspan="3">
+          <para styleclass="SeeAlso">See also: <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-ServoGearboxTorqueSpeed">Kinetostatic Torque and Speed dialog</link></para>
+        </td>
+      </tr>
+    </table></para>
+  </body>
+</topic>

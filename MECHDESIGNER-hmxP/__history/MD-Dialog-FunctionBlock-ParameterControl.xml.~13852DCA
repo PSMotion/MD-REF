@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" modified="2024-04-03T19:42:09.019+01:00" lasteditedby="44785" version="2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title>Dialog: Function-Block: Parameter-Control</title>
+  <keywords>
+    <keyword>Dialog<keyword>Function-Block : Parameter-Control FB</keyword></keyword>
+  </keywords>
+  <body>
+    <header>
+      <para styleclass="Heading1">Dialog: Function-Block: Parameter-Control</para>
+    </header>
+    <para styleclass="Heading2" style="page-break-before:always;">Parameter-Control FB</para>
+    <para styleclass="SeeAlso">See: <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Command-AddFBParameterControl">Add Parameter-Control FB</link></para>
+    <para styleclass="Normal"><line style="height:1px; color:#343400;" /></para>
+    <para styleclass="Body Text HowTo">Motion-values at the input-connector to a <text styleclass="Element">Parameter Control FB</text> can control these parameters:</para>
+    <list id="0" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+      <li styleclass="HowTo Bulleted"><text styleclass="Parameter">dimension</text><text styleclass="Body Text HowTo" style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;"> when the </text><text styleclass="VariableName">Driven Parameter</text><text styleclass="Body Text HowTo" style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;"> is a </text><text styleclass="Element">dimension</text><text styleclass="Body Text">&#32;</text></li>
+      <li styleclass="HowTo Bulleted"><text styleclass="Parameter">Extrusion depth</text><text styleclass="Body Text HowTo" style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;"> when the </text><text styleclass="VariableName">Driven Parameter</text><text styleclass="Body Text HowTo" style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;"> is a </text><text styleclass="Element">Profile</text></li>
+      <li styleclass="HowTo Bulleted"><text styleclass="Parameter">Extrusion-Offset</text><text styleclass="Body Text HowTo" style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;"> when the </text><text styleclass="VariableName">Driven Parameter</text><text styleclass="Body Text HowTo" style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;"> is an </text><text styleclass="Element">Extrusion</text><text styleclass="Body Text HowTo" style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">. </text></li>
+    </list>
+    <para styleclass="Body Text HowTo">Add one <text styleclass="Element">Parameter-Control FB</text> to control elements with one Motion.</para>
+    <para styleclass="Normal"><line style="height:1px; color:#343400;" /></para>
+    <para styleclass="Heading4 Toggle_atocs_">How to open the Parameter-Control dialog</para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="1" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:40px;">
+          <para styleclass="Normal" style="text-align:center;"></para>
+          <para styleclass="Normal" style="text-align:center;"><image src="MD-Icon-FB-Parameter-Control.png" align="left" scale="100.00%" figurelistinclude="0"></image></para>
+          <para styleclass="Normal" style="text-align:center;"></para>
+        </td>
+        <td>
+          <para styleclass="Body Table">To open the<text styleclass="Element"> Parameter-Control dialog</text></para>
+          <para styleclass="Body Table"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <list id="1" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="Bullets"><text style="font-style:normal;">Click</text> the <text styleclass="Element">Parameter-Control FB</text> in <text styleclass="Body Text">the graphics-area or</text> the <text styleclass="Interface">Assembly-Tree</text>.<text styleclass="VariableName">&#32;</text></li>
+                </list>
+                <para styleclass="Body Text">The <text styleclass="Element">Parameter-Control FB</text> is now in the <text styleclass="Interface">Selection-Window</text></para>
+                <list id="2" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="2" styleclass="Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="Bullets"><text style="font-style:normal;">Right-click</text> the <text styleclass="Element">Parameter-Control FB</text> element in the <text styleclass="Interface">Selection-Window</text><text styleclass="VariableName">&#32;</text></li>
+                  <li styleclass="HowTo Bulleted"><text style="font-style:normal;">Click</text>&#32;<text styleclass="VariableName-indent">Edit element</text> in <text styleclass="Body Text">the shortcut menu</text></li>
+                </list>
+                <para styleclass="Interface2">OR</para>
+                <para styleclass="Body Table">See <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-How-to-Open-a-Dialog-Box">How to Open a dialog</link>.<text styleclass="VariableName">&#32;</text></para>
+              </td>
+            </tr>
+          </table></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Body Table">The <text styleclass="Element-Header">Parameter-Control dialog</text><text styleclass="Element">&#32;</text>is now open.</para>
+    <para styleclass="Normal"><line style="height:1px; color:#343400;" /></para>
+    <para styleclass="Heading3_atocs_"><anchor id="PARAMETER-CONTROL-DIALOG"><keywords><keyword>Parameter-Control dialog</keyword></keywords></anchor>Parameter-Control dialog</para>
+    <para styleclass="Body Text"><table styleclass="Default" rowcount="2" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Normal"><image src="MD-Dialog-ParameterControl.png" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"><caption><![CDATA[Parameter-Control dialog]]></caption></image></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Normal">The controls in the <text styleclass="Element">Parameter Control dialog</text> are:</para>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Bullets"><image src="Red-14-1.gif" scale="100.00%" styleclass="Body Text HowTo" figurelistinclude="0"></image><text styleclass="Body Text HowTo">&#32;</text><text styleclass="Interface">Enable / Disable</text><text styleclass="Body Text HowTo"> check-box</text></para>
+                <para styleclass="Bullets"><image src="Red-14-2.gif" scale="100.00%" styleclass="Body Text HowTo" figurelistinclude="0"></image><text styleclass="Body Text HowTo">&#32;</text><text styleclass="Interface">Top-Box</text><text styleclass="Body Text HowTo"> - </text><text styleclass="Element">Profiles</text><text styleclass="Body Text HowTo"> and </text><text styleclass="Element">Extrusions</text><text styleclass="Body Text HowTo"> are here when you select them in </text><text styleclass="Body Text">the graphics-area</text><text styleclass="Body Text HowTo">.</text></para>
+                <para styleclass="Body Text HowTo">Click which of the elements to control in the <text styleclass="VariableName-IT" style="font-style:normal;">Top-Box</text> to copy it to the <text styleclass="VariableName-IT" style="font-style:normal;">Bottom-Box</text></para>
+                <para styleclass="Bullets"><image src="Red-14-3.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Body Text HowTo">&#32;</text><text styleclass="Interface">Bottom-Box</text><text styleclass="Body Text HowTo"> - Parameters and Control Action that are updated by the motion-values at the input to the </text><text styleclass="Element">Parameter Control FB</text><text styleclass="Body Text">.</text></para>
+                <para styleclass="Bullets"><image src="Red-14-4.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Body Text HowTo">&#32;</text><text styleclass="Interface">Delete</text><text styleclass="Body Text HowTo"> - to remove an element from the dialog - preselect the element.</text></para>
+                <para styleclass="Bullets"><image src="Red-14-5.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Body Text HowTo">&#32;</text><text styleclass="Interface">OK, Cancel and close, Cancel </text><text styleclass="Body Text">and </text><text styleclass="Interface">Undo all changes, Help</text><text styleclass="Body Text HowTo"> icon</text></para>
+                <para styleclass="Bullets"><image src="Red-14-6.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Interface"> Control Actions</text> - the action that the <text styleclass="Element">Parameter-Control FB</text> completes.</para>
+              </td>
+            </tr>
+          </table></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading3_atocs_">How to use Parameter-Control dialog</para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="1" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="VariableName">To enable the FB</para>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <list id="3" type="ul" listtype="bullet" formatstring="&#254;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullets" style="font-family:Wingdings; font-size:11pt; color:#000000;">
+                  <li styleclass="Bullets"><text style="font-style:italic;">&#32;</text><text style="font-style:normal;">Enabled</text></li>
+                </list>
+                <list id="4" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="Bullets"><text style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">Click the check-box to enable the dialog.</text><text styleclass="VariableName">&#32;</text></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="VariableName"><text styleclass="VariableName-indent">To control a Dimension </text></para>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <list id="5" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="Bullets"><text styleclass="Interface">Mechanism-Editor:</text> Click the <text styleclass="Body Text">sketch-element</text> that has a <text styleclass="Element">dimension</text> (which you have added with the <text styleclass="Interface">Part-Editor</text><text styleclass="Body Text"> )</text><text styleclass="VariableName">&#32;</text></li>
+                </list>
+                <para styleclass="Bullets">OR</para>
+                <list id="5" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="HowTo Bulleted"><text styleclass="Interface">Part-Editor:</text> Click a <text styleclass="Element">dimension</text>, or the sketch-element with a <text styleclass="Element">dimension</text>.</li>
+                </list>
+                <para styleclass="VariableName-indent">In the Bottom-Box</para>
+                <list id="6" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+                  <li styleclass="HowTo Bulleted">The <text styleclass="Element">Dimension</text> shows <text styleclass="Body Text">as the </text><text styleclass="VariableName">Driven-Parameter</text></li>
+                </list>
+                <list id="7" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+                  <li styleclass="HowTo Bulleted">The <text styleclass="Element">Part</text> shows as the <text styleclass="VariableName">Solve-Element</text></li>
+                </list>
+                <list id="8" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+                  <li styleclass="HowTo Bulleted"><text styleclass="VariableName-indent">Update Dimension</text>&#32;<text styleclass="Body Text">shows as the </text><text styleclass="VariableName">Control-Action</text></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="VariableName">To control the Extrusion-Depth of a Profile/Extrusion:</para>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <list id="9" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="Bullets"><text styleclass="Interface">Mechanism-Editor:</text> Click a <text styleclass="Element">Profile</text><text styleclass="VariableName">. </text></li>
+                </list>
+                <para styleclass="HowTo Bulleted">The <text styleclass="Element">Profile</text> and <text styleclass="Element">Extrusion</text> show in the <text styleclass="VariableName">Top-Box</text>. </para>
+                <para styleclass="Bullets"><text styleclass="Body Text">In the </text><text styleclass="Element">Parameter-Control dialog : </text></para>
+                <list id="10" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="2" styleclass="Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; color:#000000;">
+                  <li styleclass="Bullets">Click the <text styleclass="Element">Profile</text> in the <text styleclass="VariableName">Top-Box</text>.<text styleclass="Interface2">&#32;</text></li>
+                </list>
+                <para styleclass="VariableName-indent">In the Bottom-Box: </para>
+                <list id="11" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+                  <li styleclass="HowTo Bulleted">The <text styleclass="Element">Profile</text> shows <text styleclass="Body Text">as the </text><text styleclass="VariableName">Driven-Parameter</text></li>
+                </list>
+                <list id="12" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+                  <li styleclass="HowTo Bulleted">The <text styleclass="VariableName">Extrusion</text> shows as the <text styleclass="VariableName">Solve-Element</text></li>
+                </list>
+                <list id="13" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+                  <li styleclass="HowTo Bulleted"><text styleclass="VariableName-indent">Update Extrusion-Depth</text>&#32;<text styleclass="Body Text">shows as the </text><text styleclass="VariableName">Control-Action</text></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="VariableName">To control the Extrusion-Offset of a Profile/Extrusion:</para>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <list id="14" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="Bullets"><text styleclass="Interface">Mechanism-Editor:</text> Click the <text styleclass="Element">Profile</text> (the <text styleclass="VariableName" style="color:#ff00ff;">Pink</text> contour of a sketch-loop)<text styleclass="VariableName">. </text></li>
+                </list>
+                <para styleclass="HowTo Bulleted">The <text styleclass="Element">Profile</text> and <text styleclass="Element">Extrusion</text> show in the <text styleclass="VariableName">Top-Box</text>. </para>
+                <para styleclass="Bullets"><text styleclass="Body Text">In the </text><text styleclass="Element">Parameter-Control dialog:</text>&#32;</para>
+                <list id="15" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="2" styleclass="Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; color:#000000;">
+                  <li styleclass="Bullets">Click the <text styleclass="Element">Extrusion</text> in the <text styleclass="VariableName">Top-Box</text>.<text styleclass="Interface2">&#32;</text></li>
+                </list>
+                <para styleclass="VariableName-indent">In the Bottom-Box: </para>
+                <list id="16" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+                  <li styleclass="HowTo Bulleted">The <text styleclass="Element">Extrusion</text> shows <text styleclass="Body Text">as the </text><text styleclass="VariableName">Driven-Parameter</text></li>
+                </list>
+                <list id="17" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+                  <li styleclass="HowTo Bulleted">The <text styleclass="VariableName">Extrusion</text> shows as the <text styleclass="VariableName">Solve-Element</text></li>
+                </list>
+                <list id="18" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+                  <li styleclass="HowTo Bulleted"><text styleclass="VariableName-indent">Rebuild Solid</text>&#32;<text styleclass="Body Text">shows as the </text><text styleclass="VariableName">Control-Action </text><text styleclass="Body Text">- this is actually the </text><text styleclass="Parameter">Extrusion-Offset</text><text styleclass="VariableName">.</text></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="VariableName">To delete an element:</para>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <list id="19" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="Bullets"><text style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">Click an element in one of the boxes.</text><text styleclass="VariableName">&#32;</text></li>
+                  <li styleclass="HowTo Numbered"><text style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">Click </text><image src="MD-CM-Cross-22x20.ipp" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><image src="Red-14-4.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">&#32;</text></li>
+                </list>
+                <para styleclass="Body Text"><text style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">We remove for you the </text><text styleclass="Element">element</text><text style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;"> and </text><text styleclass="Parameter">parameter</text><text style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;"> from the </text><text styleclass="Element">Parameter-Control dialog</text><text style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">.</text></para>
+              </td>
+            </tr>
+          </table></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Parameter-Header" style="text-align:left; text-indent:0px; margin-top:0px; margin-right:0px; margin-bottom:0px; margin-left:0px; line-height:1.00; background-color:transparent; white-space:normal; page-break-inside:auto; page-break-after:auto; border:none; tabstops:none;"></para>
+  </body>
+</topic>

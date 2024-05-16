@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" status="Under Construction" modified="2024-02-15T16:16:23.428Z" lasteditedby="44785" version="2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title>Merge Points</title>
+  <keywords>
+    <keyword>Add<keyword>Constraint: Merge Points</keyword></keyword>
+    <keyword>Geometry toolbar<keyword>Merge-Points</keyword></keyword>
+    <keyword>Merge-Points<keyword>Sketch-loop</keyword></keyword>
+  </keywords>
+  <body>
+    <header>
+      <para styleclass="Heading1">Merge Points</para>
+    </header>
+    <para styleclass="Heading3_atocs_" style="page-break-before:always;">About Merge-Points</para>
+    <para styleclass="Body Text HowTo">Do <text styleclass="VariableName">Merge-Points</text> to combine two <text styleclass="Interface">Points</text><text styleclass="BodyText BI">*</text> into one <text styleclass="Interface">Point</text>.</para>
+    <para styleclass="Body Text"><text styleclass="BodyText BI">*</text>&#32;<text styleclass="Interface">start-Points</text>, <text styleclass="Interface">end-Points</text>, <text styleclass="Interface">center-Points</text>, and/or <text styleclass="Element">Points.</text></para>
+    <para styleclass="Normal"><line style="height:1px; color:#343400;" /></para>
+    <para styleclass="Body Text"><text styleclass="VariableName">When to Merge-Points?</text></para>
+    <list id="0" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+      <li styleclass="HowTo Bulleted"><text styleclass="Body Text">To sketch a </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-Sketch-Loop" styleclass="VariableName">sketch-loop</link> for a <text styleclass="Element">Profile / Extrusion</text><text styleclass="VariableName">&#32;</text></li>
+      <li styleclass="HowTo Bulleted"><text styleclass="Body Text">To sketch a </text><text styleclass="VariableName">sketch-path</text> for a <text styleclass="Interface">Motion-Point</text> ( with <text styleclass="T_Menu">Add Motion-Path FB</text><text styleclass="Body Text"> )</text></li>
+      <li styleclass="HowTo Bulleted"><text styleclass="Body Text">To merge the </text><text styleclass="Interface">end-Points</text><text styleclass="Body Text"> of </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-Gear-Line-of-Centres" styleclass="Body Text">Lines-of-Centers</link><text styleclass="Body Text">&#32;</text><text styleclass="Body Text HowTo">when you add two or more </text><text styleclass="Element">Gear-Pairs</text><text styleclass="Body Text HowTo"> as a </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-Gear-Train" styleclass="Body Text HowTo">Gear-Train</link></li>
+    </list>
+    <para styleclass="Normal"><line style="height:1px; color:#343400;" /></para>
+    <para styleclass="SeeAlso" style="margin-left:0px;">See also: <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Geometry-Coincident">Coincident-Constraint</link>.</para>
+    <para styleclass="SeeAlso" style="margin-left:0px;">See also: <link displaytype="text" defaultstyle="true" type="topiclink" href="" anchor="HoverTechnique">Hover+Drag technique</link><text styleclass="Body Text HowTo"> - it is more efficient than </text><text styleclass="T_Menu">Merge-Points</text><text styleclass="Body Text">.</text></para>
+    <para styleclass="Normal"><line style="height:1px; color:#343400;" /></para>
+    <para styleclass="Heading3_atocs_">Merge-Points</para>
+    <para styleclass="Normal"><table styleclass="Default" rowcount="1" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:20px;">
+          <para styleclass="Normal" style="text-align:center;"><image src="MD-Toolbar-SE-MergePoints.ipp" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td style="vertical-align:top;">
+          <para styleclass="VariableName">Merge-Points :</para>
+          <para styleclass="Body Text"><table styleclass="Block" rowcount="2" colcount="2">
+            <tr style="vertical-align:top">
+              <td style="width:35px; border-top:none; border-right:none; border-bottom:none;">
+                <para styleclass="VariableName" style="text-align:right;"><image src="MD-Icon-MergePoints.ipp" scale="100.00%" padding="0 2 0 0" figurelistinclude="0"><title>Add Gearing FB</title></image></para>
+              </td>
+              <td style="border:none;">
+                <list id="1" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="Bullets"><text style="font-style:normal;">Click</text><text style="font-family:Arial; font-size:11pt; color:#000000;">&#32;</text><text styleclass="T_Menu">Geometry toolbar</text><text styleclass="VariableName"> &gt;</text><text styleclass="T_Menu"> Merge-Points</text><text styleclass="VariableName">&#32;</text></li>
+                </list>
+                <para styleclass="Body Text"> OR</para>
+                <list id="2" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="Bullets"><text styleclass="Body Text">Click</text><text styleclass="T_Menu"> Add menu &gt; Geometry sub-menu&gt; &gt; Merge-Points</text><text styleclass="VariableName">&#32;</text></li>
+                </list>
+              </td>
+            </tr>
+            <tr style="vertical-align:top">
+              <td colspan="2" style="border-top:none; border-right:none; border-bottom:none;">
+                <para styleclass="Bullets"><text styleclass="Body Text">Then, </text><text styleclass="Interface2" style="color:#ff0000;">if</text><text styleclass="Body Text"> the </text><text styleclass="Interface">Points</text><text styleclass="BodyText BI">*</text><text styleclass="Body Text"> are not coincident:</text></para>
+                <list id="3" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="2" styleclass="Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="Bullets">Click a <text styleclass="Interface">Point</text><text styleclass="BodyText BI">*</text><text styleclass="Body Text"> at the end of a sketch-element</text><text styleclass="VariableName">&#32;</text></li>
+                  <li styleclass="Bullets"><text styleclass="Body Text">Click a </text><text styleclass="Interface">Point</text><text styleclass="BodyText BI">*</text><text styleclass="Body Text"> at the end of a different sketch-element</text></li>
+                  <li styleclass="Bullets"><text styleclass="Body Text">Click the graphics-area</text></li>
+                </list>
+                <para styleclass="Normal"><line style="height:1px; color:#343400;" /></para>
+                <para styleclass="Body Text">OR, <text styleclass="Interface2" style="color:#ff0000;">if</text><text styleclass="Body Table"> the </text><text styleclass="Interface">Points</text><text styleclass="BodyText BI">*</text><text styleclass="Body Table"> are coincident:</text></para>
+                <list id="4" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="2" styleclass="Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="Bullets">Click the two coincident <text styleclass="Interface">Points</text><text styleclass="BodyText BI">*</text><text styleclass="VariableName">&#32;</text></li>
+                  <li styleclass="Bullets"><text styleclass="Body Text">Click the graphics-area </text></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Body Table">The two <text styleclass="Interface">Points</text> are now one <text styleclass="Interface">Point.</text></para>
+          <para styleclass="Normal"><line style="height:1px; color:#343400;" /></para>
+          <para styleclass="Body Text"><text styleclass="BodyText BI">*</text>&#32;<text styleclass="Interface">Points</text> : <text styleclass="Interface">start-Point</text> and/or <text styleclass="Interface">end-Point </text>of a <text styleclass="Element">Line, Arc</text> or <text styleclass="Element">Blend-Curve</text> sketch-element.</para>
+          <para styleclass="Normal"><line style="height:1px; color:#343400;" /></para>
+          <para styleclass="Notes">Notes:</para>
+          <list id="5" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:10pt; color:#000000;">
+            <li styleclass="HowTo Bulleted">You CANNOT merge a <text styleclass="Interface">Point</text><text styleclass="BodyText BI">*</text> with the <text styleclass="Interface">start-Point</text> or <text styleclass="Interface">end-Point</text> of the <text styleclass="Element">CAD-Line</text><text styleclass="Body Text"> along the X-axis of an </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-Part" styleclass="Interface">Part</link><text styleclass="Interface">. </text></li>
+            <li styleclass="HowTo Bulleted">You CAN, however, merge a <text styleclass="Interface">start-Point</text> or <text styleclass="Interface">end-Point</text> of a sketch-element if you drag to or from the <text styleclass="Interface">start-Point</text><text styleclass="Body Text"> or </text><text styleclass="Interface">end-Point</text> of the <text styleclass="Element">CAD-Line.</text></li>
+          </list>
+          <para styleclass="Normal"><line style="height:1px; color:#343400;" /></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading4 Toggle_atocs_">Merge-Points</para>
+    <para styleclass="Body Text"><table styleclass="Default" rowcount="3" colcount="4" style="head-row-background-color:#c0c0c0; alt-row-background-color:none;">
+      <thead style="vertical-align:top">
+        <td style="width:21px; height:7px;">
+          <para styleclass="VariableName" style="text-align:center;">Before</para>
+        </td>
+        <td style="width:29px; height:7px;">
+          <para styleclass="VariableName" style="text-align:center;">After</para>
+        </td>
+        <td>
+          <para styleclass="VariableName" style="text-align:center;">Select:</para>
+        </td>
+        <td>
+          <para styleclass="VariableName">In Selection-Window /</para>
+          <para styleclass="VariableName">Geometry-Tree</para>
+        </td>
+      </thead>
+      <tr style="vertical-align:top">
+        <td style="width:21px;">
+          <para styleclass="Normal"><image src="MD-GA--MergePoint-A.png" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"><caption><![CDATA[Free Points]]></caption></image></para>
+        </td>
+        <td style="width:29px;">
+          <para styleclass="Normal"><image src="MD-GA--MergePoint-B.png" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"><caption><![CDATA[Merged Points]]></caption></image></para>
+        </td>
+        <td>
+          <list id="6" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullets" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="Bullets">Two different <text styleclass="Element">Points</text> at the end of sketch-elements.</li>
+          </list>
+          <para styleclass="Body Text HowTo">Click a <text styleclass="Element">Point</text> and then a different <text styleclass="Element">Point</text>. One <text styleclass="Element">Point</text> is deleted (Compare with <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Geometry-Coincident">CoincidentPtoP</link><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Geometry-Coincident" style="text-decoration:underline;">)</link>, and the sketch-elements move together.</para>
+        </td>
+        <td>
+          <para styleclass="Body Text HowTo">PointN</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:21px;">
+          <para styleclass="Normal"><image src="MD-GA--MergePoint-C.png" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"><caption><![CDATA[Coincident Points]]></caption></image></para>
+        </td>
+        <td style="width:29px;">
+          <para styleclass="Normal"><image src="MD-GA--MergePoint-D.png" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"><caption><![CDATA[now Merged-Points]]></caption></image></para>
+        </td>
+        <td>
+          <list id="7" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullets" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="Bullets">Two Coincident <text styleclass="Element">Points</text><text styleclass="Body Text">&#32;</text></li>
+          </list>
+          <para styleclass="Body Text HowTo">A <text styleclass="Element">Point</text> and the Coincident constraint is deleted</para>
+        </td>
+        <td>
+          <para styleclass="Body Text HowTo">PointN</para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading3 VIDEO"><anchor id="HoverTechnique"><keywords><keyword>Hover Technique</keyword></keywords></anchor><text styleclass="Heading4 Toggle_atocs_">Video of Merge-Points with Hover Technique.</text></para>
+    <para styleclass="Body Text"><conditional-text type="IF" value="PDF"/><link displaytype="text" defaultstyle="true" type="filelink" href="Hover-TechniqueONLY-1280x720.mp4">Double-click to watch &apos;How to add a Sketch-Loop - Hover Technique&apos;</link><conditional-text type="END"/><conditional-text type="IF" value="CHM"/><toggle type="picture" print-expanded="true" help-expanded="false" src-collapsed="HoverONLY-1280x720.gif" src-expanded="HoverONLY-1280x720.gif" scale="20.00%" width="256" height="144" styleclass="Image Caption" figurelistinclude="0"><caption><![CDATA[How to add a Sketch-Loop - Hover Technique]]></caption><title>How to add a Sketch-Loop - Hover Technique</title></toggle><conditional-text type="END"/><conditional-text type="IF" value="HTML,EBOOK"/><video src="Hover-TechniqueONLY-1280x720.mp4" width="1280px" height="720px" autostart="false" loop="false" showcontrols="false" playbutton="true" previewimage="Hover-TechniqueONLY-1280x720_preview.jpg" scale="20.00%" styleclass="Image Caption"><title>How to add a Sketch-Loop - Hover Technique</title><caption><![CDATA[How to add a Sketch-Loop - Hover Technique]]></caption></video><conditional-text type="END"/></para>
+  </body>
+</topic>

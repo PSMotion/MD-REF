@@ -1,0 +1,305 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" status="Under Construction" modified="2022-03-10T17:36:16.939Z" lasteditedby="Adam" version="2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title>Mechanism | Add 2D Cam</title>
+  <keywords>
+    <keyword>Add<keyword>2D-Cam</keyword></keyword>
+    <keyword>How to...<keyword>Add a 2D-Cam</keyword></keyword>
+    <keyword>Machine elements toolbar<keyword>2D-Cam</keyword></keyword>
+    <keyword>Menu &gt; Add &gt; Mechanism Menu<keyword>Add 2D-Cam</keyword></keyword>
+  </keywords>
+  <body>
+    <header>
+      <para styleclass="Heading1">Menu | Mechanism | Add 2D-Cam</para>
+    </header>
+    <para styleclass="Heading2">Add 2D-Cam</para>
+    <para styleclass="SeeAlso">See also: &#160;<link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-2D-Cam">2D-Cam dialog-box</link></para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="Heading3_atocs_">What is a 2D-Cam?</para>
+    <para styleclass="Body Text HowTo">A <text styleclass="Element">2D-Cam</text> is the term we use for the <text styleclass="VariableName">Cam-Profile</text> that is in continuous contact with a <text styleclass="VariableName">Cam-Follower.</text><text styleclass="Body Text">&#32;</text></para>
+    <para styleclass="Body Text HowTo"><text styleclass="Body Text">When we do </text><text styleclass="T_Menu">Add 2D-Cam</text><text styleclass="Body Text">, we calculate the shape of the </text><text styleclass="VariableName">Cam-Profile</text><text styleclass="Body Text"> from the relative motion of the </text><text styleclass="Interface">Cam-Part</text><text styleclass="Body Text"> and </text><text styleclass="Interface">Follower-Part</text><text styleclass="Body Text"> together with the shape of the </text><text styleclass="Interface">Cam-Follower</text><text styleclass="Body Text">.</text></para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="VariableName">Terminology:</para>
+    <para styleclass="Body Text HowTo"><table styleclass="PopupTable2" rowcount="5" colcount="2" style="border-width:0px; border-spacing:0px; border-collapse:collapse; cell-border-width:1px; border-color:#993300; border-style:solid;">
+      <tr style="vertical-align:top">
+        <td style="width:176px;">
+          <para styleclass="Popup Box2" style="text-align:right;">Cam-Part : </para>
+        </td>
+        <td>
+          <para styleclass="Popup Box"> The <text styleclass="Popup Box-Elements">Part</text> to which we add the <text styleclass="Popup Box-Elements">2D-Cam</text>&#32;</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:176px;">
+          <para styleclass="Popup Box2" style="text-align:right;">Cam-Follower : </para>
+        </td>
+        <td>
+          <para styleclass="Popup Box"> The shape of the <text styleclass="Popup Box-Elements">Profile</text> that is in continuous-contact with the <text styleclass="Popup Box-Elements">2D-Cam.</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:176px;">
+          <para styleclass="Popup Box2" style="text-align:right;">Follower-Part : </para>
+        </td>
+        <td>
+          <para styleclass="Popup Box"> The <text styleclass="Popup Box-Elements">Part</text> to which we add the <text styleclass="Popup Box2">sketch-loop</text> and <text styleclass="Popup Box-Elements">Profile</text> as the <text styleclass="Popup Box2">Cam-Follower</text>.</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:176px;">
+          <para styleclass="Popup Box2" style="text-align:right;">Cam-Follower Roller: </para>
+        </td>
+        <td>
+          <para styleclass="Popup Box"> A <text styleclass="Popup Box2">Cam-Follower</text> that is Circular. It represents a roller-bearing, or Pin.</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:176px;">
+          <para styleclass="Popup Box2" style="text-align:right;">Flat-Faced Cam Follower : </para>
+        </td>
+        <td>
+          <para styleclass="Popup Box"> A <text styleclass="Popup Box2">Cam-Follower</text> that is the longer <text styleclass="Popup Box-Elements">Line </text>of a long Rectangle. It represent a <text styleclass="Popup Box2">Flat Plate</text>.</para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="Heading3_atocs_">2D-Cam : Related Elements</para>
+    <para styleclass="Body Text HowTo"><table styleclass="PopupTable2" rowcount="6" colcount="3" style="border-width:0px; border-spacing:0px; border-collapse:collapse; cell-border-width:1px; border-color:#993300; border-style:solid;">
+      <thead style="vertical-align:top">
+        <td colspan="3" style="border-top:none; border-right:none; border-left:none;">
+          <para styleclass="Body Text"><text style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">There a number of commands, elements, and dialogs for </text><text styleclass="Element">2D-Cams</text><text style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;"> are:</text></para>
+        </td>
+      </thead>
+      <tr style="vertical-align:top">
+        <td style="width:154px; background-color:#e6ccff;">
+          <para styleclass="VariableName">STEP 1A</para>
+          <para styleclass="VariableName-indent">Add 2D-Cam</para>
+        </td>
+        <td style="vertical-align:top; width:90px;">
+          <para styleclass="VariableName">... optional ...</para>
+          <para styleclass="VariableName"></para>
+        </td>
+        <td>
+          <para styleclass="VariableName">STEP 1B</para>
+          <para styleclass="VariableName-indent">Edit <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-2D-Cam">2D-Cam dialog-box</link></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td colspan="2" style="width:254px;">
+          <para styleclass="VariableName">STEP 2A &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160;</para>
+          <para styleclass="VariableName-indent"><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-FB-Cam-Data">Add Cam-Data FB</link>&#32;</para>
+        </td>
+        <td>
+          <para styleclass="VariableName">STEP 2B</para>
+          <para styleclass="VariableName-indent">Edit the <text styleclass="Element">Cam-Data FB </text>to link it to a <text styleclass="Element">2D-Cam.</text><text styleclass="Body Text"> &#160;</text></para>
+          <para styleclass="VariableName-indent"><text styleclass="Body Text">Close the </text><text styleclass="Element">Cam-Data dialog-box</text><text styleclass="Body Text"> and do </text>3A<text styleclass="Body Text"> and/or do </text>3B.</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td colspan="3">
+          <para styleclass="VariableName">STEP 3A Geometric-Analysis</para>
+          <para styleclass="VariableName-indent"><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-FunctionBlock-CamData">Cam-Analysis</link><text styleclass="Body Text HowTo"> (with </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-FB-Graph">Graph FB</link><text styleclass="Body Text HowTo">)</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td colspan="3">
+          <para styleclass="VariableName">STEP 4 </para>
+          <para styleclass="VariableName-indent">Edit the <text styleclass="Element">Cam-Data FB</text> again. <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-FunctionBlock-CamCoordinates">Calculate Cam-Coordinates</link></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td colspan="3">
+          <para styleclass="Body Text"><table styleclass="PopupTable2" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="VariableName"><text style="color:#ff0000;">IMPORTANT</text> : <text style="font-size:14pt;">*</text> Cam Contact-Force and Contact-Stress...</para>
+                <para styleclass="Body Table">To analyze the <text styleclass="VariableName">Cam-Force</text> and <text styleclass="VariableName">Cam Contact-Stress</text>, the power-flow between the Cam-Part and the Follower-Part must be correct. </para>
+                <para styleclass="VariableName-indent">See <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Mechanism-ConjugateCam-FB">Add Conjugate Cam FB</link></para>
+                <para styleclass="VariableName-indent">See <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-ConfigurePowerSource">Configure Power Source</link></para>
+              </td>
+            </tr>
+          </table></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="Heading3_atocs_">Preparation for Add 2D-Cam</para>
+    <para styleclass="Body Text HowTo"><table styleclass="Standard" rowcount="1" colcount="2" style="width:auto;">
+      <tr style="vertical-align:top">
+        <td style="width:200px;">
+          <para styleclass="VariableName-IT" style="text-align:right;"><image src="MD-GA-Add2DCam-Prep1.png" scale="100.00%" figurelistinclude="0"><caption><![CDATA[The Basic preparation for Add 2D-Cam]]></caption></image></para>
+        </td>
+        <td>
+          <para styleclass="Body Text"> The elements:</para>
+          <para styleclass="Body Table"><table styleclass="PopupTable2" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Bullets"><text styleclass="Interface">kinematically-defined </text><text style="font-family:&apos;Segoe UI Semibold&apos;; font-size:10pt; font-weight:bold; font-style:normal; text-transform:uppercase; vertical-align:baseline; color:#800000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">Part</text><image src="Red-14-1.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Image Caption"> :</text><text style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">&#32;</text><text styleclass="Body Text">the</text><text style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">&#32;</text><text styleclass="VariableName">Cam-Part.</text></para>
+                <para styleclass="Body Table"><text styleclass="Element">Profile</text><image src="Red-14-2.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Image Caption">, </text><text styleclass="Body Text">the </text><text styleclass="VariableName">Cam-Follower Shape </text><text styleclass="Body Text">as a child to...</text></para>
+                <para styleclass="Body Text HowTo"><text styleclass="Interface">... kinematically-defined</text><text styleclass="Body Text">&#32;</text><text styleclass="Element">Part</text><image src="Red-14-3.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Body Text"> - the </text><text styleclass="VariableName">Follower-Part.</text></para>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Body Table">The <text styleclass="VariableName">Cam-Part</text> may be stationary or move.</para>
+          <para styleclass="Body Table"><text styleclass="Body Text">The</text><text styleclass="VariableName"> Follower Part</text> may be stationary or move.</para>
+          <para styleclass="Body Table">One <text styleclass="VariableName">Part</text> must move relative to the other <text styleclass="VariableName">Part.</text></para>
+          <para styleclass="Body Text">&lt;&lt;&lt; The general preparation</para>
+          <para styleclass="Body Table"><text styleclass="SeeAlso">See also </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Cam-Follower-Shape" styleclass="SeeAlso">Shape of the Cam-Follower</link><text styleclass="SeeAlso">.</text></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="Heading3_atocs_">Add 2D-Cam: </para>
+    <para styleclass="Body Text HowTo"><table styleclass="Standard" rowcount="9" colcount="2" style="width:auto;">
+      <tr style="vertical-align:middle">
+        <td>
+          <para styleclass="VariableName" style="text-align:right;"><image src="MD-Icon-Add2DCam.png" scale="100.00%" figurelistinclude="0"><title>Add 2D-Cam icon</title></image></para>
+        </td>
+        <td style="height:26px;">
+          <list id="0" type="ol" listtype="decimal" formatstring="&#83;&#84;&#69;&#80;&#32;&#37;&#48;&#58;&#115;&#58;&#32;" format-charset="DEFAULT_CHARSET" levelreset="false" legalstyle="false" startfrom="1" styleclass="HowTo STEP" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo STEP"><text styleclass="VariableName">Click Add 2D-Cam </text></li>
+          </list>
+          <para styleclass="Body Table"><table styleclass="PopupTable2" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <list id="1" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Body Table" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; color:#003300;">
+                  <li styleclass="Body Table"><text styleclass="Interface">Mechanism-Editor</text> &gt; <text styleclass="T_Menu">Machine elements toolbar &gt; Add 2D-Cam</text></li>
+                </list>
+                <para styleclass="Body Table"><text styleclass="T_Menu">or </text></para>
+                <list id="2" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Body Table" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; color:#003300;">
+                  <li styleclass="Body Table"><text styleclass="Interface">Mechanism-Editor</text>&gt;<text styleclass="T_Menu">Add menu&gt;Mechanism menu&gt;Add 2D-Cam</text></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:200px;">
+          <para styleclass="VariableName-IT" style="text-align:right;"><image src="MD-CM-Add2DCam-0.png" scale="100.00%" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="Bullets"><text style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">The </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Command-Manager" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:10pt; font-weight:bold; font-style:normal; text-transform:uppercase; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">Command-Manager</link><text style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;"> indicates you must select two(2) elements:</text></para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:200px;">
+          <para styleclass="VariableName-IT" style="text-align:right;"><image src="MD-GA-Add2DCam-Prep1.png" scale="100.00%" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <list id="3" type="ol" listtype="decimal" formatstring="&#83;&#84;&#69;&#80;&#32;&#37;&#48;&#58;&#115;&#58;&#32;" format-charset="DEFAULT_CHARSET" levelreset="false" legalstyle="false" startfrom="2" styleclass="HowTo STEP" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo STEP"><text styleclass="VariableName">Select the two elements </text></li>
+          </list>
+          <para styleclass="Body Table"><table styleclass="PopupTable2" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <list id="4" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:10pt; color:#000000;">
+                  <li styleclass="Bullets"><text styleclass="Interface">Mechanism-Editor</text>: Click <text styleclass="Interface">Part-Outline</text><image src="Red-14-1.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Image Caption">&#32;</text></li>
+                  <li styleclass="Bullets"><text styleclass="Interface">Mechanism-Editor</text>: Click <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Profile-Element" styleclass="Element">Profile</link><image src="Red-14-2.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Element">&#32;</text></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:200px;">
+          <para styleclass="VariableName-IT" style="text-align:right;"><image src="CM-Add2DCam-1.png" scale="100.00%" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <list id="5" type="ol" listtype="decimal" formatstring="&#83;&#84;&#69;&#80;&#32;&#37;&#48;&#58;&#115;&#58;&#32;" format-charset="DEFAULT_CHARSET" levelreset="false" legalstyle="false" startfrom="3" styleclass="HowTo STEP" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo STEP"><text styleclass="VariableName">Complete the Command </text></li>
+          </list>
+          <para styleclass="Body Table"><table styleclass="PopupTable2" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <list id="6" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Body Table" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="Body Table"><text styleclass="Interface">Mechanism-Editor:</text> &#160;<text styleclass="HowTo STEP">Click </text><image src="OK-tiny-11-15.png" scale="100.00%" styleclass="HowTo STEP" figurelistinclude="0"></image><text styleclass="HowTo STEP"> in the </text><text styleclass="Interface">Command-Manager</text><text styleclass="HowTo STEP">.</text><text styleclass="VariableName">&#32;</text></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="HowTo STEP"></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Image Caption"><image src="MD-GA-2DCam.ipp" scale="100.00%" styleclass="VariableName-IT" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="VariableName">Result : Graphic-Area</para>
+          <para styleclass="Body Table"><table styleclass="PopupTable2" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Body Table">The internal and external <text styleclass="Element">2D-Cams</text> show in the <text styleclass="Interface">graphic-area</text>.</para>
+                <para styleclass="Body Table">You can also display the <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Pitch-Centre-Path">Pitch-Curve</link>&#32;</para>
+                <para styleclass="Body Text HowTo"><text styleclass="SeeAlso">See also </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-2D-Cam" styleclass="SeeAlso">2D-Cam dialog-box</link></para>
+              </td>
+            </tr>
+          </table></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:200px;">
+          <para styleclass="Image Caption"><image src="AT-2DCam-0.png" scale="100.00%" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="VariableName">Result : Assembly-Tree</para>
+          <para styleclass="Body Table"><table styleclass="PopupTable2" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Body Table"><text styleclass="VariableName-IT" translate="false">MechDesigner</text><text styleclass="Body Text HowTo"> adds a </text><text styleclass="VariableName">Cam-Plate</text><text styleclass="Body Text HowTo"> as a child to the </text><text styleclass="Interface">Cam-Part</text><text styleclass="Body Text HowTo">, and the </text><text styleclass="Element">2D-Cam</text><text styleclass="Body Text HowTo"> as a child to the </text><text styleclass="VariableName">Cam-Plate</text><text styleclass="Body Text HowTo">. You can add many </text><text styleclass="Element">2D-Cams</text><text styleclass="Body Text HowTo"> to the same </text><text styleclass="VariableName">Cam-Plate</text><text styleclass="Body Text HowTo">.</text></para>
+                <para styleclass="Body Text HowTo"><text styleclass="SeeAlso">See also </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-2D-Cam" styleclass="SeeAlso">2D-Cam dialog-box</link></para>
+              </td>
+            </tr>
+          </table></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td colspan="2">
+          <para styleclass="Body Table"><text styleclass="VariableName-IT" translate="false">MechDesigner</text><text styleclass="Body Text HowTo"> identifies the Cam as a </text><text styleclass="VariableName-IT">Good Cam</text><text styleclass="Body Text HowTo"> or a </text><text styleclass="VariableName-IT">Bad Cam</text><text styleclass="Body Text HowTo"> - </text></para>
+          <para styleclass="Body Table"><text styleclass="Body Text HowTo">It is based on the Cams </text><text styleclass="Body Text">Radius-of-Curvature</text><text styleclass="Body Text HowTo"> relative to the radius of the Follower.</text></para>
+          <para styleclass="Body Text HowTo"><text styleclass="VariableName-indent" style="color:#ff0000;">YOU</text><text styleclass="Body Text"> must make sure the cam is suitable for your needs.</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:200px;">
+          <para styleclass="Normal" style="text-align:right;"><image src="MD-AT-2DCam-Good.png" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="VariableName"><text styleclass="HowTo Bulleted">A </text><text styleclass="VariableName-IT">Good</text><text styleclass="HowTo Bulleted"> Cam</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:200px;">
+          <para styleclass="Normal" style="text-align:right;"><image src="MD-AT-2DCam-Bad.png" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="VariableName"><text styleclass="HowTo Bulleted">A </text><text styleclass="VariableName-IT">Bad</text><text styleclass="HowTo Bulleted"> Cam</text></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading3_atocs_">Video:</para>
+    <para styleclass="Body Text HowTo"><conditional-text type="IF" value="PDF"/><link displaytype="text" defaultstyle="true" type="filelink" href="ME-Add2DCam.gif" styleclass="T_Menu">Double-click to watch Add a 2D-Cam</link><conditional-text type="END"/><conditional-text type="IF" value="CHM"/></para>
+    <para styleclass="Body Text HowTo"><table styleclass="PopupTable" rowcount="1" colcount="1" style="width:240px; cell-padding:0px; border-width:0px; border-spacing:0px; border-collapse:collapse; cell-border-width:1px; border-color:#000000; border-style:solid;">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Normal"><toggle type="picture" print-expanded="true" help-expanded="false" src-collapsed="ME-Add2DCam.gif" src-expanded="ME-Add2DCam.gif" scale="25.00%" width="320" height="180" styleclass="Image Caption" figurelistinclude="0"><caption><![CDATA[Add 2D-Cam]]></caption><title>Add 2D-Cam</title></toggle></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Body Text HowTo"><conditional-text type="END"/><conditional-text type="IF" value="HTML,EBOOK"/></para>
+    <para styleclass="Body Text HowTo"><table styleclass="PopupTable2" rowcount="1" colcount="1" style="width:240px;">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Normal"><video src="ME-Add2DCam.mp4" width="1280px" height="720px" autostart="false" loop="false" showcontrols="false" playbutton="true" previewimage="ME-Add2DCam_preview.jpg" scale="25.00%" styleclass="Image Caption"><title>Add 2D-Cam</title><caption><![CDATA[Add 2D-Cam]]></caption></video></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Body Text HowTo"><conditional-text type="END"/></para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="Normal" style="page-break-before:always;"></para>
+  </body>
+</topic>

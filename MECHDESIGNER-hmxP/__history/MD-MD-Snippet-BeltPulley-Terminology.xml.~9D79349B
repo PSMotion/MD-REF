@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" modified="2024-04-04T10:35:04.207+01:00" lasteditedby="44785" version="2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title>MD-Snippet-BeltPulley Terminology</title>
+  <keywords>
+    <keyword>Pulley / Belt<keyword>Terminology</keyword></keyword>
+    <keyword>Terminology<keyword>Pulley / Belt</keyword></keyword>
+  </keywords>
+  <body>
+    <header>
+      <para styleclass="Heading1">MD-Snippet-BeltPulley Terminology</para>
+    </header>
+    <para styleclass="Heading3_atocs_">Terminology:</para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="5" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:169px;">
+          <para styleclass="Popup Box-Elements" style="text-align:right;">Pulley<text styleclass="Popup Box"> : </text></para>
+        </td>
+        <td>
+          <para styleclass="Popup Box">A rotating-Part. It is a wheel with teeth around its circumference. The teeth engage with a <text styleclass="VariableName-small">Belt</text>.</para>
+          <para styleclass="Popup Box">The angular motion of the <text styleclass="Popup Box-Elements">Pulley</text> and the linear motion of a <text styleclass="VariableName-small">Belt</text> are related by the radius of the <text styleclass="Popup Box-Elements">Pulley</text>. </para>
+          <para styleclass="Popup Box">The <text styleclass="Parameter-Popup">number-of-teeth</text> and the <text styleclass="Parameter-Popup">Tooth-Pitch</text> parameters control the radius of the <text styleclass="Popup Box-Elements">Pulley</text>.</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:169px;">
+          <para styleclass="VariableName-small" style="text-align:right;">Belt<text styleclass="Popup Box"> : </text></para>
+        </td>
+        <td>
+          <para styleclass="Popup Box">The shape of a <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-Sketch-Loop" styleclass="VariableName-small">sketch-path</link> represents the path of the <text styleclass="VariableName-small">Belt</text>. The motion of a <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-Motion-Driven-Point" styleclass="Popup Box2">Motion-Point</link> on the <text styleclass="VariableName-small">sketch-path</text> represents the motion of the <text styleclass="VariableName-small">Belt</text>. </para>
+          <para styleclass="Popup Box">The <text styleclass="VariableName-small">sketch-path</text> needs one <text styleclass="Popup Box-Elements">Arc</text> for each <text styleclass="Popup Box-Elements">Pulley</text>. A <text styleclass="Popup Box-Elements">Pulley</text> must rotate about the <text styleclass="Popup Box2">center-Point</text> of the <text styleclass="Popup Box-Elements">Arc</text>.</para>
+          <para styleclass="Normal"><line style="height:1px; color:#343400;" /></para>
+          <para styleclass="Popup Box">It is a <text styleclass="VariableName-small">Timing-Belt</text> (we do not show you the Teeth on the <text styleclass="VariableName-small">Belt</text>). The <text styleclass="VariableName-small">Belt</text> does not slip relative to the <text styleclass="Popup Box-Elements">Pulleys</text>. </para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td colspan="2">
+          <para styleclass="Popup Box">There are two types of <text styleclass="Popup Box-Elements">Pulleys</text>.</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:169px;">
+          <para styleclass="VariableName-small" style="text-align:right;">Type 1: Driving Pulley : </para>
+        </td>
+        <td>
+          <para styleclass="Popup Box">You define the angular motion of the <text styleclass="Popup Box-Elements">Pulley</text> - the motion of the Driving <text styleclass="Popup Box-Elements">Pulley</text> controls the linear motion of the <text styleclass="VariableName-small">Belt</text>. There is a maximum of one <text styleclass="VariableName-small">Driving Pulley</text> per <text styleclass="VariableName-small">Belt</text>.</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:169px;">
+          <para styleclass="VariableName-small" style="text-align:right;">Type 2: Driven Pulley : </para>
+        </td>
+        <td>
+          <para styleclass="Popup Box">The linear motion of the <text styleclass="VariableName-small">Belt</text> controls the angular motion of the Driven <text styleclass="Popup Box-Elements">Pulley</text>.</para>
+        </td>
+      </tr>
+    </table></para>
+  </body>
+</topic>

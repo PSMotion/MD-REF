@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" modified="2023-05-11T22:46:57.029+01:00" lasteditedby="Adam" version="2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title>File | Save Timing Diagram</title>
+  <keywords>
+    <keyword>CSV - Motion Timing Diagram.</keyword>
+    <keyword>File menu<keyword>Save Timing Diagram.</keyword></keyword>
+    <keyword>Save motions for Timing Diagram.</keyword>
+    <keyword>Timing Diagram.xlsx</keyword>
+  </keywords>
+  <body>
+    <header>
+      <para styleclass="Heading1">File | Save Timing Diagram</para>
+    </header>
+    <para styleclass="Heading3_atocs_">File menu&gt; Save Timing Diagram</para>
+    <para styleclass="T_Menu">File toolbar - <text style="color:#ff0000;">NO ICON</text></para>
+    <para styleclass="VariableName">A Timing Diagram:</para>
+    <list id="0" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+      <li styleclass="HowTo Bulleted">Represents each motion with a different graph.</li>
+      <li styleclass="HowTo Bulleted">The graphs are above each other.</li>
+      <li styleclass="HowTo Bulleted">Each graph has straight-lines between the positional values of each <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-Motion-Blend-Point" styleclass="Element">Blend-Point</link>.</li>
+    </list>
+    <para styleclass="Heading4 Toggle_atocs_">How to get a Timing Diagram</para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="1" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="VariableName">STEP 1: MechDesigner - Save the Timing-Diagram.</para>
+          <para styleclass="Body Text HowTo"><table styleclass="PopupTable2" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td style="border-top:none; border-right:none; border-bottom:none;">
+                <para styleclass="HowTo STEP">A: Do: <text styleclass="T_Menu">File menu &gt; Save Timing Diagram</text></para>
+                <para styleclass="Body Text HowTo">This command saves a CSV file-type with the data to display the timing diagrams with the <text styleclass="VariableName">Excel workbook</text>: <text styleclass="VariableName">Timing Diagram.xlsm - see STEP 2 below</text></para>
+                <para styleclass="Body Text"><text style="font-weight:normal; font-style:normal;">The </text>CSV<text styleclass="Body Text HowTo" style="font-weight:normal; font-style:normal;"> file includes the:</text></para>
+                <list id="1" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+                  <li styleclass="HowTo Bulleted"><text styleclass="Element">motion name</text><text styleclass="Body Text">&#32;</text></li>
+                  <li styleclass="HowTo Bulleted"><text styleclass="Element">Blend-Point</text><text styleclass="Body Text">: </text><text style="font-weight:normal; font-style:normal;">X-axis </text><text styleclass="Body Text">and Y-axis values</text><text style="font-weight:normal; font-style:normal;"> &#160;</text></li>
+                </list>
+                <para styleclass="Body Text"><text style="font-weight:normal; font-style:normal;">The CSV does not include the:</text></para>
+                <list id="2" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+                  <li styleclass="HowTo Bulleted"><text style="font-weight:normal; font-style:normal;">Motion-Law (Cam-Law)</text></li>
+                  <li styleclass="HowTo Bulleted"><text style="font-weight:normal; font-style:normal;">Motion derivatives</text></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="VariableName">STEP 2: Microsoft Excel</para>
+          <para styleclass="Body Text HowTo"><table styleclass="PopupTable2" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td style="border-top:none; border-right:none; border-bottom:none;">
+                <list id="3" type="ol" listtype="upper-alpha" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Body Table" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="Body Table">Open the Excel Macro-Enabled Worksheet: Timing-Diagram.XLSM<text styleclass="VariableName">&#32;</text></li>
+                </list>
+                <para styleclass="Body Text HowTo"><text styleclass="Body Text">Timing Diagram.xlsm is located</text> in:</para>
+                <para styleclass="Body Text HowTo"><text styleclass="Interface2">&lt;LOCALAPPDATA&gt; \ TIMING DIAGRAM.XLSM</text></para>
+                <para styleclass="HowTo Bulleted"><text styleclass="VariableName">OR</text></para>
+                <para styleclass="Body Text HowTo"><text styleclass="Interface2">&lt;CommonAppData&gt; \ Timing Diagram.xlsm</text></para>
+                <list id="4" type="ol" listtype="upper-alpha" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="2" styleclass="Body Table" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="Body Table">Make sure you enable macros<text styleclass="VariableName">&#32;</text></li>
+                </list>
+                <para styleclass="HowTo STEP">There are two buttons in the Motion data sheet.</para>
+                <para styleclass="Body Text HowTo"><image src="MD-TimingDiagram-Buttons.ipp" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+                <list id="5" type="ol" listtype="upper-alpha" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="3" styleclass="Body Table" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="Body Table">Press Button: 1: Open Timing Diagram.csv File<text styleclass="VariableName">&#32;</text></li>
+                </list>
+                <para styleclass="Body Text HowTo">Find, and open, the <text styleclass="Body Text">CSV</text> file you have saved to disc with <text styleclass="T_Menu">MechDesigner : File menu &gt; Save Timing Diagram</text></para>
+                <para styleclass="Body Text"><text styleclass="Notes">NOTE</text>: </para>
+                <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="1" colcount="1">
+                  <tr style="vertical-align:top">
+                    <td>
+                      <para styleclass="Body Text">Look carefully at the two motions in the Timing-Diagram in the image below.</para>
+                      <para styleclass="Body Text">The data-format of the Y-axis of the top motion moves the 0 of the X-axis slightly to the right. To correct this:</para>
+                      <list id="6" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Body Text" style="font-family:&apos;Segoe UI&apos;; font-size:11pt; color:#000000;">
+                        <li styleclass="Body Text">Format the Y-axis data of &apos;Motion0&apos; to make sure its data format has the same number of decimal places as &apos;Motion1, 2, ...&apos;.</li>
+                      </list>
+                    </td>
+                  </tr>
+                </table></para>
+                <list id="7" type="ol" listtype="upper-alpha" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="4" styleclass="Body Table" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="Body Table"><text styleclass="Body Text">Press Button: 2: Create Timing Diagram</text><text styleclass="VariableName">&#32;</text></li>
+                  <li styleclass="Body Table"><text styleclass="Body Text">Look at the worksheet Timing Diagram to see the timing diagram for each motion</text></li>
+                </list>
+                <para styleclass="Body Text"><image src="MD-TimingDiagram.png" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"><title>Typical Timing Diagram with 4 Motions</title><caption><![CDATA[Typical Timing Diagram with 2 Motions]]></caption></image></para>
+              </td>
+            </tr>
+          </table></para>
+        </td>
+      </tr>
+    </table></para>
+  </body>
+</topic>

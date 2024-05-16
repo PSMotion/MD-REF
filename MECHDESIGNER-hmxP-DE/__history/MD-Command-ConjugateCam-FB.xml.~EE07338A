@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" modified="2022-07-21T14:52:22.547+01:00" lasteditedby="Adam" version="2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title>Mechanism | Add Conjugate Cam FB</title>
+  <keywords>
+    <keyword>Add<keyword>Conjugate Cam FB</keyword></keyword>
+    <keyword>Machine elements toolbar<keyword>Add Conjugate Cam FB</keyword></keyword>
+    <keyword>Menu &gt; Add &gt; Mechanism Menu<keyword>Add Conjugate Cam FB</keyword></keyword>
+  </keywords>
+  <body>
+    <header>
+      <para styleclass="Heading1">Mechanism | Add Conjugate Cam FB</para>
+    </header>
+    <para styleclass="Heading2">Add Conjugate Cam FB</para>
+    <para styleclass="SeeAlso">See <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-Conjugate-Cam-FB">Conjugate-Cam dialog-box</link></para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="Heading4 Toggle_atocs_" style="text-indent:-36px; margin-left:36px;"><image src="tog_plus.gif" scale="100.00%" figurelistinclude="0"></image><tab /><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" src-collapsed="tog_plus.gif" src-expanded="tog_minus.gif"><caption><![CDATA[Two Cam Designs]]></caption></toggle></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="1" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Table">In a cam-system, there are two design options to make sure that the <text styleclass="VariableName">Cam-Follower</text> (usually a Rolling Bearing) remains in continuous contact with the <text styleclass="VariableName">Cam-Profile</text> at all machine-speeds. </para>
+          <list id="0" type="ol" listtype="upper-alpha" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="Bullets"><text styleclass="VariableName">Force-Closed Cams</text><text styleclass="HowTo Bulleted"> : an </text><text styleclass="VariableName">external force</text><text styleclass="HowTo Bulleted"> pushes or pulls one </text><text styleclass="VariableName">Cam-Follower</text><text styleclass="HowTo Bulleted"> against one </text><text styleclass="VariableName">Cam-Profile</text><text styleclass="HowTo Bulleted">. E.g. a Spring, Air-Cylinder, Gravity, Magnet, ...</text><text styleclass="VariableName">&#32;</text></li>
+            <li styleclass="HowTo Bulleted"><text styleclass="VariableName">Body-Closed Cams</text><text styleclass="Body Text"> (also called </text><text styleclass="VariableName">Conjugate Cams</text><text styleclass="Body Text">)</text> : two(2)* <text styleclass="VariableName">Cam-Follower, </text>interact with two <text styleclass="VariableName">Cam-Profiles</text>. The <text styleclass="VariableName">Cam-Profiles</text> are fixed to one machine-part (<text styleclass="VariableName">Cam-Part</text>) and the <text styleclass="VariableName">Cam-Follower</text> are fixed to another machine-element (<text styleclass="VariableName">Follower-Part</text>). </li>
+          </list>
+          <para styleclass="Body Text HowTo">One of the <text styleclass="VariableName">Cam-Profiles</text> acts against one of the <text styleclass="VariableName">Cam-Followers</text> to accelerate the <text styleclass="VariableName">Follower-Part</text>, and other <text styleclass="VariableName">Cam-Profile</text> acts against the other <text styleclass="VariableName">Cam-Follower</text> to decelerate the <text styleclass="VariableName">Follower-Part</text>. Together, it is impossible to move the <text styleclass="VariableName">Follower-Part</text> without moving the <text styleclass="VariableName">Cam-Part.</text></para>
+          <para styleclass="Body Text"><text styleclass="HowTo Bulleted">* There are exceptions to two </text><text styleclass="VariableName">Cam-Followers</text></para>
+          <list id="1" type="ol" listtype="lower-alpha" formatstring="&#66;&#37;&#48;&#58;&#115;&#41;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullets" style="font-family:&apos;Noto Sans&apos;; font-size:11pt; color:#000000;">
+            <li styleclass="Bullets"><text styleclass="VariableName"> Groove-Cam</text><text styleclass="Body Text"> (also called </text><text styleclass="VariableName">Track-Cam</text><text styleclass="Body Text">) </text><text styleclass="VariableName">:</text> one <text styleclass="VariableName">Cam-Follower</text> is &apos;trapped&apos; in and rolls along the inside of a groove. Approximately, the <text styleclass="VariableName">Cam-Follower</text> rolls along one side (called a Cam-Flank) of the groove as the <text styleclass="VariableName">Follower-Part</text> accelerates. The <text styleclass="VariableName">Cam-Follower</text> switches <text styleclass="VariableName">Cam-Flanks</text> as the <text styleclass="VariableName">Follower-Part</text> decelerates. <text styleclass="Notes">Note</text><text styleclass="Body Text">:</text> The <text styleclass="VariableName">Cam-Follower</text> must skid as it reverse its rolling direction when it switches <text styleclass="VariableName">Cam-Flanks</text><text styleclass="Body Text"> in the groove.</text></li>
+            <li styleclass="Bullets">&#32;<text styleclass="VariableName">Indexing-Cams</text> - there are often three, or even four <text styleclass="VariableName">Cam-Followers</text> in contact with the rotating <text styleclass="VariableName">Cam-Profile</text>.</li>
+          </list>
+          <para styleclass="Notes">Note:</para>
+          <para styleclass="Body Text HowTo"><text styleclass="VariableName">Body-Closed Cams</text><text styleclass="Body Text Howindent4bullets"> are also called </text><text styleclass="VariableName">Conjugate-Cams</text><text styleclass="Body Text Howindent4bullets">. </text></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading4 Toggle_atocs_">Why do we need a Conjugate-Cam FB in with a Conjugate Cam System?</para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="1" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Text"><text styleclass="Interface2">Ohne </text><text styleclass="Element-Header">Konjugatnocken FB</text>, können Sie <text styleclass="VariableName">konjugierte Nocken</text>entwerfen &#160;und deren <text styleclass="Parameter">Druckwinkel</text>, <text styleclass="Parameter">Krümmungsradius</text> und <text styleclass="Parameter">Gleitgeschwindigkeit</text> analysieren &#160;sowie deren <text styleclass="Parameter">Nockenkoordinaten</text> berechnen <text styleclass="Parameter">.</text></para>
+          <para styleclass="Body Text"><text styleclass="Interface2">Mit einer </text><text styleclass="Element-Header">konjugierten Nocke FB</text>, können Sie auch die <text styleclass="Parameter">Kontaktkraft</text>, die <text styleclass="Parameter">Kontaktspannung</text>, <text styleclass="Normal"> die</text><text styleclass="Parameter">Rollenlebensdauer</text> und die <text styleclass="Parameter">Nockenlebensdauer</text> der einzelnen Nocken &#160;berechnen . &#160;Sie müssen natürlich auch <text styleclass="VariableName-indent">die Stromquelle</text> richtig<text styleclass="VariableName-indent">konfigurieren</text>.</para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading4 Toggle_atocs_">2D-Cam: Elements, Parameters, Analysis, Coordinates</para>
+    <para styleclass="Body Text"><table styleclass="Default" rowcount="1" colcount="1" style="border-width:0px; border-spacing:0px; border-collapse:collapse; cell-border-width:1px; border-color:#993300; border-style:solid; background-color:#ebebeb;">
+      <tr style="vertical-align:top">
+        <td>
+          <list id="2" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="Bullets">Hinzufügen einer <text styleclass="Element">2D-Kamera</text><text styleclass="VariableName"> - &#160;</text><text styleclass="SeeAlso">see </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Command-Add2DCam" styleclass="SeeAlso">Add 2D-Cam</link><text styleclass="VariableName">&#32;</text></li>
+          </list>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="Body Text HowTo">Wenn diese neue <text styleclass="Element">2D-Nocke</text> die zweite <text styleclass="Element">2D-Nocke</text> eines<text styleclass="Body Text"> Konjugat-Nockenpaares </text> ist<text styleclass="Element">(Body-Closed Cam</text>), dann:</para>
+          <list id="3" type="ol" listtype="lower-alpha" formatstring="&#32;&#49;&#46;&#37;&#48;&#58;&#115;&#46;&#32;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo Bulleted">&#32;<text styleclass="Element-Header">Conjugate-Cam FB</text> hinzufügen - <text styleclass="SeeAlso">siehe unten</text><text styleclass="VariableName">&#32;</text></li>
+            <li styleclass="HowTo Bulleted"><text styleclass="Body Text">Bearbeiten Sie den </text><text styleclass="Element">FB Konjugat-Nocken</text><text styleclass="Body Text">, um mindestens zwei </text><text styleclass="Element">2D-Nocken</text><text styleclass="Body Text"> hinzuzufügen - </text><text styleclass="SeeAlso">siehe </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-Conjugate-Cam-FB" styleclass="SeeAlso">Dialogfeld Konjugat-Nocken</link><text styleclass="Body Text">. </text></li>
+          </list>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="Body Text">Dann:</para>
+          <list id="4" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="2" styleclass="Body Text" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="Body Text">Wählen Sie die <text styleclass="Element">2D-Nocke</text> (oder <text styleclass="Element">Konjugat-Nocken-FB</text>) als <text styleclass="VariableName">Stromquelle</text> für das <text styleclass="VariableName">Nockenschaltwerk</text> - <text styleclass="SeeAlso">siehe </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-ConfigurePowerSource" styleclass="SeeAlso">Konfigurieren-Stromquelle</link><text styleclass="VariableName">&#32;</text></li>
+          </list>
+          <para styleclass="Body Text">Dann:</para>
+          <list id="4" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="2" styleclass="Body Text" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="Body Text">Überprüfen Sie die Anzeige, die Eigenschaften, die Nockenlebensdauer und die Rollenlebensdauer <text styleclass="Element">der 2D-Nocke</text>... -<text styleclass="SeeAlso"> siehe </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-2DCam" styleclass="SeeAlso">2D-Nocken-Dialogfeld</link><text styleclass="VariableName">&#32;</text></li>
+          </list>
+          <para styleclass="Body Text">Dann:</para>
+          <list id="5" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="4" styleclass="Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="Bullets">Hinzufügen eines <text styleclass="Element">Cam-Data FB</text> - <text styleclass="SeeAlso">siehe </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Command-FB-Cam-Data" styleclass="SeeAlso">Hinzufügen eines Cam-Data FB</link><text styleclass="VariableName">&#32;</text></li>
+          </list>
+          <list id="6" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="4" styleclass="Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; color:#000080;">
+            <li styleclass="Bullets"><text styleclass="Body Text HowTo">Wählen Sie eine </text><text styleclass="Element">2D-Nocke </text><text styleclass="Body Text HowTo">aus , um sie mit der </text><text styleclass="Element">Cam-Data FB</text> zu<text styleclass="Body Text HowTo">verbinden </text><text styleclass="VariableName"> - </text><text styleclass="SeeAlso">siehe </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Command-FB-Cam-Data" anchor="CAMDATAFB-LINKTO2DCAM" styleclass="SeeAlso">Cam-Data FB mit einer 2D-Kamera verbinden</link></li>
+          </list>
+          <para styleclass="Body Text">Dann:</para>
+          <list id="7" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="6" styleclass="Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="Bullets">Analysieren Sie 5 verschiedene <text styleclass="Element">2D-Cam-Parameter</text>&#32;<text styleclass="VariableName"> - </text><text styleclass="SeeAlso">siehe unten</text><text styleclass="VariableName">&#32;</text></li>
+            <li styleclass="Bullets"><text styleclass="Body Text">Berechnen der Nockenkoordinaten</text><text styleclass="HowTo Bulleted"> - </text><text styleclass="SeeAlso">siehe </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-FunctionBlock-CamCoordinates" styleclass="SeeAlso">Dialog Nockenkoordinaten</link><text styleclass="Body Text">&#32;</text></li>
+          </list>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading3_atocs_">Vorbereitung</para>
+    <para styleclass="Body Text HowTo"><table styleclass="Standard" rowcount="1" colcount="2" style="width:auto;">
+      <tr style="vertical-align:top">
+        <td style="width:240px;">
+          <para styleclass="Normal"><image src="MD-FB-ADDCONJUGATECAM-01.ipp" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="VariableName">Vorbereitung</para>
+          <para styleclass="Body Text HowTo">Die Elemente des Modells vor dem <text styleclass="T_Menu">Hinzufügen von Konjugat-Cam FB.</text></para>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Bullets">Zwei(2)<text styleclass="HowTo Numbered">&#32;</text><text styleclass="Element">2D-Nocken.</text><text styleclass="Body Text" style="font-weight:bold;">&#32;</text></para>
+                <list id="8" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullets" style="font-family:Symbol; font-size:10pt; color:#000000;">
+                  <li styleclass="Bullets"><text styleclass="Body Text">Die </text><text styleclass="Element">2D-Nocken</text><text styleclass="HowTo Bulleted"> sollten sich auf einem </text><text styleclass="Element">Teil</text><text styleclass="HowTo Bulleted"> befinden </text>. <text styleclass="Body Text">Z.B. eine </text><text styleclass="Interface">Kurbel</text></li>
+                </list>
+                <list id="9" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:10pt; color:#000000;">
+                  <li styleclass="HowTo Bulleted">Follower Roller* sollten sich auf einem anderen <text styleclass="Element">Teil</text> befinden<text styleclass="Body Text">. &#160;Z.B. eine </text><text styleclass="Interface">Wippe</text></li>
+                </list>
+                <para styleclass="Body Table">* Walzen und/oder flacher Flanschfläche.</para>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Body Table"><text styleclass="SeeAlso">Siehe auch </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-Cam-Follower-Shape" styleclass="SeeAlso">Form der Kurvenrolle</link><text styleclass="SeeAlso">.</text></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading3_atocs_">Konjugatnocken FB hinzufügen</para>
+    <para styleclass="Body Text HowTo"><table styleclass="Standard" rowcount="1" colcount="2" style="width:auto;">
+      <tr style="vertical-align:top">
+        <td style="width:240px;">
+          <para styleclass="Normal"><image src="MD-FB-ADDCONJUGATECAM-02.ipp" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td style="vertical-align:top;">
+          <list id="10" type="ol" listtype="decimal" formatstring="&#83;&#84;&#69;&#80;&#32;&#37;&#48;&#58;&#115;&#58;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo STEP" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo STEP">Hinzufügen der Konjugat-Cam FB</li>
+          </list>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="2">
+            <tr style="vertical-align:top">
+              <td style="vertical-align:bottom; width:41px;">
+                <para styleclass="Image Caption"><image src="MD-Icon-AddConjugateCamFB.png" scale="100.00%" figurelistinclude="0"></image></para>
+              </td>
+              <td>
+                <list id="11" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Body Table" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; color:#003300;">
+                  <li styleclass="Body Table"><text styleclass="Interface">Mechanismus-Editor:</text><text styleclass="Body Text">&#32;</text><text styleclass="T_Menu">Menü hinzufügen &gt; Menü Mechanismus &#160;&gt; Konjugat-Nocken FB hinzufügen</text></li>
+                </list>
+                <para styleclass="Body Text"><text style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">- oder</text><text style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;"> -</text></para>
+                <list id="12" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="B Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; color:#003300;">
+                  <li styleclass="B Bullets"><text styleclass="Interface">Mechanismus-Editor: </text><text styleclass="T_Menu">Symbolleiste der Maschinenelemente &gt; Konjugat-Nocken FB hinzufügen</text></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Body Text HowTo">Die <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-Conjugate-Cam-FB" styleclass="VariableName">Konjugat-Nocken</link><text styleclass="Element"> FB</text> befindet sich nun im <text styleclass="Interface">Grafikbereich</text>. </para>
+          <list id="13" type="ol" listtype="decimal" formatstring="&#83;&#84;&#69;&#80;&#32;&#37;&#48;&#58;&#115;&#58;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="2" styleclass="HowTo STEP" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo STEP"><text styleclass="VariableName">Öffnen Sie das </text><text styleclass="VariableName">Dialogfeld Konjugat-Nocken</text><text styleclass="VariableName">&#32;</text></li>
+          </list>
+          <para styleclass="Body Text HowTo">Sehe <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-Conjugate-Cam-FB">Dialogfeld Konjugat-Nocken</link></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Normal" style="page-break-before:always;"></para>
+  </body>
+</topic>

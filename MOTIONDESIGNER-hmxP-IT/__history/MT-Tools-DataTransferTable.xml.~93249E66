@@ -1,0 +1,216 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" status="Under Construction" modified="2022-06-26T12:04:41.808+01:00" lasteditedby="Adam" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title translate="true">Data-Transfer Table</title>
+  <keywords>
+    <keyword translate="true">Motion: Tools menu<keyword translate="true">Data Transfer Table</keyword><keyword translate="true">Export Motion Data</keyword><keyword translate="true">Import Motion Data</keyword><keyword translate="true">Motion Data Transfer</keyword><keyword translate="true">Overlay Trace</keyword></keyword>
+  </keywords>
+  <body>
+    <header>
+      <para styleclass="Heading1"><text styleclass="Heading1" translate="true">Tools: Data-Transfer</text></para>
+    </header>
+    <para styleclass="Heading2"><text styleclass="Heading2" translate="true">Data-Transfer Table</text></para>
+    <para styleclass="Body Text HowTo"><text styleclass="Body Text HowTo" translate="true">Use the </text><text styleclass="VariableName" translate="true">Data-Transfer Table</text><text styleclass="Body Text HowTo" translate="true"> to:</text></para>
+    <list id="0" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000080;">
+      <li styleclass="HowTo Bulleted"><text styleclass="VariableName" translate="true">Import data</text><text styleclass="HowTo Bulleted" translate="true"> to a segment - </text><text styleclass="SeeAlso" translate="true">see </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MT-List-Segment-Type" styleclass="SeeAlso" translate="true">List Segment-Types</link></li>
+      <li styleclass="HowTo Bulleted"><text styleclass="VariableName" translate="true">Export data</text><text styleclass="Body Text" translate="true"> from one or all segments</text></li>
+      <li styleclass="HowTo Bulleted"><text styleclass="Body Text" translate="true">Show the data in the table as dumb graph - </text><text styleclass="SeeAlso" translate="true">see </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MT-Tools-DataTransfer-OverlayTrace" styleclass="SeeAlso" translate="true">Overlay Trace</link></li>
+    </list>
+    <para styleclass="Heading3_atocs_"><text styleclass="Heading3_atocs_" translate="true">Open the Data Transfer Table</text></para>
+    <para styleclass="Body Table"><table styleclass="Default" rowcount="1" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:49px;">
+          <para styleclass="Normal" style="text-align:right;"><image src="MT-Toolbar-BP-Transfer.ipp" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="Body Table"><text styleclass="Body Table" translate="true">To open the </text><text styleclass="VariableName" translate="true">Data-Transfer Table</text><text styleclass="Body Table" translate="true">:</text></para>
+          <list id="1" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:&apos;Noto Sans&apos;; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted"><text styleclass="HowTo Bulleted" translate="true">Click</text><text styleclass="T_Menu" translate="true"> Blend-Point &amp; Segment toolbar &gt; Data Transfer Table icon</text><text styleclass="Body Text" translate="true">.</text></li>
+          </list>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="Body Table"><text styleclass="Body Table" translate="true">The </text><text styleclass="Element" translate="true">Data-Transfer Table</text><text styleclass="Body Table" translate="true"> is now open.</text></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading3_atocs_"><text styleclass="Heading3_atocs_" translate="true">Data-Transfer Table</text></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="2" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Normal"><image src="MT-Dialog-DataTransfer.ipp" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Notes"><text styleclass="Notes" style="font-weight:normal;" translate="true">Note: </text><text styleclass="HowTo Numbered" style="font-weight:normal;" translate="true">X-axis of First Row is equal to </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MT-BlendPoint-X-axis-Value" styleclass="HowTo Numbered" style="font-weight:normal;" translate="true">Motion-Start</link><text styleclass="HowTo Numbered" style="font-weight:normal;" translate="true">. First Row is designated Row 0</text></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading4 Toggle_atocs_"><text styleclass="Heading4 Toggle_atocs_" translate="true">Data-Transfer Table toolbar</text></para>
+    <para styleclass="Body Text HowTo"><text styleclass="Notes" translate="true">Note: </text><text styleclass="Body Text" translate="true">Right-click the table to show the </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MT-Tools-DataTransferTable-Toolbar" styleclass="Body Text" translate="true">contextual-menu</link><text styleclass="Body Text" translate="true"> with the same commands/icons as the toolbar.</text></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="18" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:12px;">
+          <para styleclass="Normal" style="text-align:right;"><image src="MT-DTT-ClearAll.ipp" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="Body Text"><text styleclass="T_Menu" translate="true">Clear Worksheet</text><text styleclass="BodyText Bold" translate="true">:</text><text styleclass="Body Text" translate="true"> Remove, all the data from the </text><text styleclass="VariableName" translate="true">Data-Transfer Table</text><text styleclass="Body Text" translate="true">.</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:12px;">
+          <para styleclass="Normal" style="text-align:right;"><image src="MT-DTT-SaveAll.ipp" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="Body Text"><text styleclass="T_Menu" translate="true">Save data</text><text styleclass="BodyText Bold" translate="true">: </text><text styleclass="Body Text" translate="true">Save all of the data in the motion-graphs to a TXT or an ASC file. </text></para>
+          <para styleclass="Body Text"><text styleclass="Body Text" translate="true">The data is not required to be in the </text><text styleclass="VariableName" translate="true">Data-Transfer Table.</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:12px;">
+          <para styleclass="Normal" style="text-align:right;"><image src="MT-DTT-OpenFile.ipp" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="Body Text"><text styleclass="T_Menu" translate="true">Load data</text><text styleclass="BodyText Bold" translate="true">:</text><text styleclass="Heading4 HowTo_atoc_" style="font-weight:normal;" translate="true"> &#160;TXT or ASC file of data, and add to the table.</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td colspan="2" style="background-color:#c0c0c0;">
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:12px;">
+          <para styleclass="Normal" style="text-align:right;"><image src="MT-DTT-CopyAll.ipp" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="Body Text"><text styleclass="T_Menu" translate="true">Copy to Clipboard</text><text styleclass="BodyText Bold" translate="true">:</text><text styleclass="Body Text" translate="true"> &#160;Copy </text><text styleclass="VariableName" translate="true">all</text><text styleclass="Body Text" translate="true"> data in the </text><text styleclass="VariableName" translate="true">Data-Transfer Table</text><text styleclass="Body Text" translate="true"> to the clipboard. </text></para>
+          <para styleclass="Body Text"><text styleclass="HowTo Numbered" style="font-weight:normal;" translate="true">The Index numbers (left of the X column) </text><text styleclass="Body Text" translate="true">are </text><text styleclass="VariableName" translate="true">not</text><text styleclass="Body Text" translate="true"> copied to the clipboard.</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:12px;">
+          <para styleclass="Normal" style="text-align:right;"><image src="MT-DTT-CopySelected.ipp" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="Body Text"><text styleclass="T_Menu" translate="true">Copy Data</text><text styleclass="BodyText Bold" translate="true">:</text><text styleclass="Body Text" translate="true"> Copy the </text><text styleclass="VariableName" translate="true">selected</text><text styleclass="Body Text" translate="true"> data to the clipboard.</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:12px;">
+          <para styleclass="Normal" style="text-align:right;"><image src="MT-DTT-CutSelected.ipp" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="Body Text"><text styleclass="T_Menu" translate="true">Cut Data </text><text styleclass="Interface2" translate="true">and</text><text styleclass="T_Menu" translate="true"> Copy the data to the Clipboard:</text><text styleclass="Body Text" translate="true"> Remove selected data from the </text><text styleclass="VariableName" translate="true">Data-Transfer Table</text><text styleclass="Body Text" translate="true"> and copy to the clipboard</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:12px;">
+          <para styleclass="Normal" style="text-align:right;"><image src="MT-DTT-PasteClip.ipp" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="Body Text"><text styleclass="T_Menu" translate="true">Paste data to Data-Transfer Table: </text><text styleclass="Body Text" translate="true">Paste data in the clipboard to the </text><text styleclass="VariableName" translate="true">Data-Transfer Table</text><text styleclass="Body Text" translate="true">, starting at the active cell.</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:12px;">
+          <para styleclass="Normal" style="text-align:right;"><image src="MT-DTT-DeleteSelected.ipp" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="Body Text"><text styleclass="T_Menu" translate="true">Delete Selected Data: </text><text styleclass="Body Text" translate="true">Delete the selected data from the </text><text styleclass="VariableName" translate="true">Data-Transfer Table</text><text styleclass="Body Text" translate="true">. It is not in the clipboard.</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td colspan="2" style="background-color:#c0c0c0;">
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:12px;">
+          <para styleclass="Normal" style="text-align:right;"><image src="MT-DTT-GetListData.ipp" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="BodyText Bold"><text styleclass="T_Menu" translate="true">Get List Data:</text><text styleclass="BodyText Bold" translate="true">&#32;</text><text styleclass="Body Text" translate="true">The </text><text styleclass="VariableName" translate="true">Selected-Segment</text><text styleclass="Body Text" translate="true"> must be a </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MT-List-Segment-Type" styleclass="VariableName-IT" style="font-style:normal;" translate="true">List Segment-Type</link><text styleclass="Body Text" translate="true">. The original data that was put to the </text><text styleclass="VariableName-IT" style="font-style:normal;" translate="true">List Segment-Type </text><text styleclass="Body Text" translate="true">will be copied to the </text><text styleclass="VariableName" translate="true">Data-Transfer Table.</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:12px;">
+          <para styleclass="Body Text"><image src="MT-DTT-PutData.ipp" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td style="vertical-align:middle;">
+          <para styleclass="Body Text"><text styleclass="T_Menu" translate="true">Put List Data: </text><text styleclass="Body Text" translate="true">The </text><text styleclass="VariableName" translate="true">Selected-Segment</text><text styleclass="Body Text" translate="true"> must be a </text><text styleclass="VariableName-IT" style="font-style:normal;" translate="true">List Segment-Type</text><text styleclass="Body Text" translate="true">. </text></para>
+          <para styleclass="Body Text"><text styleclass="Body Text" translate="true">Put data from the </text><text styleclass="VariableName" translate="true">Data-Transfer Table</text><text styleclass="Body Text" translate="true"> to a </text><text styleclass="VariableName-IT" style="font-style:normal;" translate="true">List Segment-Type</text><text styleclass="Body Text" translate="true">. </text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td colspan="2" style="background-color:#c0c0c0;">
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:12px;">
+          <para styleclass="Normal" style="text-align:right;"><image src="MT-DTT-GetListData.ipp" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="Body Text"><text styleclass="T_Menu" translate="true">Get All Motion-Values:</text><text styleclass="Body Text" translate="true"> Get the motion-values for all of the motion-derivative that are shown (</text><text styleclass="SeeAlso" translate="true">see View toolbar &gt; Show/Hide Position, Velocity, Acceleration, Jerk</text><text styleclass="Body Text" translate="true">), and copy them to the </text><text styleclass="VariableName" translate="true">Data-Transfer Table</text><text styleclass="Body Text" translate="true">. (See Below)</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:12px;">
+          <para styleclass="Normal" style="text-align:right;"><image src="MT-DTT-GetSegData.ipp" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="Body Text"><text styleclass="T_Menu" translate="true">Get Segment Motion-Values</text><text styleclass="Body Text" translate="true">: &#160;Get the motion-values, for each active motion-derivative graph, of the </text><text styleclass="VariableName" style="color:#ff0000;" translate="true">RED</text><text styleclass="Body Text" translate="true">&#32;</text><link displaytype="text" defaultstyle="true" type="topiclink" href="MT-Selected-Segment" styleclass="Element" translate="true">Selected-Segment</link><text styleclass="Body Text" style="font-style:italic;" translate="true">&#32;</text><text styleclass="Body Text" style="font-style:normal;" translate="true">and copy them to the </text><text styleclass="VariableName" translate="true">Data-Transfer Table</text><text styleclass="Body Text" style="font-style:normal;" translate="true"> (See Below).</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td colspan="2" style="background-color:#c0c0c0;">
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:12px;">
+          <para styleclass="Normal" style="text-align:left;"><image src="MT-DTT-OverlayTrace.ipp" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="Body Text"><link displaytype="text" defaultstyle="true" type="topiclink" href="MT-Tools-DataTransfer-OverlayTrace" styleclass="T_Menu" translate="true">Overlay-Trace</link><text styleclass="T_Menu" translate="true"> :</text><text styleclass="Body Text" translate="true"> Display the motion-data in the </text><text styleclass="VariableName" translate="true">Data-Transfer Table</text><text styleclass="Body Text" translate="true"> as an </text><text styleclass="Element" translate="true">Overlay-Trace</text><text styleclass="Body Text" translate="true">. You can toggle this icon to show or hide the </text><text styleclass="Element" translate="true">overlay-trace.</text></para>
+          <para styleclass="Body Text"><text styleclass="Body Text" translate="true">An </text><text styleclass="Element" translate="true">Overlay-Trace</text><text styleclass="Body Text" translate="true"> is a </text><text styleclass="VariableName-IT" translate="true">dumb graph</text><text styleclass="Body Text" translate="true"> that shows together with the active motion graph.</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:12px;">
+          <para styleclass="Normal" style="text-align:center;"><image src="MT-DTT-LastPoint.ipp" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="Body Text"><text styleclass="T_Menu" translate="true">Last and First Data Point toggle </text></para>
+          <para styleclass="Body Text"><text styleclass="Body Text" translate="true">Often you want to transfer the motion-data that is in the </text><text styleclass="VariableName" translate="true">Data Transfer Table</text><text styleclass="Body Text" translate="true"> to another application. Your application may need: </text></para>
+          <list id="2" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted"><text styleclass="HowTo Bulleted" translate="true">the last row in the table to equal the first row in the table</text></li>
+            <li styleclass="HowTo Bulleted"><text styleclass="HowTo Bulleted" translate="true">the last row in the table to equal the last data-value in the motion </text></li>
+          </list>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="VariableName"><text styleclass="VariableName" translate="true">Data Transfer Table: Put data to List Segment-Types</text></para>
+    <para styleclass="Body Text HowTo"><text styleclass="Body Text HowTo" translate="true">The </text><text styleclass="VariableName" translate="true">Number-of Steps</text><text styleclass="Body Text HowTo" translate="true"> in the total </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MT-Motion-Width" styleclass="Body Text HowTo" translate="true">motion-width</link><text styleclass="Body Text HowTo" translate="true"> defines how many points we use to display each motion graph.</text></para>
+    <para styleclass="Body Text HowTo"><text styleclass="Body Text HowTo" translate="true">The </text><text styleclass="VariableName" translate="true">Number-of-Steps</text><text styleclass="Body Text HowTo" translate="true"> is defined in </text><text styleclass="Interface" translate="true">Active-Motion-Settings DIALOG</text></para>
+    <para styleclass="Body Text HowTo"><text styleclass="Body Text" translate="true">The </text><text styleclass="VariableName" translate="true">Number-of-Steps</text><text styleclass="Body Text" translate="true"> in a segment = </text><text styleclass="Interface" translate="true">Number-of-steps </text><text styleclass="Body Text Howindent4bullets" translate="true">× </text><text styleclass="Parameter" translate="true">Segment-Width / motion-width</text></para>
+    <para styleclass="Body Text HowTo"><text styleclass="Body Text HowTo" translate="true">When you Put data to a</text><text styleclass="VariableName-IT" translate="true">&#32;</text><text styleclass="VariableName" translate="true">List Segment-Type</text></para>
+    <list id="3" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+      <li styleclass="HowTo Bulleted"><text styleclass="VariableName-IT" translate="true">MotionDesigner</text><text styleclass="HowTo Bulleted" style="font-weight:normal;" translate="true"> re-calculates </text><text styleclass="HowTo Bulleted" translate="true">the data in your list to give the correct </text><text styleclass="Interface" translate="true">number-of-steps</text><text styleclass="HowTo Bulleted" translate="true"> for the segment, according to its </text><text styleclass="Parameter" translate="true">segment-width</text><text styleclass="HowTo Bulleted" translate="true">.</text></li>
+    </list>
+    <list id="4" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Numbered" style="font-family:Symbol; font-size:11pt; color:#000000;">
+      <li styleclass="HowTo Numbered"><text styleclass="VariableName-IT" translate="true">MotionDesigner</text><text styleclass="HowTo Numbered" style="font-weight:normal;" translate="true"> numerically calculates all </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MT-Motion-Derivative" styleclass="HowTo Numbered" style="font-weight:normal;" translate="true">motion-derivatives</link><text styleclass="HowTo Numbered" style="font-weight:normal;" translate="true"> from the re-sampled data.</text></li>
+    </list>
+    <para styleclass="HowTo Numbered"><text styleclass="VariableName" translate="true">Minimum number-of-points you can upload = 6</text><text styleclass="Body Text" translate="true">. However, we recommend many more!</text></para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="VariableName"><text styleclass="VariableName" translate="true">Data-Transfer Table: Get data from Motion / Segments</text></para>
+    <list id="5" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+      <li styleclass="HowTo Bulleted"><text styleclass="Interface" translate="true">Number of Data Columns:</text><text styleclass="HowTo Bulleted" translate="true"> X-axis and a column for each motion-derivative in the graph area (See </text><text styleclass="T_Menu" translate="true">View toolbar &gt; Show/Hide Position, Velocity, Acceleration, and Jerk</text><text styleclass="HowTo Bulleted" translate="true">)</text></li>
+      <li styleclass="HowTo Bulleted"><text styleclass="Interface" translate="true">Number of Rows of Data</text><text styleclass="HowTo Bulleted" translate="true">: see </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MT-Edit-Active-Motion-Settings" anchor="Motion" styleclass="T_Menu" translate="true">Active Motion Settings &gt; Motion tab &gt; </link><link displaytype="text" defaultstyle="true" type="topiclink" href="MT-Edit-Active-Motion-Settings" anchor="Motion" styleclass="Separator" translate="true">Motion Cycle data</link><text styleclass="T_Menu" translate="true"> &gt; </text><text styleclass="Parameter" translate="true">Number-of-Steps</text></li>
+      <li styleclass="HowTo Bulleted"><text styleclass="Interface" translate="true">Number Format</text><text styleclass="HowTo Bulleted" translate="true">: see </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MT-Edit-Active-Motion-Settings" anchor="DataFormat" styleclass="T_Menu" translate="true">Active Motion Settings &gt; Number-Format tab &gt; </link><link displaytype="text" defaultstyle="true" type="topiclink" href="MT-Edit-Active-Motion-Settings" anchor="DataFormat" styleclass="Separator" translate="true">Number Format</link><text styleclass="T_Menu" translate="true"> &gt; </text><text styleclass="Parameter" translate="true">Precision /</text><text styleclass="T_Menu" translate="true">&#32;</text><text styleclass="Parameter" translate="true">Digits</text></li>
+      <li styleclass="HowTo Bulleted"><text styleclass="Interface" translate="true">Motion Units</text><text styleclass="HowTo Bulleted" translate="true">: see &#160;</text><link displaytype="text" defaultstyle="true" type="topiclink" href="MT-Edit-Active-Motion-Settings" anchor="Motion" styleclass="T_Menu" translate="true">Active-Motion-Settings</link><text styleclass="T_Menu" translate="true"> &gt; Motion tab &gt; </text><text styleclass="Separator" translate="true">Motion Units</text><text styleclass="T_Menu" translate="true"> &gt; </text><text styleclass="Parameter" translate="true">X–axis Units / Y–axis Units</text></li>
+    </list>
+    <para styleclass="HowTo Bulleted" style="page-break-before:always;"></para>
+  </body>
+</topic>

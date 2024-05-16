@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" status="Under Construction" modified="2022-09-06T13:24:54.349+01:00" lasteditedby="Adam" version="2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title>Dialog: Funktions-Block: Nocken-Analyse</title>
+  <meta name="DESCRIPTION" translate="true" value="The Cam-Data FB has two outputs - 1: Parameters for Cam-Analysis at the Output-Connectors; 2: Cam-Coordinates  in different formats." />
+  <keywords>
+    <keyword>2D-Cams<keyword>Contact-Force</keyword><keyword>Contact-Stree</keyword><keyword>Pressure Angle</keyword><keyword>Radius of Curvature</keyword><keyword>Sliding-Velocity.</keyword></keyword>
+    <keyword>Cam-Data dialog-box</keyword>
+    <keyword>Cam-Data Function-Block</keyword>
+  </keywords>
+  <body>
+    <header>
+      <para styleclass="Heading1">Dialog: Cam-Data FB</para>
+    </header>
+    <para styleclass="Heading2">Nocken-Daten FB - Nocken-Analyse</para>
+    <para styleclass="Heading4 Toggle_atocs_">2D-Nocken: Elemente, Parameter, Analyse, Koordinaten</para>
+    <para styleclass="Body Text"><table styleclass="Default" rowcount="1" colcount="1" style="border-width:0px; border-spacing:0px; border-collapse:collapse; cell-border-width:1px; border-color:#993300; border-style:solid; background-color:#ebebeb;">
+      <tr style="vertical-align:top">
+        <td>
+          <list id="0" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullets" style="font-family:&apos;Noto Sans&apos;; font-size:11pt; color:#000000;">
+            <li styleclass="Bullets">Hinzufügen einer <text styleclass="Element">2D-Nocken</text><text styleclass="VariableName"> - siehe </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Command-Add2DCam" styleclass="VariableName">2D-Nocken hinzufügen</link><text styleclass="Body Text">&#32;</text></li>
+            <li styleclass="HowTo Bulleted"><text styleclass="Body Text">Überprüfen Sie </text>die<text styleclass="Body Text"> Anzeige, Eigenschaften und Lebensdauer </text><text styleclass="Element">der 2D-Nocken</text><text styleclass="SeeAlso">- siehe </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-2DCam" styleclass="SeeAlso">Dialogfenster 2D-Nocken</link></li>
+          </list>
+          <para styleclass="Body Text">Dann:</para>
+          <list id="0" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:&apos;Noto Sans&apos;; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted"><text styleclass="Body Text HowTo">Hinzufügen eines </text><text styleclass="Element">Nocken-Daten FB</text><text styleclass="Body Text HowTo"> - </text><text styleclass="SeeAlso">siehe </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Command-FB-Cam-Data" styleclass="SeeAlso">Hinzufügen eines Nocken-Daten FB</link><text styleclass="VariableName">&#32;</text></li>
+            <li styleclass="HowTo Bulleted"><text styleclass="Body Text HowTo">Verknüpfen Sie die </text><text styleclass="Element">2D-Nocke </text><text styleclass="Body Text HowTo">mit </text>dem <text styleclass="Element">Nocken-Daten FB</text><text styleclass="VariableName"> - </text><text styleclass="SeeAlso">siehe </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Command-FB-Cam-Data" anchor="CAMDATAFB-LINKTO2DCAM" styleclass="SeeAlso">Öffnen und Verknüpfen des FB mit einer 2D-Nocke</link></li>
+          </list>
+          <para styleclass="Body Text">Dann:</para>
+          <list id="1" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="5" styleclass="Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="Bullets">Analysieren Sie 5 verschiedene Parameter für die <text styleclass="Element">2D-Nocke</text><text styleclass="VariableName"> - </text><text styleclass="SeeAlso">siehe unten</text><text styleclass="VariableName">&#32;</text></li>
+            <li styleclass="HowTo Bulleted"><text styleclass="Body Text">Berechnen Sie die Nockenkoordinaten</text> - <text styleclass="SeeAlso">siehe </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-FunctionBlock-CamCoordinates" styleclass="SeeAlso">Nocken-Daten Dialogfenster - Koordinaten</link><text styleclass="Body Text">&#32;</text></li>
+          </list>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="Body Text"><anchor id="2DCAMDATAFB-CAMANALYSIS" styleclass="Heading4 Toggle_atocs_2"><keywords><keyword>2D-Cam Analysis Parameters<keyword>Contact Force</keyword><keyword>Maximum Shear Stress</keyword><keyword>Radius of Curvature</keyword><keyword>Pressure Angle</keyword><keyword>Sliding-Velocity</keyword></keyword></keywords></anchor><text styleclass="Heading3_atocs_">Cam-Data FB: Cam Analysis Parameters</text></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="2" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Normal" style="text-align:left;"><image src="MD-GA-FB-CamData.ipp" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"><caption><![CDATA[Analysis Parameters from Cam-Data FB]]></caption></image></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Table">Die fünf Ausgangsbuchsen der <text styleclass="Element">Nockendaten FB</text><text styleclass="Body Text"> bieten:</text></para>
+          <list id="2" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted"><text styleclass="VariableName-IT">F &#160; : &#160;</text><text styleclass="VariableName">Nocken-Kontaktkraft</text> : <text styleclass="HowTo Bulleted3">See </text><link displaytype="text" defaultstyle="true" type="topiclink" href="" anchor="CAMANALYSIS-CONTACTFORCE" styleclass="HowTo Bulleted3">Note 1</link></li>
+            <li styleclass="HowTo Bulleted"><text styleclass="VariableName-IT">Ԏ &#160;: &#160;</text><text styleclass="VariableName">Nockenkontaktspannung</text><text styleclass="VariableName-IT">&#32;</text>: See <link displaytype="text" defaultstyle="true" type="topiclink" href="" anchor="CAMANALYSIS-MAXSHEARSTRESS">Note 2</link></li>
+            <li styleclass="HowTo Bulleted"><text styleclass="VariableName-IT">ρ &#160;: &#160;Krümmungsradius</text> : See <link displaytype="text" defaultstyle="true" type="topiclink" href="" anchor="CAMANALYSIS-ROC">Note 3</link></li>
+            <li styleclass="HowTo Bulleted"><text styleclass="VariableName-IT">μ &#160;: &#160;Eingriffswinkel :</text><text styleclass="Parameter-Header">&#32;</text>See <link displaytype="text" defaultstyle="true" type="topiclink" href="" anchor="CAMANALYSIS-PRESSUREANGLE">Note 4</link></li>
+            <li styleclass="HowTo Bulleted"><text styleclass="VariableName-IT">U</text><text styleclass="VariableName-IT" style="font-size:10pt; vertical-align:baseline;">e</text><text styleclass="VariableName-IT"> : Schiebegeschwindigkeit </text><text styleclass="Body Text">- see </text><link displaytype="text" defaultstyle="true" type="topiclink" href="" anchor="CAMANALYSIS-SLIDINGVELOCITY" styleclass="Body Text">Note 5</link></li>
+          </list>
+          <para styleclass="Body Text"><text style="font-size:11pt; font-weight:normal; font-style:normal;">Ziehen Sie Drähte von den Ausgangsanschlüssen des </text><text styleclass="Element">Nockendaten-FBs</text><text style="font-size:11pt; font-weight:normal; font-style:normal;"> zu einem </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Command-FB-Graph" styleclass="Element">Grafik-FB</link><text style="font-size:11pt; font-weight:normal; font-style:normal;">, einem </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-FunctionBlock-Math" styleclass="Element">Mathematik-FB</link><text style="font-size:11pt; font-weight:normal; font-style:normal;"> oder einem </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Command-FB-Statistics" styleclass="Element">Statistik-FB</link></para>
+          <para styleclass="Body Text">Stellen Sie<text style="font-size:11pt; font-weight:normal; font-style:normal;">im </text><text styleclass="Element">Graph FB</text><text style="font-size:11pt; font-weight:normal; font-style:normal;"> sicher, daß Sie die richtige Nocke (Inner, Outer, Pitch-Center Path) in der </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Command-FB-Graph" anchor="YAxisDisplay" style="font-size:11pt; font-weight:normal; font-style:normal;">Anzeigeoption der Y-Achse</link><text style="font-size:11pt; font-weight:normal; font-style:normal;"> auswählen .</text></para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="Notes">Top-Tipp: </para>
+          <para styleclass="Body Text HowTo"><text styleclass="Body Text">Verbinden Sie den </text><text styleclass="VariableName-IT">gleichen</text><text styleclass="Body Text"> Ausgangsanschluss - z.B. Druckwinkel - von </text><text styleclass="VariableName-IT">verschiedenen</text><text styleclass="Body Text">&#32;</text><text styleclass="Element">Cam-Data FBs</text><text styleclass="Body Text"> mit dem </text><text styleclass="VariableName-IT">gleichen</text><text styleclass="Body Text">&#32;</text><text styleclass="Interface">Graph FB</text><text styleclass="Body Text">.</text></para>
+          <para styleclass="Body Text HowTo"><text styleclass="Body Text">Dann ist es einfacher, den gleichen Analyseparameter (z.B. Druckwinkel) von bis zu vier </text><text styleclass="Element">2D-Nocken </text><text styleclass="Body Text">gleichzeitig &#160;in einem Diagrammzu vergleichen .</text></para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="Notes"><anchor id="CAMANALYSIS-CONTACTFORCE" styleclass="Body Text"><keywords><keyword>2D-Cam Analysis Notes<keyword>Contact Force - Cam 1 or Cam 2</keyword></keyword></keywords></anchor>Hinweis 1: <text styleclass="Body Table">Stellen Sie sicher, dass Sie </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-ConfigurePowerSource" styleclass="Body Table">die Stromquelle konfigurieren</link><text styleclass="Body Table">.</text></para>
+          <para styleclass="Body Table">Wenn die <text styleclass="Parameter-Header">Kontaktkraft</text> im <text styleclass="Element">Diagramm-FB</text> nicht angezeigt wird, obwohl die Stromquelle korrekt konfiguriert ist, ändern Sie die Nocke<text styleclass="Body Text"> im </text><text styleclass="Parameter-Header">Diagramm-FB &gt; Y-Achsen-Optionen </text><text styleclass="Body Text">von Innen nach Außen oder umgekehrt.</text></para>
+          <para styleclass="Body Text"><anchor id="CAMANALYSIS-MAXSHEARSTRESS"><keywords><keyword>2D-Cam Analysis Notes<keyword>Maximum Shear Stress Assumptions</keyword></keyword></keywords></anchor><text styleclass="Notes">Hinweis 2: &#160;</text><text styleclass="Body Table">Make sure to do </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-ConfigurePowerSource" styleclass="Body Table">Configure the Power Source</link><text styleclass="Body Table">.</text></para>
+          <para styleclass="Body Table">Wenn die <text styleclass="Parameter-Header">Scherspannung</text> im <text styleclass="Element">Diagramm-FB</text> nicht angezeigt wird, obwohl die Stromquelle korrekt konfiguriert ist, ändern Sie die Nocke: Innen nach Außen oder umgekehrt<text styleclass="Body Text"> im </text><text styleclass="Parameter-Header">Diagramm-FB &gt; Y-Achsen-Optionen</text><text styleclass="Body Text">.</text></para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="Body Table">Der <text styleclass="VariableName-IT" style="font-style:normal;">Höchstwert </text><text styleclass="Body Text">der </text><text styleclass="VariableName-IT" style="font-style:normal;">Kontaktschubspannung</text> liegt <text styleclass="VariableName-IT" style="font-style:normal;">unterhalb</text> der <text styleclass="VariableName-IT" style="font-style:normal;">Nockenoberfläche</text>. Um die korrekte Tiefe zu berechnen, müssen Sie im <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-2DCam">Dialogfeld 2D-Nocken</link> die richtigen Materialeigenschaften für die Nocke und die Kurvenrolle eingeben . </para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="Body Text"><anchor id="CAMANALYSIS-ROC"><keywords><keyword>2D-Cam Analysis Notes<keyword>Radius of Curvature</keyword></keyword></keywords></anchor><text styleclass="Notes">Hinweis 3: </text></para>
+          <para styleclass="Body Table">Der <text styleclass="Parameter-Header">Krümmungsradius (RoC</text> ) der Kurvenrolle wird als positiv angenommen. &#160;Nach Konvention:</para>
+          <para styleclass="Body Text HowTo">Wenn die Nocke konvex zur Kurvenrolle ist, ist der <text styleclass="Parameter-Header">RoC</text> der Nocke positiv.</para>
+          <para styleclass="Body Text HowTo">Wenn die Nocke mit der Kurvenrolle konform ist, ist der <text styleclass="Parameter-Header">RoC</text> der Nocke negativ.</para>
+          <para styleclass="Body Table">Der<text styleclass="Parameter-Header">Krümmungsradius</text> der <text styleclass="VariableName">Pitch-Kurve</text> ist nicht verfügbar. Wenn <text styleclass="Normal">Sie den</text><text styleclass="Parameter-Header">Krümmungsradius</text> der Steigungskurve kennen müssen , exportieren Sie die Krümmungsradien der Innen- und Außennocken in Excel und berechnen Sie deren Durchschnitt. </para>
+          <para styleclass="Body Table">Wenn Sie den Krümmungsradius eines Schlitznockens darstellen möchten, können Sie den maximalen und minimalen Krümmungsradius im Graph FB begrenzen. Siehe <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-FunctionBlock-GraphSettings">Dialog Graph FB Einstellungen</link>.</para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="Body Text"><anchor id="CAMANALYSIS-PRESSUREANGLE"><keywords><keyword>2D-Cam Analysis Notes<keyword>Pressure Angle</keyword></keyword><keyword>Pressure Angle of Stationary Cams</keyword></keywords></anchor><text styleclass="Notes">Hinweis 4: </text></para>
+          <para styleclass="Body Table">Der <text styleclass="Parameter-Header">Eingriffswinkel</text> geht durch die Mitte der Kurvenrolle. Es sind auch zwei andere <text styleclass="Parameter">Druckwinkel</text> verfügbar: der <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-Cam-Pressure-Angle">Kontaktdruckwinkel</link> der inneren und äußeren Nocken - diese sind als <text styleclass="Parameter">Inner Cont. PR, Ang</text>. in den <text styleclass="T_Menu">Anzeigeoptionen der Grafik FB &gt; Y-Achse</text> gekennzeichnet.</para>
+          <para styleclass="Body Table">Wir können keinen <text styleclass="Parameter-Header">Druckwinkel</text> für eine stationäre Nocke berechnen.</para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="Notes"><anchor id="CAMANALYSIS-SLIDINGVELOCITY"><keywords><keyword>2D-Cam Analysis Notes<keyword>Sliding Velocity, Ue/2</keyword><keyword>Entrainment-Velocity, Ue</keyword></keyword></keywords></anchor>Hinweis 5: </para>
+          <para styleclass="Body Table">Verwenden Sie die <text styleclass="VariableName">Gleitgeschwindigkeit</text>, um die Filmdicke des Schmieröls zwischen Kurvenrolle und Nocken zu berechnen. Wenn Sie die Oberflächenbeschaffenheit von Nocken und Kurvenrolle kennen, können Sie auch das Filmdickenverhältnis berechnen. Dies ist ein wichtiger Parameter, da er die Lebensdauer von Nocken und Rollen stark beeinflusst.</para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading4 Toggle_atocs_2" style="text-indent:-36px; margin-left:60px;"><image src="tog_plus.gif" scale="100.00%" figurelistinclude="0"></image><tab /><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" src-collapsed="tog_plus.gif" src-expanded="tog_minus.gif"><caption><![CDATA[Kontaktkraft / Kontakt-Scher-Spannung]]></caption></toggle></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="1" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Text"><text styleclass="SeeAlso">See also :</text>&#32;<link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Command-ConjugateCam-FB">Conjugate Cams FB</link></para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="Body Table">There are four ways to show and plot the Contact-Force between the Cam and the Cam-Follower.</para>
+          <para styleclass="Body Table">In all four cases, <text styleclass="VariableName" style="color:#ff0000;">you</text>&#32;<text styleclass="VariableName">must</text> do <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-ConfigurePowerSource">Configure Power Source</link> to calculate correctly the <text styleclass="Parameter">Contact-Force</text> and <text styleclass="Parameter">Contact Shear-Stress</text>.</para>
+          <para styleclass="VariableName">Display in the Graphic-Area:</para>
+          <list id="3" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Body Table" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="Body Table"><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Visibility-Show-Forces">Display Force Vectors</link> button. This shows two equal and opposite vectors<text styleclass="VariableName">: </text></li>
+          </list>
+          <list id="4" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Body Text Howindent4bullets" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="Body Text Howindent4bullets">the force vector that ACTS-ON the Follower-Roller and Follower-Part</li>
+            <li styleclass="HowTo Numbered">the force vector that ACTS-ON the Cam-Part. </li>
+          </list>
+          <para styleclass="Body Text HowTo2"><text styleclass="VariableName-indent">You</text> must analyze whether the force between the cam and the cam-follower is active or not active</para>
+          <list id="5" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="2" styleclass="Body Table" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="Body Table">Use: <text styleclass="T_Menu">2D-Cam dialog-box &#160;&gt; </text><text styleclass="Separator">Cam Display Options</text><text styleclass="T_Menu"> &gt;</text><text styleclass="VariableName"> Contact-Force</text>.<text styleclass="VariableName">&#32;</text></li>
+          </list>
+          <list id="6" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Body Text Howindent4bullets" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="Body Text Howindent4bullets"><text style="font-weight:normal;">The Force is at zero when the active force is less than zero</text><text styleclass="VariableName">.</text></li>
+          </list>
+          <para styleclass="VariableName">Use a Graph-FB:</para>
+          <list id="5" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="2" styleclass="HowTo Bulleted" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo Bulleted">Use a <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Command-FB-Force-Data" styleclass="Element">Force-Data FB</link>, select the <text styleclass="Element">2D-Cam</text> as the <text styleclass="Parameter">Force element</text>, plot with a <text styleclass="Element">Graph FB</text>.</li>
+          </list>
+          <para styleclass="Body Text HowTo2">The Force is always <text styleclass="VariableName-IT">positive</text> - the plot may <text styleclass="VariableName-IT">bounce</text> when in reality the force vector changes from active to not active</para>
+          <para styleclass="Body Text HowTo2"><text styleclass="VariableName">You</text> must analyze whether the force between the cam and the follower is active or not. </para>
+          <list id="5" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="2" styleclass="HowTo Bulleted" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo Bulleted">Use the <text styleclass="Element">Cam-Data FB</text><text style="font-style:italic;">&#32;</text><text styleclass="Body Text">to plot </text><text styleclass="Parameter">Contact Force</text><text styleclass="Body Text"> from the top output-connector </text>with a <text styleclass="Element">Graph FB</text>.</li>
+          </list>
+          <para styleclass="Body Text HowTo2">Contact-Force is <text style="font-weight:bold;">=</text> &apos;0&apos; if Contact-Force <text style="font-weight:bold;">≤</text> &apos;0&apos;. </para>
+          <para styleclass="Body Text HowTo2"><text style="font-weight:normal; text-decoration:underline; color:#ff0000;">This is the preferred option if you need to know whether the Cam-Force becomes less than zero.</text></para>
+        </td>
+      </tr>
+    </table></para>
+  </body>
+</topic>

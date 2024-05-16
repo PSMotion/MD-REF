@@ -1,0 +1,537 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" status="Under Construction" modified="2023-04-15T11:52:57.980+01:00" lasteditedby="Adam" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title translate="true">Blend-Point Editor: Control-Button: States and Patterns</title>
+  <keywords>
+    <keyword translate="true">BLEND-POINT EDITOR:<keyword translate="true">Control Buttons: Options</keyword></keyword>
+  </keywords>
+  <body>
+    <header>
+      <para styleclass="Heading1"><text styleclass="Heading1" translate="true">Control-Button &apos;States and Patterns&apos;</text></para>
+    </header>
+    <para styleclass="Heading2" style="page-break-before:always;"><text styleclass="Heading2" translate="true">Blend-Point Editor Control-buttons</text></para>
+    <para styleclass="Body Text HowTo"><text styleclass="Body Text HowTo" translate="true">Whether you can specify a motion-value of a </text><text styleclass="Element" translate="true">Blend-Point</text><text styleclass="Body Text HowTo" translate="true"> is a function of the:</text></para>
+    <list id="0" type="ol" listtype="upper-alpha" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+      <li styleclass="HowTo Bulleted"><link displaytype="text" defaultstyle="true" type="topiclink" href="MT-Motion-Laws" styleclass="HowTo Bulleted" translate="true">Motion-Law</link><text styleclass="VariableName" translate="true">&#32;</text></li>
+      <li styleclass="HowTo Bulleted"><link displaytype="text" defaultstyle="true" type="topiclink" href="MT-Motion-Derivative" styleclass="HowTo Bulleted" translate="true">Motion-Derivative</link><text styleclass="HowTo Bulleted" style="font-style:italic;" translate="true">&#32;</text></li>
+    </list>
+    <list id="1" type="ol" listtype="upper-alpha" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="3" styleclass="HowTo Bulleted" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+      <li styleclass="HowTo Bulleted"><text styleclass="VariableName-IT" style="font-style:normal;" translate="true">Control-Buttons states</text></li>
+    </list>
+    <para styleclass="Body Text HowTo"><text styleclass="Body Text HowTo" translate="true">You must understand how to use the </text><text styleclass="VariableName" translate="true">Control-Buttons</text><text styleclass="Body Text HowTo" translate="true"> in the </text><text styleclass="Element-Header" translate="true">Blend-Point Editor</text><text styleclass="Body Text HowTo" translate="true"> (and the </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MT-SegmentEditor-Yaxis-Control-Buttons" styleclass="Element-Header" translate="true">Segment Editor</link><text styleclass="Body Text HowTo" translate="true">).</text></para>
+    <para styleclass="Heading3_atocs_"><text styleclass="Heading3_atocs_" translate="true">CONTROL-BUTTONS</text></para>
+    <para styleclass="Body Text HowTo"><text styleclass="Interface2" translate="true">Each</text><text styleclass="Body Text HowTo" translate="true"> motion-derivative (</text><text styleclass="VariableName" translate="true">P V A J</text><text styleclass="Body Text HowTo" translate="true">) has </text><text styleclass="Interface2" translate="true">three</text><text styleclass="Body Text HowTo" translate="true">&#32;</text><text styleclass="VariableName" translate="true">Control-Buttons</text><text styleclass="Body Text HowTo" translate="true">.</text></para>
+    <para styleclass="Body Text HowTo"><text styleclass="Body Text HowTo" translate="true">Each </text><text styleclass="VariableName" translate="true">Control-Button</text><text styleclass="Body Text HowTo" translate="true"> has different states. Please read carefully the definitions in this table.</text></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="9" colcount="2" style="cell-padding:2px; border-width:1px; border-spacing:0px; border-collapse:collapse; cell-border-width:1px; border-color:#000000; border-style:solid; head-row-background-color:#999999; alt-row-background-color:#f2f2f2;">
+      <thead style="vertical-align:top">
+        <td style="width:40px;">
+          <para styleclass="VariableName" style="text-align:center;"></para>
+        </td>
+        <td style="width:605px;">
+          <para styleclass="VariableName"><text styleclass="VariableName" translate="true"> Definition: </text></para>
+        </td>
+      </thead>
+      <tr style="vertical-align:top">
+        <td style="vertical-align:middle; width:40px; background-color:#99ccff;">
+          <para styleclass="Normal" style="text-align:center;"><image src="MT-BPE-EditEnd.png" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td style="vertical-align:middle; width:605px; background-color:#99ccff;">
+          <para styleclass="Body Text HowTo"><text styleclass="Interface2" style="color:#ff0000;" translate="true">Do</text><text styleclass="VariableName" translate="true"> edit End (motion-value) of Previous-Segment</text><text styleclass="Body Text HowTo" translate="true"> : It </text><text styleclass="Interface2" translate="true">is</text><text styleclass="Body Text HowTo" translate="true"> possible </text><text styleclass="VariableName" translate="true">AND</text><text styleclass="Body Text HowTo" style="font-weight:bold;" translate="true">&#32;</text><text styleclass="Body Text HowTo" translate="true">a motion value </text><text styleclass="Interface2" translate="true">is</text><text styleclass="Body Text HowTo" translate="true"> specified</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="vertical-align:middle; width:40px; background-color:#99ccff;">
+          <para styleclass="Normal" style="text-align:center;"><image src="MT-BPE-DoNotEditEnd.png" scale="100.00%" styleclass="Image Caption" style="font-size:7pt; vertical-align:sub;" figurelistinclude="0"></image></para>
+        </td>
+        <td style="vertical-align:middle; width:605px; background-color:#99ccff;">
+          <para styleclass="Body Text HowTo"><text styleclass="Interface2" style="color:#ff0000;" translate="true">Do NOT</text><text styleclass="VariableName" translate="true"> edit End (motion-value) of Previous-Segment</text><text styleclass="Body Text HowTo" translate="true"> : It </text><text styleclass="Interface2" translate="true">is</text><text styleclass="Body Text HowTo" translate="true"> possible, </text><text styleclass="Interface2" translate="true">but</text><text styleclass="Body Text HowTo" translate="true"> a motion-value </text><text styleclass="Interface2" translate="true">is NOT</text><text styleclass="Body Text HowTo" style="font-weight:bold;" translate="true">&#32;</text><text styleclass="Body Text HowTo" translate="true">specified </text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="vertical-align:middle; width:40px; background-color:#99ccff;">
+          <para styleclass="Normal" style="text-align:center;"><image src="MT-BPE-CanNotEditEnd.png" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td style="vertical-align:middle; width:605px; background-color:#99ccff;">
+          <para styleclass="Body Text HowTo"><text styleclass="VariableName" style="color:#ff0000;" translate="true">CAN NOT</text><text styleclass="VariableName" translate="true"> edit End (motion-value) of Previous-Segment</text><text styleclass="Body Text HowTo" translate="true"> : It </text><text styleclass="Interface2" translate="true">is NOT</text><text styleclass="Body Text HowTo" translate="true"> possible to specify a motion-value.</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="vertical-align:middle; width:40px; background-color:#ffff00;">
+          <para styleclass="Normal" style="text-align:center;"><image src="MT-BPE-CB-DoNotFlow.png" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td style="vertical-align:middle; width:605px; background-color:#ffff00;">
+          <para styleclass="Body Text HowTo"><text styleclass="Interface2" style="color:#ff0000;" translate="true">Do NOT</text><text styleclass="VariableName" translate="true"> Match</text><text styleclass="Body Text HowTo" style="font-weight:bold;" translate="true"> : </text><text styleclass="Interface2" translate="true">Do NOT FORCE</text><text styleclass="Body Text" translate="true"> the </text><text styleclass="VariableName" translate="true">Start (motion-value) of the Selected-Segment</text><text styleclass="Body Text HowTo" translate="true">&#32;</text><text styleclass="Interface2" translate="true">to equal</text><text styleclass="Body Text HowTo" translate="true"> the </text><text styleclass="VariableName" translate="true">End (motion-value) of the Previous-Segment</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="vertical-align:middle; width:40px; background-color:#ffff00;">
+          <para styleclass="Normal" style="text-align:center;"><image src="MT-BPE-CB-DoFlow.png" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td style="vertical-align:middle; width:605px; background-color:#ffff00;">
+          <para styleclass="Body Text HowTo"><text styleclass="Interface2" style="color:#ff0000;" translate="true">Do Match</text><text styleclass="Body Text HowTo" translate="true"> : </text><text styleclass="Interface2" translate="true">DO FORCE</text><text styleclass="Body Text HowTo" translate="true">&#32;</text><text styleclass="Body Text" translate="true">the </text><text styleclass="VariableName" translate="true">Start (motion-value) of the Selected-Segment</text><text styleclass="Body Text HowTo" translate="true">&#32;</text><text styleclass="Interface2" translate="true">to equal</text><text styleclass="Body Text HowTo" translate="true"> the </text><text styleclass="VariableName" translate="true">End (motion-value) of the Previous-Segment</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="vertical-align:middle; width:40px; background-color:#99cc00;">
+          <para styleclass="Normal" style="text-align:center;"><image src="MT-BPE-EditStart.png" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td style="vertical-align:middle; width:605px; background-color:#99cc00;">
+          <para styleclass="Body Text HowTo"><text styleclass="Interface2" style="color:#ff0000;" translate="true">Do</text><text styleclass="VariableName" translate="true"> edit Start (motion-value) of Selected-Segment</text><text styleclass="Body Text HowTo" translate="true"> : &#160;It </text><text styleclass="Interface2" translate="true">is</text><text styleclass="Body Text HowTo" translate="true"> possible </text><text styleclass="VariableName" translate="true">AND</text><text styleclass="Body Text HowTo" style="font-weight:bold;" translate="true">&#32;</text><text styleclass="Body Text HowTo" translate="true">a motion-value </text><text styleclass="Interface2" translate="true">is</text><text styleclass="Body Text HowTo" translate="true"> specified</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="vertical-align:middle; width:40px; background-color:#99cc00;">
+          <para styleclass="Normal" style="text-align:center;"><image src="MT-BPE-DoNotEditStart.png" scale="100.00%" styleclass="Image Caption" style="font-size:7pt; vertical-align:sub;" figurelistinclude="0"></image></para>
+        </td>
+        <td style="vertical-align:middle; width:605px; background-color:#99cc00;">
+          <para styleclass="Body Text HowTo"><text styleclass="Interface2" style="color:#ff0000;" translate="true">Do NOT</text><text styleclass="VariableName" translate="true"> edit Start (motion-value) of Selected-Segment</text><text styleclass="Body Text HowTo" translate="true"> : It </text><text styleclass="Interface2" translate="true">is</text><text styleclass="Body Text HowTo" translate="true"> possible, but a motion-value </text><text styleclass="Interface2" translate="true">is NOT</text><text styleclass="Body Text HowTo" style="font-weight:bold;" translate="true">&#32;</text><text styleclass="Body Text HowTo" translate="true">specified </text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="vertical-align:middle; width:40px; background-color:#99cc00;">
+          <para styleclass="Normal" style="text-align:center;"><image src="MT-BPE-CanNotEditStart.png" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td style="vertical-align:middle; width:605px; background-color:#99cc00;">
+          <para styleclass="Body Text HowTo"><text styleclass="VariableName" style="color:#ff0000;" translate="true">CAN NOT </text><text styleclass="VariableName" translate="true">edit Start (motion-value) of Selected-Segment</text><text styleclass="Body Text HowTo" translate="true"> : It </text><text styleclass="Interface2" translate="true">is NOT</text><text styleclass="Body Text HowTo" translate="true"> possible to specify a motion-value.</text></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="9" colcount="2" style="cell-padding:2px; border-width:1px; border-spacing:0px; border-collapse:collapse; cell-border-width:1px; border-color:#000000; border-style:solid; head-row-background-color:#999999; alt-row-background-color:#f2f2f2;">
+      <thead style="vertical-align:top">
+        <td style="width:40px;">
+          <para styleclass="VariableName" style="text-align:center;"></para>
+        </td>
+        <td style="width:605px;">
+          <para styleclass="VariableName"><text styleclass="VariableName" translate="true"> Definition: </text></para>
+        </td>
+      </thead>
+      <tr style="vertical-align:top">
+        <td style="vertical-align:middle; width:40px; border-right:none; border-bottom:none;">
+          <para styleclass="Normal" style="text-align:center;"><image src="MT-BPE-EditEnd.png" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td style="vertical-align:middle; width:605px; border-bottom:none; border-left:none;">
+          <para styleclass="Body Text HowTo"><text styleclass="Interface2" style="color:#ff0000;" translate="true">Do</text><text styleclass="VariableName" translate="true"> edit End (motion-value) of Previous-Segment</text><text styleclass="Body Text HowTo" translate="true"> : It </text><text styleclass="Interface2" translate="true">is</text><text styleclass="Body Text HowTo" translate="true"> possible </text><text styleclass="Body Text" translate="true">and </text><text styleclass="Interface2" translate="true">Do</text><text styleclass="Body Text" translate="true"> control the motion value</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="vertical-align:middle; width:40px; border-top:none; border-right:none; border-bottom:none;">
+          <para styleclass="Normal" style="text-align:center;"><image src="MT-BPE-DoNotEditEnd.png" scale="100.00%" styleclass="Image Caption" style="font-size:7pt; vertical-align:sub;" figurelistinclude="0"></image></para>
+        </td>
+        <td style="vertical-align:middle; width:605px; border-top:none; border-bottom:none; border-left:none;">
+          <para styleclass="Body Text HowTo"><text styleclass="Interface2" style="color:#ff0000;" translate="true">Do NOT</text><text styleclass="VariableName" translate="true"> edit End (motion-value) of Previous-Segment</text><text styleclass="Body Text HowTo" translate="true"> : It </text><text styleclass="Interface2" translate="true">is</text><text styleclass="Body Text HowTo" translate="true"> possible, </text><text styleclass="Body Text" translate="true">but </text><text styleclass="Interface2" translate="true">Do Not</text><text styleclass="Body Text" translate="true"> control the motion value</text><text styleclass="Body Text HowTo" translate="true">&#32;</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="vertical-align:middle; width:40px; border-top:none; border-right:none;">
+          <para styleclass="Normal" style="text-align:center;"><image src="MT-BPE-CanNotEditEnd.png" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td style="vertical-align:middle; width:605px; border-top:none; border-left:none;">
+          <para styleclass="Body Text HowTo"><text styleclass="VariableName" style="color:#ff0000;" translate="true">CAN NOT</text><text styleclass="VariableName" translate="true"> edit End (motion-value) of Previous-Segment</text><text styleclass="Body Text HowTo" translate="true"> : It </text><text styleclass="Interface2" translate="true">is NOT</text><text styleclass="Body Text HowTo" translate="true"> possible to control the motion-value</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="vertical-align:middle; width:40px; background-color:#d9d9d9; border-right:none; border-bottom:none;">
+          <para styleclass="Normal" style="text-align:center;"><image src="MT-BPE-CB-DoNotFlow.png" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td style="vertical-align:middle; width:605px; background-color:#d9d9d9; border-bottom:none; border-left:none;">
+          <para styleclass="Body Text HowTo"><text styleclass="Interface2" style="color:#ff0000;" translate="true">Do NOT</text><text styleclass="VariableName" translate="true"> Match</text><text styleclass="Body Text HowTo" style="font-weight:bold;" translate="true"> : </text><text styleclass="Interface2" translate="true">Do NOT FORCE</text><text styleclass="Body Text" translate="true"> the </text><text styleclass="VariableName" translate="true">Start (motion-value) of the Selected-Segment</text><text styleclass="Body Text HowTo" translate="true">&#32;</text><text styleclass="Interface2" translate="true">to equal</text><text styleclass="Body Text HowTo" translate="true"> the </text><text styleclass="VariableName" translate="true">End (motion-value) of the Previous-Segment</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="vertical-align:middle; width:40px; background-color:#d9d9d9; border-top:none; border-right:none;">
+          <para styleclass="Normal" style="text-align:center;"><image src="MT-BPE-CB-DoFlow.png" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td style="vertical-align:middle; width:605px; background-color:#d9d9d9; border-top:none; border-left:none;">
+          <para styleclass="Body Text HowTo"><text styleclass="Interface2" style="color:#ff0000;" translate="true">Do Match</text><text styleclass="Body Text HowTo" translate="true"> : </text><text styleclass="Interface2" translate="true">DO FORCE</text><text styleclass="Body Text HowTo" translate="true">&#32;</text><text styleclass="Body Text" translate="true">the </text><text styleclass="VariableName" translate="true">Start (motion-value) of the Selected-Segment</text><text styleclass="Body Text HowTo" translate="true">&#32;</text><text styleclass="Interface2" translate="true">to equal</text><text styleclass="Body Text HowTo" translate="true"> the </text><text styleclass="VariableName" translate="true">End (motion-value) of the Previous-Segment</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="vertical-align:middle; width:40px; border-right:none; border-bottom:none;">
+          <para styleclass="Normal" style="text-align:center;"><image src="MT-BPE-EditStart.png" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td style="vertical-align:middle; width:605px; border-bottom:none; border-left:none;">
+          <para styleclass="Body Text HowTo"><text styleclass="Interface2" style="color:#ff0000;" translate="true">Do</text><text styleclass="VariableName" translate="true"> edit Start (motion-value) of Selected-Segment</text><text styleclass="Body Text HowTo" translate="true"> : &#160;It </text><text styleclass="Interface2" translate="true">is</text><text styleclass="Body Text HowTo" translate="true"> possible </text><text styleclass="Body Text" translate="true">and </text><text styleclass="Interface2" translate="true">Do</text><text styleclass="Body Text" translate="true"> control the motion value</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="vertical-align:middle; width:40px; border-top:none; border-right:none; border-bottom:none;">
+          <para styleclass="Normal" style="text-align:center;"><image src="MT-BPE-DoNotEditStart.png" scale="100.00%" styleclass="Image Caption" style="font-size:7pt; vertical-align:sub;" figurelistinclude="0"></image></para>
+        </td>
+        <td style="vertical-align:middle; width:605px; border-top:none; border-bottom:none; border-left:none;">
+          <para styleclass="Body Text HowTo"><text styleclass="Interface2" style="color:#ff0000;" translate="true">Do NOT</text><text styleclass="VariableName" translate="true"> edit Start (motion-value) of Selected-Segment</text><text styleclass="Body Text HowTo" translate="true"> : It </text><text styleclass="Interface2" translate="true">is</text><text styleclass="Body Text HowTo" translate="true"> possible, </text><text styleclass="Body Text" translate="true">but </text><text styleclass="Interface2" translate="true">Do Not</text><text styleclass="Body Text" translate="true"> control the motion value</text><text styleclass="Body Text HowTo" translate="true">&#32;</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="vertical-align:middle; width:40px; border-top:none; border-right:none;">
+          <para styleclass="Normal" style="text-align:center;"><image src="MT-BPE-CanNotEditStart.png" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td style="vertical-align:middle; width:605px; border-top:none; border-left:none;">
+          <para styleclass="Body Text HowTo"><text styleclass="VariableName" style="color:#ff0000;" translate="true">CAN NOT </text><text styleclass="VariableName" translate="true">edit Start (motion-value) of Selected-Segment</text><text styleclass="Body Text HowTo" translate="true"> : It </text><text styleclass="Interface2" translate="true">is NOT</text><text styleclass="Body Text HowTo" translate="true"> possible to control the motion-value</text></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading3_atocs_" style="page-break-before:always;"><text styleclass="Heading3_atocs_" translate="true">Control-Button: Patterns: 1- 9</text></para>
+    <para styleclass="Body Text HowTo"><text styleclass="Body Text HowTo" translate="true">The state of each </text><text styleclass="VariableName" translate="true">Control-Button</text><text styleclass="Body Text HowTo" translate="true"> can combine to give nine possible patterns. </text></para>
+    <para styleclass="Body Text HowTo"><text styleclass="Body Text HowTo" translate="true">These patterns are:</text></para>
+    <para styleclass="Heading4 Toggle_atocs_"><text styleclass="Heading4 Toggle_atocs_" translate="true">Pattern 1</text></para>
+    <para styleclass="Body Text HowTo" style="margin-bottom:0px;"><image src="MT-BPE-CBPatterns-1.png" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+    <para styleclass="Body Text Howindent4bullets"><table styleclass="Default" rowcount="4" colcount="3" style="cell-padding:0px;">
+      <tr style="vertical-align:bottom">
+        <td colspan="3" style="width:650px; border-top:none; border-right:none; border-left:none;">
+          <para styleclass="Normal"><image src="MT-BPE-3CB-1.ipp" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td rowspan="2" style="vertical-align:middle; width:45px; background-color:#99ccff; border-bottom:none;">
+          <para styleclass="Normal" style="text-align:center;"><text styleclass="Normal" translate="true">▼</text></para>
+          <para styleclass="Normal" style="text-align:center;"><text styleclass="Normal" translate="true">▼</text></para>
+          <para styleclass="Normal" style="text-align:center;"><text styleclass="Normal" translate="true">▼</text></para>
+        </td>
+        <td style="width:46px; background-color:#ffcc00; border-bottom:none;">
+          <para styleclass="Normal" style="text-align:center;"><text styleclass="Normal" translate="true">▼</text></para>
+          <para styleclass="Normal" style="text-align:center;"><text styleclass="Normal" translate="true">▼</text></para>
+        </td>
+        <td style="vertical-align:middle; background-color:#99cc00;">
+          <para styleclass="Normal" style="text-align:left;"><text styleclass="Normal" translate="true">&#32;</text><text styleclass="VariableName" translate="true">▶ Start of Selected-Segment : Possible but DO NOT control the value</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:middle">
+        <td style="background-color:#ffcc00; border-top:none; border-right:none;">
+          <para styleclass="VariableName" style="text-align:right;"><text styleclass="VariableName" translate="true">▶</text></para>
+        </td>
+        <td style="background-color:#ffcc00; border-top:none; border-left:none;">
+          <para styleclass="VariableName"><text styleclass="VariableName" translate="true"> End of the Previous-Segment </text><text styleclass="VariableName" style="font-size:14pt;" translate="true">≠</text><text styleclass="VariableName" translate="true"> Start of the Selected-Segment</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:middle">
+        <td style="background-color:#99ccff; border-top:none; border-right:none;">
+          <para styleclass="VariableName" style="text-align:right;"><text styleclass="VariableName" translate="true"> ▶ </text></para>
+        </td>
+        <td colspan="2" style="background-color:#99ccff; border-top:none; border-left:none;">
+          <para styleclass="VariableName"><text styleclass="VariableName" translate="true"> End of Previous-Segment : Possible but DO NOT control a value</text><text styleclass="VariableName" style="font-size:14pt;" translate="true">&#32;</text></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="Heading4 Toggle_atocs_"><text styleclass="Heading4 Toggle_atocs_" translate="true">Pattern 2</text></para>
+    <para styleclass="Body Text HowTo" style="margin-bottom:0px;"><image src="MT-BPE-CBPatterns-2.png" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+    <para styleclass="Body Text Howindent4bullets"><table styleclass="Default" rowcount="4" colcount="3" style="cell-padding:0px;">
+      <tr style="vertical-align:bottom">
+        <td colspan="3" style="width:650px; border-top:none; border-right:none; border-left:none;">
+          <para styleclass="Normal"><image src="MT-BPE-3CB-2.ipp" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td rowspan="2" style="vertical-align:middle; width:45px; background-color:#99ccff; border-bottom:none;">
+          <para styleclass="Normal" style="text-align:center;"><text styleclass="Normal" translate="true">▼</text></para>
+          <para styleclass="Normal" style="text-align:center;"><text styleclass="Normal" translate="true">▼</text></para>
+          <para styleclass="Normal" style="text-align:center;"><text styleclass="Normal" translate="true">▼</text></para>
+        </td>
+        <td style="width:46px; background-color:#ffcc00; border-bottom:none;">
+          <para styleclass="Normal" style="text-align:center;"><text styleclass="Normal" translate="true">▼</text></para>
+          <para styleclass="Normal" style="text-align:center;"><text styleclass="Normal" translate="true">▼</text></para>
+        </td>
+        <td style="vertical-align:middle; background-color:#99cc00;">
+          <para styleclass="Normal" style="text-align:left;"><text styleclass="Normal" translate="true">&#32;</text><text styleclass="VariableName" translate="true">▶ Start of Selected-Segment : Possible but DO NOT control the value</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:middle">
+        <td style="background-color:#ffcc00; border-top:none; border-right:none;">
+          <para styleclass="VariableName" style="text-align:right;"><text styleclass="VariableName" translate="true">▶</text></para>
+        </td>
+        <td style="background-color:#ffcc00; border-top:none; border-left:none;">
+          <para styleclass="VariableName"><text styleclass="VariableName" translate="true"> End of the Previous-Segment </text><text styleclass="VariableName" style="font-size:14pt;" translate="true">≠</text><text styleclass="VariableName" translate="true"> Start of the Selected-Segment</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:middle">
+        <td style="background-color:#99ccff; border-top:none; border-right:none;">
+          <para styleclass="VariableName" style="text-align:right;"><text styleclass="VariableName" translate="true"> ▶ </text></para>
+        </td>
+        <td colspan="2" style="background-color:#99ccff; border-top:none; border-left:none;">
+          <para styleclass="VariableName"><text styleclass="VariableName" translate="true"> End of Previous-Segment : Possible and DO control the value</text><text styleclass="VariableName" style="font-size:14pt;" translate="true">&#32;</text></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="Heading4 Toggle_atocs_"><text styleclass="Heading4 Toggle_atocs_" translate="true">Pattern 3</text></para>
+    <para styleclass="Body Text HowTo" style="margin-bottom:0px;"><image src="MT-BPE-CBPatterns-3.png" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+    <para styleclass="Body Text Howindent4bullets"><table styleclass="Default" rowcount="4" colcount="3" style="cell-padding:0px;">
+      <tr style="vertical-align:bottom">
+        <td colspan="3" style="width:650px; border-top:none; border-right:none; border-left:none;">
+          <para styleclass="Normal"><image src="MT-BPE-3CB-3.ipp" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td rowspan="2" style="vertical-align:middle; width:45px; background-color:#99ccff; border-bottom:none;">
+          <para styleclass="Normal" style="text-align:center;"><text styleclass="Normal" translate="true">▼</text></para>
+          <para styleclass="Normal" style="text-align:center;"><text styleclass="Normal" translate="true">▼</text></para>
+          <para styleclass="Normal" style="text-align:center;"><text styleclass="Normal" translate="true">▼</text></para>
+        </td>
+        <td style="width:46px; background-color:#ffcc00; border-bottom:none;">
+          <para styleclass="Normal" style="text-align:center;"><text styleclass="Normal" translate="true">▼</text></para>
+          <para styleclass="Normal" style="text-align:center;"><text styleclass="Normal" translate="true">▼</text></para>
+        </td>
+        <td style="vertical-align:middle; background-color:#99cc00;">
+          <para styleclass="Normal" style="text-align:left;"><text styleclass="VariableName" translate="true">▶ Start of Selected-Segment : Possible and DO control the value</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:middle">
+        <td style="background-color:#ffcc00; border-top:none; border-right:none;">
+          <para styleclass="VariableName" style="text-align:right;"><text styleclass="VariableName" translate="true"> ▶</text></para>
+        </td>
+        <td style="background-color:#ffcc00; border-top:none; border-left:none;">
+          <para styleclass="VariableName"><text styleclass="VariableName" translate="true"> End of the Previous-Segment </text><text styleclass="VariableName" style="font-size:14pt;" translate="true">≠</text><text styleclass="VariableName" translate="true"> Start of the Selected-Segment</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:middle">
+        <td style="background-color:#99ccff; border-top:none; border-right:none;">
+          <para styleclass="VariableName" style="text-align:right;"><text styleclass="VariableName" translate="true"> ▶ </text></para>
+        </td>
+        <td colspan="2" style="background-color:#99ccff; border-top:none; border-left:none;">
+          <para styleclass="VariableName"><text styleclass="VariableName" translate="true"> End of Previous-Segment : Possible but DO NOT control the value</text><text styleclass="VariableName" style="font-size:14pt;" translate="true">&#32;</text></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="Heading4 Toggle_atocs_"><text styleclass="Heading4 Toggle_atocs_" translate="true">Pattern 4</text></para>
+    <para styleclass="Body Text HowTo" style="margin-bottom:0px;"><image src="MT-BPE-CBPatterns-4.png" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+    <para styleclass="Body Text Howindent4bullets"><table styleclass="Default" rowcount="4" colcount="3" style="cell-padding:0px;">
+      <tr style="vertical-align:bottom">
+        <td colspan="3" style="width:650px; border-top:none; border-right:none; border-left:none;">
+          <para styleclass="Normal"><image src="MT-BPE-3CB-4.ipp" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:middle">
+        <td rowspan="2" style="width:45px; background-color:#99ccff; border-bottom:none;">
+          <para styleclass="Normal" style="text-align:center;"><text styleclass="Normal" translate="true">▼</text></para>
+          <para styleclass="Normal" style="text-align:center;"><text styleclass="Normal" translate="true">▼</text></para>
+          <para styleclass="Normal" style="text-align:center;"><text styleclass="Body Text" translate="true">&#32;</text><text styleclass="Normal" translate="true">▼</text><text styleclass="Body Text" translate="true">&#32;</text></para>
+        </td>
+        <td style="width:46px; background-color:#ffcc00; border-bottom:none;">
+          <para styleclass="Normal" style="text-align:center;"><text styleclass="Normal" translate="true">▼</text></para>
+          <para styleclass="Normal" style="text-align:center;"><text styleclass="Normal" translate="true">▼</text></para>
+        </td>
+        <td style="background-color:#99cc00;">
+          <para styleclass="VariableName"><text styleclass="VariableName" translate="true"> ▶ &#160;Start of Selected-Segment : Possible and DO control the value</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:middle">
+        <td style="background-color:#ffcc00; border-top:none; border-right:none;">
+          <para styleclass="VariableName" style="text-align:right;"><text styleclass="VariableName" translate="true">▶ </text></para>
+        </td>
+        <td style="background-color:#ffcc00; border-top:none; border-left:none;">
+          <para styleclass="VariableName"><text styleclass="VariableName" translate="true"> End of the Previous-Segment </text><text styleclass="VariableName" style="font-size:14pt;" translate="true">≠</text><text styleclass="VariableName" translate="true"> Start of the Selected-Segment</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:middle">
+        <td style="background-color:#99ccff; border-top:none; border-right:none;">
+          <para styleclass="VariableName" style="text-align:right;"><text styleclass="VariableName" translate="true">▶ </text></para>
+        </td>
+        <td colspan="2" style="background-color:#99ccff; border-top:none; border-left:none;">
+          <para styleclass="VariableName"><text styleclass="VariableName" translate="true"> End of Previous-Segment : Possible and DO control the value</text><text styleclass="VariableName" style="font-size:14pt;" translate="true">&#32;</text></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="Heading4 Toggle_atocs_"><text styleclass="Heading4 Toggle_atocs_" translate="true">Pattern 5</text></para>
+    <para styleclass="Body Text HowTo" style="margin-bottom:0px;"><image src="MT-BPE-CBPatterns-5.png" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+    <para styleclass="Body Text Howindent4bullets"><table styleclass="Default" rowcount="4" colcount="3" style="cell-padding:0px;">
+      <tr style="vertical-align:bottom">
+        <td colspan="3" style="width:650px; border-top:none; border-right:none; border-left:none;">
+          <para styleclass="Normal"><image src="MT-BPE-3CB-5.ipp" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td rowspan="2" style="vertical-align:middle; width:45px; background-color:#99ccff; border-bottom:none;">
+          <para styleclass="Normal" style="text-align:center;"><text styleclass="Normal" translate="true">▼</text></para>
+          <para styleclass="Normal" style="text-align:center;"><text styleclass="Normal" translate="true">▼</text></para>
+          <para styleclass="Normal" style="text-align:center;"><text styleclass="Normal" translate="true">▼</text></para>
+        </td>
+        <td style="width:46px; background-color:#ffcc00; border-bottom:none;">
+          <para styleclass="Normal" style="text-align:center;"><text styleclass="Normal" translate="true">▼</text></para>
+          <para styleclass="Normal" style="text-align:center;"><text styleclass="Normal" translate="true">▼</text></para>
+        </td>
+        <td style="vertical-align:middle; background-color:#99cc00;">
+          <para styleclass="VariableName"><text styleclass="VariableName" translate="true"> &#160;▶ &#160;Start of Selected-Segment : NOT possible to control the value</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:middle">
+        <td style="background-color:#ffcc00; border-top:none; border-right:none;">
+          <para styleclass="VariableName" style="text-align:right;"><text styleclass="VariableName" translate="true">▶</text></para>
+        </td>
+        <td style="background-color:#ffcc00; border-top:none; border-left:none;">
+          <para styleclass="VariableName"><text styleclass="VariableName" translate="true"> End of the Previous-Segment </text><text styleclass="VariableName" style="font-size:14pt;" translate="true">=</text><text styleclass="VariableName" translate="true"> Start of the Selected-Segment</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="background-color:#99ccff; border-top:none; border-right:none;">
+          <para styleclass="VariableName" style="text-align:right;"><text styleclass="VariableName" translate="true">▶ </text></para>
+        </td>
+        <td colspan="2" style="background-color:#99ccff; border-top:none; border-left:none;">
+          <para styleclass="VariableName"><text styleclass="VariableName" translate="true"> End of Previous-Segment : Possible but DO NOT control the value</text><text styleclass="VariableName" style="font-size:14pt;" translate="true">&#32;</text></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="Heading4 Toggle_atocs_"><text styleclass="Heading4 Toggle_atocs_" translate="true">Pattern 6</text></para>
+    <para styleclass="Body Text HowTo" style="margin-bottom:0px;"><image src="MT-BPE-CBPatterns-6.png" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+    <para styleclass="Body Text Howindent4bullets"><table styleclass="Default" rowcount="4" colcount="3" style="cell-padding:0px;">
+      <tr style="vertical-align:top">
+        <td colspan="3" style="width:650px; border-top:none; border-right:none;">
+          <para styleclass="Normal"><image src="MT-BPE-3CB-6.ipp" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td rowspan="2" style="vertical-align:middle; width:47px; height:20px; background-color:#99ccff; border-bottom:none;">
+          <para styleclass="Normal" style="text-align:center;"><text styleclass="Normal" translate="true">▼</text></para>
+          <para styleclass="Normal" style="text-align:center;"><text styleclass="Normal" translate="true">▼</text></para>
+          <para styleclass="Normal" style="text-align:center;"><text styleclass="Normal" translate="true">▼</text></para>
+        </td>
+        <td style="width:48px; background-color:#ffcc00; border-bottom:none;">
+          <para styleclass="Normal" style="text-align:center;"><text styleclass="Normal" translate="true">▼</text></para>
+          <para styleclass="Normal" style="text-align:center;"><text styleclass="Normal" translate="true">▼</text></para>
+        </td>
+        <td style="vertical-align:middle; background-color:#99cc00;">
+          <para styleclass="VariableName"><text styleclass="VariableName" translate="true"> ▶ &#160;Start of Selected-Segment : NOT possible to control the value</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="height:20px; background-color:#ffcc00; border-top:none; border-right:none;">
+          <para styleclass="VariableName" style="text-align:right;"><text styleclass="VariableName" translate="true"> ▶</text></para>
+        </td>
+        <td style="background-color:#ffcc00; border-top:none; border-left:none;">
+          <para styleclass="VariableName"><text styleclass="VariableName" translate="true">End of the Previous-Segment </text><text styleclass="VariableName" style="font-size:14pt;" translate="true">= </text><text styleclass="VariableName" translate="true">Start of the Selected-Segment</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="background-color:#99ccff; border-top:none; border-right:none;">
+          <para styleclass="VariableName" style="text-align:right;"><text styleclass="VariableName" translate="true">▶ </text></para>
+        </td>
+        <td colspan="2" style="background-color:#99ccff; border-top:none; border-left:none;">
+          <para styleclass="VariableName"><text styleclass="VariableName" translate="true"> End of Previous-Segment : Possible and DO control the value</text><text styleclass="VariableName" style="font-size:14pt;" translate="true">&#32;</text></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="Heading4 Toggle_atocs_"><text styleclass="Heading4 Toggle_atocs_" translate="true">Pattern 7</text></para>
+    <para styleclass="Body Text HowTo" style="margin-bottom:0px;"><image src="MT-BPE-CBPatterns-7.png" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+    <para styleclass="Body Text Howindent4bullets"><table styleclass="Default" rowcount="4" colcount="3" style="cell-padding:0px;">
+      <tr style="vertical-align:top">
+        <td colspan="3" style="width:650px; border-top:none; border-right:none;">
+          <para styleclass="Normal"><image src="MT-BPE-3CB-7.ipp" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td rowspan="2" style="width:47px; height:20px; background-color:#99ccff; border-top:none; border-bottom:none;">
+          <para styleclass="VariableName" style="text-align:center;"><text styleclass="VariableName" translate="true">▼</text></para>
+          <para styleclass="VariableName" style="text-align:center;"><text styleclass="VariableName" translate="true">▼</text></para>
+          <para styleclass="VariableName" style="text-align:center;"><text styleclass="VariableName" translate="true">▼</text></para>
+        </td>
+        <td style="width:48px; background-color:#ffcc00; border-bottom:none;">
+          <para styleclass="VariableName" style="text-align:center;"><text styleclass="VariableName" translate="true">▼</text></para>
+          <para styleclass="VariableName" style="text-align:center;"><text styleclass="VariableName" translate="true">▼</text></para>
+        </td>
+        <td style="vertical-align:middle; background-color:#99cc00;">
+          <para styleclass="VariableName" style="text-align:left;"><text styleclass="VariableName" translate="true"> ▶ &#160;Start of Selected-Segment : NOT possible to control the value</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="height:20px; background-color:#ffcc00; border-top:none; border-right:none;">
+          <para styleclass="VariableName" style="text-align:right;"><text styleclass="VariableName" translate="true">▶ </text></para>
+        </td>
+        <td style="vertical-align:middle; background-color:#ffcc00; border-top:none; border-left:none;">
+          <para styleclass="VariableName"><text styleclass="VariableName" translate="true">End of the Previous-Segment </text><text styleclass="VariableName" style="font-size:14pt;" translate="true">=</text><text styleclass="VariableName" translate="true"> Start of the Selected-Segment &#160;</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:middle">
+        <td style="background-color:#99ccff; border-top:none; border-right:none;">
+          <para styleclass="VariableName" style="text-align:right;"><text styleclass="VariableName" translate="true">▶ </text></para>
+        </td>
+        <td colspan="2" style="background-color:#99ccff; border-left:none;">
+          <para styleclass="VariableName"><text styleclass="VariableName" translate="true">End of Previous-Segment : NOT possible to control the value</text><text styleclass="VariableName" style="font-size:14pt;" translate="true">&#32;</text></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="Heading4 Toggle_atocs_"><text styleclass="Heading4 Toggle_atocs_" translate="true">Pattern 8</text></para>
+    <para styleclass="Body Text HowTo" style="margin-bottom:0px;"><image src="MT-BPE-CBPatterns-8.png" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+    <para styleclass="Body Text Howindent4bullets"><table styleclass="Default" rowcount="4" colcount="3" style="cell-padding:0px;">
+      <tr style="vertical-align:top">
+        <td colspan="3" style="width:650px; border-top:none; border-right:none;">
+          <para styleclass="Normal"><image src="MT-BPE-3CB-8.ipp" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td rowspan="2" style="width:47px; height:20px; background-color:#99ccff; border-bottom:none;">
+          <para styleclass="VariableName" style="text-align:center;"><text styleclass="VariableName" translate="true">▼</text></para>
+          <para styleclass="VariableName" style="text-align:center;"><text styleclass="VariableName" translate="true">▼</text></para>
+          <para styleclass="VariableName" style="text-align:center;"><text styleclass="VariableName" translate="true">▼</text></para>
+        </td>
+        <td style="width:48px; background-color:#ffcc00; border-bottom:none;">
+          <para styleclass="Normal" style="text-align:center;"><text styleclass="Normal" translate="true">▼</text></para>
+          <para styleclass="Normal" style="text-align:center;"><text styleclass="Normal" translate="true">▼</text></para>
+        </td>
+        <td style="vertical-align:middle; background-color:#99cc00;">
+          <para styleclass="VariableName"><text styleclass="VariableName" translate="true"> ▶ Start of Selected-Segment : Possible but DO NOT control the value</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="height:20px; background-color:#ffcc00; border-top:none; border-right:none;">
+          <para styleclass="VariableName" style="text-align:right;"><text styleclass="VariableName" translate="true"> ▶ </text></para>
+        </td>
+        <td style="background-color:#ffcc00; border-top:none; border-left:none;">
+          <para styleclass="VariableName"><text styleclass="VariableName" translate="true">End of the Previous-Segment </text><text styleclass="VariableName" style="font-size:14pt;" translate="true">≠</text><text styleclass="VariableName" translate="true"> Start of the Selected-Segment </text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="background-color:#99ccff; border-top:none; border-right:none;">
+          <para styleclass="VariableName" style="text-align:right;"><text styleclass="VariableName" translate="true">▶ </text></para>
+        </td>
+        <td colspan="2" style="background-color:#99ccff; border-top:none; border-left:none;">
+          <para styleclass="VariableName"><text styleclass="VariableName" translate="true">End of Previous-Segment : NOT possible to control the value</text><text styleclass="VariableName" style="font-size:14pt;" translate="true">&#32;</text></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="Heading4 Toggle_atocs_"><text styleclass="Heading4 Toggle_atocs_" translate="true">Pattern 9</text></para>
+    <para styleclass="Body Text HowTo" style="margin-bottom:0px;"><image src="MT-BPE-CBPatterns-9.png" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+    <para styleclass="Body Text Howindent4bullets"><table styleclass="Default" rowcount="4" colcount="3" style="cell-padding:0px;">
+      <tr style="vertical-align:top">
+        <td colspan="3" style="width:650px; border-top:none; border-right:none;">
+          <para styleclass="Normal"><image src="MT-BPE-3CB-9.ipp" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td rowspan="2" style="width:47px; height:20px; background-color:#99ccff; border-bottom:none;">
+          <para styleclass="VariableName" style="text-align:center;"><text styleclass="VariableName" translate="true">▼</text></para>
+          <para styleclass="VariableName" style="text-align:center;"><text styleclass="VariableName" translate="true">▼</text></para>
+          <para styleclass="VariableName" style="text-align:center;"><text styleclass="VariableName" translate="true">▼</text></para>
+        </td>
+        <td style="width:48px; background-color:#ffcc00; border-bottom:none;">
+          <para styleclass="Normal" style="text-align:center;"><text styleclass="Normal" translate="true">▼</text></para>
+          <para styleclass="Normal" style="text-align:center;"><text styleclass="Normal" translate="true">▼</text></para>
+        </td>
+        <td style="vertical-align:middle; background-color:#99cc00;">
+          <para styleclass="VariableName"><text styleclass="VariableName" translate="true"> ▶ Start of Selected-Segment : Possible and DO control the value</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="height:20px; background-color:#ffcc00; border-top:none; border-right:none;">
+          <para styleclass="VariableName" style="text-align:right;"><text styleclass="VariableName" translate="true"> ▶ </text></para>
+        </td>
+        <td style="background-color:#ffcc00; border-top:none; border-left:none;">
+          <para styleclass="VariableName"><text styleclass="VariableName" translate="true">End of the Previous-Segment </text><text styleclass="VariableName" style="font-size:14pt;" translate="true">≠</text><text styleclass="VariableName" translate="true"> Start of the Selected-Segment </text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="background-color:#99ccff; border-top:none; border-right:none;">
+          <para styleclass="VariableName" style="text-align:right;"><text styleclass="VariableName" translate="true">▶ </text></para>
+        </td>
+        <td colspan="2" style="background-color:#99ccff; border-top:none; border-left:none;">
+          <para styleclass="VariableName"><text styleclass="VariableName" translate="true">End of Previous-Segment : NOT possible to control the value</text><text styleclass="VariableName" style="font-size:14pt;" translate="true">&#32;</text></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+  </body>
+</topic>

@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../helpproject.xsl" ?>
+<topic template="Default" status="Under Construction" lasteditedby="Adam" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../helpproject.xsd">
+  <title translate="true">Maximum Shear Stress</title>
+  <keywords>
+    <keyword translate="true">Maximum Contact Shear Stress<keyword translate="true">Equations</keyword></keyword>
+  </keywords>
+  <body>
+    <para styleclass="Normal"><table styleclass="Default" rowcount="9" colcount="3">
+      <tr style="vertical-align:top">
+        <td colspan="3">
+          <para styleclass="Heading HowTo_atoc_"><text styleclass="Heading4 HowTo_atoc_" translate="true">Maximum Constant Pressure and Shear Stress Calculations.</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td colspan="3">
+          <para styleclass="Normal"><table styleclass="Default" rowcount="9" colcount="2">
+            <tr style="vertical-align:top">
+              <td style="width:65px;">
+                <para styleclass="Normal"><text styleclass="Normal" style="font-family:'Lucida Console'; font-size:11pt; text-decoration:underline;" translate="true">Symbol</text></para>
+              </td>
+              <td>
+                <para styleclass="Normal"><text styleclass="Normal" style="font-family:'Lucida Console'; font-size:11pt; text-decoration:underline;" translate="true">Parameter</text></para>
+              </td>
+            </tr>
+            <tr style="vertical-align:top">
+              <td style="width:65px;">
+                <para styleclass="Normal"><text styleclass="T_Code" translate="true">F</text></para>
+              </td>
+              <td>
+                <para styleclass="Normal"><text styleclass="T_Code" translate="true">Applied force</text></para>
+              </td>
+            </tr>
+            <tr style="vertical-align:top">
+              <td style="width:65px;">
+                <para styleclass="Normal"><text styleclass="T_Code" translate="true">ν</text><text styleclass="T_Code" style="font-size:7pt; vertical-align:sub;" translate="true">1</text></para>
+              </td>
+              <td>
+                <para styleclass="Normal"><text styleclass="T_Code" translate="true">Cam Poisson’s ratio</text></para>
+              </td>
+            </tr>
+            <tr style="vertical-align:top">
+              <td style="width:65px;">
+                <para styleclass="Normal"><text styleclass="T_Code" translate="true">E</text><text styleclass="T_Code" style="font-size:7pt; vertical-align:sub;" translate="true">1</text></para>
+              </td>
+              <td>
+                <para styleclass="Normal"><text styleclass="T_Code" translate="true">Cam Elastic modulus</text></para>
+              </td>
+            </tr>
+            <tr style="vertical-align:top">
+              <td style="width:65px;">
+                <para styleclass="Normal"><text styleclass="T_Code" translate="true">v</text><text styleclass="T_Code" style="font-size:7pt; vertical-align:sub;" translate="true">2</text></para>
+              </td>
+              <td>
+                <para styleclass="Normal"><text styleclass="T_Code" translate="true">Cam-Follower Poisson’s ratio</text></para>
+              </td>
+            </tr>
+            <tr style="vertical-align:top">
+              <td style="width:65px;">
+                <para styleclass="Normal"><text styleclass="T_Code" translate="true">E</text><text styleclass="T_Code" style="font-size:7pt; vertical-align:sub;" translate="true">2</text></para>
+              </td>
+              <td>
+                <para styleclass="Normal"><text styleclass="T_Code" translate="true">Cam-Follower Elastic modulus</text></para>
+              </td>
+            </tr>
+            <tr style="vertical-align:top">
+              <td style="width:65px;">
+                <para styleclass="Normal"><text styleclass="T_Code" translate="true">d</text><text styleclass="T_Code" style="font-size:7pt; vertical-align:sub;" translate="true">1</text></para>
+              </td>
+              <td>
+                <para styleclass="Normal"><text styleclass="T_Code" translate="true">Cam </text><text styleclass="T_Code" style="text-decoration:underline;" translate="true">Diameter</text><text styleclass="T_Code" translate="true">-of-Curvature - Note Diameter.</text></para>
+              </td>
+            </tr>
+            <tr style="vertical-align:top">
+              <td style="width:65px;">
+                <para styleclass="Normal"><text styleclass="T_Code" translate="true">d</text><text styleclass="T_Code" style="font-size:7pt; vertical-align:sub;" translate="true">2</text></para>
+              </td>
+              <td>
+                <para styleclass="Normal"><text styleclass="T_Code" translate="true">Cam-Follower </text><text styleclass="T_Code" style="text-decoration:underline;" translate="true">Diameter</text></para>
+              </td>
+            </tr>
+            <tr style="vertical-align:top">
+              <td style="width:65px;">
+                <para styleclass="Normal"><text styleclass="T_Code" translate="true">l</text></para>
+              </td>
+              <td>
+                <para styleclass="Normal"><text styleclass="T_Code" translate="true">Width of Cam and Cam Follower - </text></para>
+                <para styleclass="Normal"><text styleclass="T_Code" translate="true">Extrusion Depth of Cam Profile.</text></para>
+              </td>
+            </tr>
+          </table></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:129px;">
+          <para styleclass="Normal" style="text-align:left;"><text styleclass="T_Code" style="font-weight:bold;" translate="true">Parameter</text></para>
+        </td>
+        <td style="width:81px;">
+          <para styleclass="Normal" style="text-align:left;"><text styleclass="T_Code" style="font-weight:bold;" translate="true">Symbol</text></para>
+        </td>
+        <td style="width:233px;">
+          <para styleclass="Normal" style="text-align:left;"><text styleclass="T_Code" style="font-weight:bold;" translate="true">Equation</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:129px;">
+          <para styleclass="Normal"><text styleclass="T_Code" translate="true">Contact half-width</text></para>
+        </td>
+        <td style="width:81px;">
+          <para styleclass="Normal"><text styleclass="T_Code" translate="true">b</text></para>
+        </td>
+        <td style="width:233px;">
+          <para styleclass="Normal"><image src="equation7.bmp" scale="100.00%" styleclass="T_Code"></image></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:129px;">
+          <para styleclass="Normal"><text styleclass="T_Code" translate="true">Maximum Hertzian Contact Pressure</text></para>
+        </td>
+        <td style="width:81px;">
+          <para styleclass="Normal"><text styleclass="T_Code" translate="true">Pmax</text></para>
+        </td>
+        <td style="width:233px;">
+          <para styleclass="Normal"><text styleclass="T_Code" translate="true">Pmax = 2 * F  ∕  π.l.b</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:129px;">
+          <para styleclass="Normal"><text styleclass="T_Code" translate="true">Maximum Contact Shear Stress</text></para>
+        </td>
+        <td style="width:81px;">
+          <para styleclass="Normal"><text styleclass="T_Code" translate="true">Ʈ</text><text styleclass="T_Code" style="font-size:12pt; vertical-align:sub;" translate="true">max</text></para>
+        </td>
+        <td style="width:233px;">
+          <para styleclass="Normal"><text styleclass="T_Code" translate="true">Ʈ</text><text styleclass="T_Code" style="font-size:12pt; vertical-align:sub;" translate="true">max = </text><text styleclass="T_Code" translate="true">0.3 * Pmax</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td colspan="3" style="width:133px;">
+          <para styleclass="Normal"><text styleclass="Normal" style="font-family:'Lucida Console'; font-size:11pt; font-style:italic;" translate="true">The Maximum Contact Shear Stress,</text><text styleclass="T_Code" style="font-style:italic;" translate="true">Ʈ</text><text styleclass="T_Code" style="font-size:12pt; font-style:italic; vertical-align:sub;" translate="true">max</text><text styleclass="Body Text" style="font-style:italic;" translate="true">, </text><text styleclass="Normal" style="font-family:'Lucida Console'; font-size:11pt; font-style:italic;" translate="true">is at a depth below the Cam and Roller Surfaces at about Z = 0.786*b. </text></para>
+          <para styleclass="Normal"><text styleclass="Normal" style="font-family:'Lucida Console'; font-size:11pt; font-style:italic;" translate="true">You should make sure that the of case hardness depth is a minimum of 1.41*b.</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td colspan="3" style="width:133px;">
+          <para styleclass="Body Text"><image src="Contact Stress.bmp" align="left" scale="100.00%" padding="0 5 0 0" styleclass="Image Caption"></image><text styleclass="Body Text" translate="true">Typical Stress against Depth from Contact Surface.</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td colspan="3" style="width:133px;">
+          <para styleclass="Body Text - bit bit bigger2" style="margin-left:0px;"><text styleclass="Body Text - bit bit bigger2" style="text-decoration:underline;" translate="true">Notes</text></para>
+          <para styleclass="Body Text2-Note"><text styleclass="Body Text2-Note" style="text-decoration:underline;" translate="true">Modulus of elasticity</text><text styleclass="Body Text2-Note" translate="true"> (Young’s modulus): The rate-of-change of unit tensile or compressive stress with respect to unit tensile or compressive strain for the condition of uni-axial stress within the proportional limit. Typical values: Aluminum: 69 GPa, Steel: 200GPa.</text></para>
+          <para styleclass="Body Text2-Note"><text styleclass="Body Text2-Note" style="text-decoration:underline;" translate="true">Poisson’s ratio</text><text styleclass="Body Text2-Note" translate="true">: The ratio of lateral unit strain to longitudinal unit strain under the condition of uniform and uni-axial longitudinal stress within the proportional limit.</text></para>
+          <para styleclass="Body Text2-Note"><text styleclass="Body Text2-Note" style="text-decoration:underline;" translate="true">Proportional Limit</text><text styleclass="Body Text2-Note" translate="true">: The largest value of stress up to which a linear relation still exist between stress and strain (Hooke’s Law).</text></para>
+          <para styleclass="Body Text2-Note"><text styleclass="Body Text2-Note" style="text-decoration:underline;" translate="true">Cylindrical contact</text><text styleclass="Body Text2-Note" translate="true">: The contact of two Cylinders parts where contact point turns to a rectangular area equal to a width 2b.</text></para>
+          <para styleclass="Body Text2-Note"><text styleclass="Body Text2-Note" style="text-decoration:underline;" translate="true">Shear stress</text><text styleclass="Body Text2-Note" translate="true">: A form of a stress acts parallel to the surface (cross section) which has a cutting nature.</text></para>
+          <para styleclass="Body Text2-Note"><text styleclass="Body Text2-Note" style="text-decoration:underline;" translate="true">Stress</text><text styleclass="Body Text2-Note" translate="true">: Average force per unit area which results strain of material.</text></para>
+        </td>
+      </tr>
+    </table></para>
+  </body>
+</topic>

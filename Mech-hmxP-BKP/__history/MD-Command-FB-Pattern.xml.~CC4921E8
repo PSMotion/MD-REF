@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" status="Under Construction" modified="2022-03-21T12:11:02.114Z" lasteditedby="Adam" version="2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title>Modeling FB | Add Pattern FB</title>
+  <keywords>
+    <keyword>Add<keyword>Function-Block: Pattern</keyword></keyword>
+    <keyword>Camlinks: Show / Hide</keyword>
+    <keyword>Modeling FB menu:<keyword>Pattern FB</keyword></keyword>
+    <keyword>Pattern FB<keyword>Add</keyword></keyword>
+    <keyword>Show or Hide a Solid/Extrusion</keyword>
+  </keywords>
+  <body>
+    <header>
+      <para styleclass="Heading1">Modeling FB | Add Pattern FB</para>
+    </header>
+    <para styleclass="Heading3_atocs_">What is the Pattern tool?</para>
+    <para styleclass="Body Text HowTo"><table styleclass="PopupTable2" rowcount="1" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Text">A <text styleclass="Element">Pattern FB</text> makes an array of one or more <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Solids" styleclass="Element">Solids</link>.</para>
+          <para styleclass="Body Text">A <text styleclass="Element">Pattern</text> is similar to a circular or linear array as found in your CAD. </para>
+          <para styleclass="Body Text">However, the <text styleclass="Element">Pattern FB</text> must anticipate the motion of each <text styleclass="Interface">Solid</text> in the array at each instant in a machine-cycle relative to the other Parts in the model</para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="Body Text">When you use <text styleclass="Element">Pattern FB</text> to hide a<text styleclass="Element">&#32;</text><text styleclass="VariableName-IT">copy</text><text styleclass="Element">&#32;</text>of a <text styleclass="Interface">Solid</text> at phases in the machine cycle, you also remove its <text styleclass="Parameter-Header">Mass-Properties.</text></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="SeeAlso">See also: <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-FunctionBlock-Pattern">Pattern dialog-box</link></para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="Heading3_atocs_">Add Pattern FB</para>
+    <para styleclass="Normal"><table styleclass="Standard" rowcount="6" colcount="2" style="head-row-background-color:#ffffff; alt-row-background-color:none;">
+      <thead style="vertical-align:top">
+        <td style="width:120px;">
+          <para styleclass="VariableName-IT" style="text-align:right;"><image src="MD-Icon-FB-Pattern.png" scale="100.00%" padding="0 2 0 0" style="font-style:normal;" figurelistinclude="0"><title>Add Pattern FB</title></image></para>
+        </td>
+        <td style="vertical-align:middle; height:26px;">
+          <para styleclass="T_Menu"><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Menu-FB-Modelling">Modeling FB toolbar</link> &gt; Pattern FB</para>
+        </td>
+      </thead>
+      <tr style="vertical-align:top">
+        <td style="width:120px;">
+          <para styleclass="VariableName-IT" style="text-align:right;"><text style="font-style:normal;"> Menu : </text></para>
+        </td>
+        <td>
+          <para styleclass="T_Menu">Add menu &gt; Add Pattern FB</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:120px;">
+          <para styleclass="VariableName-IT" style="text-align:right;"><text style="font-style:normal;"> What to do : </text></para>
+        </td>
+        <td>
+          <list id="0" type="ol" listtype="decimal" formatstring="&#83;&#84;&#69;&#80;&#32;&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo STEP" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo STEP"><text styleclass="HowTo STEPNotPink">Add the </text><text styleclass="Element">Pattern FB</text><text styleclass="HowTo STEPNotPink"> to the </text><text styleclass="Interface">graphic-area</text><text styleclass="VariableName">&#32;</text></li>
+          </list>
+          <para styleclass="Body Text HowTo"><table styleclass="PopupTable2" rowcount="1" colcount="1" style="width:100%;">
+            <tr style="vertical-align:top">
+              <td style="border-top:none; border-right:none; border-bottom:none;">
+                <list id="1" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="B Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="B Bullets"><text style="font-style:normal;">Click</text><text style="font-family:Arial; font-size:11pt; color:#000000;">&#32;</text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Command-FB-Kinematics" styleclass="T_Menu">Modeling FB toolbar</link><text styleclass="T_Menu"> &gt; Add Pattern FB</text><text styleclass="VariableName">&#32;</text></li>
+                  <li styleclass="HowTo Numbered"><text style="font-style:normal;">Click</text><text styleclass="Body Text"> again in the </text><text styleclass="Interface">graphic-area</text></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Body Text">The <text styleclass="Element">Pattern FB</text> is now in the <text styleclass="Interface">graphic-area</text> and the <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-ElementExplorer-AssemblyTree" styleclass="Interface">Assembly-Tree</link><text styleclass="HowTo Numbered">.</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:120px;">
+          <para styleclass="VariableName-IT" style="text-align:right;"><text style="font-style:normal;">How to Edit : </text></para>
+        </td>
+        <td>
+          <list id="2" type="ol" listtype="decimal" formatstring="&#83;&#84;&#69;&#80;&#32;&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="2" styleclass="HowTo STEP" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo STEP"><text styleclass="HowTo STEPNotPink">Open the </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-FunctionBlock-Pattern" styleclass="Element">Pattern dialog-box</link><text styleclass="VariableName">&#32;</text></li>
+          </list>
+          <para styleclass="Body Text HowTo"><table styleclass="PopupTable2" rowcount="1" colcount="1" style="width:100%;">
+            <tr style="vertical-align:top">
+              <td style="border-top:none; border-right:none; border-bottom:none;">
+                <list id="3" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="B Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="B Bullets"><text styleclass="Body Text">Double-click a </text><text styleclass="Element">Pattern FB</text><text styleclass="Body Text"> in the </text><text styleclass="Interface">graphic-area</text><text styleclass="VariableName">&#32;</text></li>
+                </list>
+                <para styleclass="Body Text">or </para>
+                <para styleclass="Body Text"><text styleclass="SeeAlso">See </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-How-to-Open-a-Dialog-Box" styleclass="SeeAlso">How to Open a Dialog-Box</link><text styleclass="SeeAlso">. </text></para>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Body Text">The <text styleclass="Element">Pattern dialog-box</text> is now open.</para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <list id="2" type="ol" listtype="decimal" formatstring="&#83;&#84;&#69;&#80;&#32;&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="2" styleclass="HowTo STEP" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo STEP"><text styleclass="SeeAlso">See </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-FunctionBlock-Pattern" styleclass="SeeAlso">Pattern dialog-box</link><text styleclass="VariableName">&#32;</text></li>
+          </list>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:120px;">
+          <para styleclass="VariableName-IT" style="text-align:right;"><text style="font-style:normal;"> Preparation : </text></para>
+        </td>
+        <td>
+          <para styleclass="Body Text">Add <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Solids" styleclass="Element">Solid</link> elements to the model. The <text styleclass="Element">Pattern FB</text> can make a pattern of <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Solids" styleclass="Element">Solid</link><text styleclass="HowTo Bulleted">&#32;</text>elements </para>
+          <para styleclass="SeeAlso"><text styleclass="Body Text HowTo">Use </text><text styleclass="T_Menu">Visibility toolbar &gt; </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Visibility-SolidsInMechanisms" styleclass="T_Menu">Show Solids in Mechanisms</link><text styleclass="T_Menu">&#32;</text><text styleclass="Body Text HowTo">to see the </text><text styleclass="Element">Pattern</text><text styleclass="Body Text HowTo"> of the </text><text styleclass="Interface">Solids</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:120px;">
+          <para styleclass="VariableName-IT" style="text-align:right;"><text style="font-style:normal;"> Notes : </text></para>
+        </td>
+        <td>
+          <para styleclass="Body Text"><text styleclass="HowTo Bulleted">A simple application of the </text><text styleclass="Element">Pattern element</text><text styleclass="HowTo Bulleted"> is to show or hide a single </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Solids" styleclass="Element">Solid</link><text styleclass="HowTo Bulleted"> at different machine angles in the machine-cycle.</text></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Normal" style="page-break-before:always;"></para>
+  </body>
+</topic>

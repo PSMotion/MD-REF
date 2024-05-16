@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" status="Under Construction" modified="2022-06-14T09:42:48.648+01:00" lasteditedby="Adam" version="2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title>Mechanism | Add Part</title>
+  <keywords>
+    <keyword>Add Part</keyword>
+    <keyword>Keyboard Short Cut<keyword>INS : Add Part</keyword></keyword>
+    <keyword>Kinematic elements toolbar<keyword>Add Part</keyword></keyword>
+    <keyword>Menu &gt; Add &gt; Mechanism Menu<keyword>Add Part</keyword></keyword>
+  </keywords>
+  <body>
+    <header>
+      <para styleclass="Heading1">Mechanism | Add Part</para>
+    </header>
+    <para styleclass="Heading2">Add Part</para>
+    <para styleclass="SeeAlso">See also: <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-How-to-start-the-Part-Editor">Edit-Part</link></para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="Heading4 Toggle_atocs_">What is a Part?</para>
+    <para styleclass="Body Text HowTo">A <text styleclass="Element">Part</text> element is a rigid-body. It is on the Mechanism-Plane. </para>
+    <para styleclass="Heading4 Toggle_atocs_">Terminology</para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="6" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:205px;">
+          <para styleclass="Popup Box2" style="text-align:right;"><text styleclass="Popup Box-Elements">Part</text> : </para>
+        </td>
+        <td>
+          <para styleclass="Popup Box">The <text styleclass="Popup Box-Elements">Part</text> element is a rigid-body. Its length is defined by the distance between two points - its <text styleclass="Popup Box2">start-point</text> and <text styleclass="Popup Box2">end-point</text>. There is a <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-CAD-Line" styleclass="Element">CAD-Line</link> between the two <text styleclass="Popup Box-Elements">Points</text>.</para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="Popup Box"><text styleclass="Popup Box-Elements">Parts</text> are on one <text styleclass="Popup Box2">Mechanism-Plane</text>. A <text styleclass="Popup Box-Elements">Part</text>, free from joints, has three degrees-of-freedom. - two translational and one rotational degree-of-freedom.</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:205px;">
+          <para styleclass="Popup Box2" style="text-align:right;"><text styleclass="Popup Box-Elements">Base-Part</text> : </para>
+        </td>
+        <td>
+          <para styleclass="Popup Box">The <text styleclass="Popup Box-Elements">Part</text> that is the fixed frame of reference for the <text styleclass="Popup Box2">Mechanism-Plane.</text></para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="Popup Box">The <text styleclass="Popup Box-Elements">Base-Part</text> has zero degrees-of-freedom.</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td colspan="2">
+          <para styleclass="VariableName-small">Kinematic States of <text styleclass="Element">Parts</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:205px;">
+          <para styleclass="Popup Box2" style="text-align:right;"><text style="font-weight:bold; color:#ff0000;">Not</text> kinematically-defined : </para>
+        </td>
+        <td>
+          <para styleclass="Popup Box">The state of a <text styleclass="Element">Part</text> when it is not solved. It is has one or more degrees-of-freedom.</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:205px;">
+          <para styleclass="Popup Box2" style="text-align:right;">kinematically-defined : </para>
+        </td>
+        <td>
+          <para styleclass="Popup Box">The state of a <text styleclass="Popup Box-Elements">Part</text> when it is solved. It has zero degrees-of-freedom. Its position, velocity and acceleration are fully specified. It has a Mobility of Zero.</para>
+          <para styleclass="VariableName-small"><text style="color:#ff0000;">This must be the status of the model before you calculate any kinematic and kinetostatic (Force data).</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td colspan="2">
+          <para styleclass="Popup Box">Note: The Part-Outlines in the two kinematic states have two different colors. This is to help you identify the two kinematic-states.</para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="Heading3_atocs_"><anchor id="HowtoAddPart"><keywords><keyword>How to add a:<keyword>Part</keyword></keyword></keywords></anchor>Add Part</para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="3" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:240px; height:13px;">
+          <para styleclass="Normal"><image src="MD-GA-AddingPart.png" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <list id="0" type="ol" listtype="decimal" formatstring="&#83;&#84;&#69;&#80;&#32;&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo STEP" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo STEP"><text styleclass="VariableName">Add Part</text></li>
+          </list>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="3" colcount="2">
+            <tr style="vertical-align:top">
+              <td style="width:42px;">
+                <para styleclass="VariableName-IT" style="text-align:right;"></para>
+              </td>
+              <td>
+                <para styleclass="Body Text"><text styleclass="Interface">Mechanism-Editor: </text><text styleclass="T_Menu">Add menu &gt; Mechanism sub-menu &gt; Add Part</text></para>
+                <para styleclass="Body Text">or</para>
+              </td>
+            </tr>
+            <tr style="vertical-align:top">
+              <td style="width:42px;">
+                <para styleclass="VariableName-IT" style="text-align:center;"><image src="MD-Icon-AddPart.png" scale="100.00%" figurelistinclude="0"><title>Add Part icon</title></image></para>
+              </td>
+              <td>
+                <para styleclass="Body Text"><text styleclass="Interface">Mechanism-Editor: </text><text styleclass="T_Menu">Kinematic Elements Toolbar &gt; Add Part</text></para>
+              </td>
+            </tr>
+            <tr style="vertical-align:top">
+              <td colspan="2">
+                <para styleclass="Body Text">or </para>
+                <para styleclass="Body Table"><text styleclass="T_Menu">INSERT</text> key on your keyboard</para>
+              </td>
+            </tr>
+          </table></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td colspan="2" style="height:13px;">
+          <list id="1" type="ol" listtype="decimal" formatstring="&#83;&#84;&#69;&#80;&#32;&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo STEP" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo STEP"><text styleclass="VariableName">Drag in the Graphic-Area</text></li>
+          </list>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="VariableName-IT"><anchor id="Dragis" styleclass="Body Text" style="font-weight:bold; font-style:italic;"><keywords><keyword>Drag<keyword>Add Part</keyword></keyword></keywords></anchor>DRAG: in the graphic-area (see image above)</para>
+                <para styleclass="Body Table">Mouse-button down, ... move your mouse, ... mouse-button up.</para>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td colspan="2" style="height:13px;">
+          <para styleclass="Body Table"><text styleclass="T_Menu">Add Part</text><text styleclass="Body Text">&#32;</text><text styleclass="Body Text" style="font-style:normal;">is </text><text styleclass="VariableName" style="color:#ff0000;">not</text><text styleclass="Body Text"> a </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-Commands" styleclass="Body Text" style="font-style:normal;">persistent</link><text styleclass="Body Text" style="font-style:normal;"> command.</text></para>
+          <para styleclass="Body Table"><text styleclass="Body Text HowTo" style="font-style:normal;">Do Step </text><text styleclass="Body Text HowTo">1 and 2 </text><text styleclass="Body Text HowTo" style="font-style:normal;">again to add a new </text><text styleclass="Element">Part</text><text styleclass="Body Text HowTo" style="font-style:normal;">. </text></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading3_atocs_">A Part in the Graphic-Area.</para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="2" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:240px; height:13px;">
+          <para styleclass="Interface" style="text-align:right;"><image src="MD-Free-Part.ipp" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Body Table"><image src="Red-14-1b.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Image Caption">&#32;</text><text styleclass="Interface">Part-Outline</text><text styleclass="HowTo Bulleted" style="font-style:italic;">: </text><text styleclass="Body Text">the symbol of the </text><text styleclass="Element">Part</text><text styleclass="Body Text"> you select. You</text><text styleclass="HowTo Bulleted" style="font-style:italic;">&#32;</text><text styleclass="VariableName-IT" style="color:#ff0000;">cannot</text><text styleclass="Body Text"> edit the shape of the </text><text styleclass="Interface">Part-Outline.</text><text styleclass="Body Text"> &#160;</text></para>
+                <para styleclass="Body Table"><image src="Red-14-2.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Image Caption">&#32;</text><text styleclass="Element">CAD-Line </text><text styleclass="Body Text">- from the </text><text styleclass="Interface">start-Point</text><text styleclass="Body Text"> to the </text><text styleclass="Interface">end-Point </text><text styleclass="Body Text">of the </text><text styleclass="Element">Part</text><text styleclass="Body Text">. </text></para>
+                <para styleclass="Body Table"><image src="Red-14-3.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Image Caption">&#32;</text><text styleclass="Interface">XY-axes</text><text styleclass="Body Text">: at the origin and </text><text styleclass="Interface">start-Point</text><text styleclass="Body Text"> of the </text><text styleclass="Element">CAD-Line.</text></para>
+              </td>
+            </tr>
+          </table></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td colspan="2" style="height:13px;">
+          <para styleclass="Body Table"><text styleclass="VariableName">Did you know</text>: <text styleclass="Body Text">You can hide </text><text styleclass="Interface">Part-Outlines</text><text styleclass="Body Text"> (</text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Display-Filters" styleclass="Body Text">Display Filters - Part-Outlines</link><text styleclass="Body Text">) to see only the </text><text styleclass="Element">CAD-Line</text><text styleclass="Body Text"> and the </text><text styleclass="Element">Part&apos;s</text><text styleclass="Body Text"> axes. You can edit the </text><text styleclass="Element">Part</text><text styleclass="Body Text"> if you double-click the </text><text styleclass="Interface">Y-axis</text><text styleclass="Body Text">.</text></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading3_atocs_">Video:<conditional-text type="IF" value="PDF"/><link displaytype="text" defaultstyle="true" type="filelink" href="KE-AddPart-1280x720.gif" styleclass="Body Text">Double-click to watch Video Clip</link><conditional-text type="END"/><conditional-text type="IF" value="CHM"/></para>
+    <para styleclass="Normal"><toggle type="picture" print-expanded="true" help-expanded="false" src-collapsed="KE-AddPart-1280x720.gif" src-expanded="KE-AddPart-1280x720.gif" scale="20.00%" width="256" height="144" styleclass="Image Caption" figurelistinclude="0"><caption><![CDATA[Add a Part]]></caption><title>Add a Part</title></toggle><conditional-text type="END"/><conditional-text type="IF" value="HTML,EBOOK"/></para>
+    <para styleclass="Normal"><video src="KE-AddPart1280x720.mp4" width="1280px" height="720px" autostart="false" loop="false" showcontrols="false" playbutton="true" previewimage="KE-AddPart1280x720_preview.jpg" scale="20.00%" styleclass="Image Caption"><title>Add Part</title><caption><![CDATA[Add Part]]></caption></video><conditional-text type="END"/></para>
+    <para styleclass="Normal" style="page-break-before:always;"></para>
+  </body>
+</topic>

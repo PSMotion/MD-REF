@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" status="Under Construction" modified="2022-04-28T10:20:08.910+01:00" lasteditedby="Adam" version="2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title>Dialog: Edit Machine Settings</title>
+  <keywords>
+    <keyword>Dialog<keyword>Machine Settings</keyword></keyword>
+    <keyword>Edit Menu<keyword>Machine Settings</keyword></keyword>
+    <keyword>Engineering Units</keyword>
+    <keyword>Machine Settings<keyword>Cycle Speed</keyword><keyword>Cycles / minute</keyword><keyword>Engineering Units</keyword><keyword>Kinematic Speed</keyword><keyword>Machine Speed</keyword><keyword>Number-of-Steps</keyword><keyword>Parts per Minute</keyword><keyword>RPM</keyword><keyword>Simulation Speed</keyword><keyword>Units</keyword></keyword>
+    <keyword>Machine Speed</keyword>
+    <keyword>Number of Graph Steps or Points</keyword>
+    <keyword>Number-of-Steps in a Machine Cycle</keyword>
+    <keyword>Units</keyword>
+  </keywords>
+  <body>
+    <header>
+      <para styleclass="Heading1">Dialog: Maschinen-Einstellungen</para>
+    </header>
+    <para styleclass="Heading2">Maschinen-Einstellungen</para>
+    <para styleclass="Body Text HowTo">Verwenden Sie das <text styleclass="Interface">Dialogfeld &quot;Maschineneinstellungen</text> &quot;, um die <text styleclass="VariableName">Maschinengeschwindigkeit und die Anzahl der Schritte</text> in einem Maschinenzyklus zu ändern und um die <text styleclass="VariableName">technischen Einheiten</text> zu bearbeiten.</para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="Heading4 Toggle_atocs_"><text styleclass="Heading3_atocs_">Dialogfeld Maschineneinstellungen öffnen</text></para>
+    <para styleclass="Body Text"><table styleclass="Default" rowcount="2" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:43px;">
+          <para styleclass="Interface" style="text-align:right;"><image src="MD-Icon-MachineSettings.png" scale="100.00%" padding="0 2 0 0" figurelistinclude="0"></image></para>
+        </td>
+        <td style="vertical-align:middle;">
+          <para styleclass="Body Text">Klicken Sie auf<text styleclass="SeeAlso">&#32;</text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Edit-ApplicationSettings" styleclass="T_Menu">Symbolleiste Bearbeiten</link><text styleclass="T_Menu"> &gt; Maschinen-Einstellungen</text><text styleclass="VariableName">&#32;</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:43px;">
+          <para styleclass="VariableName-IT" style="text-align:center;">oder</para>
+        </td>
+        <td style="vertical-align:middle;">
+          <para styleclass="Body Text">Klicken Sie auf <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Edit-MachineSettings" styleclass="T_Menu">Menü Bearbeiten &gt; Maschinen-Einstellungen</link></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Body Table">Das <text styleclass="Interface">Dialogfeld &quot;Maschineneinstellungen&quot;</text> ist nun geöffnet.</para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="Heading3_atocs_">Dialogfeld Maschineneinstellungen</para>
+    <para styleclass="Body Text"><image src="MD-Dialog-MachineSettings.png" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+    <para styleclass="Body Text"><anchor id="Dialog_McSettings-CyclingParameters" styleclass="Heading4 Toggle_atocs_2"><keywords><keyword>Machine Settings dialog<keyword>Cycling Parameters</keyword></keyword><keyword>Dialog<keyword>Machine Settings</keyword></keyword></keywords></anchor><image src="btn_addkeyword.bmp" scale="100.00%" styleclass="Separator-Header" figurelistinclude="0"></image><tab /><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" src-collapsed="btn_addkeyword.bmp" src-expanded="btn_delkeyword.bmp" styleclass="Separator-Header"><caption><![CDATA[  ]]></caption></toggle></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="2" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Normal"><image src="MD-Dialog-MachineSttings-CyclingParameters.png" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"><caption><![CDATA[Parameter für das Radfahren]]></caption></image></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Text"><text styleclass="Parameter-Header">Zyklen ∕ Min: ( </text><text styleclass="SeeAlso-small">See also </text><link displaytype="text" defaultstyle="true" type="topiclink" href="" anchor="MCSet-N1" styleclass="SeeAlso-small">Note 1</link><text styleclass="SeeAlso-small"> ) </text><text styleclass="Body Text HowTo" style="font-weight:normal; font-style:normal;">UPM: Umdrehungen pro Minute.</text></para>
+          <para styleclass="Body Text HowTo"><text style="font-weight:normal; font-style:normal;">Die </text><text styleclass="VariableName">Master-Simulationsgeschwindigkeit</text><text style="font-weight:normal; font-style:normal;">. &#160;Sie bestimmt die Änderungsrate des </text><text styleclass="Interface">Master-Maschinenwinkels</text><text style="font-weight:normal; font-style:normal;">. </text></para>
+          <para styleclass="Body Text HowTo"><text styleclass="VariableName-IT" style="color:#ff0000;">MotionDesigner</text><text style="font-weight:normal; font-style:italic;">&#32;</text><text style="font-weight:normal; font-style:normal;">liest diesen Parameter.</text></para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="Normal"><text styleclass="Parameter-Header">Anzahl der Schritte: </text><text styleclass="Parameter">( </text><text styleclass="SeeAlso-small">See also </text><link displaytype="text" defaultstyle="true" type="topiclink" href="" anchor="MCSet-N4" styleclass="SeeAlso-small">Note 2</link><text styleclass="SeeAlso-small"> ) </text></para>
+          <para styleclass="Body Text HowTo">Anzahl der Berechnungspunkte in einem Maschinenzyklus.</para>
+          <list id="0" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullets" style="font-family:Symbol; font-size:11pt; color:#000080;">
+            <li styleclass="Bullets"><text styleclass="Parameter">Anzahl der Schritte</text><text styleclass="Body Text"> ändert </text><text styleclass="VariableName" style="color:#ff0000;">nicht</text><text styleclass="Body Text"> die Nockengenauigkeit </text><text styleclass="SeeAlso">- siehe </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-FunctionBlock-CamCoordinates" styleclass="SeeAlso">Dialogfeld Nockenkoordinaten</link></li>
+            <li styleclass="Bullets"><text styleclass="Parameter">Anzahl der Schritte</text><text styleclass="HowTo Bulleted - compressed2">&#32;</text><text styleclass="Body Text">= die Anzahl der Datenpunkte entlang jedes Graphen - </text>siehe <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-FunctionBlock-Graph">Graph FB</link></li>
+            <li styleclass="Bullets"><text styleclass="Parameter">Anzahl der Schritte</text><text styleclass="HowTo Bulleted - compressed2">&#32;</text><text styleclass="Body Text">= Facetten entlang der Kurve eines Leiterbahnpunktes - </text><text styleclass="T_Menu">siehe </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-TracePoint" styleclass="T_Menu">Leiterbahnpunkt</link></li>
+            <li styleclass="Bullets"><text styleclass="Parameter">Anzahl der Schritte</text><text styleclass="HowTo Bulleted - compressed2">&#32;</text><text styleclass="Body Text">= Punkte auf der </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-Torque-Speed-Curves" styleclass="Body Text">Drehmoment- und Geschwindigkeitskurve des Motors</link></li>
+            <li styleclass="Bullets"><text styleclass="Body Text HowTo">Normalerweise ist 120 gut. &gt; 360 ist normalerweise nicht erforderlich.</text></li>
+          </list>
+          <para styleclass="Body Text"><text styleclass="SeeAlso">Siehe auch: </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Menu-Run" styleclass="T_Menu">Menü Ausführen &gt; Schritt vorwärts / Schritt rückwärts</link>&#32;</para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Body Text"><anchor id="Dialog_McSettings-SpecifyUnits" styleclass="Heading4 Toggle_atocs_2"><keywords><keyword>Dialog<keyword>Machine Settings: Specify Units</keyword></keyword><keyword>Machine Settings Dialog<keyword>Specify Units</keyword></keyword></keywords></anchor><image src="btn_addkeyword.bmp" scale="100.00%" styleclass="Separator-Header" figurelistinclude="0"></image><tab /><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" src-collapsed="btn_addkeyword.bmp" src-expanded="btn_delkeyword.bmp" src-print="none" styleclass="Separator-Header"><caption><![CDATA[ Technische Einheiten ]]></caption></toggle></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="2" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Normal"><image src="MD-Dialog-MachineSttings-EngUnits.png" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"><caption><![CDATA[Engineering Units]]></caption></image></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="SeeAlso-small"><text styleclass="Parameter-Header">Technische Einheiten : ( </text>Siehe auch <link displaytype="text" defaultstyle="true" type="topiclink" href="" anchor="MCSet-N3">Anmerkung 3</link> )</para>
+          <para styleclass="Normal"><table styleclass="Default" rowcount="6" colcount="2">
+            <tr style="vertical-align:middle">
+              <td style="width:122px;">
+                <para styleclass="Parameter" style="text-align:right;">Linear: </para>
+              </td>
+              <td>
+                <para styleclass="VariableName-small">mm, cm, Meter, Zoll.</para>
+              </td>
+            </tr>
+            <tr style="vertical-align:middle">
+              <td style="width:122px;">
+                <para styleclass="Parameter" style="text-align:right;">Rotierend: </para>
+              </td>
+              <td>
+                <para styleclass="VariableName-small">Grad, Bogenmaß, Zyklen</para>
+              </td>
+            </tr>
+            <tr style="vertical-align:middle">
+              <td style="width:122px;">
+                <para styleclass="Parameter" style="text-align:right;">Kraft: </para>
+              </td>
+              <td>
+                <para styleclass="VariableName-small">N, lbf (pound-force)</para>
+              </td>
+            </tr>
+            <tr style="vertical-align:middle">
+              <td style="width:122px;">
+                <para styleclass="Parameter" style="text-align:right;">Drehmoment: </para>
+              </td>
+              <td>
+                <para styleclass="VariableName-small">N.m, N.mm, ft.lbf</para>
+              </td>
+            </tr>
+            <tr style="vertical-align:middle">
+              <td style="width:122px;">
+                <para styleclass="Parameter" style="text-align:right;">Spannung: </para>
+              </td>
+              <td>
+                <para styleclass="VariableName-small">Pa(<equation font-size="22"><![CDATA[Nm^{-2}]]></equation>), MPa(<equation><![CDATA[Nmm^{-2}]]></equation>), PS (<equation><![CDATA[lbfin^{-2}]]></equation>).</para>
+              </td>
+            </tr>
+            <tr style="vertical-align:middle">
+              <td style="width:122px;">
+                <para styleclass="Parameter" style="text-align:right;">Masse: </para>
+              </td>
+              <td>
+                <para styleclass="VariableName-small">kg, g, lb, oz</para>
+              </td>
+            </tr>
+          </table></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading4 Toggle_atocs_">More on Machine Settings Parameters.</para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="1" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Notes"><anchor id="MCSet-N1"><keywords><keyword>Machine Speed vs Animation Speed</keyword></keywords></anchor>Anmerkung 1<text styleclass="Body Text">: </text><text styleclass="Parameter-Header">Zyklen ∕ Min</text><text styleclass="Body Text"> ändert </text><text styleclass="Normal">die</text><text styleclass="VariableName-IT">Animationsgeschwindigkeit</text><text styleclass="VariableName" style="color:#ff0000;">nicht</text><text styleclass="Body Text">. </text></para>
+          <para styleclass="Body Text HowTo">Ändern Sie die <text styleclass="VariableName-IT">Animationsgeschwindigkeit</text> mit dem <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-FeedBackArea" anchor="AnimationSpSlider-FA">Schieberegler Animationsgeschwindigkeit</link>. </para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="Body Text"><anchor id="MCSet-N4" styleclass="Notes"><keywords><keyword>Number-of-Steps<keyword>Warning / Reminder</keyword></keyword></keywords></anchor><text styleclass="Notes">Note 2:</text> A high <text styleclass="Parameter-Header">number-of-points</text> does <text styleclass="VariableName" style="color:#ff0000;">not</text> make the model (or Cams) more accurate. </para>
+          <para styleclass="Body Text HowTo">Wenn Sie die <text styleclass="Parameter">Anzahl der Schritte</text> erhöhen, wird das Modell langsamer.</para>
+          <para styleclass="Body Text HowTo">Um das Modell mit kleinen Schritten (Inkrementen) zu bewegen, empfehlen wir Ihnen, die <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-How-to-Edit-Parameters" anchor="Spin-Box">Spin-Box</link> im <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-Master-Machine-Angle" styleclass="Interface">Master Machine Angle</link>zu verwenden<text styleclass="Interface">.</text></para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="Body Text"><anchor id="MCSet-N3" styleclass="Notes"><keywords><keyword>Dimensions<keyword>Units</keyword></keyword></keywords></anchor><text styleclass="Notes">Hinweis 3:</text> Wenn Sie die Maßeinheiten ändern, &#160;ändern &#160;wir <text styleclass="VariableName" style="color:#ff0000;">nicht</text> die Größe des Modells. </para>
+          <para styleclass="Body Text HowTo">Z.B. werden <text styleclass="VariableName">100mm</text> zu <text styleclass="VariableName">3.94inch</text>, wenn Sie die Maßeinheit von <text styleclass="VariableName">mm</text> in <text styleclass="VariableName">inch</text> ändern.</para>
+          <para styleclass="Body Text HowTo">Z.B. werden <text styleclass="VariableName">100Grad </text><text styleclass="Body Text">zu </text><text styleclass="VariableName">1,75Radiant </text>, wenn Sie die Maßeinheit von <text styleclass="VariableName">Grad</text> in <text styleclass="VariableName">Radiant</text>ändern.</para>
+          <para styleclass="Body Text HowTo"><text styleclass="Body Text">In allen Fällen </text>werden die<text styleclass="Body Text"> Maßeinheiten </text><text styleclass="VariableName" style="color:#ff0000;">nicht</text><text styleclass="Body Text"> im </text><text styleclass="Interface">Grafikbereich</text><text styleclass="Body Text"> angezeigt .</text></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Body Text HowTo" style="page-break-before:always;"></para>
+  </body>
+</topic>

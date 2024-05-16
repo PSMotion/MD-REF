@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" modified="2023-04-13T21:06:52.106+01:00" lasteditedby="Adam" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title translate="true">Throw Motion-Law</title>
+  <keywords>
+    <keyword translate="true">Cam Law: Throw</keyword>
+    <keyword translate="true">Motion-Law:<keyword translate="true">Throw</keyword></keyword>
+  </keywords>
+  <body>
+    <header>
+      <para styleclass="Heading1"><text styleclass="Heading1" translate="true">Throw Motion-Law</text></para>
+    </header>
+    <para styleclass="Heading4 Toggle_atocs_" style="page-break-before:always;"><text styleclass="Heading4 Toggle_atocs_" translate="true">The Throw Motion-Law</text></para>
+    <para styleclass="Body Text HowTo"><text styleclass="Body Text HowTo" translate="true">Unlike other motion-laws, the </text><text styleclass="VariableName" translate="true">Throw motion-law</text><text styleclass="Body Text HowTo" translate="true"> rises </text><text styleclass="Interface2" translate="true">and</text><text styleclass="Body Text HowTo" translate="true"> immediately returns.</text></para>
+    <para styleclass="Body Text HowTo"><text styleclass="Body Text HowTo" translate="true">To design a </text><text styleclass="VariableName" translate="true">Throw motion-law</text><text styleclass="Body Text HowTo" translate="true"> we use </text><text styleclass="VariableName" style="color:#ff0000;" translate="true">two</text><text styleclass="Body Text HowTo" translate="true">&#32;</text><text styleclass="VariableName" translate="true">Flexible Polynomial</text><text styleclass="Body Text HowTo" translate="true"> segments. This provides you with many motion-design options.</text></para>
+    <para styleclass="Body Text HowTo"><text styleclass="VariableName" translate="true">Throw type motion-laws:</text><text styleclass="Body Text HowTo" translate="true">&#32;</text></para>
+    <list id="0" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+      <li styleclass="HowTo Bulleted"><text styleclass="HowTo Bulleted" translate="true">have zero velocity and acceleration at their start and end, and</text></li>
+      <li styleclass="HowTo Bulleted"><text styleclass="Body Text HowTo" translate="true">have continuous acceleration at the mid-point, and </text></li>
+      <li styleclass="HowTo Bulleted"><text styleclass="Body Text HowTo" translate="true">acceleration is usually not zero at its mid-point.</text></li>
+    </list>
+    <para styleclass="Body Text HowTo"><text styleclass="Body Text HowTo" translate="true">To give different motion characteristics, you can specify the Jerk values at the start and end of the Rise and Return, and also Jerk continuity at its mid-point.</text></para>
+    <list id="1" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+      <li styleclass="HowTo Bulleted"><link displaytype="text" defaultstyle="true" type="topiclink" href="MT-Motion-Cam-Law-Throw" styleclass="HowTo Bulleted" translate="true">Throw Quick-Return 1</link></li>
+      <li styleclass="HowTo Bulleted"><link displaytype="text" defaultstyle="true" type="topiclink" href="MT-Motion-Law-Symmetrical-Zerk-Start-End" styleclass="HowTo Bulleted" translate="true">Throw Quick-Return 2</link></li>
+      <li styleclass="HowTo Bulleted"><link displaytype="text" defaultstyle="true" type="topiclink" href="MT-Motion-Law-Quick-Return-1" styleclass="HowTo Bulleted" translate="true">Throw Rapid-Return 1</link></li>
+      <li styleclass="HowTo Bulleted"><link displaytype="text" defaultstyle="true" type="topiclink" href="MT-Motion-Law_Rapid-Return_2" styleclass="HowTo Bulleted" translate="true">Throw Rapid-Return 2</link></li>
+      <li styleclass="HowTo Bulleted"><link displaytype="text" defaultstyle="true" type="topiclink" href="MT-Motion-Law_Polynomial_Low_Impa" styleclass="HowTo Bulleted" translate="true">Low Impact at Crossover</link></li>
+    </list>
+  </body>
+</topic>

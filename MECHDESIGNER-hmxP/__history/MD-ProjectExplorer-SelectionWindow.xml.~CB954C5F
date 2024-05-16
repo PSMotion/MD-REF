@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" status="Under Construction" modified="2023-05-20T13:43:52.371+01:00" lasteditedby="Adam" version="2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title>Selection-Window</title>
+  <keywords>
+    <keyword>Selection-Window</keyword>
+    <keyword>Selection-Window shortcut menu<keyword>Delete Element...</keyword><keyword>Edit Element...</keyword><keyword>Rename Element</keyword><keyword>Show or Hide Element</keyword><keyword>View References</keyword></keyword>
+  </keywords>
+  <body>
+    <header>
+      <para styleclass="Heading1">Selection-Window</para>
+    </header>
+    <para styleclass="Heading3_atocs_">Selection-Window</para>
+    <para styleclass="Body Text HowTo">The <text styleclass="Interface2">Selection-Window</text> is at the top of the <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-Project-Explorer" styleclass="Interface2">Project-Explorer</link><text styleclass="Interface">.</text></para>
+    <para styleclass="Body Text HowTo">The Selection is a list of the elements that you Click or Shift+Click in the graphic-area or the <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-ProjectExplorer-ElementExplorer" styleclass="VariableName">Element-Explorer</link>.</para>
+    <para styleclass="Heading4 Toggle_atocs_">Click ...</para>
+    <para styleclass="Body Text HowTo"><text styleclass="VariableName">... Elements</text></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="1" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:270px;">
+          <para styleclass="Normal"><image src="MD-PE-SelectionWindow.ipp" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"><caption><![CDATA[Elements in the Selection-Window]]></caption></image></para>
+        </td>
+        <td>
+          <para styleclass="Body Table"><text styleclass="VariableName">Selection list </text><image src="Red-14-1.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+          <para styleclass="Body Text HowTo">The list of <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-Elements">elements</link> that you <text styleclass="VariableName">Click</text> in <text styleclass="Body Text">the graphic-area or</text>&#32;<link displaytype="text" defaultstyle="true" type="topiclink" href="MD-ProjectExplorer-ElementExplorer" styleclass="Interface">Element-Explorer</link><text styleclass="Interface">.</text></para>
+          <para styleclass="Body Table"><text styleclass="VariableName">Owner list </text><image src="Red-14-2.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+          <para styleclass="VariableName-indent"><text styleclass="VariableName">Mechanism:</text>&#32;<text styleclass="Body Text">when the element is a child to a</text>&#32;<text styleclass="Interface">Mechanism-Editor</text>.</para>
+          <para styleclass="VariableName-indent">Part: <text styleclass="Body Text">when the element is a child to a </text><text styleclass="Element">Part</text>.</para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading4 Toggle_atocs_">Shift-Click ...</para>
+    <para styleclass="Body Text HowTo"><text styleclass="VariableName">... Sketch-Elements to list their Constraints</text></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="2" colcount="2">
+      <tr style="vertical-align:top">
+        <td colspan="2">
+          <para styleclass="Body Text">You cannot see a <text styleclass="Element-Header">Constraint</text> in the graphic-area after you add it to a <text styleclass="VariableName">sketch-element</text><text styleclass="Interface">.</text></para>
+          <para styleclass="Body Text"><text styleclass="VariableName" style="color:#ff0000;">SHIFT+CLICK</text> a <text styleclass="VariableName">sketch-element</text> to add to the list those <text styleclass="Element-Header">Constraints</text> that you have added to the sketch-element.</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:269px;">
+          <para styleclass="Image Caption"><image src="MD-SW-SHIFT-CLICK.ipp" imagestyleclass="Default" scale="100.00%" figurelistinclude="0"><caption><![CDATA[Constraints in the Selection-Window with SHIFT+CLICK]]></caption></image></para>
+        </td>
+        <td>
+          <para styleclass="Body Table"><text styleclass="VariableName">Selection list </text><image src="Red-14-1.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+          <para styleclass="Body Text HowTo">The <text styleclass="VariableName">sketch-element</text> that you <text styleclass="VariableName" style="color:#ff0000;">SHIFT+CLICK</text></para>
+          <para styleclass="Body Text HowTo"><text styleclass="Body Text">+ The</text><text styleclass="Element"> Constraints</text> that you have added to the sketch-element - for example <text styleclass="VariableName">HorizontalL.</text>&#32;</para>
+          <para styleclass="Body Text HowTo"><text styleclass="Body Text">+ The</text><text styleclass="Element"> Constraints</text> that you have added between the <text styleclass="Interface">sketch-element</text> and a different <text styleclass="Interface">sketch-element</text> - for example, <text styleclass="VariableName">Perpendicular.</text></para>
+          <para styleclass="Body Table"><text styleclass="VariableName">Owner list </text><image src="Red-14-2.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+          <para styleclass="VariableName-indent">Part -<text styleclass="Body Text"> the </text><text styleclass="Element">Part</text><text styleclass="Body Text"> to which you have added the </text><text styleclass="Interface">sketch-element</text><text styleclass="Body Text">.</text></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Body Text HowTo"><text styleclass="VariableName">... Profiles to list the Extrusion</text></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="2" colcount="2">
+      <tr style="vertical-align:top">
+        <td colspan="2">
+          <para styleclass="Body Text">When you click a <text styleclass="Element">Profile</text>, the <text styleclass="Element">Extrusion</text> does not show in the <text styleclass="Interface">Selection-Window</text> if it is not in the graphic-area.</para>
+          <para styleclass="Body Text"><text styleclass="VariableName" style="color:#ff0000;">SHIFT+CLICK</text> the <text styleclass="Element-Header">Profile</text><text styleclass="VariableName">&#32;</text>to add to the list the <text styleclass="Element-Header">Extrusion</text> that is a child to the <text styleclass="Element-Header">Profile</text>.</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:269px;">
+          <para styleclass="Normal"><image src="MD-SW-SHIFT-CLICK-Profile.ipp" imagestyleclass="Default" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"><caption><![CDATA[You can EDIT the Extusion
+or DELETE the Profile]]></caption></image></para>
+        </td>
+        <td>
+          <para styleclass="Body Table"><text styleclass="VariableName">Selection list </text><image src="Red-14-1.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+          <para styleclass="Body Text HowTo">The <text styleclass="Element">Profile</text> that you <text styleclass="VariableName" style="color:#ff0000;">SHIFT+CLICK</text></para>
+          <para styleclass="Body Text HowTo">The <text styleclass="Element">Extrusion</text> that is a child to the <text styleclass="Element">Profile</text>.</para>
+          <para styleclass="Body Table"><text styleclass="VariableName">Owner list </text><image src="Red-14-2.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+          <para styleclass="VariableName-indent">Part:<text styleclass="Body Text"> the </text><text styleclass="Element">Part</text><text styleclass="Body Text"> to which you have added the </text><text styleclass="Element">Profile</text><text styleclass="Body Text">.</text></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading4 Toggle_atocs_">Shortcut menu in Selection-Window</para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="1" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:270px;">
+          <para styleclass="Normal"><image src="MD-PE-SelectionWindow-Contextualmenu.ipp" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"><title>Contextual menu in Selection-Window</title><caption><![CDATA[Contextual menu in Selection-Window]]></caption></image></para>
+        </td>
+        <td>
+          <para styleclass="Body Table">To show the <text styleclass="VariableName">shortcut menu</text></para>
+          <list id="0" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:&apos;Noto Sans&apos;; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted"><image src="MD-Right-Click-Pointer.gif" scale="100.00%" styleclass="Image Caption" style="font-size:7pt; vertical-align:sub;" figurelistinclude="0"></image><text styleclass="Image Caption" style="font-size:7pt; vertical-align:sub;">&#32;</text><text style="font-style:normal;">Right-click</text>&#32;<text styleclass="Image Caption" style="font-size:7pt; vertical-align:sub;">&#32;</text>an element<text styleclass="BodyText BI">*</text></li>
+          </list>
+          <para styleclass="Body Table">Use the shortcut menu to:</para>
+          <list id="1" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted"><text styleclass="VariableName">Show Element References</text><text styleclass="BodyText Bold"> -</text><text styleclass="SeeAlso">&#32;</text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-ProjectExplorer-SelectionWindow" anchor="ViewReference" styleclass="SeeAlso">see below</link><text styleclass="Body Text">&#32;</text></li>
+            <li styleclass="HowTo Bulleted"><text styleclass="VariableName-indent">Edit element</text></li>
+            <li styleclass="HowTo Bulleted"><text styleclass="VariableName-indent">Delete element</text></li>
+            <li styleclass="HowTo Bulleted"><text styleclass="VariableName-indent">Rename element</text></li>
+          </list>
+          <para styleclass="Body Text">* <text styleclass="VariableName">Show or Hide Extrusion </text>if you right-click an <text styleclass="Element">Extrusion</text></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading3_atocs_"><anchor id="ViewReference"><keywords><keyword>View References</keyword><keyword>Elements<keyword>View References</keyword></keyword></keywords></anchor>Show Element References</para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="3" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Table">Many elements need <text styleclass="VariableName-IT" style="font-style:normal;">other elements</text> to exist in the model. The <text styleclass="VariableName-IT" style="font-style:normal;">other elements</text> are <text styleclass="VariableName">Reference Elements</text>.</para>
+          <para styleclass="Body Table"><text style="font-style:normal;">For example, the </text><text styleclass="VariableName">Reference Elements</text><text style="font-style:normal;"> of a:</text></para>
+          <list id="2" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:10pt; color:#000000;">
+            <li styleclass="HowTo Bulleted"><text styleclass="Element">Line</text><text styleclass="Body Text HowTo"> are its </text><text styleclass="Interface">start-Point</text><text styleclass="Body Text HowTo"> and </text><text styleclass="Interface">end-Point</text></li>
+            <li styleclass="Body Text HowTo"><text styleclass="Element">Pin-Joint</text> are two <text styleclass="Element">Points</text><text styleclass="Body Text">, which </text>may be the <text styleclass="Interface">start-Point</text><text styleclass="Body Text"> or </text><text styleclass="Interface">end-Point</text> of a <text styleclass="Element">Line</text> or the <text styleclass="Interface">center-Point</text> of a <text styleclass="Element">Circle.</text></li>
+          </list>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Normal"><image src="MD-LIST-ELEMENT-REFERENCES.ipp" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"><caption><![CDATA[Reference Elements for a Pulley]]></caption></image></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Text">The columns in the dialog identify the element&apos;s:</para>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Bullets"><text styleclass="VariableName">References</text><text styleclass="Interface"> -</text><text styleclass="Body Text">&#32;</text><text styleclass="HowTo Bulleted" style="font-style:normal;">the name of the </text>Reference Elements. For example, <text styleclass="Element">Profile</text><text styleclass="Body Text">&#32;</text></para>
+                <para styleclass="Bullets"><text styleclass="VariableName">Element Type</text><text styleclass="HowTo Bulleted" style="font-style:italic;"> -</text><text styleclass="HowTo Bulleted" style="font-style:normal;"> the type of element. For example, </text><text styleclass="Element">Point</text></para>
+                <para styleclass="Bullets"><text styleclass="VariableName">Element Owner</text><text styleclass="Body Text"> -</text><text styleclass="HowTo Bulleted"> to which the </text><text styleclass="VariableName">Reference Elements</text><text styleclass="HowTo Bulleted"> is a child. For example, </text><text styleclass="Element">Part</text></para>
+              </td>
+            </tr>
+          </table></para>
+        </td>
+      </tr>
+    </table></para>
+  </body>
+</topic>

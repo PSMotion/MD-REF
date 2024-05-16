@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" modified="2022-03-14T09:24:42.540Z" lasteditedby="Adam" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title translate="true">Motion-Law: Throw - Very Rapid Return</title>
+  <keywords>
+    <keyword translate="true">Motion-Law:<keyword translate="true">Rapid-Return, Smooth-Start/End</keyword></keyword>
+  </keywords>
+  <body>
+    <header>
+      <para styleclass="Heading1"><text styleclass="Heading1" translate="true">Throw: Rapid-Return 2: Zero-Jerk @ Start/End Motion-Law, Finite at Mid-Point</text></para>
+    </header>
+    <para styleclass="Heading3_atocs_"><text styleclass="Heading3_atocs_" translate="true">Throw: Rapid-Return with Zero Jerk</text></para>
+    <para styleclass="" style="text-align:left; text-indent:0px; margin-top:0px; margin-right:0px; margin-bottom:0px; margin-left:0px; line-height:1.00; background-color:transparent; white-space:normal; page-break-inside:auto; page-break-after:auto; border:none; tabstops:none;"><table styleclass="AStandard" rowcount="1" colcount="1" style="cell-padding:0px; border-width:0px; border-spacing:0px; cell-border-width:0px; border-style:none;">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Text"><text styleclass="Body Text" style="font-style:italic;" translate="true">&apos;</text><text styleclass="Body Text" style="font-style:italic; text-decoration:underline;" translate="true">Rapid-Return 2</text><text styleclass="Body Text" translate="true">&apos; is </text><text styleclass="Body Text" style="font-style:italic; text-decoration:underline;" translate="true">Not</text><text styleclass="Body Text" translate="true"> available in the </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MT-Motion-Law-Selector" styleclass="Body Text" translate="true">Motion-Law Selector</link></para>
+          <para styleclass="Body Text"><text styleclass="Body Text HowTo" translate="true">The </text><text styleclass="Body Text HowTo" style="font-style:italic;" translate="true">Rapid-Return-2&apos;</text><text styleclass="Body Text HowTo" translate="true"> motion-law is a </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MT-Motions-with-Dwell-Segments" styleclass="Body Text" translate="true">Rise &amp; Return</link><text styleclass="Body Text HowTo" translate="true"> motion-law that is continuous in </text><text styleclass="Body Text HowTo" style="font-style:italic;" translate="true">Velocity</text><text styleclass="Body Text HowTo" translate="true"> and </text><text styleclass="Body Text HowTo" style="font-style:italic;" translate="true">Acceleration</text><text styleclass="Body Text HowTo" translate="true"> throughout.</text></para>
+          <para styleclass="Body Text"><text styleclass="Body Text" style="text-decoration:underline;" translate="true">Construct it with two Flexible Polynomial Segments</text><text styleclass="Body Text" translate="true">. </text></para>
+          <para styleclass="Body Text HowTo"><text styleclass="Body Text HowTo" translate="true">The first segment is the </text><text styleclass="Body Text HowTo" style="font-style:italic;" translate="true">&apos;Rise&apos;</text><text styleclass="Body Text HowTo" translate="true">, and the second the </text><text styleclass="Body Text HowTo" style="font-style:italic;" translate="true">&apos;Return&apos;</text><text styleclass="Body Text HowTo" translate="true">. Each segment is a &apos;mirror&apos; of each other. </text></para>
+          <para styleclass="Body Text HowTo"><text styleclass="Body Text HowTo" translate="true">Usually, the segments have an equal duration, but this is not necessary.</text></para>
+          <para styleclass="Body Text"><text styleclass="Body Text" style="font-style:italic; text-decoration:underline;" translate="true">Continuity at the Mid-Point Blend-Point</text><text styleclass="Body Text" style="font-style:italic;" translate="true">&#32;</text></para>
+          <para styleclass="Body Text HowTo"><text styleclass="Body Text HowTo" translate="true">The Position is a maximum, and the Velocity is zero, the Acceleration is &apos;finite&apos;, but continuous.</text></para>
+          <para styleclass="Body Text HowTo"><text styleclass="Body Text HowTo" translate="true">The </text><text styleclass="Body Text HowTo" style="font-style:italic;" translate="true">Rise</text><text styleclass="Body Text HowTo" translate="true"> segment (below, in </text><text styleclass="Body Text HowTo" style="font-weight:normal; font-style:italic; color:#0000ff;" translate="true">Blue</text><text styleclass="Body Text HowTo" translate="true">) ends with a </text><text styleclass="Body Text HowTo" style="text-decoration:underline;" translate="true">finite, negative acceleration</text><text styleclass="Body Text HowTo" translate="true">.</text></para>
+          <para styleclass="Body Text HowTo"><text styleclass="Body Text HowTo" translate="true">The </text><text styleclass="Body Text HowTo" style="font-style:italic;" translate="true">Return</text><text styleclass="Body Text HowTo" translate="true"> segment (</text><text styleclass="Body Text HowTo" style="font-style:normal;" translate="true">below</text><text styleclass="Body Text HowTo" translate="true">, in </text><text styleclass="Body Text HowTo" style="font-style:italic; color:#ff0000;" translate="true">Red</text><text styleclass="Body Text HowTo" translate="true">) starts with the </text><text styleclass="Body Text HowTo" style="font-weight:normal; font-style:italic;" translate="true">same</text><text styleclass="Body Text HowTo" translate="true">&#32;</text><text styleclass="Body Text HowTo" style="text-decoration:underline;" translate="true">finite, negative acceleration</text><text styleclass="Body Text HowTo" translate="true">. There is </text><text styleclass="Body Text HowTo" style="text-decoration:underline;" translate="true">acceleration continuity</text><text styleclass="Body Text HowTo" translate="true">.</text></para>
+          <para styleclass="Body Text HowTo"><text styleclass="Body Text HowTo" translate="true">The Jerk is </text><text styleclass="Body Text HowTo" style="text-decoration:underline;" translate="true">discontinuous</text><text styleclass="Body Text HowTo" translate="true"> at the mid-point. (The Jerk is zero at its start an end).</text></para>
+          <para styleclass="Body Text"><text styleclass="Body Text" translate="true">The position graph makes a </text><text styleclass="Body Text" style="text-decoration:underline;" translate="true">rapid-return</text><text styleclass="Body Text" translate="true"> at the mid-point because there is a </text><text styleclass="Body Text" style="text-decoration:underline;" translate="true">large negative, but continuous, acceleration at the mid-point</text><text styleclass="Body Text" translate="true">. </text></para>
+          <para styleclass="Body Text"><text styleclass="Body Text HowTo" translate="true">The motion from Rise to Return at the mid-point is more rapid than </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MT-Motion-Cam-Law-Throw" styleclass="Body Text HowTo" translate="true">Quick-Return 1</link><text styleclass="Body Text HowTo" translate="true"> and </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MT-Motion-Law-Symmetrical-Zerk-Start-End" styleclass="Body Text HowTo" translate="true">Quick-Return 2</link><text styleclass="Body Text HowTo" translate="true"> and </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MT-Motion-Law-Quick-Return-1" styleclass="Body Text HowTo" translate="true">Rapid-Return 1</link><text styleclass="Body Text HowTo" translate="true">. Thus we call it a </text><text styleclass="Body Text HowTo" style="font-style:italic;" translate="true">Rapid-Return 2</text><text styleclass="Body Text HowTo" translate="true">.</text></para>
+          <para styleclass="Body Text"><text styleclass="Body Text HowTo" style="text-decoration:underline;" translate="true">Generally, this motion is not recommended</text><text styleclass="Body Text HowTo" translate="true">.</text></para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="Normal"><text styleclass="Normal" translate="true">See Also: </text></para>
+          <list id="0" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Normal" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="Normal"><link displaytype="text" defaultstyle="true" type="topiclink" href="MT-Motion-Cam-Law-Throw" styleclass="Normal" translate="true">Quick Return 1: Finite Jerk @ Start/End/Mid-Point</link></li>
+            <li styleclass="Normal"><link displaytype="text" defaultstyle="true" type="topiclink" href="MT-Motion-Law-Symmetrical-Zerk-Start-End" styleclass="Normal" translate="true">Quick Return 2: Zero Jerk @ Start/End/Mid-Point</link></li>
+            <li styleclass="Normal"><link displaytype="text" defaultstyle="true" type="topiclink" href="MT-Motion-Law-Quick-Return-1" styleclass="Normal" translate="true">Rapid Return 1: Finite-Jerk @ Start/End/Mid-Point</link></li>
+          </list>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="Heading4 Toggle_atocs_"><text styleclass="Heading4 Toggle_atocs_" translate="true">Two Segment &apos;Rapid-Return 2&apos;</text></para>
+          <para styleclass="Body Text"><table styleclass="Default" rowcount="1" colcount="2" style="cell-padding:2px;">
+            <tr style="vertical-align:top">
+              <td style="width:231px;">
+                <para styleclass="Body Text"><image src="MT-CamLaw-Symmetrical2-FiniteJerk-Rapid-Return2.png" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+              </td>
+              <td>
+                <para styleclass="Body Text"><text styleclass="Body Text" translate="true">It is designed with two Flexible-Polynomial Segments</text></para>
+                <para styleclass="Body Text"><text styleclass="Body Text" style="text-decoration:underline;" translate="true">Two Segments with Acceleration Continuity</text></para>
+                <para styleclass="Body Text HowTo"><text styleclass="Body Text HowTo" style="text-decoration:underline;" translate="true">Start</text><text styleclass="Body Text HowTo" translate="true">: Rise Segment 1 @ Start</text></para>
+                <list id="1" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+                  <li styleclass="HowTo Bulleted"><text styleclass="HowTo Bulleted" translate="true">Position = 0</text></li>
+                  <li styleclass="HowTo Bulleted"><text styleclass="HowTo Bulleted" translate="true">Zero Velocity</text></li>
+                  <li styleclass="HowTo Bulleted"><text styleclass="HowTo Bulleted" translate="true">Zero Acceleration</text></li>
+                  <li styleclass="HowTo Bulleted"><text styleclass="HowTo Bulleted" translate="true">Zero Jerk</text></li>
+                </list>
+                <para styleclass="HowTo Bulleted"><text styleclass="HowTo Bulleted" style="text-decoration:underline;" translate="true">Mid-Point</text><text styleclass="HowTo Bulleted" translate="true">: Segment 1 @ End = Segment 2 @ Start</text></para>
+                <list id="2" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+                  <li styleclass="HowTo Bulleted"><text styleclass="HowTo Bulleted" translate="true">Position = 1</text></li>
+                  <li styleclass="HowTo Bulleted"><text styleclass="HowTo Bulleted" translate="true">Zero Velocity</text></li>
+                  <li styleclass="HowTo Bulleted"><text styleclass="HowTo Bulleted" translate="true">Match, but </text><text styleclass="HowTo Bulleted" style="text-decoration:underline;" translate="true">Unspecified Acceleration</text></li>
+                  <li styleclass="HowTo Bulleted"><text styleclass="HowTo Bulleted" translate="true">Unspecified Jerk</text></li>
+                </list>
+                <para styleclass="Body Text HowTo"><text styleclass="Body Text HowTo" style="text-decoration:underline;" translate="true">End</text><text styleclass="Body Text HowTo" translate="true">: Segment 2 @ End</text></para>
+                <list id="1" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+                  <li styleclass="HowTo Bulleted"><text styleclass="HowTo Bulleted" translate="true">Position 2 = 0</text></li>
+                  <li styleclass="HowTo Bulleted"><text styleclass="HowTo Bulleted" translate="true">Zero Velocity </text></li>
+                  <li styleclass="HowTo Bulleted"><text styleclass="HowTo Bulleted" translate="true">Zero Acceleration</text></li>
+                  <li styleclass="HowTo Bulleted"><text styleclass="HowTo Bulleted" translate="true">Zero Jerk</text></li>
+                </list>
+                <para styleclass="Normal"><line style="height:1px; color:#ff6600;" /></para>
+                <para styleclass="Normal"></para>
+              </td>
+            </tr>
+          </table></para>
+        </td>
+      </tr>
+    </table></para>
+  </body>
+</topic>

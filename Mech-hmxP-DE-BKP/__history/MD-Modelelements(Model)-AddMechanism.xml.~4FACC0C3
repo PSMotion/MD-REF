@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" modified="2022-05-10T15:06:56.280+01:00" lasteditedby="Adam" version="2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title>Model | Add Mechanism [Editor]</title>
+  <keywords>
+    <keyword>Add<keyword>Mechanism-Editor (Model)</keyword></keyword>
+    <keyword>Menu<keyword>Add &gt; Add Mechanism</keyword></keyword>
+    <keyword>Model toolbar<keyword>Add Mechanism</keyword></keyword>
+  </keywords>
+  <body>
+    <header>
+      <para styleclass="Heading1">Model | Add Mechanism (Editor)</para>
+    </header>
+    <para styleclass="Heading3_atocs_">Was ist ein Mechanismus?</para>
+    <para styleclass="Body Text">Ein <text styleclass="VariableName">Mechanismus</text> ist im Kontext von <text styleclass="T_Menu">Add Mechanism</text> ein <text styleclass="Interface">Mechanismus-Editor</text> und eine <text styleclass="Interface">Registerkarte</text>.</para>
+    <para styleclass="Body Text">Verwenden Sie die <text styleclass="Interface">Mechanismus-Editoren</text>, um <text styleclass="Element">Teile</text>, <text styleclass="Element">Gelenke</text>, <text styleclass="Element">Nocken</text>, <text styleclass="Element">Zahnräder</text>, <text styleclass="Element">Riemen</text>, ... hinzuzufügen, um Ihre Maschine zu konstruieren. </para>
+    <para styleclass="Body Text HowTo">Sie <text styleclass="VariableName" style="color:#ff0000;">müssen</text> den <text styleclass="Interface">Modell-Editor</text> verwenden, um mindestens einen (1) <text styleclass="Interface">Mechanismus-Editor</text>hinzuzufügen<text styleclass="VariableName">.</text></para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="Heading4 Toggle_atocs_"><anchor id="GRAVITYVECTOR" styleclass="Body Text" style="font-style:italic;"><keywords><keyword>Direction of Gravity Vector</keyword><keyword>Gravity Vector / Direction</keyword></keywords></anchor><text styleclass="Heading4 Toggle_atocs_2">WICHTIG: Gravitationsvektor ( g = 9,81665 m/s/s )</text></para>
+    <para styleclass="Body Text"><table styleclass="Default" rowcount="1" colcount="2" style="cell-padding:0px;">
+      <tr style="vertical-align:top">
+        <td style="width:135px;">
+          <para styleclass="Image Caption"><image src="MD-GRAVITY-VECTOR.ipp" scale="100.00%" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="Body Table"><text style="color:#ff0000;">Der </text><text styleclass="Interface2" style="color:#ff0000;">Gravitationsvektor</text><text style="color:#ff0000;"> liegt in der negativen Y-Achsenrichtung. Die entgegengesetzte Richtung zur </text><text style="color:#008000;">grünen</text><text style="color:#ff0000;"> Pfeilspitze im </text><text styleclass="Interface" style="color:#ff0000;">Modell-Editor</text>.</para>
+          <para styleclass="Body Table">Bevor Sie den <text styleclass="VariableName" style="color:#ff0000;">ersten</text>&#32;<text styleclass="Interface">Mechanismus-Editor</text> zu einer <text styleclass="Element">Ebene</text> hinzufügen, sollten Sie sich überlegen, um welche Art von Maschine es sich handelt. </para>
+          <para styleclass="Body Table">Zum Beispiel, Wenn Ihre Maschine über einen horizontalen Schalt- oder Drehtisch verfügt, fügen Sie den <text styleclass="Interface">Mechanismus-Editor</text> für den Tisch zur <text styleclass="Interface2">oberen</text><text styleclass="Element"> Ebene</text><text styleclass="Normal">oder zu</text><text styleclass="Body Text"> einer </text><text styleclass="Element">Ebene</text>hinzu <text styleclass="Body Text">, die parallel zur </text><text styleclass="Interface2">oberen </text><text styleclass="Element">Ebene</text><text styleclass="Body Text"> &#160;liegt.</text></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="Body Text"><text styleclass="Heading3_atocs_">Mechanismus hinzufügen</text></para>
+    <para styleclass="Normal"><table styleclass="Default" rowcount="5" colcount="2">
+      <tr style="vertical-align:top">
+        <td rowspan="3" style="vertical-align:middle; width:240px;">
+          <para styleclass="Image Caption"><image src="MD-Toolbar-Model-AddMechanism.png" scale="-99.90%" figurelistinclude="0"><caption><![CDATA[Model elements toolbar]]></caption><imagemap><area shape="rect" coords="0,40,213,80" type="topiclink" href="MD-Modelelements(Model)-AddMechanism"><title>ModelAddMech</title></area><area shape="rect" coords="0,84,211,124" type="topiclink" href="MD-Model-elements(Model)-AddPlane"/></imagemap></image></para>
+        </td>
+        <td style="vertical-align:middle; height:26px; border-bottom:none;">
+          <para styleclass="VariableName-IT" style="text-align:left;"><text styleclass="T_Menu">Menü Hinzufügen &gt; Mechanismus hinzufügen</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="height:26px; border-top:none; border-bottom:none;">
+          <para styleclass="VariableName-IT" style="text-align:left;">&#32;<text styleclass="T_Menu">Symbolleiste </text>&lt;&lt;&lt; <text styleclass="T_Menu">Modellelemente &gt; Mechanismus hinzufügen</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="border-top:none;">
+          <para styleclass="Body Text"></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:240px;">
+          <para styleclass="Image Caption"><image src="MD-CM-AddMechanismEditor.png" scale="-99.90%" figurelistinclude="0"><caption><![CDATA[Command-Manager - no elements]]></caption></image></para>
+        </td>
+        <td>
+          <list id="0" type="ol" listtype="decimal" formatstring="&#83;&#84;&#69;&#80;&#32;&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo STEP" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo STEP">Klicken Sie auf Modell-Symbolleiste &gt; Mechanismus hinzufügen </li>
+          </list>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td style="border-top:none; border-right:none; border-bottom:none;">
+                <para styleclass="Body Text">Die Nachricht des <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-Command-Manager" styleclass="Interface">Befehlsverwalters</link> lautet: </para>
+                <para styleclass="Body Text HowTo"><text styleclass="VariableName-small">Neuen Mechanismus-Editor hinzufügen. Wählen Sie eine Ebene</text></para>
+              </td>
+            </tr>
+          </table></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:240px;">
+          <para styleclass="Image Caption"><image src="MD-CM-AddMechanismEditor-Plane.png" scale="-99.90%" figurelistinclude="0"><caption><![CDATA[Command-Manager - with Plane element]]></caption></image></para>
+        </td>
+        <td>
+          <list id="1" type="ol" listtype="decimal" formatstring="&#83;&#84;&#69;&#80;&#32;&#37;&#48;&#58;&#115;&#58;&#32;" format-charset="DEFAULT_CHARSET" levelreset="false" legalstyle="false" startfrom="2" styleclass="HowTo STEP" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo STEP">Klicken Sie auf ein Flugzeug </li>
+          </list>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td style="border-top:none; border-right:none; border-bottom:none;">
+                <para styleclass="Normal"><text styleclass="Body Text HowTo">Sie können</text><text styleclass="Body Text">eine </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-Plane" styleclass="Element">Ebene</link><text styleclass="Body Text"> im </text><text styleclass="Interface">Grafikbereich</text><text styleclass="Body Text"> oder im </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-Assembly-Tree" styleclass="Interface">Assembly-Tree</link><text styleclass="Interface">&#32;</text><text styleclass="Body Text">anklicken </text><text styleclass="Interface">.</text></para>
+              </td>
+            </tr>
+          </table></para>
+          <list id="2" type="ol" listtype="decimal" formatstring="&#83;&#84;&#69;&#80;&#32;&#37;&#48;&#58;&#115;&#58;&#32;" format-charset="DEFAULT_CHARSET" levelreset="false" legalstyle="false" startfrom="3" styleclass="HowTo STEP" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo STEP">Klicken Sie im <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-Command-Manager">Befehls-Manager</link> auf <image src="OK-tiny-11-15.png" scale="100.00%" figurelistinclude="0"></image>&#32;</li>
+          </list>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:middle">
+              <td style="border-top:none; border-right:none; border-bottom:none;">
+                <para styleclass="Body Text">Sie <text styleclass="VariableName-IT">springen</text> sofort zum neuen <text styleclass="Interface">Mechanismus-Editor</text>. </para>
+                <para styleclass="Body Text">Es ist ein Kind der <text styleclass="Element">Ebene</text>, die Sie in <text styleclass="VariableName">SCHRITT( STEP) &#160;2</text>ausgewählt haben.</para>
+              </td>
+            </tr>
+          </table></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="Heading3_atocs_">Neuer Mechanismus-Editor - und der Grafik-Bereich</para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="2" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:240px;">
+          <para styleclass="Normal"><image src="MD-MECHANISM-EDITOR.ipp" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"><title>Graphic-Area of new Mechanism-Editor</title><caption><![CDATA[Graphic-Area Mechanism-Editor]]></caption></image></para>
+        </td>
+        <td>
+          <para styleclass="Body Text"></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td colspan="2">
+          <para styleclass="Body Text">Die <text styleclass="VariableName">Front-Ansicht</text> des <text styleclass="VariableName-IT" style="color:#ff0000;">neuen</text>&#32;<text styleclass="Interface">Mechanismus-Editors</text>:</para>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Body Table"><image src="Red-14-1b.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Image Caption"> : </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-BasePart" styleclass="Element">Basisteil</link><text styleclass="Body Text"> : es hat </text><text styleclass="HowTo Bulleted">ein rechteckiges </text><text styleclass="VariableName" style="color:#005000;">Grün</text><text styleclass="HowTo Bulleted">&#32;</text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-Part-Outline" styleclass="Interface">Teil-Umriss</link></para>
+                <para styleclass="Body Table"><image src="Red-14-2.gif" scale="100.00%" styleclass="HowTo Bulleted" figurelistinclude="0"></image><text styleclass="HowTo Bulleted"> : </text><text styleclass="Interface">Registerkarte &quot;Mechanismus</text><text styleclass="HowTo Bulleted">&#32;</text></para>
+                <para styleclass="Body Table"><image src="Red-14-3.gif" scale="100.00%" styleclass="HowTo Bulleted" figurelistinclude="0"></image><text styleclass="HowTo Bulleted"> : </text><text styleclass="Interface">Kontextbezogene Symbolleisten</text><text styleclass="HowTo Bulleted"> (links und rechts vom Grafikbereich) </text></para>
+                <para styleclass="Body Table"><image src="Red-14-4.gif" scale="100.00%" styleclass="HowTo Bulleted" figurelistinclude="0"></image><text styleclass="HowTo Bulleted"> : </text><text styleclass="Interface">Grafikbereich</text></para>
+                <para styleclass="Body Table"><image src="Red-14-5.gif" scale="100.00%" styleclass="HowTo Bulleted" figurelistinclude="0"></image><text styleclass="HowTo Bulleted"> : </text><text styleclass="VariableName" style="color:#ff0000;">Lokale</text><text styleclass="HowTo Bulleted">&#32;</text><text styleclass="Interface">XY-Achsen</text><text styleclass="HowTo Bulleted"> des </text><text styleclass="VariableName" style="color:#ff0000;">NEW</text><text styleclass="HowTo Bulleted">&#32;</text><text styleclass="Interface">Mechanismus-Editor</text><text styleclass="Body Text"> und </text><text styleclass="Element">Basisteil</text></para>
+                <list id="3" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullets" style="font-family:Symbol; font-size:11pt; color:#000000;">
+                  <li styleclass="Bullets">Die +X-Achse ist horizontal, nach rechts ( &gt; ).</li>
+                  <li styleclass="HowTo Bulleted3">Die +Y-Achse ist vertikal, und zwar nach oben ( ^ ). </li>
+                  <li styleclass="HowTo Bulleted3">Die +Z-Achse ist Ihnen zugewandt (◎)</li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading3_atocs_">NEW Mechanism-Editor - und der Assembly-Tree</para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="1" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:240px;">
+          <para styleclass="Normal"><image src="MD-AT-AddMechanism.png" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"><title>Assembly-Tree and the new Mechanism-Editor</title><caption><![CDATA[Assembly-Tree and the new Mechanism-Editor]]></caption></image></para>
+        </td>
+        <td>
+          <para styleclass="VariableName">Die Hierarchie der neuen Elemente: </para>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Body Text"><text styleclass="Interface">Mechanismus2</text> - ist ein Kind der <text styleclass="Element">Ebene4</text>&#32;</para>
+                <para styleclass="Bullets"><text styleclass="Element">BasisTeil2</text><text styleclass="HowTo Bulleted"> &#160;- ist ein Kind </text><text styleclass="Normal">von </text><text styleclass="Interface">Mechanismus2</text><text styleclass="Element">.</text></para>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Body Table">Die XY-Achsen von <text styleclass="Element">Ebene4, Mechanismus2</text> und <text styleclass="Element">Basisteil2</text> sind koplanar und decken sich.</para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading3 VIDEO">Video<text styleclass="Heading4 Toggle_atocs_">&#32;</text><conditional-text type="IF" value="PDF"/><link displaytype="text" defaultstyle="true" type="filelink" href="KE-AddMechPlane.gif" styleclass="Body Text">Double-click for Video</link><conditional-text type="END"/><conditional-text type="IF" value="CHM"/></para>
+    <para styleclass="Body Text"><toggle type="picture" print-expanded="true" help-expanded="false" src-collapsed="KE-AddMechPlane.gif" src-expanded="KE-AddMechPlane.gif" scale="20.00%" width="256" height="144" styleclass="Image Caption" figurelistinclude="0"><caption><![CDATA[Model-Editor: Add Mechanism-Editor to Plane]]></caption></toggle><conditional-text type="END"/><conditional-text type="IF" value="HTML,EBOOK"/></para>
+    <para styleclass="Normal"><video src="KE-AddMechPlane1280x720.mp4" width="1280px" height="720px" autostart="false" loop="false" showcontrols="false" playbutton="true" previewimage="KE-AddMechPlane1280x720_preview.jpg" scale="20.00%" styleclass="Image Caption"><title>Model-Editor: Add Mechanism-Editor to Plane</title><caption><![CDATA[Model-Editor: Add Mechanism-Editor to Plane]]></caption></video><conditional-text type="END"/></para>
+    <para styleclass="Normal" style="page-break-before:always;"></para>
+  </body>
+</topic>

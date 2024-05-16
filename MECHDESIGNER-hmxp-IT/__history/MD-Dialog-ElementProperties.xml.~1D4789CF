@@ -1,0 +1,302 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" status="Under Construction" modified="2022-08-31T12:38:54.837+01:00" lasteditedby="Adam" version="2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title>Dialog: Element Properties</title>
+  <keywords>
+    <keyword>Element<keyword>Kinematic-Data</keyword><keyword>Properties</keyword></keyword>
+  </keywords>
+  <body>
+    <header>
+      <para styleclass="Heading1">Dialog: Element Properties</para>
+    </header>
+    <para styleclass="Heading2" style="page-break-before:always;">Element Properties dialog-box.</para>
+    <para styleclass="Body Text HowTo">The <text styleclass="Interface">Element Properties dialog-box</text> provide the motion and force data of an element that are evaluated at the <text styleclass="Interface">Master Machine Angle</text>.</para>
+    <para styleclass="HowTo Bulleted">Elements Properties include, as appropriate: </para>
+    <list id="0" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+      <list id="0" level="1" type="ul" listtype="bullet" formatstring="&#111;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:&apos;Courier New&apos;; font-size:11pt; color:#000000;">
+        <li styleclass="HowTo Bulleted"><text style="font-weight:bold;">V</text>: &#160;a Vector</li>
+        <li styleclass="HowTo Bulleted"><text styleclass="" style="font-family:&apos;Arial Unicode MS&apos;; font-size:12pt; font-weight:bold; color:#000000;">ℝ</text> : &#160;a Real Number</li>
+        <li styleclass="HowTo Bulleted"><text style="font-weight:bold;">|</text><text style="font-weight:bold; font-style:italic;">n</text><text style="font-weight:bold;">|</text> : Absolute Real Number</li>
+        <li styleclass="HowTo Bulleted">X, Y, ΔX, ΔY, Θ, ω, α, ΔΘ, Δω, Δα</li>
+      </list>
+    </list>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="Heading4 Toggle_atocs_">How to open the Edit Element dialog-box</para>
+    <para styleclass="Body Text"><table styleclass="Standard" rowcount="1" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:240px;">
+          <para styleclass="Normal"><image src="MD-GA-EditProperties-Wire.png" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="Body Text">In the <text styleclass="Interface">graphic-area</text></para>
+          <para styleclass="Body Text HowTo"><image src="MD-Ctrlb.png" scale="100.00%" styleclass="Image Caption" style="font-size:7pt; vertical-align:sub;" figurelistinclude="0"></image><text styleclass="Interface2"> + </text><text styleclass="VariableName">Click an element </text></para>
+          <para styleclass="Body Text">For example: a CTRL+Click a wire between a Kinematic FBs.</para>
+          <para styleclass="Body Text HowTo">The wire has 3 Data-Channels</para>
+          <para styleclass="Body Text HowTo">The Data-Channels are Linear or Angular Position, Velocity and Acceleration.</para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="Heading3_atocs_">Element Properties dialog-box (Read-Only) </para>
+    <para styleclass="Heading4 Toggle_atocs_2" style="text-indent:-36px; margin-left:60px;"><image src="btn_addkeyword.bmp" scale="100.00%" figurelistinclude="0"></image><tab /><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" src-collapsed="btn_addkeyword.bmp" src-expanded="btn_delkeyword.bmp" src-print="none"><caption><![CDATA[Wire Element Properties dialog ]]></caption></toggle></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Standard" rowcount="2" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Normal"><image src="MD-Dialog-ElementProperties-Wire.png" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="VariableName">CTRL + Click a wire </para>
+          <para styleclass="Body Text HowTo">A wire has a maximum of 3 Data Channels</para>
+          <para styleclass="Body Text HowTo">In the example: in the <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-FunctionBlock-Motion" styleclass="Element">Motion FB</link> the Output Data-Type is Rotary.</para>
+          <para styleclass="Body Text HowTo">At the top of the dialog you can see the wire Element&apos;s Name, and the Element&apos;s Part and Element&apos;s Mechanism.</para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading4 Toggle_atocs_2" style="text-indent:-36px; margin-left:60px;"><image src="btn_addkeyword.bmp" scale="100.00%" figurelistinclude="0"></image><tab /><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" src-collapsed="btn_addkeyword.bmp" src-expanded="btn_delkeyword.bmp" src-print="none"><caption><![CDATA[Part Element Properties dialog ]]></caption></toggle></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Standard" rowcount="2" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Normal"><image src="MD-Dialog-ElementProperties-Partpng.ipp" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="VariableName">CTRL + Click a Part-Outline </para>
+          <para styleclass="Body Text">At the top of the dialog you can see the Element&apos;s Name, the Element&apos;s Part, and the Element&apos;s Mechanism.</para>
+          <para styleclass="Body Text HowTo">Property: </para>
+          <list id="1" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="margin-top:0px; margin-bottom:0px; font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted" style="margin-top:0px; margin-bottom:0px;">Kinematic: Angle of Part in Mechanism Plane, Angular Velocity or Part in Mechanism Plane</li>
+            <li styleclass="HowTo Bulleted" style="margin-top:0px; margin-bottom:0px;">Instant center: The Part has an instant center of rotation: X and Y coordinates of the instant-center in Mechanism Coordinates </li>
+          </list>
+          <para styleclass="Body Text HowTo">Part has Mass:</para>
+          <list id="1" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="margin-top:0px; margin-bottom:0px; font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted" style="margin-top:0px; margin-bottom:0px;">Centroid: X and Y coordinated of center of Mass</li>
+            <li styleclass="HowTo Bulleted" style="margin-top:0px; margin-bottom:0px;">Mass: Value</li>
+            <li styleclass="HowTo Bulleted" style="margin-top:0px; margin-bottom:0px;">Inertia: Value</li>
+            <li styleclass="HowTo Bulleted" style="margin-top:0px; margin-bottom:0px;">Mobility: -1 if kinematically solved</li>
+          </list>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading4 Toggle_atocs_2" style="text-indent:-36px; margin-left:60px;"><image src="btn_addkeyword.bmp" scale="100.00%" figurelistinclude="0"></image><tab /><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" src-collapsed="btn_addkeyword.bmp" src-expanded="btn_delkeyword.bmp" src-print="none"><caption><![CDATA[Pin-Joint Element Properties dialog ]]></caption></toggle></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Standard" rowcount="2" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Normal"><image src="MD-Dialog-ElementProperties-Pin-Joint.png" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Text2-Note"><text styleclass="VariableName">CTRL + Click a Pin-Joint</text>&#32;</para>
+          <para styleclass="Body Text">At the top of the dialog you can see the Element&apos;s Name, the Element&apos;s Part, and the Element&apos;s Mechanism.</para>
+          <para styleclass="Body Text HowTo">Property: </para>
+          <list id="2" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="margin-top:0px; margin-bottom:0px; font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted" style="margin-top:0px; margin-bottom:0px;">Power On: True or False (T or F) - if the Pin-Joint has the Power Source - see <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-ConfigurePowerSource">Configure Power Source</link></li>
+            <li styleclass="HowTo Bulleted" style="margin-top:0px; margin-bottom:0px;">Broken: True or False (T or F) - if the Joint does not solved (<link displaytype="text" defaultstyle="true" type="topiclink" href="MD-ElementExplorer-KinematicsTree">Broken)</link> at this instant in the machine-cycle</li>
+            <li styleclass="HowTo Bulleted" style="margin-top:0px; margin-bottom:0px;">Solved : True or False (T or F) - if the Joint is a child to a <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-Kinematically-Defined-Chain">kinematically-defined chain</link></li>
+            <li styleclass="HowTo Bulleted" style="margin-top:0px; margin-bottom:0px;">Bearing Force </li>
+            <list id="2" level="1" type="ul" listtype="bullet" formatstring="&#111;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="margin-top:0px; margin-bottom:0px; font-family:&apos;Courier New&apos;; font-size:11pt; color:#000000;">
+              <li styleclass="HowTo Bulleted" style="margin-top:0px; margin-bottom:0px;">Fx and Fy ; Vectors in Mechanism Coordinates </li>
+            </list>
+          </list>
+          <list id="2" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="margin-top:0px; margin-bottom:0px; font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted" style="margin-top:0px; margin-bottom:0px;">Torque</li>
+            <list id="2" level="1" type="ul" listtype="bullet" formatstring="&#111;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="margin-top:0px; margin-bottom:0px; font-family:&apos;Courier New&apos;; font-size:11pt; color:#000000;">
+              <li styleclass="HowTo Bulleted" style="margin-top:0px; margin-bottom:0px;">Tz ; Vector normal to Mechanism Plane (if the Pin-Joint is the Power Source)</li>
+            </list>
+          </list>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading4 Toggle_atocs_2" style="text-indent:-36px; margin-left:60px;"><image src="btn_addkeyword.bmp" scale="100.00%" figurelistinclude="0"></image><tab /><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" src-collapsed="btn_addkeyword.bmp" src-expanded="btn_delkeyword.bmp" src-print="none"><caption><![CDATA[Slide-Joint: Element Properties dialog ]]></caption></toggle></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Standard" rowcount="2" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Normal"><image src="MD-Dialog-ElementProperties-Slide-Joint.png" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="VariableName">CTRL + Click a Slide-Joint</para>
+          <para styleclass="Body Text">At the top of the dialog you can see the Element&apos;s Name, the Element&apos;s Part, and the Element&apos;s Mechanism.</para>
+          <para styleclass="Body Text HowTo">Property: </para>
+          <list id="3" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="margin-top:0px; margin-bottom:0px; font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted" style="margin-top:0px; margin-bottom:0px;">Power On: True or False (T or F) - if the Power Source is given to this Pin-Joint - see <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-ConfigurePowerSource">Configure Power Source</link></li>
+            <li styleclass="HowTo Bulleted" style="margin-top:0px; margin-bottom:0px;">Broken: True or False (T or F) - if the Joint does not solved <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-ElementExplorer-KinematicsTree">Broken)</link> at this instant in the machine-cycle</li>
+            <li styleclass="HowTo Bulleted" style="margin-top:0px; margin-bottom:0px;">Solved : True or False (T or F) - if the Joint is a child to a <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-Kinematically-Defined-Chain">kinematically-defined chain</link></li>
+            <li styleclass="HowTo Bulleted" style="margin-top:0px; margin-bottom:0px;">Drive Force</li>
+            <list id="3" level="1" type="ul" listtype="bullet" formatstring="&#111;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="margin-top:0px; margin-bottom:0px; font-family:&apos;Courier New&apos;; font-size:11pt; color:#000000;">
+              <li styleclass="HowTo Bulleted" style="margin-top:0px; margin-bottom:0px;">Fx ; Force along positive direction of Slide-Joint (if the Power Source is the Slide-Joint</li>
+            </list>
+          </list>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading4 Toggle_atocs_2" style="text-indent:-36px; margin-left:60px;"><image src="btn_addkeyword.bmp" scale="100.00%" figurelistinclude="0"></image><tab /><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" src-collapsed="btn_addkeyword.bmp" src-expanded="btn_delkeyword.bmp" src-print="none"><caption><![CDATA[Point: Element Properties dialog]]></caption></toggle>&#32;</para>
+    <para styleclass="Body Text HowTo"><table styleclass="Standard" rowcount="2" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Normal"><image src="MD-Dialog-EditProps-Point.png" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Text2-Note">In this case, <text styleclass="VariableName">CTRL+Click a Point</text> at the end of Part in a four-bar Mechanism.</para>
+          <para styleclass="Body Text2-Note">At the top of the dialog you can see the Element&apos;s Name, the Element&apos;s Part, and the Element&apos;s Mechanism.</para>
+          <para styleclass="HowTo Bulleted - compressed">Property: </para>
+          <list id="4" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted - compressed" style="font-family:Symbol; font-size:10pt; color:#000000;">
+            <li styleclass="HowTo Bulleted - compressed">Part Pos: Position of the Point; Part Coordinates</li>
+            <li styleclass="HowTo Bulleted - compressed">Mech Pos: Position of the Point; Mechanism Coordinates</li>
+            <li styleclass="HowTo Bulleted - compressed">Glob Position: Position of the Point; Global Coordinates (Z does not show!)</li>
+            <li styleclass="HowTo Bulleted - compressed">Velocity, Acceleration Vectors</li>
+            <list id="4" level="1" type="ul" listtype="bullet" formatstring="&#111;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted - compressed" style="font-family:&apos;Courier New&apos;; font-size:10pt; color:#000000;">
+              <li styleclass="HowTo Bulleted - compressed"><text style="font-weight:bold;">i,j</text>: the coordinates of the Velocity / Acceleration Vector, X and Y directions; Mechanism Coordinates</li>
+              <li styleclass="HowTo Bulleted - compressed"><text style="font-weight:bold;">|n|</text>: the magnitude of the Velocity / Acceleration Vector</li>
+              <li styleclass="HowTo Bulleted - compressed"><text styleclass="Normal" style="font-weight:bold;">Θ</text>: the direction of the velocity Vector; Mechanism Coordinates</li>
+            </list>
+          </list>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="SeeAlso-small">See also: <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-FunctionBlock-PointProperties">Point Properties dialog-box</link>.</para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading4 Toggle_atocs_2" style="text-indent:-36px; margin-left:60px;"><image src="btn_addkeyword.bmp" scale="100.00%" figurelistinclude="0"></image><tab /><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" src-collapsed="btn_addkeyword.bmp" src-expanded="btn_delkeyword.bmp" src-print="none"><caption><![CDATA[Line: Element Properties dialog ]]></caption></toggle></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Standard" rowcount="2" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Normal"><image src="MD-Dialog-EditProps-Line.png" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="VariableName">CTRL + Click a Line.</para>
+          <para styleclass="Body Text2-Note">At the top of the dialog you can see the Element&apos;s Name, the Element&apos;s Part, and the Element&apos;s Mechanism.</para>
+          <para styleclass="HowTo Bulleted - compressed">Property: </para>
+          <list id="5" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted - compressed" style="font-family:Symbol; font-size:10pt; color:#000000;">
+            <li styleclass="HowTo Bulleted - compressed">Line Data: </li>
+            <list id="5" level="1" type="ul" listtype="bullet" formatstring="&#111;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted - compressed" style="font-family:&apos;Courier New&apos;; font-size:10pt; color:#000000;">
+              <li styleclass="HowTo Bulleted - compressed"><text style="font-weight:bold;">Δx, Δy : </text>the change in x and y from the Line&apos;s start-Point and end-Point</li>
+              <li styleclass="HowTo Bulleted - compressed"><text style="font-weight:bold;">|n|</text>: the length of the Line</li>
+              <li styleclass="HowTo Bulleted - compressed"><text style="font-weight:bold;">Θ</text>: the angle of the Line relative to the Mechanism Coordinates</li>
+            </list>
+          </list>
+          <list id="5" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted - compressed" style="font-family:Symbol; font-size:10pt; color:#000000;">
+            <li styleclass="HowTo Bulleted - compressed">Kinematic:</li>
+            <list id="5" level="1" type="ul" listtype="bullet" formatstring="&#111;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Normal" style="font-family:&apos;Courier New&apos;; font-size:10pt; color:#000000;">
+              <li styleclass="Normal"><text style="font-weight:bold;">ω : </text>angular velocity of the Line</li>
+              <li styleclass="Normal"><text style="font-weight:bold;">α : </text>angular acceleration of the Line</li>
+            </list>
+          </list>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading4 Toggle_atocs_2" style="text-indent:-36px; margin-left:60px;"><image src="btn_addkeyword.bmp" scale="100.00%" figurelistinclude="0"></image><tab /><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" src-collapsed="btn_addkeyword.bmp" src-expanded="btn_delkeyword.bmp" src-print="none"><caption><![CDATA[Circle: Element Properties dialog ]]></caption></toggle></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Standard" rowcount="2" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Normal"><image src="MD-Dialog-EditProps-Circle.png" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="VariableName">CTRL + Click a Circle.</para>
+          <para styleclass="Body Text">At the top of the dialog you can see the Element&apos;s Name, the Element&apos;s Part, and the Element&apos;s Mechanism.</para>
+          <para styleclass="Body Text HowTo">Property: </para>
+          <list id="6" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted - compressed" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted - compressed"><text styleclass="VariableName">Radius: </text></li>
+            <list id="6" level="1" type="ul" listtype="bullet" formatstring="&#111;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted - compressed" style="font-family:&apos;Courier New&apos;; font-size:11pt; color:#000000;">
+              <li styleclass="HowTo Bulleted - compressed"><text styleclass="VariableName-IT">|n|</text><text styleclass="HowTo Bulleted">: the Radius of the Circle</text></li>
+            </list>
+          </list>
+          <list id="6" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted - compressed" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted - compressed"><text styleclass="VariableName">center:</text></li>
+            <list id="6" level="1" type="ul" listtype="bullet" formatstring="&#111;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Normal" style="font-family:&apos;Courier New&apos;; font-size:11pt; color:#000000;">
+              <li styleclass="Normal"><text styleclass="VariableName-IT">x &amp; y</text><text styleclass="HowTo Bulleted"> : the position of the center of the Circle in Mechanism Coordinates</text></li>
+            </list>
+          </list>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading4 Toggle_atocs_2" style="text-indent:-36px; margin-left:60px;"><image src="btn_addkeyword.bmp" scale="100.00%" figurelistinclude="0"></image><tab /><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" src-collapsed="btn_addkeyword.bmp" src-expanded="btn_delkeyword.bmp" src-print="none"><caption><![CDATA[Arc: Element Properties dialog ]]></caption></toggle></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Standard" rowcount="2" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Normal"><image src="MD-Dialog-EditProps-Arc.png" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="VariableName">CTRL + Click an Arc.</para>
+          <para styleclass="Body Text">At the top of the dialog you can see the Element&apos;s Name, the Element&apos;s Part, and the Element&apos;s Mechanism.</para>
+          <para styleclass="VariableName">Property: </para>
+          <list id="7" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted - compressed" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted - compressed"><text styleclass="VariableName">Radius: </text></li>
+            <list id="7" level="1" type="ul" listtype="bullet" formatstring="&#111;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted - compressed" style="font-family:&apos;Courier New&apos;; font-size:11pt; color:#000000;">
+              <li styleclass="HowTo Bulleted - compressed"><text styleclass="VariableName-IT">|n|:</text> the Radius of the Circle</li>
+            </list>
+          </list>
+          <list id="7" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted - compressed" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted - compressed"><text styleclass="VariableName">center: </text></li>
+            <list id="7" level="1" type="ul" listtype="bullet" formatstring="&#111;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Normal" style="font-family:&apos;Courier New&apos;; font-size:11pt; color:#000000;">
+              <li styleclass="Normal"><text styleclass="VariableName">x &amp; y </text><text style="font-weight:bold;">: </text><text style="font-weight:normal;">the position of the center of the Arc in Mechanism Coordinates</text></li>
+            </list>
+          </list>
+          <list id="7" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Normal" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="Normal"><text styleclass="VariableName">Start</text></li>
+            <list id="7" level="1" type="ul" listtype="bullet" formatstring="&#111;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Normal" style="font-family:&apos;Courier New&apos;; font-size:11pt; color:#000000;">
+              <li styleclass="Normal"><text styleclass="VariableName">x &amp; y :</text><text style="font-weight:bold;">&#32;</text><text style="font-weight:normal;">the position of the start-Point of the Arc in Mechanism Coordinates</text></li>
+              <li styleclass="Normal"><text styleclass="VariableName">Θ :</text><text style="font-weight:bold;">&#32;</text><text style="font-weight:normal;">the angle of the start-Point from the center of the Arc</text></li>
+            </list>
+          </list>
+          <list id="7" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Normal" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="Normal"><text styleclass="VariableName">End</text></li>
+            <list id="7" level="1" type="ul" listtype="bullet" formatstring="&#111;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Normal" style="font-family:&apos;Courier New&apos;; font-size:11pt; color:#000000;">
+              <li styleclass="Normal"><text styleclass="VariableName">x &amp; y,</text><text style="font-weight:bold;"> &#160;</text><text style="font-weight:normal;">the position of the end-Point of the Arc in Mechanism Coordinates</text></li>
+              <li styleclass="Normal"><text styleclass="VariableName">Θ :</text><text style="font-weight:bold;">&#32;</text><text style="font-weight:normal;">the angle of the end-Point from the center of the Arc</text></li>
+            </list>
+          </list>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading4 Toggle_atocs_2" style="text-indent:-36px; margin-left:60px;"><image src="btn_addkeyword.bmp" scale="100.00%" figurelistinclude="0"></image><tab /><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" src-collapsed="btn_addkeyword.bmp" src-expanded="btn_delkeyword.bmp" src-print="none"><caption><![CDATA[Cam: Element Properties dialog ]]></caption></toggle></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Standard" rowcount="2" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Normal"><image src="MD-DIALOG-ELEMENTPROPERTIES-2DCAM.ipp" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="VariableName">CTRL + Click a 2D-Cam.</para>
+          <para styleclass="Body Text">At the top of the dialog you can see the Element&apos;s Name, the Element&apos;s Part, and the Element&apos;s Mechanism.</para>
+          <para styleclass="VariableName">Property: </para>
+          <para styleclass="VariableName-indent">Contact 1 &amp; 2: </para>
+          <list id="8" type="ul" listtype="bullet" formatstring="&#183;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Arial; font-size:11pt; color:#000000;">
+            <list id="8" level="1" type="ul" listtype="bullet" formatstring="&#111;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:&apos;Courier New&apos;; font-size:11pt; color:#000000;">
+              <li styleclass="HowTo Bulleted"><text styleclass="VariableName-IT">x &amp; y:</text><text style="font-weight:bold; font-style:italic;">&#32;</text>the coordinates of the contact Point of Cam 1 and 2</li>
+            </list>
+          </list>
+          <para styleclass="VariableName-indent">Pressure Angle 1 &amp; 2: </para>
+          <list id="8" level="1" type="ul" listtype="bullet" formatstring="&#111;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:&apos;Courier New&apos;; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted"><text styleclass="VariableName-IT">Θ :</text><text style="font-weight:bold; font-style:italic;">&#32;</text>the Pressure Angle of the Roller with Cam 1 and 2</li>
+          </list>
+          <para styleclass="VariableName-indent">Curvature 1 &amp; 2: </para>
+          <list id="8" level="1" type="ul" listtype="bullet" formatstring="&#111;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:&apos;Courier New&apos;; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted"><text styleclass="VariableName-IT">|n| &#160;: </text>the Curvature of Cam 1 and 2</li>
+          </list>
+          <para styleclass="VariableName-indent">Force </para>
+          <list id="8" level="1" type="ul" listtype="bullet" formatstring="&#111;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="BodyText BI" style="font-family:&apos;Courier New&apos;; font-size:11pt; color:#000000;">
+            <li styleclass="BodyText BI"><text styleclass="VariableName-IT">Fx &amp; Fy :</text><text styleclass="HowTo Bulleted"> the Contact Force of the Cam on the Roller, given in the X and Y directions, with Mechanism Coordinates</text></li>
+          </list>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="Body Text">ONLY if you have selected a Cam-Follower and Steel Type with the <text styleclass="Element">2D-Cam dialog-box</text></para>
+          <para styleclass="VariableName-indent">Roller L10 Lifetime [Hrs] &#160;- <text styleclass="HowTo Bulleted">The Lifetime in Hours of the Cam-Follower Roller you have selected with </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-2DCam-RollerLifeTab" styleclass="HowTo Bulleted">2D-Cam dialog-box &gt; Roller-Life</link></para>
+          <para styleclass="VariableName-indent"><text styleclass="VariableName">Cam Lifetime [Hrs]</text><text styleclass="HowTo Bulleted"> - the lifetime in hours of the Cam, with the Steel and Quality of Steel you have selected with the </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-2DCam-CamLifetab" styleclass="HowTo Bulleted">2D-Cam dialog-box &gt; Cam-Life</link></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Body Text HowTo"></para>
+  </body>
+</topic>

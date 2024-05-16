@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" status="Under Construction" lasteditedby="Adam" version="2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title>Element Explorer | Geometry-Tree</title>
+  <keywords>
+    <keyword>Geometry Tree<keyword>Constraints</keyword><keyword>Dimensions</keyword><keyword>Sketch-Elements</keyword></keyword>
+  </keywords>
+  <body>
+    <header>
+      <para styleclass="Heading1">Element Explorer | Geometry-Tree</para>
+    </header>
+    <para styleclass="Heading3_atocs_">Geometry-Tree</para>
+    <para styleclass="Body Text HowTo">When you start the <text styleclass="Interface">Part-Editor</text>, the <text styleclass="Interface">Geometry-Tree</text> replaces the <text styleclass="Interface">Kinematics-Tree</text>.</para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="2" colcount="2" style="cell-padding:0px; border-width:0px; border-spacing:0px; cell-border-width:0px; border-style:none;">
+      <tr style="vertical-align:top">
+        <td style="vertical-align:top; width:1px;">
+          <para styleclass="Body Text HowTo" style="text-align:center; margin-left:0px;"><image src="Icon-Geometry-Loops.png" scale="100.00%" styleclass="Image Caption" style="font-size:7pt; vertical-align:sub;"></image></para>
+        </td>
+        <td style="vertical-align:middle;">
+          <para styleclass="Normal">&#32;<text styleclass="Body Text">This is the symbol at the head of the </text><text styleclass="Interface">Geometry-Tree</text><text styleclass="Body Text"> - labeled </text><text styleclass="Body Text" style="font-style:italic;">Constraint-Loops</text><text styleclass="Body Text">.</text></para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td colspan="2" style="vertical-align:top;">
+          <para styleclass="Normal"><text styleclass="Notes">Note</text><text styleclass="Body Text">: If you do not see the small  icon to explore the </text><text styleclass="Interface">Geometry Tree</text><text styleclass="Body Text">, then click the </text><text styleclass="T_Menu">Rebuild now</text><text styleclass="Body Text"> button.</text></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Body Text"><table styleclass="Standard" rowcount="1" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:106px;">
+          <para styleclass="Normal"><image src="PE-GeometryTree.png" scale="100.00%" styleclass="Image Caption"><title>Example: Geometry in Element-Explorer</title><caption><![CDATA[Example: Geometry in Element-Explorer]]></caption></image></para>
+        </td>
+        <td>
+          <para styleclass="VariableName">What is a Constraint-Loop?</para>
+          <para styleclass="Body Text HowTo">A <text styleclass="VariableName">Constraint-Loop</text> (labeled Constraints) is a list of the constraints that are between a set of sketch-elements. <text styleclass="Element">Points</text> are also in the Constraint Loop.</para>
+          <para styleclass="Body Text HowTo">If you add a Constraint between two sketch-elements in different Constraint-Loops, they combine to give one Constraint-Loop.</para>
+          <para styleclass="Body Text">For example:</para>
+          <list id="7" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted">A Horizontal Constraint is added to Line1 = 1 Constraint Loop</li>
+            <li styleclass="HowTo Bulleted">A Horizontal Constraint is added to Line2 = 1 Constraint Loop</li>
+            <li styleclass="HowTo Bulleted">A Horizontal Constraint is added between a Point in Line 1 and a Point in Line 2 becomes 1 Constraint Loop, with 3 Horizontal Constraints.</li>
+          </list>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="VariableName">Constraints and the Selection-Window</para>
+          <para styleclass="Body Text">If you:</para>
+          <para styleclass="Body Text HowTo"><text styleclass="VariableName">Click </text>a <text styleclass="Element">Line </text>: the <text styleclass="Element">Line</text> shows in the <text styleclass="Interface">Selection-Window</text></para>
+          <para styleclass="Body Text HowTo"><text styleclass="VariableName" style="color:#ff0000;">SHIFT+Click</text> a <text styleclass="Element">Line</text> : the <text styleclass="Element">Line </text><text styleclass="Interface2">AND</text> the <text styleclass="Interface">Constraints</text> that have been added to the <text styleclass="Element">Line</text> show in the <text styleclass="Interface">Selection-Window.</text></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Body Text" style="page-break-before:always;"></para>
+  </body>
+</topic>

@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" status="Under Construction" modified="2022-09-09T17:40:32.207+01:00" lasteditedby="Adam" version="2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title>Dialog: Edit CAD-Line</title>
+  <keywords>
+    <keyword>CAD-Line dialog box</keyword>
+    <keyword>Dialog<keyword>CAD-Line</keyword></keyword>
+    <keyword>Element<keyword>CAD-Line</keyword></keyword>
+    <keyword>Import<keyword>DXF Drawings</keyword><keyword>Mass Properties from CAD model</keyword><keyword>SOLIDWORKS Parts and Assemblies</keyword><keyword>STL file</keyword></keyword>
+  </keywords>
+  <body>
+    <header>
+      <para styleclass="Heading1">Dialog: CAD-Line </para>
+    </header>
+    <para styleclass="Heading2">CAD-Linien-Dialogfeld</para>
+    <para styleclass="SeeAlso">Siehe auch : <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Geometry-CAD-Line">Teil-Editor: CAD-Linie hinzufügen</link>&#32;</para>
+    <para styleclass="HowTo Bulleted">Verwenden Sie das <text styleclass="Element">CAD-Linien-Dialogfeld</text>, um:</para>
+    <list id="0" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000080;">
+      <li styleclass="HowTo Bulleted"><text styleclass="VariableName">eine</text>(1) <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-Solids" styleclass="Interface">CAD-Solid-Datei</link> zu importieren - <text styleclass="SeeAlso">siehe</text>&#32;<link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Visibility-SolidsInMechanisms" styleclass="SeeAlso">Symbolleiste Sichtbarkeit &gt; Solids in Mechanismen anzeigen</link></li>
+      <li styleclass="HowTo Bulleted"><text styleclass="VariableName">eine</text>(1) <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-DXF-File" styleclass="Interface">DXF-Zeichnung</link> zu importieren - <text styleclass="SeeAlso">siehe </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-File-Open-DXF" styleclass="SeeAlso">Menü Datei &gt; DXF-Zeichnung öffnen</link></li>
+      <li styleclass="HowTo Bulleted"><text styleclass="Parameter-Header">USER Mass-Properties </text>importieren und/oder eingeben</li>
+      <li styleclass="HowTo Bulleted">die Anzeige des <text styleclass="Interface">CAD-Solids </text>bearbeiten</li>
+    </list>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="Heading3_atocs_"><anchor id="OPenCAD-Line"><keywords><keyword>Open a CAD-Line dialog box</keyword><keyword>Edit a CAD-Line</keyword></keywords></anchor><text styleclass="Heading4 Toggle_atocs_">So öffnen Sie eine CAD-Linie-Dialogbox</text></para>
+    <para styleclass="Body Text"><table styleclass="Default" rowcount="1" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:240px;">
+          <para styleclass="Normal"><image src="MD-CADLine-DoubleClick.ipp" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"><title>Double-Click CAD-Line element in an Added-Part</title><caption><![CDATA[Double-Click CAD-Line element in an Added-Part]]></caption></image></para>
+        </td>
+        <td>
+          <para styleclass="Body Text HowTo"><table styleclass="PopupTable2" rowcount="1" colcount="1" style="background-color:#ffffff;">
+            <tr style="vertical-align:top">
+              <td style="border-top:none; border-right:none; border-bottom:none;">
+                <list id="1" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="B Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="B Bullets"><text styleclass="Body Text HowTo">Doppelklick auf eine </text><text styleclass="Element">CAD-Linie</text><text styleclass="Body Text HowTo"> im </text><text styleclass="Interface">Grafikbereich</text><text styleclass="Body Text HowTo"> oder auf den </text><text styleclass="Interface">Assembly-Tree</text><text styleclass="VariableName">&#32;</text></li>
+                </list>
+                <para styleclass="VariableName-IT">- oder -</para>
+                <list id="2" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="B Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="B Bullets"><text styleclass="SeeAlso">Siehe </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-How-to-Open-a-Dialog-Box" styleclass="SeeAlso">Wie man eine Dialogbox öffnet</link><text styleclass="VariableName">&#32;</text></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Body Text">Die <text styleclass="Element">Cad-Line Dialogbox</text> ist nun geöffnet - siehe unten</para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Body Text"><anchor id="CADLineDialog" styleclass="Heading3_atocs_"><keywords><keyword>Dialog<keyword>CAD-Line</keyword></keyword></keywords></anchor><text styleclass="Heading3_atocs_">CAD-Linien-Dialogfeld</text></para>
+    <para styleclass="Body Text"><table styleclass="Default" rowcount="1" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:323px;">
+          <para styleclass="Normal"><image src="MD-Dialog-CADLine.png" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"><caption><![CDATA[CAD-Line dialog-box]]></caption></image></para>
+        </td>
+        <td>
+          <para styleclass="Body Table">Der <text styleclass="Element">CAD-Line Dialog</text> hat 5 Registerkarten. </para>
+          <para styleclass="Heading4 Toggle_atocs_2"><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-CADLine-SOLIDWORKS">SOLIDWORKS</link></para>
+          <para styleclass="Heading4 Toggle_atocs_2"><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-CADLine-MassProperties">Masseneigenschaften</link></para>
+          <para styleclass="Heading4 Toggle_atocs_2"><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-CADLine-DXF">DXF</link></para>
+          <para styleclass="Heading4 Toggle_atocs_2"><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-CADLine-STLImport">STL-Import</link></para>
+          <para styleclass="Heading4 Toggle_atocs_2"><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-CADLine-DXFLayers">Anzeigeoptionen</link></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading4 Toggle_atocs_">Notes about the CAD-Line:</para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="1" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Table">Sie können die <text styleclass="Element">CAD-Linien-Dialogbox</text> im <text styleclass="Interface">Teile-Editor</text>&#32;<text styleclass="VariableName" style="color:#ff0000;">UND</text> in den <text styleclass="Interface">Mechanik-Editoren</text> öffnen.</para>
+          <para styleclass="Body Table"><text styleclass="HowTo Bulleted">Der X(0),Y(0) jeder </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-CAD-Line" styleclass="Element">CAD-Linie</link><text styleclass="HowTo Bulleted"> ist ihr </text><text styleclass="Interface">Startpunkt.</text></para>
+          <para styleclass="Body Table"><text styleclass="HowTo Bulleted">Die X(+)-Richtung ist von ihrem </text><text styleclass="Interface">Startpunkt</text><text styleclass="HowTo Bulleted"> zu ihrem </text><text styleclass="Interface">Endpunkt.</text></para>
+          <para styleclass="Body Table"><text styleclass="HowTo Bulleted">Alle </text><text styleclass="Element">Teile </text>, die<text styleclass="HowTo Bulleted">Sie dem Modell hinzufügen, haben eine </text><text styleclass="Element">CAD-Linie. </text></para>
+          <para styleclass="Body Table"><text styleclass="Body Text">Sie können </text><text styleclass="Interface">CAD-Linien</text><text styleclass="Body Text"> zu allen </text><text styleclass="Element">Teilen</text><text styleclass="Body Text">hinzufügen &#160;- siehe </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Geometry-CAD-Line" styleclass="SeeAlso">Teile-Editor: CAD-Linie hinzufügen</link><text styleclass="Body Text">&#32;</text></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Body Text HowTo" style="page-break-before:always;"></para>
+  </body>
+</topic>

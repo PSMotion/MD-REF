@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" status="Under Construction" modified="2023-03-20T19:07:20.694Z" lasteditedby="Adam" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title translate="true">Acceleration-List [Import Data]</title>
+  <keywords>
+    <keyword translate="true">Import motion-values to an Acceleration List segment</keyword>
+    <keyword translate="true">List Segment-Type<keyword translate="true">Acceleration List</keyword></keyword>
+    <keyword translate="true">Motion-Law:<keyword translate="true">Acceleration List</keyword></keyword>
+  </keywords>
+  <body>
+    <header>
+      <para styleclass="Heading1"><text styleclass="Heading1" translate="true">Acceleration-List (Import Data)</text></para>
+    </header>
+    <para styleclass="Heading3_atocs_" style="page-break-before:always;"><text styleclass="Heading3_atocs_" translate="true">Acceleration List</text></para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="SeeAlso"><text styleclass="SeeAlso" translate="true">See also: </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MT-Motion-Law-Position-List" styleclass="SeeAlso" translate="true">Position-List</link><text styleclass="SeeAlso" translate="true">, </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MT-Motion-Law-Z-Raw-Data" styleclass="SeeAlso" translate="true">Z-Raw Data</link></para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="Body Text"><table styleclass="Default" rowcount="2" colcount="1" style="border-width:1px; border-spacing:0px; cell-border-width:0px; border-color:#993300; border-style:solid;">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Interface2"><text styleclass="Interface2" translate="true">Motion-Description</text></para>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Body Text"><text styleclass="Body Text" translate="true">The </text><text styleclass="Interface2" translate="true">Acceleration List</text><text styleclass="Body Text" translate="true"> is a </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MT-Motion-Cam-Laws" anchor="MOTIONLAWS-LIST" styleclass="Body Text" translate="true">List Segment-Type</link><text styleclass="Body Text" translate="true">.</text></para>
+                <para styleclass="Body Text"><text styleclass="Body Text" translate="true">Import </text><text styleclass="VariableName" translate="true">Acceleration data</text><text styleclass="Body Text" translate="true">.</text></para>
+                <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+                <para styleclass="Body Text"><text styleclass="Body Text" translate="true">See </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MT-Motion-Law-Position-List" styleclass="Body Text" translate="true">Position-List</link><text styleclass="Body Text" translate="true"> to learn how to Import data to a </text><text styleclass="VariableName" translate="true">List Segment-Type</text><text styleclass="Body Text" translate="true">.</text></para>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Interface2"><text styleclass="Interface2" translate="true">Motion-Values</text></para>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Body Text"><text styleclass="VariableName-IT" translate="true">MotionDesigner</text><text styleclass="Body Text HowTo" style="font-weight:normal; font-style:normal;" translate="true"> integrates (numerically) your data calculate and show the </text><text styleclass="VariableName" translate="true">Velocity</text><text styleclass="Body Text HowTo" style="font-weight:normal; font-style:normal;" translate="true"> and </text><text styleclass="VariableName" translate="true">Position</text><text styleclass="Body Text HowTo" style="font-weight:normal; font-style:normal;" translate="true"> graphs.</text></para>
+                <para styleclass="VariableName-IT"><text styleclass="VariableName-IT" translate="true">MotionDesigner</text><text styleclass="Body Text HowTo" translate="true">&#32;</text><text styleclass="Body Text HowTo" style="font-style:normal;" translate="true">re-samples</text><text styleclass="Body Text HowTo" translate="true"> the data to give the correct number-of-points in the segment, such that:</text></para>
+                <para styleclass="Body Text HowTo"><text styleclass="Body Text HowTo" translate="true">Number of points in a Segment = </text><text styleclass="Parameter" translate="true">Segment-Width</text><text styleclass="Body Text HowTo" translate="true"> × </text><text styleclass="Parameter" translate="true">Number-of-Steps</text><text styleclass="Body Text HowTo" translate="true"> in Motion / 360</text></para>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Interface2"><text styleclass="Interface2" translate="true">Segment Parameters</text></para>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Body Text"><text styleclass="Body Text" translate="true">None</text></para>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Interface2"><text styleclass="Interface2" translate="true">Segment-Range</text></para>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Body Text"><text styleclass="Body Text" translate="true">None</text></para>
+              </td>
+            </tr>
+          </table></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="vertical-align:top; height:86px;">
+          <para styleclass="Interface2"><text styleclass="Interface2" translate="true">Sampling Acceleration-Data - recommendations.</text></para>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Body Text"><text styleclass="Body Text" translate="true">Acquire </text><text styleclass="VariableName-IT" style="font-style:normal;" translate="true">acceleration-data</text><text styleclass="Body Text" translate="true"> of a machine component with an </text><text styleclass="VariableName" translate="true">Accelerometer Sensor</text><text styleclass="Body Text" translate="true">.</text></para>
+                <list id="0" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullets" style="font-family:Symbol; font-size:11pt; color:#000000;">
+                  <li styleclass="Bullets"><text styleclass="Bullets" translate="true">We recommend a </text><text styleclass="VariableName" translate="true">DC-Accelerometer Sensor</text><text styleclass="Bullets" style="font-style:italic;" translate="true">&#32;</text><text styleclass="Bullets" style="font-style:normal;" translate="true">that</text><text styleclass="Bullets" translate="true"> gives an output from </text><text styleclass="VariableName" translate="true">0 </text><text styleclass="Bullets" translate="true">to </text><text styleclass="VariableName" translate="true">1000Hz</text><text styleclass="Bullets" translate="true">. </text></li>
+                  <li styleclass="Bullets"><text styleclass="Body Text" translate="true">From</text><text styleclass="VariableName" translate="true"> 0Hz</text><text styleclass="Body Text HowTo" translate="true"> is important. At </text><text styleclass="VariableName" translate="true">0Hz</text><text styleclass="Body Text HowTo" translate="true">, you can use </text><text styleclass="Bullets" translate="true">±g</text><text styleclass="Body Text HowTo" translate="true"> to calibrate the accelerometer by turning it over </text><text styleclass="Bullets" translate="true">(g = ~9811mm/s/s).</text></li>
+                  <li styleclass="Bullets"><text styleclass="Body Text" translate="true">Import the data for one machine cycle. You can use an Encoder on a machine shaft to trigger the start and end the Acceleration Data acquisition.</text></li>
+                  <li styleclass="Bullets"><text styleclass="Body Text" translate="true">You get better results if you sample the data from a Dwell to a Dwell. </text></li>
+                  <li styleclass="Bullets"><text styleclass="Body Text" translate="true">Although there are mathematical techniques to compensate for any bias in the Acceleration Data, we do not use them when we integrate the your Acceleration data to get Velocity and Position.</text></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+        </td>
+      </tr>
+    </table></para>
+  </body>
+</topic>

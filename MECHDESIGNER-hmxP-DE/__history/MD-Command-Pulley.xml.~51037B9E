@@ -1,0 +1,298 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" status="Under Construction" modified="2022-06-04T11:26:07.270+01:00" lasteditedby="Adam" version="2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title>Mechanism | Add Pulley</title>
+  <keywords>
+    <keyword>Add<keyword>Pulley</keyword></keyword>
+    <keyword>Machine elements toolbar<keyword>Add Pulley</keyword></keyword>
+    <keyword>Menu &gt; Add &gt; Mechanism Menu<keyword>Add Pulley</keyword></keyword>
+    <keyword>Pulley</keyword>
+  </keywords>
+  <body>
+    <header>
+      <para styleclass="Heading1">Mechanism | Add Pulley</para>
+    </header>
+    <para styleclass="Heading3_atocs_">Zahnriemenscheibe hinzufügen</para>
+    <para styleclass="SeeAlso">See also : <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-Pulley">Pulley dialog-box</link></para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="Heading4 Toggle_atocs_">Terminology and definitions:</para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="5" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:236px;">
+          <para styleclass="Element" style="text-align:right;"><text styleclass="Popup Box-Elements">Zahnriemenscheibe</text> : </para>
+        </td>
+        <td style="width:408px;">
+          <para styleclass="Popup Box">Drehbar gelagerte Scheibe zur reibschlüssigen Paarung eines Teils ihres Umfangs mit einem Zahnriemens.</para>
+          <para styleclass="Popup Box">Die Winkelbewegung der <text styleclass="Popup Box-Elements">Zahnriemenscheibe</text> und die lineare Bewegung eines <text styleclass="VariableName-small">Zahnriemens</text> hängen durch den Radius der <text styleclass="Popup Box-Elements">Zahnriemenscheibe</text> zusammen. </para>
+          <para styleclass="Popup Box">Der Radius der <text styleclass="Popup Box-Elements">Zahnriemenscheibe</text> wird durch die <text styleclass="Parameter-Popup">Anzahl der Zähne</text> um die <text styleclass="Popup Box-Elements">Zahnriemenscheibe</text> und die <text styleclass="Parameter-Popup">Zahnteilung</text> des Zahnriemens definiert.</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td colspan="2">
+          <para styleclass="Popup Box">Es gibt zwei Arten von <text styleclass="Popup Box-Elements">Riemenscheiben</text>.</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:236px;">
+          <para styleclass="VariableName-small" style="text-align:right;">Typ 1: Antriebsriemenscheibe : </para>
+        </td>
+        <td style="width:408px;">
+          <para styleclass="Popup Box">Die vordefinierte Winkelbewegung der <text styleclass="Popup Box-Elements">Zahnriemenscheibe</text> gibt die lineare Bewegung des <text styleclass="VariableName-small">Zahnriemen</text> vor.</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:236px;">
+          <para styleclass="VariableName-small" style="text-align:right;">Typ 2: Angetriebene Riemenscheibe : </para>
+        </td>
+        <td style="width:408px;">
+          <para styleclass="Popup Box">Die vordefinierte Linearebewegung des <text styleclass="VariableName-small">Zahnriemen</text> gibt die Winkelbewegung des <text styleclass="Popup Box-Elements">Riemenscheibe</text> vor.</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:236px;">
+          <para styleclass="Normal" style="text-align:right;"><text styleclass="VariableName-small">Zahnriemen : </text></para>
+        </td>
+        <td style="width:408px;">
+          <para styleclass="Popup Box">Es ist ein <text styleclass="VariableName-small">Zahnriemen</text> (wir zeigen nicht die Zähne auf dem <text styleclass="VariableName-small">Zahnriemen</text>). Der <text styleclass="VariableName-small">Zahnriemen</text> rutscht nicht relativ zu den Zähnen der <text styleclass="Popup Box-Elements">Riemenscheibe</text>. </para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="Popup Box">Die Bewegung eines <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-Motion-Driven-Point" styleclass="Popup Box2">Bewegungspunktes</link> auf einer <text styleclass="VariableName-small">Skizzenschleife</text> stellt die Bewegung des <text styleclass="Popup Box-Elements">Riemen</text><text styleclass="VariableName-small">&#32;</text>dar; die Form der Skizzenschleife stellt den Weg des <text styleclass="Popup Box-Elements">Riemen</text> dar.</para>
+          <para styleclass="Popup Box">Es sollte ein <text styleclass="Popup Box-Elements">Bogen</text> in der <text styleclass="VariableName-small">Sketch-Schleife</text> für jede <text styleclass="Popup Box-Elements">Riemenscheibe</text> sein. Das Drehzentrum jeder <text styleclass="Popup Box-Elements">Riemenscheibe</text> ist der Mittelpunkt jedes <text styleclass="Popup Box-Elements">Bogens</text>.</para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading4 Toggle_atocs_">Kinematischer Zustand <text style="color:#ff0000;">vor dem</text> Hinzufügen der Riemenscheibe.</para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="1" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Popup Box"><text styleclass="VariableName-small">Typ 1</text>: Ein <text styleclass="VariableName-small">rotierendes Teil</text> ist <text styleclass="VariableName-small">kinematisch definiert</text>. </para>
+          <para styleclass="Popup Box"><text styleclass="VariableName-small">Typ 2: </text>Ein <text styleclass="VariableName-small">rotierendes Teil</text> ist <text styleclass="VariableName-small" style="color:#ff0000;">nicht</text>&#32;<text styleclass="VariableName-small">kinematisch definiert</text><text styleclass="Normal">. </text></para>
+          <para styleclass="Popup Box">Das Modell enthält auch eine <text styleclass="VariableName-small">Skizzenschleife</text>, um den Weg des <text styleclass="VariableName-small">Gürtels</text> darzustellen.</para>
+          <para styleclass="Popup Box">Ein Bewegungspunkt (siehe FB Bewegungspfad hinzufügen) befindet sich in der Skizzenschleife. </para>
+          <para styleclass="Popup Box">Es besteht <text styleclass="VariableName-small" style="color:#ff0000;">keine</text> Bewegungsbeziehung zwischen dem <text styleclass="VariableName-small">rotierenden Teil</text> und dem <text styleclass="Popup Box2">Bewegungspunkt</text> in der <text styleclass="VariableName-small">Skizzenschleife</text>.</para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading4 Toggle_atocs_">Kinematic State <text style="color:#ff0000;">after</text> you do Add Pulley.</para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="1" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Popup Box"><text styleclass="VariableName-small">Typ 1: Der</text>&#32;<text styleclass="VariableName-small">rotierendes Teil</text> ist <text styleclass="VariableName-small">kinematisch definiert. Es ist </text>eine <text styleclass="VariableName-small">Antriebsscheibe</text>.</para>
+          <para styleclass="Popup Box">Die Bewegung der <text styleclass="Popup Box-Elements">Riemenscheibe</text>, die <text styleclass="Parameter-Popup">Anzahl der Zähne</text> und die <text styleclass="Parameter-Popup">Zahnteilung</text> bestimmen nun die Bewegung des <text styleclass="Popup Box2">Bewegungspunkts</text> entlang der <text styleclass="VariableName-small">Skizzenschleife</text> (des <text styleclass="VariableName-small">Riemens</text>).</para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="VariableName-small">Type 2: Der<text styleclass="Popup Box">&#32;</text>rotating-Part ist kinematisch definiert<text styleclass="Normal">. </text><text styleclass="Popup Box">Es ist eine </text>Angetriebene Riemenscheibe<text styleclass="Popup Box">. (Es handelt sich um eine Riemenscheibe, die durch den Riemen angetrieben wird).</text></para>
+          <para styleclass="Popup Box">Die Bewegung des <text styleclass="Popup Box2">Bewegungspunkts</text> entlang der <text styleclass="VariableName-small">Skizzenschleife</text> (des <text styleclass="VariableName-small">Riemens</text>), die <text styleclass="Parameter-Popup">Zahnteilung</text> und die <text styleclass="Parameter-Popup">Anzahl der Zähne</text> auf der <text styleclass="Popup Box-Elements">Riemenscheibe</text> bestimmen nun die Bewegung der <text styleclass="Popup Box-Elements">Riemenscheibe</text>.</para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="Heading3_atocs_">Kinematics-Tree of Pulley</para>
+    <para styleclass="Body Text HowTo"><text styleclass="T_Menu">Add Pulley </text><text styleclass="Body Text">for a Driven-Pulley removes </text><text styleclass="VariableName" style="color:#ff0000;">one</text><text styleclass="Body Text"> degrees-of-freedom.</text></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="2" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:236px;">
+          <para styleclass="Image Caption"><image src="MD-ADD-PULLEY-KINEMATIC-TREE.ipp" scale="100.00%" figurelistinclude="0"></image></para>
+          <para styleclass="Image Caption"></para>
+        </td>
+        <td rowspan="2">
+          <para styleclass="T_Menu">Pulley</para>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Body Table"><text styleclass="VariableName" style="color:#ff0000;">Before</text> you do <text styleclass="T_Menu">Add Pulley</text>, to a <text styleclass="VariableName">rotating-Part</text> that is not <text styleclass="Body Text">kinematically-defined, the </text><text styleclass="VariableName">rotating-Part</text><text styleclass="Body Text"> has</text>&#32;<text styleclass="VariableName" style="color:#ff0000;">one</text> degree-of-freedom.</para>
+                <para styleclass="Body Text"><text styleclass="VariableName" style="color:#ff0000;">After</text> you do <text styleclass="T_Menu">Add Pulley,</text> the <text styleclass="VariableName">rotating-Part</text> becomes a <text styleclass="VariableName">Pulley-Rocker </text>and kinematically-defined.</para>
+                <para styleclass="Body Text">A <text styleclass="Element">Path-Joint</text> is a child to the <text styleclass="Element">Pulley-Rocker</text>.</para>
+              </td>
+            </tr>
+          </table></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:236px;">
+          <para styleclass="Body Text">The <text styleclass="Element">Pulley</text> in the <text styleclass="Interface">Kinematics-Tree</text> is a <text styleclass="Element">Pulley Rocker</text>. It is a parent to a:</para>
+          <list id="0" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Element" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="Element">Pin-Joint<text styleclass="Body Text">&#32;</text></li>
+            <li styleclass="Element">Part</li>
+            <li styleclass="Body Table"><text styleclass="Element">Path-Joint</text></li>
+          </list>
+          <para styleclass="Body Table">The <text styleclass="Element">Path-Joint</text> is a motion relationship of the rotating-Part (<text styleclass="Element">Part</text>+<text styleclass="Element">Pin-Joint</text>) and the <text styleclass="Element">Motion-Path FB.</text></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading3_atocs_">Vorbereitung (typisch)</para>
+    <para styleclass="Heading4 Toggle_atocs_2">Vorbereitung 1: Bereiten Sie den Skizzenpfad für den Riemens vor.</para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="2" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:240px;">
+          <para styleclass="Normal"><image src="MD-ADD-PULLEY-SKETCH-PATH.ipp" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td rowspan="2">
+          <para styleclass="VariableName">Fügen Sie einen Skizzenpfad hinzu, um den Weg des Gürtels darzustellen. </para>
+          <para styleclass="Body Text">Der <text styleclass="Interface">Skizzenpfad</text> sollte nur<text styleclass="B Bullets">&#32;</text><text styleclass="Element">Linien</text><text styleclass="B Bullets"> und </text><text styleclass="Element">Bögen </text>enthalten<text styleclass="B Bullets">. </text>Fügen Sie in der Regel &#160;zwischen jeder <text styleclass="Element">Linie</text> und jedem <text styleclass="Element">Kreisbogen</text>eine <text styleclass="Element">Tangentenbeschränkung</text>ein . <text styleclass="Normal">Fügen</text> Sie &#160;den <text styleclass="Element">Bögen </text><text styleclass="VariableName" style="color:#ff0000;">keine </text><text styleclass="Element">gleiche</text> Zwangsbedingung hinzu<text styleclass="Element">.</text></para>
+          <para styleclass="Body Text">Der <text styleclass="Interface">Skizzenpfad</text> ist normalerweise eine geschlossene <text styleclass="Interface">Skizzenschleife</text>. In der Regel ist es hilfreich, den Skizzenpfad vollständig zu definieren.</para>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <list id="1" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="Bullets"><text styleclass="Interface">Mechanismus-Editor</text><text styleclass="Body Text">: &#160;Bearbeiten Sie das </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-BasePart" styleclass="Element">Basisteil</link><text styleclass="Body Text"> (normalerweise) oder ein </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-Part" styleclass="Element">hinzugefügtes Teil</link><text styleclass="VariableName">&#32;</text></li>
+                  <li styleclass="Bullets"><text styleclass="Interface">Teil-Editor: </text><text styleclass="Body Table">Hinzufügen eines </text><text styleclass="Interface">Skizzenpfades</text><text styleclass="Body Table">, um den Pfad des </text><text styleclass="VariableName">Gürtels</text><text styleclass="Body Table">darzustellen</text></li>
+                  <li styleclass="Bullets"><text styleclass="Interface">Teil-Editor</text><text styleclass="Body Table">: Hinzufügen von </text><text styleclass="Element">tangentialen Zwangsbedingungen</text><text styleclass="Body Table"> zwischen jeder </text><text styleclass="Element">Linie</text><text styleclass="Body Table"> und jedem </text><text styleclass="Element">Bogen</text><text styleclass="Body Table">. </text></li>
+                  <li styleclass="Bullets"><text styleclass="Interface">Teil-Editor:</text> Fügen Sie dem Radius eines jeden <text styleclass="Element">Bogens</text> eine Dimension hinzu <text styleclass="VariableName">. </text></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Notes">Hinweis: <text styleclass="Interface2" style="color:#ff0000;">Wenn</text><text styleclass="Body Text HowTo"> das rotierende Teil (und die Riemenscheibe) eine </text><text styleclass="Interface">Wippe</text><text styleclass="Body Text HowTo"> ist </text><text styleclass="Interface">:</text></para>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <list id="2" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="5" styleclass="Bullets" style="font-family:&apos;Noto Sans&apos;; font-size:11pt; color:#000000;">
+                  <li styleclass="Bullets"><text styleclass="Interface">Teil-Editor</text>: Fügen Sie eine <text styleclass="Element">Linie</text> vom <text styleclass="Interface">Mittelpunkt</text> des <text styleclass="Element">Bogens</text> aus ein, die die Drehachse der <text styleclass="Interface">Wippe</text> sein wird.</li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Body Text">Dann können Sie dem <text styleclass="VariableName">rotierenden Teil</text> im <text styleclass="Interface">Mechanismus-Editor </text>eine <text styleclass="Element">Motion-Dimension FB</text> hinzufügen<text styleclass="Interface">.</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:240px;">
+          <para styleclass="Normal"><image src="MD-ADD-PULLEY-SKETCH-PATH-2.ipp" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading4 Toggle_atocs_2">Vorbereitung 2: Hinzufügen des Bewegung-Pfad FB zum Skizzen-Pfad</para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="1" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:240px;">
+          <para styleclass="Normal"><image src="MD-ADD-PULLEY-MOTIONPATH-FB-3.ipp" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="VariableName">Hinzufügen des FB MOTION-PATH</para>
+          <para styleclass="Body Text">Fügen Sie dem Skizzenpfad<text styleclass="VariableName" style="color:#ff0000;"> EINEN</text>&#32;<text styleclass="Element">Motion-Path-FB</text> hinzu.</para>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <list id="3" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="Bullets">Klicken Sie auf <text styleclass="T_Menu">Kinematik-FB-Symbolleiste &gt; Bewegungspfad-FB hinzufügen</text><text styleclass="VariableName">.</text></li>
+                  <li styleclass="Bullets"><text styleclass="HowTo Bulleted">Klicken Sie auf ein Skizzenelement im </text><text styleclass="Interface">Skizzenpfad</text></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Body Text">Der <text styleclass="Element">Motion-Path FB</text> befindet sich im <text styleclass="Interface">Grafikbereich</text> und der <text styleclass="Interface">Motion-Point</text> am <text styleclass="Interface">Startpunkt</text> des ausgewählten Skizzenelementes.</para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading4 Toggle_atocs_2">Preparation 3: Prepare the Rotating-Parts that become the Pulleys.</para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="2" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:240px;">
+          <para styleclass="Normal"><image src="MD-ADD-PULLEY-DRIVING-4.ipp" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="Interface2">Typ 1: Antriebsriemenscheibe :</para>
+          <para styleclass="Body Text">Sie können <text styleclass="VariableName" style="color:#ff0000;">NULL</text> oder maximal <text styleclass="VariableName" style="color:#ff0000;">EINE</text>&#32;<text styleclass="VariableName">Antriebsrolle</text> zu jedem Gürtel hinzufügen. </para>
+          <para styleclass="Body Text">Das <text styleclass="VariableName">rotierende Teil</text> ist kinematisch definiert, bevor wir die <text styleclass="T_Menu">Riemenscheibe hinzufügen</text>. </para>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <list id="4" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="3" styleclass="Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="Bullets">Fügen Sie dem Modell ein <text styleclass="VariableName">rotierendes Teil</text> hinzu, dessen <text styleclass="Element">Pin-Joint</text> sich in der Mitte des <text styleclass="Element">Bogens</text> im <text styleclass="VariableName">Skizzenpfad</text><text styleclass="Body Text"> des </text><text styleclass="VariableName">Gürtels befindet.</text></li>
+                </list>
+                <para styleclass="Body Text">Das <text styleclass="Element">Teil</text> sollte kinematisch definiert sein. </para>
+                <para styleclass="Body Text">Zum Beispiel ist es eine Wippe/Kurbel.</para>
+              </td>
+            </tr>
+          </table></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:240px;">
+          <para styleclass="Normal"><image src="MD-ADD-PULLEY-DRIVEN-5.ipp" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <para styleclass="Interface2">Typ 2: Angetriebene Riemenscheibe : </para>
+          <para styleclass="Body Text">The <text styleclass="VariableName">rotating-Part</text> is <text styleclass="VariableName" style="color:#ff0000;">not</text> kinematically-defined before we do <text styleclass="T_Menu">Add Pulley</text>.</para>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <list id="5" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="4" styleclass="Bullets" style="font-family:&apos;Noto Sans&apos;; font-size:11pt; color:#000000;">
+                  <li styleclass="Bullets">Fügen Sie in der Skizzenschleife ein <text styleclass="VariableName">rotierendes Teil</text> mit einem<text styleclass="Element"> Pin-Joint</text> im <text styleclass="Interface">Mittelpunkt</text> eines <text styleclass="Element">Bogens</text> hinzu.</li>
+                </list>
+                <para styleclass="Bullets">Der <text styleclass="Element">Teil</text> sollte einen Freiheitsgrad haben.</para>
+              </td>
+            </tr>
+          </table></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="Heading3_atocs_">ADD PULLEY</para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="2" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:240px;">
+          <para styleclass="Normal"><image src="MD-CM-AddPulley-1.png" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td rowspan="2">
+          <para styleclass="Body Text"><text style="font-style:normal;">Sie müssen &#160;für jede </text><text styleclass="Element">Rolle</text>, die<text style="font-style:normal;"> Sie dem Modell hinzufügen möchten</text>, <text style="font-style:normal;">den Befehl </text><text styleclass="T_Menu">Rolle hinzufügen </text><text style="font-style:normal;">ausführen.</text></para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="Body Text"><text style="font-style:normal;">Klicken Sie in</text>&#32;<text styleclass="T_Menu">der Werkzeugleiste</text><text style="font-style:normal;">auf</text>&#32;<text styleclass="T_Menu">Maschinenelemente &gt; Riemenscheibe hinzufügen:</text></para>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <list id="6" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="Bullets"><text style="font-style:normal;">Klicken Sie auf</text> einen <text styleclass="Element">Pin-Joint</text> in der Mitte eines <text styleclass="VariableName">rotierenden Teils*</text><text styleclass="Body Text">.</text><text styleclass="VariableName">&#32;</text></li>
+                  <li styleclass="Bullets"><text styleclass="HowTo Numbered" style="font-style:normal;">Klicken Sie auf</text><text styleclass="HowTo Numbered"> den </text><text styleclass="Element">FB Motion-Path.</text></li>
+                </list>
+                <para styleclass="Body Table">Der <text styleclass="Interface">Part-Editor</text> öffnet sich</para>
+                <list id="7" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="3" styleclass="Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="Bullets"><text style="font-style:normal;">Klicken Sie auf</text> die Abmessung, die den Radius des <text styleclass="Element">Bogens </text>definiert<text styleclass="VariableName">&#32;</text></li>
+                </list>
+                <para styleclass="Bullets"><text styleclass="Body Table">Der </text><text styleclass="Interface">Part-Editor</text><text styleclass="Body Table"> wird geschlossen</text></para>
+                <list id="7" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="3" styleclass="Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="Bullets"><text styleclass="HowTo Numbered" style="font-style:normal;">Klicken Sie auf</text><text styleclass="HowTo Numbered"> das </text><text styleclass="VariableName">rotierende Teil*</text><text styleclass="HowTo Numbered">, das einen </text><text styleclass="Element">Pin-Joint </text><text styleclass="Body Text">(</text><text styleclass="VariableName">siehe 1</text><text styleclass="Body Text">)</text><text styleclass="HowTo Numbered"> im </text><text styleclass="Interface">Mittelpunkt</text><text styleclass="HowTo Numbered"> des </text><text styleclass="Element">Bogens</text><text styleclass="HowTo Numbered">hat</text><text styleclass="Body Text"> (</text><text styleclass="VariableName">siehe 3</text><text styleclass="Body Text">)</text></li>
+                </list>
+                <list id="8" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="3" styleclass="Bullets" style="font-family:&apos;Noto Sans&apos;; font-size:11pt; color:#000000;">
+                  <li styleclass="Bullets"><text styleclass="HowTo Numbered" style="font-style:normal;">Klicken Sie</text><text styleclass="Body Text"> im </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-Command-Manager" styleclass="Interface">Befehls-Manager</link><text styleclass="HowTo Numbered" style="font-style:normal;">auf</text><text styleclass="Body Text">&#32;</text><image src="OK-tiny-11-15.png" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Body Text"><text style="font-size:14pt; font-weight:bold;">*</text> Wenn das <text styleclass="VariableName">Drehteil</text>:</para>
+          <list id="9" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted">kinematisch definiert - die Bewegung der<text styleclass="Body Text">&#32;</text><text styleclass="Element">Riemenscheibe</text><text styleclass="Body Text"> bewegt den </text><text styleclass="Element">Riemen</text><text styleclass="Body Text"> (</text><text styleclass="VariableName">Antriebsscheibe</text><text styleclass="Body Text">).</text></li>
+            <li styleclass="HowTo Bulleted"><text styleclass="VariableName" style="color:#ff0000;">nicht</text> kinematisch definiert <text styleclass="Body Text">- die Bewegung des </text><text styleclass="Element">Riemens</text><text styleclass="Body Text"> bewegt die </text><text styleclass="Element">Riemenscheibe</text><text styleclass="Body Text"> (</text><text styleclass="VariableName">Driven-Pulley</text><text styleclass="Body Text">).</text></li>
+          </list>
+          <para styleclass="Interface2">Result<text styleclass="VariableName">:</text></para>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Body Table">Neues <text styleclass="Element">Riemenscheibenschema</text> wird im <text styleclass="Interface">Grafikbereich</text> angezeigt.</para>
+                <list id="10" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullets" style="font-family:Symbol; font-size:11pt; color:#000000;">
+                  <li styleclass="Bullets">Use the <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-FunctionBlock-MotionPath" styleclass="Element">Motion-Path dialog-box</link><text styleclass="Body Text"> to edit the </text><text styleclass="Parameter">Tooth-Pitch</text><text styleclass="Body Text"> and </text><text styleclass="Parameter">length</text><text styleclass="Body Text"> of the </text><text styleclass="VariableName">Belt</text><text styleclass="Body Text">.</text></li>
+                </list>
+                <para styleclass="Body Table">The <text styleclass="Element">Pulley</text> has an integer number-of-teeth.</para>
+                <list id="11" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Bullets" style="font-family:Symbol; font-size:11pt; color:#000000;">
+                  <li styleclass="Bullets">Use the <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Dialog-Pulley" styleclass="Element">Pulley dialog-box</link> to edit the <text styleclass="Parameter">number-of-teeth</text> on each <text styleclass="Element">Pulley</text>.</li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:240px;">
+          <para styleclass="Normal"><image src="MD-ADD-PULLEY-6.ipp" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"><caption><![CDATA[2 x Add Pulley: 
+ -  1 x Driving-Pulley (Purple)
+ -  1 x Driven-Pulley (Magenta)]]></caption></image></para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="Body Text" style="text-align:center;"><text styleclass="T_Menu">1 x Add Pulley</text> to add 1 x <text styleclass="Element">Pulley</text>.</para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading3_atocs_">Video: Add Pulley<text styleclass="VariableName">:</text></para>
+    <para styleclass="Body Text"><text style="font-family:Arial; font-size:11pt; font-weight:bold; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">&#32;</text><conditional-text type="IF" value="PDF"/><link displaytype="text" defaultstyle="true" type="filelink" href="KE-AddPulley.gif">Double-click to watch Video</link><conditional-text type="END"/><conditional-text type="IF" value="CHM"/></para>
+    <para styleclass="Normal"><toggle type="picture" print-expanded="true" help-expanded="false" src-collapsed="KE-AddPulley.gif" src-expanded="KE-AddPulley.gif" scale="20.00%" width="256" height="144" styleclass="Image Caption" figurelistinclude="0"><caption><![CDATA[Video: Add Pulley (and the Belt Path)]]></caption><title>Video: Add Pulley (and the Belt Path)</title></toggle><conditional-text type="END"/><conditional-text type="IF" value="HTML,EBOOK"/></para>
+    <para styleclass="Normal"><video src="KE-AddPulley.mp4" width="1280px" height="720px" autostart="false" loop="false" showcontrols="false" playbutton="true" previewimage="KE-AddPulley_preview.jpg" scale="20.00%" styleclass="Image Caption"><title>Video: Add Pulley (and the Belt Path)</title><caption><![CDATA[Video: Add Pulley (and the Belt Path)]]></caption></video><conditional-text type="END"/></para>
+  </body>
+</topic>

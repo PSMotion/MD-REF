@@ -1,0 +1,340 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" status="Under Construction" modified="2022-09-14T14:20:21.024+01:00" lasteditedby="Adam" version="2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title>Add Messung FB</title>
+  <keywords>
+    <keyword>Add<keyword>Function-Block: Measurement</keyword></keyword>
+    <keyword>Dimension<keyword>Driven</keyword></keyword>
+    <keyword>Function-Block<keyword>Measurement FB</keyword></keyword>
+    <keyword>Measure (Driven-Dimension)<keyword>Angle: Three Points - (Internal and External)</keyword><keyword>Angle: Two Lines</keyword><keyword>Angle: Two Points</keyword><keyword>Distance: Line and Point</keyword><keyword>Distance: Two Points</keyword></keyword>
+    <keyword>Measurements in Mechanism Editor<keyword>Angle: Three Points</keyword><keyword>Angle: Two Lines</keyword><keyword>Angle: Two Points</keyword><keyword>Distance: Line and Point</keyword><keyword>Distance: Two Points</keyword></keyword>
+    <keyword>Motion Analysis<keyword>Measurment FB</keyword></keyword>
+    <keyword>Motion Study<keyword>Measurement FB</keyword></keyword>
+  </keywords>
+  <body>
+    <header>
+      <para styleclass="Heading1">Add Messung FB</para>
+    </header>
+    <para styleclass="Heading3_atocs_">Messung Funktions-Block</para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="1" colcount="1">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Element-Header">Messung FB:</para>
+          <list id="0" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted"><text styleclass="Body Text">Sie ist eine getriebene Dimension</text></li>
+            <li styleclass="HowTo Bulleted"><text styleclass="Body Text HowTo">Die Daten an seinem/seinen Ausgangsanschluss(en) liefern die Messdimension, ihre erste und ihre zweite Ableitung.</text></li>
+          </list>
+          <para styleclass="Interface2">Ausgangsan-schlüsse:</para>
+          <list id="1" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted"><text styleclass="HowTo Numbered">Zwei Ausgangsanschlüsse für eine Messung zwischen zwei </text><text styleclass="Element">Punkten</text><text styleclass="Body Text"> - siehe weiter unten. </text></li>
+          </list>
+          <list id="2" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted"><text styleclass="HowTo Numbered">Eine Ausgangsanschlüsse für alle anderen Messungen.</text></li>
+          </list>
+          <para styleclass="Interface2">Maßnahme:</para>
+          <list id="3" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted"><text styleclass="HowTo Numbered">Länge einer </text><text styleclass="Element">Linie*</text><text styleclass="Body Text">, Radius eines </text><text styleclass="Element">Kreises</text><text styleclass="Body Text">&#32;</text></li>
+          </list>
+          <list id="4" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:10pt; color:#800000;">
+            <li styleclass="HowTo Bulleted"><text styleclass="HowTo Numbered">Abstand zwischen: zwei </text><text styleclass="Element">Punkten</text><text styleclass="HowTo Numbered">, einer </text><text styleclass="Element">Linie*</text><text styleclass="HowTo Numbered"> und einem </text><text styleclass="Element">Punkt</text><text styleclass="HowTo Numbered">, zwei parallelen </text><text styleclass="Element">Geraden* </text></li>
+          </list>
+          <list id="5" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted"><text styleclass="HowTo Numbered">Winkel zwischen: zwei </text><text styleclass="Element">Geraden*</text><text styleclass="HowTo Numbered">, drei </text><text styleclass="Element">Punkten</text><text styleclass="HowTo Numbered">.</text></li>
+          </list>
+          <list id="6" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted"><text styleclass="HowTo Numbered">Winkel zwischen zwei </text><text styleclass="Element">Punkten</text><text styleclass="HowTo Numbered"> relativ zur </text><text styleclass="Interface">Mechanismus-Ebene</text><text styleclass="HowTo Numbered">.</text></li>
+          </list>
+          <list id="7" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted"><text styleclass="Body Text">Distance to a sketch-element or angle of a sketch-element relative to the </text><text styleclass="Element">X-axis</text><text styleclass="Body Text"> or </text><text styleclass="Element">Y-axis</text><text styleclass="Body Text">.</text></li>
+          </list>
+          <para styleclass="Body Text"><text style="font-size:14pt; color:#800000;">*</text><text styleclass="Element">Linie</text> und <text styleclass="Element">CAD-Linie</text></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading3_atocs_">Messung hinzufügen FB</para>
+    <para styleclass="Normal"><table styleclass="Default" rowcount="3" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:66px;">
+          <para styleclass="VariableName">Add : </para>
+        </td>
+        <td>
+          <list id="8" type="ol" listtype="decimal" formatstring="&#83;&#84;&#69;&#80;&#32;&#37;&#48;&#58;&#115;&#58;&#32;" format-charset="DEFAULT_CHARSET" levelreset="false" legalstyle="false" startfrom="1" styleclass="HowTo STEP" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; color:#003300;">
+            <li styleclass="HowTo STEP"><text styleclass="T_Menu">Select the Add Measurement FB command</text></li>
+          </list>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="2">
+            <tr style="vertical-align:top">
+              <td style="width:47px; border-top:none; border-right:none; border-bottom:none;">
+                <para styleclass="VariableName" style="text-align:right;"><image src="MD-Icon-FB-Measurement.png" scale="100.00%" padding="0 2 0 0" figurelistinclude="0"><title>Add Mearurement Fb</title></image></para>
+              </td>
+              <td style="border:none;">
+                <para styleclass="Bullets"><text styleclass="VariableName">&#32;</text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Command-FB-Kinematics" styleclass="T_Menu">Werkzeugleiste Kinematik FB</link><text styleclass="T_Menu"> &gt; Messung FB</text></para>
+                <para styleclass="Bullets"><text styleclass="T_Menu">oder</text></para>
+                <para styleclass="Bullets"><text styleclass="T_Menu">Menü hinzufügen &gt; Messung hinzufügen FB</text></para>
+              </td>
+            </tr>
+          </table></para>
+          <list id="8" type="ol" listtype="decimal" formatstring="&#83;&#84;&#69;&#80;&#32;&#37;&#48;&#58;&#115;&#58;&#32;" format-charset="DEFAULT_CHARSET" levelreset="false" legalstyle="false" startfrom="1" styleclass="HowTo STEP" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; color:#003300;">
+            <li styleclass="HowTo STEP"><text styleclass="T_Menu">Wählen Sie den Befehl Messung hinzufügen FB</text></li>
+          </list>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td style="border-top:none; border-right:none; border-bottom:none;">
+                <para styleclass="B Bullets"><text style="font-style:normal;">Im Grafikbereich:</text></para>
+                <list id="9" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="B Bullets" style="font-family:&apos;Noto Sans&apos;; font-size:11pt; color:#000000;">
+                  <li styleclass="B Bullets"><text style="font-style:normal;">Klicken Sie auf</text> ein Skizzenelement, das Sie messen möchten</li>
+                </list>
+                <para styleclass="B Bullets">oder </para>
+                <list id="9" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="B Bullets" style="font-family:&apos;Noto Sans&apos;; font-size:11pt; color:#000000;">
+                  <li styleclass="B Bullets">Klicken Sie auf die Skizzenelemente, zwischen denen Sie messen möchten.</li>
+                </list>
+                <para styleclass="B Bullets">Dann:</para>
+                <list id="9" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="B Bullets" style="font-family:&apos;Noto Sans&apos;; font-size:11pt; color:#000000;">
+                  <li styleclass="B Bullets"><text style="font-style:normal;">Klicken Sie auf</text> die <text styleclass="Interface">Grafikfläche</text>.</li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Body Text">Der <text styleclass="Element">Mess-FB</text> und die <text styleclass="Element">Messdimension</text> werden im <text styleclass="Interface">Grafikbereich</text> angezeigt.</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:66px;">
+          <para styleclass="VariableName">Uses : </para>
+        </td>
+        <td>
+          <list id="10" type="ol" listtype="decimal" formatstring="&#83;&#84;&#69;&#80;&#32;&#37;&#48;&#58;&#115;&#58;&#32;" format-charset="DEFAULT_CHARSET" levelreset="false" legalstyle="false" startfrom="1" styleclass="HowTo STEP" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; color:#003300;">
+            <li styleclass="HowTo STEP"><text styleclass="T_Menu">Use the Measurement FB</text></li>
+          </list>
+          <para styleclass="Body Text">Sie können die Dimension im Grafikbereich sehen. Vielleicht möchten Sie auch die Bewegungswerte am Ausgangsanschluss kennen oder verwenden.</para>
+          <para styleclass="Body Text">So verwenden Sie den <text styleclass="Element">FB Messung</text></para>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td style="border-top:none; border-right:none; border-bottom:none;">
+                <para styleclass="Body Text">Verbinden Sie einen Draht von dem/den Ausgangsanschluss/en eines <text styleclass="Element">Mess-FBs</text> mit dem Eingangsanschluss eines:</para>
+                <list id="11" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="B Bullets" style="font-family:Symbol; font-size:10pt; color:#000000;">
+                  <li styleclass="B Bullets"><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Command-FB-Graph" styleclass="Interface">Graph FB</link><text styleclass="Body Text"> oder </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Command-FB-Statistics" styleclass="Interface">Statistik FB</link></li>
+                </list>
+                <list id="12" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="B Bullets" style="font-family:Symbol; font-size:11pt; color:#000000;">
+                  <li styleclass="B Bullets"><text styleclass="Element">Motion-Dimension FB</text><text styleclass="HowTo Numbered"> oder </text><text styleclass="Element">Motion-Path FB</text><text styleclass="HowTo Numbered"> - der </text><text styleclass="Interface">Motion-Part</text><text styleclass="HowTo Numbered"> oder </text><text styleclass="Interface">Motion-Point</text><text styleclass="HowTo Numbered"> verwendet die Messung als seine Bewegung.</text></li>
+                </list>
+                <list id="13" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="B Bullets" style="font-family:Symbol; font-size:10pt; color:#333399;">
+                  <li styleclass="B Bullets"><text styleclass="Element">Bewegung FB</text><text styleclass="HowTo Numbered"> - die Messung wird zur </text><text styleclass="Interface">X-Achse</text><text styleclass="HowTo Numbered"> für die </text><text styleclass="Parameter">Bewegung</text><text styleclass="HowTo Numbered">, und der Ausgang des </text><text styleclass="Element">Bewegung FB</text><text styleclass="HowTo Numbered"> ist die </text><text styleclass="Interface">Y-Achse</text><text styleclass="HowTo Numbered"> der </text><text styleclass="Parameter">Bewegung</text></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:66px;">
+          <para styleclass="VariableName">See also :</para>
+        </td>
+        <td>
+          <para styleclass="SeeAlso"><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Function-Blocks-Schematic-DataValuesChannels" anchor="HowtoConnectFBs">Connecting FBs</link></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading3_atocs_">Measurement FB - more details </para>
+    <para styleclass="Heading4 Toggle_atocs_">How to Add a Measurement FB</para>
+    <para styleclass="Body Text"><table styleclass="Default" rowcount="2" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="vertical-align:bottom; width:205px;">
+          <para styleclass="Normal" style="text-align:right;"><image src="MD-Icon-FB-Measurement.png" scale="100.00%" padding="0 2 0 0" styleclass="Image Caption" figurelistinclude="0"><title>Add Mearurement Fb</title></image></para>
+        </td>
+        <td>
+          <list id="14" type="ol" listtype="decimal" formatstring="&#83;&#84;&#69;&#80;&#32;&#37;&#48;&#58;&#115;&#58;&#32;" format-charset="DEFAULT_CHARSET" levelreset="false" legalstyle="false" startfrom="1" styleclass="HowTo STEP" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo STEP"><text styleclass="T_Menu">Add menu &gt; Add Measurement FB</text><text styleclass="VariableName">&#32;</text><br/><text styleclass="Body Text">or</text><br/><text styleclass="T_Menu">Kinematic FB toolbar &gt; Add Measurement FB</text></li>
+          </list>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:205px;">
+          <para styleclass="Normal"><image src="MD-GA-MeasurementFB-2Pts.png" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"><caption><![CDATA[Measurement FB between two Points]]></caption></image></para>
+        </td>
+        <td>
+          <list id="15" type="ol" listtype="decimal" formatstring="&#83;&#84;&#69;&#80;&#32;&#37;&#48;&#58;&#115;&#58;&#32;" format-charset="DEFAULT_CHARSET" levelreset="false" legalstyle="false" startfrom="2" styleclass="HowTo STEP" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo STEP"><text style="font-style:normal;">Click </text>in the <text styleclass="Interface">graphic-area</text> the <text styleclass="Body Text">sketch-element, or the sketch-elements,</text> that you want to measure<text styleclass="VariableName">&#32;</text></li>
+            <li styleclass="HowTo STEP"><text style="font-style:normal;">Click</text> in the <text styleclass="Interface">graphic-area</text> to place the <text styleclass="Element">Measurement FB</text>.</li>
+          </list>
+          <para styleclass="Body Text">The <text styleclass="Element">Measurement FB</text><image src="Red-14-1b.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image> is near to the dimension<image src="Red-14-4.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image>. </para>
+          <list id="16" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:10pt; color:#800000;">
+            <li styleclass="HowTo Bulleted">To move the <text styleclass="VariableName">Measurement </text><text styleclass="VariableName" style="color:#ff0000;">FB</text>: <text styleclass="VariableName" style="color:#ff0000;">DRAG</text> the <text styleclass="Element">FB</text></li>
+            <li styleclass="HowTo Bulleted">To move the <text styleclass="VariableName">Measurement </text><text styleclass="VariableName" style="color:#ff0000;">Dimension</text>: <text styleclass="VariableName" style="color:#ff0000;">CTRL+DRAG</text> the <text styleclass="Element">FB</text> or the <text styleclass="Element">Measurement Dimension</text>.</li>
+          </list>
+          <para styleclass="Body Text">In this image: The dimension<image src="Red-14-4.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image> is between two <text styleclass="Element">Points</text><image src="Red-14-3.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><image src="Red-14-2.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="Body Text">The <text styleclass="Element">Measurement FB</text> has two output-connectors when it measures between two <text styleclass="Element">Points</text></para>
+          <para styleclass="Body Text">The <text styleclass="Element">Measurement FB</text> has one output-connector when it measures other sketch-elements.</para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="Body Text">See details below for motion-values available from the output-connectors.</para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading4 Toggle_atocs_2" style="text-indent:-36px; margin-left:60px;"><anchor id="MeasureDistance"><keywords><keyword>Measurement FB<keyword>Point to Point</keyword><keyword>Point to Line</keyword><keyword>Line to Line - Parallel</keyword></keyword></keywords></anchor><image src="btn_addkeyword.bmp" scale="100.00%" figurelistinclude="0"></image><tab /><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" src-collapsed="btn_addkeyword.bmp" src-expanded="btn_delkeyword.bmp" src-print="none"><caption><![CDATA[Linear Distance]]></caption></toggle></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="7" colcount="3">
+      <tr style="vertical-align:top">
+        <td colspan="3">
+          <list id="17" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted">Length of Line; Radius of a <text styleclass="Element">Circle</text> or <text styleclass="Element">Arc</text><text styleclass="Body Text">&#32;</text></li>
+            <li styleclass="HowTo Bulleted">Distance between two <text styleclass="Element">Points</text></li>
+            <li styleclass="HowTo Bulleted">Perpendicular Distance between a <text styleclass="Element">Point</text> and a <text styleclass="Element">Line</text></li>
+          </list>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:21px;">
+          <para styleclass="VariableName" style="text-align:center;">Image</para>
+        </td>
+        <td style="width:165px;">
+          <para styleclass="VariableName" style="text-align:center;">Sketch-Elements </para>
+        </td>
+        <td>
+          <para styleclass="VariableName">Measurement Dimension</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td rowspan="2" style="width:21px;">
+          <para styleclass="Normal"><image src="MD-GA-MeasureFB-Length.png" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td style="width:165px;">
+          <para styleclass="Body Text HowTo"><text styleclass="Element">Line</text> or <text styleclass="Element">CAD-Line</text>.</para>
+        </td>
+        <td>
+          <para styleclass="Body Text"><text styleclass="VariableName">Length</text>: Click the <text styleclass="Element">Line</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:165px;">
+          <para styleclass="Body Text HowTo"><text styleclass="Element">Circle</text> or <text styleclass="Element">Arc</text>.</para>
+        </td>
+        <td>
+          <para styleclass="Body Text"><text styleclass="VariableName">Radius</text>: Click the <text styleclass="Element">circle</text> or <text styleclass="Element">arc</text>.</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:21px;">
+          <para styleclass="Normal"><image src="MD-GA-MeasureFB-ParLines.png" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td style="width:165px;">
+          <para styleclass="Body Text HowTo">Two <text styleclass="Body Text">Parallel</text>&#32;<text styleclass="Element">Lines</text>.</para>
+          <para styleclass="Body Text HowTo"><text styleclass="Body Text">NOT RECOMMENDED &#160;</text></para>
+        </td>
+        <td>
+          <para styleclass="Body Text">The <text styleclass="Element">Measurement FB</text> may measure the angle between the lines as 0º, 360º or 180º.</para>
+          <para styleclass="Body Text"><text styleclass="SeeAlso">See: </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Command-FB-Measurement" anchor="MeasurementAngleLines" styleclass="SeeAlso">Angle Measurement between Two Lines</link><text styleclass="SeeAlso">,</text> and Perpendicular Distance between <text styleclass="Element">Line</text> and <text styleclass="Element">Point</text>.</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:21px;">
+          <para styleclass="Normal"><image src="MD-GA-MeasureFB-2Pts.png" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td style="width:165px;">
+          <para styleclass="Body Text HowTo"><text styleclass="Element">Point</text> and <text styleclass="Element">Point</text></para>
+        </td>
+        <td>
+          <para styleclass="VariableName">Linear Distance and Angle between two Points.</para>
+          <list id="18" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo Bulleted">Click the <text styleclass="Element">Point</text><text styleclass="VariableName">&#32;</text></li>
+            <li styleclass="HowTo Bulleted">Click the <text styleclass="Element">Line</text></li>
+          </list>
+          <para styleclass="Body Text" style="margin-top:0px; margin-bottom:0px;"><text style="font-weight:normal;">The </text><text styleclass="Element">Measurement FB</text><text style="font-weight:normal;"> has </text><text styleclass="VariableName" style="color:#ff0000;">two</text> output-connectors<text style="font-weight:normal;">:</text></para>
+          <list id="19" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="margin-top:0px; margin-bottom:0px; font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted" style="margin-top:0px; margin-bottom:0px;"><text styleclass="VariableName">Top output-connector</text><text style="font-style:normal;">:</text> the linear-distance, and its first and second motion-derivatives</li>
+            <li styleclass="HowTo Bulleted" style="margin-top:0px; margin-bottom:0px;"><text styleclass="VariableName">Bottom output-connector</text><text style="font-style:normal;">:</text> the angle, and its first and second motion-derivatives</li>
+          </list>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:21px;">
+          <para styleclass="Normal"><image src="MD-GA-MeasureFB-LinePt.png" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td style="width:165px;">
+          <para styleclass="Body Text HowTo"><text styleclass="Element">Point</text> and a <text styleclass="Element">Line</text><text styleclass="Body Text2-Note">&#32;</text></para>
+        </td>
+        <td>
+          <para styleclass="Body Text"><text styleclass="VariableName">Perpendicular Distance</text></para>
+          <list id="20" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo Bulleted">Click the <text styleclass="Element">Point</text><text styleclass="VariableName">&#32;</text></li>
+            <li styleclass="HowTo Bulleted">Click the <text styleclass="Element">Line</text></li>
+          </list>
+          <para styleclass="Body Text"><text styleclass="Notes">Note: </text>You many need to add a <text styleclass="Element">Line</text> to a <text styleclass="Element">Part</text> in the <text styleclass="Interface">Part-Editor</text>.</para>
+          <para styleclass="Body Text">To measure a <text styleclass="VariableName">Horizontal Distance</text> or <text styleclass="VariableName">Vertical Distance</text>: &#160;click the <text styleclass="Interface">X-axis</text> or <text styleclass="Interface">Y-axis</text> as the <text styleclass="Element">Line</text>.</para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading4 Toggle_atocs_2" style="text-indent:-36px; margin-left:60px;"><image src="btn_addkeyword.bmp" scale="100.00%" figurelistinclude="0"></image><tab /><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" src-collapsed="btn_addkeyword.bmp" src-expanded="btn_delkeyword.bmp" src-print="none"><caption><![CDATA[Angle between Three Points ]]></caption></toggle></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="4" colcount="3">
+      <tr style="vertical-align:top">
+        <td colspan="3">
+          <para styleclass="VariableName">Measurement: Angle between Three Points - <text style="color:#ff0000;">Internal Angle</text> and <text style="color:#ff0000;">External Angle</text>.</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:21px;">
+          <para styleclass="VariableName" style="text-align:center;">Image</para>
+        </td>
+        <td style="width:200px;">
+          <para styleclass="VariableName" style="text-align:center;">Sketch-Elements</para>
+        </td>
+        <td>
+          <para styleclass="VariableName" style="text-align:left;">Measurement Dimension</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:21px;">
+          <para styleclass="Normal"><image src="MD-MeasurementFB-3P-CCW.png" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td style="width:200px;">
+          <para styleclass="Body Text HowTo">Three <text styleclass="Element">Points</text></para>
+          <list id="21" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Body Text HowTo" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="Body Text HowTo">Click &apos;Apex&apos; <text styleclass="Element">Point</text>&#32;<image src="Red-14-1b.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="VariableName">&#32;</text></li>
+            <li styleclass="Body Text HowTo">Click <text styleclass="Element">Point</text>&#32;<image src="Red-14-2.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></li>
+            <li styleclass="Body Text HowTo">Click <text styleclass="Element">Point</text>&#32;<image src="Red-14-3.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image> &#160;</li>
+          </list>
+        </td>
+        <td>
+          <para styleclass="VariableName"><text style="color:#ff0000;">Internal Angle</text></para>
+          <para styleclass="Body Text HowTo">Angle is from <image src="Red-14-2.gif" scale="100.00%" styleclass="Body Text" figurelistinclude="0"></image><text styleclass="Body Text"> to </text><image src="Red-14-3.gif" scale="100.00%" styleclass="Body Text" figurelistinclude="0"></image><text styleclass="Body Text">&#32;</text>in a Counter-Clockwise direction.</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:21px;">
+          <para styleclass="Normal"><image src="MD-MeasurementFB-3P-CW.png" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td style="width:200px;">
+          <para styleclass="Body Text HowTo">Three <text styleclass="Element">Points</text></para>
+          <list id="22" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Body Text HowTo" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="Body Text HowTo">Click &apos;Apex&apos; <text styleclass="Element">Point</text>&#32;<image src="Red-14-1b.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="VariableName"> &#160;</text></li>
+            <li styleclass="Body Text HowTo">Click <text styleclass="Element">Point</text>&#32;<image src="Red-14-2.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></li>
+            <li styleclass="Body Text HowTo">Click <text styleclass="Element">Point</text>&#32;<image src="Red-14-3.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image> &#160;</li>
+          </list>
+        </td>
+        <td>
+          <para styleclass="VariableName"><text style="color:#ff0000;">External Angle</text></para>
+          <para styleclass="Body Text HowTo">Angle is from <image src="Red-14-2.gif" scale="100.00%" styleclass="Body Text" figurelistinclude="0"></image><text styleclass="Body Text"> to </text><image src="Red-14-3.gif" scale="100.00%" styleclass="Body Text" figurelistinclude="0"></image><text styleclass="Body Text">&#32;</text>in a Counter-Clockwise direction.</para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading4 Toggle_atocs_2" style="text-indent:-36px; margin-left:60px;"><anchor id="MeasurementAngleLines"></anchor><image src="btn_addkeyword.bmp" scale="100.00%" figurelistinclude="0"></image><tab /><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" src-collapsed="btn_addkeyword.bmp" src-expanded="btn_delkeyword.bmp" src-print="none"><caption><![CDATA[Angle between Two Lines]]></caption></toggle></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="2" colcount="1">
+      <tr style="vertical-align:top">
+        <td style="width:1134px;">
+          <para styleclass="Body Text"><conditional-text type="IF" value="PDF"/><link displaytype="text" defaultstyle="true" type="filelink" href="AddAngleDimensions.gif">Double-click to watch &apos;Add Measurement FB between two Lines&apos;</link><conditional-text type="END"/></para>
+          <para styleclass="Body Text"><conditional-text type="IF" value="CHM"/></para>
+          <para styleclass="Normal"><toggle type="picture" print-expanded="true" help-expanded="false" src-collapsed="AddAngleDimensions.gif" src-expanded="AddAngleDimensions.gif" scale="25.00%" width="320" height="180" styleclass="Image Caption" figurelistinclude="0"><caption><![CDATA[Add Angle Dimensions between two Lines]]></caption><title>Add Angle Dimensions between two Lines</title></toggle></para>
+          <para styleclass="Body Text"><conditional-text type="END"/><conditional-text type="IF" value="HTML,EBOOK"/></para>
+          <para styleclass="Normal"><video src="AddAngleDimensions.mp4" width="1280px" height="720px" autostart="false" loop="false" showcontrols="true" playbutton="true" previewimage="AddAngleDimensions_preview.jpg" scale="25.00%" styleclass="Image Caption"><title>Add Angle Dimensions between two Lines</title><caption><![CDATA[Add Angle Dimensions between two Lines]]></caption></video></para>
+          <para styleclass="Body Text"><conditional-text type="END"/></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:1134px;">
+          <para styleclass="Body Text">After you select the two <text styleclass="Element">Lines</text>, and before you click in the <text styleclass="Interface">graphic-area</text> to place the <text styleclass="Element">Measurement Dimension</text> and <text styleclass="Element">FB</text>, you can display one of <text styleclass="VariableName" style="color:#ff0000;">eight</text> angles.</para>
+          <para styleclass="Body Text">Move your mouse-pointer <text styleclass="Body Text HowTo">around the </text><text styleclass="Interface2" style="color:#ff0000;">apex</text><text styleclass="Body Text HowTo"> of the two </text><text styleclass="Element">lines</text><text styleclass="Body Text HowTo">:</text></para>
+          <para styleclass="Body Text HowTo"><text styleclass="VariableName">CASE 1: Mouse -Pointer moves Counter-clockwise</text><text style="font-style:italic;"> :</text><text styleclass="VariableName-IT"> 4 angles &lt; 180°</text><text styleclass="HowTo Bulleted"> : the </text><text styleclass="VariableName-IT">Acute, Obtuse, Supplementary</text><text styleclass="Body Text HowTo2"> and </text><text styleclass="VariableName-IT">Vertical</text><text styleclass="Body Text HowTo2"> angles</text></para>
+          <para styleclass="Body Text HowTo"><text styleclass="VariableName">CASE 2: Mouse-Point moves Clockwise</text><text style="font-style:italic;"> :</text><text styleclass="VariableName-IT"> 4 angles &gt; 180°</text><text styleclass="HowTo Bulleted"> : the </text><text styleclass="VariableName-IT">reflex angles </text><text styleclass="Body Text">- or the angles that are opposite to those angles of </text><text styleclass="VariableName">CASE 1</text><text styleclass="Body Text">.</text></para>
+        </td>
+      </tr>
+    </table></para>
+  </body>
+</topic>

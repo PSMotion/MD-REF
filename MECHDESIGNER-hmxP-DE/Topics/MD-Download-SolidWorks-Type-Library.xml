@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" status="Under Construction" modified="2021-11-23T12:29:22.000+01:00" lasteditedby="Adam" version="2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title>Internet | Download SOLIDWORKS Type Libraries</title>
+  <keywords>
+    <keyword>Download SolidWorks Type Libraries</keyword>
+    <keyword>Show Hidden Folders</keyword>
+    <keyword>SolidWorks<keyword>Download SolidWorks Type Libraries</keyword><keyword>Type Libraries</keyword></keyword>
+    <keyword>SW_TLB160.bpl</keyword>
+    <keyword>SW_TLB190.bpl</keyword>
+  </keywords>
+  <body>
+    <header>
+      <para styleclass="Heading1">Internet | Download SOLIDWORKS Type Libraries</para>
+    </header>
+    <para styleclass="Heading2">Install Type-Libraries </para>
+    <para styleclass="Body Text"><text styleclass="VariableName" style="color:#ff0000;">IMPORTANT</text>: <text styleclass="VariableName">MD14.2</text> and later should install the <text styleclass="VariableName">Type-Library</text> file automatically.</para>
+    <para styleclass="Body Text HowTo">Read this topic if you cannot seamlessly export a document to <text styleclass="SOLIDWORKS">SOLIDWORKS</text> or import a document from <text styleclass="SOLIDWORKS">SOLIDWORKS.</text></para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="Heading3_atocs_">What is a Type-Library.</para>
+    <para styleclass="Body Text HowTo">To communicate with <text styleclass="SOLIDWORKS">SOLIDWORKS</text>, we make use of a file that is the <text styleclass="VariableName">Type-Library</text>.<text styleclass="Body Text"> The </text><text styleclass="VariableName">Type-Library</text><text styleclass="Body Text"> is different with each </text><text styleclass="SOLIDWORKS">SolidWorks</text><text styleclass="Body Text"> release-year.</text></para>
+    <para styleclass="Body Text HowTo"><text styleclass="Body Text">Many customers use a different </text><text styleclass="SOLIDWORKS">SolidWorks </text><text styleclass="Body Text">release-year for different clients. Thus, we must also change the active </text><text styleclass="VariableName">Type-Library</text><text styleclass="Body Text"> in </text><text styleclass="VariableName-IT">MechDesigner</text><text styleclass="Body Text"> when our customers use a different </text><text styleclass="SOLIDWORKS">SolidWorks</text><text styleclass="Body Text"> release year.</text></para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="Heading3_atocs_"><anchor id="TypeLibrariesAutomatic" styleclass="BodyText BI"><keywords><keyword>Type-Library Automatic Installation</keyword></keywords></anchor>Which Type-Library is active? </para>
+    <para styleclass="Body Text HowTo">Use <text styleclass="T_Menu" style="font-style:italic;">Help menu &gt; About</text> interface to show the active <text styleclass="VariableName-IT">Type-Library</text>.</para>
+    <para styleclass="HowTo Numbered"><table styleclass="Standard" rowcount="2" colcount="3" style="width:auto;">
+      <tr style="vertical-align:top">
+        <td style="width:232px;">
+          <para styleclass="Body Text"><image src="Dialog-Help-About-TypeLib.png" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td colspan="2">
+          <para styleclass="HowTo Numbered">Start <text styleclass="VariableName-IT">MechDesigner</text>:</para>
+          <list id="0" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Numbered" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:8pt; color:#000000;">
+            <li styleclass="HowTo Numbered">Click <text styleclass="T_Menu">Help menu &gt; About | Type-Library tab</text><text styleclass="VariableName">&#32;</text></li>
+            <li styleclass="HowTo Numbered"><text styleclass="Body Text">Compare the </text><text styleclass="Parameter-Header">SolidWorks Type-Library</text><text styleclass="Body Text"> with</text><text styleclass="VariableName">&#32;</text><text styleclass="Parameter-Header">Installed Version of SolidWorks</text><text styleclass="VariableName">.</text></li>
+          </list>
+          <para styleclass="Body Text HowTo">If the two(2) boxes<text styleclass="HowTo Bulleted"> show the same year, you will see the message </text><text styleclass="VariableName-IT">All good to go</text><text styleclass="HowTo Bulleted"> - see image to the left.</text></para>
+          <para styleclass="VariableName"><text styleclass="Body Text HowTo">If you are </text>Not good to go:</para>
+          <list id="1" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="3" styleclass="HowTo Bulleted" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:8pt; color:#000000;">
+            <li styleclass="HowTo Bulleted">Save a document in <text styleclass="SOLIDWORKS">SolidWorks</text> and exit<text styleclass="VariableName">&#32;</text></li>
+            <li styleclass="HowTo Bulleted"><text styleclass="HowTo Numbered">Exit </text><text styleclass="VariableName-IT">MechDesigner</text></li>
+          </list>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td colspan="2" style="width:367px;">
+          <para styleclass="Body Text"><image src="Run as Administrator2.png" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td>
+          <list id="2" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="5" styleclass="HowTo Numbered" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:8pt; color:#000000;">
+            <li styleclass="HowTo Numbered"><text styleclass="VariableName-IT">Right-click the MechDesigner program icon, and click Run as Administrator.</text><text styleclass="VariableName">&#32;</text></li>
+            <li styleclass="HowTo Numbered">Do 1 and 2 again.</li>
+          </list>
+          <para styleclass="Body Text HowTo">If the message is again <text styleclass="VariableName">Not good to go</text><text styleclass="Body Text">, try</text> the manual procedures, below. </para>
+          <para styleclass="Body Text HowTo">You can also email psmotion at sales at psmotion dot com.</para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+    <para styleclass="Heading3_atocs_"><anchor id="TypeLibrariesManual" styleclass="BodyText BI"><keywords><keyword>Type-Library Manual Installation</keyword></keywords></anchor>Manually Install the Type-Library file.</para>
+    <para styleclass="Body Text HowTo"><table styleclass="Standard" rowcount="1" colcount="1" style="cell-padding:0px; border-width:0px; border-spacing:0px; cell-border-width:0px; border-style:none;">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Text">Occasionally, the <text styleclass="SOLIDWORKS">SolidWorks</text> Type-Library file cannot be installed automatically. For example, your company policy will not give you <text style="font-style:italic;">Administrator Rights</text>.</para>
+          <para styleclass="Body Text"><text style="font-weight:normal; font-style:normal;">In this case, you can use the link below to download and put the Type-Library file in the installation path manually.</text></para>
+          <para styleclass="Body Text"><text style="font-weight:normal; font-style:normal;">Do these steps - carefully.</text></para>
+          <para styleclass="Body Text"><text styleclass="Notes">Note: </text><text styleclass="VariableName">yyyy</text> is the<text styleclass="Body Text HowTo">&#32;</text><text styleclass="SOLIDWORKS">SolidWorks </text><text styleclass="Body Text HowTo">release-year</text> with which you want to communicate.</para>
+          <list id="3" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Numbered" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:8pt; color:#000000;">
+            <li styleclass="HowTo Numbered">Run the <text styleclass="SOLIDWORKS">SolidWorks Release </text>with which you want to communicate.<text styleclass="VariableName">&#32;</text></li>
+            <li styleclass="HowTo Numbered">Save a <text styleclass="SOLIDWORKS">SolidWorks</text> Part, and exit <text styleclass="SOLIDWORKS">SolidWorks.</text></li>
+            <li styleclass="HowTo Numbered">Exit <text styleclass="VariableName-IT">MechDesigner</text><text style="font-style:italic;">.</text>&#32;</li>
+            <li styleclass="HowTo Numbered"><text style="color:#ff0000;">Copy* and save (somewhere) the Type-Library file, </text><text styleclass="VariableName" style="color:#ff0000;">SW_TLB230.bpl.1</text><text styleclass="Body Text" style="color:#ff0000;">, that is </text><text style="color:#ff0000;">in your </text><text styleclass="VariableName-IT" style="color:#ff0000;">MechDesigner</text><text style="color:#ff0000;"> installation path: </text><text styleclass="VariableName" style="color:#ff0000;">C:\Program Files\PSMotion\MD14-PRO64</text></li>
+            <li styleclass="VariableName"><text styleclass="HowTo Numbered">Copy </text>C:\Program Files\PSMotion\MD14-PRO64\SW_TLByyyy_64\SW_TLB230.bpl.1</li>
+            <li styleclass="VariableName"><text styleclass="Body Text">Paste to</text><text styleclass="HowTo Numbered" style="font-weight:normal; font-style:normal;">&#32;</text>C:\Program Files\PSMotion\MD14-PRO64\</li>
+            <li styleclass="HowTo Numbered"><text style="font-weight:normal; font-style:normal;">Run </text><text styleclass="VariableName-IT">MechDesigner</text><text styleclass="Body Text"> as </text><text styleclass="Body Text" style="font-style:italic;">Administrator</text></li>
+            <li styleclass="HowTo Numbered">Look again in the <text styleclass="VariableName-IT">MechDesigner</text>&#32;<text styleclass="T_Menu">Help menu &gt; About &gt;Type-Libraries</text><text styleclass="Body Text"> tab</text> to compare the <text styleclass="VariableName">Type-Library</text> files, to see if you are <text styleclass="VariableName">All good to go</text>.</li>
+          </list>
+          <para styleclass="Normal"><line style="height:1px; color:#ff6600;" /></para>
+          <para styleclass="Body Text"><text style="font-weight:normal; font-style:normal;">If you cannot run </text><text styleclass="VariableName-IT">MechDesigner:</text></para>
+          <list id="4" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:8pt; color:#000000;">
+            <li styleclass="HowTo Bulleted">Put the original Type-Library file back into the installation path - see step 4 above<text styleclass="VariableName">&#32;</text></li>
+            <li styleclass="HowTo Bulleted">EMAIL: sales at psmotion dot com with Subject Type-Library Problem</li>
+          </list>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Body Text HowTo" style="page-break-before:always;"></para>
+  </body>
+</topic>

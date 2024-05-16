@@ -1,0 +1,302 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" status="Under Construction" modified="2022-07-18T15:12:40.601+01:00" lasteditedby="Adam" version="2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title>Mechanism | Add Slide-Joint</title>
+  <keywords>
+    <keyword>Add<keyword>Slide-Joint - General Case</keyword><keyword>Slide-Joint - Special Case</keyword></keyword>
+    <keyword>Add Joint type:<keyword>Linear</keyword><keyword>Prismatic</keyword><keyword>Slide</keyword></keyword>
+    <keyword>Joint<keyword>Linear Slide</keyword><keyword>Prismatic</keyword><keyword>Slide</keyword></keyword>
+    <keyword>Kinematic elements toolbar<keyword>Add Slide-Joint</keyword></keyword>
+    <keyword>Menu &gt; Add &gt; Mechanism Menu<keyword>Add Slide-Joint</keyword></keyword>
+  </keywords>
+  <body>
+    <header>
+      <para styleclass="Heading1">Mechanism | Add Slide-Joint</para>
+    </header>
+    <para styleclass="Heading2">Add Slide-Joint</para>
+    <para styleclass="Heading4 Toggle_atocs_">Terminology</para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="5" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:261px;">
+          <para styleclass="VariableName-small" style="text-align:right;">Technical Definition: Prismatic Joint :</para>
+        </td>
+        <td>
+          <para styleclass="Popup Box">A joint that only allows relative <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-Rectilinear-Translation">rectilinear translation</link>&#32;motion between two <text styleclass="Popup Box-Elements">Parts</text> (rigid bodies).</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:261px;">
+          <para styleclass="Popup Box" style="text-align:right;"><text styleclass="VariableName-small">MechDesigner definition</text> : <text styleclass="Popup Box-Elements">Slide-Joint</text> : </para>
+        </td>
+        <td>
+          <para styleclass="Popup Box">A joint, between two <text styleclass="Popup Box-Elements">Parts</text>, that forces a <text styleclass="VariableName-small">Line-Segment</text> in one <text styleclass="Popup Box-Elements">Part</text> to be collinear with a <text styleclass="VariableName-small">Line-Segment</text> in the other <text styleclass="Popup Box-Elements">Part</text>. </para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:261px;">
+          <para styleclass="VariableName-small" style="text-align:right;">Line-Segment : </para>
+        </td>
+        <td>
+          <para styleclass="Popup Box">A <text styleclass="Popup Box-Elements">Line</text> or <text styleclass="Popup Box-Elements">CAD-Line</text> element in a <text styleclass="Popup Box-Elements">Part</text>. The position of the <text styleclass="Popup Box-Elements">Line</text> or <text styleclass="Popup Box-Elements">CAD-Line</text> is specified by two <text styleclass="Popup Box-Elements">Points</text> that are on the <text styleclass="Popup Box2">Mechanism-Plane</text>. </para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:261px;">
+          <para styleclass="Popup Box2" style="text-align:right;"><text styleclass="Popup Box-Elements">Points : </text></para>
+        </td>
+        <td>
+          <para styleclass="Popup Box">The <text styleclass="Popup Box-Elements">Points</text> at each end of the <text styleclass="VariableName-small">line-segment</text> are termed the <text styleclass="Popup Box2">start-Point</text> and <text styleclass="Popup Box2">end-Point</text> of the <text styleclass="Popup Box-Elements">Line</text>.</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td colspan="2" style="width:450px;">
+          <para styleclass="Popup Box2"><text styleclass="Popup Box">The </text><text styleclass="VariableName-small">XY-Plane</text><text styleclass="Popup Box"> of </text><text styleclass="Interface">all</text><text styleclass="Popup Box">&#32;</text><text styleclass="Popup Box-Elements">Parts</text><text styleclass="Popup Box"> (and the </text><text styleclass="Popup Box-Elements">Base-Part</text><text styleclass="Popup Box">) in a </text>Mechanism-Editor<text styleclass="Popup Box"> are coplanar with the </text><text styleclass="VariableName-small">Mechanism-Plane</text><text styleclass="Popup Box">.</text></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading3_atocs_">A Slide-Joint in the Graphic-Area</para>
+    <para styleclass="Normal"><table styleclass="Default" rowcount="2" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:240px;">
+          <para styleclass="Image Caption"><image src="MD-GA-SlideJointUndefined.png" scale="-99.90%" figurelistinclude="0"><caption><![CDATA[Slide-Joint]]></caption></image></para>
+        </td>
+        <td>
+          <para styleclass="Body Table"><text styleclass="HowTo Bulleted">A </text><text styleclass="Element">Slide-Joint</text><text styleclass="HowTo Bulleted"> is defined by collinear </text><text styleclass="Element">Lines </text><text styleclass="HowTo Bulleted">in two different </text><text styleclass="Element">Parts</text><text styleclass="HowTo Bulleted">.</text></para>
+          <para styleclass="Body Table"><text styleclass="HowTo Bulleted">The symbol for the </text><text styleclass="Element">Slide-Joint</text><text styleclass="HowTo Bulleted"> is:</text></para>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Body Table"><image src="Red-14-1b.gif" scale="100.00%" styleclass="HowTo Bulleted" figurelistinclude="0"></image> A <text styleclass="VariableName">Narrow Rectangle</text> that is equal to the length of the <text styleclass="Element">Line </text>in one of the <text styleclass="Element">Parts</text>.</para>
+                <para styleclass="Body Table"><image src="Red-14-2.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="HowTo Bulleted"> A </text><text styleclass="VariableName">Wide Rectangle</text><text styleclass="HowTo Bulleted"> that is equal to the length of the </text><text styleclass="Element">Line </text><text styleclass="HowTo Bulleted">in the other </text><text styleclass="Element">Part</text><text styleclass="HowTo Bulleted">.</text></para>
+                <para styleclass="Body Table"><image src="Red-14-3.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="HowTo Bulleted">&#32;</text><text styleclass="VariableName">Arrowhead</text><text styleclass="HowTo Bulleted"> - the </text><text styleclass="VariableName">Positive-Direction</text><text styleclass="VariableName-IT">*</text><text styleclass="HowTo Bulleted"> of the </text><text styleclass="Element">Slide-Joint.</text></para>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Body Text"><text styleclass="VariableName-IT">* </text><text styleclass="VariableName">Positive-direction</text><text styleclass="HowTo Numbered"> is important if you want to add a motion to the </text><text styleclass="Element">Slide-Joint</text>.</para>
+          <para styleclass="SeeAlso">See <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Command-FB-Motion-Dimension" anchor="SliderMotionDirection">Positive direction of Slide-Joints and Motion-Dimension</link>.</para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td colspan="2">
+          <para styleclass="Body Text"><text styleclass="VariableName" style="color:#ff0000;">IMPORTANT</text><text styleclass="Body Text CAP-ITALICS" style="font-family:Arial; font-size:10pt; font-weight:normal; font-style:normal; text-decoration:none; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">: </text><text styleclass="VariableName-IT">To calculate reaction </text><text styleclass="Interface2" style="color:#ff0000;">Forces</text><text styleclass="VariableName-IT"> on a Slide-Joint:</text></para>
+          <para styleclass="Body Text HowTo">The <text styleclass="VariableName-IT">length and position</text> of the <text styleclass="Element">Lines</text><text styleclass="Body Text"> that define the </text><text styleclass="Element">Slide-Joint</text><text styleclass="Body Text"> must be </text><text styleclass="VariableName-IT">equivalent to actual design</text><text styleclass="Body Text">. </text></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading3_atocs_">Add Slide-Joint:</para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="1" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="width:240px;">
+          <para styleclass="Normal"><image src="MD-GA-AddSlideJoint-0.png" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"><caption><![CDATA[Select two Lines]]></caption></image></para>
+          <para styleclass="Normal"><image src="MD-GA-AddSlideJoint-1.png" scale="-99.90%" styleclass="Image Caption" figurelistinclude="0"><caption><![CDATA[A New Slide-Joint]]></caption></image></para>
+        </td>
+        <td>
+          <list id="0" type="ol" listtype="decimal" formatstring="&#83;&#84;&#69;&#80;&#32;&#37;&#48;&#58;&#115;&#58;&#32;" format-charset="DEFAULT_CHARSET" levelreset="false" legalstyle="false" startfrom="1" styleclass="HowTo STEP" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo STEP"><text styleclass="VariableName-IT" style="font-style:normal;">Add Slide-Joint</text></li>
+          </list>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="2" colcount="2">
+            <tr style="vertical-align:top">
+              <td rowspan="2" style="width:42px;">
+                <para styleclass="Normal" style="text-align:right;"><image src="MD-Icon-AddSlideJoint.png" scale="100.00%" styleclass="Image Caption" style="font-weight:bold;" figurelistinclude="0"></image></para>
+              </td>
+              <td>
+                <para styleclass="Body Text"><text styleclass="Interface">Mechanism-Editor: </text><text styleclass="T_Menu">Add menu &gt; Mechanism sub-menu &gt; Add Slide-Joint</text></para>
+              </td>
+            </tr>
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Body Text"><text styleclass="Interface">Mechanism-Editor: </text><text styleclass="T_Menu">Kinematic Elements Toolbar &gt; Add Slide-Joint icon</text></para>
+              </td>
+            </tr>
+          </table></para>
+          <list id="1" type="ol" listtype="decimal" formatstring="&#83;&#84;&#69;&#80;&#32;&#37;&#48;&#58;&#115;&#58;&#32;" format-charset="DEFAULT_CHARSET" levelreset="false" legalstyle="false" startfrom="2" styleclass="HowTo STEP" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo STEP"><text styleclass="VariableName">Click the two(2) Lines </text></li>
+          </list>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <list id="2" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="B Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="B Bullets"><text styleclass="Interface">Mechanism-Editor: </text><text style="font-style:normal;">Click</text> a <text styleclass="Element">Line</text><image src="Red-14-1b.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image> in a <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-Part-Free" styleclass="Interface">Free</link><text styleclass="Element">-Part</text><text styleclass="VariableName">&#32;</text></li>
+                  <li styleclass="HowTo Numbered"><text styleclass="Interface">Mechanism-Editor: </text>Click a <text styleclass="Element">Line</text><image src="Red-14-2.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image> in a different <text styleclass="Element">Part</text></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Body Text HowTo"><text style="font-weight:normal;">The two(2) </text><text styleclass="Element">Lines</text><text style="font-weight:normal;"> become collinear to add the </text><text styleclass="Element">Slide-Joint</text><text style="font-weight:normal;">.</text></para>
+          <para styleclass="Body Text HowTo"><text style="font-weight:normal;">The</text><text styleclass="VariableName"> Positive Direction</text><text style="font-weight:normal;"> of the </text><text styleclass="Element">Slide-Joint</text><text style="font-weight:normal;"> is identified by the small arrowhead.</text></para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="Body Text">If the <text styleclass="Interface">Select-Elements dialog-box</text> opens, see <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Command-AddSlideJoint" anchor="SpecialCase">Slide-Joint Special Case</link></para>
+          <para styleclass="Body Text HowTo"></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading3_atocs_">VIDEO: Add Slide-Joint - Simple-Case</para>
+    <para styleclass="Body Text HowTo"><conditional-text type="IF" value="PDF"/><link displaytype="text" defaultstyle="true" type="filelink" href="KE-AddSLideJointBasic.gif" styleclass="Body Text">Double-click to watch: Add Slide-Joints - Simple-Case</link><conditional-text type="END"/><conditional-text type="IF" value="CHM"/></para>
+    <para styleclass="Normal"><toggle type="picture" print-expanded="true" help-expanded="false" src-collapsed="KE-AddSLideJointBasic.gif" src-expanded="KE-AddSLideJointBasic.gif" scale="20.00%" width="256" height="144" styleclass="Image Caption" figurelistinclude="0"><caption><![CDATA[Video: Add Slide-Joint - Special-Case]]></caption><title>Video: Add Slide-Joint - Special-Case</title></toggle></para>
+    <para styleclass="Body Text HowTo"><conditional-text type="END"/><conditional-text type="IF" value="HTML,EBOOK"/></para>
+    <para styleclass="Normal"><video src="KE-AddSlideJoint-Basic.mp4" width="1280px" height="720px" autostart="false" loop="false" showcontrols="false" playbutton="true" previewimage="KE-AddSlideJoint-Basic_preview.jpg" scale="20.00%" styleclass="Image Caption"><title>Video: Add Slide-Joint - Special-Case</title><caption><![CDATA[Video: Add Slide-Joint - Special-Case]]></caption></video></para>
+    <para styleclass="Heading4 Toggle_atocs_2"><conditional-text type="END"/></para>
+    <para styleclass="Heading4 Toggle_atocs_2"><anchor id="SpecialCase"><keywords><keyword>Slide-Joint<keyword>Slide-Joint Special Case</keyword></keyword></keywords></anchor><image src="tog_plus.gif" scale="100.00%" figurelistinclude="0"></image><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" src-collapsed="tog_plus.gif" src-expanded="tog_minus.gif" src-print="none"><caption><![CDATA[Special Case: two(2) or more collinear Slide-Joints]]></caption></toggle></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="9" colcount="3">
+      <tr style="vertical-align:top">
+        <td colspan="3">
+          <para styleclass="Body Text">Frequently, a machine design has <text styleclass="VariableName-IT">two(2) </text>collinear <text styleclass="Element">Slide-Joints</text> between <text styleclass="VariableName-IT">three </text><text styleclass="Element">Parts.</text><text style="font-style:normal;">&#32;</text></para>
+          <para styleclass="Body Text"><text style="font-style:normal;">We must decide which </text><text styleclass="VariableName-IT">two(2)</text><text style="font-style:normal;">&#32;</text><text styleclass="Element">Lines</text><text style="font-style:normal;"> from which of two(2) </text><text styleclass="Element">Parts</text><text style="font-style:normal;"> we want to select for </text><text styleclass="VariableName-IT">each</text><text style="font-style:normal;">&#32;</text><text styleclass="Element">Slide-Joint</text><text style="font-style:normal;">. </text></para>
+          <para styleclass="VariableName-IT">For example:</para>
+          <para styleclass="Body Text HowTo"><text style="font-style:normal;">There are a total three </text><text styleclass="Element">Parts</text><text style="font-style:normal;"> and we would like to join all three </text><text styleclass="Element">Parts</text><text style="font-style:normal;"> to be collinear. We must add two(2) </text><text styleclass="Element">Slide-Joints:</text></para>
+          <para styleclass="Body Text HowTo"><text styleclass="Element">Slide-Joint#1</text><text style="font-style:normal;"> is between </text><text styleclass="Element">Lines 1 &amp; 2 </text>(in <text styleclass="Element">Parts 1 &amp; 2</text>),<text style="font-style:normal;">&#32;</text></para>
+          <para styleclass="Body Text HowTo"><text styleclass="Element">Slide-Joint#2</text><text styleclass="Body Text"> can be between:</text></para>
+          <para styleclass="Body Text HowTo"><text styleclass="Interface">Option A:</text>&#32;<text styleclass="Element">Slide-Joint#2 </text><text styleclass="Body Text">between</text><text styleclass="Element"> Lines 3 &amp; 1</text><text styleclass="Body Text"> (in </text><text styleclass="Element">Parts 3 &amp; 1</text><text styleclass="Body Text">)</text></para>
+          <para styleclass="Body Text HowTo"><text styleclass="Interface">Option B:</text><text style="font-weight:bold;">&#32;</text><text styleclass="Element">Slide-Joint#2 </text><text styleclass="Body Text">between</text><text styleclass="Element"> Lines 3 &amp; 2</text><text styleclass="Body Text"> (in </text><text styleclass="Element">Parts 3 &amp; 2</text><text styleclass="Body Text">)</text></para>
+          <para styleclass="Body Text">When to do <text styleclass="Interface">Option A</text> or <text styleclass="Interface">Option B</text> becomes important<text style="font-weight:bold; font-style:italic;">&#32;</text>when you need to also add <link displaytype="text" defaultstyle="true" type="topiclink" href="MD-Command-FB-Motion-Dimension" styleclass="Element">Motion-Dimension FBs</link> to specify the motions of the two(2) <text styleclass="Element">Parts.</text></para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:177px;">
+          <para styleclass="Normal"><image src="MD-GA-SlideJoint-Prep-Special-0.png" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td colspan="2">
+          <para styleclass="VariableName">Preparation example:</para>
+          <para styleclass="Body Table"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="Bullets"><image src="Red-14-1b.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Image Caption">&#32;</text><text styleclass="Element">Line</text><text styleclass="Body Table"> in the </text><text styleclass="Element">Base-Part</text><text styleclass="VariableName">&#32;</text></para>
+                <para styleclass="Bullets"><image src="Red-14-2.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Image Caption">&#32;</text><text styleclass="Element">CAD-Line</text><text styleclass="Body Text HowTo2"> along the center of a </text><text styleclass="Interface">Sliding-Part</text></para>
+                <para styleclass="Bullets"><image src="Red-14-3.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Image Caption">&#32;</text><text styleclass="Element">CAD-Line</text><text styleclass="Image Caption">&#32;</text><text styleclass="Body Text">in a </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MD-POP-Part-Free" styleclass="Interface">Completely-Free</link><text styleclass="Interface">&#32;</text><text styleclass="Element">Part</text><image src="Red-14-3.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+                <para styleclass="Body Table">We want to join the <text styleclass="VariableName-IT">completely-free</text><text styleclass="Element"> Part</text><image src="Red-14-3.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image> with a <text styleclass="Element">Slide-Joint</text> to become collinear with the existing <text styleclass="Element">Slide-Joint</text>.</para>
+              </td>
+            </tr>
+          </table></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:177px;">
+          <para styleclass="Normal" style="text-align:right;"><image src="MD-GA-AddSlideJoint-SC2.png" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td colspan="2">
+          <list id="3" type="ol" listtype="decimal" formatstring="&#83;&#84;&#69;&#80;&#32;&#37;&#48;&#58;&#115;&#58;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo STEP" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo STEP">Add Slide-Joint </li>
+          </list>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="2">
+            <tr style="vertical-align:top">
+              <td style="vertical-align:bottom; width:41px;">
+                <para styleclass="Normal" style="text-align:center;"><image src="MD-Icon-AddSlideJoint.png" scale="100.00%" styleclass="Image Caption" style="font-weight:bold;" figurelistinclude="0"></image></para>
+              </td>
+              <td>
+                <list id="4" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Body Table" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="Body Table"><text styleclass="Interface">Mechanism-Editor:</text><text styleclass="Body Text">&#32;</text><text styleclass="T_Menu">Add menu &gt; Mechanism menu &#160;&gt; Add Slide-Joint</text><text styleclass="VariableName">&#32;</text></li>
+                </list>
+                <para styleclass="Body Text"><text style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;">- or</text><text style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;"> -</text></para>
+                <list id="5" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="B Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="B Bullets"><text styleclass="Interface">Mechanism-Editor: </text><text styleclass="T_Menu">Kinematic-elements toolbar &gt; Add Slide-Joint</text><text styleclass="VariableName">&#32;</text></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+          <list id="6" type="ol" listtype="decimal" formatstring="&#83;&#84;&#69;&#80;&#32;&#37;&#48;&#58;&#115;&#58;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="2" styleclass="HowTo STEP" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo STEP">Select two(2) Lines:</li>
+          </list>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <list id="7" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="B Bullets" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+                  <li styleclass="B Bullets"><text styleclass="Interface">Mechanism-Editor: </text><text styleclass="Body Text">Click the </text><text styleclass="Element">Cad-Line</text><image src="Red-14-4.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Body Text"> in the </text><text styleclass="Interface">Completely Free Part</text><text styleclass="Body Text">.</text><text styleclass="VariableName">&#32;</text></li>
+                  <li styleclass="B Bullets"><text styleclass="Interface">Mechanism-Editor:</text><text styleclass="Body Table">&#32;</text><text styleclass="Body Text">Click </text><text styleclass="Element">Lines</text><image src="Red-14-5.gif" scale="100.00%" styleclass="VariableName-IT" figurelistinclude="0"></image></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:177px;">
+          <para styleclass="Normal" style="text-align:right;"><image src="MD-GA-AddSlideJoint-SC2A.png" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td colspan="2">
+          <para styleclass="Body Table">We have clicked a total of <text styleclass="VariableName">three(3)</text>&#32;<text styleclass="Element">Lines</text>.</para>
+          <para styleclass="Body Table">However, the <text styleclass="Element">Slide-Joint</text> is between two(2) <text styleclass="Element">Lines</text>. </para>
+          <para styleclass="Body Table">Therefore, there is <text styleclass="Interface2">ambiguity</text> as to which two(2) <text styleclass="Element">Lines</text> you want for the <text styleclass="Element">Slide-Joint</text>. </para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="Body Table"><text styleclass="Interface2">Ambiguity</text><text styleclass="Body Text">: when </text><text styleclass="VariableName-IT">MechDesigner</text><text styleclass="Body Text"> is not sure which element to select.</text></para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td colspan="2" style="width:261px;">
+          <para styleclass="Normal"><image src="MD-Dialog-Select-Elements-SlideJoint.png" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td style="vertical-align:top;">
+          <para styleclass="Body Text HowTo">When there is ambiguity as to which elements to select the <text styleclass="Interface">Select Elements dialog-box</text> opens.</para>
+          <para styleclass="Interface">&lt;&lt;&lt; Select-Elements dialog-box</para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="VariableName"></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td colspan="2" style="width:261px;">
+          <para styleclass="Normal"><image src="MD-Dialog-Select-Elements-SlideJoint2.png" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"><caption><![CDATA[Two Lines are Compatible]]></caption></image></para>
+        </td>
+        <td rowspan="3" style="vertical-align:top; border-bottom:none;">
+          <list id="8" type="ol" listtype="decimal" formatstring="&#83;&#84;&#69;&#80;&#32;&#37;&#48;&#58;&#115;&#58;&#32;" format-charset="DEFAULT_CHARSET" levelreset="false" legalstyle="false" startfrom="4" styleclass="VariableName-IT" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="VariableName-IT"><text styleclass="VariableName">Select the </text><text styleclass="VariableName" style="color:#ff0000;">TWO</text><text styleclass="VariableName"> Lines in the Select-Elements dialog</text></li>
+          </list>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <list id="9" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Body Table" style="font-family:&apos;Noto Sans&apos;; font-size:11pt; color:#000000;">
+                  <li styleclass="Body Table"><text styleclass="Interface">Select-Elements: </text><text styleclass="Body Text">Click the </text><text styleclass="Element">Line</text><image src="Red-14-4.gif" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image><text styleclass="Image Caption">&#32;</text><text styleclass="Body Text">at the top of the Element list (</text><text styleclass="Element">CAD-Line2</text><text styleclass="Body Text">)</text></li>
+                  <li styleclass="Body Table"><image src="MD-Ctrlb.png" scale="100.00%" styleclass="Image Caption" style="font-size:6pt; vertical-align:sub;" figurelistinclude="0"></image><text styleclass="Body Text">key down</text></li>
+                  <li styleclass="Body Table"><text styleclass="Interface">Select-Elements: </text><text styleclass="Body Text">Click one other </text><text styleclass="Element">Line</text><text styleclass="Image Caption">&#32;</text><text styleclass="Body Text">in the Element list.</text></li>
+                </list>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Body Table">You <text styleclass="Interface2" style="color:#ff0000;">can</text> select:</para>
+          <list id="10" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted"><text styleclass="Element-Header">CAD-Line2</text>&#32;<text styleclass="Interface2">and</text>&#32;<text styleclass="Element-Header">Line3</text><text styleclass="Body Text"> are compatible (image above) </text></li>
+          </list>
+          <para styleclass="HowTo Numbered"><text style="font-weight:normal;">- or -</text></para>
+          <list id="11" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted"><text styleclass="Element-Header">CAD-Line2</text>&#32;<text styleclass="Interface2">and</text>&#32;<text styleclass="Element-Header">CAD-Line</text><text styleclass="Body Text"> are compatible (image left)</text></li>
+          </list>
+          <para styleclass="Body Table">You <text styleclass="Interface2" style="color:#ff0000;">cannot</text> select:</para>
+          <list id="12" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted">&#32;<text styleclass="Element-Header">Line3</text><text styleclass="Body Text HowTo"> and </text><text styleclass="Element-Header">CAD-Line</text><text styleclass="Body Text"> are </text><text styleclass="VariableName" style="color:#ff0000;">NOT</text><text styleclass="Body Text"> compatible (image below)</text></li>
+          </list>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="Body Table">Why not <text styleclass="Element-Header">Line3</text><text styleclass="Body Text HowTo"> and </text><text styleclass="Element-Header">CAD-Line</text> ? </para>
+          <para styleclass="VariableName-IT2"><text styleclass="Body Text HowTo">There is a </text><text styleclass="Element">Slide-Joint</text><text styleclass="Body Text HowTo"> between these two(2) </text><text styleclass="Element">CAD-Lines</text><text styleclass="Body Text HowTo"> already.</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td colspan="2" style="width:261px;">
+          <para styleclass="Normal"><image src="MD-Dialog-Select-Elements-SlideJoint3.png" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"><caption><![CDATA[Two Lines are Compatible]]></caption></image></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td colspan="2" style="width:261px;">
+          <para styleclass="Normal"><image src="MD-Dialog-Select-Elements-SlideJoint4.png" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"><caption><![CDATA[Two Lines are NOT Compatible]]></caption></image></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td style="width:177px;">
+          <para styleclass="Normal"><image src="MD-GA-AddSlideJoint-SC3.png" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+        <td colspan="2">
+          <list id="13" type="ol" listtype="decimal" formatstring="&#83;&#84;&#69;&#80;&#32;&#37;&#48;&#58;&#115;&#58;&#32;" format-charset="DEFAULT_CHARSET" levelreset="false" legalstyle="false" startfrom="5" styleclass="HowTo STEP" style="font-family:&apos;Segoe UI Semibold&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo STEP"><text styleclass="VariableName">Close the Select-Elements dialog-box </text></li>
+          </list>
+          <para styleclass="Body Text HowTo"><table styleclass="Block" rowcount="1" colcount="1">
+            <tr style="vertical-align:top">
+              <td>
+                <para styleclass="VariableName-IT"><text styleclass="Interface">Select-elements</text>: <text styleclass="Body Text">Click </text><image src="MD-OK-tiny-11-15.png" scale="100.00%" styleclass="Body Text" figurelistinclude="0"></image><text styleclass="Body Text"> to close the </text><text styleclass="Element">Select-Elements dialog-box</text><text styleclass="Body Text">. </text></para>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Body Table">There are now two(2) <text styleclass="Element">Slide-Joint</text> between three(3) <text styleclass="Element">Lines</text></para>
+        </td>
+      </tr>
+    </table></para>
+  </body>
+</topic>

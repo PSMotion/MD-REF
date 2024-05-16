@@ -1,0 +1,234 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" status="Under Construction" modified="2022-02-11T10:11:18.052Z" lasteditedby="Adam" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title translate="true">Motion-Laws Compared</title>
+  <keywords>
+    <keyword translate="true">Motion-Laws Compared</keyword>
+  </keywords>
+  <body>
+    <header>
+      <para styleclass="Heading1"><text styleclass="Heading1" translate="true">Motion-Laws Compared</text></para>
+    </header>
+    <para styleclass="Heading2"><text styleclass="Heading2" translate="true">Motion-Laws.</text></para>
+    <para styleclass="Body Text HowTo"><text styleclass="Body Text HowTo" translate="true">A motion is made from usually more than one segment. You select the motion-law for each segment with the </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MT-Motion-Law-Selector" styleclass="Body Text HowTo" translate="true">Motion-Law Selector</link><text styleclass="Body Text HowTo" translate="true">.</text></para>
+    <para styleclass="Body Text HowTo"><text styleclass="Body Text HowTo" translate="true">A common question is </text><text styleclass="Body Text HowTo" style="font-style:italic;" translate="true">&apos;Which motion-law is best</text><text styleclass="Body Text HowTo" translate="true">?&apos;</text></para>
+    <para styleclass="Body Text HowTo"><text styleclass="Body Text HowTo" translate="true">When the motion is complex, possibly with many segments, that must satisfy many different position, velocity, and acceleration requirements, it is almost impossible to answer the question: </text><text styleclass="Body Text HowTo" style="font-style:italic;" translate="true">&apos;Which motion-law is best?&apos;</text><text styleclass="Body Text HowTo" translate="true">.</text></para>
+    <para styleclass="Body Text HowTo"><text styleclass="Body Text HowTo" translate="true">However, when the motion is simple, when the segments are arranged for a &apos;</text><link displaytype="text" defaultstyle="true" type="topiclink" href="MT-Motions-with-Dwell-Segments" styleclass="Body Text HowTo" style="font-style:italic;" translate="true">Dwell-Rise-Return-Dwell</link><text styleclass="Body Text HowTo" style="font-style:italic;" translate="true">&apos; </text><text styleclass="Body Text HowTo" translate="true">motion, then it is easier to select a motion-law that is best for the mechanical system.</text></para>
+    <para styleclass="Heading3_atocs_"><text styleclass="Heading3_atocs_" translate="true">Which Motion-Law?</text></para>
+    <para styleclass="Body Text HowTo"><text styleclass="Body Text HowTo" translate="true">You will see that, with many of the motion-laws, especially the &apos;</text><link displaytype="text" defaultstyle="true" type="topiclink" href="MT-Motion-Cam-Laws" anchor="Standard" styleclass="Body Text HowTo" translate="true">Traditional Motion-Laws</link><text styleclass="Body Text HowTo" translate="true">&apos;, you can only specify the position at the start and end of the segment. &#160;When you give the same position at the start and the same position at the end of the segment , then the displacement plot of each </text><text styleclass="Body Text HowTo" style="font-style:italic;" translate="true">Traditional Motion-Law</text><text styleclass="Body Text HowTo" translate="true"> is almost the same!</text></para>
+    <para styleclass="Body Text HowTo"><text styleclass="Body Text HowTo" translate="true">Surely, if you want to move the part, then why worry as to which motion-law you select for the segment? </text></para>
+    <para styleclass="Body Text HowTo"><text styleclass="Body Text HowTo" translate="true">The question is </text><text styleclass="Body Text HowTo" style="font-style:italic;" translate="true">&apos;Why are there so many different motion-laws when each provides nearly the same result</text><text styleclass="Body Text HowTo" translate="true">?&apos;.</text></para>
+    <para styleclass="Body Text HowTo"><text styleclass="Body Text HowTo" translate="true">Actually, it is the shape of the acceleration plot, and not the displacement plot, that become more important as machine-speed is increased.</text></para>
+    <para styleclass="Body Text HowTo"><text styleclass="Body Text HowTo" translate="true">Although there is little difference between the Motion-Laws&apos; </text><text styleclass="Body Text HowTo" style="font-style:italic;" translate="true">Displacement</text><text styleclass="Body Text HowTo" translate="true"> plots, there is more difference between their </text><text styleclass="Body Text HowTo" style="font-style:italic;" translate="true">Velocity</text><text styleclass="Body Text HowTo" translate="true"> plots, and a large difference between their </text><text styleclass="Body Text HowTo" style="font-style:italic;" translate="true">Acceleration</text><text styleclass="Body Text HowTo" translate="true"> plots. The </text><text styleclass="Body Text HowTo" style="font-style:italic;" translate="true">shape</text><text styleclass="Body Text HowTo" translate="true"> of the </text><text styleclass="Body Text HowTo" style="font-style:italic;" translate="true">Acceleration</text><text styleclass="Body Text HowTo" translate="true"> plot has a significant influence on the dynamic response of the part. </text></para>
+    <para styleclass="Body Text HowTo"><text styleclass="Body Text HowTo" translate="true">For this reason, it is the shape of the acceleration plot that gives the name to a </text><text styleclass="Body Text HowTo" style="font-style:italic;" translate="true">Traditional Motion-Law</text><text styleclass="Body Text HowTo" translate="true">, and not the shape of the displacement plot.</text></para>
+    <para styleclass="Body Text HowTo"><text styleclass="Body Text HowTo" translate="true">When the motion is simple, it is easier to explore the advantages and disadvantages of each motion-law.</text></para>
+    <para styleclass="HowTo Bulleted"><text styleclass="SeeAlso" style="text-decoration:underline;" translate="true">See Also</text><text styleclass="SeeAlso" translate="true">: General Design Information Manual( coming 2019): Design of Cam Mechanical Systems</text></para>
+    <para styleclass="Heading3_atocs_"><text styleclass="Heading3_atocs_" translate="true">Initial Selection</text></para>
+    <para styleclass="Body Text HowTo"><text styleclass="Body Text HowTo" translate="true">We can give relative ratings to the </text><text styleclass="Body Text HowTo" style="text-decoration:underline;" translate="true">most common</text><text styleclass="Body Text HowTo" translate="true">&#32;</text><text styleclass="Body Text HowTo" style="font-style:italic;" translate="true">&apos;Traditional Motion-Laws&apos;</text><text styleclass="Body Text HowTo" translate="true">. You can use the ratings to help you select a law at the initial stage of a machine design. </text><text styleclass="Body Text" translate="true">The ratings range from1 (bad) to 5 (excellent). The ratings apply to Dwell-Rise Dwell type motions.</text></para>
+    <para styleclass="Body Text HowTo"><text styleclass="Body Text HowTo" translate="true">Of the laws listed, that the Modified Sine(MS) is the best for general purposes. Its particular merit is that it is very tolerant of a bad input drive and transmission (elasticity, backlash, wear, low inertia). It is frequently the first choice of cam designers and is almost always used by commercial manufacturers of cam-operated indexing and oscillating mechanisms.</text></para>
+    <para styleclass="Body Text"><text styleclass="Body Text" translate="true">Additionally, you can look at the </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MT-Motion-Law-Coefficients" styleclass="Body Text" translate="true">Motion-Law Coefficients</link><text styleclass="Body Text" translate="true"> of the common cam motion-laws. These indicate the relative values of their </text><text styleclass="Body Text" style="font-style:italic;" translate="true">Velocity</text><text styleclass="Body Text" translate="true">&#32;</text><text styleclass="Body Text" style="font-style:italic;" translate="true">Coefficient</text><text styleclass="Body Text" translate="true"> and </text><text styleclass="Body Text" style="font-style:italic;" translate="true">Acceleration Coefficient</text><text styleclass="Body Text" translate="true">.</text></para>
+    <para styleclass="Body Text"><table styleclass="Standard" rowcount="6" colcount="8" style="head-row-background-color:#808080; alt-row-background-color:#dfdfdf;">
+      <thead style="vertical-align:top">
+        <td style="background-color:#999999;">
+          <para styleclass="Body Text"><text styleclass="Body Text" style="font-weight:bold; font-style:italic;" translate="true">Cam-Law Designation</text></para>
+        </td>
+        <td>
+          <para styleclass="Body Text" style="text-align:center;"><text styleclass="Body Text" style="font-weight:bold;" translate="true">Peak Acceleration</text></para>
+        </td>
+        <td>
+          <para styleclass="Body Text" style="text-align:center;"><text styleclass="Body Text" style="font-weight:bold;" translate="true">Output Vibration</text></para>
+        </td>
+        <td>
+          <para styleclass="Body Text" style="text-align:center;"><text styleclass="Body Text" style="font-weight:bold;" translate="true">Peak Velocity</text></para>
+        </td>
+        <td>
+          <para styleclass="Body Text" style="text-align:center;"><text styleclass="Body Text" style="font-weight:bold;" translate="true">Impact</text></para>
+        </td>
+        <td>
+          <para styleclass="Body Text" style="text-align:center;"><text styleclass="Body Text" style="font-weight:bold;" translate="true">Input Torque</text></para>
+        </td>
+        <td>
+          <para styleclass="Body Text" style="text-align:center;"><text styleclass="Body Text" style="font-weight:bold;" translate="true">Input Vibration</text></para>
+        </td>
+        <td>
+          <para styleclass="Body Text" style="text-align:center;"><text styleclass="Body Text" style="font-weight:bold;" translate="true">Residual Vibration</text></para>
+        </td>
+      </thead>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Text"><link displaytype="text" defaultstyle="true" type="topiclink" href="Motion-Cam-Law-Constant-Acceleration" styleclass="Body Text" style="font-weight:normal; font-style:italic;" translate="true">Constant Acc &amp; Decel</link></para>
+        </td>
+        <td style="vertical-align:middle;">
+          <para styleclass="Body Text" style="text-align:center;"><text styleclass="Body Text" translate="true">5</text></para>
+        </td>
+        <td style="vertical-align:middle;">
+          <para styleclass="Body Text" style="text-align:center;"><text styleclass="Body Text" translate="true">1</text></para>
+        </td>
+        <td style="vertical-align:middle;">
+          <para styleclass="Body Text" style="text-align:center;"><text styleclass="Body Text" translate="true">2</text></para>
+        </td>
+        <td style="vertical-align:middle;">
+          <para styleclass="Body Text" style="text-align:center;"><text styleclass="Body Text" translate="true">1</text></para>
+        </td>
+        <td style="vertical-align:middle;">
+          <para styleclass="Body Text" style="text-align:center;"><text styleclass="Body Text" translate="true">1</text></para>
+        </td>
+        <td style="vertical-align:middle;">
+          <para styleclass="Body Text" style="text-align:center;"><text styleclass="Body Text" translate="true">1</text></para>
+        </td>
+        <td style="vertical-align:middle;">
+          <para styleclass="Body Text" style="text-align:center;"><text styleclass="Body Text" translate="true">1</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Text"><link displaytype="text" defaultstyle="true" type="topiclink" href="Motion-Cam-Law-Simple-Harmonic-Motion" styleclass="Body Text" style="font-weight:normal; font-style:italic;" translate="true">Simple Harmonic</link></para>
+        </td>
+        <td style="vertical-align:middle;">
+          <para styleclass="Body Text" style="text-align:center;"><text styleclass="Body Text" translate="true">3</text></para>
+        </td>
+        <td style="vertical-align:middle;">
+          <para styleclass="Body Text" style="text-align:center;"><text styleclass="Body Text" translate="true">1</text></para>
+        </td>
+        <td style="vertical-align:middle;">
+          <para styleclass="Body Text" style="text-align:center;"><text styleclass="Body Text" translate="true">4</text></para>
+        </td>
+        <td style="vertical-align:middle;">
+          <para styleclass="Body Text" style="text-align:center;"><text styleclass="Body Text" translate="true">4</text></para>
+        </td>
+        <td style="vertical-align:middle;">
+          <para styleclass="Body Text" style="text-align:center;"><text styleclass="Body Text" translate="true">5</text></para>
+        </td>
+        <td style="vertical-align:middle;">
+          <para styleclass="Body Text" style="text-align:center;"><text styleclass="Body Text" translate="true">2</text></para>
+        </td>
+        <td style="vertical-align:middle;">
+          <para styleclass="Body Text" style="text-align:center;"><text styleclass="Body Text" translate="true">1</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Text"><link displaytype="text" defaultstyle="true" type="topiclink" href="Motion-Cam-Law-Modified-Trapezoid" styleclass="Body Text" style="font-weight:normal; font-style:italic;" translate="true">Modified Trapezoid</link></para>
+        </td>
+        <td style="vertical-align:middle;">
+          <para styleclass="Body Text" style="text-align:center;"><text styleclass="Body Text" translate="true">3</text></para>
+        </td>
+        <td style="vertical-align:middle;">
+          <para styleclass="Body Text" style="text-align:center;"><text styleclass="Body Text" translate="true">3</text></para>
+        </td>
+        <td style="vertical-align:middle;">
+          <para styleclass="Body Text" style="text-align:center;"><text styleclass="Body Text" translate="true">2</text></para>
+        </td>
+        <td style="vertical-align:middle;">
+          <para styleclass="Body Text" style="text-align:center;"><text styleclass="Body Text" translate="true">2</text></para>
+        </td>
+        <td style="vertical-align:middle;">
+          <para styleclass="Body Text" style="text-align:center;"><text styleclass="Body Text" translate="true">2</text></para>
+        </td>
+        <td style="vertical-align:middle;">
+          <para styleclass="Body Text" style="text-align:center;"><text styleclass="Body Text" translate="true">3</text></para>
+        </td>
+        <td style="vertical-align:middle;">
+          <para styleclass="Body Text" style="text-align:center;"><text styleclass="Body Text" translate="true">3</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Text"><link displaytype="text" defaultstyle="true" type="topiclink" href="Motion-Cam-Law-Modified-Sinusoid" styleclass="Body Text" style="font-weight:normal; font-style:italic;" translate="true">Modified Sinusoid</link></para>
+        </td>
+        <td style="vertical-align:middle;">
+          <para styleclass="Body Text" style="text-align:center;"><text styleclass="Body Text" translate="true">2</text></para>
+        </td>
+        <td style="vertical-align:middle;">
+          <para styleclass="Body Text" style="text-align:center;"><text styleclass="Body Text" translate="true">4</text></para>
+        </td>
+        <td style="vertical-align:middle;">
+          <para styleclass="Body Text" style="text-align:center;"><text styleclass="Body Text" translate="true">3</text></para>
+        </td>
+        <td style="vertical-align:middle;">
+          <para styleclass="Body Text" style="text-align:center;"><text styleclass="Body Text" translate="true">4</text></para>
+        </td>
+        <td style="vertical-align:middle;">
+          <para styleclass="Body Text" style="text-align:center;"><text styleclass="Body Text" translate="true">4</text></para>
+        </td>
+        <td style="vertical-align:middle;">
+          <para styleclass="Body Text" style="text-align:center;"><text styleclass="Body Text" translate="true">4</text></para>
+        </td>
+        <td style="vertical-align:middle;">
+          <para styleclass="Body Text" style="text-align:center;"><text styleclass="Body Text" translate="true">4</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Text"><link displaytype="text" defaultstyle="true" type="topiclink" href="Motion-Cam-Law-Cycloidal" styleclass="Body Text" style="font-weight:normal; font-style:italic;" translate="true">Cycloidal</link></para>
+        </td>
+        <td style="vertical-align:middle;">
+          <para styleclass="Body Text" style="text-align:center;"><text styleclass="Body Text" translate="true">1</text></para>
+        </td>
+        <td style="vertical-align:middle;">
+          <para styleclass="Body Text" style="text-align:center;"><text styleclass="Body Text" translate="true">5</text></para>
+        </td>
+        <td style="vertical-align:middle;">
+          <para styleclass="Body Text" style="text-align:center;"><text styleclass="Body Text" translate="true">2</text></para>
+        </td>
+        <td style="vertical-align:middle;">
+          <para styleclass="Body Text" style="text-align:center;"><text styleclass="Body Text" translate="true">3</text></para>
+        </td>
+        <td style="vertical-align:middle;">
+          <para styleclass="Body Text" style="text-align:center;"><text styleclass="Body Text" translate="true">3</text></para>
+        </td>
+        <td style="vertical-align:middle;">
+          <para styleclass="Body Text" style="text-align:center;"><text styleclass="Body Text" translate="true">4</text></para>
+        </td>
+        <td style="vertical-align:middle;">
+          <para styleclass="Body Text" style="text-align:center;"><text styleclass="Body Text" translate="true">5</text></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading3_atocs_"><text styleclass="Heading3_atocs_" translate="true">Explanatory Notes</text></para>
+    <para styleclass="Body Text HowTo"><table styleclass="Default" rowcount="7" colcount="1" style="cell-padding:1px; border-width:0px; border-spacing:0px; border-collapse:collapse; cell-border-width:1px; border-color:#000000; border-style:solid;">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="VariableName"><text styleclass="VariableName" translate="true">Peak Acceleration</text></para>
+          <para styleclass="Body Text HowTo"><text styleclass="Body Text HowTo" translate="true">This merit rating applies to the </text><text styleclass="Body Text HowTo" style="text-decoration:underline;" translate="true">nominal</text><text styleclass="Body Text HowTo" translate="true"> maximum output acceleration during the motion period, calculated by the motion-law equation.</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="VariableName"><text styleclass="VariableName" translate="true">Output Vibration</text></para>
+          <para styleclass="Body Text HowTo"><text styleclass="Body Text HowTo" translate="true">Output vibration is superimposed on the nominal output acceleration, thereby increasing the nominal peak value. The vibration severity depends on the elasticity and operating speed of the mechanism. The merit rating applies to mechanisms of average rigidity running at fairly high speed.</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="VariableName"><text styleclass="VariableName" translate="true">Peak Velocity</text></para>
+          <para styleclass="Body Text HowTo"><text styleclass="Body Text HowTo" translate="true">Peak Velocity is the nominal maximum output velocity during the motion period, calculated by the motion-law equation. Its value is also increased by superimposed vibration.</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="VariableName"><text styleclass="VariableName" translate="true">Impact / Backlash</text></para>
+          <para styleclass="Body Text HowTo"><text styleclass="Body Text HowTo" translate="true">Impact forces occur at the locations of backlash in the mechanism when the changeover from acceleration to deceleration occurs. The severity of the impact depends on how gradually the changeover takes place. That is, how low the jerk is at point of impact. Strictly speaking, it is the changeover from positive to negative force or torque that matters, but in most high speed systems, that almost coincides with the acceleration changeover.</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="VariableName"><text styleclass="VariableName" translate="true">Input Torque</text></para>
+          <para styleclass="Body Text HowTo"><text styleclass="Body Text HowTo" translate="true">The nominal input torque of a mechanism varies throughout the motion period and is a function of the output load profile, and the velocity pattern. The peak acceleration and the peak velocity do not coincide and neither coincides with the peak input torque. Motion-Laws with good, that is low, acceleration do not necessarily have good input torque.</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="VariableName"><text styleclass="VariableName" translate="true">Input Vibration</text></para>
+          <para styleclass="Body Text HowTo"><text styleclass="Body Text HowTo" translate="true">The elasticity and backlash of the input transmission can cause serious &apos;over-run&apos;. This is when the sudden reversal of the input torque at the changeover from acceleration to deceleration - or load - causes the cam to jump forwards before it can transmit a decelerating force to the output. The more gradual that the nominal input torque changes over, the less severe is the overrun and its consequences.</text></para>
+        </td>
+      </tr>
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="VariableName"><text styleclass="VariableName" translate="true">Residual Vibration</text></para>
+          <para styleclass="Body Text HowTo"><text styleclass="Body Text HowTo" translate="true">Residual Vibration takes place in the dwell period immediately following the motion period in high speed or elastic systems. Its amplitude depends on the vibration generated during the motion period, and the degree of damping present in the output transmission. It is very difficult to add sufficient damping to high speed mechanisms to eliminate residual vibration, so the the choice of a motion-law is vital in some cases.</text></para>
+        </td>
+      </tr>
+    </table></para>
+  </body>
+</topic>

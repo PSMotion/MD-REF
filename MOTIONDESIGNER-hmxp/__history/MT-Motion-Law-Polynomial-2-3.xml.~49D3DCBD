@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" modified="2023-02-05T11:21:31.512Z" lasteditedby="Adam" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title translate="true">Polynomial 2-3 Motion-Law</title>
+  <keywords>
+    <keyword translate="true">Cam Law: Polynomial 23</keyword>
+    <keyword translate="true">Motion-Law:<keyword translate="true">Polynomial 23</keyword></keyword>
+    <keyword translate="true">Polynomial 23</keyword>
+  </keywords>
+  <body>
+    <header>
+      <para styleclass="Heading1"><text styleclass="Heading1" translate="true">Polynomial 2-3 Motion-Law</text></para>
+    </header>
+    <para styleclass="Heading3 Underline_atocs_" style="page-break-before:always;"><text styleclass="Heading3 Underline_atocs_" translate="true">Polynomial 2-3 Cam-Law, Motion-Law</text></para>
+    <para styleclass="Body Text HowTo"><text styleclass="Body Text HowTo" translate="true">The </text><text styleclass="VariableName" translate="true">Polynomial 2-3 Motion-Law</text><text styleclass="Body Text HowTo" translate="true"> is not available directly with the </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MT-Segment-Selector" styleclass="Body Text HowTo" translate="true">Motion-Law Selector</link><text styleclass="Body Text HowTo" translate="true">. </text></para>
+    <para styleclass="Body Text HowTo"><text styleclass="Body Text HowTo" translate="true">You can use the </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MT-Blend-PointEditor-ControlButtons" styleclass="Body Text HowTo" translate="true">Control Button</link><text styleclass="Body Text HowTo" translate="true"> (also </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MT-SegmentEditor-Yaxis-Control-Buttons" styleclass="Body Text HowTo" translate="true">Segment Editor Control-Buttons</link><text styleclass="Body Text HowTo" translate="true">) with the </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MT-Motion-Law-Flexible-Polynomial" styleclass="Body Text HowTo" translate="true">Flexible-Polynomial</link><text styleclass="Body Text HowTo" translate="true"> to be a Polynomial 2-3.</text></para>
+    <para styleclass="Body Text HowTo"><text styleclass="Body Text HowTo" translate="true">You can use the Control Button with the </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MT-Motion-Law-Cubic" styleclass="Body Text HowTo" translate="true">Cubic Motion-Law</link><text styleclass="Body Text HowTo" translate="true">, but you must specify 0 units/s for its </text><text styleclass="Parameter" translate="true">Start-Velocity</text><text styleclass="Body Text HowTo" translate="true"> and </text><text styleclass="Parameter" translate="true">End-Velocity</text><text styleclass="Body Text HowTo" translate="true">.</text></para>
+    <para styleclass="Body Text"><table styleclass="Default" rowcount="1" colcount="2">
+      <tr style="vertical-align:top">
+        <td style="vertical-align:top; width:360px; height:43px;">
+          <para styleclass="Normal"><image src="MT-CAM-LAW-POLY-2-3.ipp" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"><caption translate="true"><![CDATA[Polynomial 2-3]]></caption></image></para>
+        </td>
+        <td style="height:21px;">
+          <para styleclass="Body Text"><text styleclass="Body Text" translate="true">This segment is included for reference. </text></para>
+          <para styleclass="Body Text"><text styleclass="Body Text" translate="true">A different name for this motion-law is a </text><text styleclass="VariableName" translate="true">Parabolic Velocity. &#160;</text><text styleclass="Body Text" translate="true">This motion-law is </text><text styleclass="Body Text" style="text-decoration:underline;" translate="true">not</text><text styleclass="Body Text" translate="true"> usually recommended.</text></para>
+          <para styleclass="Normal"><line style="height:1px; color:#993300;" /></para>
+          <para styleclass="Body Text"><text styleclass="Body Text" translate="true">The maximum velocity is the lowest of the </text><text styleclass="Body Text" style="font-style:italic;" translate="true">Traditional Motion-Laws</text><text styleclass="Body Text" translate="true">.</text></para>
+          <para styleclass="Body Text"><text styleclass="Body Text" translate="true">I have read somewhere that it requires the least possible </text><equation styleclass="Body Text" translate="true"><![CDATA[kWh]]></equation><text styleclass="Body Text" translate="true"> of all the possible motions.</text></para>
+          <para styleclass="VariableName"><text styleclass="VariableName" translate="true">Dynamic Performance</text></para>
+          <para styleclass="VariableName"><text styleclass="VariableName" translate="true">Polynomial 2-3</text><text styleclass="HowTo Bulleted" translate="true">:</text></para>
+          <list id="0" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted"><text styleclass="HowTo Bulleted" translate="true">there is a </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MT-Motion-Continuity" styleclass="VariableName" translate="true">Motion Discontinuity</link><text styleclass="HowTo Bulleted" translate="true"> in acceleration at the start and end of the segment.</text></li>
+            <li styleclass="HowTo Bulleted"><text styleclass="Body Text" style="font-style:normal;" translate="true">there is an</text><text styleclass="Body Text" style="font-style:italic;" translate="true">&#32;</text><text styleclass="VariableName" translate="true">infinite jerk</text><text styleclass="Body Text" translate="true"> at the start and end of the segment. </text></li>
+            <li styleclass="HowTo Bulleted"><text styleclass="HowTo Bulleted" translate="true">should only be used in applications where the </text><link displaytype="text" defaultstyle="true" type="topiclink" href="MT-Period-Ratio-Cam-Motion" styleclass="HowTo Bulleted" translate="true">period-ratio</link><text styleclass="HowTo Bulleted" translate="true"> is greater than 10, ideally at least 20.</text></li>
+          </list>
+          <list id="1" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted"><text styleclass="Body Text HowTo" translate="true">uses the minimum energy from a servomotor or stepper motor.</text></li>
+          </list>
+          <para styleclass="VariableName"><text styleclass="VariableName" translate="true">Polynomial 2-3 with Flexible Polynomial Motion-Laws</text></para>
+          <para styleclass="Body Text HowTo"><text styleclass="Body Text HowTo" translate="true">If you can put a Flexible Polynomial motion-law before and after this segment, then it is possible to make sure the motion is continuous in position, velocity and acceleration.</text></para>
+          <para styleclass="Body Text HowTo"><text styleclass="Body Text HowTo" translate="true">Some </text></para>
+        </td>
+      </tr>
+    </table></para>
+  </body>
+</topic>
